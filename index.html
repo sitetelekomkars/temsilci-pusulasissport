@@ -3,751 +3,546 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S Sport Plus - Temsilci Bilgi Merkezi (PRO)</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>İzin Talep Portalı (Site Telekom)</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <style>
-        :root {
-            --primary: #0e1b42; /* S Sport Lacivert */
-            --secondary: #fabb00; /* S Sport Sarı */
-            --accent: #d32f2f; /* Kırmızı (Hata/İade Red) */
-            --success: #2e7d32; /* Yeşil (İade Onay/Kampanya) */
-            --info: #0288d1; /* Mavi (Bilgi) */
-            --warning: #ed6c02; /* Turuncu (İkna/Dikkat) */
-            --bg: #f0f2f5;
-            --card-bg: #ffffff;
-        }
+        :root { --primary: #2563eb; --bg: #f1f5f9; --ik-color: #7c3aed; --header-text: #1e293b; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; padding: 20px; }
+        .container { max-width: 1100px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         
-        body {
-            font-family: 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
-            background-color: var(--bg);
-            color: #333;
+        /* Header ve Logo Alanı */
+        .header-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 15px;
+        }
+        .logo-img {
+            height: 50px; /* Logo yüksekliği */
+            width: auto;
+        }
+        .header-title {
+            color: var(--header-text);
             margin: 0;
-            padding: 0;
+            font-size: 1.8em;
         }
 
-        /* ==============================
-           BAKIM MODU EKRANI STİLİ
-           ============================== */
+        /* Navigasyon */
+        .nav-buttons { display: flex; gap: 10px; margin-bottom: 20px; padding-bottom: 10px; }
+        .nav-btn { flex: 1; padding: 15px; border: none; background: #e2e8f0; color: #64748b; border-radius: 10px; cursor: pointer; font-weight: bold; transition: 0.3s; font-size: 1em; display: flex; align-items: center; justify-content: center; gap: 8px;}
+        .nav-btn:hover { opacity: 0.9; transform: translateY(-2px); }
+        .nav-btn.active[data-role="personel"] { background: var(--primary); color: white; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); }
+        .nav-btn.active[data-role="yonetici"] { background: #f59e0b; color: white; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3); }
+        .nav-btn.active[data-role="ik"] { background: var(--ik-color); color: white; box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3); }
+
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: 600; margin-bottom: 5px; color: #334155; }
+        input, select, textarea { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; font-size: 1em; transition: 0.3s; }
+        input:focus, select:focus, textarea:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); }
+        
+        button.submit-btn { width: 100%; padding: 14px; background: var(--primary); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1.1em; transition: 0.3s; }
+        button.submit-btn:hover { background: #1d4ed8; }
+        button.submit-btn:disabled { background: #94a3b8; cursor: not-allowed; }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #e2e8f0; font-size: 0.95em; vertical-align: top; }
+        th { background: #f8fafc; color: #64748b; text-transform: uppercase; font-size: 0.85em; letter-spacing: 0.5px; }
+        tr:hover { background-color: #f8fafc; }
+
+        .status { padding: 5px 10px; border-radius: 20px; font-size: 0.75em; font-weight: 800; display: inline-block; margin-bottom: 4px; letter-spacing: 0.5px; }
+        .st-tl_bekliyor { background: #fff7ed; color: #c2410c; border: 1px solid #ffedd5; }
+        .st-ik_bekliyor { background: #f5f3ff; color: #6d28d9; border: 1px solid #ede9fe; }
+        .st-onaylandi { background: #f0fdf4; color: #15803d; border: 1px solid #dcfce7; }
+        .st-red { background: #fef2f2; color: #b91c1c; border: 1px solid #fee2e2; }
+
+        .day-badge { background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; font-weight: bold; margin-left: 5px; }
+        .project-badge { background: #334155; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.75em; margin-left: 5px; }
+
+        .action-btn { padding: 6px 12px; margin-right: 5px; border: none; border-radius: 6px; color: white; cursor: pointer; font-size: 0.9em; transition: 0.2s; }
+        .action-btn:hover { transform: scale(1.05); }
+        .approve { background: #22c55e; } 
+        .reject { background: #ef4444; }
+        
+        .hidden { display: none; }
+        .loading { text-align: center; color: var(--primary); font-weight: bold; margin: 20px 0; }
+        
+        .audit-info { font-size: 0.8em; color: #64748b; margin-top: 4px; font-style: italic; display: flex; align-items: center; gap: 4px; }
+        .reject-reason { color: #ef4444; font-weight: bold; font-size: 0.85em; display: block; margin-top: 2px; background: #fee2e2; padding: 2px 6px; border-radius: 4px; width: fit-content;}
+
+        /* BAKIM MODU EKRANI STİLİ */
         #maintenance-screen {
-            display: none; /* JS ile kontrol edilecek */
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: #f0f2f5;
-            z-index: 9999;
-            align-items: center;
-            justify-content: center;
+            display: none;
             text-align: center;
-        }
-        .maintenance-card {
-            background: white;
             padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background: white;
             max-width: 600px;
-            margin: 20px;
-        }
-
-        /* ==============================
-           ANA UYGULAMA STİLLERİ
-           ============================== */
-
-        /* Header Area */
-        .header {
-            background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%);
-            color: white;
-            padding: 20px 30px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        
-        .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 1.5rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .header h1 i { color: var(--secondary); }
-
-        /* Search Bar */
-        .search-container {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        #searchInput {
-            width: 100%;
-            padding: 12px 20px;
-            padding-left: 45px;
-            font-size: 16px;
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            outline: none;
-            transition: all 0.3s;
-            box-sizing: border-box;
-        }
-        
-        #searchInput:focus {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            transform: translateY(-1px);
-        }
-
-        .search-icon {
-            position: absolute;
-            left: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #666;
-        }
-
-        /* Filters */
-        .filter-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 15px;
-            padding-bottom: 5px;
-        }
-
-        .filter-btn {
-            background: rgba(255,255,255,0.15);
-            border: 1px solid rgba(255,255,255,0.2);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .filter-btn:hover { background: rgba(255,255,255,0.3); }
-        
-        .filter-btn.active {
-            background: var(--secondary);
-            color: var(--primary);
-            font-weight: 600;
-            border-color: var(--secondary);
-            box-shadow: 0 2px 8px rgba(250, 187, 0, 0.4);
-        }
-
-        /* Content Grid */
-        .container {
-            padding: 20px;
-            max-width: 1600px;
-            margin: 0 auto;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            gap: 20px;
-        }
-
-        /* Card Styles */
-        .card {
-            background: var(--card-bg);
+            margin: 50px auto;
             border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-            border-left: 5px solid var(--info);
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.2s, box-shadow 0.2s;
-            position: relative;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
-
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-        }
-
-        /* Category Colors */
-        .card.teknik { border-left-color: var(--primary); }
-        .card.iade { border-left-color: var(--accent); }
-        .card.ikna { border-left-color: var(--warning); }
-        .card.kampanya { border-left-color: var(--success); }
-        .card.bilgi { border-left-color: var(--info); }
-
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 12px;
-        }
-
-        .card-title {
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: #2c3e50;
-            margin: 0;
-            line-height: 1.4;
-        }
-
-        .badge {
-            font-size: 0.75rem;
-            padding: 4px 8px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .badge.teknik { background: #e8eaf6; color: var(--primary); }
-        .badge.iade { background: #ffebee; color: var(--accent); }
-        .badge.ikna { background: #fff3e0; color: var(--warning); }
-        .badge.kampanya { background: #e8f5e9; color: var(--success); }
-        .badge.bilgi { background: #e1f5fe; color: var(--info); }
-
-        .card-content {
-            font-size: 0.95rem;
-            color: #555;
-            margin-bottom: 15px;
-            line-height: 1.5;
-            flex-grow: 1;
-        }
-
-        .script-box {
-            background: #fffdeb;
-            border: 1px solid #f0e68c;
-            padding: 12px;
-            border-radius: 8px;
-            font-style: italic;
-            color: #444;
-            margin-top: auto;
-            position: relative;
-            font-size: 0.92rem;
-        }
-
-        .script-box::before {
-            content: '\f10d'; /* quote icon */
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            top: -8px;
-            left: 10px;
-            background: #fffdeb;
-            padding: 0 5px;
-            color: #f0e68c;
-        }
-
-        .card-actions {
-            margin-top: 12px;
-            display: flex;
-            justify-content: flex-end;
-            gap: 8px;
-            align-items: center;
-        }
-
-        .btn {
-            border: none;
-            padding: 6px 12px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            font-weight: 600;
-            transition: 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .btn-copy {
-            background: var(--primary);
-            color: white;
-        }
-        .btn-copy:hover { background: #1a2f6e; }
-        
-        .btn-copy:active { transform: scale(0.95); }
-
-        .btn-link {
-            background: transparent;
-            color: var(--info);
-            border: 1px solid var(--info);
-            text-decoration: none;
-        }
-        .btn-link:hover { background: #e1f5fe; }
-
-        /* Highlight Text */
-        .highlight {
-            background-color: yellow;
-            font-weight: bold;
-        }
-        
-        .tag-container {
-            margin-top: 5px;
-        }
-        .tag {
-            display: inline-block;
-            background: #eee;
-            border-radius: 4px;
-            padding: 2px 6px;
-            font-size: 0.7rem;
-            color: #666;
-            margin-right: 4px;
-        }
-
     </style>
 </head>
 <body>
 
-    <div id="maintenance-screen">
-        <div class="maintenance-card">
-            <h1 style="font-size: 4em; margin: 0 0 15px 0;">👩‍🏫☕</h1>
-            <h2 style="color: #0e1b42; margin-bottom: 10px;">Sistem Mola Verdi!</h2>
-            <p style="color: #555; font-size: 1.2em; line-height: 1.6;">
-                Şu an pusulamızı yeniden kalibre ediyoruz.<br>
-                <strong>Esra Hoca'dan</strong> gelecek kritik bilgileri bekliyoruz... 🚀<br>
-                <span style="font-size: 0.9em; color: #888;">(Az sonra buradayız, panik yok!)</span>
-            </p>
-        </div>
+<div id="maintenance-screen">
+    <h1 style="font-size: 3em; margin-bottom: 10px;">🚧</h1>
+    <h2 style="color: #1e293b;">Sistem Bakımda</h2>
+    <p style="color: #64748b; font-size: 1.1em;">Şu an güncelleme çalışması yapılmaktadır.<br>Lütfen daha sonra tekrar deneyiniz.</p>
+</div>
+
+<div class="container" id="main-app">
+    
+    <div class="header-area">
+        <img src="https://cdn-icons-png.flaticon.com/512/2942/2942544.png" alt="Site Telekom Logo" class="logo-img" id="companyLogo">
+        <h2 class="header-title">İzin Yönetim Sistemi</h2>
+    </div>
+    
+    <div class="nav-buttons">
+        <button class="nav-btn active" data-role="personel" onclick="switchRole('personel')">👤 Personel</button>
+        <button class="nav-btn" data-role="yonetici" onclick="switchRole('yonetici')">🛡️ Yönetici (TL)</button>
+        <button class="nav-btn" data-role="ik" onclick="switchRole('ik')">🏢 İK</button>
     </div>
 
-    <div id="main-app">
-        <div class="header">
-            <div class="header-top">
-                <h1><i class="fas fa-compass"></i> S Sport Plus - Temsilci Pusulası</h1>
-                <div style="font-size: 0.9rem; opacity: 0.8;">Veri Kaynağı: 2025 Dökümanları</div>
-            </div>
-
-            <div class="search-container">
-                <i class="fas fa-search search-icon"></i>
-                <input type="text" id="searchInput" placeholder="Hızlı Ara: 'Donma', 'İade Red', 'Samsung Hata', 'Euroleague', 'Fiyat'..." onkeyup="filterContent()">
-            </div>
-
-            <div class="filter-container">
-                <button class="filter-btn active" onclick="filterCategory('all')"><i class="fas fa-th"></i> Tümü</button>
-                <button class="filter-btn" onclick="filterCategory('Teknik')"><i class="fas fa-wrench"></i> Teknik & Hata</button>
-                <button class="filter-btn" onclick="filterCategory('İade')"><i class="fas fa-undo"></i> İade & Finans</button>
-                <button class="filter-btn" onclick="filterCategory('İkna')"><i class="fas fa-heart"></i> İkna & Churn</button>
-                <button class="filter-btn" onclick="filterCategory('Kampanya')"><i class="fas fa-gift"></i> Kampanyalar</button>
-                <button class="filter-btn" onclick="filterCategory('Bilgi')"><i class="fas fa-info-circle"></i> Genel Bilgi</button>
-            </div>
+    <div id="personel-panel">
+        <div class="panel-info" style="background:#eff6ff; padding:15px; border-radius:8px; color:#1e40af; margin-bottom:20px; border-left: 5px solid #2563eb;">
+            👋 <strong>Hoş Geldiniz!</strong> Yeni izin talebi oluşturabilir veya geçmiş izinlerinizi sorgulayabilirsiniz.
         </div>
 
-        <div class="container">
-            <div class="grid" id="cardGrid">
+        <form id="leaveForm" onsubmit="submitLeave(event)">
+            <div class="form-group">
+                <label>Ad Soyad</label>
+                <input type="text" id="name" placeholder="Adınız ve Soyadınız" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Proje</label>
+                <select id="project" required>
+                    <option value="" disabled selected>Seçiniz...</option>
+                    <option value="TTNET">TTNET</option>
+                    <option value="TÜRKNET">TÜRKNET</option>
+                    <option value="OSK">OSK</option>
+                    <option value="SSPORT">SSPORT</option>
+                    <option value="TÜRKSAT">TÜRKSAT</option>
+                </select>
+            </div>
+
+            <div class="form-group" style="display:flex; gap:10px;">
+                <div style="flex:1">
+                    <label>Başlangıç</label>
+                    <input type="date" id="startDate" onchange="calcDays()" required>
                 </div>
+                <div style="flex:1">
+                    <label>Bitiş</label>
+                    <input type="date" id="endDate" onchange="calcDays()" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Toplam: <span id="dayPreview" style="font-weight:normal">-</span></label>
+            </div>
+            <div class="form-group">
+                <label>İzin Türü</label>
+                <select id="type">
+                    <option value="Yıllık İzin">Yıllık İzin</option>
+                    <option value="Hastalık">Hastalık Raporu</option>
+                    <option value="Mazeret">Mazeret İzni</option>
+                    <option value="Babalık">Babalık İzni</option>
+                    <option value="Cenaze izni">Cenaze izni</option>
+                    <option value="Diğer">Diğer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Açıklama</label>
+                <textarea id="reason" rows="3" placeholder="İzin nedeni..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="btnSubmit">Talebi Gönder</button>
+        </form>
+
+        <div id="history-area" style="margin-top: 30px; border-top: 2px dashed #e2e8f0; padding-top: 20px;">
+            <h4>📂 Geçmiş İzinlerim</h4>
+            <p style="font-size:0.9em; color:#64748b;">Yukarıya adınızı yazıp aşağıdaki butona basarak eski taleplerinizin durumunu görebilirsiniz.</p>
+            <button type="button" style="background:#475569; color:white; border:none; padding:10px 20px; border-radius:6px; cursor:pointer; font-weight:bold;" onclick="loadRequests('personel')">Geçmişimi Getir</button>
+            
+            <div id="personelHistoryTable" class="hidden" style="margin-top:15px;">
+                <table style="font-size:0.9em;">
+                    <thead>
+                        <tr><th>Tarihler</th><th>Durum / Detay</th></tr>
+                    </thead>
+                    <tbody id="personelTbody"></tbody>
+                </table>
+            </div>
         </div>
     </div>
 
-    <script>
-        // ==========================================
-        // 🚧 BAKIM MODU AYARI
-        // ==========================================
-        // TRUE yaparsanız "Esra Hoca" ekranı açılır.
-        // FALSE yaparsanız normal panel açılır.
+    <div id="admin-panel" class="hidden">
+        <div id="admin-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+            <div id="admin-msg" style="padding:10px; border-radius:6px; background:#fffbeb; color:#92400e; flex:1;"></div>
+            <div style="margin-left:10px; font-size:0.9em; color:#64748b;">Giriş: <strong id="activeAdminName" style="color:#0f172a;"></strong></div>
+        </div>
         
-        const BAKIM_MODU = false; 
+        <div id="loader" class="loading hidden">
+            <div style="display:inline-block; width:20px; height:20px; border:3px solid #f3f3f3; border-top:3px solid var(--primary); border-radius:50%; animation: spin 1s linear infinite;"></div>
+            Veriler Yükleniyor...
+        </div>
+        
+        <table id="requestsTable">
+            <thead>
+                <tr>
+                    <th style="width:25%">Personel / Proje</th>
+                    <th style="width:25%">Tarih / Gün</th>
+                    <th style="width:30%">Tür / Açıklama</th>
+                    <th style="width:20%">Durum / İşlem</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+</div>
 
-        // ==========================================
-        // SAYFA YÜKLENİRKEN KONTROL
-        // ==========================================
-        document.addEventListener('DOMContentLoaded', () => {
-            if (BAKIM_MODU) {
-                document.getElementById('main-app').style.display = 'none';
-                const maintenanceScreen = document.getElementById('maintenance-screen');
-                maintenanceScreen.style.display = 'flex'; 
-                // Arka plana hafif desen ekle
-                document.body.style.background = "#f0f2f5 url('data:image/svg+xml,%3Csvg width=\\'20\\' height=\\'20\\' viewBox=\\'0 0 20 20\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cg fill=\\'%23d4d4d4\\' fill-opacity=\\'0.2\\' fill-rule=\\'evenodd\\'%3E%3Ccircle cx=\\'3\\' cy=\\'3\\' r=\\'3\\'/%3E%3Ccircle cx=\\'13\\' cy=\\'13\\' r=\\'3\\'/%3E%3C/g%3E%3C/svg%3E')";
-            } else {
-                renderCards(database);
+<style>
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+</style>
+
+<script>
+    // ==========================================
+    // 🚧 BAKIM MODU AYARI (Açmak için false yap)
+    // ==========================================
+    const BAKIM_MODU = false; 
+    // ==========================================
+
+    if (BAKIM_MODU) {
+        document.getElementById('main-app').style.display = 'none';
+        document.getElementById('maintenance-screen').style.display = 'block';
+        document.body.style.background = "#e2e8f0";
+    }
+
+    // GOOGLE SCRIPT LINKI
+    const API_URL = "https://script.google.com/macros/s/AKfycby1QGB4lpO_VRt-PYCORj9DggoYvvwGPcSxGq4gTD9deYPpyNQr1bjMwncaKW6hGxgeSw/exec";
+    
+    const YONETICI_SIFRE = "36487"; 
+    const IK_SIFRE = "snn128936";       
+
+    let currentRole = 'personel';
+    let currentAdminName = '';
+
+    // LOGO DEĞİŞTİRME (İsteğe bağlı: Kendi resim linkini buraya yazabilirsin)
+    // document.getElementById('companyLogo').src = "https://site-telekom-logo-linki.png";
+
+    async function switchRole(role) {
+        currentAdminName = '';
+        document.getElementById('activeAdminName').innerText = '';
+
+        // PERSONEL (Şifresiz)
+        if (role === 'personel') {
+            activateTab(role);
+            return;
+        }
+
+        // YÖNETİCİ ve İK (Şifreli & İsimli - SweetAlert ile)
+        let targetPassword = (role === 'yonetici') ? YONETICI_SIFRE : IK_SIFRE;
+        let roleTitle = (role === 'yonetici') ? 'Yönetici (TL) Girişi' : 'İK Girişi';
+        let roleColor = (role === 'yonetici') ? '#f59e0b' : '#7c3aed';
+
+        // 1. ADIM: ŞİFRE SOR
+        const { value: password } = await Swal.fire({
+            title: roleTitle,
+            text: 'Lütfen giriş şifresini giriniz',
+            input: 'password',
+            inputPlaceholder: 'Şifre',
+            inputAttributes: {
+                autocapitalize: 'off',
+                autocorrect: 'off'
+            },
+            confirmButtonText: 'Giriş Yap',
+            confirmButtonColor: roleColor,
+            showCancelButton: true,
+            cancelButtonText: 'İptal',
+            backdrop: `rgba(0,0,0,0.4)`
+        });
+
+        if (!password) return; // İptal ederse çık
+
+        if (password !== targetPassword) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Hatalı Şifre!',
+                text: 'Girdiğiniz şifre yanlış.',
+                confirmButtonColor: '#ef4444'
+            });
+            return;
+        }
+
+        // 2. ADIM: İSİM SOR
+        const { value: adminName } = await Swal.fire({
+            title: 'Hoş Geldiniz',
+            text: 'İşlem kaydı için lütfen Adınızı Soyadınızı giriniz:',
+            input: 'text',
+            inputPlaceholder: 'Ad Soyad',
+            confirmButtonText: 'Panele Git',
+            confirmButtonColor: roleColor,
+            allowOutsideClick: false,
+            inputValidator: (value) => {
+                if (!value) {
+                    return 'İsim alanı boş bırakılamaz!'
+                }
             }
         });
 
-
-        // ==========================================
-        // 📊 VERİ SETİ (DATABASE)
-        // ==========================================
-        const database = [
-            // --- İADE & FİNANS ---
-            {
-                title: "İade: İzleme Geçmişi VAR",
-                category: "İade",
-                type: "iade",
-                tags: ["red", "thh", "cayma"],
-                text: "Kullanıcı aylık/yıllık paket almış ve içerik izlemişse (genel arıza yoksa) iade REDDEDİLİR. THH tehdidi olsa bile süreç başlatılmaz.",
-                script: "Hizmetimizden aktif olarak faydalandığınız için iade prosedürlerimiz gereği talebinize olumlu yanıt veremiyoruz. Ancak iptal talebinizi alabilirim, dönem sonuna kadar izlemeye devam edebilirsiniz."
-            },
-            {
-                title: "İade: Aylık Paket (İzlememiş)",
-                category: "İade",
-                type: "iade",
-                tags: ["izlememiş", "indirim", "6ay50"],
-                text: "Yenilenmiş/Satın alınmış aylık paket + İzleme YOK. Önce %50 indirim teklif et.",
-                script: "Memnuniyetiniz adına dilerseniz '6AY50' kodu ile üyeliğinize 139.5 TL indirim tanımlayabiliriz. Kabul etmezseniz iade sürecini başlatabilirim.",
-                code: "6AY50"
-            },
-            {
-                title: "İade: Yıllık Paket (İzlememiş)",
-                category: "İade",
-                type: "iade",
-                tags: ["yıllık", "izlememiş", "yıllıkloca"],
-                text: "Yıllık paket yenilenmiş + İzleme YOK. 1. YILLIKLOCA (indirim) öner. 2. Aylığa geçiş öner. 3. Tam iade.",
-                script: "Dilerseniz 'YILLIKLOCA' kampanyası ile indirim sağlayalım. Ya da paketinizi aylığa çevirip kalan tutarı iade edelim.",
-                code: "YILLIKLOCA"
-            },
-            {
-                title: "İade: Mükerrer (Çift) Çekim",
-                category: "İade",
-                type: "iade",
-                tags: ["çift çekim", "fazla ödeme"],
-                text: "Aynı ay içinde 2 farklı hesap/çekim. IP ve Cihaz AYNI ise iade yapılır. Cihaz FARKLI ve izleme varsa RED. (15 gün içinde ulaşmalı)",
-                script: "Kontrollerimde mükerrer çekim olduğunu görüntüledim, kullanılmayan hesabınızın iadesini sağlıyorum."
-            },
-            {
-                title: "İade: Aynı Gün Yıllık Alım (Hataen)",
-                category: "İade",
-                type: "iade",
-                tags: ["yanlışlık", "aylık üstüne yıllık"],
-                text: "Aylık paketi varken aynı gün yanlışlıkla yıllık aldıysa (24 saat içinde dönerse) 1 defaya mahsus yıllık iade edilir.",
-                script: "Bir defaya mahsus olmak üzere memnuniyetiniz adına yıllık paket işleminizi iptal edip iadenizi sağlıyorum."
-            },
-            {
-                title: "İade: YILLIKLOCA Fark İadesi",
-                category: "İade",
-                type: "iade",
-                tags: ["fark iadesi", "kampanya"],
-                text: "Müşteri 'Sitede daha ucuz, bana YILLIKLOCA yapın' derse defansa geçmeden aradaki fark iade edilir.",
-                script: "Memnuniyetiniz adına aradaki farkı kartınıza iade ediyorum. İyi seyirler dilerim."
-            },
-            {
-                title: "İade: Winback Sonrası Talep",
-                category: "İade",
-                type: "iade",
-                tags: ["winback", "iptal teklifi"],
-                text: "Yıllık paket alıp iptal ederken indirimli (Winback) paket alırsa, sadece 2. paket (indirimli olan) iade edilebilir.",
-                script: "Memnuniyetiniz kapsamında son aldığınız indirimli paketin iadesini sağlayabilirim."
-            },
-            {
-                title: "Kısa Bilgi: Cayma Hakkı",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["yasal", "sözleşme"],
-                text: "Dijital hizmet olduğu için yasal cayma hakkı yoktur.",
-                script: "S Sport Plus İçerik Hizmeti, anında ifa edilen gayri-maddi mal niteliğinde olduğundan yasal cayma hakkı kapsamına girmemektedir.",
-                code: "caymahakkı"
-            },
-
-            // --- TEKNİK ---
-            {
-                title: "Teknik: TV Donma Sorunu",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["televizyon", "takılma", "smart tv"],
-                text: "1. Genel Arıza Kontrolü. 2. TV ve Modemi fişten çekip 10sn bekle. 3. Hız testi iste (8Mbps altı ise ISS).",
-                script: "TV ve modeminizi fişten çekip 10 saniye bekledikten sonra takabilir misiniz? Düzelmezse TV tarayıcısından hiztesti.com.tr sonucu paylaşmanızı rica ederim.",
-                link: "https://www.hiztesti.com.tr/"
-            },
-            {
-                title: "Teknik: Mobil Donma Sorunu",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["cep telefonu", "android", "ios"],
-                text: "Mobil veride dene. Düzelirse Wifi sorunu. Düzelmezse: Uygulama Önbelleğini Temizle / Sil-Yükle.",
-                script: "Uygulama önbelleğini temizleyip veya silip tekrar yükleyerek deneyebilir misiniz? Sorun devam ederse mobil veri ile kontrol edelim."
-            },
-            {
-                title: "Teknik: Bilgisayar Donma Sorunu",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["pc", "web", "ping"],
-                text: "Hız testi 8mbps+ ise Ping testi yaptır (CMD -> ping cdn.ssportplus.com). 35ms üstü ise DNS/Host değişikliği önerilebilir.",
-                script: "Tarayıcınızda çözünürlüğü Auto yerine 720p/1080p seçip deneyebilir misiniz? Arka planda indirme yapan uygulama varsa kapatmanızı öneririm."
-            },
-            {
-                title: "Hata: 'Beklenmedik Bir Kesinti Oluştu'",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["vpn", "yurt dışı", "erişim"],
-                text: "Genellikle Yurt Dışı IP'si veya VPN kullanımında çıkar. IP kontrolü yap (wizcase/vpnapi).",
-                script: "Lisans hakları sebebiyle yayınlarımız sadece Türkiye sınırları içindedir. VPN açıksa kapatmanızı, yurt dışındaysanız erişemeyeceğinizi belirtmek isterim.",
-                link: "https://tr.wizcase.com/tools/whats-my-ip/"
-            },
-            {
-                title: "Hata: 'Abonelik Başkasına Aittir'",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["apple", "google", "store", "aktivasyon"],
-                text: "Cihazdaki Store hesabı (Apple/Google) farklı bir S Sport Plus maili ile eşleşmiş. Loglardan 'OwnerID' kontrol et.",
-                script: "Cihazınızdaki mağaza hesabı ile daha önce farklı bir e-posta adresiyle üyelik başlatmışsınız. Diğer mail adresinizle giriş yapmayı deneyiniz."
-            },
-            {
-                title: "Hata: Samsung TV 'Yüklenemiyor'",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["samsung", "smart tv", "açılmıyor"],
-                text: "Samsung TV'lerde 'Güvenli Mod' açıksa bu hatayı verir. Modemi/TV'yi kapatıp açtır. ISS'den Güvenli Modu kapattır.",
-                script: "İnternet ayarlarınızda 'Güvenli Mod' açık olabilir, servis sağlayıcınızla görüşüp kapatmanızı rica ederim."
-            },
-            {
-                title: "Hata: Promosyon Kodu Bulunamadı",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["kod hatası", "kampanya"],
-                text: "Kodlar büyük/küçük harf duyarlıdır. Boşluk bırakılmış veya küçük harf yazılmış olabilir.",
-                script: "Kodlar büyük harf duyarlıdır. Lütfen kodu kopyalayıp yapıştırarak, boşluk bırakmadan ve büyük harflerle tekrar deneyiniz."
-            },
-            {
-                title: "CRM: IP Karantina Kaldırma",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["ip blok", "giriş hatası"],
-                text: "TVManager > CMS > Admission Gate menüsünden IP kontrol edilir ve 'Release' butonuna basılır.",
-                script: "Güvenlik duvarı IP adresinizi bloklamış, şu an kaldırdım. Lütfen modeminizi kapatıp açarak tekrar deneyiniz."
-            },
-            {
-                title: "Hata: Ses Var Görüntü Yok (Siyah Ekran)",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["siyah ekran", "görüntü"],
-                text: "Genelde HDMI kablo, tarayıcı eklentisi veya eski sürüm kaynaklıdır. Uygulamayı güncelle, kabloyu kontrol et.",
-                script: "Uygulamanızın güncel olduğundan emin olun. Tarayıcıdaysanız reklam engelleyici eklentileri kapatıp deneyiniz."
-            },
-
-            // --- İKNA & CHURN ---
-            {
-                title: "İkna: Fiyat Avantajı (Kahve Parası)",
-                category: "İkna",
-                type: "ikna",
-                tags: ["pahalı", "ücret"],
-                text: "Günlük maliyet vurgusu yap. 6AY50 teklif et.",
-                script: "S Sport Plus'ta günlük sadece 4,65 TL'ye (bir kahve fiyatına) EuroLeague, NBA ve La Liga gibi dev organizasyonları izleyebilirsiniz. Dilerseniz 6AY50 kodu ile %50 indirim tanımlayalım."
-            },
-            {
-                title: "İkna: Sabit Fiyat Garantisi",
-                category: "İkna",
-                type: "ikna",
-                tags: ["zam", "fiyat artışı"],
-                text: "Gelecek zamlardan etkilenmemesi için yıllık paket veya indirim öner.",
-                script: "Fiyat artışlarından etkilenmeden 6 ay boyunca aynı ücretle izlemeye devam edebilirsiniz. Bu teklif sadece görüşmemize özeldir."
-            },
-            {
-                title: "İkna: İçerik Çeşitliliği (Aile)",
-                category: "İkna",
-                type: "ikna",
-                tags: ["sadece spor", "çocuk"],
-                text: "Sadece spor değil, belgesel, çocuk ve film kanalları vurgusu.",
-                script: "Platformumuz sadece spor değil; belgesel, çocuk ve yaşam kanallarıyla aileniz için de zengin bir içerik sunar. Çocuğunuz çizgi film izlerken siz maç keyfi yapabilirsiniz."
-            },
-            {
-                title: "İkna: Maç Kaçırma Derdine Son",
-                category: "İkna",
-                type: "ikna",
-                tags: ["zamanım yok", "izleyemiyorum"],
-                text: "Geri Al İzle ve Tekrar İzle özellikleri vurgulanır.",
-                script: "Canlı yayını kaçırsanız bile 'Tekrar İzle' özelliği ile maçları dilediğiniz zaman izleyebilirsiniz. Ayrıca yayını 24 saate kadar geri alabilirsiniz."
-            },
-
-            // --- KAMPANYALAR ---
-            {
-                title: "Kampanya: YILLIKLOCA (Web)",
-                category: "Kampanya",
-                type: "kampanya",
-                tags: ["yıllık indirim", "web özel"],
-                text: "Yıllık pakette indirim sağlar. Sadece Web sitesinden alımlarda geçerlidir.",
-                script: "Web sitemiz üzerinden 'YILLIKLOCA' kodunu kullanarak yıllık paketi 1499 TL avantajlı fiyatıyla alabilirsiniz.",
-                code: "YILLIKLOCA"
-            },
-            {
-                title: "Kampanya: 6AY50 (Aylık İndirim)",
-                category: "Kampanya",
-                type: "kampanya",
-                tags: ["yarı fiyatına", "aylık"],
-                text: "Aylık paketi iptal etmek isteyene %50 indirim (139.5 TL) teklifi.",
-                script: "Aboneliğinizi iptal etmek yerine '6AY50' kodu ile önümüzdeki ay için %50 indirimli devam etmenizi sağlayabilirim.",
-                code: "6AY50"
-            },
-            {
-                title: "Kampanya: BAHAR2025 (Deneme)",
-                category: "Kampanya",
-                type: "kampanya",
-                tags: ["deneme süresi", "ücretsiz"],
-                text: "Yeni üyelere 7 Gün Ücretsiz + Yıllık Paket. (Örnek kurgu, tarih kontrol et)",
-                script: "BAHAR2025 kodu ile 7 gün ücretsiz deneyebilir, beğenirseniz avantajlı yıllık paketten devam edebilirsiniz.",
-                code: "BAHAR2025"
-            },
-
-            // --- GENEL BİLGİ ---
-            {
-                title: "Bilgi: Yayın Geriden Geliyor?",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["gecikme", "delay"],
-                text: "İnternet tabanlı yayın olduğu için uyduya göre 30-40 sn gecikme normaldir.",
-                script: "Dijital platformlarda sinyal işleme süresi nedeniyle uydu yayınına göre bir miktar (30-40 sn) gecikme olması teknolojinin doğası gereği normaldir."
-            },
-            {
-                title: "Bilgi: Cihaz Sınırı (Aynı Anda İzleme)",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["kaç ekran", "paylaşım"],
-                text: "Farklı cihazlardan giriş yapılabilir ama AYNI ANDA sadece 1 cihazdan izlenebilir.",
-                script: "Üyeliğinizle farklı cihazlardan giriş yapabilirsiniz ancak aynı anda sadece tek bir ekrandan yayın izleyebilirsiniz."
-            },
-            {
-                title: "Bilgi: Paket Fiyatları (2025)",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["ücret", "fiyat"],
-                text: "Aylık: 279 TL | Yıllık: 1799 TL (05.06.2025 itibariyle güncel)",
-                script: "Güncel fiyatlarımız; Aylık paket 279 TL, Yıllık paket ise 1799 TL'dir. Yıllık alımda aylık maliyet 149 TL'ye gelmektedir."
-            },
-            {
-                title: "Bilgi: Desteklenen Cihazlar",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["smart tv", "hangi cihaz"],
-                text: "Android TV, Apple TV, Samsung (2017+), LG (WebOS 3.0+), Xbox, Chromecast, iOS, Android, Web.",
-                script: "Samsung (2017+), LG (WebOS 3.0+), Android TV, Apple TV, Chromecast, Xbox ve tüm mobil cihazlar/web tarayıcıları üzerinden izleyebilirsiniz."
-            },
-            {
-                title: "İletişim: Müşteri Hizmetleri",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["whatsapp", "mail"],
-                text: "WhatsApp: 0850 532 4 777 | Mail: destek@ssportplus.com | Canlı Destek (09:00-02:00)",
-                script: "Bize 0850 532 4 777 WhatsApp hattımızdan veya destek@ssportplus.com adresinden 7/24 ulaşabilirsiniz."
-            },
-            {
-                title: "Kısayol: Web İptal Linki",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["link", "yönlendirme"],
-                text: "Üyelik Bilgileri > Paket Bilgisi > İptal Et adımları.",
-                script: "Aboneliğinizi https://app.ssportplus.com/login adresinden giriş yapıp 'Üyelik Bilgileri > Paket Bilgisi' menüsünden iptal edebilirsiniz.",
-                link: "https://app.ssportplus.com/login"
-            },
-            {
-                title: "İçerik: Hangi Ligler Var?",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["maçlar", "yayın"],
-                text: "Euroleague, NBA, La Liga, Serie A, Bundesliga, UFC, MotoGP, Formula 1 (Dönemsel kontrol et), NFL.",
-                script: "S Sport Plus'ta EuroLeague, NBA, La Liga, Serie A, Bundesliga, UFC, MotoGP ve daha birçok premium spor organizasyonunu izleyebilirsiniz."
-            },
-            {
-                title: "Bilgi: İletişim İzni Alma",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["kvkk", "izin"],
-                text: "Kullanıcıdan kampanya iletişimi için onay istenir.",
-                script: "Size özel kampanya ve fırsatlardan haberdar olabilmeniz için iletişim izinlerinizi onaylıyor musunuz?"
-            }
-        ];
-
-        // ==========================================
-        // ⚙️ FONKSİYONLAR
-        // ==========================================
-
-        function renderCards(data) {
-            const container = document.getElementById('cardGrid');
-            container.innerHTML = '';
-
-            if(data.length === 0) {
-                container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #888;">Aradığınız kriterlere uygun kayıt bulunamadı.</div>';
-                return;
-            }
-
-            data.forEach(item => {
-                const div = document.createElement('div');
-                div.className = `card ${item.type}`;
-                
-                // Etiketleri oluştur
-                let tagsHtml = '';
-                if(item.tags) {
-                    tagsHtml = `<div class="tag-container">${item.tags.map(tag => `<span class="tag">#${tag}</span>`).join('')}</div>`;
-                }
-
-                let html = `
-                    <div class="card-header">
-                        <h3 class="card-title">${highlightText(item.title)}</h3>
-                        <span class="badge ${item.type}">${item.category}</span>
-                    </div>
-                    <div class="card-content">
-                        <div>${highlightText(item.text)}</div>
-                        ${tagsHtml}
-                    </div>
-                    <div class="script-box">${highlightText(item.script)}</div>
-                    <div class="card-actions">
-                `;
-                
-                html += `<button class="btn btn-copy" onclick="copyText('${item.script.replace(/'/g, "\\'")}')"><i class="fas fa-copy"></i> Metni Kopyala</button>`;
-                
-                if(item.code) {
-                    html += `<button class="btn btn-copy" style="background: var(--secondary); color: #333;" onclick="copyText('${item.code}')"><i class="fas fa-tag"></i> Kodu Al</button>`;
-                }
-                if(item.link) {
-                    html += `<a href="${item.link}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>`;
-                }
-                
-                html += `</div>`;
-                div.innerHTML = html;
-                container.appendChild(div);
-            });
+        if (adminName) {
+            currentAdminName = adminName;
+            document.getElementById('activeAdminName').innerText = currentAdminName;
+            activateTab(role);
         }
+    }
 
-        function filterContent() {
-            const search = document.getElementById('searchInput').value.toLowerCase();
-            
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    function activateTab(role) {
+        currentRole = role;
+        
+        document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+        document.querySelector(`[data-role="${role}"]`).classList.add('active');
 
-            const filtered = database.filter(item => {
-                const matchTitle = item.title.toLowerCase().includes(search);
-                const matchText = item.text.toLowerCase().includes(search);
-                const matchScript = item.script.toLowerCase().includes(search);
-                const matchTags = item.tags ? item.tags.some(tag => tag.includes(search)) : false;
-                
-                return matchTitle || matchText || matchScript || matchTags;
-            });
-            renderCards(filtered);
+        document.getElementById('personel-panel').classList.toggle('hidden', role !== 'personel');
+        document.getElementById('admin-panel').classList.toggle('hidden', role === 'personel');
+
+        if(role !== 'personel') {
+            const msg = document.getElementById('admin-msg');
+            if(role === 'yonetici') {
+                msg.innerHTML = "🛡️ <strong>Yönetici Paneli:</strong> Onayladığınız talepler İK'ya iletilir.";
+                msg.style.background = "#fff7ed"; msg.style.color = "#c2410c";
+            }
+            else {
+                msg.innerHTML = "🏢 <strong>İK Paneli:</strong> Yöneticiden gelen talepleri sonuçlandırabilirsiniz.";
+                msg.style.background = "#f5f3ff"; msg.style.color = "#6d28d9";
+            }
+            loadRequests('admin');
         }
+    }
 
-        function filterCategory(cat) {
-            document.getElementById('searchInput').value = '';
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-
-            if(cat === 'all') {
-                renderCards(database);
+    function calcDays() {
+        const s = document.getElementById('startDate').value;
+        const e = document.getElementById('endDate').value;
+        const p = document.getElementById('dayPreview');
+        if(s && e) {
+            const diff = new Date(e) - new Date(s);
+            const days = Math.ceil(diff / (1000*60*60*24)) + 1;
+            if(days > 0) {
+                p.innerText = days + " Gün";
+                p.style.color = "var(--primary)";
+                p.style.fontWeight = "bold";
             } else {
-                const filtered = database.filter(item => item.category === cat);
-                renderCards(filtered);
+                p.innerText = "Hatalı Tarih";
+                p.style.color = "red";
             }
         }
+    }
 
-        function highlightText(text) {
-            const search = document.getElementById('searchInput').value.trim();
-            if (!search) return text;
-            
-            const regex = new RegExp(`(${search})`, 'gi');
-            return text.replace(regex, '<span class="highlight">$1</span>');
+    function submitLeave(e) {
+        e.preventDefault();
+        const btn = document.getElementById('btnSubmit');
+        const s = document.getElementById('startDate').value;
+        const e_date = document.getElementById('endDate').value;
+        const days = Math.ceil((new Date(e_date) - new Date(s)) / (1000*60*60*24)) + 1;
+
+        if(days <= 0) { 
+            Swal.fire('Hata', 'Bitiş tarihi başlangıçtan önce olamaz.', 'error');
+            return; 
         }
 
-        function copyText(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                // Swal.fire({ icon: 'success', title: 'Kopyalandı', timer: 1000, showConfirmButton: false });
-                alert('Metin kopyalandı!');
+        btn.disabled = true; btn.innerText = "Gönderiliyor...";
+
+        const data = {
+            action: 'create',
+            id: Date.now(),
+            name: document.getElementById('name').value.trim(),
+            project: document.getElementById('project').value,
+            start: s, end: e_date, days: days,
+            type: document.getElementById('type').value,
+            reason: document.getElementById('reason').value,
+            status: 'tl_bekliyor'
+        };
+
+        fetch(API_URL, { method: "POST", body: JSON.stringify(data) })
+        .then(() => {
+            Swal.fire({
+                icon: 'success',
+                title: 'Başarılı!',
+                text: 'İzin talebiniz yönetici onayına gönderildi.',
+                timer: 3000,
+                showConfirmButton: false
+            });
+            document.getElementById('leaveForm').reset();
+            document.getElementById('dayPreview').innerText = "-";
+            btn.disabled = false; btn.innerText = "Talebi Gönder";
+        }).catch(err => { 
+            Swal.fire('Hata', 'Sunucu hatası: ' + err, 'error');
+            btn.disabled = false; 
+        });
+    }
+
+    function loadRequests(mode) {
+        let fetchUrl = API_URL;
+        if (mode === 'personel') {
+            const nameVal = document.getElementById('name').value.trim();
+            if(!nameVal) { Swal.fire('Uyarı','Lütfen önce yukarıya Ad Soyad giriniz.','warning'); return; }
+            fetchUrl += "?name=" + encodeURIComponent(nameVal);
+            
+            const historyTable = document.getElementById('personelHistoryTable');
+            const tbody = document.getElementById('personelTbody');
+            historyTable.classList.remove('hidden');
+            tbody.innerHTML = '<tr><td colspan="2" style="text-align:center; padding:20px;">⏳ Yükleniyor...</td></tr>';
+
+            fetch(fetchUrl).then(res => res.json()).then(data => {
+                tbody.innerHTML = '';
+                if(data.length === 0) { tbody.innerHTML = '<tr><td colspan="2" style="text-align:center; padding:10px; color:#94a3b8;">Kayıt bulunamadı.</td></tr>'; return; }
+                data.reverse().forEach(req => {
+                    let extraInfo = "";
+                    if(req.status === 'red' && req.reject_reason) extraInfo = `<br><span class="reject-reason">Sebep: ${req.reject_reason}</span>`;
+                    if(req.approver) extraInfo += `<div class="audit-info">📝 İşlem: ${req.approver}</div>`;
+
+                    tbody.innerHTML += `
+                        <tr>
+                            <td>${formatDate(req.start)} <small>(${req.days} gün)</small></td>
+                            <td>
+                                <span class="status st-${req.status}">${getStatusName(req.status)}</span>
+                                ${extraInfo}
+                            </td>
+                        </tr>
+                    `;
+                });
+            });
+        } else {
+            const loader = document.getElementById('loader');
+            const tbody = document.getElementById('tableBody');
+            loader.classList.remove('hidden');
+            tbody.innerHTML = '';
+
+            fetch(API_URL).then(res => res.json()).then(data => {
+                loader.classList.add('hidden');
+                if(data.length === 0) { tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding:20px;">Henüz talep yok.</td></tr>'; return; }
+                data.reverse().forEach(req => renderAdminRow(req, tbody));
             });
         }
+    }
 
-    </script>
+    function renderAdminRow(req, tbody) {
+        let actionHtml = '';
+        
+        if(currentRole === 'yonetici' && req.status === 'tl_bekliyor') {
+            actionHtml = `<button class="action-btn approve" onclick="updateStatus(${req.id}, 'ik_bekliyor')" title="Onayla">✔</button>
+                          <button class="action-btn reject" onclick="rejectRequest(${req.id})" title="Reddet">✖</button>`;
+        } else if(currentRole === 'ik' && req.status === 'ik_bekliyor') {
+            actionHtml = `<button class="action-btn approve" onclick="updateStatus(${req.id}, 'onaylandi')" title="Bitir">✔</button>
+                          <button class="action-btn reject" onclick="rejectRequest(${req.id})" title="Reddet">✖</button>`;
+        } else {
+            actionHtml = `<span class="status st-${req.status}">${getStatusName(req.status)}</span>`;
+        }
+
+        let details = "";
+        if(req.status === 'red' && req.reject_reason) {
+            details += `<span class="reject-reason">Red Nedeni: ${req.reject_reason}</span>`;
+        }
+        if(req.approver) {
+            details += `<div class="audit-info">📝 ${req.approver}</div>`;
+        }
+
+        const projectName = req.project ? req.project : "";
+
+        const row = `
+            <tr>
+                <td>
+                    <strong style="color:#1e293b;">${req.name}</strong><br>
+                    ${projectName ? `<span class="project-badge">${projectName}</span>` : ''}
+                </td>
+                <td>${formatDate(req.start)} <span class="day-badge">${req.days} G</span></td>
+                <td>
+                    ${req.type}<br>
+                    <small style="color:#64748b; font-style:italic;">"${req.reason}"</small>
+                </td>
+                <td>
+                    ${actionHtml}
+                    ${details}
+                </td>
+            </tr>
+        `;
+        tbody.innerHTML += row;
+    }
+
+    async function rejectRequest(id) {
+        const { value: reason } = await Swal.fire({
+            title: 'Reddetme Sebebi',
+            input: 'text',
+            inputLabel: 'Lütfen red sebebini giriniz:',
+            inputPlaceholder: 'Örn: Yoğunluk nedeniyle...',
+            showCancelButton: true,
+            confirmButtonColor: '#ef4444',
+            confirmButtonText: 'Reddet',
+            cancelButtonText: 'İptal',
+            inputValidator: (value) => {
+                if (!value) { return 'Sebep yazmanız gerekmektedir!' }
+            }
+        });
+
+        if (reason) {
+            updateStatus(id, 'red', reason);
+        }
+    }
+
+    function updateStatus(id, status, rejectReason = "") {
+        // Onaylama için de ufak bir teyit soralım (Red için zaten yukarıda sorduk)
+        if(status !== 'red') {
+             Swal.fire({
+                title: 'Emin misiniz?',
+                text: "Bu işlemi onaylıyor musunuz?",
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonColor: '#22c55e',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Evet, Onayla',
+                cancelButtonText: 'Vazgeç'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    executeStatusUpdate(id, status, rejectReason);
+                }
+            });
+        } else {
+            executeStatusUpdate(id, status, rejectReason);
+        }
+    }
+
+    function executeStatusUpdate(id, status, rejectReason) {
+        document.getElementById('loader').classList.remove('hidden');
+        
+        const payload = { 
+            action: 'update', 
+            id: id, 
+            status: status,
+            approver: currentAdminName, 
+            rejectReason: rejectReason  
+        };
+
+        fetch(API_URL, {
+            method: "POST",
+            body: JSON.stringify(payload)
+        }).then(() => {
+            loadRequests('admin');
+            const msg = status === 'red' ? 'Talep reddedildi.' : 'İşlem başarıyla tamamlandı.';
+            Swal.fire('Tamamlandı!', msg, 'success');
+        });
+    }
+
+    function formatDate(d) {
+        if(!d) return "";
+        return d.split('-').reverse().join('.');
+    }
+
+    function getStatusName(s) {
+        const map = { 'tl_bekliyor': 'TL Onayı', 'ik_bekliyor': 'İK Onayı', 'onaylandi': 'Tamamlandı', 'red': 'Reddedildi' };
+        return map[s] || s;
+    }
+</script>
 
 </body>
 </html>
