@@ -94,6 +94,7 @@
         }
         .lock-btn:hover { background: var(--secondary); color: var(--primary); transform: translateY(-2px); }
 
+
         /* ==============================
            ANA UYGULAMA STİLLERİ
            ============================== */
@@ -356,18 +357,6 @@
             margin-right: 4px;
         }
 
-        /* Bakım Modu Stili */
-        #maintenance-screen {
-            display: none; 
-            position: fixed;
-            top: 50%; left: 50%; 
-            transform: translate(-50%, -50%);
-            text-align: center; padding: 50px;
-            background: white; max-width: 600px; 
-            border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            z-index: 999;
-        }
-
     </style>
 </head>
 <body oncontextmenu="return false;">
@@ -380,16 +369,6 @@
             <input type="password" id="page-pass" class="lock-input" placeholder="Giriş Şifresi" onkeyup="checkEnter(event)">
             <button class="lock-btn" onclick="verifyPageAccess()">Giriş Yap</button>
         </div>
-    </div>
-
-    <div id="maintenance-screen">
-        <h1 style="font-size: 4em; margin-bottom: 15px;">👩‍🏫☕</h1>
-        <h2 style="color: #0e1b42; margin-bottom: 10px;">Sistem Mola Verdi!</h2>
-        <p style="color: #555; font-size: 1.2em; line-height: 1.6;">
-            Şu an pusulamızı yeniden kalibre ediyoruz.<br>
-            <strong>Esra Hoca'dan</strong> gelecek kritik bilgileri bekliyoruz... 🚀<br>
-            <span style="font-size: 0.9em; color: #888;">(Az sonra buradayız, panik yok!)</span>
-        </p>
     </div>
 
     <div id="main-app" style="display: none;">
@@ -445,21 +424,22 @@
         }
 
         // 🔑 ŞİFRE KONTROLÜ (HASH YÖNTEMİ)
-        // Şifre: "ssport+" hashlenmiş hali
-        const TARGET_HASH = -1256242481; 
-
-        // 🚧 BAKIM MODU AYARI (Açmak için true yapın)
-        const BAKIM_MODU = false; 
-
+        // Şifre: "ssport+"
+        // Bu şifrenin hashlenmiş hali kodda saklanır, böylece kaynak koda bakılsa bile şifre görülmez.
+        
+        // Basit Hash Fonksiyonu (Metni sayıya çevirir)
         function simpleHash(str) {
             let hash = 0;
             for (let i = 0; i < str.length; i++) {
                 const char = str.charCodeAt(i);
                 hash = (hash << 5) - hash + char;
-                hash = hash & hash; // 32bit integer
+                hash = hash & hash; // 32bit integer'a çevir
             }
             return hash;
         }
+
+        // "ssport+" şifresinin hash değeri: -1256242481
+        const TARGET_HASH = -1256242481; 
 
         function checkEnter(e) {
             if(e.key === "Enter") verifyPageAccess();
@@ -467,21 +447,14 @@
 
         function verifyPageAccess() {
             const input = document.getElementById('page-pass').value;
-            const inputHash = simpleHash(input);
+            const inputHash = simpleHash(input); // Girilen şifreyi hashle
 
             if (inputHash === TARGET_HASH) {
                 // Şifre Doğru
                 document.getElementById('page-lock-screen').style.display = 'none'; 
-                
-                if(BAKIM_MODU) {
-                    document.getElementById('maintenance-screen').style.display = 'block';
-                    document.body.style.background = "#f0f2f5 url('data:image/svg+xml,%3Csvg width=\\'20\\' height=\\'20\\' viewBox=\\'0 0 20 20\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cg fill=\\'%23d4d4d4\\' fill-opacity=\\'0.2\\' fill-rule=\\'evenodd\\'%3E%3Ccircle cx=\\'3\\' cy=\\'3\\' r=\\'3\\'/%3E%3Ccircle cx=\\'13\\' cy=\\'13\\' r=\\'3\\'/%3E%3C/g%3E%3C/svg%3E')";
-                } else {
-                    document.getElementById('main-app').style.display = 'block';
-                }
-
+                document.getElementById('main-app').style.display = 'block';
             } else {
-                // Şifre Yanlış
+                // Şifre Yanlış - SweetAlert ile uyarı
                 Swal.fire({
                     icon: 'error',
                     title: 'Hatalı Şifre',
@@ -502,7 +475,7 @@
                 type: "iade",
                 tags: ["red", "thh", "cayma"],
                 text: "Kullanıcı aylık/yıllık paket almış ve içerik izlemişse (genel arıza yoksa) iade REDDEDİLİR. THH tehdidi olsa bile süreç başlatılmaz.",
-                [cite_start]script: "Hizmetimizden aktif olarak faydalandığınız için iade prosedürlerimiz gereği talebinize olumlu yanıt veremiyoruz. Ancak iptal talebinizi alabilirim, dönem sonuna kadar izlemeye devam edebilirsiniz. [cite: 846]"
+                script: "Hizmetimizden aktif olarak faydalandığınız için iade prosedürlerimiz gereği talebinize olumlu yanıt veremiyoruz. Ancak iptal talebinizi alabilirim, dönem sonuna kadar izlemeye devam edebilirsiniz."
             },
             {
                 title: "İade: Aylık Paket (İzlememiş)",
@@ -510,7 +483,7 @@
                 type: "iade",
                 tags: ["izlememiş", "indirim", "6ay50"],
                 text: "Yenilenmiş/Satın alınmış aylık paket + İzleme YOK. Önce %50 indirim teklif et.",
-                script: "Memnuniyetiniz adına dilerseniz '6AY50' kodu ile üyeliğinize 139.5 TL indirim tanımlayabiliriz. [cite_start]Kabul etmezseniz iade sürecini başlatabilirim. [cite: 850]",
+                script: "Memnuniyetiniz adına dilerseniz '6AY50' kodu ile üyeliğinize 139.5 TL indirim tanımlayabiliriz. Kabul etmezseniz iade sürecini başlatabilirim.",
                 code: "6AY50"
             },
             {
@@ -519,7 +492,7 @@
                 type: "iade",
                 tags: ["yıllık", "izlememiş", "yıllıkloca"],
                 text: "Yıllık paket yenilenmiş + İzleme YOK. 1. YILLIKLOCA (indirim) öner. 2. Aylığa geçiş öner. 3. Tam iade.",
-                script: "Dilerseniz 'YILLIKLOCA' kampanyası ile indirim sağlayalım. [cite_start]Ya da paketinizi aylığa çevirip kalan tutarı iade edelim. [cite: 857, 858, 859]",
+                script: "Dilerseniz 'YILLIKLOCA' kampanyası ile indirim sağlayalım. Ya da paketinizi aylığa çevirip kalan tutarı iade edelim.",
                 code: "YILLIKLOCA"
             },
             {
@@ -528,7 +501,7 @@
                 type: "iade",
                 tags: ["çift çekim", "fazla ödeme"],
                 text: "Aynı ay içinde 2 farklı hesap/çekim. IP ve Cihaz AYNI ise iade yapılır. Cihaz FARKLI ve izleme varsa RED. (15 gün içinde ulaşmalı)",
-                [cite_start]script: "Kontrollerimde mükerrer çekim olduğunu görüntüledim, kullanılmayan hesabınızın iadesini sağlıyorum. [cite: 872, 873, 874]"
+                script: "Kontrollerimde mükerrer çekim olduğunu görüntüledim, kullanılmayan hesabınızın iadesini sağlıyorum."
             },
             {
                 title: "İade: Aynı Gün Yıllık Alım (Hataen)",
@@ -536,7 +509,7 @@
                 type: "iade",
                 tags: ["yanlışlık", "aylık üstüne yıllık"],
                 text: "Aylık paketi varken aynı gün yanlışlıkla yıllık aldıysa (24 saat içinde dönerse) 1 defaya mahsus yıllık iade edilir.",
-                [cite_start]script: "Bir defaya mahsus olmak üzere memnuniyetiniz adına yıllık paket işleminizi iptal edip iadenizi sağlıyorum. [cite: 876, 877]"
+                script: "Bir defaya mahsus olmak üzere memnuniyetiniz adına yıllık paket işleminizi iptal edip iadenizi sağlıyorum."
             },
             {
                 title: "İade: YILLIKLOCA Fark İadesi",
@@ -544,7 +517,7 @@
                 type: "iade",
                 tags: ["fark iadesi", "kampanya"],
                 text: "Müşteri 'Sitede daha ucuz, bana YILLIKLOCA yapın' derse defansa geçmeden aradaki fark iade edilir.",
-                script: "Memnuniyetiniz adına aradaki farkı kartınıza iade ediyorum. [cite_start]İyi seyirler dilerim. [cite: 895, 896]"
+                script: "Memnuniyetiniz adına aradaki farkı kartınıza iade ediyorum. İyi seyirler dilerim."
             },
             {
                 title: "İade: Winback Sonrası Talep",
@@ -552,7 +525,7 @@
                 type: "iade",
                 tags: ["winback", "iptal teklifi"],
                 text: "Yıllık paket alıp iptal ederken indirimli (Winback) paket alırsa, sadece 2. paket (indirimli olan) iade edilebilir.",
-                [cite_start]script: "Memnuniyetiniz kapsamında son aldığınız indirimli paketin iadesini sağlayabilirim. [cite: 883, 884]"
+                script: "Memnuniyetiniz kapsamında son aldığınız indirimli paketin iadesini sağlayabilirim."
             },
             {
                 title: "Kısa Bilgi: Cayma Hakkı",
@@ -560,7 +533,7 @@
                 type: "bilgi",
                 tags: ["yasal", "sözleşme"],
                 text: "Dijital hizmet olduğu için yasal cayma hakkı yoktur.",
-                [cite_start]script: "S Sport Plus İçerik Hizmeti, anında ifa edilen gayri-maddi mal niteliğinde olduğundan yasal cayma hakkı kapsamına girmemektedir. [cite: 953]",
+                script: "S Sport Plus İçerik Hizmeti, anında ifa edilen gayri-maddi mal niteliğinde olduğundan yasal cayma hakkı kapsamına girmemektedir.",
                 code: "caymahakkı"
             },
 
@@ -571,7 +544,7 @@
                 type: "teknik",
                 tags: ["televizyon", "takılma", "smart tv"],
                 text: "1. Genel Arıza Kontrolü. 2. TV ve Modemi fişten çekip 10sn bekle. 3. Hız testi iste (8Mbps altı ise ISS).",
-                script: "TV ve modeminizi fişten çekip 10 saniye bekledikten sonra takabilir misiniz? [cite_start]Düzelmezse TV tarayıcısından hiztesti.com.tr sonucu paylaşmanızı rica ederim. [cite: 101, 103, 104]",
+                script: "TV ve modeminizi fişten çekip 10 saniye bekledikten sonra takabilir misiniz? Düzelmezse TV tarayıcısından hiztesti.com.tr sonucu paylaşmanızı rica ederim.",
                 link: "https://www.hiztesti.com.tr/"
             },
             {
@@ -580,7 +553,7 @@
                 type: "teknik",
                 tags: ["cep telefonu", "android", "ios"],
                 text: "Mobil veride dene. Düzelirse Wifi sorunu. Düzelmezse: Uygulama Önbelleğini Temizle / Sil-Yükle.",
-                script: "Uygulama önbelleğini temizleyip veya silip tekrar yükleyerek deneyebilir misiniz? [cite_start]Sorun devam ederse mobil veri ile kontrol edelim. [cite: 116, 917]"
+                script: "Uygulama önbelleğini temizleyip veya silip tekrar yükleyerek deneyebilir misiniz? Sorun devam ederse mobil veri ile kontrol edelim."
             },
             {
                 title: "Teknik: Bilgisayar Donma Sorunu",
@@ -588,7 +561,7 @@
                 type: "teknik",
                 tags: ["pc", "web", "ping"],
                 text: "Hız testi 8mbps+ ise Ping testi yaptır (CMD -> ping cdn.ssportplus.com). 35ms üstü ise DNS/Host değişikliği önerilebilir.",
-                script: "Tarayıcınızda çözünürlüğü Auto yerine 720p/1080p seçip deneyebilir misiniz? [cite_start]Arka planda indirme yapan uygulama varsa kapatmanızı öneririm. [cite: 132, 926, 929]"
+                script: "Tarayıcınızda çözünürlüğü Auto yerine 720p/1080p seçip deneyebilir misiniz? Arka planda indirme yapan uygulama varsa kapatmanızı öneririm."
             },
             {
                 title: "Hata: 'Beklenmedik Bir Kesinti Oluştu'",
@@ -596,7 +569,7 @@
                 type: "teknik",
                 tags: ["vpn", "yurt dışı", "erişim"],
                 text: "Genellikle Yurt Dışı IP'si veya VPN kullanımında çıkar. IP kontrolü yap (wizcase/vpnapi).",
-                script: "Lisans hakları sebebiyle yayınlarımız sadece Türkiye sınırları içindedir. [cite_start]VPN açıksa kapatmanızı, yurt dışındaysanız erişemeyeceğinizi belirtmek isterim. [cite: 153, 156, 166]",
+                script: "Lisans hakları sebebiyle yayınlarımız sadece Türkiye sınırları içindedir. VPN açıksa kapatmanızı, yurt dışındaysanız erişemeyeceğinizi belirtmek isterim.",
                 link: "https://tr.wizcase.com/tools/whats-my-ip/"
             },
             {
@@ -605,7 +578,7 @@
                 type: "teknik",
                 tags: ["apple", "google", "store", "aktivasyon"],
                 text: "Cihazdaki Store hesabı (Apple/Google) farklı bir S Sport Plus maili ile eşleşmiş. Loglardan 'OwnerID' kontrol et.",
-                script: "Cihazınızdaki mağaza hesabı ile daha önce farklı bir e-posta adresiyle üyelik başlatmışsınız. [cite_start]Diğer mail adresinizle giriş yapmayı deneyiniz. [cite: 216, 217]"
+                script: "Cihazınızdaki mağaza hesabı ile daha önce farklı bir e-posta adresiyle üyelik başlatmışsınız. Diğer mail adresinizle giriş yapmayı deneyiniz."
             },
             {
                 title: "Hata: Samsung TV 'Yüklenemiyor'",
@@ -613,7 +586,7 @@
                 type: "teknik",
                 tags: ["samsung", "smart tv", "açılmıyor"],
                 text: "Samsung TV'lerde 'Güvenli Mod' açıksa bu hatayı verir. Modemi/TV'yi kapatıp açtır. ISS'den Güvenli Modu kapattır.",
-                [cite_start]script: "İnternet ayarlarınızda 'Güvenli Mod' açık olabilir, servis sağlayıcınızla görüşüp kapatmanızı rica ederim. [cite: 245, 246]"
+                script: "İnternet ayarlarınızda 'Güvenli Mod' açık olabilir, servis sağlayıcınızla görüşüp kapatmanızı rica ederim."
             },
             {
                 title: "Hata: Promosyon Kodu Bulunamadı",
@@ -621,7 +594,7 @@
                 type: "teknik",
                 tags: ["kod hatası", "kampanya"],
                 text: "Kodlar büyük/küçük harf duyarlıdır. Boşluk bırakılmış veya küçük harf yazılmış olabilir.",
-                script: "Kodlar büyük harf duyarlıdır. [cite_start]Lütfen kodu kopyalayıp yapıştırarak, boşluk bırakmadan ve büyük harflerle tekrar deneyiniz. [cite: 183, 184]"
+                script: "Kodlar büyük harf duyarlıdır. Lütfen kodu kopyalayıp yapıştırarak, boşluk bırakmadan ve büyük harflerle tekrar deneyiniz."
             },
             {
                 title: "CRM: IP Karantina Kaldırma",
@@ -629,7 +602,7 @@
                 type: "teknik",
                 tags: ["ip blok", "giriş hatası"],
                 text: "TVManager > CMS > Admission Gate menüsünden IP kontrol edilir ve 'Release' butonuna basılır.",
-                script: "Güvenlik duvarı IP adresinizi bloklamış, şu an kaldırdım. [cite_start]Lütfen modeminizi kapatıp açarak tekrar deneyiniz. [cite: 177, 681]"
+                script: "Güvenlik duvarı IP adresinizi bloklamış, şu an kaldırdım. Lütfen modeminizi kapatıp açarak tekrar deneyiniz."
             },
             {
                 title: "Hata: Ses Var Görüntü Yok (Siyah Ekran)",
@@ -637,7 +610,7 @@
                 type: "teknik",
                 tags: ["siyah ekran", "görüntü"],
                 text: "Genelde HDMI kablo, tarayıcı eklentisi veya eski sürüm kaynaklıdır. Uygulamayı güncelle, kabloyu kontrol et.",
-                script: "Uygulamanızın güncel olduğundan emin olun. [cite_start]Tarayıcıdaysanız reklam engelleyici eklentileri kapatıp deneyiniz. [cite: 40, 68]"
+                script: "Uygulamanızın güncel olduğundan emin olun. Tarayıcıdaysanız reklam engelleyici eklentileri kapatıp deneyiniz."
             },
 
             // --- İKNA & CHURN ---
@@ -647,7 +620,7 @@
                 type: "ikna",
                 tags: ["pahalı", "ücret"],
                 text: "Günlük maliyet vurgusu yap. 6AY50 teklif et.",
-                script: "S Sport Plus'ta günlük sadece 4,65 TL'ye (bir kahve fiyatına) EuroLeague, NBA ve La Liga gibi dev organizasyonları izleyebilirsiniz. [cite_start]Dilerseniz 6AY50 kodu ile %50 indirim tanımlayalım. [cite: 814, 815, 816]"
+                script: "S Sport Plus'ta günlük sadece 4,65 TL'ye (bir kahve fiyatına) EuroLeague, NBA ve La Liga gibi dev organizasyonları izleyebilirsiniz. Dilerseniz 6AY50 kodu ile %50 indirim tanımlayalım."
             },
             {
                 title: "İkna: Sabit Fiyat Garantisi",
@@ -655,7 +628,7 @@
                 type: "ikna",
                 tags: ["zam", "fiyat artışı"],
                 text: "Gelecek zamlardan etkilenmemesi için yıllık paket veya indirim öner.",
-                script: "Fiyat artışlarından etkilenmeden 6 ay boyunca aynı ücretle izlemeye devam edebilirsiniz. [cite_start]Bu teklif sadece görüşmemize özeldir. [cite: 817, 830]"
+                script: "Fiyat artışlarından etkilenmeden 6 ay boyunca aynı ücretle izlemeye devam edebilirsiniz. Bu teklif sadece görüşmemize özeldir."
             },
             {
                 title: "İkna: İçerik Çeşitliliği (Aile)",
@@ -663,7 +636,7 @@
                 type: "ikna",
                 tags: ["sadece spor", "çocuk"],
                 text: "Sadece spor değil, belgesel, çocuk ve film kanalları vurgusu.",
-                script: "Platformumuz sadece spor değil; belgesel, çocuk ve yaşam kanallarıyla aileniz için de zengin bir içerik sunar. [cite_start]Çocuğunuz çizgi film izlerken siz maç keyfi yapabilirsiniz. [cite: 835, 836]"
+                script: "Platformumuz sadece spor değil; belgesel, çocuk ve yaşam kanallarıyla aileniz için de zengin bir içerik sunar. Çocuğunuz çizgi film izlerken siz maç keyfi yapabilirsiniz."
             },
             {
                 title: "İkna: Maç Kaçırma Derdine Son",
@@ -671,7 +644,7 @@
                 type: "ikna",
                 tags: ["zamanım yok", "izleyemiyorum"],
                 text: "Geri Al İzle ve Tekrar İzle özellikleri vurgulanır.",
-                script: "Canlı yayını kaçırsanız bile 'Tekrar İzle' özelliği ile maçları dilediğiniz zaman izleyebilirsiniz. [cite_start]Ayrıca yayını 24 saate kadar geri alabilirsiniz. [cite: 399, 401, 822]"
+                script: "Canlı yayını kaçırsanız bile 'Tekrar İzle' özelliği ile maçları dilediğiniz zaman izleyebilirsiniz. Ayrıca yayını 24 saate kadar geri alabilirsiniz."
             },
 
             // --- KAMPANYALAR ---
@@ -681,7 +654,7 @@
                 type: "kampanya",
                 tags: ["yıllık indirim", "web özel"],
                 text: "Yıllık pakette indirim sağlar. Sadece Web sitesinden alımlarda geçerlidir.",
-                [cite_start]script: "Web sitemiz üzerinden 'YILLIKLOCA' kodunu kullanarak yıllık paketi 1499 TL avantajlı fiyatıyla alabilirsiniz. [cite: 183, 857, 962]",
+                script: "Web sitemiz üzerinden 'YILLIKLOCA' kodunu kullanarak yıllık paketi 1499 TL avantajlı fiyatıyla alabilirsiniz.",
                 code: "YILLIKLOCA"
             },
             {
@@ -690,7 +663,7 @@
                 type: "kampanya",
                 tags: ["yarı fiyatına", "aylık"],
                 text: "Aylık paketi iptal etmek isteyene %50 indirim (139.5 TL) teklifi.",
-                [cite_start]script: "Aboneliğinizi iptal etmek yerine '6AY50' kodu ile önümüzdeki ay için %50 indirimli devam etmenizi sağlayabilirim. [cite: 850, 831]",
+                script: "Aboneliğinizi iptal etmek yerine '6AY50' kodu ile önümüzdeki ay için %50 indirimli devam etmenizi sağlayabilirim.",
                 code: "6AY50"
             },
             {
@@ -710,7 +683,7 @@
                 type: "bilgi",
                 tags: ["gecikme", "delay"],
                 text: "İnternet tabanlı yayın olduğu için uyduya göre 30-40 sn gecikme normaldir.",
-                [cite_start]script: "Dijital platformlarda sinyal işleme süresi nedeniyle uydu yayınına göre bir miktar (30-40 sn) gecikme olması teknolojinin doğası gereği normaldir. [cite: 237, 238, 239]"
+                script: "Dijital platformlarda sinyal işleme süresi nedeniyle uydu yayınına göre bir miktar (30-40 sn) gecikme olması teknolojinin doğası gereği normaldir."
             },
             {
                 title: "Bilgi: Cihaz Sınırı (Aynı Anda İzleme)",
@@ -718,7 +691,7 @@
                 type: "bilgi",
                 tags: ["kaç ekran", "paylaşım"],
                 text: "Farklı cihazlardan giriş yapılabilir ama AYNI ANDA sadece 1 cihazdan izlenebilir.",
-                [cite_start]script: "Üyeliğinizle farklı cihazlardan giriş yapabilirsiniz ancak aynı anda sadece tek bir ekrandan yayın izleyebilirsiniz. [cite: 364, 803]"
+                script: "Üyeliğinizle farklı cihazlardan giriş yapabilirsiniz ancak aynı anda sadece tek bir ekrandan yayın izleyebilirsiniz."
             },
             {
                 title: "Bilgi: Paket Fiyatları (2025)",
@@ -726,7 +699,7 @@
                 type: "bilgi",
                 tags: ["ücret", "fiyat"],
                 text: "Aylık: 279 TL | Yıllık: 1799 TL (05.06.2025 itibariyle güncel)",
-                script: "Güncel fiyatlarımız; Aylık paket 279 TL, Yıllık paket ise 1799 TL'dir. [cite_start]Yıllık alımda aylık maliyet 149 TL'ye gelmektedir. [cite: 643]"
+                script: "Güncel fiyatlarımız; Aylık paket 279 TL, Yıllık paket ise 1799 TL'dir. Yıllık alımda aylık maliyet 149 TL'ye gelmektedir."
             },
             {
                 title: "Bilgi: Desteklenen Cihazlar",
@@ -734,7 +707,7 @@
                 type: "bilgi",
                 tags: ["smart tv", "hangi cihaz"],
                 text: "Android TV, Apple TV, Samsung (2017+), LG (WebOS 3.0+), Xbox, Chromecast, iOS, Android, Web.",
-                [cite_start]script: "Samsung (2017+), LG (WebOS 3.0+), Android TV, Apple TV, Chromecast, Xbox ve tüm mobil cihazlar/web tarayıcıları üzerinden izleyebilirsiniz. [cite: 282, 442]"
+                script: "Samsung (2017+), LG (WebOS 3.0+), Android TV, Apple TV, Chromecast, Xbox ve tüm mobil cihazlar/web tarayıcıları üzerinden izleyebilirsiniz."
             },
             {
                 title: "İletişim: Müşteri Hizmetleri",
@@ -742,7 +715,7 @@
                 type: "bilgi",
                 tags: ["whatsapp", "mail"],
                 text: "WhatsApp: 0850 532 4 777 | Mail: destek@ssportplus.com | Canlı Destek (09:00-02:00)",
-                [cite_start]script: "Bize 0850 532 4 777 WhatsApp hattımızdan veya destek@ssportplus.com adresinden 7/24 ulaşabilirsiniz. [cite: 253, 793]"
+                script: "Bize 0850 532 4 777 WhatsApp hattımızdan veya destek@ssportplus.com adresinden 7/24 ulaşabilirsiniz."
             },
             {
                 title: "Kısayol: Web İptal Linki",
@@ -750,7 +723,7 @@
                 type: "bilgi",
                 tags: ["link", "yönlendirme"],
                 text: "Üyelik Bilgileri > Paket Bilgisi > İptal Et adımları.",
-                [cite_start]script: "Aboneliğinizi https://app.ssportplus.com/login adresinden giriş yapıp 'Üyelik Bilgileri > Paket Bilgisi' menüsünden iptal edebilirsiniz. [cite: 586, 949]",
+                script: "Aboneliğinizi https://app.ssportplus.com/login adresinden giriş yapıp 'Üyelik Bilgileri > Paket Bilgisi' menüsünden iptal edebilirsiniz.",
                 link: "https://app.ssportplus.com/login"
             },
             {
@@ -759,7 +732,7 @@
                 type: "bilgi",
                 tags: ["maçlar", "yayın"],
                 text: "Euroleague, NBA, La Liga, Serie A, Bundesliga, UFC, MotoGP, Formula 1 (Dönemsel kontrol et), NFL.",
-                [cite_start]script: "S Sport Plus'ta EuroLeague, NBA, La Liga, Serie A, Bundesliga, UFC, MotoGP ve daha birçok premium spor organizasyonunu izleyebilirsiniz. [cite: 287, 288, 305, 309, 314]"
+                script: "S Sport Plus'ta EuroLeague, NBA, La Liga, Serie A, Bundesliga, UFC, MotoGP ve daha birçok premium spor organizasyonunu izleyebilirsiniz."
             },
             {
                 title: "Bilgi: İletişim İzni Alma",
@@ -767,7 +740,7 @@
                 type: "bilgi",
                 tags: ["kvkk", "izin"],
                 text: "Kullanıcıdan kampanya iletişimi için onay istenir.",
-                [cite_start]script: "Size özel kampanya ve fırsatlardan haberdar olabilmeniz için iletişim izinlerinizi onaylıyor musunuz? [cite: 940]"
+                script: "Size özel kampanya ve fırsatlardan haberdar olabilmeniz için iletişim izinlerinizi onaylıyor musunuz?"
             }
         ];
 
