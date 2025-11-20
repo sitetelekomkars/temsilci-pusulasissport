@@ -3,887 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S Sport Plus - Temsilci Bilgi Merkezi (PRO)</title>
+    <title>S Sport Plus - Temsilci Bilgi Merkezi</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
-        :root {
-            --primary: #0e1b42; /* S Sport Lacivert */
-            --secondary: #fabb00; /* S Sport Sarı */
-            --accent: #d32f2f; /* Kırmızı (Hata/İade Red) */
-            --success: #2e7d32; /* Yeşil (İade Onay/Kampanya) */
-            --info: #0288d1; /* Mavi (Bilgi) */
-            --warning: #ed6c02; /* Turuncu (İkna/Dikkat) */
-            --bg: #f0f2f5;
-            --card-bg: #ffffff;
-        }
-        
         body {
-            font-family: 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
-            background-color: var(--bg);
-            color: #333;
             margin: 0;
             padding: 0;
-            /* Metin seçimini engelle (Güvenlik) */
-            -webkit-user-select: none; 
-            -moz-user-select: none; 
-            -ms-user-select: none; 
-            user-select: none; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            height: 100vh;
+            overflow: hidden;
         }
 
-        /* ==============================
-           GİRİŞ KİLİT EKRANI STİLİ
-           ============================== */
-        #page-lock-screen {
+        /* === 1. GİRİŞ EKRANI (EN ÜSTTE) === */
+        #login-screen {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%);
+            background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%);
             display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 9999;
+            z-index: 3000; /* En yüksek katman */
         }
-        .lock-card {
+
+        .login-card {
             background: white;
             padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border-radius: 15px;
             text-align: center;
+            width: 300px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        .login-card h2 { color: #0e1b42; margin: 10px 0; }
+        
+        .login-input {
             width: 100%;
-            max-width: 380px;
-        }
-        .lock-logo {
-            font-size: 4rem;
-            color: var(--secondary);
-            margin-bottom: 10px;
-        }
-        .lock-title {
-            color: var(--primary);
-            margin: 10px 0 5px 0;
-            font-size: 1.5rem;
-            font-weight: 800;
-        }
-        .lock-subtitle {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 25px;
-        }
-        .lock-input {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 20px;
-            border: 2px solid #e2e8f0;
-            border-radius: 10px;
-            font-size: 1.1em;
+            padding: 12px;
+            margin: 15px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
             text-align: center;
-            transition: 0.3s;
             box-sizing: border-box;
-            /* Giriş kutusunda metin seçimine izin ver */
-            -webkit-user-select: text; 
-            user-select: text;
         }
-        .lock-input:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 3px rgba(14, 27, 66, 0.1); }
-        .lock-btn {
+
+        .login-btn {
             width: 100%;
-            padding: 15px;
-            background: var(--primary);
-            color: white;
+            padding: 12px;
+            background: #fabb00; /* SARI BUTON */
+            color: #0e1b42;
             border: none;
-            border-radius: 10px;
-            font-size: 1.1em;
+            border-radius: 8px;
+            font-size: 16px;
             font-weight: bold;
             cursor: pointer;
             transition: 0.3s;
         }
-        .lock-btn:hover { background: var(--secondary); color: var(--primary); transform: translateY(-2px); }
+        .login-btn:hover { background: #e0a800; }
+        
+        #error-msg {
+            color: red;
+            margin-top: 10px;
+            font-size: 14px;
+            display: none;
+        }
 
-        /* ==============================
-           BAKIM MODU EKRANI STİLİ
-           ============================== */
+        /* === 2. BAKIM EKRANI (GİRİŞTEN SONRA GELECEK) === */
         #maintenance-screen {
-            display: none; /* JS ile kontrol edilecek */
+            display: none; /* Başlangıçta gizli */
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: #f0f2f5;
-            z-index: 9998; /* Kilidin altında, panelin üstünde */
+            background: #f4f6f9;
+            z-index: 2000; /* Girişin altında, panelin üstünde */
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
         }
-        .maintenance-card {
+
+        .maintenance-content {
             background: white;
             padding: 50px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             max-width: 600px;
-            margin: 20px;
         }
 
-        /* ==============================
-           ANA UYGULAMA STİLLERİ
-           ============================== */
-
-        /* Header Area */
-        .header {
-            background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%);
-            color: white;
-            padding: 20px 30px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+        .emoji-icon { font-size: 5rem; margin-bottom: 20px; display: block; }
         
-        .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 1.5rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+        .maintenance-content h1 { color: #0e1b42; margin-bottom: 15px; }
         
-        .header h1 i { color: var(--secondary); }
-
-        /* Search Bar */
-        .search-container {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        #searchInput {
-            width: 100%;
-            padding: 12px 20px;
-            padding-left: 45px;
-            font-size: 16px;
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            outline: none;
-            transition: all 0.3s;
-            box-sizing: border-box;
-            /* Arama kutusunda metin seçimine izin ver */
-            -webkit-user-select: text; 
-            user-select: text;
-        }
-        
-        #searchInput:focus {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            transform: translateY(-1px);
-        }
-
-        .search-icon {
-            position: absolute;
-            left: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #666;
-        }
-
-        /* Filters */
-        .filter-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 15px;
-            padding-bottom: 5px;
-        }
-
-        .filter-btn {
-            background: rgba(255,255,255,0.15);
-            border: 1px solid rgba(255,255,255,0.2);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .filter-btn:hover { background: rgba(255,255,255,0.3); }
-        
-        .filter-btn.active {
-            background: var(--secondary);
-            color: var(--primary);
-            font-weight: 600;
-            border-color: var(--secondary);
-            box-shadow: 0 2px 8px rgba(250, 187, 0, 0.4);
-        }
-
-        /* Content Grid */
-        .container {
-            padding: 20px;
-            max-width: 1600px;
-            margin: 0 auto;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            gap: 20px;
-        }
-
-        /* Card Styles */
-        .card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-            border-left: 5px solid var(--info);
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.2s, box-shadow 0.2s;
-            position: relative;
-            /* Kart içinde metin seçimine izin ver */
-            -webkit-user-select: text; 
-            user-select: text;
-        }
-
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-        }
-
-        /* Category Colors */
-        .card.teknik { border-left-color: var(--primary); }
-        .card.iade { border-left-color: var(--accent); }
-        .card.ikna { border-left-color: var(--warning); }
-        .card.kampanya { border-left-color: var(--success); }
-        .card.bilgi { border-left-color: var(--info); }
-
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 12px;
-        }
-
-        .card-title {
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: #2c3e50;
-            margin: 0;
-            line-height: 1.4;
-        }
-
-        .badge {
-            font-size: 0.75rem;
-            padding: 4px 8px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .badge.teknik { background: #e8eaf6; color: var(--primary); }
-        .badge.iade { background: #ffebee; color: var(--accent); }
-        .badge.ikna { background: #fff3e0; color: var(--warning); }
-        .badge.kampanya { background: #e8f5e9; color: var(--success); }
-        .badge.bilgi { background: #e1f5fe; color: var(--info); }
-
-        .card-content {
-            font-size: 0.95rem;
+        .maintenance-content p {
+            font-size: 1.2rem;
             color: #555;
-            margin-bottom: 15px;
-            line-height: 1.5;
-            flex-grow: 1;
+            line-height: 1.6;
         }
 
-        .script-box {
-            background: #fffdeb;
-            border: 1px solid #f0e68c;
-            padding: 12px;
-            border-radius: 8px;
+        .sub-text {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #888;
             font-style: italic;
-            color: #444;
-            margin-top: auto;
-            position: relative;
-            font-size: 0.92rem;
         }
 
-        .script-box::before {
-            content: '\f10d'; /* quote icon */
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            top: -8px;
-            left: 10px;
-            background: #fffdeb;
-            padding: 0 5px;
-            color: #f0e68c;
-        }
-
-        .card-actions {
-            margin-top: 12px;
-            display: flex;
-            justify-content: flex-end;
-            gap: 8px;
-            align-items: center;
-        }
-
-        .btn {
-            border: none;
-            padding: 6px 12px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            font-weight: 600;
-            transition: 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .btn-copy {
-            background: var(--primary);
-            color: white;
-        }
-        .btn-copy:hover { background: #1a2f6e; }
-        
-        .btn-copy:active { transform: scale(0.95); }
-
-        .btn-link {
-            background: transparent;
-            color: var(--info);
-            border: 1px solid var(--info);
-            text-decoration: none;
-        }
-        .btn-link:hover { background: #e1f5fe; }
-
-        /* Highlight Text */
-        .highlight {
-            background-color: yellow;
-            font-weight: bold;
-        }
-        
-        .tag-container {
-            margin-top: 5px;
-        }
-        .tag {
-            display: inline-block;
-            background: #eee;
-            border-radius: 4px;
-            padding: 2px 6px;
-            font-size: 0.7rem;
-            color: #666;
-            margin-right: 4px;
-        }
+        /* === 3. ANA PANEL (ŞU AN GİZLİ) === */
+        #main-app { display: none; }
 
     </style>
 </head>
-<body oncontextmenu="return false;">
+<body>
 
-    <div id="page-lock-screen">
-        <div class="lock-card">
-            <div class="lock-logo"><i class="fas fa-shield-alt"></i></div>
-            <h2 class="lock-title">S Sport Plus</h2>
-            <p class="lock-subtitle">Temsilci Bilgi Merkezi</p>
-            <input type="password" id="page-pass" class="lock-input" placeholder="Giriş Şifresi" onkeyup="checkEnter(event)">
-            <button class="lock-btn" onclick="verifyPageAccess()">Giriş Yap</button>
+    <div id="login-screen">
+        <div class="login-card">
+            <i class="fas fa-lock fa-3x" style="color: #0e1b42;"></i>
+            <h2>S Sport Plus</h2>
+            <p>Temsilci Girişi</p>
+            <input type="password" id="passInput" class="login-input" placeholder="Şifre" onkeyup="enterBas(event)">
+            <button class="login-btn" onclick="girisYap()">Giriş Yap</button>
+            <p id="error-msg">Hatalı Şifre!</p>
         </div>
     </div>
 
     <div id="maintenance-screen">
-        <div class="maintenance-card">
-            <h1 style="font-size: 4em; margin: 0 0 15px 0;">👩‍🏫☕</h1>
-            <h2 style="color: #0e1b42; margin-bottom: 10px;">Sistem Mola Verdi!</h2>
-            <p style="color: #555; font-size: 1.2em; line-height: 1.6;">
+        <div class="maintenance-content">
+            <span class="emoji-icon">👩‍🏫☕</span>
+            <h1>Sistem Mola Verdi!</h1>
+            <p>
                 Şu an pusulamızı yeniden kalibre ediyoruz.<br>
-                <strong>Esra Hoca'dan</strong> gelecek kritik bilgileri bekliyoruz... 🚀<br>
-                <span style="font-size: 0.9em; color: #888;">(Az sonra buradayız, panik yok!)</span>
+                <strong>Esra Hoca'dan</strong> gelecek kritik bilgileri bekliyoruz... 🚀
             </p>
+            <span class="sub-text">(Az sonra buradayız, panik yok!)</span>
         </div>
     </div>
 
-    <div id="main-app" style="display: none;">
-        <div class="header">
-            <div class="header-top">
-                <h1><i class="fas fa-compass"></i> S Sport Plus - Temsilci Pusulası</h1>
-                <div style="font-size: 0.9rem; opacity: 0.8;">Veri Kaynağı: 2025 Dökümanları</div>
-            </div>
-
-            <div class="search-container">
-                <i class="fas fa-search search-icon"></i>
-                <input type="text" id="searchInput" placeholder="Hızlı Ara: 'Donma', 'İade Red', 'Samsung Hata', 'Euroleague', 'Fiyat'..." onkeyup="filterContent()">
-            </div>
-
-            <div class="filter-container">
-                <button class="filter-btn active" onclick="filterCategory('all')"><i class="fas fa-th"></i> Tümü</button>
-                <button class="filter-btn" onclick="filterCategory('Teknik')"><i class="fas fa-wrench"></i> Teknik & Hata</button>
-                <button class="filter-btn" onclick="filterCategory('İade')"><i class="fas fa-undo"></i> İade & Finans</button>
-                <button class="filter-btn" onclick="filterCategory('İkna')"><i class="fas fa-heart"></i> İkna & Churn</button>
-                <button class="filter-btn" onclick="filterCategory('Kampanya')"><i class="fas fa-gift"></i> Kampanyalar</button>
-                <button class="filter-btn" onclick="filterCategory('Bilgi')"><i class="fas fa-info-circle"></i> Genel Bilgi</button>
-            </div>
+    <div id="main-app">
         </div>
-
-        <div class="container">
-            <div class="grid" id="cardGrid">
-                </div>
-        </div>
-    </div>
 
     <script>
-        // ==========================================
-        // 🔒 GÜVENLİK & ENGELLEME SCRIPTLERI
-        // ==========================================
-        
-        // F12, Ctrl+Shift+I, Ctrl+U Engelleme
-        document.onkeydown = function(e) {
-            if(event.keyCode == 123) { // F12
-                return false;
-            }
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl+Shift+I
-                return false;
-            }
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { // Ctrl+Shift+C
-                return false;
-            }
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl+Shift+J
-                return false;
-            }
-            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U
-                return false;
-            }
-        }
+        // ŞİFRE BURADA (Küçük harfle)
+        const DOGRU_SIFRE = "ssport+";
 
-        // 🔑 ŞİFRE KONTROLÜ (HASH YÖNTEMİ)
-        // Şifre: "ssport+" (Hash değeri: -1256242481)
-        const TARGET_HASH = -1256242481; 
+        function girisYap() {
+            var girilen = document.getElementById("passInput").value;
+            var hataMesaji = document.getElementById("error-msg");
 
-        // 🚧 BAKIM MODU AYARI (Açmak için true yapın)
-        // TRUE = Şifre sonrası Esra Hoca ekranı gelir.
-        // FALSE = Şifre sonrası Panel açılır.
-        const BAKIM_MODU = false; 
-
-        function simpleHash(str) {
-            let hash = 0;
-            for (let i = 0; i < str.length; i++) {
-                const char = str.charCodeAt(i);
-                hash = (hash << 5) - hash + char;
-                hash = hash & hash; // 32bit integer
-            }
-            return hash;
-        }
-
-        function checkEnter(e) {
-            if(e.key === "Enter") verifyPageAccess();
-        }
-
-        function verifyPageAccess() {
-            const input = document.getElementById('page-pass').value;
-            const inputHash = simpleHash(input);
-
-            if (inputHash === TARGET_HASH) {
-                // Şifre Doğru
-                document.getElementById('page-lock-screen').style.display = 'none'; 
-                
-                if (BAKIM_MODU) {
-                    // Bakım Modu Açıksa
-                    const maintenanceScreen = document.getElementById('maintenance-screen');
-                    maintenanceScreen.style.display = 'flex'; // Flex ile ortala
-                } else {
-                    // Panel Açık
-                    document.getElementById('main-app').style.display = 'block';
-                }
+            if (girilen === DOGRU_SIFRE) {
+                // Şifre Doğruysa:
+                document.getElementById("login-screen").style.display = "none"; // Girişi kapat
+                document.getElementById("maintenance-screen").style.display = "flex"; // Bakımı aç
             } else {
-                // Şifre Yanlış - SweetAlert ile uyarı
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Hatalı Şifre',
-                    text: 'Lütfen şifreyi kontrol edip tekrar deneyiniz.',
-                    confirmButtonColor: '#0e1b42'
-                });
+                // Şifre Yanlışsa:
+                hataMesaji.style.display = "block";
+                // Giriş kutusunu salla (Görsel efekt)
+                var card = document.querySelector(".login-card");
+                card.style.transform = "translateX(10px)";
+                setTimeout(() => { card.style.transform = "translateX(-10px)"; }, 100);
+                setTimeout(() => { card.style.transform = "translateX(0)"; }, 200);
             }
         }
 
-        // ==========================================
-        // 📊 VERİ SETİ (DATABASE)
-        // ==========================================
-        const database = [
-            // --- İADE & FİNANS ---
-            {
-                title: "İade: İzleme Geçmişi VAR",
-                category: "İade",
-                type: "iade",
-                tags: ["red", "thh", "cayma"],
-                text: "Kullanıcı aylık/yıllık paket almış ve içerik izlemişse (genel arıza yoksa) iade REDDEDİLİR. THH tehdidi olsa bile süreç başlatılmaz.",
-                script: "Hizmetimizden aktif olarak faydalandığınız için iade prosedürlerimiz gereği talebinize olumlu yanıt veremiyoruz. Ancak iptal talebinizi alabilirim, dönem sonuna kadar izlemeye devam edebilirsiniz."
-            },
-            {
-                title: "İade: Aylık Paket (İzlememiş)",
-                category: "İade",
-                type: "iade",
-                tags: ["izlememiş", "indirim", "6ay50"],
-                text: "Yenilenmiş/Satın alınmış aylık paket + İzleme YOK. Önce %50 indirim teklif et.",
-                script: "Memnuniyetiniz adına dilerseniz '6AY50' kodu ile üyeliğinize 139.5 TL indirim tanımlayabiliriz. Kabul etmezseniz iade sürecini başlatabilirim.",
-                code: "6AY50"
-            },
-            {
-                title: "İade: Yıllık Paket (İzlememiş)",
-                category: "İade",
-                type: "iade",
-                tags: ["yıllık", "izlememiş", "yıllıkloca"],
-                text: "Yıllık paket yenilenmiş + İzleme YOK. 1. YILLIKLOCA (indirim) öner. 2. Aylığa geçiş öner. 3. Tam iade.",
-                script: "Dilerseniz 'YILLIKLOCA' kampanyası ile indirim sağlayalım. Ya da paketinizi aylığa çevirip kalan tutarı iade edelim.",
-                code: "YILLIKLOCA"
-            },
-            {
-                title: "İade: Mükerrer (Çift) Çekim",
-                category: "İade",
-                type: "iade",
-                tags: ["çift çekim", "fazla ödeme"],
-                text: "Aynı ay içinde 2 farklı hesap/çekim. IP ve Cihaz AYNI ise iade yapılır. Cihaz FARKLI ve izleme varsa RED. (15 gün içinde ulaşmalı)",
-                script: "Kontrollerimde mükerrer çekim olduğunu görüntüledim, kullanılmayan hesabınızın iadesini sağlıyorum."
-            },
-            {
-                title: "İade: Aynı Gün Yıllık Alım (Hataen)",
-                category: "İade",
-                type: "iade",
-                tags: ["yanlışlık", "aylık üstüne yıllık"],
-                text: "Aylık paketi varken aynı gün yanlışlıkla yıllık aldıysa (24 saat içinde dönerse) 1 defaya mahsus yıllık iade edilir.",
-                script: "Bir defaya mahsus olmak üzere memnuniyetiniz adına yıllık paket işleminizi iptal edip iadenizi sağlıyorum."
-            },
-            {
-                title: "İade: YILLIKLOCA Fark İadesi",
-                category: "İade",
-                type: "iade",
-                tags: ["fark iadesi", "kampanya"],
-                text: "Müşteri 'Sitede daha ucuz, bana YILLIKLOCA yapın' derse defansa geçmeden aradaki fark iade edilir.",
-                script: "Memnuniyetiniz adına aradaki farkı kartınıza iade ediyorum. İyi seyirler dilerim."
-            },
-            {
-                title: "İade: Winback Sonrası Talep",
-                category: "İade",
-                type: "iade",
-                tags: ["winback", "iptal teklifi"],
-                text: "Yıllık paket alıp iptal ederken indirimli (Winback) paket alırsa, sadece 2. paket (indirimli olan) iade edilebilir.",
-                script: "Memnuniyetiniz kapsamında son aldığınız indirimli paketin iadesini sağlayabilirim."
-            },
-            {
-                title: "Kısa Bilgi: Cayma Hakkı",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["yasal", "sözleşme"],
-                text: "Dijital hizmet olduğu için yasal cayma hakkı yoktur.",
-                script: "S Sport Plus İçerik Hizmeti, anında ifa edilen gayri-maddi mal niteliğinde olduğundan yasal cayma hakkı kapsamına girmemektedir.",
-                code: "caymahakkı"
-            },
-
-            // --- TEKNİK ---
-            {
-                title: "Teknik: TV Donma Sorunu",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["televizyon", "takılma", "smart tv"],
-                text: "1. Genel Arıza Kontrolü. 2. TV ve Modemi fişten çekip 10sn bekle. 3. Hız testi iste (8Mbps altı ise ISS).",
-                script: "TV ve modeminizi fişten çekip 10 saniye bekledikten sonra takabilir misiniz? Düzelmezse TV tarayıcısından hiztesti.com.tr sonucu paylaşmanızı rica ederim.",
-                link: "https://www.hiztesti.com.tr/"
-            },
-            {
-                title: "Teknik: Mobil Donma Sorunu",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["cep telefonu", "android", "ios"],
-                text: "Mobil veride dene. Düzelirse Wifi sorunu. Düzelmezse: Uygulama Önbelleğini Temizle / Sil-Yükle.",
-                script: "Uygulama önbelleğini temizleyip veya silip tekrar yükleyerek deneyebilir misiniz? Sorun devam ederse mobil veri ile kontrol edelim."
-            },
-            {
-                title: "Teknik: Bilgisayar Donma Sorunu",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["pc", "web", "ping"],
-                text: "Hız testi 8mbps+ ise Ping testi yaptır (CMD -> ping cdn.ssportplus.com). 35ms üstü ise DNS/Host değişikliği önerilebilir.",
-                script: "Tarayıcınızda çözünürlüğü Auto yerine 720p/1080p seçip deneyebilir misiniz? Arka planda indirme yapan uygulama varsa kapatmanızı öneririm."
-            },
-            {
-                title: "Hata: 'Beklenmedik Bir Kesinti Oluştu'",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["vpn", "yurt dışı", "erişim"],
-                text: "Genellikle Yurt Dışı IP'si veya VPN kullanımında çıkar. IP kontrolü yap (wizcase/vpnapi).",
-                script: "Lisans hakları sebebiyle yayınlarımız sadece Türkiye sınırları içindedir. VPN açıksa kapatmanızı, yurt dışındaysanız erişemeyeceğinizi belirtmek isterim.",
-                link: "https://tr.wizcase.com/tools/whats-my-ip/"
-            },
-            {
-                title: "Hata: 'Abonelik Başkasına Aittir'",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["apple", "google", "store", "aktivasyon"],
-                text: "Cihazdaki Store hesabı (Apple/Google) farklı bir S Sport Plus maili ile eşleşmiş. Loglardan 'OwnerID' kontrol et.",
-                script: "Cihazınızdaki mağaza hesabı ile daha önce farklı bir e-posta adresiyle üyelik başlatmışsınız. Diğer mail adresinizle giriş yapmayı deneyiniz."
-            },
-            {
-                title: "Hata: Samsung TV 'Yüklenemiyor'",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["samsung", "smart tv", "açılmıyor"],
-                text: "Samsung TV'lerde 'Güvenli Mod' açıksa bu hatayı verir. Modemi/TV'yi kapatıp açtır. ISS'den Güvenli Modu kapattır.",
-                script: "İnternet ayarlarınızda 'Güvenli Mod' açık olabilir, servis sağlayıcınızla görüşüp kapatmanızı rica ederim."
-            },
-            {
-                title: "Hata: Promosyon Kodu Bulunamadı",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["kod hatası", "kampanya"],
-                text: "Kodlar büyük/küçük harf duyarlıdır. Boşluk bırakılmış veya küçük harf yazılmış olabilir.",
-                script: "Kodlar büyük harf duyarlıdır. Lütfen kodu kopyalayıp yapıştırarak, boşluk bırakmadan ve büyük harflerle tekrar deneyiniz."
-            },
-            {
-                title: "CRM: IP Karantina Kaldırma",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["ip blok", "giriş hatası"],
-                text: "TVManager > CMS > Admission Gate menüsünden IP kontrol edilir ve 'Release' butonuna basılır.",
-                script: "Güvenlik duvarı IP adresinizi bloklamış, şu an kaldırdım. Lütfen modeminizi kapatıp açarak tekrar deneyiniz."
-            },
-            {
-                title: "Hata: Ses Var Görüntü Yok (Siyah Ekran)",
-                category: "Teknik",
-                type: "teknik",
-                tags: ["siyah ekran", "görüntü"],
-                text: "Genelde HDMI kablo, tarayıcı eklentisi veya eski sürüm kaynaklıdır. Uygulamayı güncelle, kabloyu kontrol et.",
-                script: "Uygulamanızın güncel olduğundan emin olun. Tarayıcıdaysanız reklam engelleyici eklentileri kapatıp deneyiniz."
-            },
-
-            // --- İKNA & CHURN ---
-            {
-                title: "İkna: Fiyat Avantajı (Kahve Parası)",
-                category: "İkna",
-                type: "ikna",
-                tags: ["pahalı", "ücret"],
-                text: "Günlük maliyet vurgusu yap. 6AY50 teklif et.",
-                script: "S Sport Plus'ta günlük sadece 4,65 TL'ye (bir kahve fiyatına) EuroLeague, NBA ve La Liga gibi dev organizasyonları izleyebilirsiniz. Dilerseniz 6AY50 kodu ile %50 indirim tanımlayalım."
-            },
-            {
-                title: "İkna: Sabit Fiyat Garantisi",
-                category: "İkna",
-                type: "ikna",
-                tags: ["zam", "fiyat artışı"],
-                text: "Gelecek zamlardan etkilenmemesi için yıllık paket veya indirim öner.",
-                script: "Fiyat artışlarından etkilenmeden 6 ay boyunca aynı ücretle izlemeye devam edebilirsiniz. Bu teklif sadece görüşmemize özeldir."
-            },
-            {
-                title: "İkna: İçerik Çeşitliliği (Aile)",
-                category: "İkna",
-                type: "ikna",
-                tags: ["sadece spor", "çocuk"],
-                text: "Sadece spor değil, belgesel, çocuk ve film kanalları vurgusu.",
-                script: "Platformumuz sadece spor değil; belgesel, çocuk ve yaşam kanallarıyla aileniz için de zengin bir içerik sunar. Çocuğunuz çizgi film izlerken siz maç keyfi yapabilirsiniz."
-            },
-            {
-                title: "İkna: Maç Kaçırma Derdine Son",
-                category: "İkna",
-                type: "ikna",
-                tags: ["zamanım yok", "izleyemiyorum"],
-                text: "Geri Al İzle ve Tekrar İzle özellikleri vurgulanır.",
-                script: "Canlı yayını kaçırsanız bile 'Tekrar İzle' özelliği ile maçları dilediğiniz zaman izleyebilirsiniz. Ayrıca yayını 24 saate kadar geri alabilirsiniz."
-            },
-
-            // --- KAMPANYALAR ---
-            {
-                title: "Kampanya: YILLIKLOCA (Web)",
-                category: "Kampanya",
-                type: "kampanya",
-                tags: ["yıllık indirim", "web özel"],
-                text: "Yıllık pakette indirim sağlar. Sadece Web sitesinden alımlarda geçerlidir.",
-                script: "Web sitemiz üzerinden 'YILLIKLOCA' kodunu kullanarak yıllık paketi 1499 TL avantajlı fiyatıyla alabilirsiniz.",
-                code: "YILLIKLOCA"
-            },
-            {
-                title: "Kampanya: 6AY50 (Aylık İndirim)",
-                category: "Kampanya",
-                type: "kampanya",
-                tags: ["yarı fiyatına", "aylık"],
-                text: "Aylık paketi iptal etmek isteyene %50 indirim (139.5 TL) teklifi.",
-                script: "Aboneliğinizi iptal etmek yerine '6AY50' kodu ile önümüzdeki ay için %50 indirimli devam etmenizi sağlayabilirim.",
-                code: "6AY50"
-            },
-            {
-                title: "Kampanya: BAHAR2025 (Deneme)",
-                category: "Kampanya",
-                type: "kampanya",
-                tags: ["deneme süresi", "ücretsiz"],
-                text: "Yeni üyelere 7 Gün Ücretsiz + Yıllık Paket. (Örnek kurgu, tarih kontrol et)",
-                script: "BAHAR2025 kodu ile 7 gün ücretsiz deneyebilir, beğenirseniz avantajlı yıllık paketten devam edebilirsiniz.",
-                code: "BAHAR2025"
-            },
-
-            // --- GENEL BİLGİ ---
-            {
-                title: "Bilgi: Yayın Geriden Geliyor?",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["gecikme", "delay"],
-                text: "İnternet tabanlı yayın olduğu için uyduya göre 30-40 sn gecikme normaldir.",
-                script: "Dijital platformlarda sinyal işleme süresi nedeniyle uydu yayınına göre bir miktar (30-40 sn) gecikme olması teknolojinin doğası gereği normaldir."
-            },
-            {
-                title: "Bilgi: Cihaz Sınırı (Aynı Anda İzleme)",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["kaç ekran", "paylaşım"],
-                text: "Farklı cihazlardan giriş yapılabilir ama AYNI ANDA sadece 1 cihazdan izlenebilir.",
-                script: "Üyeliğinizle farklı cihazlardan giriş yapabilirsiniz ancak aynı anda sadece tek bir ekrandan yayın izleyebilirsiniz."
-            },
-            {
-                title: "Bilgi: Paket Fiyatları (2025)",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["ücret", "fiyat"],
-                text: "Aylık: 279 TL | Yıllık: 1799 TL (05.06.2025 itibariyle güncel)",
-                script: "Güncel fiyatlarımız; Aylık paket 279 TL, Yıllık paket ise 1799 TL'dir. Yıllık alımda aylık maliyet 149 TL'ye gelmektedir."
-            },
-            {
-                title: "Bilgi: Desteklenen Cihazlar",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["smart tv", "hangi cihaz"],
-                text: "Android TV, Apple TV, Samsung (2017+), LG (WebOS 3.0+), Xbox, Chromecast, iOS, Android, Web.",
-                script: "Samsung (2017+), LG (WebOS 3.0+), Android TV, Apple TV, Chromecast, Xbox ve tüm mobil cihazlar/web tarayıcıları üzerinden izleyebilirsiniz."
-            },
-            {
-                title: "İletişim: Müşteri Hizmetleri",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["whatsapp", "mail"],
-                text: "WhatsApp: 0850 532 4 777 | Mail: destek@ssportplus.com | Canlı Destek (09:00-02:00)",
-                script: "Bize 0850 532 4 777 WhatsApp hattımızdan veya destek@ssportplus.com adresinden 7/24 ulaşabilirsiniz."
-            },
-            {
-                title: "Kısayol: Web İptal Linki",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["link", "yönlendirme"],
-                text: "Üyelik Bilgileri > Paket Bilgisi > İptal Et adımları.",
-                script: "Aboneliğinizi https://app.ssportplus.com/login adresinden giriş yapıp 'Üyelik Bilgileri > Paket Bilgisi' menüsünden iptal edebilirsiniz.",
-                link: "https://app.ssportplus.com/login"
-            },
-            {
-                title: "İçerik: Hangi Ligler Var?",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["maçlar", "yayın"],
-                text: "Euroleague, NBA, La Liga, Serie A, Bundesliga, UFC, MotoGP, Formula 1 (Dönemsel kontrol et), NFL.",
-                script: "S Sport Plus'ta EuroLeague, NBA, La Liga, Serie A, Bundesliga, UFC, MotoGP ve daha birçok premium spor organizasyonunu izleyebilirsiniz."
-            },
-            {
-                title: "Bilgi: İletişim İzni Alma",
-                category: "Bilgi",
-                type: "bilgi",
-                tags: ["kvkk", "izin"],
-                text: "Kullanıcıdan kampanya iletişimi için onay istenir.",
-                script: "Size özel kampanya ve fırsatlardan haberdar olabilmeniz için iletişim izinlerinizi onaylıyor musunuz?"
-            }
-        ];
-
-        // ==========================================
-        // ⚙️ FONKSİYONLAR
-        // ==========================================
-
-        function renderCards(data) {
-            const container = document.getElementById('cardGrid');
-            container.innerHTML = '';
-
-            if(data.length === 0) {
-                container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #888;">Aradığınız kriterlere uygun kayıt bulunamadı.</div>';
-                return;
-            }
-
-            data.forEach(item => {
-                const div = document.createElement('div');
-                div.className = `card ${item.type}`;
-                
-                // Etiketleri oluştur
-                let tagsHtml = '';
-                if(item.tags) {
-                    tagsHtml = `<div class="tag-container">${item.tags.map(tag => `<span class="tag">#${tag}</span>`).join('')}</div>`;
-                }
-
-                let html = `
-                    <div class="card-header">
-                        <h3 class="card-title">${highlightText(item.title)}</h3>
-                        <span class="badge ${item.type}">${item.category}</span>
-                    </div>
-                    <div class="card-content">
-                        <div>${highlightText(item.text)}</div>
-                        ${tagsHtml}
-                    </div>
-                    <div class="script-box">${highlightText(item.script)}</div>
-                    <div class="card-actions">
-                `;
-                
-                html += `<button class="btn btn-copy" onclick="copyText('${item.script.replace(/'/g, "\\'")}')"><i class="fas fa-copy"></i> Metni Kopyala</button>`;
-                
-                if(item.code) {
-                    html += `<button class="btn btn-copy" style="background: var(--secondary); color: #333;" onclick="copyText('${item.code}')"><i class="fas fa-tag"></i> Kodu Al</button>`;
-                }
-                if(item.link) {
-                    html += `<a href="${item.link}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>`;
-                }
-                
-                html += `</div>`;
-                div.innerHTML = html;
-                container.appendChild(div);
-            });
-        }
-
-        function filterContent() {
-            const search = document.getElementById('searchInput').value.toLowerCase();
-            
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-
-            const filtered = database.filter(item => {
-                const matchTitle = item.title.toLowerCase().includes(search);
-                const matchText = item.text.toLowerCase().includes(search);
-                const matchScript = item.script.toLowerCase().includes(search);
-                const matchTags = item.tags ? item.tags.some(tag => tag.includes(search)) : false;
-                
-                return matchTitle || matchText || matchScript || matchTags;
-            });
-            renderCards(filtered);
-        }
-
-        function filterCategory(cat) {
-            document.getElementById('searchInput').value = '';
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-
-            if(cat === 'all') {
-                renderCards(database);
-            } else {
-                const filtered = database.filter(item => item.category === cat);
-                renderCards(filtered);
+        function enterBas(e) {
+            if (e.key === "Enter") {
+                girisYap();
             }
         }
-
-        function highlightText(text) {
-            const search = document.getElementById('searchInput').value.trim();
-            if (!search) return text;
-            
-            const regex = new RegExp(`(${search})`, 'gi');
-            return text.replace(regex, '<span class="highlight">$1</span>');
-        }
-
-        function copyText(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                // Swal.fire({ icon: 'success', title: 'Kopyalandı', timer: 1000, showConfirmButton: false });
-                alert('Metin kopyalandı!');
-            });
-        }
-
     </script>
 
 </body>
