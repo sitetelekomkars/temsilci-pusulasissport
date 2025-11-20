@@ -157,7 +157,7 @@
         const PAGE_PASSWORD = "ssport+";
         
         // BAKIM MODU: true yaparsanız Esra Hoca ekranı gelir.
-        const BAKIM_MODU = true; 
+        const BAKIM_MODU = false; 
 
         function checkEnter(e) { if(e.key === "Enter") verifyPageAccess(); }
 
@@ -319,7 +319,13 @@
                 script: "Aboneliğinizi iptal etmek yerine '6AY50' kodu ile önümüzdeki ay için %50 indirimli devam etmenizi sağlayabilirim.",
                 code: "6AY50"
             },
-        
+            {
+                title: "Kampanya: BAHAR2025 (Örnek)",
+                category: "Kampanya", type: "Kampanya", tags: ["deneme", "ücretsiz"],
+                text: "Yeni üyelere 7 Gün Ücretsiz + Yıllık Paket (Dönemsel kontrol et).",
+                script: "BAHAR2025 kodu ile 7 gün ücretsiz deneyebilir, beğenirseniz avantajlı yıllık paketten devam edebilirsiniz.",
+                code: "BAHAR2025"
+            },
 
             // --- GENEL BİLGİ ---
             {
