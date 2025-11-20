@@ -27,68 +27,26 @@
         }
 
         /* ==============================
-           GİRİŞ KİLİT EKRANI STİLİ
+           BAKIM MODU EKRANI STİLİ
            ============================== */
-        #page-lock-screen {
+        #maintenance-screen {
+            display: none; /* JS ile kontrol edilecek */
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background: #f0f2f5;
             z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
-        .lock-card {
+        .maintenance-card {
             background: white;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-            text-align: center;
-            width: 100%;
-            max-width: 380px;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 20px;
         }
-        .lock-logo {
-            font-size: 4rem;
-            color: var(--secondary);
-            margin-bottom: 10px;
-        }
-        .lock-title {
-            color: var(--primary);
-            margin: 10px 0 5px 0;
-            font-size: 1.5rem;
-            font-weight: 800;
-        }
-        .lock-subtitle {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 25px;
-        }
-        .lock-input {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 20px;
-            border: 2px solid #e2e8f0;
-            border-radius: 10px;
-            font-size: 1.1em;
-            text-align: center;
-            transition: 0.3s;
-            box-sizing: border-box; /* Padding taşmasını engeller */
-        }
-        .lock-input:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 3px rgba(14, 27, 66, 0.1); }
-        .lock-btn {
-            width: 100%;
-            padding: 15px;
-            background: var(--primary);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 1.1em;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .lock-btn:hover { background: var(--secondary); color: var(--primary); transform: translateY(-2px); }
-
 
         /* ==============================
            ANA UYGULAMA STİLLERİ
@@ -350,21 +308,23 @@
 </head>
 <body>
 
-    <div id="page-lock-screen">
-        <div class="lock-card">
-            <div class="lock-logo"><i class="fas fa-shield-alt"></i></div>
-            <h2 class="lock-title">S Sport Plus</h2>
-            <p class="lock-subtitle">Temsilci Bilgi Merkezi</p>
-            <input type="password" id="page-pass" class="lock-input" placeholder="Giriş Şifresi" onkeyup="checkEnter(event)">
-            <button class="lock-btn" onclick="verifyPageAccess()">Giriş Yap</button>
+    <div id="maintenance-screen">
+        <div class="maintenance-card">
+            <h1 style="font-size: 4em; margin: 0 0 15px 0;">👩‍🏫☕</h1>
+            <h2 style="color: #0e1b42; margin-bottom: 10px;">Sistem Mola Verdi!</h2>
+            <p style="color: #555; font-size: 1.2em; line-height: 1.6;">
+                Şu an pusulamızı yeniden kalibre ediyoruz.<br>
+                <strong>Esra Hoca'dan</strong> gelecek kritik bilgileri bekliyoruz... 🚀<br>
+                <span style="font-size: 0.9em; color: #888;">(Az sonra buradayız, panik yok!)</span>
+            </p>
         </div>
     </div>
 
-    <div id="main-app" style="display: none;">
+    <div id="main-app">
         <div class="header">
             <div class="header-top">
                 <h1><i class="fas fa-compass"></i> S Sport Plus - Temsilci Pusulası</h1>
-                <div style="font-size: 0.9rem; opacity: 0.8;">BY MADE DOĞUŞ YALÇINKAYA</div>
+                <div style="font-size: 0.9rem; opacity: 0.8;">Veri Kaynağı: 2025 Dökümanları</div>
             </div>
 
             <div class="search-container">
@@ -390,30 +350,28 @@
 
     <script>
         // ==========================================
-        // 🔒 GÜVENLİK AYARLARI
+        // 🚧 BAKIM MODU AYARI
         // ==========================================
-        const PAGE_PASSWORD = "ssport+";
+        // TRUE yaparsanız "Esra Hoca" ekranı açılır.
+        // FALSE yaparsanız normal panel açılır.
+        
+        const BAKIM_MODU = false; 
 
-        function checkEnter(e) {
-            if(e.key === "Enter") verifyPageAccess();
-        }
-
-        function verifyPageAccess() {
-            const input = document.getElementById('page-pass').value;
-            if (input === PAGE_PASSWORD) {
-                // Şifre Doğru
-                document.getElementById('page-lock-screen').style.display = 'none'; 
-                document.getElementById('main-app').style.display = 'block';
+        // ==========================================
+        // SAYFA YÜKLENİRKEN KONTROL
+        // ==========================================
+        document.addEventListener('DOMContentLoaded', () => {
+            if (BAKIM_MODU) {
+                document.getElementById('main-app').style.display = 'none';
+                const maintenanceScreen = document.getElementById('maintenance-screen');
+                maintenanceScreen.style.display = 'flex'; 
+                // Arka plana hafif desen ekle
+                document.body.style.background = "#f0f2f5 url('data:image/svg+xml,%3Csvg width=\\'20\\' height=\\'20\\' viewBox=\\'0 0 20 20\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cg fill=\\'%23d4d4d4\\' fill-opacity=\\'0.2\\' fill-rule=\\'evenodd\\'%3E%3Ccircle cx=\\'3\\' cy=\\'3\\' r=\\'3\\'/%3E%3Ccircle cx=\\'13\\' cy=\\'13\\' r=\\'3\\'/%3E%3C/g%3E%3C/svg%3E')";
             } else {
-                // Şifre Yanlış - SweetAlert ile uyarı
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Hatalı Şifre',
-                    text: 'Lütfen şifreyi kontrol edip tekrar deneyiniz.',
-                    confirmButtonColor: '#0e1b42'
-                });
+                renderCards(database);
             }
-        }
+        });
+
 
         // ==========================================
         // 📊 VERİ SETİ (DATABASE)
@@ -617,7 +575,16 @@
                 script: "Aboneliğinizi iptal etmek yerine '6AY50' kodu ile önümüzdeki ay için %50 indirimli devam etmenizi sağlayabilirim.",
                 code: "6AY50"
             },
-            
+            {
+                title: "Kampanya: BAHAR2025 (Deneme)",
+                category: "Kampanya",
+                type: "kampanya",
+                tags: ["deneme süresi", "ücretsiz"],
+                text: "Yeni üyelere 7 Gün Ücretsiz + Yıllık Paket. (Örnek kurgu, tarih kontrol et)",
+                script: "BAHAR2025 kodu ile 7 gün ücretsiz deneyebilir, beğenirseniz avantajlı yıllık paketten devam edebilirsiniz.",
+                code: "BAHAR2025"
+            },
+
             // --- GENEL BİLGİ ---
             {
                 title: "Bilgi: Yayın Geriden Geliyor?",
