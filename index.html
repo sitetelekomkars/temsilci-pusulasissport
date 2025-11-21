@@ -97,9 +97,9 @@
         .news-title { font-size: 1.1rem; font-weight: bold; color: var(--primary); margin-bottom: 5px; display: block; }
         .news-desc { color: #555; line-height: 1.5; }
         .news-tag { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; margin-top: 5px; font-weight: bold; }
-        .tag-fix { background: #e8f5e9; color: #2e7d32; } /* Çözüldü - Yeşil */
-        .tag-update { background: #fff3e0; color: #ef6c00; } /* Güncelleme - Turuncu */
-        .tag-info { background: #e3f2fd; color: #0277bd; } /* Bilgi - Mavi */
+        .tag-fix { background: #e8f5e9; color: #2e7d32; } 
+        .tag-update { background: #fff3e0; color: #ef6c00; } 
+        .tag-info { background: #e3f2fd; color: #0277bd; }
 
         /* DİĞER MODAL STİLLERİ (İADE & SPOR) */
         .wizard-step h2 { color: var(--primary); margin-bottom: 10px; text-align: center;}
@@ -117,7 +117,7 @@
         .guide-item:hover { transform: translateY(-5px); border-color: var(--secondary); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .guide-icon { font-size: 2rem; color: var(--primary); margin-bottom: 10px; }
         .guide-title { font-weight: bold; color: var(--primary); margin-bottom: 5px; display: block; font-size: 1.1rem; }
-        .guide-desc { font-size: 0.9rem; color: #666; margin-bottom: 10px; min-height: 40px; }
+        .guide-desc { font-size: 0.9rem; color: #666; margin-bottom: 10px; min-height: 40px; font-style: italic;}
         .guide-tip { background: #e3f2fd; color: #0277bd; padding: 5px; border-radius: 5px; font-size: 0.8rem; font-weight: 600; }
 
         .highlight { background-color: yellow; font-weight: bold; }
@@ -271,17 +271,17 @@
         // 📖 SPOR REHBERİ VERİLERİ
         // ==========================================
         const sportsData = [
-            { title: "WorldSBK", icon: "fa-motorcycle", desc: "Dünya Superbike Şampiyonası.", tip: "🇹🇷 Toprak Razgatlıoğlu burada! (MotoGP testleri yapsa da bu sezon hala BMW ile SBK'da)." },
-            { title: "MotoGP", icon: "fa-motorcycle", desc: "Motosiklet yarışlarının zirvesi (F1'i).", tip: "En hızlı prototip motorlar burada." },
-            { title: "UFC", icon: "fa-hand-fist", desc: "Karma Dövüş Sanatları (Kafes Dövüşü).", tip: "Islam Makhachev ve dünyanın en sert dövüşçüleri." },
-            { title: "Serie A", icon: "fa-futbol", desc: "İtalya Futbol Ligi.", tip: "Hakan Çalhanoğlu (Inter) ve Kenan Yıldız (Juventus) burada!" },
-            { title: "La Liga", icon: "fa-futbol", desc: "İspanya Futbol Ligi.", tip: "Real Madrid (Arda Güler) ve Barcelona derbisi (El Clasico)." },
-            { title: "EuroLeague", icon: "fa-basketball", desc: "Avrupa'nın en büyük basketbol organizasyonu.", tip: "Fenerbahçe ve Anadolu Efes bizi temsil ediyor." },
-            { title: "NBA", icon: "fa-basketball", desc: "Dünyanın en büyük basketbol ligi (ABD).", tip: "LeBron, Curry, Alperen Şengün burada." },
-            { title: "NFL", icon: "fa-football", desc: "Amerikan Futbolu Ligi.", tip: "Super Bowl (Final) bizde!" },
-            { title: "NCAA", icon: "fa-graduation-cap", desc: "ABD Kolej Ligi (Basketbol & Futbol).", tip: "Geleceğin yıldızları burada oynar." },
-            { title: "WRC", icon: "fa-car-side", desc: "Dünya Ralli Şampiyonası.", tip: "Arazi ve zorlu şartlarda yapılan yarışlar." },
-            { title: "Libertadores", icon: "fa-futbol", desc: "Güney Amerika'nın Şampiyonlar Ligi.", tip: "Brezilya ve Arjantin takımları ağırlıklı." }
+            { title: "WorldSBK", icon: "fa-motorcycle", desc: "Dünya Superbike Şampiyonası. Sokakta satılan motorların modifiye edilip yarıştığı seri.", tip: "🇹🇷 Toprak Razgatlıoğlu burada! (MotoGP testleri yapsa da bu sezon hala BMW ile SBK'da)." },
+            { title: "MotoGP", icon: "fa-motorcycle", desc: "Motosiklet dünyasının Formula 1'i. Sadece yarış için üretilen özel prototip motorlar.", tip: "En hızlı prototip motorlar burada." },
+            { title: "UFC", icon: "fa-hand-fist", desc: "Boks, Kickboks, Judo ve Güreş tekniklerinin karışımı olan Kafes Dövüşü.", tip: "Islam Makhachev ve dünyanın en sert dövüşçüleri." },
+            { title: "Serie A", icon: "fa-futbol", desc: "İtalya'nın en üst düzey futbol ligi. Defansif taktiklerin ön planda olduğu dev lig.", tip: "Hakan Çalhanoğlu (Inter) ve Kenan Yıldız (Juventus) burada!" },
+            { title: "La Liga", icon: "fa-futbol", desc: "İspanya'nın en üst düzey futbol ligi. Tekniğin ve pas oyununun zirvesi.", tip: "Real Madrid (Arda Güler) ve Barcelona derbisi (El Clasico)." },
+            { title: "EuroLeague", icon: "fa-basketball", desc: "Avrupa'nın kulüpler bazındaki en büyük basketbol organizasyonu.", tip: "Fenerbahçe ve Anadolu Efes bizi temsil ediyor." },
+            { title: "NBA", icon: "fa-basketball", desc: "ABD Profesyonel Basketbol Ligi. Dünyanın en iyi basketbolcularının şov sahnesi.", tip: "LeBron, Curry, Alperen Şengün burada." },
+            { title: "NFL", icon: "fa-football", desc: "Amerikan Futbolu Ligi. Kask ve korumalıklarla oynanan, yüksek temaslı strateji sporu.", tip: "Super Bowl (Final) bizde!" },
+            { title: "NCAA", icon: "fa-graduation-cap", desc: "ABD Üniversite Ligi. Profesyonelliğe geçmeden önceki son amatör durak.", tip: "Geleceğin yıldızları burada oynar." },
+            { title: "WRC", icon: "fa-car-side", desc: "Dünya Ralli Şampiyonası. Asfalt, toprak ve karlı zorlu yollarda zamana karşı yarış.", tip: "Arazi ve zorlu şartlarda yapılan yarışlar." },
+            { title: "Libertadores", icon: "fa-futbol", desc: "Güney Amerika'nın Şampiyonlar Ligi. Brezilya ve Arjantin takımlarının kıyasıya mücadelesi.", tip: "Brezilya ve Arjantin takımları ağırlıklı." }
         ];
 
         function openGuide() {
