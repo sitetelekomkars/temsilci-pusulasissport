@@ -192,8 +192,7 @@
             <h2 style="color:var(--primary); border-bottom:2px solid var(--secondary); padding-bottom:10px; margin-bottom:20px;">
                 📢 Bu Hafta Neler Oldu?
             </h2>
-            <div id="news-container">
-                </div>
+            <div id="news-container"></div>
         </div>
     </div>
 
@@ -241,10 +240,9 @@
         // ==========================================
         // 📢 DUYURULAR & GÜNCELLEMELER
         // ==========================================
-        // BURAYA YENİ SATIR EKLEYEREK GÜNCELLEYEBİLİRSİN
         const newsData = [
+            { date: "21.11.2025", title: "Vestel TV Dil Sorunu (GÜNCEL)", desc: "Eski tarayıcıya sahip cihazlar için gerekli düzenleme sahaya alınmıştır. Sorun çözülmüş olmalıdır, ancak kullanıcı dönüşlerine göre kontroller devam etmektedir.", type: "update" },
             { date: "21.11.2025", title: "Churn İndirim Fiyatı Değişti", desc: "Yıllık paket churn (ikna) fiyatı 1499 TL olarak güncellenmiştir.", type: "update" },
-            { date: "21.11.2025", title: "Vestel TV Dil Sorunu", desc: "Vestel TV'lerde yaşanan alt yazı/dil sorunu çözüme kavuşmuştur.", type: "fix" },
             { date: "20.11.2025", title: "Erlab Çözümleri Eklendi", desc: "Panelde 'Teknik' kategorisi altına sık karşılaşılan Erlab hata kodları ve çözümleri eklenmiştir.", type: "info" },
             { date: "18.11.2025", title: "Yayın Akışı Güncellemesi", desc: "EuroLeague çift maç haftası nedeniyle yayın akışında yoğunluk olabilir, müşterileri web sitesine yönlendirelim.", type: "info" }
         ];
@@ -274,7 +272,7 @@
         // ==========================================
         const sportsData = [
             { title: "WorldSBK", icon: "fa-motorcycle", desc: "Dünya Superbike Şampiyonası.", tip: "🇹🇷 Toprak Razgatlıoğlu burada! (MotoGP testleri yapsa da bu sezon hala BMW ile SBK'da)." },
-            { title: "MotoGP", icon: "fa-motorcycle", desc: "Motosiklet yarışlarının zirvesi (F1'i).", tip: "En hızlı prototip motorlar burada.Bu sezon Toprak burada olacak" },
+            { title: "MotoGP", icon: "fa-motorcycle", desc: "Motosiklet yarışlarının zirvesi (F1'i).", tip: "En hızlı prototip motorlar burada." },
             { title: "UFC", icon: "fa-hand-fist", desc: "Karma Dövüş Sanatları (Kafes Dövüşü).", tip: "Islam Makhachev ve dünyanın en sert dövüşçüleri." },
             { title: "Serie A", icon: "fa-futbol", desc: "İtalya Futbol Ligi.", tip: "Hakan Çalhanoğlu (Inter) ve Kenan Yıldız (Juventus) burada!" },
             { title: "La Liga", icon: "fa-futbol", desc: "İspanya Futbol Ligi.", tip: "Real Madrid (Arda Güler) ve Barcelona derbisi (El Clasico)." },
