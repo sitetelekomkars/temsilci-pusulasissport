@@ -19,7 +19,6 @@
             --warning: #ed6c02; 
         }
 
-        /* Kopyalamayı ve sağ tıkı engellemek için user-select eklendi */
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: #333; user-select: none; }
 
         /* GİRİŞ VE BAKIM EKRANLARI */
@@ -37,7 +36,6 @@
         .header { background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%); color: white; padding: 20px 30px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
         
-        /* GELİŞTİRİCİ İMZASI */
         .developer-badge {
             position: absolute; top: 20px; right: 30px;
             background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
@@ -52,11 +50,12 @@
 
         .filter-container { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
         .filter-btn { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 8px 16px; border-radius: 20px; cursor: pointer; transition: 0.2s; display: flex; align-items: center; gap: 5px; }
-        .filter-btn:hover { background: rgba(255,255,255,0.3); }
         .filter-btn.active { background: var(--secondary); color: var(--primary); font-weight: 600; border-color: var(--secondary); }
+        .filter-btn:hover { background: rgba(255,255,255,0.3); }
         
         .wizard-btn { background: linear-gradient(45deg, #d32f2f, #c62828); border: none; box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4); animation: pulse 2s infinite; font-weight: bold; }
         .guide-btn { background: linear-gradient(45deg, #0288d1, #01579b); border: none; font-weight: bold; }
+        .news-btn { background: linear-gradient(45deg, #ff6f00, #ff8f00); border: none; font-weight: bold; animation: pulse 3s infinite; }
         .link-btn { background: rgba(255,255,255,0.2); border: 1px solid white; }
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
 
@@ -91,7 +90,18 @@
         .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 15px; padding: 30px; position: relative; max-height: 85vh; overflow-y: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.8rem; cursor: pointer; color: #666; font-weight: bold; }
         
-        /* İADE ASİSTANI ÖZEL */
+        /* DUYURULAR TIMELINE */
+        .news-item { border-left: 4px solid var(--secondary); padding-left: 15px; margin-bottom: 20px; position: relative; }
+        .news-item::before { content: ''; position: absolute; left: -9px; top: 0; width: 14px; height: 14px; background: var(--secondary); border-radius: 50%; }
+        .news-date { font-size: 0.85rem; color: #999; font-weight: bold; margin-bottom: 5px; display: block; }
+        .news-title { font-size: 1.1rem; font-weight: bold; color: var(--primary); margin-bottom: 5px; display: block; }
+        .news-desc { color: #555; line-height: 1.5; }
+        .news-tag { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; margin-top: 5px; font-weight: bold; }
+        .tag-fix { background: #e8f5e9; color: #2e7d32; } /* Çözüldü - Yeşil */
+        .tag-update { background: #fff3e0; color: #ef6c00; } /* Güncelleme - Turuncu */
+        .tag-info { background: #e3f2fd; color: #0277bd; } /* Bilgi - Mavi */
+
+        /* DİĞER MODAL STİLLERİ (İADE & SPOR) */
         .wizard-step h2 { color: var(--primary); margin-bottom: 10px; text-align: center;}
         .wizard-options { display: flex; flex-direction: column; gap: 10px; }
         .option-btn { padding: 15px; border: 2px solid #eee; border-radius: 10px; background: white; font-size: 1rem; cursor: pointer; transition: 0.2s; text-align: left; display: flex; align-items: center; gap: 10px; }
@@ -102,7 +112,6 @@
         .res-yellow { background: #fff8e1; border: 2px solid #ffca28; color: #f57f17; }
         .restart-btn { margin-top: 20px; background: #555; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
 
-        /* SPOR REHBERİ ÖZEL */
         .guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
         .guide-item { border: 1px solid #eee; border-radius: 10px; padding: 15px; text-align: center; transition: 0.3s; background: #f8f9fa; }
         .guide-item:hover { transform: translateY(-5px); border-color: var(--secondary); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
@@ -158,6 +167,10 @@
                 
                 <a href="https://www.ssportplus.com/yayin-akisi/" target="_blank" class="filter-btn link-btn"><i class="fas fa-calendar-alt"></i> Yayın Akışı</a>
                 
+                <button class="filter-btn news-btn" onclick="openNews()">
+                    📢 Duyurular
+                </button>
+
                 <button class="filter-btn guide-btn" onclick="openGuide()">
                     📖 Spor Rehberi
                 </button>
@@ -173,6 +186,17 @@
         </div>
     </div>
 
+    <div id="news-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('news-modal')">&times;</span>
+            <h2 style="color:var(--primary); border-bottom:2px solid var(--secondary); padding-bottom:10px; margin-bottom:20px;">
+                📢 Bu Hafta Neler Oldu?
+            </h2>
+            <div id="news-container">
+                </div>
+        </div>
+    </div>
+
     <div id="wizard-modal" class="modal-overlay">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('wizard-modal')">&times;</span>
@@ -185,9 +209,7 @@
             <span class="close-modal" onclick="closeModal('guide-modal')">&times;</span>
             <h2 style="text-align:center; color:var(--primary); margin-bottom:10px;">📖 Spor Terimleri & İçerik Rehberi</h2>
             <p style="text-align:center; color:#666;">Müşteriye hangi içeriğin ne olduğunu açıklamak için ipuçları.</p>
-            
-            <div class="guide-grid" id="guide-grid">
-                </div>
+            <div class="guide-grid" id="guide-grid"></div>
         </div>
     </div>
 
@@ -217,19 +239,50 @@
         function enterBas(e) { if (e.key === "Enter") girisYap(); }
 
         // ==========================================
+        // 📢 DUYURULAR & GÜNCELLEMELER
+        // ==========================================
+        // BURAYA YENİ SATIR EKLEYEREK GÜNCELLEYEBİLİRSİN
+        const newsData = [
+            { date: "21.11.2025", title: "Churn İndirim Fiyatı Değişti", desc: "Yıllık paket churn (ikna) fiyatı 1499 TL olarak güncellenmiştir.", type: "update" },
+            { date: "21.11.2025", title: "Vestel TV Dil Sorunu", desc: "Vestel TV'lerde yaşanan alt yazı/dil sorunu çözüme kavuşmuştur.", type: "fix" },
+            { date: "20.11.2025", title: "Erlab Çözümleri Eklendi", desc: "Panelde 'Teknik' kategorisi altına sık karşılaşılan Erlab hata kodları ve çözümleri eklenmiştir.", type: "info" },
+            { date: "18.11.2025", title: "Yayın Akışı Güncellemesi", desc: "EuroLeague çift maç haftası nedeniyle yayın akışında yoğunluk olabilir, müşterileri web sitesine yönlendirelim.", type: "info" }
+        ];
+
+        function openNews() {
+            document.getElementById('news-modal').style.display = 'flex';
+            const container = document.getElementById('news-container');
+            container.innerHTML = '';
+            
+            newsData.forEach(item => {
+                let tagClass = item.type === 'fix' ? 'tag-fix' : (item.type === 'update' ? 'tag-update' : 'tag-info');
+                let tagText = item.type === 'fix' ? 'Çözüldü' : (item.type === 'update' ? 'Değişiklik' : 'Bilgi');
+                
+                container.innerHTML += `
+                    <div class="news-item">
+                        <span class="news-date">${item.date}</span>
+                        <span class="news-title">${item.title}</span>
+                        <div class="news-desc">${item.desc}</div>
+                        <span class="news-tag ${tagClass}">${tagText}</span>
+                    </div>
+                `;
+            });
+        }
+
+        // ==========================================
         // 📖 SPOR REHBERİ VERİLERİ
         // ==========================================
         const sportsData = [
-            { title: "NFL", icon: "fa-football", desc: "Amerikan Futbolu Ligi. ABD'nin en popüler sporu.", tip: "Super Bowl (Final) bizde!" },
-            { title: "NCAA", icon: "fa-graduation-cap", desc: "ABD Kolej Basketbol Ligi. Geleceğin yıldızları burada oynar.", tip: "Mart Çılgınlığı (March Madness) meşhurdur." },
-            { title: "NBA", icon: "fa-basketball", desc: "Dünyanın en büyük basketbol ligi (ABD).", tip: "LeBron, Curry, Alperen Şengün burada." },
+            { title: "WorldSBK", icon: "fa-motorcycle", desc: "Dünya Superbike Şampiyonası.", tip: "🇹🇷 Toprak Razgatlıoğlu burada! (MotoGP testleri yapsa da bu sezon hala BMW ile SBK'da)." },
+            { title: "MotoGP", icon: "fa-motorcycle", desc: "Motosiklet yarışlarının zirvesi (F1'i).", tip: "En hızlı prototip motorlar burada.Bu sezon Toprak burada olacak" },
+            { title: "UFC", icon: "fa-hand-fist", desc: "Karma Dövüş Sanatları (Kafes Dövüşü).", tip: "Islam Makhachev ve dünyanın en sert dövüşçüleri." },
+            { title: "Serie A", icon: "fa-futbol", desc: "İtalya Futbol Ligi.", tip: "Hakan Çalhanoğlu (Inter) ve Kenan Yıldız (Juventus) burada!" },
+            { title: "La Liga", icon: "fa-futbol", desc: "İspanya Futbol Ligi.", tip: "Real Madrid (Arda Güler) ve Barcelona derbisi (El Clasico)." },
             { title: "EuroLeague", icon: "fa-basketball", desc: "Avrupa'nın en büyük basketbol organizasyonu.", tip: "Fenerbahçe ve Anadolu Efes bizi temsil ediyor." },
-            { title: "UFC", icon: "fa-hand-fist", desc: "Karma Dövüş Sanatları (Kafes Dövüşü).", tip: "Dünyanın en sert dövüş organizasyonu." },
-            { title: "La Liga", icon: "fa-futbol", desc: "İspanya Futbol Ligi.", tip: "Real Madrid (Arda Güler), Barcelona burada." },
-            { title: "Serie A", icon: "fa-futbol", desc: "İtalya Futbol Ligi.", tip: "Juventus, Inter, Milan (Hakan Çalhanoğlu) burada." },
-            { title: "MotoGP", icon: "fa-motorcycle", desc: "Motosiklet yarışlarının zirvesi.", tip: "Motor sporlarının Formula 1'i." },
+            { title: "NBA", icon: "fa-basketball", desc: "Dünyanın en büyük basketbol ligi (ABD).", tip: "LeBron, Curry, Alperen Şengün burada." },
+            { title: "NFL", icon: "fa-football", desc: "Amerikan Futbolu Ligi.", tip: "Super Bowl (Final) bizde!" },
+            { title: "NCAA", icon: "fa-graduation-cap", desc: "ABD Kolej Ligi (Basketbol & Futbol).", tip: "Geleceğin yıldızları burada oynar." },
             { title: "WRC", icon: "fa-car-side", desc: "Dünya Ralli Şampiyonası.", tip: "Arazi ve zorlu şartlarda yapılan yarışlar." },
-            { title: "ATP / Wimbledon", icon: "fa-table-tennis-paddle-ball", desc: "Erkekler Tenis Turnuvaları.", tip: "Dünyanın en prestijli tenis maçları." },
             { title: "Libertadores", icon: "fa-futbol", desc: "Güney Amerika'nın Şampiyonlar Ligi.", tip: "Brezilya ve Arjantin takımları ağırlıklı." }
         ];
 
