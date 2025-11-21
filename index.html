@@ -6,102 +6,50 @@
     <title>S Sport Plus - Temsilci Bilgi Merkezi</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
     <style>
-        /* === GENEL AYARLAR === */
-        :root {
-            --primary: #0e1b42; 
-            --secondary: #fabb00; 
-            --bg: #f0f2f5;
-            --card-bg: #ffffff;
-            --accent: #d32f2f; 
-            --success: #2e7d32; 
-            --info: #0288d1; 
-            --warning: #ed6c02; 
-            --sales: #10b981;
-            --quiz: #8e24aa;
-        }
-
+        /* TASARIM AYARLARI */
+        :root { --primary: #0e1b42; --secondary: #fabb00; --bg: #f0f2f5; --card-bg: #ffffff; --accent: #d32f2f; --success: #2e7d32; --info: #0288d1; --warning: #ed6c02; --sales: #10b981; --quiz: #8e24aa; }
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: #333; user-select: none; }
-
-        /* GİRİŞ VE BAKIM EKRANLARI */
-        #login-screen, #maintenance-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 3000; display: flex; justify-content: center; align-items: center; }
-        #login-screen { background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%); }
-        #maintenance-screen { background: #f4f6f9; display: none; flex-direction: column; text-align: center; z-index: 2000; }
         
+        #login-screen, #maintenance-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 3000; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%); }
         .login-card { background: white; padding: 40px; border-radius: 15px; text-align: center; width: 300px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
         .login-input { width: 100%; padding: 12px; margin: 15px 0; border: 2px solid #ddd; border-radius: 8px; text-align: center; box-sizing: border-box; }
         .login-btn { width: 100%; padding: 12px; background: #fabb00; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
-        .maintenance-content { background: white; padding: 50px; border-radius: 20px; max-width: 600px; }
-
-        /* ANA UYGULAMA HEADER */
+        
         #main-app { display: none; }
         .header { background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%); color: white; padding: 20px 30px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
-        
-        .developer-badge {
-            position: absolute; top: 20px; right: 30px;
-            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
-            padding: 8px 15px; border-radius: 20px; color: #fff; font-size: 0.85rem;
-            backdrop-filter: blur(5px); display: flex; align-items: center; gap: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
+        .developer-badge { position: absolute; top: 20px; right: 30px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 20px; color: #fff; font-size: 0.85rem; backdrop-filter: blur(5px); }
 
-        /* --- YENİ DÜZEN: FLEX YAPISI --- */
         .control-wrapper { display: flex; gap: 20px; align-items: flex-start; }
         .left-panel { flex: 2; }
+        .right-panel { flex: 1; min-width: 300px; }
+        
         .search-container { position: relative; width: 100%; margin-bottom: 15px; }
         #searchInput { width: 100%; padding: 12px 20px 12px 45px; border-radius: 8px; border: none; box-sizing: border-box; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         .search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #666; }
 
         .filter-container { display: flex; gap: 8px; flex-wrap: wrap; }
-        
-        /* YENİLENMİŞ FİLTRE BUTONLARI STİLİ */
-        .filter-btn { 
-            border: none; 
-            color: white; 
-            padding: 10px 18px; 
-            border-radius: 20px; 
-            cursor: pointer; 
-            transition: 0.2s; 
-            display: flex; 
-            align-items: center; 
-            gap: 5px; 
-            font-weight: 600;
-            font-size: 0.9rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            opacity: 0.85; /* Pasifken hafif şeffaf */
-        }
-        
+        .filter-btn { border: none; color: white; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.2s; display: flex; align-items: center; gap: 5px; font-weight: 600; font-size: 0.9rem; box-shadow: 0 2px 5px rgba(0,0,0,0.2); opacity: 0.85; }
         .filter-btn:hover { opacity: 1; transform: translateY(-2px); }
+        .filter-btn.active { opacity: 1; box-shadow: 0 0 0 2px #fff, 0 4px 10px rgba(0,0,0,0.3); transform: scale(1.05); }
+
+        .btn-all { background: linear-gradient(135deg, #4b5563, #1f2937); }
+        .btn-tech { background: linear-gradient(135deg, #0e1b42, #1e3a8a); }
+        .btn-ikna { background: linear-gradient(135deg, #ed6c02, #e65100); }
+        .btn-camp { background: linear-gradient(135deg, #2e7d32, #1b5e20); }
+        .btn-info { background: linear-gradient(135deg, #0288d1, #01579b); }
+        .btn-stream { background: linear-gradient(135deg, #7b1fa2, #4a148c); }
         
-        /* Seçili Buton Efekti */
-        .filter-btn.active { 
-            opacity: 1; 
-            box-shadow: 0 0 0 2px #fff, 0 4px 10px rgba(0,0,0,0.3); 
-            transform: scale(1.05); 
-        }
-
-        /* Kategoriye Özel Renkler */
-        .btn-all { background: linear-gradient(135deg, #4b5563, #1f2937); } /* Gri */
-        .btn-tech { background: linear-gradient(135deg, #0e1b42, #1e3a8a); } /* Lacivert */
-        .btn-ikna { background: linear-gradient(135deg, #ed6c02, #e65100); } /* Turuncu */
-        .btn-camp { background: linear-gradient(135deg, #2e7d32, #1b5e20); } /* Yeşil */
-        .btn-info { background: linear-gradient(135deg, #0288d1, #01579b); } /* Mavi */
-        .btn-stream { background: linear-gradient(135deg, #7b1fa2, #4a148c); } /* Mor */
-
-        /* Alt Sıra Butonları */
         .guide-btn { background: linear-gradient(45deg, #0288d1, #01579b); }
         .wizard-btn { background: linear-gradient(45deg, #d32f2f, #c62828); animation: pulse 2s infinite; }
         .sales-btn { background: linear-gradient(45deg, #10b981, #059669); }
         .quiz-btn { background: linear-gradient(45deg, #8e24aa, #ba68c8); }
         .news-btn { background: linear-gradient(45deg, #ff6f00, #ff8f00); animation: pulse 3s infinite; }
 
-        
-        .right-panel { flex: 1; min-width: 300px; }
-        .news-ticker-box {
-            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 15px; height: 85px; position: relative;
-            cursor: pointer; overflow: hidden; backdrop-filter: blur(5px); transition: 0.3s; display: flex; flex-direction: column; justify-content: center;
-        }
+        .news-ticker-box { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 15px; height: 85px; position: relative; cursor: pointer; overflow: hidden; backdrop-filter: blur(5px); transition: 0.3s; display: flex; flex-direction: column; justify-content: center; }
         .news-ticker-box:hover { background: rgba(255,255,255,0.2); border-color: var(--secondary); }
         .ticker-label { font-size: 0.75rem; color: var(--secondary); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; display: flex; align-items: center; gap: 5px;}
         .ticker-label i { animation: blink 1.5s infinite; }
@@ -111,17 +59,15 @@
         @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
 
-        /* KARTLAR */
         .container { padding: 20px; max-width: 1600px; margin: 0 auto; }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 20px; }
         .card { background: var(--card-bg); border-radius: 12px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border-left: 5px solid var(--info); display: flex; flex-direction: column; transition: transform 0.2s; }
         .card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         
-        .card.teknik { border-left-color: var(--primary); }
-        .card.iade { border-left-color: var(--accent); }
-        .card.ikna { border-left-color: var(--warning); }
-        .card.kampanya { border-left-color: var(--success); }
-        .card.bilgi { border-left-color: var(--info); }
+        .card.Teknik { border-left-color: var(--primary); }
+        .card.İkna { border-left-color: var(--accent); }
+        .card.Kampanya { border-left-color: var(--success); }
+        .card.Bilgi { border-left-color: var(--info); }
         
         .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
         .card-title { font-weight: 700; font-size: 1.1rem; margin: 0; color: #2c3e50; line-height: 1.4; }
@@ -135,17 +81,13 @@
         .btn-link { background: transparent; border: 1px solid var(--info); color: var(--info); text-decoration: none; }
         .btn-link:hover { background: #e1f5fe; }
 
-        /* MODAL GENEL */
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 5000; justify-content: center; align-items: center; }
         .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 15px; padding: 30px; position: relative; max-height: 85vh; overflow-y: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.8rem; cursor: pointer; color: #666; font-weight: bold; }
         
-        /* ÖZEL MODAL STİLLERİ */
         .news-item { border-left: 4px solid var(--secondary); padding-left: 15px; margin-bottom: 20px; position: relative; }
-        .news-item::before { content: ''; position: absolute; left: -9px; top: 0; width: 14px; height: 14px; background: var(--secondary); border-radius: 50%; }
-        .news-date { font-size: 0.85rem; color: #999; font-weight: bold; margin-bottom: 5px; display: block; }
-        .news-title { font-size: 1.1rem; font-weight: bold; color: var(--primary); margin-bottom: 5px; display: block; }
-        .news-desc { color: #555; line-height: 1.5; }
+        .news-date { font-size: 0.85rem; color: #999; font-weight: bold; display: block; }
+        .news-title { font-size: 1.1rem; font-weight: bold; color: var(--primary); display: block; }
         .news-tag { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; margin-top: 5px; font-weight: bold; }
         .tag-fix { background: #e8f5e9; color: #2e7d32; } 
         .tag-update { background: #fff3e0; color: #ef6c00; } 
@@ -155,19 +97,21 @@
         .guide-item { border: 1px solid #eee; border-radius: 10px; padding: 15px; text-align: center; transition: 0.3s; background: #f8f9fa; }
         .guide-item:hover { transform: translateY(-5px); border-color: var(--secondary); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .guide-icon { font-size: 2rem; color: var(--primary); margin-bottom: 10px; }
-        .guide-title { font-weight: bold; color: var(--primary); margin-bottom: 5px; display: block; font-size: 1.1rem; }
-        .guide-desc { font-size: 0.9rem; color: #666; margin-bottom: 10px; min-height: 40px; font-style: italic;}
+        .guide-title { font-weight: bold; color: var(--primary); margin-bottom: 5px; display: block; }
         .guide-tip { background: #e3f2fd; color: #0277bd; padding: 5px; border-radius: 5px; font-size: 0.8rem; font-weight: 600; }
 
-        .sales-item { border: 1px solid #d1fae5; background: #ecfdf5; border-radius: 10px; padding: 20px; cursor: pointer; transition: 0.2s; position: relative; }
-        .sales-item:hover { transform: scale(1.02); box-shadow: 0 5px 15px rgba(16, 185, 129, 0.2); border-color: var(--sales); }
-        .sales-title { font-weight: 800; color: #065f46; margin-bottom: 10px; display: block; font-size: 1.1rem; }
-        .sales-text { font-size: 0.95rem; color: #374151; line-height: 1.5; }
+        .sales-item { border: 1px solid #d1fae5; background: #ecfdf5; border-radius: 10px; padding: 20px; cursor: pointer; position: relative; }
+        .sales-item:hover { transform: scale(1.02); box-shadow: 0 5px 15px rgba(16, 185, 129, 0.2); }
+        .sales-title { font-weight: 800; color: #065f46; margin-bottom: 10px; display: block; }
         .sales-copy-hint { position: absolute; bottom: 10px; right: 15px; font-size: 0.75rem; color: var(--sales); font-weight: bold; opacity: 0.7; }
 
-        .wizard-step h2 { color: var(--primary); margin-bottom: 10px; text-align: center;}
+        .quiz-options { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .quiz-btn-opt { padding: 15px; border: 2px solid #eee; background: white; border-radius: 10px; cursor: pointer; }
+        .quiz-btn-opt.correct { background: #c8e6c9; border-color: #2e7d32; color: #1b5e20; }
+        .quiz-btn-opt.wrong { background: #ffcdd2; border-color: #c62828; color: #b71c1c; }
+
         .wizard-options { display: flex; flex-direction: column; gap: 10px; }
-        .option-btn { padding: 15px; border: 2px solid #eee; border-radius: 10px; background: white; font-size: 1rem; cursor: pointer; transition: 0.2s; text-align: left; display: flex; align-items: center; gap: 10px; }
+        .option-btn { padding: 15px; border: 2px solid #eee; border-radius: 10px; background: white; font-size: 1rem; cursor: pointer; text-align: left; }
         .option-btn:hover { border-color: var(--primary); background: #f0f4ff; }
         .result-box { padding: 20px; border-radius: 10px; margin-top: 20px; text-align: center; }
         .res-red { background: #ffebee; border: 2px solid #ef5350; color: #c62828; }
@@ -175,151 +119,65 @@
         .res-yellow { background: #fff8e1; border: 2px solid #ffca28; color: #f57f17; }
         .restart-btn { margin-top: 20px; background: #555; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
 
-        /* YARIŞMA (QUIZ) STİLLERİ */
-        .quiz-container { text-align: center; }
-        .quiz-question { font-size: 1.3rem; font-weight: bold; color: var(--primary); margin-bottom: 20px; }
-        .quiz-options { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-        .quiz-btn-opt { padding: 15px; border: 2px solid #eee; background: white; border-radius: 10px; cursor: pointer; font-size: 1rem; transition: 0.2s; }
-        .quiz-btn-opt:hover { background: #f3e5f5; border-color: var(--quiz); }
-        .quiz-btn-opt.correct { background: #c8e6c9; border-color: #2e7d32; color: #1b5e20; }
-        .quiz-btn-opt.wrong { background: #ffcdd2; border-color: #c62828; color: #b71c1c; }
-        .quiz-score { font-size: 1.2rem; font-weight: bold; color: var(--quiz); margin-bottom: 15px; }
-        .quiz-final { text-align: center; padding: 30px; }
-        .quiz-final h3 { font-size: 2rem; margin-bottom: 10px; }
-
         .highlight { background-color: yellow; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <div id="login-screen">
-        <div class="login-card">
-            <i class="fas fa-lock fa-3x" style="color: #0e1b42;"></i>
-            <h2>S Sport Plus</h2>
-            <p>Temsilci Girişi</p>
-            <input type="password" id="passInput" class="login-input" placeholder="Şifre" onkeyup="enterBas(event)">
-            <button class="login-btn" onclick="girisYap()">Giriş Yap</button>
-            <p id="error-msg" style="color:red; display:none;">Hatalı Şifre!</p>
-        </div>
-    </div>
-
-    <div id="maintenance-screen">
-        <div class="maintenance-content">
-            <span style="font-size: 4rem;">👩‍🏫</span>
-            <h1>Sistem Mola Verdi!</h1>
-            <p>Esra Hoca'dan gelecek kritik bilgileri bekliyoruz... 🚀</p>
-        </div>
-    </div>
+    <div id="login-screen"><div class="login-card"><i class="fas fa-lock fa-3x" style="color: #0e1b42;"></i><h2>S Sport Plus</h2><p>Temsilci Girişi</p><input type="password" id="passInput" class="login-input" placeholder="Şifre" onkeyup="enterBas(event)"><button class="login-btn" onclick="girisYap()">Giriş Yap</button><p id="error-msg" style="color:red; display:none;">Hatalı Şifre!</p></div></div>
+    <div id="maintenance-screen"><div class="maintenance-content"><span style="font-size: 4rem;">👩‍🏫</span><h1>Sistem Mola Verdi!</h1><p>Esra Hoca'dan gelecek kritik bilgileri bekliyoruz... 🚀</p></div></div>
 
     <div id="main-app">
         <div class="header">
             <div class="header-top">
                 <h1><i class="fas fa-compass"></i> S Sport Plus - Temsilci Pusulası</h1>
-                <div class="developer-badge">
-                    <i class="fas fa-code"></i> Developed by Doğuş Yalçınkaya
-                </div>
+                <div class="developer-badge"><i class="fas fa-code"></i> Developed by Doğuş Yalçınkaya</div>
             </div>
-
             <div class="control-wrapper">
                 <div class="left-panel">
-                    <div class="search-container">
-                        <i class="fas fa-search search-icon"></i>
-                        <input type="text" id="searchInput" placeholder="Hızlı Ara: '1001', 'Vestel', 'NBA', 'Donma', 'Fiyat'..." onkeyup="filterContent()">
-                    </div>
-
+                    <div class="search-container"><i class="fas fa-search search-icon"></i><input type="text" id="searchInput" placeholder="Hızlı Ara..." onkeyup="filterContent()"></div>
                     <div class="filter-container">
                         <button class="filter-btn btn-all active" onclick="filterCategory('all')"><i class="fas fa-th-large"></i> Tümü</button>
                         <button class="filter-btn btn-tech" onclick="filterCategory('Teknik')"><i class="fas fa-wrench"></i> Teknik</button>
                         <button class="filter-btn btn-ikna" onclick="filterCategory('İkna')"><i class="fas fa-hand-holding-dollar"></i> İkna</button>
                         <button class="filter-btn btn-camp" onclick="filterCategory('Kampanya')"><i class="fas fa-gift"></i> Kampanya</button>
                         <button class="filter-btn btn-info" onclick="filterCategory('Bilgi')"><i class="fas fa-info-circle"></i> Bilgi</button>
-                        
                         <a href="https://www.ssportplus.com/yayin-akisi/" target="_blank" class="filter-btn btn-stream"><i class="fas fa-calendar-alt"></i> Yayın Akışı</a>
-                        
-                        <button class="filter-btn guide-btn" onclick="openGuide()">
-                            📖 Spor Rehberi
-                        </button>
-                        
-                        <button class="filter-btn wizard-btn" onclick="openWizard()">
-                            ⚖️ İade Asistanı
-                        </button>
-
-                        <button class="filter-btn sales-btn" onclick="openSales()">
-                            📞 TeleSatış Scriptler
-                        </button>
-
-                        <button class="filter-btn quiz-btn" onclick="openQuiz()">
-                            🎮 Bilgi Yarışması
-                        </button>
+                        <button class="filter-btn guide-btn" onclick="openGuide()">📖 Spor Rehberi</button>
+                        <button class="filter-btn wizard-btn" onclick="openWizard()">⚖️ İade Asistanı</button>
+                        <button class="filter-btn sales-btn" onclick="openSales()">📞 TeleSatış</button>
+                        <button class="filter-btn quiz-btn" onclick="openQuiz()">🎮 Yarışma</button>
+                        <button class="filter-btn news-btn" onclick="openNews()">📢 Duyurular</button>
                     </div>
                 </div>
-
                 <div class="right-panel">
-                    <div class="news-ticker-box" onclick="openNews()" title="Tüm duyuruları görmek için tıkla">
-                        <div class="ticker-label"><i class="fas fa-circle" style="font-size:8px;"></i> GÜNCEL DUYURULAR</div>
-                        <div id="ticker-content" class="ticker-content">Yükleniyor...</div>
-                    </div>
+                    <div class="news-ticker-box" onclick="openNews()"><div class="ticker-label"><i class="fas fa-circle" style="font-size:8px;"></i> GÜNCEL</div><div id="ticker-content" class="ticker-content">Veriler yükleniyor...</div></div>
                 </div>
             </div>
         </div>
-
         <div class="container">
+            <div id="loading" style="text-align:center; padding:20px; color:#666;"><i class="fas fa-spinner fa-spin fa-2x"></i><br>Veriler Google Tablo'dan çekiliyor...</div>
             <div class="grid" id="cardGrid"></div>
         </div>
     </div>
 
-    <div id="news-modal" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('news-modal')">&times;</span>
-            <h2 style="color:var(--primary); border-bottom:2px solid var(--secondary); padding-bottom:10px; margin-bottom:20px;">
-                📢 Bu Hafta Neler Oldu?
-            </h2>
-            <div id="news-container"></div>
-        </div>
-    </div>
-
-    <div id="wizard-modal" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('wizard-modal')">&times;</span>
-            <div id="wizard-body"></div>
-        </div>
-    </div>
-
-    <div id="guide-modal" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('guide-modal')">&times;</span>
-            <h2 style="text-align:center; color:var(--primary); margin-bottom:10px;">📖 Spor Terimleri & İçerik Rehberi</h2>
-            <p style="text-align:center; color:#666;">Müşteriye hangi içeriğin ne olduğunu açıklamak için ipuçları.</p>
-            <div class="guide-grid" id="guide-grid"></div>
-        </div>
-    </div>
-
-    <div id="sales-modal" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('sales-modal')">&times;</span>
-            <h2 style="text-align:center; color:var(--sales); margin-bottom:10px;"><i class="fas fa-headset"></i> TeleSatış Scriptleri</h2>
-            <p style="text-align:center; color:#666;">Görüşme sırasında kullanabileceğiniz etkili cümle kalıpları.</p>
-            <div class="sales-grid" id="sales-grid"></div>
-        </div>
-    </div>
-
-    <div id="quiz-modal" class="modal-overlay">
-        <div class="modal-content" style="max-width: 600px;">
-            <span class="close-modal" onclick="closeModal('quiz-modal')">&times;</span>
-            <h2 style="text-align:center; color:var(--quiz); margin-bottom:10px;">🎮 Bilgi Yarışması</h2>
-            <div id="quiz-body"></div>
-        </div>
-    </div>
+    <div id="news-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('news-modal')">&times;</span><h2 style="color:var(--primary);">📢 Duyurular</h2><div id="news-container"></div></div></div>
+    <div id="wizard-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('wizard-modal')">&times;</span><div id="wizard-body"></div></div></div>
+    <div id="guide-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('guide-modal')">&times;</span><h2 style="text-align:center; color:var(--primary);">📖 Spor Rehberi</h2><div class="guide-grid" id="guide-grid"></div></div></div>
+    <div id="sales-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('sales-modal')">&times;</span><h2 style="text-align:center; color:var(--sales);">📞 Satış Scriptleri</h2><div class="sales-grid" id="sales-grid"></div></div></div>
+    <div id="quiz-modal" class="modal-overlay"><div class="modal-content" style="max-width: 600px;"><span class="close-modal" onclick="closeModal('quiz-modal')">&times;</span><h2 style="text-align:center; color:var(--quiz);">🎮 Bilgi Yarışması</h2><div id="quiz-body"></div></div></div>
 
     <script>
         const BAKIM_MODU = false; 
-        const DOGRU_SIFRE_HASH = "c3Nwb3J0Kw=="; // ssport+
+        const DOGRU_SIFRE_HASH = "c3Nwb3J0Kw=="; 
+        
+        // SENİN YENİ LİNKİN BURADA
+        const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?output=csv";
 
-        // GÜVENLİK
+        let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [];
+
         document.addEventListener('contextmenu', event => event.preventDefault());
-        document.onkeydown = function(e) {
-            if(e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) return false;
-        }
+        document.onkeydown = function(e) { if(e.keyCode == 123) return false; }
 
         function girisYap() {
             var girilen = document.getElementById("passInput").value;
@@ -329,298 +187,38 @@
                     if (BAKIM_MODU) document.getElementById("maintenance-screen").style.display = "flex";
                     else {
                         document.getElementById("main-app").style.display = "block";
-                        startTicker();
-                        if(document.getElementById('cardGrid').innerHTML === "") renderCards(database);
+                        loadGoogleSheetData();
                     }
                 } else { document.getElementById("error-msg").style.display = "block"; }
             } catch (e) { document.getElementById("error-msg").style.display = "block"; }
         }
         function enterBas(e) { if (e.key === "Enter") girisYap(); }
 
-        // ==========================================
-        // 📢 DUYURULAR & GÜNCELLEMELER
-        // ==========================================
-        const newsData = [
-            { date: "21.11.2025", title: "Vestel TV Dil Sorunu (GÜNCEL)", desc: "Eski tarayıcıya sahip cihazlar için gerekli düzenleme sahaya alınmıştır. Sorun çözülmüş olmalıdır, ancak kullanıcı dönüşlerine göre kontroller devam etmektedir.", type: "update" },
-            { date: "21.11.2025", title: "Churn İndirim Fiyatı Değişti", desc: "Yıllık paket churn (ikna) fiyatı 1499 TL olarak güncellenmiştir.", type: "update" },
-            { date: "20.11.2025", title: "Erlab Çözümleri Eklendi", desc: "Panelde 'Teknik' kategorisi altına sık karşılaşılan Erlab hata kodları ve çözümleri eklenmiştir.", type: "info" },
-            { date: "18.11.2025", title: "Yayın Akışı Güncellemesi", desc: "EuroLeague çift maç haftası nedeniyle yayın akışında yoğunluk olabilir, müşterileri web sitesine yönlendirelim.", type: "info" }
-        ];
+        function loadGoogleSheetData() {
+            Papa.parse(SHEET_URL, {
+                download: true, header: true,
+                complete: function(results) {
+                    const rawData = results.data;
+                    
+                    database = rawData.filter(i => ['card','bilgi','teknik','kampanya','ikna'].includes(i.Type)).map(i => ({ title: i.Title, category: i.Category, text: i.Text, script: i.Script, code: i.Code, link: i.Link }));
+                    newsData = rawData.filter(i => i.Type === 'news').map(i => ({ date: i.Date, title: i.Title, desc: i.Text, type: i.Category }));
+                    sportsData = rawData.filter(i => i.Type === 'sport').map(i => ({ title: i.Title, icon: i.Icon, desc: i.Text, tip: i.Tip }));
+                    salesScripts = rawData.filter(i => i.Type === 'sales').map(i => ({ title: i.Title, text: i.Text }));
+                    quizQuestions = rawData.filter(i => i.Type === 'quiz').map(i => ({ q: i.Text, opts: i.QuizOptions.split(','), a: parseInt(i.QuizAnswer) }));
 
-        let tickerIndex = 0;
-        function startTicker() {
-            const ticker = document.getElementById('ticker-content');
-            if(newsData.length === 0) { ticker.innerHTML = "Güncel duyuru bulunmamaktadır."; return; }
-            function showNext() {
-                const item = newsData[tickerIndex];
-                ticker.style.animation = 'none';
-                ticker.offsetHeight; 
-                ticker.style.animation = 'slideIn 0.5s ease-out';
-                ticker.innerHTML = `<strong>${item.date}:</strong> ${item.title} - ${item.desc}`;
-                tickerIndex = (tickerIndex + 1) % newsData.length;
-            }
-            showNext();
-            setInterval(showNext, 5000);
-        }
-
-        function openNews() {
-            document.getElementById('news-modal').style.display = 'flex';
-            const container = document.getElementById('news-container');
-            container.innerHTML = '';
-            newsData.forEach(item => {
-                let tagClass = item.type === 'fix' ? 'tag-fix' : (item.type === 'update' ? 'tag-update' : 'tag-info');
-                let tagText = item.type === 'fix' ? 'Çözüldü' : (item.type === 'update' ? 'Değişiklik' : 'Bilgi');
-                container.innerHTML += `
-                    <div class="news-item">
-                        <span class="news-date">${item.date}</span>
-                        <span class="news-title">${item.title}</span>
-                        <div class="news-desc">${item.desc}</div>
-                        <span class="news-tag ${tagClass}">${tagText}</span>
-                    </div>
-                `;
+                    document.getElementById('loading').style.display = 'none';
+                    renderCards(database);
+                    startTicker();
+                }
             });
         }
-
-        // ==========================================
-        // 🎮 BİLGİ YARIŞMASI (QUIZ)
-        // ==========================================
-        const quizQuestions = [
-            { q: "Aşağıdaki liglerden hangisi S Sport Plus'ta YER ALMAZ?", opts: ["Premier Lig", "Serie A", "La Liga", "NBA"], a: 0 }, 
-            { q: "Vestel ve Arçelik TV'lerde hangi yıl ve üzeri desteklenmektedir?", opts: ["2017", "2018", "2019", "2020"], a: 2 }, 
-            { q: "Toprak Razgatlıoğlu hangi şampiyonada yarışmaktadır?", opts: ["MotoGP", "WorldSBK", "WRC", "Formula 1"], a: 1 }, 
-            { q: "S Sport Plus'ta aynı anda kaç cihazdan İZLEME yapılabilir?", opts: ["1", "2", "3", "4"], a: 0 }, 
-            { q: "Aylık paket kullanan bir üyeye hangi indirim kodu önerilmelidir?", opts: ["YILLIKLOCA", "6AY50", "BEDAVA12", "SPORT100"], a: 1 }, 
-            { q: "Hata Kodu 1020 ne anlama gelir?", opts: ["Sinyal Yok", "Cihaz Limiti", "VPN/Erişim Engeli", "Şifre Hatası"], a: 2 },
-            { q: "NFL final maçına ne ad verilir?", opts: ["Final Four", "Super Bowl", "Grand Slam", "El Clasico"], a: 1 },
-            { q: "İçeriği izlemiş bir kullanıcıya iade yapılabilir mi?", opts: ["Evet, her zaman", "Hayır, izleme varsa iade olmaz", "Sadece mobilde", "Sadece hafta sonu"], a: 1 }
-        ];
-
-        let currentQuestion = 0;
-        let score = 0;
-
-        function openQuiz() {
-            document.getElementById('quiz-modal').style.display = 'flex';
-            currentQuestion = 0;
-            score = 0;
-            showStartScreen();
-        }
-
-        function showStartScreen() {
-            document.getElementById('quiz-body').innerHTML = `
-                <div class="quiz-final">
-                    <h3>Hazır mısın?</h3>
-                    <p>Bilgini test et, eğlen ve skorunu gör!</p>
-                    <button class="restart-btn" style="background:var(--quiz); font-size:1.2rem;" onclick="showQuestion()">BAŞLA</button>
-                </div>
-            `;
-        }
-
-        function showQuestion() {
-            if (currentQuestion >= quizQuestions.length) { showResult(); return; }
-            
-            const q = quizQuestions[currentQuestion];
-            let html = `
-                <div class="quiz-score">Soru: ${currentQuestion + 1} / ${quizQuestions.length} | Puan: ${score}</div>
-                <div class="quiz-question">${q.q}</div>
-                <div class="quiz-options">
-            `;
-            q.opts.forEach((opt, index) => {
-                html += `<button class="quiz-btn-opt" onclick="checkAnswer(this, ${index})">${opt}</button>`;
-            });
-            html += `</div>`;
-            document.getElementById('quiz-body').innerHTML = html;
-        }
-
-        function checkAnswer(btn, index) {
-            const correct = quizQuestions[currentQuestion].a;
-            const buttons = document.querySelectorAll('.quiz-btn-opt');
-            buttons.forEach(b => b.disabled = true);
-
-            if (index === correct) {
-                btn.classList.add('correct');
-                score += 10;
-                Swal.fire({icon:'success', title:'Doğru!', timer:1000, showConfirmButton:false, toast:true, position:'top'});
-            } else {
-                btn.classList.add('wrong');
-                buttons[correct].classList.add('correct');
-                Swal.fire({icon:'error', title:'Yanlış!', timer:1000, showConfirmButton:false, toast:true, position:'top'});
-            }
-
-            setTimeout(() => {
-                currentQuestion++;
-                showQuestion();
-            }, 1500);
-        }
-
-        function showResult() {
-            let msg = "";
-            if(score >= 70) msg = "🏆 Tebrikler! Sen Bir Efsanesin!";
-            else if(score >= 40) msg = "👏 Fena Değil, Biraz Daha Pratik!";
-            else msg = "📚 Dokümanları Tekrar Okumalısın!";
-
-            document.getElementById('quiz-body').innerHTML = `
-                <div class="quiz-final">
-                    <h3>Oyun Bitti!</h3>
-                    <p style="font-size:1.5rem; font-weight:bold; color:var(--quiz);">Skorun: ${score}</p>
-                    <p>${msg}</p>
-                    <button class="restart-btn" onclick="openQuiz()">Tekrar Oyna</button>
-                </div>
-            `;
-        }
-
-        // ==========================================
-        // 📞 SATIŞ SCRIPTLERİ
-        // ==========================================
-        const salesScripts = [
-            { title: "Açılış (Giriş) Cümlesi", text: "Merhaba [İsim] Bey/Hanım, S Sport Plus'tan arıyorum. Sporda dünyanın en büyük heyecanlarını tek pakette sunduğumuz yeni kampanyamız hakkında bilgi vermek için sizi rahatsız ettim." },
-            { title: "Fiyat İtirazı Karşılama", text: "Haklısınız, her şeyin fiyatı artıyor. Ancak kampanyamızla günlük maliyet sadece 9 TL'ye, yani bir çay fiyatına geliyor. Bu fiyata La Liga, NBA ve EuroLeague dahil tüm içerikleri izleyebiliyorsunuz." },
-            { title: "Yıllık Paket İkna", text: "Aylık ödemek yerine Yıllık Paket tercih ederseniz, tam 4 ay bizden hediye etmiş oluyoruz. Yani 12 ay izleyip sadece 8 ay ödüyorsunuz. Bu avantajı kaçırmamanızı öneririm." },
-            { title: "Kararsız Müşteri (Kapanış)", text: "Bu kampanya sadece bugüne özel tanımlandı. Dilerseniz şimdi aktivasyonu yapalım, hemen izlemeye başlayın. Zaten taahhüt olmadığı için dilediğiniz zaman iptal etme özgürlüğünüz var." },
-            { title: "Rakip Kıyaslaması (Exxen/Tod)", text: "Diğer platformlarda her lig için ayrı paket almanız gerekirken, bizde EuroLeague, NBA, La Liga ve Serie A hepsi tek pakette. Ekstra ücret ödemeden hepsine erişirsiniz." },
-            { title: "Churn (İptal) Önleme", text: "Gitmeden önce size özel bir teklif sunmak isterim. Üyeliğinizi iptal etmek yerine önümüzdeki ay için %50 indirim tanımlayalım, bu heyecana ara vermeyin." }
-        ];
-
-        function openSales() {
-            document.getElementById('sales-modal').style.display = 'flex';
-            const grid = document.getElementById('sales-grid');
-            grid.innerHTML = '';
-            salesScripts.forEach(script => {
-                grid.innerHTML += `
-                    <div class="sales-item" onclick="copyText('${script.text.replace(/'/g, "\\'")}')">
-                        <span class="sales-title">${script.title}</span>
-                        <div class="sales-text">${script.text}</div>
-                        <div class="sales-copy-hint"><i class="fas fa-copy"></i> Tıkla Kopyala</div>
-                    </div>
-                `;
-            });
-        }
-
-        // ==========================================
-        // 📖 SPOR REHBERİ VERİLERİ
-        // ==========================================
-        const sportsData = [
-            { title: "WorldSBK", icon: "fa-motorcycle", desc: "Dünya Superbike Şampiyonası. Sokakta satılan motorların modifiye edilip yarıştığı seri.", tip: "🇹🇷 Toprak Razgatlıoğlu burada! (MotoGP testleri yapsa da bu sezon hala BMW ile SBK'da)." },
-            { title: "MotoGP", icon: "fa-motorcycle", desc: "Motosiklet dünyasının Formula 1'i. Sadece yarış için üretilen özel prototip motorlar.", tip: "En hızlı prototip motorlar burada." },
-            { title: "UFC", icon: "fa-hand-fist", desc: "Boks, Kickboks, Judo ve Güreş tekniklerinin karışımı olan Kafes Dövüşü.", tip: "Islam Makhachev ve dünyanın en sert dövüşçüleri." },
-            { title: "Serie A", icon: "fa-futbol", desc: "İtalya'nın en üst düzey futbol ligi. Defansif taktiklerin ön planda olduğu dev lig.", tip: "Hakan Çalhanoğlu (Inter) ve Kenan Yıldız (Juventus) burada!" },
-            { title: "La Liga", icon: "fa-futbol", desc: "İspanya'nın en üst düzey futbol ligi. Tekniğin ve pas oyununun zirvesi.", tip: "Real Madrid (Arda Güler) ve Barcelona derbisi (El Clasico)." },
-            { title: "EuroLeague", icon: "fa-basketball", desc: "Avrupa'nın kulüpler bazındaki en büyük basketbol organizasyonu.", tip: "Fenerbahçe ve Anadolu Efes bizi temsil ediyor." },
-            { title: "NBA", icon: "fa-basketball", desc: "ABD Profesyonel Basketbol Ligi. Dünyanın en iyi basketbolcularının şov sahnesi.", tip: "LeBron, Curry, Alperen Şengün burada." },
-            { title: "NFL", icon: "fa-football", desc: "Amerikan Futbolu Ligi. Kask ve korumalıklarla oynanan, yüksek temaslı strateji sporu.", tip: "Super Bowl (Final) bizde!" },
-            { title: "NCAA", icon: "fa-graduation-cap", desc: "ABD Üniversite Ligi. Profesyonelliğe geçmeden önceki son amatör durak.", tip: "Geleceğin yıldızları burada oynar." },
-            { title: "WRC", icon: "fa-car-side", desc: "Dünya Ralli Şampiyonası. Asfalt, toprak ve karlı zorlu yollarda zamana karşı yarış.", tip: "Arazi ve zorlu şartlarda yapılan yarışlar." },
-            { title: "Libertadores", icon: "fa-futbol", desc: "Güney Amerika'nın Şampiyonlar Ligi. Brezilya ve Arjantin takımlarının kıyasıya mücadelesi.", tip: "Brezilya ve Arjantin takımları ağırlıklı." }
-        ];
-
-        function openGuide() {
-            document.getElementById('guide-modal').style.display = 'flex';
-            const grid = document.getElementById('guide-grid');
-            grid.innerHTML = '';
-            sportsData.forEach(sport => {
-                grid.innerHTML += `
-                    <div class="guide-item">
-                        <i class="fas ${sport.icon} guide-icon"></i>
-                        <span class="guide-title">${sport.title}</span>
-                        <div class="guide-desc">${sport.desc}</div>
-                        <div class="guide-tip"><i class="fas fa-lightbulb"></i> ${sport.tip}</div>
-                    </div>
-                `;
-            });
-        }
-
-        function closeModal(id) { document.getElementById(id).style.display = 'none'; }
-
-        // ==========================================
-        // ⚖️ İADE ASİSTANI (WIZARD)
-        // ==========================================
-        const wizardSteps = {
-            start: {
-                title: "İade Talebi Analizi",
-                text: "Lütfen müşterinin durumunu seçiniz:",
-                options: [
-                    { text: "İçerik İzlemiş / Kullanım Var", next: "izleme_var" },
-                    { text: "Aylık Paket (İzleme YOK)", next: "aylik_izleme_yok" },
-                    { text: "Yıllık Paket (İzleme YOK)", next: "yillik_izleme_yok" },
-                    { text: "Mükerrer (Çift) Çekim", next: "mukerrer" },
-                    { text: "Aynı Gün Yanlışlıkla Yıllık Alım", next: "ayni_gun_yillik" },
-                    { text: "Apple / Google Store İptali", next: "store_iptal" },
-                    { text: "Winback Paket Geçiş İadesi", next: "winback_iade" }
-                ]
-            },
-            izleme_var: { result: "red", title: "❌ İADE REDDEDİLİR", text: "İçerik izlenmişse (genel arıza hariç) iade yapılmaz.", script: "Hizmetimizden aktif olarak faydalandığınız için iade prosedürlerimiz gereği talebinize olumlu yanıt veremiyoruz." },
-            aylik_izleme_yok: { title: "Aylık Paket - İzleme Yok", text: "THH tehdidi var mı?", options: [{ text: "Evet/Israrcı", next: "aylik_teklif" }, { text: "Hayır", next: "izleme_var" }] },
-            aylik_teklif: { title: "İndirim Teklifi", text: "Önce 6AY50 ile indirim teklif et.", options: [{ text: "İndirimi Kabul Etti", next: "indirim_kabul" }, { text: "Reddetti (Tam İade)", next: "tam_iade" }] },
-            yillik_izleme_yok: { title: "Yıllık Paket", text: "Paket kampanyalı mıydı?", options: [{ text: "Hayır (Standart)", next: "yillik_standart" }, { text: "Evet (Kampanyalı)", next: "yillik_kampanyali" }] },
-            yillik_standart: { title: "Standart Yıllık", text: "Sırasıyla: 1. YILLIKLOCA İndirimi, 2. Aylığa Geçiş öner.", options: [{ text: "Teklifi Kabul Etti", next: "islem_tamam" }, { text: "Hepsini Reddetti (Tam İade)", next: "tam_iade" }] },
-            yillik_kampanyali: { title: "Kampanyalı Yıllık", text: "Sadece Aylığa Geçiş önerilebilir.", options: [{ text: "Aylığa Geçişi Kabul Etti", next: "ayliga_gecis" }, { text: "Reddetti (Tam İade)", next: "tam_iade" }] },
-            mukerrer: { title: "Mükerrer Çekim", text: "15 gün içinde ve Aynı Cihaz/IP mi?", options: [{ text: "Evet", next: "mukerrer_iade" }, { text: "Hayır", next: "izleme_var" }] },
-            ayni_gun_yillik: { title: "Aynı Gün Yıllık", text: "24 saat içinde mi?", options: [{ text: "Evet", next: "bir_defaya_mahsus" }, { text: "Hayır", next: "izleme_var" }] },
-            store_iptal: { result: "red", title: "❌ BİZ İPTAL EDEMEYİZ", text: "Apple/Google alımları telefondan yapılmalı." },
-            winback_iade: { result: "yellow", title: "⚠️ SADECE 2. PAKET İADE", text: "Sadece son alınan indirimli paket iade edilebilir." },
-            indirim_kabul: { result: "green", title: "✅ İNDİRİM TANIMLA", text: "139.5 TL iade yapıldı." },
-            tam_iade: { result: "green", title: "✅ TAM İADE YAP", text: "Teklifler reddedildi, iade sağla." },
-            mukerrer_iade: { result: "green", title: "✅ MÜKERRER İADE", text: "Fazla paketi iade et." },
-            ayliga_gecis: { result: "green", title: "✅ AYLIK GEÇİŞ", text: "Yıllık iptal, aylık tanımla, farkı iade et." },
-            bir_defaya_mahsus: { result: "green", title: "✅ TEK SEFERLİK İADE", text: "Yıllık iade, aylık devam." },
-            islem_tamam: { result: "green", title: "✅ İŞLEM TAMAM", text: "Teklif kabul edildi." }
-        };
-
-        function openWizard() { document.getElementById('wizard-modal').style.display = 'flex'; renderStep('start'); }
-
-        function renderStep(stepKey) {
-            const step = wizardSteps[stepKey];
-            const body = document.getElementById('wizard-body');
-            let html = `<h2>${step.title || ''}</h2>`;
-            if (step.result) {
-                let icon = step.result === 'red' ? '🛑' : (step.result === 'green' ? '✅' : '⚠️');
-                let styleClass = step.result === 'red' ? 'res-red' : (step.result === 'green' ? 'res-green' : 'res-yellow');
-                html += `<div class="result-box ${styleClass}"><div style="font-size:3rem; margin-bottom:10px;">${icon}</div><h3>${step.title}</h3><p>${step.text}</p>${step.script ? `<div class="script-box">${step.script}</div>` : ''}</div><button class="restart-btn" onclick="renderStep('start')"><i class="fas fa-redo"></i> Başa Dön</button>`;
-            } else {
-                html += `<p>${step.text}</p><div class="wizard-options">`;
-                step.options.forEach(opt => { html += `<button class="option-btn" onclick="renderStep('${opt.next}')"><i class="fas fa-chevron-right"></i> ${opt.text}</button>`; });
-                html += `</div>`;
-                if(stepKey !== 'start') html += `<button class="restart-btn" onclick="renderStep('start')" style="background:#eee; color:#333; margin-top:15px;">Geri Dön</button>`;
-            }
-            body.innerHTML = html;
-        }
-
-        // ==========================================
-        // 📊 ANA VERİ SETİ
-        // ==========================================
-        const database = [
-            { title: "Bilgi: Hangi İçerikler Var?", category: "Bilgi", type: "bilgi", tags: ["maçlar", "ligler", "spor"], text: "La Liga, Serie A, EuroLeague, NBA, UFC, ATP, Wimbledon, NFL, Libertadores, Sudamericana, Moto GP, WRC, Nascar.", script: "S Sport Plus'ta EuroLeague, NBA, La Liga, Serie A, UFC ve MotoGP gibi dünyanın en büyük spor organizasyonlarını tek pakette izleyebilirsiniz." },
-            { title: "Bilgi: İnternet Hızı Gereksinimi", category: "Bilgi", type: "bilgi", tags: ["hız", "mbps", "internet"], text: "SD Yayın: Min 3 Mbps | HD Yayın: Min 10 Mbps.", script: "Kesintisiz HD yayın için en az 10 Mbps indirme (download) hızına sahip olmanız önerilir." },
-            { title: "Bilgi: Profil Oluşturma", category: "Bilgi", type: "bilgi", tags: ["profil", "çocuk"], text: "Aynı hesapta farklı profiller oluşturulabilir. Çocuk Profili seçeneği mevcuttur.", script: "Hesabınızda kendiniz ve aile üyeleriniz için ayrı profiller oluşturabilir, çocuklarınız için güvenli çocuk profili açabilirsiniz." },
-            { title: "Bilgi: Çoklu İzleme (Multi-View)", category: "Bilgi", type: "bilgi", tags: ["4 ekran", "aynı anda"], text: "Sadece Web sitesinde geçerlidir. Aynı ekranda 4 maça kadar izlenebilir.", script: "Web sitemiz üzerinden 'Çoklu İzleme' özelliğiyle aynı anda 4 farklı canlı yayını tek ekranda takip edebilirsiniz." },
-            { title: "Bilgi: Veri Tasarrufu Modu", category: "Bilgi", type: "bilgi", tags: ["mobil", "kota"], text: "Mobil uygulamada veri tasarrufu modu mevcuttur. Yayın kalitesini düşürerek kota dostu olur.", script: "Mobil uygulamamızdaki 'Veri Tasarrufu' modunu açarak internet kotanızı daha verimli kullanabilirsiniz." },
-            { title: "Bilgi: Favori Listesi", category: "Bilgi", type: "bilgi", tags: ["listem", "takip"], text: "İçerikler 'Listem'e eklenerek favorilere alınabilir.", script: "Sevdiğiniz programları veya maçları 'Listem'e ekleyerek daha sonra kolayca ulaşabilirsiniz." },
-            { title: "Bilgi: Üyelik Dondurma", category: "Bilgi", type: "bilgi", tags: ["dondurma", "ara verme"], text: "Üyelik dondurma özelliği YOKTUR. İptal edip istendiğinde tekrar başlatılabilir.", script: "Sistemimizde üyelik dondurma özelliği bulunmamaktadır. Dilerseniz üyeliğinizi iptal edip, tekrar izlemek istediğinizde hesabınızı aktif edebilirsiniz." },
-            { title: "Bilgi: Paket Fiyatları (2025)", category: "Bilgi", type: "bilgi", tags: ["ücret"], text: "Aylık: 279 TL | Yıllık: 1799 TL", script: "Güncel fiyatlarımız; Aylık paket 279 TL, Yıllık paket ise 1799 TL'dir." },
-            { title: "Bilgi: NBA Sezonu 25-26", category: "Bilgi", type: "bilgi", tags: ["nba"], text: "Normal sezon, All-Star, Play-off canlı.", script: "NBA'de tüm sezonu ve finalleri canlı yayınlıyoruz." },
-            { title: "Bilgi: NFL (Amerikan Futbolu)", category: "Bilgi", type: "bilgi", tags: ["nfl"], text: "RedZone ve Super Bowl dahil.", script: "NFL heyecanı RedZone ve Super Bowl dahil S Sport Plus'ta." },
-            { title: "Bilgi: Cihaz Sınırı", category: "Bilgi", type: "bilgi", tags: ["sınır"], text: "Sınırsız cihazda oturum açılır, AYNI ANDA 1 cihaz izler.", script: "Hesabınızla dilediğiniz kadar cihazdan giriş yapabilirsiniz ancak aynı anda tek ekrandan izleyebilirsiniz." },
-            { title: "Teknik: TV Donma Adımları", category: "Teknik", type: "teknik", tags: ["tv", "donma", "smart"], text: "1. Modem/TV fişten çek (10sn). 2. Kanal değiştir. 3. TV Tarayıcısından Hız Testi (8Mbps+ gerekli).", script: "Modeminizi ve televizyonunuzu fişten çekip 10 saniye bekledikten sonra tekrar takabilir misiniz? Düzelmezse TV tarayıcısından hiztesti.com.tr testi yapalım.", link: "https://www.hiztesti.com.tr/" },
-            { title: "Teknik: Mobil Donma Adımları", category: "Teknik", type: "teknik", tags: ["mobil", "android", "ios"], text: "1. Mobil Veri ile dene. 2. Arka plan uygulamalarını kapat. 3. Önbellek Temizle.", script: "Wifi'yi kapatıp mobil veri ile denemenizi rica ederim. Sorun devam ederse uygulama önbelleğini temizleyelim." },
-            { title: "Teknik: PC Donma Adımları", category: "Teknik", type: "teknik", tags: ["web", "pc"], text: "1. Çözünürlüğü 720p yap. 2. Farklı tarayıcı (Edge/Chrome). 3. Ping testi.", script: "Tarayıcı ayarlarından kaliteyi 1080p yerine 720p seçerek deneyebilir misiniz? Farklı bir tarayıcıda da kontrol edelim." },
-            { title: "Uyarı: Vestel / Arçelik Desteği", category: "Teknik", type: "teknik", tags: ["vestel", "arçelik", "beko"], text: "⚠️ 2018 ve öncesi Vestel/Arçelik TV'lerde destek YOKTUR. Sadece 2019+ modeller desteklenir.", script: "2019 yılı öncesi üretilen Vestel ve Arçelik televizyonlarda altyapı desteği sona ermiştir. Yayınları TV Box veya Chromecast ile izleyebilirsiniz." },
-            { title: "Hata Kodu: 1001 / Media Decode", category: "Teknik", type: "teknik", tags: ["1001", "hata"], text: "Cihaz/Tarayıcı önbellek sorunu. Çerezleri temizle, uygulamayı sil-yükle.", script: "Bu hata cihazınızın önbelleği kaynaklı olabilir. Uygulamayı silip tekrar yüklemenizi rica ederim." },
-            { title: "Hata Kodu: 2002 / 2001 / 2403", category: "Teknik", type: "teknik", tags: ["2002", "2001", "sinyal"], text: "Yayın sinyali veya erişim sorunu. MCR kaynaklı olabilir..", script: "Şu an yayın sinyali ile ilgili genel bir kontrol sağlıyoruz. Kısa süre içinde düzelecektir." },
-            { title: "Hata Kodu: 1020 / Erişim Engeli", category: "Teknik", type: "teknik", tags: ["1020", "vpn"], text: "Güvenlik duvarı veya VPN engeli. VPN kapalı olmalı..", script: "Güvenlik duvarı kaynaklı bir engelleme görünüyor. VPN açıksa kapatmanızı rica ederim." },
-            { title: "Hata: 'Abonelik Başkasına Ait'", category: "Teknik", type: "teknik", tags: ["store", "apple"], text: "Cihazdaki Store hesabı farklı bir mail ile eşleşmiş.", script: "Cihazınızdaki mağaza hesabınızla daha önce farklı bir mail adresi üzerinden üyelik başlatılmış. Diğer mailinizle giriş yapmayı deneyin." },
-            { title: "İkna: Fiyat Avantajı", category: "İkna", type: "ikna", tags: ["pahalı", "fiyat"], text: "Aylık 279 TL pahalı gelirse: 'Günlük 9 TL'. Taahhütsüz.", script: "S Sport Plus'ta taahhüt vermeden, günlük sadece bir çay parasına dünyanın en büyük liglerini izleyebilirsiniz." },
-            { title: "İkna: Özellikler (Geri Al / Çoklu)", category: "İkna", type: "ikna", tags: ["özellik"], text: "Vurgula: Tekrar İzle, Durdur/Geri Al, Çoklu İzleme, İndir İzle.", script: "Maçları kaçırma derdiniz yok; 'Tekrar İzle' özelliği ile dilediğiniz zaman izleyebilir, canlı yayını geri alabilirsiniz." },
-            { title: "Rakip: EXXEN vs Biz", category: "İkna", type: "ikna", tags: ["rakip", "exxen"], text: "Exxen sadece Avrupa maçları. Bizde La Liga, Serie A, NBA, F1, UFC var.", script: "Exxen Avrupa maçları odaklıdır. Bizde ise her hafta sonu La Liga, Serie A ve NBA heyecanını kesintisiz takip edebilirsiniz." },
-            { title: "Rakip: TOD / Digiturk vs Biz", category: "İkna", type: "ikna", tags: ["rakip", "tod"], text: "TOD paketleri parçalıdır. Bizde hepsi TEK paket.", script: "Diğer platformlarda ligler için ayrı paketler almanız gerekirken, S Sport Plus'ta tüm içeriklere tek bir abonelikle erişirsiniz." },
-            { title: "Kampanya: YILLIKLOCA", category: "Kampanya", type: "kampanya", tags: ["yıllık", "web"], text: "Web'e özel yıllık 1499 TL.", script: "YILLIKLOCA kodu ile yıllık paketi 1499 TL avantajlı fiyatıyla alabilirsiniz.", code: "YILLIKLOCA" },
-            { title: "Kampanya: 6AY50", category: "Kampanya", type: "kampanya", tags: ["aylık", "indirim"], text: "Aylık pakette %50 indirim.", script: "6AY50 kodu ile önümüzdeki ay için %50 indirim tanımlayabiliriz.", code: "6AY50" }
-        ];
 
         function renderCards(data) {
             const container = document.getElementById('cardGrid');
             container.innerHTML = '';
             if(data.length === 0) { container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Kayıt Yok</div>'; return; }
             data.forEach(item => {
-                let html = `<div class="card ${item.type}">
+                let html = `<div class="card ${item.category}">
                     <div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div>
                     <div class="card-content"><div>${highlightText(item.text)}</div></div>
                     <div class="script-box">${highlightText(item.script)}</div>
@@ -634,26 +232,28 @@
             });
         }
 
-        function filterContent() {
-            const search = document.getElementById('searchInput').value.toLowerCase();
-            const filtered = database.filter(item => item.title.toLowerCase().includes(search) || item.text.toLowerCase().includes(search) || item.script.toLowerCase().includes(search) || (item.tags && item.tags.some(t=>t.includes(search))));
-            renderCards(filtered);
-        }
+        function openGuide() { document.getElementById('guide-modal').style.display = 'flex'; const grid=document.getElementById('guide-grid'); grid.innerHTML=''; sportsData.forEach(s=>{ grid.innerHTML+=`<div class="guide-item"><i class="fas ${s.icon} guide-icon"></i><span class="guide-title">${s.title}</span><div class="guide-desc">${s.desc}</div><div class="guide-tip"><i class="fas fa-lightbulb"></i> ${s.tip}</div></div>`; }); }
+        function openSales() { document.getElementById('sales-modal').style.display = 'flex'; const grid=document.getElementById('sales-grid'); grid.innerHTML=''; salesScripts.forEach(s=>{ grid.innerHTML+=`<div class="sales-item" onclick="copyText('${s.text.replace(/'/g, "\\'")}')"><span class="sales-title">${s.title}</span><div class="sales-text">${s.text}</div><div class="sales-copy-hint"><i class="fas fa-copy"></i> Tıkla Kopyala</div></div>`; }); }
+        
+        let currentQuestion=0, score=0;
+        function openQuiz() { document.getElementById('quiz-modal').style.display='flex'; currentQuestion=0; score=0; showStartScreen(); }
+        function showStartScreen() { document.getElementById('quiz-body').innerHTML=`<div class="quiz-final"><h3>Hazır mısın?</h3><button class="restart-btn" style="background:var(--quiz);" onclick="showQuestion()">BAŞLA</button></div>`; }
+        function showQuestion() { if(currentQuestion>=quizQuestions.length){showResult();return;} const q=quizQuestions[currentQuestion]; let html=`<div class="quiz-score">Soru: ${currentQuestion+1}</div><div class="quiz-question">${q.q}</div><div class="quiz-options">`; q.opts.forEach((opt,i)=>{ html+=`<button class="quiz-btn-opt" onclick="checkAnswer(this, ${i})">${opt}</button>`; }); html+=`</div>`; document.getElementById('quiz-body').innerHTML=html; }
+        function checkAnswer(btn,i) { const correct=quizQuestions[currentQuestion].a; document.querySelectorAll('.quiz-btn-opt').forEach(b=>b.disabled=true); if(i===correct){btn.classList.add('correct'); score+=10; Swal.fire({icon:'success',title:'Doğru!',timer:1000,toast:true,position:'top',showConfirmButton:false});}else{btn.classList.add('wrong'); Swal.fire({icon:'error',title:'Yanlış!',timer:1000,toast:true,position:'top',showConfirmButton:false});} setTimeout(()=>{currentQuestion++; showQuestion();},1500); }
+        function showResult() { document.getElementById('quiz-body').innerHTML=`<div class="quiz-final"><h3>Bitti! Puan: ${score}</h3><button class="restart-btn" onclick="openQuiz()">Tekrar</button></div>`; }
 
-        function filterCategory(cat) {
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            event.target.classList.add('active');
-            renderCards(cat === 'all' ? database : database.filter(i => i.category === cat));
-        }
+        const wizardSteps={start:{title:"İade Talebi Analizi",text:"Lütfen müşterinin durumunu seçiniz:",options:[{text:"İçerik İzlemiş / Kullanım Var",next:"izleme_var"},{text:"Aylık Paket (İzleme YOK)",next:"aylik_izleme_yok"},{text:"Yıllık Paket (İzleme YOK)",next:"yillik_izleme_yok"},{text:"Mükerrer (Çift) Çekim",next:"mukerrer"},{text:"Aynı Gün Yanlışlıkla Yıllık Alım",next:"ayni_gun_yillik"},{text:"Apple / Google Store İptali",next:"store_iptal"},{text:"Winback Paket Geçiş İadesi",next:"winback_iade"}]},izleme_var:{result:"red",title:"❌ İADE REDDEDİLİR",text:"İçerik izlenmişse (genel arıza hariç) iade yapılmaz.",script:"Hizmetimizden aktif olarak faydalandığınız için iade prosedürlerimiz gereği talebinize olumlu yanıt veremiyoruz."},aylik_izleme_yok:{title:"Aylık Paket - İzleme Yok",text:"THH tehdidi var mı?",options:[{text:"Evet/Israrcı",next:"aylik_teklif"},{text:"Hayır",next:"izleme_var"}]},aylik_teklif:{title:"İndirim Teklifi",text:"Önce 6AY50 ile indirim teklif et.",options:[{text:"İndirimi Kabul Etti",next:"indirim_kabul"},{text:"Reddetti (Tam İade)",next:"tam_iade"}]},yillik_izleme_yok:{title:"Yıllık Paket",text:"Paket kampanyalı mıydı?",options:[{text:"Hayır (Standart)",next:"yillik_standart"},{text:"Evet (Kampanyalı)",next:"yillik_kampanyali"}]},yillik_standart:{title:"Standart Yıllık",text:"Sırasıyla: 1. YILLIKLOCA İndirimi, 2. Aylığa Geçiş öner.",options:[{text:"Teklifi Kabul Etti",next:"islem_tamam"},{text:"Hepsini Reddetti (Tam İade)",next:"tam_iade"}]},yillik_kampanyali:{title:"Kampanyalı Yıllık",text:"Sadece Aylığa Geçiş önerilebilir.",options:[{text:"Aylığa Geçişi Kabul Etti",next:"ayliga_gecis"},{text:"Reddetti (Tam İade)",next:"tam_iade"}]},mukerrer:{title:"Mükerrer Çekim",text:"15 gün içinde ve Aynı Cihaz/IP mi?",options:[{text:"Evet",next:"mukerrer_iade"},{text:"Hayır",next:"izleme_var"}]},ayni_gun_yillik:{title:"Aynı Gün Yıllık",text:"24 saat içinde mi?",options:[{text:"Evet",next:"bir_defaya_mahsus"},{text:"Hayır",next:"izleme_var"}]},store_iptal:{result:"red",title:"❌ BİZ İPTAL EDEMEYİZ",text:"Apple/Google alımları telefondan yapılmalı."},winback_iade:{result:"yellow",title:"⚠️ SADECE 2. PAKET İADE",text:"Sadece son alınan indirimli paket iade edilebilir."},indirim_kabul:{result:"green",title:"✅ İNDİRİM TANIMLA",text:"139.5 TL iade yapıldı."},tam_iade:{result:"green",title:"✅ TAM İADE YAP",text:"Teklifler reddedildi, iade sağla."},mukerrer_iade:{result:"green",title:"✅ MÜKERRER İADE",text:"Fazla paketi iade et."},ayliga_gecis:{result:"green",title:"✅ AYLIK GEÇİŞ",text:"Yıllık iptal, aylık tanımla, farkı iade et."},bir_defaya_mahsus:{result:"green",title:"✅ TEK SEFERLİK İADE",text:"Yıllık iade, aylık devam."},islem_tamam:{result:"green",title:"✅ İŞLEM TAMAM",text:"Teklif kabul edildi."}};
+        function openWizard(){document.getElementById('wizard-modal').style.display='flex';renderStep('start');}
+        function renderStep(k){const s=wizardSteps[k];const b=document.getElementById('wizard-body');let h=`<h2>${s.title||''}</h2>`;if(s.result){let i=s.result==='red'?'🛑':(s.result==='green'?'✅':'⚠️');let c=s.result==='red'?'res-red':(s.result==='green'?'res-green':'res-yellow');h+=`<div class="result-box ${c}"><div style="font-size:3rem;margin-bottom:10px;">${i}</div><h3>${s.title}</h3><p>${s.text}</p>${s.script?`<div class="script-box">${s.script}</div>`:''}</div><button class="restart-btn" onclick="renderStep('start')"><i class="fas fa-redo"></i> Başa Dön</button>`;}else{h+=`<p>${s.text}</p><div class="wizard-options">`;s.options.forEach(o=>{h+=`<button class="option-btn" onclick="renderStep('${o.next}')"><i class="fas fa-chevron-right"></i> ${o.text}</button>`;});h+=`</div>`;if(k!=='start')h+=`<button class="restart-btn" onclick="renderStep('start')" style="background:#eee;color:#333;margin-top:15px;">Geri Dön</button>`;}b.innerHTML=h;}
 
-        function highlightText(text) {
-            const s = document.getElementById('searchInput').value.trim();
-            return s ? text.replace(new RegExp(`(${s})`, 'gi'), '<span class="highlight">$1</span>') : text;
-        }
-
+        function filterContent() { const search = document.getElementById('searchInput').value.toLowerCase(); renderCards(database.filter(i => i.title?.toLowerCase().includes(search) || i.text?.toLowerCase().includes(search))); }
+        function filterCategory(cat) { document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active')); event.target.closest('button').classList.add('active'); renderCards(cat === 'all' ? database : database.filter(i => i.category === cat)); }
+        function highlightText(t) { if(!t) return ""; const s = document.getElementById('searchInput').value.trim(); return s ? t.replace(new RegExp(`(${s})`, 'gi'), '<span class="highlight">$1</span>') : t; }
         function copyText(t) { navigator.clipboard.writeText(t).then(() => Swal.fire({icon:'success', title:'Kopyalandı', toast:true, position:'top-end', showConfirmButton:false, timer:1500})); }
-
-        document.addEventListener('DOMContentLoaded', () => renderCards(database));
+        function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+        let tickerIndex = 0;
+        function startTicker() { const t = document.getElementById('ticker-content'); if(newsData.length === 0) { t.innerHTML = "Güncel duyuru yok."; return; } function showNext() { const i = newsData[tickerIndex]; t.style.animation = 'none'; t.offsetHeight; t.style.animation = 'slideIn 0.5s ease-out'; t.innerHTML = `<strong>${i.date}:</strong> ${i.title} - ${i.desc}`; tickerIndex = (tickerIndex + 1) % newsData.length; } showNext(); setInterval(showNext, 5000); }
+        function openNews() { document.getElementById('news-modal').style.display = 'flex'; const c = document.getElementById('news-container'); c.innerHTML = ''; newsData.forEach(i => { let cl = i.type === 'fix' ? 'tag-fix' : (i.type === 'update' ? 'tag-update' : 'tag-info'); let tx = i.type === 'fix' ? 'Çözüldü' : (i.type === 'update' ? 'Değişiklik' : 'Bilgi'); c.innerHTML += `<div class="news-item"><span class="news-date">${i.date}</span><span class="news-title">${i.title}</span><div class="news-desc">${i.desc}</div><span class="news-tag ${cl}">${tx}</span></div>`; }); }
     </script>
 </body>
 </html>
