@@ -17,7 +17,8 @@
             --success: #2e7d32; 
             --info: #0288d1; 
             --warning: #ed6c02; 
-            --sales: #10b981; /* Satış Yeşili */
+            --sales: #10b981;
+            --quiz: #8e24aa; /* Oyun Moru */
         }
 
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: #333; user-select: none; }
@@ -73,7 +74,8 @@
         /* --- BUTON RENKLERİ --- */
         .wizard-btn { background: linear-gradient(45deg, #d32f2f, #c62828); border: none; box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4); animation: pulse 2s infinite; font-weight: bold; }
         .guide-btn { background: linear-gradient(45deg, #0288d1, #01579b); border: none; font-weight: bold; }
-        .sales-btn { background: linear-gradient(45deg, #10b981, #059669); border: none; font-weight: bold; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3); } /* YENİ SATIŞ BUTONU */
+        .sales-btn { background: linear-gradient(45deg, #10b981, #059669); border: none; font-weight: bold; }
+        .quiz-btn { background: linear-gradient(45deg, #8e24aa, #ba68c8); border: none; font-weight: bold; box-shadow: 0 4px 15px rgba(142, 36, 170, 0.4); } /* YENİ OYUN BUTONU */
         .link-btn { background: rgba(255,255,255,0.2); border: 1px solid white; }
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
 
@@ -125,7 +127,6 @@
         .guide-desc { font-size: 0.9rem; color: #666; margin-bottom: 10px; min-height: 40px; font-style: italic;}
         .guide-tip { background: #e3f2fd; color: #0277bd; padding: 5px; border-radius: 5px; font-size: 0.8rem; font-weight: 600; }
 
-        /* SATIŞ SCRIPTLERI ÖZEL */
         .sales-item { border: 1px solid #d1fae5; background: #ecfdf5; border-radius: 10px; padding: 20px; cursor: pointer; transition: 0.2s; position: relative; }
         .sales-item:hover { transform: scale(1.02); box-shadow: 0 5px 15px rgba(16, 185, 129, 0.2); border-color: var(--sales); }
         .sales-title { font-weight: 800; color: #065f46; margin-bottom: 10px; display: block; font-size: 1.1rem; }
@@ -141,6 +142,18 @@
         .res-green { background: #e8f5e9; border: 2px solid #66bb6a; color: #2e7d32; }
         .res-yellow { background: #fff8e1; border: 2px solid #ffca28; color: #f57f17; }
         .restart-btn { margin-top: 20px; background: #555; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+
+        /* YARIŞMA (QUIZ) STİLLERİ */
+        .quiz-container { text-align: center; }
+        .quiz-question { font-size: 1.3rem; font-weight: bold; color: var(--primary); margin-bottom: 20px; }
+        .quiz-options { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .quiz-btn-opt { padding: 15px; border: 2px solid #eee; background: white; border-radius: 10px; cursor: pointer; font-size: 1rem; transition: 0.2s; }
+        .quiz-btn-opt:hover { background: #f3e5f5; border-color: var(--quiz); }
+        .quiz-btn-opt.correct { background: #c8e6c9; border-color: #2e7d32; color: #1b5e20; }
+        .quiz-btn-opt.wrong { background: #ffcdd2; border-color: #c62828; color: #b71c1c; }
+        .quiz-score { font-size: 1.2rem; font-weight: bold; color: var(--quiz); margin-bottom: 15px; }
+        .quiz-final { text-align: center; padding: 30px; }
+        .quiz-final h3 { font-size: 2rem; margin-bottom: 10px; }
 
         .highlight { background-color: yellow; font-weight: bold; }
     </style>
@@ -202,6 +215,10 @@
                         <button class="filter-btn sales-btn" onclick="openSales()">
                             📞 TeleSatış Scriptler
                         </button>
+
+                        <button class="filter-btn quiz-btn" onclick="openQuiz()">
+                            🎮 Bilgi Yarışması
+                        </button>
                     </div>
                 </div>
 
@@ -251,6 +268,14 @@
             <h2 style="text-align:center; color:var(--sales); margin-bottom:10px;"><i class="fas fa-headset"></i> TeleSatış Scriptleri</h2>
             <p style="text-align:center; color:#666;">Görüşme sırasında kullanabileceğiniz etkili cümle kalıpları.</p>
             <div class="sales-grid" id="sales-grid"></div>
+        </div>
+    </div>
+
+    <div id="quiz-modal" class="modal-overlay">
+        <div class="modal-content" style="max-width: 600px;">
+            <span class="close-modal" onclick="closeModal('quiz-modal')">&times;</span>
+            <h2 style="text-align:center; color:var(--quiz); margin-bottom:10px;">🎮 Bilgi Yarışması</h2>
+            <div id="quiz-body"></div>
         </div>
     </div>
 
@@ -325,7 +350,96 @@
         }
 
         // ==========================================
-        // 📞 SATIŞ SCRIPTLERİ (YENİ)
+        // 🎮 BİLGİ YARIŞMASI (QUIZ)
+        // ==========================================
+        const quizQuestions = [
+            { q: "Aşağıdaki liglerden hangisi S Sport Plus'ta YER ALMAZ?", opts: ["Premier Lig", "Serie A", "La Liga", "NBA"], a: 0 }, // Premier Lig yok
+            { q: "Vestel ve Arçelik TV'lerde hangi yıl ve üzeri desteklenmektedir?", opts: ["2017", "2018", "2019", "2020"], a: 2 }, // 2019
+            { q: "Toprak Razgatlıoğlu hangi şampiyonada yarışmaktadır?", opts: ["MotoGP", "WorldSBK", "WRC", "Formula 1"], a: 1 }, // WorldSBK
+            { q: "S Sport Plus'ta aynı anda kaç cihazdan İZLEME yapılabilir?", opts: ["1", "2", "3", "4"], a: 0 }, // 1
+            { q: "Aylık paket kullanan bir üyeye hangi indirim kodu önerilmelidir?", opts: ["YILLIKLOCA", "6AY50", "BEDAVA12", "SPORT100"], a: 1 }, // 6AY50
+            { q: "Hata Kodu 1020 ne anlama gelir?", opts: ["Sinyal Yok", "Cihaz Limiti", "VPN/Erişim Engeli", "Şifre Hatası"], a: 2 },
+            { q: "NFL final maçına ne ad verilir?", opts: ["Final Four", "Super Bowl", "Grand Slam", "El Clasico"], a: 1 },
+            { q: "İçeriği izlemiş bir kullanıcıya iade yapılabilir mi?", opts: ["Evet, her zaman", "Hayır, izleme varsa iade olmaz", "Sadece mobilde", "Sadece hafta sonu"], a: 1 }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function openQuiz() {
+            document.getElementById('quiz-modal').style.display = 'flex';
+            currentQuestion = 0;
+            score = 0;
+            showStartScreen();
+        }
+
+        function showStartScreen() {
+            document.getElementById('quiz-body').innerHTML = `
+                <div class="quiz-final">
+                    <h3>Hazır mısın?</h3>
+                    <p>Bilgini test et, eğlen ve skorunu gör!</p>
+                    <button class="restart-btn" style="background:var(--quiz); font-size:1.2rem;" onclick="showQuestion()">BAŞLA</button>
+                </div>
+            `;
+        }
+
+        function showQuestion() {
+            if (currentQuestion >= quizQuestions.length) { showResult(); return; }
+            
+            const q = quizQuestions[currentQuestion];
+            let html = `
+                <div class="quiz-score">Soru: ${currentQuestion + 1} / ${quizQuestions.length} | Puan: ${score}</div>
+                <div class="quiz-question">${q.q}</div>
+                <div class="quiz-options">
+            `;
+            q.opts.forEach((opt, index) => {
+                html += `<button class="quiz-btn-opt" onclick="checkAnswer(this, ${index})">${opt}</button>`;
+            });
+            html += `</div>`;
+            document.getElementById('quiz-body').innerHTML = html;
+        }
+
+        function checkAnswer(btn, index) {
+            const correct = quizQuestions[currentQuestion].a;
+            const buttons = document.querySelectorAll('.quiz-btn-opt');
+            
+            // Tıklamayı engelle
+            buttons.forEach(b => b.disabled = true);
+
+            if (index === correct) {
+                btn.classList.add('correct');
+                score += 10;
+                Swal.fire({icon:'success', title:'Doğru!', timer:1000, showConfirmButton:false, toast:true, position:'top'});
+            } else {
+                btn.classList.add('wrong');
+                buttons[correct].classList.add('correct'); // Doğruyu göster
+                Swal.fire({icon:'error', title:'Yanlış!', timer:1000, showConfirmButton:false, toast:true, position:'top'});
+            }
+
+            setTimeout(() => {
+                currentQuestion++;
+                showQuestion();
+            }, 1500);
+        }
+
+        function showResult() {
+            let msg = "";
+            if(score >= 70) msg = "🏆 Tebrikler! Sen Bir Efsanesin!";
+            else if(score >= 40) msg = "👏 Fena Değil, Biraz Daha Pratik!";
+            else msg = "📚 Dokümanları Tekrar Okumalısın!";
+
+            document.getElementById('quiz-body').innerHTML = `
+                <div class="quiz-final">
+                    <h3>Oyun Bitti!</h3>
+                    <p style="font-size:1.5rem; font-weight:bold; color:var(--quiz);">Skorun: ${score}</p>
+                    <p>${msg}</p>
+                    <button class="restart-btn" onclick="openQuiz()">Tekrar Oyna</button>
+                </div>
+            `;
+        }
+
+        // ==========================================
+        // 📞 SATIŞ SCRIPTLERİ
         // ==========================================
         const salesScripts = [
             { title: "Açılış (Giriş) Cümlesi", text: "Merhaba [İsim] Bey/Hanım, S Sport Plus'tan arıyorum. Sporda dünyanın en büyük heyecanlarını tek pakette sunduğumuz yeni kampanyamız hakkında bilgi vermek için sizi rahatsız ettim." },
