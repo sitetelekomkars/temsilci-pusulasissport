@@ -17,6 +17,7 @@
             --success: #2e7d32; 
             --info: #0288d1; 
             --warning: #ed6c02; 
+            --sales: #10b981; /* Satış Yeşili */
         }
 
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: #333; user-select: none; }
@@ -45,17 +46,8 @@
         }
 
         /* --- YENİ DÜZEN: FLEX YAPISI --- */
-        .control-wrapper {
-            display: flex;
-            gap: 20px;
-            align-items: flex-start;
-        }
-
-        /* Sol taraf: Arama ve Butonlar */
-        .left-panel {
-            flex: 2; /* Geniş yer kapla */
-        }
-
+        .control-wrapper { display: flex; gap: 20px; align-items: flex-start; }
+        .left-panel { flex: 2; }
         .search-container { position: relative; width: 100%; margin-bottom: 15px; }
         #searchInput { width: 100%; padding: 12px 20px 12px 45px; border-radius: 8px; border: none; box-sizing: border-box; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         .search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #666; }
@@ -65,32 +57,14 @@
         .filter-btn.active { background: var(--secondary); color: var(--primary); font-weight: 600; border-color: var(--secondary); }
         .filter-btn:hover { background: rgba(255,255,255,0.3); }
         
-        /* Sağ Taraf: Haber Kutusu (Ticker) */
-        .right-panel {
-            flex: 1; /* Daha az yer kapla */
-            min-width: 300px;
-        }
-
+        .right-panel { flex: 1; min-width: 300px; }
         .news-ticker-box {
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            border-radius: 12px;
-            padding: 15px;
-            height: 85px; /* Sabit yükseklik */
-            position: relative;
-            cursor: pointer;
-            overflow: hidden;
-            backdrop-filter: blur(5px);
-            transition: 0.3s;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 15px; height: 85px; position: relative;
+            cursor: pointer; overflow: hidden; backdrop-filter: blur(5px); transition: 0.3s; display: flex; flex-direction: column; justify-content: center;
         }
         .news-ticker-box:hover { background: rgba(255,255,255,0.2); border-color: var(--secondary); }
-        
         .ticker-label { font-size: 0.75rem; color: var(--secondary); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; display: flex; align-items: center; gap: 5px;}
         .ticker-label i { animation: blink 1.5s infinite; }
-        
         .ticker-content { font-size: 0.95rem; color: white; font-weight: 500; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; animation: slideIn 0.5s ease-out; }
 
         @keyframes blink { 50% { opacity: 0.5; } }
@@ -99,6 +73,7 @@
         /* --- BUTON RENKLERİ --- */
         .wizard-btn { background: linear-gradient(45deg, #d32f2f, #c62828); border: none; box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4); animation: pulse 2s infinite; font-weight: bold; }
         .guide-btn { background: linear-gradient(45deg, #0288d1, #01579b); border: none; font-weight: bold; }
+        .sales-btn { background: linear-gradient(45deg, #10b981, #059669); border: none; font-weight: bold; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3); } /* YENİ SATIŞ BUTONU */
         .link-btn { background: rgba(255,255,255,0.2); border: 1px solid white; }
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
 
@@ -131,7 +106,7 @@
         .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 15px; padding: 30px; position: relative; max-height: 85vh; overflow-y: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.8rem; cursor: pointer; color: #666; font-weight: bold; }
         
-        /* DUYURULAR LİSTESİ (MODAL İÇİ) */
+        /* ÖZEL MODAL STİLLERİ */
         .news-item { border-left: 4px solid var(--secondary); padding-left: 15px; margin-bottom: 20px; position: relative; }
         .news-item::before { content: ''; position: absolute; left: -9px; top: 0; width: 14px; height: 14px; background: var(--secondary); border-radius: 50%; }
         .news-date { font-size: 0.85rem; color: #999; font-weight: bold; margin-bottom: 5px; display: block; }
@@ -142,7 +117,21 @@
         .tag-update { background: #fff3e0; color: #ef6c00; } 
         .tag-info { background: #e3f2fd; color: #0277bd; }
 
-        /* DİĞER MODAL STİLLERİ */
+        .guide-grid, .sales-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
+        .guide-item { border: 1px solid #eee; border-radius: 10px; padding: 15px; text-align: center; transition: 0.3s; background: #f8f9fa; }
+        .guide-item:hover { transform: translateY(-5px); border-color: var(--secondary); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .guide-icon { font-size: 2rem; color: var(--primary); margin-bottom: 10px; }
+        .guide-title { font-weight: bold; color: var(--primary); margin-bottom: 5px; display: block; font-size: 1.1rem; }
+        .guide-desc { font-size: 0.9rem; color: #666; margin-bottom: 10px; min-height: 40px; font-style: italic;}
+        .guide-tip { background: #e3f2fd; color: #0277bd; padding: 5px; border-radius: 5px; font-size: 0.8rem; font-weight: 600; }
+
+        /* SATIŞ SCRIPTLERI ÖZEL */
+        .sales-item { border: 1px solid #d1fae5; background: #ecfdf5; border-radius: 10px; padding: 20px; cursor: pointer; transition: 0.2s; position: relative; }
+        .sales-item:hover { transform: scale(1.02); box-shadow: 0 5px 15px rgba(16, 185, 129, 0.2); border-color: var(--sales); }
+        .sales-title { font-weight: 800; color: #065f46; margin-bottom: 10px; display: block; font-size: 1.1rem; }
+        .sales-text { font-size: 0.95rem; color: #374151; line-height: 1.5; }
+        .sales-copy-hint { position: absolute; bottom: 10px; right: 15px; font-size: 0.75rem; color: var(--sales); font-weight: bold; opacity: 0.7; }
+
         .wizard-step h2 { color: var(--primary); margin-bottom: 10px; text-align: center;}
         .wizard-options { display: flex; flex-direction: column; gap: 10px; }
         .option-btn { padding: 15px; border: 2px solid #eee; border-radius: 10px; background: white; font-size: 1rem; cursor: pointer; transition: 0.2s; text-align: left; display: flex; align-items: center; gap: 10px; }
@@ -152,14 +141,6 @@
         .res-green { background: #e8f5e9; border: 2px solid #66bb6a; color: #2e7d32; }
         .res-yellow { background: #fff8e1; border: 2px solid #ffca28; color: #f57f17; }
         .restart-btn { margin-top: 20px; background: #555; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
-
-        .guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
-        .guide-item { border: 1px solid #eee; border-radius: 10px; padding: 15px; text-align: center; transition: 0.3s; background: #f8f9fa; }
-        .guide-item:hover { transform: translateY(-5px); border-color: var(--secondary); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .guide-icon { font-size: 2rem; color: var(--primary); margin-bottom: 10px; }
-        .guide-title { font-weight: bold; color: var(--primary); margin-bottom: 5px; display: block; font-size: 1.1rem; }
-        .guide-desc { font-size: 0.9rem; color: #666; margin-bottom: 10px; min-height: 40px; font-style: italic;}
-        .guide-tip { background: #e3f2fd; color: #0277bd; padding: 5px; border-radius: 5px; font-size: 0.8rem; font-weight: 600; }
 
         .highlight { background-color: yellow; font-weight: bold; }
     </style>
@@ -217,6 +198,10 @@
                         <button class="filter-btn wizard-btn" onclick="openWizard()">
                             ⚖️ İade Asistanı
                         </button>
+
+                        <button class="filter-btn sales-btn" onclick="openSales()">
+                            📞 TeleSatış Scriptler
+                        </button>
                     </div>
                 </div>
 
@@ -260,6 +245,15 @@
         </div>
     </div>
 
+    <div id="sales-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('sales-modal')">&times;</span>
+            <h2 style="text-align:center; color:var(--sales); margin-bottom:10px;"><i class="fas fa-headset"></i> TeleSatış Scriptleri</h2>
+            <p style="text-align:center; color:#666;">Görüşme sırasında kullanabileceğiniz etkili cümle kalıpları.</p>
+            <div class="sales-grid" id="sales-grid"></div>
+        </div>
+    </div>
+
     <script>
         const BAKIM_MODU = false; 
         const DOGRU_SIFRE_HASH = "c3Nwb3J0Kw=="; // ssport+
@@ -278,7 +272,7 @@
                     if (BAKIM_MODU) document.getElementById("maintenance-screen").style.display = "flex";
                     else {
                         document.getElementById("main-app").style.display = "block";
-                        startTicker(); // Ticker başlat
+                        startTicker();
                         if(document.getElementById('cardGrid').innerHTML === "") renderCards(database);
                     }
                 } else { document.getElementById("error-msg").style.display = "block"; }
@@ -296,41 +290,62 @@
             { date: "18.11.2025", title: "Yayın Akışı Güncellemesi", desc: "EuroLeague çift maç haftası nedeniyle yayın akışında yoğunluk olabilir, müşterileri web sitesine yönlendirelim.", type: "info" }
         ];
 
-        // Ticker Fonksiyonu (Haberleri sırayla gösterir)
         let tickerIndex = 0;
         function startTicker() {
             const ticker = document.getElementById('ticker-content');
             if(newsData.length === 0) { ticker.innerHTML = "Güncel duyuru bulunmamaktadır."; return; }
-            
             function showNext() {
                 const item = newsData[tickerIndex];
-                // Yeniden oluşturarak animasyonu tetikle
                 ticker.style.animation = 'none';
-                ticker.offsetHeight; /* trigger reflow */
+                ticker.offsetHeight; 
                 ticker.style.animation = 'slideIn 0.5s ease-out';
                 ticker.innerHTML = `<strong>${item.date}:</strong> ${item.title} - ${item.desc}`;
                 tickerIndex = (tickerIndex + 1) % newsData.length;
             }
-            
             showNext();
-            setInterval(showNext, 5000); // 5 saniyede bir değişir
+            setInterval(showNext, 5000);
         }
 
         function openNews() {
             document.getElementById('news-modal').style.display = 'flex';
             const container = document.getElementById('news-container');
             container.innerHTML = '';
-            
             newsData.forEach(item => {
                 let tagClass = item.type === 'fix' ? 'tag-fix' : (item.type === 'update' ? 'tag-update' : 'tag-info');
                 let tagText = item.type === 'fix' ? 'Çözüldü' : (item.type === 'update' ? 'Değişiklik' : 'Bilgi');
-                
                 container.innerHTML += `
                     <div class="news-item">
                         <span class="news-date">${item.date}</span>
                         <span class="news-title">${item.title}</span>
                         <div class="news-desc">${item.desc}</div>
                         <span class="news-tag ${tagClass}">${tagText}</span>
+                    </div>
+                `;
+            });
+        }
+
+        // ==========================================
+        // 📞 SATIŞ SCRIPTLERİ (YENİ)
+        // ==========================================
+        const salesScripts = [
+            { title: "Açılış (Giriş) Cümlesi", text: "Merhaba [İsim] Bey/Hanım, S Sport Plus'tan arıyorum. Sporda dünyanın en büyük heyecanlarını tek pakette sunduğumuz yeni kampanyamız hakkında bilgi vermek için sizi rahatsız ettim." },
+            { title: "Fiyat İtirazı Karşılama", text: "Haklısınız, her şeyin fiyatı artıyor. Ancak kampanyamızla günlük maliyet sadece 9 TL'ye, yani bir çay fiyatına geliyor. Bu fiyata La Liga, NBA ve EuroLeague dahil tüm içerikleri izleyebiliyorsunuz." },
+            { title: "Yıllık Paket İkna", text: "Aylık ödemek yerine Yıllık Paket tercih ederseniz, tam 4 ay bizden hediye etmiş oluyoruz. Yani 12 ay izleyip sadece 8 ay ödüyorsunuz. Bu avantajı kaçırmamanızı öneririm." },
+            { title: "Kararsız Müşteri (Kapanış)", text: "Bu kampanya sadece bugüne özel tanımlandı. Dilerseniz şimdi aktivasyonu yapalım, hemen izlemeye başlayın. Zaten taahhüt olmadığı için dilediğiniz zaman iptal etme özgürlüğünüz var." },
+            { title: "Rakip Kıyaslaması (Exxen/Tod)", text: "Diğer platformlarda her lig için ayrı paket almanız gerekirken, bizde EuroLeague, NBA, La Liga ve Serie A hepsi tek pakette. Ekstra ücret ödemeden hepsine erişirsiniz." },
+            { title: "Churn (İptal) Önleme", text: "Gitmeden önce size özel bir teklif sunmak isterim. Üyeliğinizi iptal etmek yerine önümüzdeki ay için %50 indirim tanımlayalım, bu heyecana ara vermeyin." }
+        ];
+
+        function openSales() {
+            document.getElementById('sales-modal').style.display = 'flex';
+            const grid = document.getElementById('sales-grid');
+            grid.innerHTML = '';
+            salesScripts.forEach(script => {
+                grid.innerHTML += `
+                    <div class="sales-item" onclick="copyText('${script.text.replace(/'/g, "\\'")}')">
+                        <span class="sales-title">${script.title}</span>
+                        <div class="sales-text">${script.text}</div>
+                        <div class="sales-copy-hint"><i class="fas fa-copy"></i> Tıkla Kopyala</div>
                     </div>
                 `;
             });
