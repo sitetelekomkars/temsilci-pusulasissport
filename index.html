@@ -14,16 +14,18 @@
         :root { --primary: #0e1b42; --secondary: #fabb00; --bg: #f0f2f5; --card-bg: #ffffff; --accent: #d32f2f; --success: #2e7d32; --info: #0288d1; --warning: #ed6c02; --sales: #10b981; --quiz: #8e24aa; }
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: #333; user-select: none; }
         
-        #login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5000; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%); }
+        #login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 3000; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%); }
+        #maintenance-screen { display: none !important; } 
+
         .login-card { background: white; padding: 40px; border-radius: 15px; text-align: center; width: 320px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
         .login-input { width: 100%; padding: 12px; margin: 10px 0; border: 2px solid #ddd; border-radius: 8px; text-align: center; box-sizing: border-box; }
         .login-btn { width: 100%; padding: 12px; background: #fabb00; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px; }
         .loading-text { font-size: 0.8rem; color: #666; margin-top: 10px; display: none; }
-        #maintenance-screen { display: none !important; } 
 
         #main-app { display: none; }
         .header { background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%); color: white; padding: 20px 30px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        
         .admin-btn { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; transition:0.3s; }
         .admin-btn:hover { background: rgba(255,255,255,0.3); }
         .admin-edit-mode { border-color: #fabb00; color: #fabb00; background: rgba(250, 187, 0, 0.1); }
@@ -65,19 +67,16 @@
         .card.Kampanya { border-left-color: var(--success); }
         .card.Bilgi { border-left-color: var(--info); }
         
-        .edit-icon { position: absolute; right: 10px; top: 10px; color: #fabb00; cursor: pointer; display: none; font-size: 1.2rem; padding: 8px; background: white; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 20; border:1px solid #eee; }
+        .edit-icon { position: absolute; right: 10px; top: 10px; color: #fabb00; cursor: pointer; display: none; font-size: 1.2rem; padding: 8px; background: white; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 10; border:1px solid #eee; }
         .edit-icon:hover { transform: scale(1.1); background:#fff8e1; }
         body.editing .edit-icon { display: block; }
         
         .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
         .card-title { font-weight: 700; font-size: 1.1rem; margin: 0; color: #2c3e50; line-height: 1.4; padding-right: 25px; }
         .badge { font-size: 0.75rem; padding: 4px 8px; border-radius: 6px; background: #eee; text-transform: uppercase; font-weight: 600; }
-        
-        /* YENİ: METİN KISALTMA (...) VE TIKLANABİLİRLİK */
         .card-content { font-size: 0.95rem; color: #555; margin-bottom: 15px; line-height: 1.5; flex-grow: 1; cursor: pointer; }
         .card-text-truncate { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
         .card-content:hover { color: #000; }
-
         .script-box { background: #fffdeb; border: 1px solid #f0e68c; padding: 12px; border-radius: 8px; font-style: italic; color: #444; margin-top: auto; position: relative; font-size: 0.92rem; }
         .card-actions { margin-top: 12px; display: flex; justify-content: flex-end; gap: 8px; }
         .btn { padding: 6px 12px; border-radius: 6px; cursor: pointer; border: none; font-weight: 600; font-size: 0.85rem; display: flex; align-items: center; gap: 5px; }
@@ -90,7 +89,6 @@
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.8rem; cursor: pointer; color: #666; font-weight: bold; }
         .swal2-container { z-index: 10000 !important; }
         
-        /* Diğer stiller aynı... */
         .news-item { border-left: 4px solid var(--secondary); padding-left: 15px; margin-bottom: 20px; position: relative; }
         .news-date { font-size: 0.85rem; color: #999; font-weight: bold; display: block; }
         .news-title { font-size: 1.1rem; font-weight: bold; color: var(--primary); display: block; }
@@ -133,7 +131,19 @@
 </head>
 <body>
 
-    <div id="login-screen"><div class="login-card"><i class="fas fa-lock fa-3x" style="color: #0e1b42;"></i><h2>S Sport Plus</h2><p>Personel Girişi</p><input type="text" id="usernameInput" class="login-input" placeholder="Kullanıcı Adı"><input type="password" id="passInput" class="login-input" placeholder="Şifre" onkeyup="enterBas(event)"><button class="login-btn" onclick="girisYap()">Giriş Yap</button><div id="loading-msg" class="loading-text">Kullanıcılar kontrol ediliyor...</div><p id="error-msg" style="color:red; display:none; margin-top:10px;">Hatalı Kullanıcı Adı veya Şifre!</p></div></div>
+    <div id="login-screen">
+        <div class="login-card">
+            <i class="fas fa-lock fa-3x" style="color: #0e1b42;"></i>
+            <h2>S Sport Plus</h2>
+            <p>Personel Girişi</p>
+            <input type="text" id="usernameInput" class="login-input" placeholder="Kullanıcı Adı">
+            <input type="password" id="passInput" class="login-input" placeholder="Şifre" onkeyup="enterBas(event)">
+            <button class="login-btn" onclick="girisYap()">Giriş Yap</button>
+            <div id="loading-msg" class="loading-text">Kullanıcılar kontrol ediliyor...</div>
+            <p id="error-msg" style="color:red; display:none; margin-top:10px;">Hatalı Kullanıcı Adı veya Şifre!</p>
+        </div>
+    </div>
+    
     <div id="maintenance-screen"><div class="maintenance-content"><span style="font-size: 4rem;">👩‍🏫</span><h1>Sistem Mola Verdi!</h1><p>Esra Hoca'dan gelecek kritik bilgileri bekliyoruz... 🚀</p></div></div>
 
     <div id="main-app">
@@ -166,82 +176,111 @@
 
     <div id="news-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('news-modal')">&times;</span><h2 style="color:var(--primary);">📢 Duyurular</h2><div id="news-container"></div></div></div>
     <div id="wizard-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('wizard-modal')">&times;</span><div id="wizard-body"></div></div></div>
+    
     <div id="guide-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('guide-modal')">&times;</span><h2 style="text-align:center; color:var(--primary);">📖 Spor Terimleri & İçerik Rehberi</h2><p style="text-align:center; color:#666;">Detaylı bilgi için karta tıklayınız.</p><div class="guide-grid" id="guide-grid"></div></div></div>
+    
     <div id="sales-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('sales-modal')">&times;</span><h2 style="text-align:center; color:var(--sales);">📞 Satış Scriptleri</h2><p style="text-align:center; color:#666;">Metni okumak için başlığa tıklayınız.</p><div class="sales-grid" id="sales-grid"></div></div></div>
+    
     <div id="quiz-modal" class="modal-overlay"><div class="modal-content" style="max-width: 600px;"><span class="close-modal" onclick="closeModal('quiz-modal')">&times;</span><h2 style="text-align:center; color:var(--quiz);">🎮 Bilgi Yarışması</h2><div id="quiz-body"></div></div></div>
 
     <script>
         const BAKIM_MODU = false; 
         
-        // BURAYA LİNKLERİNİ YAPIŞTIR
+        // !!! BURAYA KENDİ LİNKLERİNİ YAPIŞTIRMAYI UNUTMA !!!
         const DATA_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?output=csv";
         const USERS_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?gid=1075778951&single=true&output=csv";
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec"; 
 
         let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [], users = [];
         let currentUser = "", isAdminMode = false;
-        let sessionTimeout; // Otomatik çıkış zamanlayıcısı
 
         document.addEventListener('contextmenu', event => event.preventDefault());
         document.onkeydown = function(e) { if(e.keyCode == 123) return false; }
 
+        // OTURUM KONTROLÜ (YENİ)
+        function checkSession() {
+            const savedUser = localStorage.getItem("sSportUser");
+            if (savedUser) {
+                // Kullanıcı adını localStorage'dan al, şifre kontrolü yapmadan içeri al (Basit Oturum)
+                // Güvenlik notu: Gerçek backendli sistemlerde bu token ile yapılır, burada kolaylık için username tutuyoruz.
+                currentUser = savedUser;
+                document.getElementById("login-screen").style.display = "none"; 
+                document.getElementById("user-display").innerText = currentUser;
+                
+                if (BAKIM_MODU) document.getElementById("maintenance-screen").style.display = "flex";
+                else { document.getElementById("main-app").style.display = "block"; loadContentData(); }
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
-            Papa.parse(USERS_SHEET_URL, { download: true, header: true, complete: function(results) { users = results.data; }, error: function() { console.log("Kullanıcı listesi çekilemedi."); } });
+            // Önce kullanıcı listesini çek
+            Papa.parse(USERS_SHEET_URL, {
+                download: true, header: true,
+                complete: function(results) { 
+                    users = results.data; 
+                    // Liste yüklendikten sonra oturum kontrolü yap
+                    checkSession();
+                },
+                error: function() { console.log("Kullanıcı listesi çekilemedi."); }
+            });
         });
 
         function girisYap() {
-            const uName = document.getElementById("usernameInput").value.trim(); const uPass = document.getElementById("passInput").value.trim();
+            const uName = document.getElementById("usernameInput").value.trim();
+            const uPass = document.getElementById("passInput").value.trim();
             const loadingMsg = document.getElementById("loading-msg");
 
             if(users.length === 0) {
                 loadingMsg.style.display = "block";
-                Papa.parse(USERS_SHEET_URL, { download: true, header: true, complete: function(results) { users = results.data; loadingMsg.style.display = "none"; checkCredentials(uName, uPass); } });
+                Papa.parse(USERS_SHEET_URL, {
+                    download: true, header: true,
+                    complete: function(results) {
+                        users = results.data;
+                        loadingMsg.style.display = "none";
+                        checkCredentials(uName, uPass);
+                    }
+                });
             } else { checkCredentials(uName, uPass); }
         }
 
         function checkCredentials(name, pass) {
             const hashedPass = CryptoJS.MD5(pass).toString();
             const user = users.find(u => u.Username === name && u.Password === hashedPass);
+            
             if (user) {
                 currentUser = user.Username;
+                // OTURUMU KAYDET (YENİ)
+                localStorage.setItem("sSportUser", currentUser);
+
                 document.getElementById("login-screen").style.display = "none"; 
                 document.getElementById("user-display").innerText = user.Username;
-                // GİRİŞ LOGU
+                
+                // GİRİŞ LOGU GÖNDER
                 fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: "logLogin", username: currentUser }) });
                 
-                // OTOMATİK ÇIKIŞI BAŞLAT (1 SAAT = 3600000 ms)
-                startSessionTimer();
-
                 if (BAKIM_MODU) document.getElementById("maintenance-screen").style.display = "flex";
                 else { document.getElementById("main-app").style.display = "block"; loadContentData(); }
             } else { document.getElementById("error-msg").style.display = "block"; }
-        }
-
-        function startSessionTimer() {
-            // Eğer önceki bir sayaç varsa iptal et
-            if (sessionTimeout) clearTimeout(sessionTimeout);
-            // 1 Saat sonra (3600 * 1000 ms) logout fonksiyonunu çalıştır
-            sessionTimeout = setTimeout(() => {
-                Swal.fire({ icon: 'warning', title: 'Oturum Süresi Doldu', text: 'Güvenlik nedeniyle otomatik çıkış yapıldı.', confirmButtonText: 'Tamam' }).then(() => {
-                    logout();
-                });
-            }, 3600000); 
         }
 
         function enterBas(e) { if (e.key === "Enter") girisYap(); }
 
         function openUserMenu() {
             let options = { showCancelButton: true, showDenyButton: true, confirmButtonText: '🔑 Şifre Değiştir', denyButtonText: '🚪 Çıkış Yap', cancelButtonText: 'İptal' };
+
             if(currentUser === "Admin" || currentUser === "admin" || currentUser === "Site Talip Bey") {
                 Swal.fire({
                     title: `Merhaba, ${currentUser}`,
-                    html: `<button onclick="toggleEditMode(); Swal.close();" class="swal2-confirm swal2-styled" style="background-color:#fabb00; color:black; display:block; width:100%; margin-bottom:10px;">${isAdminMode ? '✏️ Düzenlemeyi Kapat' : '✏️ Düzenlemeyi Aç'}</button>
-                           <button onclick="changePasswordPopup()" class="swal2-confirm swal2-styled" style="display:block; width:100%; margin-bottom:10px;">🔑 Şifre Değiştir</button>
-                           <button onclick="logout(); Swal.close();" class="swal2-deny swal2-styled" style="display:block; width:100%;">🚪 Çıkış Yap</button>`,
+                    html: `
+                        <button onclick="toggleEditMode(); Swal.close();" class="swal2-confirm swal2-styled" style="background-color:#fabb00; color:black; display:block; width:100%; margin-bottom:10px;">
+                            ${isAdminMode ? '✏️ Düzenlemeyi Kapat' : '✏️ Düzenlemeyi Aç'}</button>
+                        <button onclick="changePasswordPopup()" class="swal2-confirm swal2-styled" style="display:block; width:100%; margin-bottom:10px;">🔑 Şifre Değiştir</button>
+                        <button onclick="logout(); Swal.close();" class="swal2-deny swal2-styled" style="display:block; width:100%;">🚪 Çıkış Yap</button>
+                    `,
                     showConfirmButton: false
                 });
             } else {
-                Swal.fire(options).then((result) => { if (result.isConfirmed) changePasswordPopup(); else if (result.isDenied) logout(); });
+                Swal.fire({ title: `Merhaba, ${currentUser}`, text: "Ne yapmak istersiniz?", icon: 'question', showCancelButton: true, showDenyButton: true, confirmButtonText: '🔑 Şifre Değiştir', denyButtonText: '🚪 Çıkış Yap', cancelButtonText: 'İptal' }).then((result) => { if (result.isConfirmed) changePasswordPopup(); else if (result.isDenied) logout(); });
             }
         }
 
@@ -260,9 +299,8 @@
                 showCancelButton: true, confirmButtonText: 'Kaydet', preConfirm: () => [document.getElementById('swal-text').value, document.getElementById('swal-script').value]
             });
             if (formValues) {
-                sendUpdate(title, "Text", formValues[0]);
-                // 2. Güncellemeyi garanti altına almak için küçük gecikme
-                setTimeout(() => sendUpdate(title, "Script", formValues[1]), 1000);
+                if(formValues[0] !== cText) sendUpdate(title, "Text", formValues[0]);
+                if(formValues[1] !== cScript) setTimeout(() => sendUpdate(title, "Script", formValues[1]), 1000);
             }
         }
 
@@ -319,9 +357,8 @@
         }
 
         function sendUpdate(title, column, value, type = 'card') {
-            // Kullanıcıya her işlemde loading göstermek yerine sadece ilkinde gösterip diğerlerini arka planda yapabiliriz
-            // veya SweetAlert toast kullanabiliriz. Şimdilik standart loading.
-            if(document.querySelector('.swal2-container')) {} else { Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } }); }
+            // Kullanıcıyı rahatsız etmemek için loading yerine toast veya sessiz işlem yapılabilir ama şimdilik loading iyi
+            if(!Swal.isVisible()) Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } });
             
             const payload = { action: "updateContent", title: title, column: column, value: value, type: type, originalText: title, username: currentUser };
             fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
@@ -331,7 +368,8 @@
 
         function logout() {
             currentUser = ""; isAdminMode = false; document.body.classList.remove('editing');
-            if (sessionTimeout) clearTimeout(sessionTimeout); // Zamanlayıcıyı temizle
+            // OTURUMU SİL
+            localStorage.removeItem("sSportUser");
             document.getElementById("main-app").style.display = "none"; document.getElementById("login-screen").style.display = "flex";
             document.getElementById("passInput").value = ""; document.getElementById("usernameInput").value = "";
         }
@@ -368,49 +406,8 @@
             });
         }
 
-        function renderCards(data) {
-            const container = document.getElementById('cardGrid');
-            container.innerHTML = '';
-            if(data.length === 0) { container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Kayıt Yok</div>'; return; }
-            data.forEach(item => {
-                // Safe strings
-                const safeText = item.text ? item.text.replace(/"/g, '&quot;').replace(/'/g, "\\'") : "";
-                const safeScript = item.script ? item.script.replace(/"/g, '&quot;').replace(/'/g, "\\'") : "";
-                const safeTitle = item.title ? item.title.replace(/"/g, '&quot;').replace(/'/g, "\\'") : "";
-                
-                let html = `
-                <div class="card ${item.category}">
-                    <i class="fas fa-pencil-alt edit-icon" onclick="editContent('${safeTitle}', '${item.category}', '${safeText}', '${safeScript}')"></i>
-                    <div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div>
-                    
-                    <div class="card-content" onclick="showCardDetail('${safeTitle}', '${safeText}')">
-                        <div class="card-text-truncate">${highlightText(item.text)}</div>
-                        <div style="font-size:0.8rem; color:#999; margin-top:5px; text-align:right;">(Tamamını oku)</div>
-                    </div>
-
-                    <div class="script-box">${highlightText(item.script)}</div>
-                    <div class="card-actions">
-                        <button class="btn btn-copy" onclick="copyText('${item.script.replace(/'/g, "\\'")}')"><i class="fas fa-copy"></i> Kopyala</button>
-                        ${item.code ? `<button class="btn btn-copy" style="background:var(--secondary); color:#333;" onclick="copyText('${item.code}')">Kod</button>` : ''}
-                        ${item.link ? `<a href="${item.link}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>` : ''}
-                    </div>
-                </div>`;
-                container.innerHTML += html;
-            });
-        }
-
-        // KART DETAY POPUP (YENİ)
-        function showCardDetail(title, text) {
-             Swal.fire({
-                title: title,
-                html: `<div style="text-align:left; font-size:1rem; line-height:1.6;">${text}</div>`,
-                showCloseButton: true,
-                showConfirmButton: false,
-                width: '600px',
-                background: '#f8f9fa'
-            });
-        }
-        
+        function renderCards(data) { const container = document.getElementById('cardGrid'); container.innerHTML = ''; if(data.length === 0) { container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Kayıt Yok</div>'; return; } data.forEach(item => { const safeText = item.text ? item.text.replace(/"/g, '&quot;').replace(/'/g, "\\'") : ""; const safeScript = item.script ? item.script.replace(/"/g, '&quot;').replace(/'/g, "\\'") : ""; const safeTitle = item.title ? item.title.replace(/"/g, '&quot;').replace(/'/g, "\\'") : ""; let html = `<div class="card ${item.category}"><i class="fas fa-pencil-alt edit-icon" onclick="editContent('${safeTitle}', '${item.category}', '${safeText}', '${safeScript}')"></i><div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div><div class="card-content" onclick="showCardDetail('${safeTitle}', '${safeText}')"><div class="card-text-truncate">${highlightText(item.text)}</div><div style="font-size:0.8rem; color:#999; margin-top:5px; text-align:right;">(Tamamını oku)</div></div><div class="script-box">${highlightText(item.script)}</div><div class="card-actions"><button class="btn btn-copy" onclick="copyText('${item.script.replace(/'/g, "\\'")}')"><i class="fas fa-copy"></i> Kopyala</button>${item.code ? `<button class="btn btn-copy" style="background:var(--secondary); color:#333;" onclick="copyText('${item.code}')">Kod</button>` : ''}${item.link ? `<a href="${item.link}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>` : ''}</div></div>`; container.innerHTML += html; }); }
+        function showCardDetail(title, text) { Swal.fire({ title: title, html: `<div style="text-align:left; font-size:1rem; line-height:1.6;">${text}</div>`, showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa' }); }
         function filterContent() { const search = document.getElementById('searchInput').value.toLowerCase(); renderCards(database.filter(i => i.title?.toLowerCase().includes(search) || i.text?.toLowerCase().includes(search))); }
         function filterCategory(cat) { document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active')); event.target.closest('button').classList.add('active'); renderCards(cat === 'all' ? database : database.filter(i => i.category === cat)); }
         function highlightText(t) { if(!t) return ""; const s = document.getElementById('searchInput').value.trim(); return s ? t.replace(new RegExp(`(${s})`, 'gi'), '<span class="highlight">$1</span>') : t; }
