@@ -210,9 +210,26 @@
         const USERS_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?gid=1075778951&single=true&output=csv";
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec"; 
 
+        // KATEGORİ DOĞRULAMASI İÇİN SABİT KATEGORİ LİSTESİ
+        const VALID_CATEGORIES = ['Teknik', 'İkna', 'Kampanya', 'Bilgi'];
+        const CARD_TYPES = ['card', 'bilgi', 'teknik', 'kampanya', 'ikna']; // App script'e giden Type verisi
+
         let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [], users = [];
         let currentUser = "", isAdminMode = false, sessionTimeout;
         let activeCards = []; 
+
+        // Yardımcı fonksiyon: Kategori dropdown HTML'ini oluşturur
+        function getCategorySelectHtml(currentCategory, id) {
+            let options = VALID_CATEGORIES.map(cat => 
+                `<option value="${cat}" ${cat === currentCategory ? 'selected' : ''}>${cat}</option>`
+            ).join('');
+            // Ek olarak, eğer kartın kategorisi listede yoksa, onu da seçili olarak ekle (veri bozukluğunu korumak için)
+            if (currentCategory && !VALID_CATEGORIES.includes(currentCategory)) {
+                options = `<option value="${currentCategory}" selected>${currentCategory} (Hata)</option>` + options;
+            }
+            return `<select id="${id}" class="swal2-input" style="margin:5px 0;">${options}</select>`;
+        }
+
 
         function cleanData(text) {
             if (!text) return "";
@@ -335,7 +352,7 @@
                 title: 'İçeriği Düzenle',
                 html: `
                     <div style="display:flex; gap:10px; margin-bottom:10px;">
-                        <div style="flex:1;"><label style="font-weight:bold; font-size:0.8rem;">Kategori</label><input id="swal-cat" class="swal2-input" style="margin:5px 0;" value="${item.category}"></div>
+                        <div style="flex:1;"><label style="font-weight:bold; font-size:0.8rem;">Kategori</label>${getCategorySelectHtml(item.category, 'swal-cat')}</div>
                         <div style="flex:1;"><label style="font-weight:bold; font-size:0.8rem;">Başlık</label><input id="swal-title" class="swal2-input" style="margin:5px 0;" value="${item.title}"></div>
                     </div>
                     <label style="font-weight:bold;">Metin (Text)</label><textarea id="swal-text" class="swal2-textarea" style="margin-top:5px;">${item.text}</textarea>
@@ -382,19 +399,27 @@
             const { value: formValues } = await Swal.fire({
                 title: 'Yeni Kart Ekle',
                 html: `
-                    <select id="swal-new-type" class="swal2-input">
-                        <option value="card">Standart Kart</option>
-                        <option value="bilgi">Bilgi Kartı</option>
-                        <option value="teknik">Teknik Kart</option>
-                        <option value="ikna">İkna Kartı</option>
-                        <option value="kampanya">Kampanya Kartı</option>
-                    </select>
-                    <input id="swal-new-cat" class="swal2-input" placeholder="Kategori (Örn: Üyelik, Cihaz, Ödeme)">
+                    <div style="display:flex; gap:10px; margin-bottom:10px;">
+                        <div style="flex:1;">
+                            <label style="font-weight:bold; font-size:0.8rem;">Type</label>
+                            <select id="swal-new-type" class="swal2-input" style="margin:5px 0;">
+                                <option value="card">Standart Kart (card)</option>
+                                <option value="bilgi">Bilgi Kartı (bilgi)</option>
+                                <option value="teknik">Teknik Kart (teknik)</option>
+                                <option value="ikna">İkna Kartı (ikna)</option>
+                                <option value="kampanya">Kampanya Kartı (kampanya)</option>
+                            </select>
+                        </div>
+                        <div style="flex:1;">
+                            <label style="font-weight:bold; font-size:0.8rem;">Kategori</label>${getCategorySelectHtml('Bilgi', 'swal-new-cat')}
+                        </div>
+                    </div>
+
                     <input id="swal-new-title" class="swal2-input" placeholder="Başlık (Benzersiz olmalı)">
                     <textarea id="swal-new-text" class="swal2-textarea" placeholder="Açıklama Metni"></textarea>
                     <textarea id="swal-new-script" class="swal2-textarea" placeholder="Script (Okunacak Metin)"></textarea>
                     <div style="display:flex; gap:10px;">
-                        <input id="swal-new-code" class="swal2-input" placeholder="Kod (Opsiyonel)">
+                        <input id="swal-new-code" class="swal2-input" placeholder="Kod/Tag (Opsiyonel)">
                         <input id="swal-new-link" class="swal2-input" placeholder="Link (Opsiyonel)">
                     </div>
                 `,
