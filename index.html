@@ -17,9 +17,8 @@
     <style>
         /* --- S SPORT PLUS KURUMSAL RENKLERİ --- */
         :root { 
-            --ssport-dark: #0e1b42;   /* Orijinal Lacivert */
-            --ssport-blue: #1a2f6e;   /* Açık Lacivert */
-            --ssport-red: #d32f2f;    /* Kampanya Kırmızısı */
+            --ssport-dark: #0e1b42;   /* Ana Lacivert */
+            --ssport-red: #d32f2f;    /* Ana Kırmızı */
             --secondary: #fabb00;     /* Sarı */
             
             --bg: #f4f6f8;            
@@ -38,7 +37,7 @@
         body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text-main); -webkit-font-smoothing: antialiased; padding-bottom: 40px; }
         
         /* Login Screen */
-        #login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9000; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, var(--ssport-dark) 0%, var(--ssport-blue) 100%); }
+        #login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 20000; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, var(--ssport-dark) 0%, #1a2f6e 100%); }
         .login-card { background: white; padding: 40px; border-radius: 10px; text-align: center; width: 340px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
         .login-input { width: 100%; padding: 14px; margin: 10px 0; border: 1px solid #e2e8f0; border-radius: 4px; text-align: center; box-sizing: border-box; font-family: 'Inter', sans-serif; outline: none; transition: 0.3s; }
         .login-input:focus { border-color: var(--ssport-dark); box-shadow: 0 0 0 2px rgba(14, 27, 66, 0.1); }
@@ -49,7 +48,7 @@
         #maintenance-screen { display: none !important; } 
         #main-app { display: none; }
 
-        /* --- HEADER (S SPORT PLUS TARZI) --- */
+        /* --- HEADER --- */
         .header { 
             background: var(--ssport-dark); 
             color: white; 
@@ -58,7 +57,7 @@
             top: 0; 
             z-index: 1000; 
             box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
-            border-bottom: 3px solid var(--ssport-red); /* Alt kırmızı çizgi */
+            border-bottom: 3px solid var(--ssport-red);
         }
         .header-inner {
             max-width: 1600px;
@@ -68,7 +67,6 @@
             justify-content: space-between;
             align-items: center;
         }
-        
         .logo-area h1 { 
             font-weight: 900; 
             font-size: 1.5rem; 
@@ -80,16 +78,14 @@
             text-transform: uppercase;
             font-style: italic;
         }
-        
         .header-controls { display: flex; align-items: center; gap:10px; }
         
-        /* Header Butonları - Daha Kurumsal */
         .action-btn {
             background: rgba(255, 255, 255, 0.1); 
             border: 1px solid rgba(255, 255, 255, 0.2); 
             color: #fff; 
             padding: 8px 16px; 
-            border-radius: 4px; /* Keskin köşeler */
+            border-radius: 4px; 
             cursor: pointer; 
             font-weight: 700; 
             font-size: 0.8rem; 
@@ -107,7 +103,6 @@
         .left-panel { flex: 3; }
         .right-panel { flex: 1; min-width: 300px; }
         
-        /* Search Input - S Sport Style */
         .search-container { position: relative; width: 100%; margin-bottom: 20px; }
         #searchInput { width: 100%; padding: 14px 20px 14px 45px; border-radius: 4px; border: 1px solid #e2e8f0; box-sizing: border-box; font-family: 'Inter', sans-serif; font-size: 0.95rem; transition: 0.3s; }
         #searchInput:focus { border-color: var(--ssport-dark); outline: none; box-shadow: 0 0 0 3px rgba(14, 27, 66, 0.1); }
@@ -163,7 +158,7 @@
         .btn-link { background: white; border: 1px solid #e2e8f0; color: var(--text-light); }
         .btn-link:hover { background: #f8fafc; border-color: var(--info); color: var(--info); }
 
-        /* --- MODAL & Z-INDEX DÜZELTMESİ --- */
+        /* --- MODAL & Z-INDEX FIX --- */
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(14, 27, 66, 0.85); backdrop-filter: blur(2px); z-index: 10000; justify-content: center; align-items: center; }
         .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 12px; padding: 40px; position: relative; max-height: 85vh; overflow-y: auto; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
         .close-modal { position: absolute; top: 20px; right: 25px; font-size: 1.8rem; cursor: pointer; color: #94a3b8; transition: 0.2s; }
@@ -182,7 +177,37 @@
         .news-title { font-size: 1.1rem; font-weight: 700; color: var(--ssport-dark); display: block; margin-bottom: 8px; }
         .news-desc { font-size: 0.95rem; line-height: 1.6; color: var(--text-main); }
 
-        /* Wizard Styling - V2 Design but V1 Logic Compatible */
+        /* --- SALES SCRIPT FIX (ÜST ÜSTE BİNME ÇÖZÜMÜ) --- */
+        .sales-grid { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+        .sales-item { 
+            border: 1px solid #d1fae5; 
+            background: #ecfdf5; 
+            border-radius: 8px; 
+            padding: 20px; 
+            cursor: pointer; 
+            transition: all 0.2s ease; 
+            position: relative;
+            /* Height Auto ve Overflow Visible, üst üste binmeyi engeller */
+            height: auto; 
+            overflow: visible; 
+        }
+        .sales-item:hover { box-shadow: 0 5px 15px rgba(16, 185, 129, 0.2); border-color: var(--sales); }
+        .sales-item.active { background: #d1fae5; border-left: 6px solid var(--sales); }
+        .sales-header { display: flex; justify-content: space-between; align-items: center; }
+        .sales-title { font-weight: 800; color: #065f46; font-size: 1.1rem; margin: 0; }
+        .sales-text { 
+            display: none; 
+            margin-top: 15px; 
+            padding-top: 15px; 
+            border-top: 1px solid #a7f3d0; 
+            font-size: 1rem; 
+            color: #374151; 
+            line-height: 1.6; 
+            animation: fadeIn 0.4s ease-in; 
+        }
+        .sales-item.active .sales-text { display: block; }
+
+        /* Wizard Styling */
         .wizard-options { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
         .option-btn { padding: 16px 20px; border: 1px solid #e2e8f0; border-radius: 8px; background: white; font-size: 1rem; cursor: pointer; text-align: left; font-weight: 500; color: var(--text-main); transition: all 0.2s; display: flex; justify-content: space-between; align-items: center; }
         .option-btn:hover { border-color: var(--ssport-dark); background: #f8fafc; transform: translateX(5px); }
@@ -278,9 +303,58 @@
 
     <script>
         const BAKIM_MODU = false;
-        
         const DATA_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?gid=0&single=true&output=csv";
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec";
+
+        // WIZARD DATA (MOVED TO TOP TO FIX OPENING ISSUE)
+        const wizardSteps={
+            start:{title:"İade Talebi Analizi",text:"Lütfen müşterinin durumunu seçiniz:",options:[
+                {text:"İçerik İzlemiş / Kullanım Var",next:"izleme_var"},
+                {text:"Aylık Paket (İzleme YOK)",next:"aylik_izleme_yok"},
+                {text:"Yıllık Paket (İzleme YOK)",next:"yillik_izleme_yok"},
+                {text:"Mükerrer (Çift) Çekim",next:"mukerrer"},
+                {text:"Aynı Gün Yanlışlıkla Yıllık Alım",next:"ayni_gun_yillik"},
+                {text:"Apple / Google Store İptali",next:"store_iptal"},
+                {text:"Winback Paket Geçiş İadesi",next:"winback_iade"}
+            ]},
+            izleme_var:{result:"red",title:"❌ İADE REDDEDİLİR",text:"İçerik izlenmişse (genel arıza hariç) iade yapılmaz.",script:"Hizmetimizden aktif olarak faydalandığınız için iade prosedürlerimiz gereği talebinize olumlu yanıt veremiyoruz."},
+            aylik_izleme_yok:{title:"Aylık Paket - İzleme Yok",text:"THH tehdidi var mı?",options:[
+                {text:"Evet/Israrcı",next:"aylik_teklif"},
+                {text:"Hayır",next:"izleme_var"}
+            ]},
+            aylik_teklif:{title:"İndirim Teklifi",text:"Önce 6AY50 ile indirim teklif et.",options:[
+                {text:"İndirimi Kabul Etti",next:"indirim_kabul"},
+                {text:"Reddetti (Tam İade)",next:"tam_iade"}
+            ]},
+            yillik_izleme_yok:{title:"Yıllık Paket",text:"Paket kampanyalı mıydı?",options:[
+                {text:"Hayır (Standart)",next:"yillik_standart"},
+                {text:"Evet (Kampanyalı)",next:"yillik_kampanyali"}
+            ]},
+            yillik_standart:{title:"Standart Yıllık",text:"Sırasıyla: 1. YILLIKLOCA İndirimi, 2. Aylığa Geçiş öner.",options:[
+                {text:"Teklifi Kabul Etti",next:"islem_tamam"},
+                {text:"Hepsini Reddetti (Tam İade)",next:"tam_iade"}
+            ]},
+            yillik_kampanyali:{title:"Kampanyalı Yıllık",text:"Sadece Aylığa Geçiş önerilebilir.",options:[
+                {text:"Aylığa Geçişi Kabul Etti",next:"ayliga_gecis"},
+                {text:"Reddetti (Tam İade)",next:"tam_iade"}
+            ]},
+            mukerrer:{title:"Mükerrer Çekim",text:"15 gün içinde ve Aynı Cihaz/IP mi?",options:[
+                {text:"Evet",next:"mukerrer_iade"},
+                {text:"Hayır",next:"izleme_var"}
+            ]},
+            ayni_gun_yillik:{title:"Aynı Gün Yıllık",text:"24 saat içinde mi?",options:[
+                {text:"Evet",next:"bir_defaya_mahsus"},
+                {text:"Hayır",next:"izleme_var"}
+            ]},
+            store_iptal:{result:"red",title:"❌ BİZ İPTAL EDEMEYİZ",text:"Apple/Google alımları telefondan yapılmalı."},
+            winback_iade:{result:"yellow",title:"⚠️ SADECE 2. PAKET İADE",text:"Sadece son alınan indirimli paket iade edilebilir."},
+            indirim_kabul:{result:"green",title:"✅ İNDİRİM TANIMLA",text:"139.5 TL iade yapıldı."},
+            tam_iade:{result:"green",title:"✅ TAM İADE YAP",text:"Teklifler reddedildi, iade sağla."},
+            mukerrer_iade:{result:"green",title:"✅ MÜKERRER İADE",text:"Fazla paketi iade et."},
+            ayliga_gecis:{result:"green",title:"✅ AYLIK GEÇİŞ",text:"Yıllık iptal, aylık tanımla, farkı iade et."},
+            bir_defaya_mahsus:{result:"green",title:"✅ TEK SEFERLİK İADE",text:"Yıllık iade, aylık devam."},
+            islem_tamam:{result:"green",title:"✅ İŞLEM TAMAM",text:"Teklif kabul edildi."}
+        };
 
         const VALID_CATEGORIES = ['Teknik', 'İkna', 'Kampanya', 'Bilgi'];
         let database=[], newsData=[], sportsData=[], salesScripts=[], quizQuestions=[], activeCards=[];
@@ -394,56 +468,7 @@
         function openQuizEditor(){ let h='<div style="max-height:400px;overflow-y:auto;">'; quizQuestions.forEach((q,x)=>{ h+=`<div style="padding:10px;border-bottom:1px solid #eee;cursor:pointer;" onclick="editQuizQuestion(${x})"><b>${x+1}. ${q.q}</b></div>`; }); h+='</div>'; Swal.fire({title:'Soru Düzenle',html:h,showConfirmButton:false}); }
         async function editQuizQuestion(x){ const q=quizQuestions[x]; const{value:f}=await Swal.fire({title:'Düzenle',html:`<input id="q" class="swal2-input" value="${q.q}"><textarea id="o" class="swal2-textarea">${q.opts.join(',')}</textarea><input id="a" class="swal2-input" value="${q.a}">`,showCancelButton:true,confirmButtonText:'Kaydet',preConfirm:()=>[document.getElementById('q').value,document.getElementById('o').value,document.getElementById('a').value]}); if(f){ sendUpdate(q.q,"Text",f[0],'quiz'); setTimeout(()=>sendUpdate(f[0],"QuizOptions",f[1],'quiz'),1000); setTimeout(()=>sendUpdate(f[0],"QuizAnswer",f[2],'quiz'),1500); } }
 
-        // --- İADE ASİSTANI (TAM ESKİ MANTIK) ---
-        const wizardSteps={
-            start:{title:"İade Talebi Analizi",text:"Lütfen müşterinin durumunu seçiniz:",options:[
-                {text:"İçerik İzlemiş / Kullanım Var",next:"izleme_var"},
-                {text:"Aylık Paket (İzleme YOK)",next:"aylik_izleme_yok"},
-                {text:"Yıllık Paket (İzleme YOK)",next:"yillik_izleme_yok"},
-                {text:"Mükerrer (Çift) Çekim",next:"mukerrer"},
-                {text:"Aynı Gün Yanlışlıkla Yıllık Alım",next:"ayni_gun_yillik"},
-                {text:"Apple / Google Store İptali",next:"store_iptal"},
-                {text:"Winback Paket Geçiş İadesi",next:"winback_iade"}
-            ]},
-            izleme_var:{result:"red",title:"❌ İADE REDDEDİLİR",text:"İçerik izlenmişse (genel arıza hariç) iade yapılmaz.",script:"Hizmetimizden aktif olarak faydalandığınız için iade prosedürlerimiz gereği talebinize olumlu yanıt veremiyoruz."},
-            aylik_izleme_yok:{title:"Aylık Paket - İzleme Yok",text:"THH tehdidi var mı?",options:[
-                {text:"Evet/Israrcı",next:"aylik_teklif"},
-                {text:"Hayır",next:"izleme_var"}
-            ]},
-            aylik_teklif:{title:"İndirim Teklifi",text:"Önce 6AY50 ile indirim teklif et.",options:[
-                {text:"İndirimi Kabul Etti",next:"indirim_kabul"},
-                {text:"Reddetti (Tam İade)",next:"tam_iade"}
-            ]},
-            yillik_izleme_yok:{title:"Yıllık Paket",text:"Paket kampanyalı mıydı?",options:[
-                {text:"Hayır (Standart)",next:"yillik_standart"},
-                {text:"Evet (Kampanyalı)",next:"yillik_kampanyali"}
-            ]},
-            yillik_standart:{title:"Standart Yıllık",text:"Sırasıyla: 1. YILLIKLOCA İndirimi, 2. Aylığa Geçiş öner.",options:[
-                {text:"Teklifi Kabul Etti",next:"islem_tamam"},
-                {text:"Hepsini Reddetti (Tam İade)",next:"tam_iade"}
-            ]},
-            yillik_kampanyali:{title:"Kampanyalı Yıllık",text:"Sadece Aylığa Geçiş önerilebilir.",options:[
-                {text:"Aylığa Geçişi Kabul Etti",next:"ayliga_gecis"},
-                {text:"Reddetti (Tam İade)",next:"tam_iade"}
-            ]},
-            mukerrer:{title:"Mükerrer Çekim",text:"15 gün içinde ve Aynı Cihaz/IP mi?",options:[
-                {text:"Evet",next:"mukerrer_iade"},
-                {text:"Hayır",next:"izleme_var"}
-            ]},
-            ayni_gun_yillik:{title:"Aynı Gün Yıllık",text:"24 saat içinde mi?",options:[
-                {text:"Evet",next:"bir_defaya_mahsus"},
-                {text:"Hayır",next:"izleme_var"}
-            ]},
-            store_iptal:{result:"red",title:"❌ BİZ İPTAL EDEMEYİZ",text:"Apple/Google alımları telefondan yapılmalı."},
-            winback_iade:{result:"yellow",title:"⚠️ SADECE 2. PAKET İADE",text:"Sadece son alınan indirimli paket iade edilebilir."},
-            indirim_kabul:{result:"green",title:"✅ İNDİRİM TANIMLA",text:"139.5 TL iade yapıldı."},
-            tam_iade:{result:"green",title:"✅ TAM İADE YAP",text:"Teklifler reddedildi, iade sağla."},
-            mukerrer_iade:{result:"green",title:"✅ MÜKERRER İADE",text:"Fazla paketi iade et."},
-            ayliga_gecis:{result:"green",title:"✅ AYLIK GEÇİŞ",text:"Yıllık iptal, aylık tanımla, farkı iade et."},
-            bir_defaya_mahsus:{result:"green",title:"✅ TEK SEFERLİK İADE",text:"Yıllık iade, aylık devam."},
-            islem_tamam:{result:"green",title:"✅ İŞLEM TAMAM",text:"Teklif kabul edildi."}
-        };
-
+        function openWizard(){ document.getElementById('wizard-modal').style.display='flex'; renderStep('start'); }
         function renderStep(k){
             const s=wizardSteps[k]; const b=document.getElementById('wizard-body'); let h=`<h3 style="color:var(--ssport-dark);margin-bottom:15px;">${s.title||''}</h3>`;
             if(s.result){
