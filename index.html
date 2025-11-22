@@ -14,12 +14,14 @@
         :root { --primary: #0e1b42; --secondary: #fabb00; --bg: #f0f2f5; --card-bg: #ffffff; --accent: #d32f2f; --success: #2e7d32; --info: #0288d1; --warning: #ed6c02; --sales: #10b981; --quiz: #8e24aa; }
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: #333; user-select: none; }
         
-        #login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 3000; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%); }
+        /* GİRİŞ EKRANI */
+        #login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5000; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%); }
         .login-card { background: white; padding: 40px; border-radius: 15px; text-align: center; width: 320px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
         .login-input { width: 100%; padding: 12px; margin: 10px 0; border: 2px solid #ddd; border-radius: 8px; text-align: center; box-sizing: border-box; }
         .login-btn { width: 100%; padding: 12px; background: #fabb00; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px; }
         .loading-text { font-size: 0.8rem; color: #666; margin-top: 10px; display: none; }
         
+        /* BAKIM EKRANI (GİZLİ) */
         #maintenance-screen { display: none !important; } 
 
         /* ANA UYGULAMA */
@@ -34,11 +36,10 @@
         .control-wrapper { display: flex; gap: 20px; align-items: flex-start; }
         .left-panel { flex: 2; }
         .right-panel { flex: 1; min-width: 300px; }
-        
         .search-container { position: relative; width: 100%; margin-bottom: 15px; }
         #searchInput { width: 100%; padding: 12px 20px 12px 45px; border-radius: 8px; border: none; box-sizing: border-box; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         .search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #666; }
-
+        
         .filter-container { display: flex; gap: 8px; flex-wrap: wrap; }
         .filter-btn { border: none; color: white; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.2s; display: flex; align-items: center; gap: 5px; font-weight: 600; font-size: 0.9rem; box-shadow: 0 2px 5px rgba(0,0,0,0.2); opacity: 0.85; }
         .filter-btn:hover { opacity: 1; transform: translateY(-2px); }
@@ -70,18 +71,18 @@
         .card.Kampanya { border-left-color: var(--success); }
         .card.Bilgi { border-left-color: var(--info); }
         
-        .edit-icon { position: absolute; right: 10px; top: 10px; color: #fabb00; cursor: pointer; display: none; font-size: 1.2rem; padding: 8px; background: white; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 10; border:1px solid #eee; }
+        /* EDİT İKONU */
+        .edit-icon { position: absolute; right: 10px; top: 10px; color: #fabb00; cursor: pointer; display: none; font-size: 1.2rem; padding: 8px; background: white; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 20; border:1px solid #eee; }
         .edit-icon:hover { transform: scale(1.1); background:#fff8e1; }
-        body.editing .edit-icon { display: block; }
+        /* Admin modu aktifken edit ikonları görünür */
+        body.editing .edit-icon { display: block !important; } 
         
         .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
         .card-title { font-weight: 700; font-size: 1.1rem; margin: 0; color: #2c3e50; line-height: 1.4; padding-right: 25px; }
         .badge { font-size: 0.75rem; padding: 4px 8px; border-radius: 6px; background: #eee; text-transform: uppercase; font-weight: 600; }
         .card-content { font-size: 0.95rem; color: #555; margin-bottom: 15px; line-height: 1.5; flex-grow: 1; cursor: pointer; }
-        
-        /* METİN KISALTMA (3 SATIR) */
         .card-text-truncate { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-        
+        .card-content:hover { color: #000; }
         .script-box { background: #fffdeb; border: 1px solid #f0e68c; padding: 12px; border-radius: 8px; font-style: italic; color: #444; margin-top: auto; position: relative; font-size: 0.92rem; }
         .card-actions { margin-top: 12px; display: flex; justify-content: flex-end; gap: 8px; }
         .btn { padding: 6px 12px; border-radius: 6px; cursor: pointer; border: none; font-weight: 600; font-size: 0.85rem; display: flex; align-items: center; gap: 5px; }
@@ -89,7 +90,8 @@
         .btn-link { background: transparent; border: 1px solid var(--info); color: var(--info); text-decoration: none; }
         .btn-link:hover { background: #e1f5fe; }
 
-        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 5000; justify-content: center; align-items: center; }
+        /* MODALLAR */
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center; }
         .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 15px; padding: 30px; position: relative; max-height: 85vh; overflow-y: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.8rem; cursor: pointer; color: #666; font-weight: bold; }
         .swal2-container { z-index: 10000 !important; }
@@ -113,7 +115,7 @@
         .sales-item:hover { box-shadow: 0 5px 15px rgba(16, 185, 129, 0.2); border-color: var(--sales); }
         .sales-item.active { background: #d1fae5; border-left: 6px solid var(--sales); }
         .sales-header { display: flex; justify-content: space-between; align-items: center; }
-        .sales-title { font-weight: 800; color: #065f46; font-size: 1.1rem; margin: 0; }
+        .sales-title { font-weight: 800; color: #065f46; font-size: 1.1rem; margin: 0; padding-right: 25px; }
         .sales-text { display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #a7f3d0; font-size: 1rem; color: #374151; line-height: 1.6; animation: fadeIn 0.4s ease-in; }
         .sales-item.active .sales-text { display: block; }
 
@@ -136,7 +138,19 @@
 </head>
 <body>
 
-    <div id="login-screen"><div class="login-card"><i class="fas fa-lock fa-3x" style="color: #0e1b42;"></i><h2>S Sport Plus</h2><p>Personel Girişi</p><input type="text" id="usernameInput" class="login-input" placeholder="Kullanıcı Adı"><input type="password" id="passInput" class="login-input" placeholder="Şifre" onkeyup="enterBas(event)"><button class="login-btn" onclick="girisYap()">Giriş Yap</button><div id="loading-msg" class="loading-text">Kullanıcılar kontrol ediliyor...</div><p id="error-msg" style="color:red; display:none; margin-top:10px;">Hatalı Kullanıcı Adı veya Şifre!</p></div></div>
+    <div id="login-screen">
+        <div class="login-card">
+            <i class="fas fa-lock fa-3x" style="color: #0e1b42;"></i>
+            <h2>S Sport Plus</h2>
+            <p>Personel Girişi</p>
+            <input type="text" id="usernameInput" class="login-input" placeholder="Kullanıcı Adı">
+            <input type="password" id="passInput" class="login-input" placeholder="Şifre" onkeyup="enterBas(event)">
+            <button class="login-btn" onclick="girisYap()">Giriş Yap</button>
+            <div id="loading-msg" class="loading-text">Kullanıcılar kontrol ediliyor...</div>
+            <p id="error-msg" style="color:red; display:none; margin-top:10px;">Hatalı Kullanıcı Adı veya Şifre!</p>
+        </div>
+    </div>
+    
     <div id="maintenance-screen"><div class="maintenance-content"><span style="font-size: 4rem;">👩‍🏫</span><h1>Sistem Mola Verdi!</h1><p>Esra Hoca'dan gelecek kritik bilgileri bekliyoruz... 🚀</p></div></div>
 
     <div id="main-app">
@@ -176,7 +190,7 @@
     <script>
         const BAKIM_MODU = false; 
         
-        // LİNKLER (SENİN LİNKLERİN)
+        // !!! BURAYA LİNKLERİNİ YAPIŞTIRMAYI UNUTMA !!!
         const DATA_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?output=csv";
         const USERS_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?gid=1075778951&single=true&output=csv";
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec"; 
@@ -184,9 +198,7 @@
         let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [], users = [];
         let currentUser = "", isAdminMode = false;
         let sessionTimeout;
-
-        // YENİ: AKTİF KART LİSTESİ (FİLTRELEME İÇİN)
-        let activeCards = [];
+        let activeCards = []; 
 
         document.addEventListener('contextmenu', event => event.preventDefault());
         document.onkeydown = function(e) { if(e.keyCode == 123) return false; }
@@ -194,7 +206,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             Papa.parse(USERS_SHEET_URL, {
                 download: true, header: true,
-                complete: function(results) { users = results.data; checkSession(); }, // Session kontrolü eklendi
+                complete: function(results) { users = results.data; checkSession(); }, 
                 error: function() { console.log("Kullanıcı listesi çekilemedi."); }
             });
         });
@@ -220,7 +232,11 @@
                 loadingMsg.style.display = "block";
                 Papa.parse(USERS_SHEET_URL, {
                     download: true, header: true,
-                    complete: function(results) { users = results.data; loadingMsg.style.display = "none"; checkCredentials(uName, uPass); }
+                    complete: function(results) {
+                        users = results.data;
+                        loadingMsg.style.display = "none";
+                        checkCredentials(uName, uPass);
+                    }
                 });
             } else { checkCredentials(uName, uPass); }
         }
@@ -233,11 +249,8 @@
                 localStorage.setItem("sSportUser", currentUser);
                 document.getElementById("login-screen").style.display = "none"; 
                 document.getElementById("user-display").innerText = user.Username;
-                // GİRİŞ LOGU
                 fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: "logLogin", username: currentUser }) });
-                
                 startSessionTimer();
-
                 if (BAKIM_MODU) document.getElementById("maintenance-screen").style.display = "flex";
                 else { document.getElementById("main-app").style.display = "block"; loadContentData(); }
             } else { document.getElementById("error-msg").style.display = "block"; }
@@ -247,7 +260,7 @@
             if (sessionTimeout) clearTimeout(sessionTimeout);
             sessionTimeout = setTimeout(() => {
                 Swal.fire({ icon: 'warning', title: 'Oturum Süresi Doldu', text: 'Güvenlik nedeniyle otomatik çıkış yapıldı.', confirmButtonText: 'Tamam' }).then(() => { logout(); });
-            }, 3600000); // 1 Saat
+            }, 3600000); 
         }
 
         function enterBas(e) { if (e.key === "Enter") girisYap(); }
@@ -271,27 +284,24 @@
             const btn = document.getElementById('adminBtn'); if(isAdminMode) btn.classList.add('admin-edit-mode'); else btn.classList.remove('admin-edit-mode');
             Swal.fire({ icon: 'info', title: isAdminMode ? 'Düzenleme Modu AÇIK' : 'Düzenleme Modu KAPALI', text: isAdminMode ? 'Kalem ikonlarına tıklayarak içerikleri düzenleyebilirsiniz.' : '', timer: 1500, showConfirmButton: false });
             
-            // GÜNCELLEME: Sadece o an ekranda olan (filtrelenmiş) kartları yeniden çiz
-            // Eğer tüm database'i çizersek filtre bozulur.
             if(activeCards.length > 0) renderCards(activeCards); else renderCards(database); 
             
-            openSales(); openGuide(); 
+            // MODALLAR AÇIKSA YENİDEN ÇİZDİR Kİ KALEMLER GELSİN
+            if(document.getElementById('guide-modal').style.display === 'flex') openGuide();
+            if(document.getElementById('sales-modal').style.display === 'flex') openSales();
+            if(document.getElementById('quiz-modal').style.display === 'flex') openQuiz();
         }
 
-        // KART EDİT (Veriyi obje olarak alıp işler, daha güvenli)
-        async function editContent(index) {
-            // DİKKAT: activeCards dizisindeki index'i kullanıyoruz
-            const item = activeCards[index]; 
+        async function editContent(title, category, cText, cScript) {
             const { value: formValues } = await Swal.fire({
                 title: 'İçeriği Düzenle',
-                html: `<label style="font-weight:bold;">Metin (Text)</label><textarea id="swal-text" class="swal2-textarea">${item.text}</textarea>
-                       <label style="font-weight:bold;">Script</label><textarea id="swal-script" class="swal2-textarea">${item.script}</textarea>`,
+                html: `<label style="font-weight:bold;">Metin (Text)</label><textarea id="swal-text" class="swal2-textarea">${cText}</textarea>
+                       <label style="font-weight:bold;">Script</label><textarea id="swal-script" class="swal2-textarea">${cScript}</textarea>`,
                 showCancelButton: true, confirmButtonText: 'Kaydet', preConfirm: () => [document.getElementById('swal-text').value, document.getElementById('swal-script').value]
             });
-
             if (formValues) {
-                sendUpdate(item.title, "Text", formValues[0]);
-                setTimeout(() => sendUpdate(item.title, "Script", formValues[1]), 1000);
+                if(formValues[0] !== cText) sendUpdate(title, "Text", formValues[0]);
+                if(formValues[1] !== cScript) setTimeout(() => sendUpdate(title, "Script", formValues[1]), 1000);
             }
         }
 
@@ -389,30 +399,36 @@
                     quizQuestions = rawData.filter(i => i.Type === 'quiz').map(i => ({ q: i.Text, opts: i.QuizOptions ? i.QuizOptions.split(',') : [], a: parseInt(i.QuizAnswer) }));
 
                     document.getElementById('loading').style.display = 'none';
-                    // Başlangıçta tüm veriyi göster
+                    // Başlangıçta tüm veriyi göster ve aktife al
+                    activeCards = database;
                     renderCards(database);
                     startTicker();
                 }
             });
         }
 
-        // GÜNCELLENMİŞ RENDER (INDEX KULLANARAK SORUNSUZ ÇALIŞIR)
         function renderCards(data) { 
-            activeCards = data; // Filtrelenmiş veriyi globalde tut
+            activeCards = data; // Filtrelenen veriyi globalde tut
             const container = document.getElementById('cardGrid'); 
             container.innerHTML = ''; 
             if(data.length === 0) { container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Kayıt Yok</div>'; return; } 
             
             data.forEach((item, index) => { 
-                // Burada indexi fonksiyona parametre olarak gönderiyoruz
+                // Safe strings for click
+                const safeText = item.text ? item.text.replace(/"/g, '&quot;').replace(/'/g, "\\'") : "";
+                const safeScript = item.script ? item.script.replace(/"/g, '&quot;').replace(/'/g, "\\'") : "";
+                const safeTitle = item.title ? item.title.replace(/"/g, '&quot;').replace(/'/g, "\\'") : "";
+                
                 let html = `
                 <div class="card ${item.category}">
-                    <i class="fas fa-pencil-alt edit-icon" onclick="editContent(${index})"></i>
+                    <i class="fas fa-pencil-alt edit-icon" onclick="editContent('${safeTitle}', '${item.category}', '${safeText}', '${safeScript}')"></i>
                     <div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div>
-                    <div class="card-content" onclick="showCardDetail(${index})">
+                    
+                    <div class="card-content" onclick="showCardDetail('${safeTitle}', '${safeText}')">
                         <div class="card-text-truncate">${highlightText(item.text)}</div>
                         <div style="font-size:0.8rem; color:#999; margin-top:5px; text-align:right;">(Tamamını oku)</div>
                     </div>
+
                     <div class="script-box">${highlightText(item.script)}</div>
                     <div class="card-actions">
                         <button class="btn btn-copy" onclick="copyText('${item.script.replace(/'/g, "\\'")}')"><i class="fas fa-copy"></i> Kopyala</button>
@@ -424,16 +440,7 @@
             }); 
         }
 
-        // KART DETAY POPUP (INDEX KULLANIR)
-        function showCardDetail(index) { 
-            const item = activeCards[index];
-            Swal.fire({ 
-                title: item.title, 
-                html: `<div style="text-align:left; font-size:1rem; line-height:1.6;">${item.text}</div>`, 
-                showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa' 
-            }); 
-        }
-        
+        function showCardDetail(title, text) { Swal.fire({ title: title, html: `<div style="text-align:left; font-size:1rem; line-height:1.6;">${text}</div>`, showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa' }); }
         function filterContent() { const search = document.getElementById('searchInput').value.toLowerCase(); renderCards(database.filter(i => i.title?.toLowerCase().includes(search) || i.text?.toLowerCase().includes(search))); }
         function filterCategory(cat) { document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active')); event.target.closest('button').classList.add('active'); renderCards(cat === 'all' ? database : database.filter(i => i.category === cat)); }
         function highlightText(t) { if(!t) return ""; const s = document.getElementById('searchInput').value.trim(); return s ? t.replace(new RegExp(`(${s})`, 'gi'), '<span class="highlight">$1</span>') : t; }
