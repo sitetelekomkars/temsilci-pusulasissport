@@ -4,68 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S Sport Plus - Temsilci Bilgi Merkezi</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 
     <style>
-        :root { --primary: #0e1b42; --secondary: #fabb00; --bg: #f0f2f5; --card-bg: #ffffff; --accent: #d32f2f; --success: #2e7d32; --info: #0288d1; --warning: #ed6c02; --sales: #10b981; --quiz: #8e24aa; }
-        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: #333; user-select: none; }
+        /* RENKLER GÜNCELLENDİ (S Sport Kurumsal) */
+        :root { 
+            --primary: #0e1b42; /* S Sport Lacivert */
+            --secondary: #fabb00; /* Sarı */
+            --accent: #d32f2f; /* S Sport Kırmızı */
+            --bg: #f0f2f5; 
+            --card-bg: #ffffff; 
+            --success: #2e7d32; 
+            --info: #0288d1; 
+            --warning: #ed6c02; 
+            --sales: #10b981; 
+            --quiz: #8e24aa; 
+        }
+        
+        /* Font Inter Olarak Değişti */
+        body { margin: 0; padding: 0; font-family: 'Inter', sans-serif; background-color: var(--bg); color: #333; user-select: none; }
         
         /* Login Screen Style */
         #login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5000; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%); }
         .login-card { background: white; padding: 40px; border-radius: 15px; text-align: center; width: 320px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
-        .login-input { width: 100%; padding: 12px; margin: 10px 0; border: 2px solid #ddd; border-radius: 8px; text-align: center; box-sizing: border-box; }
-        .login-btn { width: 100%; padding: 12px; background: #fabb00; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+        .login-input { width: 100%; padding: 12px; margin: 10px 0; border: 2px solid #ddd; border-radius: 8px; text-align: center; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        .login-btn { width: 100%; padding: 12px; background: #fabb00; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px; font-family: 'Inter', sans-serif; }
         .loading-text { font-size: 0.8rem; color: #666; margin-top: 10px; display: none; }
         
         #maintenance-screen { display: none !important; } 
         #main-app { display: none; }
 
-        /* Header & Controls */
-        .header { background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%); color: white; padding: 20px 30px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        /* --- HEADER (S SPORT PLUS TARZI YAPILDI) --- */
+        .header { 
+            background: var(--primary); 
+            color: white; 
+            padding: 15px 30px; /* Biraz daha daraltıldı */
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+            border-bottom: 4px solid var(--accent); /* Kırmızı Çizgi */
+        }
         .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
         
+        /* Logo / Başlık Stili */
+        .header h1 {
+            font-weight: 900; /* Çok kalın */
+            text-transform: uppercase; /* Hepsi büyük harf */
+            font-style: italic; /* Hafif yatık (Sportif) */
+            font-size: 1.8rem;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
         .header-controls { display: flex; align-items: center; gap:10px; }
         
         .edit-toggle-btn, .add-btn {
             background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             color: #fff;
             padding: 8px 20px;
-            border-radius: 30px; 
+            border-radius: 4px; /* Daha keskin köşeler */
             cursor: pointer;
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             display: flex;
             align-items: center;
             gap: 10px;
             transition: all 0.3s;
-            backdrop-filter: blur(5px);
+            text-transform: uppercase;
         }
 
-        .edit-toggle-btn:hover, .add-btn:hover { background: rgba(255, 255, 255, 0.25); border-color: #fff; transform: translateY(-3px); }
-        .edit-toggle-btn.active { background: linear-gradient(135deg, #fabb00, #ff9100); border-color: #ffe082; color: #0e1b42; box-shadow: 0 0 20px rgba(250, 187, 0, 0.6); animation: pulse-border 2s infinite; }
-        .add-btn { background: linear-gradient(135deg, #2e7d32, #43a047); border-color: #a5d6a7; }
+        .edit-toggle-btn:hover, .add-btn:hover { background: rgba(255, 255, 255, 0.25); border-color: #fff; transform: translateY(-2px); }
+        
+        .edit-toggle-btn.active { background: var(--secondary); border-color: var(--secondary); color: var(--primary); box-shadow: 0 0 15px rgba(250, 187, 0, 0.4); animation: none; }
+        .add-btn { background: var(--accent); border-color: var(--accent); } /* Kırmızı Ekle Butonu */
+        
         @keyframes pulse-border { 0% { box-shadow: 0 0 0 0 rgba(250, 187, 0, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(250, 187, 0, 0); } 100% { box-shadow: 0 0 0 0 rgba(250, 187, 0, 0); } }
 
-        .admin-btn { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; transition:0.3s;}
+        .admin-btn { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; transition:0.3s;}
         
         .control-wrapper { display: flex; gap: 20px; align-items: flex-start; }
         .left-panel { flex: 2; }
         .right-panel { flex: 1; min-width: 300px; }
-        
         .search-container { position: relative; width: 100%; margin-bottom: 15px; }
-        #searchInput { width: 100%; padding: 12px 20px 12px 45px; border-radius: 8px; border: none; box-sizing: border-box; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        #searchInput { width: 100%; padding: 12px 20px 12px 45px; border-radius: 8px; border: none; box-sizing: border-box; box-shadow: 0 2px 10px rgba(0,0,0,0.1); font-family: 'Inter', sans-serif;}
         .search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #666; }
         
         .filter-container { display: flex; gap: 8px; flex-wrap: wrap; }
-        .filter-btn { border: none; color: white; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.2s; display: flex; align-items: center; gap: 5px; font-weight: 600; font-size: 0.9rem; box-shadow: 0 2px 5px rgba(0,0,0,0.2); opacity: 0.85; }
+        .filter-btn { border: none; color: white; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.2s; display: flex; align-items: center; gap: 5px; font-weight: 600; font-size: 0.9rem; box-shadow: 0 2px 5px rgba(0,0,0,0.2); opacity: 0.9; font-family: 'Inter', sans-serif; }
         .filter-btn:hover { opacity: 1; transform: translateY(-2px); }
         .filter-btn.active { opacity: 1; box-shadow: 0 0 0 2px #fff, 0 4px 10px rgba(0,0,0,0.3); transform: scale(1.05); }
 
-        /* Renkler */
         .btn-all { background: linear-gradient(135deg, #4b5563, #1f2937); }
         .btn-tech { background: linear-gradient(135deg, #0e1b42, #1e3a8a); }
         .btn-ikna { background: linear-gradient(135deg, #ed6c02, #e65100); }
@@ -77,18 +115,14 @@
         .sales-btn { background: linear-gradient(45deg, #10b981, #059669); }
         .quiz-btn { background: linear-gradient(45deg, #8e24aa, #ba68c8); }
 
-        /* Ticker */
         .news-ticker-box { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 15px; height: 85px; position: relative; cursor: pointer; overflow: hidden; backdrop-filter: blur(5px); transition: 0.3s; display: flex; flex-direction: column; justify-content: center; }
         .news-ticker-box:hover { background: rgba(255,255,255,0.2); border-color: var(--secondary); }
         .ticker-label { font-size: 0.75rem; color: var(--secondary); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; display: flex; align-items: center; gap: 5px;}
         .ticker-label i { animation: blink 1.5s infinite; }
         .ticker-content { font-size: 0.95rem; color: white; font-weight: 500; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; animation: slideIn 0.5s ease-out; }
 
-        /* Grid & Cards */
         .container { padding: 20px; max-width: 1600px; margin: 0 auto; }
-        /* MOBİL UYUM: minmax 300px */
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
-        
         .card { background: var(--card-bg); border-radius: 12px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border-left: 5px solid var(--info); display: flex; flex-direction: column; transition: transform 0.2s; position: relative; }
         .card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         .card.Teknik { border-left-color: var(--primary); }
@@ -107,18 +141,16 @@
         .card-text-truncate { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
         .script-box { background: #fffdeb; border: 1px solid #f0e68c; padding: 12px; border-radius: 8px; font-style: italic; color: #444; margin-top: auto; position: relative; font-size: 0.92rem; }
         .card-actions { margin-top: 12px; display: flex; justify-content: flex-end; gap: 8px; }
-        .btn { padding: 6px 12px; border-radius: 6px; cursor: pointer; border: none; font-weight: 600; font-size: 0.85rem; display: flex; align-items: center; gap: 5px; }
+        .btn { padding: 6px 12px; border-radius: 6px; cursor: pointer; border: none; font-weight: 600; font-size: 0.85rem; display: flex; align-items: center; gap: 5px; font-family: 'Inter', sans-serif;}
         .btn-copy { background: var(--primary); color: white; }
         .btn-link { background: transparent; border: 1px solid var(--info); color: var(--info); text-decoration: none; }
         .btn-link:hover { background: #e1f5fe; }
 
-        /* Modals */
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 5000; justify-content: center; align-items: center; }
         .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 15px; padding: 30px; position: relative; max-height: 85vh; overflow-y: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.8rem; cursor: pointer; color: #666; font-weight: bold; }
         .swal2-container { z-index: 10000 !important; }
         
-        /* İçerik Stilleri */
         .news-item { border-left: 4px solid var(--secondary); padding-left: 15px; margin-bottom: 20px; position: relative; padding-right: 30px; }
         .news-date { font-size: 0.85rem; color: #999; font-weight: bold; display: block; }
         .news-title { font-size: 1.1rem; font-weight: bold; color: var(--primary); display: block; }
@@ -158,6 +190,20 @@
         .res-yellow { background: #fff8e1; border: 2px solid #ffca28; color: #f57f17; }
         .restart-btn { margin-top: 20px; background: #555; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
         .highlight { background-color: yellow; font-weight: bold; }
+        
+        /* İMZA STİLİ */
+        .footer-credit {
+            position: fixed;
+            bottom: 10px;
+            right: 15px;
+            font-size: 11px;
+            color: #94a3b8;
+            font-family: 'Inter', sans-serif;
+            opacity: 0.6;
+            z-index: 100;
+            pointer-events: none;
+        }
+        .footer-credit strong { font-weight: 700; color: #64748b; }
 
         @keyframes blink { 50% { opacity: 0.5; } }
         @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
@@ -167,14 +213,16 @@
 </head>
 <body>
 
+    <div class="footer-credit">Crafted by <strong>Doğuş Yalçınkaya</strong></div>
+
     <div id="login-screen">
         <div class="login-card">
-            <i class="fas fa-lock fa-3x" style="color: #0e1b42;"></i>
-            <h2>S Sport Plus</h2>
+            <i class="fas fa-lock fa-3x" style="color: var(--primary);"></i>
+            <h2 style="color:var(--primary);">S SPORT PLUS</h2>
             <p>Personel Girişi</p>
             <input type="text" id="usernameInput" class="login-input" placeholder="Kullanıcı Adı">
             <input type="password" id="passInput" class="login-input" placeholder="Şifre" onkeyup="enterBas(event)">
-            <button class="login-btn" onclick="girisYap()">Giriş Yap</button>
+            <button class="login-btn" onclick="girisYap()">GİRİŞ YAP</button>
             <div id="loading-msg" class="loading-text">Sunucuya soruluyor...</div>
             <p id="error-msg" style="color:red; display:none; margin-top:10px;">Hatalı Kullanıcı Adı veya Şifre!</p>
         </div>
@@ -191,13 +239,13 @@
     <div id="main-app">
         <div class="header">
             <div class="header-top">
-                <h1><i class="fas fa-compass"></i> S Sport Plus - Temsilci Pusulası</h1>
+                <h1><i class="fas fa-compass"></i> TEMSİLCİ PUSULASI</h1>
                 <div class="header-controls">
                     <button id="addCardBtn" class="add-btn" style="display:none;" onclick="addNewCardPopup()">
-                        <i class="fas fa-plus"></i> Kart Ekle
+                        <i class="fas fa-plus"></i> EKLE
                     </button>
                     <button id="quickEditBtn" class="edit-toggle-btn" style="display:none;" onclick="toggleEditMode()">
-                        <i class="fas fa-pencil-alt"></i> Düzenlemeyi Aç
+                        <i class="fas fa-pencil-alt"></i> DÜZENLE
                     </button>
                     <button id="adminBtn" class="admin-btn" onclick="openUserMenu()">
                         <i class="fas fa-user-circle"></i> <span id="user-display">Misafir</span>
@@ -226,7 +274,7 @@
                 <div class="right-panel">
                     <div class="news-ticker-box" onclick="openNews()">
                         <div class="ticker-label">
-                            <i class="fas fa-circle" style="font-size:8px;"></i> GÜNCEL
+                            <i class="fas fa-circle" style="font-size:8px;"></i> GÜNCEL DUYURULAR
                         </div>
                         <div id="ticker-content" class="ticker-content">Veriler yükleniyor...</div>
                     </div>
@@ -285,20 +333,15 @@
     <script>
         const BAKIM_MODU = false; 
         
-        // SADECE İÇERİK DATASI (Kullanıcı listesi buradan SİLİNDİ!)
+        // --- GÜNCEL LİNKLER ---
         const DATA_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?gid=0&single=true&output=csv";
-        
-        // Backend Script URL
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec"; 
 
         const VALID_CATEGORIES = ['Teknik', 'İkna', 'Kampanya', 'Bilgi'];
-        
-        let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [];
+        let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [], activeCards = []; 
         let currentUser = "", isAdminMode = false, sessionTimeout;
-        let activeCards = []; 
 
         // ----- YARDIMCI FONKSİYONLAR -----
-
         function getCategorySelectHtml(currentCategory, id) {
             let options = VALID_CATEGORIES.map(cat => 
                 `<option value="${cat}" ${cat === currentCategory ? 'selected' : ''}>${cat}</option>`
@@ -322,11 +365,8 @@
         document.addEventListener('contextmenu', event => event.preventDefault());
         document.onkeydown = function(e) { if(e.keyCode == 123) return false; }
 
-        // ----- BAŞLANGIÇ -----
-        
         document.addEventListener('DOMContentLoaded', () => {
             checkSession();
-            // Artık kullanıcı listesini çekmiyoruz!
         });
 
         function checkSession() {
@@ -342,14 +382,11 @@
             }
         }
 
-        // ----- GİRİŞ İŞLEMLERİ (SERVER SIDE) -----
-
         function enterBas(e) { if (e.key === "Enter") girisYap(); }
 
         function girisYap() {
             const uName = document.getElementById("usernameInput").value.trim();
             const uPass = document.getElementById("passInput").value.trim();
-            
             const loadingMsg = document.getElementById("loading-msg");
             const errorMsg = document.getElementById("error-msg");
             
@@ -359,16 +396,13 @@
                 return;
             }
 
-            // UI Güncelleme
             loadingMsg.style.display = "block";
             loadingMsg.innerText = "Doğrulanıyor...";
             errorMsg.style.display = "none";
             document.querySelector('.login-btn').disabled = true;
 
-            // Şifreyi Hashle
             const hashedPass = CryptoJS.SHA256(uPass).toString();
 
-            // Sunucuya Sor
             fetch(SCRIPT_URL, {
                 method: 'POST',
                 redirect: "follow", 
@@ -387,13 +421,10 @@
                 if (data.result === "success") {
                     currentUser = data.username;
                     localStorage.setItem("sSportUser", currentUser);
-                    
                     document.getElementById("login-screen").style.display = "none"; 
                     document.getElementById("user-display").innerText = currentUser;
-                    
                     checkAdmin(currentUser);
                     startSessionTimer();
-                    
                     if (BAKIM_MODU) {
                         document.getElementById("maintenance-screen").style.display = "flex";
                     } else { 
@@ -406,7 +437,6 @@
                 }
             })
             .catch(error => {
-                console.error("Login Hatası:", error);
                 loadingMsg.style.display = "none";
                 document.querySelector('.login-btn').disabled = false;
                 errorMsg.innerText = "Sunucu hatası! Lütfen sayfayı yenileyin.";
@@ -417,7 +447,6 @@
         function checkAdmin(user) {
             const editBtn = document.getElementById('quickEditBtn');
             const addBtn = document.getElementById('addCardBtn');
-            
             if(user === "Admin" || user === "admin" || user === "dogus") {
                 editBtn.style.display = "flex"; 
                 addBtn.style.display = "flex";
@@ -445,8 +474,6 @@
             }, 3600000); 
         }
         
-        // ----- PROFİL MENÜSÜ & ŞİFRE DEĞİŞTİRME -----
-
         function openUserMenu() {
             let options = { title: `Merhaba, ${currentUser}`, showCancelButton: true, showDenyButton: true, confirmButtonText: '🔑 Şifre Değiştir', denyButtonText: '🚪 Çıkış Yap', cancelButtonText: 'İptal' };
             Swal.fire(options).then((result) => { if (result.isConfirmed) changePasswordPopup(); else if (result.isDenied) logout(); });
@@ -461,7 +488,6 @@
             });
             if (formValues) {
                 Swal.fire({ title: 'İşleniyor...', didOpen: () => { Swal.showLoading() } });
-                // SHA-256 ile güvenli gönderim
                 fetch(SCRIPT_URL, { 
                     method: 'POST', 
                     redirect: "follow",
@@ -481,8 +507,6 @@
                 .catch(err => Swal.fire('Hata', 'Sunucu hatası.', 'error'));
             }
         }
-
-        // ----- VERİ YÜKLEME -----
 
         function loadContentData() {
             Papa.parse(DATA_SHEET_URL, {
@@ -508,8 +532,6 @@
                 }
             });
         }
-
-        // ----- KART RENDER & FİLTRELEME -----
 
         function renderCards(data) { 
             activeCards = data; 
@@ -545,20 +567,14 @@
             const searchTerm = document.getElementById('searchInput').value.trim();
             if (!searchTerm) return htmlContent;
             
-            // Güvenli HTML arama (Tagleri bozmaz)
             const regex = new RegExp(`(${searchTerm})(?![^<]*>|[^<>]*<\/)`, "gi");
             return htmlContent.replace(regex, '<span class="highlight">$1</span>');
         }
 
-        function showCardDetail(title, text) { 
-            Swal.fire({ 
-                title: title, 
-                html: `<div style="text-align:left; font-size:1rem; line-height:1.6;">${text.replace(/\\n/g,'<br>')}</div>`, 
-                showCloseButton: true, 
-                showConfirmButton: false, 
-                width: '600px', 
-                background: '#f8f9fa' 
-            }); 
+        function showCardDetail(t, tx) { 
+            let content = tx.replace(/\\n/g, '<br>'); 
+            content = content.replace(/•/g, '<br><br>•'); 
+            Swal.fire({ title: t, html: `<div style="text-align:left; font-size:1rem; line-height:1.6; color:#334155;">${content}</div>`, showCloseButton: true, showConfirmButton: false, width: '600px' }); 
         }
 
         function filterContent() { 
@@ -578,19 +594,17 @@
             ); 
         }
 
-        // ----- ADMIN / DÜZENLEME MODU -----
-
         function toggleEditMode() {
             isAdminMode = !isAdminMode; 
             document.body.classList.toggle('editing', isAdminMode);
             const btn = document.getElementById('quickEditBtn'); 
             if(isAdminMode) {
                 btn.classList.add('active');
-                btn.innerHTML = '<i class="fas fa-times"></i> Düzenlemeyi Kapat';
+                btn.innerHTML = '<i class="fas fa-times"></i> KAPAT';
                 Swal.fire({ icon: 'success', title: 'Düzenleme Modu AÇIK', text: 'Kalem ikonlarına tıklayarak içerikleri düzenleyebilirsiniz.', timer: 1500, showConfirmButton: false });
             } else {
                 btn.classList.remove('active');
-                btn.innerHTML = '<i class="fas fa-pencil-alt"></i> Düzenlemeyi Aç';
+                btn.innerHTML = '<i class="fas fa-pencil-alt"></i> DÜZENLE';
             }
             if(activeCards.length > 0) renderCards(activeCards); else renderCards(database); 
             if(document.getElementById('guide-modal').style.display === 'flex') openGuide();
@@ -599,23 +613,13 @@
             if(document.getElementById('news-modal').style.display === 'flex') openNews();
         }
 
-        // Update Fonksiyonu
         function sendUpdate(originalTitle, column, value, type = 'card') {
             if(!Swal.isVisible()) Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } });
-            
             const payload = { action: "updateContent", title: originalTitle, column: column, value: value, type: type, originalText: originalTitle, username: currentUser };
-            
-            fetch(SCRIPT_URL, { 
-                method: 'POST', 
-                mode: 'no-cors', 
-                headers: { 'Content-Type': 'application/json' }, 
-                body: JSON.stringify(payload) 
-            })
+            fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
             .then(() => Swal.fire({icon: 'success', title: 'İşlem İletildi', text: 'Güncelleme gönderildi.', timer: 2000, showConfirmButton: false}))
             .catch(err => Swal.fire('Hata', 'Güncelleme hatası: ' + err, 'error'));
         }
-
-        // ----- DÜZENLEME POPUP'LARI -----
 
         async function editContent(index) {
             const item = activeCards[index]; 
@@ -707,15 +711,8 @@
             if (formValues) {
                 if(!formValues.title) { Swal.fire('Hata', 'Başlık zorunlu!', 'error'); return; }
                 Swal.fire({ title: 'Ekleniyor...', didOpen: () => { Swal.showLoading() } });
-                
-                fetch(SCRIPT_URL, { 
-                    method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, 
-                    body: JSON.stringify({ action: "addCard", username: currentUser, ...formValues }) 
-                })
-                .then(response => {
-                    Swal.fire({icon: 'success', title: 'İşlem Gönderildi', text: 'Kart eklendi.', timer: 3000, showConfirmButton: false});
-                    setTimeout(loadContentData, 3500); 
-                });
+                fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: "addCard", username: currentUser, ...formValues }) })
+                .then(response => { Swal.fire({icon: 'success', title: 'İşlem Gönderildi', text: 'Kart eklendi.', timer: 3000, showConfirmButton: false}); setTimeout(loadContentData, 3500); });
             }
         }
 
@@ -763,11 +760,8 @@
             }
         }
 
-        // ----- DİĞER MODÜLLER -----
-
         function closeModal(id) { document.getElementById(id).style.display = 'none'; }
 
-        // Ticker
         let tickerIndex = 0;
         function startTicker() { 
             const t = document.getElementById('ticker-content'); 
@@ -801,28 +795,7 @@
                 grid.innerHTML += `<div class="guide-item" onclick="showSportDetail(${index})">${editBtn}<i class="fas ${s.icon} guide-icon"></i><span class="guide-title">${s.title}</span>${pronHtml}<div class="guide-desc">${s.desc}</div><div class="guide-tip"><i class="fas fa-lightbulb"></i> ${s.tip}</div><div style="font-size:0.8rem; color:#999; margin-top:5px;">(Detay için tıkla)</div></div>`; 
             }); 
         }
-        function showSportDetail(index) {
-            const sport = sportsData[index];
-            const detailText = sport.detail ? sport.detail.replace(/\n/g,'<br>') : "Bu içerik için henüz detay eklenmemiş.";
-            const pronDetail = sport.pronunciation ? `<div style="color:#e65100; font-weight:bold; margin-bottom:15px;">🗣️ Okunuşu: ${sport.pronunciation}</div>` : '';
-            Swal.fire({ title: `<i class="fas ${sport.icon}" style="color:#0e1b42;"></i> ${sport.title}`, html: `${pronDetail}<div style="text-align:left; font-size:1rem; line-height:1.6;">${detailText}</div>`, showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa' });
-        }
 
-        function openSales() { 
-            document.getElementById('sales-modal').style.display = 'flex'; 
-            const c = document.getElementById('sales-grid'); c.innerHTML = ''; 
-            salesScripts.forEach((s, index) => { 
-                let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="display:block !important; top:10px; right:40px; z-index:50;" onclick="event.stopPropagation(); editSales(${index})"></i>` : '';
-                c.innerHTML += `<div class="sales-item" id="sales-${index}" onclick="toggleSales('${index}')">${editBtn}<div class="sales-header"><span class="sales-title">${s.title}</span><i class="fas fa-chevron-down" id="icon-${index}" style="color:#10b981;"></i></div><div class="sales-text">${(s.text || '').replace(/\n/g,'<br>')}<div style="text-align:right; margin-top:15px;"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${escapeForJsString(s.text || '')}')"><i class="fas fa-copy"></i> Kopyala</button></div></div></div>`; 
-            }); 
-        }
-        function toggleSales(index) { 
-            const item = document.getElementById(`sales-${index}`); const icon = document.getElementById(`icon-${index}`); 
-            item.classList.toggle('active'); 
-            if(item.classList.contains('active')){ icon.classList.replace('fa-chevron-down', 'fa-chevron-up'); } else { icon.classList.replace('fa-chevron-up', 'fa-chevron-down'); } 
-        }
-        
-        // Quiz
         let currentQuestion=0, score=0;
         function openQuiz() { 
             document.getElementById('quiz-modal').style.display='flex'; currentQuestion=0; score=0; 
@@ -865,7 +838,7 @@
             }
         }
 
-        // Wizard (İade Asistanı)
+        // --- IADE ASISTANI (TAMAMEN ESKİ KOD) ---
         const wizardSteps={
             start:{title:"İade Talebi Analizi",text:"Lütfen müşterinin durumunu seçiniz:",options:[
                 {text:"İçerik İzlemiş / Kullanım Var",next:"izleme_var"},
@@ -877,13 +850,34 @@
                 {text:"Winback Paket Geçiş İadesi",next:"winback_iade"}
             ]},
             izleme_var:{result:"red",title:"❌ İADE REDDEDİLİR",text:"İçerik izlenmişse (genel arıza hariç) iade yapılmaz.",script:"Hizmetimizden aktif olarak faydalandığınız için iade prosedürlerimiz gereği talebinize olumlu yanıt veremiyoruz."},
-            aylik_izleme_yok:{title:"Aylık Paket - İzleme Yok",text:"THH tehdidi var mı?",options:[{text:"Evet/Israrcı",next:"aylik_teklif"},{text:"Hayır",next:"izleme_var"}]},
-            aylik_teklif:{title:"İndirim Teklifi",text:"Önce 6AY50 ile indirim teklif et.",options:[{text:"İndirimi Kabul Etti",next:"indirim_kabul"},{text:"Reddetti (Tam İade)",next:"tam_iade"}]},
-            yillik_izleme_yok:{title:"Yıllık Paket",text:"Paket kampanyalı mıydı?",options:[{text:"Hayır (Standart)",next:"yillik_standart"},{text:"Evet (Kampanyalı)",next:"yillik_kampanyali"}]},
-            yillik_standart:{title:"Standart Yıllık",text:"Sırasıyla: 1. YILLIKLOCA İndirimi, 2. Aylığa Geçiş öner.",options:[{text:"Teklifi Kabul Etti",next:"islem_tamam"},{text:"Hepsini Reddetti (Tam İade)",next:"tam_iade"}]},
-            yillik_kampanyali:{title:"Kampanyalı Yıllık",text:"Sadece Aylığa Geçiş önerilebilir.",options:[{text:"Aylığa Geçişi Kabul Etti",next:"ayliga_gecis"},{text:"Reddetti (Tam İade)",next:"tam_iade"}]},
-            mukerrer:{title:"Mükerrer Çekim",text:"15 gün içinde ve Aynı Cihaz/IP mi?",options:[{text:"Evet",next:"mukerrer_iade"},{text:"Hayır",next:"izleme_var"}]},
-            ayni_gun_yillik:{title:"Aynı Gün Yıllık",text:"24 saat içinde mi?",options:[{text:"Evet",next:"bir_defaya_mahsus"},{text:"Hayır",next:"izleme_var"}]},
+            aylik_izleme_yok:{title:"Aylık Paket - İzleme Yok",text:"THH tehdidi var mı?",options:[
+                {text:"Evet/Israrcı",next:"aylik_teklif"},
+                {text:"Hayır",next:"izleme_var"}
+            ]},
+            aylik_teklif:{title:"İndirim Teklifi",text:"Önce 6AY50 ile indirim teklif et.",options:[
+                {text:"İndirimi Kabul Etti",next:"indirim_kabul"},
+                {text:"Reddetti (Tam İade)",next:"tam_iade"}
+            ]},
+            yillik_izleme_yok:{title:"Yıllık Paket",text:"Paket kampanyalı mıydı?",options:[
+                {text:"Hayır (Standart)",next:"yillik_standart"},
+                {text:"Evet (Kampanyalı)",next:"yillik_kampanyali"}
+            ]},
+            yillik_standart:{title:"Standart Yıllık",text:"Sırasıyla: 1. YILLIKLOCA İndirimi, 2. Aylığa Geçiş öner.",options:[
+                {text:"Teklifi Kabul Etti",next:"islem_tamam"},
+                {text:"Hepsini Reddetti (Tam İade)",next:"tam_iade"}
+            ]},
+            yillik_kampanyali:{title:"Kampanyalı Yıllık",text:"Sadece Aylığa Geçiş önerilebilir.",options:[
+                {text:"Aylığa Geçişi Kabul Etti",next:"ayliga_gecis"},
+                {text:"Reddetti (Tam İade)",next:"tam_iade"}
+            ]},
+            mukerrer:{title:"Mükerrer Çekim",text:"15 gün içinde ve Aynı Cihaz/IP mi?",options:[
+                {text:"Evet",next:"mukerrer_iade"},
+                {text:"Hayır",next:"izleme_var"}
+            ]},
+            ayni_gun_yillik:{title:"Aynı Gün Yıllık",text:"24 saat içinde mi?",options:[
+                {text:"Evet",next:"bir_defaya_mahsus"},
+                {text:"Hayır",next:"izleme_var"}
+            ]},
             store_iptal:{result:"red",title:"❌ BİZ İPTAL EDEMEYİZ",text:"Apple/Google alımları telefondan yapılmalı."},
             winback_iade:{result:"yellow",title:"⚠️ SADECE 2. PAKET İADE",text:"Sadece son alınan indirimli paket iade edilebilir."},
             indirim_kabul:{result:"green",title:"✅ İNDİRİM TANIMLA",text:"139.5 TL iade yapıldı."},
@@ -894,16 +888,28 @@
             islem_tamam:{result:"green",title:"✅ İŞLEM TAMAM",text:"Teklif kabul edildi."}
         };
 
-        function openWizard(){ document.getElementById('wizard-modal').style.display='flex'; renderStep('start'); }
+        function openWizard(){
+            document.getElementById('wizard-modal').style.display='flex';
+            renderStep('start');
+        }
+
         function renderStep(k){
-            const s=wizardSteps[k]; const b=document.getElementById('wizard-body'); let h=`<h2>${s.title||''}</h2>`;
+            const s=wizardSteps[k];
+            const b=document.getElementById('wizard-body');
+            let h=`<h2>${s.title||''}</h2>`;
             if(s.result){
-                let i=s.result==='red'?'🛑':(s.result==='green'?'✅':'⚠️'); let c=s.result==='red'?'res-red':(s.result==='green'?'res-green':'res-yellow');
-                h+=`<div class="result-box ${c}"><div style="font-size:3rem;margin-bottom:10px;">${i}</div><h3>${s.title}</h3><p>${s.text}</p>${s.script?`<div class="script-box">${s.script}</div>`:''}</div><button class="restart-btn" onclick="renderStep('start')"><i class="fas fa-redo"></i> Başa Dön</button>`;
+                let i=s.result==='red'?'🛑':(s.result==='green'?'✅':'⚠️');
+                let c=s.result==='red'?'res-red':(s.result==='green'?'res-green':'res-yellow');
+                h+=`<div class="result-box ${c}"><div style="font-size:3rem;margin-bottom:10px;">${i}</div><h3>${s.title}</h3><p>${s.text}</p>${s.script?`<div class="script-box" style="background:white;border-color:inherit;">${s.script}</div>`:''}</div><button class="restart-btn" onclick="renderStep('start')"><i class="fas fa-redo"></i> Başa Dön</button>`;
             }else{
-                h+=`<p>${s.text}</p><div class="wizard-options">`; s.options.forEach(o=>{ h+=`<button class="option-btn" onclick="renderStep('${o.next}')"><i class="fas fa-chevron-right"></i> ${o.text}</button>`; }); h+=`</div>`;
+                h+=`<p>${s.text}</p><div class="wizard-options">`;
+                s.options.forEach(o=>{
+                    h+=`<button class="option-btn" onclick="renderStep('${o.next}')"><i class="fas fa-chevron-right"></i> ${o.text}</button>`;
+                });
+                h+=`</div>`;
                 if(k!=='start')h+=`<button class="restart-btn" onclick="renderStep('start')" style="background:#eee;color:#333;margin-top:15px;">Geri Dön</button>`;
-            } b.innerHTML=h;
+            }
+            b.innerHTML=h;
         }
     </script>
 </body>
