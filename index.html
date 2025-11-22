@@ -176,9 +176,25 @@
         const USERS_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?gid=1075778951&single=true&output=csv";
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec"; 
 
+        // YEDEK VERİLER (GÜVENLİK AĞI)
+        const backupSportsData = [ { title: "WorldSBK", icon: "fa-motorcycle", desc: "Dünya Superbike Şampiyonası.", tip: "🇹🇷 Toprak Razgatlıoğlu burada!", detail: "BMW ile yarışıyor.", pronunciation: "Vörld Süper Bayk" }, { title: "MotoGP", icon: "fa-motorcycle", desc: "Motosikletin F1'i.", tip: "En hızlılar.", detail: "Prototip motorlar.", pronunciation: "Moto Ji Pi" }, { title: "NBA", icon: "fa-basketball", desc: "Dünyanın en iyi basketbol ligi.", tip: "LeBron, Curry.", detail: "Normal sezon ve Play-off.", pronunciation: "En Bi Ey" }, { title: "UFC", icon: "fa-hand-fist", desc: "Kafes Dövüşü.", tip: "En sert dövüş.", detail: "Islam Makhachev.", pronunciation: "Yu Ef Si" } ];
+        const backupSalesScripts = [ { title: "Açılış", text: "Merhaba, S Sport Plus'tan arıyorum..." }, { title: "Fiyat", text: "Günlük sadece bir çay parasına..." } ];
+        const backupQuizQuestions = [ { q: "S Sport Plus'ta hangi lig YOKTUR?", opts: ["NBA", "Premier Lig", "La Liga"], a: 1 } ];
+
         let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [], users = [];
         let currentUser = "", isAdminMode = false, sessionTimeout;
-        let activeCards = [];
+        let activeCards = []; 
+
+        // --- ZIRHLI TEMİZLEME FONKSİYONU (YENİ) ---
+        function cleanData(text) {
+            if (!text) return "";
+            return text.toString()
+                .replace(/\\/g, "\\\\") // Ters eğik çizgileri koru
+                .replace(/'/g, "\\'")   // Kesme işaretlerini kaçır
+                .replace(/"/g, "&quot;") // Çift tırnakları HTML entity yap
+                .replace(/\n/g, "<br>") // Enter'ları <br> yap
+                .replace(/\r/g, "");    // Gereksiz satır sonlarını sil
+        }
 
         document.addEventListener('contextmenu', event => event.preventDefault());
         document.onkeydown = function(e) { if(e.keyCode == 123) return false; }
@@ -205,20 +221,11 @@
         }
 
         function girisYap() {
-            const uName = document.getElementById("usernameInput").value.trim();
-            const uPass = document.getElementById("passInput").value.trim();
+            const uName = document.getElementById("usernameInput").value.trim(); const uPass = document.getElementById("passInput").value.trim();
             const loadingMsg = document.getElementById("loading-msg");
-
             if(users.length === 0) {
                 loadingMsg.style.display = "block";
-                Papa.parse(USERS_SHEET_URL, {
-                    download: true, header: true,
-                    complete: function(results) {
-                        users = results.data;
-                        loadingMsg.style.display = "none";
-                        checkCredentials(uName, uPass);
-                    }
-                });
+                Papa.parse(USERS_SHEET_URL, { download: true, header: true, complete: function(results) { users = results.data; loadingMsg.style.display = "none"; checkCredentials(uName, uPass); } });
             } else { checkCredentials(uName, uPass); }
         }
 
@@ -258,6 +265,9 @@
 
         function openUserMenu() {
             let options = { title: `Merhaba, ${currentUser}`, showCancelButton: true, showDenyButton: true, confirmButtonText: '🔑 Şifre Değiştir', denyButtonText: '🚪 Çıkış Yap', cancelButtonText: 'İptal' };
+            if(currentUser === "Admin" || currentUser === "admin" || currentUser === "Site Talip Bey") {
+                // Admin menüsü zaten ayrı butonda
+            }
             Swal.fire(options).then((result) => { if (result.isConfirmed) changePasswordPopup(); else if (result.isDenied) logout(); });
         }
 
@@ -272,7 +282,6 @@
                 btn.classList.remove('active');
                 btn.innerHTML = '<i class="fas fa-pencil-alt"></i> Düzenlemeyi Aç';
             }
-            
             if(activeCards.length > 0) renderCards(activeCards); else renderCards(database); 
             if(document.getElementById('guide-modal').style.display === 'flex') openGuide();
             if(document.getElementById('sales-modal').style.display === 'flex') openSales();
@@ -280,8 +289,11 @@
             if(document.getElementById('news-modal').style.display === 'flex') openNews();
         }
 
+        // --- DÜZELTİLMİŞ EDİT FONKSİYONLARI (ID TABANLI) ---
+
         async function editContent(index) {
             const item = activeCards[index]; 
+            // cleanData burada gerekmez çünkü textarea'ya düz metin veriyoruz
             const { value: formValues } = await Swal.fire({
                 title: 'İçeriği Düzenle',
                 html: `<label style="font-weight:bold;">Metin (Text)</label><textarea id="swal-text" class="swal2-textarea">${item.text}</textarea>
@@ -344,6 +356,8 @@
         function openQuizEditor() {
             let html = '<div style="text-align:left; max-height:400px; overflow-y:auto;">';
             quizQuestions.forEach((q, i) => {
+                // Safe Clean Data for onclick
+                const safeQ = cleanData(q.q);
                 html += `<div style="border-bottom:1px solid #eee; padding:10px; cursor:pointer;" onclick="editQuizQuestion(${i})"><b>${i+1}. ${q.q}</b><br><span style="font-size:0.8rem; color:#fabb00;"><i class="fas fa-pencil-alt"></i> Düzenle</span></div>`;
             });
             html += '</div>';
@@ -399,14 +413,19 @@
         function loadContentData() {
             Papa.parse(DATA_SHEET_URL, {
                 download: true, header: true,
-                // Önemli: 'Cache-busting' için linke timestamp ekliyoruz ki her seferinde TAZE veri çeksin.
                 complete: function(results) {
                     const rawData = results.data;
-                    database = rawData.filter(i => ['card','bilgi','teknik','kampanya','ikna'].includes(i.Type)).map(i => ({ title: i.Title, category: i.Category, text: i.Text, script: i.Script, code: i.Code, link: i.Link }));
-                    newsData = rawData.filter(i => i.Type === 'news').map(i => ({ date: i.Date, title: i.Title, desc: i.Text, type: i.Category }));
-                    sportsData = rawData.filter(i => i.Type === 'sport').map(i => ({ title: i.Title, icon: i.Icon, desc: i.Text, tip: i.Tip, detail: i.Detail, pronunciation: i.Pronunciation }));
-                    salesScripts = rawData.filter(i => i.Type === 'sales').map(i => ({ title: i.Title, text: i.Text }));
-                    quizQuestions = rawData.filter(i => i.Type === 'quiz').map(i => ({ q: i.Text, opts: i.QuizOptions ? i.QuizOptions.split(',') : [], a: parseInt(i.QuizAnswer) }));
+                    const fetchedCards = rawData.filter(i => ['card','bilgi','teknik','kampanya','ikna'].includes(i.Type)).map(i => ({ title: i.Title, category: i.Category, text: i.Text, script: i.Script, code: i.Code, link: i.Link }));
+                    const fetchedNews = rawData.filter(i => i.Type === 'news').map(i => ({ date: i.Date, title: i.Title, desc: i.Text, type: i.Category }));
+                    const fetchedSports = rawData.filter(i => i.Type === 'sport').map(i => ({ title: i.Title, icon: i.Icon, desc: i.Text, tip: i.Tip, detail: i.Detail, pronunciation: i.Pronunciation }));
+                    const fetchedSales = rawData.filter(i => i.Type === 'sales').map(i => ({ title: i.Title, text: i.Text }));
+                    const fetchedQuiz = rawData.filter(i => i.Type === 'quiz').map(i => ({ q: i.Text, opts: i.QuizOptions ? i.QuizOptions.split(',') : [], a: parseInt(i.QuizAnswer) }));
+
+                    database = fetchedCards.length > 0 ? fetchedCards : database;
+                    newsData = fetchedNews.length > 0 ? fetchedNews : newsData;
+                    sportsData = fetchedSports.length > 0 ? fetchedSports : backupSportsData;
+                    salesScripts = fetchedSales.length > 0 ? fetchedSales : backupSalesScripts;
+                    quizQuestions = fetchedQuiz.length > 0 ? fetchedQuiz : backupQuizQuestions;
 
                     document.getElementById('loading').style.display = 'none';
                     activeCards = database;
@@ -416,6 +435,8 @@
             });
         }
 
+        // --- GÜNCELLENMİŞ RENDER FONKSİYONLARI (cleanData KULLANIR) ---
+
         function renderCards(data) { 
             activeCards = data; 
             const container = document.getElementById('cardGrid'); 
@@ -423,9 +444,10 @@
             if(data.length === 0) { container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Kayıt Yok</div>'; return; } 
             
             data.forEach((item, index) => { 
-                const safeText = item.text ? item.text.replace(/"/g, '&quot;').replace(/'/g, "\\'") : "";
-                const safeScript = item.script ? item.script.replace(/"/g, '&quot;').replace(/'/g, "\\'") : "";
-                const safeTitle = item.title ? item.title.replace(/"/g, '&quot;').replace(/'/g, "\\'") : "";
+                // cleanData ile veriyi güvenli hale getiriyoruz
+                const safeText = cleanData(item.text);
+                const safeScript = cleanData(item.script);
+                const safeTitle = cleanData(item.title);
                 
                 let html = `
                 <div class="card ${item.category}">
@@ -438,7 +460,7 @@
                     </div>
                     <div class="script-box">${highlightText(item.script)}</div>
                     <div class="card-actions">
-                        <button class="btn btn-copy" onclick="copyText('${item.script.replace(/'/g, "\\'")}')"><i class="fas fa-copy"></i> Kopyala</button>
+                        <button class="btn btn-copy" onclick="copyText('${cleanData(item.script)}')"><i class="fas fa-copy"></i> Kopyala</button>
                         ${item.code ? `<button class="btn btn-copy" style="background:var(--secondary); color:#333;" onclick="copyText('${item.code}')">Kod</button>` : ''}
                         ${item.link ? `<a href="${item.link}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>` : ''}
                     </div>
@@ -455,18 +477,12 @@
         function closeModal(id) { document.getElementById(id).style.display = 'none'; }
         let tickerIndex = 0;
         function startTicker() { const t = document.getElementById('ticker-content'); if(newsData.length === 0) { t.innerHTML = "Güncel duyuru yok."; return; } function showNext() { const i = newsData[tickerIndex]; t.style.animation = 'none'; t.offsetHeight; t.style.animation = 'slideIn 0.5s ease-out'; t.innerHTML = `<strong>${i.date}:</strong> ${i.title} - ${i.desc}`; tickerIndex = (tickerIndex + 1) % newsData.length; } showNext(); setInterval(showNext, 5000); }
+        
         function openNews() { document.getElementById('news-modal').style.display = 'flex'; const c = document.getElementById('news-container'); c.innerHTML = ''; newsData.forEach((i, index) => { 
             let cl = i.type === 'fix' ? 'tag-fix' : (i.type === 'update' ? 'tag-update' : 'tag-info'); 
             let tx = i.type === 'fix' ? 'Çözüldü' : (i.type === 'update' ? 'Değişiklik' : 'Bilgi'); 
-            
-            // Admin butonu
             let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="top:0; right:0; font-size:0.9rem; padding:4px;" onclick="editNews(${index})"></i>` : '';
-            
-            c.innerHTML += `
-            <div class="news-item">
-                ${editBtn}
-                <span class="news-date">${i.date}</span><span class="news-title">${i.title}</span><div class="news-desc">${i.desc}</div><span class="news-tag ${cl}">${tx}</span>
-            </div>`; 
+            c.innerHTML += `<div class="news-item">${editBtn}<span class="news-date">${i.date}</span><span class="news-title">${i.title}</span><div class="news-desc">${i.desc}</div><span class="news-tag ${cl}">${tx}</span></div>`; 
         }); }
         
         function openGuide() { 
@@ -475,7 +491,7 @@
             grid.innerHTML = ''; 
             sportsData.forEach((s, index) => { 
                 let pronHtml = s.pronunciation ? `<div class="pronunciation-badge">🗣️ ${s.pronunciation}</div>` : '';
-                // Admin butonu
+                // Admin butonu (index ile çağırıyoruz)
                 let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="display:block !important; top:5px; right:5px; z-index:50;" onclick="editSport(${index})"></i>` : '';
 
                 grid.innerHTML += `
@@ -493,7 +509,7 @@
 
         function showSportDetail(index) {
             const sport = sportsData[index];
-            const detailText = sport.detail ? sport.detail : "Bu içerik için henüz detay eklenmemiş.";
+            const detailText = sport.detail ? sport.detail.replace(/\n/g, "<br>") : "Bu içerik için henüz detay eklenmemiş.";
             const pronDetail = sport.pronunciation ? `<div style="color:#e65100; font-weight:bold; margin-bottom:15px;">🗣️ Okunuşu: ${sport.pronunciation}</div>` : '';
             Swal.fire({ title: `<i class="fas ${sport.icon}" style="color:#0e1b42;"></i> ${sport.title}`, html: `${pronDetail}<div style="text-align:left; font-size:1rem; line-height:1.6;">${detailText}</div>`, showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa' });
         }
@@ -509,7 +525,7 @@
                     <div class="sales-item" id="sales-${index}" onclick="toggleSales('${index}')">
                         ${editBtn}
                         <div class="sales-header"><span class="sales-title">${s.title}</span><i class="fas fa-chevron-down" id="icon-${index}" style="color:#10b981;"></i></div>
-                        <div class="sales-text">${s.text}<div style="text-align:right; margin-top:15px;"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${s.text.replace(/'/g, "\\'")}')"><i class="fas fa-copy"></i> Kopyala</button></div></div>
+                        <div class="sales-text">${s.text.replace(/\n/g, "<br>")}<div style="text-align:right; margin-top:15px;"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${cleanData(s.text)}')"><i class="fas fa-copy"></i> Kopyala</button></div></div>
                     </div>`; 
             }); 
         }
