@@ -335,17 +335,110 @@
 
         // --- GÜVENLİ EDİT FONKSİYONLARI (ID TABANLI) ---
 
+        // --- GELİŞMİŞ DÜZENLEME FONKSİYONU ---
         async function editContent(index) {
             const item = activeCards[index]; 
+            
             const { value: formValues } = await Swal.fire({
                 title: 'İçeriği Düzenle',
-                html: `<label style="font-weight:bold;">Metin (Text)</label><textarea id="swal-text" class="swal2-textarea">${item.text}</textarea>
-                       <label style="font-weight:bold;">Script</label><textarea id="swal-script" class="swal2-textarea">${item.script}</textarea>`,
-                showCancelButton: true, confirmButtonText: 'Kaydet', preConfirm: () => [document.getElementById('swal-text').value, document.getElementById('swal-script').value]
+                html: `
+                    <div style="display:flex; gap:10px; margin-bottom:10px;">
+                        <div style="flex:1;"><label style="font-weight:bold; font-size:0.8rem;">Kategori</label><input id="swal-cat" class="swal2-input" style="margin:5px 0;" value="${item.category}"></div>
+                        <div style="flex:1;"><label style="font-weight:bold; font-size:0.8rem;">Başlık</label><input id="swal-title" class="swal2-input" style="margin:5px 0;" value="${item.title}"></div>
+                    </div>
+                    <label style="font-weight:bold;">Metin (Text)</label><textarea id="swal-text" class="swal2-textarea" style="margin-top:5px;">${item.text}</textarea>
+                    <label style="font-weight:bold;">Script (Konuşma Metni)</label><textarea id="swal-script" class="swal2-textarea" style="margin-top:5px;">${item.script}</textarea>
+                    
+                    <div style="display:flex; gap:10px; margin-top:10px;">
+                        <div style="flex:1;"><label style="font-weight:bold; font-size:0.8rem;">Kod/Tag</label><input id="swal-code" class="swal2-input" style="margin:5px 0;" value="${item.code || ''}"></div>
+                        <div style="flex:1;"><label style="font-weight:bold; font-size:0.8rem;">Link</label><input id="swal-link" class="swal2-input" style="margin:5px 0;" value="${item.link || ''}"></div>
+                    </div>
+                `,
+                width: '700px',
+                showCancelButton: true, 
+                confirmButtonText: 'Kaydet',
+                preConfirm: () => {
+                    return {
+                        cat: document.getElementById('swal-cat').value,
+                        title: document.getElementById('swal-title').value,
+                        text: document.getElementById('swal-text').value,
+                        script: document.getElementById('swal-script').value,
+                        code: document.getElementById('swal-code').value,
+                        link: document.getElementById('swal-link').value
+                    }
+                }
             });
+
             if (formValues) {
-                sendUpdate(item.title, "Text", formValues[0]);
-                setTimeout(() => sendUpdate(item.title, "Script", formValues[1]), 1000);
+                // Değişiklik var mı kontrol edip tek tek gönderiyoruz
+                // Başlık değişirse diğerlerini bulmak zorlaşır, o yüzden önce diğerlerini güncelliyoruz
+                
+                if(formValues.cat !== item.category) sendUpdate(item.title, "Category", formValues.cat);
+                if(formValues.text !== item.text) setTimeout(() => sendUpdate(item.title, "Text", formValues.text), 500);
+                if(formValues.script !== item.script) setTimeout(() => sendUpdate(item.title, "Script", formValues.script), 1000);
+                if(formValues.code !== (item.code || '')) setTimeout(() => sendUpdate(item.title, "Code", formValues.code), 1500);
+                if(formValues.link !== (item.link || '')) setTimeout(() => sendUpdate(item.title, "Link", formValues.link), 2000);
+                
+                // En son başlığı güncelle (çünkü arama anahtarı o)
+                if(formValues.title !== item.title) {
+                    setTimeout(() => sendUpdate(item.title, "Title", formValues.title), 2500);
+                }
+            }
+        }
+
+        // --- YENİ KART EKLEME FONKSİYONU ---
+        async function addNewCardPopup() {
+            const { value: formValues } = await Swal.fire({
+                title: 'Yeni Kart Ekle',
+                html: `
+                    <select id="swal-new-type" class="swal2-input">
+                        <option value="card">Standart Kart</option>
+                        <option value="bilgi">Bilgi Kartı</option>
+                        <option value="teknik">Teknik Kart</option>
+                        <option value="ikna">İkna Kartı</option>
+                        <option value="kampanya">Kampanya Kartı</option>
+                    </select>
+                    <input id="swal-new-cat" class="swal2-input" placeholder="Kategori (Örn: Üyelik)">
+                    <input id="swal-new-title" class="swal2-input" placeholder="Başlık">
+                    <textarea id="swal-new-text" class="swal2-textarea" placeholder="Açıklama Metni"></textarea>
+                    <textarea id="swal-new-script" class="swal2-textarea" placeholder="Script (Okunacak Metin)"></textarea>
+                    <div style="display:flex; gap:10px;">
+                        <input id="swal-new-code" class="swal2-input" placeholder="Kod (Opsiyonel)">
+                        <input id="swal-new-link" class="swal2-input" placeholder="Link (Opsiyonel)">
+                    </div>
+                `,
+                showCancelButton: true,
+                confirmButtonText: 'Ekle',
+                preConfirm: () => {
+                    return {
+                        cardType: document.getElementById('swal-new-type').value,
+                        category: document.getElementById('swal-new-cat').value,
+                        title: document.getElementById('swal-new-title').value,
+                        text: document.getElementById('swal-new-text').value,
+                        script: document.getElementById('swal-new-script').value,
+                        code: document.getElementById('swal-new-code').value,
+                        link: document.getElementById('swal-new-link').value
+                    }
+                }
+            });
+
+            if (formValues) {
+                if(!formValues.title) { Swal.fire('Hata', 'Başlık zorunludur!', 'error'); return; }
+                
+                Swal.fire({ title: 'Ekleniyor...', didOpen: () => { Swal.showLoading() } });
+                
+                fetch(SCRIPT_URL, { 
+                    method: 'POST', 
+                    mode: 'no-cors', 
+                    headers: { 'Content-Type': 'application/json' }, 
+                    body: JSON.stringify({ 
+                        action: "addCard", 
+                        username: currentUser,
+                        ...formValues 
+                    }) 
+                })
+                .then(() => Swal.fire({icon: 'success', title: 'Kart Eklendi!', text: 'Sayfayı yenileyince listede görünecektir.', timer: 2000}))
+                .catch(err => Swal.fire('Hata', 'Ekleme başarısız: ' + err, 'error'));
             }
         }
 
@@ -597,3 +690,4 @@
     </script>
 </body>
 </html>
+
