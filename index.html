@@ -533,7 +533,7 @@
                 preConfirm: () => {
                     const selectedCategory = document.getElementById('swal-new-cat').value;
                     return {
-                        cardType: mapCategoryToType(selectedCategory), 
+                        cardType: "card", 
                         category: selectedCategory,
                         title: document.getElementById('swal-new-title').value,
                         text: document.getElementById('swal-new-text').value,
@@ -1017,3 +1017,4 @@
     </script>
 </body>
 </html>
+
