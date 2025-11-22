@@ -218,8 +218,6 @@
         let currentUser = "", isAdminMode = false, sessionTimeout;
         let activeCards = []; 
 
-        // --- ZIRHLI TEMİZLEME FONKSİYONU ---
-        // Bu fonksiyon metin içindeki ' " \n gibi karakterleri bozmadan okumasını sağlar.
         function cleanData(text) {
             if (!text) return "";
             return text.toString()
@@ -290,10 +288,14 @@
 
         function checkAdmin(user) {
             const editBtn = document.getElementById('quickEditBtn');
+            const addBtn = document.getElementById('addCardBtn');
+            
             if(user === "Admin" || user === "admin" || user === "Site Talip Bey") {
                 editBtn.style.display = "flex"; 
+                addBtn.style.display = "flex";
             } else {
                 editBtn.style.display = "none";
+                addBtn.style.display = "none";
             }
         }
 
@@ -308,9 +310,6 @@
 
         function openUserMenu() {
             let options = { title: `Merhaba, ${currentUser}`, showCancelButton: true, showDenyButton: true, confirmButtonText: '🔑 Şifre Değiştir', denyButtonText: '🚪 Çıkış Yap', cancelButtonText: 'İptal' };
-            if(currentUser === "Admin" || currentUser === "admin" || currentUser === "Site Talip Bey") {
-                // Admin menüsü
-            }
             Swal.fire(options).then((result) => { if (result.isConfirmed) changePasswordPopup(); else if (result.isDenied) logout(); });
         }
 
@@ -325,7 +324,6 @@
                 btn.classList.remove('active');
                 btn.innerHTML = '<i class="fas fa-pencil-alt"></i> Düzenlemeyi Aç';
             }
-            
             if(activeCards.length > 0) renderCards(activeCards); else renderCards(database); 
             if(document.getElementById('guide-modal').style.display === 'flex') openGuide();
             if(document.getElementById('sales-modal').style.display === 'flex') openSales();
@@ -333,9 +331,7 @@
             if(document.getElementById('news-modal').style.display === 'flex') openNews();
         }
 
-        // --- GÜVENLİ EDİT FONKSİYONLARI (ID TABANLI) ---
-
-        // --- GELİŞMİŞ DÜZENLEME FONKSİYONU ---
+        // --- GÜNCEL GELİŞMİŞ EDİT FONKSİYONU ---
         async function editContent(index) {
             const item = activeCards[index]; 
             
@@ -371,7 +367,6 @@
 
             if (formValues) {
                 // Değişiklik var mı kontrol edip tek tek gönderiyoruz
-                // Başlık değişirse diğerlerini bulmak zorlaşır, o yüzden önce diğerlerini güncelliyoruz
                 
                 if(formValues.cat !== item.category) sendUpdate(item.title, "Category", formValues.cat);
                 if(formValues.text !== item.text) setTimeout(() => sendUpdate(item.title, "Text", formValues.text), 500);
@@ -385,7 +380,7 @@
                 }
             }
         }
-
+        
         // --- YENİ KART EKLEME FONKSİYONU ---
         async function addNewCardPopup() {
             const { value: formValues } = await Swal.fire({
@@ -398,8 +393,8 @@
                         <option value="ikna">İkna Kartı</option>
                         <option value="kampanya">Kampanya Kartı</option>
                     </select>
-                    <input id="swal-new-cat" class="swal2-input" placeholder="Kategori (Örn: Üyelik)">
-                    <input id="swal-new-title" class="swal2-input" placeholder="Başlık">
+                    <input id="swal-new-cat" class="swal2-input" placeholder="Kategori (Örn: Üyelik, Cihaz, Ödeme)">
+                    <input id="swal-new-title" class="swal2-input" placeholder="Başlık (Benzersiz olmalı)">
                     <textarea id="swal-new-text" class="swal2-textarea" placeholder="Açıklama Metni"></textarea>
                     <textarea id="swal-new-script" class="swal2-textarea" placeholder="Script (Okunacak Metin)"></textarea>
                     <div style="display:flex; gap:10px;">
@@ -424,6 +419,7 @@
 
             if (formValues) {
                 if(!formValues.title) { Swal.fire('Hata', 'Başlık zorunludur!', 'error'); return; }
+                if(!formValues.category) { Swal.fire('Hata', 'Kategori zorunludur!', 'error'); return; }
                 
                 Swal.fire({ title: 'Ekleniyor...', didOpen: () => { Swal.showLoading() } });
                 
@@ -437,85 +433,19 @@
                         ...formValues 
                     }) 
                 })
-                .then(() => Swal.fire({icon: 'success', title: 'Kart Eklendi!', text: 'Sayfayı yenileyince listede görünecektir.', timer: 2000}))
+                .then(response => {
+                    if (response.ok || response.type === 'opaque') { // No-cors response control
+                        Swal.fire({icon: 'success', title: 'Kart Eklendi!', text: 'Sayfayı yeniledikten sonra listenin sonunda görünecektir.', timer: 3000, showConfirmButton: false});
+                        setTimeout(loadContentData, 3500); // Verileri yeniden yükle
+                    } else {
+                        throw new Error('Network response was not ok.');
+                    }
+                })
                 .catch(err => Swal.fire('Hata', 'Ekleme başarısız: ' + err, 'error'));
             }
         }
-
-        async function editSport(index) {
-            event.stopPropagation();
-            const s = sportsData[index];
-            const { value: formValues } = await Swal.fire({
-                title: 'Spor İçeriğini Düzenle',
-                html: `<label style="font-weight:bold;">Açıklama</label><textarea id="swal-desc" class="swal2-textarea">${s.desc}</textarea>
-                       <label style="font-weight:bold;">İpucu</label><input id="swal-tip" class="swal2-input" value="${s.tip}">
-                       <label style="font-weight:bold;">Detay</label><textarea id="swal-detail" class="swal2-textarea">${s.detail || ''}</textarea>
-                       <label style="font-weight:bold;">Okunuş</label><input id="swal-pron" class="swal2-input" value="${s.pronunciation || ''}">`,
-                showCancelButton: true, confirmButtonText: 'Kaydet', width: '600px',
-                preConfirm: () => [document.getElementById('swal-desc').value, document.getElementById('swal-tip').value, document.getElementById('swal-detail').value, document.getElementById('swal-pron').value]
-            });
-            if (formValues) {
-                sendUpdate(s.title, "Text", formValues[0]);
-                setTimeout(() => sendUpdate(s.title, "Tip", formValues[1]), 1000);
-                setTimeout(() => sendUpdate(s.title, "Detail", formValues[2]), 2000);
-                setTimeout(() => sendUpdate(s.title, "Pronunciation", formValues[3]), 3000);
-            }
-        }
-
-        async function editSales(index) {
-            event.stopPropagation();
-            const s = salesScripts[index];
-            const { value: val } = await Swal.fire({
-                title: 'Satış Metnini Düzenle', html: `<label style="font-weight:bold;">Metin</label><textarea id="swal-text" class="swal2-textarea">${s.text}</textarea>`,
-                showCancelButton: true, confirmButtonText: 'Kaydet', preConfirm: () => document.getElementById('swal-text').value
-            });
-            if (val && val !== s.text) sendUpdate(s.title, "Text", val);
-        }
-
-        async function editNews(index) {
-            const i = newsData[index];
-            const { value: formValues } = await Swal.fire({
-                title: 'Duyuruyu Düzenle',
-                html: `<label style="font-weight:bold;">Tarih</label><input id="swal-date" class="swal2-input" value="${i.date}">
-                       <label style="font-weight:bold;">Metin</label><textarea id="swal-desc" class="swal2-textarea">${i.desc}</textarea>
-                       <label style="font-weight:bold;">Tür (update/fix/info)</label><input id="swal-type" class="swal2-input" value="${i.type}">`,
-                showCancelButton: true, confirmButtonText: 'Kaydet',
-                preConfirm: () => [document.getElementById('swal-date').value, document.getElementById('swal-desc').value, document.getElementById('swal-type').value]
-            });
-            if (formValues) {
-                sendUpdate(i.title, "Date", formValues[0]);
-                setTimeout(() => sendUpdate(i.title, "Text", formValues[1]), 1000);
-                setTimeout(() => sendUpdate(i.title, "Category", formValues[2]), 2000);
-            }
-        }
         
-        function openQuizEditor() {
-            let html = '<div style="text-align:left; max-height:400px; overflow-y:auto;">';
-            quizQuestions.forEach((q, i) => {
-                // Safe Question text
-                const safeQ = cleanData(q.q);
-                html += `<div style="border-bottom:1px solid #eee; padding:10px; cursor:pointer;" onclick="editQuizQuestion(${i})"><b>${i+1}. ${safeQ}</b><br><span style="font-size:0.8rem; color:#fabb00;"><i class="fas fa-pencil-alt"></i> Düzenle</span></div>`;
-            });
-            html += '</div>';
-            Swal.fire({ title: 'Soruları Düzenle', html: html, showConfirmButton: false, showCloseButton: true });
-        }
-
-        async function editQuizQuestion(index) {
-            const q = quizQuestions[index];
-            const { value: formValues } = await Swal.fire({
-                title: 'Soruyu Düzenle',
-                html: `<label style="font-weight:bold;">Soru</label><input id="swal-q" class="swal2-input" value="${q.q}"><label style="font-weight:bold;">Şıklar (Virgülle ayır)</label><textarea id="swal-opts" class="swal2-textarea">${q.opts.join(',')}</textarea><label style="font-weight:bold;">Doğru Cevap (0-3)</label><input id="swal-ans" class="swal2-input" type="number" value="${q.a}">`,
-                showCancelButton: true, confirmButtonText: 'Kaydet', preConfirm: () => [document.getElementById('swal-q').value, document.getElementById('swal-opts').value, document.getElementById('swal-ans').value]
-            });
-            if (formValues) {
-                if(!Swal.isVisible()) Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } });
-                const payload = { action: "updateContent", title: q.q, column: "Text", value: formValues[0], type: 'quiz', originalText: q.q, username: currentUser };
-                fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
-                setTimeout(() => sendUpdate(formValues[0], "QuizOptions", formValues[1], 'quiz'), 1500);
-                setTimeout(() => sendUpdate(formValues[0], "QuizAnswer", formValues[2], 'quiz'), 3000);
-            }
-        }
-
+        // Diğer Yardımcı Fonksiyonlar
         function sendUpdate(title, column, value, type = 'card') {
             if(!Swal.isVisible()) Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } });
             const payload = { action: "updateContent", title: title, column: column, value: value, type: type, originalText: title, username: currentUser };
@@ -690,4 +620,5 @@
     </script>
 </body>
 </html>
+
 
