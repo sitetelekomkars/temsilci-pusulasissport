@@ -29,7 +29,13 @@
         #main-app { display: none; }
         .header { background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%); color: white; padding: 20px 30px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
-        .developer-badge { position: absolute; top: 20px; right: 30px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 20px; color: #fff; font-size: 0.85rem; backdrop-filter: blur(5px); }
+        
+        /* YENİ ADMIN BUTONU STİLİ */
+        .admin-btn { 
+            background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); 
+            color: white; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; transition:0.3s;
+        }
+        .admin-btn:hover { background: rgba(255,255,255,0.3); }
 
         .control-wrapper { display: flex; gap: 20px; align-items: flex-start; }
         .left-panel { flex: 2; }
@@ -70,10 +76,12 @@
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 20px; }
         .card { background: var(--card-bg); border-radius: 12px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border-left: 5px solid var(--info); display: flex; flex-direction: column; transition: transform 0.2s; }
         .card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        
         .card.Teknik { border-left-color: var(--primary); }
         .card.İkna { border-left-color: var(--accent); }
         .card.Kampanya { border-left-color: var(--success); }
         .card.Bilgi { border-left-color: var(--info); }
+        
         .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
         .card-title { font-weight: 700; font-size: 1.1rem; margin: 0; color: #2c3e50; line-height: 1.4; }
         .badge { font-size: 0.75rem; padding: 4px 8px; border-radius: 6px; background: #eee; text-transform: uppercase; font-weight: 600; }
@@ -138,7 +146,7 @@
     <div id="login-screen">
         <div class="login-card">
             <i class="fas fa-lock fa-3x" style="color: #0e1b42;"></i>
-            <h2>S Sport Plus Temsilci Pusulası</h2>
+            <h2>S Sport Plus</h2>
             <p>Personel Girişi</p>
             <input type="text" id="usernameInput" class="login-input" placeholder="Kullanıcı Adı">
             <input type="password" id="passInput" class="login-input" placeholder="Şifre" onkeyup="enterBas(event)">
@@ -147,14 +155,16 @@
             <p id="error-msg" style="color:red; display:none; margin-top:10px;">Hatalı Kullanıcı Adı veya Şifre!</p>
         </div>
     </div>
-
+    
     <div id="maintenance-screen"><div class="maintenance-content"><span style="font-size: 4rem;">👩‍🏫</span><h1>Sistem Mola Verdi!</h1><p>Esra Hoca'dan gelecek kritik bilgileri bekliyoruz... 🚀</p></div></div>
 
     <div id="main-app">
         <div class="header">
             <div class="header-top">
                 <h1><i class="fas fa-compass"></i> S Sport Plus - Temsilci Pusulası</h1>
-                <div class="developer-badge"><i class="fas fa-user-circle"></i> <span id="user-display">Misafir</span></div>
+                <button class="admin-btn" onclick="openUserMenu()">
+                    <i class="fas fa-user-circle"></i> <span id="user-display">Misafir</span>
+                </button>
             </div>
             <div class="control-wrapper">
                 <div class="left-panel">
@@ -186,17 +196,19 @@
     <div id="news-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('news-modal')">&times;</span><h2 style="color:var(--primary);">📢 Duyurular</h2><div id="news-container"></div></div></div>
     <div id="wizard-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('wizard-modal')">&times;</span><div id="wizard-body"></div></div></div>
     <div id="guide-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('guide-modal')">&times;</span><h2 style="text-align:center; color:var(--primary);">📖 Spor Terimleri & İçerik Rehberi</h2><p style="text-align:center; color:#666;">Detaylı bilgi için karta tıklayınız.</p><div class="guide-grid" id="guide-grid"></div></div></div>
-    <div id="sales-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('sales-modal')">&times;</span><h2 style="text-align:center; color:var(--sales);">📞 TeleSatış Scriptleri</h2><p style="text-align:center; color:#666;">Metni okumak için başlığa tıklayınız.</p><div class="sales-grid" id="sales-grid"></div></div></div>
+    <div id="sales-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('sales-modal')">&times;</span><h2 style="text-align:center; color:var(--sales);">📞 Satış Scriptleri</h2><p style="text-align:center; color:#666;">Metni okumak için başlığa tıklayınız.</p><div class="sales-grid" id="sales-grid"></div></div></div>
     <div id="quiz-modal" class="modal-overlay"><div class="modal-content" style="max-width: 600px;"><span class="close-modal" onclick="closeModal('quiz-modal')">&times;</span><h2 style="text-align:center; color:var(--quiz);">🎮 Bilgi Yarışması</h2><div id="quiz-body"></div></div></div>
 
     <script>
         const BAKIM_MODU = false; 
-        
         const DATA_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?output=csv";
-        // !!! BURAYA USERS SHEET LINKI YAPIŞTIRILACAK !!!
         const USERS_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?gid=1075778951&single=true&output=csv";
+        
+        // BURAYA SANA VERİLEN YENİ GOOGLE APPS SCRIPT LINKINI YAPIŞTIR
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec"; 
 
         let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [], users = [];
+        let currentUser = "";
 
         document.addEventListener('contextmenu', event => event.preventDefault());
         document.onkeydown = function(e) { if(e.keyCode == 123) return false; }
@@ -228,12 +240,11 @@
         }
 
         function checkCredentials(name, pass) {
-            // Girilen şifreyi MD5 yap
             const hashedPass = CryptoJS.MD5(pass).toString();
-            // Tablodaki Username ve Password ile karşılaştır
             const user = users.find(u => u.Username === name && u.Password === hashedPass);
 
             if (user) {
+                currentUser = user.Username;
                 document.getElementById("login-screen").style.display = "none"; 
                 document.getElementById("user-display").innerText = user.Username;
                 if (BAKIM_MODU) { document.getElementById("maintenance-screen").style.display = "flex"; } 
@@ -242,6 +253,90 @@
         }
 
         function enterBas(e) { if (e.key === "Enter") girisYap(); }
+
+        // YENİ: SAĞ ÜST MENÜ (ŞİFRE DEĞİŞTİR / ÇIKIŞ YAP)
+        function openUserMenu() {
+            Swal.fire({
+                title: `Merhaba, ${currentUser}`,
+                text: "Ne yapmak istersiniz?",
+                icon: 'question',
+                showCancelButton: true,
+                showDenyButton: true,
+                confirmButtonText: '🔑 Şifre Değiştir',
+                denyButtonText: '🚪 Çıkış Yap',
+                cancelButtonText: 'İptal',
+                confirmButtonColor: '#0e1b42',
+                denyButtonColor: '#d33'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    changePasswordPopup();
+                } else if (result.isDenied) {
+                    logout();
+                }
+            });
+        }
+
+        // ÇIKIŞ YAPMA FONKSİYONU
+        function logout() {
+            currentUser = "";
+            document.getElementById("user-display").innerText = "Misafir";
+            document.getElementById("main-app").style.display = "none";
+            document.getElementById("login-screen").style.display = "flex";
+            document.getElementById("passInput").value = "";
+            document.getElementById("usernameInput").value = "";
+        }
+
+        // ŞİFRE DEĞİŞTİRME POPUP
+        async function changePasswordPopup() {
+            const { value: formValues } = await Swal.fire({
+                title: 'Şifre Değiştir',
+                html:
+                    '<input id="swal-old-pass" type="password" class="swal2-input" placeholder="Eski Şifre">' +
+                    '<input id="swal-new-pass" type="password" class="swal2-input" placeholder="Yeni Şifre">',
+                focusConfirm: false,
+                showCancelButton: true,
+                confirmButtonText: 'Değiştir',
+                cancelButtonText: 'İptal',
+                preConfirm: () => {
+                    return [
+                        document.getElementById('swal-old-pass').value,
+                        document.getElementById('swal-new-pass').value
+                    ]
+                }
+            });
+
+            if (formValues) {
+                const oldPass = formValues[0];
+                const newPass = formValues[1];
+
+                if (!oldPass || !newPass) {
+                    Swal.fire('Hata', 'Lütfen tüm alanları doldurun.', 'error');
+                    return;
+                }
+                
+                Swal.fire({ title: 'İşleniyor...', didOpen: () => { Swal.showLoading() } });
+
+                const payload = {
+                    username: currentUser,
+                    oldPass: CryptoJS.MD5(oldPass).toString(),
+                    newPass: CryptoJS.MD5(newPass).toString()
+                };
+
+                // fetch no-cors ile isteği gönderiyoruz
+                fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                })
+                .then(() => {
+                    Swal.fire('Başarılı!', 'Şifre değiştirme isteği gönderildi. (Lütfen 5 dk içinde deneyin)', 'success');
+                })
+                .catch(err => {
+                    Swal.fire('Hata', 'Bir sorun oluştu: ' + err, 'error');
+                });
+            }
+        }
 
         function loadContentData() {
             Papa.parse(DATA_SHEET_URL, {
@@ -261,6 +356,7 @@
             });
         }
 
+        // ... DİĞER FONKSİYONLAR AYNI ...
         function renderCards(data) { const container = document.getElementById('cardGrid'); container.innerHTML = ''; if(data.length === 0) { container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Kayıt Yok</div>'; return; } data.forEach(item => { let html = `<div class="card ${item.category}"><div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div><div class="card-content"><div>${highlightText(item.text)}</div></div><div class="script-box">${highlightText(item.script)}</div><div class="card-actions"><button class="btn btn-copy" onclick="copyText('${item.script.replace(/'/g, "\\'")}')"><i class="fas fa-copy"></i> Kopyala</button>${item.code ? `<button class="btn btn-copy" style="background:var(--secondary); color:#333;" onclick="copyText('${item.code}')">Kod</button>` : ''}${item.link ? `<a href="${item.link}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>` : ''}</div></div>`; container.innerHTML += html; }); }
         function openGuide() { document.getElementById('guide-modal').style.display = 'flex'; const grid=document.getElementById('guide-grid'); grid.innerHTML=''; sportsData.forEach((s, index) => { let pronHtml = s.pronunciation ? `<div class="pronunciation-badge">🗣️ ${s.pronunciation}</div>` : ''; grid.innerHTML += `<div class="guide-item" onclick="showSportDetail(${index})"><i class="fas ${s.icon} guide-icon"></i><span class="guide-title">${s.title}</span>${pronHtml}<div class="guide-desc">${s.desc}</div><div class="guide-tip"><i class="fas fa-lightbulb"></i> ${s.tip}</div><div style="font-size:0.8rem; color:#999; margin-top:5px;">(Detay için tıkla)</div></div>`; }); }
         function showSportDetail(index) { const sport = sportsData[index]; const detailText = sport.detail ? sport.detail : "Bu içerik için henüz detay eklenmemiş."; const pronDetail = sport.pronunciation ? `<div style="color:#e65100; font-weight:bold; margin-bottom:15px;">🗣️ Okunuşu: ${sport.pronunciation}</div>` : ''; Swal.fire({ title: `<i class="fas ${sport.icon}" style="color:#0e1b42;"></i> ${sport.title}`, html: `${pronDetail}<div style="text-align:left; font-size:1rem; line-height:1.6;">${detailText}</div>`, showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa' }); }
@@ -286,4 +382,3 @@
     </script>
 </body>
 </html>
-
