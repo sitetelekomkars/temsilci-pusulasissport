@@ -14,7 +14,10 @@
         :root { --primary: #0e1b42; --secondary: #fabb00; --bg: #f0f2f5; --card-bg: #ffffff; --accent: #d32f2f; --success: #2e7d32; --info: #0288d1; --warning: #ed6c02; --sales: #10b981; --quiz: #8e24aa; }
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: #333; user-select: none; }
         
-        #login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5000; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%); }
+        /* GİRİŞ EKRANI */
+        #login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 3000; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%); }
+        
+        /* BAKIM EKRANI (GİZLİ) */
         #maintenance-screen { display: none !important; } 
 
         .login-card { background: white; padding: 40px; border-radius: 15px; text-align: center; width: 320px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
@@ -22,20 +25,20 @@
         .login-btn { width: 100%; padding: 12px; background: #fabb00; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px; }
         .loading-text { font-size: 0.8rem; color: #666; margin-top: 10px; display: none; }
 
+        /* ANA UYGULAMA */
         #main-app { display: none; }
         .header { background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%); color: white; padding: 20px 30px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
-        
-        .admin-btn { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; transition:0.3s; }
-        .admin-btn:hover { background: rgba(255,255,255,0.3); }
-        .admin-edit-mode { border-color: #fabb00; color: #fabb00; background: rgba(250, 187, 0, 0.1); }
+        .developer-badge { position: absolute; top: 20px; right: 30px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 20px; color: #fff; font-size: 0.85rem; backdrop-filter: blur(5px); }
 
         .control-wrapper { display: flex; gap: 20px; align-items: flex-start; }
         .left-panel { flex: 2; }
         .right-panel { flex: 1; min-width: 300px; }
+        
         .search-container { position: relative; width: 100%; margin-bottom: 15px; }
         #searchInput { width: 100%; padding: 12px 20px 12px 45px; border-radius: 8px; border: none; box-sizing: border-box; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         .search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #666; }
+
         .filter-container { display: flex; gap: 8px; flex-wrap: wrap; }
         .filter-btn { border: none; color: white; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.2s; display: flex; align-items: center; gap: 5px; font-weight: 600; font-size: 0.9rem; box-shadow: 0 2px 5px rgba(0,0,0,0.2); opacity: 0.85; }
         .filter-btn:hover { opacity: 1; transform: translateY(-2px); }
@@ -58,39 +61,46 @@
         .ticker-label i { animation: blink 1.5s infinite; }
         .ticker-content { font-size: 0.95rem; color: white; font-weight: 500; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; animation: slideIn 0.5s ease-out; }
 
+        @keyframes blink { 50% { opacity: 0.5; } }
+        @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
         .container { padding: 20px; max-width: 1600px; margin: 0 auto; }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 20px; }
-        .card { background: var(--card-bg); border-radius: 12px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border-left: 5px solid var(--info); display: flex; flex-direction: column; transition: transform 0.2s; position: relative; }
+        .card { background: var(--card-bg); border-radius: 12px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border-left: 5px solid var(--info); display: flex; flex-direction: column; transition: transform 0.2s; }
         .card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         .card.Teknik { border-left-color: var(--primary); }
         .card.İkna { border-left-color: var(--accent); }
         .card.Kampanya { border-left-color: var(--success); }
         .card.Bilgi { border-left-color: var(--info); }
-        
-        .edit-icon { position: absolute; right: 10px; top: 10px; color: #fabb00; cursor: pointer; display: none; font-size: 1.2rem; padding: 8px; background: white; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 20; border:1px solid #eee; }
-        .edit-icon:hover { transform: scale(1.1); background:#fff8e1; }
-        body.editing .edit-icon { display: block; }
-        
         .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
-        .card-title { font-weight: 700; font-size: 1.1rem; margin: 0; color: #2c3e50; line-height: 1.4; padding-right: 25px; }
+        .card-title { font-weight: 700; font-size: 1.1rem; margin: 0; color: #2c3e50; line-height: 1.4; }
         .badge { font-size: 0.75rem; padding: 4px 8px; border-radius: 6px; background: #eee; text-transform: uppercase; font-weight: 600; }
-        .card-content { font-size: 0.95rem; color: #555; margin-bottom: 15px; line-height: 1.5; flex-grow: 1; cursor: pointer; }
-        .card-text-truncate { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        .card-content { font-size: 0.95rem; color: #555; margin-bottom: 15px; line-height: 1.5; flex-grow: 1; }
         .script-box { background: #fffdeb; border: 1px solid #f0e68c; padding: 12px; border-radius: 8px; font-style: italic; color: #444; margin-top: auto; position: relative; font-size: 0.92rem; }
+        .script-box::before { content: '\f10d'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; top: -8px; left: 10px; background: #fffdeb; padding: 0 5px; color: #f0e68c; font-size: 0.8rem; }
         .card-actions { margin-top: 12px; display: flex; justify-content: flex-end; gap: 8px; }
         .btn { padding: 6px 12px; border-radius: 6px; cursor: pointer; border: none; font-weight: 600; font-size: 0.85rem; display: flex; align-items: center; gap: 5px; }
         .btn-copy { background: var(--primary); color: white; }
         .btn-link { background: transparent; border: 1px solid var(--info); color: var(--info); text-decoration: none; }
         .btn-link:hover { background: #e1f5fe; }
 
-        /* MODALLAR */
-        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 6000; justify-content: center; align-items: center; }
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 5000; justify-content: center; align-items: center; }
         .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 15px; padding: 30px; position: relative; max-height: 85vh; overflow-y: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.8rem; cursor: pointer; color: #666; font-weight: bold; }
         .swal2-container { z-index: 10000 !important; }
-        
-        .guide-grid, .sales-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
-        .guide-item { border: 1px solid #eee; border-radius: 10px; padding: 15px; text-align: center; transition: 0.3s; background: #f8f9fa; cursor: pointer; position: relative; }
+
+        .news-item { border-left: 4px solid var(--secondary); padding-left: 15px; margin-bottom: 20px; position: relative; }
+        .news-date { font-size: 0.85rem; color: #999; font-weight: bold; display: block; }
+        .news-title { font-size: 1.1rem; font-weight: bold; color: var(--primary); display: block; }
+        .news-tag { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; margin-top: 5px; font-weight: bold; }
+        .tag-fix { background: #e8f5e9; color: #2e7d32; } 
+        .tag-update { background: #fff3e0; color: #ef6c00; } 
+        .tag-info { background: #e3f2fd; color: #0277bd; }
+
+        .guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
+        .guide-item { border: 1px solid #eee; border-radius: 10px; padding: 15px; text-align: center; transition: 0.3s; background: #f8f9fa; cursor: pointer; }
         .guide-item:hover { transform: translateY(-5px); border-color: var(--secondary); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .guide-icon { font-size: 2rem; color: var(--primary); margin-bottom: 10px; }
         .guide-title { font-weight: bold; color: var(--primary); margin-bottom: 5px; display: block; }
@@ -98,6 +108,7 @@
         .guide-tip { background: #e3f2fd; color: #0277bd; padding: 5px; border-radius: 5px; font-size: 0.8rem; font-weight: 600; }
         .pronunciation-badge { color: #e65100; font-size: 0.85rem; font-weight: bold; margin-bottom: 8px; display: block; font-style: italic; }
 
+        .sales-grid { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
         .sales-item { border: 1px solid #d1fae5; background: #ecfdf5; border-radius: 10px; padding: 15px 20px; cursor: pointer; transition: all 0.3s ease; position: relative; overflow: hidden; }
         .sales-item:hover { box-shadow: 0 5px 15px rgba(16, 185, 129, 0.2); border-color: var(--sales); }
         .sales-item.active { background: #d1fae5; border-left: 6px solid var(--sales); }
@@ -120,19 +131,30 @@
         .res-yellow { background: #fff8e1; border: 2px solid #ffca28; color: #f57f17; }
         .restart-btn { margin-top: 20px; background: #555; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
         .highlight { background-color: yellow; font-weight: bold; }
-        @keyframes blink { 50% { opacity: 0.5; } } @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } } @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } } @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
 </head>
 <body>
 
-    <div id="login-screen"><div class="login-card"><i class="fas fa-lock fa-3x" style="color: #0e1b42;"></i><h2>S Sport Plus</h2><p>Personel Girişi</p><input type="text" id="usernameInput" class="login-input" placeholder="Kullanıcı Adı"><input type="password" id="passInput" class="login-input" placeholder="Şifre" onkeyup="enterBas(event)"><button class="login-btn" onclick="girisYap()">Giriş Yap</button><div id="loading-msg" class="loading-text">Kullanıcılar kontrol ediliyor...</div><p id="error-msg" style="color:red; display:none; margin-top:10px;">Hatalı Kullanıcı Adı veya Şifre!</p></div></div>
+    <div id="login-screen">
+        <div class="login-card">
+            <i class="fas fa-lock fa-3x" style="color: #0e1b42;"></i>
+            <h2>S Sport Plus Temsilci Pusulası</h2>
+            <p>Personel Girişi</p>
+            <input type="text" id="usernameInput" class="login-input" placeholder="Kullanıcı Adı">
+            <input type="password" id="passInput" class="login-input" placeholder="Şifre" onkeyup="enterBas(event)">
+            <button class="login-btn" onclick="girisYap()">Giriş Yap</button>
+            <div id="loading-msg" class="loading-text">Kullanıcılar kontrol ediliyor...</div>
+            <p id="error-msg" style="color:red; display:none; margin-top:10px;">Hatalı Kullanıcı Adı veya Şifre!</p>
+        </div>
+    </div>
+
     <div id="maintenance-screen"><div class="maintenance-content"><span style="font-size: 4rem;">👩‍🏫</span><h1>Sistem Mola Verdi!</h1><p>Esra Hoca'dan gelecek kritik bilgileri bekliyoruz... 🚀</p></div></div>
 
     <div id="main-app">
         <div class="header">
             <div class="header-top">
                 <h1><i class="fas fa-compass"></i> S Sport Plus - Temsilci Pusulası</h1>
-                <button id="adminBtn" class="admin-btn" onclick="openUserMenu()"><i class="fas fa-user-circle"></i> <span id="user-display">Misafir</span></button>
+                <div class="developer-badge"><i class="fas fa-user-circle"></i> <span id="user-display">Misafir</span></div>
             </div>
             <div class="control-wrapper">
                 <div class="left-panel">
@@ -150,10 +172,15 @@
                         <button class="filter-btn quiz-btn" onclick="openQuiz()">🎮 Yarışma</button>
                     </div>
                 </div>
-                <div class="right-panel"><div class="news-ticker-box" onclick="openNews()"><div class="ticker-label"><i class="fas fa-circle" style="font-size:8px;"></i> GÜNCEL</div><div id="ticker-content" class="ticker-content">Veriler yükleniyor...</div></div></div>
+                <div class="right-panel">
+                    <div class="news-ticker-box" onclick="openNews()"><div class="ticker-label"><i class="fas fa-circle" style="font-size:8px;"></i> GÜNCEL</div><div id="ticker-content" class="ticker-content">Veriler yükleniyor...</div></div>
+                </div>
             </div>
         </div>
-        <div class="container"><div id="loading" style="text-align:center; padding:20px; color:#666;"><i class="fas fa-spinner fa-spin fa-2x"></i><br>Veriler Google Tablo'dan çekiliyor...</div><div class="grid" id="cardGrid"></div></div>
+        <div class="container">
+            <div id="loading" style="text-align:center; padding:20px; color:#666;"><i class="fas fa-spinner fa-spin fa-2x"></i><br>Veriler Google Tablo'dan çekiliyor...</div>
+            <div class="grid" id="cardGrid"></div>
+        </div>
     </div>
 
     <div id="news-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('news-modal')">&times;</span><h2 style="color:var(--primary);">📢 Duyurular</h2><div id="news-container"></div></div></div>
@@ -164,32 +191,12 @@
 
     <script>
         const BAKIM_MODU = false; 
+        
         const DATA_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?output=csv";
+        // !!! BURAYA USERS SHEET LINKI YAPIŞTIRILACAK !!!
         const USERS_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?gid=1075778951&single=true&output=csv";
-        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec"; 
 
         let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [], users = [];
-        let currentUser = "", isAdminMode = false, sessionTimeout;
-        let activeCards = [];
-
-        // --- YEDEK (FALLBACK) VERİLER (Tablo boşsa bunlar çalışır) ---
-        const backupSportsData = [
-            { title: "WorldSBK", icon: "fa-motorcycle", desc: "Dünya Superbike Şampiyonası. Modifiye edilmiş sokak motorları yarışır.", tip: "🇹🇷 Toprak Razgatlıoğlu burada yarışıyor!", detail: "Toprak Razgatlıoğlu 2021 ve 2024 Dünya Şampiyonu. BMW ile yarışıyor.", pronunciation: "Vörld Süper Bayk" },
-            { title: "MotoGP", icon: "fa-motorcycle", desc: "Motosiklet dünyasının Formula 1'i.", tip: "En hızlı prototip motorlar burada.", detail: "Pecco Bagnaia, Marc Marquez gibi yıldızlar burada.", pronunciation: "Moto Ji Pi" },
-            { title: "NBA", icon: "fa-basketball", desc: "Dünyanın en büyük basketbol ligi.", tip: "LeBron, Curry, Alperen Şengün.", detail: "Normal sezon, All-Star ve Play-off heyecanı.", pronunciation: "En Bi Ey" },
-            { title: "UFC", icon: "fa-hand-fist", desc: "Karma Dövüş Sanatları (Kafes Dövüşü).", tip: "En sert dövüş organizasyonu.", detail: "Islam Makhachev, Jon Jones, İbo Aslan burada.", pronunciation: "Yu Ef Si" }
-        ];
-
-        const backupSalesScripts = [
-            { title: "Açılış (Giriş)", text: "Merhaba [İsim] Bey/Hanım, S Sport Plus'tan arıyorum. Sporda dünyanın en büyük heyecanlarını tek pakette sunduğumuz yeni kampanyamız hakkında bilgi vermek için sizi rahatsız ettim." },
-            { title: "Fiyat İtirazı", text: "Haklısınız, ancak kampanyamızla günlük maliyet sadece bir çay parasına geliyor. Bu fiyata La Liga, NBA ve EuroLeague dahil tüm içerikleri izleyebiliyorsunuz." },
-            { title: "Kapanış", text: "Bu kampanya sadece bugüne özel. Dilerseniz şimdi aktivasyonu yapalım, hemen izlemeye başlayın." }
-        ];
-
-        const backupQuizQuestions = [
-            { q: "S Sport Plus'ta hangi lig YOKTUR?", opts: ["NBA", "Premier Lig", "La Liga", "Serie A"], a: 1 },
-            { q: "Toprak Razgatlıoğlu hangi seride yarışıyor?", opts: ["MotoGP", "WorldSBK", "F1", "WRC"], a: 1 }
-        ];
 
         document.addEventListener('contextmenu', event => event.preventDefault());
         document.onkeydown = function(e) { if(e.keyCode == 123) return false; }
@@ -197,180 +204,74 @@
         document.addEventListener('DOMContentLoaded', () => {
             Papa.parse(USERS_SHEET_URL, {
                 download: true, header: true,
-                complete: function(results) { users = results.data; checkSession(); },
+                complete: function(results) { users = results.data; },
                 error: function() { console.log("Kullanıcı listesi çekilemedi."); }
             });
         });
 
-        function checkSession() {
-            const savedUser = localStorage.getItem("sSportUser");
-            if (savedUser) {
-                currentUser = savedUser;
-                document.getElementById("login-screen").style.display = "none"; 
-                document.getElementById("user-display").innerText = currentUser;
-                startSessionTimer();
-                if (BAKIM_MODU) document.getElementById("maintenance-screen").style.display = "flex";
-                else { document.getElementById("main-app").style.display = "block"; loadContentData(); }
-            }
-        }
-
         function girisYap() {
-            const uName = document.getElementById("usernameInput").value.trim(); const uPass = document.getElementById("passInput").value.trim();
+            const uName = document.getElementById("usernameInput").value.trim();
+            const uPass = document.getElementById("passInput").value.trim();
             const loadingMsg = document.getElementById("loading-msg");
+
             if(users.length === 0) {
                 loadingMsg.style.display = "block";
-                Papa.parse(USERS_SHEET_URL, { download: true, header: true, complete: function(results) { users = results.data; loadingMsg.style.display = "none"; checkCredentials(uName, uPass); } });
+                Papa.parse(USERS_SHEET_URL, {
+                    download: true, header: true,
+                    complete: function(results) {
+                        users = results.data;
+                        loadingMsg.style.display = "none";
+                        checkCredentials(uName, uPass);
+                    }
+                });
             } else { checkCredentials(uName, uPass); }
         }
 
         function checkCredentials(name, pass) {
+            // Girilen şifreyi MD5 yap
             const hashedPass = CryptoJS.MD5(pass).toString();
+            // Tablodaki Username ve Password ile karşılaştır
             const user = users.find(u => u.Username === name && u.Password === hashedPass);
+
             if (user) {
-                currentUser = user.Username;
-                localStorage.setItem("sSportUser", currentUser);
                 document.getElementById("login-screen").style.display = "none"; 
                 document.getElementById("user-display").innerText = user.Username;
-                fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: "logLogin", username: currentUser }) });
-                startSessionTimer();
-                if (BAKIM_MODU) document.getElementById("maintenance-screen").style.display = "flex";
+                if (BAKIM_MODU) { document.getElementById("maintenance-screen").style.display = "flex"; } 
                 else { document.getElementById("main-app").style.display = "block"; loadContentData(); }
             } else { document.getElementById("error-msg").style.display = "block"; }
         }
 
-        function startSessionTimer() {
-            if (sessionTimeout) clearTimeout(sessionTimeout);
-            sessionTimeout = setTimeout(() => { Swal.fire({ icon: 'warning', title: 'Oturum Süresi Doldu', text: 'Güvenlik nedeniyle otomatik çıkış yapıldı.', confirmButtonText: 'Tamam' }).then(() => { logout(); }); }, 3600000); 
-        }
-
         function enterBas(e) { if (e.key === "Enter") girisYap(); }
-
-        function openUserMenu() {
-            if(currentUser === "Admin" || currentUser === "admin" || currentUser === "Site Talip Bey") {
-                Swal.fire({ title: `Merhaba, ${currentUser}`, html: `<button onclick="toggleEditMode(); Swal.close();" class="swal2-confirm swal2-styled" style="background-color:#fabb00; color:black; display:block; width:100%; margin-bottom:10px;">${isAdminMode ? '✏️ Düzenlemeyi Kapat' : '✏️ Düzenlemeyi Aç'}</button><button onclick="changePasswordPopup()" class="swal2-confirm swal2-styled" style="display:block; width:100%; margin-bottom:10px;">🔑 Şifre Değiştir</button><button onclick="logout(); Swal.close();" class="swal2-deny swal2-styled" style="display:block; width:100%;">🚪 Çıkış Yap</button>`, showConfirmButton: false });
-            } else {
-                Swal.fire({ title: `Merhaba, ${currentUser}`, text: "Ne yapmak istersiniz?", icon: 'question', showCancelButton: true, showDenyButton: true, confirmButtonText: '🔑 Şifre Değiştir', denyButtonText: '🚪 Çıkış Yap', cancelButtonText: 'İptal' }).then((result) => { if (result.isConfirmed) changePasswordPopup(); else if (result.isDenied) logout(); });
-            }
-        }
-
-        function toggleEditMode() {
-            isAdminMode = !isAdminMode; document.body.classList.toggle('editing', isAdminMode);
-            const btn = document.getElementById('adminBtn'); if(isAdminMode) btn.classList.add('admin-edit-mode'); else btn.classList.remove('admin-edit-mode');
-            Swal.fire({ icon: 'info', title: isAdminMode ? 'Düzenleme Modu AÇIK' : 'Düzenleme Modu KAPALI', text: 'Kalem ikonlarına tıklayarak içerikleri düzenleyebilirsiniz.', timer: 1500, showConfirmButton: false });
-            if(activeCards.length > 0) renderCards(activeCards); else renderCards(database); 
-            if(document.getElementById('guide-modal').style.display === 'flex') openGuide();
-            if(document.getElementById('sales-modal').style.display === 'flex') openSales();
-            if(document.getElementById('quiz-modal').style.display === 'flex') openQuiz();
-        }
-
-        async function editContent(title, category, cText, cScript) {
-            const { value: formValues } = await Swal.fire({ title: 'İçeriği Düzenle', html: `<label style="font-weight:bold;">Metin (Text)</label><textarea id="swal-text" class="swal2-textarea">${cText}</textarea><label style="font-weight:bold;">Script</label><textarea id="swal-script" class="swal2-textarea">${cScript}</textarea>`, showCancelButton: true, confirmButtonText: 'Kaydet', preConfirm: () => [document.getElementById('swal-text').value, document.getElementById('swal-script').value] });
-            if (formValues) { if(formValues[0] !== cText) sendUpdate(title, "Text", formValues[0]); if(formValues[1] !== cScript) setTimeout(() => sendUpdate(title, "Script", formValues[1]), 1000); }
-        }
-
-        async function editSport(title, cDesc, cTip, cDetail, cPron) {
-            event.stopPropagation();
-            const { value: formValues } = await Swal.fire({ title: 'Spor İçeriğini Düzenle', html: `<label style="font-weight:bold;">Açıklama</label><textarea id="swal-desc" class="swal2-textarea">${cDesc}</textarea><label style="font-weight:bold;">İpucu</label><input id="swal-tip" class="swal2-input" value="${cTip}"><label style="font-weight:bold;">Detay</label><textarea id="swal-detail" class="swal2-textarea">${cDetail}</textarea><label style="font-weight:bold;">Okunuş</label><input id="swal-pron" class="swal2-input" value="${cPron}">`, showCancelButton: true, confirmButtonText: 'Kaydet', width: '600px', preConfirm: () => [document.getElementById('swal-desc').value, document.getElementById('swal-tip').value, document.getElementById('swal-detail').value, document.getElementById('swal-pron').value] });
-            if (formValues) { sendUpdate(title, "Text", formValues[0]); setTimeout(() => sendUpdate(title, "Tip", formValues[1]), 1000); setTimeout(() => sendUpdate(title, "Detail", formValues[2]), 2000); setTimeout(() => sendUpdate(title, "Pronunciation", formValues[3]), 3000); }
-        }
-
-        async function editSales(title, cText) {
-            event.stopPropagation();
-            const { value: val } = await Swal.fire({ title: 'Satış Metnini Düzenle', html: `<label style="font-weight:bold;">Metin</label><textarea id="swal-text" class="swal2-textarea">${cText}</textarea>`, showCancelButton: true, confirmButtonText: 'Kaydet', preConfirm: () => document.getElementById('swal-text').value });
-            if (val && val !== cText) sendUpdate(title, "Text", val);
-        }
-        
-        function openQuizEditor() {
-            let html = '<div style="text-align:left; max-height:400px; overflow-y:auto;">';
-            quizQuestions.forEach((q, i) => { html += `<div style="border-bottom:1px solid #eee; padding:10px; cursor:pointer;" onclick="editQuizQuestion('${q.q.replace(/'/g, "\\'")}')"><b>${i+1}. ${q.q}</b><br><span style="font-size:0.8rem; color:#fabb00;"><i class="fas fa-pencil-alt"></i> Düzenle</span></div>`; });
-            html += '</div>';
-            Swal.fire({ title: 'Soruları Düzenle', html: html, showConfirmButton: false, showCloseButton: true });
-        }
-
-        async function editQuizQuestion(qText) {
-            const q = quizQuestions.find(item => item.q === qText);
-            const { value: formValues } = await Swal.fire({ title: 'Soruyu Düzenle', html: `<label style="font-weight:bold;">Soru</label><input id="swal-q" class="swal2-input" value="${q.q}"><label style="font-weight:bold;">Şıklar (Virgülle ayır)</label><textarea id="swal-opts" class="swal2-textarea">${q.opts.join(',')}</textarea><label style="font-weight:bold;">Doğru Cevap (0-3)</label><input id="swal-ans" class="swal2-input" type="number" value="${q.a}">`, showCancelButton: true, confirmButtonText: 'Kaydet', preConfirm: () => [document.getElementById('swal-q').value, document.getElementById('swal-opts').value, document.getElementById('swal-ans').value] });
-            if (formValues) { if(!Swal.isVisible()) Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } }); const payload = { action: "updateContent", title: qText, column: "Text", value: formValues[0], type: 'quiz', originalText: qText, username: currentUser }; fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }); setTimeout(() => sendUpdate(formValues[0], "QuizOptions", formValues[1], 'quiz'), 1500); setTimeout(() => sendUpdate(formValues[0], "QuizAnswer", formValues[2], 'quiz'), 3000); }
-        }
-
-        function sendUpdate(title, column, value, type = 'card') {
-            if(!Swal.isVisible()) Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } });
-            const payload = { action: "updateContent", title: title, column: column, value: value, type: type, originalText: title, username: currentUser };
-            fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
-            .then(() => Swal.fire({icon: 'success', title: 'Güncellendi!', text: 'Değişiklik 1-2 dk içinde herkese yansır.', timer: 2000, showConfirmButton: false}))
-            .catch(err => Swal.fire('Hata', 'Güncelleme başarısız: ' + err, 'error'));
-        }
-
-        function logout() {
-            currentUser = ""; isAdminMode = false; document.body.classList.remove('editing'); localStorage.removeItem("sSportUser");
-            if (sessionTimeout) clearTimeout(sessionTimeout);
-            document.getElementById("main-app").style.display = "none"; document.getElementById("login-screen").style.display = "flex"; document.getElementById("passInput").value = ""; document.getElementById("usernameInput").value = "";
-        }
-
-        async function changePasswordPopup() {
-             const { value: formValues } = await Swal.fire({ title: 'Şifre Değiştir', html: '<input id="swal-old-pass" type="password" class="swal2-input" placeholder="Eski Şifre"><input id="swal-new-pass" type="password" class="swal2-input" placeholder="Yeni Şifre">', focusConfirm: false, showCancelButton: true, confirmButtonText: 'Değiştir', preConfirm: () => { return [ document.getElementById('swal-old-pass').value, document.getElementById('swal-new-pass').value ] } });
-            if (formValues) { Swal.fire({ title: 'İşleniyor...', didOpen: () => { Swal.showLoading() } }); fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: "changePassword", username: currentUser, oldPass: CryptoJS.MD5(formValues[0]).toString(), newPass: CryptoJS.MD5(formValues[1]).toString() }) }).then(() => Swal.fire('Başarılı!', 'Şifre değişti.', 'success')); }
-        }
 
         function loadContentData() {
             Papa.parse(DATA_SHEET_URL, {
                 download: true, header: true,
                 complete: function(results) {
                     const rawData = results.data;
-                    
-                    // VERİLERİ ÇEK VE AYIKLA
-                    const fetchedCards = rawData.filter(i => ['card','bilgi','teknik','kampanya','ikna'].includes(i.Type)).map(i => ({ title: i.Title, category: i.Category, text: i.Text, script: i.Script, code: i.Code, link: i.Link }));
-                    const fetchedNews = rawData.filter(i => i.Type === 'news').map(i => ({ date: i.Date, title: i.Title, desc: i.Text, type: i.Category }));
-                    const fetchedSports = rawData.filter(i => i.Type === 'sport').map(i => ({ title: i.Title, icon: i.Icon, desc: i.Text, tip: i.Tip, detail: i.Detail, pronunciation: i.Pronunciation }));
-                    const fetchedSales = rawData.filter(i => i.Type === 'sales').map(i => ({ title: i.Title, text: i.Text }));
-                    const fetchedQuiz = rawData.filter(i => i.Type === 'quiz').map(i => ({ q: i.Text, opts: i.QuizOptions ? i.QuizOptions.split(',') : [], a: parseInt(i.QuizAnswer) }));
-
-                    // EĞER TABLO BOŞSA YEDEKLERİ KULLAN (GÜVENLİK AĞI)
-                    database = fetchedCards.length > 0 ? fetchedCards : database;
-                    newsData = fetchedNews.length > 0 ? fetchedNews : newsData;
-                    sportsData = fetchedSports.length > 0 ? fetchedSports : backupSportsData;
-                    salesScripts = fetchedSales.length > 0 ? fetchedSales : backupSalesScripts;
-                    quizQuestions = fetchedQuiz.length > 0 ? fetchedQuiz : backupQuizQuestions;
+                    database = rawData.filter(i => ['card','bilgi','teknik','kampanya','ikna'].includes(i.Type)).map(i => ({ title: i.Title, category: i.Category, text: i.Text, script: i.Script, code: i.Code, link: i.Link }));
+                    newsData = rawData.filter(i => i.Type === 'news').map(i => ({ date: i.Date, title: i.Title, desc: i.Text, type: i.Category }));
+                    sportsData = rawData.filter(i => i.Type === 'sport').map(i => ({ title: i.Title, icon: i.Icon, desc: i.Text, tip: i.Tip, detail: i.Detail, pronunciation: i.Pronunciation }));
+                    salesScripts = rawData.filter(i => i.Type === 'sales').map(i => ({ title: i.Title, text: i.Text }));
+                    quizQuestions = rawData.filter(i => i.Type === 'quiz').map(i => ({ q: i.Text, opts: i.QuizOptions.split(','), a: parseInt(i.QuizAnswer) }));
 
                     document.getElementById('loading').style.display = 'none';
-                    activeCards = database;
                     renderCards(database);
                     startTicker();
                 }
             });
         }
 
-        function renderCards(data) { 
-            activeCards = data; 
-            const container = document.getElementById('cardGrid'); 
-            container.innerHTML = ''; 
-            if(data.length === 0) { container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Kayıt Yok</div>'; return; } 
-            
-            data.forEach((item, index) => { 
-                const safeText = item.text ? item.text.replace(/"/g, '&quot;').replace(/'/g, "\\'") : "";
-                const safeScript = item.script ? item.script.replace(/"/g, '&quot;').replace(/'/g, "\\'") : "";
-                const safeTitle = item.title ? item.title.replace(/"/g, '&quot;').replace(/'/g, "\\'") : "";
-                
-                let html = `
-                <div class="card ${item.category}">
-                    <i class="fas fa-pencil-alt edit-icon" onclick="editContent('${safeTitle}', '${item.category}', '${safeText}', '${safeScript}')"></i>
-                    <div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div>
-                    <div class="card-content" onclick="showCardDetail('${safeTitle}', '${safeText}')">
-                        <div class="card-text-truncate">${highlightText(item.text)}</div>
-                        <div style="font-size:0.8rem; color:#999; margin-top:5px; text-align:right;">(Tamamını oku)</div>
-                    </div>
-                    <div class="script-box">${highlightText(item.script)}</div>
-                    <div class="card-actions">
-                        <button class="btn btn-copy" onclick="copyText('${item.script.replace(/'/g, "\\'")}')"><i class="fas fa-copy"></i> Kopyala</button>
-                        ${item.code ? `<button class="btn btn-copy" style="background:var(--secondary); color:#333;" onclick="copyText('${item.code}')">Kod</button>` : ''}
-                        ${item.link ? `<a href="${item.link}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>` : ''}
-                    </div>
-                </div>`; 
-                container.innerHTML += html; 
-            }); 
-        }
-
-        function showCardDetail(title, text) { Swal.fire({ title: title, html: `<div style="text-align:left; font-size:1rem; line-height:1.6;">${text}</div>`, showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa' }); }
+        function renderCards(data) { const container = document.getElementById('cardGrid'); container.innerHTML = ''; if(data.length === 0) { container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Kayıt Yok</div>'; return; } data.forEach(item => { let html = `<div class="card ${item.category}"><div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div><div class="card-content"><div>${highlightText(item.text)}</div></div><div class="script-box">${highlightText(item.script)}</div><div class="card-actions"><button class="btn btn-copy" onclick="copyText('${item.script.replace(/'/g, "\\'")}')"><i class="fas fa-copy"></i> Kopyala</button>${item.code ? `<button class="btn btn-copy" style="background:var(--secondary); color:#333;" onclick="copyText('${item.code}')">Kod</button>` : ''}${item.link ? `<a href="${item.link}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>` : ''}</div></div>`; container.innerHTML += html; }); }
+        function openGuide() { document.getElementById('guide-modal').style.display = 'flex'; const grid=document.getElementById('guide-grid'); grid.innerHTML=''; sportsData.forEach((s, index) => { let pronHtml = s.pronunciation ? `<div class="pronunciation-badge">🗣️ ${s.pronunciation}</div>` : ''; grid.innerHTML += `<div class="guide-item" onclick="showSportDetail(${index})"><i class="fas ${s.icon} guide-icon"></i><span class="guide-title">${s.title}</span>${pronHtml}<div class="guide-desc">${s.desc}</div><div class="guide-tip"><i class="fas fa-lightbulb"></i> ${s.tip}</div><div style="font-size:0.8rem; color:#999; margin-top:5px;">(Detay için tıkla)</div></div>`; }); }
+        function showSportDetail(index) { const sport = sportsData[index]; const detailText = sport.detail ? sport.detail : "Bu içerik için henüz detay eklenmemiş."; const pronDetail = sport.pronunciation ? `<div style="color:#e65100; font-weight:bold; margin-bottom:15px;">🗣️ Okunuşu: ${sport.pronunciation}</div>` : ''; Swal.fire({ title: `<i class="fas ${sport.icon}" style="color:#0e1b42;"></i> ${sport.title}`, html: `${pronDetail}<div style="text-align:left; font-size:1rem; line-height:1.6;">${detailText}</div>`, showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa' }); }
+        function openSales() { document.getElementById('sales-modal').style.display = 'flex'; const grid=document.getElementById('sales-grid'); grid.innerHTML=''; salesScripts.forEach((s, index) => { grid.innerHTML += `<div class="sales-item" id="sales-${index}" onclick="toggleSales('${index}')"><div class="sales-header"><span class="sales-title">${s.title}</span><i class="fas fa-chevron-down" id="icon-${index}" style="color:#10b981;"></i></div><div class="sales-text">${s.text}<div style="text-align:right; margin-top:15px;"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${s.text.replace(/'/g, "\\'")}')"><i class="fas fa-copy"></i> Kopyala</button></div></div></div>`; }); }
+        function toggleSales(index) { const item = document.getElementById(`sales-${index}`); const icon = document.getElementById(`icon-${index}`); item.classList.toggle('active'); if(item.classList.contains('active')){ icon.classList.replace('fa-chevron-down', 'fa-chevron-up'); } else { icon.classList.replace('fa-chevron-up', 'fa-chevron-down'); } }
+        let currentQuestion=0, score=0;
+        function openQuiz() { document.getElementById('quiz-modal').style.display='flex'; currentQuestion=0; score=0; showStartScreen(); }
+        function showStartScreen() { document.getElementById('quiz-body').innerHTML=`<div class="quiz-final"><h3>Hazır mısın?</h3><button class="restart-btn" style="background:var(--quiz);" onclick="showQuestion()">BAŞLA</button></div>`; }
+        function showQuestion() { if(currentQuestion>=quizQuestions.length){showResult();return;} const q=quizQuestions[currentQuestion]; let html=`<div class="quiz-score">Soru: ${currentQuestion+1}</div><div class="quiz-question">${q.q}</div><div class="quiz-options">`; q.opts.forEach((opt,i)=>{ html+=`<button class="quiz-btn-opt" onclick="checkAnswer(this, ${i})">${opt}</button>`; }); html+=`</div>`; document.getElementById('quiz-body').innerHTML=html; }
+        function checkAnswer(btn,i) { const correct=quizQuestions[currentQuestion].a; document.querySelectorAll('.quiz-btn-opt').forEach(b=>b.disabled=true); if(i===correct){btn.classList.add('correct'); score+=10; Swal.fire({icon:'success',title:'Doğru!',timer:1000,toast:true,position:'top',showConfirmButton:false});}else{btn.classList.add('wrong'); Swal.fire({icon:'error',title:'Yanlış!',timer:1000,toast:true,position:'top',showConfirmButton:false});} setTimeout(()=>{currentQuestion++; showQuestion();},1500); }
+        function showResult() { document.getElementById('quiz-body').innerHTML=`<div class="quiz-final"><h3>Bitti! Puan: ${score}</h3><button class="restart-btn" onclick="openQuiz()">Tekrar</button></div>`; }
         function filterContent() { const search = document.getElementById('searchInput').value.toLowerCase(); renderCards(database.filter(i => i.title?.toLowerCase().includes(search) || i.text?.toLowerCase().includes(search))); }
         function filterCategory(cat) { document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active')); event.target.closest('button').classList.add('active'); renderCards(cat === 'all' ? database : database.filter(i => i.category === cat)); }
         function highlightText(t) { if(!t) return ""; const s = document.getElementById('searchInput').value.trim(); return s ? t.replace(new RegExp(`(${s})`, 'gi'), '<span class="highlight">$1</span>') : t; }
