@@ -10,50 +10,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 
     <style>
-        /* --- TASARIM AYARLARI --- */
-        :root { 
-            --primary: #0e1b42; --secondary: #fabb00; --bg: #f0f2f5; 
-            --card-bg: #ffffff; --accent: #d32f2f; --success: #2e7d32; 
-            --info: #0288d1; --warning: #ed6c02; --sales: #10b981; --quiz: #8e24aa; 
-        }
+        /* TASARIM AYARLARI */
+        :root { --primary: #0e1b42; --secondary: #fabb00; --bg: #f0f2f5; --card-bg: #ffffff; --accent: #d32f2f; --success: #2e7d32; --info: #0288d1; --warning: #ed6c02; --sales: #10b981; --quiz: #8e24aa; }
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: #333; user-select: none; }
-
-        /* --- GİRİŞ EKRANI --- */
+        
         #login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5000; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%); }
         .login-card { background: white; padding: 40px; border-radius: 15px; text-align: center; width: 320px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
         .login-input { width: 100%; padding: 12px; margin: 10px 0; border: 2px solid #ddd; border-radius: 8px; text-align: center; box-sizing: border-box; }
         .login-btn { width: 100%; padding: 12px; background: #fabb00; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px; }
         .loading-text { font-size: 0.8rem; color: #666; margin-top: 10px; display: none; }
         
-        /* Bakım Ekranı (Gizli) */
         #maintenance-screen { display: none !important; } 
-
-        /* --- ANA UYGULAMA --- */
         #main-app { display: none; }
+
         .header { background: linear-gradient(135deg, var(--primary) 0%, #1a2f6e 100%); color: white; padding: 20px 30px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
         
-        /* Admin Butonları */
-        .header-controls { display: flex; gap: 10px; align-items: center; }
-        .user-btn { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; transition:0.3s; display: flex; align-items: center; gap: 5px; }
-        .user-btn:hover { background: rgba(255,255,255,0.3); }
-        .edit-toggle-btn { background: #fabb00; color: #0e1b42; border: none; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-weight: bold; font-size: 0.85rem; display: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
-        .edit-toggle-btn.active { background: #ef6c00; color: white; }
+        .admin-btn { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; transition:0.3s; }
+        .admin-btn:hover { background: rgba(255,255,255,0.3); }
+        .admin-edit-mode { border-color: #fabb00; color: #fabb00; background: rgba(250, 187, 0, 0.1); }
 
         .control-wrapper { display: flex; gap: 20px; align-items: flex-start; }
         .left-panel { flex: 2; }
         .right-panel { flex: 1; min-width: 300px; }
-
         .search-container { position: relative; width: 100%; margin-bottom: 15px; }
         #searchInput { width: 100%; padding: 12px 20px 12px 45px; border-radius: 8px; border: none; box-sizing: border-box; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         .search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #666; }
-
+        
         .filter-container { display: flex; gap: 8px; flex-wrap: wrap; }
         .filter-btn { border: none; color: white; padding: 10px 18px; border-radius: 20px; cursor: pointer; transition: 0.2s; display: flex; align-items: center; gap: 5px; font-weight: 600; font-size: 0.9rem; box-shadow: 0 2px 5px rgba(0,0,0,0.2); opacity: 0.85; }
         .filter-btn:hover { opacity: 1; transform: translateY(-2px); }
         .filter-btn.active { opacity: 1; box-shadow: 0 0 0 2px #fff, 0 4px 10px rgba(0,0,0,0.3); transform: scale(1.05); }
 
-        /* Renkler */
         .btn-all { background: linear-gradient(135deg, #4b5563, #1f2937); }
         .btn-tech { background: linear-gradient(135deg, #0e1b42, #1e3a8a); }
         .btn-ikna { background: linear-gradient(135deg, #ed6c02, #e65100); }
@@ -71,7 +59,6 @@
         .ticker-label i { animation: blink 1.5s infinite; }
         .ticker-content { font-size: 0.95rem; color: white; font-weight: 500; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; animation: slideIn 0.5s ease-out; }
 
-        /* KARTLAR */
         .container { padding: 20px; max-width: 1600px; margin: 0 auto; }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 20px; }
         .card { background: var(--card-bg); border-radius: 12px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border-left: 5px solid var(--info); display: flex; flex-direction: column; transition: transform 0.2s; position: relative; }
@@ -80,8 +67,7 @@
         .card.İkna { border-left-color: var(--accent); }
         .card.Kampanya { border-left-color: var(--success); }
         .card.Bilgi { border-left-color: var(--info); }
-
-        /* DÜZENLEME İKONLARI */
+        
         .edit-icon { position: absolute; right: 10px; top: 10px; color: #fabb00; cursor: pointer; display: none; font-size: 1.2rem; padding: 8px; background: white; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 20; border:1px solid #eee; }
         .edit-icon:hover { transform: scale(1.1); background:#fff8e1; }
         body.editing .edit-icon { display: block !important; } 
@@ -103,17 +89,14 @@
         .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 15px; padding: 30px; position: relative; max-height: 85vh; overflow-y: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.8rem; cursor: pointer; color: #666; font-weight: bold; }
         .swal2-container { z-index: 10000 !important; }
-
-        /* --- ÖZEL MODAL STİLLERİ --- */
-        /* Haberler */
+        
         .news-item { border-left: 4px solid var(--secondary); padding-left: 15px; margin-bottom: 20px; position: relative; padding-right: 30px; }
         .news-date { font-size: 0.85rem; color: #999; font-weight: bold; display: block; }
         .news-title { font-size: 1.1rem; font-weight: bold; color: var(--primary); display: block; }
         .news-tag { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; margin-top: 5px; font-weight: bold; }
         .tag-fix { background: #e8f5e9; color: #2e7d32; } .tag-update { background: #fff3e0; color: #ef6c00; } .tag-info { background: #e3f2fd; color: #0277bd; }
 
-        /* Spor Rehberi */
-        .guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
+        .guide-grid, .sales-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
         .guide-item { border: 1px solid #eee; border-radius: 10px; padding: 15px; text-align: center; transition: 0.3s; background: #f8f9fa; cursor: pointer; position: relative; }
         .guide-item:hover { transform: translateY(-5px); border-color: var(--secondary); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .guide-icon { font-size: 2rem; color: var(--primary); margin-bottom: 10px; }
@@ -122,23 +105,19 @@
         .guide-tip { background: #e3f2fd; color: #0277bd; padding: 5px; border-radius: 5px; font-size: 0.8rem; font-weight: 600; }
         .pronunciation-badge { color: #e65100; font-size: 0.85rem; font-weight: bold; margin-bottom: 8px; display: block; font-style: italic; }
 
-        /* TeleSatış (Akordeon) */
-        .sales-grid { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
         .sales-item { border: 1px solid #d1fae5; background: #ecfdf5; border-radius: 10px; padding: 15px 20px; cursor: pointer; transition: all 0.3s ease; position: relative; overflow: hidden; }
         .sales-item:hover { box-shadow: 0 5px 15px rgba(16, 185, 129, 0.2); border-color: var(--sales); }
         .sales-item.active { background: #d1fae5; border-left: 6px solid var(--sales); }
         .sales-header { display: flex; justify-content: space-between; align-items: center; }
-        .sales-title { font-weight: 800; color: #065f46; font-size: 1.1rem; margin: 0; padding-right: 20px; }
+        .sales-title { font-weight: 800; color: #065f46; font-size: 1.1rem; margin: 0; padding-right: 25px; }
         .sales-text { display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #a7f3d0; font-size: 1rem; color: #374151; line-height: 1.6; animation: fadeIn 0.4s ease-in; }
         .sales-item.active .sales-text { display: block; }
 
-        /* Yarışma */
         .quiz-options { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
         .quiz-btn-opt { padding: 15px; border: 2px solid #eee; background: white; border-radius: 10px; cursor: pointer; }
         .quiz-btn-opt.correct { background: #c8e6c9; border-color: #2e7d32; color: #1b5e20; }
         .quiz-btn-opt.wrong { background: #ffcdd2; border-color: #c62828; color: #b71c1c; }
 
-        /* İade Asistanı */
         .wizard-options { display: flex; flex-direction: column; gap: 10px; }
         .option-btn { padding: 15px; border: 2px solid #eee; border-radius: 10px; background: white; font-size: 1rem; cursor: pointer; text-align: left; }
         .option-btn:hover { border-color: var(--primary); background: #f0f4ff; }
@@ -147,7 +126,6 @@
         .res-green { background: #e8f5e9; border: 2px solid #66bb6a; color: #2e7d32; }
         .res-yellow { background: #fff8e1; border: 2px solid #ffca28; color: #f57f17; }
         .restart-btn { margin-top: 20px; background: #555; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
-
         .highlight { background-color: yellow; font-weight: bold; }
         @keyframes blink { 50% { opacity: 0.5; } } @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } } @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } } @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
@@ -173,14 +151,7 @@
         <div class="header">
             <div class="header-top">
                 <h1><i class="fas fa-compass"></i> S Sport Plus - Temsilci Pusulası</h1>
-                <div class="header-controls">
-                    <button id="quickEditBtn" class="edit-toggle-btn" style="display:none;" onclick="toggleEditMode()">
-                        <i class="fas fa-pencil-alt"></i> Düzenlemeyi Aç
-                    </button>
-                    <button id="adminBtn" class="user-btn" onclick="openUserMenu()">
-                        <i class="fas fa-user-circle"></i> <span id="user-display">Misafir</span>
-                    </button>
-                </div>
+                <button id="adminBtn" class="admin-btn" onclick="openUserMenu()"><i class="fas fa-user-circle"></i> <span id="user-display">Misafir</span></button>
             </div>
             <div class="control-wrapper">
                 <div class="left-panel">
@@ -198,61 +169,44 @@
                         <button class="filter-btn quiz-btn" onclick="openQuiz()">🎮 Yarışma</button>
                     </div>
                 </div>
-                <div class="right-panel">
-                    <div class="news-ticker-box" onclick="openNews()">
-                        <div class="ticker-label"><i class="fas fa-circle" style="font-size:8px;"></i> GÜNCEL</div>
-                        <div id="ticker-content" class="ticker-content">Yükleniyor...</div>
-                    </div>
-                </div>
+                <div class="right-panel"><div class="news-ticker-box" onclick="openNews()"><div class="ticker-label"><i class="fas fa-circle" style="font-size:8px;"></i> GÜNCEL</div><div id="ticker-content" class="ticker-content">Veriler yükleniyor...</div></div></div>
             </div>
         </div>
-        <div class="container">
-            <div id="loading" style="text-align:center; padding:20px; color:#666;"><i class="fas fa-spinner fa-spin fa-2x"></i><br>Veriler Google Tablo'dan çekiliyor...</div>
-            <div class="grid" id="cardGrid"></div>
-        </div>
+        <div class="container"><div id="loading" style="text-align:center; padding:20px; color:#666;"><i class="fas fa-spinner fa-spin fa-2x"></i><br>Veriler Google Tablo'dan çekiliyor...</div><div class="grid" id="cardGrid"></div></div>
     </div>
 
     <div id="news-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('news-modal')">&times;</span><h2 style="color:var(--primary);">📢 Duyurular</h2><div id="news-container"></div></div></div>
     <div id="wizard-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('wizard-modal')">&times;</span><div id="wizard-body"></div></div></div>
     <div id="guide-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('guide-modal')">&times;</span><h2 style="text-align:center; color:var(--primary);">📖 Spor Terimleri & İçerik Rehberi</h2><p style="text-align:center; color:#666;">Detaylı bilgi için karta tıklayınız.</p><div class="guide-grid" id="guide-grid"></div></div></div>
-    <div id="sales-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('sales-modal')">&times;</span><h2 style="text-align:center; color:var(--sales);">📞 TeleSatış Scriptleri</h2><p style="text-align:center; color:#666;">Başlıklara tıklayarak metni okuyabilirsiniz.</p><div class="sales-grid" id="sales-grid"></div></div></div>
+    <div id="sales-modal" class="modal-overlay"><div class="modal-content"><span class="close-modal" onclick="closeModal('sales-modal')">&times;</span><h2 style="text-align:center; color:var(--sales);">📞 Satış Scriptleri</h2><p style="text-align:center; color:#666;">Metni okumak için başlığa tıklayınız.</p><div class="sales-grid" id="sales-grid"></div></div></div>
     <div id="quiz-modal" class="modal-overlay"><div class="modal-content" style="max-width: 600px;"><span class="close-modal" onclick="closeModal('quiz-modal')">&times;</span><h2 style="text-align:center; color:var(--quiz);">🎮 Bilgi Yarışması</h2><div id="quiz-body"></div></div></div>
 
     <script>
         const BAKIM_MODU = false; 
         
-        // !!! SENİN LİNKLERİN BURADA !!!
+        // !!! BURAYA LİNKLERİNİ YAPIŞTIRMAYI UNUTMA !!!
         const DATA_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?output=csv";
         const USERS_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?gid=1075778951&single=true&output=csv";
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec"; 
 
         // YEDEK VERİLER (GÜVENLİK AĞI)
-        // TABLO BAĞLANTISI KOPARSA VEYA BOŞ GELİRSE BURADAKİ VERİLER KULLANILACAK
         const backupSportsData = [
             { title: "WorldSBK", icon: "fa-motorcycle", desc: "Dünya Superbike Şampiyonası.", tip: "🇹🇷 Toprak Razgatlıoğlu burada!", detail: "BMW ile yarışıyor.", pronunciation: "Vörld Süper Bayk" },
             { title: "MotoGP", icon: "fa-motorcycle", desc: "Motosikletin F1'i.", tip: "En hızlılar.", detail: "Prototip motorlar.", pronunciation: "Moto Ji Pi" },
             { title: "NBA", icon: "fa-basketball", desc: "Dünyanın en iyi basketbol ligi.", tip: "LeBron, Curry, Alperen.", detail: "Normal sezon ve Play-off.", pronunciation: "En Bi Ey" },
-            { title: "UFC", icon: "fa-hand-fist", desc: "Kafes Dövüşü.", tip: "En sert dövüş.", detail: "Islam Makhachev, İbo Aslan.", pronunciation: "Yu Ef Si" },
-             { title: "Serie A", icon: "fa-futbol", desc: "İtalya Futbol Ligi.", tip: "Hakan Çalhanoğlu, Kenan Yıldız.", detail: "Taktik savaşları.", pronunciation: "Seri A" },
-             { title: "La Liga", icon: "fa-futbol", desc: "İspanya Futbol Ligi.", tip: "Arda Güler, Real Madrid.", detail: "Teknik futbol.", pronunciation: "La Liga" }
+            { title: "UFC", icon: "fa-hand-fist", desc: "Kafes Dövüşü.", tip: "En sert dövüş.", detail: "Islam Makhachev, İbo Aslan.", pronunciation: "Yu Ef Si" }
         ];
-        
         const backupSalesScripts = [
             { title: "Açılış", text: "Merhaba, S Sport Plus'tan arıyorum..." },
-            { title: "Fiyat İtirazı", text: "Haklısınız, ancak kampanyamızla günlük maliyet sadece bir çay parasına geliyor." },
-            { title: "Yıllık Paket", text: "Yıllık alırsanız 4 ay bedavaya geliyor." },
-            { title: "Kapanış", text: "Bu kampanya sadece bugüne özel." }
+            { title: "Fiyat", text: "Günlük sadece bir çay parasına..." }
         ];
-        
         const backupQuizQuestions = [
-            { q: "S Sport Plus'ta hangi lig YOKTUR?", opts: ["NBA", "Premier Lig", "La Liga", "Serie A"], a: 1 },
-            { q: "Toprak Razgatlıoğlu hangi seride yarışıyor?", opts: ["MotoGP", "WorldSBK", "F1", "WRC"], a: 1 },
-            { q: "Vestel TV hangi yıldan sonra desteklenir?", opts: ["2017", "2018", "2019", "2020"], a: 2 }
+            { q: "S Sport Plus'ta hangi lig YOKTUR?", opts: ["NBA", "Premier Lig", "La Liga", "Serie A"], a: 1 }
         ];
 
         let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [], users = [];
         let currentUser = "", isAdminMode = false, sessionTimeout;
-        let activeCards = [];
+        let activeCards = []; 
 
         document.addEventListener('contextmenu', event => event.preventDefault());
         document.onkeydown = function(e) { if(e.keyCode == 123) return false; }
@@ -271,7 +225,6 @@
                 currentUser = savedUser;
                 document.getElementById("login-screen").style.display = "none"; 
                 document.getElementById("user-display").innerText = currentUser;
-                checkAdmin(currentUser);
                 startSessionTimer();
                 if (BAKIM_MODU) document.getElementById("maintenance-screen").style.display = "flex";
                 else { document.getElementById("main-app").style.display = "block"; loadContentData(); }
@@ -304,22 +257,11 @@
                 localStorage.setItem("sSportUser", currentUser);
                 document.getElementById("login-screen").style.display = "none"; 
                 document.getElementById("user-display").innerText = user.Username;
-                checkAdmin(currentUser);
                 fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: "logLogin", username: currentUser }) });
                 startSessionTimer();
                 if (BAKIM_MODU) document.getElementById("maintenance-screen").style.display = "flex";
                 else { document.getElementById("main-app").style.display = "block"; loadContentData(); }
             } else { document.getElementById("error-msg").style.display = "block"; }
-        }
-
-        function checkAdmin(user) {
-            const editBtn = document.getElementById('quickEditBtn');
-            // Admin Yetkisi Olanlar
-            if(user === "Admin" || user === "admin" || user === "Site Talip Bey") {
-                editBtn.style.display = "block";
-            } else {
-                editBtn.style.display = "none";
-            }
         }
 
         function startSessionTimer() {
@@ -332,8 +274,17 @@
         function enterBas(e) { if (e.key === "Enter") girisYap(); }
 
         function openUserMenu() {
-            let options = { title: `Merhaba, ${currentUser}`, showCancelButton: true, showDenyButton: true, confirmButtonText: '🔑 Şifre Değiştir', denyButtonText: '🚪 Çıkış Yap', cancelButtonText: 'İptal' };
-            Swal.fire(options).then((result) => { if (result.isConfirmed) changePasswordPopup(); else if (result.isDenied) logout(); });
+            if(currentUser === "Admin" || currentUser === "admin" || currentUser === "Site Talip Bey") {
+                Swal.fire({
+                    title: `Merhaba, ${currentUser}`,
+                    html: `<button onclick="toggleEditMode(); Swal.close();" class="swal2-confirm swal2-styled" style="background-color:#fabb00; color:black; display:block; width:100%; margin-bottom:10px;">${isAdminMode ? '✏️ Düzenlemeyi Kapat' : '✏️ Düzenlemeyi Aç'}</button>
+                           <button onclick="changePasswordPopup()" class="swal2-confirm swal2-styled" style="display:block; width:100%; margin-bottom:10px;">🔑 Şifre Değiştir</button>
+                           <button onclick="logout(); Swal.close();" class="swal2-deny swal2-styled" style="display:block; width:100%;">🚪 Çıkış Yap</button>`,
+                    showConfirmButton: false
+                });
+            } else {
+                Swal.fire({ title: `Merhaba, ${currentUser}`, text: "Ne yapmak istersiniz?", icon: 'question', showCancelButton: true, showDenyButton: true, confirmButtonText: '🔑 Şifre Değiştir', denyButtonText: '🚪 Çıkış Yap', cancelButtonText: 'İptal' }).then((result) => { if (result.isConfirmed) changePasswordPopup(); else if (result.isDenied) logout(); });
+            }
         }
 
         function toggleEditMode() {
@@ -355,74 +306,78 @@
             if(document.getElementById('news-modal').style.display === 'flex') openNews();
         }
 
-        async function editContent(title, category, cText, cScript) {
+        async function editContent(index) {
+            const item = activeCards[index]; 
             const { value: formValues } = await Swal.fire({
                 title: 'İçeriği Düzenle',
-                html: `<label style="font-weight:bold;">Metin (Text)</label><textarea id="swal-text" class="swal2-textarea">${cText}</textarea>
-                       <label style="font-weight:bold;">Script</label><textarea id="swal-script" class="swal2-textarea">${cScript}</textarea>`,
+                html: `<label style="font-weight:bold;">Metin (Text)</label><textarea id="swal-text" class="swal2-textarea">${item.text}</textarea>
+                       <label style="font-weight:bold;">Script</label><textarea id="swal-script" class="swal2-textarea">${item.script}</textarea>`,
                 showCancelButton: true, confirmButtonText: 'Kaydet', preConfirm: () => [document.getElementById('swal-text').value, document.getElementById('swal-script').value]
             });
             if (formValues) {
-                if(formValues[0] !== cText) sendUpdate(title, "Text", formValues[0]);
-                if(formValues[1] !== cScript) setTimeout(() => sendUpdate(title, "Script", formValues[1]), 1000);
+                sendUpdate(item.title, "Text", formValues[0]);
+                setTimeout(() => sendUpdate(item.title, "Script", formValues[1]), 1000);
             }
         }
 
-        async function editSport(title, cDesc, cTip, cDetail, cPron) {
+        async function editSport(index) {
             event.stopPropagation();
+            const s = sportsData[index];
             const { value: formValues } = await Swal.fire({
                 title: 'Spor İçeriğini Düzenle',
-                html: `<label style="font-weight:bold;">Açıklama</label><textarea id="swal-desc" class="swal2-textarea">${cDesc}</textarea>
-                       <label style="font-weight:bold;">İpucu</label><input id="swal-tip" class="swal2-input" value="${cTip}">
-                       <label style="font-weight:bold;">Detay</label><textarea id="swal-detail" class="swal2-textarea">${cDetail}</textarea>
-                       <label style="font-weight:bold;">Okunuş</label><input id="swal-pron" class="swal2-input" value="${cPron}">`,
+                html: `<label style="font-weight:bold;">Açıklama</label><textarea id="swal-desc" class="swal2-textarea">${s.desc}</textarea>
+                       <label style="font-weight:bold;">İpucu</label><input id="swal-tip" class="swal2-input" value="${s.tip}">
+                       <label style="font-weight:bold;">Detay</label><textarea id="swal-detail" class="swal2-textarea">${s.detail || ''}</textarea>
+                       <label style="font-weight:bold;">Okunuş</label><input id="swal-pron" class="swal2-input" value="${s.pronunciation || ''}">`,
                 showCancelButton: true, confirmButtonText: 'Kaydet', width: '600px',
                 preConfirm: () => [document.getElementById('swal-desc').value, document.getElementById('swal-tip').value, document.getElementById('swal-detail').value, document.getElementById('swal-pron').value]
             });
             if (formValues) {
-                sendUpdate(title, "Text", formValues[0]);
-                setTimeout(() => sendUpdate(title, "Tip", formValues[1]), 1000);
-                setTimeout(() => sendUpdate(title, "Detail", formValues[2]), 2000);
-                setTimeout(() => sendUpdate(title, "Pronunciation", formValues[3]), 3000);
+                sendUpdate(s.title, "Text", formValues[0]);
+                setTimeout(() => sendUpdate(s.title, "Tip", formValues[1]), 1000);
+                setTimeout(() => sendUpdate(s.title, "Detail", formValues[2]), 2000);
+                setTimeout(() => sendUpdate(s.title, "Pronunciation", formValues[3]), 3000);
             }
         }
 
-        async function editSales(title, cText) {
+        async function editSales(index) {
             event.stopPropagation();
+            const s = salesScripts[index];
             const { value: val } = await Swal.fire({
-                title: 'Satış Metnini Düzenle', html: `<label style="font-weight:bold;">Metin</label><textarea id="swal-text" class="swal2-textarea">${cText}</textarea>`,
+                title: 'Satış Metnini Düzenle', html: `<label style="font-weight:bold;">Metin</label><textarea id="swal-text" class="swal2-textarea">${s.text}</textarea>`,
                 showCancelButton: true, confirmButtonText: 'Kaydet', preConfirm: () => document.getElementById('swal-text').value
             });
-            if (val && val !== cText) sendUpdate(title, "Text", val);
+            if (val && val !== s.text) sendUpdate(s.title, "Text", val);
         }
 
-        async function editNews(title, cDate, cDesc, cType) {
+        async function editNews(index) {
+            const i = newsData[index];
             const { value: formValues } = await Swal.fire({
                 title: 'Duyuruyu Düzenle',
-                html: `<label style="font-weight:bold;">Tarih</label><input id="swal-date" class="swal2-input" value="${cDate}">
-                       <label style="font-weight:bold;">Metin</label><textarea id="swal-desc" class="swal2-textarea">${cDesc}</textarea>
-                       <label style="font-weight:bold;">Tür (update/fix/info)</label><input id="swal-type" class="swal2-input" value="${cType}">`,
+                html: `<label style="font-weight:bold;">Tarih</label><input id="swal-date" class="swal2-input" value="${i.date}">
+                       <label style="font-weight:bold;">Metin</label><textarea id="swal-desc" class="swal2-textarea">${i.desc}</textarea>
+                       <label style="font-weight:bold;">Tür (update/fix/info)</label><input id="swal-type" class="swal2-input" value="${i.type}">`,
                 showCancelButton: true, confirmButtonText: 'Kaydet',
                 preConfirm: () => [document.getElementById('swal-date').value, document.getElementById('swal-desc').value, document.getElementById('swal-type').value]
             });
             if (formValues) {
-                sendUpdate(title, "Date", formValues[0]);
-                setTimeout(() => sendUpdate(title, "Text", formValues[1]), 1000);
-                setTimeout(() => sendUpdate(title, "Category", formValues[2]), 2000);
+                sendUpdate(i.title, "Date", formValues[0]);
+                setTimeout(() => sendUpdate(i.title, "Text", formValues[1]), 1000);
+                setTimeout(() => sendUpdate(i.title, "Category", formValues[2]), 2000);
             }
         }
         
         function openQuizEditor() {
             let html = '<div style="text-align:left; max-height:400px; overflow-y:auto;">';
             quizQuestions.forEach((q, i) => {
-                html += `<div style="border-bottom:1px solid #eee; padding:10px; cursor:pointer;" onclick="editQuizQuestion('${q.q.replace(/'/g, "\\'")}')"><b>${i+1}. ${q.q}</b><br><span style="font-size:0.8rem; color:#fabb00;"><i class="fas fa-pencil-alt"></i> Düzenle</span></div>`;
+                html += `<div style="border-bottom:1px solid #eee; padding:10px; cursor:pointer;" onclick="editQuizQuestion(${i})"><b>${i+1}. ${q.q}</b><br><span style="font-size:0.8rem; color:#fabb00;"><i class="fas fa-pencil-alt"></i> Düzenle</span></div>`;
             });
             html += '</div>';
             Swal.fire({ title: 'Soruları Düzenle', html: html, showConfirmButton: false, showCloseButton: true });
         }
 
-        async function editQuizQuestion(qText) {
-            const q = quizQuestions.find(item => item.q === qText);
+        async function editQuizQuestion(index) {
+            const q = quizQuestions[index];
             const { value: formValues } = await Swal.fire({
                 title: 'Soruyu Düzenle',
                 html: `<label style="font-weight:bold;">Soru</label><input id="swal-q" class="swal2-input" value="${q.q}"><label style="font-weight:bold;">Şıklar (Virgülle ayır)</label><textarea id="swal-opts" class="swal2-textarea">${q.opts.join(',')}</textarea><label style="font-weight:bold;">Doğru Cevap (0-3)</label><input id="swal-ans" class="swal2-input" type="number" value="${q.a}">`,
@@ -430,7 +385,7 @@
             });
             if (formValues) {
                 if(!Swal.isVisible()) Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } });
-                const payload = { action: "updateContent", title: qText, column: "Text", value: formValues[0], type: 'quiz', originalText: qText, username: currentUser };
+                const payload = { action: "updateContent", title: q.q, column: "Text", value: formValues[0], type: 'quiz', originalText: q.q, username: currentUser };
                 fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
                 setTimeout(() => sendUpdate(formValues[0], "QuizOptions", formValues[1], 'quiz'), 1500);
                 setTimeout(() => sendUpdate(formValues[0], "QuizAnswer", formValues[2], 'quiz'), 3000);
@@ -472,19 +427,19 @@
                 download: true, header: true,
                 complete: function(results) {
                     const rawData = results.data;
-                    // VERİLERİ ÇEK
+                    // VERİ ÇEKME
                     const fetchedCards = rawData.filter(i => ['card','bilgi','teknik','kampanya','ikna'].includes(i.Type)).map(i => ({ title: i.Title, category: i.Category, text: i.Text, script: i.Script, code: i.Code, link: i.Link }));
                     const fetchedNews = rawData.filter(i => i.Type === 'news').map(i => ({ date: i.Date, title: i.Title, desc: i.Text, type: i.Category }));
                     const fetchedSports = rawData.filter(i => i.Type === 'sport').map(i => ({ title: i.Title, icon: i.Icon, desc: i.Text, tip: i.Tip, detail: i.Detail, pronunciation: i.Pronunciation }));
                     const fetchedSales = rawData.filter(i => i.Type === 'sales').map(i => ({ title: i.Title, text: i.Text }));
                     const fetchedQuiz = rawData.filter(i => i.Type === 'quiz').map(i => ({ q: i.Text, opts: i.QuizOptions ? i.QuizOptions.split(',') : [], a: parseInt(i.QuizAnswer) }));
 
-                    // YEDEK DEVREYE GİRER
-                    database = fetchedCards.length > 0 ? fetchedCards : database;
-                    newsData = fetchedNews.length > 0 ? fetchedNews : newsData;
-                    sportsData = fetchedSports.length > 0 ? fetchedSports : backupSportsData;
-                    salesScripts = fetchedSales.length > 0 ? fetchedSales : backupSalesScripts;
-                    quizQuestions = fetchedQuiz.length > 0 ? fetchedQuiz : backupQuizQuestions;
+                    // YEDEK VERİ (GÜVENLİK AĞI)
+                    if(fetchedCards.length > 0) database = fetchedCards;
+                    if(fetchedNews.length > 0) newsData = fetchedNews;
+                    if(fetchedSports.length > 0) sportsData = fetchedSports; else sportsData = backupSportsData;
+                    if(fetchedSales.length > 0) salesScripts = fetchedSales; else salesScripts = backupSalesScripts;
+                    if(fetchedQuiz.length > 0) quizQuestions = fetchedQuiz; else quizQuestions = backupQuizQuestions;
 
                     document.getElementById('loading').style.display = 'none';
                     activeCards = database;
@@ -543,60 +498,6 @@
                 <span class="news-date">${i.date}</span><span class="news-title">${i.title}</span><div class="news-desc">${i.desc}</div><span class="news-tag ${cl}">${tx}</span>
             </div>`; 
         }); }
-        
-        function openGuide() { 
-            document.getElementById('guide-modal').style.display = 'flex'; 
-            const grid = document.getElementById('guide-grid'); 
-            grid.innerHTML = ''; 
-            sportsData.forEach((s, index) => { 
-                let pronHtml = s.pronunciation ? `<div class="pronunciation-badge">🗣️ ${s.pronunciation}</div>` : '';
-                grid.innerHTML += `
-                    <div class="guide-item" onclick="showSportDetail(${index})">
-                        <i class="fas fa-pencil-alt edit-icon" onclick="editSport(${index})"></i>
-                        <i class="fas ${s.icon} guide-icon"></i>
-                        <span class="guide-title">${s.title}</span>
-                        ${pronHtml}
-                        <div class="guide-desc">${s.desc}</div>
-                        <div class="guide-tip"><i class="fas fa-lightbulb"></i> ${s.tip}</div>
-                        <div style="font-size:0.8rem; color:#999; margin-top:5px;">(Detay için tıkla)</div>
-                    </div>`; 
-            }); 
-        }
-
-        function showSportDetail(index) {
-            const sport = sportsData[index];
-            const detailText = sport.detail ? sport.detail : "Bu içerik için henüz detay eklenmemiş.";
-            const pronDetail = sport.pronunciation ? `<div style="color:#e65100; font-weight:bold; margin-bottom:15px;">🗣️ Okunuşu: ${sport.pronunciation}</div>` : '';
-            Swal.fire({ title: `<i class="fas ${sport.icon}" style="color:#0e1b42;"></i> ${sport.title}`, html: `${pronDetail}<div style="text-align:left; font-size:1rem; line-height:1.6;">${detailText}</div>`, showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa' });
-        }
-
-        function openSales() { 
-            document.getElementById('sales-modal').style.display = 'flex'; 
-            const grid = document.getElementById('sales-grid'); 
-            grid.innerHTML = ''; 
-            salesScripts.forEach((s, index) => { 
-                grid.innerHTML += `
-                    <div class="sales-item" id="sales-${index}" onclick="toggleSales('${index}')">
-                        <i class="fas fa-pencil-alt edit-icon" onclick="editSales(${index})"></i>
-                        <div class="sales-header"><span class="sales-title">${s.title}</span><i class="fas fa-chevron-down" id="icon-${index}" style="color:#10b981;"></i></div>
-                        <div class="sales-text">${s.text}<div style="text-align:right; margin-top:15px;"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${s.text.replace(/'/g, "\\'")}')"><i class="fas fa-copy"></i> Kopyala</button></div></div>
-                    </div>`; 
-            }); 
-        }
-
-        function toggleSales(index) { const item = document.getElementById(`sales-${index}`); const icon = document.getElementById(`icon-${index}`); item.classList.toggle('active'); if(item.classList.contains('active')){ icon.classList.replace('fa-chevron-down', 'fa-chevron-up'); } else { icon.classList.replace('fa-chevron-up', 'fa-chevron-down'); } }
-        
-        let currentQuestion=0, score=0;
-        function openQuiz() { 
-            document.getElementById('quiz-modal').style.display='flex'; currentQuestion=0; score=0; 
-            if(isAdminMode) { document.getElementById('quiz-body').innerHTML=`<div class="quiz-final"><h3>Yönetici Modu</h3><p>Soruları düzenlemek için butona basınız.</p><button class="restart-btn" style="background:#8e24aa;" onclick="openQuizEditor()">Soruları Düzenle</button></div>`; }
-            else { showStartScreen(); }
-        }
-        function showStartScreen() { document.getElementById('quiz-body').innerHTML=`<div class="quiz-final"><h3>Hazır mısın?</h3><button class="restart-btn" style="background:var(--quiz);" onclick="showQuestion()">BAŞLA</button></div>`; }
-        function showQuestion() { if(currentQuestion>=quizQuestions.length){showResult();return;} const q=quizQuestions[currentQuestion]; let html=`<div class="quiz-score">Soru: ${currentQuestion+1}</div><div class="quiz-question">${q.q}</div><div class="quiz-options">`; q.opts.forEach((opt,i)=>{ html+=`<button class="quiz-btn-opt" onclick="checkAnswer(this, ${i})">${opt}</button>`; }); html+=`</div>`; document.getElementById('quiz-body').innerHTML=html; }
-        function checkAnswer(btn,i) { const correct=quizQuestions[currentQuestion].a; document.querySelectorAll('.quiz-btn-opt').forEach(b=>b.disabled=true); if(i===correct){btn.classList.add('correct'); score+=10; Swal.fire({icon:'success',title:'Doğru!',timer:1000,toast:true,position:'top',showConfirmButton:false});}else{btn.classList.add('wrong'); Swal.fire({icon:'error',title:'Yanlış!',timer:1000,toast:true,position:'top',showConfirmButton:false});} setTimeout(()=>{currentQuestion++; showQuestion();},1500); }
-        function showResult() { document.getElementById('quiz-body').innerHTML=`<div class="quiz-final"><h3>Bitti! Puan: ${score}</h3><button class="restart-btn" onclick="openQuiz()">Tekrar</button></div>`; }
-        
         const wizardSteps={start:{title:"İade Talebi Analizi",text:"Lütfen müşterinin durumunu seçiniz:",options:[{text:"İçerik İzlemiş / Kullanım Var",next:"izleme_var"},{text:"Aylık Paket (İzleme YOK)",next:"aylik_izleme_yok"},{text:"Yıllık Paket (İzleme YOK)",next:"yillik_izleme_yok"},{text:"Mükerrer (Çift) Çekim",next:"mukerrer"},{text:"Aynı Gün Yanlışlıkla Yıllık Alım",next:"ayni_gun_yillik"},{text:"Apple / Google Store İptali",next:"store_iptal"},{text:"Winback Paket Geçiş İadesi",next:"winback_iade"}]},izleme_var:{result:"red",title:"❌ İADE REDDEDİLİR",text:"İçerik izlenmişse (genel arıza hariç) iade yapılmaz.",script:"Hizmetimizden aktif olarak faydalandığınız için iade prosedürlerimiz gereği talebinize olumlu yanıt veremiyoruz."},aylik_izleme_yok:{title:"Aylık Paket - İzleme Yok",text:"THH tehdidi var mı?",options:[{text:"Evet/Israrcı",next:"aylik_teklif"},{text:"Hayır",next:"izleme_var"}]},aylik_teklif:{title:"İndirim Teklifi",text:"Önce 6AY50 ile indirim teklif et.",options:[{text:"İndirimi Kabul Etti",next:"indirim_kabul"},{text:"Reddetti (Tam İade)",next:"tam_iade"}]},yillik_izleme_yok:{title:"Yıllık Paket",text:"Paket kampanyalı mıydı?",options:[{text:"Hayır (Standart)",next:"yillik_standart"},{text:"Evet (Kampanyalı)",next:"yillik_kampanyali"}]},yillik_standart:{title:"Standart Yıllık",text:"Sırasıyla: 1. YILLIKLOCA İndirimi, 2. Aylığa Geçiş öner.",options:[{text:"Teklifi Kabul Etti",next:"islem_tamam"},{text:"Hepsini Reddetti (Tam İade)",next:"tam_iade"}]},yillik_kampanyali:{title:"Kampanyalı Yıllık",text:"Sadece Aylığa Geçiş önerilebilir.",options:[{text:"Aylığa Geçişi Kabul Etti",next:"ayliga_gecis"},{text:"Reddetti (Tam İade)",next:"tam_iade"}]},mukerrer:{title:"Mükerrer Çekim",text:"15 gün içinde ve Aynı Cihaz/IP mi?",options:[{text:"Evet",next:"mukerrer_iade"},{text:"Hayır",next:"izleme_var"}]},ayni_gun_yillik:{title:"Aynı Gün Yıllık",text:"24 saat içinde mi?",options:[{text:"Evet",next:"bir_defaya_mahsus"},{text:"Hayır",next:"izleme_var"}]},store_iptal:{result:"red",title:"❌ BİZ İPTAL EDEMEYİZ",text:"Apple/Google alımları telefondan yapılmalı."},winback_iade:{result:"yellow",title:"⚠️ SADECE 2. PAKET İADE",text:"Sadece son alınan indirimli paket iade edilebilir."},indirim_kabul:{result:"green",title:"✅ İNDİRİM TANIMLA",text:"139.5 TL iade yapıldı."},tam_iade:{result:"green",title:"✅ TAM İADE YAP",text:"Teklifler reddedildi, iade sağla."},mukerrer_iade:{result:"green",title:"✅ MÜKERRER İADE",text:"Fazla paketi iade et."},ayliga_gecis:{result:"green",title:"✅ AYLIK GEÇİŞ",text:"Yıllık iptal, aylık tanımla, farkı iade et."},bir_defaya_mahsus:{result:"green",title:"✅ TEK SEFERLİK İADE",text:"Yıllık iade, aylık devam."},islem_tamam:{result:"green",title:"✅ İŞLEM TAMAM",text:"Teklif kabul edildi."}};
         function openWizard(){document.getElementById('wizard-modal').style.display='flex';renderStep('start');}
         function renderStep(k){const s=wizardSteps[k];const b=document.getElementById('wizard-body');let h=`<h2>${s.title||''}</h2>`;if(s.result){let i=s.result==='red'?'🛑':(s.result==='green'?'✅':'⚠️');let c=s.result==='red'?'res-red':(s.result==='green'?'res-green':'res-yellow');h+=`<div class="result-box ${c}"><div style="font-size:3rem;margin-bottom:10px;">${i}</div><h3>${s.title}</h3><p>${s.text}</p>${s.script?`<div class="script-box">${s.script}</div>`:''}</div><button class="restart-btn" onclick="renderStep('start')"><i class="fas fa-redo"></i> Başa Dön</button>`;}else{h+=`<p>${s.text}</p><div class="wizard-options">`;s.options.forEach(o=>{h+=`<button class="option-btn" onclick="renderStep('${o.next}')"><i class="fas fa-chevron-right"></i> ${o.text}</button>`;});h+=`</div>`;if(k!=='start')h+=`<button class="restart-btn" onclick="renderStep('start')" style="background:#eee;color:#333;margin-top:15px;">Geri Dön</button>`;}b.innerHTML=h;}
