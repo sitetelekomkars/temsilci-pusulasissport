@@ -799,7 +799,7 @@
             }
         }
         
-        // --- SPOR DÜZENLEME (GÜNCELLENDİ: BAŞLIK VE GÖRSEL TASARIM) ---
+        // --- SPOR DÜZENLEME ---
         async function editSport(index) {
             event.stopPropagation();
             const s = sportsData[index];
@@ -834,19 +834,16 @@
             });
 
             if (formValues) {
-                // Başlık değiştiyse en son güncelle ki referans kaybolmasın
                 const originalTitle = s.title;
-                
                 if(formValues[1] !== s.desc) sendUpdate(originalTitle, "Text", formValues[1], 'sport');
                 if(formValues[2] !== s.tip) setTimeout(() => sendUpdate(originalTitle, "Tip", formValues[2], 'sport'), 1000);
                 if(formValues[3] !== s.detail) setTimeout(() => sendUpdate(originalTitle, "Detail", formValues[3], 'sport'), 2000);
                 if(formValues[4] !== s.pronunciation) setTimeout(() => sendUpdate(originalTitle, "Pronunciation", formValues[4], 'sport'), 3000);
-                
                 if(formValues[0] !== originalTitle) setTimeout(() => sendUpdate(originalTitle, "Title", formValues[0], 'sport'), 3500);
             }
         }
 
-        // --- SATIŞ SCRİPTİ DÜZENLEME (GÜNCELLENDİ: BAŞLIK EKLENDİ VE GÖRSEL TASARIM) ---
+        // --- SATIŞ SCRİPTİ DÜZENLEME ---
         async function editSales(index) {
             event.stopPropagation(); 
             const s = salesScripts[index];
@@ -872,7 +869,7 @@
             }
         }
 
-        // --- DUYURU DÜZENLEME (GÜNCELLENDİ: BAŞLIK & DURUM EKLENDİ) ---
+        // --- DUYURU DÜZENLEME ---
         async function editNews(index) {
             const i = newsData[index];
             let statusOptions = `<option value="Aktif" ${i.status !== 'Pasif' ? 'selected' : ''}>Aktif</option>
@@ -919,7 +916,6 @@
                 if(formValues[2] !== i.desc) setTimeout(() => sendUpdate(originalTitle, "Text", formValues[2], 'news'), 500);
                 if(formValues[3] !== i.type) setTimeout(() => sendUpdate(originalTitle, "Category", formValues[3], 'news'), 1000);
                 if(formValues[4] !== i.status) setTimeout(() => sendUpdate(originalTitle, "Status", formValues[4], 'news'), 1500);
-                
                 if(formValues[0] !== originalTitle) setTimeout(() => sendUpdate(originalTitle, "Title", formValues[0], 'news'), 2000);
             }
         }
@@ -945,27 +941,13 @@
         function openSales() { document.getElementById('sales-modal').style.display = 'flex'; const c = document.getElementById('sales-grid'); c.innerHTML = ''; salesScripts.forEach((s, index) => { let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="display:block !important; top:10px; right:40px; z-index:50;" onclick="event.stopPropagation(); editSales(${index})"></i>` : ''; c.innerHTML += `<div class="sales-item" id="sales-${index}" onclick="toggleSales('${index}')">${editBtn}<div class="sales-header"><span class="sales-title">${s.title}</span><i class="fas fa-chevron-down" id="icon-${index}" style="color:#10b981;"></i></div><div class="sales-text">${(s.text || '').replace(/\n/g,'<br>')}<div style="text-align:right; margin-top:15px;"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${escapeForJsString(s.text || '')}')"><i class="fas fa-copy"></i> Kopyala</button></div></div></div>`; }); }
         function toggleSales(index) { const item = document.getElementById(`sales-${index}`); const icon = document.getElementById(`icon-${index}`); item.classList.toggle('active'); if(item.classList.contains('active')){ icon.classList.replace('fa-chevron-down', 'fa-chevron-up'); } else { icon.classList.replace('fa-chevron-up', 'fa-chevron-down'); } }
         
-        // --- QUIZ LOGIC (UPDATED FOR LOGGING) ---
-        let currentQuestion=0, score=0; 
-        function openQuiz() { document.getElementById('quiz-modal').style.display='flex'; currentQuestion=0; score=0; if(isAdminMode) { openQuizEditor(); return; } else { showStartScreen(); } }
-        function showStartScreen() { document.getElementById('quiz-body').innerHTML=`<div class="quiz-final"><h3>Hazır mısın?</h3><button class="restart-btn" style="background:var(--quiz);" onclick="showQuestion()">BAŞLA</button></div>`; }
-        function showQuestion() { if(currentQuestion>=quizQuestions.length){showResult();return;} const q=quizQuestions[currentQuestion]; let html=`<div class="quiz-score">Soru: ${currentQuestion+1}</div><div class="quiz-question">${q.q}</div><div class="quiz-options">`; q.opts.forEach((opt,i)=>{ html+=`<button class="quiz-btn-opt" onclick="checkAnswer(this, ${i})">${opt}</button>`; }); html+=`</div>`; document.getElementById('quiz-body').innerHTML=html; }
-        function checkAnswer(btn,i) { const correct=quizQuestions[currentQuestion].a; document.querySelectorAll('.quiz-btn-opt').forEach(b=>b.disabled=true); if(i===correct){ btn.classList.add('correct'); score+=10; Swal.fire({icon:'success',title:'Doğru!',timer:1000,toast:true,position:'top',showConfirmButton:false}); } else{ btn.classList.add('wrong'); Swal.fire({icon:'error',title:'Yanlış!',timer:1000,toast:true,position:'top',showConfirmButton:false}); } setTimeout(()=>{currentQuestion++; showQuestion();},1500); }
-        
-      // --- QUIZ LOGIC (GELİŞMİŞ: RASTGELE 10 SORU) ---
+        // --- QUIZ LOGIC (GELİŞMİŞ: RASTGELE 10 SORU) ---
         let currentQuestion = 0, score = 0;
         let sessionQuestions = []; // O anki oturumun 10 sorusunu tutacak dizi
 
         function openQuiz() { 
             document.getElementById('quiz-modal').style.display = 'flex'; 
-            
-            // Admin ise direkt düzenleyiciyi aç, değilse başlangıç ekranını göster
-            if(isAdminMode) { 
-                openQuizEditor(); 
-                return; 
-            } else { 
-                showStartScreen(); 
-            } 
+            if(isAdminMode) { openQuizEditor(); return; } else { showStartScreen(); } 
         }
 
         function showStartScreen() { 
@@ -978,68 +960,39 @@
             `; 
         }
 
-        // Yeni Oturum Başlatma (Karıştırma ve Seçme İşlemi Burada)
         function startQuizSession() {
-            currentQuestion = 0;
-            score = 0;
-            
-            // 1. Tüm soruları kopyala (Orijinal sıralama bozulmasın diye)
+            currentQuestion = 0; score = 0;
+            // 1. Tüm soruları kopyala
             let allQuestions = [...quizQuestions];
-            
-            // 2. Soruları Karıştır (Shuffle)
+            // 2. Karıştır
             allQuestions.sort(() => Math.random() - 0.5);
-            
-            // 3. İlk 10 tanesini al (Eğer soru sayısı 10'dan azsa hepsini alır)
+            // 3. İlk 10 taneyi al
             sessionQuestions = allQuestions.slice(0, 10);
-            
-            // 4. İlk soruyu göster
             showQuestion();
         }
 
         function showQuestion() { 
-            // sessionQuestions üzerinden kontrol ediyoruz
-            if(currentQuestion >= sessionQuestions.length) { 
-                showResult(); 
-                return; 
-            } 
-            
+            if(currentQuestion >= sessionQuestions.length) { showResult(); return; } 
             const q = sessionQuestions[currentQuestion]; 
-            
-            let html = `
-                <div class="quiz-score">Soru: ${currentQuestion + 1} / ${sessionQuestions.length}</div>
-                <div class="quiz-question">${q.q}</div>
-                <div class="quiz-options">
-            `; 
-            
-            q.opts.forEach((opt, i) => { 
-                html += `<button class="quiz-btn-opt" onclick="checkAnswer(this, ${i})">${opt}</button>`; 
-            }); 
-            
+            let html = `<div class="quiz-score">Soru: ${currentQuestion + 1} / ${sessionQuestions.length}</div><div class="quiz-question">${q.q}</div><div class="quiz-options">`; 
+            q.opts.forEach((opt, i) => { html += `<button class="quiz-btn-opt" onclick="checkAnswer(this, ${i})">${opt}</button>`; }); 
             html += `</div>`; 
             document.getElementById('quiz-body').innerHTML = html; 
         }
 
         function checkAnswer(btn, i) { 
-            // Cevabı sessionQuestions içinden kontrol et
             const correct = sessionQuestions[currentQuestion].a; 
-            
             document.querySelectorAll('.quiz-btn-opt').forEach(b => b.disabled = true); 
-            
             if(i === correct) { 
-                btn.classList.add('correct'); 
-                score += 10; 
+                btn.classList.add('correct'); score += 10; 
                 Swal.fire({icon:'success', title:'Doğru!', timer:1000, toast:true, position:'top', showConfirmButton:false}); 
             } else { 
                 btn.classList.add('wrong'); 
                 Swal.fire({icon:'error', title:'Yanlış!', timer:1000, toast:true, position:'top', showConfirmButton:false}); 
             } 
-            
-            setTimeout(() => { 
-                currentQuestion++; 
-                showQuestion(); 
-            }, 1500); 
+            setTimeout(() => { currentQuestion++; showQuestion(); }, 1500); 
         }
-
+        
         function showResult() {
             document.getElementById('quiz-body').innerHTML = `
                 <div class="quiz-final">
@@ -1052,24 +1005,17 @@
             `;
 
             fetch(SCRIPT_URL, {
-                method: 'POST',
-                headers: { "Content-Type": "text/plain;charset=utf-8" },
+                method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
                 body: JSON.stringify({
-                    action: "logQuiz",
-                    username: currentUser,
-                    token: getToken(),
-                    score: score,
-                    total: sessionQuestions.length // Sadece sorulan soru sayısını (10) gönder
+                    action: "logQuiz", username: currentUser, token: getToken(),
+                    score: score, total: sessionQuestions.length 
                 })
             })
             .then(response => response.json())
             .then(data => {
                 const statusEl = document.getElementById('quiz-save-status');
-                if (data.result === "success") {
-                    statusEl.innerHTML = '<span style="color:green; font-weight:bold;"><i class="fas fa-check"></i> Skor başarıyla kaydedildi!</span>';
-                } else {
-                    statusEl.innerHTML = '<span style="color:red;">Kayıt sırasında hata oluştu.</span>';
-                }
+                if (data.result === "success") { statusEl.innerHTML = '<span style="color:green; font-weight:bold;"><i class="fas fa-check"></i> Skor başarıyla kaydedildi!</span>'; } 
+                else { statusEl.innerHTML = '<span style="color:red;">Kayıt sırasında hata oluştu.</span>'; }
             })
             .catch(error => {
                 console.error("Quiz Log Hatası:", error);
@@ -1077,17 +1023,11 @@
             });
         }
         
-        // Admin Paneli İçin (Burada orijinal 'quizQuestions' kullanıyoruz ki admin tüm listeyi görüp düzenleyebilsin)
-        function openQuizEditor() { 
-            let html = '<div style="text-align:left; max-height:400px; overflow-y:auto;">'; 
-            quizQuestions.forEach((q, i) => { 
-                const safeQ = cleanData(q.q); 
-                html += `<div style="border-bottom:1px solid #eee; padding:10px; cursor:pointer;" onclick="editQuizQuestion(${i})"><b>${i+1}. ${safeQ}</b><br><span style="font-size:0.8rem; color:#fabb00;"><i class="fas fa-pencil-alt"></i> Düzenle</span></div>`; 
-            }); 
-            html += '</div>'; 
-            Swal.fire({ title: 'Soruları Düzenle', html: html, showConfirmButton: false, showCloseButton: true }); 
-        }
+        function openQuizEditor() { let html = '<div style="text-align:left; max-height:400px; overflow-y:auto;">'; quizQuestions.forEach((q, i) => { const safeQ = cleanData(q.q); html += `<div style="border-bottom:1px solid #eee; padding:10px; cursor:pointer;" onclick="editQuizQuestion(${i})"><b>${i+1}. ${safeQ}</b><br><span style="font-size:0.8rem; color:#fabb00;"><i class="fas fa-pencil-alt"></i> Düzenle</span></div>`; }); html += '</div>'; Swal.fire({ title: 'Soruları Düzenle', html: html, showConfirmButton: false, showCloseButton: true }); }
+        
+        const wizardSteps={ start:{title:"İade Talebi Analizi",text:"Lütfen müşterinin durumunu seçiniz:",options:[ {text:"İçerik İzlemiş / Kullanım Var",next:"izleme_var"}, {text:"Aylık Paket (İzleme YOK)",next:"aylik_izleme_yok"}, {text:"Yıllık Paket (İzleme YOK)",next:"yillik_izleme_yok"}, {text:"Mükerrer (Çift) Çekim",next:"mukerrer"}, {text:"Aynı Gün Yanlışlıkla Yıllık Alım",next:"ayni_gun_yillik"}, {text:"Apple / Google Store İptali",next:"store_iptal"}, {text:"Winback Paket Geçiş İadesi",next:"winback_iade"} ]}, izleme_var:{result:"red",title:"❌ İADE REDDEDİLİR",text:"İçerik izlenmişse (genel arıza hariç) iade yapılmaz.",script:"Hizmetimizden aktif olarak faydalandığınız için iade prosedürlerimiz gereği talebinize olumlu yanıt veremiyoruz."}, aylik_izleme_yok:{title:"Aylık Paket - İzleme Yok",text:"THH tehdidi var mı?",options:[{text:"Evet/Israrcı",next:"aylik_teklif"},{text:"Hayır",next:"izleme_var"}]}, aylik_teklif:{title:"İndirim Teklifi",text:"Önce 6AY50 ile indirim teklif et.",options:[{text:"İndirimi Kabul Etti",next:"indirim_kabul"},{text:"Reddetti (Tam İade)",next:"tam_iade"}]}, yillik_izleme_yok:{title:"Yıllık Paket",text:"Paket kampanyalı mıydı?",options:[{text:"Hayır (Standart)",next:"yillik_standart"},{text:"Evet (Kampanyalı)",next:"yillik_kampanyali"}]}, yillik_standart:{title:"Standart Yıllık",text:"Sırasıyla: 1. YILLIKLOCA İndirimi, 2. Aylığa Geçiş öner.",options:[{text:"Teklifi Kabul Etti",next:"islem_tamam"},{text:"Hepsini Reddetti (Tam İade)",next:"tam_iade"}]}, yillik_kampanyali:{title:"Kampanyalı Yıllık",text:"Sadece Aylığa Geçiş önerilebilir.",options:[{text:"Aylığa Geçişi Kabul Etti",next:"ayliga_gecis"},{text:"Reddetti (Tam İade)",next:"tam_iade"}]}, mukerrer:{title:"Mükerrer Çekim",text:"15 gün içinde ve Aynı Cihaz/IP mi?",options:[{text:"Evet",next:"mukerrer_iade"},{text:"Hayır",next:"izleme_var"}]}, ayni_gun_yillik:{title:"Aynı Gün Yıllık",text:"24 saat içinde mi?",options:[{text:"Evet",next:"bir_defaya_mahsus"},{text:"Hayır",next:"izleme_var"}]}, store_iptal:{result:"red",title:"❌ BİZ İPTAL EDEMEYİZ",text:"Apple/Google alımları telefondan yapılmalı."}, winback_iade:{result:"yellow",title:"⚠️ SADECE 2. PAKET İADE",text:"Sadece son alınan indirimli paket iade edilebilir."}, indirim_kabul:{result:"green",title:"✅ İNDİRİM TANIMLA",text:"139.5 TL iade yapıldı."}, tam_iade:{result:"green",title:"✅ TAM İADE YAP",text:"Teklifler reddedildi, iade sağla."}, mukerrer_iade:{result:"green",title:"✅ MÜKERRER İADE",text:"Fazla paketi iade et."}, ayliga_gecis:{result:"green",title:"✅ AYLIK GEÇİŞ",text:"Yıllık iptal, aylık tanımla, farkı iade et."}, bir_defaya_mahsus:{result:"green",title:"✅ TEK SEFERLİK İADE",text:"Yıllık iade, aylık devam."}, islem_tamam:{result:"green",title:"✅ İŞLEM TAMAM",text:"Teklif kabul edildi."} };
+        function openWizard(){ document.getElementById('wizard-modal').style.display='flex'; renderStep('start'); }
+        function renderStep(k){ const s=wizardSteps[k]; const b=document.getElementById('wizard-body'); let h=`<h2>${s.title||''}</h2>`; if(s.result){ let i=s.result==='red'?'🛑':(s.result==='green'?'✅':'⚠️'); let c=s.result==='red'?'res-red':(s.result==='green'?'res-green':'res-yellow'); h+=`<div class="result-box ${c}"><div style="font-size:3rem;margin-bottom:10px;">${i}</div><h3>${s.title}</h3><p>${s.text}</p>${s.script?`<div class="script-box">${s.script}</div>`:''}</div><button class="restart-btn" onclick="renderStep('start')"><i class="fas fa-redo"></i> Başa Dön</button>`; }else{ h+=`<p>${s.text}</p><div class="wizard-options">`; s.options.forEach(o=>{ h+=`<button class="option-btn" onclick="renderStep('${o.next}')"><i class="fas fa-chevron-right"></i> ${o.text}</button>`; }); h+=`</div>`; if(k!=='start')h+=`<button class="restart-btn" onclick="renderStep('start')" style="background:#eee;color:#333;margin-top:15px;">Geri Dön</button>`; } b.innerHTML=h; }
     </script>
 </body>
 </html>
-
