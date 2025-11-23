@@ -648,56 +648,102 @@
         // ----- DÜZENLEME POPUP'LARI -----
 
         async function editContent(index) {
-            const item = activeCards[index]; 
-            const { value: formValues } = await Swal.fire({
-                title: 'İçeriği Düzenle',
-                html: `
-                    <div style="display:flex; gap:15px; margin-bottom: 15px;">
-                        <div style="flex:1;">
-                            <label style="font-weight:bold; font-size:0.9rem; display:block; margin-bottom:3px;">Kategori</label>
-                            ${getCategorySelectHtml(item.category, 'swal-cat')}
-                        </div>
-                        <div style="flex:2;">
-                            <label style="font-weight:bold; font-size:0.9rem; display:block; margin-bottom:3px;">Başlık</label>
-                            <input id="swal-title" class="swal2-input" style="width:100%;" value="${item.title}">
-                        </div>
-                    </div>
-                    <label style="font-weight:bold; font-size:0.9rem; display:block; margin-bottom:3px;">Metin</label>
-                    <textarea id="swal-text" class="swal2-textarea" style="height: 120px;">${(item.text || '').toString().replace(/<br>/g,'\n')}</textarea>
-                    <label style="font-weight:bold; font-size:0.9rem; display:block; margin-top:15px; margin-bottom:3px;">Script</label>
-                    <textarea id="swal-script" class="swal2-textarea" style="height: 100px;">${(item.script || '').toString().replace(/<br>/g,'\n')}</textarea>
-                    <div style="display:flex; gap:15px; margin-top:15px;">
-                        <div style="flex:1;">
-                            <label style="font-weight:bold; font-size:0.9rem; display:block; margin-bottom:3px;">Kod</label>
-                            <input id="swal-code" class="swal2-input" style="width:100%;" value="${item.code || ''}">
-                        </div>
-                        <div style="flex:1;">
-                            <label style="font-weight:bold; font-size:0.9rem; display:block; margin-bottom:3px;">Link</label>
-                            <input id="swal-link" class="swal2-input" style="width:100%;" value="${item.link || ''}">
-                        </div>
-                    </div>`,
-                width: '700px', showCancelButton: true, confirmButtonText: 'Kaydet',
-                preConfirm: () => {
-                    return {
-                        cat: document.getElementById('swal-cat').value,
-                        title: document.getElementById('swal-title').value,
-                        text: document.getElementById('swal-text').value,
-                        script: document.getElementById('swal-script').value,
-                        code: document.getElementById('swal-code').value,
-                        link: document.getElementById('swal-link').value
-                    }
-                }
-            });
+    const item = activeCards[index]; 
+    
+    // Mevcut kategoriyi seçili getiren dropdown HTML'i
+    const catSelectHTML = getCategorySelectHtml(item.category, 'swal-cat');
 
-            if (formValues) {
-                if(formValues.cat !== item.category) sendUpdate(item.title, "Category", formValues.cat, 'card');
-                if(formValues.text !== item.text) setTimeout(() => sendUpdate(item.title, "Text", formValues.text, 'card'), 500);
-                if(formValues.script !== item.script) setTimeout(() => sendUpdate(item.title, "Script", formValues.script, 'card'), 1000);
-                if(formValues.code !== (item.code || '')) setTimeout(() => sendUpdate(item.title, "Code", formValues.code, 'card'), 1500);
-                if(formValues.link !== (item.link || '')) setTimeout(() => sendUpdate(item.title, "Link", formValues.link, 'card'), 2000);
-                if(formValues.title !== item.title) setTimeout(() => sendUpdate(item.title, "Title", formValues.title, 'card'), 2500);
+    const { value: formValues } = await Swal.fire({
+        title: 'Kartı Düzenle',
+        // HTML yapısı "Kart Ekle" ile aynı, tek fark "value" değerlerinin dolu gelmesi
+        html: `
+            <div id="preview-card-edit" class="card ${item.category}" style="text-align:left; box-shadow:none; border:1px solid #e0e0e0; margin-top:10px;">
+                
+                <div class="card-header" style="align-items: center; gap: 10px;">
+                    <input id="swal-title" class="swal2-input" 
+                        style="margin:0; height:40px; flex-grow:1; border:none; border-bottom:2px solid #eee; padding:0 5px; font-weight:bold; color:#0e1b42;" 
+                        value="${item.title}" placeholder="Başlık">
+                    
+                    <div style="width: 110px;">
+                        ${catSelectHTML}
+                    </div>
+                </div>
+
+                <div class="card-content" style="margin-bottom:10px;">
+                    <textarea id="swal-text" class="swal2-textarea" 
+                        style="margin:0; width:100%; box-sizing:border-box; border:none; resize:none; font-family:inherit; min-height:120px; padding:10px; background:#f9f9f9;" 
+                        placeholder="İçerik metni...">${(item.text || '').toString().replace(/<br>/g,'\n')}</textarea>
+                </div>
+
+                <div class="script-box" style="padding:0; border:1px solid #f0e68c;">
+                    <textarea id="swal-script" class="swal2-textarea" 
+                        style="margin:0; width:100%; box-sizing:border-box; border:none; background:transparent; font-style:italic; min-height:80px; font-size:0.9rem;" 
+                        placeholder="Script metni...">${(item.script || '').toString().replace(/<br>/g,'\n')}</textarea>
+                </div>
+
+                <div class="card-actions" style="margin-top:15px; display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+                    <div style="position:relative;">
+                        <i class="fas fa-code" style="position:absolute; left:10px; top:10px; color:#aaa;"></i>
+                        <input id="swal-code" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" value="${item.code || ''}" placeholder="Kod">
+                    </div>
+                    <div style="position:relative;">
+                        <i class="fas fa-link" style="position:absolute; left:10px; top:10px; color:#aaa;"></i>
+                        <input id="swal-link" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" value="${item.link || ''}" placeholder="Link">
+                    </div>
+                </div>
+            </div>
+        `,
+        width: '700px',
+        showCancelButton: true,
+        confirmButtonText: '<i class="fas fa-save"></i> Değişiklikleri Kaydet',
+        cancelButtonText: 'İptal',
+        focusConfirm: false,
+        
+        // Popup açıldığında çalışacak kodlar (Renk değişimi için)
+        didOpen: () => {
+            const selectEl = document.getElementById('swal-cat');
+            const cardEl = document.getElementById('preview-card-edit');
+            
+            // Dropdown stil ayarı
+            selectEl.style.margin = "0";
+            selectEl.style.height = "30px";
+            selectEl.style.fontSize = "0.8rem";
+            selectEl.style.padding = "0 5px";
+
+            // Kategori değişince kartın rengini (sınıfını) değiştir
+            selectEl.addEventListener('change', function() {
+                // 'card' sınıfını koruyup, yanına yeni kategori ismini ekliyoruz
+                cardEl.className = 'card ' + this.value;
+            });
+        },
+        
+        preConfirm: () => {
+            return {
+                cat: document.getElementById('swal-cat').value,
+                title: document.getElementById('swal-title').value,
+                text: document.getElementById('swal-text').value,
+                script: document.getElementById('swal-script').value,
+                code: document.getElementById('swal-code').value,
+                link: document.getElementById('swal-link').value
             }
         }
+    });
+
+    // Kaydetme Mantığı (Eskisiyle aynı, sadece değişken adlarını kontrol ediyoruz)
+    if (formValues) {
+        // Değişiklik var mı kontrolü ve sırayla gönderim
+        if(formValues.cat !== item.category) sendUpdate(item.title, "Category", formValues.cat, 'card');
+        
+        // Diğer alanlarda değişiklik varsa gönder (Zamanlayıcı ile çakışmayı önle)
+        if(formValues.text !== (item.text || '').replace(/<br>/g,'\n')) setTimeout(() => sendUpdate(item.title, "Text", formValues.text, 'card'), 500);
+        if(formValues.script !== (item.script || '').replace(/<br>/g,'\n')) setTimeout(() => sendUpdate(item.title, "Script", formValues.script, 'card'), 1000);
+        if(formValues.code !== (item.code || '')) setTimeout(() => sendUpdate(item.title, "Code", formValues.code, 'card'), 1500);
+        if(formValues.link !== (item.link || '')) setTimeout(() => sendUpdate(item.title, "Link", formValues.link, 'card'), 2000);
+        
+        // Başlık değiştiyse en son gönder (Çünkü referans anahtarımız başlık)
+        if(formValues.title !== item.title) setTimeout(() => sendUpdate(item.title, "Title", formValues.title, 'card'), 2500);
+    }
+}
 
       async function addNewCardPopup() {
     // Kategori seçimi için HTML'i alalım ama stilini özelleştireceğiz
@@ -983,6 +1029,7 @@
     </script>
 </body>
 </html>
+
 
 
 
