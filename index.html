@@ -131,10 +131,10 @@
             animation: slideIn 0.5s ease-out; 
         }
 
-        /* Cards */
+        /* Cards - GÜNCELLENDİ (Height Equalization) */
         .container { padding: 20px; max-width: 1600px; margin: 0 auto; }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
-        .card { background: var(--card-bg); border-radius: 8px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border-left: 5px solid var(--info); display: flex; flex-direction: column; transition: transform 0.2s; position: relative; }
+        .card { background: var(--card-bg); border-radius: 8px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border-left: 5px solid var(--info); display: flex; flex-direction: column; transition: transform 0.2s; position: relative; height: 100%; /* Kart yüksekliğini eşitle */ }
         .card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         .card.Teknik { border-left-color: var(--primary); } .card.İkna { border-left-color: var(--accent); } .card.Kampanya { border-left-color: var(--success); } .card.Bilgi { border-left-color: var(--info); }
         
@@ -150,8 +150,26 @@
         .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; padding-right: 40px; }
         .card-title { font-weight: 700; font-size: 1.1rem; margin: 0; color: #0e1b42; line-height: 1.4; }
         .badge { font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: #eee; text-transform: uppercase; font-weight: 600; color: #555; }
-        .card-content { font-size: 0.95rem; color: #555; margin-bottom: 15px; line-height: 1.5; flex-grow: 1; cursor: pointer; }
-        .card-text-truncate { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        
+        /* Card Content - GÜNCELLENDİ (Scroll & Max Height) */
+        .card-content { 
+            font-size: 0.95rem; 
+            color: #555; 
+            margin-bottom: 15px; 
+            line-height: 1.5; 
+            /* flex-grow kaldırıldı, yerine sabit yükseklik sınırı geldi */
+            cursor: pointer;
+            max-height: 150px; /* Metin alanı için maksimum yükseklik */
+            overflow-y: auto;  /* Metin uzunsa dikey scroll çubuğu çıkar */
+            padding-right: 5px;
+        }
+        /* Scrollbar Styling */
+        .card-content::-webkit-scrollbar { width: 4px; }
+        .card-content::-webkit-scrollbar-track { background: #f1f1f1; }
+        .card-content::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+        .card-content::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+        /*.card-text-truncate { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }*/ /* ARTIK GEREKSİZ */
         .script-box { background: #fffdeb; border: 1px solid #f0e68c; padding: 12px; border-radius: 4px; font-style: italic; color: #444; margin-top: auto; position: relative; font-size: 0.92rem; }
         .card-actions { margin-top: 12px; display: flex; justify-content: flex-end; gap: 8px; }
         .btn { padding: 6px 12px; border-radius: 4px; cursor: pointer; border: none; font-weight: 600; font-size: 0.85rem; display: flex; align-items: center; gap: 5px; }
@@ -525,6 +543,7 @@
             });
         }
 
+        // --- KARTLARI RENDER ETME (GÜNCELLENDİ: Kalın Yazı Desteği) ---
         function renderCards(data) { 
             activeCards = data; const container = document.getElementById('cardGrid'); container.innerHTML = ''; 
             if(data.length === 0) { container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Kayıt Yok / Bulunamadı</div>'; return; } 
@@ -534,6 +553,12 @@
                 const favClass = isFavorite ? 'fas fa-star active' : 'far fa-star';
                 const newBadge = isNew(item.date) ? '<span class="new-badge">YENİ</span>' : '';
                 
+                // GÜNCELLEME: Metindeki **işaretlerini** kalın yazıya (<b>) çevir
+                let rawText = item.text || "";
+                let boldedText = rawText.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+                // Kalınlaştırılmış metni vurgulama fonksiyonuna gönder
+                let finalContentText = highlightText(boldedText);
+
                 let html = `
                 <div class="card ${item.category}">
                     ${newBadge}
@@ -542,10 +567,11 @@
                         <i class="${favClass} fav-icon" onclick="toggleFavorite('${safeTitle}')"></i>
                     </div>
                     <div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div>
+                    
                     <div class="card-content" onclick="showCardDetail('${safeTitle}', '${escapeForJsString(item.text)}')">
-                        <div class="card-text-truncate">${highlightText(item.text)}</div>
-                        <div style="font-size:0.8rem; color:#999; margin-top:5px; text-align:right;">(Tamamını oku)</div>
+                        ${finalContentText}
                     </div>
+
                     <div class="script-box">${highlightText(item.script)}</div>
                     <div class="card-actions">
                         <button class="btn btn-copy" onclick="copyText('${escapeForJsString(item.script)}')"><i class="fas fa-copy"></i> Kopyala</button>
@@ -561,6 +587,7 @@
             if (!htmlContent) return "";
             const searchTerm = document.getElementById('searchInput').value.trim();
             if (!searchTerm) return htmlContent;
+            // Sadece HTML taglarının dışındaki metni vurgula (<b> taglarını bozmamak için önemli)
             const regex = new RegExp(`(${searchTerm})(?![^<]*>|[^<>]*<\/)`, "gi");
             return htmlContent.replace(regex, '<span class="highlight">$1</span>');
         }
