@@ -48,7 +48,6 @@
         /* --- YENİ KURUMSAL BUTON TASARIMI --- */
         .filter-container { display: flex; gap: 8px; flex-wrap: wrap; }
         
-        /* Tüm Butonlar İçin Ortak Stil (Sadeleştirildi) */
         .filter-btn { 
             background-color: rgba(255, 255, 255, 0.05); 
             border: 1px solid rgba(255, 255, 255, 0.15); 
@@ -66,7 +65,6 @@
             letter-spacing: 0.5px;
         }
         
-        /* Hover ve Active Durumu (S Sport Sarısı) */
         .filter-btn:hover, .filter-btn.active { 
             background-color: #fabb00; 
             color: #0e1b42; 
@@ -77,13 +75,10 @@
         }
 
         /* Özel Buton Ayrıştırmaları */
-        .btn-fav { border-color: #fabb00; color: #fabb00; } /* Favori butonu sarı çerçeveli */
+        .btn-fav { border-color: #fabb00; color: #fabb00; }
         .btn-fav:hover, .btn-fav.active { color: #0e1b42; }
 
-        .btn-shift { border-left: 3px solid #00bcd4; } /* Vardiya butonu mavi çizgili */
-        .btn-shift:hover { border-color: #00bcd4; background-color: #00bcd4; color: white; }
-
-        /* Eski renk sınıflarını eziyoruz (Artık hepsi tek tip) */
+        /* Eski renk sınıflarını eziyoruz */
         .btn-all, .btn-tech, .btn-ikna, .btn-camp, .btn-info, .btn-stream, .guide-btn, .wizard-btn, .sales-btn, .quiz-btn {
             background-color: rgba(255, 255, 255, 0.05);
         }
@@ -92,7 +87,7 @@
         .news-ticker-box { 
             background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            border-left: 5px solid #fabb00; /* Sol taraf S Sport Sarısı */
+            border-left: 5px solid #fabb00; 
             border-radius: 6px; 
             padding: 15px; 
             height: 85px; 
@@ -122,7 +117,6 @@
             gap: 8px;
         }
         
-        /* Dikkat Çeken Yanıp Sönen Nokta */
         .ticker-label i { 
             font-size: 10px; 
             color: #fabb00;
@@ -208,13 +202,12 @@
         .restart-btn { margin-top: 20px; background: #555; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
         .highlight { background-color: yellow; font-weight: bold; }
         .crafted-by-badge { position: fixed; bottom: 10px; right: 15px; font-family: 'Segoe UI', sans-serif; font-size: 0.75rem; color: #0e1b42; opacity: 0.35; z-index: 9999; pointer-events: none; user-select: none; font-style: italic; letter-spacing: 0.5px; font-weight: 600; text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
-        
         @keyframes blink { 50% { opacity: 0.5; } }
         @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         
-        /* Yeni Yoğun Pulse Animasyonu (Duyuru İçin) */
+        /* Yeni Yoğun Pulse Animasyonu */
         @keyframes intense-pulse {
             0% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 187, 0, 0.7); }
             70% { transform: scale(1.2); box-shadow: 0 0 0 10px rgba(250, 187, 0, 0); }
@@ -281,10 +274,6 @@
                         <button class="filter-btn wizard-btn" onclick="openWizard()">⚖️ İade Asistanı</button>
                         <button class="filter-btn sales-btn" onclick="openSales()">📞 TeleSatış</button>
                         <button class="filter-btn quiz-btn" onclick="openQuiz()">🎮 Yarışma</button>
-                        
-                        <button class="filter-btn btn-shift" onclick="openShiftModal()">
-                            <i class="fas fa-user-clock"></i> Vardiya Planı
-                        </button>
                     </div>
                 </div>
                 <div class="right-panel">
@@ -346,28 +335,14 @@
         </div>
     </div>
 
-    <div id="shift-modal" class="modal-overlay">
-        <div class="modal-content" style="width:95%; max-width:1200px; height:85vh; display:flex; flex-direction:column;">
-            <span class="close-modal" onclick="closeModal('shift-modal')">&times;</span>
-            <h2 style="text-align:center; color:#546e7a; margin-bottom:10px;">📅 Vardiya Planı</h2>
-            <div id="shift-container" style="flex-grow:1; background:#fff; border:1px solid #eee; border-radius:8px; overflow:hidden;">
-                <iframe id="shift-frame" src="" style="width:100%; height:100%; border:none;"></iframe>
-            </div>
-        </div>
-    </div>
-
     <div class="crafted-by-badge">Crafted by Doğuş Yalçınkaya</div>
 
     <script>
         const BAKIM_MODU = false; 
         const DATA_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?gid=0&single=true&output=csv";
         
-        // --- AYARLAR ---
-        // 1. BURAYA KENDİ SCRIPT LİNKİNİ YAPIŞTIR
+        // --- BURAYA KENDİ SCRIPT LİNKİNİ YAPIŞTIR ---
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec"; 
-        
-        // 2. BURAYA "WEB'DE YAYINLA" LİNKİNİ YAPIŞTIR (Vardiya Planı için)
-        const SHIFT_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTSHNnfTo5IuJ-qt2VVd9HX_ZZPG9amOZehYwZAWLdguILjJ1QqsDT9KLliWhMd4pEyrdRnk6xtXy5p/pubhtml?widget=true&headers=false"; 
         
         const VALID_CATEGORIES = ['Teknik', 'İkna', 'Kampanya', 'Bilgi'];
         let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [];
@@ -376,13 +351,6 @@
         let currentCategory = 'all';
 
         function getToken() { return localStorage.getItem("sSportToken"); }
-
-        // --- VARDIYA POPUP AÇMA ---
-        function openShiftModal() {
-            document.getElementById('shift-modal').style.display = 'flex';
-            const iframe = document.getElementById('shift-frame');
-            if(!iframe.src) { iframe.src = SHIFT_SHEET_URL; }
-        }
 
         // --- FAVORİ SİSTEMİ ---
         function getFavs() { return JSON.parse(localStorage.getItem('sSportFavs') || '[]'); }
@@ -633,6 +601,7 @@
             } else {
                 btn.classList.remove('active'); btn.innerHTML = '<i class="fas fa-pencil-alt"></i> Düzenlemeyi Aç';
             }
+            // Mod değişince ekranı yenile
             if (currentCategory === 'fav') filterCategory(document.querySelector('.btn-fav'), 'fav');
             else renderCards(activeCards.length > 0 ? activeCards : database);
             
@@ -654,7 +623,7 @@
             .catch(err => Swal.fire('Hata', 'Güncelleme hatası: ' + err, 'error'));
         }
 
-        // --- YENİ KART EKLEME (ÖNİZLEMELİ) ---
+        // --- GELİŞMİŞ "İÇERİK EKLE" PANELİ ---
         async function addNewCardPopup() {
             const catSelectHTML = getCategorySelectHtml('Bilgi', 'swal-new-cat');
             const { value: formValues } = await Swal.fire({
@@ -859,6 +828,6 @@
         const wizardSteps={ start:{title:"İade Talebi Analizi",text:"Lütfen müşterinin durumunu seçiniz:",options:[ {text:"İçerik İzlemiş / Kullanım Var",next:"izleme_var"}, {text:"Aylık Paket (İzleme YOK)",next:"aylik_izleme_yok"}, {text:"Yıllık Paket (İzleme YOK)",next:"yillik_izleme_yok"}, {text:"Mükerrer (Çift) Çekim",next:"mukerrer"}, {text:"Aynı Gün Yanlışlıkla Yıllık Alım",next:"ayni_gun_yillik"}, {text:"Apple / Google Store İptali",next:"store_iptal"}, {text:"Winback Paket Geçiş İadesi",next:"winback_iade"} ]}, izleme_var:{result:"red",title:"❌ İADE REDDEDİLİR",text:"İçerik izlenmişse (genel arıza hariç) iade yapılmaz.",script:"Hizmetimizden aktif olarak faydalandığınız için iade prosedürlerimiz gereği talebinize olumlu yanıt veremiyoruz."}, aylik_izleme_yok:{title:"Aylık Paket - İzleme Yok",text:"THH tehdidi var mı?",options:[{text:"Evet/Israrcı",next:"aylik_teklif"},{text:"Hayır",next:"izleme_var"}]}, aylik_teklif:{title:"İndirim Teklifi",text:"Önce 6AY50 ile indirim teklif et.",options:[{text:"İndirimi Kabul Etti",next:"indirim_kabul"},{text:"Reddetti (Tam İade)",next:"tam_iade"}]}, yillik_izleme_yok:{title:"Yıllık Paket",text:"Paket kampanyalı mıydı?",options:[{text:"Hayır (Standart)",next:"yillik_standart"},{text:"Evet (Kampanyalı)",next:"yillik_kampanyali"}]}, yillik_standart:{title:"Standart Yıllık",text:"Sırasıyla: 1. YILLIKLOCA İndirimi, 2. Aylığa Geçiş öner.",options:[{text:"Teklifi Kabul Etti",next:"islem_tamam"},{text:"Hepsini Reddetti (Tam İade)",next:"tam_iade"}]}, yillik_kampanyali:{title:"Kampanyalı Yıllık",text:"Sadece Aylığa Geçiş önerilebilir.",options:[{text:"Aylığa Geçişi Kabul Etti",next:"ayliga_gecis"},{text:"Reddetti (Tam İade)",next:"tam_iade"}]}, mukerrer:{title:"Mükerrer Çekim",text:"15 gün içinde ve Aynı Cihaz/IP mi?",options:[{text:"Evet",next:"mukerrer_iade"},{text:"Hayır",next:"izleme_var"}]}, ayni_gun_yillik:{title:"Aynı Gün Yıllık",text:"24 saat içinde mi?",options:[{text:"Evet",next:"bir_defaya_mahsus"},{text:"Hayır",next:"izleme_var"}]}, store_iptal:{result:"red",title:"❌ BİZ İPTAL EDEMEYİZ",text:"Apple/Google alımları telefondan yapılmalı."}, winback_iade:{result:"yellow",title:"⚠️ SADECE 2. PAKET İADE",text:"Sadece son alınan indirimli paket iade edilebilir."}, indirim_kabul:{result:"green",title:"✅ İNDİRİM TANIMLA",text:"139.5 TL iade yapıldı."}, tam_iade:{result:"green",title:"✅ TAM İADE YAP",text:"Teklifler reddedildi, iade sağla."}, mukerrer_iade:{result:"green",title:"✅ MÜKERRER İADE",text:"Fazla paketi iade et."}, ayliga_gecis:{result:"green",title:"✅ AYLIK GEÇİŞ",text:"Yıllık iptal, aylık tanımla, farkı iade et."}, bir_defaya_mahsus:{result:"green",title:"✅ TEK SEFERLİK İADE",text:"Yıllık iade, aylık devam."}, islem_tamam:{result:"green",title:"✅ İŞLEM TAMAM",text:"Teklif kabul edildi."} };
         function openWizard(){ document.getElementById('wizard-modal').style.display='flex'; renderStep('start'); }
         function renderStep(k){ const s=wizardSteps[k]; const b=document.getElementById('wizard-body'); let h=`<h2>${s.title||''}</h2>`; if(s.result){ let i=s.result==='red'?'🛑':(s.result==='green'?'✅':'⚠️'); let c=s.result==='red'?'res-red':(s.result==='green'?'res-green':'res-yellow'); h+=`<div class="result-box ${c}"><div style="font-size:3rem;margin-bottom:10px;">${i}</div><h3>${s.title}</h3><p>${s.text}</p>${s.script?`<div class="script-box">${s.script}</div>`:''}</div><button class="restart-btn" onclick="renderStep('start')"><i class="fas fa-redo"></i> Başa Dön</button>`; }else{ h+=`<p>${s.text}</p><div class="wizard-options">`; s.options.forEach(o=>{ h+=`<button class="option-btn" onclick="renderStep('${o.next}')"><i class="fas fa-chevron-right"></i> ${o.text}</button>`; }); h+=`</div>`; if(k!=='start')h+=`<button class="restart-btn" onclick="renderStep('start')" style="background:#eee;color:#333;margin-top:15px;">Geri Dön</button>`; } b.innerHTML=h; }
-    </script>
+    </script>
 </body>
 </html>
