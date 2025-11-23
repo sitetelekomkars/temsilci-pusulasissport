@@ -52,7 +52,7 @@
         .btn-all { background: #333; } .btn-tech { background: #0e1b42; } .btn-ikna { background: #e65100; } .btn-camp { background: #2e7d32; } .btn-info { background: #0277bd; } .btn-stream { background: #4a148c; } .guide-btn { background: #01579b; } .wizard-btn { background: #c62828; } .sales-btn { background: #00796b; } .quiz-btn { background: #7b1fa2; }
         .btn-fav { background: #fabb00; color: #0e1b42; font-weight:800; border:1px solid #e6ac00; }
         .btn-fav:hover { background: #ffc107; transform: translateY(-2px); }
-        .btn-shift { background: #546e7a; } /* Vardiya Butonu Rengi */
+        .btn-shift { background: #546e7a; } /* Vardiya Butonu */
 
         /* Ticker */
         .news-ticker-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 15px; height: 85px; position: relative; cursor: pointer; overflow: hidden; backdrop-filter: blur(5px); transition: 0.3s; display: flex; flex-direction: column; justify-content: center; }
@@ -193,9 +193,9 @@
                         <button class="filter-btn sales-btn" onclick="openSales()">📞 TeleSatış</button>
                         <button class="filter-btn quiz-btn" onclick="openQuiz()">🎮 Yarışma</button>
                         
-                        <a href="BURAYA_GOOGLE_DOCS_LINKINI_YAPISTIR" target="_blank" class="filter-btn btn-shift">
+                        <button class="filter-btn btn-shift" onclick="openShiftModal()">
                             <i class="fas fa-user-clock"></i> Vardiya Planı
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <div class="right-panel">
@@ -257,14 +257,27 @@
         </div>
     </div>
 
+    <div id="shift-modal" class="modal-overlay">
+        <div class="modal-content" style="width:95%; max-width:1200px; height:85vh; display:flex; flex-direction:column;">
+            <span class="close-modal" onclick="closeModal('shift-modal')">&times;</span>
+            <h2 style="text-align:center; color:#546e7a; margin-bottom:10px;">📅 Vardiya Planı</h2>
+            <div id="shift-container" style="flex-grow:1; background:#fff; border:1px solid #eee; border-radius:8px; overflow:hidden;">
+                <iframe id="shift-frame" src="" style="width:100%; height:100%; border:none;"></iframe>
+            </div>
+        </div>
+    </div>
+
     <div class="crafted-by-badge">Crafted by Doğuş Yalçınkaya</div>
 
     <script>
         const BAKIM_MODU = false; 
         const DATA_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?gid=0&single=true&output=csv";
         
-        // --- BURAYA KENDİ SCRIPT LİNKİNİ YAPIŞTIRMAYI UNUTMA ---
+        // --- BURAYA KENDİ SCRIPT LİNKİNİ YAPIŞTIR ---
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec"; 
+        
+        // --- BURAYA VARDIYA LİNKİNİ YAPIŞTIR ---
+        const SHIFT_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTSHNnfTo5IuJ-qt2VVd9HX_ZZPG9amOZehYwZAWLdguILjJ1QqsDT9KLliWhMd4pEyrdRnk6xtXy5p/pubhtml?widget=true&headers=false"; 
         
         const VALID_CATEGORIES = ['Teknik', 'İkna', 'Kampanya', 'Bilgi'];
         let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [];
@@ -274,7 +287,12 @@
 
         function getToken() { return localStorage.getItem("sSportToken"); }
 
-        // --- FAVORİ SİSTEMİ ---
+        function openShiftModal() {
+            document.getElementById('shift-modal').style.display = 'flex';
+            const iframe = document.getElementById('shift-frame');
+            if(!iframe.src) { iframe.src = SHIFT_SHEET_URL; }
+        }
+
         function getFavs() { return JSON.parse(localStorage.getItem('sSportFavs') || '[]'); }
         function toggleFavorite(title) {
             event.stopPropagation();
@@ -282,13 +300,12 @@
             if (favs.includes(title)) { favs = favs.filter(t => t !== title); } 
             else { favs.push(title); }
             localStorage.setItem('sSportFavs', JSON.stringify(favs));
-            
             if (currentCategory === 'fav') { filterCategory(document.querySelector('.btn-fav'), 'fav'); } 
             else { renderCards(activeCards); }
         }
         function isFav(title) { return getFavs().includes(title); }
 
-        // --- YENİ ETİKETİ KONTROLÜ (TÜRKÇE TARİH DESTEKLİ) ---
+        // --- YENİ ETİKETİ KONTROLÜ ---
         function isNew(dateStr) {
             if (!dateStr) return false;
             let date;
