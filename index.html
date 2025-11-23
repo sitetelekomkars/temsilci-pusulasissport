@@ -268,7 +268,20 @@
     <div class="crafted-by-badge">Crafted by Doğuş Yalçınkaya</div>
 
     <script>
+<script>
         const BAKIM_MODU = false; 
+        
+        // --- SERVICE WORKER KAYDI (YENİ EKLENECEK KISIM) ---
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('./sw.js').then(function(registration) {
+                    console.log('ServiceWorker başarıyla kaydedildi: ', registration.scope);
+                }, function(err) {
+                    console.log('ServiceWorker kaydı başarısız: ', err);
+                });
+            });
+        }
+      
         
         const DATA_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?gid=0&single=true&output=csv";
         
@@ -730,3 +743,4 @@
     </script>
 </body>
 </html>
+
