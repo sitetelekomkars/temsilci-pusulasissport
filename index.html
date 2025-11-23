@@ -13,7 +13,7 @@
         :root { --primary: #0e1b42; --secondary: #fabb00; --bg: #f0f2f5; --card-bg: #ffffff; --accent: #d32f2f; --success: #2e7d32; --info: #0288d1; --warning: #ed6c02; --sales: #10b981; --quiz: #8e24aa; }
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: #333; user-select: none; }
         
-        /* Login Screen Style */
+        /* Login Screen */
         #login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5000; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%); }
         .login-card { background: white; padding: 40px; border-radius: 15px; text-align: center; width: 320px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
         .login-input { width: 100%; padding: 12px; margin: 10px 0; border: 2px solid #ddd; border-radius: 8px; text-align: center; box-sizing: border-box; }
@@ -23,7 +23,7 @@
         #maintenance-screen { display: none !important; } 
         #main-app { display: none; }
 
-        /* Header & Controls */
+        /* Header */
         .header { background-color: #0e1b42; border-bottom: 3px solid #d32f2f; color: white; padding: 20px 30px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
         .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
         .header-controls { display: flex; align-items: center; gap:10px; }
@@ -32,7 +32,6 @@
         .edit-toggle-btn:hover, .add-btn:hover { background: rgba(255, 255, 255, 0.2); border-color: #fff; }
         .edit-toggle-btn.active { background: #fabb00; border-color: #fabb00; color: #0e1b42; }
         .add-btn { background: #2e7d32; border-color: #2e7d32; }
-
         .admin-btn { background: transparent; border: 1px solid rgba(255,255,255,0.5); color: white; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; transition:0.3s;}
         .admin-btn:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
         
@@ -49,28 +48,45 @@
         .filter-btn:hover { opacity: 1; transform: translateY(-1px); }
         .filter-btn.active { opacity: 1; box-shadow: 0 0 0 2px #fff; }
 
+        /* Renkler */
         .btn-all { background: #333; } .btn-tech { background: #0e1b42; } .btn-ikna { background: #e65100; } .btn-camp { background: #2e7d32; } .btn-info { background: #0277bd; } .btn-stream { background: #4a148c; } .guide-btn { background: #01579b; } .wizard-btn { background: #c62828; } .sales-btn { background: #00796b; } .quiz-btn { background: #7b1fa2; }
+        
+        /* YENİ: Favori Butonu Stili (Sarı) */
+        .btn-fav { background: #fabb00; color: #0e1b42; font-weight:800; border:1px solid #e6ac00; }
+        .btn-fav:hover { background: #ffc107; transform: translateY(-2px); }
 
+        /* Ticker */
         .news-ticker-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 15px; height: 85px; position: relative; cursor: pointer; overflow: hidden; backdrop-filter: blur(5px); transition: 0.3s; display: flex; flex-direction: column; justify-content: center; }
         .news-ticker-box:hover { background: rgba(255,255,255,0.1); border-color: var(--secondary); }
         .ticker-label { font-size: 0.75rem; color: var(--secondary); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; display: flex; align-items: center; gap: 5px;}
         .ticker-label i { animation: blink 1.5s infinite; }
         .ticker-content { font-size: 0.95rem; color: white; font-weight: 500; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; animation: slideIn 0.5s ease-out; }
 
-        /* Grid & Cards */
+        /* Cards */
         .container { padding: 20px; max-width: 1600px; margin: 0 auto; }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
-        
         .card { background: var(--card-bg); border-radius: 8px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border-left: 5px solid var(--info); display: flex; flex-direction: column; transition: transform 0.2s; position: relative; }
         .card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         .card.Teknik { border-left-color: var(--primary); } .card.İkna { border-left-color: var(--accent); } .card.Kampanya { border-left-color: var(--success); } .card.Bilgi { border-left-color: var(--info); }
         
-        .edit-icon { position: absolute; right: 10px; top: 10px; color: #fabb00; cursor: pointer; display: none; font-size: 1.2rem; padding: 8px; background: white; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.2); z-index: 20; border:1px solid #eee; }
+        /* İKONLAR (Favori ve Edit) */
+        .icon-wrapper { position: absolute; top: 10px; right: 10px; display: flex; gap: 5px; z-index: 20; }
+        
+        /* Kalem İkonu */
+        .edit-icon { color: #fabb00; cursor: pointer; display: none; font-size: 1rem; padding: 6px; background: white; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.2); border:1px solid #eee; }
         .edit-icon:hover { transform: scale(1.1); background:#fff8e1; }
         body.editing .edit-icon { display: block !important; } 
+        
+        /* Yıldız İkonu */
+        .fav-icon { color: #ccc; cursor: pointer; font-size: 1.2rem; padding: 5px; transition: 0.2s; }
+        .fav-icon:hover { transform: scale(1.2); }
+        .fav-icon.active { color: #fabb00; text-shadow: 0 2px 5px rgba(0,0,0,0.2); }
 
-        .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
-        .card-title { font-weight: 700; font-size: 1.1rem; margin: 0; color: #0e1b42; line-height: 1.4; padding-right: 25px; }
+        /* Yeni Rozeti */
+        .new-badge { position: absolute; top: -8px; left: -8px; background: #2e7d32; color: white; font-size: 0.65rem; padding: 4px 8px; border-radius: 10px; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.2); animation: pulse 2s infinite; z-index:15; }
+
+        .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; padding-right: 40px; }
+        .card-title { font-weight: 700; font-size: 1.1rem; margin: 0; color: #0e1b42; line-height: 1.4; }
         .badge { font-size: 0.75rem; padding: 4px 8px; border-radius: 4px; background: #eee; text-transform: uppercase; font-weight: 600; color: #555; }
         .card-content { font-size: 0.95rem; color: #555; margin-bottom: 15px; line-height: 1.5; flex-grow: 1; cursor: pointer; }
         .card-text-truncate { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
@@ -86,13 +102,11 @@
         .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 10px; padding: 30px; position: relative; max-height: 85vh; overflow-y: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.8rem; cursor: pointer; color: #666; font-weight: bold; }
         .swal2-container { z-index: 10000 !important; }
-        
         .news-item { border-left: 4px solid var(--secondary); padding-left: 15px; margin-bottom: 20px; position: relative; padding-right: 30px; }
         .news-date { font-size: 0.85rem; color: #999; font-weight: bold; display: block; }
         .news-title { font-size: 1.1rem; font-weight: bold; color: var(--primary); display: block; }
         .news-tag { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; margin-top: 5px; font-weight: bold; }
         .tag-fix { background: #e8f5e9; color: #2e7d32; } .tag-update { background: #fff3e0; color: #ef6c00; } .tag-info { background: #e3f2fd; color: #0277bd; }
-
         .guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-top: 20px; }
         .sales-grid { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
         .guide-item { border: 1px solid #eee; border-radius: 8px; padding: 15px; text-align: center; transition: 0.3s; background: #f8f9fa; cursor: pointer; position: relative; }
@@ -102,7 +116,6 @@
         .guide-desc { font-size: 0.9rem; color: #666; margin-bottom: 10px; min-height: 40px; font-style: italic;}
         .guide-tip { background: #e3f2fd; color: #0277bd; padding: 5px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
         .pronunciation-badge { color: #e65100; font-size: 0.85rem; font-weight: bold; margin-bottom: 8px; display: block; font-style: italic; }
-
         .sales-item { border: 1px solid #d1fae5; background: #ecfdf5; border-radius: 8px; padding: 15px 20px; cursor: pointer; transition: all 0.3s ease; position: relative; overflow: hidden; }
         .sales-item:hover { box-shadow: 0 5px 15px rgba(16, 185, 129, 0.2); border-color: var(--sales); }
         .sales-item.active { background: #d1fae5; border-left: 6px solid var(--sales); }
@@ -110,12 +123,10 @@
         .sales-title { font-weight: 800; color: #065f46; font-size: 1.1rem; margin: 0; padding-right: 25px; }
         .sales-text { display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #a7f3d0; font-size: 1rem; color: #374151; line-height: 1.6; animation: fadeIn 0.4s ease-in; }
         .sales-item.active .sales-text { display: block; }
-
         .quiz-options { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
         .quiz-btn-opt { padding: 15px; border: 2px solid #eee; background: white; border-radius: 8px; cursor: pointer; }
         .quiz-btn-opt.correct { background: #c8e6c9; border-color: #2e7d32; color: #1b5e20; }
         .quiz-btn-opt.wrong { background: #ffcdd2; border-color: #c62828; color: #b71c1c; }
-
         .wizard-options { display: flex; flex-direction: column; gap: 10px; }
         .option-btn { padding: 15px; border: 2px solid #eee; border-radius: 8px; background: white; font-size: 1rem; cursor: pointer; text-align: left; }
         .option-btn:hover { border-color: var(--primary); background: #f0f4ff; }
@@ -125,10 +136,10 @@
         .res-yellow { background: #fff8e1; border: 2px solid #ffca28; color: #f57f17; }
         .restart-btn { margin-top: 20px; background: #555; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
         .highlight { background-color: yellow; font-weight: bold; }
-
         .crafted-by-badge { position: fixed; bottom: 10px; right: 15px; font-family: 'Segoe UI', sans-serif; font-size: 0.75rem; color: #0e1b42; opacity: 0.35; z-index: 9999; pointer-events: none; user-select: none; font-style: italic; letter-spacing: 0.5px; font-weight: 600; text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
         @keyframes blink { 50% { opacity: 0.5; } }
         @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @media (max-width: 768px) { .header { padding: 15px 15px; } .header-top { flex-direction: column; align-items: flex-start; gap: 10px; } .control-wrapper { flex-direction: column; } }
     </style>
@@ -179,6 +190,7 @@
                         <input type="text" id="searchInput" placeholder="Hızlı Ara..." onkeyup="filterContent()">
                     </div>
                     <div class="filter-container">
+                        <button class="filter-btn btn-fav" onclick="filterCategory(this, 'fav')"><i class="fas fa-star"></i> Favorilerim</button>
                         <button class="filter-btn btn-all active" onclick="filterCategory(this, 'all')"><i class="fas fa-th-large"></i> Tümü</button>
                         <button class="filter-btn btn-tech" onclick="filterCategory(this, 'Teknik')"><i class="fas fa-wrench"></i> Teknik</button>
                         <button class="filter-btn btn-ikna" onclick="filterCategory(this, 'İkna')"><i class="fas fa-hand-holding-dollar"></i> İkna</button>
@@ -254,10 +266,9 @@
 
     <script>
         const BAKIM_MODU = false; 
-        
         const DATA_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR7eIsOqTEhUtHWEiEJzs8mzySd9btRzCG8gsd8xvvz3JFn2bfs3rJl0M4DYdt5NNrNvvrptKYiQyWa/pub?gid=0&single=true&output=csv";
         
-        // --- YENİ YAYINLADIĞINIZ APPS SCRIPT URL'Yİ BURAYA YAPIŞTIRIN ---
+        // --- BURAYA KENDİ SCRIPT LİNKİNİ YAPIŞTIR ---
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec"; 
         
         const VALID_CATEGORIES = ['Teknik', 'İkna', 'Kampanya', 'Bilgi'];
@@ -267,6 +278,31 @@
         let currentCategory = 'all';
 
         function getToken() { return localStorage.getItem("sSportToken"); }
+
+        // --- FAVORİ SİSTEMİ ---
+        function getFavs() { return JSON.parse(localStorage.getItem('sSportFavs') || '[]'); }
+        function toggleFavorite(title) {
+            event.stopPropagation();
+            let favs = getFavs();
+            if (favs.includes(title)) { favs = favs.filter(t => t !== title); } 
+            else { favs.push(title); }
+            localStorage.setItem('sSportFavs', JSON.stringify(favs));
+            
+            // Eğer favoriler sekmesindeysek listeyi yenile, değilse kartı güncelle
+            if (currentCategory === 'fav') { filterCategory(document.querySelector('.btn-fav'), 'fav'); } 
+            else { renderCards(activeCards); }
+        }
+        function isFav(title) { return getFavs().includes(title); }
+
+        // --- YENİ ETİKETİ KONTROLÜ ---
+        function isNew(dateStr) {
+            if (!dateStr) return false;
+            const date = new Date(dateStr);
+            const now = new Date();
+            const diffTime = Math.abs(now - date);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+            return diffDays <= 3; // Son 3 gün içinde eklenmişse "Yeni" say
+        }
 
         function getCategorySelectHtml(currentCategory, id) {
             let options = VALID_CATEGORIES.map(cat => `<option value="${cat}" ${cat === currentCategory ? 'selected' : ''}>${cat}</option>`).join('');
@@ -284,16 +320,13 @@
         function checkSession() {
             const savedUser = localStorage.getItem("sSportUser");
             const savedToken = localStorage.getItem("sSportToken");
-            const savedRole = localStorage.getItem("sSportRole"); // YENİ: Rolü oku
+            const savedRole = localStorage.getItem("sSportRole"); 
 
             if (savedUser && savedToken) {
                 currentUser = savedUser;
                 document.getElementById("login-screen").style.display = "none"; 
                 document.getElementById("user-display").innerText = currentUser;
-                
-                // Role göre butonları göster/gizle
                 checkAdmin(savedRole); 
-                
                 startSessionTimer();
                 if (BAKIM_MODU) document.getElementById("maintenance-screen").style.display = "flex";
                 else { document.getElementById("main-app").style.display = "block"; loadContentData(); }
@@ -323,18 +356,12 @@
                 loadingMsg.style.display = "none"; document.querySelector('.login-btn').disabled = false;
                 if (data.result === "success") {
                     currentUser = data.username;
-                    
-                    // Verileri Kaydet (Role Dahil)
                     localStorage.setItem("sSportUser", currentUser);
                     localStorage.setItem("sSportToken", data.token);
                     localStorage.setItem("sSportRole", data.role); 
-
                     document.getElementById("login-screen").style.display = "none"; 
                     document.getElementById("user-display").innerText = currentUser;
-                    
-                    // Admin kontrolünü ROL üzerinden yap
                     checkAdmin(data.role);
-                    
                     startSessionTimer();
                     if (BAKIM_MODU) document.getElementById("maintenance-screen").style.display = "flex";
                     else { document.getElementById("main-app").style.display = "block"; loadContentData(); }
@@ -350,7 +377,6 @@
 
         function checkAdmin(role) {
             const editBtn = document.getElementById('quickEditBtn'); const addBtn = document.getElementById('addCardBtn');
-            // Role göre kontrol (Excel'deki 'admin' değerine bakar)
             if(role === "admin") { editBtn.style.display = "flex"; addBtn.style.display = "flex"; }
             else { editBtn.style.display = "none"; addBtn.style.display = "none"; }
         }
@@ -403,14 +429,19 @@
                 download: true, header: true,
                 complete: function(results) {
                     const rawData = results.data;
-                    const fetchedCards = rawData.filter(i => ['card','bilgi','teknik','kampanya','ikna'].includes(i.Type)).map(i => ({ title: i.Title, category: i.Category, text: i.Text, script: i.Script, code: i.Code, link: i.Link }));
+                    const fetchedCards = rawData.filter(i => ['card','bilgi','teknik','kampanya','ikna'].includes(i.Type)).map(i => ({ title: i.Title, category: i.Category, text: i.Text, script: i.Script, code: i.Code, link: i.Link, date: i.Date })); // Date eklendi
                     const fetchedNews = rawData.filter(i => i.Type === 'news').map(i => ({ date: i.Date, title: i.Title, desc: i.Text, type: i.Category }));
                     const fetchedSports = rawData.filter(i => i.Type === 'sport').map(i => ({ title: i.Title, icon: i.Icon, desc: i.Text, tip: i.Tip, detail: i.Detail, pronunciation: i.Pronunciation }));
                     const fetchedSales = rawData.filter(i => i.Type === 'sales').map(i => ({ title: i.Title, text: i.Text }));
                     const fetchedQuiz = rawData.filter(i => i.Type === 'quiz').map(i => ({ q: i.Text, opts: i.QuizOptions ? i.QuizOptions.split(',') : [], a: parseInt(i.QuizAnswer) }));
+                    
                     database = fetchedCards; newsData = fetchedNews; sportsData = fetchedSports; salesScripts = fetchedSales; quizQuestions = fetchedQuiz;
                     document.getElementById('loading').style.display = 'none';
-                    activeCards = database; renderCards(database); startTicker();
+                    
+                    if(currentCategory === 'fav') { filterCategory(document.querySelector('.btn-fav'), 'fav'); }
+                    else { activeCards = database; renderCards(database); }
+                    
+                    startTicker();
                 },
                 error: function(err) { console.error("CSV Hatası:", err); document.getElementById('loading').innerHTML = 'Veriler alınamadı. Lütfen tekrar deneyin.'; }
             });
@@ -418,12 +449,20 @@
 
         function renderCards(data) { 
             activeCards = data; const container = document.getElementById('cardGrid'); container.innerHTML = ''; 
-            if(data.length === 0) { container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Kayıt Yok</div>'; return; } 
+            if(data.length === 0) { container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Kayıt Yok / Bulunamadı</div>'; return; } 
             data.forEach((item, index) => { 
                 const safeTitle = escapeForJsString(item.title);
+                const isFavorite = isFav(item.title);
+                const favClass = isFavorite ? 'fas fa-star active' : 'far fa-star';
+                const newBadge = isNew(item.date) ? '<span class="new-badge">YENİ</span>' : '';
+                
                 let html = `
                 <div class="card ${item.category}">
-                    <i class="fas fa-pencil-alt edit-icon" onclick="editContent(${index})"></i>
+                    ${newBadge}
+                    <div class="icon-wrapper">
+                        <i class="fas fa-pencil-alt edit-icon" onclick="editContent(${index})"></i>
+                        <i class="${favClass} fav-icon" onclick="toggleFavorite('${safeTitle}')"></i>
+                    </div>
                     <div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div>
                     <div class="card-content" onclick="showCardDetail('${safeTitle}', '${escapeForJsString(item.text)}')">
                         <div class="card-text-truncate">${highlightText(item.text)}</div>
@@ -453,13 +492,24 @@
         function filterContent() { 
             const search = document.getElementById('searchInput').value.toLowerCase(); 
             let filtered = database;
-            if (currentCategory !== 'all') { filtered = filtered.filter(i => i.category === currentCategory); }
-            if (search) { filtered = filtered.filter(i => (i.title && i.title.toLowerCase().includes(search)) || (i.text && i.text.toLowerCase().includes(search)) ); }
+            
+            if (currentCategory === 'fav') { 
+                filtered = filtered.filter(i => isFav(i.title)); 
+            } else if (currentCategory !== 'all') { 
+                filtered = filtered.filter(i => i.category === currentCategory); 
+            }
+            
+            if (search) { 
+                filtered = filtered.filter(i => (i.title && i.title.toLowerCase().includes(search)) || (i.text && i.text.toLowerCase().includes(search)) ); 
+            }
             renderCards(filtered);
         }
 
         function filterCategory(btn, cat) { 
-            currentCategory = cat; document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); filterContent();
+            currentCategory = cat; 
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active')); 
+            btn.classList.add('active'); 
+            filterContent();
         }
 
         function copyText(t) { navigator.clipboard.writeText(t.replace(/\\n/g, '\n')).then(() => Swal.fire({icon:'success', title:'Kopyalandı', toast:true, position:'top-end', showConfirmButton:false, timer:1500}) ); }
@@ -471,7 +521,10 @@
             } else {
                 btn.classList.remove('active'); btn.innerHTML = '<i class="fas fa-pencil-alt"></i> Düzenlemeyi Aç';
             }
-            if(activeCards.length > 0) renderCards(activeCards); else renderCards(database); 
+            // Mod değişince ekranı yenile
+            if (currentCategory === 'fav') filterCategory(document.querySelector('.btn-fav'), 'fav');
+            else renderCards(activeCards.length > 0 ? activeCards : database);
+            
             if(document.getElementById('guide-modal').style.display === 'flex') openGuide();
             if(document.getElementById('sales-modal').style.display === 'flex') openSales();
             if(document.getElementById('quiz-modal').style.display === 'flex') openQuiz();
