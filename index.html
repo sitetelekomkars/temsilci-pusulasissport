@@ -552,7 +552,7 @@
             fetch(SCRIPT_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) })
             .then(r => r.json())
             .then(data => {
-                if (data.result === "success") { Swal.fire({icon: 'success', title: 'Güncelleme Başarılı', text: 'Değişiklikler kaydedildi.', timer: 2000, showConfirmButton: false}); } 
+                if (data.result === "success") { Swal.fire({icon: 'success', title: 'Güncelleme Başarılı', text: 'Değişiklikler kaydedildi. 1-2 Dakika içinde sisteme yansıyacaktır', timer: 2000, showConfirmButton: false}); } 
                 else { Swal.fire('Hata', data.message || 'Güncelleme başarısız.', 'error'); }
             })
             .catch(err => Swal.fire('Hata', 'Güncelleme hatası: ' + err, 'error'));
@@ -719,5 +719,6 @@
     </script>
 </body>
 </html>
+
 
 
