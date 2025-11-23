@@ -534,11 +534,6 @@
                 const favClass = isFavorite ? 'fas fa-star active' : 'far fa-star';
                 const newBadge = isNew(item.date) ? '<span class="new-badge">YENİ</span>' : '';
                 
-                // --- KALIN YAZI ÖZELLİĞİ EKLENDİ ---
-                let rawText = item.text || "";
-                // **kelime** desenini bulup <b>kelime</b> ile değiştiriyoruz
-                let formattedText = rawText.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
-                
                 let html = `
                 <div class="card ${item.category}">
                     ${newBadge}
@@ -547,12 +542,10 @@
                         <i class="${favClass} fav-icon" onclick="toggleFavorite('${safeTitle}')"></i>
                     </div>
                     <div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div>
-                    
                     <div class="card-content" onclick="showCardDetail('${safeTitle}', '${escapeForJsString(item.text)}')">
-                        <div class="card-text-truncate">${highlightText(formattedText)}</div>
+                        <div class="card-text-truncate">${highlightText(item.text)}</div>
                         <div style="font-size:0.8rem; color:#999; margin-top:5px; text-align:right;">(Tamamını oku)</div>
                     </div>
-                    
                     <div class="script-box">${highlightText(item.script)}</div>
                     <div class="card-actions">
                         <button class="btn btn-copy" onclick="copyText('${escapeForJsString(item.script)}')"><i class="fas fa-copy"></i> Kopyala</button>
