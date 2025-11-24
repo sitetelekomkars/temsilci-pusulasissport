@@ -110,6 +110,9 @@
         .sales-text { display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #a7f3d0; font-size: 1rem; color: #374151; line-height: 1.6; animation: fadeIn 0.4s ease-in; }
         .sales-item.active .sales-text { display: block; }
         .quiz-options { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .quiz-btn-opt { padding: 15px; border: 2px solid #eee; background: white; border-radius: 8px; cursor: pointer; }
+        .quiz-btn-opt.correct { background: #c8e6c9; border-color: #2e7d32; color: #1b5e20; }
+        .quiz-btn-opt.wrong { background: #ffcdd2; border-color: #c62828; color: #b71c1c; }
         .wizard-options { display: flex; flex-direction: column; gap: 10px; }
         .option-btn { padding: 15px; border: 2px solid #eee; border-radius: 8px; background: white; font-size: 1rem; cursor: pointer; text-align: left; }
         .option-btn:hover { border-color: var(--primary); background: #f0f4ff; }
@@ -343,6 +346,14 @@
         </div>
     </div>
 
+    <div id="quiz-modal" class="modal-overlay">
+        <div class="modal-content" style="max-width: 600px;">
+            <span class="close-modal" onclick="closeModal('quiz-modal')">&times;</span>
+            <h2 style="text-align:center; color:var(--quiz);">🎮 Bilgi Yarışması</h2>
+            <div id="quiz-body"></div>
+        </div>
+    </div>
+
     <div class="crafted-by-badge">Crafted by Doğuş Yalçınkaya</div>
 
     <script>
@@ -437,12 +448,27 @@
                     localStorage.setItem("sSportUser", currentUser);
                     localStorage.setItem("sSportToken", data.token);
                     localStorage.setItem("sSportRole", data.role); 
-                    document.getElementById("login-screen").style.display = "none"; 
-                    document.getElementById("user-display").innerText = currentUser;
-                    checkAdmin(data.role);
-                    startSessionTimer();
-                    if (BAKIM_MODU) document.getElementById("maintenance-screen").style.display = "flex";
-                    else { document.getElementById("main-app").style.display = "block"; loadContentData(); }
+                    
+                    // Şifre değiştirme zorunluluğu var mı?
+                    if (data.forceChange === true) {
+                        Swal.fire({
+                            icon: 'warning',
+                            title: '⚠️ Güvenlik Uyarısı',
+                            text: 'İlk girişinizi yaptınız. Güvenliğiniz için lütfen şifrenizi değiştirin.',
+                            allowOutsideClick: false,
+                            allowEscapeKey: false,
+                            confirmButtonText: 'Şifremi Değiştir'
+                        }).then(() => {
+                            changePasswordPopup(true); // Zorunlu mod
+                        });
+                    } else {
+                        document.getElementById("login-screen").style.display = "none"; 
+                        document.getElementById("user-display").innerText = currentUser;
+                        checkAdmin(data.role);
+                        startSessionTimer();
+                        if (BAKIM_MODU) document.getElementById("maintenance-screen").style.display = "flex";
+                        else { document.getElementById("main-app").style.display = "block"; loadContentData(); }
+                    }
                 } else {
                     errorMsg.innerText = data.message || "Kullanıcı adı veya şifre hatalı!"; errorMsg.style.display = "block";
                 }
@@ -478,12 +504,26 @@
             Swal.fire(options).then((result) => { if (result.isConfirmed) changePasswordPopup(); else if (result.isDenied) logout(); });
         }
 
-        async function changePasswordPopup() {
+        async function changePasswordPopup(isMandatory = false) {
              const { value: formValues } = await Swal.fire({
-                title: 'Şifre Değiştir',
-                html: '<input id="swal-old-pass" type="password" class="swal2-input" placeholder="Eski Şifre"><input id="swal-new-pass" type="password" class="swal2-input" placeholder="Yeni Şifre">',
-                focusConfirm: false, showCancelButton: true, confirmButtonText: 'Değiştir',
-                preConfirm: () => { return [ document.getElementById('swal-old-pass').value, document.getElementById('swal-new-pass').value ] }
+                title: isMandatory ? 'Yeni Şifre Belirleyin' : 'Şifre Değiştir',
+                html: `
+                    ${isMandatory ? '<p style="font-size:0.9rem; color:#d32f2f;">İlk giriş şifrenizi değiştirmeden devam edemezsiniz.</p>' : ''}
+                    <input id="swal-old-pass" type="password" class="swal2-input" placeholder="Eski Şifre (Mevcut)">
+                    <input id="swal-new-pass" type="password" class="swal2-input" placeholder="Yeni Şifre">
+                `,
+                focusConfirm: false, 
+                showCancelButton: !isMandatory,
+                allowOutsideClick: !isMandatory,
+                allowEscapeKey: !isMandatory,
+                confirmButtonText: 'Değiştir',
+                cancelButtonText: 'İptal',
+                preConfirm: () => { 
+                    const o = document.getElementById('swal-old-pass').value;
+                    const n = document.getElementById('swal-new-pass').value;
+                    if(!o || !n) { Swal.showValidationMessage('Alanlar boş bırakılamaz'); }
+                    return [ o, n ] 
+                }
             });
             if (formValues) {
                 Swal.fire({ title: 'İşleniyor...', didOpen: () => { Swal.showLoading() } });
@@ -495,10 +535,21 @@
                 })
                 .then(response => response.json())
                 .then(data => {
-                    if(data.result === "success") Swal.fire('Başarılı!', 'Şifre değişti.', 'success');
-                    else Swal.fire('Hata', data.message || 'İşlem başarısız.', 'error');
+                    if(data.result === "success") {
+                        Swal.fire('Başarılı!', 'Şifreniz güncellendi. Güvenlik gereği yeniden giriş yapınız.', 'success')
+                        .then(() => { logout(); }); 
+                    }
+                    else { 
+                        Swal.fire('Hata', data.message || 'İşlem başarısız.', 'error')
+                        .then(() => { if(isMandatory) changePasswordPopup(true); }); 
+                    }
                 })
-                .catch(err => Swal.fire('Hata', 'Sunucu hatası.', 'error'));
+                .catch(err => {
+                    Swal.fire('Hata', 'Sunucu hatası.', 'error');
+                    if(isMandatory) changePasswordPopup(true);
+                });
+            } else if (isMandatory) {
+                changePasswordPopup(true);
             }
         }
 
@@ -584,6 +635,7 @@
             if(document.getElementById('guide-modal').style.display === 'flex') openGuide();
             if(document.getElementById('sales-modal').style.display === 'flex') openSales();
             if(document.getElementById('news-modal').style.display === 'flex') openNews();
+            if(document.getElementById('quiz-modal').style.display === 'flex') openQuiz();
         }
 
         function sendUpdate(originalTitle, column, value, type = 'card') {
@@ -596,7 +648,7 @@
             }).catch(err => Swal.fire('Hata', 'Güncelleme hatası: ' + err, 'error'));
         }
 
-        // --- CRUD FONKSİYONLARI (GERİ EKLENDİ) ---
+        // --- CRUD FONKSİYONLARI (EKSİKSİZ GERİ EKLENDİ) ---
         async function addNewCardPopup() {
             const catSelectHTML = getCategorySelectHtml('Bilgi', 'swal-new-cat');
             const { value: formValues } = await Swal.fire({
@@ -816,6 +868,18 @@
                 if(formValues[0] !== originalTitle) setTimeout(() => sendUpdate(originalTitle, "Title", formValues[0], 'news'), 2000);
             }
         }
+
+        async function editQuizQuestion(index) {
+            const q = quizQuestions[index];
+            const { value: formValues } = await Swal.fire({
+                title: 'Soruyu Düzenle',
+                html: `<label style="font-weight:bold;">Soru</label><input id="swal-q" class="swal2-input" value="${q.q}"><label style="font-weight:bold;">Şıklar</label><textarea id="swal-opts" class="swal2-textarea">${q.opts.join(',')}</textarea><label style="font-weight:bold;">Doğru Cevap (0 tabanlı index)</label><input id="swal-ans" class="swal2-input" type="number" value="${q.a}">`,
+                showCancelButton: true, confirmButtonText: 'Kaydet', preConfirm: () => [ document.getElementById('swal-q').value, document.getElementById('swal-opts').value, document.getElementById('swal-ans').value ]
+            });
+            if (formValues) {
+                sendUpdate(q.q, "Text", formValues[0], 'quiz'); setTimeout(() => sendUpdate(formValues[0], "QuizOptions", formValues[1], 'quiz'), 1500); setTimeout(() => sendUpdate(formValues[0], "QuizAnswer", formValues[2], 'quiz'), 3000);
+            }
+        }
         
         function closeModal(id) { document.getElementById(id).style.display = 'none'; }
         let tickerIndex = 0;
@@ -826,9 +890,20 @@
         function openSales() { document.getElementById('sales-modal').style.display = 'flex'; const c = document.getElementById('sales-grid'); c.innerHTML = ''; salesScripts.forEach((s, index) => { let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="display:block !important; top:10px; right:40px; z-index:50;" onclick="event.stopPropagation(); editSales(${index})"></i>` : ''; c.innerHTML += `<div class="sales-item" id="sales-${index}" onclick="toggleSales('${index}')">${editBtn}<div class="sales-header"><span class="sales-title">${s.title}</span><i class="fas fa-chevron-down" id="icon-${index}" style="color:#10b981;"></i></div><div class="sales-text">${(s.text || '').replace(/\n/g,'<br>')}<div style="text-align:right; margin-top:15px;"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${escapeForJsString(s.text || '')}')"><i class="fas fa-copy"></i> Kopyala</button></div></div></div>`; }); }
         function toggleSales(index) { const item = document.getElementById(`sales-${index}`); const icon = document.getElementById(`icon-${index}`); item.classList.toggle('active'); if(item.classList.contains('active')){ icon.classList.replace('fa-chevron-down', 'fa-chevron-up'); } else { icon.classList.replace('fa-chevron-up', 'fa-chevron-down'); } }
         
-        // --- PENALTI OYUNU MANTIĞI (GÜNCELLENDİ: 10 Şut) ---
+        // --- QUIZ LOGIC ---
+        let currentQuestion = 0, score = 0;
+        let sessionQuestions = []; 
+        function openQuiz() { document.getElementById('quiz-modal').style.display = 'flex'; if(isAdminMode) { openQuizEditor(); return; } else { showStartScreen(); } }
+        function showStartScreen() { document.getElementById('quiz-body').innerHTML = `<div class="quiz-final"><h3>Hazır mısın?</h3><p style="color:#666; margin-bottom:20px;">Havuzdan rastgele 10 soru sorulacak.</p><button class="restart-btn" style="background:var(--quiz);" onclick="startQuizSession()">BAŞLA</button></div>`; }
+        function startQuizSession() { currentQuestion = 0; score = 0; let allQuestions = [...quizQuestions]; allQuestions.sort(() => Math.random() - 0.5); sessionQuestions = allQuestions.slice(0, 10); showQuestion(); }
+        function showQuestion() { if(currentQuestion >= sessionQuestions.length) { showResult(); return; } const q = sessionQuestions[currentQuestion]; let html = `<div class="quiz-score">Soru: ${currentQuestion + 1} / ${sessionQuestions.length}</div><div class="quiz-question">${q.q}</div><div class="quiz-options">`; q.opts.forEach((opt, i) => { html += `<button class="quiz-btn-opt" onclick="checkAnswer(this, ${i})">${opt}</button>`; }); html += `</div>`; document.getElementById('quiz-body').innerHTML = html; }
+        function checkAnswer(btn, i) { const correct = sessionQuestions[currentQuestion].a; document.querySelectorAll('.quiz-btn-opt').forEach(b => b.disabled = true); if(i === correct) { btn.classList.add('correct'); score += 10; Swal.fire({icon:'success', title:'Doğru!', timer:1000, toast:true, position:'top', showConfirmButton:false}); } else { btn.classList.add('wrong'); Swal.fire({icon:'error', title:'Yanlış!', timer:1000, toast:true, position:'top', showConfirmButton:false}); } setTimeout(() => { currentQuestion++; showQuestion(); }, 1500); }
+        function showResult() { document.getElementById('quiz-body').innerHTML = `<div class="quiz-final"><h3>Bitti! Puan: ${score}</h3><div id="quiz-save-status" style="font-size:0.9rem; color:#666; margin:10px 0;"><i class="fas fa-spinner fa-spin"></i> Sonuç sisteme kaydediliyor...</div><button class="restart-btn" onclick="openQuiz()">Tekrar Oyna</button></div>`; fetch(SCRIPT_URL, { method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "logQuiz", username: currentUser, token: getToken(), score: score, total: sessionQuestions.length }) }).then(response => response.json()).then(data => { const statusEl = document.getElementById('quiz-save-status'); if (data.result === "success") { statusEl.innerHTML = '<span style="color:green; font-weight:bold;"><i class="fas fa-check"></i> Skor başarıyla kaydedildi!</span>'; } else { statusEl.innerHTML = '<span style="color:red;">Kayıt sırasında hata oluştu.</span>'; } }).catch(error => { console.error("Quiz Log Hatası:", error); document.getElementById('quiz-save-status').innerHTML = '<span style="color:red;">Sunucu bağlantı hatası.</span>'; }); }
+        function openQuizEditor() { let html = '<div style="text-align:left; max-height:400px; overflow-y:auto;">'; quizQuestions.forEach((q, i) => { const safeQ = cleanData(q.q); html += `<div style="border-bottom:1px solid #eee; padding:10px; cursor:pointer;" onclick="editQuizQuestion(${i})"><b>${i+1}. ${safeQ}</b><br><span style="font-size:0.8rem; color:#fabb00;"><i class="fas fa-pencil-alt"></i> Düzenle</span></div>`; }); html += '</div>'; Swal.fire({ title: 'Soruları Düzenle', html: html, showConfirmButton: false, showCloseButton: true }); }
+        
+        // --- PENALTI OYUNU MANTIĞI ---
         let pScore = 0;
-        let pBalls = 10; // 10 Şut Hakkı
+        let pBalls = 10;
         let pCurrentQ = null;
 
         function openPenaltyGame() {
@@ -838,7 +913,7 @@
 
         function startPenaltySession() {
             pScore = 0;
-            pBalls = 10; // 10 Şut
+            pBalls = 10;
             document.getElementById('p-score').innerText = pScore;
             document.getElementById('p-balls').innerText = pBalls;
             document.getElementById('p-restart-btn').style.display = 'none';
@@ -866,7 +941,6 @@
 
             const ballWrap = document.getElementById('ball-wrap');
             const shadow = ballWrap.querySelector('.ball-shadow');
-            
             const keeperWrap = document.getElementById('keeper-wrap');
             const keeperHead = keeperWrap.querySelector('.keeper-head');
             const shooterWrap = document.getElementById('shooter-wrap');
@@ -876,11 +950,9 @@
             const shotDir = Math.floor(Math.random() * 4); 
             const keeperDir = Math.random() < 0.5 ? 'left' : 'right';
 
-            // 1. Koşma Efekti
             shooterWrap.classList.add('shooter-run');
 
             setTimeout(() => {
-                // 2. Şut ve Kaleci Hareketi
                 if(isCorrect) {
                      if(shotDir === 0 || shotDir === 2) keeperWrap.classList.add('keeper-dive-right');
                      else keeperWrap.classList.add('keeper-dive-left');
@@ -891,11 +963,9 @@
                     keeperHead.innerText = "😎"; 
                 }
 
-                // Top Hareketi & Gölge
                 shadow.classList.add('ball-shadow-move'); 
 
                 if (isCorrect) {
-                    // GOL
                     if(shotDir === 0) ballWrap.classList.add('ball-shoot-left-top');
                     else if(shotDir === 1) ballWrap.classList.add('ball-shoot-right-top');
                     else if(shotDir === 2) ballWrap.classList.add('ball-shoot-left-low');
@@ -911,9 +981,7 @@
                     }, 500);
 
                 } else {
-                    // KAÇAN GOL
                     if(Math.random() > 0.5) {
-                        // Kaleci tuttu
                         ballWrap.style.bottom = "260px";
                         ballWrap.style.left = keeperDir === 'left' ? "45%" : "55%";
                         ballWrap.style.transform = "scale(0.6)";
@@ -923,7 +991,6 @@
                             goalMsg.classList.add('show');
                         }, 500);
                     } else {
-                        // Dışarı
                         ballWrap.classList.add(Math.random() > 0.5 ? 'ball-miss-left' : 'ball-miss-right');
                         setTimeout(() => {
                             goalMsg.innerText = "DIŞARI!";
@@ -933,7 +1000,6 @@
                     }
                     Swal.fire({ toast: true, position: 'top', icon: 'error', title: 'Kaçırdın!', showConfirmButton: false, timer: 1000, background: '#ef9a9a' });
                 }
-
             }, 300); 
 
             pBalls--;
@@ -953,7 +1019,6 @@
             const shooterWrap = document.getElementById('shooter-wrap');
             const goalMsg = document.getElementById('goal-msg');
 
-            // Reset Ball
             ballWrap.className = 'ball-wrapper';
             ballWrap.style.transform = 'translateX(-50%)';
             ballWrap.style.bottom = '110px';
@@ -961,11 +1026,9 @@
             ballWrap.style.opacity = '1';
             shadow.className = 'ball-shadow';
 
-            // Reset Keeper
             keeperWrap.className = 'keeper-wrapper';
             keeperHead.innerText = "👦"; 
 
-            // Reset Shooter
             shooterWrap.className = 'shooter-wrapper'; 
 
             goalMsg.classList.remove('show');
@@ -976,7 +1039,6 @@
             document.getElementById('p-question-text').innerHTML = `<span style="font-size:1.5rem; color:#fabb00;">MAÇ BİTTİ!</span><br>${title}<br>Toplam Skor: ${pScore}/10`;
             document.getElementById('p-options').style.display = 'none';
             document.getElementById('p-restart-btn').style.display = 'block';
-            // Skoru logla (Her soru 10 puan = Max 100)
             fetch(SCRIPT_URL, { method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "logQuiz", username: currentUser, token: getToken(), score: pScore * 10, total: 100 }) });
         }
         
