@@ -15,7 +15,7 @@
         :root { --primary: #0e1b42; --secondary: #fabb00; --bg: #f0f2f5; --card-bg: #ffffff; --accent: #d32f2f; --success: #2e7d32; --info: #0288d1; --warning: #ed6c02; --sales: #10b981; --quiz: #8e24aa; }
         body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: #333; user-select: none; }
         
-        /* --- TEMEL STİLLER --- */
+        /* --- LOGIN & GENERAL --- */
         #login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5000; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%); }
         .login-card { background: white; padding: 40px; border-radius: 15px; text-align: center; width: 320px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
         .login-input { width: 100%; padding: 12px; margin: 10px 0; border: 2px solid #ddd; border-radius: 8px; text-align: center; box-sizing: border-box; }
@@ -23,6 +23,8 @@
         .loading-text { font-size: 0.8rem; color: #666; margin-top: 10px; display: none; }
         #maintenance-screen { display: none !important; } 
         #main-app { display: none; }
+
+        /* --- HEADER --- */
         .header { background-color: #0e1b42; border-bottom: 3px solid #d32f2f; color: white; padding: 20px 30px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
         .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
         .header-controls { display: flex; align-items: center; gap:10px; }
@@ -39,22 +41,23 @@
         #searchInput { width: 100%; padding: 12px 20px 12px 45px; border-radius: 4px; border: none; box-sizing: border-box; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         .search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #0e1b42; }
         
-        /* FİLTRE BUTONLARI GÜNCEL */
+        /* --- FILTER BUTTONS --- */
         .filter-container { display: flex; gap: 8px; flex-wrap: wrap; }
         .filter-btn { background-color: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.15); color: #eceff1; padding: 10px 18px; border-radius: 6px; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; gap: 6px; font-weight: 500; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; }
        .filter-btn:hover, .filter-btn.active { background-color: #fabb00; color: #0e1b42; border-color: #fabb00; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(250, 187, 0, 0.3); }
         .btn-fav { border-color: #fabb00; color: #fabb00; }
         .btn-fav:hover, .btn-fav.active { color: #0e1b42; }
-        
-        /* OYUN BUTONU STİLİ (Diğerleriyle aynı yapıldı) */
         .game-btn { border-color: #8e24aa !important; color: #e1bee7 !important; }
         .game-btn:hover, .game-btn.active { background-color: #8e24aa !important; color: white !important; border-color: #8e24aa !important; }
 
+        /* --- TICKER --- */
         .news-ticker-box { background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 5px solid #fabb00; border-radius: 6px; padding: 15px; height: 85px; position: relative; cursor: pointer; overflow: hidden; transition: 0.3s; display: flex; flex-direction: column; justify-content: center; }
         .news-ticker-box:hover { border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.05); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
         .ticker-label { font-size: 0.75rem; color: #fabb00; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
         .ticker-label i { font-size: 10px; color: #fabb00; animation: intense-pulse 1.5s infinite; }
         .ticker-content { font-size: 0.95rem; color: #fff; font-weight: 500; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; animation: slideIn 0.5s ease-out; }
+
+        /* --- CARDS --- */
         .container { padding: 20px; max-width: 1600px; margin: 0 auto; }
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
         .card { background: var(--card-bg); border-radius: 8px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border-left: 5px solid var(--info); display: flex; flex-direction: column; transition: transform 0.2s; position: relative; }
@@ -79,6 +82,8 @@
         .btn-copy { background: var(--primary); color: white; }
         .btn-link { background: transparent; border: 1px solid var(--info); color: var(--info); text-decoration: none; }
         .btn-link:hover { background: #e1f5fe; }
+
+        /* --- MODALS --- */
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 5000; justify-content: center; align-items: center; }
         .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 10px; padding: 30px; position: relative; max-height: 85vh; overflow-y: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.8rem; cursor: pointer; color: #666; font-weight: bold; }
@@ -121,7 +126,7 @@
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes intense-pulse { 0% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 187, 0, 0.7); } 70% { transform: scale(1.2); box-shadow: 0 0 0 10px rgba(250, 187, 0, 0); } 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 187, 0, 0); } }
 
-        /* --- 3D STADYUM VE OYUN STİLLERİ --- */
+        /* --- 3D OYUN STİLLERİ --- */
         .penalty-field {
             background: radial-gradient(circle at 50% 30%, #4caf50 0%, #2e7d32 60%, #1b5e20 100%);
             border: 4px solid #fff;
@@ -129,236 +134,44 @@
             height: 480px;
             position: relative;
             overflow: hidden;
-            perspective: 900px; /* Derinlik */
+            perspective: 900px; 
             box-shadow: inset 0 0 80px rgba(0,0,0,0.8);
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             padding-top: 0;
         }
-
-        .stadium-stands {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 120px;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, #111 0%, #222 100%);
-            background-size: 10px 10px, 100% 100%;
-            z-index: 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-        }
-
-        .grass-stripes {
-            position: absolute;
-            top: 120px;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: repeating-linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 40px, transparent 40px, transparent 80px);
-            z-index: 0;
-        }
-
-        .penalty-area {
-            position: absolute;
-            bottom: -50px;
-            left: 50%;
-            transform: translateX(-50%) rotateX(50deg);
-            width: 60%;
-            height: 250px;
-            border: 4px solid rgba(255,255,255,0.7);
-            border-bottom: none;
-            z-index: 1;
-            box-shadow: 0 0 15px rgba(255,255,255,0.1);
-        }
-
-        .goal-container {
-            position: relative;
-            width: 300px;
-            height: 150px;
-            margin: 60px auto 0 auto;
-            transform-style: preserve-3d;
-            z-index: 2;
-        }
-
-        .goal-top-bar {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 12px;
-            background: linear-gradient(to bottom, #eee, #bbb);
-            border-radius: 6px;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.5);
-            z-index: 5;
-        }
-        .goal-post-left, .goal-post-right {
-            position: absolute;
-            top: 0;
-            width: 12px;
-            height: 100%;
-            background: linear-gradient(to right, #eee, #bbb);
-            border-radius: 6px;
-            z-index: 5;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.5);
-        }
-        .goal-post-left { left: 0; }
-        .goal-post-right { right: 0; }
-
-        .goal-net {
-            position: absolute;
-            top: 6px;
-            left: 6px;
-            width: 288px;
-            height: 145px;
-            background: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,0.2) 5px, rgba(255,255,255,0.2) 6px), repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255,255,255,0.2) 5px, rgba(255,255,255,0.2) 6px);
-            background-color: rgba(0,0,0,0.15);
-            z-index: 1;
-            box-shadow: inset 0 0 40px rgba(0,0,0,0.4);
-        }
-
-        /* --- 3D Karakterler (Dik duran) --- */
-        /* Bu container, karakterin sahanın açısına ters dönerek dik durmasını sağlar */
-        .character-3d-container {
-            transform-style: preserve-3d;
-            transform: rotateX(-20deg); /* Hafif dikleştirme, perspektife göre ayarlanır */
-        }
-
-        /* KALECİ */
-        .keeper-wrapper {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%); /* Dik duruş için */
-            width: 100px;
-            height: 100px;
-            z-index: 10;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-end;
-        }
+        .stadium-stands { position: absolute; top: 0; left: 0; width: 100%; height: 120px; background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, #111 0%, #222 100%); background-size: 10px 10px, 100% 100%; z-index: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.8); }
+        .grass-stripes { position: absolute; top: 120px; left: 0; width: 100%; height: 100%; background: repeating-linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 40px, transparent 40px, transparent 80px); z-index: 0; }
+        .penalty-area { position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%) rotateX(50deg); width: 60%; height: 250px; border: 4px solid rgba(255,255,255,0.7); border-bottom: none; z-index: 1; box-shadow: 0 0 15px rgba(255,255,255,0.1); }
+        .goal-container { position: relative; width: 300px; height: 150px; margin: 60px auto 0 auto; transform-style: preserve-3d; z-index: 2; }
+        .goal-top-bar { position: absolute; top: 0; left: 0; width: 100%; height: 12px; background: linear-gradient(to bottom, #eee, #bbb); border-radius: 6px; box-shadow: 0 5px 10px rgba(0,0,0,0.5); z-index: 5; }
+        .goal-post-left, .goal-post-right { position: absolute; top: 0; width: 12px; height: 100%; background: linear-gradient(to right, #eee, #bbb); border-radius: 6px; z-index: 5; box-shadow: 0 5px 10px rgba(0,0,0,0.5); }
+        .goal-post-left { left: 0; } .goal-post-right { right: 0; }
+        .goal-net { position: absolute; top: 6px; left: 6px; width: 288px; height: 145px; background: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,0.2) 5px, rgba(255,255,255,0.2) 6px), repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255,255,255,0.2) 5px, rgba(255,255,255,0.2) 6px); background-color: rgba(0,0,0,0.15); z-index: 1; box-shadow: inset 0 0 40px rgba(0,0,0,0.4); }
         
-        /* Kaleciyi oluşturan emoji grubu */
-        .keeper-body {
-            font-size: 80px;
-            line-height: 1;
-            filter: drop-shadow(0 5px 0px rgba(0,0,0,0.3)); /* 3D derinlik hissi */
-            z-index: 2;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        .keeper-wrapper { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 100px; height: 100px; z-index: 10; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
+        .keeper-body { font-size: 80px; line-height: 1; filter: drop-shadow(0 5px 0px rgba(0,0,0,0.3)); z-index: 2; position: relative; display: flex; flex-direction: column; align-items: center; }
+        .keeper-head { font-size: 40px; z-index: 3; margin-bottom: -15px; } .keeper-shirt { font-size: 50px; z-index: 2; }
+        .keeper-shadow { width: 60px; height: 12px; background: rgba(0,0,0,0.5); border-radius: 50%; margin-top: -5px; filter: blur(4px); transform: rotateX(60deg); }
         
-        /* Kaleciye forma giydirmek için üst üste emoji */
-        .keeper-head { font-size: 40px; z-index: 3; margin-bottom: -15px; }
-        .keeper-shirt { font-size: 50px; z-index: 2; }
+        .shooter-wrapper { position: absolute; bottom: -30px; left: 45%; transform: translateX(-50%); z-index: 20; transition: all 0.3s ease-in; display: flex; flex-direction: column; align-items: center; }
+        .shooter-body { font-size: 90px; filter: drop-shadow(0 5px 0 rgba(0,0,0,0.3)); transform: scaleX(-1); }
         
-        .keeper-shadow {
-            width: 60px; height: 12px; background: rgba(0,0,0,0.5); border-radius: 50%;
-            margin-top: -5px; filter: blur(4px); transform: rotateX(60deg); /* Yere yapışık gölge */
-        }
-
-        /* ŞUTÖR */
-        .shooter-wrapper {
-            position: absolute;
-            bottom: -30px;
-            left: 45%;
-            transform: translateX(-50%);
-            z-index: 20;
-            transition: all 0.3s ease-in;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .shooter-body { 
-            font-size: 90px; 
-            filter: drop-shadow(0 5px 0 rgba(0,0,0,0.3)); 
-            transform: scaleX(-1); /* Yüzü kaleye dönsün */
-        }
-
-        /* TOP */
-        .ball-wrapper {
-            position: absolute;
-            bottom: 110px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 15;
-            transition: all 0.6s cubic-bezier(0.1, 0.5, 0.3, 1);
-        }
-        .football { 
-            font-size: 40px; 
-            background: white;
-            border-radius: 50%;
-            box-shadow: inset -5px -5px 10px rgba(0,0,0,0.3); /* Topa hacim ver */
-        }
-        .ball-shadow {
-            width: 30px; height: 8px; background: rgba(0,0,0,0.6); border-radius: 50%;
-            margin: -5px auto 0 auto; filter: blur(4px); transition: all 0.6s;
-            transform: rotateX(50deg);
-        }
-
-        .penalty-spot-mark {
-            position: absolute;
-            bottom: 120px;
-            left: 50%;
-            transform: translateX(-50%) rotateX(50deg);
-            width: 20px;
-            height: 20px;
-            background: radial-gradient(circle, #fff, #ccc);
-            border-radius: 50%;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-            z-index: 2;
-        }
-
-        .goal-message {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            font-size: 4.5rem;
-            color: #fabb00;
-            font-weight: 900;
-            text-shadow: 0 0 20px black, 0 0 40px #fabb00;
-            z-index: 100;
-            transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-        }
+        .ball-wrapper { position: absolute; bottom: 110px; left: 50%; transform: translateX(-50%); z-index: 15; transition: all 0.6s cubic-bezier(0.1, 0.5, 0.3, 1); }
+        .football { font-size: 40px; background: white; border-radius: 50%; box-shadow: inset -5px -5px 10px rgba(0,0,0,0.3); }
+        .ball-shadow { width: 30px; height: 8px; background: rgba(0,0,0,0.6); border-radius: 50%; margin: -5px auto 0 auto; filter: blur(4px); transition: all 0.6s; transform: rotateX(50deg); }
+        
+        .penalty-spot-mark { position: absolute; bottom: 120px; left: 50%; transform: translateX(-50%) rotateX(50deg); width: 20px; height: 20px; background: radial-gradient(circle, #fff, #ccc); border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.5); z-index: 2; }
+        .goal-message { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%) scale(0); font-size: 4.5rem; color: #fabb00; font-weight: 900; text-shadow: 0 0 20px black, 0 0 40px #fabb00; z-index: 100; transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
         .goal-message.show { transform: translate(-50%, -50%) scale(1); }
-
-        /* Bilgi Paneli */
-        .penalty-stats {
-            display: flex;
-            justify-content: space-between;
-            background: linear-gradient(to right, #222, #333);
-            border: 1px solid #444;
-            color: #fabb00;
-            padding: 12px 20px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-
+        .penalty-stats { display: flex; justify-content: space-between; background: linear-gradient(to right, #222, #333); border: 1px solid #444; color: #fabb00; padding: 12px 20px; border-radius: 8px; margin-bottom: 15px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
         .penalty-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; z-index: 10; }
-        .penalty-btn {
-            background: #fff;
-            border: 2px solid #eee;
-            padding: 15px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 700;
-            color: #333;
-            transition: 0.2s;
-            box-shadow: 0 4px 0 #ccc;
-        }
+        .penalty-btn { background: #fff; border: 2px solid #eee; padding: 15px; border-radius: 8px; cursor: pointer; font-weight: 700; color: #333; transition: 0.2s; box-shadow: 0 4px 0 #ccc; }
         .penalty-btn:hover { background: #fabb00; border-color: #f57f17; color: #000; box-shadow: 0 4px 0 #c49000; transform: translateY(-2px); }
         .penalty-btn:active { transform: translateY(2px); box-shadow: 0 0 0; }
         .penalty-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; box-shadow: none; }
 
-        /* Animasyonlar */
         .shooter-run { bottom: 60px !important; left: 50% !important; transform: scale(0.85) translateX(-50%) !important; }
         .ball-shoot-left-top { bottom: 350px !important; left: 40% !important; transform: scale(0.45) rotate(720deg) !important; }
         .ball-shoot-right-top { bottom: 350px !important; left: 60% !important; transform: scale(0.45) rotate(720deg) !important; }
@@ -496,13 +309,11 @@
             <div class="penalty-field">
                 <div class="stadium-stands"></div>
                 <div class="grass-stripes"></div>
-
                 <div class="goal-container">
                     <div class="goal-net"></div>
                     <div class="goal-top-bar"></div>
                     <div class="goal-post-left"></div>
                     <div class="goal-post-right"></div>
-                    
                     <div id="keeper-wrap" class="keeper-wrapper">
                         <div class="keeper-body">
                             <div class="keeper-head">👦</div>
@@ -511,17 +322,13 @@
                         <div class="keeper-shadow"></div>
                     </div>
                 </div>
-
                 <div class="goal-message" id="goal-msg">GOL!</div>
-                
                 <div class="penalty-area"></div>
                 <div class="penalty-spot-mark"></div>
-
                 <div id="ball-wrap" class="ball-wrapper">
                     <div class="football">⚽</div>
                     <div class="ball-shadow"></div>
                 </div>
-
                 <div id="shooter-wrap" class="shooter-wrapper">
                     <div class="shooter-body">🏃</div>
                 </div>
@@ -531,9 +338,7 @@
                 Soru yükleniyor...
             </div>
 
-            <div class="penalty-options" id="p-options">
-                </div>
-            
+            <div class="penalty-options" id="p-options"></div>
             <button id="p-restart-btn" class="restart-btn" style="display:none; width:100%; background:#fabb00; color:black; font-weight:bold;" onclick="startPenaltySession()">YENİ MAÇ 🔄</button>
         </div>
     </div>
@@ -553,7 +358,6 @@
 
         function getToken() { return localStorage.getItem("sSportToken"); }
 
-        // --- FAVORİ SİSTEMİ ---
         function getFavs() { return JSON.parse(localStorage.getItem('sSportFavs') || '[]'); }
         function toggleFavorite(title) {
             event.stopPropagation();
@@ -771,6 +575,7 @@
         }
         function filterCategory(btn, cat) { currentCategory = cat; document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); filterContent(); }
         function copyText(t) { navigator.clipboard.writeText(t.replace(/\\n/g, '\n')).then(() => Swal.fire({icon:'success', title:'Kopyalandı', toast:true, position:'top-end', showConfirmButton:false, timer:1500}) ); }
+        
         function toggleEditMode() {
             isAdminMode = !isAdminMode; document.body.classList.toggle('editing', isAdminMode); const btn = document.getElementById('quickEditBtn'); 
             if(isAdminMode) { btn.classList.add('active'); btn.innerHTML = '<i class="fas fa-times"></i> Düzenlemeyi Kapat'; Swal.fire({ icon: 'success', title: 'Düzenleme Modu AÇIK', text: 'Kalem ikonlarına tıklayarak içerikleri düzenleyebilirsiniz.', timer: 1500, showConfirmButton: false }); } 
@@ -780,6 +585,7 @@
             if(document.getElementById('sales-modal').style.display === 'flex') openSales();
             if(document.getElementById('news-modal').style.display === 'flex') openNews();
         }
+
         function sendUpdate(originalTitle, column, value, type = 'card') {
             if (!Swal.isVisible()) Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } });
             const payload = { action: "updateContent", title: originalTitle, column: column, value: value, type: type, originalText: originalTitle, username: currentUser, token: getToken() };
@@ -789,12 +595,227 @@
                 else { Swal.fire('Hata', data.message || 'Güncelleme başarısız.', 'error'); }
             }).catch(err => Swal.fire('Hata', 'Güncelleme hatası: ' + err, 'error'));
         }
-        // ... [DİĞER EKLE/DÜZENLE FONKSİYONLARI MEVCUT ŞEKİLDE KALACAK] ...
-        async function addNewCardPopup() { /* ... */ } 
-        async function editContent(index) { /* ... */ }
-        async function editSport(index) { /* ... */ }
-        async function editSales(index) { /* ... */ }
-        async function editNews(index) { /* ... */ }
+
+        // --- CRUD FONKSİYONLARI (GERİ EKLENDİ) ---
+        async function addNewCardPopup() {
+            const catSelectHTML = getCategorySelectHtml('Bilgi', 'swal-new-cat');
+            const { value: formValues } = await Swal.fire({
+                title: 'Yeni İçerik Ekle',
+                html: `
+                    <div style="margin-bottom:15px; text-align:left;">
+                        <label style="font-weight:bold; font-size:0.9rem;">Ne Ekleyeceksin?</label>
+                        <select id="swal-type-select" class="swal2-input" style="width:100%; margin-top:5px; height:35px; font-size:0.9rem;" onchange="toggleAddFields()">
+                            <option value="card">📌 Bilgi Kartı</option>
+                            <option value="news">📢 Duyuru</option>
+                            <option value="sales">📞 Telesatış Scripti</option>
+                            <option value="sport">🏆 Spor İçeriği</option>
+                        </select>
+                    </div>
+                    <div id="preview-card" class="card Bilgi" style="text-align:left; box-shadow:none; border:1px solid #e0e0e0; margin-top:10px;">
+                        <div class="card-header" style="align-items: center; gap: 10px;">
+                            <input id="swal-new-title" class="swal2-input" style="margin:0; height:40px; flex-grow:1; border:none; border-bottom:2px solid #eee; padding:0 5px; font-weight:bold; color:#0e1b42;" placeholder="Başlık Giriniz...">
+                            <div id="cat-container" style="width: 110px;">${catSelectHTML}</div>
+                        </div>
+                        <div class="card-content" style="margin-bottom:10px;">
+                            <textarea id="swal-new-text" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; resize:none; font-family:inherit; min-height:100px; padding:10px; background:#f9f9f9;" placeholder="İçerik metni..."></textarea>
+                        </div>
+                        <div id="script-container" class="script-box" style="padding:0; border:1px solid #f0e68c;">
+                            <textarea id="swal-new-script" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; background:transparent; font-style:italic; min-height:80px; font-size:0.9rem;" placeholder="Script metni (İsteğe bağlı)..."></textarea>
+                        </div>
+                        <div id="extra-container" class="card-actions" style="margin-top:15px; display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+                            <div style="position:relative;"><i class="fas fa-code" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-new-code" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" placeholder="Kod"></div>
+                            <div style="position:relative;"><i class="fas fa-link" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-new-link" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" placeholder="Link"></div>
+                        </div>
+                    </div>
+                    <div id="news-extra" style="display:none; text-align:left; margin-top:10px;">
+                         <div style="display:flex; gap:10px; margin-bottom:10px;">
+                            <div style="flex:1;">
+                                <label style="font-weight:bold; font-size:0.8rem;">Tür</label>
+                                <select id="swal-news-type" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
+                                    <option value="info">Bilgi</option>
+                                    <option value="fix">Çözüldü</option>
+                                    <option value="update">Güncelleme</option>
+                                </select>
+                            </div>
+                             <div style="flex:1;">
+                                <label style="font-weight:bold; font-size:0.8rem;">Durum</label>
+                                <select id="swal-news-status" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
+                                    <option value="Aktif">Aktif</option>
+                                    <option value="Pasif">Pasif</option>
+                                </select>
+                            </div>
+                         </div>
+                    </div>
+                    <div id="sport-extra" style="display:none; text-align:left; margin-top:10px;">
+                        <label style="font-weight:bold;">İpucu (Tip)</label><input id="swal-sport-tip" class="swal2-input" style="width:100%; margin-bottom:10px;" placeholder="Örn: Türk takımları...">
+                        <label style="font-weight:bold;">Detay</label><textarea id="swal-sport-detail" class="swal2-textarea" style="height:60px;" placeholder="Detaylı bilgi..."></textarea>
+                    </div>`,
+                width: '700px', showCancelButton: true, confirmButtonText: '<i class="fas fa-plus"></i> Ekle', cancelButtonText: 'İptal', focusConfirm: false,
+                didOpen: () => {
+                    const selectEl = document.getElementById('swal-new-cat'); const cardEl = document.getElementById('preview-card');
+                    selectEl.style.margin = "0"; selectEl.style.height = "30px"; selectEl.style.fontSize = "0.8rem"; selectEl.style.padding = "0 5px";
+                    selectEl.addEventListener('change', function() { cardEl.className = 'card ' + this.value; });
+                    window.toggleAddFields = function() {
+                        const type = document.getElementById('swal-type-select').value;
+                        const catCont = document.getElementById('cat-container');
+                        const scriptCont = document.getElementById('script-container');
+                        const extraCont = document.getElementById('extra-container');
+                        const sportExtra = document.getElementById('sport-extra');
+                        const newsExtra = document.getElementById('news-extra');
+                        const cardPreview = document.getElementById('preview-card');
+                        catCont.style.display = 'none'; scriptCont.style.display = 'none'; extraCont.style.display = 'none'; 
+                        sportExtra.style.display = 'none'; newsExtra.style.display = 'none';
+                        if (type === 'card') {
+                            catCont.style.display = 'block'; scriptCont.style.display = 'block'; extraCont.style.display = 'grid';
+                            cardPreview.style.borderLeft = "5px solid var(--info)";
+                        } else if (type === 'sales') {
+                            cardPreview.style.borderLeft = "5px solid var(--sales)";
+                        } else if (type === 'sport') {
+                            sportExtra.style.display = 'block';
+                            cardPreview.style.borderLeft = "5px solid var(--primary)";
+                        } else if (type === 'news') {
+                            newsExtra.style.display = 'block';
+                            cardPreview.style.borderLeft = "5px solid var(--secondary)";
+                        }
+                    };
+                },
+                preConfirm: () => {
+                    const type = document.getElementById('swal-type-select').value;
+                    const today = new Date();
+                    const dateStr = today.getDate() + "." + (today.getMonth()+1) + "." + today.getFullYear();
+                    return { 
+                        cardType: type, 
+                        category: type === 'card' ? document.getElementById('swal-new-cat').value : (type === 'news' ? document.getElementById('swal-news-type').value : ''), 
+                        title: document.getElementById('swal-new-title').value, 
+                        text: document.getElementById('swal-new-text').value, 
+                        script: type === 'card' ? document.getElementById('swal-new-script').value : '', 
+                        code: type === 'card' ? document.getElementById('swal-new-code').value : '', 
+                        status: type === 'news' ? document.getElementById('swal-news-status').value : '',
+                        link: type === 'card' ? document.getElementById('swal-new-link').value : '',
+                        tip: type === 'sport' ? document.getElementById('swal-sport-tip').value : '',
+                        detail: type === 'sport' ? document.getElementById('swal-sport-detail').value : '',
+                        date: dateStr 
+                    }
+                }
+            });
+            if (formValues) {
+                if(!formValues.title) { Swal.fire('Hata', 'Başlık zorunlu!', 'error'); return; }
+                Swal.fire({ title: 'Ekleniyor...', didOpen: () => { Swal.showLoading() } });
+                fetch(SCRIPT_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ action: "addCard", username: currentUser, token: getToken(), ...formValues }) })
+                .then(response => response.json()).then(data => {
+                    if (data.result === "success") { Swal.fire({icon: 'success', title: 'Başarılı', text: 'İçerik eklendi.', timer: 2000, showConfirmButton: false}); setTimeout(loadContentData, 3500); } 
+                    else { Swal.fire('Hata', data.message || 'Eklenemedi.', 'error'); }
+                }).catch(err => Swal.fire('Hata', 'Sunucu hatası: ' + err, 'error'));
+            }
+        }
+
+        async function editContent(index) {
+            const item = activeCards[index]; 
+            const catSelectHTML = getCategorySelectHtml(item.category, 'swal-cat');
+            const { value: formValues } = await Swal.fire({
+                title: 'Kartı Düzenle',
+                html: `
+                    <div id="preview-card-edit" class="card ${item.category}" style="text-align:left; box-shadow:none; border:1px solid #e0e0e0; margin-top:10px;">
+                        <div class="card-header" style="align-items: center; gap: 10px;">
+                            <input id="swal-title" class="swal2-input" style="margin:0; height:40px; flex-grow:1; border:none; border-bottom:2px solid #eee; padding:0 5px; font-weight:bold; color:#0e1b42;" value="${item.title}" placeholder="Başlık">
+                            <div style="width: 110px;">${catSelectHTML}</div>
+                        </div>
+                        <div class="card-content" style="margin-bottom:10px;">
+                            <textarea id="swal-text" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; resize:none; font-family:inherit; min-height:120px; padding:10px; background:#f9f9f9;" placeholder="İçerik metni...">${(item.text || '').toString().replace(/<br>/g,'\n')}</textarea>
+                        </div>
+                        <div class="script-box" style="padding:0; border:1px solid #f0e68c;">
+                            <textarea id="swal-script" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; background:transparent; font-style:italic; min-height:80px; font-size:0.9rem;" placeholder="Script metni...">${(item.script || '').toString().replace(/<br>/g,'\n')}</textarea>
+                        </div>
+                        <div class="card-actions" style="margin-top:15px; display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+                            <div style="position:relative;"><i class="fas fa-code" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-code" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" value="${item.code || ''}" placeholder="Kod"></div>
+                            <div style="position:relative;"><i class="fas fa-link" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-link" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" value="${item.link || ''}" placeholder="Link"></div>
+                        </div>
+                    </div>`,
+                width: '700px', showCancelButton: true, confirmButtonText: '<i class="fas fa-save"></i> Değişiklikleri Kaydet', cancelButtonText: 'İptal', focusConfirm: false,
+                didOpen: () => {
+                    const selectEl = document.getElementById('swal-cat'); const cardEl = document.getElementById('preview-card-edit');
+                    selectEl.style.margin = "0"; selectEl.style.height = "30px"; selectEl.style.fontSize = "0.8rem"; selectEl.style.padding = "0 5px";
+                    selectEl.addEventListener('change', function() { cardEl.className = 'card ' + this.value; });
+                },
+                preConfirm: () => {
+                    return { cat: document.getElementById('swal-cat').value, title: document.getElementById('swal-title').value, text: document.getElementById('swal-text').value, script: document.getElementById('swal-script').value, code: document.getElementById('swal-code').value, link: document.getElementById('swal-link').value }
+                }
+            });
+            if (formValues) {
+                if(formValues.cat !== item.category) sendUpdate(item.title, "Category", formValues.cat, 'card');
+                if(formValues.text !== (item.text || '').replace(/<br>/g,'\n')) setTimeout(() => sendUpdate(item.title, "Text", formValues.text, 'card'), 500);
+                if(formValues.script !== (item.script || '').replace(/<br>/g,'\n')) setTimeout(() => sendUpdate(item.title, "Script", formValues.script, 'card'), 1000);
+                if(formValues.code !== (item.code || '')) setTimeout(() => sendUpdate(item.title, "Code", formValues.code, 'card'), 1500);
+                if(formValues.link !== (item.link || '')) setTimeout(() => sendUpdate(item.title, "Link", formValues.link, 'card'), 2000);
+                if(formValues.title !== item.title) setTimeout(() => sendUpdate(item.title, "Title", formValues.title, 'card'), 2500);
+            }
+        }
+
+        async function editSport(index) {
+            event.stopPropagation();
+            const s = sportsData[index];
+            const { value: formValues } = await Swal.fire({
+                title: 'Spor İçeriğini Düzenle',
+                html: `
+                    <div class="card" style="text-align:left; border-left: 5px solid var(--primary); padding:15px; background:#fff;">
+                        <label style="font-weight:bold;">Başlık</label>
+                        <input id="swal-title" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${s.title}">
+                        <label style="font-weight:bold;">Açıklama</label>
+                        <textarea id="swal-desc" class="swal2-textarea" style="margin-bottom:10px;">${s.desc || ''}</textarea>
+                        <label style="font-weight:bold;">İpucu (Tip)</label>
+                        <input id="swal-tip" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${s.tip || ''}">
+                        <label style="font-weight:bold;">Detay</label>
+                        <textarea id="swal-detail" class="swal2-textarea" style="margin-bottom:10px;">${s.detail || ''}</textarea>
+                        <label style="font-weight:bold;">Okunuş</label>
+                        <input id="swal-pron" class="swal2-input" style="width:100%;" value="${s.pronunciation || ''}">
+                    </div>`,
+                width: '700px', showCancelButton: true, confirmButtonText: 'Kaydet',
+                preConfirm: () => [ document.getElementById('swal-title').value, document.getElementById('swal-desc').value, document.getElementById('swal-tip').value, document.getElementById('swal-detail').value, document.getElementById('swal-pron').value ]
+            });
+            if (formValues) {
+                const originalTitle = s.title;
+                if(formValues[1] !== s.desc) sendUpdate(originalTitle, "Text", formValues[1], 'sport');
+                if(formValues[2] !== s.tip) setTimeout(() => sendUpdate(originalTitle, "Tip", formValues[2], 'sport'), 1000);
+                if(formValues[3] !== s.detail) setTimeout(() => sendUpdate(originalTitle, "Detail", formValues[3], 'sport'), 2000);
+                if(formValues[4] !== s.pronunciation) setTimeout(() => sendUpdate(originalTitle, "Pronunciation", formValues[4], 'sport'), 3000);
+                if(formValues[0] !== originalTitle) setTimeout(() => sendUpdate(originalTitle, "Title", formValues[0], 'sport'), 3500);
+            }
+        }
+
+        async function editSales(index) {
+            event.stopPropagation(); 
+            const s = salesScripts[index];
+            const { value: formValues } = await Swal.fire({ 
+                title: 'Satış Metnini Düzenle', 
+                html: `<div class="card" style="text-align:left; border-left: 5px solid var(--sales); padding:15px; background:#ecfdf5;"><label style="font-weight:bold;">Başlık</label><input id="swal-title" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${s.title}"><label style="font-weight:bold;">Metin</label><textarea id="swal-text" class="swal2-textarea" style="min-height:150px;">${s.text || ''}</textarea></div>`, 
+                width: '700px', showCancelButton: true, confirmButtonText: 'Kaydet', 
+                preConfirm: () => [ document.getElementById('swal-title').value, document.getElementById('swal-text').value ]
+            });
+            if (formValues) {
+                const originalTitle = s.title;
+                if(formValues[1] !== s.text) sendUpdate(originalTitle, "Text", formValues[1], 'sales');
+                if(formValues[0] !== originalTitle) setTimeout(() => sendUpdate(originalTitle, "Title", formValues[0], 'sales'), 1000);
+            }
+        }
+
+        async function editNews(index) {
+            const i = newsData[index];
+            let statusOptions = `<option value="Aktif" ${i.status !== 'Pasif' ? 'selected' : ''}>Aktif</option><option value="Pasif" ${i.status === 'Pasif' ? 'selected' : ''}>Pasif (Gizle)</option>`;
+            const { value: formValues } = await Swal.fire({
+                title: 'Duyuruyu Düzenle',
+                html: `<div class="card" style="text-align:left; border-left: 5px solid var(--secondary); padding:15px; background:#fff8e1;"><label style="font-weight:bold;">Başlık</label><input id="swal-title" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${i.title || ''}"><div style="display:flex; gap:10px; margin-bottom:10px;"><div style="flex:1;"><label style="font-weight:bold;">Tarih</label><input id="swal-date" class="swal2-input" style="width:100%;" value="${i.date || ''}"></div><div style="flex:1;"><label style="font-weight:bold;">Tür</label><input id="swal-type" class="swal2-input" style="width:100%;" value="${i.type || ''}"></div></div><label style="font-weight:bold;">Metin</label><textarea id="swal-desc" class="swal2-textarea" style="margin-bottom:10px;">${i.desc || ''}</textarea><label style="font-weight:bold;">Durum</label><select id="swal-status" class="swal2-input" style="width:100%;">${statusOptions}</select></div>`,
+                width: '600px', showCancelButton: true, confirmButtonText: 'Kaydet', 
+                preConfirm: () => [ document.getElementById('swal-title').value, document.getElementById('swal-date').value, document.getElementById('swal-desc').value, document.getElementById('swal-type').value, document.getElementById('swal-status').value ]
+            });
+            if (formValues) {
+                const originalTitle = i.title;
+                if(formValues[1] !== i.date) sendUpdate(originalTitle, "Date", formValues[1], 'news');
+                if(formValues[2] !== i.desc) setTimeout(() => sendUpdate(originalTitle, "Text", formValues[2], 'news'), 500);
+                if(formValues[3] !== i.type) setTimeout(() => sendUpdate(originalTitle, "Category", formValues[3], 'news'), 1000);
+                if(formValues[4] !== i.status) setTimeout(() => sendUpdate(originalTitle, "Status", formValues[4], 'news'), 1500);
+                if(formValues[0] !== originalTitle) setTimeout(() => sendUpdate(originalTitle, "Title", formValues[0], 'news'), 2000);
+            }
+        }
         
         function closeModal(id) { document.getElementById(id).style.display = 'none'; }
         let tickerIndex = 0;
