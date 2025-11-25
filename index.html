@@ -195,7 +195,7 @@
             filter: blur(3px);
         }
         .head::after { 
-            content: ''; position: absolute; top: -2px; left: 5px;
+            content: ''; position: absolute; top: -4px; left: 5px; /* Saç biraz daha arkadan */
             width: 18px; height: 10px; background: #3e2723; border-radius: 50%;
             transform: rotate(-10deg);
         }
@@ -222,7 +222,7 @@
             color: #0e1b42; font-size: 12px; font-weight: 800; opacity: 0.8; z-index: 2;
         }
 
-        /* Kollar (Daha hacimli ve pozisyona göre bükülmüş) */
+        /* Kollar (Açık ve hacimli) */
         .arms { position: absolute; top: 35px; width: 100%; height: 15px; z-index: 2; }
         .arm {
             width: 16px; height: 45px; 
@@ -241,24 +241,24 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.3);
             transform: translateZ(6px); 
         }
-        .gloves::after { /* Eldivenlere ek detay */
+        .gloves::after { 
             content: ''; position: absolute; width: 6px; height: 6px; background: #f00; border-radius: 50%;
             top: 5px; left: 5px;
         }
 
         /* Şort */
         .shorts {
-            width: 45px; height: 30px; background: linear-gradient(to bottom, #212121, #000); 
+            width: 45px; height: 30px; background: linear-gradient(to bottom, #0e1b42, #0e1b42); 
             margin: -8px auto 0; border-radius: 0 0 12px 12px; position: relative; z-index: 2;
             box-shadow: 0 3px 6px rgba(0,0,0,0.3);
             transform: translateZ(1px);
         }
 
-        /* Bacaklar (Daha hacimli ve pozisyona göre bükülmüş) */
+        /* Bacaklar */
         .legs { position: relative; width: 45px; margin: 0 auto; }
         .leg {
             width: 16px; height: 45px;
-            background: linear-gradient(to bottom, #212121, #000);
+            background: linear-gradient(to bottom, #0e1b42, #000000);
             position: absolute; top: -8px; border-radius: 0 0 8px 8px;
             box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
             transform-origin: top center;
@@ -266,16 +266,16 @@
         .leg.left { left: 5px; transform: rotate(8deg) translateZ(2px); }
         .leg.right { right: 5px; transform: rotate(-8deg) translateZ(2px); }
 
-        /* Çoraplar (Daha belirgin) */
+        /* Çoraplar (Sarı detay) */
         .sock {
             width: 100%; height: 22px;
-            background: linear-gradient(to bottom, #fff, #eee);
+            background: linear-gradient(to bottom, #ffeb3b, #fbc02d);
             position: absolute; bottom: 0; border-radius: 0 0 8px 8px;
             border-top: 2px solid #ddd;
             box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
         }
 
-        /* Ayakkabılar (Daha belirgin ve gölgeli) */
+        /* Ayakkabılar */
         .shoe {
             width: 22px; height: 14px;
             background: linear-gradient(to right, #d32f2f, #c62828);
@@ -285,9 +285,10 @@
             transform: translateZ(8px);
         }
 
-        /* Şutör (Arkası Dönük - daha gerçekçi versiyon) */
+        /* Şutör (Arkası Dönük) */
         .shooter-wrapper {
-            position: absolute; bottom: -50px; left: 45%; transform: translateX(-50%) scale(1.4); 
+            position: absolute; bottom: -50px; left: 45%; 
+            transform: translateX(-50%) scale(1.4); /* Perspektif için daha büyük ve önde */
             z-index: 20; transition: all 0.3s ease-in; width: 70px; height: 130px; 
             perspective: 500px;
         }
@@ -319,10 +320,10 @@
         .shooter-wrapper .gloves { display: none; } 
 
         .shooter-wrapper .shorts { background: linear-gradient(to bottom, #0e1b42, #000); border: 1px solid #000; }
-        .shooter-wrapper .leg { background: linear-gradient(to bottom, #d32f2f, #b71c1c); box-shadow: inset 0 0 6px rgba(0,0,0,0.2); } /* Şutör bacaklarını çorap rengi yaptık */
+        .shooter-wrapper .leg { background: linear-gradient(to bottom, #ff5757, #d32f2f); box-shadow: inset 0 0 6px rgba(0,0,0,0.2); } /* Kırmızı çorap-bacak */
         .shooter-wrapper .leg.left { transform: rotate(10deg) translateZ(2px); }
         .shooter-wrapper .leg.right { transform: rotate(-10deg) translateZ(2px); }
-        .shooter-wrapper .sock { background: linear-gradient(to bottom, #d32f2f, #b71c1c); border-top: 2px solid #a11616; display: none; } /* Çorap detayını bacağın içine gömdük */
+        .shooter-wrapper .sock { display: none; } 
         .shooter-wrapper .shoe { background: linear-gradient(to right, #212121, #000); box-shadow: 0 3px 6px rgba(0,0,0,0.4), inset -3px -3px 4px rgba(0,0,0,0.4); }
 
         .keeper-shadow { width: 50px; height: 10px; background: rgba(0,0,0,0.5); border-radius: 50%; margin: -5px auto 0 auto; filter: blur(4px); }
