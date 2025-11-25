@@ -129,63 +129,110 @@
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes intense-pulse { 0% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 187, 0, 0.7); } 70% { transform: scale(1.2); box-shadow: 0 0 0 10px rgba(250, 187, 0, 0); } 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 187, 0, 0); } }
 
-        /* --- 3D OYUN STİLLERİ --- */
+        /* --- 3D OYUN STİLLERİ (GÜNCELLENMİŞ REALİSTİK) --- */
         .penalty-field {
-            background: radial-gradient(circle at 50% 30%, #4caf50 0%, #2e7d32 60%, #1b5e20 100%);
+            background: radial-gradient(circle at 50% 30%, #4caf50 0%, #388e3c 40%, #1b5e20 100%);
             border: 4px solid #fff;
             border-radius: 8px;
             height: 480px;
             position: relative;
             overflow: hidden;
-            perspective: 900px; 
+            perspective: 1000px; /* Derinlik algısı arttırıldı */
             box-shadow: inset 0 0 80px rgba(0,0,0,0.8);
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            padding-top: 0;
         }
-        .stadium-stands { position: absolute; top: 0; left: 0; width: 100%; height: 120px; background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, #111 0%, #222 100%); background-size: 10px 10px, 100% 100%; z-index: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.8); }
-        .grass-stripes { position: absolute; top: 120px; left: 0; width: 100%; height: 100%; background: repeating-linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 40px, transparent 40px, transparent 80px); z-index: 0; }
-        .penalty-area { position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%) rotateX(50deg); width: 60%; height: 250px; border: 4px solid rgba(255,255,255,0.7); border-bottom: none; z-index: 1; box-shadow: 0 0 15px rgba(255,255,255,0.1); }
-        .goal-container { position: relative; width: 300px; height: 150px; margin: 60px auto 0 auto; transform-style: preserve-3d; z-index: 2; }
-        .goal-top-bar { position: absolute; top: 0; left: 0; width: 100%; height: 12px; background: linear-gradient(to bottom, #eee, #bbb); border-radius: 6px; box-shadow: 0 5px 10px rgba(0,0,0,0.5); z-index: 5; }
-        .goal-post-left, .goal-post-right { position: absolute; top: 0; width: 12px; height: 100%; background: linear-gradient(to right, #eee, #bbb); border-radius: 6px; z-index: 5; box-shadow: 0 5px 10px rgba(0,0,0,0.5); }
+        .stadium-stands { position: absolute; top: 0; left: 0; width: 100%; height: 120px; background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, #0d1117 0%, #161b22 100%); background-size: 10px 10px, 100% 100%; z-index: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.8); }
+        .grass-stripes { position: absolute; top: 120px; left: 0; width: 100%; height: 100%; background: repeating-linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 40px, transparent 40px, transparent 80px); z-index: 0; transform: rotateX(20deg) scale(1.1); transform-origin: top; }
+
+        /* KALE DİREKLERİ (Daha metalik) */
+        .goal-container { position: relative; width: 320px; height: 160px; margin: 50px auto 0 auto; transform-style: preserve-3d; z-index: 2; perspective: 600px; }
+        .goal-top-bar { position: absolute; top: 0; left: 0; width: 100%; height: 10px; background: linear-gradient(to bottom, #f0f0f0, #bdbdbd); border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.5); z-index: 5; }
+        .goal-post-left, .goal-post-right { position: absolute; top: 0; width: 10px; height: 100%; background: linear-gradient(to right, #f0f0f0, #bdbdbd); border-radius: 5px; z-index: 5; }
         .goal-post-left { left: 0; } .goal-post-right { right: 0; }
-        .goal-net { position: absolute; top: 6px; left: 6px; width: 288px; height: 145px; background: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,0.2) 5px, rgba(255,255,255,0.2) 6px), repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255,255,255,0.2) 5px, rgba(255,255,255,0.2) 6px); background-color: rgba(0,0,0,0.15); z-index: 1; box-shadow: inset 0 0 40px rgba(0,0,0,0.4); }
-        
-        .keeper-wrapper { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 100px; height: 100px; z-index: 10; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
-        .keeper-body { font-size: 80px; line-height: 1; filter: drop-shadow(0 5px 0px rgba(0,0,0,0.3)); z-index: 2; position: relative; display: flex; flex-direction: column; align-items: center; }
-        .keeper-head { font-size: 40px; z-index: 3; margin-bottom: -15px; } .keeper-shirt { font-size: 50px; z-index: 2; }
-        .keeper-shadow { width: 60px; height: 12px; background: rgba(0,0,0,0.5); border-radius: 50%; margin-top: -5px; filter: blur(4px); transform: rotateX(60deg); }
-        
-        .shooter-wrapper { position: absolute; bottom: -30px; left: 45%; transform: translateX(-50%); z-index: 20; transition: all 0.3s ease-in; display: flex; flex-direction: column; align-items: center; }
-        .shooter-body { font-size: 90px; filter: drop-shadow(0 5px 0 rgba(0,0,0,0.3)); transform: scaleX(-1); }
-        
-        .ball-wrapper { position: absolute; bottom: 110px; left: 50%; transform: translateX(-50%); z-index: 15; transition: all 0.6s cubic-bezier(0.1, 0.5, 0.3, 1); }
-        .football { font-size: 40px; background: white; border-radius: 50%; box-shadow: inset -5px -5px 10px rgba(0,0,0,0.3); }
-        .ball-shadow { width: 30px; height: 8px; background: rgba(0,0,0,0.6); border-radius: 50%; margin: -5px auto 0 auto; filter: blur(4px); transition: all 0.6s; transform: rotateX(50deg); }
-        
-        .penalty-spot-mark { position: absolute; bottom: 120px; left: 50%; transform: translateX(-50%) rotateX(50deg); width: 20px; height: 20px; background: radial-gradient(circle, #fff, #ccc); border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.5); z-index: 2; }
-        .goal-message { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%) scale(0); font-size: 4.5rem; color: #fabb00; font-weight: 900; text-shadow: 0 0 20px black, 0 0 40px #fabb00; z-index: 100; transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+        .goal-net { position: absolute; top: 5px; left: 5px; width: 310px; height: 155px; background: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,0.3) 5px, rgba(255,255,255,0.3) 6px), repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255,255,255,0.3) 5px, rgba(255,255,255,0.3) 6px); background-color: rgba(0,0,0,0.2); transform: translateZ(-40px); box-shadow: inset 0 0 20px rgba(0,0,0,0.5); }
+
+        /* --- REALİSTİK TOP --- */
+        .ball-wrapper { position: absolute; bottom: 110px; left: 50%; transform: translateX(-55%); z-index: 15; transition: all 0.6s cubic-bezier(0.1, 0.5, 0.3, 1); width: 36px; height: 36px; }
+        .football { 
+            width: 100%; height: 100%; border-radius: 50%; 
+            background-color: #fff;
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(0,0,0,0.1) 40%, transparent 50%),
+                conic-gradient(#fff 0deg, #fff 45deg, #222 45deg, #222 90deg, #fff 90deg, #fff 135deg, #222 135deg, #222 180deg, #fff 180deg, #fff 225deg, #222 225deg, #222 270deg, #fff 270deg, #fff 315deg, #222 315deg, #222 360deg);
+            background-size: 200% 200%;
+            box-shadow: inset -5px -5px 10px rgba(0,0,0,0.4), 0 5px 10px rgba(0,0,0,0.3);
+            position: relative;
+            animation: spinIdle 10s linear infinite;
+        }
+        @keyframes spinIdle { 0% { background-position: 0% 0%; } 100% { background-position: 100% 100%; } }
+        .ball-shadow { width: 30px; height: 6px; background: rgba(0,0,0,0.6); border-radius: 50%; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); filter: blur(3px); transition: all 0.6s; }
+
+        /* --- OYUNCU GÖVDELERİ (CSS ART) --- */
+        .keeper-wrapper { 
+            position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); 
+            width: 60px; height: 120px; z-index: 10; 
+            transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1.2); 
+        }
+        /* Kaleci Vücut Yapısı */
+        .player-figure { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; }
+        .head { width: 24px; height: 28px; background: radial-gradient(circle at 10px 10px, #ffcc80, #e65100); border-radius: 50%; margin: 0 auto; position: relative; z-index: 4; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
+        .torso { width: 40px; height: 45px; background: linear-gradient(135deg, #ffeb3b, #fbc02d); border-radius: 8px 8px 12px 12px; margin: -2px auto 0; position: relative; z-index: 3; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-weight: bold; color: #333; font-size: 10px; }
+        .arms { position: absolute; top: 32px; width: 100%; height: 15px; z-index: 2; }
+        .arm { width: 12px; height: 35px; background: #ffeb3b; border-radius: 10px; position: absolute; top: 0; }
+        .arm.left { left: -5px; transform: rotate(15deg); } .arm.right { right: -5px; transform: rotate(-15deg); }
+        .gloves { width: 14px; height: 14px; background: #fff; border-radius: 50%; position: absolute; bottom: -2px; left: -1px; border:2px solid #ccc; }
+        .shorts { width: 40px; height: 25px; background: #212121; margin: -5px auto 0; border-radius: 0 0 10px 10px; position: relative; z-index: 2; }
+        .legs { position: relative; width: 40px; margin: 0 auto; }
+        .leg { width: 14px; height: 35px; background: #212121; position: absolute; top: -5px; border-radius: 0 0 5px 5px; }
+        .leg.left { left: 4px; } .leg.right { right: 4px; }
+        .sock { width: 100%; height: 15px; background: #fff; position: absolute; bottom: 0; border-radius: 0 0 5px 5px; }
+        .shoe { width: 16px; height: 10px; background: #d32f2f; position: absolute; bottom: -8px; left: -1px; border-radius: 5px 5px 2px 2px; }
+
+        /* Şutör (Arkası Dönük) */
+        .shooter-wrapper { 
+            position: absolute; bottom: -50px; left: 45%; transform: translateX(-50%) scale(1.4); 
+            z-index: 20; transition: all 0.3s ease-in; width: 60px; height: 120px; 
+        }
+        .shooter-wrapper .head { background: radial-gradient(circle at 10px 10px, #3e2723, #000); /* Saç rengi */ }
+        .shooter-wrapper .torso { background: linear-gradient(135deg, #d32f2f, #b71c1c); color: white; } /* Kırmızı Forma */
+        .shooter-wrapper .torso::after { content: '10'; font-size: 16px; font-weight: 800; opacity: 0.9; }
+        .shooter-wrapper .arm { background: #d32f2f; }
+        .shooter-wrapper .shorts { background: #fff; }
+        .shooter-wrapper .leg { background: #fff; } /* Ten rengi yerine beyaz şort/çorap */
+        .shooter-wrapper .sock { background: #d32f2f; }
+
+        .keeper-shadow { width: 50px; height: 10px; background: rgba(0,0,0,0.5); border-radius: 50%; margin: -5px auto 0 auto; filter: blur(4px); }
+
+        /* --- ANİMASYON SINIFLARI --- */
+        .shooter-run { bottom: 80px !important; left: 50% !important; transform: translateX(-50%) scale(1.1) !important; }
+        .shooter-run .arm.left { animation: runArm 0.3s infinite alternate; }
+        .shooter-run .arm.right { animation: runArm 0.3s infinite alternate-reverse; }
+        @keyframes runArm { from { transform: rotate(20deg); } to { transform: rotate(-20deg); } }
+
+        /* Top Hareketleri */
+        .ball-shoot-left-top { bottom: 380px !important; left: 35% !important; transform: scale(0.4) rotate(720deg) !important; }
+        .ball-shoot-right-top { bottom: 380px !important; left: 65% !important; transform: scale(0.4) rotate(720deg) !important; }
+        .ball-shoot-left-low { bottom: 330px !important; left: 32% !important; transform: scale(0.45) rotate(720deg) !important; }
+        .ball-shoot-right-low { bottom: 330px !important; left: 68% !important; transform: scale(0.45) rotate(720deg) !important; }
+        .ball-miss-left { bottom: 380px !important; left: 10% !important; transform: scale(0.3) !important; opacity: 0; }
+        .ball-miss-right { bottom: 380px !important; left: 90% !important; transform: scale(0.3) !important; opacity: 0; }
+
+        /* Kaleci Kurtarışları */
+        .keeper-dive-left { transform: translateX(-140px) translateY(50px) rotate(-70deg) !important; }
+        .keeper-dive-left .arm.left { transform: rotate(-180deg); }
+        .keeper-dive-right { transform: translateX(140px) translateY(50px) rotate(70deg) !important; }
+        .keeper-dive-right .arm.right { transform: rotate(-180deg); }
+
+        /* Diğerleri */
+        .penalty-area { position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%) perspective(500px) rotateX(40deg); width: 70%; height: 200px; border: 4px solid rgba(255,255,255,0.6); border-bottom: none; z-index: 1; box-shadow: 0 0 15px rgba(255,255,255,0.1); }
+        .penalty-spot-mark { position: absolute; bottom: 120px; left: 50%; transform: translateX(-50%) scaleY(0.5); width: 16px; height: 16px; background: #fff; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.5); z-index: 2; }
+        .goal-message { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%) scale(0); font-size: 4rem; color: #fabb00; font-weight: 900; text-shadow: 0 0 20px black, 2px 2px 0px #000; z-index: 100; transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); white-space: nowrap; }
         .goal-message.show { transform: translate(-50%, -50%) scale(1); }
-        .penalty-stats { display: flex; justify-content: space-between; background: linear-gradient(to right, #222, #333); border: 1px solid #444; color: #fabb00; padding: 12px 20px; border-radius: 8px; margin-bottom: 15px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
-        .penalty-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; z-index: 10; }
-        .penalty-btn { background: #fff; border: 2px solid #eee; padding: 15px; border-radius: 8px; cursor: pointer; font-weight: 700; color: #333; transition: 0.2s; box-shadow: 0 4px 0 #ccc; }
-        .penalty-btn:hover { background: #fabb00; border-color: #f57f17; color: #000; box-shadow: 0 4px 0 #c49000; transform: translateY(-2px); }
-        .penalty-btn:active { transform: translateY(2px); box-shadow: 0 0 0; }
-        .penalty-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; box-shadow: none; }
 
-        .shooter-run { bottom: 60px !important; left: 50% !important; transform: scale(0.85) translateX(-50%) !important; }
-        .ball-shoot-left-top { bottom: 350px !important; left: 40% !important; transform: scale(0.45) rotate(720deg) !important; }
-        .ball-shoot-right-top { bottom: 350px !important; left: 60% !important; transform: scale(0.45) rotate(720deg) !important; }
-        .ball-shoot-left-low { bottom: 320px !important; left: 38% !important; transform: scale(0.5) rotate(720deg) !important; }
-        .ball-shoot-right-low { bottom: 320px !important; left: 62% !important; transform: scale(0.5) rotate(720deg) !important; }
-        .ball-miss-left { bottom: 360px !important; left: 20% !important; transform: scale(0.35) !important; opacity: 0; }
-        .ball-miss-right { bottom: 360px !important; left: 80% !important; transform: scale(0.35) !important; opacity: 0; }
-        .ball-shadow-move { transform: scale(0.4); opacity: 0.5; }
-        .keeper-dive-left { transform: translateX(-130px) rotate(-20deg) !important; }
-        .keeper-dive-right { transform: translateX(130px) rotate(20deg) !important; }
 
+        @media (max-width: 768px) { .header { padding: 15px 15px; } .header-top { flex-direction: column; align-items: flex-start; gap: 10px; } .control-wrapper { flex-direction: column; } .penalty-field { height: 400px; } .goal-container { width: 240px; height: 120px; margin-top: 50px; } .goal-net { width: 230px; height: 115px; } }
         /* Leaderboard Stilleri */
         #leaderboard-table th { font-size: 0.9rem; letter-spacing: 1px; }
         #leaderboard-table td { padding: 12px; border-bottom: 1px solid #333; font-weight: 500; }
@@ -193,8 +240,6 @@
         #leaderboard-table tr:nth-child(2) td { color: #c0c0c0; } /* 2. Sıra Gümüş */
         #leaderboard-table tr:nth-child(3) td { color: #cd7f32; } /* 3. Sıra Bronz */
         .rank-badge { display:inline-block; width:24px; height:24px; line-height:24px; border-radius:50%; background:#333; text-align:center; font-size:0.8rem; }
-
-        @media (max-width: 768px) { .header { padding: 15px 15px; } .header-top { flex-direction: column; align-items: flex-start; gap: 10px; } .control-wrapper { flex-direction: column; } .penalty-field { height: 400px; } .goal-container { width: 240px; height: 120px; margin-top: 50px; } .goal-net { width: 230px; height: 115px; } }
     </style>
 </head>
 <body>
@@ -339,28 +384,53 @@
                 <div class="penalty-field">
                     <div class="stadium-stands"></div>
                     <div class="grass-stripes"></div>
+                    
                     <div class="goal-container">
                         <div class="goal-net"></div>
                         <div class="goal-top-bar"></div>
                         <div class="goal-post-left"></div>
                         <div class="goal-post-right"></div>
+                        
                         <div id="keeper-wrap" class="keeper-wrapper">
-                            <div class="keeper-body">
-                                <div class="keeper-head">👦</div>
-                                <div class="keeper-shirt">👕</div>
+                            <div class="player-figure">
+                                <div class="head"></div>
+                                <div class="torso">SSP</div>
+                                <div class="arms">
+                                    <div class="arm left"><div class="gloves"></div></div>
+                                    <div class="arm right"><div class="gloves"></div></div>
+                                </div>
+                                <div class="shorts"></div>
+                                <div class="legs">
+                                    <div class="leg left"><div class="sock"></div><div class="shoe"></div></div>
+                                    <div class="leg right"><div class="sock"></div><div class="shoe"></div></div>
+                                </div>
                             </div>
                             <div class="keeper-shadow"></div>
                         </div>
                     </div>
+
                     <div class="goal-message" id="goal-msg">GOL!</div>
                     <div class="penalty-area"></div>
                     <div class="penalty-spot-mark"></div>
+                    
                     <div id="ball-wrap" class="ball-wrapper">
-                        <div class="football">⚽</div>
+                        <div class="football"></div>
                         <div class="ball-shadow"></div>
                     </div>
+                    
                     <div id="shooter-wrap" class="shooter-wrapper">
-                        <div class="shooter-body">🏃</div>
+                        <div class="player-figure">
+                            <div class="head"></div>
+                            <div class="torso"></div> <div class="arms">
+                                <div class="arm left"></div>
+                                <div class="arm right"></div>
+                            </div>
+                            <div class="shorts"></div>
+                            <div class="legs">
+                                <div class="leg left"><div class="sock"></div><div class="shoe"></div></div>
+                                <div class="leg right"><div class="sock"></div><div class="shoe"></div></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -707,23 +777,23 @@
                         </div>
                     </div>
                     <div id="news-extra" style="display:none; text-align:left; margin-top:10px;">
-                         <div style="display:flex; gap:10px; margin-bottom:10px;">
-                            <div style="flex:1;">
-                                <label style="font-weight:bold; font-size:0.8rem;">Tür</label>
-                                <select id="swal-news-type" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
-                                    <option value="info">Bilgi</option>
-                                    <option value="fix">Çözüldü</option>
-                                    <option value="update">Güncelleme</option>
-                                </select>
-                            </div>
-                             <div style="flex:1;">
-                                <label style="font-weight:bold; font-size:0.8rem;">Durum</label>
-                                <select id="swal-news-status" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
-                                    <option value="Aktif">Aktif</option>
-                                    <option value="Pasif">Pasif</option>
-                                </select>
-                            </div>
-                         </div>
+                              <div style="display:flex; gap:10px; margin-bottom:10px;">
+                                 <div style="flex:1;">
+                                     <label style="font-weight:bold; font-size:0.8rem;">Tür</label>
+                                     <select id="swal-news-type" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
+                                         <option value="info">Bilgi</option>
+                                         <option value="fix">Çözüldü</option>
+                                         <option value="update">Güncelleme</option>
+                                     </select>
+                                 </div>
+                                  <div style="flex:1;">
+                                     <label style="font-weight:bold; font-size:0.8rem;">Durum</label>
+                                     <select id="swal-news-status" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
+                                         <option value="Aktif">Aktif</option>
+                                         <option value="Pasif">Pasif</option>
+                                     </select>
+                                 </div>
+                              </div>
                     </div>
                     <div id="sport-extra" style="display:none; text-align:left; margin-top:10px;">
                         <label style="font-weight:bold;">İpucu (Tip)</label><input id="swal-sport-tip" class="swal2-input" style="width:100%; margin-bottom:10px;" placeholder="Örn: Türk takımları...">
@@ -744,6 +814,8 @@
                         const cardPreview = document.getElementById('preview-card');
                         catCont.style.display = 'none'; scriptCont.style.display = 'none'; extraCont.style.display = 'none'; 
                         sportExtra.style.display = 'none'; newsExtra.style.display = 'none';
+                        cardPreview.style.borderLeft = "5px solid var(--info)"; // Varsayılanı sıfırla
+
                         if (type === 'card') {
                             catCont.style.display = 'block'; scriptCont.style.display = 'block'; extraCont.style.display = 'grid';
                             cardPreview.style.borderLeft = "5px solid var(--info)";
@@ -928,7 +1000,7 @@
         function showResult() { document.getElementById('quiz-body').innerHTML = `<div class="quiz-final"><h3>Bitti! Puan: ${score}</h3><div id="quiz-save-status" style="font-size:0.9rem; color:#666; margin:10px 0;"><i class="fas fa-spinner fa-spin"></i> Sonuç sisteme kaydediliyor...</div><button class="restart-btn" onclick="openQuiz()">Tekrar Oyna</button></div>`; fetch(SCRIPT_URL, { method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "logQuiz", username: currentUser, token: getToken(), score: score, total: sessionQuestions.length }) }).then(response => response.json()).then(data => { const statusEl = document.getElementById('quiz-save-status'); if (data.result === "success") { statusEl.innerHTML = '<span style="color:green; font-weight:bold;"><i class="fas fa-check"></i> Skor başarıyla kaydedildi!</span>'; } else { statusEl.innerHTML = '<span style="color:red;">Kayıt sırasında hata oluştu.</span>'; } }).catch(error => { console.error("Quiz Log Hatası:", error); document.getElementById('quiz-save-status').innerHTML = '<span style="color:red;">Sunucu bağlantı hatası.</span>'; }); }
         function openQuizEditor() { let html = '<div style="text-align:left; max-height:400px; overflow-y:auto;">'; quizQuestions.forEach((q, i) => { const safeQ = cleanData(q.q); html += `<div style="border-bottom:1px solid #eee; padding:10px; cursor:pointer;" onclick="editQuizQuestion(${i})"><b>${i+1}. ${safeQ}</b><br><span style="font-size:0.8rem; color:#fabb00;"><i class="fas fa-pencil-alt"></i> Düzenle</span></div>`; }); html += '</div>'; Swal.fire({ title: 'Soruları Düzenle', html: html, showConfirmButton: false, showCloseButton: true }); }
         
-        // --- PENALTI OYUNU MANTIĞI ---
+        // --- PENALTI OYUNU MANTIĞI (GÜNCELLENDİ) ---
         let pScore = 0;
         let pBalls = 10;
         let pCurrentQ = null;
@@ -1026,30 +1098,31 @@
             const ballWrap = document.getElementById('ball-wrap');
             const shadow = ballWrap.querySelector('.ball-shadow');
             const keeperWrap = document.getElementById('keeper-wrap');
-            const keeperHead = keeperWrap.querySelector('.keeper-head');
             const shooterWrap = document.getElementById('shooter-wrap');
             const goalMsg = document.getElementById('goal-msg');
             
             const isCorrect = (userAnswerIndex === pCurrentQ.a);
             const shotDir = Math.floor(Math.random() * 4); 
-            const keeperDir = Math.random() < 0.5 ? 'left' : 'right';
+            // const keeperDir = Math.random() < 0.5 ? 'left' : 'right'; // Kullanılmıyor, kaleci hareketini topun tersi yönüne ayarlayalım.
 
             shooterWrap.classList.add('shooter-run');
 
             setTimeout(() => {
+                // Kaleci Hareketi
                 if(isCorrect) {
+                     // Gol olduğunda kaleci ters köşeye uçar
                      if(shotDir === 0 || shotDir === 2) keeperWrap.classList.add('keeper-dive-right');
                      else keeperWrap.classList.add('keeper-dive-left');
-                     keeperHead.innerText = "😫"; 
                 } else {
+                    // Kurtarışta kaleci topun olduğu yere uçar
                     if(shotDir === 0 || shotDir === 2) keeperWrap.classList.add('keeper-dive-left');
                     else keeperWrap.classList.add('keeper-dive-right');
-                    keeperHead.innerText = "😎"; 
                 }
 
                 shadow.classList.add('ball-shadow-move'); 
 
                 if (isCorrect) {
+                    // Şut Animasyonları
                     if(shotDir === 0) ballWrap.classList.add('ball-shoot-left-top');
                     else if(shotDir === 1) ballWrap.classList.add('ball-shoot-right-top');
                     else if(shotDir === 2) ballWrap.classList.add('ball-shoot-left-low');
@@ -1066,23 +1139,26 @@
 
                 } else {
                     if(Math.random() > 0.5) {
-                        ballWrap.style.bottom = "260px";
-                        ballWrap.style.left = keeperDir === 'left' ? "45%" : "55%";
+                        // Kaleci kurtardı animasyonu (top kaleciye çarpar gibi durur)
+                        ballWrap.style.bottom = "160px"; // Yükseklik ayarı
+                        ballWrap.style.left = (shotDir === 0 || shotDir === 2) ? "40%" : "60%";
                         ballWrap.style.transform = "scale(0.6)";
                         setTimeout(() => {
                             goalMsg.innerText = "KURTARDI!";
                             goalMsg.style.color = "#ef5350";
                             goalMsg.classList.add('show');
                         }, 500);
+                        Swal.fire({ toast: true, position: 'top', icon: 'error', title: 'Kaçırdın!', showConfirmButton: false, timer: 1000, background: '#ef9a9a' });
                     } else {
+                        // Dışarı attı
                         ballWrap.classList.add(Math.random() > 0.5 ? 'ball-miss-left' : 'ball-miss-right');
                         setTimeout(() => {
                             goalMsg.innerText = "DIŞARI!";
                             goalMsg.style.color = "#ef5350";
                             goalMsg.classList.add('show');
                         }, 500);
+                        Swal.fire({ toast: true, position: 'top', icon: 'error', title: 'Kaçırdın!', showConfirmButton: false, timer: 1000, background: '#ef9a9a' });
                     }
-                    Swal.fire({ toast: true, position: 'top', icon: 'error', title: 'Kaçırdın!', showConfirmButton: false, timer: 1000, background: '#ef9a9a' });
                 }
             }, 300); 
 
@@ -1099,20 +1175,16 @@
             const ballWrap = document.getElementById('ball-wrap');
             const shadow = ballWrap.querySelector('.ball-shadow');
             const keeperWrap = document.getElementById('keeper-wrap');
-            const keeperHead = keeperWrap.querySelector('.keeper-head');
             const shooterWrap = document.getElementById('shooter-wrap');
             const goalMsg = document.getElementById('goal-msg');
 
+            // Sınıfları temizle
             ballWrap.className = 'ball-wrapper';
-            ballWrap.style.transform = 'translateX(-50%)';
-            ballWrap.style.bottom = '110px';
-            ballWrap.style.left = '50%';
-            ballWrap.style.opacity = '1';
+            ballWrap.style = ""; // Inline stilleri temizle
             shadow.className = 'ball-shadow';
 
             keeperWrap.className = 'keeper-wrapper';
-            keeperHead.innerText = "👦"; 
-
+            
             shooterWrap.className = 'shooter-wrapper'; 
 
             goalMsg.classList.remove('show');
