@@ -144,7 +144,36 @@
             justify-content: flex-start;
             padding-top: 0;
         }
-        .stadium-stands { position: absolute; top: 0; left: 0; width: 100%; height: 120px; background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, #111 0%, #222 100%); background-size: 10px 10px, 100% 100%; z-index: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.8); }
+
+        /* YENİ EFEKT: EKRAN TİTREMESİ */
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+        .shake-effect {
+            animation: shake 0.5s;
+        }
+
+        /* YENİ EFEKT: CANLI TRİBÜN */
+        @keyframes crowd-flash {
+            0%, 100% { opacity: 0.9; }
+            50% { opacity: 1; }
+        }
+        .stadium-stands { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 120px; 
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, #111 0%, #222 100%); 
+            background-size: 10px 10px, 100% 100%; z-index: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.8); 
+            animation: crowd-flash 3s infinite alternate; /* Eklendi */
+        }
         .grass-stripes { position: absolute; top: 120px; left: 0; width: 100%; height: 100%; background: repeating-linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 40px, transparent 40px, transparent 80px); z-index: 0; }
         .penalty-area { position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%) rotateX(50deg); width: 60%; height: 250px; border: 4px solid rgba(255,255,255,0.7); border-bottom: none; z-index: 1; box-shadow: 0 0 15px rgba(255,255,255,0.1); }
         .goal-container { position: relative; width: 300px; height: 150px; margin: 60px auto 0 auto; transform-style: preserve-3d; z-index: 2; }
@@ -186,14 +215,14 @@
         .keeper-dive-left { transform: translateX(-130px) rotate(-20deg) !important; }
         .keeper-dive-right { transform: translateX(130px) rotate(20deg) !important; }
 
-        /* Leaderboard Stilleri */
+        /* LİDERLİK TABLOSU STİLLERİ */
         #leaderboard-table th { font-size: 0.9rem; letter-spacing: 1px; }
         #leaderboard-table td { padding: 12px; border-bottom: 1px solid #333; font-weight: 500; }
-        #leaderboard-table tr:first-child td { color: #ffd700; font-weight:bold; font-size:1.1rem; text-shadow:0 0 10px rgba(255, 215, 0, 0.5); } /* 1. Sıra Altın */
-        #leaderboard-table tr:nth-child(2) td { color: #c0c0c0; } /* 2. Sıra Gümüş */
-        #leaderboard-table tr:nth-child(3) td { color: #cd7f32; } /* 3. Sıra Bronz */
+        #leaderboard-table tr:first-child td { color: #ffd700; font-weight:bold; font-size:1.1rem; text-shadow:0 0 10px rgba(255, 215, 0, 0.5); } 
+        #leaderboard-table tr:nth-child(2) td { color: #c0c0c0; } 
+        #leaderboard-table tr:nth-child(3) td { color: #cd7f32; } 
         .rank-badge { display:inline-block; width:24px; height:24px; line-height:24px; border-radius:50%; background:#333; text-align:center; font-size:0.8rem; }
-
+        
         @media (max-width: 768px) { .header { padding: 15px 15px; } .header-top { flex-direction: column; align-items: flex-start; gap: 10px; } .control-wrapper { flex-direction: column; } .penalty-field { height: 400px; } .goal-container { width: 240px; height: 120px; margin-top: 50px; } .goal-net { width: 230px; height: 115px; } }
     </style>
 </head>
@@ -709,7 +738,7 @@
                     <div id="news-extra" style="display:none; text-align:left; margin-top:10px;">
                          <div style="display:flex; gap:10px; margin-bottom:10px;">
                             <div style="flex:1;">
-                                <label style="font-weight:bold; font-size:0.8rem;">Tür</label>
+                                <label style="font-weight:bold; font-size:0.9rem;">Tür</label>
                                 <select id="swal-news-type" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
                                     <option value="info">Bilgi</option>
                                     <option value="fix">Çözüldü</option>
@@ -994,6 +1023,34 @@
                 loader.innerText = "Bağlantı hatası.";
             });
         }
+        
+        // YENİ EFEKT: KONFETİ FONKSİYONU
+        function fireConfetti() {
+            const field = document.querySelector('.penalty-field');
+            const colors = ['#fabb00', '#d32f2f', '#ffffff', '#2e7d32'];
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.style.position = 'absolute';
+                confetti.style.width = '10px';
+                confetti.style.height = '10px';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.top = '0px'; 
+                confetti.style.zIndex = '1000';
+                confetti.style.opacity = '1';
+                confetti.style.transition = 'all 3s ease-out';
+                field.appendChild(confetti);
+
+                // Konfetiyi düşür
+                setTimeout(() => {
+                    confetti.style.top = '100%';
+                    confetti.style.opacity = '0';
+                    confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+                }, 100);
+
+                setTimeout(() => confetti.remove(), 3000);
+            }
+        }
 
         function startPenaltySession() {
             pScore = 0;
@@ -1029,6 +1086,7 @@
             const keeperHead = keeperWrap.querySelector('.keeper-head');
             const shooterWrap = document.getElementById('shooter-wrap');
             const goalMsg = document.getElementById('goal-msg');
+            const penaltyField = document.querySelector('.penalty-field'); // Saha elementini aldık
             
             const isCorrect = (userAnswerIndex === pCurrentQ.a);
             const shotDir = Math.floor(Math.random() * 4); 
@@ -1061,6 +1119,8 @@
                         goalMsg.classList.add('show');
                         pScore++;
                         document.getElementById('p-score').innerText = pScore;
+                        fireConfetti(); // 🎉 Konfeti Efekti
+                        penaltyField.classList.add('shake-effect'); // 💥 Titreme Efekti
                         Swal.fire({ toast: true, position: 'top', icon: 'success', title: 'Mükemmel Şut!', showConfirmButton: false, timer: 1000, background: '#a5d6a7' });
                     }, 500);
 
@@ -1073,6 +1133,7 @@
                             goalMsg.innerText = "KURTARDI!";
                             goalMsg.style.color = "#ef5350";
                             goalMsg.classList.add('show');
+                            penaltyField.classList.add('shake-effect'); // 💥 Titreme Efekti
                         }, 500);
                     } else {
                         ballWrap.classList.add(Math.random() > 0.5 ? 'ball-miss-left' : 'ball-miss-right');
@@ -1080,6 +1141,7 @@
                             goalMsg.innerText = "DIŞARI!";
                             goalMsg.style.color = "#ef5350";
                             goalMsg.classList.add('show');
+                            penaltyField.classList.add('shake-effect'); // 💥 Titreme Efekti
                         }, 500);
                     }
                     Swal.fire({ toast: true, position: 'top', icon: 'error', title: 'Kaçırdın!', showConfirmButton: false, timer: 1000, background: '#ef9a9a' });
@@ -1090,6 +1152,7 @@
             document.getElementById('p-balls').innerText = pBalls;
 
             setTimeout(() => {
+                penaltyField.classList.remove('shake-effect'); // Titremeyi Kaldır
                 resetField();
                 loadPenaltyQuestion();
             }, 2500);
