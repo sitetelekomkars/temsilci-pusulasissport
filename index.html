@@ -2041,7 +2041,7 @@
 
                         </div>
 
-                        <div class="card-actions" style="margin-top:15px; display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+                        <div id="extra-container" class="card-actions" style="margin-top:15px; display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
 
                             <div style="position:relative;"><i class="fas fa-code" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-code" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" value="${item.code || ''}" placeholder="Kod"></div>
 
@@ -2298,7 +2298,7 @@
             // Çift cevap hakkı ilk yanlış denemeden sonra veya joker bittiyse devre dışı kalır
             document.getElementById('joker-double').disabled = jokers.double === 0 || firstAnswerIndex !== -1;
 
-            // İlk cevap yanlışsa, sadece double jokeri disable olmalı
+            // İlk cevap yanlışsa, jokerler tekrar kullanılamaz
             if (firstAnswerIndex !== -1) {
                 document.getElementById('joker-call').disabled = true;
                 document.getElementById('joker-half').disabled = true;
@@ -2615,7 +2615,7 @@
 
                 if (isCorrect) {
                     
-                    // Doğru cevap verildiğinde ekstra renklendirme yok.
+                    // Doğru cevap verildiğinde renklendirme YOK. (İstenen durum)
 
                     // Şut Animasyonları
                     if(shotDir === 0) ballWrap.classList.add('ball-shoot-left-top');
@@ -2748,13 +2748,16 @@
 
             goalMsg.classList.remove('show');
             
-            // Tüm buton stillerini sıfırla (Çift cevap jokeri için önemli)
+            // Tüm buton stillerini sıfırla (Arka planı varsayılan penaltı rengine döndür)
             document.querySelectorAll('.penalty-btn').forEach(b => {
                 b.classList.remove('wrong-first-try');
                 b.style.textDecoration = '';
                 b.style.opacity = '';
-                b.style.background = ''; // Arka plan rengini sıfırla (varsayılan sPusula rengine döner)
-                b.style.color = ''; // Metin rengini sıfırla
+                // BUTONLARIN ARKA PLAN VE YAZI RENGİNİ SIFIRLA
+                b.style.background = '#fabb00'; 
+                b.style.color = '#0e1b42';
+                // Kenarlık da sıfırlanmalı
+                b.style.borderColor = '#f0b500';
                 b.disabled = false;
             });
 
