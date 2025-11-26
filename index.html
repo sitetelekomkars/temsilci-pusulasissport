@@ -2405,27 +2405,27 @@ function shootBall(userAnswerIndex) {
     const isCorrect = (userAnswerIndex === correctAnswerIndex);
     const shotDir = Math.floor(Math.random() * 4); 
 
-    // 1. Cevap butonlarını renklendir (Düzeltilmiş Mantık)
+    // --- KESİN DÜZELTME BAŞLANGICI: Buton Renklendirme Mantığı ---
     btns.forEach((btn, index) => {
-        // Doğru şıkkı her zaman yeşil tonunda göster (Hafif yeşil ise yanlış bilindiği anlamına gelir)
+        // Doğru Cevabı İşaretle (Yeşil)
         if (index === correctAnswerIndex) {
-            btn.style.backgroundColor = '#a5d6a7'; // Yeşil Tonu (Doğru Cevap)
-            btn.style.borderColor = '#2e7d32'; 
-            btn.style.color = '#1b5e20';
+            btn.style.backgroundColor = '#4CAF50'; // Koyu Yeşil
+            btn.style.borderColor = '#2E7D32'; 
+            btn.style.color = 'white';
         }
         
-        // Kullanıcının seçtiği şık yanlışsa, onu kırmızı yap
+        // Kullanıcının Yanlış Seçimini İşaretle (Kırmızı)
         if (index === userAnswerIndex && !isCorrect) {
-            btn.style.backgroundColor = '#ffcdd2'; // Kırmızı Tonu (Yanlış Cevap)
-            btn.style.borderColor = '#c62828';
-            btn.style.color = '#b71c1c';
+            btn.style.backgroundColor = '#F44336'; // Kırmızı
+            btn.style.borderColor = '#D32F2F';
+            btn.style.color = 'white';
         }
         
-        // Kullanıcı doğru bilse bile, doğru şık zaten yeşil olarak ayarlandı.
-        // Bu mantıkla, sadece yanlış şıkkı kırmızıya boyamamız yeterli.
-        // Kullanıcı yanlış bildiğinde ise: Yanlış Kırmızı, Doğru Yeşil kalır.
+        // Eğer doğru cevap seçildiyse, sadece o şık yeşil kalacak, 
+        // diğerleri disabled olduğu için eski sarı tonunda (veya default) kalır.
     });
-    
+    // --- KESİN DÜZELTME BİTİŞİ ---
+
     // Animatörü çalıştır
     shooterWrap.classList.add('shooter-run');
 
@@ -2555,6 +2555,7 @@ function shootBall(userAnswerIndex) {
 </body>
 
 </html>
+
 
 
 
