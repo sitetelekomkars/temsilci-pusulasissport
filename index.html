@@ -1187,21 +1187,6 @@
     </div>
 
 
-    <div id="quiz-modal" class="modal-overlay">
-
-        <div class="modal-content" style="max-width: 600px;">
-
-            <span class="close-modal" onclick="closeModal('quiz-modal')">&times;</span>
-
-            <h2 style="text-align:center; color:var(--quiz);">🎮 Bilgi Yarışması</h2>
-
-            <div id="quiz-body"></div>
-
-        </div>
-
-    </div>
-
-
     <div class="crafted-by-badge">Crafted by Doğuş Yalçınkaya</div>
 
 
@@ -1755,8 +1740,6 @@
 
             if(document.getElementById('news-modal').style.display === 'flex') openNews();
 
-            if(document.getElementById('quiz-modal').style.display === 'flex') openQuiz();
-
         }
 
 
@@ -1838,52 +1821,6 @@
                             <div style="position:relative;"><i class="fas fa-link" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-new-link" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" placeholder="Link"></div>
 
                         </div>
-
-                    </div>
-
-                    <div id="news-extra" style="display:none; text-align:left; margin-top:10px;">
-
-                                     <div style="display:flex; gap:10px; margin-bottom:10px;">
-
-                                         <div style="flex:1;">
-
-                                             <label style="font-weight:bold; font-size:0.8rem;">Tür</label>
-
-                                             <select id="swal-news-type" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
-
-                                                 <option value="info">Bilgi</option>
-
-                                                 <option value="fix">Çözüldü</option>
-
-                                                 <option value="update">Güncelleme</option>
-
-                                             </select>
-
-                                         </div>
-
-                                          <div style="flex:1;">
-
-                                             <label style="font-weight:bold; font-size:0.8rem;">Durum</label>
-
-                                             <select id="swal-news-status" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
-
-                                                 <option value="Aktif">Aktif</option>
-
-                                                 <option value="Pasif">Pasif</option>
-
-                                             </select>
-
-                                         </div>
-
-                                     </div>
-
-                    </div>
-
-                    <div id="sport-extra" style="display:none; text-align:left; margin-top:10px;">
-
-                        <label style="font-weight:bold;">İpucu (Tip)</label><input id="swal-sport-tip" class="swal2-input" style="width:100%; margin-bottom:10px;" placeholder="Örn: Türk takımları...">
-
-                        <label style="font-weight:bold;">Detay</label><textarea id="swal-sport-detail" class="swal2-textarea" style="height:60px;" placeholder="Detaylı bilgi..."></textarea>
 
                     </div>`,
 
@@ -2219,30 +2156,6 @@
         }
 
 
-        async function editQuizQuestion(index) {
-
-            const q = quizQuestions[index];
-
-            const { value: formValues } = await Swal.fire({
-
-                title: 'Soruyu Düzenle',
-
-                html: `<label style="font-weight:bold;">Soru</label><input id="swal-q" class="swal2-input" value="${q.q}"><label style="font-weight:bold;">Şıklar</label><textarea id="swal-opts" class="swal2-textarea">${q.opts.join(',')}</textarea><label style="font-weight:bold;">Doğru Cevap (0 tabanlı index)</label><input id="swal-ans" class="swal2-input" type="number" value="${q.a}">`,
-
-                showCancelButton: true, confirmButtonText: 'Kaydet', preConfirm: () => [ document.getElementById('swal-q').value, document.getElementById('swal-opts').value, document.getElementById('swal-ans').value ]
-
-            });
-
-            if (formValues) {
-
-                sendUpdate(q.q, "Text", formValues[0], 'quiz'); setTimeout(() => sendUpdate(formValues[0], "QuizOptions", formValues[1], 'quiz'), 1500); setTimeout(() => sendUpdate(formValues[0], "QuizAnswer", formValues[2], 'quiz'), 3000);
-
-            }
-
-        }
-
-        
-
         function closeModal(id) { document.getElementById(id).style.display = 'none'; }
 
         let tickerIndex = 0;
@@ -2258,28 +2171,6 @@
         function openSales() { document.getElementById('sales-modal').style.display = 'flex'; const c = document.getElementById('sales-grid'); c.innerHTML = ''; salesScripts.forEach((s, index) => { let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="display:block !important; top:10px; right:40px; z-index:50;" onclick="event.stopPropagation(); editSales(${index})"></i>` : ''; c.innerHTML += `<div class="sales-item" id="sales-${index}" onclick="toggleSales('${index}')">${editBtn}<div class="sales-header"><span class="sales-title">${s.title}</span><i class="fas fa-chevron-down" id="icon-${index}" style="color:#10b981;"></i></div><div class="sales-text">${(s.text || '').replace(/\n/g,'<br>')}<div style="text-align:right; margin-top:15px;"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${escapeForJsString(s.text || '')}')"><i class="fas fa-copy"></i> Kopyala</button></div></div></div>`; }); }
 
         function toggleSales(index) { const item = document.getElementById(`sales-${index}`); const icon = document.getElementById(`icon-${index}`); item.classList.toggle('active'); if(item.classList.contains('active')){ icon.classList.replace('fa-chevron-down', 'fa-chevron-up'); } else { icon.classList.replace('fa-chevron-up', 'fa-chevron-down'); } }
-
-        
-
-        // --- QUIZ LOGIC ---
-
-        let currentQuestion = 0, score = 0;
-
-        let sessionQuestions = []; 
-
-        function openQuiz() { document.getElementById('quiz-modal').style.display = 'flex'; if(isAdminMode) { openQuizEditor(); return; } else { showStartScreen(); } }
-
-        function showStartScreen() { document.getElementById('quiz-body').innerHTML = `<div class="quiz-final"><h3>Hazır mısın?</h3><p style="color:#666; margin-bottom:20px;">Havuzdan rastgele 10 soru sorulacak.</p><button class="restart-btn" style="background:var(--quiz);" onclick="startQuizSession()">BAŞLA</button></div>`; }
-
-        function startQuizSession() { currentQuestion = 0; score = 0; let allQuestions = [...quizQuestions]; allQuestions.sort(() => Math.random() - 0.5); sessionQuestions = allQuestions.slice(0, 10); showQuestion(); }
-
-        function showQuestion() { if(currentQuestion >= sessionQuestions.length) { showResult(); return; } const q = sessionQuestions[currentQuestion]; let html = `<div class="quiz-score">Soru: ${currentQuestion + 1} / ${sessionQuestions.length}</div><div class="quiz-question">${q.q}</div><div class="quiz-options">`; q.opts.forEach((opt, i) => { html += `<button class="quiz-btn-opt" onclick="checkAnswer(this, ${i})">${opt}</button>`; }); html += `</div>`; document.getElementById('quiz-body').innerHTML = html; }
-
-        function checkAnswer(btn, i) { const correct = sessionQuestions[currentQuestion].a; document.querySelectorAll('.quiz-btn-opt').forEach(b => b.disabled = true); if(i === correct) { btn.classList.add('correct'); score += 10; Swal.fire({icon:'success', title:'Doğru!', timer:1000, toast:true, position:'top', showConfirmButton:false}); } else { btn.classList.add('wrong'); Swal.fire({icon:'error', title:'Yanlış!', timer:1000, toast:true, position:'top', showConfirmButton:false}); } setTimeout(() => { currentQuestion++; showQuestion(); }, 1500); }
-
-        function showResult() { document.getElementById('quiz-body').innerHTML = `<div class="quiz-final"><h3>Bitti! Puan: ${score}</h3><div id="quiz-save-status" style="font-size:0.9rem; color:#666; margin:10px 0;"><i class="fas fa-spinner fa-spin"></i> Sonuç sisteme kaydediliyor...</div><button class="restart-btn" onclick="openQuiz()">Tekrar Oyna</button></div>`; fetch(SCRIPT_URL, { method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "logQuiz", username: currentUser, token: getToken(), score: score, total: sessionQuestions.length }) }).then(response => response.json()).then(data => { const statusEl = document.getElementById('quiz-save-status'); if (data.result === "success") { statusEl.innerHTML = '<span style="color:green; font-weight:bold;"><i class="fas fa-check"></i> Skor başarıyla kaydedildi!</span>'; } else { statusEl.innerHTML = '<span style="color:red;">Kayıt sırasında hata oluştu.</span>'; } }).catch(error => { console.error("Quiz Log Hatası:", error); document.getElementById('quiz-save-status').innerHTML = '<span style="color:red;">Sunucu bağlantı hatası.</span>'; }); }
-
-        function openQuizEditor() { let html = '<div style="text-align:left; max-height:400px; overflow-y:auto;">'; quizQuestions.forEach((q, i) => { const safeQ = cleanData(q.q); html += `<div style="border-bottom:1px solid #eee; padding:10px; cursor:pointer;" onclick="editQuizQuestion(${i})"><b>${i+1}. ${safeQ}</b><br><span style="font-size:0.8rem; color:#fabb00;"><i class="fas fa-pencil-alt"></i> Düzenle</span></div>`; }); html += '</div>'; Swal.fire({ title: 'Soruları Düzenle', html: html, showConfirmButton: false, showCloseButton: true }); }
 
         
 
@@ -2615,7 +2506,7 @@
 
                 if (isCorrect) {
                     
-                    // Doğru cevap verildiğinde renklendirme YOK. (İstenen durum)
+                    // Doğru cevap verildiğinde renklendirme YOK.
 
                     // Şut Animasyonları
                     if(shotDir === 0) ballWrap.classList.add('ball-shoot-left-top');
@@ -2663,7 +2554,7 @@
 
                             goalMsg.classList.add('show');
                             
-                            // Öğrenme amaçlı doğru cevabı göster
+                            // Öğrenme amaçlı doğru cevabı göster (Swal pop-up ile)
                             Swal.fire({ 
                                 icon: 'error', 
                                 title: 'Kaçırdın!', 
@@ -2690,7 +2581,7 @@
 
                             goalMsg.classList.add('show');
                             
-                            // Öğrenme amaçlı doğru cevabı göster
+                            // Öğrenme amaçlı doğru cevabı göster (Swal pop-up ile)
                             Swal.fire({ 
                                 icon: 'error', 
                                 title: 'Kaçırdın!', 
@@ -2756,15 +2647,13 @@
 
             goalMsg.classList.remove('show');
             
-            // Tüm buton stillerini sıfırla (Arka planı varsayılan penaltı rengine döndür)
+            // Tüm buton stillerini SIFIRLA (VARSAYILAN ALTIN/LACİVERT RENGİNE DÖNDÜR)
             document.querySelectorAll('.penalty-btn').forEach(b => {
                 b.classList.remove('wrong-first-try');
                 b.style.textDecoration = '';
                 b.style.opacity = '';
-                // BUTONLARIN ARKA PLAN VE YAZI RENGİNİ VARSAYILANA DÖNDÜR
                 b.style.background = '#fabb00'; 
                 b.style.color = '#0e1b42';
-                // Kenarlık da sıfırlanmalı
                 b.style.borderColor = '#f0b500';
                 b.disabled = false;
             });
