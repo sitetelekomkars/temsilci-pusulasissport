@@ -2390,7 +2390,6 @@
         }
 
 
-        // Orijinal kodunuzun 1528. satırından itibaren:
 function shootBall(userAnswerIndex) {
     const btns = document.querySelectorAll('.penalty-btn');
     btns.forEach(b => b.disabled = true);
@@ -2401,27 +2400,30 @@ function shootBall(userAnswerIndex) {
     const shooterWrap = document.getElementById('shooter-wrap');
     const goalMsg = document.getElementById('goal-msg');
     
-    // --- BURADAN İTİBAREN GÜNCELLEME BAŞLIYOR ---
-
+    // Doğru cevabın indexi
     const correctAnswerIndex = pCurrentQ.a;
     const isCorrect = (userAnswerIndex === correctAnswerIndex);
     const shotDir = Math.floor(Math.random() * 4); 
 
-    // 1. Cevap butonlarını renklendir
+    // 1. Cevap butonlarını renklendir (Düzeltilmiş Mantık)
     btns.forEach((btn, index) => {
-        // Doğru şıkkı vurgula
+        // Doğru şıkkı her zaman yeşil tonunda göster (Hafif yeşil ise yanlış bilindiği anlamına gelir)
         if (index === correctAnswerIndex) {
-            btn.style.backgroundColor = '#a5d6a7'; // Yeşil Tonu
+            btn.style.backgroundColor = '#a5d6a7'; // Yeşil Tonu (Doğru Cevap)
             btn.style.borderColor = '#2e7d32'; 
             btn.style.color = '#1b5e20';
         }
         
         // Kullanıcının seçtiği şık yanlışsa, onu kırmızı yap
         if (index === userAnswerIndex && !isCorrect) {
-            btn.style.backgroundColor = '#ffcdd2'; // Kırmızı Tonu
+            btn.style.backgroundColor = '#ffcdd2'; // Kırmızı Tonu (Yanlış Cevap)
             btn.style.borderColor = '#c62828';
             btn.style.color = '#b71c1c';
         }
+        
+        // Kullanıcı doğru bilse bile, doğru şık zaten yeşil olarak ayarlandı.
+        // Bu mantıkla, sadece yanlış şıkkı kırmızıya boyamamız yeterli.
+        // Kullanıcı yanlış bildiğinde ise: Yanlış Kırmızı, Doğru Yeşil kalır.
     });
     
     // Animatörü çalıştır
@@ -2442,7 +2444,7 @@ function shootBall(userAnswerIndex) {
         shadow.classList.add('ball-shadow-move'); 
 
         if (isCorrect) {
-            // Şut Animasyonları
+            // Şut Animasyonları (GOL)
             if(shotDir === 0) ballWrap.classList.add('ball-shoot-left-top');
             else if(shotDir === 1) ballWrap.classList.add('ball-shoot-right-top');
             else if(shotDir === 2) ballWrap.classList.add('ball-shoot-left-low');
@@ -2553,5 +2555,6 @@ function shootBall(userAnswerIndex) {
 </body>
 
 </html>
+
 
 
