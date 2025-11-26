@@ -12,7 +12,7 @@
 
     
 
-    <link rel="icon" type="image/png" href="favicon.png"> 
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
@@ -254,7 +254,54 @@
         @keyframes intense-pulse { 0% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 187, 0, 0.7); } 70% { transform: scale(1.2); box-shadow: 0 0 0 10px rgba(250, 187, 0, 0); } 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 187, 0, 0); } }
 
 
-        /* --- PENALTI OYUNU STİLLERİ (2x2 ŞIKLAR İÇİN GÜNCELLENMİŞ) --- */
+        /* --- PENALTI OYUNU STİLLERİ (2x2 ŞIKLAR VE JOKERLER İÇİN GÜNCELLENMİŞ) --- */
+        
+        .penalty-stats {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+            background: #000; /* Koyu arka plan */
+            color: #fff; /* Beyaz metin */
+            border-radius: 8px;
+            border: 1px solid #333;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .penalty-stats span {
+            color: #fabb00; /* Sarı renk (secondary color) */
+        }
+        
+        .joker-btn {
+            background: #8e24aa; /* Quiz/Game rengi */
+            color: white;
+            border: 1px solid #6a1b9a;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            flex-grow: 1; /* Joker butonlarını esnek yap */
+            margin: 0 5px; /* Aralarına boşluk */
+        }
+
+        .joker-btn:hover:not(:disabled) {
+            background: #ab47bc;
+            transform: translateY(-2px);
+        }
+
+        .joker-btn:disabled {
+            background: #444;
+            border-color: #333;
+            color: #999;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
         .penalty-options {
             /* YENİ STİL: 2x2 Grid Düzeni */
             display: grid; 
@@ -274,6 +321,7 @@
             border: 2px solid #f0b500;
             cursor: pointer;
             transition: background 0.2s, transform 0.1s;
+            text-align: left; /* Şıkları sola hizala */
         }
 
         .penalty-btn:hover:not(:disabled) {
@@ -286,30 +334,14 @@
             cursor: not-allowed;
         }
 
-        /* YENİ JOKER BUTON STİLİ */
-        .penalty-joker-btn {
-            background: #0e1b42; 
-            color: #fabb00; 
-            border: 1px solid #fabb00; 
-            padding: 5px 10px; 
-            margin: 0 5px; 
-            border-radius: 4px; 
-            cursor: pointer; 
-            font-size: 0.85rem;
-            transition: background 0.2s;
-        }
-
-        .penalty-joker-btn:hover:not(:disabled) {
-            background: #fabb00;
-            color: #0e1b42;
-        }
-
-        .penalty-joker-btn:disabled {
-            opacity: 0.4;
+        /* Yanlış cevapta çift hak jokeri için */
+        .penalty-btn.wrong-first-try {
+            background: #d32f2f;
+            color: white;
+            opacity: 0.8;
             cursor: not-allowed;
         }
-
-
+        
         .penalty-field {
 
             background: radial-gradient(circle at 50% 30%, #4caf50 0%, #388e3c 40%, #1b5e20 100%);
@@ -741,6 +773,7 @@
         @media (max-width: 768px) { .header { padding: 15px 15px; } .header-top { flex-direction: column; align-items: flex-start; gap: 10px; } .control-wrapper { flex-direction: column; } .penalty-field { height: 400px; } .goal-container { width: 240px; height: 120px; margin-top: 50px; } .goal-net { width: 230px; height: 115px; } 
         /* Küçük ekranlarda şıkları alt alta göster */
         .penalty-options { grid-template-columns: 1fr; }
+        .joker-btn { font-size: 0.75rem; padding: 8px 10px; }
         }
 
         /* Leaderboard Stilleri */
@@ -1018,20 +1051,12 @@
 
 
             <div id="penalty-game-area" style="display:none;">
-                
-                <div style="text-align:center; margin:10px 0; color:white; font-size:0.9rem;">
-                    <span style="font-weight:bold; color:#fabb00;">JOKERLER:</span>
-                    <button class="penalty-joker-btn" id="joker-half" onclick="useHalfJoker(this)">Yarı Yarıya (<span id="j-h-count">1</span>)</button>
-                    <button class="penalty-joker-btn" id="joker-double" onclick="useDoubleJoker(this)">Çift Cevap (<span id="j-d-count">1</span>)</button>
-                    <button class="penalty-joker-btn" id="joker-call" onclick="useCallJoker(this)">Telefon (<span id="j-c-count">1</span>)</button>
-                </div>
 
+                <div class="penalty-stats">
 
-                <div class="penalty-stats" style="color:#fabb00; display:flex; justify-content:space-around; font-weight:bold; font-size:1.1rem; margin-bottom:10px;">
+                    <span>SKOR: <span id="p-score">0</span></span>
 
-                    <span>SKOR: <span id="p-score" style="color:white;">0</span></span>
-
-                    <span>KALAN ŞUT: <span id="p-balls" style="color:white;">10</span></span>
+                    <span>KALAN ŞUT: <span id="p-balls">10</span></span>
 
                 </div>
 
@@ -1146,7 +1171,11 @@
 
                 </div>
 
-
+                <div id="joker-container" style="display: flex; justify-content: space-around; margin: 15px 0;">
+                    <button id="joker-call" class="joker-btn" onclick="useJoker('call')" title="Telefon Jokeri (Umut/Doğuş/Deniz/Esra)">📞 Telefon</button>
+                    <button id="joker-half" class="joker-btn" onclick="useJoker('half')" title="Yarı Yarıya Joker">✂️ 50:50</button>
+                    <button id="joker-double" class="joker-btn" onclick="useJoker('double')" title="Çift Cevap Hakkı">2️⃣ Çift Cevap</button>
+                </div>
                 <div class="penalty-options" id="p-options"></div>
 
                 <button id="p-restart-btn" class="restart-btn" style="display:none; width:100%; background:#fabb00; color:black; font-weight:bold;" onclick="showLobby()">LOBİYE DÖN 🏠</button>
@@ -1185,6 +1214,16 @@
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec"; 
 
         
+        // Yeni Global Değişkenler
+        let jokers = {
+            call: 1,      // Telefon Jokeri
+            half: 1,      // Yarı Yarıya
+            double: 1     // Çift Cevap
+        };
+        let doubleChanceUsed = false; // Çift cevap hakkı kullanıldı mı?
+        let firstAnswerIndex = -1;    // İlk yanlış deneme cevabı
+        // Bitiş
+
 
         const VALID_CATEGORIES = ['Teknik', 'İkna', 'Kampanya', 'Bilgi'];
 
@@ -1195,16 +1234,6 @@
         let activeCards = []; 
 
         let currentCategory = 'all';
-
-        // YENİ JOKER DEĞİŞKENLERİ
-        let jokers = {
-            'half': 1,      // Yarı Yarıya Joker
-            'call': 1,      // Telefon Jokeri
-            'double': 1,    // Çift Cevap Jokeri
-        };
-        let isDoubleJokerActive = false;
-        let isSecondChance = false;
-        // END JOKER DEĞİŞKENLERİ
 
 
         function getToken() { return localStorage.getItem("sSportToken"); }
@@ -1279,7 +1308,7 @@
 
         function escapeForJsString(text) { if (!text) return ""; return text.toString().replace(/\\/g, '\\\\').replace(/'/g, '\\\'').replace(/"/g, '\\"').replace(/\n/g, '\\n').replace(/\r/g, ''); }
 
-        function cleanData(text) { if (!text) return ""; return text.toString().replace(/\\/g, "\\\\").replace(/'/g, "&quot;").replace(/"/g, "&quot;").replace(/\n/g, "<br>").replace(/\r/g, ""); }
+        function cleanData(text) { if (!text) return ""; return text.toString().replace(/\\/g, "\\\\").replace(/'/g, "\\'").replace(/"/g, "&quot;").replace(/\n/g, "<br>").replace(/\r/g, ""); }
 
         document.addEventListener('contextmenu', event => event.preventDefault());
 
@@ -1472,95 +1501,95 @@
 
              const { value: formValues } = await Swal.fire({
 
-                 title: isMandatory ? 'Yeni Şifre Belirleyin' : 'Şifre Değiştir',
+                title: isMandatory ? 'Yeni Şifre Belirleyin' : 'Şifre Değiştir',
 
-                 html: `
+                html: `
 
-                     ${isMandatory ? '<p style="font-size:0.9rem; color:#d32f2f;">İlk giriş şifrenizi değiştirmeden devam edemezsiniz.</p>' : ''}
+                    ${isMandatory ? '<p style="font-size:0.9rem; color:#d32f2f;">İlk giriş şifrenizi değiştirmeden devam edemezsiniz.</p>' : ''}
 
-                     <input id="swal-old-pass" type="password" class="swal2-input" placeholder="Eski Şifre (Mevcut)">
+                    <input id="swal-old-pass" type="password" class="swal2-input" placeholder="Eski Şifre (Mevcut)">
 
-                     <input id="swal-new-pass" type="password" class="swal2-input" placeholder="Yeni Şifre">
+                    <input id="swal-new-pass" type="password" class="swal2-input" placeholder="Yeni Şifre">
 
-                 `,
+                `,
 
-                 focusConfirm: false, 
+                focusConfirm: false, 
 
-                 showCancelButton: !isMandatory,
+                showCancelButton: !isMandatory,
 
-                 allowOutsideClick: !isMandatory,
+                allowOutsideClick: !isMandatory,
 
-                 allowEscapeKey: !isMandatory,
+                allowEscapeKey: !isMandatory,
 
-                 confirmButtonText: 'Değiştir',
+                confirmButtonText: 'Değiştir',
 
-                 cancelButtonText: 'İptal',
+                cancelButtonText: 'İptal',
 
-                 preConfirm: () => { 
+                preConfirm: () => { 
 
-                     const o = document.getElementById('swal-old-pass').value;
+                    const o = document.getElementById('swal-old-pass').value;
 
-                     const n = document.getElementById('swal-new-pass').value;
+                    const n = document.getElementById('swal-new-pass').value;
 
-                     if(!o || !n) { Swal.showValidationMessage('Alanlar boş bırakılamaz'); }
+                    if(!o || !n) { Swal.showValidationMessage('Alanlar boş bırakılamaz'); }
 
-                     return [ o, n ] 
+                    return [ o, n ] 
 
-                 }
+                }
 
-             });
+            });
 
-             if (formValues) {
+            if (formValues) {
 
-                 Swal.fire({ title: 'İşleniyor...', didOpen: () => { Swal.showLoading() } });
+                Swal.fire({ title: 'İşleniyor...', didOpen: () => { Swal.showLoading() } });
 
-                 fetch(SCRIPT_URL, { 
+                fetch(SCRIPT_URL, { 
 
-                     method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
+                    method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
 
-                     body: JSON.stringify({ 
+                    body: JSON.stringify({ 
 
-                         action: "changePassword", username: currentUser, oldPass: CryptoJS.SHA256(formValues[0]).toString(), newPass: CryptoJS.SHA256(formValues[1]).toString(), token: getToken()
+                        action: "changePassword", username: currentUser, oldPass: CryptoJS.SHA256(formValues[0]).toString(), newPass: CryptoJS.SHA256(formValues[1]).toString(), token: getToken()
 
-                     }) 
+                    }) 
 
-                 })
+                })
 
-                 .then(response => response.json())
+                .then(response => response.json())
 
-                 .then(data => {
+                .then(data => {
 
-                     if(data.result === "success") {
+                    if(data.result === "success") {
 
-                         Swal.fire('Başarılı!', 'Şifreniz güncellendi. Güvenlik gereği yeniden giriş yapınız.', 'success')
+                        Swal.fire('Başarılı!', 'Şifreniz güncellendi. Güvenlik gereği yeniden giriş yapınız.', 'success')
 
-                         .then(() => { logout(); }); 
+                        .then(() => { logout(); }); 
 
-                     }
+                    }
 
-                     else { 
+                    else { 
 
-                         Swal.fire('Hata', data.message || 'İşlem başarısız.', 'error')
+                        Swal.fire('Hata', data.message || 'İşlem başarısız.', 'error')
 
-                         .then(() => { if(isMandatory) changePasswordPopup(true); }); 
+                        .then(() => { if(isMandatory) changePasswordPopup(true); }); 
 
-                     }
+                    }
 
-                 })
+                })
 
-                 .catch(err => {
+                .catch(err => {
 
-                     Swal.fire('Hata', 'Sunucu hatası.', 'error');
+                    Swal.fire('Hata', 'Sunucu hatası.', 'error');
 
-                     if(isMandatory) changePasswordPopup(true);
+                    if(isMandatory) changePasswordPopup(true);
 
-                 });
+                });
 
-             } else if (isMandatory) {
+            } else if (isMandatory) {
 
-                 changePasswordPopup(true);
+                changePasswordPopup(true);
 
-             }
+            }
 
         }
 
@@ -1814,39 +1843,39 @@
 
                     <div id="news-extra" style="display:none; text-align:left; margin-top:10px;">
 
-                                     <div style="display:flex; gap:10px; margin-bottom:10px;">
+                                 <div style="display:flex; gap:10px; margin-bottom:10px;">
 
-                                         <div style="flex:1;">
+                                    <div style="flex:1;">
 
-                                             <label style="font-weight:bold; font-size:0.8rem;">Tür</label>
+                                        <label style="font-weight:bold; font-size:0.8rem;">Tür</label>
 
-                                             <select id="swal-news-type" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
+                                        <select id="swal-news-type" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
 
-                                                 <option value="info">Bilgi</option>
+                                            <option value="info">Bilgi</option>
 
-                                                 <option value="fix">Çözüldü</option>
+                                            <option value="fix">Çözüldü</option>
 
-                                                 <option value="update">Güncelleme</option>
+                                            <option value="update">Güncelleme</option>
 
-                                             </select>
+                                        </select>
 
-                                         </div>
+                                    </div>
 
-                                          <div style="flex:1;">
+                                     <div style="flex:1;">
 
-                                             <label style="font-weight:bold; font-size:0.8rem;">Durum</label>
+                                        <label style="font-weight:bold; font-size:0.8rem;">Durum</label>
 
-                                             <select id="swal-news-status" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
+                                        <select id="swal-news-status" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
 
-                                                 <option value="Aktif">Aktif</option>
+                                            <option value="Aktif">Aktif</option>
 
-                                                 <option value="Pasif">Pasif</option>
+                                            <option value="Pasif">Pasif</option>
 
-                                             </select>
+                                        </select>
 
-                                         </div>
+                                    </div>
 
-                                     </div>
+                                 </div>
 
                     </div>
 
@@ -2232,7 +2261,7 @@
 
         
 
-        // --- QUIZ LOGIC (ESKİ MANTIK) ---
+        // --- QUIZ LOGIC ---
 
         let currentQuestion = 0, score = 0;
 
@@ -2254,13 +2283,96 @@
 
         
 
-        // --- PENALTI OYUNU MANTIĞI (GÜNCELLENDİ) ---
+        // --- PENALTI OYUNU MANTIĞI (JOKERLİ GÜNCEL) ---
 
         let pScore = 0;
 
         let pBalls = 10;
 
         let pCurrentQ = null;
+
+
+        function updateJokerButtons() {
+            document.getElementById('joker-call').disabled = jokers.call === 0;
+            document.getElementById('joker-half').disabled = jokers.half === 0;
+            document.getElementById('joker-double').disabled = jokers.double === 0 || doubleChanceUsed;
+
+            // İlk cevap yanlışsa, sadece double jokeri disable olmalı
+            if (firstAnswerIndex !== -1) {
+                document.getElementById('joker-call').disabled = true;
+                document.getElementById('joker-half').disabled = true;
+            }
+        }
+
+        function useJoker(type) {
+            if (jokers[type] === 0) return;
+            
+            jokers[type] = 0;
+            updateJokerButtons();
+
+            const currentQ = pCurrentQ;
+            const correctAns = currentQ.a;
+            const optionsEl = document.getElementById('p-options');
+            let btns = optionsEl.querySelectorAll('.penalty-btn');
+            
+            if (type === 'call') {
+                const experts = ["Umut Bey", "Doğuş Bey", "Deniz Bey", "Esra Hanım"];
+                const expert = experts[Math.floor(Math.random() * experts.length)];
+                let confidence = Math.random() < 0.8 ? "çok eminim" : "emin değilim";
+                let guess = correctAns;
+                
+                // Yanlış cevap verme ihtimali %20
+                if (confidence === "emin değilim" && currentQ.opts.length > 1) {
+                     let incorrectOpts = currentQ.opts.map((_, i) => i).filter(i => i !== correctAns);
+                     guess = incorrectOpts[Math.floor(Math.random() * incorrectOpts.length)] || correctAns;
+                }
+
+                Swal.fire({
+                    icon: 'info',
+                    title: '📞 Telefon Jokeri',
+                    html: `${expert} soruyu cevaplıyor...<br><br>
+                           "Benim tahminim kesinlikle **${String.fromCharCode(65 + guess)}** şıkkı. Bundan ${confidence}."`,
+                    confirmButtonText: 'Kapat'
+                });
+                
+            } else if (type === 'half') {
+                let incorrectOpts = currentQ.opts.map((_, i) => i).filter(i => i !== correctAns);
+                
+                // Yanlış şıklardan rastgele 2 tanesini seç (Cevap 4 şık ise)
+                incorrectOpts.sort(() => Math.random() - 0.5);
+                const optionsToDisable = incorrectOpts.slice(0, 2);
+                
+                // Seçilen şıkları devre dışı bırak
+                optionsToDisable.forEach(idx => {
+                    btns[idx].disabled = true;
+                    btns[idx].style.textDecoration = 'line-through';
+                    btns[idx].style.opacity = '0.4';
+                });
+
+                Swal.fire({
+                    icon: 'success',
+                    title: '✂️ Yarı Yarıya Kullanıldı',
+                    text: 'İki yanlış şık elendi!',
+                    toast: true,
+                    position: 'top',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+
+            } else if (type === 'double') {
+                doubleChanceUsed = true;
+                
+                Swal.fire({
+                    icon: 'warning',
+                    title: '2️⃣ Çift Cevap Hakkı',
+                    text: 'Bu soruda bir kez yanlış cevap verme hakkınız var. İlk cevabınız yanlışsa, ikinci kez deneyebilirsiniz.',
+                    toast: true,
+                    position: 'top',
+                    showConfirmButton: false,
+                    timer: 2500
+                });
+            }
+        }
 
 
         function openPenaltyGame() {
@@ -2387,10 +2499,13 @@
             pScore = 0;
 
             pBalls = 10;
-            // Jokerleri her oyun başında sıfırla
-            jokers = { 'half': 1, 'call': 1, 'double': 1 };
-            isDoubleJokerActive = false;
-            isSecondChance = false;
+            
+            // Jokerleri sıfırla ve yeniden etkinleştir
+            jokers = { call: 1, half: 1, double: 1 };
+            doubleChanceUsed = false;
+            firstAnswerIndex = -1;
+            updateJokerButtons(); // Joker butonlarını güncelle
+
 
             document.getElementById('p-score').innerText = pScore;
 
@@ -2413,23 +2528,20 @@
 
             if (quizQuestions.length === 0) { Swal.fire('Hata', 'Soru havuzu boş!', 'warning'); return; }
 
-            // Joker butonlarını güncelledik
-            document.getElementById('joker-half').disabled = jokers.half === 0;
-            document.getElementById('joker-double').disabled = jokers.double === 0;
-            document.getElementById('joker-call').disabled = jokers.call === 0;
-
-
             pCurrentQ = quizQuestions[Math.floor(Math.random() * quizQuestions.length)];
 
             document.getElementById('p-question-text').innerText = pCurrentQ.q;
-
             
+            // Çift cevap hakkı kullanıldıysa, jokeri devre dışı bırak.
+            doubleChanceUsed = false;
+            firstAnswerIndex = -1;
+            updateJokerButtons(); 
+
 
             let html = '';
 
             pCurrentQ.opts.forEach((opt, index) => {
 
-                // Şıkların A, B, C, D harfleri için ekleme (isteğe bağlı)
                 const letter = String.fromCharCode(65 + index); // 0=A, 1=B, vb.
 
                 html += `<button class="penalty-btn" onclick="shootBall(${index})">${letter}: ${opt}</button>`;
@@ -2437,128 +2549,60 @@
             });
 
             document.getElementById('p-options').innerHTML = html;
-        }
 
-        // YARI YARIYA JOKER FONKSİYONU
-        function useHalfJoker(btn) {
-            if (jokers.half === 0 || !pCurrentQ) return;
-            jokers.half--;
-            document.getElementById('j-h-count').innerText = jokers.half;
-            btn.disabled = true;
-
-            const options = document.querySelectorAll('.penalty-btn');
-            const correctIndex = pCurrentQ.a;
-            let wrongIndices = Array.from(options.keys()).filter(i => i !== correctIndex);
-            
-            // Rastgele bir yanlış cevap daha tutulur
-            const wrongToKeepIndex = wrongIndices[Math.floor(Math.random() * wrongIndices.length)];
-            
-            // Diğer 2 yanlış cevap silinir (görsel olarak pasifize edilir)
-            wrongIndices.filter(i => i !== wrongToKeepIndex).forEach(index => {
-                options[index].disabled = true;
-                options[index].style.opacity = '0.3';
-                options[index].innerText = 'X: Yanlış'; // Şıkkı siler
-            });
-            
-            Swal.fire({ toast: true, position: 'top', icon: 'info', title: 'Deniz Bey: İki yanlış cevap silindi!', showConfirmButton: false, timer: 1500, background: '#e1f5fe' });
-        }
-
-        // ÇİFT CEVAP JOKERİ FONKSİYONU
-        function useDoubleJoker(btn) {
-            if (jokers.double === 0 || !pCurrentQ) return;
-            jokers.double--;
-            document.getElementById('j-d-count').innerText = jokers.double;
-            btn.disabled = true;
-            isDoubleJokerActive = true;
-            
-            Swal.fire({ toast: true, position: 'top', icon: 'info', title: 'Çift Cevap Jokeri AKTİF!', text: 'Hata yaparsan bir şut hakkın daha var!', showConfirmButton: false, timer: 2000, background: '#fff3e0' });
-        }
-
-        // TELEFON JOKERİ FONKSİYONU
-        function useCallJoker(btn) {
-            if (jokers.call === 0 || !pCurrentQ) return;
-            jokers.call--;
-            document.getElementById('j-c-count').innerText = jokers.call;
-            btn.disabled = true;
-
-            const correctIndex = pCurrentQ.a;
-            const correctOptionText = pCurrentQ.opts[correctIndex];
-
-            const person = Math.random() < 0.33 ? 'Esra Hanım' : (Math.random() < 0.66 ? 'Umut Bey' : 'Doğuş Bey');
-            const hint = `<p>Jokerimiz **${person}**'e bağlanıyor...</p><p style="font-weight:bold;">${person}: Bence cevabın büyük olasılıkla <b>${String.fromCharCode(65 + correctIndex)}</b> şıkkı, yani: <i>${correctOptionText}</i>.</p>`;
-
-            Swal.fire({
-                title: `📞 Telefon Jokeri`,
-                html: hint,
-                icon: 'question',
-                showConfirmButton: true,
-                confirmButtonText: 'Teşekkürler!'
-            });
         }
 
 
         function shootBall(userAnswerIndex) {
 
             const btns = document.querySelectorAll('.penalty-btn');
-
-            // İlk tıklamada tüm butonları devre dışı bırak
-            btns.forEach(b => b.disabled = true);
-
-
-            const ballWrap = document.getElementById('ball-wrap');
-
-            const shadow = ballWrap.querySelector('.ball-shadow');
-
-            const keeperWrap = document.getElementById('keeper-wrap');
-
-            const shooterWrap = document.getElementById('shooter-wrap');
-
-            const goalMsg = document.getElementById('goal-msg');
-
-            
-
             const isCorrect = (userAnswerIndex === pCurrentQ.a);
-
-            const shotDir = Math.floor(Math.random() * 4); 
-
-
-            // ÇİFT CEVAP JOKER KONTROLÜ
-            if (!isCorrect && isDoubleJokerActive && !isSecondChance) {
-                isSecondChance = true; // İkinci hakkı kullandık
-                isDoubleJokerActive = false; // Joker artık kullanıldı (tekrar aktif edilemez)
+            
+            // 1. Çift Cevap Jokeri Kontrolü (Hata durumunda)
+            if (!isCorrect && doubleChanceUsed && firstAnswerIndex === -1) {
                 
-                // Yanlış cevabı görsel olarak işaretle ve devre dışı bırak
-                btns[userAnswerIndex].style.backgroundColor = '#ffc107'; // Sarı (İkinci şans)
-                btns[userAnswerIndex].style.color = '#333';
+                firstAnswerIndex = userAnswerIndex;
+                btns[userAnswerIndex].classList.add('wrong-first-try'); // İlk yanlış cevabı işaretle
                 btns[userAnswerIndex].disabled = true;
-
-                Swal.fire({ toast: true, position: 'center', icon: 'warning', title: 'Çift Cevap Aktif!', text: 'Bu şut hakkın sayılmadı. Lütfen kalan şıklardan birini seç.', showConfirmButton: false, timer: 2500 });
                 
-                // İkinci hak için butonları tekrar aktif et (eski yanlış seçeneği devre dışı bırakarak)
-                setTimeout(() => {
-                    btns.forEach(b => b.disabled = false);
-                    btns[userAnswerIndex].disabled = true;
-                }, 2500);
+                Swal.fire({ toast: true, position: 'top', icon: 'info', title: 'İlk Hata! Kalan Hakkınız: 1', showConfirmButton: false, timer: 1500, background: '#ffc107' });
                 
-                return; // Fonksiyondan çık, ikinci şansı kullanmasını bekle
+                // Diğer butonları tekrar tıklanabilir yap (yalnızca çift cevap jokeri için)
+                btns.forEach(b => {
+                    if (!b.classList.contains('wrong-first-try') && !b.style.textDecoration) {
+                        b.disabled = false;
+                    }
+                });
+                
+                // Jokerleri devre dışı bırak (bu soruda başka joker kullanılamaz)
+                updateJokerButtons();
+                return; // Fonksiyondan çık, animasyonu atla
             }
 
-            // İkinci şanstan sonra normal oyuna dön
-            if (isSecondChance) isSecondChance = false;
-            
-            // NORMAL ŞUT ANİMASYONLARI BAŞLANGICI
-            shooterWrap.classList.add('shooter-run');
+            // Eğer buraya gelindiyse, tek hak kullanılmıştır (ya ilk doğru deneme ya da ikinci deneme)
+            btns.forEach(b => b.disabled = true); // Tüm butonları devre dışı bırak
 
+            
+            // Animasyon ve Sonuç Mantığı
+            const ballWrap = document.getElementById('ball-wrap');
+            const shadow = ballWrap.querySelector('.ball-shadow');
+            const keeperWrap = document.getElementById('keeper-wrap');
+            const shooterWrap = document.getElementById('shooter-wrap');
+            const goalMsg = document.getElementById('goal-msg');
+            
+            const shotDir = Math.floor(Math.random() * 4); 
+
+            shooterWrap.classList.add('shooter-run');
 
             setTimeout(() => {
 
-                // Kaleci Hareketi (Doğruysa ters köşeye, Yanlışsa topun olduğu köşeye)
+                // Kaleci Hareketi
                 if(isCorrect) {
-                    // Gol olduğunda kaleci ters köşeye uçar
-                    if(shotDir === 0 || shotDir === 2) keeperWrap.classList.add('keeper-dive-right');
-                    else keeperWrap.classList.add('keeper-dive-left');
+                     // Gol olduğunda kaleci ters köşeye uçar
+                     if(shotDir === 0 || shotDir === 2) keeperWrap.classList.add('keeper-dive-right');
+                     else keeperWrap.classList.add('keeper-dive-left');
                 } else {
-                    // Kurtarışta kaleci topun olduğu yere uçar (kurtarma ihtimali var)
+                    // Kurtarışta kaleci topun olduğu yere uçar
                     if(shotDir === 0 || shotDir === 2) keeperWrap.classList.add('keeper-dive-left');
                     else keeperWrap.classList.add('keeper-dive-right');
                 }
@@ -2568,6 +2612,7 @@
 
 
                 if (isCorrect) {
+                    btns[userAnswerIndex].style.background = '#2e7d32'; // Cevabı yeşil yap
 
                     // Şut Animasyonları
                     if(shotDir === 0) ballWrap.classList.add('ball-shoot-left-top');
@@ -2594,21 +2639,10 @@
 
 
                 } else {
+                    // İkinci deneme (veya çift hak yokken ilk deneme) yanlış
                     
-                    // YANLIŞ CEVAPTA DOĞRU CEVABI GÖSTERME (İSTENEN ÖZELLİK)
-                    const correctIndex = pCurrentQ.a;
-                    const correctButton = document.getElementById('p-options').children[correctIndex];
-
-                    btns[userAnswerIndex].style.backgroundColor = '#d32f2f'; // Kırmızı (Yanlış)
-                    btns[userAnswerIndex].style.color = 'white';
-                    btns[userAnswerIndex].style.borderColor = '#9a0007';
-
-                    correctButton.style.backgroundColor = '#2e7d32'; // Yeşil (Doğru)
-                    correctButton.style.color = 'white';
-                    correctButton.style.borderColor = '#1b5e20';
-                    // END YENİ ÖZELLİK
+                    btns[userAnswerIndex].style.background = '#d32f2f'; // Cevabı kırmızı yap
                     
-
                     if(Math.random() > 0.5) {
 
                         // Kaleci kurtardı animasyonu (top kaleciye çarpar gibi durur)
@@ -2629,7 +2663,7 @@
 
                         }, 500);
 
-                        Swal.fire({ toast: true, position: 'top', icon: 'error', title: 'Yanlış Cevap!', showConfirmButton: false, timer: 1000, background: '#ef9a9a' });
+                        Swal.fire({ toast: true, position: 'top', icon: 'error', title: 'Kaçırdın!', showConfirmButton: false, timer: 1000, background: '#ef9a9a' });
 
                     } else {
 
@@ -2647,9 +2681,12 @@
 
                         }, 500);
 
-                        Swal.fire({ toast: true, position: 'top', icon: 'error', title: 'Yanlış Cevap!', showConfirmButton: false, timer: 1000, background: '#ef9a9a' });
+                        Swal.fire({ toast: true, position: 'top', icon: 'error', title: 'Kaçırdın!', showConfirmButton: false, timer: 1000, background: '#ef9a9a' });
 
                     }
+                    
+                    // Doğru cevabı da işaretle
+                    btns[pCurrentQ.a].style.background = '#2e7d32';
 
                 }
 
@@ -2680,7 +2717,7 @@
 
             const keeperWrap = document.getElementById('keeper-wrap');
 
-            const shooterWrap = document.getElementById('shooter-wrapper');
+            const shooterWrap = document.getElementById('shooter-wrap');
 
             const goalMsg = document.getElementById('goal-msg');
 
@@ -2702,23 +2739,16 @@
 
 
             goalMsg.classList.remove('show');
-
-            // Joker Sayacı Arayüzünü Güncelle
-            document.getElementById('j-h-count').innerText = jokers.half;
-            document.getElementById('j-d-count').innerText = jokers.double;
-            document.getElementById('j-c-count').innerText = jokers.call;
-            document.getElementById('joker-half').disabled = jokers.half === 0;
-            document.getElementById('joker-double').disabled = jokers.double === 0;
-            document.getElementById('joker-call').disabled = jokers.call === 0;
-
-            // Şık butonlarını eski haline getir
+            
+            // Tüm buton stillerini sıfırla (Çift cevap jokeri için önemli)
             document.querySelectorAll('.penalty-btn').forEach(b => {
-                b.style.backgroundColor = '#fabb00';
-                b.style.color = '#0e1b42';
-                b.style.borderColor = '#f0b500';
-                b.style.opacity = '1';
-                b.disabled = false;
+                b.classList.remove('wrong-first-try');
+                b.style.textDecoration = '';
+                b.style.opacity = '';
+                b.style.background = '';
+                b.style.color = '';
             });
+
         }
 
 
@@ -2732,7 +2762,7 @@
 
             document.getElementById('p-restart-btn').style.display = 'block';
 
-            // Skoru kaydet (10 ile çarpıyoruz ki 100 üzerinden puanlansın)
+            // Log quiz score. Penalty score * 10 to match 100 total quiz points for leaderboard.
             fetch(SCRIPT_URL, { method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "logQuiz", username: currentUser, token: getToken(), score: pScore * 10, total: 100 }) });
 
         }
