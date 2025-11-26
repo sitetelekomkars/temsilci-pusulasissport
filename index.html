@@ -129,7 +129,7 @@
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes intense-pulse { 0% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 187, 0, 0.7); } 70% { transform: scale(1.2); box-shadow: 0 0 0 10px rgba(250, 187, 0, 0); } 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 187, 0, 0); } }
 
-        /* --- 3D OYUN STİLLERİ (GÜNCELLENMİŞ REALİSTİK) --- */
+        /* --- 3D OYUN STİLLERİ (FOTOĞRAFA YAKIN İYİLEŞTİRME) --- */
         .penalty-field {
             background: radial-gradient(circle at 50% 30%, #4caf50 0%, #388e3c 40%, #1b5e20 100%);
             border: 4px solid #fff;
@@ -154,7 +154,7 @@
         .goal-net { position: absolute; top: 5px; left: 5px; width: 310px; height: 155px; background: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,0.3) 5px, rgba(255,255,255,0.3) 6px), repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255,255,255,0.3) 5px, rgba(255,255,255,0.3) 6px); background-color: rgba(0,0,0,0.2); transform: translateZ(-40px); box-shadow: inset 0 0 20px rgba(0,0,0,0.5); }
 
         /* --- REALİSTİK TOP --- */
-        .ball-wrapper { position: absolute; bottom: 110px; left: 50%; transform: translateX(-55%); z-index: 15; transition: all 0.6s cubic-bezier(0.1, 0.5, 0.3, 1); width: 36px; height: 36px; }
+        .ball-wrapper { position: absolute; bottom: 110px; left: 50%; transform: translateX(-50%); z-index: 15; transition: all 0.6s cubic-bezier(0.1, 0.5, 0.3, 1); width: 36px; height: 36px; }
         .football { 
             width: 100%; height: 100%; border-radius: 50%; 
             background-color: #fff;
@@ -169,39 +169,161 @@
         @keyframes spinIdle { 0% { background-position: 0% 0%; } 100% { background-position: 100% 100%; } }
         .ball-shadow { width: 30px; height: 6px; background: rgba(0,0,0,0.6); border-radius: 50%; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); filter: blur(3px); transition: all 0.6s; }
 
-        /* --- OYUNCU GÖVDELERİ (CSS ART) --- */
-        .keeper-wrapper { 
-            position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); 
-            width: 60px; height: 120px; z-index: 10; 
-            transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1.2); 
+        /* --- OYUNCU GÖVDELERİ (GÜNCEL STİLİZE) --- */
+        .keeper-wrapper {
+            position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+            width: 70px; /* Daha geniş */
+            height: 130px; /* Daha uzun */
+            z-index: 10;
+            transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1.2);
+            perspective: 500px;
         }
-        /* Kaleci Vücut Yapısı */
         .player-figure { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; }
-        .head { width: 24px; height: 28px; background: radial-gradient(circle at 10px 10px, #ffcc80, #e65100); border-radius: 50%; margin: 0 auto; position: relative; z-index: 4; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
-        .torso { width: 40px; height: 45px; background: linear-gradient(135deg, #ffeb3b, #fbc02d); border-radius: 8px 8px 12px 12px; margin: -2px auto 0; position: relative; z-index: 3; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-weight: bold; color: #333; font-size: 10px; }
-        .arms { position: absolute; top: 32px; width: 100%; height: 15px; z-index: 2; }
-        .arm { width: 12px; height: 35px; background: #ffeb3b; border-radius: 10px; position: absolute; top: 0; }
-        .arm.left { left: -5px; transform: rotate(15deg); } .arm.right { right: -5px; transform: rotate(-15deg); }
-        .gloves { width: 14px; height: 14px; background: #fff; border-radius: 50%; position: absolute; bottom: -2px; left: -1px; border:2px solid #ccc; }
-        .shorts { width: 40px; height: 25px; background: #212121; margin: -5px auto 0; border-radius: 0 0 10px 10px; position: relative; z-index: 2; }
-        .legs { position: relative; width: 40px; margin: 0 auto; }
-        .leg { width: 14px; height: 35px; background: #212121; position: absolute; top: -5px; border-radius: 0 0 5px 5px; }
-        .leg.left { left: 4px; } .leg.right { right: 4px; }
-        .sock { width: 100%; height: 15px; background: #fff; position: absolute; bottom: 0; border-radius: 0 0 5px 5px; }
-        .shoe { width: 16px; height: 10px; background: #d32f2f; position: absolute; bottom: -8px; left: -1px; border-radius: 5px 5px 2px 2px; }
 
-        /* Şutör (Arkası Dönük) */
-        .shooter-wrapper { 
-            position: absolute; bottom: -50px; left: 45%; transform: translateX(-50%) scale(1.4); 
-            z-index: 20; transition: all 0.3s ease-in; width: 60px; height: 120px; 
+        /* Kafa (Daha detaylı ve gölgeli) */
+        .head {
+            width: 28px; height: 32px;
+            background: radial-gradient(circle at 10px 10px, #ffcc80, #e65100);
+            border-radius: 50% 50% 45% 45% / 50% 50% 55% 55%;
+            margin: 0 auto; position: relative; z-index: 4;
+            box-shadow: inset 0 -3px 5px rgba(0,0,0,0.3), 0 2px 5px rgba(0,0,0,0.4);
+            transform: translateZ(5px);
         }
-        .shooter-wrapper .head { background: radial-gradient(circle at 10px 10px, #3e2723, #000); /* Saç rengi */ }
-        .shooter-wrapper .torso { background: linear-gradient(135deg, #d32f2f, #b71c1c); color: white; } /* Kırmızı Forma */
-        .shooter-wrapper .torso::after { content: '10'; font-size: 16px; font-weight: 800; opacity: 0.9; }
-        .shooter-wrapper .arm { background: #d32f2f; }
-        .shooter-wrapper .shorts { background: #fff; }
-        .shooter-wrapper .leg { background: #fff; } /* Ten rengi yerine beyaz şort/çorap */
-        .shooter-wrapper .sock { background: #d32f2f; }
+        .head::before { 
+            content: ''; position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+            width: 10px; height: 12px; background: rgba(0,0,0,0.15); border-radius: 50%;
+            filter: blur(3px);
+        }
+        .head::after { 
+            content: ''; position: absolute; top: -2px; left: 5px;
+            width: 18px; height: 10px; background: #3e2723; border-radius: 50%;
+            transform: rotate(-10deg);
+        }
+
+        /* Gövde (Daha detaylı forma görünümü ve 3D hissi) */
+        .torso {
+            width: 45px; height: 50px;
+            background: linear-gradient(135deg, #ffeb3b 0%, #fbc02d 50%, #f9a825 100%);
+            border-radius: 8px 8px 12px 12px; margin: -5px auto 0; position: relative; z-index: 3;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.4), inset 0 4px 6px rgba(255,255,255,0.4);
+            display: flex; align-items: center; justify-content: center; font-weight: bold; color: #333; font-size: 10px;
+            border: 1px solid rgba(0,0,0,0.1);
+            transform: translateZ(3px);
+            overflow: hidden;
+        }
+        .torso::before { 
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to right, rgba(0,0,0,0.05), transparent 20%, transparent 80%, rgba(0,0,0,0.05)),
+                        linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.1));
+            z-index: 1;
+        }
+        .torso::after {
+            content: 'SSP'; position: absolute; top: 18px; left: 50%; transform: translateX(-50%);
+            color: #0e1b42; font-size: 12px; font-weight: 800; opacity: 0.8; z-index: 2;
+        }
+
+        /* Kollar (Daha hacimli ve pozisyona göre bükülmüş) */
+        .arms { position: absolute; top: 35px; width: 100%; height: 15px; z-index: 2; }
+        .arm {
+            width: 16px; height: 45px; 
+            background: linear-gradient(to right, #ffeb3b, #fbc02d);
+            border-radius: 10px; position: absolute; top: 0;
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            transform-origin: top center; 
+        }
+        .arm.left { left: -8px; transform: rotate(25deg) translateZ(2px); } 
+        .arm.right { right: -8px; transform: rotate(-25deg) translateZ(2px); }
+
+        /* Eldivenler */
+        .gloves {
+            width: 20px; height: 20px; background: #fff; border-radius: 50%;
+            position: absolute; bottom: -8px; left: -2px; border:3px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            transform: translateZ(6px); 
+        }
+        .gloves::after { /* Eldivenlere ek detay */
+            content: ''; position: absolute; width: 6px; height: 6px; background: #f00; border-radius: 50%;
+            top: 5px; left: 5px;
+        }
+
+        /* Şort */
+        .shorts {
+            width: 45px; height: 30px; background: linear-gradient(to bottom, #212121, #000); 
+            margin: -8px auto 0; border-radius: 0 0 12px 12px; position: relative; z-index: 2;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+            transform: translateZ(1px);
+        }
+
+        /* Bacaklar (Daha hacimli ve pozisyona göre bükülmüş) */
+        .legs { position: relative; width: 45px; margin: 0 auto; }
+        .leg {
+            width: 16px; height: 45px;
+            background: linear-gradient(to bottom, #212121, #000);
+            position: absolute; top: -8px; border-radius: 0 0 8px 8px;
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            transform-origin: top center;
+        }
+        .leg.left { left: 5px; transform: rotate(8deg) translateZ(2px); }
+        .leg.right { right: 5px; transform: rotate(-8deg) translateZ(2px); }
+
+        /* Çoraplar (Daha belirgin) */
+        .sock {
+            width: 100%; height: 22px;
+            background: linear-gradient(to bottom, #fff, #eee);
+            position: absolute; bottom: 0; border-radius: 0 0 8px 8px;
+            border-top: 2px solid #ddd;
+            box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+        }
+
+        /* Ayakkabılar (Daha belirgin ve gölgeli) */
+        .shoe {
+            width: 22px; height: 14px;
+            background: linear-gradient(to right, #d32f2f, #c62828);
+            position: absolute; bottom: -12px; left: -3px;
+            border-radius: 6px 6px 3px 3px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.4), inset -3px -3px 4px rgba(0,0,0,0.4);
+            transform: translateZ(8px);
+        }
+
+        /* Şutör (Arkası Dönük - daha gerçekçi versiyon) */
+        .shooter-wrapper {
+            position: absolute; bottom: -50px; left: 45%; transform: translateX(-50%) scale(1.4); 
+            z-index: 20; transition: all 0.3s ease-in; width: 70px; height: 130px; 
+            perspective: 500px;
+        }
+        .shooter-wrapper .head {
+            background: radial-gradient(circle at 10px 10px, #3e2723, #000);
+            box-shadow: inset 0 -3px 5px rgba(0,0,0,0.4), 0 2px 5px rgba(0,0,0,0.4);
+        }
+        .shooter-wrapper .head::before { display: none; } 
+        .shooter-wrapper .head::after { 
+            content: ''; position: absolute; top: -4px; left: 0px;
+            width: 28px; height: 15px; background: #3e2723; border-radius: 50%;
+            transform: rotate(5deg);
+        }
+        .shooter-wrapper .torso {
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 50%, #a11616 100%);
+            color: white; border: 1px solid rgba(0,0,0,0.2);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.3), inset 0 4px 6px rgba(255,255,255,0.2);
+        }
+        .shooter-wrapper .torso::after { content: '10'; font-size: 16px; font-weight: 800; opacity: 0.9; z-index: 2; }
+        .shooter-wrapper .torso::before { 
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to right, rgba(0,0,0,0.1), transparent 20%, transparent 80%, rgba(0,0,0,0.1)),
+                        linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.2));
+            z-index: 1;
+        }
+        .shooter-wrapper .arm { background: linear-gradient(to right, #d32f2f, #b71c1c); box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
+        .shooter-wrapper .arm.left { transform: rotate(20deg) translateZ(2px); }
+        .shooter-wrapper .arm.right { transform: rotate(-20deg) translateZ(2px); }
+        .shooter-wrapper .gloves { display: none; } 
+
+        .shooter-wrapper .shorts { background: linear-gradient(to bottom, #0e1b42, #000); border: 1px solid #000; }
+        .shooter-wrapper .leg { background: linear-gradient(to bottom, #d32f2f, #b71c1c); box-shadow: inset 0 0 6px rgba(0,0,0,0.2); } /* Şutör bacaklarını çorap rengi yaptık */
+        .shooter-wrapper .leg.left { transform: rotate(10deg) translateZ(2px); }
+        .shooter-wrapper .leg.right { transform: rotate(-10deg) translateZ(2px); }
+        .shooter-wrapper .sock { background: linear-gradient(to bottom, #d32f2f, #b71c1c); border-top: 2px solid #a11616; display: none; } /* Çorap detayını bacağın içine gömdük */
+        .shooter-wrapper .shoe { background: linear-gradient(to right, #212121, #000); box-shadow: 0 3px 6px rgba(0,0,0,0.4), inset -3px -3px 4px rgba(0,0,0,0.4); }
 
         .keeper-shadow { width: 50px; height: 10px; background: rgba(0,0,0,0.5); border-radius: 50%; margin: -5px auto 0 auto; filter: blur(4px); }
 
@@ -209,7 +331,7 @@
         .shooter-run { bottom: 80px !important; left: 50% !important; transform: translateX(-50%) scale(1.1) !important; }
         .shooter-run .arm.left { animation: runArm 0.3s infinite alternate; }
         .shooter-run .arm.right { animation: runArm 0.3s infinite alternate-reverse; }
-        @keyframes runArm { from { transform: rotate(20deg); } to { transform: rotate(-20deg); } }
+        @keyframes runArm { from { transform: rotate(20deg) translateZ(2px); } to { transform: rotate(-20deg) translateZ(2px); } }
 
         /* Top Hareketleri */
         .ball-shoot-left-top { bottom: 380px !important; left: 35% !important; transform: scale(0.4) rotate(720deg) !important; }
@@ -221,9 +343,9 @@
 
         /* Kaleci Kurtarışları */
         .keeper-dive-left { transform: translateX(-140px) translateY(50px) rotate(-70deg) !important; }
-        .keeper-dive-left .arm.left { transform: rotate(-180deg); }
+        .keeper-dive-left .arm.left { transform: rotate(-180deg) translateZ(2px); }
         .keeper-dive-right { transform: translateX(140px) translateY(50px) rotate(70deg) !important; }
-        .keeper-dive-right .arm.right { transform: rotate(-180deg); }
+        .keeper-dive-right .arm.right { transform: rotate(-180deg) translateZ(2px); }
 
         /* Diğerleri */
         .penalty-area { position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%) perspective(500px) rotateX(40deg); width: 70%; height: 200px; border: 4px solid rgba(255,255,255,0.6); border-bottom: none; z-index: 1; box-shadow: 0 0 15px rgba(255,255,255,0.1); }
@@ -394,7 +516,7 @@
                         <div id="keeper-wrap" class="keeper-wrapper">
                             <div class="player-figure">
                                 <div class="head"></div>
-                                <div class="torso">SSP</div>
+                                <div class="torso"></div>
                                 <div class="arms">
                                     <div class="arm left"><div class="gloves"></div></div>
                                     <div class="arm right"><div class="gloves"></div></div>
@@ -814,7 +936,7 @@
                         const cardPreview = document.getElementById('preview-card');
                         catCont.style.display = 'none'; scriptCont.style.display = 'none'; extraCont.style.display = 'none'; 
                         sportExtra.style.display = 'none'; newsExtra.style.display = 'none';
-                        cardPreview.style.borderLeft = "5px solid var(--info)"; // Varsayılanı sıfırla
+                        cardPreview.style.borderLeft = "5px solid var(--info)"; 
 
                         if (type === 'card') {
                             catCont.style.display = 'block'; scriptCont.style.display = 'block'; extraCont.style.display = 'grid';
@@ -1103,7 +1225,6 @@
             
             const isCorrect = (userAnswerIndex === pCurrentQ.a);
             const shotDir = Math.floor(Math.random() * 4); 
-            // const keeperDir = Math.random() < 0.5 ? 'left' : 'right'; // Kullanılmıyor, kaleci hareketini topun tersi yönüne ayarlayalım.
 
             shooterWrap.classList.add('shooter-run');
 
