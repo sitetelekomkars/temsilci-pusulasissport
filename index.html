@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 
 <html lang="tr">
 
@@ -12,7 +12,7 @@
 
     
 
-    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+   <link rel="icon" type="image/jpeg" href="favicon.jpg">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
@@ -254,94 +254,8 @@
         @keyframes intense-pulse { 0% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 187, 0, 0.7); } 70% { transform: scale(1.2); box-shadow: 0 0 0 10px rgba(250, 187, 0, 0); } 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 187, 0, 0); } }
 
 
-        /* --- PENALTI OYUNU STİLLERİ (2x2 ŞIKLAR VE JOKERLER İÇİN GÜNCELLENMİŞ) --- */
-        
-        .penalty-stats {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 20px;
-            margin-bottom: 15px;
-            background: #000; /* Koyu arka plan */
-            color: #fff; /* Beyaz metin */
-            border-radius: 8px;
-            border: 1px solid #333;
-            font-size: 1.1rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-        
-        .penalty-stats span {
-            color: #fabb00; /* Sarı renk (secondary color) */
-        }
-        
-        .joker-btn {
-            background: #8e24aa; /* Quiz/Game rengi */
-            color: white;
-            border: 1px solid #6a1b9a;
-            padding: 10px 15px;
-            border-radius: 6px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-size: 0.85rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-            flex-grow: 1; /* Joker butonlarını esnek yap */
-            margin: 0 5px; /* Aralarına boşluk */
-        }
+        /* --- 3D OYUN STİLLERİ (FOTOĞRAFA YAKIN İYİLEŞTİRME) --- */
 
-        .joker-btn:hover:not(:disabled) {
-            background: #ab47bc;
-            transform: translateY(-2px);
-        }
-
-        .joker-btn:disabled {
-            background: #444;
-            border-color: #333;
-            color: #999;
-            cursor: not-allowed;
-            box-shadow: none;
-        }
-
-        .penalty-options {
-            /* YENİ STİL: 2x2 Grid Düzeni */
-            display: grid; 
-            grid-template-columns: 1fr 1fr; 
-            gap: 15px; /* Şıklar arası boşluk */
-            margin-top: 20px;
-        }
-
-        .penalty-btn {
-            /* Buton stili (daha belirgin) */
-            padding: 15px 10px;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 1rem;
-            background: #fabb00;
-            color: #0e1b42;
-            border: 2px solid #f0b500;
-            cursor: pointer;
-            transition: background 0.2s, transform 0.1s;
-            text-align: left; /* Şıkları sola hizala */
-        }
-
-        .penalty-btn:hover:not(:disabled) {
-            background: #ffc933;
-            transform: translateY(-1px);
-        }
-        
-        .penalty-btn:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-
-        /* Yanlış cevapta çift hak jokeri için */
-        .penalty-btn.wrong-first-try {
-            background: #d32f2f;
-            color: white;
-            opacity: 0.8;
-            cursor: not-allowed;
-        }
-        
         .penalty-field {
 
             background: radial-gradient(circle at 50% 30%, #4caf50 0%, #388e3c 40%, #1b5e20 100%);
@@ -505,7 +419,7 @@
 
             background: linear-gradient(to right, rgba(0,0,0,0.05), transparent 20%, transparent 80%, rgba(0,0,0,0.05)),
 
-                         linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.1));
+                        linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.1));
 
             z-index: 1;
 
@@ -690,7 +604,7 @@
 
             background: linear-gradient(to right, rgba(0,0,0,0.1), transparent 20%, transparent 80%, rgba(0,0,0,0.1)),
 
-                         linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.2));
+                        linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.2));
 
             z-index: 1;
 
@@ -770,11 +684,7 @@
 
 
 
-        @media (max-width: 768px) { .header { padding: 15px 15px; } .header-top { flex-direction: column; align-items: flex-start; gap: 10px; } .control-wrapper { flex-direction: column; } .penalty-field { height: 400px; } .goal-container { width: 240px; height: 120px; margin-top: 50px; } .goal-net { width: 230px; height: 115px; } 
-        /* Küçük ekranlarda şıkları alt alta göster */
-        .penalty-options { grid-template-columns: 1fr; }
-        .joker-btn { font-size: 0.75rem; padding: 8px 10px; }
-        }
+        @media (max-width: 768px) { .header { padding: 15px 15px; } .header-top { flex-direction: column; align-items: flex-start; gap: 10px; } .control-wrapper { flex-direction: column; } .penalty-field { height: 400px; } .goal-container { width: 240px; height: 120px; margin-top: 50px; } .goal-net { width: 230px; height: 115px; } }
 
         /* Leaderboard Stilleri */
 
@@ -1054,9 +964,9 @@
 
                 <div class="penalty-stats">
 
-                    <span>SKOR: <span id="p-score">0</span></span>
+                    <span>SKOR: <span id="p-score" style="color:white;">0</span></span>
 
-                    <span>KALAN ŞUT: <span id="p-balls">10</span></span>
+                    <span>KALAN ŞUT: <span id="p-balls" style="color:white;">10</span></span>
 
                 </div>
 
@@ -1171,11 +1081,7 @@
 
                 </div>
 
-                <div id="joker-container" style="display: flex; justify-content: space-around; margin: 15px 0;">
-                    <button id="joker-call" class="joker-btn" onclick="useJoker('call')" title="Telefon Jokeri (Umut/Doğuş/Deniz/Esra)">📞 Telefon</button>
-                    <button id="joker-half" class="joker-btn" onclick="useJoker('half')" title="Yarı Yarıya Joker">✂️ 50:50</button>
-                    <button id="joker-double" class="joker-btn" onclick="useJoker('double')" title="Çift Cevap Hakkı">2️⃣ Çift Cevap</button>
-                </div>
+
                 <div class="penalty-options" id="p-options"></div>
 
                 <button id="p-restart-btn" class="restart-btn" style="display:none; width:100%; background:#fabb00; color:black; font-weight:bold;" onclick="showLobby()">LOBİYE DÖN 🏠</button>
@@ -1214,16 +1120,6 @@
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd0BsAHEhHHXIPVmx1svVi8GxbR1s_wlxW2fNABeHYvu2BRrYOn8eDMCF-7xZFqw8_BA/exec"; 
 
         
-        // Yeni Global Değişkenler
-        let jokers = {
-            call: 1,      // Telefon Jokeri
-            half: 1,      // Yarı Yarıya
-            double: 1     // Çift Cevap
-        };
-        let doubleChanceUsed = false; // Çift cevap hakkı kullanıldı mı?
-        let firstAnswerIndex = -1;    // İlk yanlış deneme cevabı
-        // Bitiş
-
 
         const VALID_CATEGORIES = ['Teknik', 'İkna', 'Kampanya', 'Bilgi'];
 
@@ -1843,39 +1739,39 @@
 
                     <div id="news-extra" style="display:none; text-align:left; margin-top:10px;">
 
-                                 <div style="display:flex; gap:10px; margin-bottom:10px;">
+                              <div style="display:flex; gap:10px; margin-bottom:10px;">
 
-                                    <div style="flex:1;">
+                                 <div style="flex:1;">
 
-                                        <label style="font-weight:bold; font-size:0.8rem;">Tür</label>
+                                     <label style="font-weight:bold; font-size:0.8rem;">Tür</label>
 
-                                        <select id="swal-news-type" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
+                                     <select id="swal-news-type" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
 
-                                            <option value="info">Bilgi</option>
+                                         <option value="info">Bilgi</option>
 
-                                            <option value="fix">Çözüldü</option>
+                                         <option value="fix">Çözüldü</option>
 
-                                            <option value="update">Güncelleme</option>
+                                         <option value="update">Güncelleme</option>
 
-                                        </select>
-
-                                    </div>
-
-                                     <div style="flex:1;">
-
-                                        <label style="font-weight:bold; font-size:0.8rem;">Durum</label>
-
-                                        <select id="swal-news-status" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
-
-                                            <option value="Aktif">Aktif</option>
-
-                                            <option value="Pasif">Pasif</option>
-
-                                        </select>
-
-                                    </div>
+                                     </select>
 
                                  </div>
+
+                                  <div style="flex:1;">
+
+                                     <label style="font-weight:bold; font-size:0.8rem;">Durum</label>
+
+                                     <select id="swal-news-status" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
+
+                                         <option value="Aktif">Aktif</option>
+
+                                         <option value="Pasif">Pasif</option>
+
+                                     </select>
+
+                                 </div>
+
+                              </div>
 
                     </div>
 
@@ -2283,96 +2179,13 @@
 
         
 
-        // --- PENALTI OYUNU MANTIĞI (JOKERLİ GÜNCEL) ---
+        // --- PENALTI OYUNU MANTIĞI (GÜNCELLENDİ) ---
 
         let pScore = 0;
 
         let pBalls = 10;
 
         let pCurrentQ = null;
-
-
-        function updateJokerButtons() {
-            document.getElementById('joker-call').disabled = jokers.call === 0;
-            document.getElementById('joker-half').disabled = jokers.half === 0;
-            document.getElementById('joker-double').disabled = jokers.double === 0 || doubleChanceUsed;
-
-            // İlk cevap yanlışsa, sadece double jokeri disable olmalı
-            if (firstAnswerIndex !== -1) {
-                document.getElementById('joker-call').disabled = true;
-                document.getElementById('joker-half').disabled = true;
-            }
-        }
-
-        function useJoker(type) {
-            if (jokers[type] === 0) return;
-            
-            jokers[type] = 0;
-            updateJokerButtons();
-
-            const currentQ = pCurrentQ;
-            const correctAns = currentQ.a;
-            const optionsEl = document.getElementById('p-options');
-            let btns = optionsEl.querySelectorAll('.penalty-btn');
-            
-            if (type === 'call') {
-                const experts = ["Umut Bey", "Doğuş Bey", "Deniz Bey", "Esra Hanım"];
-                const expert = experts[Math.floor(Math.random() * experts.length)];
-                let confidence = Math.random() < 0.8 ? "çok eminim" : "emin değilim";
-                let guess = correctAns;
-                
-                // Yanlış cevap verme ihtimali %20
-                if (confidence === "emin değilim" && currentQ.opts.length > 1) {
-                     let incorrectOpts = currentQ.opts.map((_, i) => i).filter(i => i !== correctAns);
-                     guess = incorrectOpts[Math.floor(Math.random() * incorrectOpts.length)] || correctAns;
-                }
-
-                Swal.fire({
-                    icon: 'info',
-                    title: '📞 Telefon Jokeri',
-                    html: `${expert} soruyu cevaplıyor...<br><br>
-                           "Benim tahminim kesinlikle **${String.fromCharCode(65 + guess)}** şıkkı. Bundan ${confidence}."`,
-                    confirmButtonText: 'Kapat'
-                });
-                
-            } else if (type === 'half') {
-                let incorrectOpts = currentQ.opts.map((_, i) => i).filter(i => i !== correctAns);
-                
-                // Yanlış şıklardan rastgele 2 tanesini seç (Cevap 4 şık ise)
-                incorrectOpts.sort(() => Math.random() - 0.5);
-                const optionsToDisable = incorrectOpts.slice(0, 2);
-                
-                // Seçilen şıkları devre dışı bırak
-                optionsToDisable.forEach(idx => {
-                    btns[idx].disabled = true;
-                    btns[idx].style.textDecoration = 'line-through';
-                    btns[idx].style.opacity = '0.4';
-                });
-
-                Swal.fire({
-                    icon: 'success',
-                    title: '✂️ Yarı Yarıya Kullanıldı',
-                    text: 'İki yanlış şık elendi!',
-                    toast: true,
-                    position: 'top',
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-
-            } else if (type === 'double') {
-                doubleChanceUsed = true;
-                
-                Swal.fire({
-                    icon: 'warning',
-                    title: '2️⃣ Çift Cevap Hakkı',
-                    text: 'Bu soruda bir kez yanlış cevap verme hakkınız var. İlk cevabınız yanlışsa, ikinci kez deneyebilirsiniz.',
-                    toast: true,
-                    position: 'top',
-                    showConfirmButton: false,
-                    timer: 2500
-                });
-            }
-        }
 
 
         function openPenaltyGame() {
@@ -2499,13 +2312,6 @@
             pScore = 0;
 
             pBalls = 10;
-            
-            // Jokerleri sıfırla ve yeniden etkinleştir
-            jokers = { call: 1, half: 1, double: 1 };
-            doubleChanceUsed = false;
-            firstAnswerIndex = -1;
-            updateJokerButtons(); // Joker butonlarını güncelle
-
 
             document.getElementById('p-score').innerText = pScore;
 
@@ -2531,20 +2337,14 @@
             pCurrentQ = quizQuestions[Math.floor(Math.random() * quizQuestions.length)];
 
             document.getElementById('p-question-text').innerText = pCurrentQ.q;
-            
-            // Çift cevap hakkı kullanıldıysa, jokeri devre dışı bırak.
-            doubleChanceUsed = false;
-            firstAnswerIndex = -1;
-            updateJokerButtons(); 
 
+            
 
             let html = '';
 
             pCurrentQ.opts.forEach((opt, index) => {
 
-                const letter = String.fromCharCode(65 + index); // 0=A, 1=B, vb.
-
-                html += `<button class="penalty-btn" onclick="shootBall(${index})">${letter}: ${opt}</button>`;
+                html += `<button class="penalty-btn" onclick="shootBall(${index})">${opt}</button>`;
 
             });
 
@@ -2556,55 +2356,50 @@
         function shootBall(userAnswerIndex) {
 
             const btns = document.querySelectorAll('.penalty-btn');
-            const isCorrect = (userAnswerIndex === pCurrentQ.a);
-            
-            // 1. Çift Cevap Jokeri Kontrolü (Hata durumunda)
-            if (!isCorrect && doubleChanceUsed && firstAnswerIndex === -1) {
-                
-                firstAnswerIndex = userAnswerIndex;
-                btns[userAnswerIndex].classList.add('wrong-first-try'); // İlk yanlış cevabı işaretle
-                btns[userAnswerIndex].disabled = true;
-                
-                Swal.fire({ toast: true, position: 'top', icon: 'info', title: 'İlk Hata! Kalan Hakkınız: 1', showConfirmButton: false, timer: 1500, background: '#ffc107' });
-                
-                // Diğer butonları tekrar tıklanabilir yap (yalnızca çift cevap jokeri için)
-                btns.forEach(b => {
-                    if (!b.classList.contains('wrong-first-try') && !b.style.textDecoration) {
-                        b.disabled = false;
-                    }
-                });
-                
-                // Jokerleri devre dışı bırak (bu soruda başka joker kullanılamaz)
-                updateJokerButtons();
-                return; // Fonksiyondan çık, animasyonu atla
-            }
 
-            // Eğer buraya gelindiyse, tek hak kullanılmıştır (ya ilk doğru deneme ya da ikinci deneme)
-            btns.forEach(b => b.disabled = true); // Tüm butonları devre dışı bırak
+            btns.forEach(b => b.disabled = true);
 
-            
-            // Animasyon ve Sonuç Mantığı
+
             const ballWrap = document.getElementById('ball-wrap');
+
             const shadow = ballWrap.querySelector('.ball-shadow');
+
             const keeperWrap = document.getElementById('keeper-wrap');
+
             const shooterWrap = document.getElementById('shooter-wrap');
+
             const goalMsg = document.getElementById('goal-msg');
+
             
+
+            const isCorrect = (userAnswerIndex === pCurrentQ.a);
+
             const shotDir = Math.floor(Math.random() * 4); 
 
+
             shooterWrap.classList.add('shooter-run');
+
 
             setTimeout(() => {
 
                 // Kaleci Hareketi
+
                 if(isCorrect) {
+
                      // Gol olduğunda kaleci ters köşeye uçar
+
                      if(shotDir === 0 || shotDir === 2) keeperWrap.classList.add('keeper-dive-right');
+
                      else keeperWrap.classList.add('keeper-dive-left');
+
                 } else {
+
                     // Kurtarışta kaleci topun olduğu yere uçar
+
                     if(shotDir === 0 || shotDir === 2) keeperWrap.classList.add('keeper-dive-left');
+
                     else keeperWrap.classList.add('keeper-dive-right');
+
                 }
 
 
@@ -2612,12 +2407,15 @@
 
 
                 if (isCorrect) {
-                    btns[userAnswerIndex].style.background = '#2e7d32'; // Cevabı yeşil yap
 
                     // Şut Animasyonları
+
                     if(shotDir === 0) ballWrap.classList.add('ball-shoot-left-top');
+
                     else if(shotDir === 1) ballWrap.classList.add('ball-shoot-right-top');
+
                     else if(shotDir === 2) ballWrap.classList.add('ball-shoot-left-low');
+
                     else ballWrap.classList.add('ball-shoot-right-low');
 
 
@@ -2639,10 +2437,7 @@
 
 
                 } else {
-                    // İkinci deneme (veya çift hak yokken ilk deneme) yanlış
-                    
-                    btns[userAnswerIndex].style.background = '#d32f2f'; // Cevabı kırmızı yap
-                    
+
                     if(Math.random() > 0.5) {
 
                         // Kaleci kurtardı animasyonu (top kaleciye çarpar gibi durur)
@@ -2684,9 +2479,6 @@
                         Swal.fire({ toast: true, position: 'top', icon: 'error', title: 'Kaçırdın!', showConfirmButton: false, timer: 1000, background: '#ef9a9a' });
 
                     }
-                    
-                    // Doğru cevabı da işaretle
-                    btns[pCurrentQ.a].style.background = '#2e7d32';
 
                 }
 
@@ -2739,15 +2531,6 @@
 
 
             goalMsg.classList.remove('show');
-            
-            // Tüm buton stillerini sıfırla (Çift cevap jokeri için önemli)
-            document.querySelectorAll('.penalty-btn').forEach(b => {
-                b.classList.remove('wrong-first-try');
-                b.style.textDecoration = '';
-                b.style.opacity = '';
-                b.style.background = '';
-                b.style.color = '';
-            });
 
         }
 
@@ -2762,7 +2545,6 @@
 
             document.getElementById('p-restart-btn').style.display = 'block';
 
-            // Log quiz score. Penalty score * 10 to match 100 total quiz points for leaderboard.
             fetch(SCRIPT_URL, { method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "logQuiz", username: currentUser, token: getToken(), score: pScore * 10, total: 100 }) });
 
         }
