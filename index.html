@@ -607,12 +607,15 @@
         /* Çoraplar (Daha belirgin) */
 
         .sock {
-            /* Kaldırılan eleman, görünmez olmalı */
-            display: none;
+
             width: 100%; height: 22px;
+
             background: linear-gradient(to bottom, #fff, #eee);
+
             position: absolute; bottom: 0; border-radius: 0 0 8px 8px;
+
             border-top: 2px solid #ddd;
+
             box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
 
         }
@@ -661,11 +664,11 @@
 
         .shooter-wrapper .head::after { 
 
-            content: ''; position: absolute; top: -2px; left: 5px;
+            content: ''; position: absolute; top: -4px; left: 0px;
 
-            width: 18px; height: 10px; background: #3e2723; border-radius: 50%;
+            width: 28px; height: 15px; background: #3e2723; border-radius: 50%;
 
-            transform: rotate(-10deg);
+            transform: rotate(5deg);
 
         }
 
@@ -710,7 +713,7 @@
 
         .shooter-wrapper .leg.right { transform: rotate(-10deg) translateZ(2px); }
 
-        .shooter-wrapper .sock { display: none; } 
+        .shooter-wrapper .sock { background: linear-gradient(to bottom, #d32f2f, #b71c1c); border-top: 2px solid #a11616; display: none; } /* Çorap detayını bacağın içine gömdük */
 
         .shooter-wrapper .shoe { background: linear-gradient(to right, #212121, #000); box-shadow: 0 3px 6px rgba(0,0,0,0.4), inset -3px -3px 4px rgba(0,0,0,0.4); }
 
@@ -979,7 +982,7 @@
 
             <p style="text-align:center; color:#666;">Detaylı bilgi için karta tıklayınız.</p>
 
-            <div id="guide-grid" class="guide-grid"></div>
+            <div class="guide-grid" id="guide-grid"></div>
 
         </div>
 
@@ -996,7 +999,7 @@
 
             <p style="text-align:center; color:#666;">Metni okumak için başlığa tıklayınız.</p>
 
-            <div id="sales-grid" class="sales-grid"></div>
+            <div class="sales-grid" id="sales-grid"></div>
 
         </div>
 
@@ -1068,7 +1071,7 @@
 
                     <div class="goal-container">
 
-                        <div id="goal-net" class="goal-net"></div>
+                        <div class="goal-net"></div>
 
                         <div class="goal-top-bar"></div>
 
@@ -1113,7 +1116,7 @@
                     </div>
 
 
-                    <div id="goal-msg" class="goal-message">GOL!</div>
+                    <div class="goal-message" id="goal-msg">GOL!</div>
 
                     <div class="penalty-area"></div>
 
@@ -1162,7 +1165,7 @@
                 </div>
 
 
-                <div id="p-question-text" style="margin-top:15px; color:#ddd; min-height:50px; font-weight:500; text-align:center; font-size:1.1rem; padding:10px; background:rgba(255,255,255,0.05); border-radius:8px;">
+                <div style="margin-top:15px; color:#ddd; min-height:50px; font-weight:500; text-align:center; font-size:1.1rem; padding:10px; background:rgba(255,255,255,0.05); border-radius:8px;" id="p-question-text">
 
                     Soru yükleniyor...
 
@@ -1173,7 +1176,7 @@
                     <button id="joker-half" class="joker-btn" onclick="useJoker('half')" title="Yarı Yarıya Joker">✂️ 50:50</button>
                     <button id="joker-double" class="joker-btn" onclick="useJoker('double')" title="Çift Cevap Hakkı">2️⃣ Çift Cevap</button>
                 </div>
-                <div id="p-options" class="penalty-options"></div>
+                <div class="penalty-options" id="p-options"></div>
 
                 <button id="p-restart-btn" class="restart-btn" style="display:none; width:100%; background:#fabb00; color:black; font-weight:bold;" onclick="showLobby()">LOBİYE DÖN 🏠</button>
 
@@ -1204,10 +1207,6 @@
         };
         let doubleChanceUsed = false; // Çift cevap hakkı kullanıldı mı?
         let firstAnswerIndex = -1;    // İlk yanlış deneme cevabı
-        
-        // Soru Tekrarını Engelleme Değişkenleri
-        let shuffledQuizIndices = []; // Karıştırılmış soru indeksleri
-        let currentQuestionIndex = 0; // O anki soru indeksi
         // Bitiş
 
 
@@ -1973,13 +1972,13 @@
 
                         </div>
 
-                        <div id="script-container" class="script-box" style="padding:0; border:1px solid #f0e68c;">
+                        <div class="script-box" style="padding:0; border:1px solid #f0e68c;">
 
                             <textarea id="swal-script" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; background:transparent; font-style:italic; min-height:80px; font-size:0.9rem;" placeholder="Script metni...">${(item.script || '').toString().replace(/<br>/g,'\n')}</textarea>
 
                         </div>
 
-                        <div id="extra-container" class="card-actions" style="margin-top:15px; display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+                        <div class="card-actions" style="margin-top:15px; display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
 
                             <div style="position:relative;"><i class="fas fa-code" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-code" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" value="${item.code || ''}" placeholder="Kod"></div>
 
@@ -2156,6 +2155,24 @@
 
         }
 
+
+        function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+
+        let tickerIndex = 0;
+
+        function startTicker() { const t = document.getElementById('ticker-content'); const activeNews = newsData.filter(i => i.status !== 'Pasif'); if(activeNews.length === 0) { t.innerHTML = "Güncel duyuru yok."; return; } function showNext() { const i = activeNews[tickerIndex]; t.style.animation = 'none'; t.offsetHeight; t.style.animation = 'slideIn 0.5s ease-out'; t.innerHTML = `<strong>${i.date}:</strong> ${i.title} - ${i.desc}`; tickerIndex = (tickerIndex + 1) % activeNews.length; } showNext(); setInterval(showNext, 5000); }
+
+        function openNews() { document.getElementById('news-modal').style.display = 'flex'; const c = document.getElementById('news-container'); c.innerHTML = ''; newsData.forEach((i, index) => { let cl = i.type === 'fix' ? 'tag-fix' : (i.type === 'update' ? 'tag-update' : 'tag-info'); let tx = i.type === 'fix' ? 'Çözüldü' : (i.type === 'update' ? 'Değişiklik' : 'Bilgi'); let passiveStyle = i.status === 'Pasif' ? 'opacity:0.5; background:#eee;' : ''; let passiveBadge = i.status === 'Pasif' ? '<span class="news-tag" style="background:#555; color:white;">PASİF</span>' : ''; let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="top:0; right:0; font-size:0.9rem; padding:4px;" onclick="event.stopPropagation(); editNews(${index})"></i>` : ''; c.innerHTML += `<div class="news-item" style="${passiveStyle}">${editBtn}<span class="news-date">${i.date}</span><span class="news-title">${i.title} ${passiveBadge}</span><div class="news-desc">${i.desc}</div><span class="news-tag ${cl}">${tx}</span></div>`; }); }
+
+        function openGuide() { document.getElementById('guide-modal').style.display = 'flex'; const grid = document.getElementById('guide-grid'); grid.innerHTML = ''; sportsData.forEach((s, index) => { let pronHtml = s.pronunciation ? `<div class="pronunciation-badge">🗣️ ${s.pronunciation}</div>` : ''; let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="display:block !important; top:5px; right:5px; z-index:50;" onclick="event.stopPropagation(); editSport(${index})"></i>` : ''; grid.innerHTML += `<div class="guide-item" onclick="showSportDetail(${index})">${editBtn}<i class="fas ${s.icon} guide-icon"></i><span class="guide-title">${s.title}</span>${pronHtml}<div class="guide-desc">${s.desc}</div><div class="guide-tip"><i class="fas fa-lightbulb"></i> ${s.tip}</div><div style="font-size:0.8rem; color:#999; margin-top:5px;">(Detay için tıkla)</div></div>`; }); }
+
+        function showSportDetail(index) { const sport = sportsData[index]; const detailText = sport.detail ? sport.detail.replace(/\n/g,'<br>') : "Bu içerik için henüz detay eklenmemiş."; const pronDetail = sport.pronunciation ? `<div style="color:#e65100; font-weight:bold; margin-bottom:15px;">🗣️ Okunuşu: ${sport.pronunciation}</div>` : ''; Swal.fire({ title: `<i class="fas ${sport.icon}" style="color:#0e1b42;"></i> ${sport.title}`, html: `${pronDetail}<div style="text-align:left; font-size:1rem; line-height:1.6;">${detailText}</div>`, showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa' }); }
+
+        function openSales() { document.getElementById('sales-modal').style.display = 'flex'; const c = document.getElementById('sales-grid'); c.innerHTML = ''; salesScripts.forEach((s, index) => { let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="display:block !important; top:10px; right:40px; z-index:50;" onclick="event.stopPropagation(); editSales(${index})"></i>` : ''; c.innerHTML += `<div class="sales-item" id="sales-${index}" onclick="toggleSales('${index}')">${editBtn}<div class="sales-header"><span class="sales-title">${s.title}</span><i class="fas fa-chevron-down" id="icon-${index}" style="color:#10b981;"></i></div><div class="sales-text">${(s.text || '').replace(/\n/g,'<br>')}<div style="text-align:right; margin-top:15px;"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${escapeForJsString(s.text || '')}')"><i class="fas fa-copy"></i> Kopyala</button></div></div></div>`; }); }
+
+        function toggleSales(index) { const item = document.getElementById(`sales-${index}`); const icon = document.getElementById(`icon-${index}`); item.classList.toggle('active'); if(item.classList.contains('active')){ icon.classList.replace('fa-chevron-down', 'fa-chevron-up'); } else { icon.classList.replace('fa-chevron-up', 'fa-chevron-down'); } }
+
+        
 
         // --- PENALTI OYUNU MANTIĞI (JOKERLİ GÜNCEL) ---
 
@@ -2382,6 +2399,7 @@
             firstAnswerIndex = -1;
             updateJokerButtons(); // Joker butonlarını güncelle
 
+
             document.getElementById('p-score').innerText = pScore;
 
             document.getElementById('p-balls').innerText = pBalls;
@@ -2389,18 +2407,6 @@
             document.getElementById('p-restart-btn').style.display = 'none';
 
             document.getElementById('p-options').style.display = 'grid';
-
-            // SORU TEKRARINI ENGELLEME MANTIĞI
-            currentQuestionIndex = 0;
-            if (quizQuestions.length > 0) {
-                shuffledQuizIndices = Array.from({length: quizQuestions.length}, (_, i) => i);
-                shuffledQuizIndices.sort(() => Math.random() - 0.5); // İndeksleri karıştır
-            } else {
-                Swal.fire('Hata', 'Soru havuzu boş!', 'error');
-                return;
-            }
-            // END SORU TEKRARINI ENGELLEME MANTIĞI
-
 
             resetField();
 
@@ -2412,20 +2418,14 @@
         function loadPenaltyQuestion() {
 
             if (pBalls <= 0) { finishPenaltyGame(); return; }
-            
-            if (quizQuestions.length === 0 || currentQuestionIndex >= shuffledQuizIndices.length) { 
-                 // Eğer soru kalmadıysa oyunu bitir
-                 finishPenaltyGame(); 
-                 return; 
-            }
 
-            // Karıştırılmış indeksi kullanarak soruyu çek
-            const quizIndex = shuffledQuizIndices[currentQuestionIndex];
-            pCurrentQ = quizQuestions[quizIndex];
+            if (quizQuestions.length === 0) { Swal.fire('Hata', 'Soru havuzu boş!', 'warning'); return; }
+
+            pCurrentQ = quizQuestions[Math.floor(Math.random() * quizQuestions.length)];
 
             document.getElementById('p-question-text').innerText = pCurrentQ.q;
             
-            // Çift cevap hakkı mantığı sıfırlanır
+            // Çift cevap hakkı kullanıldıysa, jokeri devre dışı bırak.
             doubleChanceUsed = false;
             firstAnswerIndex = -1;
             updateJokerButtons(); 
@@ -2534,7 +2534,7 @@
 
                 } else {
                     
-                    // YANLIŞ CEVAP VERİLDİĞİNDE: Renklendirme YOK. (Sadece pop-up ile öğrenme)
+                    // YANLIŞ CEVAP VERİLDİĞİNDE: Renklendirme YOK. Sadece mesaj gösterilecek.
                     
                     if(Math.random() > 0.5) {
 
