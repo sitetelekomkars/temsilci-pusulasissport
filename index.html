@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="tr">
 
@@ -12,7 +12,7 @@
 
     
 
-   <link rel="icon" type="image/jpeg" href="favicon.jpg">
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
@@ -254,7 +254,38 @@
         @keyframes intense-pulse { 0% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 187, 0, 0.7); } 70% { transform: scale(1.2); box-shadow: 0 0 0 10px rgba(250, 187, 0, 0); } 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 187, 0, 0); } }
 
 
-        /* --- 3D OYUN STİLLERİ (FOTOĞRAFA YAKIN İYİLEŞTİRME) --- */
+        /* --- PENALTI OYUNU STİLLERİ (2x2 ŞIKLAR İÇİN GÜNCELLENMİŞ) --- */
+        .penalty-options {
+            /* YENİ STİL: 2x2 Grid Düzeni */
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 15px; /* Şıklar arası boşluk */
+            margin-top: 20px;
+        }
+
+        .penalty-btn {
+            /* Buton stili (daha belirgin) */
+            padding: 15px 10px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            background: #fabb00;
+            color: #0e1b42;
+            border: 2px solid #f0b500;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .penalty-btn:hover {
+            background: #ffc933;
+            transform: translateY(-1px);
+        }
+        
+        .penalty-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
 
         .penalty-field {
 
@@ -419,7 +450,7 @@
 
             background: linear-gradient(to right, rgba(0,0,0,0.05), transparent 20%, transparent 80%, rgba(0,0,0,0.05)),
 
-                        linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.1));
+                         linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.1));
 
             z-index: 1;
 
@@ -604,7 +635,7 @@
 
             background: linear-gradient(to right, rgba(0,0,0,0.1), transparent 20%, transparent 80%, rgba(0,0,0,0.1)),
 
-                        linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.2));
+                         linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.2));
 
             z-index: 1;
 
@@ -684,7 +715,10 @@
 
 
 
-        @media (max-width: 768px) { .header { padding: 15px 15px; } .header-top { flex-direction: column; align-items: flex-start; gap: 10px; } .control-wrapper { flex-direction: column; } .penalty-field { height: 400px; } .goal-container { width: 240px; height: 120px; margin-top: 50px; } .goal-net { width: 230px; height: 115px; } }
+        @media (max-width: 768px) { .header { padding: 15px 15px; } .header-top { flex-direction: column; align-items: flex-start; gap: 10px; } .control-wrapper { flex-direction: column; } .penalty-field { height: 400px; } .goal-container { width: 240px; height: 120px; margin-top: 50px; } .goal-net { width: 230px; height: 115px; } 
+        /* Küçük ekranlarda şıkları alt alta göster */
+        .penalty-options { grid-template-columns: 1fr; }
+        }
 
         /* Leaderboard Stilleri */
 
@@ -1739,39 +1773,39 @@
 
                     <div id="news-extra" style="display:none; text-align:left; margin-top:10px;">
 
-                              <div style="display:flex; gap:10px; margin-bottom:10px;">
+                                 <div style="display:flex; gap:10px; margin-bottom:10px;">
 
-                                 <div style="flex:1;">
+                                    <div style="flex:1;">
 
-                                     <label style="font-weight:bold; font-size:0.8rem;">Tür</label>
+                                        <label style="font-weight:bold; font-size:0.8rem;">Tür</label>
 
-                                     <select id="swal-news-type" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
+                                        <select id="swal-news-type" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
 
-                                         <option value="info">Bilgi</option>
+                                            <option value="info">Bilgi</option>
 
-                                         <option value="fix">Çözüldü</option>
+                                            <option value="fix">Çözüldü</option>
 
-                                         <option value="update">Güncelleme</option>
+                                            <option value="update">Güncelleme</option>
 
-                                     </select>
+                                        </select>
+
+                                    </div>
+
+                                     <div style="flex:1;">
+
+                                        <label style="font-weight:bold; font-size:0.8rem;">Durum</label>
+
+                                        <select id="swal-news-status" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
+
+                                            <option value="Aktif">Aktif</option>
+
+                                            <option value="Pasif">Pasif</option>
+
+                                        </select>
+
+                                    </div>
 
                                  </div>
-
-                                  <div style="flex:1;">
-
-                                     <label style="font-weight:bold; font-size:0.8rem;">Durum</label>
-
-                                     <select id="swal-news-status" class="swal2-input" style="width:100%; height:35px; margin:0; padding:0 5px;">
-
-                                         <option value="Aktif">Aktif</option>
-
-                                         <option value="Pasif">Pasif</option>
-
-                                     </select>
-
-                                 </div>
-
-                              </div>
 
                     </div>
 
@@ -2344,7 +2378,10 @@
 
             pCurrentQ.opts.forEach((opt, index) => {
 
-                html += `<button class="penalty-btn" onclick="shootBall(${index})">${opt}</button>`;
+                // Şıkların A, B, C, D harfleri için ekleme (isteğe bağlı)
+                const letter = String.fromCharCode(65 + index); // 0=A, 1=B, vb.
+
+                html += `<button class="penalty-btn" onclick="shootBall(${index})">${letter}: ${opt}</button>`;
 
             });
 
@@ -2562,4 +2599,3 @@
 </body>
 
 </html>
-
