@@ -48,13 +48,15 @@
         .btn-fav { border-color: #fabb00; color: #fabb00; }
         .btn-fav:hover, .btn-fav.active { color: #0e1b42; }
         
-        /* OYUN butonu stili */
+        /* OYUN butonu stili kaldırıldı ve standart filter-btn özelliklerini alması sağlandı. */
         .game-btn { 
+            /* Önceki özel mor stillerini iptal ediyoruz. */
             border-color: rgba(255, 255, 255, 0.15) !important; 
             color: #eceff1 !important; 
             background: rgba(255, 255, 255, 0.05) !important;
         }
         .game-btn:hover, .game-btn.active { 
+            /* Standart sarı hover rengini kullanır */
             background-color: #fabb00 !important; 
             color: #0e1b42 !important; 
             border-color: #fabb00 !important; 
@@ -757,47 +759,10 @@
         function closeModal(id) { document.getElementById(id).style.display = 'none'; }
         let tickerIndex = 0;
         function startTicker() { const t = document.getElementById('ticker-content'); const activeNews = newsData.filter(i => i.status !== 'Pasif'); if(activeNews.length === 0) { t.innerHTML = "Güncel duyuru yok."; return; } function showNext() { const i = activeNews[tickerIndex]; t.style.animation = 'none'; t.offsetHeight; t.style.animation = 'slideIn 0.5s ease-out'; t.innerHTML = `<strong>${i.date}:</strong> ${i.title} - ${i.desc}`; tickerIndex = (tickerIndex + 1) % activeNews.length; } showNext(); setInterval(showNext, 5000); }
-        function openNews() { 
-            document.getElementById('news-modal').style.display = 'flex'; 
-            const c = document.getElementById('news-container'); 
-            c.innerHTML = ''; 
-            newsData.forEach((i, index) => { 
-                let cl = i.type === 'fix' ? 'tag-fix' : (i.type === 'update' ? 'tag-update' : 'tag-info'); 
-                let tx = i.type === 'fix' ? 'Çözüldü' : (i.type === 'update' ? 'Değişiklik' : 'Bilgi'); 
-                let passiveStyle = i.status === 'Pasif' ? 'opacity:0.5; background:#eee;' : ''; 
-                let passiveBadge = i.status === 'Pasif' ? '<span class="news-tag" style="background:#555; color:white;">PASİF</span>' : ''; 
-                
-                // DÜZELTME: display:block!important kaldırıldı. Sadece isAdminMode kontrolü kaldı.
-                let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="top:0; right:0; font-size:0.9rem; padding:4px;" onclick="event.stopPropagation(); editNews(${index})"></i>` : ''; 
-                
-                c.innerHTML += `<div class="news-item" style="${passiveStyle}">${editBtn}<span class="news-date">${i.date}</span><span class="news-title">${i.title} ${passiveBadge}</span><div class="news-desc">${i.desc}</div><span class="news-tag ${cl}">${tx}</span></div>`; 
-            }); 
-        }
-        function openGuide() { 
-            document.getElementById('guide-modal').style.display = 'flex'; 
-            const grid = document.getElementById('guide-grid'); 
-            grid.innerHTML = ''; 
-            sportsData.forEach((s, index) => { 
-                let pronHtml = s.pronunciation ? `<div class="pronunciation-badge">🗣️ ${s.pronunciation}</div>` : ''; 
-                
-                // DÜZELTME: display:block!important kaldırıldı.
-                let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="top:5px; right:5px; z-index:50;" onclick="event.stopPropagation(); editSport(${index})"></i>` : ''; 
-                
-                grid.innerHTML += `<div class="guide-item" onclick="showSportDetail(${index})">${editBtn}<i class="fas ${s.icon} guide-icon"></i><span class="guide-title">${s.title}</span>${pronHtml}<div class="guide-desc">${s.desc}</div><div class="guide-tip"><i class="fas fa-lightbulb"></i> ${s.tip}</div><div style="font-size:0.8rem; color:#999; margin-top:5px;">(Detay için tıkla)</div></div>`; 
-            }); 
-        }
+        function openNews() { document.getElementById('news-modal').style.display = 'flex'; const c = document.getElementById('news-container'); c.innerHTML = ''; newsData.forEach((i, index) => { let cl = i.type === 'fix' ? 'tag-fix' : (i.type === 'update' ? 'tag-update' : 'tag-info'); let tx = i.type === 'fix' ? 'Çözüldü' : (i.type === 'update' ? 'Değişiklik' : 'Bilgi'); let passiveStyle = i.status === 'Pasif' ? 'opacity:0.5; background:#eee;' : ''; let passiveBadge = i.status === 'Pasif' ? '<span class="news-tag" style="background:#555; color:white;">PASİF</span>' : ''; let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="top:0; right:0; font-size:0.9rem; padding:4px;" onclick="event.stopPropagation(); editNews(${index})"></i>` : ''; c.innerHTML += `<div class="news-item" style="${passiveStyle}">${editBtn}<span class="news-date">${i.date}</span><span class="news-title">${i.title} ${passiveBadge}</span><div class="news-desc">${i.desc}</div><span class="news-tag ${cl}">${tx}</span></div>`; }); }
+        function openGuide() { document.getElementById('guide-modal').style.display = 'flex'; const grid = document.getElementById('guide-grid'); grid.innerHTML = ''; sportsData.forEach((s, index) => { let pronHtml = s.pronunciation ? `<div class="pronunciation-badge">🗣️ ${s.pronunciation}</div>` : ''; let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="display:block !important; top:5px; right:5px; z-index:50;" onclick="event.stopPropagation(); editSport(${index})"></i>` : ''; grid.innerHTML += `<div class="guide-item" onclick="showSportDetail(${index})">${editBtn}<i class="fas ${s.icon} guide-icon"></i><span class="guide-title">${s.title}</span>${pronHtml}<div class="guide-desc">${s.desc}</div><div class="guide-tip"><i class="fas fa-lightbulb"></i> ${s.tip}</div><div style="font-size:0.8rem; color:#999; margin-top:5px;">(Detay için tıkla)</div></div>`; }); }
         function showSportDetail(index) { const sport = sportsData[index]; const detailText = sport.detail ? sport.detail.replace(/\n/g,'<br>') : "Bu içerik için henüz detay eklenmemiş."; const pronDetail = sport.pronunciation ? `<div style="color:#e65100; font-weight:bold; margin-bottom:15px;">🗣️ Okunuşu: ${sport.pronunciation}</div>` : ''; Swal.fire({ title: `<i class="fas ${sport.icon}" style="color:#0e1b42;"></i> ${sport.title}`, html: `${pronDetail}<div style="text-align:left; font-size:1rem; line-height:1.6;">${detailText}</div>`, showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa' }); }
-        function openSales() { 
-            document.getElementById('sales-modal').style.display = 'flex'; 
-            const c = document.getElementById('sales-grid'); 
-            c.innerHTML = ''; 
-            salesScripts.forEach((s, index) => { 
-                // DÜZELTME: display:block!important kaldırıldı.
-                let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="top:10px; right:40px; z-index:50;" onclick="event.stopPropagation(); editSales(${index})"></i>` : ''; 
-                
-                c.innerHTML += `<div class="sales-item" id="sales-${index}" onclick="toggleSales('${index}')">${editBtn}<div class="sales-header"><span class="sales-title">${s.title}</span><i class="fas fa-chevron-down" id="icon-${index}" style="color:#10b981;"></i></div><div class="sales-text">${(s.text || '').replace(/\n/g,'<br>')}<div style="text-align:right; margin-top:15px;"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${escapeForJsString(s.text || '')}')"><i class="fas fa-copy"></i> Kopyala</button></div></div></div>`; 
-            }); 
-        }
+        function openSales() { document.getElementById('sales-modal').style.display = 'flex'; const c = document.getElementById('sales-grid'); c.innerHTML = ''; salesScripts.forEach((s, index) => { let editBtn = isAdminMode ? `<i class="fas fa-pencil-alt edit-icon" style="display:block !important; top:10px; right:40px; z-index:50;" onclick="event.stopPropagation(); editSales(${index})"></i>` : ''; c.innerHTML += `<div class="sales-item" id="sales-${index}" onclick="toggleSales('${index}')">${editBtn}<div class="sales-header"><span class="sales-title">${s.title}</span><i class="fas fa-chevron-down" id="icon-${index}" style="color:#10b981;"></i></div><div class="sales-text">${(s.text || '').replace(/\n/g,'<br>')}<div style="text-align:right; margin-top:15px;"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${escapeForJsString(s.text || '')}')"><i class="fas fa-copy"></i> Kopyala</button></div></div></div>`; }); }
         function toggleSales(index) { const item = document.getElementById(`sales-${index}`); const icon = document.getElementById(`icon-${index}`); item.classList.toggle('active'); if(item.classList.contains('active')){ icon.classList.replace('fa-chevron-down', 'fa-chevron-up'); } else { icon.classList.replace('fa-chevron-up', 'fa-chevron-down'); } }
 
         
