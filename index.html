@@ -250,6 +250,62 @@
             justify-content: space-around;
         }
         #month-select-filter { padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
+        /* --- YENİ MODERN EVALUATION FORM CSS --- */
+.eval-modal-container { font-family: 'Segoe UI', sans-serif; text-align: left; background: #f8f9fa; }
+.eval-header-card { 
+    background: linear-gradient(135deg, #0e1b42 0%, #1a2f6e 100%); 
+    color: white; padding: 20px; border-radius: 12px; 
+    display: flex; justify-content: space-between; align-items: center; 
+    box-shadow: 0 5px 15px rgba(14, 27, 66, 0.2); margin-bottom: 20px;
+}
+.eval-agent-info h3 { margin: 0; font-size: 1.2rem; color: #fabb00; }
+.eval-agent-info p { margin: 5px 0 0 0; font-size: 0.9rem; opacity: 0.9; }
+.eval-total-box { 
+    background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); 
+    padding: 10px 20px; border-radius: 8px; text-align: center; min-width: 80px;
+}
+.eval-total-score { font-size: 2rem; font-weight: 800; line-height: 1; display: block; }
+.eval-total-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; }
+
+.eval-scroll-area { max-height: 50vh; overflow-y: auto; padding-right: 5px; margin-bottom: 15px; }
+
+.criteria-card { 
+    background: white; border-radius: 10px; padding: 15px; margin-bottom: 12px; 
+    border: 1px solid #e0e0e0; border-left: 5px solid #2e7d32; /* Varsayılan Yeşil */
+    transition: all 0.3s ease; display: flex; flex-direction: column; gap: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+.criteria-card:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+
+.criteria-top { display: flex; justify-content: space-between; align-items: center; }
+.criteria-name { font-weight: 600; font-size: 0.95rem; color: #333; flex: 1; }
+.criteria-points { 
+    font-weight: 800; font-size: 1.1rem; color: #2e7d32; 
+    background: #e8f5e9; padding: 5px 10px; border-radius: 6px; min-width: 50px; text-align: center;
+}
+
+.slider-container { width: 100%; display: flex; align-items: center; gap: 15px; }
+.eval-slider { 
+    flex-grow: 1; -webkit-appearance: none; height: 6px; border-radius: 5px; background: #e0e0e0; outline: none; cursor: pointer;
+}
+.eval-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; 
+    background: #fabb00; border: 2px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    cursor: grab; transition: transform 0.1s;
+}
+.eval-slider::-webkit-slider-thumb:hover { transform: scale(1.2); }
+
+.reason-input { 
+    width: 100%; padding: 8px 12px; border: 1px solid #eee; border-radius: 6px; 
+    font-size: 0.85rem; background: #fcfcfc; transition: 0.3s;
+}
+.reason-input:focus { border-color: #fabb00; background: white; outline: none; }
+
+/* Renk Sınıfları (JS ile eklenecek) */
+.score-high { border-left-color: #2e7d32; } .score-high .criteria-points { color: #2e7d32; background: #e8f5e9; }
+.score-mid { border-left-color: #ed6c02; } .score-mid .criteria-points { color: #ed6c02; background: #fff3e0; }
+.score-low { border-left-color: #d32f2f; } .score-low .criteria-points { color: #d32f2f; background: #ffebee; }
+
     </style>
 </head>
 <body>
@@ -1039,96 +1095,168 @@
         // Diğer modal fonksiyonları (logEvaluationPopup, openWizard, openPenaltyGame, vb.) buraya dahil edilmiştir.
         
         async function logEvaluationPopup() {
-            const selectEl = document.getElementById('agent-select-admin');
-            const agentName = selectEl.value;
-            const selectedOption = selectEl.options[selectEl.selectedIndex];
-            const agentGroup = selectedOption.getAttribute('data-group') || 'Genel';
+    const selectEl = document.getElementById('agent-select-admin');
+    const agentName = selectEl.value;
+    const selectedOption = selectEl.options[selectEl.selectedIndex];
+    const agentGroup = selectedOption.getAttribute('data-group') || 'Genel';
 
-            Swal.fire({ title: 'Form Hazırlanıyor...', didOpen: () => Swal.showLoading() });
-            let criteriaList = [];
-            if(agentGroup === 'Telesatış' || agentGroup === 'Chat') { 
-                criteriaList = await fetchCriteria(agentGroup); 
-            }
-            Swal.close();
+    Swal.fire({ title: 'Kriterler Yükleniyor...', didOpen: () => Swal.showLoading() });
+    
+    let criteriaList = [];
+    if(agentGroup === 'Telesatış' || agentGroup === 'Chat') { 
+        criteriaList = await fetchCriteria(agentGroup); 
+    }
+    Swal.close();
 
-            let formHtml = '';
-            let isCriteriaBased = criteriaList.length > 0;
+    const todayISO = new Date().toISOString().substring(0, 10);
+    const isCriteriaBased = criteriaList.length > 0;
+    
+    // HTML Şablonu Oluşturma
+    let formHtml = `<div class="eval-modal-container">
+        <div class="eval-header-card">
+            <div class="eval-agent-info">
+                <h3><i class="fas fa-user-headset"></i> ${agentName}</h3>
+                <p>${agentGroup} Değerlendirmesi</p>
+                <div style="margin-top:5px; display:flex; gap:10px;">
+                     <input type="date" id="eval-calldate" class="swal2-input" style="height:30px; margin:0; width:130px; font-size:0.8rem;" value="${todayISO}">
+                     <input id="eval-callid" class="swal2-input" style="height:30px; margin:0; width:120px; font-size:0.8rem;" placeholder="Call ID">
+                </div>
+            </div>
+            <div class="eval-total-box">
+                <span id="display-total-score" class="eval-total-score" style="color:#4caf50;">100</span>
+                <span class="eval-total-label">PUAN</span>
+            </div>
+        </div>`;
+
+    if (isCriteriaBased) {
+        formHtml += `<div class="eval-scroll-area">`;
+        let maxTotal = 0;
+        
+        criteriaList.forEach((c, i) => {
+            let maxP = parseInt(c.points) || 0;
+            maxTotal += maxP;
+            // Her bir kriter kartı
+            formHtml += `
+            <div id="card-${i}" class="criteria-card score-high">
+                <div class="criteria-top">
+                    <div class="criteria-name">${i+1}. ${c.text}</div>
+                    <div id="badge-${i}" class="criteria-points">${maxP}</div>
+                </div>
+                <div class="slider-container">
+                    <span style="font-size:0.8rem; color:#999;">0</span>
+                    <input type="range" id="slider-${i}" class="eval-slider" min="0" max="${maxP}" value="${maxP}" step="1" oninput="updateCard(${i}, ${maxP})">
+                    <span style="font-size:0.8rem; color:#999;">${maxP}</span>
+                </div>
+                <input type="text" id="note-${i}" class="reason-input" placeholder="Puan kırıldıysa nedenini yazınız..." style="display:none;">
+            </div>`;
+        });
+        formHtml += `</div>`; // Scroll area bitiş
+        
+        // Hesaplama Fonksiyonu (Window scope'una atıyoruz ki HTML içinden çalışsın)
+        window.updateCard = function(index, max) {
+            const val = parseInt(document.getElementById(`slider-${index}`).value);
+            const badge = document.getElementById(`badge-${index}`);
+            const card = document.getElementById(`card-${index}`);
+            const noteInput = document.getElementById(`note-${index}`);
             
-            const todayISO = new Date().toISOString().substring(0, 10);
-            const callDateInput = `<label style="font-weight:bold; display:block;">Çağrı Tarihi:</label><input type="date" id="eval-calldate" class="swal2-input" style="height:35px; margin:5px 0 15px 0; width:100%;" value="${todayISO}">`;
+            // Badge Güncelle
+            badge.innerText = val;
+            
+            // Görsel Renk Değişimi
+            card.classList.remove('score-high', 'score-mid', 'score-low');
+            if(val === max) {
+                card.classList.add('score-high');
+                noteInput.style.display = 'none'; // Tam puansa not gizle
+            } else if(val >= max * 0.5) {
+                card.classList.add('score-mid');
+                noteInput.style.display = 'block'; // Puan kırıldıysa göster
+                noteInput.focus();
+            } else {
+                card.classList.add('score-low');
+                noteInput.style.display = 'block';
+            }
+            
+            // Toplam Puan Hesapla
+            let currentTotal = 0;
+            criteriaList.forEach((_, idx) => {
+                currentTotal += parseInt(document.getElementById(`slider-${idx}`).value) || 0;
+            });
+            
+            const totalDisplay = document.getElementById('display-total-score');
+            totalDisplay.innerText = currentTotal;
+            
+            // Toplam Renk
+            if(currentTotal >= 90) totalDisplay.style.color = '#4caf50'; // Yeşil
+            else if(currentTotal >= 70) totalDisplay.style.color = '#ff9800'; // Turuncu
+            else totalDisplay.style.color = '#f44336'; // Kırmızı
+        };
 
+    } else {
+        // Manuel Giriş (Kriter Yoksa)
+        formHtml += `<div style="padding:20px; background:white; border-radius:10px;">
+            <p style="color:#e65100; font-size:0.9rem;">⚠️ Bu grup için kriter seti bulunamadı.</p>
+            <label style="font-weight:bold;">Manuel Puan (0-100):</label>
+            <input id="eval-manual-score" type="number" class="swal2-input" value="100" min="0" max="100" style="width:100%;">
+            <label style="font-weight:bold; margin-top:10px; display:block;">Detaylar:</label>
+            <textarea id="eval-details" class="swal2-textarea" placeholder="Değerlendirme notları..." style="margin-top:5px;"></textarea>
+        </div>`;
+    }
+
+    formHtml += `<textarea id="eval-feedback" class="swal2-textarea" placeholder="Temsilciye Genel Geri Bildirim" style="margin-top:10px;"></textarea>
+    </div>`; // Container bitiş
+
+    const { value: formValues } = await Swal.fire({
+        html: formHtml,
+        width: '650px', // Biraz daha dar ve şık
+        showCancelButton: true,
+        confirmButtonText: '<i class="fas fa-save"></i> Kaydet',
+        cancelButtonText: 'İptal',
+        focusConfirm: false,
+        padding: '0', // Swal padding'i sıfırla, CSS ile hallettik
+        customClass: { popup: 'swal-wide-popup' }, // Gerekirse özel sınıf
+        preConfirm: () => {
+            const callId = document.getElementById('eval-callid').value; 
+            const callDateRaw = document.getElementById('eval-calldate').value;
+            const feedback = document.getElementById('eval-feedback').value;
+            
+            const dateParts = callDateRaw.split('-');
+            const formattedCallDate = dateParts.length === 3 ? `${dateParts[2]}.${dateParts[1]}.${dateParts[0]}` : callDateRaw;
 
             if (isCriteriaBased) {
-                formHtml = `<div style="text-align:left; max-height:400px; overflow-y:auto; border:1px solid #eee; padding:10px; margin-bottom:10px;">
-                    <div style="display:flex; gap:10px; align-items:flex-end;">
-                        <div style="flex:1;"><label style="font-weight:bold; display:block;">Call ID:</label><input id="eval-callid" class="swal2-input" style="height:35px; margin:5px 0 15px 0;" placeholder="Call ID"></div>
-                        <div style="flex:1;">${callDateInput}</div>
-                    </div>
-                    <table style="width:100%; border-collapse:collapse; font-size:0.9rem;">
-                        <tr style="background:#f0f2f5; font-weight:bold;">
-                            <td style="width:40%; padding:8px;">Kriter</td>
-                            <td style="width:10%; text-align:center;">Max</td>
-                            <td style="width:10%;">Puan</td>
-                            <td style="width:40%;">Kırılım Nedeni</td>
-                        </tr>`;
-                let maxTotal = 0;
-                criteriaList.forEach((c, i) => {
-                    maxTotal += parseInt(c.points) || 0;
-                    formHtml += `<tr>
-                        <td style="padding:8px; border-bottom:1px solid #eee;">${i+1}. ${c.text}</td>
-                        <td style="text-align:center; color:#999;">${c.points}</td>
-                        <td><input type="number" id="score-${i}" class="swal2-input eval-score-input" style="width:60px; height:30px; margin:0;" min="0" max="${c.points}" value="${c.points}" onchange="calcTotal()"></td>
-                        <td><input type="text" id="note-${i}" class="swal2-input eval-note-input" style="height:30px; margin:0; font-size:0.8rem;" placeholder="Neden puan kırıldı?"></td>
-                    </tr>`;
-                });
-                formHtml += `</table></div><div style="text-align:right; font-weight:bold; font-size:1.2rem; margin-bottom:10px; color:var(--primary);">TOPLAM: <span id="total-eval-score">${maxTotal}</span></div><textarea id="eval-feedback" class="swal2-textarea" placeholder="Genel Geri Bildirim"></textarea>`;
-                
-                window.calcTotal = function() {
-                    let total = 0;
-                    criteriaList.forEach((c, i) => {
-                        let el = document.getElementById(`score-${i}`); let val = parseInt(el.value) || 0;
-                        let maxPoints = parseInt(c.points) || 0;
-                        if(val > maxPoints) { val = maxPoints; el.value = maxPoints; } if(val < 0) { val = 0; el.value = 0; }
-                        total += val;
-                    });
-                    document.getElementById('total-eval-score').innerText = total;
-                };
-            } else {
-                formHtml = `<p style="color:#e65100; font-size:0.9rem;">(Bu grup için ayarlı kriter bulunamadı, manuel giriş yapınız)</p>
-                    <div style="display:flex; gap:10px; align-items:flex-end;"><div style="flex:1;"><label>Call ID:</label><input id="eval-callid" class="swal2-input" placeholder="Call ID"></div><div style="flex:1;">${callDateInput}</div></div>
-                    <label>Puan (1-100):</label><input id="eval-manual-score" type="number" class="swal2-input" value="100" min="0" max="100"><label>Detaylar:</label><textarea id="eval-details" class="swal2-textarea" placeholder="Detaylar (Tabloda görünür)"></textarea><label>Geri Bildirim:</label><textarea id="eval-feedback" class="swal2-textarea" placeholder="Genel Geri Bildirim"></textarea>`;
-            }
-
-            const { value: formValues } = await Swal.fire({
-                title: `${agentName} (${agentGroup}) Değerlendirme`, html: formHtml, width: isCriteriaBased ? '800px' : '600px', showCancelButton: true, confirmButtonText: 'Kaydet', focusConfirm: false,
-                didOpen: () => { if(isCriteriaBased) calcTotal(); },
-                preConfirm: () => {
-                    const callId = document.getElementById('eval-callid').value; 
-                    const callDateRaw = document.getElementById('eval-calldate').value;
-                    const feedback = document.getElementById('eval-feedback').value;
+                let total = 0; 
+                let detailsArr = [];
+                criteriaList.forEach((c, i) => { 
+                    let val = parseInt(document.getElementById(`slider-${i}`).value) || 0; 
+                    let maxPoints = parseInt(c.points) || 0;
+                    let note = document.getElementById(`note-${i}`).value;
                     
-                    const dateParts = callDateRaw.split('-');
-                    const formattedCallDate = dateParts.length === 3 ? `${dateParts[2]}.${dateParts[1]}.${dateParts[0]}` : callDateRaw;
+                    total += val; 
+                    detailsArr.push({ q: c.text, max: maxPoints, score: val, note: note });
+                });
+                return { agentName, agentGroup, callId, callDate: formattedCallDate, score: total, details: JSON.stringify(detailsArr), feedback };
+            } else {
+                const score = document.getElementById('eval-manual-score').value; 
+                const details = document.getElementById('eval-details').value;
+                if(score < 0 || score > 100) { Swal.showValidationMessage('Puan 0 ile 100 arasında olmalıdır.'); return false; }
+                return { agentName, agentGroup, callId, callDate: formattedCallDate, score: parseInt(score), details: details, feedback };
+            }
+        }
+    });
 
-                    if (isCriteriaBased) {
-                        let total = 0; let detailsArr = [];
-                        criteriaList.forEach((c, i) => { 
-                            let val = parseInt(document.getElementById(`score-${i}`).value) || 0; 
-                            let maxPoints = parseInt(c.points) || 0;
-                            let note = document.getElementById(`note-${i}`).value;
-                            if(val > maxPoints) val = maxPoints;
-                            if(val < 0) val = 0;
-                            total += val; 
-                            detailsArr.push({ q: c.text, max: maxPoints, score: val, note: note });
-                        });
-                        return { agentName, agentGroup, callId, callDate: formattedCallDate, score: total, details: JSON.stringify(detailsArr), feedback };
-                    } else {
-                        const score = document.getElementById('eval-manual-score').value; const details = document.getElementById('eval-details').value;
-                        if(score < 0 || score > 100) { Swal.showValidationMessage('Puan 0 ile 100 arasında olmalıdır.'); return false; }
-                        return { agentName, agentGroup, callId, callDate: formattedCallDate, score: parseInt(score), details: details, feedback };
-                    }
-                }
-            });
+    if (formValues) {
+        Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } });
+        fetch(SCRIPT_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ action: "logEvaluation", username: currentUser, token: getToken(), ...formValues }) })
+        .then(r => r.json()).then(d => {
+            if (d.result === "success") { 
+                Swal.fire({ icon: 'success', title: 'Kaydedildi', timer: 1500, showConfirmButton: false }); 
+                fetchEvaluationsForAgent(agentName); 
+            } else { 
+                Swal.fire('Hata', d.message || 'Kaydedilemedi.', 'error'); 
+            }
+        }).catch(err => { Swal.fire('Hata', 'Sunucu hatası.', 'error'); });
+    }
+}
+
 
             if (formValues) {
                 Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } });
@@ -1159,3 +1287,4 @@
     </script>
 </body>
 </html>
+
