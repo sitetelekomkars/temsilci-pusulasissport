@@ -49,8 +49,8 @@
         .btn-fav:hover, .btn-fav.active { color: #0e1b42; }
         .game-btn { border-color: #8e24aa !important; color: #e1bee7 !important; }
         .game-btn:hover, .game-btn.active { background-color: #8e24aa !important; color: white !important; border-color: #8e24aa !important; }
-        .quality-btn { background-color: rgba(255, 255, 255, 0.05) !important; border: 1px solid rgba(255, 255, 255, 0.15) !important; color: #eceff1 !important; }
-        .quality-btn:hover { background-color: rgba(255, 255, 255, 0.15) !important; color: #fff !important; }
+        
+        /* NOT: .quality-btn sınıfı kaldırıldı. Kalite butonu artık standart .filter-btn olarak tanımlandı. */
 
         /* TICKER & CARDS */
         .news-ticker-box { background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 5px solid #fabb00; border-radius: 6px; padding: 15px; height: 85px; position: relative; cursor: pointer; overflow: hidden; transition: 0.3s; display: flex; flex-direction: column; justify-content: center; }
@@ -217,13 +217,9 @@
         .evaluation-details-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-in-out; margin-top: 0; }
         .evaluation-summary { transition: background 0.2s; }
         .evaluation-summary:hover { background: #fcfcfc; }
-        /* Yeni stil: Ortalamalar yerine Dinleme Bilgisi için */
-        #quality-metrics { 
-            display: flex; justify-content: space-around; background: #f0f4ff; 
-            padding: 10px; border-radius: 6px; margin-bottom: 15px; font-weight: bold; 
-            font-size: 1rem; border: 1px solid #d0d8f0; 
-        }
-        .quality-filter-group { display: flex; gap: 10px; align-items: center; margin-bottom: 15px; }
+        
+        /* Dinleme Bilgisi için */
+        .quality-filter-group { display: flex; justify-content: space-around; background: #f0f4ff; padding: 10px; border-radius: 6px; margin-bottom: 15px; font-weight: bold; font-size: 1rem; border: 1px solid #d0d8f0; }
         #month-select-filter { padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
     </style>
 </head>
@@ -280,11 +276,11 @@
                         <button class="filter-btn btn-camp" onclick="filterCategory(this, 'Kampanya')"><i class="fas fa-gift"></i> Kampanya</button>
                         <button class="filter-btn btn-info" onclick="filterCategory(this, 'Bilgi')"><i class="fas fa-info-circle"></i> Bilgi</button>
                         <a href="https://www.ssportplus.com/yayin-akisi/" target="_blank" class="filter-btn btn-stream"><i class="fas fa-calendar-alt"></i> Yayın Akışı</a>
-                        <button class="filter-btn quality-btn" onclick="openQualityArea()"><i class="fas fa-microscope"></i> Kalite</button> 
                         <button class="filter-btn guide-btn" onclick="openGuide()">📖 Spor Rehberi</button>
                         <button class="filter-btn wizard-btn" onclick="openWizard()">⚖️ İade Asistanı</button>
                         <button class="filter-btn sales-btn" onclick="openSales()">📞 TeleSatış</button>
                         <button class="filter-btn game-btn" onclick="openPenaltyGame()">⚽ OYUN</button>
+                        <button class="filter-btn" onclick="openQualityArea()"><i class="fas fa-microscope"></i> Kalite</button> 
                     </div>
                 </div>
                 <div class="right-panel">
