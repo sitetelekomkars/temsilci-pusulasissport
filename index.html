@@ -49,8 +49,8 @@
         .btn-fav:hover, .btn-fav.active { color: #0e1b42; }
         .game-btn { border-color: #8e24aa !important; color: #e1bee7 !important; }
         .game-btn:hover, .game-btn.active { background-color: #8e24aa !important; color: white !important; border-color: #8e24aa !important; }
-        .quality-btn { border-color: var(--primary) !important; color: var(--primary) !important; background-color: rgba(255, 255, 255, 0.9) !important; }
-        .quality-btn:hover { background-color: #fff !important; color: var(--primary) !important; }
+        .quality-btn { background-color: rgba(255, 255, 255, 0.05) !important; border: 1px solid rgba(255, 255, 255, 0.15) !important; color: #eceff1 !important; }
+        .quality-btn:hover { background-color: rgba(255, 255, 255, 0.15) !important; color: #fff !important; }
 
         /* TICKER & CARDS */
         .news-ticker-box { background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 5px solid #fabb00; border-radius: 6px; padding: 15px; height: 85px; position: relative; cursor: pointer; overflow: hidden; transition: 0.3s; display: flex; flex-direction: column; justify-content: center; }
@@ -217,12 +217,14 @@
         .evaluation-details-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-in-out; margin-top: 0; }
         .evaluation-summary { transition: background 0.2s; }
         .evaluation-summary:hover { background: #fcfcfc; }
-        /* Yeni stil: Ortalamalar için */
+        /* Yeni stil: Ortalamalar yerine Dinleme Bilgisi için */
         #quality-metrics { 
             display: flex; justify-content: space-around; background: #f0f4ff; 
             padding: 10px; border-radius: 6px; margin-bottom: 15px; font-weight: bold; 
             font-size: 1rem; border: 1px solid #d0d8f0; 
         }
+        .quality-filter-group { display: flex; gap: 10px; align-items: center; margin-bottom: 15px; }
+        #month-select-filter { padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
     </style>
 </head>
 <body>
@@ -278,7 +280,7 @@
                         <button class="filter-btn btn-camp" onclick="filterCategory(this, 'Kampanya')"><i class="fas fa-gift"></i> Kampanya</button>
                         <button class="filter-btn btn-info" onclick="filterCategory(this, 'Bilgi')"><i class="fas fa-info-circle"></i> Bilgi</button>
                         <a href="https://www.ssportplus.com/yayin-akisi/" target="_blank" class="filter-btn btn-stream"><i class="fas fa-calendar-alt"></i> Yayın Akışı</a>
-                        <button class="filter-btn quality-btn" onclick="openQualityArea()">📈 Kalite Değerlendirme</button> 
+                        <button class="filter-btn quality-btn" onclick="openQualityArea()"><i class="fas fa-microscope"></i> Kalite</button> 
                         <button class="filter-btn guide-btn" onclick="openGuide()">📖 Spor Rehberi</button>
                         <button class="filter-btn wizard-btn" onclick="openWizard()">⚖️ İade Asistanı</button>
                         <button class="filter-btn sales-btn" onclick="openSales()">📞 TeleSatış</button>
@@ -410,10 +412,18 @@
             <span class="close-modal" onclick="closeModal('quality-modal')">&times;</span>
             <h2 style="text-align:center; color:var(--primary);"><i class="fas fa-microscope"></i> Kalite Değerlendirmelerim</h2>
             <div id="quality-content" style="padding: 20px; border: 1px solid #eee; border-radius: 8px; margin-top: 20px;">
-                <div id="quality-metrics" style="display:flex; justify-content:space-around; background:#f0f4ff; padding:10px; border-radius:6px; margin-bottom:15px; font-weight:bold; font-size:1rem; border:1px solid #d0d8f0;">
-                    <span id="daily-avg-span" style="color:var(--success);">GÜNLÜK ORT.: -</span>
-                    <span id="monthly-avg-span" style="color:var(--primary);">AYLIK ORT.: -</span>
+                
+                <div class="quality-filter-group">
+                    <span style="font-weight:bold; color:var(--primary);">Dönem:</span>
+                    <select id="month-select-filter" onchange="fetchEvaluationsForAgent()"></select>
+                    <span style="font-weight:bold; color:var(--primary); margin-left:15px;">
+                        <i class="fas fa-chart-line"></i> <span id="eval-count-span"></span>
+                    </span>
+                    <span style="font-weight:bold; color:var(--success); margin-left:15px;">
+                        <i class="fas fa-bullseye"></i> <span id="monthly-avg-span"></span>
+                    </span>
                 </div>
+
                 <div id="quality-loader" style="text-align:center; color:#999; font-style:italic;">Değerlendirmeler yükleniyor...</div>
                 <div id="evaluations-list"></div>
             </div>
@@ -449,6 +459,9 @@
         let activeCards = []; 
         let currentCategory = 'all';
         let adminUserList = []; 
+        let allEvaluationsData = []; // Tüm değerlendirmeleri tutacak yeni değişken
+        const MONTH_NAMES = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+
 
         function getToken() { return localStorage.getItem("sSportToken"); }
         function getFavs() { return JSON.parse(localStorage.getItem('sSportFavs') || '[]'); }
@@ -756,27 +769,48 @@
         
         // --- KALİTE FONKSİYONLARI (GELİŞMİŞ) ---
         
-        /** YENİ: Temsilcinin günlük ve aylık ortalamasını çeker. */
-        function fetchAgentAverages(targetAgent) {
-            return fetch(SCRIPT_URL, { 
-                method: 'POST', 
-                headers: { "Content-Type": "text/plain;charset=utf-8" }, 
-                body: JSON.stringify({ action: "getAgentAverages", targetAgent: targetAgent, token: getToken() }) 
-            })
-            .then(response => response.json())
-            .then(data => data.result === "success" ? data : { monthlyAvg: 0, dailyAvg: 0 })
-            .catch(() => ({ monthlyAvg: 0, dailyAvg: 0 }));
+        /** Ay filtresi için seçenekleri hazırlar */
+        function populateMonthFilter() {
+            const selectEl = document.getElementById('month-select-filter');
+            selectEl.innerHTML = '';
+            
+            const now = new Date();
+            const currentMonth = now.getMonth();
+            const currentYear = now.getFullYear();
+
+            // Geçen 6 ay ve şimdiki ay için seçenekleri oluştur
+            for (let i = 0; i < 6; i++) {
+                let month = (currentMonth - i + 12) % 12; // 0-11
+                let year = currentYear;
+                if (currentMonth - i < 0) {
+                    year = currentYear - 1;
+                }
+                const monthStr = (month + 1).toString().padStart(2, '0'); // MM formatı
+                const yearStr = year.toString();
+                const value = `${monthStr}.${yearStr}`;
+                const text = `${MONTH_NAMES[month]} ${yearStr}`;
+
+                const option = document.createElement('option');
+                option.value = value;
+                option.textContent = text;
+                
+                if (i === 0) {
+                    option.selected = true; // Varsayılan olarak şimdiki ayı seç
+                }
+                selectEl.appendChild(option);
+            }
         }
-        
+
         // openQualityArea fonksiyonunu güncelleyin
         function openQualityArea() {
             document.getElementById('quality-modal').style.display = 'flex';
             document.getElementById('admin-quality-controls').style.display = isAdminMode ? 'block' : 'none';
             
-            // Ortalama metrikleri güncellenmeli (Zaten HTML'de var, sadece içerik değiştirilecek)
-            document.getElementById('daily-avg-span').innerText = `GÜNLÜK ORT.: -`;
-            document.getElementById('monthly-avg-span').innerText = `AYLIK ORT.: -`;
-
+            populateMonthFilter(); // Ay filtreleme seçeneklerini doldur
+            
+            // Metrikleri sıfırla
+            document.getElementById('eval-count-span').innerText = `Dinleme Adeti: -`;
+            document.getElementById('monthly-avg-span').innerText = `Ortalama: -`;
 
             if (isAdminMode) {
                 fetchUserListForAdmin().then(users => {
@@ -790,7 +824,7 @@
             }
         }
 
-        // fetchEvaluationsForAgent fonksiyonunu güncelleyin (Ortalama ve Tıklama ile Detay)
+        // fetchEvaluationsForAgent fonksiyonunu güncelleyin (Aylık Filtreleme ve Metrik Güncelleme)
         async function fetchEvaluationsForAgent(forcedName) {
             const listEl = document.getElementById('evaluations-list');
             const loader = document.getElementById('quality-loader');
@@ -804,65 +838,84 @@
             
             if (!targetAgent) { loader.innerHTML = 'Temsilci Seçilemedi.'; return; }
 
-            // 1. Ortalama Metrikleri Çek
-            const metrics = await fetchAgentAverages(targetAgent);
-            document.getElementById('daily-avg-span').innerText = `GÜNLÜK ORT.: ${metrics.dailyAvg}%`;
-            document.getElementById('monthly-avg-span').innerText = `AYLIK ORT.: ${metrics.monthlyAvg}%`;
-
-
-            // 2. Değerlendirme Listesini Çek
-            fetch(SCRIPT_URL, { 
+            const selectedMonth = document.getElementById('month-select-filter').value; // MM.yyyy formatında
+            
+            // Tüm değerlendirmeleri çek (Script tarafında filtreleme yapılacak, bu yüzden filtre parametresi göndermiyoruz)
+            const response = await fetch(SCRIPT_URL, { 
                 method: 'POST', 
                 headers: { "Content-Type": "text/plain;charset=utf-8" }, 
                 body: JSON.stringify({ action: "fetchEvaluations", targetAgent: targetAgent, username: currentUser, token: getToken() }) 
-            })
-            .then(response => response.json())
-            .then(data => {
-                loader.style.display = 'none';
-                if (data.result === "success") {
-                    if (data.evaluations.length === 0) { listEl.innerHTML = `<p style="text-align:center; color:#666;">Değerlendirme bulunamadı.</p>`; return; }
-                    let html = '';
-                    
-                    data.evaluations.sort((a,b) => new Date(b.date.replace(/(\d{2}).(\d{2}).(\d{4})/, '$3-$2-$1')) - new Date(a.date.replace(/(\d{2}).(\d{2}).(\d{4})/, '$3-$2-$1'))).forEach((eval, index) => {
-                        const scoreColor = eval.score >= 90 ? '#2e7d32' : (eval.score >= 70 ? '#ed6c02' : '#d32f2f');
-                        let detailHtml = '';
+            });
+            
+            const data = await response.json();
 
-                        try {
-                            const detailObj = JSON.parse(eval.details);
-                            detailHtml = '<table style="width:100%; font-size:0.85rem; border-collapse:collapse; margin-top:10px;">';
-                            detailObj.forEach(item => {
-                                let rowColor = item.score < item.max ? '#ffebee' : '#f9f9f9';
-                                let noteDisplay = item.note ? `<br><em style="color: #d32f2f; font-size:0.8rem;">(Kırılım Nedeni: ${item.note})</em>` : '';
-                                
-                                detailHtml += `<tr style="background:${rowColor}; border-bottom:1px solid #eee;">
-                                    <td style="padding:8px;">${item.q}${noteDisplay}</td>
-                                    <td style="padding:8px; font-weight:bold; text-align:right;">${item.score}/${item.max}</td>
-                                </tr>`;
-                            });
-                            detailHtml += '</table>';
-                        } catch (e) { detailHtml = `<p style="white-space:pre-wrap; margin:0; font-size:0.9rem;">${eval.details}</p>`; }
+            loader.style.display = 'none';
+            
+            if (data.result === "success") {
+                allEvaluationsData = data.evaluations; // Tüm veriyi sakla
+
+                // Filtreleme
+                let filteredEvals = allEvaluationsData.filter(eval => {
+                    // Loglama tarihi MM.yyyy formatında filtreleme
+                    const evalDate = eval.date.substring(3); // Loglama tarihi dd.MM.yyyy formatında
+                    return evalDate === selectedMonth;
+                });
+                
+                // Metrikleri Hesapla
+                const monthlyTotal = filteredEvals.reduce((sum, eval) => sum + (parseFloat(eval.score) || 0), 0);
+                const monthlyCount = filteredEvals.length;
+                const monthlyAvg = monthlyCount > 0 ? Math.round(monthlyTotal / monthlyCount) : 0;
+
+                // Metrikleri Güncelle
+                document.getElementById('eval-count-span').innerText = `Dinleme Adeti: ${monthlyCount}`;
+                document.getElementById('monthly-avg-span').innerText = `Ortalama: ${monthlyAvg}%`;
 
 
-                        html += `<div class="evaluation-summary" id="eval-summary-${index}" style="border:1px solid #ddd; border-left:5px solid ${scoreColor}; padding:15px; margin-bottom:10px; border-radius:6px; background:#fff; cursor:pointer;" onclick="toggleEvaluationDetail(${index})">
-                            <div style="display:flex; justify-content:space-between; align-items:center;">
-                                <div style="flex-direction: column; align-items: flex-start; display: flex;">
-                                    <span style="font-weight:bold; color:var(--primary); font-size:1.1rem;">📅 ${eval.date} <span style="font-size:0.8rem; font-weight:normal; color:#666;">(Loglama)</span></span>
-                                    <span style="font-size:0.9rem; color:#555; margin-top:5px;">Çağrı Tarihi: ${eval.callDate || 'N/A'}</span>
-                                </div>
-                                <span style="font-size:0.9rem; color:#666;">Call ID: ${eval.callId || '-'}</span> 
-                                <span style="font-weight:bold; font-size:1.4rem; color:${scoreColor};">PUAN: ${eval.score}</span>
-                                <i class="fas fa-chevron-down" id="eval-icon-${index}" style="color:var(--primary); transition:transform 0.3s;"></i>
+                if (filteredEvals.length === 0) { listEl.innerHTML = `<p style="text-align:center; color:#666;">Seçilen ay (${selectedMonth}) için değerlendirme bulunamadı.</p>`; return; }
+                
+                let html = '';
+                
+                // En yeni en üste
+                filteredEvals.sort((a,b) => new Date(b.date.replace(/(\d{2}).(\d{2}).(\d{4})/, '$3-$2-$1')) - new Date(a.date.replace(/(\d{2}).(\d{2}).(\d{4})/, '$3-$2-$1'))).forEach((eval, index) => {
+                    const scoreColor = eval.score >= 90 ? '#2e7d32' : (eval.score >= 70 ? '#ed6c02' : '#d32f2f');
+                    let detailHtml = '';
+
+                    try {
+                        const detailObj = JSON.parse(eval.details);
+                        detailHtml = '<table style="width:100%; font-size:0.85rem; border-collapse:collapse; margin-top:10px;">';
+                        detailObj.forEach(item => {
+                            let rowColor = item.score < item.max ? '#ffebee' : '#f9f9f9';
+                            let noteDisplay = item.note ? `<br><em style="color: #d32f2f; font-size:0.8rem;">(Kırılım Nedeni: ${item.note})</em>` : '';
+                            
+                            detailHtml += `<tr style="background:${rowColor}; border-bottom:1px solid #eee;">
+                                <td style="padding:8px;">${item.q}${noteDisplay}</td>
+                                <td style="padding:8px; font-weight:bold; text-align:right;">${item.score}/${item.max}</td>
+                            </tr>`;
+                        });
+                        detailHtml += '</table>';
+                    } catch (e) { detailHtml = `<p style="white-space:pre-wrap; margin:0; font-size:0.9rem;">${eval.details}</p>`; }
+
+
+                    html += `<div class="evaluation-summary" id="eval-summary-${index}" style="border:1px solid #ddd; border-left:5px solid ${scoreColor}; padding:15px; margin-bottom:10px; border-radius:6px; background:#fff; cursor:pointer;" onclick="toggleEvaluationDetail(${index})">
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <div style="flex-direction: column; align-items: flex-start; display: flex;">
+                                <span style="font-weight:bold; color:var(--primary); font-size:1.1rem;">📅 ${eval.date} <span style="font-size:0.8rem; font-weight:normal; color:#666;">(Loglama)</span></span>
+                                <span style="font-size:0.9rem; color:#555; margin-top:5px;">Çağrı Tarihi: ${eval.callDate || 'N/A'}</span>
                             </div>
-                            <div class="evaluation-details-content" id="eval-details-${index}" style="max-height:0; overflow:hidden; transition:max-height 0.4s ease-in-out; margin-top:0;">
-                                <hr style="border:none; border-top:1px dashed #eee; margin:10px 0;"><h4 style="color:var(--accent); margin-top:5px; font-size:0.9rem;">Detaylar:</h4>${detailHtml}
-                                <h4 style="color:var(--primary); font-size:0.9rem; margin-top:10px;">Geri Bildirim:</h4>
-                                <p style="white-space:pre-wrap; margin:0; font-size:0.9rem;">${eval.feedback}</p>
-                            </div>
-                        </div>`;
-                    });
-                    listEl.innerHTML = html;
-                } else { listEl.innerHTML = `<p style="color:red;">Hata: ${data.message}</p>`; }
-            }).catch(err => { loader.style.display='none'; listEl.innerHTML = `<p style="color:red;">Bağlantı hatası.</p>`; });
+                            <span style="font-size:0.9rem; color:#666;">Call ID: ${eval.callId || '-'}</span> 
+                            <span style="font-weight:bold; font-size:1.4rem; color:${scoreColor};">PUAN: ${eval.score}</span>
+                            <i class="fas fa-chevron-down" id="eval-icon-${index}" style="color:var(--primary); transition:transform 0.3s;"></i>
+                        </div>
+                        <div class="evaluation-details-content" id="eval-details-${index}" style="max-height:0; overflow:hidden; transition:max-height 0.4s ease-in-out; margin-top:0;">
+                            <hr style="border:none; border-top:1px dashed #eee; margin:10px 0;"><h4 style="color:var(--accent); margin-top:5px; font-size:0.9rem;">Detaylar:</h4>${detailHtml}
+                            <h4 style="color:var(--primary); font-size:0.9rem; margin-top:10px;">Geri Bildirim:</h4>
+                            <p style="white-space:pre-wrap; margin:0; font-size:0.9rem;">${eval.feedback}</p>
+                        </div>
+                    </div>`;
+                });
+                listEl.innerHTML = html;
+            } else { listEl.innerHTML = `<p style="color:red;">Hata: ${data.message}</p>`; }
+            
         }
         
         // YENİ: Değerlendirme detayını açma/kapama
@@ -1020,6 +1073,7 @@
         const wizardSteps={ start:{title:"İade Talebi Analizi",text:"Lütfen müşterinin durumunu seçiniz:",options:[ {text:"İçerik İzlemiş / Kullanım Var",next:"izleme_var"}, {text:"Aylık Paket (İzleme YOK)",next:"aylik_izleme_yok"}, {text:"Yıllık Paket (İzleme YOK)",next:"yillik_izleme_yok"}, {text:"Mükerrer (Çift) Çekim",next:"mukerrer"}, {text:"Aynı Gün Yanlışlıkla Yıllık Alım",next:"ayni_gun_yillik"}, {text:"Apple / Google Store İptali",next:"store_iptal"}, {text:"Winback Paket Geçiş İadesi",next:"winback_iade"} ]}, izleme_var:{result:"red",title:"❌ İADE REDDEDİLİR",text:"İçerik izlenmişse (genel arıza hariç) iade yapılmaz.",script:"Hizmetimizden aktif olarak faydalandığınız için iade prosedürlerimiz gereği talebinize olumlu yanıt veremiyoruz."}, aylik_izleme_yok:{title:"Aylık Paket - İzleme Yok",text:"THH tehdidi var mı?",options:[{text:"Evet/Israrcı",next:"aylik_teklif"},{text:"Hayır",next:"izleme_var"}]}, aylik_teklif:{title:"İndirim Teklifi",text:"Önce 6AY50 ile indirim teklif et.",options:[{text:"İndirimi Kabul Etti",next:"indirim_kabul"},{text:"Reddetti (Tam İade)",next:"tam_iade"}]}, yillik_izleme_yok:{title:"Yıllık Paket",text:"Paket kampanyalı mıydı?",options:[{text:"Hayır (Standart)",next:"yillik_standart"},{text:"Evet (Kampanyalı)",next:"yillik_kampanyali"}]}, yillik_standart:{title:"Standart Yıllık",text:"Sırasıyla: 1. YILLIKLOCA İndirimi, 2. Aylığa Geçiş öner.",options:[{text:"Teklifi Kabul Etti",next:"islem_tamam"},{text:"Hepsini Reddetti (Tam İade)",next:"tam_iade"}]}, yillik_kampanyali:{title:"Kampanyalı Yıllık",text:"Sadece Aylığa Geçiş önerilebilir.",options:[{text:"Aylığa Geçişi Kabul Etti",next:"ayliga_gecis"},{text:"Reddetti (Tam İade)",next:"tam_iade"}]}, mukerrer:{title:"Mükerrer Çekim",text:"15 gün içinde ve Aynı Cihaz/IP mi?",options:[{text:"Evet",next:"mukerrer_iade"},{text:"Hayır",next:"izleme_var"}]}, ayni_gun_yillik:{title:"Aynı Gün Yıllık",text:"24 saat içinde mi?",options:[{text:"Evet",next:"bir_defaya_mahsus"},{text:"Hayır",next:"izleme_var"}]}, store_iptal:{result:"red",title:"❌ BİZ İPTAL EDEMEYİZ",text:"Apple/Google alımları telefondan yapılmalı."}, winback_iade:{result:"yellow",title:"⚠️ SADECE 2. PAKET İADE",text:"Sadece son alınan indirimli paket iade edilebilir."}, indirim_kabul:{result:"green",title:"✅ İNDİRİM TANIMLA",text:"139.5 TL iade yapıldı."}, tam_iade:{result:"green",title:"✅ TAM İADE YAP",text:"Teklifler reddedildi, iade sağla."}, mukerrer_iade:{result:"green",title:"✅ MÜKERRER İADE",text:"Fazla paketi iade et."}, ayliga_gecis:{result:"green",title:"✅ AYLIK GEÇİŞ",text:"Yıllık iptal, aylık tanımla, farkı iade et."}, bir_defaya_mahsus:{result:"green",title:"✅ TEK SEFERLİK İADE",text:"Yıllık iade, aylık devam."}, islem_tamam:{result:"green",title:"✅ İŞLEM TAMAM",text:"Teklif kabul edildi."} };
         function openWizard(){ document.getElementById('wizard-modal').style.display='flex'; renderStep('start'); }
         function renderStep(k){ const s=wizardSteps[k]; const b=document.getElementById('wizard-body'); let h=`<h2>${s.title||''}</h2>`; if(s.result){ let i=s.result==='red'?'🛑':(s.result==='green'?'✅':'⚠️'); let c=s.result==='red'?'res-red':(s.result==='green'?'res-green':'res-yellow'); h+=`<div class="result-box ${c}"><div style="font-size:3rem;margin-bottom:10px;">${i}</div><h3>${s.title}</h3><p>${s.text}</p>${s.script?`<div class="script-box">${s.script}</div>`:''}</div><button class="restart-btn" onclick="renderStep('start')"><i class="fas fa-redo"></i> Başa Dön</button>`; }else{ h+=`<p>${s.text}</p><div class="wizard-options">`; s.options.forEach(o=>{ h+=`<button class="option-btn" onclick="renderStep('${o.next}')"><i class="fas fa-chevron-right"></i> ${o.text}</button>`; }); h+=`</div>`; if(k!=='start')h+=`<button class="restart-btn" onclick="renderStep('start')" style="background:#eee;color:#333;margin-top:15px;">Geri Dön</button>`; } b.innerHTML=h; }
+        
     </script>
 </body>
 </html>
