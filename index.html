@@ -47,17 +47,19 @@
         .filter-btn:hover, .filter-btn.active { background-color: #fabb00; color: #0e1b42; border-color: #fabb00; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(250, 187, 0, 0.3); }
         .btn-fav { border-color: #fabb00; color: #fabb00; }
         .btn-fav:hover, .btn-fav.active { color: #0e1b42; }
-        /* OYUN butonu stili */
+        
+        /* OYUN butonu stili kaldırıldı ve standart filter-btn özelliklerini alması sağlandı. */
         .game-btn { 
-            border-color: var(--quiz) !important; 
-            color: #fff !important; 
-            background: rgba(142, 36, 170, 0.6) !important; /* Hafif mor */
+            /* Önceki özel mor stillerini iptal ediyoruz. */
+            border-color: rgba(255, 255, 255, 0.15) !important; 
+            color: #eceff1 !important; 
+            background: rgba(255, 255, 255, 0.05) !important;
         }
         .game-btn:hover, .game-btn.active { 
-            background-color: var(--quiz) !important; /* Tam mor */
-            color: white !important; 
-            border-color: var(--quiz) !important; 
-            box-shadow: 0 4px 10px rgba(142, 36, 170, 0.5);
+            /* Standart sarı hover rengini kullanır */
+            background-color: #fabb00 !important; 
+            color: #0e1b42 !important; 
+            border-color: #fabb00 !important; 
         }
         
         /* TICKER & CARDS */
