@@ -1,6 +1,3 @@
-// =======================================================
-// === AYARLAR VE GÜVENLİ URL'LER ===
-// =======================================================
 
 const BAKIM_MODU = false; 
 
@@ -24,13 +21,6 @@ let adminUserList = [];
 let allEvaluationsData = []; 
 const MONTH_NAMES = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
 
-
-// =======================================================
-// === YARDIMCI VE HESAPLAMA FONKSİYONLARI (GLOBAL) ===
-// =======================================================
-
-// --- PUAN HESAPLAMA MOTORU (DÜZELTİLDİ) ---
-// Bu fonksiyonlar artık global, hem kayıt hem düzenleme ekranında çalışır.
 
 window.updateRowScore = function(index, max) {
     const slider = document.getElementById(`slider-${index}`);
