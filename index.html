@@ -205,12 +205,28 @@
                     <button class="add-btn" style="background:var(--accent); border-color:var(--accent);" onclick="logEvaluationPopup()">
                         <i class="fas fa-plus"></i> Yeni Değerlendirme Ekle
                     </button>
+<div id="admin-quality-controls" style="text-align:center; display:none;">
 
-                    <!-- KALİTE EXCEL EXPORT BUTONU (YENİ) -->
-<button id="btn-export-quality" class="btn" style="background:#2e7d32;color:#fff;display:flex;align-items:center;gap:6px;">
-  <i class="fa fa-file-excel-o"></i>
-  Kalite Excel Raporu
-</button>
+    <div class="quality-controls-top">
+        <button class="add-btn" style="background:var(--accent); border-color:var(--accent);" onclick="logEvaluationPopup()">
+            <i class="fas fa-plus"></i> Yeni Değerlendirme Ekle
+        </button>
+    </div>
+
+    <!-- KALİTE EXCEL EXPORT BUTONU (YENİ) -->
+    <button id="btn-export-quality" class="btn"
+        style="background:#2e7d32; color:#fff; display:flex; align-items:center; gap:6px; margin-top:10px; padding:10px 15px; border-radius:6px; cursor:pointer;">
+        <i class="fa fa-file-excel-o"></i>
+        Kalite Excel Raporu
+    </button>
+
+    <div style="font-weight:bold; display:flex; align-items:center; gap:5px; margin-top:15px;">
+        <label>Temsilci:</label>
+        <select id="agent-select-admin" class="swal2-input" style="width:200px;"></select>
+    </div>
+
+</div>
+
 
 
                     
@@ -248,6 +264,7 @@
     
 </body>
 </html>
+
 
 
 
