@@ -630,17 +630,16 @@ function openQualityArea() {
         fetchEvaluationsForAgent(currentUser);
     }
 }
-
 async function fetchEvaluationsForAgent(forcedName) {
     const listEl = document.getElementById('evaluations-list');
     const loader = document.getElementById('quality-loader');
-    listEl.innerHTML = ''; 
+    listEl.innerHTML = '';
     loader.style.display = 'block';
 
     let targetAgent = forcedName || currentUser;
     if (isAdminMode) {
         const selectEl = document.getElementById('agent-select-admin');
-        targetAgent = forcedName || selectEl.value; 
+        targetAgent = forcedName || selectEl.value;
     }
     if (!targetAgent) {
         loader.innerHTML = '<span style="color:red;">Lütfen listeden bir temsilci seçimi yapın.</span>';
@@ -649,16 +648,16 @@ async function fetchEvaluationsForAgent(forcedName) {
 
     const selectedMonth = document.getElementById('month-select-filter').value;
     try {
-        const response = await fetch(SCRIPT_URL, { 
-            method: 'POST', 
-            headers: { "Content-Type": "text/plain;charset=utf-8" }, 
-            body: JSON.stringify({ action: "fetchEvaluations", targetAgent: targetAgent, username: currentUser, token: getToken() }) 
+        const response = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: "fetchEvaluations", targetAgent: targetAgent, username: currentUser, token: getToken() })
         });
         const data = await response.json();
-        loader.style.display = 'none'; 
+        loader.style.display = 'none';
         if (data.result === "success") {
             allEvaluationsData = data.evaluations;
-            
+
             // Filtreleme
             let filteredEvals = allEvaluationsData.filter(eval => {
                 const evalDate = eval.date.substring(3);
@@ -673,14 +672,14 @@ async function fetchEvaluationsForAgent(forcedName) {
             document.getElementById('eval-count-span').innerText = `Dinleme Adeti: ${monthlyCount}`;
             document.getElementById('monthly-avg-span').innerText = `Ortalama: ${monthlyAvg}%`;
 
-            if (filteredEvals.length === 0) { 
+            if (filteredEvals.length === 0) {
                 listEl.innerHTML = `<p style="text-align:center; color:#666;">Seçilen **${selectedMonth}** dönemi için değerlendirme bulunamadı.</p>`;
-                return; 
+                return;
             }
-            
+
             let html = '';
             // Listeyi ters çevirip ekrana basıyoruz
-            filteredEvals.reverse().forEach((eval, index) => { 
+            filteredEvals.reverse().forEach((eval, index) => {
                 const scoreColor = eval.score >= 90 ? '#2e7d32' : (eval.score >= 70 ? '#ed6c02' : '#d32f2f');
                  let detailHtml = '';
                  try {
@@ -695,35 +694,65 @@ async function fetchEvaluationsForAgent(forcedName) {
                          </tr>`;
                      });
                      detailHtml += '</table>';
-                 } catch (e) { detailHtml = `<p style="white-space:pre-wrap; margin:0; font-size:0.9rem;">${eval.details}</p>`; }
+                 }
+                 catch (e) { detailHtml = `<p style="white-space:pre-wrap; margin:0; font-size:0.9rem;">${eval.details}</p>`; }
 
-                 // --- DÜZELTİLEN SATIR BURASI ---
-                 // Index yerine eval.callId gönderiyoruz. Call ID benzersiz olduğu için karışmaz.
                  let editBtn = isAdminMode ? `<div style="position:absolute; top:10px; right:40px; cursor:pointer; color:#1976d2;" onclick="event.stopPropagation(); editEvaluation('${eval.callId}')" title="Değerlendirmeyi Düzenle"><i class="fas fa-edit fa-lg"></i></div>` : '';
+                 
+                 // ISO formatındaki Çağrı Tarihini temizle
+                 const cleanCallDate = formatDateToDDMMYYYY(eval.callDate);
 
-                 html += `<div class="evaluation-summary" id="eval-summary-${index}" style="position:relative; border:1px solid #ddd; border-left:5px solid ${scoreColor}; padding:15px; margin-bottom:10px; border-radius:6px; background:#fff; cursor:pointer;" onclick="toggleEvaluationDetail(${index})">
-                     ${editBtn}
-                     <div style="display:flex; justify-content:space-between; align-items:center;">
-                         <div style="flex-direction: column; align-items: flex-start; display: flex;">
-                             <span style="font-weight:bold; color:var(--primary); font-size:1.1rem;">📅 ${eval.date} <span style="font-size:0.8rem; font-weight:normal; color:#666;">(Loglama)</span></span>
-                             <span style="font-size:0.9rem; color:#555; margin-top:5px;">Çağrı Tarihi: ${eval.callDate || 'N/A'}</span>
-                         </div>
-                         <span style="font-size:0.9rem; color:#666;">Call ID: ${eval.callId || '-'}</span> 
-                         <span style="font-weight:bold; font-size:1.4rem; color:${scoreColor};">PUAN: ${eval.score}</span>
-                         <i class="fas fa-chevron-down" id="eval-icon-${index}" style="color:var(--primary); transition:transform 0.3s;"></i>
-                     </div>
-                     <div class="evaluation-details-content" id="eval-details-${index}" style="max-height:0; overflow:hidden; transition:max-height 0.4s ease-in-out; margin-top:0;">
-                         <hr style="border:none; border-top:1px dashed #eee; margin:10px 0;"><h4 style="color:var(--accent); font-size:0.9rem;">Detaylar:</h4>${detailHtml}
-                         <h4 style="color:var(--primary); font-size:0.9rem; margin-top:10px;">Geri Bildirim:</h4>
-                         <p style="white-space:pre-wrap; margin:0; font-size:0.9rem;">${eval.feedback}</p>
-                     </div>
-                 </div>`;
+                 html += `<div class="evaluation-summary"
+                    id="eval-summary-${index}" style="position:relative; border:1px
+                    solid #ddd; border-left:5px solid ${scoreColor}; padding:15px; margin-bottom:10px;
+                    border-radius:6px; background:#fff; cursor:pointer;"
+                    onclick="toggleEvaluationDetail(${index})">
+                    ${editBtn}
+                    <div style="display:flex; justify-content:space-between;
+                        align-items:center;">
+                        <div style="flex-direction: column; align-items: flex-start;
+                            display: flex;">
+                            
+                            <span style="font-weight:bold; color:var(--primary);
+                                font-size:1.1rem;">📅 ${cleanCallDate} <span
+                                style="font-size:0.8rem; font-weight:normal;
+                                color:#666;">(Çağrı)</span></span>
+                            
+                            <span style="font-size:0.9rem; color:#555;
+                                margin-top:5px;">Loglama Tarihi: ${eval.date}</span>
+                        </div>
+                        <span style="font-size:0.9rem; color:#666;">Call ID:
+                            ${eval.callId || '-'}</span>
+                        <span style="font-weight:bold; font-size:1.4rem;
+                            color:${scoreColor};">PUAN: ${eval.score}</span>
+                        <i class="fas fa-chevron-down"
+                            id="eval-icon-${index}" style="color:var(--primary);
+                            transition:transform 0.3s;"></i>
+                    </div>
+                    <div class="evaluation-details-content"
+                        id="eval-details-${index}" style="max-height:0; overflow:hidden;
+                        transition:max-height 0.4s ease-in-out; margin-top:0;">
+                        <hr style="border:none; border-top:1px dashed #eee; margin:10px
+                            0;"><h4 style="color:var(--accent);
+                            font-size:0.9rem;">Detaylar:</h4>${detailHtml}
+                        <h4 style="color:var(--primary); font-size:0.9rem;
+                            margin-top:10px;">Geri Bildirim:</h4>
+                        <p style="white-space:pre-wrap; margin:0;
+                            font-size:0.9rem;">${eval.feedback}</p>
+                    </div>
+                </div>`;
             });
             listEl.innerHTML = html;
-        } else { listEl.innerHTML = `<p style="color:red; text-align:center;">Veri çekme hatası: ${data.message || 'Bilinmeyen Hata'}</p>`; }
+        } else {
+            listEl.innerHTML = `<p style="color:red;
+                text-align:center;">Veri çekme hatası: ${data.message || 'Bilinmeyen
+                Hata'}</p>`;
+        }
     } catch(err) {
         loader.style.display = 'none';
-        listEl.innerHTML = `<p style="color:red; text-align:center;">Bağlantı hatası veya sunucuya ulaşılamadı.</p>`;
+        listEl.innerHTML = `<p style="color:red;
+            text-align:center;">Bağlantı hatası veya sunucuya
+            ulaşılamadı.</p>`;
     }
 }
 
