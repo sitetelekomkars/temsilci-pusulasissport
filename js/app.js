@@ -26,9 +26,69 @@ const MONTH_NAMES = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Te
 
 
 // =======================================================
-// === TEMEL YARDIMCI FONKSİYONLAR ===
+// === YARDIMCI VE HESAPLAMA FONKSİYONLARI (GLOBAL) ===
 // =======================================================
 
+// --- PUAN HESAPLAMA MOTORU (DÜZELTİLDİ) ---
+// Bu fonksiyonlar artık global, hem kayıt hem düzenleme ekranında çalışır.
+
+window.updateRowScore = function(index, max) {
+    const slider = document.getElementById(`slider-${index}`);
+    const badge = document.getElementById(`badge-${index}`);
+    const noteInput = document.getElementById(`note-${index}`);
+    const row = document.getElementById(`row-${index}`);
+    
+    if(!slider) return;
+
+    const val = parseInt(slider.value);
+    badge.innerText = val;
+    
+    // Görsel değişimler
+    if (val < max) {
+        noteInput.style.display = 'block';
+        badge.style.background = '#d32f2f'; // Kırmızı
+        row.style.borderColor = '#ffcdd2';
+        row.style.background = '#fff5f5';
+    } else {
+        noteInput.style.display = 'none';
+        noteInput.value = ''; // Puan tamsa notu sil
+        badge.style.background = '#2e7d32'; // Yeşil
+        row.style.borderColor = '#eee';
+        row.style.background = '#fff';
+    }
+    window.recalcTotalScore();
+};
+
+window.recalcTotalScore = function() {
+    let currentTotal = 0;
+    let maxTotal = 0;
+    
+    const sliders = document.querySelectorAll('.slider-input');
+    sliders.forEach(s => {
+        currentTotal += parseInt(s.value) || 0;
+        // Max değerini slider'ın özelliğinden dinamik alıyoruz
+        maxTotal += parseInt(s.getAttribute('max')) || 0; 
+    });
+
+    const liveScoreEl = document.getElementById('live-score');
+    const ringEl = document.getElementById('score-ring');
+    
+    if(liveScoreEl) liveScoreEl.innerText = currentTotal;
+
+    if(ringEl) {
+        let color = '#2e7d32'; 
+        // Oran hesapla (Maksimum puana göre)
+        let ratio = maxTotal > 0 ? (currentTotal / maxTotal) * 100 : 0;
+
+        if(ratio < 50) color = '#d32f2f'; 
+        else if(ratio < 85) color = '#ed6c02'; 
+        else if(ratio < 95) color = '#fabb00'; 
+
+        ringEl.style.background = `conic-gradient(${color} ${ratio}%, #444 ${ratio}%)`;
+    }
+};
+
+// --- DİĞER YARDIMCILAR ---
 function getToken() { return localStorage.getItem("sSportToken"); }
 function getFavs() { return JSON.parse(localStorage.getItem('sSportFavs') || '[]'); }
 function toggleFavorite(title) { event.stopPropagation(); let favs = getFavs(); if (favs.includes(title)) { favs = favs.filter(t => t !== title); } else { favs.push(title); } localStorage.setItem('sSportFavs', JSON.stringify(favs)); if (currentCategory === 'fav') { filterCategory(document.querySelector('.btn-fav'), 'fav'); } else { renderCards(activeCards); } }
@@ -632,7 +692,6 @@ async function fetchEvaluationsForAgent(forcedName) {
                      detailHtml += '</table>';
                  } catch (e) { detailHtml = `<p style="white-space:pre-wrap; margin:0; font-size:0.9rem;">${eval.details}</p>`; }
 
-                 // --- YENİ EKLENEN KISIM: EDİT BUTONU ---
                  let editBtn = isAdminMode ? `<div style="position:absolute; top:10px; right:40px; cursor:pointer; color:#1976d2;" onclick="event.stopPropagation(); editEvaluation(${index})" title="Değerlendirmeyi Düzenle"><i class="fas fa-edit fa-lg"></i></div>` : '';
 
                  html += `<div class="evaluation-summary" id="eval-summary-${index}" style="position:relative; border:1px solid #ddd; border-left:5px solid ${scoreColor}; padding:15px; margin-bottom:10px; border-radius:6px; background:#fff; cursor:pointer;" onclick="toggleEvaluationDetail(${index})">
@@ -711,7 +770,6 @@ async function logEvaluationPopup() {
 
     const todayISO = new Date().toISOString().substring(0, 10);
     const isCriteriaBased = criteriaList.length > 0;
-    let maxTotalScore = 0;
 
     let contentHtml = `
     <div class="eval-modal-wrapper">
@@ -742,7 +800,6 @@ async function logEvaluationPopup() {
         contentHtml += `<div class="criteria-container">`;
         criteriaList.forEach((c, i) => {
             let pts = parseInt(c.points) || 0;
-            maxTotalScore += pts;
             contentHtml += `
             <div class="criteria-row" id="row-${i}">
                 <div class="criteria-header">
@@ -774,43 +831,6 @@ async function logEvaluationPopup() {
             <textarea id="eval-feedback" class="swal2-textarea" style="margin-top:5px; height:80px;" placeholder="Temsilciye iletilecek genel yorum..."></textarea>
         </div>
     </div>`;
-
-    window.updateRowScore = function(index, max) {
-        const slider = document.getElementById(`slider-${index}`);
-        const badge = document.getElementById(`badge-${index}`);
-        const noteInput = document.getElementById(`note-${index}`);
-        const row = document.getElementById(`row-${index}`);
-        const val = parseInt(slider.value);
-        badge.innerText = val;
-        if (val < max) {
-            noteInput.style.display = 'block';
-            badge.style.background = '#d32f2f';
-            row.style.borderColor = '#ffcdd2';
-            row.style.background = '#fff5f5';
-        } else {
-            noteInput.style.display = 'none';
-            noteInput.value = ''; 
-            badge.style.background = '#2e7d32';
-            row.style.borderColor = '#eee';
-            row.style.background = '#fff';
-        }
-        window.recalcTotalScore();
-    };
-
-    window.recalcTotalScore = function() {
-        let currentTotal = 0;
-        const sliders = document.querySelectorAll('.slider-input');
-        sliders.forEach(s => currentTotal += parseInt(s.value));
-        const liveScoreEl = document.getElementById('live-score');
-        const ringEl = document.getElementById('score-ring');
-        liveScoreEl.innerText = currentTotal;
-        let color = '#2e7d32'; 
-        if(currentTotal < 50) color = '#d32f2f'; 
-        else if(currentTotal < 85) color = '#ed6c02'; 
-        else if(currentTotal < 95) color = '#fabb00'; 
-        let percent = maxTotalScore > 0 ? (currentTotal / maxTotalScore) * 100 : currentTotal;
-        ringEl.style.background = `conic-gradient(${color} ${percent}%, #444 ${percent}%)`;
-    };
 
     const { value: formValues } = await Swal.fire({
         title: '', 
@@ -869,7 +889,7 @@ async function logEvaluationPopup() {
     }
 }
 
-// --- YENİ EKLENEN KISIM: DÜZENLEME FONKSİYONU ---
+// --- DÜZENLEME FONKSİYONU ---
 async function editEvaluation(index) {
     const evalData = allEvaluationsData[index];
     if (!evalData) return;
@@ -890,7 +910,6 @@ async function editEvaluation(index) {
     Swal.close();
 
     const isCriteriaBased = criteriaList.length > 0;
-    let maxTotalScore = 0;
     let oldDetails = [];
     try { oldDetails = JSON.parse(evalData.details); } catch(e) { oldDetails = []; }
 
@@ -923,7 +942,6 @@ async function editEvaluation(index) {
         contentHtml += `<div class="criteria-container">`;
         criteriaList.forEach((c, i) => {
             let pts = parseInt(c.points) || 0;
-            maxTotalScore += pts;
             
             let oldItem = oldDetails.find(d => d.q === c.text) || { score: pts, note: '' };
             let currentVal = oldItem.score;
@@ -969,6 +987,9 @@ async function editEvaluation(index) {
         focusConfirm: false,
         didOpen: () => {
             if(isCriteriaBased) {
+                // DOM yüklendikten sonra renkleri ve hesaplamayı tetikle
+                window.recalcTotalScore();
+                // Her satırın rengini manuel tetikle
                 criteriaList.forEach((c, i) => {
                     let pts = parseInt(c.points);
                     window.updateRowScore(i, pts); 
