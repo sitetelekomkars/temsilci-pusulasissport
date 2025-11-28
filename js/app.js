@@ -187,7 +187,43 @@ function loadContentData() {
 // =======================================================
 // === DİĞER FONKSİYONLAR (DEĞİŞTİRİLMEDİ) ===
 // =======================================================
-function renderCards(data) { activeCards = data; const container = document.getElementById('cardGrid'); container.innerHTML = ''; if (data.length === 0) { container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Kayıt Yok / Bulunamadı</div>'; return; } data.forEach((item, index) => { const safeTitle = escapeForJsString(item.title); const isFavorite = isFav(item.title); const favClass = isFavorite ? 'fas fa-star active' : 'far fa-star'; const newBadge = isNew(item.date) ? '<span class="new-badge">YENİ</span>' : ''; let rawText = item.text || ""; let formattedText = rawText.replace(/\n/g, '<br>').replace(/\*(.*?)\*/g, '<b>$1</b>'); let html = `<div class="card ${item.category}">${newBadge}<div class="icon-wrapper"><i class="fas fa-pencil-alt edit-icon" onclick="editContent(${index})"></i><i class="${favClass} fav-icon" onclick="toggleFavorite('${safeTitle}')"></i></div><div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div><div class="card-content" onclick="showCardDetail('${safeTitle}', '${escapeForJsString(item.text)}')"><div class="card-text-truncate">${highlightText(formattedText)}</div><div style="font-size:0.8rem; color:#999; margin-top:5px; text-align:right;">(Tamamını oku)</div></div><div class="script-box">${highlightText(item.script)}</div><div class="card-actions"><button class="btn btn-copy" onclick="copyText('${escapeForJsString(item.script)}')"><i class="fas fa-copy"></i> Kopyala</button>${item.code ? `<button class="btn btn-copy" style="background:var(--secondary); color:#333;" onclick="copyText('${escapeForJsString(item.code)}')">Kod</button>` : ''}${item.link ? `<a href="${item.link}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>` : ''}</div></div>`; container.innerHTML += html; }); }
+function renderCards(data) { 
+    activeCards = data; 
+    const container = document.getElementById('cardGrid'); 
+    container.innerHTML = ''; 
+    
+    if (data.length === 0) { 
+        container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Kayıt Yok / Bulunamadı</div>'; 
+        return; 
+    } 
+    
+    data.forEach((item, index) => { 
+        const safeTitle = escapeForJsString(item.title); 
+        const isFavorite = isFav(item.title); 
+        const favClass = isFavorite ? 'fas fa-star active' : 'far fa-star'; 
+        const newBadge = isNew(item.date) ? '<span class="new-badge">YENİ</span>' : ''; 
+        
+        // 🚩 CRITICAL FIX: Sadece isAdminMode (Admin Modu AÇIK) ise edit ikonunu göster
+        const editIconHtml = isAdminMode 
+            ? `<i class="fas fa-pencil-alt edit-icon" onclick="editContent(${index})"></i>` 
+            : ''; // Admin değilse boş dize gönder
+        
+        let rawText = item.text || ""; 
+        let formattedText = rawText.replace(/\n/g, '<br>').replace(/\*(.*?)\*/g, '<b>$1</b>'); 
+        
+        let html = `<div class="card ${item.category}">${newBadge}
+            <div class="icon-wrapper">
+                ${editIconHtml} 
+                <i class="${favClass} fav-icon" onclick="toggleFavorite('${safeTitle}')"></i>
+            </div>
+            <div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div>
+            <div class="card-content" onclick="showCardDetail('${safeTitle}', '${escapeForJsString(item.text)}')"><div class="card-text-truncate">${highlightText(formattedText)}</div><div style="font-size:0.8rem; color:#999; margin-top:5px; text-align:right;">(Tamamını oku)</div></div>
+            <div class="script-box">${highlightText(item.script)}</div>
+            <div class="card-actions"><button class="btn btn-copy" onclick="copyText('${escapeForJsString(item.script)}')"><i class="fas fa-copy"></i> Kopyala</button>${item.code ? `<button class="btn btn-copy" style="background:var(--secondary); color:#333;" onclick="copyText('${escapeForJsString(item.code)}')">Kod</button>` : ''}${item.link ? `<a href="${item.link}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>` : ''}</div>
+        </div>`; 
+        container.innerHTML += html; 
+    }); 
+}
 function highlightText(htmlContent) { if (!htmlContent) return ""; const searchTerm = document.getElementById('searchInput').value.trim(); if (!searchTerm) return htmlContent; const regex = new RegExp(`(${searchTerm})(?![^<]*>|[^<>]*<\/)`, "gi"); return htmlContent.replace(regex, '<span class="highlight">$1</span>'); }
 function showCardDetail(title, text) { Swal.fire({ title: title, html: `<div style="text-align:left; font-size:1rem; line-height:1.6;">${text.replace(/\\n/g,'<br>')}</div>`, showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa' }); }
 function filterContent() { const search = document.getElementById('searchInput').value.toLowerCase(); let filtered = database; if (currentCategory === 'fav') { filtered = filtered.filter(i => isFav(i.title)); } else if (currentCategory !== 'all') { filtered = filtered.filter(i => i.category === currentCategory); } if (search) { filtered = filtered.filter(i => (i.title && i.title.toLowerCase().includes(search)) || (i.text && i.text.toLowerCase().includes(search)) ); } renderCards(filtered); }
