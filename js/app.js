@@ -5,7 +5,7 @@
 const BAKIM_MODU = false; 
 
 // Apps Script URL'si, tüm veri alışverişi bu güvenli URL üzerinden yapılır.
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzbocJrJPU7_u0lvlnBQ8CrQYHCfy22G6UU8jRo5s6YYrl4rpTQ_a7oB5Ttf_NkGsUOiQg/exec"; 
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzbocJrJPU7_u0lvlnBQ8CrQYHCfy22G6UU8jRo5s6Yrl4rpTQ_a7oB5Ttf_NkGsUOiQg/exec"; 
 
 // ESKİ DATA_SHEET_URL GÜVENLİK NEDENİYLE KALDIRILMIŞTIR
 
