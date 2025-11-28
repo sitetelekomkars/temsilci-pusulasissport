@@ -1,8 +1,5 @@
-// =======================================================
-// === AYARLAR VE GÜVENLİ URL'LER ===
-// =======================================================
 
-const BAKIM_MODU = false; 
+const BAKIM_MODU = true; 
 
 // Apps Script URL'si
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzbocJrJPU7_u0lvlnBQ8CrQYHCfy22G6UU8jRo5s6Yrl4rpTQ_a7oB5Ttf_NkGsUOiQg/exec"; 
@@ -25,12 +22,7 @@ let allEvaluationsData = [];
 const MONTH_NAMES = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
 
 
-// =======================================================
-// === YARDIMCI VE HESAPLAMA FONKSİYONLARI (GLOBAL) ===
-// =======================================================
 
-// --- PUAN HESAPLAMA MOTORU (DÜZELTİLDİ) ---
-// Bu fonksiyonlar artık global, hem kayıt hem düzenleme ekranında çalışır.
 
 window.updateRowScore = function(index, max) {
     const slider = document.getElementById(`slider-${index}`);
