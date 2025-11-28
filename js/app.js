@@ -15,8 +15,8 @@ const VALID_CATEGORIES = ['Teknik', 'İkna', 'Kampanya', 'Bilgi'];
 // --- GLOBAL DEĞİŞKENLER ---
 let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [];
 let currentUser = "";
-let isAdminMode = false;      // YETKİ: Kullanıcı admin mi? (Sabit kalır)
-let isEditingActive = false;  // GÖRÜNÜM: Düzenleme modu açık mı? (Değişken)
+let isAdminMode = false;      // YETKİ
+let isEditingActive = false;  // GÖRÜNÜM
 let sessionTimeout;
 let activeCards = []; 
 let currentCategory = 'all';
@@ -77,10 +77,7 @@ function checkAdmin(role) {
     const editBtn = document.getElementById('quickEditBtn'); 
     const addBtn = document.getElementById('addCardBtn'); 
     
-    // YETKİ KONTROLÜ: Rol admin ise TRUE olur.
     isAdminMode = (role === "admin"); 
-    
-    // Düzenleme modu varsayılan olarak kapalı başlar
     isEditingActive = false;
     document.body.classList.remove('editing');
     
@@ -204,7 +201,6 @@ function renderCards(data) {
         const favClass = isFavorite ? 'fas fa-star active' : 'far fa-star'; 
         const newBadge = isNew(item.date) ? '<span class="new-badge">YENİ</span>' : ''; 
         
-        // Sadece Admin ise VE Düzenleme Modu açıksa ikon göster
         const editIconHtml = (isAdminMode && isEditingActive) 
             ? `<i class="fas fa-pencil-alt edit-icon" onclick="editContent(${index})"></i>` 
             : ''; 
@@ -233,10 +229,7 @@ function filterCategory(btn, cat) { currentCategory = cat; document.querySelecto
 function copyText(t) { navigator.clipboard.writeText(t.replace(/\\n/g, '\n')).then(() => Swal.fire({icon:'success', title:'Kopyalandı', toast:true, position:'top-end', showConfirmButton:false, timer:1500}) ); }
 
 function toggleEditMode() { 
-    // Eğer Admin değilse hiçbir şey yapma
     if (!isAdminMode) return; 
-    
-    // Düzenleme modunu tersine çevir
     isEditingActive = !isEditingActive; 
     document.body.classList.toggle('editing', isEditingActive); 
     
@@ -250,11 +243,9 @@ function toggleEditMode() {
         btn.innerHTML = '<i class="fas fa-pencil-alt"></i> Düzenlemeyi Aç'; 
     } 
     
-    // Ekranı güncelle
     if (currentCategory === 'fav') filterCategory(document.querySelector('.btn-fav'), 'fav'); 
     else renderCards(activeCards.length > 0 ? activeCards : database); 
     
-    // Açık olan modalları güncelle
     if(document.getElementById('guide-modal').style.display === 'flex') openGuide(); 
     if(document.getElementById('sales-modal').style.display === 'flex') openSales(); 
     if(document.getElementById('news-modal').style.display === 'flex') openNews(); 
@@ -494,7 +485,6 @@ function openNews() {
         let passiveStyle = i.status === 'Pasif' ? 'opacity:0.5; background:#eee;' : ''; 
         let passiveBadge = i.status === 'Pasif' ? '<span class="news-tag" style="background:#555; color:white;">PASİF</span>' : ''; 
         
-        // Sadece Admin VE Düzenleme Modu Açıksa
         let editBtn = (isAdminMode && isEditingActive) 
             ? `<i class="fas fa-pencil-alt edit-icon" style="top:0; right:0; font-size:0.9rem; padding:4px;" onclick="event.stopPropagation(); editNews(${index})"></i>` 
             : ''; 
@@ -509,7 +499,6 @@ function openGuide() {
     sportsData.forEach((s, index) => { 
         let pronHtml = s.pronunciation ? `<div class="pronunciation-badge">🗣️ ${s.pronunciation}</div>` : ''; 
         
-        // Sadece Admin VE Düzenleme Modu Açıksa
         let editBtn = (isAdminMode && isEditingActive) 
             ? `<i class="fas fa-pencil-alt edit-icon" style="top:5px; right:5px; z-index:50;" onclick="event.stopPropagation(); editSport('${escapeForJsString(s.title)}')"></i>` 
             : ''; 
@@ -523,7 +512,6 @@ function openSales() {
     const c = document.getElementById('sales-grid'); 
     c.innerHTML = ''; 
     salesScripts.forEach((s, index) => { 
-        // Sadece Admin VE Düzenleme Modu Açıksa
         let editBtn = (isAdminMode && isEditingActive) 
             ? `<i class="fas fa-pencil-alt edit-icon" style="top:10px; right:40px; z-index:50;" onclick="event.stopPropagation(); editSales('${escapeForJsString(s.title)}')"></i>` 
             : ''; 
@@ -538,11 +526,9 @@ function toggleSales(index) { const item = document.getElementById(`sales-${inde
 function populateMonthFilter() {
     const selectEl = document.getElementById('month-select-filter');
     selectEl.innerHTML = '';
-    
     const now = new Date();
     const currentMonth = now.getMonth();
     const currentYear = now.getFullYear();
-
     for (let i = 0; i < 6; i++) {
         let month = (currentMonth - i + 12) % 12; 
         let year = currentYear;
@@ -551,11 +537,9 @@ function populateMonthFilter() {
         const yearStr = year.toString();
         const value = `${monthStr}.${yearStr}`;
         const text = `${MONTH_NAMES[month]} ${yearStr}`;
-
         const option = document.createElement('option');
         option.value = value;
         option.textContent = text;
-        
         if (i === 0) { option.selected = true; }
         selectEl.appendChild(option);
     }
@@ -563,39 +547,23 @@ function populateMonthFilter() {
 
 function openQualityArea() {
     document.getElementById('quality-modal').style.display = 'flex';
-    
-    // Admin Paneli Görünümü (isAdminMode true ise görünür, düzenleme modundan etkilenmez)
     document.getElementById('admin-quality-controls').style.display = isAdminMode ? 'block' : 'none';
-    
     populateMonthFilter();
-    
-    // Metrikleri sıfırla
     document.getElementById('eval-count-span').innerText = `Dinleme Adeti: -`;
     document.getElementById('monthly-avg-span').innerText = `Ortalama: -`;
-
-    // Filtre değişikliği
     const monthSelect = document.getElementById('month-select-filter');
-    const newMonthSelect = monthSelect.cloneNode(true); // Listener çakışmasını önle
+    const newMonthSelect = monthSelect.cloneNode(true);
     monthSelect.parentNode.replaceChild(newMonthSelect, monthSelect);
-    
     newMonthSelect.addEventListener('change', function() {
-        // Eğer admin ise seçili temsilciyi, değilse kendisini baz al
         const target = isAdminMode ? document.getElementById('agent-select-admin').value : currentUser;
         fetchEvaluationsForAgent(target);
     });
-
     if (isAdminMode) {
         fetchUserListForAdmin().then(users => {
             const selectEl = document.getElementById('agent-select-admin');
             selectEl.innerHTML = users.map(u => `<option value="${u.name}" data-group="${u.group}">${u.name} (${u.group})</option>`).join('');
-            
             if(users.length > 0) selectEl.value = users[0].name;
-
-            // CHANGE EVENT EKLENDİ: Temsilci değişince veriyi çek
-            selectEl.onchange = function() {
-                fetchEvaluationsForAgent(this.value);
-            };
-
+            selectEl.onchange = function() { fetchEvaluationsForAgent(this.value); };
             fetchEvaluationsForAgent(selectEl.value); 
         });
     } else {
@@ -610,39 +578,30 @@ async function fetchEvaluationsForAgent(forcedName) {
     loader.style.display = 'block';
 
     let targetAgent = forcedName || currentUser;
-    
     if (isAdminMode) {
         const selectEl = document.getElementById('agent-select-admin');
-        // forcedName gelmediyse (manuel çağrılmadıysa) selectbox'tan al
         targetAgent = forcedName || selectEl.value; 
     }
-    
     if (!targetAgent) {
         loader.innerHTML = '<span style="color:red;">Lütfen listeden bir temsilci seçimi yapın.</span>';
         return;
     }
 
     const selectedMonth = document.getElementById('month-select-filter').value;
-
     try {
         const response = await fetch(SCRIPT_URL, { 
             method: 'POST', 
             headers: { "Content-Type": "text/plain;charset=utf-8" }, 
             body: JSON.stringify({ action: "fetchEvaluations", targetAgent: targetAgent, username: currentUser, token: getToken() }) 
         });
-        
         const data = await response.json();
-
         loader.style.display = 'none'; 
-        
         if (data.result === "success") {
             allEvaluationsData = data.evaluations;
-
             let filteredEvals = allEvaluationsData.filter(eval => {
                 const evalDate = eval.date.substring(3);
                 return evalDate === selectedMonth;
             });
-            
             const monthlyTotal = filteredEvals.reduce((sum, eval) => sum + (parseFloat(eval.score) || 0), 0);
             const monthlyCount = filteredEvals.length;
             const monthlyAvg = monthlyCount > 0 ? Math.round(monthlyTotal / monthlyCount) : 0;
@@ -665,7 +624,6 @@ async function fetchEvaluationsForAgent(forcedName) {
                      detailObj.forEach(item => {
                          let rowColor = item.score < item.max ? '#ffebee' : '#f9f9f9';
                          let noteDisplay = item.note ? `<br><em style="color: #d32f2f; font-size:0.8rem;">(Kırılım Nedeni: ${item.note})</em>` : '';
-                         
                          detailHtml += `<tr style="background:${rowColor}; border-bottom:1px solid #eee;">
                              <td style="padding:8px;">${item.q}${noteDisplay}</td>
                              <td style="padding:8px; font-weight:bold; text-align:right;">${item.score}/${item.max}</td>
@@ -674,8 +632,11 @@ async function fetchEvaluationsForAgent(forcedName) {
                      detailHtml += '</table>';
                  } catch (e) { detailHtml = `<p style="white-space:pre-wrap; margin:0; font-size:0.9rem;">${eval.details}</p>`; }
 
+                 // --- YENİ EKLENEN KISIM: EDİT BUTONU ---
+                 let editBtn = isAdminMode ? `<div style="position:absolute; top:10px; right:40px; cursor:pointer; color:#1976d2;" onclick="event.stopPropagation(); editEvaluation(${index})" title="Değerlendirmeyi Düzenle"><i class="fas fa-edit fa-lg"></i></div>` : '';
 
-                 html += `<div class="evaluation-summary" id="eval-summary-${index}" style="border:1px solid #ddd; border-left:5px solid ${scoreColor}; padding:15px; margin-bottom:10px; border-radius:6px; background:#fff; cursor:pointer;" onclick="toggleEvaluationDetail(${index})">
+                 html += `<div class="evaluation-summary" id="eval-summary-${index}" style="position:relative; border:1px solid #ddd; border-left:5px solid ${scoreColor}; padding:15px; margin-bottom:10px; border-radius:6px; background:#fff; cursor:pointer;" onclick="toggleEvaluationDetail(${index})">
+                     ${editBtn}
                      <div style="display:flex; justify-content:space-between; align-items:center;">
                          <div style="flex-direction: column; align-items: flex-start; display: flex;">
                              <span style="font-weight:bold; color:var(--primary); font-size:1.1rem;">📅 ${eval.date} <span style="font-size:0.8rem; font-weight:normal; color:#666;">(Loglama)</span></span>
@@ -693,11 +654,7 @@ async function fetchEvaluationsForAgent(forcedName) {
                  </div>`;
             });
             listEl.innerHTML = html;
-            
-        } else { 
-            listEl.innerHTML = `<p style="color:red; text-align:center;">Veri çekme hatası: ${data.message || 'Bilinmeyen Hata'}</p>`; 
-        }
-
+        } else { listEl.innerHTML = `<p style="color:red; text-align:center;">Veri çekme hatası: ${data.message || 'Bilinmeyen Hata'}</p>`; }
     } catch(err) {
         loader.style.display = 'none';
         listEl.innerHTML = `<p style="color:red; text-align:center;">Bağlantı hatası veya sunucuya ulaşılamadı.</p>`;
@@ -756,7 +713,6 @@ async function logEvaluationPopup() {
     const isCriteriaBased = criteriaList.length > 0;
     let maxTotalScore = 0;
 
-    // HTML Yapısını Oluştur
     let contentHtml = `
     <div class="eval-modal-wrapper">
         <div class="score-dashboard">
@@ -819,16 +775,13 @@ async function logEvaluationPopup() {
         </div>
     </div>`;
 
-    // Global Fonksiyonlar (Window'a atıyoruz ki HTML string içinden çağrılabilsin)
     window.updateRowScore = function(index, max) {
         const slider = document.getElementById(`slider-${index}`);
         const badge = document.getElementById(`badge-${index}`);
         const noteInput = document.getElementById(`note-${index}`);
         const row = document.getElementById(`row-${index}`);
         const val = parseInt(slider.value);
-
         badge.innerText = val;
-        
         if (val < max) {
             noteInput.style.display = 'block';
             badge.style.background = '#d32f2f';
@@ -848,17 +801,13 @@ async function logEvaluationPopup() {
         let currentTotal = 0;
         const sliders = document.querySelectorAll('.slider-input');
         sliders.forEach(s => currentTotal += parseInt(s.value));
-
         const liveScoreEl = document.getElementById('live-score');
         const ringEl = document.getElementById('score-ring');
-        
         liveScoreEl.innerText = currentTotal;
-
         let color = '#2e7d32'; 
         if(currentTotal < 50) color = '#d32f2f'; 
         else if(currentTotal < 85) color = '#ed6c02'; 
         else if(currentTotal < 95) color = '#fabb00'; 
-
         let percent = maxTotalScore > 0 ? (currentTotal / maxTotalScore) * 100 : currentTotal;
         ringEl.style.background = `conic-gradient(${color} ${percent}%, #444 ${percent}%)`;
     };
@@ -879,10 +828,8 @@ async function logEvaluationPopup() {
             const callId = document.getElementById('eval-callid').value; 
             const callDateRaw = document.getElementById('eval-calldate').value;
             const feedback = document.getElementById('eval-feedback').value;
-            
             const dateParts = callDateRaw.split('-');
             const formattedCallDate = dateParts.length === 3 ? `${dateParts[2]}.${dateParts[1]}.${dateParts[0]}` : callDateRaw;
-
             if (isCriteriaBased) {
                 let total = 0; 
                 let detailsArr = [];
@@ -918,6 +865,148 @@ async function logEvaluationPopup() {
                 fetchEvaluationsForAgent(agentName); 
             } 
             else { Swal.fire('Hata', d.message || 'Kaydedilemedi.', 'error'); }
+        }).catch(err => { Swal.fire('Hata', 'Sunucu hatası.', 'error'); });
+    }
+}
+
+// --- YENİ EKLENEN KISIM: DÜZENLEME FONKSİYONU ---
+async function editEvaluation(index) {
+    const evalData = allEvaluationsData[index];
+    if (!evalData) return;
+
+    const agentName = evalData.agent || evalData.agentName; 
+    
+    // Admin panelindeki seçimi güncelle
+    const selectEl = document.getElementById('agent-select-admin');
+    const selectedOption = Array.from(selectEl.options).find(opt => opt.value === agentName);
+    const agentGroup = selectedOption ? selectedOption.getAttribute('data-group') : 'Genel';
+
+    Swal.fire({ title: 'Düzenleme Modu Hazırlanıyor...', didOpen: () => Swal.showLoading() });
+
+    let criteriaList = [];
+    if(agentGroup === 'Telesatış' || agentGroup === 'Chat') { 
+        criteriaList = await fetchCriteria(agentGroup); 
+    }
+    Swal.close();
+
+    const isCriteriaBased = criteriaList.length > 0;
+    let maxTotalScore = 0;
+    let oldDetails = [];
+    try { oldDetails = JSON.parse(evalData.details); } catch(e) { oldDetails = []; }
+
+    let contentHtml = `
+    <div class="eval-modal-wrapper" style="border-top: 5px solid #1976d2;">
+        <div class="score-dashboard">
+            <div>
+                <div style="font-size:0.9rem; opacity:0.8;">DÜZENLENEN</div>
+                <div style="font-size:1.2rem; font-weight:bold; color:#1976d2;">${agentName}</div>
+                <div style="font-size:0.8rem; opacity:0.7;">(İtiraz / Düzeltme)</div>
+            </div>
+            <div class="score-circle-outer" id="score-ring">
+                <div class="score-circle-inner" id="live-score">${evalData.score}</div>
+            </div>
+        </div>
+
+        <div class="eval-header-card">
+            <div>
+                <label style="font-size:0.8rem; font-weight:bold; color:#555;">Call ID (Değiştirilemez)</label>
+                <input id="eval-callid" class="swal2-input" style="height:35px; margin:0; width:100%; font-size:0.9rem; background:#eee;" value="${evalData.callId}" readonly>
+            </div>
+            <div>
+                <label style="font-size:0.8rem; font-weight:bold; color:#555;">Çağrı Tarihi</label>
+                <input type="text" class="swal2-input" style="height:35px; margin:0; width:100%; font-size:0.9rem; background:#eee;" value="${evalData.callDate}" readonly>
+            </div>
+        </div>
+    `;
+
+    if (isCriteriaBased) {
+        contentHtml += `<div class="criteria-container">`;
+        criteriaList.forEach((c, i) => {
+            let pts = parseInt(c.points) || 0;
+            maxTotalScore += pts;
+            
+            let oldItem = oldDetails.find(d => d.q === c.text) || { score: pts, note: '' };
+            let currentVal = oldItem.score;
+            let currentNote = oldItem.note || '';
+
+            contentHtml += `
+            <div class="criteria-row" id="row-${i}">
+                <div class="criteria-header">
+                    <span>${i+1}. ${c.text}</span>
+                    <span style="font-size:0.8rem; color:#999;">Max: ${pts}</span>
+                </div>
+                <div class="criteria-controls">
+                    <input type="range" class="custom-range slider-input" id="slider-${i}" min="0" max="${pts}" value="${currentVal}" data-index="${i}" oninput="updateRowScore(${i}, ${pts})">
+                    <span class="score-badge" id="badge-${i}">${currentVal}</span>
+                </div>
+                <input type="text" id="note-${i}" class="note-input" placeholder="Kırılım nedeni..." value="${currentNote}" style="display:${currentVal < pts ? 'block' : 'none'};">
+            </div>`;
+        });
+        contentHtml += `</div>`;
+    } else {
+        contentHtml += `
+        <div style="padding:15px; border:1px dashed #ccc; background:#fff; border-radius:8px; text-align:center;">
+            <label style="font-weight:bold;">Manuel Puan</label><br>
+            <input id="eval-manual-score" type="number" class="swal2-input" value="${evalData.score}" min="0" max="100" style="width:100px; text-align:center; font-size:1.5rem; font-weight:bold;">
+        </div>
+        <textarea id="eval-details" class="swal2-textarea" placeholder="Detaylar...">${typeof evalData.details === 'string' ? evalData.details : ''}</textarea>
+        `;
+    }
+
+    contentHtml += `
+        <div>
+            <label style="font-size:0.85rem; font-weight:bold; color:#333;">Revize Geri Bildirim</label>
+            <textarea id="eval-feedback" class="swal2-textarea" style="margin-top:5px; height:80px;">${evalData.feedback || ''}</textarea>
+        </div>
+    </div>`;
+
+    const { value: formValues } = await Swal.fire({
+        html: contentHtml,
+        width: '600px',
+        showCancelButton: true,
+        confirmButtonText: '💾 Güncelle',
+        cancelButtonText: 'İptal',
+        focusConfirm: false,
+        didOpen: () => {
+            if(isCriteriaBased) {
+                criteriaList.forEach((c, i) => {
+                    let pts = parseInt(c.points);
+                    window.updateRowScore(i, pts); 
+                });
+            }
+        },
+        preConfirm: () => {
+            const callId = document.getElementById('eval-callid').value;
+            const feedback = document.getElementById('eval-feedback').value;
+            
+            if (isCriteriaBased) {
+                let total = 0; 
+                let detailsArr = [];
+                criteriaList.forEach((c, i) => { 
+                    let val = parseInt(document.getElementById(`slider-${i}`).value) || 0; 
+                    let maxPoints = parseInt(c.points) || 0;
+                    let note = document.getElementById(`note-${i}`).value;
+                    total += val; 
+                    detailsArr.push({ q: c.text, max: maxPoints, score: val, note: note });
+                });
+                return { agentName, callId, score: total, details: JSON.stringify(detailsArr), feedback };
+            } else {
+                const score = document.getElementById('eval-manual-score').value; 
+                const details = document.getElementById('eval-details').value;
+                return { agentName, callId, score: parseInt(score), details: details, feedback };
+            }
+        }
+    });
+
+    if (formValues) {
+        Swal.fire({ title: 'Güncelleniyor...', didOpen: () => { Swal.showLoading() } });
+        fetch(SCRIPT_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ action: "updateEvaluation", username: currentUser, token: getToken(), ...formValues }) })
+        .then(r => r.json()).then(d => {
+            if (d.result === "success") { 
+                Swal.fire({ icon: 'success', title: 'Güncellendi', text: 'Puan ve detaylar revize edildi.', timer: 1500, showConfirmButton: false }); 
+                fetchEvaluationsForAgent(agentName); 
+            } 
+            else { Swal.fire('Hata', d.message || 'Güncellenemedi.', 'error'); }
         }).catch(err => { Swal.fire('Hata', 'Sunucu hatası.', 'error'); });
     }
 }
