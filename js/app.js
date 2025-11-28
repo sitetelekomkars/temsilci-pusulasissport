@@ -572,6 +572,57 @@ function openSales() {
 function toggleSales(index) { const item = document.getElementById(`sales-${index}`); const icon = document.getElementById(`icon-${index}`); item.classList.toggle('active'); if(item.classList.contains('active')){ icon.classList.replace('fa-chevron-down', 'fa-chevron-up'); } else { icon.classList.replace('fa-chevron-up', 'fa-chevron-down'); } }
 
 // --- KALİTE FONKSİYONLARI ---
+// --- KALİTE FONKSİYONLARI ---
+
+async function exportQualityReport() {
+    // Seçili ayı al
+    const monthSelect = document.getElementById('month-select-filter');
+    let monthVal = monthSelect ? monthSelect.value : '';
+
+    // "all" veya boş ise hepsi
+    if (!monthVal || monthVal === 'all') {
+        monthVal = '';
+    }
+
+    try {
+        Swal.fire({
+            title: 'Rapor hazırlanıyor...',
+            didOpen: () => Swal.showLoading(),
+            allowOutsideClick: false,
+            allowEscapeKey: false
+        });
+
+        const response = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({
+                action: "exportEvaluationsXlsx",
+                username: currentUser,
+                token: getToken(),
+                month: monthVal
+            })
+        });
+
+        const data = await response.json();
+        Swal.close();
+
+        if (data.result === "success" && data.url) {
+            // Google Sheet linkini yeni sekmede aç – oradan XLSX indirirsin
+            window.open(data.url, "_blank");
+        } else {
+            Swal.fire(
+                'Hata',
+                data.message || 'Rapor oluşturulamadı.',
+                'error'
+            );
+        }
+    } catch (err) {
+        Swal.close();
+        console.error('Export error:', err);
+        Swal.fire('Hata', 'Beklenmeyen bir hata oluştu: ' + err, 'error');
+    }
+}
+
 
 function populateMonthFilter() {
     const selectEl = document.getElementById('month-select-filter');
