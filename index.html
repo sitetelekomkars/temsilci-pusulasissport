@@ -12,10 +12,8 @@
     
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-
 </head>
 <body>
-
     <div id="login-screen">
         <div class="login-card">
             <i class="fas fa-lock fa-3x" style="color: #0e1b42;"></i>
@@ -28,7 +26,6 @@
             <p id="error-msg" style="color:red; display:none; margin-top:10px;">Hatalı Kullanıcı Adı veya Şifre!</p>
         </div>
     </div>
-
     <div id="maintenance-screen">
         <div class="maintenance-content">
             <span style="font-size: 4rem;">👨‍🏫</span>
@@ -36,7 +33,6 @@
             <p>Doğuş bey yine bir şeyler deniyor... 🚀</p>
         </div>
     </div>
-
     <div id="main-app">
         <div class="header">
             <div class="header-top">
@@ -92,7 +88,6 @@
             <div class="grid" id="cardGrid"></div>
         </div>
     </div>
-
     <div id="news-modal" class="modal-overlay">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('news-modal')">&times;</span>
@@ -100,14 +95,12 @@
             <div id="news-container"></div>
         </div>
     </div>
-
     <div id="wizard-modal" class="modal-overlay">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('wizard-modal')">&times;</span>
             <div id="wizard-body"></div>
         </div>
     </div>
-
     <div id="guide-modal" class="modal-overlay">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('guide-modal')">&times;</span>
@@ -116,7 +109,6 @@
             <div class="guide-grid" id="guide-grid"></div>
         </div>
     </div>
-
     <div id="sales-modal" class="modal-overlay">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('sales-modal')">&times;</span>
@@ -125,7 +117,6 @@
             <div class="sales-grid" id="sales-grid"></div>
         </div>
     </div>
-
     <div id="penalty-modal" class="modal-overlay">
         <div class="modal-content" style="max-width: 650px; background: #1a1a1a; border: 1px solid #333; min-height:600px; display:flex; flex-direction:column;">
             <span class="close-modal" style="color:white; z-index:1000;" onclick="closeModal('penalty-modal')">&times;</span>
@@ -194,7 +185,6 @@
             </div>
         </div>
     </div>
-
     <div id="quality-modal" class="modal-overlay">
         <div class="modal-content" style="max-width: 900px;">
             <span class="close-modal" onclick="closeModal('quality-modal')">&times;</span>
@@ -202,16 +192,21 @@
             
             <div id="admin-quality-controls" style="text-align:center; display:none;">
                 <div class="quality-controls-top">
-                    <button class="add-btn" style="background:var(--accent); border-color:var(--accent);" onclick="logEvaluationPopup()">
-                        <i class="fas fa-plus"></i> Yeni Değerlendirme Ekle
-                    </button>
+                    <div style="display:flex; gap:15px;">
+                        <button class="add-btn" style="background:var(--accent); border-color:var(--accent);" onclick="logEvaluationPopup()">
+                            <i class="fas fa-plus"></i> Yeni Değerlendirme Ekle
+                        </button>
+                        <!-- YENİ RAPOR İNDİR BUTONU -->
+                        <button class="admin-btn" style="background:var(--primary); color:white; border-color:var(--primary);" onclick="exportEvaluations()">
+                            <i class="fas fa-file-csv"></i> Rapor İndir
+                        </button>
+                    </div>
                     <div style="font-weight:bold; display:flex; align-items:center; gap: 5px;">
                         <label>Temsilci:</label>
                         <select id="agent-select-admin" class="swal2-input" onchange="fetchEvaluationsForAgent()" style="width: 200px;"></select>
                     </div>
                 </div>
             </div>
-
             <div id="quality-content" style="padding: 20px; border: 1px solid #eee; border-radius: 8px; margin-top: 5px;">
                 
                 <div class="quality-filter-group">
@@ -224,19 +219,14 @@
                         <i class="fas fa-bullseye"></i> <span id="monthly-avg-span">Ortalama: -</span>
                     </span>
                 </div>
-
                 <div id="quality-loader" style="text-align:center; color:#999; font-style:italic;">Değerlendirmeler yükleniyor...</div>
                 <div id="evaluations-list"></div>
             </div>
-
         </div>
     </div>
-
     <div class="crafted-by-badge">Crafted by Doğuş Yalçınkaya</div>
-
     
     <script src="js/app.js"></script>
     
 </body>
 </html>
-
