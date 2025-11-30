@@ -48,13 +48,24 @@ margin-top: 10px; }
 #main-app { display: none; }
  
 /* HEADER */
-.header { background-color: #0e1b42; border-bottom: 3px
-solid #d32f2f; color: white; padding: 20px 30px; position: sticky; top: 0;
-z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-.header-top { display: flex; justify-content: space-between;
-align-items: center; margin-bottom: 15px; }
-.header-controls { display: flex; align-items: center;
-gap:10px; }
+
+.header { 
+    background: linear-gradient(90deg, #0e1b42 0%, #162450 100%); /* Düz renk yerine degrade */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Kalın kırmızı çizgi yerine ince, zarif çizgi */
+    color: white; 
+    padding: 10px 20px; /* BOŞLUKLAR AZALTILDI (Eski: 20px 30px) */
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3); /* Gölge yumuşatıldı */
+}
+
+.header-top { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 8px; /* BOŞLUK AZALTILDI (Eski: 15px) */
+}
 .edit-toggle-btn, .add-btn { background: rgba(255, 255, 255,
 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #fff; padding: 8px
 20px; border-radius: 4px; cursor: pointer; font-weight: 600; font-size: 0.9rem;
@@ -716,3 +727,8 @@ border: 1px solid #ccc; }
 }
 .note-input:focus { border-color: var(--secondary); outline:
 none; }
+/* Bunu dosyanın en altına ekleyebilirsiniz */
+.header h1 i {
+    color: #fabb00;
+    text-shadow: 0 0 10px rgba(250, 187, 0, 0.4);
+}
