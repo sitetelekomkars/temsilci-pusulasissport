@@ -1,7 +1,7 @@
 :root { 
     --primary: #0e1b42; 
     --secondary: #fabb00; 
-    --bg: #f4f6f8; /* Daha kurumsal, göz yormayan gri */
+    --bg: #f4f6f8; 
     --card-bg: #ffffff; 
     --accent: #d32f2f; 
     --success: #2e7d32; 
@@ -47,10 +47,10 @@ body {
 
 /* --- PROFESSIONAL HEADER STRUCTURE --- */
 .header { 
-    background: #0e1b42; /* Düz kurumsal lacivert */
+    background: #0e1b42; 
     border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
     color: white; 
-    padding: 15px 25px 0 25px; /* Alt padding 0 çünkü ticker en altta */
+    padding: 15px 25px 0 25px; 
     position: sticky; top: 0; 
     z-index: 1000; 
     box-shadow: 0 2px 10px rgba(0,0,0,0.15); 
@@ -92,20 +92,20 @@ body {
     display: flex; 
     align-items: center; 
     gap: 20px; 
-    padding-bottom: 10px; /* Ticker ile mesafe */
+    padding-bottom: 10px; 
 }
 
 /* Search Bar - Geniş ve Net */
 .search-container { 
     position: relative; 
-    width: 350px; /* Genişlik artırıldı */
+    width: 350px; 
     flex-shrink: 0;
 }
 #searchInput { 
     width: 100%; padding: 10px 15px 10px 40px;
-    background: #1a264d; /* Header'dan bir ton açık */
+    background: #1a264d; 
     border: 1px solid #2d3b66;
-    border-radius: 6px; /* Kutu hissi ama yumuşak */
+    border-radius: 6px; 
     color: white;
     font-size: 0.9rem;
     box-sizing: border-box; 
@@ -113,10 +113,10 @@ body {
 }
 #searchInput::placeholder { color: rgba(255, 255, 255, 0.4); }
 #searchInput:focus {
-    background: #23305e;
+    background: rgba(255, 255, 255, 0.25); /* YENİ: Focus olunca daha belirgin */
     border-color: #fabb00;
     outline: none;
-    box-shadow: 0 0 0 3px rgba(250, 187, 0, 0.1);
+    box-shadow: 0 0 0 4px rgba(250, 187, 0, 0.15); /* YENİ: Glow efekti */
 }
 .search-icon { 
     position: absolute; left: 12px; top: 50%; transform: translateY(-50%); 
@@ -127,13 +127,12 @@ body {
 .filter-container { 
     display: flex; 
     gap: 8px; 
-    overflow-x: auto; /* Sığmazsa yana kayar */
-    padding-bottom: 5px; /* Scrollbar için yer */
+    overflow-x: auto; 
+    padding-bottom: 5px; 
     flex-grow: 1;
-    mask-image: linear-gradient(to right, black 95%, transparent 100%); /* Sağa doğru silikleşme */
+    mask-image: linear-gradient(to right, black 95%, transparent 100%); 
     -webkit-mask-image: linear-gradient(to right, black 95%, transparent 100%);
 }
-/* Scrollbar'ı gizle (şık görünüm için) */
 .filter-container::-webkit-scrollbar { height: 4px; }
 .filter-container::-webkit-scrollbar-track { background: transparent; }
 .filter-container::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 4px; }
@@ -162,18 +161,18 @@ body {
 
 /* --- TICKER (THE SLIM BOTTOM LINE) --- */
 .news-ticker-box { 
-    width: calc(100% + 50px); /* Header padding'ini aşmak için */
-    margin-left: -25px; /* Sola yasla */
-    background: rgba(0, 0, 0, 0.2); /* Çok hafif koyuluk */
+    width: calc(100% + 50px); 
+    margin-left: -25px; 
+    background: rgba(0, 0, 0, 0.2); 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 0 25px; 
-    height: 32px; /* İncecik şerit */
+    height: 32px; 
     display: flex; 
     align-items: center; 
     gap: 15px; 
     cursor: pointer; 
     transition: 0.2s;
-    font-family: 'Consolas', 'Monaco', monospace; /* Teknik font */
+    font-family: 'Consolas', 'Monaco', monospace; 
 }
 .news-ticker-box:hover { background: rgba(0, 0, 0, 0.4); }
 
@@ -387,3 +386,12 @@ body.editing .edit-icon { display: block !important; }
 .score-badge { background: #333; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; min-width: 30px; text-align: center; }
 .note-input { width: 100%; border: 1px solid #e0e0e0; border-radius: 4px; padding: 6px; font-size: 0.85rem; background: #fff; }
 .note-input:focus { border-color: var(--secondary); outline: none; }
+
+/* --- CUSTOM SCROLLBAR --- */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #0e1b42; border-left: 1px solid rgba(255,255,255,0.05); }
+::-webkit-scrollbar-thumb { background: #3e4c7a; border-radius: 5px; border: 2px solid #0e1b42; }
+::-webkit-scrollbar-thumb:hover { background: #fabb00; }
+
+/* --- TEXT SELECTION --- */
+::selection { background: #fabb00; color: #0e1b42; text-shadow: none; }
