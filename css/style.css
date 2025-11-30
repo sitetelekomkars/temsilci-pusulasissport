@@ -45,6 +45,9 @@ body {
     color: #0e1b42; transition: 0.2s;
 }
 .login-btn:hover { background: #e0a800; }
+.loading-text { font-size: 0.8rem; color: #666; margin-top: 10px; display: none; }
+#maintenance-screen { display: none !important; }
+#main-app { display: none; }
 
 /* --- HEADER YAPISI (KURUMSAL) --- */
 .header { 
@@ -58,12 +61,13 @@ body {
     flex-direction: column;
 }
 
-/* İçeriği Ortalamak için Limit */
+/* İçeriği Ortalamak ve Sınırlamak için */
 .header-content-limit {
     width: 100%;
-    max-width: 1600px; /* Çok geniş ekranlarda yayılmasın */
+    max-width: 1600px; 
     margin: 0 auto;
     padding: 15px 25px 5px 25px; /* Üst/Yan boşluklar */
+    box-sizing: border-box;
 }
 
 /* Üst Bar: Marka ve Kontroller */
@@ -102,20 +106,21 @@ body {
     color: var(--secondary); font-size: 0.8rem;
 }
 
-/* --- ORTA KONTROL ALANI (Dengeli) --- */
+/* --- ORTA KONTROL ALANI (Dengeli & Ortalanmış) --- */
 .control-wrapper { 
     display: flex; 
     align-items: center; /* Dikey ortala */
-    justify-content: center; /* YATAY ORTALA (Önemli!) */
+    justify-content: center; /* YATAY ORTALA */
     gap: 20px; 
     padding-bottom: 10px;
     position: relative;
+    flex-wrap: wrap; /* Küçük ekranda taşarsa alt satıra geçsin */
 }
 
 /* Arama Kutusu */
 .search-container { 
     position: relative; 
-    width: 320px; /* İdeal genişlik */
+    width: 320px; 
     flex-shrink: 0;
 }
 #searchInput { 
@@ -131,7 +136,7 @@ body {
 #searchInput::placeholder { color: rgba(255, 255, 255, 0.4); }
 #searchInput:focus {
     background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255,255,255,0.5); /* Sarı yerine beyaz border */
+    border-color: rgba(255,255,255,0.5); 
     outline: none;
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05);
 }
@@ -147,8 +152,7 @@ body {
     align-items: center;
     overflow-x: auto;
     padding-bottom: 2px;
-    /* Fazlalıklar için */
-    max-width: 800px;
+    max-width: 100%;
 }
 .filter-container::-webkit-scrollbar { height: 0px; } /* Scrollbar gizle */
 
@@ -161,13 +165,14 @@ body {
     border-radius: 4px; 
     cursor: pointer; 
     transition: all 0.2s ease; 
-    display: flex; align-items: center; gap: 8px; /* İkon boşluğu arttı */
+    display: flex; align-items: center; gap: 8px; 
     font-weight: 500; font-size: 0.8rem; 
     white-space: nowrap; 
 }
 .filter-btn:hover { 
     background-color: rgba(255, 255, 255, 0.05); 
     color: white;
+    transform: translateY(-1px);
 }
 /* Aktif Buton */
 .filter-btn.active { 
@@ -196,6 +201,7 @@ body {
     cursor: pointer; 
     transition: 0.2s;
     margin-top: 5px;
+    box-sizing: border-box;
 }
 .news-ticker-box:hover { background: rgba(0, 0, 0, 0.3); }
 
@@ -203,6 +209,7 @@ body {
     font-size: 0.65rem; color: #999; font-weight: 700; 
     display: flex; align-items: center; gap: 6px; 
     letter-spacing: 0.5px;
+    min-width: fit-content;
 }
 .pulse-dot { width: 6px; height: 6px; background: var(--secondary); border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
 
@@ -257,16 +264,19 @@ body.editing .edit-icon { display: block !important; }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
-::-webkit-scrollbar-track { background: #f1f1f1; }
-::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: #a0aec0; }
+::-webkit-scrollbar-track { background: #0e1b42; border-left:1px solid rgba(255,255,255,0.05); }
+::-webkit-scrollbar-thumb { background: #3e4c7a; border-radius: 4px; border:1px solid #0e1b42; }
+::-webkit-scrollbar-thumb:hover { background: #fabb00; }
+
+/* Text Selection */
+::selection { background: #fabb00; color: #0e1b42; text-shadow: none; }
 
 .crafted-by-badge { position: fixed; bottom: 5px; right: 10px; font-family: sans-serif; font-size: 0.65rem; color: #0e1b42; opacity: 0.2; z-index: 9999; pointer-events: none; }
 
 @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-/* Penalty & Game specific styles remain mostly same but cleaned up */
+/* Penalty & Game specific styles */
 .penalty-stats { background: #111; color: #fff; padding: 10px 15px; border-radius: 6px; display:flex; justify-content:space-between; font-weight:700; }
 .penalty-stats span span { color: var(--secondary); }
 .joker-btn { background: #6a1b9a; color: white; padding: 8px; border-radius: 4px; border:none; cursor:pointer; flex:1; margin:0 2px; }
@@ -274,3 +284,48 @@ body.editing .edit-icon { display: block !important; }
 .penalty-btn { padding: 12px; background: #fff; border: 1px solid #ccc; border-radius: 6px; cursor: pointer; text-align: left; font-weight: 500; }
 .penalty-btn:hover { background: #f0f0f0; }
 .penalty-field { background: radial-gradient(circle, #4caf50, #2e7d32); height: 350px; border-radius: 6px; position:relative; overflow:hidden; margin-top:10px; border:2px solid #fff; }
+.penalty-btn.wrong-first-try { background: #d32f2f !important; color: white !important; opacity: 0.8; cursor: not-allowed; }
+.stadium-stands { position: absolute; top: 0; left: 0; width: 100%; height: 120px; background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, #0d1117 0%, #161b22 100%); background-size: 10px 10px, 100% 100%; z-index: 0; }
+.grass-stripes { position: absolute; top: 120px; left: 0; width: 100%; height: 100%; background: repeating-linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 40px, transparent 40px, transparent 80px); z-index: 0; transform: rotateX(20deg) scale(1.1); transform-origin: top; }
+.goal-container { position: relative; width: 200px; height: 100px; margin: 40px auto 0 auto; transform-style: preserve-3d; z-index: 2; perspective: 600px; }
+.goal-top-bar { position: absolute; top: 0; left: 0; width: 100%; height: 6px; background: #eee; z-index: 5; }
+.goal-post-left, .goal-post-right { position: absolute; top: 0; width: 6px; height: 100%; background: #eee; z-index: 5; }
+.goal-post-left { left: 0; } .goal-post-right { right: 0; }
+.goal-net { position: absolute; top: 3px; left: 3px; width: 194px; height: 97px; background: rgba(255,255,255,0.2); transform: translateZ(-20px); }
+.keeper-wrapper { position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%); width: 40px; height: 80px; z-index: 10; transition: all 0.4s; }
+.player-figure { width:100%; height:100%; position:relative; }
+.head { width: 16px; height: 18px; background: #ffcc80; border-radius: 50%; margin: 0 auto; }
+.torso { width: 26px; height: 30px; background: #ffeb3b; margin: -2px auto 0; border-radius: 4px; }
+.shorts { width: 26px; height: 18px; background: #222; margin: 0 auto; }
+.legs { width: 26px; margin: 0 auto; position:relative; }
+.leg { width: 8px; height: 25px; background: #222; position:absolute; top:0; }
+.leg.left { left: 2px; } .leg.right { right: 2px; }
+.arms { position: absolute; top: 20px; width: 100%; }
+.arm { width: 8px; height: 25px; background: #ffeb3b; position:absolute; }
+.arm.left { left: -6px; transform: rotate(20deg); } .arm.right { right: -6px; transform: rotate(-20deg); }
+.gloves { width: 10px; height: 10px; background: #fff; position:absolute; bottom:-5px; border-radius:50%; }
+.ball-wrapper { position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; z-index: 15; transition: 0.6s; }
+.football { width: 100%; height: 100%; background: #fff; border-radius: 50%; border:1px solid #333; }
+.shooter-wrapper { position: absolute; bottom: -30px; left: 45%; transform: translateX(-50%) scale(1.2); width: 40px; height: 80px; z-index: 20; transition:0.3s; }
+.shooter-wrapper .torso { background: #d32f2f; }
+.shooter-wrapper .arm { background: #d32f2f; }
+.shooter-wrapper .leg { background: #d32f2f; }
+.goal-message { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%) scale(0); font-size: 3rem; color: #fabb00; font-weight: 900; z-index: 100; transition: 0.3s; text-shadow:0 0 10px #000; }
+.goal-message.show { transform: translate(-50%, -50%) scale(1); }
+.keeper-dive-left { transform: translateX(-80px) rotate(-70deg) !important; }
+.keeper-dive-right { transform: translateX(80px) rotate(70deg) !important; }
+.ball-shoot-left-top { bottom: 250px !important; left: 35% !important; transform: scale(0.6); }
+.ball-shoot-right-top { bottom: 250px !important; left: 65% !important; transform: scale(0.6); }
+.ball-shoot-left-low { bottom: 220px !important; left: 35% !important; transform: scale(0.6); }
+.ball-shoot-right-low { bottom: 220px !important; left: 65% !important; transform: scale(0.6); }
+.ball-miss-left { bottom: 250px !important; left: 10% !important; opacity: 0; }
+.ball-miss-right { bottom: 250px !important; left: 90% !important; opacity: 0; }
+.shooter-run { bottom: 60px !important; }
+
+/* MODAL NEWS & OTHERS */
+.news-item { border-left: 3px solid var(--secondary); padding-left: 15px; margin-bottom: 15px; }
+.news-title { color: var(--primary); font-weight: bold; }
+.guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+.guide-item { padding: 15px; border: 1px solid #eee; text-align: center; cursor: pointer; transition:0.2s; }
+.guide-item:hover { border-color: var(--secondary); transform:translateY(-3px); }
+.guide-icon { font-size: 2rem; color: var(--primary); margin-bottom: 10px; }
