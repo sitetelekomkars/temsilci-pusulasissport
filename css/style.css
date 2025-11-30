@@ -9,7 +9,7 @@
     --warning: #ed6c02; 
     --sales: #10b981; 
     --quiz: #8e24aa; 
-    --text-dark: #2c3e50; 
+    --text-dark: #2c3e50;
     --text-light: #95a5a6;
 }
 
@@ -23,101 +23,191 @@ body {
 }
 
 /* --- LOGIN SCREEN --- */
-#login-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5000; display: flex; justify-content: center; align-items: center; background: #0e1b42; }
-.login-card { background: #1c2438; padding: 40px; border-radius: 12px; text-align: center; width: 300px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.05); }
-.login-input { width: 100%; padding: 12px; margin: 8px 0; background: #2c344a; color: #fff; border: 1px solid #3a4563; border-radius: 6px; text-align: center; box-sizing: border-box; font-size: 0.9rem; outline: none; transition: 0.3s; }
+#login-screen { 
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5000; 
+    display: flex; justify-content: center; align-items: center;
+    background: #0e1b42; 
+}
+.login-card {
+    background: #1c2438; padding: 40px; border-radius: 12px; text-align: center;
+    width: 300px; box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+.login-input { 
+    width: 100%; padding: 12px; margin: 8px 0; background: #2c344a; color: #fff; 
+    border: 1px solid #3a4563; border-radius: 6px; text-align: center; box-sizing: border-box; 
+    font-size: 0.9rem; outline: none; transition: 0.3s;
+}
 .login-input:focus { border-color: var(--secondary); background: #323c54; }
-.login-btn { width: 100%; padding: 12px; background: var(--secondary); border: none; border-radius: 6px; font-weight: 700; cursor: pointer; margin-top: 15px; color: #0e1b42; transition: 0.2s; }
+.login-btn { 
+    width: 100%; padding: 12px; background: var(--secondary); border: none; 
+    border-radius: 6px; font-weight: 700; cursor: pointer; margin-top: 15px; 
+    color: #0e1b42; transition: 0.2s;
+}
 .login-btn:hover { background: #e0a800; }
 .loading-text { font-size: 0.8rem; color: #666; margin-top: 10px; display: none; }
 #maintenance-screen { display: none !important; }
 #main-app { display: none; }
 
 /* --- HEADER YAPISI --- */
-.header { background: #0e1b42; color: white; padding: 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
-.header-content-limit { width: 100%; max-width: 1600px; margin: 0 auto; padding: 15px 25px 5px 25px; box-sizing: border-box; }
-.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.header { 
+    background: #0e1b42; 
+    color: white; 
+    padding: 0; 
+    position: sticky; top: 0; 
+    z-index: 1000; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    display: flex;
+    flex-direction: column;
+}
 
-/* Marka */
+.header-content-limit {
+    width: 100%;
+    max-width: 1600px; 
+    margin: 0 auto;
+    padding: 10px 25px 0 25px; 
+    box-sizing: border-box;
+}
+
+.header-top { 
+    display: flex; justify-content: space-between; align-items: center; 
+    margin-bottom: 8px; 
+}
+
 .brand-area { display: flex; align-items: center; gap: 12px; }
-.brand-icon { color: var(--secondary); font-size: 1.8rem; text-shadow: 0 0 15px rgba(250, 187, 0, 0.4); }
-.brand-text { display: flex; flex-direction: column; line-height: 1.1; }
-.brand-text .main-text { font-size: 1.2rem; font-weight: 700; color: #fff; letter-spacing: 0.5px; }
-.brand-text .sub-text { font-size: 0.85rem; font-weight: 300; color: rgba(255,255,255,0.6); }
+.brand-icon { color: var(--secondary); font-size: 1.6rem; text-shadow: 0 0 15px rgba(250, 187, 0, 0.4); }
+.brand-text { display: flex; flex-direction: column; line-height: 1; }
+.brand-text .main-text { font-size: 1.1rem; font-weight: 700; color: #fff; letter-spacing: 0.5px; }
+.brand-text .sub-text { font-size: 0.75rem; font-weight: 300; color: rgba(255,255,255,0.6); }
 
-/* Header Butonları */
 .header-controls { display: flex; align-items: center; gap:10px; }
-.action-btn { background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.1); color: #ccc; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: 500; font-size: 0.8rem; display: flex; align-items: center; gap: 6px; transition: all 0.2s; }
+
+.action-btn { 
+    background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); 
+    color: #ccc; padding: 5px 10px; border-radius: 4px; cursor: pointer; 
+    font-weight: 500; font-size: 0.75rem; display: flex; align-items: center; 
+    gap: 6px; transition: all 0.2s; 
+}
 .action-btn:hover { background: rgba(255, 255, 255, 0.15); color: #fff; }
 .action-btn.active { background: var(--secondary); border-color: var(--secondary); color: #0e1b42; }
 
-/* KULLANICI MENÜSÜ & DROPDOWN */
+/* KULLANICI MENÜSÜ */
 .user-menu-wrapper { position: relative; }
 .user-btn { background: transparent; border: none; color: #eee; padding: 6px 10px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; border-radius: 4px; border: 1px solid transparent; transition: all 0.2s; }
 .user-btn:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); }
-.user-avatar { width: 28px; height: 28px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary); font-size: 0.8rem; }
+.user-avatar { width: 26px; height: 26px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary); font-size: 0.8rem; }
 
-/* Dropdown Tasarımı */
-.dropdown-menu { 
-    display: none; 
-    position: absolute; 
-    right: 0; 
-    top: 110%; 
-    background-color: #1c2438; /* Koyu lacivert/gri */
-    min-width: 180px; 
-    box-shadow: 0 8px 25px rgba(0,0,0,0.5); 
-    border-radius: 6px; 
-    border: 1px solid rgba(255,255,255,0.1);
-    z-index: 2000;
-    overflow: hidden;
-    animation: fadeInDropdown 0.2s ease;
-}
+.dropdown-menu { display: none; position: absolute; right: 0; top: 110%; background-color: #1c2438; min-width: 180px; box-shadow: 0 8px 25px rgba(0,0,0,0.5); border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); z-index: 2000; overflow: hidden; animation: fadeInDropdown 0.2s ease; }
 .dropdown-menu.show { display: block; }
-
 .dropdown-header { padding: 10px 15px; background: rgba(0,0,0,0.2); border-bottom: 1px solid rgba(255,255,255,0.05); }
-.dropdown-item { 
-    display: flex; align-items: center; gap: 10px;
-    padding: 12px 15px; 
-    color: #ddd; 
-    text-decoration: none; 
-    font-size: 0.85rem; 
-    transition: 0.2s; 
-}
+.dropdown-item { display: flex; align-items: center; gap: 10px; padding: 12px 15px; color: #ddd; text-decoration: none; font-size: 0.85rem; transition: 0.2s; }
 .dropdown-item:hover { background-color: #2c344a; color: #fff; }
 .dropdown-item i { width: 15px; text-align: center; color: var(--secondary); }
 .dropdown-item.logout { color: #ff6b6b; }
 .dropdown-item.logout:hover { background-color: rgba(255, 107, 107, 0.1); }
 .dropdown-item.logout i { color: #ff6b6b; }
 .dropdown-divider { height: 1px; background: rgba(255,255,255,0.05); margin: 0; }
-
 @keyframes fadeInDropdown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
 
 /* --- ORTA KONTROL ALANI --- */
-.control-wrapper { display: flex; align-items: center; justify-content: center; gap: 20px; padding-bottom: 10px; position: relative; flex-wrap: wrap; }
-.search-container { position: relative; width: 320px; flex-shrink: 0; }
-#searchInput { width: 100%; padding: 8px 15px 8px 38px; background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 6px; color: white; font-size: 0.9rem; box-sizing: border-box; transition: all 0.3s ease; }
-#searchInput:focus { background: rgba(255, 255, 255, 0.15); border-color: rgba(255,255,255,0.5); outline: none; box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05); }
-.search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: rgba(255, 255, 255, 0.4); font-size: 0.9rem; }
+.control-wrapper { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 15px; 
+    padding-bottom: 8px; 
+    position: relative;
+    flex-wrap: wrap; 
+}
 
-/* Filtreler */
-.filter-container { display: flex; gap: 6px; align-items: center; overflow-x: auto; padding-bottom: 2px; max-width: 100%; position: relative; }
-.filter-container::-webkit-scrollbar { height: 0px; }
-.filter-btn { background-color: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.15); color: rgba(255, 255, 255, 0.75); padding: 5px 10px; border-radius: 4px; cursor: pointer; transition: all 0.2s ease; display: flex; align-items: center; gap: 6px; font-weight: 500; font-size: 0.75rem; white-space: nowrap; }
-.filter-btn:hover { background-color: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255, 255, 255, 0.4); transform: translateY(-1px); }
-.filter-btn.active { background-color: #fabb00; color: #0e1b42; border-color: #fabb00; font-weight: 700; box-shadow: 0 2px 8px rgba(250, 187, 0, 0.3); }
+.search-container { position: relative; width: 300px; flex-shrink: 0; }
+#searchInput { 
+    width: 100%; padding: 6px 15px 6px 35px;
+    background: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px; 
+    color: white;
+    font-size: 0.85rem;
+    box-sizing: border-box; 
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+#searchInput::placeholder { color: rgba(255, 255, 255, 0.5); }
+#searchInput:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #fabb00; 
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(250, 187, 0, 0.15);
+}
+.search-icon { 
+    position: absolute; left: 10px; top: 50%; transform: translateY(-50%); 
+    color: rgba(255, 255, 255, 0.5); font-size: 0.85rem;
+}
+
+/* Filtre Alanı */
+.filter-container { 
+    display: flex; 
+    gap: 6px; 
+    align-items: center;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    max-width: 100%;
+    position: relative;
+}
+.filter-container::-webkit-scrollbar { height: 0px; } 
+
+/* GENEL FİLTRE BUTONU (Yıldız ve Tümü Dahil) */
+.filter-btn { 
+    background-color: rgba(255, 255, 255, 0.03); /* Şeffafımsı */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* İnce Çerçeve */
+    color: rgba(255, 255, 255, 0.75); 
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: all 0.2s ease; 
+    display: flex; align-items: center; gap: 6px; 
+    font-weight: 500; font-size: 0.75rem; 
+    white-space: nowrap; 
+    z-index: 1; 
+}
+.filter-btn:hover { 
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white;
+    border-color: rgba(255, 255, 255, 0.4); 
+    transform: translateY(-1px);
+}
+/* Aktif Buton */
+.filter-btn.active { 
+    background-color: #fabb00 !important; 
+    color: #0e1b42 !important; 
+    border-color: #fabb00 !important; 
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(250, 187, 0, 0.3);
+}
+
+/* Yıldız Butonu Özelleştirmesi (Sadece renk, yapı aynı) */
+.btn-fav { color: #fabb00; } /* Yıldız sarı olsun */
+.btn-fav.active { color: #0e1b42; } /* Aktifken koyu olsun */
+
 .divider { width: 1px; height: 18px; background: rgba(255,255,255,0.15); margin: 0 4px; }
 .link-btn { color: rgba(255, 255, 255, 0.7); }
 .link-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
 
-/* STICKY BUTONLAR */
-.filter-container { position: relative; }
-.btn-fav { position: sticky; left: 0; z-index: 100; background: #0e1b42 !important; border-right: 1px solid rgba(255,255,255,0.1); margin-right: 0; border-radius: 4px 0 0 4px; }
-.btn-all { position: sticky; left: 35px; z-index: 99; background: #0e1b42 !important; margin-left: 0; border-radius: 0 4px 4px 0; box-shadow: 5px 0 10px -2px rgba(0,0,0,0.5); }
-.btn-fav:hover, .btn-all:hover { background: #0e1b42 !important; }
-.btn-fav.active { color: var(--secondary); }
-
 /* --- TICKER --- */
-.news-ticker-box { width: 100%; background: rgba(0, 0, 0, 0.25); border-top: 1px solid rgba(255, 255, 255, 0.05); padding: 0 25px; height: 26px; display: flex; align-items: center; gap: 15px; cursor: pointer; transition: 0.2s; margin-top: 2px; box-sizing: border-box; }
+.news-ticker-box { 
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25); 
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0 25px; 
+    height: 26px; 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    cursor: pointer; 
+    transition: 0.2s;
+    margin-top: 2px;
+    box-sizing: border-box;
+}
 .news-ticker-box:hover { background: rgba(0, 0, 0, 0.4); }
 .ticker-label { font-size: 0.65rem; color: #fabb00; font-weight: 800; display: flex; align-items: center; gap: 6px; letter-spacing: 0.5px; min-width: fit-content; }
 .pulse-dot { width: 5px; height: 5px; background: var(--secondary); border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
@@ -244,7 +334,7 @@ body.editing .edit-icon { display: block !important; }
 .goal-message.show { transform: translate(-50%, -50%) scale(1); }
 @media (max-width: 768px) { .header { padding: 15px 15px; } .header-top { flex-direction: column; align-items: flex-start; gap: 10px; } .control-wrapper { flex-direction: column; } .penalty-field { height: 400px; } .goal-container { width: 240px; height: 120px; margin-top: 50px; } .goal-net { width: 230px; height: 115px; } .penalty-options { grid-template-columns: 1fr; } .joker-btn { font-size: 0.75rem; padding: 8px 10px; } }
 
-/* Other functional styles */
+/* QUALITY MODULE (Restored) */
 .evaluation-details-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-in-out; margin-top: 0; }
 .evaluation-summary { transition: background 0.2s; }
 .evaluation-summary:hover { background: #fcfcfc; }
