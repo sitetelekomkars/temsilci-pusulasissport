@@ -49,7 +49,7 @@ body {
 #maintenance-screen { display: none !important; }
 #main-app { display: none; }
 
-/* --- HEADER YAPISI (KURUMSAL) --- */
+/* --- HEADER YAPISI (SIKILAŞTIRILMIŞ) --- */
 .header { 
     background: #0e1b42; 
     color: white; 
@@ -61,76 +61,176 @@ body {
     flex-direction: column;
 }
 
+/* Yükseklik Tasarrufu İçin Padding Azaltıldı */
 .header-content-limit {
-    width: 100%; max-width: 1600px; margin: 0 auto;
-    padding: 15px 25px 5px 25px; box-sizing: border-box;
+    width: 100%;
+    max-width: 1600px; 
+    margin: 0 auto;
+    padding: 10px 25px 0 25px; /* Üst boşluk 15px -> 10px düşürüldü */
+    box-sizing: border-box;
 }
 
-.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+/* Üst Bar: Marka ve Kontroller */
+.header-top { 
+    display: flex; justify-content: space-between; align-items: center; 
+    margin-bottom: 8px; /* Alt boşluk 15px -> 8px düşürüldü */
+}
 
 .brand-area { display: flex; align-items: center; gap: 12px; }
-.brand-icon { color: var(--secondary); font-size: 1.8rem; text-shadow: 0 0 15px rgba(250, 187, 0, 0.4); }
-.brand-text { display: flex; flex-direction: column; line-height: 1.1; }
-.brand-text .main-text { font-size: 1.2rem; font-weight: 700; color: #fff; letter-spacing: 0.5px; }
-.brand-text .sub-text { font-size: 0.85rem; font-weight: 300; color: rgba(255,255,255,0.6); }
+.brand-icon { color: var(--secondary); font-size: 1.6rem; text-shadow: 0 0 15px rgba(250, 187, 0, 0.4); }
+.brand-img { height: 30px; width: auto; object-fit: contain; }
+
+.brand-text { display: flex; flex-direction: column; line-height: 1; }
+.brand-text .main-text { font-size: 1.1rem; font-weight: 700; color: #fff; letter-spacing: 0.5px; }
+.brand-text .sub-text { font-size: 0.75rem; font-weight: 300; color: rgba(255,255,255,0.6); }
 
 .header-controls { display: flex; align-items: center; gap:10px; }
+
+/* Kompakt Aksiyon Butonları */
 .action-btn { 
-    background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.1); 
-    color: #ccc; padding: 6px 12px; border-radius: 4px; cursor: pointer; 
-    font-weight: 500; font-size: 0.8rem; display: flex; align-items: center; gap: 6px; 
+    background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); 
+    color: #ccc; padding: 5px 10px; border-radius: 4px; cursor: pointer; 
+    font-weight: 500; font-size: 0.75rem; display: flex; align-items: center; 
+    gap: 6px; transition: all 0.2s; 
 }
 .action-btn:hover { background: rgba(255, 255, 255, 0.15); color: #fff; }
 .action-btn.active { background: var(--secondary); border-color: var(--secondary); color: #0e1b42; }
 
-.user-btn { background: transparent; border: none; color: #eee; padding: 4px 8px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; border-radius: 4px; }
+/* Kullanıcı Profili */
+.user-btn { 
+    background: transparent; border: none; 
+    color: #eee; padding: 4px 8px; cursor: pointer; 
+    font-size: 0.85rem; display: flex; align-items: center; gap: 8px; transition:0.2s;
+    border-radius: 4px;
+}
 .user-btn:hover { background: rgba(255,255,255,0.05); }
-.user-avatar { width: 28px; height: 28px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary); font-size: 0.8rem; }
+.user-avatar { 
+    width: 26px; height: 26px; background: rgba(255,255,255,0.1); 
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    color: var(--secondary); font-size: 0.8rem;
+}
 
-/* --- ORTA KONTROL ALANI --- */
-.control-wrapper { display: flex; align-items: center; justify-content: center; gap: 20px; padding-bottom: 10px; position: relative; flex-wrap: wrap; }
+/* --- ORTA KONTROL ALANI (Dengeli & Ortalanmış) --- */
+.control-wrapper { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 15px; 
+    padding-bottom: 8px; /* Ticker ile mesafe azaltıldı */
+    position: relative;
+    flex-wrap: wrap; 
+}
 
-.search-container { position: relative; width: 320px; flex-shrink: 0; }
+/* Arama Kutusu - İnceltildi */
+.search-container { 
+    position: relative; 
+    width: 300px; 
+    flex-shrink: 0;
+}
 #searchInput { 
-    width: 100%; padding: 8px 15px 8px 38px;
-    background: rgba(255, 255, 255, 0.07); 
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 6px; color: white; font-size: 0.9rem; box-sizing: border-box; transition: all 0.3s ease;
+    width: 100%; padding: 6px 15px 6px 35px; /* Yükseklik azaltıldı */
+    background: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px; 
+    color: white;
+    font-size: 0.85rem;
+    box-sizing: border-box; 
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
 }
-#searchInput:focus { background: rgba(255, 255, 255, 0.15); border-color: rgba(255,255,255,0.5); outline: none; box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05); }
-.search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: rgba(255, 255, 255, 0.4); font-size: 0.9rem; }
+#searchInput::placeholder { color: rgba(255, 255, 255, 0.5); }
+#searchInput:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #fabb00; 
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(250, 187, 0, 0.15);
+}
+.search-icon { 
+    position: absolute; left: 10px; top: 50%; transform: translateY(-50%); 
+    color: rgba(255, 255, 255, 0.5); font-size: 0.85rem;
+}
 
-/* Filtreler */
-.filter-container { display: flex; gap: 6px; align-items: center; overflow-x: auto; padding-bottom: 2px; max-width: 100%; position: relative; }
-.filter-container::-webkit-scrollbar { height: 0px; }
+/* Filtre Alanı */
+.filter-container { 
+    display: flex; 
+    gap: 6px; 
+    align-items: center;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    max-width: 100%;
+}
+.filter-container::-webkit-scrollbar { height: 0px; } 
 
+/* Genel Filtre Butonu - ÇERÇEVELİ */
 .filter-btn { 
-    background-color: transparent; border: 1px solid transparent; 
-    color: rgba(255, 255, 255, 0.6); padding: 6px 12px; border-radius: 4px; 
-    cursor: pointer; transition: all 0.2s ease; display: flex; align-items: center; gap: 8px; 
-    font-weight: 500; font-size: 0.8rem; white-space: nowrap; z-index: 1;
+    background-color: rgba(255, 255, 255, 0.03); /* Çok hafif dolgu */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* İNCE ÇERÇEVE EKLENDİ */
+    color: rgba(255, 255, 255, 0.75); 
+    padding: 5px 10px; /* Buton içi boşluk optimize edildi */
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: all 0.2s ease; 
+    display: flex; align-items: center; gap: 6px; 
+    font-weight: 500; font-size: 0.75rem; 
+    white-space: nowrap; 
 }
-.filter-btn:hover { background-color: rgba(255, 255, 255, 0.05); color: white; transform: translateY(-1px); }
-.filter-btn.active { background-color: rgba(250, 187, 0, 0.15); color: var(--secondary); border-color: var(--secondary); font-weight: 600; }
-.divider { width: 1px; height: 20px; background: rgba(255,255,255,0.1); margin: 0 5px; }
-.link-btn { color: rgba(255, 255, 255, 0.5); }
-.link-btn:hover { color: #fff; }
+.filter-btn:hover { 
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white;
+    border-color: rgba(255, 255, 255, 0.4); /* Hoverda çerçeve belirginleşsin */
+    transform: translateY(-1px);
+}
+/* Aktif Buton */
+.filter-btn.active { 
+    background-color: #fabb00; 
+    color: #0e1b42; 
+    border-color: #fabb00; 
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(250, 187, 0, 0.3);
+}
+.btn-fav.active { color: #0e1b42; } /* Yıldız da aktif olunca koyu renk olsun */
+.divider { width: 1px; height: 18px; background: rgba(255,255,255,0.15); margin: 0 4px; }
+
+/* Link Butonları */
+.link-btn { color: rgba(255, 255, 255, 0.7); }
+.link-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
 
 /* STICKY BUTONLAR */
+.filter-container { position: relative; }
 .btn-fav { position: sticky; left: 0; z-index: 100; background: #0e1b42 !important; border-right: 1px solid rgba(255,255,255,0.1); margin-right: 0; border-radius: 4px 0 0 4px; }
-.btn-fav.active { color: var(--secondary); }
 .btn-all { position: sticky; left: 35px; z-index: 99; background: #0e1b42 !important; margin-left: 0; border-radius: 0 4px 4px 0; box-shadow: 5px 0 10px -2px rgba(0,0,0,0.5); }
+.btn-fav:hover, .btn-all:hover { background: #0e1b42 !important; }
 
-/* --- TICKER --- */
+/* --- TICKER (DAHA İNCE) --- */
 .news-ticker-box { 
-    width: 100%; background: rgba(0, 0, 0, 0.2); border-top: 1px solid rgba(255, 255, 255, 0.03);
-    padding: 0 25px; height: 28px; display: flex; align-items: center; gap: 15px; 
-    cursor: pointer; transition: 0.2s; margin-top: 5px; box-sizing: border-box;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25); 
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0 25px; 
+    height: 26px; /* Yükseklik 28px -> 26px düşürüldü */
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    cursor: pointer; 
+    transition: 0.2s;
+    margin-top: 2px;
+    box-sizing: border-box;
 }
-.news-ticker-box:hover { background: rgba(0, 0, 0, 0.3); }
-.ticker-label { font-size: 0.65rem; color: #999; font-weight: 700; display: flex; align-items: center; gap: 6px; letter-spacing: 0.5px; min-width: fit-content; }
-.pulse-dot { width: 6px; height: 6px; background: var(--secondary); border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
-.ticker-content { font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-grow: 1; font-weight: 400; }
+.news-ticker-box:hover { background: rgba(0, 0, 0, 0.4); }
+
+.ticker-label { 
+    font-size: 0.65rem; color: #fabb00; font-weight: 800; 
+    display: flex; align-items: center; gap: 6px; 
+    letter-spacing: 0.5px;
+    min-width: fit-content;
+}
+.pulse-dot { width: 5px; height: 5px; background: var(--secondary); border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+
+.ticker-content { 
+    font-size: 0.75rem; color: rgba(255, 255, 255, 0.8); 
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; 
+    flex-grow: 1; font-weight: 400; font-family: 'Segoe UI', sans-serif;
+}
 
 /* --- CARDS & GRID --- */
 .container { padding: 25px; max-width: 1600px; margin: 0 auto; }
@@ -159,6 +259,7 @@ body {
 .btn-link { background: transparent; border: 1px solid #ddd; color: var(--info); text-decoration: none; }
 .btn-link:hover { background: #f0f8ff; border-color: var(--info); }
 
+/* --- OTHER ELEMENTS --- */
 .new-badge { position: absolute; top: 12px; left: -4px; background: #2e7d32; color: white; font-size: 0.6rem; padding: 2px 5px; border-radius: 0 3px 3px 0; font-weight: bold; box-shadow: 1px 1px 2px rgba(0,0,0,0.2); z-index:15; }
 .icon-wrapper { position: absolute; top: 10px; right: 10px; display: flex; gap: 5px; z-index: 20; }
 .edit-icon { color: var(--secondary); cursor: pointer; display: none; font-size: 0.9rem; padding: 5px; background: white; border-radius: 50%; border:1px solid #eee; }
@@ -167,18 +268,21 @@ body.editing .edit-icon { display: block !important; }
 .fav-icon:hover { color: #b0b8c1; }
 .fav-icon.active { color: var(--secondary); }
 
-/* --- MODALS --- */
+/* --- MODALS & EXTRAS --- */
 .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(14, 27, 66, 0.8); z-index: 5000; justify-content: center; align-items: center; backdrop-filter: blur(3px); }
 .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 8px; padding: 30px; position: relative; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
 .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; cursor: pointer; color: #999; transition: 0.2s; }
 .close-modal:hover { color: #333; }
 .swal2-container { z-index: 10000 !important; }
 
+/* Custom Scrollbar */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track { background: #f1f1f1; }
 ::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: #a0aec0; }
+
 .crafted-by-badge { position: fixed; bottom: 5px; right: 10px; font-family: sans-serif; font-size: 0.65rem; color: #0e1b42; opacity: 0.2; z-index: 9999; pointer-events: none; }
+
 @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
@@ -187,7 +291,7 @@ body.editing .edit-icon { display: block !important; }
 /* --- RESTORED FUNCTIONAL CSS MODULES --- */
 /* ========================================= */
 
-/* 1. PENALTY GAME (Restored Full Animations & Assets) */
+/* 1. PENALTY GAME */
 .penalty-stats { background: #111; color: #fff; padding: 10px 15px; border-radius: 6px; display:flex; justify-content:space-between; font-weight:700; margin-bottom: 15px; border: 1px solid #333; }
 .penalty-stats span span { color: var(--secondary); }
 .joker-btn { background: #8e24aa; color: white; padding: 10px; border-radius: 6px; border:none; cursor:pointer; flex:1; margin:0 5px; font-weight: bold; transition: all 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
@@ -199,7 +303,6 @@ body.editing .edit-icon { display: block !important; }
 .penalty-btn:disabled { opacity: 0.6; cursor: not-allowed; }
 .penalty-btn.wrong-first-try { background: #d32f2f !important; color: white !important; opacity: 0.8; cursor: not-allowed; }
 
-/* The Field & Graphics */
 .penalty-field { background: radial-gradient(circle at 50% 30%, #4caf50 0%, #388e3c 40%, #1b5e20 100%); border: 4px solid #fff; border-radius: 8px; height: 480px; position: relative; overflow: hidden; perspective: 1000px; box-shadow: inset 0 0 80px rgba(0,0,0,0.8); display: flex; flex-direction: column; justify-content: flex-start; }
 .stadium-stands { position: absolute; top: 0; left: 0; width: 100%; height: 120px; background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, #0d1117 0%, #161b22 100%); background-size: 10px 10px, 100% 100%; z-index: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.8); }
 .grass-stripes { position: absolute; top: 120px; left: 0; width: 100%; height: 100%; background: repeating-linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 40px, transparent 40px, transparent 80px); z-index: 0; transform: rotateX(20deg) scale(1.1); transform-origin: top; }
