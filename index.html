@@ -1,238 +1,429 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S Sport Plus - Temsilci Bilgi Merkezi</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-</head>
-<body>
+:root { 
+    --primary: #0e1b42; 
+    --secondary: #fabb00; 
+    --bg: #f4f6f8; 
+    --card-bg: #ffffff; 
+    --accent: #d32f2f; 
+    --success: #2e7d32; 
+    --info: #0288d1; 
+    --warning: #ed6c02; 
+    --sales: #10b981; 
+    --quiz: #8e24aa; 
+}
 
-    <div id="login-screen">
-        <div class="login-card">
-            <i class="fas fa-lock fa-3x" style="color: #0e1b42;"></i>
-            <h2>S Sport Plus Bilgi Merkezi</h2>
-            <p>Personel Girişi</p>
-            <input type="text" id="usernameInput" class="login-input" placeholder="Kullanıcı Adı">
-            <input type="password" id="passInput" class="login-input" placeholder="Şifre" onkeyup="enterBas(event)">
-            <button class="login-btn" onclick="girisYap()">Giriş Yap</button>
-            <div id="loading-msg" class="loading-text">Sunucuya soruluyor...</div>
-            <p id="error-msg" style="color:red; display:none; margin-top:10px;">Hatalı Kullanıcı Adı veya Şifre!</p>
-        </div>
-    </div>
+body { 
+    margin: 0; padding: 0; 
+    font-family: 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif; 
+    background-color: var(--bg); 
+    color: #333;
+    user-select: none; 
+}
 
-    <div id="maintenance-screen">
-        <div class="maintenance-content" style="text-align:center; color:white;">
-            <span style="font-size: 4rem;">👨‍🏫</span>
-            <h1>Sistem Mola Verdi!</h1>
-            <p>Doğuş bey yine bir şeyler deniyor... 🚀</p>
-        </div>
-    </div>
+/* --- LOGIN SCREEN --- */
+#login-screen { 
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5000; 
+    display: flex; justify-content: center; align-items: center;
+    background: #0e1b42; 
+}
+.login-card {
+    background: #24292e; padding: 40px; border-radius: 15px; text-align: center;
+    width: 320px; box-shadow: 0 0 80px rgba(250, 187, 0, 0.4), 0 20px 50px rgba(0,0,0,0.8);
+    color: #eee; border: 1px solid rgba(250, 187, 0, 0.2);
+}
+#login-screen i { color: var(--secondary) !important; }
+.login-card h2 { color: var(--secondary); }
+.login-input { 
+    width: 100%; padding: 12px; margin: 10px 0; background: #333; color: #eee; 
+    border: 1px solid #555; box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+    border-radius: 8px; text-align: center; box-sizing: border-box; 
+}
+.login-btn { 
+    width: 100%; padding: 12px; background: #fabb00; border: none; 
+    border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px; 
+}
+.loading-text { font-size: 0.8rem; color: #666; margin-top: 10px; display: none; }
+#maintenance-screen { display: none !important; }
+#main-app { display: none; }
 
-    <div id="main-app">
-        <div class="header">
-            <div class="header-top">
-                <h1 style="margin:0; font-size:1.5rem;"><i class="fas fa-compass"></i> S Sport Plus - Temsilci Pusulası</h1>
-                <div class="header-controls">
-                    <button id="addCardBtn" class="add-btn" style="display:none;" onclick="addNewCardPopup()">
-                        <i class="fas fa-plus"></i> İçerik Ekle
-                    </button>
-                    <button id="quickEditBtn" class="edit-toggle-btn" style="display:none;" onclick="toggleEditMode()">
-                        <i class="fas fa-pencil-alt"></i> Düzenlemeyi Aç
-                    </button>
-                    <button id="adminBtn" class="admin-btn" onclick="openUserMenu()">
-                        <i class="fas fa-user-circle"></i> <span id="user-display">Misafir</span>
-                    </button>
-                </div>
-            </div>
+/* --- PROFESSIONAL HEADER STRUCTURE --- */
+.header { 
+    background: #0e1b42; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+    color: white; 
+    padding: 15px 25px 0 25px; 
+    position: sticky; top: 0; 
+    z-index: 1000; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15); 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-            <div class="control-wrapper">
-                <div class="search-container">
-                    <i class="fas fa-search search-icon"></i>
-                    <input type="text" id="searchInput" placeholder="Hızlı Ara..." onkeyup="filterContent()">
-                </div>
-                <div class="filter-container">
-                    <button class="filter-btn btn-fav" onclick="filterCategory(this, 'fav')"><i class="fas fa-star"></i> </button>
-                    <button class="filter-btn btn-all active" onclick="filterCategory(this, 'all')"><i class="fas fa-th-large"></i> Tümü</button>
-                    <button class="filter-btn btn-tech" onclick="filterCategory(this, 'Teknik')"><i class="fas fa-wrench"></i> Teknik</button>
-                    <button class="filter-btn btn-ikna" onclick="filterCategory(this, 'İkna')"><i class="fas fa-hand-holding-dollar"></i> İkna</button>
-                    <button class="filter-btn btn-camp" onclick="filterCategory(this, 'Kampanya')"><i class="fas fa-gift"></i> Kampanya</button>
-                    <button class="filter-btn btn-info" onclick="filterCategory(this, 'Bilgi')"><i class="fas fa-info-circle"></i> Bilgi</button>
-                    <a href="https://www.ssportplus.com/yayin-akisi/" target="_blank" class="filter-btn btn-stream"><i class="fas fa-calendar-alt"></i> Yayın Akışı</a>
+/* Üst Kısım: Logo ve Profil */
+.header-top { 
+    display: flex; justify-content: space-between; align-items: center; 
+    height: 40px;
+}
+.header h1 {
+    font-size: 1.4rem; font-weight: 600; letter-spacing: 0.5px;
+    display: flex; align-items: center; gap: 10px;
+}
+.header h1 i { color: #fabb00; }
 
-                    <button class="filter-btn guide-btn" onclick="openGuide()">📖 Spor Rehberi</button>
-                    <button class="filter-btn wizard-btn" onclick="openWizard()">⚖️ İade Asistanı</button>
-                    <button class="filter-btn sales-btn" onclick="openSales()">📞 TeleSatış</button>
-                    <button class="filter-btn game-btn" onclick="openPenaltyGame()">⚽ OYUN</button>
-                    <button class="filter-btn" onclick="openQualityArea()"><i class="fas fa-microscope"></i> Kalite</button>
-                </div>
-            </div>
+.header-controls { display: flex; align-items: center; gap:10px; }
+.edit-toggle-btn, .add-btn { 
+    background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.1); 
+    color: #fff; padding: 6px 14px; border-radius: 4px; cursor: pointer; 
+    font-weight: 600; font-size: 0.85rem; display: flex; align-items: center; 
+    gap: 8px; transition: all 0.2s; 
+}
+.edit-toggle-btn:hover, .add-btn:hover { background: rgba(255, 255, 255, 0.15); border-color: rgba(255,255,255,0.3); }
+.edit-toggle-btn.active { background: #fabb00; border-color: #fabb00; color: #0e1b42; }
+.add-btn { background: #2e7d32; border-color: #2e7d32; }
+.admin-btn { 
+    background: transparent; border: none; 
+    color: rgba(255,255,255,0.8); padding: 6px; cursor: pointer; 
+    font-size: 0.9rem; display: flex; align-items: center; gap: 8px; transition:0.2s;
+}
+.admin-btn:hover { color: #fff; }
 
-            <div class="news-ticker-box" onclick="openNews()">
-                <div class="ticker-label">
-                    <i class="fas fa-circle" style="font-size:8px;"></i> DUYURU
-                </div>
-                <div id="ticker-content" class="ticker-content">Veriler yükleniyor...</div>
-            </div>
-        </div>
+/* --- CONTROL BAR (Search + Filters) --- */
+.control-wrapper { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    padding-bottom: 10px; 
+}
 
-        <div class="container">
-            <div id="loading" style="text-align:center; padding:20px; color:#666;">
-                <i class="fas fa-spinner fa-spin fa-2x"></i><br>Veriler Google Tablo'dan çekiliyor...
-            </div>
-            <div class="grid" id="cardGrid"></div>
-        </div>
-    </div>
+/* Search Bar */
+.search-container { 
+    position: relative; 
+    width: 350px; 
+    flex-shrink: 0;
+}
+#searchInput { 
+    width: 100%; padding: 10px 15px 10px 40px;
+    background: #1a264d; 
+    border: 1px solid #2d3b66;
+    border-radius: 6px; 
+    color: white;
+    font-size: 0.9rem;
+    box-sizing: border-box; 
+    transition: all 0.2s ease;
+}
+#searchInput::placeholder { color: rgba(255, 255, 255, 0.4); }
+#searchInput:focus {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: #fabb00;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(250, 187, 0, 0.15);
+}
+.search-icon { 
+    position: absolute; left: 12px; top: 50%; transform: translateY(-50%); 
+    color: rgba(255, 255, 255, 0.5); font-size: 0.9rem;
+}
 
-    <div id="news-modal" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('news-modal')">&times;</span>
-            <h2 style="color:var(--primary);">📢 Duyurular</h2>
-            <div id="news-container"></div>
-        </div>
-    </div>
+/* --- FILTERS - STICKY FIXED DESIGN --- */
+.filter-container { 
+    display: flex; 
+    gap: 8px; 
+    overflow-x: auto; 
+    padding-bottom: 5px; 
+    flex-grow: 1;
+    position: relative;
+    /* Maskeleme kaldırıldı, sticky ile çakışmaması için */
+}
+.filter-container::-webkit-scrollbar { height: 4px; }
+.filter-container::-webkit-scrollbar-track { background: transparent; }
+.filter-container::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 4px; }
 
-    <div id="wizard-modal" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('wizard-modal')">&times;</span>
-            <div id="wizard-body"></div>
-        </div>
-    </div>
+/* GENEL BUTON STİLİ */
+.filter-btn { 
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    color: rgba(255, 255, 255, 0.8); 
+    padding: 6px 12px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: all 0.2s ease; 
+    display: flex; align-items: center; gap: 6px; 
+    font-weight: 500; font-size: 0.8rem; 
+    white-space: nowrap; 
+    z-index: 1; /* Diğer butonlar altta kalsın */
+}
+.filter-btn:hover { 
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white; border-color: rgba(255, 255, 255, 0.4);
+}
+.filter-btn.active { 
+    background-color: #fabb00; color: #0e1b42; border-color: #fabb00; font-weight: 700;
+}
 
-    <div id="guide-modal" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('guide-modal')">&times;</span>
-            <h2 style="text-align:center; color:var(--primary);">📖 Spor Terimleri & İçerik Rehberi</h2>
-            <p style="text-align:center; color:#666;">Detaylı bilgi için karta tıklayınız.</p>
-            <div class="guide-grid" id="guide-grid"></div>
-        </div>
-    </div>
+/* --- SABİT (STICKY) BUTONLAR --- */
 
-    <div id="sales-modal" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('sales-modal')">&times;</span>
-            <h2 style="text-align:center; color:var(--sales);">📞 Satış Scriptleri</h2>
-            <p style="text-align:center; color:#666;">Metni okumak için başlığa tıklayınız.</p>
-            <div class="sales-grid" id="sales-grid"></div>
-        </div>
-    </div>
+/* 1. YILDIZ BUTONU */
+.btn-fav { 
+    position: sticky; 
+    left: 0; 
+    z-index: 100; /* En üstte */
+    background-color: #0e1b42 !important; /* Header rengiyle kapla */
+    border-color: #fabb00; 
+    color: #fabb00;
+    margin-right: 0;
+}
+.btn-fav:hover, .btn-fav.active { background: #0e1b42; color: #fabb00; }
 
-    <div id="penalty-modal" class="modal-overlay">
-        <div class="modal-content" style="max-width: 650px; background: #1a1a1a; border: 1px solid #333; min-height:600px; display:flex; flex-direction:column;">
-            <span class="close-modal" style="color:white; z-index:1000;" onclick="closeModal('penalty-modal')">&times;</span>
-            <h2 style="text-align:center; color:#fabb00; margin-top:0; text-shadow:0 0 10px rgba(250,187,0,0.3);">⚽ S Sport Arena</h2>
-            
-            <div id="penalty-lobby" style="text-align:center; padding:20px; flex-grow:1; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-                <h3 style="color:white; margin-bottom:15px;">🏆 Liderlik Tablosu (Top 5)</h3>
-                <div id="leaderboard-loader" style="color:#aaa;">Veriler yükleniyor...</div>
-                <table id="leaderboard-table" style="width:100%; color:#eee; border-collapse:collapse; margin-bottom:30px; display:none;">
-                    <thead>
-                        <tr style="border-bottom:1px solid #555; color:#fabb00;">
-                            <th style="padding:10px;">#</th>
-                            <th style="padding:10px;">Temsilci</th>
-                            <th style="padding:10px;">Maç</th>
-                            <th style="padding:10px;">Ort. Puan</th>
-                        </tr>
-                    </thead>
-                    <tbody id="leaderboard-body"></tbody>
-                </table>
-                <button class="penalty-btn" style="width:200px; background:#2e7d32; color:white; border-color:#1b5e20;" onclick="startGameFromLobby()">MAÇA BAŞLA 🏃‍♂️⚽</button>
-            </div>
+/* 2. TÜMÜ BUTONU */
+.btn-all {
+    position: sticky;
+    /* Yıldız butonunun genişliği + az boşluk (tahmini 45px) */
+    left: 45px; 
+    z-index: 90; /* Yıldızdan düşük, diğerlerinden yüksek */
+    background-color: #0e1b42 !important; /* Header rengiyle kapla */
+    border-color: #fabb00;
+    
+    /* Sağ tarafa derinlik gölgesi */
+    box-shadow: 6px 0 10px -4px rgba(0, 0, 0, 0.8);
+    clip-path: inset(0 -15px 0 0); /* Gölge sadece sağda görünsün */
+}
+.btn-all.active {
+    background-color: #fabb00 !important;
+    color: #0e1b42 !important;
+}
 
-            <div id="penalty-game-area" style="display:none;">
-                <div class="penalty-stats">
-                    <span>SKOR: <span id="p-score">0</span></span>
-                    <span>KALAN ŞUT: <span id="p-balls">10</span></span>
-                </div>
-                <div class="penalty-field">
-                    <div class="stadium-stands"></div>
-                    <div class="grass-stripes"></div>
-                    <div class="goal-container">
-                        <div class="goal-net"></div>
-                        <div class="goal-top-bar"></div>
-                        <div class="goal-post-left"></div>
-                        <div class="goal-post-right"></div>
-                        <div id="keeper-wrap" class="keeper-wrapper">
-                            <div class="player-figure">
-                                <div class="head"></div>
-                                <div class="torso"></div>
-                                <div class="arms"><div class="arm left"><div class="gloves"></div></div><div class="arm right"><div class="gloves"></div></div></div>
-                                <div class="shorts"></div>
-                                <div class="legs"><div class="leg left"></div><div class="leg right"></div></div>
-                            </div>
-                            <div class="keeper-shadow"></div>
-                        </div>
-                    </div>
-                    <div class="goal-message" id="goal-msg">GOL!</div>
-                    <div class="penalty-area"></div>
-                    <div class="penalty-spot-mark"></div>
-                    <div id="ball-wrap" class="ball-wrapper"><div class="football"></div><div class="ball-shadow"></div></div>
-                    <div id="shooter-wrap" class="shooter-wrapper">
-                        <div class="player-figure">
-                            <div class="head"></div><div class="torso"></div>
-                            <div class="arms"><div class="arm left"></div><div class="arm right"></div></div>
-                            <div class="shorts"></div>
-                            <div class="legs"><div class="leg left"><div class="sock"></div><div class="shoe"></div></div><div class="leg right"><div class="sock"></div><div class="shoe"></div></div></div>
-                        </div>
-                    </div>
-                </div>
-                <div style="margin-top:15px; color:#ddd; min-height:50px; font-weight:500; text-align:center; font-size:1.1rem; padding:10px; background:rgba(255,255,255,0.05); border-radius:8px;" id="p-question-text">Soru yükleniyor...</div>
-                <div id="joker-container" style="display: flex; justify-content: space-around; margin: 15px 0;">
-                    <button id="joker-call" class="joker-btn" onclick="useJoker('call')" title="Telefon Jokeri">📞 Telefon</button>
-                    <button id="joker-half" class="joker-btn" onclick="useJoker('half')" title="Yarı Yarıya Joker">✂️ 50:50</button>
-                    <button id="joker-double" class="joker-btn" onclick="useJoker('double')" title="Çift Cevap Hakkı">2️⃣ Çift Cevap</button>
-                </div>
-                <div class="penalty-options" id="p-options"></div>
-                <button id="p-restart-btn" class="restart-btn" style="display:none; width:100%; background:#fabb00; color:black; font-weight:bold;" onclick="showLobby()">LOBİYE DÖN 🏠</button>
-            </div>
-        </div>
-    </div>
+/* --- TICKER --- */
+.news-ticker-box { 
+    width: calc(100% + 50px); 
+    margin-left: -25px; 
+    background: rgba(0, 0, 0, 0.2); 
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0 25px; 
+    height: 32px; 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    cursor: pointer; 
+    transition: 0.2s;
+    font-family: 'Consolas', 'Monaco', monospace; 
+}
+.news-ticker-box:hover { background: rgba(0, 0, 0, 0.4); }
 
-    <div id="quality-modal" class="modal-overlay">
-        <div class="modal-content" style="max-width: 900px;">
-            <span class="close-modal" onclick="closeModal('quality-modal')">&times;</span>
-            <h2 style="text-align:center; color:var(--primary);"><i class="fas fa-microscope"></i> Kalite Değerlendirmelerim</h2>
+.ticker-label { 
+    font-size: 0.7rem; color: #fabb00; font-weight: 700; 
+    display: flex; align-items: center; gap: 6px; 
+    white-space: nowrap;
+}
+.ticker-label i { font-size: 6px; color: #fabb00; animation: blink 2s infinite; }
 
-            <div id="admin-quality-controls" style="text-align:center; display:none;">
-                <div class="quality-controls-top">
-                    <div style="display:flex; gap:15px;">
-                        <button class="add-btn" style="background:var(--accent); border-color:var(--accent);" onclick="logEvaluationPopup()">
-                            <i class="fas fa-plus"></i> Yeni Değerlendirme Ekle
-                        </button>
-                        <button class="admin-btn" style="background:var(--primary); color:white; border-color:var(--primary);" onclick="exportEvaluations()">
-                            <i class="fas fa-file-csv"></i> Rapor İndir
-                        </button>
-                    </div>
-                    <div style="font-weight:bold; display:flex; align-items:center; gap: 5px;">
-                        <label>Temsilci:</label>
-                        <select id="agent-select-admin" class="swal2-input" onchange="fetchEvaluationsForAgent()" style="width: 200px;"></select>
-                    </div>
-                </div>
-            </div>
+.ticker-content { 
+    font-size: 0.8rem; color: rgba(255, 255, 255, 0.7); 
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; 
+    flex-grow: 1; 
+}
 
-            <div id="quality-content" style="padding: 20px; border: 1px solid #eee; border-radius: 8px; margin-top: 5px;">
-                <div class="quality-filter-group">
-                    <span style="font-weight:bold; color:var(--primary);">Dönem:</span>
-                    <select id="month-select-filter" onchange="fetchEvaluationsForAgent()"></select>
-                    <span style="font-weight:bold; color:var(--primary); margin-left:15px;">
-                        <i class="fas fa-chart-line"></i> <span id="eval-count-span">Dinleme Adeti: -</span>
-                    </span>
-                    <span style="font-weight:bold; color:var(--success); margin-left:15px;">
-                        <i class="fas fa-bullseye"></i> <span id="monthly-avg-span">Ortalama: -</span>
-                    </span>
-                </div>
-                <div id="quality-loader" style="text-align:center; color:#999; font-style:italic;">Değerlendirmeler yükleniyor...</div>
-                <div id="evaluations-list"></div>
-            </div>
-        </div>
-    </div>
+/* --- CARDS & GRID --- */
+.container { padding: 25px; max-width: 1600px; margin: 0 auto; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+.card { 
+    background: var(--card-bg); border-radius: 6px; padding: 20px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid #e0e0e0; border-left: 4px solid var(--info); 
+    display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; position: relative; 
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-color: #d0d0d0; }
+.card.Teknik { border-left-color: var(--primary); }
+.card.İkna { border-left-color: var(--accent); } 
+.card.Kampanya { border-left-color: var(--success); } 
+.card.Bilgi { border-left-color: var(--info); }
 
-    <div class="crafted-by-badge">Crafted by Doğuş Yalçınkaya</div>
-    <script src="js/app.js"></script>
-</body>
-</html>
+.icon-wrapper { position: absolute; top: 10px; right: 10px; display: flex; gap: 5px; z-index: 20; }
+.edit-icon { color: #fabb00; cursor: pointer; display: none; font-size: 1rem; padding: 6px; background: white; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border:1px solid #eee; }
+.edit-icon:hover { transform: scale(1.1); background:#fff8e1; }
+body.editing .edit-icon { display: block !important; }
+.fav-icon { color: #ccc; cursor: pointer; font-size: 1.1rem; padding: 5px; transition: 0.2s; }
+.fav-icon:hover { transform: scale(1.1); color: #999; }
+.fav-icon.active { color: #fabb00; }
+.new-badge { position: absolute; top: 10px; left: -4px; background: #2e7d32; color: white; font-size: 0.65rem; padding: 2px 6px; border-radius: 0 4px 4px 0; font-weight: bold; box-shadow: 1px 1px 3px rgba(0,0,0,0.2); z-index:15; }
 
+.card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; padding-right: 30px; }
+.card-title { font-weight: 700; font-size: 1.05rem; margin: 0; color: #0e1b42; line-height: 1.4; }
+.badge { font-size: 0.7rem; padding: 3px 6px; border-radius: 3px; background: #f0f0f0; text-transform: uppercase; font-weight: 600; color: #666; border: 1px solid #ddd; }
+.card-content { font-size: 0.9rem; color: #444; margin-bottom: 15px; line-height: 1.5; flex-grow: 1; cursor: pointer; }
+.card-text-truncate { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.script-box { background: #fffbf0; border: 1px solid #f5e0b0; padding: 10px; border-radius: 4px; font-style: italic; color: #555; margin-top: auto; position: relative; font-size: 0.85rem; }
+.card-actions { margin-top: 12px; display: flex; justify-content: flex-end; gap: 8px; }
+.btn { padding: 5px 10px; border-radius: 4px; cursor: pointer; border: none; font-weight: 600; font-size: 0.8rem; display: flex; align-items: center; gap: 5px; }
+.btn-copy { background: var(--primary); color: white; transition: background 0.2s; }
+.btn-copy:hover { background: #1a2b5e; }
+.btn-link { background: transparent; border: 1px solid #ddd; color: var(--info); text-decoration: none; }
+.btn-link:hover { background: #f5faff; border-color: var(--info); }
+
+/* --- MODALS & OTHERS --- */
+.modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 5000; justify-content: center; align-items: center; backdrop-filter: blur(2px); }
+.modal-content { background: white; width: 90%; max-width: 800px; border-radius: 8px; padding: 30px; position: relative; max-height: 90vh; overflow-y: auto; box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
+.close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; cursor: pointer; color: #999; transition: 0.2s; }
+.close-modal:hover { color: #333; }
+.swal2-container { z-index: 10000 !important; }
+
+/* NEWS & GUIDES */
+.news-item { border-left: 3px solid var(--secondary); padding-left: 15px; margin-bottom: 15px; position: relative; padding-right: 20px; }
+.news-date { font-size: 0.8rem; color: #999; font-weight: bold; display: block; margin-bottom: 2px; }
+.news-title { font-size: 1rem; font-weight: bold; color: var(--primary); display: block; margin-bottom: 5px; }
+.news-tag { display: inline-block; font-size: 0.7rem; padding: 2px 6px; border-radius: 3px; margin-top: 5px; font-weight: bold; }
+.tag-fix { background: #e8f5e9; color: #2e7d32; }
+.tag-update { background: #fff3e0; color: #ef6c00; } 
+.tag-info { background: #e3f2fd; color: #0277bd; }
+
+.guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
+.sales-grid { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+.guide-item { border: 1px solid #eee; border-radius: 6px; padding: 15px; text-align: center; transition: 0.2s; background: #fff; cursor: pointer; position: relative; }
+.guide-item:hover { transform: translateY(-3px); border-color: var(--secondary); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.guide-icon { font-size: 1.8rem; color: var(--primary); margin-bottom: 10px; }
+.guide-title { font-weight: bold; color: var(--primary); margin-bottom: 5px; display: block; font-size: 0.95rem; }
+.guide-desc { font-size: 0.85rem; color: #666; margin-bottom: 10px; min-height: 40px; font-style: italic;}
+.guide-tip { background: #e3f2fd; color: #0277bd; padding: 4px; border-radius: 3px; font-size: 0.75rem; font-weight: 600; }
+.pronunciation-badge { color: #e65100; font-size: 0.8rem; font-weight: bold; margin-bottom: 8px; display: block; font-style: italic; }
+
+.sales-item { border: 1px solid #d1fae5; background: #ecfdf5; border-radius: 6px; padding: 12px 18px; cursor: pointer; transition: all 0.2s ease; position: relative; overflow: hidden; }
+.sales-item:hover { box-shadow: 0 2px 8px rgba(16, 185, 129, 0.15); border-color: var(--sales); }
+.sales-item.active { background: #d1fae5; border-left: 4px solid var(--sales); }
+.sales-header { display: flex; justify-content: space-between; align-items: center; }
+.sales-title { font-weight: 700; color: #065f46; font-size: 1rem; margin: 0; padding-right: 25px; }
+.sales-text { display: none; margin-top: 10px; padding-top: 10px; border-top: 1px solid #a7f3d0; font-size: 0.9rem; color: #374151; line-height: 1.5; animation: fadeIn 0.3s ease-in; }
+.sales-item.active .sales-text { display: block; }
+
+.quiz-options { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.quiz-btn-opt { padding: 12px; border: 1px solid #ddd; background: white; border-radius: 6px; cursor: pointer; transition: 0.2s; }
+.quiz-btn-opt:hover { background: #f9f9f9; }
+.quiz-btn-opt.correct { background: #c8e6c9; border-color: #2e7d32; color: #1b5e20; }
+.quiz-btn-opt.wrong { background: #ffcdd2; border-color: #c62828; color: #b71c1c; }
+
+.wizard-options { display: flex; flex-direction: column; gap: 10px; }
+.option-btn { padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: white; font-size: 0.95rem; cursor: pointer; text-align: left; transition: 0.2s; }
+.option-btn:hover { border-color: var(--primary); background: #f0f4ff; padding-left: 18px; }
+.result-box { padding: 20px; border-radius: 8px; margin-top: 20px; text-align: center; }
+.res-red { background: #ffebee; border: 1px solid #ef5350; color: #c62828; }
+.res-green { background: #e8f5e9; border: 1px solid #66bb6a; color: #2e7d32; }
+.res-yellow { background: #fff8e1; border: 1px solid #ffca28; color: #f57f17; }
+.restart-btn { margin-top: 20px; background: #555; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; }
+.highlight { background-color: #fff176; font-weight: bold; padding: 0 2px; border-radius: 2px; }
+.crafted-by-badge { position: fixed; bottom: 10px; right: 15px; font-family: sans-serif; font-size: 0.7rem; color: #0e1b42; opacity: 0.3; z-index: 9999; pointer-events: none; user-select: none; font-style: italic; letter-spacing: 0.5px; font-weight: 600; }
+
+@keyframes blink { 50% { opacity: 0.5; } }
+@keyframes slideInLeft { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* PENALTY GAME CSS */
+.penalty-stats { display: flex; justify-content: space-between; padding: 10px 20px; margin-bottom: 15px; background: #000; color: #fff; border-radius: 8px; border: 1px solid #333; font-size: 1.1rem; font-weight: 700; letter-spacing: 1px; }
+.penalty-stats span { color: #fabb00; }
+.joker-btn { background: #8e24aa; color: white; border: 1px solid #6a1b9a; padding: 10px 15px; border-radius: 6px; font-weight: bold; cursor: pointer; transition: all 0.2s; font-size: 0.85rem; box-shadow: 0 4px 6px rgba(0,0,0,0.2); flex-grow: 1; margin: 0 5px; }
+.joker-btn:hover:not(:disabled) { background: #ab47bc; transform: translateY(-2px); }
+.joker-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.penalty-options { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+.penalty-btn { padding: 15px 10px; border-radius: 8px; font-weight: 600; font-size: 1rem; background: #fabb00; color: #0e1b42; border: 2px solid #f0b500; cursor: pointer; transition: background 0.2s, transform 0.1s; text-align: left; }
+.penalty-btn:hover:not(:disabled) { background: #ffc933; transform: translateY(-1px); }
+.penalty-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.penalty-btn.wrong-first-try { background: #d32f2f !important; color: white !important; opacity: 0.8; cursor: not-allowed; }
+.penalty-field { background: radial-gradient(circle at 50% 30%, #4caf50 0%, #388e3c 40%, #1b5e20 100%); border: 4px solid #fff; border-radius: 8px; height: 480px; position: relative; overflow: hidden; perspective: 1000px; box-shadow: inset 0 0 80px rgba(0,0,0,0.8); display: flex; flex-direction: column; justify-content: flex-start; }
+.stadium-stands { position: absolute; top: 0; left: 0; width: 100%; height: 120px; background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, #0d1117 0%, #161b22 100%); background-size: 10px 10px, 100% 100%; z-index: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.8); }
+.grass-stripes { position: absolute; top: 120px; left: 0; width: 100%; height: 100%; background: repeating-linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 40px, transparent 40px, transparent 80px); z-index: 0; transform: rotateX(20deg) scale(1.1); transform-origin: top; }
+.goal-container { position: relative; width: 320px; height: 160px; margin: 50px auto 0 auto; transform-style: preserve-3d; z-index: 2; perspective: 600px; }
+.goal-top-bar { position: absolute; top: 0; left: 0; width: 100%; height: 10px; background: linear-gradient(to bottom, #f0f0f0, #bdbdbd); border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.5); z-index: 5; }
+.goal-post-left, .goal-post-right { position: absolute; top: 0; width: 10px; height: 100%; background: linear-gradient(to right, #f0f0f0, #bdbdbd); border-radius: 5px; z-index: 5; }
+.goal-post-left { left: 0; } .goal-post-right { right: 0; }
+.goal-net { position: absolute; top: 5px; left: 5px; width: 310px; height: 155px; background: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,0.3) 5px, rgba(255,255,255,0.3) 6px), repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(255,255,255,0.3) 5px, rgba(255,255,255,0.3) 6px); background-color: rgba(0,0,0,0.2); transform: translateZ(-40px); box-shadow: inset 0 0 20px rgba(0,0,0,0.5); }
+.ball-wrapper { position: absolute; bottom: 110px; left: 50%; transform: translateX(-50%); z-index: 15; transition: all 0.6s cubic-bezier(0.1, 0.5, 0.3, 1); width: 36px; height: 36px; }
+.football { width: 100%; height: 100%; border-radius: 50%; background-color: #fff; background-image: radial-gradient(circle at 50% 50%, rgba(0,0,0,0.1) 40%, transparent 50%), conic-gradient(#fff 0deg, #fff 45deg, #222 45deg, #222 90deg, #fff 90deg, #fff 135deg, #222 135deg, #222 180deg, #fff 180deg, #fff 225deg, #222 225deg, #222 270deg, #fff 270deg, #fff 315deg, #222 315deg, #222 360deg); background-size: 200% 200%; box-shadow: inset -5px -5px 10px rgba(0,0,0,0.4), 0 5px 10px rgba(0,0,0,0.3); position: relative; animation: spinIdle 10s linear infinite; }
+@keyframes spinIdle { 0% { background-position: 0% 0%; } 100% { background-position: 100% 100%; } }
+.ball-shadow { width: 30px; height: 6px; background: rgba(0,0,0,0.6); border-radius: 50%; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); filter: blur(3px); transition: all 0.6s; }
+.keeper-wrapper { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 70px; height: 130px; z-index: 10; transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1.2); perspective: 500px; }
+.player-figure { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; }
+.head { width: 28px; height: 32px; background: radial-gradient(circle at 10px 10px, #ffcc80, #e65100); border-radius: 50% 50% 45% 45% / 50% 50% 55% 55%; margin: 0 auto; position: relative; z-index: 4; box-shadow: inset 0 -3px 5px rgba(0,0,0,0.3), 0 2px 5px rgba(0,0,0,0.4); transform: translateZ(5px); }
+.head::before { content: ''; position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 10px; height: 12px; background: rgba(0,0,0,0.15); border-radius: 50%; filter: blur(3px); }
+.head::after { content: ''; position: absolute; top: -2px; left: 5px; width: 18px; height: 10px; background: #3e2723; border-radius: 50%; transform: rotate(-10deg); }
+.torso { width: 45px; height: 50px; background: linear-gradient(135deg, #ffeb3b 0%, #fbc02d 50%, #f9a825 100%); border-radius: 8px 8px 12px 12px; margin: -5px auto 0; position: relative; z-index: 3; box-shadow: 0 3px 6px rgba(0,0,0,0.4), inset 0 4px 6px rgba(255,255,255,0.4); display: flex; align-items: center; justify-content: center; font-weight: bold; color: #333; font-size: 10px; border: 1px solid rgba(0,0,0,0.1); transform: translateZ(3px); overflow: hidden; }
+.torso::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to right, rgba(0,0,0,0.05), transparent 20%, transparent 80%, rgba(0,0,0,0.05)), linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.1)); z-index: 1; }
+.torso::after { content: 'SSP'; position: absolute; top: 18px; left: 50%; transform: translateX(-50%); color: #0e1b42; font-size: 12px; font-weight: 800; opacity: 0.8; z-index: 2; }
+.arms { position: absolute; top: 35px; width: 100%; height: 15px; z-index: 2; }
+.arm { width: 16px; height: 45px; background: linear-gradient(to right, #ffeb3b, #fbc02d); border-radius: 10px; position: absolute; top: 0; box-shadow: inset 0 0 6px rgba(0,0,0,0.3); transform-origin: top center; }
+.arm.left { left: -8px; transform: rotate(25deg) translateZ(2px); } .arm.right { right: -8px; transform: rotate(-25deg) translateZ(2px); }
+.gloves { width: 20px; height: 20px; background: #fff; border-radius: 50%; position: absolute; bottom: -8px; left: -2px; border:3px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.3); transform: translateZ(6px); }
+.gloves::after { content: ''; position: absolute; width: 6px; height: 6px; background: #f00; border-radius: 50%; top: 5px; left: 5px; }
+.shorts { width: 45px; height: 30px; background: linear-gradient(to bottom, #212121, #000); margin: -8px auto 0; border-radius: 0 0 12px 12px; position: relative; z-index: 2; box-shadow: 0 3px 6px rgba(0,0,0,0.3); transform: translateZ(1px); }
+.legs { position: relative; width: 45px; margin: 0 auto; }
+.leg { width: 16px; height: 45px; background: linear-gradient(to bottom, #212121, #000); position: absolute; top: -8px; border-radius: 0 0 8px 8px; box-shadow: inset 0 0 6px rgba(0,0,0,0.3); transform-origin: top center; }
+.leg.left { left: 5px; transform: rotate(8deg) translateZ(2px); } .leg.right { right: 5px; transform: rotate(-8deg) translateZ(2px); }
+.sock { width: 100%; height: 22px; background: linear-gradient(to bottom, #fff, #eee); position: absolute; bottom: 0; border-radius: 0 0 8px 8px; border-top: 2px solid #ddd; box-shadow: inset 0 0 3px rgba(0,0,0,0.1); }
+.shoe { width: 22px; height: 14px; background: linear-gradient(to right, #d32f2f, #c62828); position: absolute; bottom: -12px; left: -3px; border-radius: 6px 6px 3px 3px; box-shadow: 0 3px 6px rgba(0,0,0,0.4), inset -3px -3px 4px rgba(0,0,0,0.4); transform: translateZ(8px); }
+.shooter-wrapper { position: absolute; bottom: -50px; left: 45%; transform: translateX(-50%) scale(1.4); z-index: 20; transition: all 0.3s ease-in; width: 70px; height: 130px; perspective: 500px; }
+.shooter-wrapper .head { background: radial-gradient(circle at 10px 10px, #3e2723, #000); box-shadow: inset 0 -3px 5px rgba(0,0,0,0.4), 0 2px 5px rgba(0,0,0,0.4); }
+.shooter-wrapper .head::before { display: none; }
+.shooter-wrapper .head::after { content: ''; position: absolute; top: -4px; left: 0px; width: 28px; height: 15px; background: #3e2723; border-radius: 50%; transform: rotate(5deg); }
+.shooter-wrapper .torso { background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 50%, #a11616 100%); color: white; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 3px 6px rgba(0,0,0,0.3), inset 0 4px 6px rgba(255,255,255,0.2); }
+.shooter-wrapper .torso::after { content: '10'; font-size: 16px; font-weight: 800; opacity: 0.9; z-index: 2; }
+.shooter-wrapper .torso::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to right, rgba(0,0,0,0.1), transparent 20%, transparent 80%, rgba(0,0,0,0.1)), linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.2)); z-index: 1; }
+.shooter-wrapper .arm { background: linear-gradient(to right, #d32f2f, #b71c1c); box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
+.shooter-wrapper .arm.left { transform: rotate(20deg) translateZ(2px); } .shooter-wrapper .arm.right { transform: rotate(-20deg) translateZ(2px); }
+.shooter-wrapper .gloves { display: none; }
+.shooter-wrapper .shorts { background: linear-gradient(to bottom, #0e1b42, #000); border: 1px solid #000; }
+.shooter-wrapper .leg { background: linear-gradient(to bottom, #d32f2f, #b71c1c); box-shadow: inset 0 0 6px rgba(0,0,0,0.2); }
+.shooter-wrapper .leg.left { transform: rotate(10deg) translateZ(2px); } .shooter-wrapper .leg.right { transform: rotate(-10deg) translateZ(2px); }
+.shooter-wrapper .sock { background: linear-gradient(to bottom, #d32f2f, #b71c1c); border-top: 2px solid #a11616; display: none; }
+.shooter-wrapper .shoe { background: linear-gradient(to right, #212121, #000); box-shadow: 0 3px 6px rgba(0,0,0,0.4), inset -3px -3px 4px rgba(0,0,0,0.4); }
+.keeper-shadow { width: 50px; height: 10px; background: rgba(0,0,0,0.5); border-radius: 50%; margin: -5px auto 0 auto; filter: blur(4px); }
+.shooter-run { bottom: 80px !important; left: 50% !important; transform: translateX(-50%) scale(1.1) !important; }
+.shooter-run .arm.left { animation: runArm 0.3s infinite alternate; } .shooter-run .arm.right { animation: runArm 0.3s infinite alternate-reverse; }
+@keyframes runArm { from { transform: rotate(20deg) translateZ(2px); } to { transform: rotate(-20deg) translateZ(2px); } }
+.ball-shoot-left-top { bottom: 380px !important; left: 35% !important; transform: scale(0.4) rotate(720deg) !important; }
+.ball-shoot-right-top { bottom: 380px !important; left: 65% !important; transform: scale(0.4) rotate(720deg) !important; }
+.ball-shoot-left-low { bottom: 330px !important; left: 32% !important; transform: scale(0.45) rotate(720deg) !important; }
+.ball-shoot-right-low { bottom: 330px !important; left: 68% !important; transform: scale(0.45) rotate(720deg) !important; }
+.ball-miss-left { bottom: 380px !important; left: 10% !important; transform: scale(0.3) !important; opacity: 0; }
+.ball-miss-right { bottom: 380px !important; left: 90% !important; transform: scale(0.3) !important; opacity: 0; }
+.keeper-dive-left { transform: translateX(-140px) translateY(50px) rotate(-70deg) !important; }
+.keeper-dive-left .arm.left { transform: rotate(-180deg) translateZ(2px); }
+.keeper-dive-right { transform: translateX(140px) translateY(50px) rotate(70deg) !important; }
+.keeper-dive-right .arm.right { transform: rotate(-180deg) translateZ(2px); }
+.penalty-area { position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%) perspective(500px) rotateX(40deg); width: 70%; height: 200px; border: 4px solid rgba(255,255,255,0.6); border-bottom: none; z-index: 1; box-shadow: 0 0 15px rgba(255,255,255,0.1); }
+.penalty-spot-mark { position: absolute; bottom: 120px; left: 50%; transform: translateX(-50%) scaleY(0.5); width: 16px; height: 16px; background: #fff; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.5); z-index: 2; }
+.goal-message { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%) scale(0); font-size: 4rem; color: #fabb00; font-weight: 900; text-shadow: 0 0 20px black, 2px 2px 0px #000; z-index: 100; transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); white-space: nowrap; }
+.goal-message.show { transform: translate(-50%, -50%) scale(1); }
+@media (max-width: 768px) { .header { padding: 15px 15px; } .header-top { flex-direction: column; align-items: flex-start; gap: 10px; } .control-wrapper { flex-direction: column; } .penalty-field { height: 400px; } .goal-container { width: 240px; height: 120px; margin-top: 50px; } .goal-net { width: 230px; height: 115px; } .penalty-options { grid-template-columns: 1fr; } .joker-btn { font-size: 0.75rem; padding: 8px 10px; } }
+
+#leaderboard-table th { font-size: 0.9rem; letter-spacing: 1px; }
+#leaderboard-table td { padding: 12px; border-bottom: 1px solid #333; font-weight: 500; }
+#leaderboard-table tr:first-child td { color: #ffd700; font-weight:bold; font-size:1.1rem; text-shadow:0 0 10px rgba(255, 215, 0, 0.5); }
+#leaderboard-table tr:nth-child(2) td { color: #c0c0c0; }
+#leaderboard-table tr:nth-child(3) td { color: #cd7f32; }
+.rank-badge { display:inline-block; width:24px; height:24px; line-height:24px; border-radius:50%; background:#333; text-align:center; font-size:0.8rem; }
+
+/* YENİ KALİTE CSS */
+.evaluation-details-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-in-out; margin-top: 0; }
+.evaluation-summary { transition: background 0.2s; }
+.evaluation-summary:hover { background: #fcfcfc; }
+.quality-controls-top { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; margin-bottom: 15px; flex-wrap: wrap; gap: 15px; }
+.quality-filter-group { display: flex; gap: 15px; align-items: center; flex-grow: 1; padding: 10px; border-radius: 6px; font-weight: bold; font-size: 1rem; background: #f0f4ff; border: 1px solid #d0d8f0; justify-content: space-around; }
+#month-select-filter { padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
+.eval-modal-wrapper { display: flex; flex-direction: column; gap: 15px; text-align: left; font-family: 'Segoe UI', sans-serif; }
+.eval-header-card { background: #f8f9fa; padding: 15px; border-radius: 10px; border-left: 5px solid var(--primary); box-shadow: 0 2px 5px rgba(0,0,0,0.05); display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.score-dashboard { background: #0e1b42; color: white; border-radius: 12px; padding: 20px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 5px 15px rgba(14, 27, 66, 0.3); margin-bottom: 10px; position: sticky; top: 0; z-index: 10; }
+.score-circle-outer { width: 80px; height: 80px; border-radius: 50%; background: conic-gradient(var(--success) 0%, #444 0%); display: flex; align-items: center; justify-content: center; transition: background 0.5s ease; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
+.score-circle-inner { width: 64px; height: 64px; background: #0e1b42; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.5rem; color: white; }
+.criteria-container { max-height: 400px; overflow-y: auto; padding-right: 5px; }
+.criteria-row { background: white; border: 1px solid #eee; border-radius: 8px; padding: 12px; margin-bottom: 10px; transition: all 0.2s; display: flex; flex-direction: column; gap: 10px; }
+.criteria-row:hover { border-color: #bbb; box-shadow: 0 3px 6px rgba(0,0,0,0.05); }
+.criteria-header { display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 0.95rem; color: #333; }
+.criteria-controls { display: flex; align-items: center; gap: 15px; background: #f9f9f9; padding: 8px; border-radius: 6px; }
+.custom-range { -webkit-appearance: none; width: 100%; height: 6px; background: #ddd; border-radius: 5px; outline: none; transition: .2s; }
+.custom-range::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--primary); cursor: pointer; box-shadow: 0 0 5px rgba(0,0,0,0.3); }
+.score-badge { background: #333; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; min-width: 30px; text-align: center; }
+.note-input { width: 100%; border: 1px solid #e0e0e0; border-radius: 4px; padding: 6px; font-size: 0.85rem; background: #fff; }
+.note-input:focus { border-color: var(--secondary); outline: none; }
+
+/* --- CUSTOM SCROLLBAR --- */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #0e1b42; border-left: 1px solid rgba(255,255,255,0.05); }
+::-webkit-scrollbar-thumb { background: #3e4c7a; border-radius: 5px; border: 2px solid #0e1b42; }
+::-webkit-scrollbar-thumb:hover { background: #fabb00; }
+
+/* --- TEXT SELECTION --- */
+::selection { background: #fabb00; color: #0e1b42; text-shadow: none; }
