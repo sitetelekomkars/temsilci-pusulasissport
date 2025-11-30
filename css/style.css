@@ -95,7 +95,7 @@ body {
     padding-bottom: 10px; 
 }
 
-/* Search Bar - Geniş ve Net */
+/* Search Bar */
 .search-container { 
     position: relative; 
     width: 350px; 
@@ -113,30 +113,31 @@ body {
 }
 #searchInput::placeholder { color: rgba(255, 255, 255, 0.4); }
 #searchInput:focus {
-    background: rgba(255, 255, 255, 0.25); /* YENİ: Focus olunca daha belirgin */
+    background: rgba(255, 255, 255, 0.25);
     border-color: #fabb00;
     outline: none;
-    box-shadow: 0 0 0 4px rgba(250, 187, 0, 0.15); /* YENİ: Glow efekti */
+    box-shadow: 0 0 0 4px rgba(250, 187, 0, 0.15);
 }
 .search-icon { 
     position: absolute; left: 12px; top: 50%; transform: translateY(-50%); 
     color: rgba(255, 255, 255, 0.5); font-size: 0.9rem;
 }
 
-/* Filters - Scrollable & Compact */
+/* --- FILTERS - STICKY FIXED DESIGN --- */
 .filter-container { 
     display: flex; 
     gap: 8px; 
     overflow-x: auto; 
     padding-bottom: 5px; 
     flex-grow: 1;
-    mask-image: linear-gradient(to right, black 95%, transparent 100%); 
-    -webkit-mask-image: linear-gradient(to right, black 95%, transparent 100%);
+    position: relative;
+    /* Maskeleme kaldırıldı, sticky ile çakışmaması için */
 }
 .filter-container::-webkit-scrollbar { height: 4px; }
 .filter-container::-webkit-scrollbar-track { background: transparent; }
 .filter-container::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 4px; }
 
+/* GENEL BUTON STİLİ */
 .filter-btn { 
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2); 
@@ -148,6 +149,7 @@ body {
     display: flex; align-items: center; gap: 6px; 
     font-weight: 500; font-size: 0.8rem; 
     white-space: nowrap; 
+    z-index: 1; /* Diğer butonlar altta kalsın */
 }
 .filter-btn:hover { 
     background-color: rgba(255, 255, 255, 0.1); 
@@ -156,10 +158,40 @@ body {
 .filter-btn.active { 
     background-color: #fabb00; color: #0e1b42; border-color: #fabb00; font-weight: 700;
 }
-.btn-fav { border-color: #fabb00; color: #fabb00; }
-.btn-fav:hover, .btn-fav.active { background: #fabb00; color: #0e1b42; }
 
-/* --- TICKER (THE SLIM BOTTOM LINE) --- */
+/* --- SABİT (STICKY) BUTONLAR --- */
+
+/* 1. YILDIZ BUTONU */
+.btn-fav { 
+    position: sticky; 
+    left: 0; 
+    z-index: 100; /* En üstte */
+    background-color: #0e1b42 !important; /* Header rengiyle kapla */
+    border-color: #fabb00; 
+    color: #fabb00;
+    margin-right: 0;
+}
+.btn-fav:hover, .btn-fav.active { background: #0e1b42; color: #fabb00; }
+
+/* 2. TÜMÜ BUTONU */
+.btn-all {
+    position: sticky;
+    /* Yıldız butonunun genişliği + az boşluk (tahmini 45px) */
+    left: 45px; 
+    z-index: 90; /* Yıldızdan düşük, diğerlerinden yüksek */
+    background-color: #0e1b42 !important; /* Header rengiyle kapla */
+    border-color: #fabb00;
+    
+    /* Sağ tarafa derinlik gölgesi */
+    box-shadow: 6px 0 10px -4px rgba(0, 0, 0, 0.8);
+    clip-path: inset(0 -15px 0 0); /* Gölge sadece sağda görünsün */
+}
+.btn-all.active {
+    background-color: #fabb00 !important;
+    color: #0e1b42 !important;
+}
+
+/* --- TICKER --- */
 .news-ticker-box { 
     width: calc(100% + 50px); 
     margin-left: -25px; 
