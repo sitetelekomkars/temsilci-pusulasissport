@@ -52,7 +52,7 @@ body {
 #maintenance-screen { display: none !important; }
 #main-app { display: none; }
 
-/* --- HEADER (MODERN) --- */
+/* --- HEADER (MODERN & COMPACT) --- */
 .header { 
     background: linear-gradient(90deg, #0e1b42 0%, #162450 100%); 
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
@@ -64,9 +64,8 @@ body {
 }
 .header-top { 
     display: flex; justify-content: space-between; align-items: center; 
-    margin-bottom: 8px; 
+    margin-bottom: 10px; 
 }
-/* Pusula İkonuna Efekt */
 .header h1 i {
     color: #fabb00;
     text-shadow: 0 0 15px rgba(250, 187, 0, 0.6);
@@ -89,52 +88,65 @@ body {
 }
 .admin-btn:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
 
+/* --- CONTROL WRAPPER (YAN YANA DÜZEN) --- */
 .control-wrapper { 
     display: flex; 
-    flex-direction: column; 
+    align-items: center; /* Dikey ortala */
     width: 100%; 
+    gap: 15px; /* Arama ve Filtreler arası boşluk */
 }
 
-/* --- SEARCH BAR (GLASSMORPHISM) --- */
-.search-container { position: relative; width: 100%; margin-bottom: 12px; }
+/* --- SEARCH BAR (KISALTILMIŞ & TEMİZLENMİŞ) --- */
+.search-container { 
+    position: relative; 
+    width: 250px; /* SABİT KISA GENİŞLİK */
+    flex-shrink: 0; /* Küçülmesini engelle */
+    margin-bottom: 0; /* Alt boşluğu kaldır */
+}
 #searchInput { 
-    width: 100%; padding: 10px 20px 10px 45px;
-    background: rgba(255, 255, 255, 0.1); /* Glass Effect */
-    backdrop-filter: blur(5px);
+    width: 100%; padding: 8px 15px 8px 35px; /* Daha ince padding */
+    background: rgba(255, 255, 255, 0.15); /* Buz efektini kaldırdık, düz şeffaf */
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px; /* Yuvarlak hatlar */
+    border-radius: 20px; 
     color: white;
+    font-size: 0.9rem;
     box-sizing: border-box; 
     transition: all 0.3s ease;
+    backdrop-filter: none; /* SORUN ÇIKARAN EFEKT KALDIRILDI */
 }
 #searchInput::placeholder { color: rgba(255, 255, 255, 0.6); }
 #searchInput:focus {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.25);
     border-color: #fabb00;
-    box-shadow: 0 0 15px rgba(250, 187, 0, 0.2);
     outline: none;
 }
-.search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: rgba(255, 255, 255, 0.7); }
+.search-icon { 
+    position: absolute; left: 12px; top: 50%; transform: translateY(-50%); 
+    color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;
+}
 
-/* --- FILTERS (PILL DESIGN) --- */
+/* --- FILTERS (FLEX ROW) --- */
 .filter-container { 
     display: flex; 
     gap: 6px; 
     flex-wrap: wrap; 
+    flex-grow: 1; /* Kalan alanı kapla */
+    align-items: center;
 }
 .filter-btn { 
     background-color: rgba(255, 255, 255, 0.08);
     border: none; 
     color: #eceff1; 
-    padding: 6px 16px; 
+    padding: 6px 14px; 
     border-radius: 20px; 
     cursor: pointer; 
     transition: all 0.3s ease; 
     display: flex; align-items: center; gap: 6px; 
     font-weight: 600; 
-    font-size: 0.8rem; 
+    font-size: 0.75rem; /* Biraz daha küçültüldü */
     text-transform: uppercase; 
     letter-spacing: 0.5px; 
+    white-space: nowrap; /* Satır kaymasını engelle */
 }
 .filter-btn:hover { 
     background-color: rgba(255, 255, 255, 0.2); 
@@ -142,22 +154,22 @@ body {
 }
 .filter-btn.active { 
     background-color: #fabb00; color: #0e1b42; 
-    box-shadow: 0 4px 12px rgba(250, 187, 0, 0.4); 
+    box-shadow: 0 4px 12px rgba(250, 187, 0, 0.3); 
 }
 .btn-fav { color: #fabb00; background: rgba(250, 187, 0, 0.1); }
 .btn-fav:hover, .btn-fav.active { background: #fabb00; color: #0e1b42; }
 
-/* --- TICKER (STRIP STYLE) --- */
+/* --- TICKER (ALT ŞERİT) --- */
 .news-ticker-box { 
     width: 100%;
-    margin-top: 15px;
-    background: rgba(0, 0, 0, 0.3);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 4px solid #fabb00;
-    border-radius: 4px;
+    margin-top: 12px; /* Header içindeki üst elemanlardan ayrılma */
+    background: rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 3px solid #fabb00;
+    border-radius: 3px;
     padding: 0 15px; 
-    height: 40px;
+    height: 36px; /* Daha da inceltildi */
     display: flex; 
     align-items: center; 
     justify-content: flex-start;
@@ -171,14 +183,14 @@ body {
     border-left-color: #fff;
 }
 .ticker-label { 
-    font-size: 0.75rem; color: #fabb00; font-weight: 800; 
+    font-size: 0.7rem; color: #fabb00; font-weight: 800; 
     text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0;
-    display: flex; align-items: center; gap: 8px; 
+    display: flex; align-items: center; gap: 6px; 
     white-space: nowrap; min-width: fit-content;
 }
-.ticker-label i { font-size: 8px; color: #fabb00; animation: intense-pulse 1.5s infinite; }
+.ticker-label i { font-size: 7px; color: #fabb00; animation: intense-pulse 1.5s infinite; }
 .ticker-content { 
-    font-size: 0.9rem; color: rgba(255, 255, 255, 0.95); font-weight: 500; 
+    font-size: 0.85rem; color: rgba(255, 255, 255, 0.9); font-weight: 500; 
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; 
     flex-grow: 1; animation: slideInLeft 0.5s ease-out; 
 }
