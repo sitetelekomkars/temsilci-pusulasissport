@@ -450,14 +450,14 @@ function loadWizardData() {
     });
 }
 
-// *** RENDER CARDS (YENİ TASARIMA GÖRE GÜNCELLENDİ) ***
+// --- RENDER & FILTERING ---
 function renderCards(data) {
     activeCards = data;
     const container = document.getElementById('cardGrid');
     container.innerHTML = '';
     
     if (data.length === 0) {
-        container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#777; font-size:1.1rem;"><i class="fas fa-search" style="font-size:2rem; margin-bottom:10px; display:block;"></i>Aradığınız kriterlere uygun içerik bulunamadı.</div>';
+        container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:20px; color:#777;">Kayıt bulunamadı.</div>';
         return;
     }
     
@@ -474,26 +474,21 @@ function renderCards(data) {
         let rawText = item.text || "";
         let formattedText = rawText.replace(/\n/g, '<br>').replace(/\*(.*?)\*/g, '<b>$1</b>');
         
-        // Yeni CSS sınıflarına uygun HTML yapısı
-        let html = `
-        <div class="card ${item.category}">
-            ${newBadge}
+        let html = `<div class="card ${item.category}">${newBadge}
             <div class="icon-wrapper">
                 ${editIconHtml} 
                 <i class="${favClass} fav-icon" onclick="toggleFavorite('${safeTitle}')"></i>
             </div>
-            <div class="card-header">
-                <h3 class="card-title">${highlightText(item.title)}</h3>
-            </div>
+            <div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div>
             <div class="card-content" onclick="showCardDetail('${safeTitle}', '${escapeForJsString(item.text)}')">
                 <div class="card-text-truncate">${highlightText(formattedText)}</div>
+                <div style="font-size:0.8rem; color:#999; margin-top:5px; text-align:right;">(Tamamını oku)</div>
             </div>
             <div class="script-box">${highlightText(item.script)}</div>
             <div class="card-actions">
-                <button class="btn-mini btn-copy" onclick="copyText('${escapeForJsString(item.script)}')"><i class="fas fa-copy"></i> Kopyala</button>
-                ${item.code ? `<button class="btn-mini btn-copy" style="background:#e8eaf6; color:#3f51b5;" onclick="copyText('${escapeForJsString(item.code)}')"><i class="fas fa-code"></i> Kod</button>` : ''}
-                ${item.link ? `<a href="${item.link}" target="_blank" class="btn-mini" style="background:#f3e5f5; color:#7b1fa2; text-decoration:none;"><i class="fas fa-external-link-alt"></i> Link</a>` : ''}
-                <span class="badge" style="margin-left:auto;">${item.category}</span>
+                <button class="btn btn-copy" onclick="copyText('${escapeForJsString(item.script)}')"><i class="fas fa-copy"></i> Kopyala</button>
+                ${item.code ? `<button class="btn btn-copy" style="background:var(--secondary); color:#333;" onclick="copyText('${escapeForJsString(item.code)}')">Kod</button>` : ''}
+                ${item.link ? `<a href="${item.link}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>` : ''}
             </div>
         </div>`;
         container.innerHTML += html;
@@ -513,25 +508,33 @@ function highlightText(htmlContent) {
     }
 }
 
-// --- FİLTRELEME ---
+// *** DÜZELTİLMİŞ FİLTRELEME FONKSİYONLARI ***
+
 function filterCategory(btn, cat) {
     currentCategory = cat;
-    document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+    // Buton stillerini güncelle
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     
+    // Filtreleme işlemini tetikle
     filterContent();
 }
 
 function filterContent() {
+    // Türkçe karakter uyumlu küçük harfe çevirme
     const search = document.getElementById('searchInput').value.toLocaleLowerCase('tr-TR').trim();
+    
+    // Her aramaya tüm veritabanından başla
     let filtered = database;
 
+    // 1. ADIM: Kategori Filtrelemesi
     if (currentCategory === 'fav') {
         filtered = filtered.filter(i => isFav(i.title));
     } else if (currentCategory !== 'all') {
         filtered = filtered.filter(i => i.category === currentCategory);
     }
 
+    // 2. ADIM: Metin Arama (Başlık, Metin veya Script içinde)
     if (search) {
         filtered = filtered.filter(item => {
             const title = (item.title || "").toString().toLocaleLowerCase('tr-TR');
@@ -543,9 +546,12 @@ function filterContent() {
         });
     }
 
-    activeCards = filtered; 
+    // 3. ADIM: Ekrana Bas
+    activeCards = filtered; // Global activeCards'ı güncelle (Edit işlemi için gerekli)
     renderCards(filtered);
 }
+
+// *** SON ***
 
 function showCardDetail(title, text) {
     Swal.fire({
@@ -571,11 +577,14 @@ function toggleEditMode() {
     const btn = document.getElementById('quickEditBtn');
     if(isEditingActive) {
         btn.classList.add('active');
+        btn.innerHTML = '<i class="fas fa-times"></i> Düzenlemeyi Kapat';
         Swal.fire({ icon: 'success', title: 'Düzenleme Modu AÇIK', text: 'Kalem ikonlarına tıklayarak içerikleri düzenleyebilirsiniz.', timer: 1500, showConfirmButton: false });
     } else {
         btn.classList.remove('active');
+        btn.innerHTML = '<i class="fas fa-pencil-alt"></i> Düzenlemeyi Aç';
     }
     
+    // Mevcut filtre durumuyla yeniden render et (ikonları göstermek/gizlemek için)
     filterContent();
     
     if(document.getElementById('guide-modal').style.display === 'flex') openGuide();
@@ -812,6 +821,7 @@ async function editContent(index) {
 // --- MODALS ---
 function closeModal(id) { document.getElementById(id).style.display = 'none'; }
 
+let tickerIndex = 0;
 function startTicker() {
     const t = document.getElementById('ticker-content');
     const activeNews = newsData.filter(i => i.status !== 'Pasif');
@@ -819,9 +829,16 @@ function startTicker() {
         t.innerHTML = "Güncel duyuru yok.";
         return;
     }
-    // Haberleri yan yana diziyoruz
-    let html = activeNews.map(i => `<span style="margin-right:50px;">📅 ${i.date}: <b>${i.title}</b> - ${i.desc}</span>`).join('');
-    t.innerHTML = html;
+    function showNext() {
+        const i = activeNews[tickerIndex];
+        t.style.animation = 'none';
+        t.offsetHeight;
+        t.style.animation = 'slideIn 0.5s ease-out';
+        t.innerHTML = `<strong>${i.date}:</strong> ${i.title} - ${i.desc}`;
+        tickerIndex = (tickerIndex + 1) % activeNews.length;
+    }
+    showNext();
+    setInterval(showNext, 60000);
 }
 
 function openNews() {
@@ -923,8 +940,8 @@ function openQualityArea() {
     document.getElementById('quality-modal').style.display = 'flex';
     document.getElementById('admin-quality-controls').style.display = isAdminMode ? 'block' : 'none';
     populateMonthFilter();
-    document.getElementById('eval-count-span').innerText = `Adet: -`;
-    document.getElementById('monthly-avg-span').innerText = `Ort: -`;
+    document.getElementById('eval-count-span').innerText = `Dinleme Adeti: -`;
+    document.getElementById('monthly-avg-span').innerText = `Ortalama: -`;
     const monthSelect = document.getElementById('month-select-filter');
     const newMonthSelect = monthSelect.cloneNode(true);
     monthSelect.parentNode.replaceChild(newMonthSelect, monthSelect);
@@ -961,10 +978,11 @@ async function fetchEvaluationsForAgent(forcedName) {
         const selectEl = document.getElementById('agent-select-admin');
         targetAgent = forcedName || selectEl.value;
         
+        // Eğer yönetici "Tüm Temsilciler"i seçtiyse, listeyi gösterme (çok kalabalık olur)
         if(targetAgent === 'all') {
             loader.innerHTML = '<span style="color:#1976d2;">"Tüm Temsilciler" seçili iken listeyi göstermek yerine, lütfen "Rapor İndir" butonunu kullanın.</span>';
-            document.getElementById('eval-count-span').innerText = `Adet: -`;
-            document.getElementById('monthly-avg-span').innerText = `Ort: -`;
+            document.getElementById('eval-count-span').innerText = `Dinleme Adeti: -`;
+            document.getElementById('monthly-avg-span').innerText = `Ortalama: -`;
             return;
         }
     }
@@ -987,17 +1005,19 @@ async function fetchEvaluationsForAgent(forcedName) {
         if (data.result === "success") {
             allEvaluationsData = data.evaluations;
             
+            // Ay filtresi
             let filteredEvals = allEvaluationsData.filter(evalItem => {
                 const evalDate = evalItem.date.substring(3);
                 return evalDate === selectedMonth;
             });
 
+            // İstatistikler
             const monthlyTotal = filteredEvals.reduce((sum, evalItem) => sum + (parseFloat(evalItem.score) || 0), 0);
             const monthlyCount = filteredEvals.length;
             const monthlyAvg = monthlyCount > 0 ? Math.round(monthlyTotal / monthlyCount) : 0;
 
-            document.getElementById('eval-count-span').innerText = `Adet: ${monthlyCount}`;
-            document.getElementById('monthly-avg-span').innerText = `Ort: ${monthlyAvg}%`;
+            document.getElementById('eval-count-span').innerText = `Dinleme Adeti: ${monthlyCount}`;
+            document.getElementById('monthly-avg-span').innerText = `Ortalama: ${monthlyAvg}%`;
 
             if (filteredEvals.length === 0) {
                 listEl.innerHTML = `<p style="text-align:center; color:#666;">Seçilen **${selectedMonth}** dönemi için değerlendirme bulunamadı.</p>`;
@@ -1005,11 +1025,13 @@ async function fetchEvaluationsForAgent(forcedName) {
             }
             
             let html = '';
+            // Listeyi ters çevirip ekrana basıyoruz
             filteredEvals.reverse().forEach((evalItem, index) => {
                 const scoreColor = evalItem.score >= 90 ? '#2e7d32' : (evalItem.score >= 70 ? '#ed6c02' : '#d32f2f');
 
-                const displayCallDate = formatDateToDDMMYYYY(evalItem.callDate);
-                const displayLogDate  = formatDateToDDMMYYYY(evalItem.date);
+                // --- TARİH FORMATLAMA VE YER DEĞİŞİMİ ---
+                const displayCallDate = formatDateToDDMMYYYY(evalItem.callDate); // Çağrı tarihi (üstte)
+                const displayLogDate  = formatDateToDDMMYYYY(evalItem.date);    // Dinleme / loglama tarihi (altta)
 
                 let detailHtml = '';
                 try {
@@ -1026,15 +1048,18 @@ async function fetchEvaluationsForAgent(forcedName) {
                     detailHtml += '</table>';
                 } catch (e) { detailHtml = `<p style="white-space:pre-wrap; margin:0; font-size:0.9rem;">${evalItem.details}</p>`; }
 
+                // Call ID ile düzenleme
                 let editBtn = isAdminMode ? `<div style="position:absolute; top:10px; right:40px; cursor:pointer; color:#1976d2;" onclick="event.stopPropagation(); editEvaluation('${evalItem.callId}')" title="Değerlendirmeyi Düzenle"><i class="fas fa-edit fa-lg"></i></div>` : '';
 
                 html += `<div class="evaluation-summary" id="eval-summary-${index}" style="position:relative; border:1px solid #ddd; border-left:5px solid ${scoreColor}; padding:15px; margin-bottom:10px; border-radius:6px; background:#fff; cursor:pointer;" onclick="toggleEvaluationDetail(${index})">
                     ${editBtn}
                     <div style="display:flex; justify-content:space-between; align-items:center;">
                         <div style="flex-direction: column; align-items: flex-start; display: flex;">
+                            <!-- ÜSTTE ÇAĞRI TARİHİ -->
                             <span style="font-weight:bold; color:var(--primary); font-size:1.1rem;">
                                 📞 Çağrı Tarihi: ${displayCallDate}
                             </span>
+                            <!-- ALTTA DİNLEME / LOGLAMA TARİHİ -->
                             <span style="font-size:0.9rem; color:#555; margin-top:5px;">
                                 Dinleme Tarihi: ${displayLogDate} 
                                 <span style="font-size:0.8rem; font-weight:normal; color:#666;">(Loglama)</span>
@@ -1091,7 +1116,7 @@ async function exportEvaluations() {
             headers: { "Content-Type": "text/plain;charset=utf-8" },
             body: JSON.stringify({
                 action: "exportEvaluations",
-                targetAgent: targetAgent,
+                targetAgent: targetAgent, // 'all' veya temsilci adı
                 username: currentUser,
                 token: getToken()
             })
@@ -1100,6 +1125,8 @@ async function exportEvaluations() {
         const data = await response.json();
         
         if (data.result === "success" && data.csvData) {
+            // CSV verisini blob olarak indir
+            // \ufeff BOM karakteri Excel'in Türkçe karakterleri doğru okuması için eklendi
             const blob = new Blob(["\ufeff" + data.csvData], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement("a");
             
@@ -1114,7 +1141,8 @@ async function exportEvaluations() {
               
                 Swal.fire('Başarılı', `Rapor <strong>${data.fileName}</strong> adıyla indirildi.`, 'success');
             } else {
-                Swal.fire('Hata', 'Tarayıcınız otomatik indirmeyi desteklemiyor.', 'error');
+                // Tarayıcı indirmeyi desteklemiyorsa uyarı ver
+                Swal.fire('Hata', 'Tarayıcınız otomatik indirmeyi desteklemiyor. Lütfen rapor içeriğini Apps Script kodundan kopyalamayı deneyin.', 'error');
             }
         } else {
             Swal.fire('Hata', data.message || 'Rapor verisi alınamadı.', 'error');
@@ -1125,6 +1153,8 @@ async function exportEvaluations() {
         Swal.fire('Hata', 'Sunucuya bağlanılamadı veya bilinmeyen hata.', 'error');
     }
 }
+
+// --- DİĞER STANDART JS FONKSİYONLARI ---
 
 function fetchUserListForAdmin() {
     return new Promise((resolve) => {
@@ -1180,7 +1210,7 @@ function toggleEvaluationDetail(index) {
     }
 }
 
-// --- LOG EVALUATION & UPDATE EVALUATION POPUPS (Uzun fonksiyonlar buraya eklendi) ---
+// --- LOG EVALUATION & UPDATE EVALUATION POPUPS ---
 async function logEvaluationPopup() {
     const selectEl = document.getElementById('agent-select-admin');
     const agentName = selectEl.value;
@@ -1754,6 +1784,7 @@ function finishPenaltyGame() {
 
 function openWizard(){
     document.getElementById('wizard-modal').style.display='flex';
+    // Veri yüklenmediyse yüklemeye çalış, yüklendiyse direkt başla
     if (Object.keys(wizardStepsData).length === 0) {
         Swal.fire({ title: 'İade Asistanı Verisi Yükleniyor...', didOpen: () => Swal.showLoading() });
         loadWizardData().then(() => {
@@ -1772,7 +1803,7 @@ function openWizard(){
     }
 }
 
-function renderStep(k){
+function renderStep(k){ 
     const s = wizardStepsData[k];
     if (!s) {
         document.getElementById('wizard-body').innerHTML = `<h2 style="color:red;">HATA: Adım ID'si (${k}) bulunamadı. Lütfen yöneticinizle iletişime geçin.</h2>`;
@@ -1782,20 +1813,24 @@ function renderStep(k){
     const b = document.getElementById('wizard-body');
     let h = `<h2 style="color:var(--primary);">${s.title || ''}</h2>`;
     
-    if(s.result) {
+    // Final Adım Kontrolü
+    if(s.result) { 
         let i = s.result === 'red' ? '🛑' : (s.result === 'green' ? '✅' : '⚠️');
         let c = s.result === 'red' ? 'res-red' : (s.result === 'green' ? 'res-green' : 'res-yellow');
         
-        h += `<div class="result-box ${c}"><div style="font-size:3rem;margin-bottom:10px;">${i}</div><h3>${s.title}</h3><p>${s.text}</p>${s.script ? `<div class="script-box">${s.script}</div>` : ''}</div><button class="restart-btn" onclick="renderStep('start')"><i class="fas fa-redo"></i> Başa Dön</button>`;
+        // Final adımı başlık ve metin (text) kullanır, script opsiyoneldir.
+        h += `<div class="result-box ${c}"><div style="font-size:3rem;margin-bottom:10px;">${i}</div><h3>${s.title}</h3><p>${s.text}</p>${s.script ? `<div class="script-box">${s.script}</div>` : ''}</div><button class="restart-btn" onclick="renderStep('start')"><i class="fas fa-redo"></i> Başa Dön</button>`; 
     } else {
+        // Ara Adım
         h += `<p>${s.text}</p><div class="wizard-options">`;
-        s.options.forEach(o => {
-            h += `<button class="option-btn" onclick="renderStep('${o.next}')"><i class="fas fa-chevron-right"></i> ${o.text}</button>`;
+        s.options.forEach(o => { 
+            h += `<button class="option-btn" onclick="renderStep('${o.next}')"><i class="fas fa-chevron-right"></i> ${o.text}</button>`; 
         });
-        h += `</div>`;
+        h += `</div>`; 
         
+        // Geri Dön butonu sadece 'start' dışında gösterilir
         if(k !== 'start')
-            h += `<button class="restart-btn" onclick="renderStep('start')" style="background:#eee;color:#333;margin-top:15px;">Başa Dön</button>`;
-    }
-    b.innerHTML = h;
+            h += `<button class="restart-btn" onclick="renderStep('start')" style="background:#eee;color:#333;margin-top:15px;">Başa Dön</button>`; 
+    } 
+    b.innerHTML = h; 
 }
