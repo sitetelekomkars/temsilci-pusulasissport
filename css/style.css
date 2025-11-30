@@ -83,13 +83,27 @@ rgba(0,0,0,0.1); }
 transform: translateY(-50%); color: #0e1b42; }
  
 /* FILTERS */
-.filter-container { display: flex; gap: 8px; flex-wrap:
-wrap; }
-.filter-btn { background-color: rgba(255, 255, 255, 0.05);
-border: 1px solid rgba(255, 255, 255, 0.15); color: #eceff1; padding: 10px
-18px; border-radius: 6px; cursor: pointer; transition: all 0.3s ease; display:
-flex; align-items: center; gap: 6px; font-weight: 500; font-size: 0.9rem;
-text-transform: uppercase; letter-spacing: 0.5px; }
+.filter-container { 
+    display: flex; 
+    gap: 4px; 
+    flex-wrap: wrap; 
+}
+.filter-btn { 
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    color: #eceff1; 
+    padding: 6px 12px; /* Eski değer: 10px 18px */
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    display: flex; 
+    align-items: center; 
+    gap: 5px; /* İkon ile yazı arası mesafe */
+    font-weight: 500; 
+    font-size: 0.8rem; /* Eski değer: 0.9rem */
+    text-transform: uppercase; 
+    letter-spacing: 0.5px; 
+}
 .filter-btn:hover, .filter-btn.active { background-color:
 #fabb00; color: #0e1b42; border-color: #fabb00; transform: translateY(-2px);
 box-shadow: 0 4px 10px rgba(250, 187, 0, 0.3); }
