@@ -952,7 +952,7 @@ function startTicker() {
     t.innerHTML = tickerText + ' &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; ' + tickerText + ' &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; ' + tickerText;
     
     // Animasyonu başlat (CSS'teki @keyframes tetiklenir)
-    t.style.animation = 'ticker-scroll 45s linear infinite';
+    t.style.animation = 'ticker-scroll 90s linear infinite';
 }
 
 function openNews() { 
