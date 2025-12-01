@@ -81,7 +81,7 @@ body {
 /* MARKA ALANI */
 .brand-area { display: flex; align-items: center; gap: 15px; }
 .brand-img { 
-    height: 75px; /* BÜYÜTÜLDÜ */
+    height: 64px; /* GÜNCELLENDİ: 50px -> 64px (Daha büyük) */
     width: auto; 
     object-fit: contain;
     filter: drop-shadow(0 0 5px rgba(250, 187, 0, 0.3));
@@ -202,13 +202,13 @@ body {
 .link-btn { color: rgba(255, 255, 255, 0.7); }
 .link-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
 
-/* --- TICKER (KAYAN YAZI) --- */
+/* --- TICKER (KAYAN YAZI DÜZENLEMESİ) --- */
 .news-ticker-box { 
     width: 100%;
     background: rgba(0, 0, 0, 0.25); 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 0 25px; 
-    height: 35px; /* YÜKSEKLİK ARTIRILDI */
+    height: 35px; /* Yükseklik Artırıldı */
     display: flex; 
     align-items: center; 
     gap: 15px; 
@@ -216,7 +216,7 @@ body {
     transition: 0.2s;
     margin-top: 2px;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: hidden; /* Taşan yazılar gizlensin */
 }
 .news-ticker-box:hover { background: rgba(0, 0, 0, 0.4); }
 
@@ -224,11 +224,11 @@ body {
     font-size: 0.65rem; color: #fabb00; font-weight: 800; 
     display: flex; align-items: center; gap: 6px; 
     letter-spacing: 0.5px; min-width: fit-content; 
-    z-index: 5; background: rgba(14, 27, 66, 0.8); /* Arka plan karışmasın */
+    z-index: 5; background: #0e1b42; /* Üstüne gelmesin diye arka plan */
+    padding-right: 10px;
 }
 .pulse-dot { width: 5px; height: 5px; background: var(--secondary); border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
 
-/* Kayan Yazı Animasyonu */
 .ticker-scroll-wrapper {
     flex-grow: 1;
     overflow: hidden;
@@ -241,15 +241,15 @@ body {
 .ticker-content { 
     font-size: 0.8rem; color: rgba(255, 255, 255, 0.8); 
     white-space: nowrap; 
-    display: inline-block;
-    padding-left: 100%; /* Başlangıç noktası */
-    animation: ticker-scroll 25s linear infinite; 
+    position: absolute; /* Kayma için gerekli */
+    left: 100%; /* Sağdan başla */
+    animation: ticker-scroll 20s linear infinite; /* Sürekli kay */
     font-weight: 400; font-family: 'Segoe UI', sans-serif; 
 }
 
 @keyframes ticker-scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%) translateX(-300px); } /* Sola doğru kayıp git */
 }
 
 /* --- CARDS & GRID --- */
