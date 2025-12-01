@@ -78,17 +78,18 @@ body {
 .header-content-limit {
     width: 100%;
     max-width: 1600px; 
-    /* Sol tarafa kaydırma: Ortalamayı kaldırıp sola yaslama yapıyoruz */
+    /* Sol tarafa kaydırma için ayar */
     margin-right: auto; 
     margin-left: 0; 
-    /* Sol dolguyu azaltarak logoyu kenara yaklaştırıyoruz */
-    padding: 15px 25px 10px 10px; 
+    /* Kırmızı boşlukları silmek için dikey padding'i azalttık */
+    padding: 5px 25px 0px 10px; 
     box-sizing: border-box;
 }
 
 .header-top { 
     display: flex; justify-content: space-between; align-items: center; 
-    margin-bottom: 5px; 
+    /* Kırmızı boşlukları silmek için marjini sıfırladık */
+    margin-bottom: 0px; 
 }
 
 /* MARKA ALANI */
@@ -137,10 +138,11 @@ body {
 .control-wrapper { 
     display: flex; 
     align-items: center; 
-    /* Sol tarafa kaydırma için hizalamayı sola çektik */
+    /* Sola hizalı */
     justify-content: flex-start; 
     gap: 15px; 
-    padding-bottom: 10px; 
+    /* Kırmızı boşlukları silmek için padding'i sıfırladık */
+    padding-bottom: 0; 
     position: relative;
     flex-wrap: wrap; 
 }
@@ -214,11 +216,11 @@ body {
 /* --- TICKER (Duyuru Barı İyileştirmesi) --- */
 .news-ticker-box { 
     width: 100%;
-    /* Rengi butonların varsayılan arka plan rengiyle aynı yaptık */
-    background: #1c2438; 
+    /* Rengi üst barın ana rengine yakın, hafif koyu yaptık */
+    background: #0a1532; 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 0 25px; 
-    height: 30px; /* Duyuru barını daralttık */
+    height: 25px; /* Duyuru barını daralttık */
     display: flex; 
     align-items: center; 
     gap: 15px; 
@@ -228,11 +230,11 @@ body {
     box-sizing: border-box;
     overflow: hidden; 
 }
-.news-ticker-box:hover { background: #2c344a; } 
+.news-ticker-box:hover { background: #1c2438; } 
 
 .ticker-label { 
     font-size: 0.65rem; color: #fabb00; font-weight: 800; display: flex; align-items: center; gap: 6px; letter-spacing: 0.5px; min-width: fit-content; z-index: 5; 
-    background: #1c2438; 
+    background: #0a1532; /* Arka planı kutu arka planıyla eşleştirdik */
     padding-right: 15px; height: 100%; 
     display: flex; align-items: center;
 }
@@ -249,7 +251,7 @@ body {
 
 /* KAYAN YAZI ANİMASYONU */
 .ticker-content { 
-    font-size: 0.75rem; 
+    font-size: 0.7rem; /* Metin boyutunu küçülttük */
     color: rgba(255, 255, 255, 0.9); 
     white-space: nowrap; 
     position: absolute; 
