@@ -22,20 +22,31 @@ body {
     overflow-x: hidden;
 }
 
-/* --- LOGIN SCREEN --- */
+/* --- LOGIN SCREEN (1. İyileştirme) --- */
 #login-screen { 
     position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5000; 
     display: flex; justify-content: center; align-items: center;
     background: #0e1b42; 
 }
 .login-card {
-    background: #1c2438; padding: 15px 40px; border-radius: 12px; text-align: center;
+    background: #1c2438; padding: 25px 40px; border-radius: 12px; text-align: center;
     width: 300px; box-shadow: 0 20px 60px rgba(0,0,0,0.5);
     border: 1px solid rgba(255,255,255,0.05);
 }
 .login-logo-img {
-    width: 120px; height: auto; margin-bottom: 5px;
+    width: 90px; /* Logo boyutunu biraz küçülttük */
+    height: auto; 
+    margin-bottom: 0px; /* Boşluğu azalttık */
     filter: drop-shadow(0 0 10px rgba(250, 187, 0, 0.3));
+}
+/* Başlık boşluğunu düzenle */
+.login-card h2 {
+    margin-top: 5px !important; /* Başlık ve logo arası boşluğu azalttık */
+    margin-bottom: 0px !important;
+}
+.login-card p {
+    margin-top: 5px !important; /* Alt başlık boşluğunu azalttık */
+    margin-bottom: 25px !important;
 }
 .login-input { 
     width: 100%; padding: 12px; margin: 8px 0; background: #2c344a; color: #fff; 
@@ -53,7 +64,7 @@ body {
 #maintenance-screen { display: none !important; }
 #main-app { display: none; }
 
-/* --- HEADER YAPISI --- */
+/* --- HEADER YAPISI (3. İyileştirme) --- */
 .header { 
     background: #0e1b42; 
     color: white; 
@@ -69,26 +80,27 @@ body {
     width: 100%;
     max-width: 1600px; 
     margin: 0 auto;
-    padding: 10px 25px 0 25px; 
+    /* Üst ve alt padding'i azalttık (3. İyileştirme) */
+    padding: 5px 25px 5px 25px; 
     box-sizing: border-box;
 }
 
 .header-top { 
     display: flex; justify-content: space-between; align-items: center; 
-    margin-bottom: 8px; 
+    margin-bottom: 5px; /* Boşluğu azalttık */
 }
 
 /* MARKA ALANI */
-.brand-area { display: flex; align-items: center; gap: 15px; }
+.brand-area { display: flex; align-items: center; gap: 10px; /* Boşluğu azalttık */ }
 .brand-img { 
-    height: 64px; /* KARE boyut için sabit yükseklik */
-    width: 64px; /* KARE boyut için genişlik sabitlendi */
+    height: 50px; /* Kare alanı küçülttük (3. İyileştirme) */
+    width: 50px; /* Kare alanı küçülttük (3. İyileştirme) */
     object-fit: contain;
     filter: drop-shadow(0 0 5px rgba(250, 187, 0, 0.3));
 }
-.brand-text { display: flex; flex-direction: row; align-items: center; gap: 10px; }
-.brand-text .main-text { font-size: 1.1rem; font-weight: 700; color: #fff; letter-spacing: 0.5px; white-space: nowrap; }
-.brand-text .sub-text { font-size: 1.1rem; font-weight: 300; color: rgba(255,255,255,0.6); white-space: nowrap; border-left: 1px solid rgba(255,255,255,0.3); padding-left: 10px; }
+.brand-text { display: flex; flex-direction: row; align-items: center; gap: 8px; /* Boşluğu azalttık */ }
+.brand-text .main-text { font-size: 1.0rem; font-weight: 700; color: #fff; letter-spacing: 0.5px; white-space: nowrap; }
+.brand-text .sub-text { font-size: 1.0rem; font-weight: 300; color: rgba(255,255,255,0.6); white-space: nowrap; border-left: 1px solid rgba(255,255,255,0.3); padding-left: 8px; }
 
 .header-controls { display: flex; align-items: center; gap:10px; }
 
@@ -125,7 +137,7 @@ body {
     align-items: center; 
     justify-content: center; 
     gap: 15px; 
-    padding-bottom: 8px; 
+    padding-bottom: 5px; /* Boşluğu azalttık */
     position: relative;
     flex-wrap: wrap; 
 }
@@ -196,25 +208,26 @@ body {
 .link-btn { color: rgba(255, 255, 255, 0.7); }
 .link-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
 
-/* --- TICKER --- */
+/* --- TICKER (2. İyileştirme) --- */
 .news-ticker-box { 
     width: 100%;
-    background: rgba(0, 0, 0, 0.25); 
+    /* Rengi üst barın bir ton açığı yaptık */
+    background: #1c2438; 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 0 25px; 
-    height: 40px; 
+    height: 35px; /* Yüksekliği azalttık */
     display: flex; 
     align-items: center; 
     gap: 15px; 
     cursor: pointer; 
     transition: 0.2s;
-    margin-top: 2px;
+    margin-top: 0px; /* Boşluğu azalttık */
     box-sizing: border-box;
     overflow: hidden; 
 }
-.news-ticker-box:hover { background: rgba(0, 0, 0, 0.4); }
+.news-ticker-box:hover { background: #2c344a; } /* Hover rengini koyulaştırdık */
 
-.ticker-label { font-size: 0.65rem; color: #fabb00; font-weight: 800; display: flex; align-items: center; gap: 6px; letter-spacing: 0.5px; min-width: fit-content; z-index: 5; background: #0e1b42; padding-right: 15px; height: 100%; }
+.ticker-label { font-size: 0.65rem; color: #fabb00; font-weight: 800; display: flex; align-items: center; gap: 6px; letter-spacing: 0.5px; min-width: fit-content; z-index: 5; background: #1c2438; /* Etiket arka planını kutu arka planıyla eşleştirdik */ padding-right: 15px; height: 100%; }
 .pulse-dot { width: 5px; height: 5px; background: var(--secondary); border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
 
 .ticker-scroll-wrapper {
@@ -228,7 +241,7 @@ body {
 
 /* KAYAN YAZI ANİMASYONU */
 .ticker-content { 
-    font-size: 0.85rem; 
+    font-size: 0.8rem; /* Font boyutunu biraz küçülttük */
     color: rgba(255, 255, 255, 0.9); 
     white-space: nowrap; 
     position: absolute; 
@@ -244,6 +257,7 @@ body {
 
 /* --- CARDS & GRID --- */
 .container { padding: 25px; max-width: 1600px; margin: 0 auto; }
+/* ... Geri kalan kart ve grid stilleri değişmedi ... */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
 .card { background: var(--card-bg); border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #eaedf2; border-left: 4px solid var(--info); display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; position: relative; }
 .card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.06); border-color: #dfe3e8; }
@@ -272,6 +286,7 @@ body.editing .edit-icon { display: block !important; }
 .fav-icon.active { color: var(--secondary); }
 
 /* MODAL/MODÜL STİLLERİ */
+/* ... Diğer modal ve yardımcı stiller değişmedi ... */
 .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(14, 27, 66, 0.8); z-index: 5000; justify-content: center; align-items: center; backdrop-filter: blur(3px); }
 .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 8px; padding: 30px; position: relative; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
 .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; cursor: pointer; color: #999; transition: 0.2s; }
@@ -287,6 +302,7 @@ body.editing .edit-icon { display: block !important; }
 @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
 /* NEWS ITEMS & BADGES */
+/* ... Geri kalan stiller değişmedi ... */
 .news-item { border-left: 4px solid var(--primary); padding: 15px 15px 15px 20px; margin-bottom: 20px; position: relative; background-color: #fcfcfc; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #eee; border-left-width: 4px; }
 .news-date { font-size: 0.75rem; color: #999; font-weight: 700; display: block; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
 .news-title { font-size: 1.1rem; font-weight: 700; color: var(--primary); display: block; margin-bottom: 8px; line-height: 1.3; }
@@ -297,6 +313,7 @@ body.editing .edit-icon { display: block !important; }
 .tag-info { background: #e3f2fd; color: #0277bd; border: 1px solid #bbdefb; }
 
 /* PENALTY & FUNCTIONAL STYLES (Restored) */
+/* ... Geri kalan stiller değişmedi ... */
 .penalty-stats { background: #111; color: #fff; padding: 10px 15px; border-radius: 6px; display:flex; justify-content:space-between; font-weight:700; margin-bottom: 15px; border: 1px solid #333; }
 .penalty-stats span span { color: var(--secondary); }
 .joker-btn { background: #6a1b9a; color: white; padding: 10px; border-radius: 6px; border:none; cursor:pointer; flex:1; margin:0 5px; font-weight: bold; transition: all 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.9rem; }
