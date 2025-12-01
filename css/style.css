@@ -81,7 +81,7 @@ body {
 /* MARKA ALANI */
 .brand-area { display: flex; align-items: center; gap: 15px; }
 .brand-img { 
-    height: 50px; /* BÜYÜTÜLDÜ */
+    height: 100px; /* BÜYÜTÜLDÜ */
     width: auto; 
     object-fit: contain;
     filter: drop-shadow(0 0 5px rgba(250, 187, 0, 0.3));
