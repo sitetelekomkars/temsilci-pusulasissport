@@ -22,7 +22,7 @@ body {
     overflow-x: hidden;
 }
 
-/* --- LOGIN SCREEN (1. İyileştirme) --- */
+/* --- LOGIN SCREEN --- */
 #login-screen { 
     position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 5000; 
     display: flex; justify-content: center; align-items: center;
@@ -63,7 +63,7 @@ body {
 #maintenance-screen { display: none !important; }
 #main-app { display: none; }
 
-/* --- HEADER YAPISI (3. İyileştirme ve Son Ayarlar) --- */
+/* --- HEADER YAPISI (Logo Boyutunu Artırdık) --- */
 .header { 
     background: #0e1b42; 
     color: white; 
@@ -79,8 +79,8 @@ body {
     width: 100%;
     max-width: 1600px; 
     margin: 0 auto;
-    /* Dikey alanı logoyu sığdırmak için artırdık */
-    padding: 10px 25px 10px 25px; 
+    /* Logonun dikey alanda daha fazla yer kaplaması için dikey padding'i artırdık */
+    padding: 15px 25px 10px 25px; 
     box-sizing: border-box;
 }
 
@@ -92,9 +92,9 @@ body {
 /* MARKA ALANI */
 .brand-area { display: flex; align-items: center; gap: 10px; }
 .brand-img { 
-    /* Logo boyutunu 60px'e yükselterek daha fazla alan kaplamasını sağladık */
-    height: 60px; 
-    width: 60px; 
+    /* Logo boyutunu artırarak karelediğiniz alanı kaplamasını sağladık */
+    height: 65px; 
+    width: 65px; 
     object-fit: contain;
     filter: drop-shadow(0 0 5px rgba(250, 187, 0, 0.3));
 }
@@ -208,13 +208,14 @@ body {
 .link-btn { color: rgba(255, 255, 255, 0.7); }
 .link-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
 
-/* --- TICKER (2. İyileştirme) --- */
+/* --- TICKER (Duyuru Barı İyileştirmesi) --- */
 .news-ticker-box { 
     width: 100%;
+    /* Rengi üst menü butonlarının arka plan rengiyle aynı yaptık (daha az dikkat çekmesi için) */
     background: #1c2438; 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 0 25px; 
-    height: 35px; 
+    height: 30px; /* Duyuru barını daralttık */
     display: flex; 
     align-items: center; 
     gap: 15px; 
@@ -230,7 +231,6 @@ body {
     font-size: 0.65rem; color: #fabb00; font-weight: 800; display: flex; align-items: center; gap: 6px; letter-spacing: 0.5px; min-width: fit-content; z-index: 5; 
     background: #1c2438; 
     padding-right: 15px; height: 100%; 
-    /* Metin hizalamasını ve dikey ortalamayı sağlamak için */
     display: flex; align-items: center;
 }
 .pulse-dot { width: 5px; height: 5px; background: var(--secondary); border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
@@ -246,7 +246,7 @@ body {
 
 /* KAYAN YAZI ANİMASYONU */
 .ticker-content { 
-    font-size: 0.8rem; 
+    font-size: 0.75rem; /* Duyuru metin boyutunu daha da küçülttük */
     color: rgba(255, 255, 255, 0.9); 
     white-space: nowrap; 
     position: absolute; 
@@ -336,7 +336,7 @@ body.editing .edit-icon { display: block !important; }
 .ball-wrapper { position: absolute; bottom: 110px; left: 50%; transform: translateX(-50%); z-index: 15; transition: all 0.6s cubic-bezier(0.1, 0.5, 0.3, 1); width: 36px; height: 36px; }
 .football { width: 100%; height: 100%; border-radius: 50%; background-color: #fff; background-image: radial-gradient(circle at 50% 50%, rgba(0,0,0,0.1) 40%, transparent 50%), conic-gradient(#fff 0deg, #fff 45deg, #222 45deg, #222 90deg, #fff 90deg, #fff 135deg, #222 135deg, #222 180deg, #fff 180deg, #fff 225deg, #222 225deg, #222 270deg, #fff 270deg, #fff 315deg, #222 315deg, #222 360deg); background-size: 200% 200%; box-shadow: inset -5px -5px 10px rgba(0,0,0,0.4), 0 5px 10px rgba(0,0,0,0.3); position: relative; animation: spinIdle 10s linear infinite; }
 @keyframes spinIdle { 0% { background-position: 0% 0%; } 100% { background-position: 100% 100%; } }
-.ball-shadow { width: 30px; height: 6px; background: rgba(0,0,0,0.6); border-radius: 50%; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); filter: blur(3px); transition: all 0.6s; }
+.ball-shadow { width: 30px; height: 6px; background: rgba(0,0,0,0.5); border-radius: 50%; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); filter: blur(3px); transition: all 0.6s; }
 .keeper-wrapper { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 70px; height: 130px; z-index: 10; transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1.2); perspective: 500px; }
 .player-figure { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; }
 .head { width: 28px; height: 32px; background: radial-gradient(circle at 10px 10px, #ffcc80, #e65100); border-radius: 50% 50% 45% 45% / 50% 50% 55% 55%; margin: 0 auto; position: relative; z-index: 4; box-shadow: inset 0 -3px 5px rgba(0,0,0,0.3), 0 2px 5px rgba(0,0,0,0.4); transform: translateZ(5px); }
