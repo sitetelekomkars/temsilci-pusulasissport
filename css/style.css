@@ -81,7 +81,7 @@ body {
 /* MARKA ALANI */
 .brand-area { display: flex; align-items: center; gap: 15px; }
 .brand-img { 
-    height: 64px; /* GÜNCELLENDİ: 50px -> 64px (Daha büyük) */
+    height: 64px; /* İKON BÜYÜTÜLDÜ */
     width: auto; 
     object-fit: contain;
     filter: drop-shadow(0 0 5px rgba(250, 187, 0, 0.3));
@@ -101,7 +101,7 @@ body {
 .action-btn:hover { background: rgba(255, 255, 255, 0.15); color: #fff; }
 .action-btn.active { background: var(--secondary); border-color: var(--secondary); color: #0e1b42; }
 
-/* KULLANICI MENÜSÜ & DROPDOWN */
+/* KULLANICI MENÜSÜ */
 .user-menu-wrapper { position: relative; }
 .user-btn { background: transparent; border: none; color: #eee; padding: 6px 10px; cursor: pointer; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; border-radius: 4px; border: 1px solid transparent; transition: all 0.2s; }
 .user-btn:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); }
@@ -202,7 +202,7 @@ body {
 .link-btn { color: rgba(255, 255, 255, 0.7); }
 .link-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
 
-/* --- TICKER (KAYAN YAZI DÜZENLEMESİ) --- */
+/* --- TICKER (KAYAN YAZI) --- */
 .news-ticker-box { 
     width: 100%;
     background: rgba(0, 0, 0, 0.25); 
@@ -216,7 +216,7 @@ body {
     transition: 0.2s;
     margin-top: 2px;
     box-sizing: border-box;
-    overflow: hidden; /* Taşan yazılar gizlensin */
+    overflow: hidden; 
 }
 .news-ticker-box:hover { background: rgba(0, 0, 0, 0.4); }
 
@@ -224,8 +224,9 @@ body {
     font-size: 0.65rem; color: #fabb00; font-weight: 800; 
     display: flex; align-items: center; gap: 6px; 
     letter-spacing: 0.5px; min-width: fit-content; 
-    z-index: 5; background: #0e1b42; /* Üstüne gelmesin diye arka plan */
+    z-index: 5; background: #0e1b42; /* Başlık sabit kalsın */
     padding-right: 10px;
+    height: 100%;
 }
 .pulse-dot { width: 5px; height: 5px; background: var(--secondary); border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
 
@@ -236,20 +237,22 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
 }
 
 .ticker-content { 
     font-size: 0.8rem; color: rgba(255, 255, 255, 0.8); 
     white-space: nowrap; 
-    position: absolute; /* Kayma için gerekli */
-    left: 100%; /* Sağdan başla */
-    animation: ticker-scroll 20s linear infinite; /* Sürekli kay */
+    position: absolute; 
+    left: 100%; 
+    animation: ticker-scroll 30s linear infinite; 
     font-weight: 400; font-family: 'Segoe UI', sans-serif; 
 }
 
 @keyframes ticker-scroll {
     from { transform: translateX(0); }
-    to { transform: translateX(-100%) translateX(-300px); } /* Sola doğru kayıp git */
+    to { transform: translateX(-100%) translateX(-200px); } 
 }
 
 /* --- CARDS & GRID --- */
@@ -416,7 +419,7 @@ body.editing .edit-icon { display: block !important; }
 .option-btn:hover { border-color: var(--primary); background: #f0f4ff; }
 .result-box { padding: 20px; border-radius: 8px; margin-top: 20px; text-align: center; }
 .res-red { background: #ffebee; border: 2px solid #ef5350; color: #c62828; }
-.res-green { background: #e8f5e9; border: 1px solid #66bb6a; color: #2e7d32; }
+.res-green { background: #e8f5e9; border: 2px solid #66bb6a; color: #2e7d32; }
 .res-yellow { background: #fff8e1; border: 2px solid #ffca28; color: #f57f17; }
 .restart-btn { margin-top: 20px; background: #555; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
 .highlight { background-color: yellow; font-weight: bold; }
