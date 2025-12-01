@@ -928,27 +928,16 @@ async function editNews(index) {
 }
 
 // --- MODALS ---
-// YENİLENMİŞ START TICKER FONKSİYONU
-function startTicker() {
-    const t = document.getElementById('ticker-content');
-    
-    // Sadece aktif duyuruları al
-    const activeNews = newsData.filter(i => i.status !== 'Pasif');
-    
-    if(activeNews.length === 0) {
-        t.innerHTML = "Güncel duyuru yok.";
-        return;
-    }
-    
-    // Tüm duyuruları tek bir uzun metin olarak birleştir
-    let tickerText = activeNews.map(i => {
-        // Tarih Gri, Başlık Sarı
-        return `<span style="color:#aaa; font-weight:600; margin-right:5px;">[${i.date}]</span> <span style="color:#fff; font-weight:bold;">${i.title}:</span> <span style="color:#ddd;">${i.desc}</span>`;
-    }).join(' &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; '); 
+function closeModal(id) { document.getElementById(id).style.display = 'none'; }
 
-    // Metni ekrana bas (Sonsuz döngü efekti için 2 kez yazdırıyoruz)
-    t.innerHTML = tickerText + ' &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; ' + tickerText;
-}
+let tickerIndex = 0;
+function startTicker() { 
+    const t = document.getElementById('ticker-content'); 
+    const activeNews = newsData.filter(i => i.status !== 'Pasif'); 
+    if(activeNews.length === 0) { 
+        t.innerHTML = "Güncel duyuru yok."; 
+        return; 
+    } 
     function showNext() { 
         const i = activeNews[tickerIndex]; 
         t.style.animation = 'none'; 
