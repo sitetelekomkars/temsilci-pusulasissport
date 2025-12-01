@@ -63,7 +63,7 @@ body {
 #maintenance-screen { display: none !important; }
 #main-app { display: none; }
 
-/* --- HEADER YAPISI (Logo Boyutunu Artırdık) --- */
+/* --- HEADER YAPISI --- */
 .header { 
     background: #0e1b42; 
     color: white; 
@@ -78,9 +78,11 @@ body {
 .header-content-limit {
     width: 100%;
     max-width: 1600px; 
-    margin: 0 auto;
-    /* Logonun dikey alanda daha fazla yer kaplaması için dikey padding'i artırdık */
-    padding: 15px 25px 10px 25px; 
+    /* Sol tarafa kaydırma: Ortalamayı kaldırıp sola yaslama yapıyoruz */
+    margin-right: auto; 
+    margin-left: 0; 
+    /* Sol dolguyu azaltarak logoyu kenara yaklaştırıyoruz */
+    padding: 15px 25px 10px 10px; 
     box-sizing: border-box;
 }
 
@@ -92,7 +94,7 @@ body {
 /* MARKA ALANI */
 .brand-area { display: flex; align-items: center; gap: 10px; }
 .brand-img { 
-    /* Logo boyutunu artırarak karelediğiniz alanı kaplamasını sağladık */
+    /* Logo boyutunu dikey alana yayılacak şekilde artırdık */
     height: 65px; 
     width: 65px; 
     object-fit: contain;
@@ -135,7 +137,8 @@ body {
 .control-wrapper { 
     display: flex; 
     align-items: center; 
-    justify-content: center; 
+    /* Sol tarafa kaydırma için hizalamayı sola çektik */
+    justify-content: flex-start; 
     gap: 15px; 
     padding-bottom: 10px; 
     position: relative;
@@ -211,7 +214,7 @@ body {
 /* --- TICKER (Duyuru Barı İyileştirmesi) --- */
 .news-ticker-box { 
     width: 100%;
-    /* Rengi üst menü butonlarının arka plan rengiyle aynı yaptık (daha az dikkat çekmesi için) */
+    /* Rengi butonların varsayılan arka plan rengiyle aynı yaptık */
     background: #1c2438; 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 0 25px; 
@@ -246,7 +249,7 @@ body {
 
 /* KAYAN YAZI ANİMASYONU */
 .ticker-content { 
-    font-size: 0.75rem; /* Duyuru metin boyutunu daha da küçülttük */
+    font-size: 0.75rem; 
     color: rgba(255, 255, 255, 0.9); 
     white-space: nowrap; 
     position: absolute; 
