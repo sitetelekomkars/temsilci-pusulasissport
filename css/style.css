@@ -34,7 +34,7 @@ body {
     border: 1px solid rgba(255,255,255,0.05);
 }
 .login-logo-img {
-    width: 80px; height: auto; margin-bottom: 10px;
+    width: 120px; height: auto; margin-bottom: 10px;
     filter: drop-shadow(0 0 10px rgba(250, 187, 0, 0.3));
 }
 .login-input { 
