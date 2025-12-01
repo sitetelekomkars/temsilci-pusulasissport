@@ -931,23 +931,28 @@ async function editNews(index) {
 function closeModal(id) { document.getElementById(id).style.display = 'none'; }
 
 let tickerIndex = 0;
-function startTicker() { 
-    const t = document.getElementById('ticker-content'); 
-    const activeNews = newsData.filter(i => i.status !== 'Pasif'); 
-    if(activeNews.length === 0) { 
-        t.innerHTML = "Güncel duyuru yok."; 
-        return; 
-    } 
-    function showNext() { 
-        const i = activeNews[tickerIndex]; 
-        t.style.animation = 'none'; 
-        t.offsetHeight;
-        t.style.animation = 'slideIn 0.5s ease-out'; 
-        t.innerHTML = `<strong>${i.date}:</strong> ${i.title} - ${i.desc}`; 
-        tickerIndex = (tickerIndex + 1) % activeNews.length; 
-    } 
-    showNext(); 
-    setInterval(showNext, 60000); 
+                                              
+function startTicker() {
+    const t = document.getElementById('ticker-content');
+    const activeNews = newsData.filter(i => i.status !== 'Pasif');
+    
+    if(activeNews.length === 0) {
+        t.innerHTML = "Güncel duyuru yok.";
+        t.style.animation = 'none'; // Animasyonu durdur
+        return;
+    }
+    
+    // Tüm duyuruları birleştirerek tek, uzun bir metin oluştur
+    let tickerText = activeNews.map(i => {
+        // Renklendirme ve formatlama
+        return `<span style="color:#fabb00; font-weight:bold;">[${i.date}]</span> <span style="color:#fff;">${i.title}:</span> <span style="color:#ddd;">${i.desc}</span>`;
+    }).join(' &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; '); 
+
+    // Sonsuz döngü efekti için metni tekrarla
+    t.innerHTML = tickerText + ' &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; ' + tickerText + ' &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; ' + tickerText;
+    
+    // Animasyonu başlat (CSS'teki @keyframes tetiklenir)
+    t.style.animation = 'ticker-scroll 45s linear infinite';
 }
 
 function openNews() { 
