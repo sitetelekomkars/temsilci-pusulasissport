@@ -23,8 +23,8 @@ body {
 }
 
 /* --- GÜNCEL: BELİRGİN İKON STİLLERİ --- */
+/* Login ekranındaki ve Header'daki logolara uygulanacak class */
 .enhanced-logo {
-    /* İkonlar ve logolar için daha güçlü gölge efekti */
     filter: drop-shadow(0 0 10px rgba(250, 187, 0, 0.7));
 }
 
@@ -103,7 +103,12 @@ body {
     font-weight: 500; font-size: 0.75rem; display: flex; align-items: center; 
     gap: 6px; transition: all 0.2s; 
 }
-.action-btn:hover { background: rgba(255, 255, 255, 0.15); color: #fff; }
+.action-btn:hover { 
+    background: rgba(255, 255, 255, 0.1); 
+    color: white;
+    border-color: rgba(255, 255, 255, 0.4); 
+    transform: translateY(-1px);
+}
 .action-btn.active { background: var(--secondary); border-color: var(--secondary); color: #0e1b42; }
 
 /* KULLANICI MENÜSÜ & DROPDOWN */
@@ -214,7 +219,8 @@ body {
     background: rgba(0, 0, 0, 0.25); 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 0 25px; 
-    height: 26px; 
+    /* GÜNCEL: Kutu yüksekliği artırıldı */
+    height: 36px; 
     display: flex; 
     align-items: center; 
     gap: 15px; 
@@ -228,7 +234,7 @@ body {
 .ticker-label { font-size: 0.65rem; color: #fabb00; font-weight: 800; display: flex; align-items: center; gap: 6px; letter-spacing: 0.5px; min-width: fit-content; }
 .pulse-dot { width: 5px; height: 5px; background: var(--secondary); border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
 
-/* GÜNCEL: Ticker içeriği artık soldan sağa kayacak */
+/* GÜNCEL: Ticker içeriği daha da yavaşlatıldı (50s) */
 .ticker-content { 
     font-size: 0.75rem; 
     color: rgba(255, 255, 255, 0.8); 
@@ -236,9 +242,11 @@ body {
     font-weight: 400; 
     font-family: 'Segoe UI', sans-serif; 
     display: inline-block; 
-    /* YENİ ANIMASYON BAŞLANGICI */
-    animation: marquee 30s linear infinite; 
+    animation: marquee 50s linear infinite; 
     animation-play-state: running; 
+    /* GÜNCEL: Metnin dikey olarak ortalanmasını sağlamak için eklendi */
+    line-height: 36px;
+    height: 36px; 
 }
 
 /* GÜNCEL: Kaydırma Keyframe'leri (Sağdan sola akış) */
@@ -282,7 +290,7 @@ body.editing .edit-icon { display: block !important; }
 .fav-icon:hover { color: #b0b8c1; }
 .fav-icon.active { color: var(--secondary); }
 
-/* --- MODALS & EXTRAS --- (Diğer stiller kısaltıldı) */
+/* --- MODALS & EXTRAS (MODAL STILLERİ KONTROL EDİLDİ) --- */
 .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(14, 27, 66, 0.8); z-index: 5000; justify-content: center; align-items: center; backdrop-filter: blur(3px); }
 .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 8px; padding: 30px; position: relative; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
 .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; cursor: pointer; color: #999; transition: 0.2s; }
@@ -297,9 +305,26 @@ body.editing .edit-icon { display: block !important; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-/* Diğer Modalların ve Game/Quality Modüllerinin Stilleri (Kısaltıldı) */
+/* EKSİK OLABİLECEK DİĞER MODAL STİLLERİ GERİ EKLENDİ */
 .news-item { border-left: 4px solid var(--primary); padding: 15px 15px 15px 20px; margin-bottom: 20px; position: relative; background-color: #fcfcfc; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #eee; border-left-width: 4px; }
 .news-date { font-size: 0.75rem; color: #999; font-weight: 700; display: block; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
-/* ... (Diğer stiller orijinal dosyanızdaki gibi kalmıştır) ... */
+.tag-fix { background: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+.tag-update { background: #fff3e0; color: #ef6c00; border: 1px solid #ffe0b2; }
+.tag-info { background: #e3f2fd; color: #0277bd; border: 1px solid #bbdefb; }
 .penalty-stats { background: #111; color: #fff; padding: 10px 15px; border-radius: 6px; display:flex; justify-content:space-between; font-weight:700; margin-bottom: 15px; border: 1px solid #333; }
-/* ... (Oyun ve Kalite Modüllerinin stilleri) ... */
+.joker-btn { background: #6a1b9a; color: white; padding: 10px; border-radius: 6px; border:none; cursor:pointer; flex:1; margin:0 5px; font-weight: bold; transition: all 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+.penalty-options { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+.penalty-btn { padding: 15px 10px; background: #fabb00; color: #0e1b42; border: 2px solid #f0b500; border-radius: 8px; cursor: pointer; text-align: left; font-weight: 600; font-size: 1rem; transition: 0.2s; }
+.penalty-field { background: radial-gradient(circle at 50% 30%, #4caf50 0%, #388e3c 40%, #1b5e20 100%); border: 4px solid #fff; border-radius: 8px; height: 480px; position: relative; overflow: hidden; perspective: 1000px; box-shadow: inset 0 0 80px rgba(0,0,0,0.8); display: flex; flex-direction: column; justify-content: flex-start; }
+.evaluation-details-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-in-out; margin-top: 0; }
+.quality-controls-top { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; margin-bottom: 15px; flex-wrap: wrap; gap: 15px; }
+.guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
+.sales-grid { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+.result-box { padding: 20px; border-radius: 8px; margin-top: 20px; text-align: center; }
+.res-red { background: #ffebee; border: 2px solid #ef5350; color: #c62828; }
+.res-green { background: #e8f5e9; border: 2px solid #66bb6a; color: #2e7d32; }
+.res-yellow { background: #fff8e1; border: 2px solid #ffca28; color: #f57f17; }
+.restart-btn { margin-top: 20px; background: #555; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+.guide-item:hover { transform: translateY(-5px); border-color: var(--secondary); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.sales-item:hover { box-shadow: 0 5px 15px rgba(16, 185, 129, 0.2); border-color: var(--sales); }
+.sales-item.active { background: #d1fae5; border-left: 6px solid var(--sales); }
