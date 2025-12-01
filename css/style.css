@@ -11,6 +11,7 @@
     --quiz: #8e24aa; 
     --text-dark: #2c3e50;
     --text-light: #95a5a6;
+    --ticker-bg: #0a1532; /* Duyuru barı için daha koyu ton */
 }
 
 body { 
@@ -34,19 +35,11 @@ body {
     border: 1px solid rgba(255,255,255,0.05);
 }
 .login-logo-img {
-    width: 90px;
-    height: auto; 
-    margin-bottom: 0px; 
+    width: 90px; height: auto; margin-bottom: 0px; 
     filter: drop-shadow(0 0 10px rgba(250, 187, 0, 0.3));
 }
-.login-card h2 {
-    margin-top: 5px !important; 
-    margin-bottom: 0px !important;
-}
-.login-card p {
-    margin-top: 5px !important; 
-    margin-bottom: 25px !important;
-}
+.login-card h2 { margin-top: 5px !important; margin-bottom: 0px !important; }
+.login-card p { margin-top: 5px !important; margin-bottom: 25px !important; }
 .login-input { 
     width: 100%; padding: 12px; margin: 8px 0; background: #2c344a; color: #fff; 
     border: 1px solid #3a4563; border-radius: 6px; text-align: center; box-sizing: border-box; 
@@ -78,24 +71,21 @@ body {
 .header-content-limit {
     width: 100%;
     max-width: 1600px; 
-    /* Sol tarafa kaydırma için ayar */
     margin-right: auto; 
     margin-left: 0; 
-    /* Kırmızı boşlukları silmek için dikey padding'i azalttık */
+    /* Üstten ve alttan minimal dolgu */
     padding: 5px 25px 0px 10px; 
     box-sizing: border-box;
 }
 
 .header-top { 
     display: flex; justify-content: space-between; align-items: center; 
-    /* Kırmızı boşlukları silmek için marjini sıfırladık */
     margin-bottom: 0px; 
 }
 
 /* MARKA ALANI */
 .brand-area { display: flex; align-items: center; gap: 10px; }
 .brand-img { 
-    /* Logo boyutunu dikey alana yayılacak şekilde artırdık */
     height: 65px; 
     width: 65px; 
     object-fit: contain;
@@ -134,98 +124,66 @@ body {
 .dropdown-divider { height: 1px; background: rgba(255,255,255,0.05); margin: 0; }
 @keyframes fadeInDropdown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
 
-/* --- ORTA KONTROL ALANI --- */
+/* --- ORTA KONTROL ALANI: Filtre Butonlarını Üste Aldık --- */
 .control-wrapper { 
     display: flex; 
     align-items: center; 
-    /* Sola hizalı */
+    flex-direction: column; /* Dikey hizalama (Filtreler üste, arama alta) */
     justify-content: flex-start; 
-    gap: 15px; 
-    /* Kırmızı boşlukları silmek için padding'i sıfırladık */
+    gap: 0px; /* Elemanlar arası dikey boşluk minimalize edildi */
     padding-bottom: 0; 
     position: relative;
     flex-wrap: wrap; 
 }
 
-.search-container { position: relative; width: 300px; flex-shrink: 0; }
-#searchInput { 
-    width: 100%; padding: 6px 15px 6px 35px;
-    background: rgba(255, 255, 255, 0.1); 
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 4px; 
-    color: white;
-    font-size: 0.85rem;
-    box-sizing: border-box; 
-    transition: all 0.3s ease;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-}
-#searchInput::placeholder { color: rgba(255, 255, 255, 0.5); }
-#searchInput:focus {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: #fabb00; 
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(250, 187, 0, 0.15);
-}
-.search-icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: rgba(255, 255, 255, 0.5); font-size: 0.85rem; }
-
-/* Filtre Alanı */
+/* Filtre Butonları (Şimdi üstte görünecek) */
 .filter-container { 
+    /* Kendi içinde yatay hizalamayı koru */
     display: flex; 
     gap: 6px; 
     align-items: center;
     overflow-x: auto;
-    padding-bottom: 2px;
+    padding-bottom: 5px; /* Arama kutusundan ayırmak için minimal boşluk */
     max-width: 100%;
     position: relative;
+    width: 100%; /* Tüm genişliği kullan */
+    justify-content: center; /* Butonları ortaya hizala */
 }
 .filter-container::-webkit-scrollbar { height: 0px; } 
 
-/* GENEL FİLTRE BUTONU */
-.filter-btn { 
-    background-color: rgba(255, 255, 255, 0.03); 
-    border: 1px solid rgba(255, 255, 255, 0.15); 
-    color: rgba(255, 255, 255, 0.75); 
-    padding: 5px 10px; 
-    border-radius: 4px; 
-    cursor: pointer; 
-    transition: all 0.2s ease; 
-    display: flex; align-items: center; gap: 6px; 
-    font-weight: 500; font-size: 0.75rem; 
-    white-space: nowrap; 
-    z-index: 1; 
-}
-.filter-btn:hover { 
-    background-color: rgba(255, 255, 255, 0.1); 
-    color: white;
-    border-color: rgba(255, 255, 255, 0.4); 
-    transform: translateY(-1px);
-}
-/* Aktif Buton */
-.filter-btn.active { 
-    background-color: #fabb00 !important; 
-    color: #0e1b42 !important; 
-    border-color: #fabb00 !important; 
-    font-weight: 700;
-    box-shadow: 0 2px 8px rgba(250, 187, 0, 0.3);
+/* Arama Kutusu (Şimdi altta görünecek) */
+.search-container { 
+    position: relative; 
+    width: 400px; /* Genişletildi */
+    flex-shrink: 0; 
+    margin-bottom: 10px; /* Altındaki duyuru barından ayırmak için minimal boşluk */
 }
 
-.divider { width: 1px; height: 18px; background: rgba(255,255,255,0.15); margin: 0 4px; }
-.link-btn { color: rgba(255, 255, 255, 0.7); }
-.link-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
+#searchInput { 
+    width: 100%; 
+    padding: 6px 15px 6px 35px;
+}
+
+.filter-btn { 
+    padding: 5px 10px; 
+    font-size: 0.75rem; 
+}
+.search-icon { 
+    left: 10px; 
+}
+
 
 /* --- TICKER (Duyuru Barı İyileştirmesi) --- */
 .news-ticker-box { 
     width: 100%;
-    /* Rengi üst barın ana rengine yakın, hafif koyu yaptık */
-    background: #0a1532; 
+    background: var(--ticker-bg); 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 0 25px; 
+    padding: 0 10px; 
     height: 25px; /* Duyuru barını daralttık */
     display: flex; 
     align-items: center; 
-    gap: 15px; 
+    gap: 10px; 
     cursor: pointer; 
-    transition: 0.2s;
     margin-top: 0px; 
     box-sizing: border-box;
     overflow: hidden; 
@@ -233,9 +191,11 @@ body {
 .news-ticker-box:hover { background: #1c2438; } 
 
 .ticker-label { 
-    font-size: 0.65rem; color: #fabb00; font-weight: 800; display: flex; align-items: center; gap: 6px; letter-spacing: 0.5px; min-width: fit-content; z-index: 5; 
-    background: #0a1532; /* Arka planı kutu arka planıyla eşleştirdik */
-    padding-right: 15px; height: 100%; 
+    font-size: 0.6rem; 
+    font-weight: 800; 
+    background: var(--ticker-bg); 
+    padding-right: 10px; 
+    height: 100%; 
     display: flex; align-items: center;
 }
 .pulse-dot { width: 5px; height: 5px; background: var(--secondary); border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
@@ -251,7 +211,7 @@ body {
 
 /* KAYAN YAZI ANİMASYONU */
 .ticker-content { 
-    font-size: 0.7rem; /* Metin boyutunu küçülttük */
+    font-size: 0.7rem; 
     color: rgba(255, 255, 255, 0.9); 
     white-space: nowrap; 
     position: absolute; 
@@ -265,7 +225,7 @@ body {
     100% { transform: translateX(-100%) translateX(-200px); } 
 }
 
-/* --- CARDS & GRID --- */
+/* --- CARDS & GRID (Değişmedi) --- */
 .container { padding: 25px; max-width: 1600px; margin: 0 auto; }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
 .card { background: var(--card-bg); border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #eaedf2; border-left: 4px solid var(--info); display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; position: relative; }
@@ -294,7 +254,7 @@ body.editing .edit-icon { display: block !important; }
 .fav-icon:hover { color: #b0b8c1; }
 .fav-icon.active { color: var(--secondary); }
 
-/* MODAL/MODÜL STİLLERİ */
+/* MODAL/MODÜL STİLLERİ (Değişmedi) */
 .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(14, 27, 66, 0.8); z-index: 5000; justify-content: center; align-items: center; backdrop-filter: blur(3px); }
 .modal-content { background: white; width: 90%; max-width: 800px; border-radius: 8px; padding: 30px; position: relative; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
 .close-modal { position: absolute; top: 15px; right: 20px; font-size: 1.5rem; cursor: pointer; color: #999; transition: 0.2s; }
@@ -303,14 +263,13 @@ body.editing .edit-icon { display: block !important; }
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track { background: #f1f1f1; }
 ::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: #a0aec0; }
 .crafted-by-badge { position: fixed; bottom: 5px; right: 10px; font-family: sans-serif; font-size: 0.65rem; color: #0e1b42; opacity: 0.2; z-index: 9999; pointer-events: none; }
 @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-/* NEWS ITEMS & BADGES */
-.news-item { border-left: 4px solid var(--primary); padding: 15px 15px 15px 20px; margin-bottom: 20px; position: relative; background-color: #fcfcfc; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #eee; border-left-width: 4px; }
+/* NEWS ITEMS & BADGES (Değişmedi) */
+.news-item { border-left: 4px solid var(--primary); padding: 15px 15px 15px 20px; margin-bottom: 20px; position: relative; background-color: #fcfcfc; border-radius: 6px; border-left-width: 4px; }
 .news-date { font-size: 0.75rem; color: #999; font-weight: 700; display: block; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
 .news-title { font-size: 1.1rem; font-weight: 700; color: var(--primary); display: block; margin-bottom: 8px; line-height: 1.3; }
 .news-desc { font-size: 0.95rem; color: #555; line-height: 1.6; margin-bottom: 10px; }
@@ -319,7 +278,7 @@ body.editing .edit-icon { display: block !important; }
 .tag-update { background: #fff3e0; color: #ef6c00; border: 1px solid #ffe0b2; }
 .tag-info { background: #e3f2fd; color: #0277bd; border: 1px solid #bbdefb; }
 
-/* PENALTY & FUNCTIONAL STYLES (Restored) */
+/* PENALTY & FUNCTIONAL STYLES (Değişmedi) */
 .penalty-stats { background: #111; color: #fff; padding: 10px 15px; border-radius: 6px; display:flex; justify-content:space-between; font-weight:700; margin-bottom: 15px; border: 1px solid #333; }
 .penalty-stats span span { color: var(--secondary); }
 .joker-btn { background: #6a1b9a; color: white; padding: 10px; border-radius: 6px; border:none; cursor:pointer; flex:1; margin:0 5px; font-weight: bold; transition: all 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.9rem; }
