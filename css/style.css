@@ -32,10 +32,10 @@ width: 300px; box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 border: 1px solid rgba(255,255,255,0.05);
 }
 .login-logo-img {
-/* GİRİŞ: Boyut ayarı ve görünürlük */
+/* İkon Görünürlüğü ve Boşluk Dengesi */
 width: 60px; 
 height: auto; 
-margin-bottom: 25px; /* Boşluk dengesi */
+margin-bottom: 25px; /* Giriş bilgileri ile aradaki boşluk dengelendi */
 filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
 }
 .login-input {
@@ -53,7 +53,7 @@ color: #0e1b42; transition: 0.2s;
 .loading-text { font-size: 0.8rem; color: #666; margin-top: 10px; display: none; }
 #maintenance-screen { display: none !important; }
 #main-app { display: none; }
-/* --- HEADER YAPISI --- */
+/* --- HEADER YAPISI (ÜST BAR KISALTMA) --- */
 .header {
 background: #0e1b42;
 color: white;
@@ -68,20 +68,20 @@ flex-direction: column;
 width: 100%;
 max-width: 1600px;
 margin: 0 auto;
-/* DÜZELTME: Üst bar yüksekliğini azaltmak için dikey padding kaldırıldı */
+/* Üst barı kısaltmak için dikey padding kaldırıldı */
 padding: 0 25px; 
 box-sizing: border-box;
 }
 .header-top {
 display: flex; justify-content: space-between; align-items: center;
-/* DÜZELTME: Üst bar yüksekliğini azaltmak için minimal dikey padding eklendi */
+/* Üst barı kısaltmak için minimal dikey padding eklendi */
 padding: 5px 0; 
 margin-bottom: 0;
 }
 /* MARKA ALANI */
 .brand-area { display: flex; align-items: center; gap: 10px; }
 .brand-img {
-/* DÜZELTME: Üst bar yüksekliğini azaltmak için logo küçültüldü */
+/* Yüksekliği azaltmak için logo küçültüldü */
 height: 40px; 
 width: 40px; 
 object-fit: contain;
@@ -125,13 +125,14 @@ align-items: center;
 /* DÜZELTME: Arama çubuğunu sola yasla */
 justify-content: flex-start;
 gap: 15px;
-padding: 5px 0 8px 0;
+/* Kartlar ve içerik arasına boşluk azaltıldı */
+padding: 5px 0 8px 0; 
 position: relative;
 flex-wrap: wrap;
 }
 .search-container { 
 position: relative; 
-/* DÜZELTME: Arama çubuğunu sola doğru uzat */
+/* Arama çubuğu sola doğru uzatıldı */
 width: 400px; 
 flex-shrink: 0; 
 }
@@ -196,7 +197,7 @@ box-shadow: 0 2px 8px rgba(250, 187, 0, 0.3);
 .divider { width: 1px; height: 18px; background: rgba(255,255,255,0.15); margin: 0 4px; }
 .link-btn { color: rgba(255, 255, 255, 0.7); }
 .link-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
-/* --- TICKER --- */
+/* --- TICKER (Sayfa Altı) --- */
 .news-ticker-box {
 width: 100%;
 background: rgba(0, 0, 0, 0.25);
@@ -208,8 +209,7 @@ align-items: center;
 gap: 15px;
 cursor: pointer;
 transition: 0.2s;
-/* DÜZELTME: Sayfanın en altında normal akışta yer alacak */
-margin-top: 25px; 
+margin-top: 25px; /* Sayfa içeriği ile aradaki boşluk */
 margin-bottom: 0;
 box-sizing: border-box;
 overflow: hidden;
@@ -289,7 +289,7 @@ box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
 }
 @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { transform: translateY(0); } }
 /* NEWS ITEMS & BADGES */
 .news-item { border-left: 4px solid var(--primary); padding: 15px 15px 15px 20px; margin-bottom: 20px; position: relative; background-color: #fcfcfc; border-radius: 6px;
 box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #eee; border-left-width: 4px; }
