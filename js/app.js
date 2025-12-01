@@ -928,16 +928,26 @@ async function editNews(index) {
 }
 
 // --- MODALS ---
-function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+// js/app.js içine eklenecek/değiştirilecek
+function startTicker() {
+    const t = document.getElementById('ticker-content');
+    // Sadece aktif duyuruları al
+    const activeNews = newsData.filter(i => i.status !== 'Pasif');
+    
+    if(activeNews.length === 0) {
+        t.innerHTML = "Güncel duyuru yok.";
+        return;
+    }
+    
+    // Tüm duyuruları aralarına şık bir ayırıcı koyarak birleştir
+    let tickerText = activeNews.map(i => {
+        // Tarih ve Başlık Vurgusu
+        return `<span style="color:#fabb00; font-weight:bold;">[${i.date}]</span> ${i.title}: ${i.desc}`;
+    }).join(' &nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp; '); // Aralarına nokta koyarak birleştir
 
-let tickerIndex = 0;
-function startTicker() { 
-    const t = document.getElementById('ticker-content'); 
-    const activeNews = newsData.filter(i => i.status !== 'Pasif'); 
-    if(activeNews.length === 0) { 
-        t.innerHTML = "Güncel duyuru yok."; 
-        return; 
-    } 
+    // Sonsuz döngü hissi için metni birkaç kez tekrarla
+    t.innerHTML = tickerText + ' &nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp; ' + tickerText;
+}
     function showNext() { 
         const i = activeNews[tickerIndex]; 
         t.style.animation = 'none'; 
