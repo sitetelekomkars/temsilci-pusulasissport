@@ -1174,8 +1174,9 @@ body: JSON.stringify({ action: "getUserList", username: currentUser, token: getT
 .then(response => response.json())
 .then(data => {
 if (data.result === "success") {
-adminUserList = data.users;
-resolve(data.users);
+                const filteredUsers = data.users.filter(u => u.group !== 'Yönetim');
+                adminUserList = filteredUsers;
+resolve(filteredUsers); 
 } else
 resolve([]);
 }).catch(err => resolve([]));
