@@ -100,6 +100,14 @@
 </div>
 </div>
 </div>
+<div class="news-ticker-box" onclick="openNews()">
+<div class="ticker-label">
+<span class="pulse-dot"></span> DUYURU
+</div>
+<div class="ticker-scroll-wrapper">
+<div id="ticker-content">Veriler yükleniyor...</div>
+</div>
+</div>
 </div>
 <div class="container">
 <div id="loading" style="text-align:center; padding:40px; color:#999;">
@@ -138,7 +146,7 @@
 </div>
 <div id="penalty-modal" class="modal-overlay">
 <div class="modal-content" style="max-width: 650px; background: #1a1a1a; border: 1px solid #333; min-height:600px; display:flex; flex-direction:column;">
-<span class="close-modal" style="color:white; z-index:1000;" onclick="closeModal('penalty-modal')">&times;</span>
+<span class="close-modal" onclick="closeModal('penalty-modal')">&times;</span>
 <h2 style="text-align:center; color:#fabb00; margin-top:0;"> ⚽  S Sport Arena</h2>
 <div id="penalty-lobby" style="text-align:center; padding:20px; flex-grow:1; display:flex; flex-direction:column; align-items:center; justify-content:center;">
 <h3 style="color:white; margin-bottom:15px;"> 🏆  Liderlik Tablosu (Top 5)</h3>
@@ -187,14 +195,6 @@
 <div id="quality-loader" style="text-align:center; color:#999; font-style:italic; margin-top:20px;">Yükleniyor...</div>
 <div id="evaluations-list"></div>
 </div>
-</div>
-</div>
-<div class="news-ticker-box" onclick="openNews()">
-<div class="ticker-label">
-<span class="pulse-dot"></span> DUYURU
-</div>
-<div class="ticker-scroll-wrapper">
-<div id="ticker-content">Veriler yükleniyor...</div>
 </div>
 </div>
 
