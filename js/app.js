@@ -1793,7 +1793,6 @@ h += `<button class="option-btn" onclick="renderStep('${o.next}')"><i class="fas
 });
 h += `</div>`;
 
-// Geri Dön butonu sadece 'start' dışında gösterilir
 if(k !== 'start')
 h += `<button class="restart-btn" onclick="renderStep('start')" style="background:#eee;color:#333;margin-top:15px;">Başa Dön</button>`;
 }
