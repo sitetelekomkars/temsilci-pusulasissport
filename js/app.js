@@ -1,6 +1,6 @@
 const BAKIM_MODU = false;
 // Apps Script URL'si (Bu URL'yi kendi yayınınızla değiştirmeyi unutmayın!)
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzbocJrJPU7_u0lvlnBQ8CrQYHCfy22G6UU8jRo5s6Yrl4rpTQ_a7oB5Ttf_NkGsUOiQg/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby3kd04k2u9XdVDD1-vdbQQAsHNW6WLIn8bNYxTlVCL3U1a0WqZo6oPp9zfBWIpwJEinQ/exec";
 let jokers = { call: 1, half: 1, double: 1 };
 let doubleChanceUsed = false;
 let firstAnswerIndex = -1;
@@ -1217,136 +1217,195 @@ iconEl.style.transform = 'rotate(180deg)';
 }
 // --- LOG EVALUATION & UPDATE EVALUATION POPUPS ---
 async function logEvaluationPopup() {
-const selectEl = document.getElementById('agent-select-admin');
-const agentName = selectEl.value;
-const selectedOption = selectEl.options[selectEl.selectedIndex];
-const agentGroup = selectedOption.getAttribute('data-group') || 'Genel';
-Swal.fire({ title: 'Değerlendirme Formu Hazırlanıyor...', didOpen: () => Swal.showLoading() });
+    const selectEl = document.getElementById('agent-select-admin');
+    const agentName = selectEl.value;
+    const selectedOption = selectEl.options[selectEl.selectedIndex];
+    let agentGroup = selectedOption.getAttribute('data-group') || 'Genel'; // agentGroup artık let
 
-let criteriaList = [];
-if(agentGroup === 'Telesatış' || agentGroup === 'Chat') {
-criteriaList = await fetchCriteria(agentGroup);
-}
-Swal.close();
-const todayISO = new Date().toISOString().substring(0, 10);
-const isCriteriaBased = criteriaList.length > 0;
-let contentHtml = `
-<div class="eval-modal-wrapper">
-<div class="score-dashboard">
-<div>
-<div style="font-size:0.9rem; opacity:0.8;">Değerlendirilen</div>
-<div style="font-size:1.2rem; font-weight:bold; color:#fabb00;">${agentName}</div>
-<div style="font-size:0.8rem; opacity:0.7;">${agentGroup}</div>
-</div>
-<div class="score-circle-outer" id="score-ring">
-<div class="score-circle-inner" id="live-score">100</div>
-</div>
-</div>
-<div class="eval-header-card">
-<div>
-<label style="font-size:0.8rem; font-weight:bold; color:#555;">Call ID</label>
-<input id="eval-callid" class="swal2-input" style="height:35px; margin:0; width:100%; font-size:0.9rem;" placeholder="Call ID giriniz">
-</div>
-<div>
-<label style="font-size:0.8rem; font-weight:bold; color:#555;">Çağrı Tarihi</label>
-<input type="date" id="eval-calldate" class="swal2-input" style="height:35px; margin:0; width:100%; font-size:0.9rem;" value="${todayISO}">
-</div>
-</div>
-`;
-if (isCriteriaBased) {
-contentHtml += `<div class="criteria-container">`;
-criteriaList.forEach((c, i) => {
-let pts = parseInt(c.points) || 0;
-contentHtml += `
-<div class="criteria-row" id="row-${i}">
-<div class="criteria-header">
-<span>${i+1}. ${c.text}</span>
-<span style="font-size:0.8rem; color:#999;">Max: ${pts}</span>
-</div>
-<div class="criteria-controls">
-<input type="range" class="custom-range slider-input" id="slider-${i}" min="0" max="${pts}" value="${pts}" data-index="${i}" oninput="updateRowScore(${i}, ${pts})">
-<span class="score-badge" id="badge-${i}">${pts}</span>
-</div>
-<input type="text" id="note-${i}" class="note-input" placeholder="Kırılım nedeni veya not ekle..." style="display:none;">
-</div>`;
-});
-contentHtml += `</div>`;
-} else {
-contentHtml += `
-<div style="padding:15px; border:1px dashed #ccc; background:#fff; border-radius:8px; text-align:center;">
-<p style="color:#e65100;">(Bu grup için otomatik kriter bulunamadı)</p>
-<label style="font-weight:bold;">Manuel Puan</label><br>
-<input id="eval-manual-score" type="number" class="swal2-input" value="100" min="0" max="100" style="width:100px; text-align:center; font-size:1.5rem; font-weight:bold;">
-</div>
-<textarea id="eval-details" class="swal2-textarea" placeholder="Değerlendirme detayları..."></textarea>
-`;
-}
-contentHtml += `
-<div>
-<label style="font-size:0.85rem; font-weight:bold; color:#333;">Genel Geri Bildirim</label>
-<textarea id="eval-feedback" class="swal2-textarea" style="margin-top:5px; height:80px;" placeholder="Temsilciye iletilecek genel yorum..."></textarea>
-</div>
-</div>`;
-const { value: formValues } = await Swal.fire({
-title: '',
-html: contentHtml,
-width: '600px',
-padding: '0 0 20px 0',
-showCancelButton: true,
-confirmButtonText: ' 💾  Kaydet',
-cancelButtonText: 'İptal',
-focusConfirm: false,
-didOpen: () => {
-if(isCriteriaBased) window.recalcTotalScore();
-},
-preConfirm: () => {
-const callId = document.getElementById('eval-callid').value;
-const callDateRaw = document.getElementById('eval-calldate').value;
-const feedback = document.getElementById('eval-feedback').value;
-const dateParts = callDateRaw.split('-');
-const formattedCallDate = dateParts.length === 3 ? `${dateParts[2]}.${dateParts[1]}.${dateParts[0]}` : callDateRaw;
-if (isCriteriaBased) {
-let total = 0;
-let detailsArr = [];
-criteriaList.forEach((c, i) => {
-let val = parseInt(document.getElementById(`slider-${i}`).value) || 0;
-let maxPoints = parseInt(c.points) || 0;
-let note = document.getElementById(`note-${i}`).value;
-total += val;
-detailsArr.push({ q: c.text, max: maxPoints, score: val, note: note });
-});
-return { agentName, agentGroup, callId, callDate: formattedCallDate, score: total, details: JSON.stringify(detailsArr), feedback };
-} else {
-const score = document.getElementById('eval-manual-score').value;
-const details = document.getElementById('eval-details').value;
-if(score < 0 || score > 100) { Swal.showValidationMessage('Puan 0 ile 100 arasında olmalıdır.'); return false; }
-return { agentName, agentGroup, callId, callDate: formattedCallDate, score: parseInt(score), details: details, feedback };
-}
-}
-});
-if (formValues) {
-Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } });
-fetch(SCRIPT_URL, {
-method: 'POST',
-headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-body: JSON.stringify({ action: "logEvaluation", username: currentUser, token: getToken(), ...formValues })
-})
-.then(r => r.json()).then(d => {
-if (d.result === "success") {
-Swal.fire({
-icon: 'success',
-title: 'Değerlendirme Kaydedildi',
-text: `${agentName} için ${formValues.score} puan verildi.`,
-timer: 2000,
-showConfirmButton: false
-});
-fetchEvaluationsForAgent(agentName);
-}
-else {
-Swal.fire('Hata', d.message || 'Kaydedilemedi.', 'error');
-}
-}).catch(err => { Swal.fire('Hata', 'Sunucu hatası.', 'error'); });
-}
+    // Adım 1: Chat grubu seçilirse, Chat-Normal veya Chat-Teknik formunu seçtir (YENİ EK)
+    if (agentGroup === 'Chat') {
+        const { value: selectedChatType } = await Swal.fire({
+            title: 'Chat Form Tipi Seçin',
+            text: `${agentName} için hangi Chat formunu kullanacaksınız?`,
+            input: 'radio',
+            inputOptions: {
+                'Chat-Normal': 'Chat - Normal İşlem',
+                'Chat-Teknik': 'Chat - Teknik Destek'
+            },
+            inputValidator: (value) => {
+                if (!value) {
+                    return 'Bir form tipi seçmelisiniz!';
+                }
+            },
+            showCancelButton: true,
+            confirmButtonText: 'Devam Et',
+            cancelButtonText: 'İptal',
+            focusConfirm: false
+        });
+
+        if (!selectedChatType) return;
+        agentGroup = selectedChatType; // Yeni agentGroup'u seçilen değerle güncelle
+    }
+
+    Swal.fire({ title: 'Değerlendirme Formu Hazırlanıyor...', didOpen: () => Swal.showLoading() });
+    let criteriaList = [];
+    
+    // Adım 2: Seçilen gruba göre kriterleri çek (Chat-Normal/Teknik desteği eklendi)
+    if(agentGroup === 'Telesatış' || agentGroup === 'Chat-Normal' || agentGroup === 'Chat-Teknik') { 
+        criteriaList = await fetchCriteria(agentGroup);
+    } 
+
+    Swal.close();
+    
+    const todayISO = new Date().toISOString().substring(0, 10);
+    const isCriteriaBased = criteriaList.length > 0;
+    
+    // Kriter bazlı ve manuel puanlama için HTML hazırlığı
+    let criteriaFieldsHtml = '';
+    let manualScoreHtml = '';
+
+    if (isCriteriaBased) {
+        criteriaFieldsHtml += `<div class="criteria-container">`;
+        criteriaList.forEach((c, i) => {
+            let pts = parseInt(c.points) || 0;
+            criteriaFieldsHtml += `
+                <div class="criteria-row" id="row-${i}">
+                    <div class="criteria-header">
+                        <span>${i+1}. ${c.text}</span>
+                        <span style="font-size:0.8rem; color:#999;">Max: ${pts}</span>
+                    </div>
+                    <div class="criteria-controls">
+                        <input type="range" class="custom-range slider-input" id="slider-${i}" min="0" max="${pts}" value="${pts}" data-index="${i}" oninput="updateRowScore(${i}, ${pts})">
+                        <span class="score-badge" id="badge-${i}">${pts}</span>
+                    </div>
+                    <input type="text" id="note-${i}" class="note-input" placeholder="Kırılım nedeni veya not ekle..." style="display:none;">
+                </div>`;
+        });
+        criteriaFieldsHtml += `</div>`;
+    } else {
+        manualScoreHtml = `
+            <div style="padding:15px; border:1px dashed #ccc; background:#fff; border-radius:8px; text-align:center; margin-bottom:15px;">
+                <p style="color:#e65100;">(Bu grup için otomatik kriter bulunamadı)</p>
+                <label style="font-weight:bold;">Manuel Puan</label><br>
+                <input id="eval-manual-score" type="number" class="swal2-input" value="100" min="0" max="100" style="width:100px; text-align:center; font-size:1.5rem; font-weight:bold;">
+            </div>
+            <textarea id="eval-details" class="swal2-textarea" placeholder="Değerlendirme detayları..." style="margin-bottom:15px;"></textarea>
+        `;
+    }
+
+    // Adım 3: Ana SweetAlert Formunu Göster
+    const contentHtml = `
+        <div class="eval-modal-wrapper">
+            <div class="score-dashboard">
+                <div>
+                    <div style="font-size:0.9rem; opacity:0.8;">Değerlendirilen</div>
+                    <div style="font-size:1.2rem; font-weight:bold; color:#fabb00;">${agentName}</div>
+                    <div style="font-size:0.8rem; opacity:0.7;">${agentGroup}</div>
+                </div>
+                <div class="score-circle-outer" id="score-ring">
+                    <div class="score-circle-inner" id="live-score">${isCriteriaBased ? '100' : '100'}</div>
+                </div>
+            </div>
+            <div class="eval-header-card">
+                <div>
+                    <label style="font-size:0.8rem; font-weight:bold; color:#555;">Call ID</label>
+                    <input id="eval-callid" class="swal2-input" style="height:35px; margin:0; width:100%; font-size:0.9rem;" placeholder="Call ID giriniz">
+                </div>
+                <div>
+                    <label style="font-size:0.8rem; font-weight:bold; color:#555;">Çağrı/Chat Tarihi</label>
+                    <input type="date" id="eval-calldate" class="swal2-input" style="height:35px; margin:0; width:100%; font-size:0.9rem;" value="${todayISO}">
+                </div>
+            </div>
+            
+            ${manualScoreHtml}
+            ${criteriaFieldsHtml}
+            
+            <div style="margin-top:15px; border:1px solid #f0f0f0; background:#fafafa; padding:10px; border-radius:8px;">
+                <label style="font-size:0.85rem; font-weight:bold; color:#333; display:block; margin-bottom:5px;">Geri Bildirim Tipi (Raporlama İçin)</label>
+                <select id="feedback-type" class="swal2-input" style="width:100%; height:40px; border:1px solid #ccc; border-radius:5px; margin:0;">
+                    <option value="Yok">Geri Bildirim Yok</option>
+                    <option value="Sözlü">Sözlü (Verbal)</option>
+                    <option value="Mail">Mail (E-posta)</option>
+                </select>
+            </div>
+            <div style="margin-top:15px;">
+                <label style="font-size:0.85rem; font-weight:bold; color:#333;">Genel Geri Bildirim</label>
+                <textarea id="eval-feedback" class="swal2-textarea" style="margin-top:5px; height:80px;" placeholder="Temsilciye iletilecek genel yorum..."></textarea>
+            </div>
+        </div>`;
+
+
+    const { value: formValues } = await Swal.fire({
+        title: '',
+        html: contentHtml,
+        width: '600px',
+        padding: '0 0 20px 0',
+        showCancelButton: true,
+        confirmButtonText: '  💾   Kaydet',
+        cancelButtonText: 'İptal',
+        focusConfirm: false,
+        didOpen: () => {
+            if(isCriteriaBased) window.recalcTotalScore();
+        },
+        preConfirm: () => {
+            const callId = document.getElementById('eval-callid').value;
+            const callDateRaw = document.getElementById('eval-calldate').value;
+            const feedback = document.getElementById('eval-feedback').value;
+            const feedbackType = document.getElementById('feedback-type').value; // [YENİ]
+            
+            if (!callId || !callDateRaw || !feedback) {
+                Swal.showValidationMessage('Lütfen Çağrı ID, Tarih ve Genel Geri Bildirim alanlarını doldurun.');
+                return false;
+            }
+            
+            const dateParts = callDateRaw.split('-');
+            const formattedCallDate = dateParts.length === 3 ? `${dateParts[2]}.${dateParts[1]}.${dateParts[0]}` : callDateRaw;
+
+            if (isCriteriaBased) {
+                let total = 0;
+                let detailsArr = [];
+                criteriaList.forEach((c, i) => {
+                    let val = parseInt(document.getElementById(`slider-${i}`).value) || 0;
+                    let maxPoints = parseInt(c.points) || 0;
+                    let note = document.getElementById(`note-${i}`).value;
+                    total += val;
+                    detailsArr.push({ q: c.text, max: maxPoints, score: val, note: note });
+                });
+                return { agentName, agentGroup, callId, callDate: formattedCallDate, score: total, details: JSON.stringify(detailsArr), feedback, feedbackType: feedbackType }; // [DEĞİŞTİ]
+            } else {
+                const score = document.getElementById('eval-manual-score').value;
+                const details = document.getElementById('eval-details').value;
+                if(score < 0 || score > 100) { Swal.showValidationMessage('Puan 0 ile 100 arasında olmalıdır.'); return false; }
+                return { agentName, agentGroup, callId, callDate: formattedCallDate, score: parseInt(score), details: details, feedback, feedbackType: feedbackType }; // [DEĞİŞTİ]
+            }
+        }
+    });
+
+    if (formValues) {
+        Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } });
+        
+        fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: "logEvaluation", username: currentUser, token: getToken(), ...formValues })
+        })
+        .then(r => r.json()).then(d => {
+            if (d.result === "success") {
+                // Başarı mesajı güncellendi
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Değerlendirme Kaydedildi',
+                    text: `${formValues.agentName} için ${formValues.score} puan verildi. Geri Bildirim Tipi: ${formValues.feedbackType}.`,
+                    timer: 2500,
+                    showConfirmButton: false
+                });
+                fetchEvaluationsForAgent(formValues.agentName);
+            }
+            else {
+                Swal.fire('Hata', d.message || 'Kaydedilemedi.', 'error');
+            }
+        }).catch(err => { Swal.fire('Hata', 'Sunucu hatası.', 'error'); });
+    }
 }
 async function editEvaluation(targetCallId) {
 const evalData = allEvaluationsData.find(item => item.callId == targetCallId);
