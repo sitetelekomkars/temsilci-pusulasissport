@@ -1007,12 +1007,11 @@ function openQualityArea() {
     document.getElementById('admin-quality-controls').style.display = isAdminMode ? 'block' : 'none';
     populateMonthFilter();
     
-    // YENİ DASHBOARD ELEMENTLERİ (Hata Önlemi)
+    // YENİ DASHBOARD ELEMENTLERİ
     const dashAvg = document.getElementById('dash-avg-score');
     const dashCount = document.getElementById('dash-eval-count');
     const dashTarget = document.getElementById('dash-target-rate');
     
-    // Varsa sıfırla, yoksa hata verme
     if(dashAvg) dashAvg.innerText = "-";
     if(dashCount) dashCount.innerText = "-";
     if(dashTarget) dashTarget.innerText = "-%";
@@ -1022,27 +1021,60 @@ function openQualityArea() {
         const newMonthSelect = monthSelect.cloneNode(true);
         monthSelect.parentNode.replaceChild(newMonthSelect, monthSelect);
         newMonthSelect.addEventListener('change', function() {
-            const target = isAdminMode ? document.getElementById('agent-select-admin').value : currentUser;
-            fetchEvaluationsForAgent(target);
+            // Sadece fetch çağır, parametreler oradan okunacak
+            fetchEvaluationsForAgent();
         });
     }
 
     if (isAdminMode) {
         fetchUserListForAdmin().then(users => {
-            const selectEl = document.getElementById('agent-select-admin');
-            if(selectEl) {
-                // Listeyi temizle ve 'Tüm Temsilciler'i ekle
-                selectEl.innerHTML = `<option value="all" data-group="all">-- Tüm Temsilciler --</option>` + 
-                    users.map(u => `<option value="${u.name}" data-group="${u.group}">${u.name} (${u.group})</option>`).join('');
+            const groupSelect = document.getElementById('group-select-admin');
+            const agentSelect = document.getElementById('agent-select-admin');
+            
+            if(groupSelect && agentSelect) {
+                // Grupları Çek (Unique)
+                const groups = [...new Set(users.map(u => u.group))].sort();
                 
-                selectEl.value = 'all'; 
-                selectEl.onchange = function() { fetchEvaluationsForAgent(this.value); };
-                fetchEvaluationsForAgent(selectEl.value);
+                // Grup Seçimini Doldur
+                groupSelect.innerHTML = `<option value="all">Tüm Gruplar</option>` + 
+                    groups.map(g => `<option value="${g}">${g}</option>`).join('');
+                
+                // İlk açılışta tüm temsilcileri doldur
+                updateAgentListBasedOnGroup();
             }
         });
     } else {
         fetchEvaluationsForAgent(currentUser);
     }
+}
+
+// YENİ FONKSİYON: Gruba Göre Temsilci Listesini Güncelleme
+function updateAgentListBasedOnGroup() {
+    const groupSelect = document.getElementById('group-select-admin');
+    const agentSelect = document.getElementById('agent-select-admin');
+    const selectedGroup = groupSelect.value;
+    
+    // Mevcut listeyi temizle
+    agentSelect.innerHTML = '';
+    
+    let filteredUsers = adminUserList;
+    
+    if (selectedGroup !== 'all') {
+        filteredUsers = adminUserList.filter(u => u.group === selectedGroup);
+        // O grubun tamamını seçme seçeneği ekle
+        agentSelect.innerHTML = `<option value="all">-- Tüm ${selectedGroup} Ekibi --</option>`;
+    } else {
+        // Tüm gruplar seçiliyse, tüm temsilciler seçeneği
+        agentSelect.innerHTML = `<option value="all">-- Tüm Temsilciler --</option>`;
+    }
+    
+    // Kullanıcıları ekle
+    filteredUsers.forEach(u => {
+        agentSelect.innerHTML += `<option value="${u.name}">${u.name}</option>`;
+    });
+    
+    // Listeyi güncelledikten sonra otomatik veri çek
+    fetchEvaluationsForAgent(); 
 }
 
 async function fetchEvaluationsForAgent(forcedName) {
@@ -1056,14 +1088,20 @@ async function fetchEvaluationsForAgent(forcedName) {
     listEl.innerHTML = '';
     loader.style.display = 'block';
 
+    // Admin Panelindeki Seçimler
+    const groupSelect = document.getElementById('group-select-admin');
+    const agentSelect = document.getElementById('agent-select-admin');
+    
     let targetAgent = forcedName || currentUser;
+    let targetGroup = 'all';
 
     if (isAdminMode) {
-        const selectEl = document.getElementById('agent-select-admin');
-        targetAgent = forcedName || (selectEl ? selectEl.value : currentUser);
+        targetAgent = forcedName || (agentSelect ? agentSelect.value : currentUser);
+        targetGroup = groupSelect ? groupSelect.value : 'all';
         
-        if(targetAgent === 'all') {
-            loader.innerHTML = '<div style="padding:20px; text-align:center; color:#1976d2;"><i class="fas fa-users fa-2x"></i><br><br><b>Tüm Temsilciler Seçili</b><br>Detaylı analiz için yukarıdaki "Rapor" butonunu kullanın.</div>';
+        // "Tüm Temsilciler" seçiliyse ve Grup "Tüm Gruplar" ise uyarı ver (Çok veri)
+        if(targetAgent === 'all' && targetGroup === 'all') {
+            loader.innerHTML = '<div style="padding:20px; text-align:center; color:#1976d2;"><i class="fas fa-users fa-2x"></i><br><br><b>Tüm Şirket Verisi</b><br>Detaylı analiz için yukarıdaki "Rapor" butonunu kullanın.</div>';
             if(dashAvg) dashAvg.innerText = "-";
             if(dashCount) dashCount.innerText = "-";
             if(dashTarget) dashTarget.innerText = "-%";
@@ -1082,7 +1120,13 @@ async function fetchEvaluationsForAgent(forcedName) {
         const response = await fetch(SCRIPT_URL, {
             method: 'POST',
             headers: { "Content-Type": "text/plain;charset=utf-8" },
-            body: JSON.stringify({ action: "fetchEvaluations", targetAgent: targetAgent, username: currentUser, token: getToken() })
+            body: JSON.stringify({ 
+                action: "fetchEvaluations", 
+                targetAgent: targetAgent, 
+                targetGroup: targetGroup, // Backend'e grubu da gönderiyoruz
+                username: currentUser, 
+                token: getToken() 
+            })
         });
         
         const data = await response.json();
@@ -1135,16 +1179,20 @@ async function fetchEvaluationsForAgent(forcedName) {
 
                 let editBtn = isAdminMode ? `<i class="fas fa-pen" style="font-size:1rem; color:#fabb00; cursor:pointer; margin-right:5px; padding:5px;" onclick="event.stopPropagation(); editEvaluation('${evalItem.callId}')" title="Kaydı Düzenle"></i>` : '';
 
+                // Eğer Toplu Gösterim modundaysak, her satırda Ajan adını da gösterelim ki karışmasın
+                let agentNameDisplay = (targetAgent === 'all') ? `<span style="font-size:0.8rem; font-weight:bold; color:#555; background:#eee; padding:2px 6px; border-radius:4px; margin-left:10px;">${evalItem.agent}</span>` : '';
+
                 html += `<div class="evaluation-summary" id="eval-summary-${index}" style="position:relative; border:1px solid #eaedf2; border-left:4px solid ${scoreColor}; padding:15px; margin-bottom:10px; border-radius:8px; background:#fff; cursor:pointer; transition:all 0.2s ease;" onclick="toggleEvaluationDetail(${index})">
                     
                     <div style="display:flex; justify-content:space-between; align-items:center;">
                         
                         <!-- SOL TARAFI (TARİHLER VE ID) -->
                         <div style="display:flex; flex-direction:column; gap:4px;">
-                            <!-- ÜST: ÇAĞRI TARİHİ -->
+                            <!-- ÜST: ÇAĞRI TARİHİ + (Opsiyonel Ajan Adı) -->
                             <div style="display:flex; align-items:center; gap:8px;">
                                 <i class="fas fa-phone-alt" style="color:#b0b8c1; font-size:0.9rem;"></i>
                                 <span style="font-weight:700; color:#2c3e50; font-size:1.05rem;">${displayCallDate}</span>
+                                ${agentNameDisplay}
                             </div>
                             
                             <!-- ALT: LOG TARİHİ VE ID -->
@@ -1287,16 +1335,13 @@ function fetchCriteria(groupName) {
 
 function toggleEvaluationDetail(index) {
     const detailEl = document.getElementById(`eval-details-${index}`);
-    const iconEl = document.getElementById(`eval-icon-${index}`);
     const isVisible = detailEl.style.maxHeight !== '0px' && detailEl.style.maxHeight !== '';
     if (isVisible) {
         detailEl.style.maxHeight = '0px';
         detailEl.style.marginTop = '0';
-        iconEl.style.transform = 'rotate(0deg)';
     } else {
         detailEl.style.maxHeight = detailEl.scrollHeight + 100 + 'px';
         detailEl.style.marginTop = '10px';
-        iconEl.style.transform = 'rotate(180deg)';
     }
 }
 
