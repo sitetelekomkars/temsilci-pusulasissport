@@ -1135,25 +1135,43 @@ async function fetchEvaluationsForAgent(forcedName) {
 
                 let editBtn = isAdminMode ? `<div style="position:absolute; top:15px; right:50px; cursor:pointer; color:#999;" onclick="event.stopPropagation(); editEvaluation('${evalItem.callId}')" title="Düzenle"><i class="fas fa-pen"></i></div>` : '';
 
-                html += `<div class="evaluation-summary" id="eval-summary-${index}" style="position:relative; border:1px solid #eaedf2; border-left:4px solid ${scoreColor}; padding:15px; margin-bottom:10px; border-radius:8px; background:#fff; cursor:pointer;" onclick="toggleEvaluationDetail(${index})">
-                    ${editBtn}
+                html += `<div class="evaluation-summary" id="eval-summary-${index}" style="position:relative; border:1px solid #eaedf2; border-left:4px solid ${scoreColor}; padding:15px; margin-bottom:10px; border-radius:8px; background:#fff; cursor:pointer; transition:all 0.2s ease;" onclick="toggleEvaluationDetail(${index})">
+                    
                     <div style="display:flex; justify-content:space-between; align-items:center;">
-                        <div>
-                            <span style="font-weight:700; color:#0e1b42; font-size:0.95rem;">
-                                <i class="fas fa-phone-alt" style="color:#ccc; margin-right:5px;"></i> ${displayCallDate}
-                            </span>
-                            <div style="font-size:0.8rem; color:#94a3b8; margin-top:3px;">ID: ${evalItem.callId || '-'}</div>
+                        
+                        <!-- SOL TARAFI (TARİHLER VE ID) -->
+                        <div style="display:flex; flex-direction:column; gap:4px;">
+                            <!-- ÜST: ÇAĞRI TARİHİ -->
+                            <div style="display:flex; align-items:center; gap:8px;">
+                                <i class="fas fa-phone-alt" style="color:#b0b8c1; font-size:0.9rem;"></i>
+                                <span style="font-weight:700; color:#2c3e50; font-size:1.05rem;">${displayCallDate}</span>
+                            </div>
+                            
+                            <!-- ALT: LOG TARİHİ VE ID -->
+                            <div style="font-size:0.75rem; color:#94a3b8; margin-left:22px;">
+                                <span style="font-weight:500;">Log:</span> ${displayLogDate} 
+                                <span style="margin:0 4px; color:#cbd5e0;">|</span> 
+                                <span style="font-weight:500;">ID:</span> ${evalItem.callId || '-'}
+                            </div>
                         </div>
-                        <div style="text-align:right;">
-                            <span style="font-weight:800; font-size:1.4rem; color:${scoreColor};">${evalItem.score}</span>
+
+                        <!-- SAĞ TARAFI (PUAN VE EDİT İKONU) -->
+                        <div style="text-align:right; display:flex; flex-direction:column; align-items:flex-end;">
+                            <div style="display:flex; align-items:center; gap:5px;">
+                                ${editBtn ? `<i class="fas fa-pen" style="font-size:0.8rem; color:#cbd5e0;"></i>` : ''} 
+                                <span style="font-weight:800; font-size:1.6rem; color:${scoreColor}; line-height:1;">${evalItem.score}</span>
+                            </div>
+                            <span style="font-size:0.65rem; color:#a0aec0; letter-spacing:0.5px; font-weight:600;">PUAN</span>
                         </div>
+
                     </div>
+
                     <div class="evaluation-details-content" id="eval-details-${index}">
-                        <hr style="border:none; border-top:1px dashed #eee; margin:10px 0;">
+                        <hr style="border:none; border-top:1px dashed #eee; margin:12px 0;">
                         ${detailHtml}
-                        <div style="margin-top:10px; background:#f8f9fa; padding:10px; border-radius:6px;">
-                             <strong style="color:#555; font-size:0.8rem;">Geri Bildirim:</strong><br>
-                             <span style="color:#333; font-size:0.85rem;">${evalItem.feedback || '-'}</span>
+                        <div style="margin-top:10px; background:#f8f9fa; padding:10px; border-radius:6px; border-left:3px solid #e2e8f0;">
+                             <strong style="color:#4a5568; font-size:0.8rem;">Geri Bildirim:</strong>
+                             <p style="color:#2d3748; font-size:0.9rem; margin:5px 0 0 0;">${evalItem.feedback || 'Geri bildirim girilmedi.'}</p>
                         </div>
                     </div>
                 </div>`;
