@@ -1133,7 +1133,7 @@ async function fetchEvaluationsForAgent(forcedName) {
                     detailHtml += '</table>';
                 } catch (e) { detailHtml = `<p style="white-space:pre-wrap; margin:0; font-size:0.9rem;">${evalItem.details}</p>`; }
 
-                let editBtn = isAdminMode ? `<div style="position:absolute; top:15px; right:50px; cursor:pointer; color:#999;" onclick="event.stopPropagation(); editEvaluation('${evalItem.callId}')" title="Düzenle"><i class="fas fa-pen"></i></div>` : '';
+                let editBtn = isAdminMode ? `<i class="fas fa-pen" style="font-size:1rem; color:#fabb00; cursor:pointer; margin-right:5px; padding:5px;" onclick="event.stopPropagation(); editEvaluation('${evalItem.callId}')" title="Kaydı Düzenle"></i>` : '';
 
                 html += `<div class="evaluation-summary" id="eval-summary-${index}" style="position:relative; border:1px solid #eaedf2; border-left:4px solid ${scoreColor}; padding:15px; margin-bottom:10px; border-radius:8px; background:#fff; cursor:pointer; transition:all 0.2s ease;" onclick="toggleEvaluationDetail(${index})">
                     
@@ -1157,8 +1157,8 @@ async function fetchEvaluationsForAgent(forcedName) {
 
                         <!-- SAĞ TARAFI (PUAN VE EDİT İKONU) -->
                         <div style="text-align:right; display:flex; flex-direction:column; align-items:flex-end;">
-                            <div style="display:flex; align-items:center; gap:5px;">
-                                ${editBtn ? `<i class="fas fa-pen" style="font-size:0.8rem; color:#cbd5e0;"></i>` : ''} 
+                            <div style="display:flex; align-items:center;">
+                                ${editBtn} 
                                 <span style="font-weight:800; font-size:1.6rem; color:${scoreColor}; line-height:1;">${evalItem.score}</span>
                             </div>
                             <span style="font-size:0.65rem; color:#a0aec0; letter-spacing:0.5px; font-weight:600;">PUAN</span>
@@ -1287,13 +1287,16 @@ function fetchCriteria(groupName) {
 
 function toggleEvaluationDetail(index) {
     const detailEl = document.getElementById(`eval-details-${index}`);
+    const iconEl = document.getElementById(`eval-icon-${index}`);
     const isVisible = detailEl.style.maxHeight !== '0px' && detailEl.style.maxHeight !== '';
     if (isVisible) {
         detailEl.style.maxHeight = '0px';
         detailEl.style.marginTop = '0';
+        iconEl.style.transform = 'rotate(0deg)';
     } else {
         detailEl.style.maxHeight = detailEl.scrollHeight + 100 + 'px';
         detailEl.style.marginTop = '10px';
+        iconEl.style.transform = 'rotate(180deg)';
     }
 }
 
