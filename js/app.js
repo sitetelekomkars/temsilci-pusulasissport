@@ -3534,7 +3534,12 @@ async function logEvaluationPopup() {
         </div>`;
     
     const { value: formValues } = await Swal.fire({
-        html: contentHtml, width: '600px', showCancelButton: true, confirmButtonText: ' 💾  Kaydet',
+        html: contentHtml,
+        width: '600px',
+        showCancelButton: true,
+        confirmButtonText: ' 💾  Kaydet',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
         didOpen: () => { 
             if (isTelesatis) window.recalcTotalSliderScore(); 
             else if (isChat) window.recalcTotalScore(); 
@@ -3632,7 +3637,12 @@ async function editEvaluation(targetCallId) {
     contentHtml += `<div><label>Revize Feedback</label><textarea id="eval-feedback" class="swal2-textarea">${evalData.feedback||''}</textarea></div></div>`;
     
     const { value: formValues } = await Swal.fire({
-        html: contentHtml, width: '600px', showCancelButton: true, confirmButtonText: ' 💾  Güncelle',
+        html: contentHtml,
+        width: '600px',
+        showCancelButton: true,
+        confirmButtonText: ' 💾  Güncelle',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
         didOpen: () => { if (isTelesatis) window.recalcTotalSliderScore(); else if (isChat) window.recalcTotalScore(); },
         preConfirm: () => {
             const callId = document.getElementById('eval-callid').value;
@@ -4950,7 +4960,8 @@ const TECH_TAB_LABELS = {
   access: 'Erişim Sorunları',
   app: 'App Hataları',
   activation: 'Aktivasyon',
-  info: 'Bilgi'
+  info: 'Bilgi',
+  payment: 'Ödeme Sorunları'
 };
 
 function __normalizeTechTab(tab){
@@ -4964,6 +4975,7 @@ function __normalizeTechCategory(cat){
   if(c.startsWith("app")) return "app";
   if(c.startsWith("akt")) return "activation";
   if(c.startsWith("bil")) return "info";
+  if(c.startsWith("öde") || c.startsWith("ode") || c.includes("ödeme") || c.includes("odeme")) return "payment";
   return "";
 }
 
@@ -5033,7 +5045,8 @@ function __renderTechList(tabKey, items){
     tabKey==="access" ? "x-access-list" :
     tabKey==="app" ? "x-app-list" :
     tabKey==="activation" ? "x-activation-list" :
-    tabKey==="info" ? "x-info-list" : ""
+    tabKey==="info" ? "x-info-list" :
+    tabKey==="payment" ? "x-payment-list" : ""
   );
   if(!listEl) return;
 
@@ -5129,7 +5142,7 @@ async function loadTechCategoryOptions(){
 }
 
 function techTabLabel(tabKey){
-  const m = { broadcast:'Yayın', access:'Erişim Sorunları', app:'App Hataları', activation:'Aktivasyon', info:'Bilgi' };
+  const m = { broadcast:'Yayın', access:'Erişim Sorunları', app:'App Hataları', activation:'Aktivasyon', info:'Bilgi', payment:'Ödeme Sorunları' };
   return m[tabKey] || 'Yayın';
 }
 
@@ -5299,18 +5312,18 @@ window.switchTechTab = async function(tab){
   try{
     // existing visual tab switch
     document.querySelectorAll('#tech-fullscreen .q-nav-item').forEach(li => li.classList.remove('active'));
-    const tabMap = {broadcast:'x-view-broadcast',access:'x-view-access',app:'x-view-app',activation:'x-view-activation',info:'x-view-info',wizard:'x-view-wizard',cards:'x-view-cards'};
+    const tabMap = {broadcast:'x-view-broadcast',access:'x-view-access',app:'x-view-app',activation:'x-view-activation',info:'x-view-info',payment:'x-view-payment',wizard:'x-view-wizard',cards:'x-view-cards'};
     const viewId = tabMap[tab];
     // activate clicked item
     const items = Array.from(document.querySelectorAll('#tech-fullscreen .q-nav-menu .q-nav-item'));
-    const idx = ['broadcast','access','app','activation','info','wizard','cards'].indexOf(tab);
+    const idx = ['broadcast','access','app','activation','payment','info','wizard','cards'].indexOf(tab);
     if(idx>=0 && items[idx]) items[idx].classList.add('active');
 
     document.querySelectorAll('#tech-fullscreen .q-view-section').forEach(v => v.classList.remove('active'));
     const viewEl = document.getElementById(viewId);
     if(viewEl) viewEl.classList.add('active');
 
-    if(['broadcast','access','app','activation','info'].includes(tab)){
+    if(['broadcast','access','app','activation','payment','info'].includes(tab)){
       const all = await loadTechDocsIfNeeded(false);
       const filtered = all.filter(x => x.categoryKey === tab);
       __renderTechList(tab, filtered);
