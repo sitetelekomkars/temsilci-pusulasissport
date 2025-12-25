@@ -11,6 +11,8 @@
     --quiz: #8e24aa; 
     --text-dark: #2c3e50;
     --text-light: #95a5a6;
+    /* Kurumsal gri (ekrandaki renk kartından) */
+    --corp-gray: #A3A8AC;
 }
 body { 
     margin: 0; padding: 0; 
@@ -70,6 +72,11 @@ body {
     margin-top: 5px !important; 
     margin-bottom: 25px !important;
 }
+
+/* Login alt başlık (Personel Girişi) kurumsal gri */
+.login-subtitle{
+    color: var(--corp-gray) !important;
+}
 .login-input { 
     width: 100%; padding: 12px; margin: 8px 0; background: #2c344a; color: #fff; 
     border: 1px solid #3a4563; border-radius: 6px; text-align: center; box-sizing: border-box; 
@@ -85,7 +92,8 @@ body {
     font-weight: 800;
     cursor: pointer;
     margin-top: 15px;
-    color: #0e1b42;
+    /* "Giriş Yap" yazısı beyaz */
+    color: #ffffff;
     transition: 0.2s;
     box-shadow: 0 8px 20px rgba(207, 10, 44, 0.18);
 }
@@ -1205,6 +1213,18 @@ body.editing .edit-icon { display: block !important; }
 .q-nav-menu{padding:10px 0;flex:1;overflow:auto}
 .q-nav-item{padding:12px 16px;cursor:pointer;display:flex;gap:10px;align-items:center;color:rgba(255,255,255,.88)}
 .q-nav-item.active{background:#CF0A2C;color:#0e1b42;font-weight:900}
+
+/* TeleSatış menüsü: yazılar beyaz, seçili olan Teknik gibi renklensin */
+#telesales-fullscreen .q-nav-item,
+#telesales-fullscreen .q-nav-item i,
+#telesales-fullscreen .q-nav-item svg{
+  color:#fff !important;
+}
+#telesales-fullscreen .q-nav-item.active{
+  background: var(--secondary) !important;
+  color:#fff !important;
+  font-weight: 900;
+}
 .q-side-bottom{padding:14px 16px;border-top:1px solid rgba(255,255,255,.08)}
 .q-logout{width:100%;border:0;border-radius:12px;padding:12px 14px;background:#c62828;color:#fff;font-weight:900;cursor:pointer}
 .q-logout:hover{filter:brightness(.95)}
