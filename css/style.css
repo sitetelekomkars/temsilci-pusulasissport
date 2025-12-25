@@ -1176,7 +1176,7 @@ body.editing .edit-icon { display: block !important; }
 .q-training-card{background:#fff;border-radius:14px;border:2px solid rgba(0,0,0,.08);padding:16px;box-shadow:0 6px 18px rgba(0,0,0,.06);transition:.15s}
 .q-training-card:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,.07)}
 .t-training-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
-.t-training-badge{background:#CF0A2C;color:#0e1b42;font-weight:900;font-size:.75rem;border-radius:999px;padding:4px 10px;white-space:nowrap}
+.t-training-badge{background:#CF0A2C;color:#fff;font-weight:900;font-size:.75rem;border-radius:999px;padding:4px 10px;white-space:nowrap}
 .t-training-desc{margin-top:10px;color:#4b5563;line-height:1.5;min-height:42px}
 .q-list{display:flex;flex-direction:column;gap:12px}
 .q-item{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px;padding:14px 14px;display:flex;align-items:center;justify-content:space-between;gap:12px}
@@ -1226,7 +1226,9 @@ body.editing .edit-icon { display: block !important; }
   font-weight: 900;
 }
 .q-side-bottom{padding:14px 16px;border-top:1px solid rgba(255,255,255,.08)}
-.q-logout{width:100%;border:0;border-radius:12px;padding:12px 14px;background:#c62828;color:#fff;font-weight:900;cursor:pointer}
+.q-logout{width:100%;border:0;border-radius:12px;padding:12px 14px;background:var(--corp-gray);color:var(--primary);font-weight:900;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:.15s;}
+.q-logout:hover{filter:brightness(0.96);}
+.q-logout i{color:var(--primary);}
 .q-logout:hover{filter:brightness(.95)}
 /* --- HOME: Bugün Neler Var & Duyurular düzenleme butonlarını kapat --- */
 #home-edit-today, #home-edit-ann { display: none !important; }
@@ -1421,3 +1423,18 @@ body.editing .edit-icon { display: block !important; }
       #16203a 40px
     ) !important;
 }
+
+/* Üstteki çarpı (X) butonu: TeleSatış / Teknik / Kalite ekranlarında gizle (altta Geri var) */
+#telesales-fullscreen .q-close,
+#tech-fullscreen .q-close,
+#quality-fullscreen .q-close{display:none !important;}
+
+/* TeleSatış kart başlıkları ve badge yazıları: mavi yerine kurumsal/beyaz */
+.q-card-grid .q-training-card h3,
+.q-card-grid .q-training-card .t-title,
+.q-card-grid .q-training-card .t-training-title,
+.q-card-grid .q-training-card .t-head-title,
+.q-card-grid .q-training-card .t-offer-title{
+  color: var(--corp-gray) !important;
+}
+
