@@ -1271,42 +1271,33 @@ body.editing .edit-icon { display: block !important; }
 
 
 /* =========================================================
-   Koyu Kurumsal Mavi – Başlık & Login Uyum Ayarı
+   Eski Kırmızı (secondary) Kalan Yerler – Kurumsal Maviye Çek
    ========================================================= */
 
-:root {
-    --primary-deep: #0e1b42; /* Login arka planı ile uyumlu koyu mavi */
+/* Secondary rengi (kırmızı) kullanılan tüm yerleri kurumsal maviye al */
+:root{
+  --secondary: var(--primary);
 }
 
-/* Login ekranı arka plan – kurumsal geçiş */
-#login-screen {
-    background: linear-gradient(
-        180deg,
-        #0e1b42 0%,
-        #0033a0 100%
-    ) !important;
+/* Teknik sol menü / avatar / çıkış butonu */
+.q-avatar,
+.q-logout{
+  background: var(--primary) !important;
+  border-color: rgba(255,255,255,0.15) !important;
 }
 
-/* Login kart başlıkları */
-.login-card h2,
-.login-card p {
-    color: #ffffff !important;
-    opacity: 0.9;
-}
-
-/* Hoş Geldin alanı – beyaz */
-.home-hero-title,
-#home-welcome-user {
-    color: #ffffff !important;
-    font-weight: 800;
-}
-
-/* Teknik & içerik başlıkları – koyu kurumsal mavi */
-.home-card-title,
-.card-title,
+/* Teknik accordion başlıkları + hover çizgileri */
 .accordion-title,
-.tech-title,
-.section-title {
-    color: var(--primary-deep) !important;
-    font-weight: 700;
+.q-accordion-title,
+.q-accordion-header{
+  color: var(--primary-deep, #0e1b42) !important;
+}
+.guide-item:hover{
+  border-color: var(--primary) !important;
+}
+
+/* Dropdown ikonları (inline renkleri bastır) */
+.user-dropdown .dropdown-item i,
+.dropdown-item i{
+  color: var(--neutral, #a3a8ac) !important;
 }
