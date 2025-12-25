@@ -1293,3 +1293,21 @@ body.editing .edit-icon { display: block !important; }
 .top-nav button.active i, .header .control-wrapper button.active i{
   color:#fff !important;
 }
+
+
+/* LOGIN TITLE FIX */
+.login-title{
+  color:#ffffff;
+  font-weight:300;
+  margin-top:10px;
+  display:flex;
+  justify-content:center;
+  gap:6px;
+}
+.login-title .brand-main{
+  color:#ffffff;
+}
+.login-title .brand-pusula{
+  color:#ffffff;
+  font-weight:600;
+}
