@@ -1269,26 +1269,59 @@ body.editing .edit-icon { display: block !important; }
 .home-hero{background:linear-gradient(135deg,#002766,#0033A0)}
 .home-hero-title #home-welcome-user{color:#CF0A2C}
 
-/* === UI Renk Düzenlemeleri (Talep) === */
 
-/* Hoş Geldin kullanıcı adı beyaz */
-#home-welcome-user {
-    color: #ffffff;
-    font-weight: 700;
+/* =========================================================
+   Kurumsal Renk Düzeltmeleri (Login + Home + Teknik Başlıklar)
+   ========================================================= */
+
+/* LOGIN: kurumsal mavi/gri tonları */
+#login-screen { background: var(--primary) !important; }
+
+.login-card{
+  background: #0e1b42 !important; /* kurumsal koyu mavi */
+  border: 1px solid rgba(255,255,255,0.08) !important;
 }
+.login-input{
+  background: rgba(255,255,255,0.10) !important;
+  border: 1px solid rgba(255,255,255,0.18) !important;
+  color:#fff !important;
+}
+.login-input:focus{
+  border-color: rgba(255,255,255,0.35) !important;
+  box-shadow: 0 0 0 2px rgba(0,51,160,0.25) !important;
+}
+.login-btn{
+  background: var(--primary) !important;   /* kurumsal mavi */
+  color:#fff !important;
+}
+.login-btn:hover{ filter: brightness(0.92); }
 
-/* Ana başlıklar – kurumsal mavi */
+/* HOME: Hoş Geldin + isim tamamen beyaz */
+.home-hero-title{ color:#fff !important; font-weight:800 !important; }
+#home-welcome-user{ color:#fff !important; font-weight:900 !important; }
+
+/* HOME + GENEL başlıklar: kurumsal mavi */
 .home-card-title,
 .card-title,
 .modal-content h2,
-.home-hero-title {
-    color: var(--primary);
+.home-mini-title,
+.x-card-title{
+  color: var(--primary) !important;
 }
 
-/* Kırmızı başlık & ikonlar → kurumsal gri */
-.home-card-title i,
-.card .badge,
-.edit-icon,
-.dropdown-item i {
-    color: var(--neutral) !important;
+/* Teknik fullscreen başlıkları: kurumsal mavi */
+.q-title,
+.q-pane-title,
+.q-module-title{
+  color: var(--primary) !important;
 }
+.q-module-title i{ color: var(--primary) !important; }
+
+/* (Opsiyonel) Teknik sidebar'da aktif sekme rengi kurumsal mavi */
+.q-nav-item.active{
+  background: var(--primary) !important;
+  color:#fff !important;
+}
+
+/* Kırmızı görünen ikon/etiketlerde kurumsal gri dokunuş (çok bastırmasın) */
+.home-card-title i{ color: var(--neutral) !important; }
