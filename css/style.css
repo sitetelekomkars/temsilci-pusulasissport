@@ -1271,57 +1271,42 @@ body.editing .edit-icon { display: block !important; }
 
 
 /* =========================================================
-   Kurumsal Renk Düzeltmeleri (Login + Home + Teknik Başlıklar)
+   Koyu Kurumsal Mavi – Başlık & Login Uyum Ayarı
    ========================================================= */
 
-/* LOGIN: kurumsal mavi/gri tonları */
-#login-screen { background: var(--primary) !important; }
+:root {
+    --primary-deep: #0e1b42; /* Login arka planı ile uyumlu koyu mavi */
+}
 
-.login-card{
-  background: #0e1b42 !important; /* kurumsal koyu mavi */
-  border: 1px solid rgba(255,255,255,0.08) !important;
+/* Login ekranı arka plan – kurumsal geçiş */
+#login-screen {
+    background: linear-gradient(
+        180deg,
+        #0e1b42 0%,
+        #0033a0 100%
+    ) !important;
 }
-.login-input{
-  background: rgba(255,255,255,0.10) !important;
-  border: 1px solid rgba(255,255,255,0.18) !important;
-  color:#fff !important;
-}
-.login-input:focus{
-  border-color: rgba(255,255,255,0.35) !important;
-  box-shadow: 0 0 0 2px rgba(0,51,160,0.25) !important;
-}
-.login-btn{
-  background: var(--primary) !important;   /* kurumsal mavi */
-  color:#fff !important;
-}
-.login-btn:hover{ filter: brightness(0.92); }
 
-/* HOME: Hoş Geldin + isim tamamen beyaz */
-.home-hero-title{ color:#fff !important; font-weight:800 !important; }
-#home-welcome-user{ color:#fff !important; font-weight:900 !important; }
+/* Login kart başlıkları */
+.login-card h2,
+.login-card p {
+    color: #ffffff !important;
+    opacity: 0.9;
+}
 
-/* HOME + GENEL başlıklar: kurumsal mavi */
+/* Hoş Geldin alanı – beyaz */
+.home-hero-title,
+#home-welcome-user {
+    color: #ffffff !important;
+    font-weight: 800;
+}
+
+/* Teknik & içerik başlıkları – koyu kurumsal mavi */
 .home-card-title,
 .card-title,
-.modal-content h2,
-.home-mini-title,
-.x-card-title{
-  color: var(--primary) !important;
+.accordion-title,
+.tech-title,
+.section-title {
+    color: var(--primary-deep) !important;
+    font-weight: 700;
 }
-
-/* Teknik fullscreen başlıkları: kurumsal mavi */
-.q-title,
-.q-pane-title,
-.q-module-title{
-  color: var(--primary) !important;
-}
-.q-module-title i{ color: var(--primary) !important; }
-
-/* (Opsiyonel) Teknik sidebar'da aktif sekme rengi kurumsal mavi */
-.q-nav-item.active{
-  background: var(--primary) !important;
-  color:#fff !important;
-}
-
-/* Kırmızı görünen ikon/etiketlerde kurumsal gri dokunuş (çok bastırmasın) */
-.home-card-title i{ color: var(--neutral) !important; }
