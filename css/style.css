@@ -30,7 +30,7 @@ body {
     /* Arka plan görseli: resim.png (dosya kökte, CSS /css içinde olduğu için ../) */
     background:
         linear-gradient(rgba(14, 27, 66, 0.6), rgba(14, 27, 66, 0.6)),
-        url("../resim.png");
+        url("../giris.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
