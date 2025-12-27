@@ -1,1 +1,5407 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('9 mB=1l;V i8(3v){1y{6h.sH("[KX]",3v)}1o(e){}1y{9 4G=2l.49("ax")||"";if(4G==="3o"||4G==="hI"){Z.19({7E:1w,4J:\'3q-9H\',1U:\'4y\',P:1D(3v||\'7nı\'),31:1l,3J:hn})}}1o(e){}}18 2w=2l.49("KW")||"bq://1C.o1.bs/KV/s/KU/KT";2F V bH(2K,bG={}){9 32=(5Y 2d!=="g5"&&2d)?2d:(2l.49("es")||"");9 3l=(5Y 3d==="V"?3d():2l.49("cx"))||"";9 2f=1E 2U(2w,{2T:"2S",2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K,32,3l,...bG})});9 2B=1E 2f.2B();if(2B.2m!=="1N")cK 1H aR(2B.3v||2B.1T||"KS 1T");Q 2B}if(5Y Z==="g5"){2n.Z={19:(a,b,c)=>{1y{61((a&&a.P)||a||b||c||"")}1o(e){}},}}18 aC={e7:1,e6:1,aB:1};18 e5=1l;18 9i=-1;9 mJ=[\'73\',\'İKR\',\'8O\',\'7s\'];9 kL=["KQ","ŞKP","KO","KN","KMıs","KL","KK","AğKJ","KIül","KH","KGım","KFık"];18 48=[],jQ=[],bI=[],8A=[],dq=[],8l=[],hd=[];18 hD;2n.jA=1H dL(r=>{hD=r});18 8F={};18 2d="";18 7r=4Z;18 4I={};V mC(){Q bH("KE",{}).1J(2f=>{4I=(2f&&2f.x0)?2f.x0:{};1y{2l.6p(\'jR\',1P.2e(4I||{}))}1o(e){}1y{a8()}1o(e){}Q 4I}).1o(e=>{1y{4I=1P.7S(2l.49(\'jR\')||\'{}\')||{}}1o(a5){4I={}}1y{a8()}1o(a5){}Q 4I})}V wY(v){Q 1D(v||\'\').1t().2y()}V wZ(v){9 s=1D(v||\'\').1t().2y();9 tr=s.4M(\'ş\',\'s\').4M(\'Ş\',\'s\').4M(\'ı\',\'i\').4M(\'İ\',\'i\').4M(\'ğ\',\'g\').4M(\'Ğ\',\'g\').4M(\'ü\',\'u\').4M(\'Ü\',\'u\').4M(\'ö\',\'o\').4M(\'Ö\',\'o\').4M(\'ç\',\'c\').4M(\'Ç\',\'c\');if(tr.21(\'fY\'))Q\'7pış\';if(tr.21(\'4p\'))Q\'73\';if(tr.21(\'wQ\'))Q\'94\';Q 1D(v||\'\').1t()}V ex(v){if(!v)Q[];Q 1D(v).6N(\',\').1O(s=>s.1t()).1Y(9A)}V wX(){Q wZ(2l.49("cw")||"")}V mQ(){Q wY(2l.49("ax")||"")}V g4(6A){if(!6A)Q 1w;if(6A.6g===1l)Q 1l;9 4G=mQ(),wW=wX();9 mS=6A.mR||[];18 4q=6A.8r||[];if(4q.6Z("hK")>-1)4q=[];if(mS.1j&&mS.6Z(4G)===-1)Q 1l;if(4q.1j&&4q.6Z(wW)===-1)Q 1l;Q 1w}V wS(){1y{9 wV=I.3Q(\'[1a-wU-2b]\');wV.1K(1c=>{9 2b=1c.81(\'1a-wU-2b\');9 6A=7r&&7r[2b];1c.w.13=g4(6A)?\'\':\'1p\'});I.3Q(\'[1a-wT-2b]\').1K(el=>{9 2b=el.81(\'1a-wT-2b\');9 6A=7r&&7r[2b];el.w.13=g4(6A)?\'\':\'1p\'})}1o(e){}}V hJ(){Q bH("wR",{}).1J(2f=>{if(2f&&2f.2m==="1N"){7r={};(2f.3e||[]).1K(it=>{7r[it.2b]={8r:ex(it.8r),6g:(it.6g===1l||1D(it.6g).6y()==="wO")?1l:1w,mR:ex(it.mR)}});wS()}}).1o(()=>{})}V hN(){9 4G=mQ();if(4G!=="hI"){Z.19("jN","wJ YöwI dh KD KCü7l 3Nı9S.","4y");Q}bH("wR",{}).1J(2f=>{if(!2f||2f.2m!=="1N"){Z.19("2o","wG KBı","1T");Q}18 4q=(2f.4q||[]).1O(g=>1D(g||"").1t()).1Y(9A);if(!4q.1j){9 mP=1H 9z();(2f.3e||[]).1K(it=>{ex(it.8r).1K(g=>{9 gg=1D(g||"").1t();if(gg&&gg.6y()!=="hK")mP.3a(gg)})});4q=[...mP]}9 wP={"wQ":"94","fYış":"7pış","KA":"7pış","yögy":"Yögy","Kz":"Yögy","4p":"73"};4q=4q.1O(g=>{9 k=g.2y();Q wP[k]||(g.uo(0).6y()+g.5t(1))});9 mO=(2f.3e||[]);9 wK=mO.1O(m=>{9 hM=ex(m.8r);9 6g=!(m.6g===1l||1D(m.6g).6y()==="wO");9 wN=4q.1O(g=>{9 cC=(hM.1j===0||hM.6Z("hK")>-1)?1w:(hM.6Z(g)>-1);Q`<td w="X-2g:3x"><15 1A="hL"1a-mk="${m.2b}"1a-g="${g}"${cC?\'cC\':\'\'}/></td>`}).4d(\'\');Q`<tr><td w="1f-2j:dO">${1F(m.P||m.1q||m.2b)}</td><td w="X-2g:3x"><15 1A="hL"1a-6g="${m.2b}"${6g?\'cC\':\'\'}/></td>${wN}</tr>`}).4d(\'\');9 wH=`<j w="X-2g:2C;1r-3q:1z;1n:#eg">wMü/Ky Kxı“d0 Kw görsün”Kvı.İşsN fV Ku iNüyügöKt.</j><j w="3i-3f:hY;bB:df;1V:4C 3I 6l(0,0,0,.i4);1V-5A:42"><7z w="2i:2x%;1V-gA:gA"><wL w="4J:Ks;1Q:0;29:#Kr;z-2Y:1"><tr><th w="X-2g:2C;22:42">wMü</th><th w="X-2g:3x;22:42;2i:Kq">6K</th>${4q.1O(g=>`<th w="X-2g:3x;22:42">${1F(g)}</th>`).4d(\'\')}</tr></wL><ci>${wK}</ci></7z></j>`;Z.19({P:"wJ YöwI",1M:wH,2i:vq,3m:1w,33:"5T",41:"4xç",4c:()=>{9 7J={};mO.1K(m=>{7J[m.2b]={8r:[],6g:1w}});I.3Q(\'15[1A="hL"][1a-6g]\').1K(cb=>{9 k=cb.81(\'1a-6g\');if(7J[k])7J[k].6g=!!cb.cC});I.3Q(\'15[1A="hL"][1a-mk]\').1K(cb=>{9 k=cb.81(\'1a-mk\');9 g=cb.81(\'1a-g\');if(cb.cC&&7J[k])7J[k].8r.5E(g)});74.6P(7J).1K(k=>{9 3t=7J[k].8r||[];if(3t.1j===4q.1j){7J[k].8r=["hK"]}});Q 7J}}).1J(r=>{if(!r.4W)Q;9 bG=r.R||{};bH("Kp",{3e:bG}).1J(sv=>{if(sv&&sv.2m==="1N"){Z.19("8x","wG güdx.","1N");hJ()}1i{Z.19("2o",(sv&&sv.3v)||"eA","1T")}})})})}18 2p=1l;18 mx=1l;18 4n=1l;18 cv;18 9o=[];18 4s="2O";18 5k=[];18 5L=[];18 ay={};18 qc=[];18 dS=4Z;18 dP=[];2n.am=V(2Y,1I,3i){9 3G=I.O(`3G-${2Y}`);9 2V=I.O(`2V-${2Y}`);9 9t=I.O(`1L-${2Y}`);9 7c=3G.3Q(\'.2A-1m\');7c.1K(b=>b.1X.4v(\'2Z\'));9 mN=3G.5e(\'.2A-1m[1a-1I="\'+1I+\'"]\');if(mN)mN.1X.3a(\'2Z\');2V.2c=1I;if(1I<3i){9t.w.13=\'2G\';2V.w.29=\'#9d\';3G.w.as=\'#wD\';3G.w.29=\'#lP\'}1i{9t.w.13=\'1p\';9t.R=\'\';2V.w.29=\'#8c\';3G.w.as=\'#6b\';3G.w.29=\'#8z\'}2n.gf()};2n.gf=V(){18 9s=0;18 9r=0;9 wF=I.3Q(\'.1I-2V\');wF.1K(b=>{9s+=37(b.2c)||0});9 wE=I.3Q(\'.5j-3G\');wE.1K(3G=>{9r+=37(3G.81(\'1a-3i-1I\'))||0});9 cB=I.O(\'gs-1I\');9 cA=I.O(\'1I-6c\');if(cB)cB.2c=9s;if(cA){18 1n=\'#8c\';18 5w=9r>0?(9s/9r)*2x:0;if(5w<50)1n=\'#9d\';1i if(5w<85)1n=\'#gB\';1i if(5w<95)1n=\'#97\';cA.w.29=`kZ-kY(${1n}${5w}%,#eg ${5w}%)`}};2n.k7=V(2Y,3i){9 6V=I.O(`6V-${2Y}`);9 2V=I.O(`2V-${2Y}`);9 9t=I.O(`1L-${2Y}`);9 3G=I.O(`3G-${2Y}`);if(!6V)Q;9 2W=37(6V.R);2V.2c=2W;if(2W<3i){9t.w.13=\'2G\';2V.w.29=\'#9d\';3G.w.as=\'#wD\';3G.w.29=\'#lP\'}1i{9t.w.13=\'1p\';9t.R=\'\';2V.w.29=\'#8c\';3G.w.as=\'#6b\';3G.w.29=\'#8z\'}2n.gh()};2n.gh=V(){18 9s=0;18 9r=0;9 wC=I.3Q(\'.6V-15\');wC.1K(s=>{9s+=37(s.R)||0;9r+=37(s.81(\'3i\'))||0});9 cB=I.O(\'gs-1I\');9 cA=I.O(\'1I-6c\');if(cB)cB.2c=9s;if(cA){18 1n=\'#8c\';18 5w=9r>0?(9s/9r)*2x:0;if(5w<50)1n=\'#9d\';1i if(5w<85)1n=\'#gB\';1i if(5w<95)1n=\'#97\';cA.w.29=`kZ-kY(${1n}${5w}%,#eg ${5w}%)`}};V 3d(){Q 2l.49("cx")}V hH(3r){1y{9 el=I.O("2O-Ko-9e");if(el)el.7C=(3r||"mw")}1o(e){}}V mL(){Q 1P.7S(2l.49(\'wB\')||\'[]\')}V w5(P){43.5g();18 aI=mL();if(aI.21(P)){aI=aI.1Y(t=>t!==P)}1i{aI.5E(P)}2l.6p(\'wB\',1P.2e(aI));1y{9 mM=aI.21(P);Z.19({7E:1w,4J:\'1Q-9H\',1U:mM?\'1N\':\'3P\',P:mM?\'Kn vT\':\'Km Klırıldı\',31:1l,3J:9w})}1o(e){}if(4s===\'8o\'){mh(I.5e(\'.1c-8o\'),\'8o\')}1i{hy(9o)}1y{ek(9o.1j||0,48.1j)}1o(e){}}V mg(P){Q mL().21(P)}V c2(aH){if(!aH)Q\'N/A\';if(aH.aa(/^\\d{2}\\.\\d{2}\\.\\d{4}/)){Q aH.6N(\' \')[0]}1y{9 2h=1H 3j(aH);if(cU(2h.bJ())){Q aH}9 co=1D(2h.eR()).ab(2,\'0\');9 5O=1D(2h.9M()+1).ab(2,\'0\');9 6G=2h.9L();Q`${co}.${5O}.${6G}`}1o(e){Q aH}}V mo(s){1y{if(!s)Q 0;9 mK=1D(s).6N(\' \')[0];if(mK.21(\'.\')){9 8q=mK.6N(\'.\');if(8q.1j>=3){9 dd=37(8q[0],10);9 mm=37(8q[1],10);9 yy=37(8q[2],10);9 d=1H 3j(yy,mm-1,dd);Q d.bJ()||0}}9 d=1H 3j(s);Q d.bJ()||0}1o(e){Q 0}}V w9(7R){if(!7R)Q 1l;18 2h;if(7R.6Z(\'.\')>-1){9 wA=7R.6N(\' \')[0];9 8q=wA.6N(\'.\');2h=1H 3j(8q[2],8q[1]-1,8q[0])}1i{2h=1H 3j(7R)}if(cU(2h.bJ()))Q 1l;9 3w=1H 3j();9 wz=4a.Kk(3w-2h);9 wy=4a.Kj(wz/(8v*60*60*24));Q wy<=3}V lY(4s,id){18 6d=mJ.1O(3h=>`<1e R="${3h}"${3h===4s?\'6k\':\'\'}>${3h}</1e>`).4d(\'\');if(4s&&!mJ.21(4s)){6d=`<1e R="${4s}"6k>${4s}(2o)</1e>`+6d}Q`<34 id="${id}"J="1h-15"w="2i:2x%; 1r-1Q:3X;">${6d}</34>`}V 5U(X){if(!X)Q"";Q X.3E().3D(/\\\\/g,\'\\\\\\\\\').3D(/\'/g,\'\\\\\\\'\').3D(/"/g,\'\\\\"\').3D(/\\n/g,\'\\\\n\').3D(/\\r/g,\'\')}V uv(wx){9 X=Kh(wx);8B(X)}V 8B(t){9 1k=I.99(\'1k\');1k.R=t.3D(/\\\\n/g,\'\\n\');I.1s.98(1k);1k.34();1y{I.Kg(\'6O\');Z.19({1U:\'1N\',P:\'Kfı\',7E:1w,4J:\'1Q-9H\',31:1l,3J:7u})}1o(6o){Z.19({1U:\'1T\',P:\'Keı\',X:\'LübY fq Kdın.\',7E:1w,4J:\'1Q-9H\',31:1l,3J:hn})}I.1s.sb(1k)}I.hr(\'Kc\',43=>43.ni());I.Kb=V(e){if(e.K9==K8)Q 1l}I.hr(\'K7\',()=>{ww()});V ww(){9 mG=2l.49("es");9 wv=2l.49("cx");9 cz=2l.49("ax");9 ew=2l.49("cw");9 wu=1H 3j().dI().5t(0,10);9 mI=2l.49("hG")||"";9 mH=37(2l.49("hF")||"0",10);9 wt=12*60*60*8v;if(mG&&wv){9 ws=(!mI||mI!==wu);9 wr=(!mH||(3j.3w()-mH)>wt);if(ws||wr){1y{dW()}1o(e){2l.6J("es");2l.6J("cx");2l.6J("ax");2l.6J("cw");2l.6J("hG");2l.6J("hF")}Q}2d=mG;I.O("8K-ac").w.13="1p";I.O("9e-13").2c=2d;hH(2d);mA(cz);1y{if(ew){9 el=I.O("t-6T-4G");if(el)el.7C=ew;9 mF=I.O("2J-6T-4G");if(mF)mF.7C=ew}}1o(e){}mt();1y{hJ()}1o(e){}1y{mC()}1o(e){}if(mB){I.O("wo-ac").w.13="1Z"}1i{I.O("mv-3V").w.13="2G";aW();h4();eT();if(cz===\'gY\'){9 20=I.O(\'dA\');if(20)20.w.13=\'1p\';9 7x=I.5e(\'.wn-93\');if(7x)7x.w.13=\'1p\';9 7I=I.5e(\'.2H-7I-2k\');if(7I)7I.w.13=\'1p\';l9()}}}}V K6(e){if(e.2b==="K5")wq()}V wq(){9 mD=I.O("wh").R.1t();9 mE=I.O("wi").R.1t();9 ev=I.O("ep-aA");9 9q=I.O("1T-aA");if(!mD||!mE){9q.2c="LübY bt sV.";9q.w.13="2G";Q}ev.w.13="2G";ev.2c="DoğK4ı58...";9q.w.13="1p";I.5e(\'.8K-1c\').5n=1w;9 wp=mq.mp(mE).3E();2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"8K",32:mD,ms:wp})}).1J(4h=>4h.2B()).1J(1a=>{ev.w.13="1p";I.5e(\'.8K-1c\').5n=1l;if(1a.2m==="1N"){2d=1a.32;2l.6p("es",2d);2l.6p("cx",1a.3l);2l.6p("ax",1a.4G);if(1a.26)2l.6p("cw",1a.26);2l.6p("hG",1H 3j().dI().5t(0,10));2l.6p("hF",1D(3j.3w()));9 cz=1a.4G;if(1a.K3===1w){Z.19({1U:\'4y\',P:\' ⚠️  Güwf 7nısı\',X:\'İlk bbşs8. LübY şwe değişK2.\',gk:1l,gj:1l,33:\'ŞK1 Değişmr\'}).1J(()=>{eq(1w)})}1i{I.O("8K-ac").w.13="1p";I.O("9e-13").2c=2d;hH(2d);9 ew=1a.26||2l.49(\'cw\')||\'\';mA(cz);mt();1y{hJ()}1o(e){}1y{mC()}1o(e){}if(mB){I.O("wo-ac").w.13="1Z"}1i{I.O("mv-3V").w.13="2G";aW();h4();eT();if(cz===\'gY\'){9 20=I.O(\'dA\');if(20)20.w.13=\'1p\';9 7x=I.5e(\'.wn-93\');if(7x)7x.w.13=\'1p\';9 7I=I.5e(\'.2H-7I-2k\');if(7I)7I.w.13=\'1p\';l9()}}}}1i{9q.2c=1a.3v||"K0ı bbş!";9q.w.13="2G"}}).1o(1T=>{ev.w.13="1p";I.5e(\'.8K-1c\').5n=1l;9q.2c="6i 4mı! LübY v0ı uZ.";9q.w.13="2G"})}V mA(4G){9 eu=I.O(\'JZ\');9 aG=I.O(\'w1\');2p=(4G==="3o"||4G==="hI");mx=(4G==="hI");4n=1l;I.1s.1X.4v(\'md\');9 wm=(4G===\'gY\');9 mz=I.3Q(\'.1Y-1c:7K(.1c-8o)\');if(wm){mz.1K(1c=>{if(1c.2c.6Z(\'wl\')===-1){1c.w.4D=\'0.5\';1c.w.wk=\'1p\';1c.w.1Y=\'JY(2x%)\'}1i{1c.w.1Y=\'1p\'}});9 5y=I.O(\'5y\');if(5y){5y.5n=1w;5y.1v="JX pn dışı (wl w0)";5y.w.4D=\'0.6\'}}1i{mz.1K(1c=>{1c.w.4D=\'1\';1c.w.wk=\'df\';1c.w.1Y=\'1p\'});9 5y=I.O(\'5y\');if(5y){5y.5n=1l;5y.1v="İçJW hızlı JV...";5y.w.4D=\'1\'}}if(2p){if(eu)eu.w.13=\'1Z\';if(aG){aG.w.13=\'1Z\';9 cy=I.O(\'wj\');if(cy)cy.w.13=(mx?\'1Z\':\'1p\');aG.1B=\'<i J="2a fa-7Q" w="1n:3p(--82);"></i> Düb7 Aç\';aG.1X.4v(\'2Z\')}}1i{if(eu)eu.w.13=\'1p\';if(aG)aG.w.13=\'1p\';9 cy=I.O(\'wj\');if(cy)cy.w.13=\'1p\'}}V dW(){2d="";2p=1l;4n=1l;1y{I.O("9e-13").2c="mw"}1o(e){}hH("mw");I.1s.1X.4v(\'md\');2l.6J("es");2l.6J("cx");2l.6J("ax");2l.6J("cw");2l.6J("hG");2l.6J("hF");if(cv)wg(cv);I.O("mv-3V").w.13="1p";I.O("8K-ac").w.13="1Z";I.O("wi").R="";I.O("wh").R="";I.O("1T-aA").w.13="1p";I.O(\'gZ-4w\').w.13=\'1p\';1y{I.O(\'2J-4w\').w.13=\'1p\'}1o(e){}1y{I.O(\'a7-4w\').w.13=\'1p\'}1o(e){}}V mt(){if(cv)wg(cv);cv=3F(()=>{Z.19({1U:\'4y\',P:\'JU Sübw JT\',X:\'Güwf JS iV çıkış 7hıldı.\',33:\'lw\'}).1J(()=>{dW()})},JR)}V JQ(){JP()}2F V eq(8p=1l){9{R:1G}=1E Z.19({P:8p?\'aO Şd5 JO\':\'Şd5 Değişmr\',1M:`${8p?\'<p w="1f-1W:0.4P; 1n:#9d;">İlk bbş şwe değişJN 9O JM.</p>\':\'\'}<15 id="1g-wd-hE"1A="ms"J="1h-15"1v="pf Şd5 (JL)"><15 id="1g-1H-hE"1A="ms"J="1h-15"1v="aO Şd5">`,gL:1l,3m:!8p,gk:!8p,gj:!8p,33:\'Değişmr\',41:\'İlX\',4c:()=>{9 o=I.O(\'1g-wd-hE\').R;9 n=I.O(\'1g-1H-hE\').R;if(!o||!n){Z.4X(\'JK boş bı9Xıkj\')}Q[o,n]}});if(1G){Z.19({P:\'İşJJ...\',3R:()=>{Z.4z()}});2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"JI",32:2d,JH:mq.mp(1G[0]).3E(),JG:mq.mp(1G[1]).3E(),3l:3d()})}).1J(4h=>4h.2B()).1J(1a=>{if(1a.2m==="1N"){Z.19(\'Başarılı!\',\'ŞJF güdx. uy bbş 7hınız.\',\'1N\').1J(()=>{dW()})}1i{Z.19(\'2o\',1a.3v||\'İş7k başarısız.\',\'1T\').1J(()=>{if(8p)eq(1w)})}}).1o(6o=>{Z.19(\'2o\',\'6i 4mı.\',\'1T\');if(8p)eq(1w)})}1i if(8p){eq(1w)}}V aW(){I.O(\'ep\').w.13=\'2G\';2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"JE"})}).1J(4h=>4h.2B()).1J(1a=>{I.O(\'ep\').w.13=\'1p\';if(1a.2m==="1N"){9 aF=1a.1a;48=aF.1Y(i=>[\'1u\',\'62\',\'4p\',\'iX\',\'k3\'].21(i.2r.2y())).1O(i=>({P:i.77,4o:i.hl,X:i.6m,1C:i.4e,3U:i.vI,1x:i.5f,2h:c2(i.3j)}));48.67((a,b)=>mo(b.2h)-mo(a.2h));bI=aF.1Y(i=>i.2r.2y()===\'2H\').1O(i=>({2h:c2(i.3j),P:i.77,2u:i.6m,1A:i.hl,5r:i.ij}));8A=aF.1Y(i=>i.2r.2y()===\'3u\').1O(i=>({P:i.77,1U:i.lT,2u:i.6m,54:i.c4,3W:i.ho,8n:i.lU}));1y{i9()}1o(e){}dq=aF.1Y(i=>i.2r.2y()===\'7H\').1O(i=>({P:i.77,X:i.6m}));8l=aF.1Y(i=>i.2r.2y()===\'5c\').1O(i=>({q:i.6m,3n:i.mn?i.mn.6N(\',\').1O(o=>o.1t()):[],a:37(i.wc)}));hd=aF.1Y(i=>(i.2r||\'\').2y()===\'JD\').1O(i=>{9 3n=1D(i.mn||\'\').6N(\'|\').1O(x=>x.1t()).1Y(9A);18 a=37(i.wc,10);if(cU(a))a=0;if(a<0)a=0;if(3n.1j&&a>=3n.1j)a=3n.1j-1;9 8m=(i.ho||\'\').3E().1t();Q{q:(i.6m||\'\').3E().1t(),3n,a,8m}}).1Y(x=>x.q&&3H.4j(x.3n)&&x.3n.1j>=2);if(4s===\'8o\'){mh(I.5e(\'.1c-8o\'),\'8o\')}1i{9o=48;if(4s===\'2O\'){g9()}1i{af();hy(48)}}vD();1y{ek(9o.1j||48.1j,48.1j)}1o(e){}}1i{I.O(\'ep\').1B=`JC alı8Vı:${1a.3v||\'vZ 2o\'}`}}).1o(1T=>{I.O(\'ep\').1B=\'Bağ6xı JBı! JA ooşıJzı58.\'}).ux(()=>{1y{hD&&hD()}1o(e){}});jQ=48}V h4(){Q 1H dL((6F,hC)=>{2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"Jy"})}).1J(4h=>4h.2B()).1J(1a=>{if(1a.2m==="1N"&&1a.hB){ay=1a.hB;6F()}1i{ay={};hC(1H aR("Jx kV yüiw."))}}).1o(1T=>{ay={};hC(1T)})})}V eT(){Q 1H dL((6F,hC)=>{2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"Jw"})}).1J(4h=>4h.2B()).1J(1a=>{if(1a.2m==="1N"&&1a.hB){8F=1a.hB;6F()}1i{8F={}}}).1o(1T=>{8F={}})})}V hy(1a){9o=1a;9 6a=I.O(\'dA\');6a.1B=\'\';if(1a.1j===0){6a.1B=\'<j w="20-7q:1/-1; X-2g:3x; 22:g3; 1n:#Jv;">9Kıt 4Nı.</j>\';Q}1a.1K((1d,2Y)=>{9 ml=5U(1d.P);9 wb=mg(1d.P);9 w6=wb?\'2a fa-wa 2Z\':\'Ju fa-wa\';9 w8=w9(1d.2h)?\'<1b J="1H-2V">Jtİ</1b>\':\'\';9 w7=(2p&&4n)?`<i J="2a fa-lH-5X 78-1U"1S="vS(${2Y})"w="13:2G;"></i>`:\'\';18 w4=(1d.X||"").3D(/\\n/g,\'<br>\').3D(/\\*(.*?)\\*/g,\'<b>$1</b>\');6a.1B+=`<j J="1u ${1d.4o}">${w8}<j J="1U-93">${w7}<i J="${w6} 8o-1U"1S="w5(\'${ml}\')"></i></j><j J="1u-6E"><h3 J="1u-P">${hA(1d.P)}</h3><1b J="2V">${1d.4o}</1b></j><j J="1u-4i"1S="9J(\'${ml}\', \'${5U(1d.X)}\')"><j J="1u-X-ig">${hA(w4)}</j><j w="1f-1W:0.6z; 1n:#bE; 1r-1Q:3X; X-2g:4L;">(lwınıic)</j></j><j J="1C-2k">${hA(1d.1C)}</j><j J="1u-cN"><1m J="1c 1c-6O"1S="8B(\'${5U(1d.1C)}\')"><i J="2a fa-6O"></i> aS</1m>${1d.3U?`<1m J="1c 1c-6O"w="29:3p(--82); 1n:#kM;"1S="8B(\'${5U(1d.3U)}\')">f9</1m>`:\'\'}${1d.1x?`<a 9G="${1d.1x}"52="9F"J="1c 1c-1x"><i J="2a fa-Js-1x-5X"></i> 5f</a>`:\'\'}</j></j>`})}V hA(eo){if(!eo)Q"";9 mj=I.O(\'5y\').R.cu(\'tr-9m\').1t();if(!mj)Q eo;1y{9 w3=1H Jr(`(${mj})`,"gi");Q eo.3E().3D(w3,\'<1b J="Jq">$1</1b>\')}1o(e){Q eo}}V ek(4l,4T){9 el=I.O(\'Jp\');if(!el)Q;9 51=(I.O(\'5y\')?.R||\'\').1t();9 e2=!!51||(4s&&4s!==\'28\');if(!e2){el.w.13=\'1p\';el.2c=\'\';Q}el.w.13=\'2G\';el.2c=`🔎${4l}q5ç${4T!=4Z?\' / \'+4T:\'\'}`}V mh(1c,3h){if(3h==="2O"){4s="2O";qP(1c);g9();Q}9 hz=1D(3h||\'\').2y();if(hz.21(\'4p\')){af();jC(\'4B\');Q}if(hz.21(\'fY\')){af();jO();Q}if(hz.21(\'Jo\')){af()}4s=3h;af();I.3Q(\'.1Y-1c\').1K(b=>b.1X.4v(\'2Z\'));1c.1X.3a(\'2Z\');mb()}V mb(){9 51=I.O(\'5y\').R.cu(\'tr-9m\').1t();if(4s===\'2O\'){if(!51){ek(48.1j,48.1j);g9();Q}af()}18 3C=48;if(4s===\'8o\'){3C=3C.1Y(i=>mg(i.P))}1i if(4s!==\'28\'&&4s!==\'2O\'){3C=3C.1Y(i=>i.4o===4s)}if(51){3C=3C.1Y(1d=>{9 P=(1d.P||"").3E().cu(\'tr-9m\');9 X=(1d.X||"").3E().cu(\'tr-9m\');9 1C=(1d.1C||"").3E().cu(\'tr-9m\');9 3U=(1d.3U||"").3E().cu(\'tr-9m\');Q P.21(51)||X.21(51)||1C.21(51)||3U.21(51)})}9o=3C;ek(3C.1j,48.1j);hy(3C)}V 9J(P,X){if(P&&5Y P===\'ug\'){9 c=P;9 t=c.P||c.3r||\'6q\';9 1s=(c.X||c.2u||\'\').3E();9 1C=(c.1C||\'\').3E();9 mf=(c.61||\'\').3E();9 1x=(c.1x||\'\').3E();9 1M=`<j w="X-2g:2C; 1f-1W:7e; 5s-3f:1.6; 7d-5F:8E-5s;">${1F(1s).3D(/\\n/g,\'<br>\')}${1x?`<j w="1r-1Q:42"><a 9G="${1F(1x)}"52="9F"Jn="Jm"w="1f-2j:cH;1n:3p(--3P);X-Jl:1p"><i J=\\"2a fa-1x\\"></i> 5f</a></j>`:\'\'}${1C?`<j J="2J-1C-2k"w="1r-1Q:42"><1b J="2J-1C-1q">Müş8D iq:</1b>${1F(1C).3D(/\\n/g,\'<br>\')}</j>`:\'\'}${mf?`<j J="2J-61"w="1r-1Q:42">${1F(mf).3D(/\\n/g,\'<br>\')}</j>`:\'\'}</j>`;Z.19({P:t,1M,g1:1w,31:1l,2i:\'Jk\',29:\'#bC\'});Q}9 w2=(X??\'\').3E();Z.19({P:P,1M:`<j w="X-2g:2C; 1f-1W:7e; 5s-3f:1.6;">${1F(w2).3D(/\\n/g,\'<br>\')}</j>`,g1:1w,31:1l,2i:\'bQ\',29:\'#bC\'})}V Jj(){if(!2p)Q;4n=!4n;I.1s.1X.iu(\'md\',4n);9 1c=I.O(\'w1\');if(4n){1c.1X.3a(\'2Z\');1c.1B=\'<i J="2a fa-Ji" w="1n:3p(--sU);"></i> Düb7 f1\';Z.19({1U:\'1N\',P:\'DüqE w0 AÇIK\',X:\'Jh Jgına tıJf içJe düJd.\',3J:7u,31:1l})}1i{1c.1X.4v(\'2Z\');1c.1B=\'<i J="2a fa-7Q" w="1n:3p(--82);"></i> Düb7 Aç\'}mb();1y{if(4s===\'2O\')a8()}1o(e){}if(I.O(\'9l-5u\').w.13===\'1Z\')vh();if(I.O(\'7H-5u\').w.13===\'1Z\')v9();if(I.O(\'2H-5u\').w.13===\'1Z\')jV()}V 3S(o,c,v,t=\'1u\'){if(!Z.Jc())Z.19({P:\'aM...\',3R:()=>{Z.4z()}});2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:"Jb",P:o,7q:c,R:v,1A:t,Ja:o,32:2d,3l:3d()})}).1J(r=>r.2B()).1J(1a=>{if(1a.2m==="1N"){Z.19({1U:\'1N\',P:\'Başarılı\',3J:7u,31:1l});3F(aW,J9)}1i{Z.19(\'2o\',\'eA: \'+(1a.3v||\'vZ 2o\'),\'1T\')}}).1o(6o=>Z.19(\'2o\',\'6i 4mı.\',\'1T\'))}2F V J8(){9 hu=lY(\'7s\',\'1g-1H-3h\');9{R:1G}=1E Z.19({P:\'aO İç4K 4Y\',1M:`<j w="1r-3q:59; X-2g:2C;"><1q w="1f-2j:3g; 1f-1W:0.4P;">v4 J7?</1q><34 id="1g-1A-34"J="1h-15"w="2i:2x%; 1r-1Q:3X; 3f:92; 1f-1W:0.4P;"tg="vX()"><1e R="1u">📌7s 79ı</1e><1e R="2H">📢hw</1e><1e R="7H">📞7pışJ6</1e><1e R="3u">🏆lWİç6Mği</1e><1e R="5c">❓hv J5</1e></34></j><j id="ei-1u"J="1u 7s"w="X-2g:2C; 2k-gD:1p; 1V:4C 3I #vR; 1r-1Q:1z;"><j J="1u-6E"w="2g-3e: 3x; 3L: 1z;"><15 id="1g-1H-P"J="1h-15"w="1r:0; 3f:km; 1Z-gn:1; 1V:1p; 1V-3q:76 3I #6b; 22:0 3X; 1f-2j:3g; 1n:#84;"1v="Başlık vW..."><j id="3h-6a"w="2i: vQ;">${hu}</j></j><j J="1u-4i"w="1r-3q:1z;"><1k id="1g-1H-X"J="1h-1k"w="1r:0; 2i:2x%; 2k-dN:1V-2k; 1V:1p; kF:1p; 1f-vP:vO; 66-3f:dD; 22:1z; 29:#dE;"1v="İç4K 83..."></1k></j><j id="1C-6a"J="1C-2k"w="22:0; 1V:4C 3I #vN;"><1k id="1g-1H-1C"J="1h-1k"w="1r:0; 2i:2x%; 2k-dN:1V-2k; 1V:1p; 29:vM; 1f-w:vL; 66-3f:kl; 1f-1W:0.4P;"1v="4e 83 (İtjğe bağlı)..."></1k></j><j id="5Z-6a"J="1u-cN"w="1r-1Q:59; 13:20; 20-gF-gE: 8e 8e; 3L:1z;"><j w="4J:ht;"><i J="2a fa-3U"w="4J:hs; 2C:1z; 1Q:1z; 1n:#e0;"></i><15 id="1g-1H-3U" J="1h-15" w="1r:0; 3f:92; 1f-1W:0.ap; 22-2C:ct;" 1v="f9"></j><j w="4J:ht;"><i J="2a fa-1x"w="4J:hs; 2C:1z; 1Q:1z; 1n:#e0;"></i><15 id="1g-1H-1x" J="1h-15" w="1r:0; 3f:92; 1f-1W:0.ap; 22-2C:ct;" 1v="5f"></j></j><j id="3u-5Z"w="13:1p; 22:1z;"><1q w="1f-2j:3g;">Kısa Açı6n(m4)</1q><15 id="1g-3u-54" J="1h-15" 1v="Kısa İjM/c4"><1q w="1f-2j:3g;">vYıeh(ho)</1q><15 id="1g-3u-3W"J="1h-15"1v="vYı Açı6n (vH eh)"><1q w="1f-2j:3g;">heşu(lU)</1q><15 id="1g-3u-hp"J="1h-15"1v="heşu"><1q w="1f-2j:3g;">İlV Sınıfı(lT)</1q><15 id="1g-3u-1U"J="1h-15"1v="J4 İlV Sınıfı (e.g., fa-J3)"></j><j id="2H-5Z"w="13:1p; 22:1z;"><1q w="1f-2j:3g;">hw s3</1q><34 id="1g-2H-1A" J="1h-15"><1e R="3P">7s</1e><1e R="cr">DeğişlQ</1e><1e R="cs">Çözüldü</1e></34><1q w="1f-2j:3g;">eM</1q><34 id="1g-2H-5r" J="1h-15"><1e R="6K">6K</1e><1e R="7a">7a(J2)</1e></34></j><j id="5c-5Z"w="13:1p; 22:1z;"><1q w="1f-2j:3g;">ha m5(6m)</1q><1k id="1g-5c-q" J="1h-1k" 1v="hv vU..."></1k><1q w="1f-2j:3g;">J1çJ0(IZüIY Ayırın)</1q><15 id="1g-5c-3n"J="1h-15"1v="Örn: şık A,şık B,şık C,şık D"><1q w="1f-2j:3g;">Doğru jLİIX</1q><15 id="1g-5c-vV"1A="k5"J="1h-15"1v="0 (A), 1 (B), 2 (C) 4f 3 (D)"66="0"3i="3"></j></j>`,2i:\'hm\',3m:1w,33:\'<i J="2a fa-aP"></i> 4Y\',41:\'İlX\',gL:1l,3R:()=>{9 6I=I.O(\'1g-1H-3h\');9 hq=I.O(\'ei-1u\');6I.w.1r="0";6I.w.3f="ct";6I.w.vK="0.6z";6I.w.22="0 3X";6I.hr(\'vJ\',V(){hq.9h=\'1u \'+eU.R});2n.vX=V(){9 1A=I.O(\'1g-1A-34\').R;9 m9=I.O(\'3h-6a\');9 hx=I.O(\'1C-6a\');9 m8=I.O(\'5Z-6a\');9 m7=I.O(\'3u-5Z\');9 m6=I.O(\'2H-5Z\');9 m3=I.O(\'5c-5Z\');9 9p=I.O(\'ei-1u\');m9.w.13=\'1p\';hx.w.13=\'1p\';m8.w.13=\'1p\';m7.w.13=\'1p\';m6.w.13=\'1p\';m3.w.13=\'1p\';I.O(\'1g-1H-P\').R=\'\';I.O(\'1g-1H-X\').R=\'\';9p.w.ej="3X 3I 3p(--3P)";9p.9h=\'1u 7s\';if(1A===\'1u\'){m9.w.13=\'2G\';hx.w.13=\'2G\';m8.w.13=\'20\';9p.9h=\'1u \'+I.O(\'1g-1H-3h\').R;I.O(\'1g-1H-P\').1v="Başlık vW...";I.O(\'1g-1H-X\').1v="İç4K 83..."}1i if(1A===\'7H\'){hx.w.13=\'2G\';I.O(\'1g-1H-1C\').1v="vGış m5...";9p.w.ej="3X 3I 3p(--7H)";I.O(\'1g-1H-P\').1v="4e Başlığı...";I.O(\'1g-1H-X\').1v="t9 IW IV IU."}1i if(1A===\'3u\'){m7.w.13=\'2G\';9p.w.ej="3X 3I 3p(--aX)";I.O(\'1g-1H-P\').1v="lW IT Başlığı...";I.O(\'1g-1H-X\').1v="Kısa Açı6n (m4)..."}1i if(1A===\'2H\'){m6.w.13=\'2G\';9p.w.ej="3X 3I 3p(--82)";I.O(\'1g-1H-P\').1v="hw Başlığı...";I.O(\'1g-1H-X\').1v="hw m5 (m4)..."}1i if(1A===\'5c\'){m3.w.13=\'2G\';I.O(\'1g-1H-P\').1v="hv Başlığı (Örn: ha 1)";I.O(\'1g-1H-X\').1v="Bu 9W boş bı9XıIS.";9p.w.ej="3X 3I 3p(--5c)"}}},4c:()=>{9 1A=I.O(\'1g-1A-34\').R;9 7b=1H 3j();9 7R=7b.eR()+"."+(7b.9M()+1)+"."+7b.9L();9 m0=1A===\'5c\'?I.O(\'1g-5c-3n\').R:\'\';9 lZ=1A===\'5c\'?I.O(\'1g-5c-vV\').R:\'\';9 m1=1A===\'5c\'?I.O(\'1g-5c-q\').R:\'\';if(1A===\'5c\'&&(!m1||!m0||lZ===\'\')){Z.4X(\'hv vU için tüm sM sL.\');Q 1l}Q{nG:1A,4o:1A===\'1u\'?I.O(\'1g-1H-3h\').R:(1A===\'2H\'?I.O(\'1g-2H-1A\').R:\'\'),P:I.O(\'1g-1H-P\').R,X:1A===\'5c\'?m1:I.O(\'1g-1H-X\').R,1C:(1A===\'1u\'||1A===\'7H\')?I.O(\'1g-1H-1C\').R:\'\',3U:1A===\'1u\'?I.O(\'1g-1H-3U\').R:\'\',5r:1A===\'2H\'?I.O(\'1g-2H-5r\').R:\'\',1x:1A===\'1u\'?I.O(\'1g-1H-1x\').R:\'\',54:1A===\'3u\'?I.O(\'1g-3u-54\').R:\'\',3W:1A===\'3u\'?I.O(\'1g-3u-3W\').R:\'\',8n:1A===\'3u\'?I.O(\'1g-3u-hp\').R:\'\',1U:1A===\'3u\'?I.O(\'1g-3u-1U\').R:\'\',2h:7R,IR:m0,IQ:lZ}}});if(1G){if(!1G.P){Z.19(\'2o\',\'Başlık 5S!\',\'1T\');Q}Z.19({P:\'eG...\',3R:()=>{Z.4z()}});2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:"nF",32:2d,3l:3d(),...1G})}).1J(4h=>4h.2B()).1J(1a=>{if(1a.2m==="1N"){Z.19({1U:\'1N\',P:\'Başarılı\',X:\'İç4K vT.\',3J:hk,31:1l});3F(aW,IO)}1i{Z.19(\'2o\',1a.3v||\'eF.\',\'1T\')}}).1o(6o=>Z.19(\'2o\',\'6i 4mı: \'+6o,\'1T\'))}}2F V vS(2Y){9 1d=9o[2Y];9 hu=lY(1d.4o,\'1g-3h\');9{R:1G}=1E Z.19({P:\'79ı Dü6j\',1M:`<j id="ei-1u-78"J="1u ${1d.4o}"w="X-2g:2C; 2k-gD:1p; 1V:4C 3I #vR; 1r-1Q:1z;"><j J="1u-6E"w="2g-3e: 3x; 3L: 1z;"><15 id="1g-P"J="1h-15"w="1r:0; 3f:km; 1Z-gn:1; 1V:1p; 1V-3q:76 3I #6b; 22:0 3X; 1f-2j:3g; 1n:#84;"R="${1d.P}"1v="Başlık"><j w="2i: vQ;">${hu}</j></j><j J="1u-4i"w="1r-3q:1z;"><1k id="1g-X"J="1h-1k"w="1r:0; 2i:2x%; 2k-dN:1V-2k; 1V:1p; kF:1p; 1f-vP:vO; 66-3f:IN; 22:1z; 29:#dE;"1v="İç4K 83...">${(1d.X||\'\').3E().3D(/<br>/g,\'\\n\')}</1k></j><j J="1C-2k"w="22:0; 1V:4C 3I #vN;"><1k id="1g-1C"J="1h-1k"w="1r:0; 2i:2x%; 2k-dN:1V-2k; 1V:1p; 29:vM; 1f-w:vL; 66-3f:kl; 1f-1W:0.4P;"1v="4e 83...">${(1d.1C||\'\').3E().3D(/<br>/g,\'\\n\')}</1k></j><j J="1u-cN"w="1r-1Q:59; 13:20; 20-gF-gE: 8e 8e; 3L:1z;"><j w="4J:ht;"><i J="2a fa-3U"w="4J:hs; 2C:1z; 1Q:1z; 1n:#e0;"></i><15 id="1g-3U" J="1h-15" w="1r:0; 3f:92; 1f-1W:0.ap; 22-2C:ct;" R="${1d.3U || \'\'}" 1v="f9"></j><j w="4J:ht;"><i J="2a fa-1x"w="4J:hs; 2C:1z; 1Q:1z; 1n:#e0;"></i><15 id="1g-1x" J="1h-15" w="1r:0; 3f:92; 1f-1W:0.ap; 22-2C:ct;" R="${1d.1x || \'\'}" 1v="5f"></j></j></j>`,2i:\'hm\',3m:1w,33:\'<i J="2a fa-sO"></i> 5T\',41:\'İlX\',gL:1l,3R:()=>{9 6I=I.O(\'1g-3h\');9 hq=I.O(\'ei-1u-78\');6I.w.1r="0";6I.w.3f="ct";6I.w.vK="0.6z";6I.w.22="0 3X";6I.hr(\'vJ\',V(){hq.9h=\'1u \'+eU.R})},4c:()=>{Q{3h:I.O(\'1g-3h\').R,P:I.O(\'1g-P\').R,X:I.O(\'1g-X\').R,1C:I.O(\'1g-1C\').R,3U:I.O(\'1g-3U\').R,1x:I.O(\'1g-1x\').R}}});if(1G){if(1G.3h!==1d.4o)3S(1d.P,"hl",1G.3h,\'1u\');if(1G.X!==(1d.X||\'\').3D(/<br>/g,\'\\n\'))3F(()=>3S(1d.P,"6m",1G.X,\'1u\'),dK);if(1G.1C!==(1d.1C||\'\').3D(/<br>/g,\'\\n\'))3F(()=>3S(1d.P,"4e",1G.1C,\'1u\'),8v);if(1G.3U!==(1d.3U||\'\'))3F(()=>3S(1d.P,"vI",1G.3U,\'1u\'),7u);if(1G.1x!==(1d.1x||\'\'))3F(()=>3S(1d.P,"5f",1G.1x,\'1u\'),hk);if(1G.P!==1d.P)3F(()=>3S(1d.P,"77",1G.P,\'1u\'),hn)}}2F V vg(P){43.5g();9 s=8A.5z(1d=>1d.P===P);if(!s)Q Z.19(\'2o\',\'İç4K 4Nı.\',\'1T\');9{R:1G}=1E Z.19({P:\'lW İç6Mğbd Dü6j\',1M:`<j J="1u"w="X-2g:2C; 1V-2C: 3X 3I 3p(--aX); 22:59; 29:#bC;"><1q w="1f-2j:3g;">Başlık</1q><15 id="1g-P"J="1h-15"w="2i:2x%; 1r-3q:1z;"R="${s.P}"><1q w="1f-2j:3g;">Açı6n(Kısa)</1q><1k id="1g-2u" J="1h-1k" w="1r-3q:1z;">${s.2u || \'\'}</1k><1q w="1f-2j:3g;">İjM(c4)</1q><15 id="1g-54"J="1h-15"w="2i:2x%; 1r-3q:1z;"R="${s.54 || \'\'}"><1q w="1f-2j:3g;">6q(vH eh)</1q><1k id="1g-3W" J="1h-1k" w="1r-3q:1z;">${s.3W || \'\'}</1k><1q w="1f-2j:3g;">heşu</1q><15 id="1g-hp"J="1h-15"w="2i:2x%; 1r-3q:1z;"R="${s.8n || \'\'}"><1q w="1f-2j:3g;">İlV Sınıfı</1q><15 id="1g-1U"J="1h-15"w="2i:2x%;"R="${s.1U || \'\'}"></j>`,2i:\'hm\',3m:1w,33:\'5T\',4c:()=>[I.O(\'1g-P\').R,I.O(\'1g-2u\').R,I.O(\'1g-54\').R,I.O(\'1g-3W\').R,I.O(\'1g-hp\').R,I.O(\'1g-1U\').R]});if(1G){9 3T=s.P;if(1G[1]!==s.2u)3S(3T,"6m",1G[1],\'3u\');if(1G[2]!==s.54)3F(()=>3S(3T,"c4",1G[2],\'3u\'),dK);if(1G[3]!==s.3W)3F(()=>3S(3T,"ho",1G[3],\'3u\'),8v);if(1G[4]!==s.8n)3F(()=>3S(3T,"lU",1G[4],\'3u\'),7u);if(1G[5]!==s.1U)3F(()=>3S(3T,"lT",1G[5],\'3u\'),hk);if(1G[0]!==3T)3F(()=>3S(3T,"77",1G[0],\'3u\'),hn)}}2F V IM(P){43.5g();9 s=dq.5z(1d=>1d.P===P);if(!s)Q Z.19(\'2o\',\'İç4K 4Nı.\',\'1T\');9{R:1G}=1E Z.19({P:\'vGış IL Dü6j\',1M:`<j J="1u"w="X-2g:2C; 1V-2C: 3X 3I 3p(--7H); 22:59; 29:#IJ;"><1q w="1f-2j:3g;">Başlık</1q><15 id="1g-P"J="1h-15"w="2i:2x%; 1r-3q:1z;"R="${s.P}"><1q w="1f-2j:3g;">eh</1q><1k id="1g-X" J="1h-1k" w="66-3f:II;">${s.X || \'\'}</1k></j>`,2i:\'hm\',3m:1w,33:\'5T\',4c:()=>[I.O(\'1g-P\').R,I.O(\'1g-X\').R]});if(1G){9 3T=s.P;if(1G[1]!==s.X)3S(3T,"6m",1G[1],\'7H\');if(1G[0]!==3T)3F(()=>3S(3T,"77",1G[0],\'7H\'),dK)}}2F V vB(2Y){9 i=bI[2Y];18 vE=`<1e R="6K"${i.5r!==\'7a\'?\'6k\':\'\'}>6K</1e><1e R="7a" ${i.5r === \'7a\' ? \'6k\' : \'\'}>7a</1e>`;18 vF=`<1e R="3P"${i.1A===\'3P\'?\'6k\':\'\'}>7s</1e><1e R="cr" ${i.1A === \'cr\' ? \'6k\' : \'\'}>DeğişlQ</1e><1e R="cs"${i.1A===\'cs\'?\'6k\':\'\'}>Çözüldü</1e>`;9{R:1G}=1E Z.19({P:\'IH Dü6j\',1M:`<j J="1u"w="X-2g:2C; 1V-2C: 3X 3I 3p(--82); 22:59; 29:#kx;"><1q w="1f-2j:3g;">Başlık</1q><15 id="1g-P"J="1h-15"w="2i:2x%; 1r-3q:1z;"R="${i.P || \'\'}"><j w="13:1Z; 3L:1z; 1r-3q:1z;"><j w="1Z:1;"><1q w="1f-2j:3g;">bX</1q><15 id="1g-2h"J="1h-15"w="2i:2x%;"R="${i.2h || \'\'}"></j><j w="1Z:1;"><1q w="1f-2j:3g;">Tür</1q><34 id="1g-1A"J="1h-15"w="2i:2x%;">${vF}</34></j></j><1q w="1f-2j:3g;">eh</1q><1k id="1g-2u"J="1h-1k"w="1r-3q:1z;">${i.2u||\'\'}</1k><1q w="1f-2j:3g;">eM</1q><34 id="1g-5r"J="1h-15"w="2i:2x%;">${vE}</34></j>`,2i:\'bQ\',3m:1w,33:\'5T\',4c:()=>[I.O(\'1g-P\').R,I.O(\'1g-2h\').R,I.O(\'1g-2u\').R,I.O(\'1g-1A\').R,I.O(\'1g-5r\').R]});if(1G){9 3T=i.P;if(1G[1]!==i.2h)3S(3T,"3j",1G[1],\'2H\');if(1G[2]!==i.2u)3F(()=>3S(3T,"6m",1G[2],\'2H\'),dK);if(1G[3]!==i.1A)3F(()=>3S(3T,"hl",1G[3],\'2H\'),8v);if(1G[4]!==i.5r)3F(()=>3S(3T,"ij",1G[4],\'2H\'),7u);if(1G[0]!==3T)3F(()=>3S(3T,"77",1G[0],\'2H\'),hk)}}V lv(id){I.O(id).w.13=\'1p\'}V vD(){9 t=I.O(\'7I-4i\');9 lS=bI.1Y(i=>i.5r!==\'7a\');if(lS.1j===0){t.1B="Güpg qJ 53.";t.w.vC=\'1p\';Q}18 lR=lS.1O(i=>{Q`<1b w="1n:#97; 1f-2j:3g;">[${i.2h}]</1b> <1b w="1n:#8z;">${i.P}:</1b><1b w="1n:#lh;">${i.2u}</1b>`}).4d(\' &4r;&4r;&4r;&4r; • &4r;&4r;&4r;&4r; \');t.1B=lR+\' &4r;&4r;&4r;&4r; • &4r;&4r;&4r;&4r; \'+lR;t.w.vC=\'7I-IG IF IE IC\'}V jV(){I.O(\'2H-5u\').w.13=\'1Z\';9 c=I.O(\'2H-6a\');c.1B=\'\';bI.1K((i,2Y)=>{18 cl=i.1A===\'cs\'?\'7f-cs\':(i.1A===\'cr\'?\'7f-cr\':\'7f-3P\');18 tx=i.1A===\'cs\'?\'Çözüldü\':(i.1A===\'cr\'?\'DeğişlQ\':\'7s\');18 vA=i.5r===\'7a\'?\'4D:0.5; 29:#6b;\':\'\';18 vz=i.5r===\'7a\'?\'<1b J="2H-7f" w="29:#g7; 1n:7d;">IBİF</1b>\':\'\';18 bZ=(2p&&4n)?`<i J="2a fa-lH-5X 78-1U"w="1Q:0; 4L:0; 1f-1W:0.4P; 22:6C;"1S="43.5g(); vB(${2Y})"></i>`:\'\';c.1B+=`<j J="2H-1d"w="${vA}">${bZ}<1b J="2H-2h">${i.2h}</1b><1b J="2H-P">${i.P} ${vz}</1b><j J="2H-2u">${i.2u}</j><1b J="2H-7f ${cl}">${tx}</1b></j>`})}2F V jZ(){9 r=1E 2U(2w,{2T:"2S",2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"IA",32:(5Y 2d!=="g5"?2d:""),3l:(5Y 3d==="V"?3d():"")})});9 d=1E r.2B();if(!d||d.2m!=="1N"){cK 1H aR((d&&d.3v)?d.3v:"4Aın akışı alı8Vı.")}Q d.3e||[]}2F V qL(){Z.19({P:"4Aın Akışı",3R:()=>Z.4z(),31:1l});1y{9 hj=1E jZ();if(!hj||!hj.1j){Z.19("4Aın Akışı","9Kıt 4Nı.","3P");Q}9 3e=[...hj].67((a,b)=>{9 ae=6r(a?.6U||0);9 be=6r(b?.6U||0);if(ae&&be)Q ae-be;9 ak=1D(a?.bK||a?.2h||"")+" "+1D(a?.5K||"");9 bk=1D(b?.bK||b?.2h||"")+" "+1D(b?.5K||"");Q ak.ub(bk)});9 3w=3j.3w();9 cp={};9 hi={};3e.1K(it=>{9 2b=1D(it?.bK||it?.2h||"bX 8a");if(!cp[2b])cp[2b]=[];cp[2b].5E(it);if(!hi[2b]){hi[2b]=1D(it?.lI||"")}});9 vw=`<w>.ba-3s{X-2g:2C;3i-3f:Iz;bB:df;22-4L:5V}.ba-co{1r:f2 0 5q;1f-2j:e3;1n:#84;13:1Z;2g-3e:3x;3L:1z}.ba-8u{1r:aQ 0 5q;1f-2j:e3;1n:#84;1f-1W:7e}.ba-vr{1r:f2 0;3f:4C;29:#vy}.ba-dB{22:1z 42;1V:4C gm#lh;1V-5A:42;29:#s4;1n:#86;1r:1z 0;1f-2j:ik}.ba-2V{1f-1W:.kv;22:6C 5q;1V-5A:Iy;1V:4C 3I#vy;29:#Ix;1n:#eg}.ba-20{13:20;3L:5q}.ba-3G{1V:4C 3I#6b;1V-2C:6C 3I 3p(--82);1V-5A:42;22:1z 42;29:#8z}.ba-3G.vu{1V-2C-1n:#vx;29:#lP}.ba-1Q{13:1Z;cR-4i:5F-cQ;3L:42;2g-3e:1Z-4O}.ba-P{1f-2j:e3;1n:#Iw;5s-3f:1.25}.ba-5K{1f-2j:e3;1n:#84;7d-5F:Iv}.ba-vt{1r-1Q:5V;1f-1W:.Iu;1n:#86;13:1Z;3L:f2;1Z-3s:3s}.ba-gO{13:1Z;3L:1z;1Z-3s:3s;1r:5V 0 1z}.ba-cq{13:cJ-1Z;2g-3e:3x;3L:5V;1f-1W:.6z;1n:#eg}.ba-cq i{2i:1z;3f:1z;1V-5A:50%;13:cJ-2G}.ba-cq.up{29:3p(--82)}.ba-cq.pa{29:#vx}</w>`;18 1M=`${vw}<j J="ba-3s">`;1M+=`<j J="ba-gO"><1b J="ba-cq"><i J="up"></i> lLşan /vs</1b><1b J="ba-cq"><i J="pa"></i> kw Geçmiş</1b></j>`;9 lM={};9 lJ={};9 lO=74.6P(cp);lO.1K(2b=>{9 3t=cp[2b]||[];3t.1K(it=>{9 6U=6r(it?.6U||0);9 hg=6U?(6U<3w):1l;9 9n=hg?lJ:lM;if(!9n[2b])9n[2b]=[];9n[2b].5E(it)})});9 lK=(P,9n,vv)=>{9 6P=lO.1Y(k=>(9n[k]&&9n[k].1j));if(!6P.1j){1M+=`<j J="ba-dB">${1F(vv)}</j>`;Q}1M+=`<j J="ba-8u">${1F(P)}</j>`;6P.1K(2b=>{9 1q=hi[2b]||vp({bK:2b});1M+=`<j J="ba-co">${1F(1q)}</j>`;1M+=`<j J="ba-20">`;9n[2b].1K(it=>{9 6U=6r(it?.6U||0);9 hg=6U?(6U<3w):1l;9 5K=1D(it?.5K||"").1t();9 43=1D(it?.43||"").1t();9 lN=1D(it?.lN||"").1t();1M+=`<j J="ba-3G ${hg ? "vu" : ""}"><j J="ba-1Q"><j J="ba-P">${1F(43||"-")}</j><j J="ba-5K">${1F(5K||"")}</j></j><j J="ba-vt"><1b><i J="2a fa-It"></i> ${1F(lN || "-")}</1b></j></j>`});1M+=`</j>`})};lK("lLşan / vs",lM,"lLşan 45ın 4Nı.");1M+=`<j J="ba-vr"></j>`;lK("Geçmiş",lJ,"Geçmiş 45ın 4Nı.");1M+=`</j>`;Z.19({P:"4Aın Akışı",1M,2i:vq,33:"f1"})}1o(6o){Z.19("2o",6o?.3v||"4Aın akışı alı8Vı.","1T")}}V vp(it){if(it&&it.lI)Q 1D(it.lI);9 s=1D(it?.bK||it?.2h||"").1t();if(!s)Q"bX 8a";9 m=s.aa(/^(\\d{4})-(\\d{1,2})-(\\d{1,2})/);if(m){9 d=1H 3j(6r(m[1]),6r(m[2])-1,6r(m[3]));Q 1H vo.vn("tr-9m",{co:"2-vm",5O:"hf",6G:"vl",vk:"hf"}).vj(d)}9 m2=s.aa(/^(\\d{1,2})[\\./-](\\d{1,2})[\\./-](\\d{4})/);if(m2){9 d=1H 3j(6r(m2[3]),6r(m2[2])-1,6r(m2[1]));Q 1H vo.vn("tr-9m",{co:"2-vm",5O:"hf",6G:"vl",vk:"hf"}).vj(d)}Q s}V 1F(vi){Q 1D(vi??"").4M("&","&nl;").4M("<","&lt;").4M(">","&gt;").4M(\'"\',"&nk;").4M("\'","&#Is;")}V vh(){I.O(\'9l-5u\').w.13=\'1Z\';9 20=I.O(\'9l-20\');20.1B=\'\';8A.1K((s,2Y)=>{18 vf=s.8n?`<j J="8n-2V">🗣️${s.8n}</j>`:\'\';18 bZ=(2p&&4n)?`<i J="2a fa-lH-5X 78-1U"w="1Q:3X; 4L:3X; z-2Y:50;"1S="43.5g(); vg(\'${5U(s.P)}\')"></i>`:\'\';20.1B+=`<j J="9l-1d"1S="vd(${2Y})">${bZ}<i J="2a ${s.1U} 9l-1U"></i><1b J="9l-P">${s.P}</1b>${vf}<j J="9l-2u">${s.2u}</j><j J="9l-54"><i J="2a fa-Ir"></i>${s.54}</j><j w="1f-1W:0.6z; 1n:#bE; 1r-1Q:3X;">(6q için tıjF)</j></j>`})}V vd(2Y){9 3u=8A[2Y];9 va=3u.3W?3u.3W.3D(/\\n/g,\'<br>\'):"Bu iç4K için i6üz Iq qGş.";9 vc=3u.8n?`<j w="1n:#gJ; 1f-2j:3g; 1r-3q:59;">🗣️heşu:${3u.8n}</j>`:\'\';Z.19({P:`<i J="2a ${3u.1U}"w="1n:#84;"></i>${3u.P}`,1M:`${vc}<j w="X-2g:2C; 1f-1W:7e; 5s-3f:1.6;">${va}</j>`,g1:1w,31:1l,2i:\'bQ\',29:\'#bC\'})}V v9(){jO()}V Ip(2Y){9 1d=I.O(`7H-${2Y}`);9 1U=I.O(`1U-${2Y}`);1d.1X.iu(\'2Z\');if(1d.1X.Io(\'2Z\')){1U.1X.3D(\'fa-b0-ix\',\'fa-b0-up\')}1i{1U.1X.3D(\'fa-b0-up\',\'fa-b0-ix\')}}18 8f=0,cg=10,6e=4Z;18 hc=[];18 lr=0;18 ce=0;18 e1=0;V hb(v8){9 el=I.O(\'aB-In\');if(!el)Q;el.w.13=v8?\'cJ-1Z\':\'1p\'}V e4(){9 ef=I.O(\'lG-e7\');9 ee=I.O(\'lG-e6\');9 ed=I.O(\'lG-aB\');if(ef)ef.5n=aC.e7===0;if(ee)ee.5n=aC.e6===0;if(ed)ed.5n=aC.aB===0||9i!==-1;if(9i!==-1){if(ef)ef.5n=1w;if(ee)ee.5n=1w;if(ed)ed.5n=1w}}V Im(1A){if(!6e)Q;if(aC[1A]===0)Q;if(9i!==-1&&1A!==\'aB\')Q;aC[1A]=0;e4();9 aE=6e;9 ec=aE.a;9 6f=I.3Q(\'.8i-1c\');if(1A===\'e7\'){9 lE=["Il lF","Doğuş lF","Ik lF","Ij Iiım"];9 v7=lE[4a.h9(4a.71()*lE.1j)];18 lD=ec;if(4a.71()>0.8&&aE.3n.1j>1){9 eb=aE.3n.1O((a5,i)=>i).1Y(i=>i!==ec);lD=eb[4a.h9(4a.71()*eb.1j)]??ec}Z.19({1U:\'3P\',P:\' 📞 kK Ih\',1M:`${v7}Ig Ifı58...<br><br>"Ie Id **${1D.lq(65 + lD)}** şıkkı. Ic ${4a.71() < 0.8 ? "çok Ib" : "Ia değI9"}."`,33:\'f1\'})}1i if(1A===\'e6\'){9 lC=3H.4j(aE.3n)?aE.3n.1j:0;if(lC<=2){Z.19({1U:\'3P\',P:\'✂️ 50:50\',X:\'Bu I8 50:50 I7.\',7E:1w,4J:\'1Q\',31:1l,3J:uU});Q}9 lB=lC>=4?2:1;9 eb=aE.3n.1O((a5,i)=>i).1Y(i=>i!==ec);eb.67(()=>4a.71()-0.5).5t(0,lB).1K(2t=>{9 b=6f[2t];if(!b)Q;b.5n=1w;b.w.uC=\'5s-I6\';b.w.4D=\'0.4\'});Z.19({1U:\'1N\',P:\' ✂️ 50:50\',X:lB===2?\'İki frış şık v6!\':\'fo frış şık v6!\',7E:1w,4J:\'1Q\',31:1l,3J:uK})}1i if(1A===\'aB\'){e5=1w;hb(1w);Z.19({1U:\'4y\',P:\'2️ ⃣ ÇI5 jL\',X:\'fo I4 frış I3 cLın 3p.\',7E:1w,4J:\'1Q\',31:1l,3J:I2})}}V I1(){I.O(\'5b-lu-5u\').w.13=\'1Z\'}V v1(){1y{lv(\'5b-lu-5u\')}1o(e){}I.O(\'uX-5u\').w.13=\'1Z\';9 5P=I.O(\'qd-5P\');9 5b=I.O(\'qd-5b\');if(5P)5P.w.13=\'2G\';if(5b)5b.w.13=\'1p\';9 t=I.O(\'qd-5K\');if(t)t.2c=\'30\';9 s=I.O(\'qd-1I\');if(s)s.2c=\'0\';9 st=I.O(\'qd-7L\');if(st)st.2c=\'0\'}18 7G=4Z;18 cn=30;18 9j=0;18 9k=0;18 ck=[];9 I0=[{q:\'Müş4F: "HZ HYı, bN HXğim." İlk HWşımın ne p1ı?\',3n:[\'lA bN işHV başHUım.\',\'HTısınız, HS HRıbz. 6u/HQ göre HP HOım mı?\',\'8O 53, HN 1R şey 53.\'],a:1,8m:\'HM + HLç HK HJı HIşatır ve HHı qCırır.\'},{q:\'Müş4F: "bi açılmı58." En hızlı HG 36 ne?\',3n:[\'ŞHF sıfıHE.\',\'İHD bağ6xısı / fw / HC 36ü 63ır.\',\'lA 6wı HB HAına döndür.\'],a:1,8m:\'Öbp kök k4 Hz: bağ6xı mı 8J mı? Büyük adıbvı Hy bı9X.\'},{q:\'Müş4F: "4Aın Hx." Hw doğru uN Hv?\',3n:[\'Hu fm (a3/Ht) ve d0 ağda (Hs‑Fi/Hr) Hq?\',\'Kaç gündür böHp?\',\'ŞHo fUıp açın.\'],a:0,8m:\'Hn + ağ d7, 6S hızlı Hm Hl sağ4k.\'},{q:\'Müş4F: "İlf Hk." En doğru yöoZ?\',3n:[\'lA Hjım.\',\'İlf koşv5ı ve adıbvı k1 Hi, doğru Hh yöHg (Hf/He).\',\'Hd Hcın.\'],a:1,8m:\'Hb süreç + doğru Ha = H9 + 7Y H8ı H7ır.\'},{q:\'Müş4F: "H6 H5ıbz." İlk adım?\',3n:[\'8O koşv5ı (od/57/6w) jc mu 36 et.\',\'H4 H3ı oVıH2.\',\'8P 53 H1 fU.\'],a:0,8m:\'H0 36ü 7hıpe iş7k GZ GY sürüGX.\'},{q:\'Müş4F GW: "GV çöGU!" v4 GTın?\',3n:[\'GSşGR 1R cüGQ + öv3 + k1 GP v2ı.\',\'SıGO GNım.\',\'GM yüGL.\'],a:0,8m:\'GKü dC GJ için GI + öv3 + v2 üçlüsü çalışır.\'}];V GH(){if(7G){lx(7G);7G=4Z}cn=30;9j=0;9k=0;ck=[];v1()}V GG(){9 ea=3H.4j(hd)?hd:[];if(!ea.1j){Z.19(\'7s\',\'eH i6üz yüGF. LübY 3o GE GDı GC ve v0ı uZ.\',\'3P\');Q}9 uY=4a.66(5,ea.1j);9 e8=3H.aN({1j:ea.1j},(a5,i)=>i).67(()=>4a.71()-0.5).5t(0,uY);ck=e8.1O(i=>ea[i]);cn=30;9j=0;9k=0;9 5P=I.O(\'qd-5P\');9 5b=I.O(\'qd-5b\');if(5P)5P.w.13=\'1p\';if(5b)5b.w.13=\'2G\';e9();lz();if(7G)lx(7G);7G=GB(()=>{cn-=1;e9();if(cn<=0){ly(1w)}},8v)}V e9(){9 t=I.O(\'qd-5K\');if(t)t.2c=1D(4a.3i(0,cn));9 s=I.O(\'qd-1I\');if(s)s.2c=1D(9j);9 st=I.O(\'qd-7L\');if(st)st.2c=1D(9k)}V lz(){9 q=ck[9k];9 8h=I.O(\'qd-dJ\');9 aD=I.O(\'qd-6d\');if(!8h||!aD||!q)Q;8h.2c=q.q;aD.1B=\'\';q.3n.1K((uW,i)=>{9 b=I.99(\'1m\');b.9h=\'uX-3Z\';b.2c=uW;b.1S=()=>uV(i);aD.98(b)})}V uV(2t){9 q=ck[9k];9 aD=I.O(\'qd-6d\');if(!q||!aD)Q;9 6f=3H.aN(aD.3Q(\'1m\'));6f.1K(b=>b.5n=1w);9 cm=(2t===q.a);if(6f[2t])6f[2t].1X.3a(cm?\'gr\':\'k8\');if(!cm&&6f[q.a])6f[q.a].1X.3a(\'gr\');9j+=cm?2:-1;if(9j<0)9j=0;e9();Z.19({7E:1w,4J:\'1Q\',1U:cm?\'1N\':\'4y\',P:cm?\'Doğru seçim!\':\'uzış seçim\',X:q.8m,31:1l,3J:uU});3F(()=>{9k+=1;e9();if(9k>=ck.1j)ly(1l);1i lz()},GA)}V ly(uT){if(7G){lx(7G);7G=4Z}9 aA=uT?\'Süre Gz!\':\'Gy!\';Z.19({1U:\'3P\',P:`🧠HızlıGx ${aA}`,1M:`<j w="X-2g:3x;"><j w="1f-1W:1.Gw; 1r-3q:5q;">Gv:<b>${9j}</b></j><j w="1n:#86; 1f-1W:0.4P;">İGu jz başGtıp Gs Gr.</j></j>`,33:\'lw\'});9 5P=I.O(\'qd-5P\');9 5b=I.O(\'qd-5b\');if(5P)5P.w.13=\'2G\';if(5b)5b.w.13=\'1p\';9 t=I.O(\'qd-5K\');if(t)t.2c=\'30\';9 st=I.O(\'qd-7L\');if(st)st.2c=\'0\'}V Gq(){1y{lv(\'5b-lu-5u\')}1o(e){}I.O(\'8i-5u\').w.13=\'1Z\';uS()}V uS(){I.O(\'8i-5P\').w.13=\'1Z\';I.O(\'8i-5b-8C\').w.13=\'1p\';lg()}V Gp(){I.O(\'8i-5P\').w.13=\'1p\';I.O(\'8i-5b-8C\').w.13=\'2G\';uP()}V lg(){9 ci=I.O(\'cj-1s\');9 7F=I.O(\'cj-7F\');9 7z=I.O(\'cj-7z\');if(!ci||!7F||!7z)Q;ci.1B=\'\';7F.w.13=\'2G\';7z.w.13=\'1p\';2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"Go"})}).1J(r=>r.2B()).1J(1a=>{7F.w.13=\'1p\';if(1a.2m!=="1N"){7F.2c="Yüiw.";7F.w.13=\'2G\';Q}7z.w.13=\'7z\';18 1M=\'\';if(!1a.cj||1a.cj.1j===0){1M=\'<tr><td Gn="4" w="X-2g:3x;">qKüz maç 7hıGmı.</td></tr>\'}1i{1a.cj.1K((u,i)=>{9 uQ=i===0?\'🥇\':(i===1?\'🥈\':(i===2?\'🥉\':`<1b J="Gl-2V">${i+1}</1b>`));9 uR=(u.32===2d)?\'29:6l(sR, sQ, 0, 0.1);\':\'\';1M+=`<tr w="${uR}"><td>${uQ}</td><td>${u.32}</td><td>${u.Gk}</td><td>${u.Gj}</td></tr>`})}ci.1B=1M}).1o(()=>{7F.w.13=\'1p\';7F.2c="Bağ6xı 4mı.";7F.w.13=\'2G\'})}V uO(){9 n=8l.1j;9 e8=3H.aN({1j:n},(a5,i)=>i);e8.67(()=>4a.71()-0.5);Q e8}V uP(){8f=0;cg=10;lr=0;ce=0;e1=0;aC={e7:1,e6:1,aB:1};e5=1l;9i=-1;hb(1l);hc=uO();e4();I.O(\'p-1I\').2c=8f;I.O(\'p-uH\').2c=cg;9 cd=I.O(\'p-h1-1c\');9 8g=I.O(\'p-6d\');if(cd)cd.w.13=\'1p\';if(8g)8g.w.13=\'20\';lj();ln()}V ls(){if(8l.1j===0)Q 4Z;if(hc.1j>0){9 i=hc.Gi();Q 8l[i]}Q 8l[4a.h9(4a.71()*8l.1j)]}V ln(){if(cg<=0){uB();Q}if(!3H.4j(8l)||8l.1j===0){Z.19(\'2o\',\'ha 53!\',\'4y\');Q}6e=ls();if(!6e||!6e.3n||6e.3n.1j<2){Z.19(\'2o\',\'Bu uN iIı Gh (şık 53).\',\'1T\');6e=ls();if(!6e)Q}lr++;e5=1l;9i=-1;hb(1l);e4();9 8h=I.O(\'p-dJ-X\');if(8h)8h.2c=6e.q||"ha";18 1M=\'\';6e.3n.1K((3Z,2Y)=>{9 uM=1D.lq(65+2Y);1M+=`<1m J="8i-1c"1S="uL(${2Y})">${uM}:${3Z}</1m>`});9 8g=I.O(\'p-6d\');if(8g)8g.1B=1M}V uL(2t){9 6f=I.3Q(\'.8i-1c\');9 h7=(2t===6e.a);if(!h7&&e5&&9i===-1){9i=2t;if(6f[2t]){6f[2t].1X.3a(\'uE-uD-1y\');6f[2t].5n=1w}Z.19({7E:1w,4J:\'1Q\',1U:\'3P\',P:\'İlk 2o! Gg Gfın: 1\',31:1l,3J:uK,29:\'#Gd\'});e4();Q}6f.1K(b=>b.5n=1w);9 5o=I.O(\'8k-3s\');9 8j=I.O(\'az-3s\');9 cf=I.O(\'h5-3s\');9 5x=I.O(\'uF-aA\');9 7D=4a.h9(4a.71()*4);if(cf)cf.1X.3a(\'h5-Gc\');3F(()=>{if(8j){if(h7){if(7D===0||7D===2)8j.1X.3a(\'az-h8-4L\');1i 8j.1X.3a(\'az-h8-2C\')}1i{if(7D===0||7D===2)8j.1X.3a(\'az-h8-2C\');1i 8j.1X.3a(\'az-h8-4L\')}}if(h7){if(5o){if(7D===0)5o.1X.3a(\'8k-h6-2C-1Q\');1i if(7D===1)5o.1X.3a(\'8k-h6-4L-1Q\');1i if(7D===2)5o.1X.3a(\'8k-h6-2C-uJ\');1i 5o.1X.3a(\'8k-h6-4L-uJ\')}3F(()=>{if(5x){5x.2c="Gb!!!";5x.w.1n="#97";5x.1X.3a(\'e2\')}8f++;ce++;I.O(\'p-1I\').2c=8f;Z.19({7E:1w,4J:\'1Q\',1U:\'1N\',P:\'MüGa Şut!\',31:1l,3J:e3,29:\'#G9\'})},lo)}1i{e1++;9 lp=()=>{if(5x){5x.w.1n="#G8";5x.1X.3a(\'e2\')}Z.19({1U:\'1T\',P:\'Kaçırdın!\',X:`Doğru:${1D.lq(65+6e.a)}`,31:1w,3J:uG,29:\'#G7\'})};if(4a.71()>0.5){if(5o){5o.w.3q="G6";5o.w.2C=(7D===0||7D===2)?"40%":"60%";5o.w.G5="G4(0.6)"}3F(()=>{if(5x)5x.2c="G3!";lp()},lo)}1i{if(5o)5o.1X.3a(4a.71()>0.5?\'8k-uI-2C\':\'8k-uI-4L\');3F(()=>{if(5x)5x.2c="DIŞG2!";lp()},lo)}}},G1);cg--;I.O(\'p-uH\').2c=cg;3F(()=>{lj();ln()},uG)}V lj(){9 5o=I.O(\'8k-3s\');9 8j=I.O(\'az-3s\');9 cf=I.O(\'h5-3s\');9 5x=I.O(\'uF-aA\');if(5o){5o.9h=\'8k-93\';5o.w=""}if(8j)8j.9h=\'az-93\';if(cf)cf.9h=\'h5-93\';if(5x)5x.1X.4v(\'e2\');I.3Q(\'.8i-1c\').1K(b=>{b.1X.4v(\'uE-uD-1y\');b.w.uC=\'\';b.w.4D=\'\';b.w.29=\'#97\';b.w.1n=\'#84\';b.w.as=\'#G0\';b.5n=1l})}V uB(){9 uA=10;9 P=8f>=8?"FZ! 🏆":(8f>=5?"İyi jYçtı! 👏":"FY FXım 🤕");9 gT=4a.kX((ce/4a.3i(1,(ce+e1)))*2x);9 8h=I.O(\'p-dJ-X\');if(8h){8h.1B=`<j w="1f-1W:1.FW; 1n:#97; 1f-2j:cH;">FVÇBİFUİ!</j><j w="1r-1Q:6C; 1f-1W:1.7e; 1n:#8z;">${P}</j><j w="1r-1Q:5q; 1f-1W:7e; 1n:#lh;"><b>FT:</b> ${8f}/${uA}&4r;•&4r;<b>DoğFS:</b>${gT}%</j><j w="1r-1Q:5V; 1f-1W:0.4P; 1n:#FR;">Doğru:${ce}&4r;|&4r;uzış:${e1}</j><j w="1r-1Q:1z; 1f-1W:0.ap; 1n:#e0;">uy FQ için aşağıf6 başFP.</j>`}9 8g=I.O(\'p-6d\');9 cd=I.O(\'p-h1-1c\');if(8g)8g.w.13=\'1p\';if(cd)cd.w.13=\'2G\';2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"FO",32:2d,3l:3d(),1I:8f*10,4T:2x})}).ux(()=>{3F(lg,dO)})}V FN(){I.O(\'5R-5u\').w.13=\'1Z\';if(74.6P(ay).1j===0){Z.19({P:\'İlf uwı FM Yü9N...\',3R:()=>Z.4z()});h4().1J(()=>{Z.dG();if(ay[\'4O\'])cc(\'4O\');1i I.O(\'5R-1s\').1B=\'<h2 w="1n:8b;">uw kV pb.</h2>\'}).1o(()=>{Z.dG();I.O(\'5R-1s\').1B=\'<h2 w="1n:8b;">jP çFL 4mı.</h2>\'})}1i{cc(\'4O\')}}V cc(k){9 s=ay[k];if(!s){I.O(\'5R-1s\').1B=`<h2 w="1n:8b;">FK:Adım ID(${k})53.</h2>`;Q}9 b=I.O(\'5R-1s\');18 h=`<h2 w="1n:3p(--aX);">${s.P||\'\'}</h2>`;if(s.2m){18 i=s.2m===\'8b\'?\' 🛑 \':(s.2m===\'le\'?\' ✅ \':\' ⚠️ \');18 c=s.2m===\'8b\'?\'2f-8b\':(s.2m===\'le\'?\'2f-le\':\'2f-FJ\');h+=`<j J="2m-2k ${c}"><j w="1f-1W:FI;1r-3q:1z;">${i}</j><h3>${s.P}</h3><p>${s.X}</p>${s.1C ? `<j J="1C-2k">${s.1C}</j>`:\'\'}</j><1m J="h1-1c" 1S="cc(\'4O\')"><i J="2a fa-FH"></i>Başa Dön</1m>`}1i{h+=`<p>${s.X}</p><j J="5R-6d">`;s.6d.1K(o=>{h+=`<1m J="1e-1c"1S="cc(\'${o.cP}\')"><i J="2a fa-b0-4L"></i> ${o.X}</1m>`});h+=`</j>`; if(k !== \'4O\') h += `<1m J="h1-1c" 1S="cc(\'4O\')" w="29:#6b;1n:#kM;1r-1Q:59;">Başa Dön</1m>`}b.1B=h}9 6H={56:\'4O\',5h:[]};V FG(){jC(\'5R\')}V h0(){9 lb=I.O(\'2J-5R-4i\');9 lc=I.O(\'tw-1c-FF\');9 3M=8F[6H.56];if(6H.5h.1j>0)lc.w.13=\'2G\';1i lc.w.13=\'1p\';if(!3M){lb.1B=`<j J="61"w="1n:8b;">2o:Adım 4Nı(${6H.56}).</j>`;Q}18 1M=`<j J="2J-7L-P">${3M.P||\'\'}</j>`;if(3M.X)1M+=`<p w="1f-1W:7e; 1r-3q:59;">${3M.X}</p>`;if(3M.1C){9 uu=FE(3M.1C);1M+=`<j J="2J-1C-2k"><1b J="2J-1C-1q">Müş8D iq:</1b>"${3M.1C}"<j w="1r-1Q:1z; X-2g:4L;"><1m J="1c 1c-6O" w="1f-1W:0.6z; 22:3X 1z;" 1S="uv(\'${uu}\')"><i J="2a fa-6O"></i>aS</1m></j></j>`}if(3M.61)1M+=`<j J="2J-61">${3M.61}</j>`;if(3M.7c&&3M.7c.1j>0){1M+=`<j J="2J-7c-8C">`;3M.7c.1K(1c=>{18 us=1c.w===\'1e\'?\'2J-1c-1e\':\'2J-1c-aX\';1M+=`<1m J="2J-1c ${us}"1S="ur(\'${1c.cP}\')">${1c.X}</1m>`});1M+=`</j>`}lb.1B=1M}V ur(eS){6H.5h.5E(6H.56);6H.56=eS;h0()}V FD(){if(6H.5h.1j>0){6H.56=6H.5h.nJ();h0()}}V FC(){6H.56=\'4O\';6H.5h=[];h0()}V l9(){9 l8=I.O(\'gZ-5u\');if(l8)l8.w.13=\'1p\';9 uq=I.O(\'gZ-4w\');uq.w.13=\'1Z\';I.O(\'q-6T-3r\').2c=2d;I.O(\'q-6T-4G\').2c=2p?\'YöFB\':\'fW\';I.O(\'q-6T-jB\').2c=2d.uo(0).6y();um();9 dZ=I.O(\'3o-FA\');9 dY=I.O(\'Fz-a6-1c\');9 dX=I.O(\'2P-2v-3o-1c\');if(2p){if(dZ)dZ.w.13=\'1Z\';if(dY)dY.w.13=\'2G\';if(dX)dX.w.13=\'1Z\';if(5k.1j===0){kq().1J(kp=>{9 2E=I.O(\'q-3o-26\');if(2E){9 4q=[...1H 9z(kp.1O(u=>u.26))].67();2E.1B=`<1e R="28">Tüm l4</1e>` + 4q.1O(g => `<1e R="${g}">${g}</1e>`).4d(\'\');sq()}gX()})}1i{gX()}}1i{if(dZ)dZ.w.13=\'1p\';if(dY)dY.w.13=\'1p\';if(dX)dX.w.13=\'1p\';9 l7=I.5e(\'#5d-dF .q-5d-6E > j\');if(l7&&l7.w.13!==\'1p\'){gX()}}9 l6=I.5e(\'.q-72-1d.2Z\');if(l6){un(\'dF\',l6)}}V Fy(){I.O(\'gZ-4w\').w.13=\'1p\';if(2l.49("ax")===\'gY\'){dW()}}V un(aw,l5){I.3Q(\'.q-72-1d\').1K(1d=>1d.1X.4v(\'2Z\'));if(l5){l5.1X.3a(\'2Z\')}1i{I.5e(`.q-72-1d[1S*="${aw}"]`).1X.3a(\'2Z\')}I.3Q(\'.q-5d-8u\').1K(8u=>8u.1X.4v(\'2Z\'));I.O(`5d-${aw}`).1X.3a(\'2Z\');if(aw===\'dF\')l2();1i if(aw===\'dM\')ah();1i if(aw===\'2v\'){ud();l3()}1i if(aw===\'a6\')gK()}V um(){9 ul=[\'q-3Y-5O\'];9 3w=1H 3j();9 c5=3w.9M();9 gH=3w.9L();ul.1K(id=>{9 el=I.O(id);if(!el)Q;el.1B=\'\';68(18 i=0;i<6;i++){18 5O=(c5-i+12)%12;18 6G=gH-(c5-i<0?1:0);9 R=`${1D(5O+1).ab(2,\'0\')}.${6G}`;9 X=`${kL[5O]}${6G}`;9 3Z=I.99(\'1e\');3Z.R=R;3Z.7C=X;if(i===0)3Z.6k=1w;el.98(3Z)}})}V gX(){9 2E=I.O(\'q-3Y-26\');9 2q=I.O(\'q-3Y-2D\');if(!2p){if(2E)2E.w.13=\'1p\';if(2q)2q.w.13=\'1p\';Q}1i{if(2E)2E.w.13=\'2G\';if(2q)2q.w.13=\'2G\'}if(!2E)Q;9 4q=[...1H 9z(5k.1O(u=>u.26).1Y(g=>g))].67();2E.1B=\'<1e R="28">Tüm l4</1e>\';4q.1K(g=>{9 3Z=I.99(\'1e\');3Z.R=g;3Z.2c=g;2E.98(3Z)});uk()}V uk(){9 2E=I.O(\'q-3Y-26\');9 2q=I.O(\'q-3Y-2D\');if(!2q)Q;9 5N=2E.R;2q.1B=\'<1e R="28">Tüm kr</1e>\';18 9b=5k;if(5N!==\'28\'){9b=5k.1Y(u=>u.26===5N)}9b.1K(u=>{9 3Z=I.99(\'1e\');3Z.R=u.3r;3Z.2c=u.3r;2q.98(3Z)});kW();u7()}V kW(){9 Fx=I.O(\'q-3Y-6c-P\')||I.O(\'q-3Y-6c-P\'.3D(\'P\',\'P\'));9 c9=I.O(\'q-3Y-6c-P\');if(!c9)Q;if(!2p){c9.7C=\'bS uj\';Q}9 c8=I.O(\'q-3Y-26\');9 c7=I.O(\'q-3Y-2D\');9 g=c8?c8.R:\'28\';9 a=c7?c7.R:\'28\';if(a&&a!==\'28\'){c9.7C=`${a}bS uj`}1i if(g&&g!==\'28\'){c9.7C=`${g}Fwım uiı`}1i{c9.7C=\'5J bS uiı\'}}V tZ(uh){9 2k=I.O(\'q-3Y-2D-Fv\');if(!2k)Q;if(!2p){2k.w.13=\'1p\';Q}9 c8=I.O(\'q-3Y-26\');9 c7=I.O(\'q-3Y-2D\');9 g=c8?c8.R:\'28\';9 a=c7?c7.R:\'28\';if(a&&a!==\'28\'){2k.w.13=\'1p\';Q}9 4U={};(uh||[]).1K(e=>{9 2D=e.2D||\'N/A\';9 26=e.26||\'\';9 1I=tV(e.1I)||0;if(!4U[2D])4U[2D]={4T:0,4l:0,26:26};4U[2D].4T+=1I;4U[2D].4l+=1;if(!4U[2D].26&&26)4U[2D].26=26});9 8y=74.6P(4U).1O(3r=>{9 o=4U[3r];Q{3r,26:o.26||(g!==\'28\'?g:\'\'),7B:o.4l?(o.4T/o.4l):0,4l:o.4l}});9 gW=(g&&g!==\'28\')?8y.1Y(r=>(r.26||\'\')===g):8y;gW.67((x,y)=>x.7B-y.7B);if(gW.1j===0){2k.w.13=\'1p\';Q}9 1Q=gW.5t(0,8);2k.1B=1Q.1O(r=>`<j J="dV-1d"><j J="dV-2C"><1b J="dV-3r">${1F(r.3r)}</1b>${r.26?`<1b J="dV-26">${1F(r.26)}</1b>`:``}</j><j J="dV-1I">${(r.7B||0).gR(1)}</j></j>`).4d(\'\');2k.w.13=\'20\'}V tX(3b){if(!3b)Q 4Z;if(3H.4j(3b))Q 3b;if(5Y 3b===\'ug\')Q 3b;if(5Y 3b===\'rP\'){9 s=3b.1t();if(!s)Q 4Z;9 uf=[s,s.3D(/\\"/g,\'"\'),s.3D(/\'/g,\'"\')];68(9 ue of uf){1y{9 dR=1P.7S(ue);if(3H.4j(dR))Q dR}1o(e){}}}Q 4Z}V ud(){9 2E=I.O(\'q-2v-26\');9 2q=I.O(\'q-2v-2D\');if(!2E||!2q)Q;if(!2p){2E.w.13=\'1p\';2q.w.13=\'1p\';Q}1i{2E.w.13=\'2G\';2q.w.13=\'2G\'}9 4q=[...1H 9z(5k.1O(u=>u.26).1Y(g=>g))].67();2E.1B=\'<1e R="28">Tüm l4</1e>\';4q.1K(g=>{9 3Z=I.99(\'1e\');3Z.R=g;3Z.7C=g;2E.98(3Z)});uc(1l)}V uc(u9=1w){9 2E=I.O(\'q-2v-26\');9 2q=I.O(\'q-2v-2D\');if(!2E||!2q)Q;9 5N=2E.R;9 9b=5k.1Y(u=>{if(!u||!u.32)Q 1l;if(5N===\'28\')Q 1w;Q u.26===5N});9 ua=9b.1O(u=>u.32).1Y(a=>a).67((a,b)=>a.ub(b,\'tr\'));2q.1B=\'<1e R="28">Tüm kr</1e>\';ua.1K(a=>{9 3Z=I.99(\'1e\');3Z.R=a;3Z.7C=a;2q.98(3Z)});if(u9)l3()}2F V u8(){9 2E=I.O(\'q-2v-26\');9 2q=I.O(\'q-2v-2D\');18 5l=2d;18 5M=\'28\';if(2p){5l=2q?2q.R:\'28\';5M=2E?2E.R:\'28\'}1y{9 4h=1E 2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:\'kA\',5l:5l,5M:5M,32:2d,3l:3d()})});9 1a=1E 4h.2B();if(1a.2m==="1N"){5L=(1a.dM||[]).kz()}1i{5L=[]}}1o(e){5L=[]}}2F V l3(){1E u8();1E ag();bO()}V u7(){l2()}2F V u6(){9 2E=I.O(\'q-3Y-26\');9 2q=I.O(\'q-3Y-2D\');18 5l=2d;18 5M=\'28\';if(2p){5l=2q?2q.R:\'28\';5M=2E?2E.R:\'28\'}1y{9 4h=1E 2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"kA",5l:5l,5M:5M,32:2d,3l:3d()})});9 1a=1E 4h.2B();if(1a.2m==="1N"){5L=(1a.dM||[]).kz()}1i{5L=[]}}1o(e){5L=[]}}V l2(){u6().1J(()=>{9 l1=I.O(\'q-3Y-5O\');9 2E=I.O(\'q-3Y-26\');9 2q=I.O(\'q-3Y-2D\');9 u4=l1?l1.R:\'\';9 5N=2E?2E.R:\'28\';9 l0=2q?2q.R:\'28\';18 3C=5L.1Y(e=>{9 u5=e.2h.96(3);9 u3=(u5===u4);18 gV=1w;18 gU=1w;if(2p){if(5N!==\'28\'){if(e.26){gV=(e.26===5N)}1i{9 9e=5k.5z(u=>u.3r===e.2D);gV=(9e&&9e.26===5N)}}if(l0!==\'28\'&&e.2D!==l0)gU=1l}1i{if(e.2D!==2d)gU=1l}9 gI=e.3B&&1D(e.3B).6y().5B(\'c0-\');Q u3&&gV&&gU&&!gI});9 4T=3C.Fu((gT,u2)=>gT+(37(u2.1I)||0),0);9 4l=3C.1j;9 7B=4l>0?(4T/4l).gR(1):0;9 u1=3C.1Y(e=>e.1I>=90).1j;9 u0=4l>0?4a.kX((u1/4l)*2x):0;I.O(\'q-3Y-1I\').2c=7B;I.O(\'q-3Y-4l\').2c=4l;I.O(\'q-3Y-52\').2c=`%${u0}`;9 6c=I.O(\'q-3Y-6c\');18 1n=\'#8c\';if(7B<70)1n=\'#9d\';1i if(7B<85)1n=\'#gB\';9 5w=(7B/2x)*2x;if(6c)6c.w.29=`kZ-kY(${1n}${5w}%,#6b ${5w}%)`;if(I.O(\'q-3Y-6c-X\'))I.O(\'q-3Y-6c-X\').2c=4a.kX(7B);kW();tZ(3C);tY(3C)})}V tY(1a){9 gQ=I.O(\'q-Ft-Fs\');if(!gQ)Q;if(dS){dS.Fr()}18 au={};if(1a.1j>0){1a.1K(1d=>{1y{18 3b=tX(1d.3b);if(3H.4j(3b)){3b.1K(d=>{18 dU=d.q;18 dT=dU.1j>25?dU.96(0,25)+\'...\':dU;if(!au[dT]){au[dT]={kU:0,3i:0,91:dU}}au[dT].kU+=37(d.1I||0);au[dT].3i+=37(d.3i||0)})}}1o(e){6h.oW("6q kV işFq",e)}})}18 gS=74.6P(au).1O(2b=>{18 s=au[2b];18 tW=s.3i>0?(s.kU/s.3i)*2x:0;Q{1q:2b,gM:s.91,R:tW}});gS.67((a,b)=>a.R-b.R);if(gS.1j===0){9 4U={};1a.1K(it=>{9 a=it.2D||\'N/A\';9 s=tV(it.1I)||0;if(!4U[a])4U[a]={4T:0,4l:0};4U[a].4T+=s;4U[a].4l+=1});9 kT=74.6P(4U).1O(3r=>({1q:3r.1j>25?3r.96(0,25)+\'...\':3r,gM:3r,R:4U[3r].4l?(4U[3r].4T/4U[3r].4l):0}));kT.67((x,y)=>x.R-y.R);18 9f=kT.5t(0,6);18 gP=9f.1O(i=>i.1q);18 9g=9f.1O(i=>i.R.gR(1));dS=1H tT(gQ,{1A:\'5C\',1a:{tS:gP,tR:[{1q:\'tU bS\',1a:9g,tQ:9g.1O(2W=>2W<70?\'6l(tP, 47, 47, 0.7)\':(2W<85?\'6l(tO, tN, 2, 0.7)\':\'6l(46, tM, 50, 0.7)\')),as:9g.1O(2W=>2W<70?\'#tL\':(2W<85?\'#gJ\':\'#tK\')),tJ:1,tI:4}]},6d:{tH:1w,tG:1l,tF:\'y\',tE:{x:{tD:1w,3i:2x,20:{1n:\'#tC\'}},y:{20:{13:1l}}},tB:{gO:{13:1l},tA:{tz:{P:V(7A){if(7A.1j>0)Q 9f[7A[0].gN].gM;Q\'\'},1q:V(7A){Q 7A.dR.x+\' tU\'}}}}}});Q}18 9f=gS.5t(0,6);18 gP=9f.1O(i=>i.1q);18 9g=9f.1O(i=>i.R.gR(1));dS=1H tT(gQ,{1A:\'5C\',1a:{tS:gP,tR:[{1q:\'Başarı Fpı (%)\',1a:9g,tQ:9g.1O(2W=>2W<70?\'6l(tP, 47, 47, 0.7)\':(2W<90?\'6l(tO, tN, 2, 0.7)\':\'6l(46, tM, 50, 0.7)\')),as:9g.1O(2W=>2W<70?\'#tL\':(2W<90?\'#gJ\':\'#tK\')),tJ:1,tI:4}]},6d:{tH:1w,tG:1l,tF:\'y\',tE:{x:{tD:1w,3i:2x,20:{1n:\'#tC\'}},y:{20:{13:1l}}},tB:{gO:{13:1l},tA:{tz:{P:V(7A){if(7A.1j>0){9 gN=7A[0].gN;Q 9f[gN].gM}Q\'\'},1q:V(7A){Q 7A.dR.x+\'% Başarı\'}}}}}})}V gK(){9 44=I.O(\'a6-38\');44.1B=\'<j w="20-7q:1/-1; X-2g:3x;">Yü9N...</j>\';2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"Fo",32:2d,3l:3d(),Fn:2p})}).1J(r=>r.2B()).1J(1a=>{44.1B=\'\';if(1a.2m===\'1N\'&&1a.ty.1j>0){1a.ty.1K(t=>{18 tp=t.Fm?`<1m J="t-1c t-1c-Fl"><i J="2a fa-kD"></i> Fkı</1m>`:`<1m J="t-1c t-1c-4O"1S="tn(\'${t.id}\', \'${t.1x}\')">EğFj Fh</1m>`;18 tq=t.a4&&t.a4!==\'N/A\'?`<a 9G="${t.a4}"52="9F"J="t-5W-1x"><i J="2a fa-Fg-sc"></i> Döküb4ı İsj</a>`:\'\';44.1B+=`<j J="t-1u"><j J="t-1u-6E"><1b>${t.P}${2p?`<1b w=\\"1f-2j:dO;4D:.8;1f-1W:.kv\\">(${t.52}${t.52===\'dQ\'&&t.tt?\' • \'+t.tt:\'\'})</1b>` : \'\'}</1b><1b J="t-5r-2V">Ff:${t.2h}</1b></j><j J="t-1u-1s">${t.2u}${tq}<j w="1r-1Q:1z; 13:1Z; cR-4i:5F-cQ; 1f-1W:0.6z; 1n:#86; 22-1Q:1z; 1V-1Q:4C gm #6b;"><j><9c>Süre:</9c> ${t.cM || \'Fe\'}</j><j><9c>BaşFdıç:</9c> ${t.jD || \'N/A\'} - <9c>Fcş:</9c> ${t.fX || \'N/A\'}</j></j><j w="1f-1W:0.6z; 1n:#bE; 1r-1Q:3X;">Fb:${t.te}</j></j><j J="t-1u-t4">${tp}</j></j>`})}1i{44.1B=\'<j w="20-7q:1/-1; X-2g:3x; 22:g3; 1n:#iA;">Faış eğ7o F9.</j>\'}})}V kS(id){2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"kS",tl:id,32:2d,3l:3d()})}).1J(r=>r.2B()).1o(()=>{})}V tn(id,1x){kS(id);if(1x&&1x!==\'N/A\'){2n.aZ(1x,\'9F\')}1i{Z.19(\'7nı\',\'Bu eğ7o için geçF8 1R 1x F7ır.\',\'4y\')}Z.19({P:\'EğF6 tmın mı?\',X:"Eğ7o iç6Mğbd F5 F4ıF3 F2.",1U:\'dJ\',3m:1w,33:\'kC, tmım\',41:\'F1 F0\'}).1J((2m)=>{if(2m.4W){kR(id)}})}V kR(id){2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"kR",tl:id,32:2d,3l:3d()})}).1J(r=>r.2B()).1J(d=>{if(d.2m===\'1N\'){Z.19(\'EZ!\',\'Eğ7o fgı 7U işEY.\',\'1N\');gK()}1i{Z.19(\'2o\',d.3v,\'1T\')}})}2F V EX(){9{R:1G}=1E Z.19({P:\'aO Eğ7o & Döküb4 tf\',1M:`<j J="t-5u-20"><15 id="1g-t-P"J="1h-15"1v="Eğ7o Başlığı"w="20-7q: 1 / 4;"><1k id="1g-t-2u"J="1h-1k"w="3f:dD; 20-7q: 1 / 4;"1v="Eğ7o açıEWı 4f EV..."></1k><15 id="1g-t-1x"J="1h-15"1v="EU/Eğ7o tk (kn)"w="20-7q: 1 / 4;"><15 id="1g-t-5W"J="1h-15"1v="Döküb4 tk (ET/ES kn) (İtjğe Bağlı)"w="20-7q: 1 / 4;"><15 1A="2h"id="1g-t-4O"J="1h-15"R="${1H 3j().dI().96(0, 10)}"><15 1A="2h"id="1g-t-9H"J="1h-15"><15 id="1g-t-cM"J="1h-15"1v="Süre (Örn: EQ)"></j><34 id="1g-t-52"J="1h-15"tg="kQ(eU.R)"w="1r-1Q:1z;"><1e R="5J">EP(Tüm EO)</1e><1e R="7pış">7pışks</1e><1e R="94">94 ks</1e><1e R="dQ">KişENÖkG</1e></34><34 id="1g-t-2D"J="1h-15"w="13:1p; 2i:2x%;"></34>`,gL:1l,3m:1w,33:\'tf\',3R:()=>{2n.kQ=V(2W){9 2q=I.O(\'1g-t-2D\');2q.w.13=2W===\'dQ\'?\'2G\':\'1p\';if(2W===\'dQ\'){2q.1B=5k.1O(u=>`<1e R="${u.3r}">${u.3r}</1e>`).4d(\'\')}};kQ(\'5J\')},4c:()=>{9 52=I.O(\'1g-t-52\').R;9 2D=52===\'dQ\'?I.O(\'1g-t-2D\').R:\'\';if(!I.O(\'1g-t-P\').R||(!52&&!2D)){Z.4X(\'Başlık ve iT EMı boş bı9Xıkj\');Q 1l}Q{P:I.O(\'1g-t-P\').R,2u:I.O(\'1g-t-2u\').R,1x:I.O(\'1g-t-1x\').R,a4:I.O(\'1g-t-5W\').R||\'N/A\',52:52,5l:2D,te:2d,jD:c2(I.O(\'1g-t-4O\').R),fX:c2(I.O(\'1g-t-9H\').R),cM:I.O(\'1g-t-cM\').R}}});if(1G){Z.19({P:\'ELı58...\',3R:()=>Z.4z()});2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"EK",32:2d,3l:3d(),...1G})}).1J(r=>r.2B()).1J(d=>{Z.19(\'Başarılı\',\'Eğ7o EJı.\',\'1N\');gK()})}}2F V ag(){1y{9 2f=1E 2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"ag",32:2d,3l:3d()})});9 1a=1E 2f.2B();if(1a.2m==="1N"){dP=1a.EI||[]}1i{dP=[]}}1o(1T){6h.1T("bR EH çEG b9 a0ştu:",1T);dP=[]}}V t7(aq){if(!aq||aq===\'N/A\')Q\'N/A\';if(aq.aa(/^\\d{2}\\.\\d{4}$/)){Q aq}1y{9 2h=1H 3j(aq);if(!cU(2h.bJ())){9 5O=1D(2h.9M()+1).ab(2,\'0\');9 6G=2h.9L();Q`${5O}.${6G}`}}1o(e){6h.1T("DökJ EF 4mı:",e)}Q aq}V bO(){9 44=I.O(\'2v-38\');44.1B=\'\';9 kP=I.O(\'2P-2v-3o-1c\');if(kP)kP.w.13=2p?\'1Z\':\'1p\';9 kO=5L.1Y(e=>{9 tb=e.7y&&e.7y.2y()===\'EE\';9 ta=e.3B&&1D(e.3B).6y().5B(\'c0-\');Q tb||ta});if(kO.1j===0){44.1B=\'<j w="22:g3; X-2g:3x; 1n:#iA;">GörüntüED ECş dC t0 53 (t9 bV 4f gl).</j>\';Q}kO.1K(e=>{9 t6=e.7y===\'Sözlü\'?\'#EB\':(e.7y===\'bV\'?\'#gJ\':(e.7y===\'kH\'?\'#EA\':(e.7y===\'bR\'?\'#8c\':\'#jG\')));9 kN=1D(e.3B).6y().5B(\'c0-\')?1D(e.3B).96(7):e.3B;9 t8=1D(e.3b).5B(\'[\');9 t5=t8?\'DeğEz Ey\':(e.3b||\'Exş\');9 gI=1D(e.3B).6y().5B(\'c0-\');18 2z=e.2z||e.2h.96(3);18 5i=(e.5i&&1D(e.5i).1t())?1D(e.5i).1t():\'8a\';9 t2=e.7y||\'8a\';if(gI){9 c6=dP.5z(x=>1D(x.3B)===1D(kN));if(c6){2z=t7(c6.2z)||2z;5i=c6.5i&&c6.5i!==\'N/A\'?c6.5i:\'8a\'}}44.1B+=`<j J="2v-1u"w="1V-2C-1n: ${t6};"><j J="2v-6E"><j w="1f-2j:3g; 1n:#84; 1f-1W:1.7e;">${e.2D}</j><j J="2v-3P-4L"><1b><i J="2a fa-9e-kD"></i> DeğEw: ${e.Ev}</1b><1b><i J="2a fa-id-2V"></i> Çağrı ID: ${kN}</1b><1b><i J="2a fa-t3-5X"></i> bX: ${e.89}</1b></j></j><j J="2v-1s"><j w="1f-2j:3g; 1n:#kM; 1r-3q:3X;">aL/Açı6n:${t5}</j><j w="1n:#g7; 5s-3f:1.5; 1f-1W:0.sT;">${e.2v}</j></j><j J="2v-t4"><j w="13:1Z; 3L:1z; 1f-1W:0.Eu; 1n:#86; 1f-2j:dO; 1r-4L:1z;"><1b><i J="2a fa-t3-Et"></i> DökJ: ${2z}</1b><1b><i J="2a fa-Es-5X"></i> sZ: ${5i}</1b><1b><i J="2a fa-7f"></i> c4: ${t2}</1b></j></j>`})}2F V Er(){if(!2p)Q;if(5k.1j===0){Z.19({P:\'5Iıcı Eq Yü9N...\',3R:()=>Z.4z()});1E kq();Z.dG()}9 3w=1H 3j();9 c5=3w.9M();9 gH=3w.9L();18 kI=\'\';68(18 i=0;i<6;i++){18 5O=(c5-i+12)%12;18 6G=gH-(c5-i<0?1:0);9 X=`${kL[5O]}${6G}`;9 R=`${1D(5O+1).ab(2,\'0\')}.${6G}`;9 t1=(i===0);kI+=`<1e R="${R}"${t1?\'6k\':\'\'}>${X}</1e>`}9 sP=`<j J="2P-2v-5a"><j J="5a-26"><1q 68="2P-q-2D">fW Adı<1b J="c3">*</1b></1q><34 id="2P-q-2D"J="1h-15"></34></j><j J="5a-26"><1q 68="2P-q-c1">aL/Başlık<1b J="c3">*</1b></1q><15 id="2P-q-c1"J="1h-15"1v="aY t0 Ep (Örn: aO 8O Eo)"></j><j J="20-2-gG"><j J="5a-26"><1q 68="2P-q-aj">Çağrı/Emşim ID <1b J="c3">*</1b></1q><15 id="2P-q-aj"J="1h-15"1v="ID (Örn: El)"></j><j J="5a-26"><1q 68="2P-q-2h">bX<1b J="c3">*</1b></1q><15 1A="2h"id="2P-q-2h"J="1h-15"R="${1H 3j().dI().96(0, 10)}"></j></j><j J="20-3-gG"><j J="5a-26"><1q 68="2P-q-5i">sZ</1q><34 id="2P-q-5i"J="1h-15"><1e R="kK">kK</1e><1e R="bAı sY">bAısY</1e><1e R="E-jw">E-jw</1e><1e R="sX sW">sX sW</1e><1e R="8a">8a/Diğer</1e></34></j><j J="5a-26"><1q 68="2P-q-2z">DökJ</1q><34 id="2P-q-2z"J="1h-15">${kI}</34></j><j J="5a-26"><1q 68="2P-q-1A">c4</1q><34 id="2P-q-1A"J="1h-15"><1e R="bR">bR</1e><1e R="kH">kH</1e><1e R="Sözlü">Sözlü</1e><1e R="bV">bV</1e><1e R="ÖkG">ÖkG aL</1e></34></j></j><j J="5a-26"><1q 68="2P-q-2v">aY gv s5ı<1b J="c3">*</1b></1q><1k id="2P-q-2v"J="1h-1k"1v="Ek dC Ej Eiı Eh sV..."></1k></j></j><w>.2P-2v-5a{X-2g:2C;22:1z;29:#Eg;1V-5A:5q;1V:4C 3I#6b}.5a-26{1r-3q:42}.5a-26 1q{1f-1W:0.ap;1f-2j:dO;1n:3p(--aX);13:2G;1r-3q:6C}.20-2-gG{13:20;20-gF-gE:8e 8e;3L:59}.20-3-gG{13:20;20-gF-gE:8e 8e 8e;3L:59}.c3{1n:3p(--sU);1f-1W:0.4P}.2P-2v-5a.1h-15,.2P-2v-5a.1h-1k{2i:2x%!8d;2k-dN:1V-2k!8d;1r:0!8d;22:1z 42!8d;1V:4C 3I#Ef!8d;1V-5A:5V!8d;1f-1W:0.sT!8d;Ee:1V-1n 0.2s,2k-gD 0.2s}.2P-2v-5a.1h-15:sS,.2P-2v-5a.1h-1k:sS{1V-1n:3p(--82)!8d;2k-gD:0 0 0 76 6l(sR,sQ,0,0.2)!8d}.2P-2v-5a.1h-1k{66-3f:dD;kF:Ed}</w>`;9{R:1G}=1E Z.19({P:\'gl aY gv Ec\',1M:sP,2i:\'bQ\',3m:1w,33:\'<i J="2a fa-sO"></i> 5T\',3R:()=>{9 dv=I.O(\'2P-q-2D\');5k.1K(u=>dv.1B+=`<1e R="${u.3r}">${u.3r}</1e>`)},4c:()=>{9 4g=I.O(\'2P-q-2D\').R;9 c1=I.O(\'2P-q-c1\').R;9 2v=I.O(\'2P-q-2v\').R;9 7y=I.O(\'2P-q-1A\').R;9 5i=I.O(\'2P-q-5i\').R;9 2z=I.O(\'2P-q-2z\').R;9 3B=I.O(\'2P-q-aj\').R.1t();9 kE=I.O(\'2P-q-2h\').R;9 89=c2(kE);if(!4g||!2v||!3B||!kE||!c1){Z.4X(\'Tüm (*) işsN sM sL!\');Q 1l}Q{4g,3B:"c0-"+3B,89:89,1I:2x,3b:c1,2v,7y,5v:"5J",5i:5i,2z:2z}}});if(1G){1y{9 sK=1D(1G.4g||\'\').1t().2y();9 sJ=1D(1G.3B||\'\').1t();9 sI=3H.4j(5L)&&5L.Eb(e=>1D(e.2D||e.4g||\'\').1t().2y()===sK&&1D(e.3B||\'\').1t()===sJ);if(sI){9 gC=1E Z.19({1U:\'4y\',P:\'MüsG sF\',1M:`<j w="X-2g:2C; 5s-3f:1.4;"><b>${1G.4g}</b> için <b>bU ID: ${1F(1G.3B)}</b>7möbp Eaşgörünü58.<br><1b w="1n:#86; 1f-1W:0.4P;">sE de sD 9Vıt a0şE9 E8 E7?</1b></j>`,3m:1w,33:\'kC, sC\',41:\'4xç\',sB:1w});if(!gC.4W)Q}}1o(e){6h.sH(\'E6 kD nr\',e)}Z.19({P:\'aM...\',3R:()=>Z.4z()});2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:"kf",32:2d,3l:3d(),...1G})}).1J(r=>r.2B()).1J(2F d=>{if(d.2m==="1N"){Z.19({1U:\'1N\',P:\'8x\',3J:7u,31:1l});ah(1G.4g);ag().1J(()=>{bO()})}1i if(d.2m==="E5"){9 gC=1E Z.19({1U:\'4y\',P:\'MüsG sF\',1M:`<j w="X-2g:2C; 5s-3f:1.4;"><b>${1G.4g}</b> için <b>bU ID: ${1F(1G.3B)}</b>E4 3p.<br><1b w="1n:#86; 1f-1W:0.4P;">sE de sD 9Vıt a0şE3 mu?</1b></j>`,3m:1w,33:\'kC, E2 sC\',41:\'4xç\',sB:1w});if(gC.4W){Z.19({P:\'aM...\',3R:()=>Z.4z()});2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:"kf",32:2d,3l:3d(),cG:1w,...1G})}).1J(r2=>r2.2B()).1J(d2=>{if(d2.2m==="1N"){Z.19({1U:\'1N\',P:\'8x\',3J:7u,31:1l});ah(1G.4g);ag().1J(()=>{bO()})}1i{Z.19(\'2o\',d2.3v,\'1T\')}})}}1i{Z.19(\'2o\',d.3v,\'1T\')}})}}2F V ah(kB,gz=1l){9 44=I.O(\'dM-38\');if(!gz)44.1B=\'Yü9N...\';9 2E=I.O(\'q-3o-26\');9 2q=I.O(\'q-3o-2D\');18 5l=kB||2d;18 5M=\'28\';if(2p&&2q){5l=kB||2q.R;5M=2E?2E.R:\'28\'}1y{9 4h=1E 2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"kA",5l:5l,5M:5M,32:2d,3l:3d()})});9 1a=1E 4h.2B();if(1a.2m==="1N"){5L=1a.dM.kz();if(gz)Q;44.1B=\'\';9 ky=5L.1Y(e=>!1D(e.3B).6y().5B(\'c0-\'));if(ky.1j===0){44.1B=`<p w="X-2g:3x; 1n:#86;">9Kıt 53.</p>`;Q}ky.1K((5m,2Y)=>{9 ku=5m.1I>=90?\'#8c\':(5m.1I>=70?\'#gB\':\'#9d\');18 bZ=2p?`<i J="2a fa-7Q"w="1f-1W:7e; 1n:#97; 9E:9D; 1r-4L:3X;"1S="43.5g(); s1(\'${5m.3B}\')"></i>`:\'\';18 sy=(5l===\'28\'||5l===5M)?`<1b w="1f-1W:0.6z; 1f-2j:3g; 1n:#g7; 29:#6b; 22:76 5V; 1V-5A:6C; 1r-2C:1z;">${5m.2D}</1b>`:\'\';18 ao=\'\';1y{9 aT=1P.7S(5m.3b);ao=\'<7z w="2i:2x%; 1f-1W:0.ap; 1V-gA:gA; 1r-1Q:1z;">\';if(3H.4j(aT)){aT.1K(1d=>{18 sA=1d.1I<1d.3i?\'#E1\':\'#dE\';18 sz=1d.1L?`<br><em w="1n: #9d; 1f-1W:0.6z;">(7M:${1d.1L})</em>`:\'\';ao+=`<tr w="29:${sA}; 1V-3q:4C 3I #8z;"><td w="22:5q; 1V-5A:6C;">${1d.q}${sz}</td><td w="22:5q; 1f-2j:3g; X-2g:4L;">${1d.1I}/${1d.3i}</td></tr>`})}1i{ao=`<p w="7d-5F:8E-3s; 1r:0; 1f-1W:0.4P; 29:#kx; 22:1z; 1V-5A:6C;">${5m.3b}</p>`}ao+=\'</7z>\'}1o(e){ao=`<p w="7d-5F:8E-3s; 1r:0; 1f-1W:0.4P; 29:#kx; 22:1z; 1V-5A:6C;">${5m.3b}</p>`}9 sx=5m.89&&5m.89!==\'N/A\'?5m.89:\'N/A\';9 su=5m.2h||\'N/A\';44.1B+=`<j J="sr-eK"id="2A-eK-${2Y}"w="1V-2C:6C 3I ${ku}; 22:59; 1r-3q:1z; 1V-5A:5q; 29:#8z; 9E:9D;"1S="so(${2Y})"><j w="13:1Z; cR-4i:5F-cQ; 2g-3e:3x;"><j><j w="1f-2j:ik; 1n:#E0;">${5m.2D}${sy}</j><!--DZşDY:Çağrıkw ve sw kw--><j J="2A-2h-3P"><1b><i J="2a fa-DX"></i> Çağrı: ${sx}</1b><1b><i J="2a fa-DW"></i> sw: ${su}</1b></j><j w="1f-1W:0.kv; 1n:#bE; 1r-1Q:76;">ID:${5m.3B}</j></j><j w="X-2g:4L;">${bZ}<1b w="1f-2j:cH; 1f-1W:1.DV; 1n:${ku};">${5m.1I}</1b></j></j><j J="sr-3b-4i"id="2A-3b-${2Y}">${ao}<j w="1r-1Q:1z; 29:#bC; 22:1z; 1V-5A:6C;"><9c>bR:</9c>${5m.2v||\'-\'}</j></j></j>`})}}1o(6o){if(!gz)44.1B=`<p w="1n:8b; X-2g:3x;">2o a0ştu.</p>`}}V sq(){9 2E=I.O(\'q-3o-26\');9 2q=I.O(\'q-3o-2D\');if(!2E||!2q)Q;9 5N=2E.R;2q.1B=\'\';18 9b=5k;if(5N!==\'28\'){9b=5k.1Y(u=>u.26===5N);2q.1B=`<1e R="28">--Tüm ${5N}ks--</1e>`}1i{2q.1B=`<1e R="28">--Tüm kr--</1e>`}9b.1K(u=>{2q.1B+=`<1e R="${u.3r}">${u.3r}</1e>`});ah()}V kq(){Q 1H dL((6F)=>{2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"DU",32:2d,3l:3d()})}).1J(4h=>4h.2B()).1J(1a=>{if(1a.2m==="1N"){5k=1a.kp.1Y(u=>u.26!==\'Yögy\');6F(5k)}1i 6F([])}).1o(6o=>6F([]))})}V kd(sp){Q 1H dL((6F)=>{2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"DT",26:sp,32:2d,3l:3d()})}).1J(4h=>4h.2B()).1J(1a=>{if(1a.2m==="1N")6F(1a.5j||[]);1i 6F([])}).1o(6o=>6F([]))})}V so(2Y){9 9a=I.O(`2A-3b-${2Y}`);if(9a.w.gx&&9a.w.gx!==\'sl\'){9a.w.gx=\'sl\';9a.w.sk=\'0\'}1i{9a.w.gx=9a.DS+dK+\'px\';9a.w.sk=\'1z\'}}2F V si(){if(!2p)Q;9{4W}=1E Z.19({1U:\'dJ\',P:\'s9 İDR mi?\',3m:1w,33:\'İsj\'});if(!4W)Q;Z.19({P:\'s7ıs6ı58...\',3R:()=>Z.4z()});9 2E=I.O(\'q-3o-26\');9 2q=I.O(\'q-3o-2D\');2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"si",5l:2q?2q.R:\'28\',5M:2E?2E.R:\'28\',32:2d,3l:3d()})}).1J(r=>r.2B()).1J(1a=>{if(1a.2m==="1N"&&1a.sh){9 sg=1H DQ(["\\DP"+1a.sh],{1A:\'X/DO;2M=2L-8;\'});9 1x=I.99("a");9 sf=kn.DN(sg);1x.sd("9G",sf);1x.sd("sc",1a.DM);I.1s.98(1x);1x.DL();I.1s.sb(1x);Z.19(\'Başarılı\',\'s9 DK.\',\'1N\')}1i{Z.19(\'2o\',1a.3v||\'jP alı8Vı.\',\'1T\')}})}2F V DJ(){9 2q=I.O(\'q-3o-2D\');9 4g=2q?2q.R:"";if(!4g||4g===\'28\'){Z.19(\'7nı\',\'LübY DH 1R DG seçs8.\',\'4y\');Q}18 5v=\'5J\';9 gw=5k.5z(u=>u.3r.2y()===4g.2y());if(gw&&gw.26){5v=gw.26}9 7v=5v.6Z(\'94\')>-1;9 88=5v.6Z(\'7pış\')>-1;if(7v)5v=\'94\';Z.19({P:\'s7ıs6ı58...\',3R:()=>Z.4z()});18 6D=[];if(5v&&5v!==\'5J\'){6D=1E kd(5v)}Z.dG();9 8Z=6D.1j>0;18 bW=\'\';if(8Z){bW+=`<j J="5j-6a">`;6D.1K((c,i)=>{18 3c=37(c.ai)||0;if(3c===0)Q;9 91=5U(c.X);if(7v){18 6Y=37(c.rV)||0;18 69=37(c.rU)||0;bW+=`<j J="5j-3G"id="3G-${i}"1a-3i-1I="${3c}"><j J="5j-6E"><1b P="${91}">${i+1}.${c.X}</1b><1b w="1f-1W:0.6z;">gp: ${3c}</1b></j><j J="5j-7x"><j J="2A-1m-26"><1m J="2A-1m 2A-gr 2Z" 1a-1I="${3c}" 1S="am(${i}, ${3c}, ${3c})">İyi (${3c})</1m>${6Y>0?`<1m J="2A-1m 2A-rT"1a-1I="${6Y}"1S="am(${i}, ${6Y}, ${3c})">rS(${6Y})</1m>` : \'\'}${69 > 0 ? `<1m J="2A-1m 2A-k8" 1a-1I="${69}" 1S="am(${i}, ${69}, ${3c})">Kötü (${69})</1m>`:\'\'}</j><1b J="1I-2V" id="2V-${i}" w="1r-1Q:5q; 13:2G; 29:#8c;">${3c}</1b></j><15 1A="X" id="1L-${i}" J="1L-15" 1v="7M..." w="13:1p;"></j>`}1i if(88){bW+=`<j J="5j-3G"id="3G-${i}"1a-3i-1I="${3c}"><j J="5j-6E"><1b P="${91}">${i+1}.${c.X}</1b><1b>gp: ${3c}</1b></j><j J="5j-7x" w="13:1Z; 2g-3e:3x; 3L:59; 29:#dE;"><15 1A="go" J="rR-go 6V-15" id="6V-${i}" 66="0" 3i="${3c}" R="${3c}" 1a-2Y="${i}" iB="k7(${i}, ${3c})" w="1Z-gn:1;"><1b J="1I-2V" id="2V-${i}" w="29:#8c;">${3c}</1b></j><15 1A="X" id="1L-${i}" J="1L-15" 1v="7M..." w="13:1p;"></j>`}});bW+=`</j>`}9 7w=`<j J="2A-5u-93"><j J="1I-dF"><j><j w="1f-1W:0.4P;">DeğDF</j><j w="1f-1W:1.rZ; 1f-2j:3g; 1n:#97;">${4g}</j></j><j J="1I-gu-rX" id="1I-6c"><j J="1I-gu-rW" id="gs-1I">${8Z ? \'2x\' : \'2x\'}</j></j></j><j J="2A-6E-1u"><j><1q>bU ID<1b w="1n:8b;">*</1b></1q><15 id="2A-aj"J="1h-15"w="3f:92; 1r:0; 2i:2x%;"1v="bU ID"></j><j><1q>bX</1q><15 1A="2h"id="2A-s2"J="1h-15"w="3f:92; 1r:0; 2i:2x%;"R="${1H 3j().dI().96(0, 10)}"></j></j>${8Z?bW:`<j w="22:59; 1V:4C gm #rQ; X-2g:3x;"><1q>gl bS</1q><br><15 id="2A-2P-1I" 1A="k5" J="1h-15" R="2x" 66="0" 3i="2x" w="2i:dD; X-2g:3x;"></j><1k id="2A-3b"J="1h-1k"1v="s5..."></1k>`}<j w="1r-1Q:59; 22:1z; 29:#s4; 1V:4C 3I #6b;"><1q>aY gv s3</1q><34 id="2v-1A" J="1h-15" w="2i:2x%; 3f:km; 1r:0;"><1e R="8a" 6k>8a</1e><1e R="Sözlü">Sözlü</1e><1e R="bV">bV</1e></34></j><j w="1r-1Q:59;"><1q>5J aY gv</1q><1k id="2A-2v" J="1h-1k" w="1r-1Q:3X; 3f:kl;"></1k></j></j>`;9{R:1G}=1E Z.19({1M:7w,2i:\'bQ\',3m:1w,33:\' 💾  5T\',gk:1l,gj:1l,3R:()=>{if(88)2n.gh();1i if(7v)2n.gf()},4c:()=>{9 3B=I.O(\'2A-aj\').R.1t();if(!3B){Z.4X(\'bU ID 9Wı boş bı9Xıkj!\');Q 1l}9 kh=I.O(\'2A-s2\').R;9 dH=kh.6N(\'-\');9 kg=dH.1j===3?`${dH[2]}.${dH[1]}.${dH[0]}`:kh;if(8Z){18 4T=0;18 bP=[];68(18 i=0;i<6D.1j;i++){9 c=6D[i];if(37(c.ai)===0)rO;18 2W=0;18 1L=I.O(`1L-${i}`).R;if(7v)2W=37(I.O(`2V-${i}`).2c)||0;1i if(88)2W=37(I.O(`6V-${i}`).R)||0;4T+=2W;bP.5E({q:c.X,3i:37(c.ai),1I:2W,1L:1L})}Q{4g,5v,3B,89:kg,1I:4T,3b:1P.2e(bP),2v:I.O(\'2A-2v\').R,7y:I.O(\'2v-1A\').R}}1i{Q{4g,5v,3B,89:kg,1I:37(I.O(\'2A-2P-1I\').R),3b:I.O(\'2A-3b\').R,2v:I.O(\'2v-1A\').R}}}});if(1G){Z.19({P:\'aM...\',3R:()=>Z.4z()});2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:"kf",32:2d,3l:3d(),...1G})}).1J(r=>r.2B()).1J(d=>{if(d.2m==="1N"){Z.19({1U:\'1N\',P:\'8x\',3J:7u,31:1l});ah(1G.4g);ag().1J(()=>{bO()})}1i{Z.19(\'2o\',d.3v,\'1T\')}})}}2F V s1(s0){9 6W=5L.5z(1d=>1D(1d.3B).1t()===1D(s0).1t());if(!6W){Z.19(\'2o\',\'9Kıt 4Nı.\',\'1T\');Q}9 4g=6W.2D;9 ke=6W.26||\'5J\';9 7v=ke.6Z(\'94\')>-1;9 88=ke.6Z(\'7pış\')>-1;18 5v=7v?\'94\':(88?\'7pış\':\'5J\');Z.19({P:\'İDE...\',3R:()=>Z.4z()});18 6D=[];if(5v&&5v!==\'5J\')6D=1E kd(5v);Z.dG();9 8Z=6D.1j>0;18 bT=[];1y{bT=1P.7S(6W.3b||"[]")}1o(e){bT=[]}18 7w=`<j J="2A-5u-93"w="1V-1Q:3X 3I #rY;"><j J="1I-dF"><j><j w="1f-1W:0.4P;">DÜDD</j><j w="1f-1W:1.rZ; 1f-2j:3g; 1n:#rY;">${4g}</j></j><j J="1I-gu-rX" id="1I-6c"><j J="1I-gu-rW" id="gs-1I">${6W.1I}</j></j></j><j J="2A-6E-1u"><j><1q>bU ID</1q><15 id="2A-aj" J="1h-15" R="${6W.3B}" DC w="29:#6b; 3f:92; 2i:2x%;"></j></j>`;if(8Z){7w+=`<j J="5j-6a">`;6D.1K((c,i)=>{18 3c=37(c.ai)||0;if(3c===0)Q;18 6Y=37(c.rV)||0;18 69=37(c.rU)||0;18 kc=bT.5z(d=>d.q===c.X)||(bT[i]?bT[i]:{1I:3c,1L:\'\'});18 6X=37(kc.1I);18 k6=kc.1L||\'\';9 91=5U(c.X);if(7v){18 kb=6X===3c?\'2Z\':\'\';18 k9=(6X===6Y&&6Y!==0)?\'2Z\':\'\';18 gq=(6X===69&&69!==0)?\'2Z\':\'\';if(6X===0&&69===0)gq=\'2Z\';1i if(6X===0&&69>0){kb=\'\';k9=\'\';gq=\'\'}7w+=`<j J="5j-3G"id="3G-${i}"1a-3i-1I="${3c}"><j J="5j-6E"><1b P="${91}">${i+1}.${c.X}</1b><1b>gp: ${3c}</1b></j><j J="5j-7x"><j J="2A-1m-26"><1m J="2A-1m 2A-gr ${kb}" 1a-1I="${3c}" 1S="am(${i}, ${3c}, ${3c})">İyi</1m>${6Y>0?`<1m J="2A-1m 2A-rT ${k9}"1a-1I="${6Y}"1S="am(${i}, ${6Y}, ${3c})">rS</1m>`:\'\'}${69>0?`<1m J="2A-1m 2A-k8 ${gq}" 1a-1I="${69}" 1S="am(${i}, ${69}, ${3c})">Kötü</1m>`:\'\'}</j><1b J="1I-2V" id="2V-${i}">${6X}</1b></j><15 1A="X" id="1L-${i}" J="1L-15" R="${k6}" w="13:${6X<3c?\'2G\':\'1p\'}"></j>`}1i if(88){7w+=`<j J="5j-3G"id="3G-${i}"1a-3i-1I="${3c}"><j J="5j-6E"><1b P="${91}">${i+1}.${c.X}</1b><1b>gp: ${3c}</1b></j><j J="5j-7x" w="13:1Z; 29:#dE;"><15 1A="go" J="rR-go 6V-15" id="6V-${i}" 66="0" 3i="${3c}" R="${6X}" 1a-2Y="${i}" iB="k7(${i}, ${3c})" w="1Z-gn:1;"><1b J="1I-2V" id="2V-${i}">${6X}</1b></j><15 1A="X" id="1L-${i}" J="1L-15" R="${k6}" w="13:${6X<3c?\'2G\':\'1p\'}"></j>`}});7w+=`</j>`}1i{7w+=`<j w="22:59; 1V:4C gm #rQ; X-2g:3x;"><1q>gl bS</1q><br><15 id="2A-2P-1I" 1A="k5" J="1h-15" R="${6W.1I}" 66="0" 3i="2x" w="2i:dD;"></j><1k id="2A-3b"J="1h-1k">${5Y 6W.3b===\'rP\'?6W.3b:\'\'}</1k>`}7w+=`<j><1q>DB bR</1q><1k id="2A-2v" J="1h-1k">${6W.2v||\'\'}</1k></j></j>`;9{R:1G}=1E Z.19({1M:7w,2i:\'bQ\',3m:1w,33:\' 💾  GüDA\',gk:1l,gj:1l,3R:()=>{if(88)2n.gh();1i if(7v)2n.gf()},4c:()=>{9 3B=I.O(\'2A-aj\').R;9 2v=I.O(\'2A-2v\').R;if(8Z){18 4T=0;18 bP=[];68(18 i=0;i<6D.1j;i++){9 c=6D[i];if(37(c.ai)===0)rO;18 2W=0;18 1L=I.O(`1L-${i}`).R;if(7v)2W=37(I.O(`2V-${i}`).2c)||0;1i if(88)2W=37(I.O(`6V-${i}`).R)||0;1i 2W=37(c.ai);4T+=2W;bP.5E({q:c.X,3i:37(c.ai),1I:2W,1L:1L})}Q{4g,3B,1I:4T,3b:1P.2e(bP),2v}}1i{Q{4g,3B,1I:37(I.O(\'2A-2P-1I\').R),3b:I.O(\'2A-3b\').R,2v}}}});if(1G){Z.19({P:\'GüqB...\',3R:()=>Z.4z()});2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:"Dz",32:2d,3l:3d(),...1G})}).1J(r=>r.2B()).1J(d=>{if(d.2m==="1N"){Z.19({1U:\'1N\',P:\'Güdx\',3J:7u,31:1l});ah(4g);ag().1J(()=>{bO()})}1i{Z.19(\'2o\',d.3v,\'1T\')}})}}9 qs=[{"8Y":"gb - Dy 8X","4H":"WİrN","8W":"5Iıcı 7m öbp rMık ya da yıllık rL 1R 57 j3ış, rKı4E 57 rJış ve şu rI 9T gd fV 3Nıcı4kı bLığımız 1R 1a","1L":"5Iıcının 7Z geçmişi bM."},{"8Y":"ga  - 6 AY rw 8X","4H":"WİrN","8W":"5Iıcı 7m öbp rMık ya da yıllık rL 1R 57 j3ış, rKı4E 57 rJış ve şu rI 9T gd fV 3Nıcı4kı bLığımız 1R 1a","1L":"5Iıcının 7Z geçmişi bM."},{"8Y":"gb - Dx 8X","4H":"rHİrG","8W":"rFğbm bN rE rDş, 57 sübw rC k0 6Mşby 9O rB, dC rAım için bLığımız 1R 1a","1L":"5Iıcının 7Z geçmişi bM. İrz ryı yürx + 5Iıcının 1R bN k4 bM"},{"8Y":"ga  - 6 AY Dw 8X","4H":"rHİrG","8W":"rFğbm bN rE rDş, 57 sübw rC k0 6Mşby 9O rB, dC rAım için bLığımız 1R 1a","1L":"5Iıcının 7Z geçmişi bM. İrz ryı yürx + 5Iıcının 1R bN k4 bM"},{"8Y":"gb - r5 8X","4H":"rvİrt rr","8W":"6u bl sürq rp ro ürk alı8Vığı için gd rj 3Nıcı4kı bLığımız 1R 1a","1L":"6u bl süri 1R ö7P 6S a0ştuğdm bu rh rgğrf rcğbd, 3Nıcıya gc bu 6S çörb gc de r9 r8 ü4Q r7ımcı r6 +İç4K"},{"8Y":"ga  - 6 AY rw 8X","4H":"rvİrt rr","8W":"6u bl sürq rp ro ürk alı8Vığı için gd rj 3Nıcı4kı bLığımız 1R 1a","1L":"6u bl süri 1R ö7P 6S a0ştuğdm bu rh rgğrf rcğbd, 3Nıcıya gc bu 6S çörb gc de r9 r8 ü4Q r7ımcı r6 +İç4K"},{"8Y":"gb - r5 8X","4H":"r4","8W":"r3 ü4Q r1 6sın fp r0 ya da 6sışa k3 qZ 3Nıcı4k için qY qX","1L":""},{"8Y":"ga - 6 AY Dv,5 8X","4H":"r4","8W":"r3 ü4Q r1 6sın fp r0 ya da 6sışa k3 qZ 3Nıcı4k için qY qX","1L":""}];9 nw=[{"1d":"Du maç4kı ve stüDt Dsı","2z":"3O-2X / 2X- 3A / 3A-4S / 4S-7t","1L":""},{"1d":"qW","2z":"3O-2X / 2X- 3A / 3A-4S / 4S-7t","1L":""},{"1d":"qW 2","2z":"3O-2X / 2X- 3A / 3A-4S / 4S-7t","1L":""},{"1d":"İDr qV ö87 maç4kı","2z":"3O - 2X / 2X - 3A","1L":""},{"1d":"qV 2 ö87 maç4kı","2z":"3O - 2X / 2X - 3A","1L":""},{"1d":"İDq Dp A ö87 maç4kı","2z":"3O - 2X / 2X - 3A","1L":""},{"1d":"Dn Dm Dl ö87 maç4kı","2z":"3O - 2X","1L":""},{"1d":"Dk Dj Dh Dg ö87 maç4kı","2z":"3O-2X / 2X- 3A / 3A-4S / 4S-7t","1L":""},{"1d":"Df qT","2z":"3O-2X / 2X- 3A / 3A-4S / 4S-7t","1L":""},{"1d":"İDdçya Dc ö87 maç4kı","2z":"3O - 2X / 2X - 3A","1L":""},{"1d":"k2 Db Da","2z":"3O - 2X / 2X - 3A","1L":""},{"1d":"k2 qU","2z":"3O - 2X / 2X - 3A","1L":""},{"1d":"D9","2z":"3O - 2X","1L":""},{"1d":"D8","2z":"3O-2X / 2X- 3A / 3A-4S / 4S-7t","1L":""},{"1d":"D7","2z":"3O-2X / 2X- 3A / 3A-4S / 4S-7t","1L":""},{"1d":"D6 qU qT ö87 maç4kı","2z":"3O - 2X D5 D4","1L":""},{"1d":"k2","2z":"3O - 2X / 2X - 3A","1L":""},{"1d":"D3 D2ı","2z":"3A, 4S, 7t, qS (4 qR)","1L":""},{"1d":"D1 D0","2z":"3A, 4S, 7t, qS (4 qR)","1L":""},{"1d":"CZ","2z":"3O","1L":"2X da alıCY k1 değil"},{"1d":"CX","2z":"3O - 2X - 3A - 4S ve 7t","1L":""},{"1d":"CW","2z":"3O - 2X - 3A","1L":""},{"1d":"CV - CU - CT","2z":"3O - 2X - 3A","1L":""},{"1d":"CS qQ CRı ö87 maç4k","2z":"3O - 2X - 3A CQ 4S","1L":""},{"1d":"CP qQ ö87 maç4k","2z":"3O - 2X - 3A","1L":""},{"1d":"CO Dövüş CN 45ıfxı","2z":"3A CM k0 CL","1L":""},{"1d":"CK","2z":"3O","1L":""},{"1d":"CJ CI","2z":"3O","1L":""},{"1d":"CH CG CF jYç4kı","2z":"3O","1L":""},{"1d":"CE","2z":"CDırıldı","1L":""}];V qP(1c){1y{I.3Q(\'.1Y-1c\').1K(b=>b.1X.4v(\'2Z\'));if(1c)1c.1X.3a(\'2Z\')}1o(e){}}V g9(){9 2O=I.O(\'2O-ac\');9 20=I.O(\'dA\');9 dB=I.O(\'CC\');if(2O)2O.w.13=\'2G\';if(20)20.w.13=\'1p\';if(dB)dB.w.13=\'1p\';a8()}V af(){9 2O=I.O(\'2O-ac\');if(2O)2O.w.13=\'1p\';9 20=I.O(\'dA\');if(20)20.w.13=\'20\'}V a8(){9 a9=I.O(\'2O-7b\');if(a9){a9.1B=\'<j J="2O-5G-1d">4Aın akışı yü9N...</j>\';(2F()=>{1y{9 3e=1E jZ();9 d=1H 3j();9 qM=`${d.9L()}-${1D(d.9M()+1).ab(2,\'0\')}-${1D(d.eR()).ab(2,\'0\')}`;9 qO=(2W)=>{9 s=1D(2W||\'\').1t();if(!s)Q\'\';if(/^\\d{4}-\\d{2}-\\d{2}$/.CB(s))Q s;9 m=s.aa(/^(\\d{2})\\.(\\d{2})\\.(\\d{4})$/);if(m)Q`${m[3]}-${m[2]}-${m[1]}`;Q\'\'};9 dz=(3e||[]).1Y(it=>{9 qN=qO(it.bK||it.2h);if(qN!==qM)Q 1l;9 3w=3j.3w();9 se=6r(it.6U||0);if(se)Q se>3w;9 t=1D(it.5K||\'\').1t();9 m=t.aa(/^(\\d{2}):(\\d{2})(?::(\\d{2}))?$/);if(!m)Q 1w;9 hh=37(m[1],10),mm=37(m[2],10),ss=37(m[3]||\'0\',10);9 dt=1H 3j();dt.CA(hh,mm,ss,0);Q dt.bJ()>3w});if(!dz.1j){a9.1B=\'<j J="2O-5G-1d">jTün için 45ın akışı a1ı 4Nı.</j>\'}1i{9 g6=dz.5t(0,4);a9.1B=g6.1O(it=>{9 5K=1F(it.5K||\'\');9 P=1F(it.aa||it.P||it.43||\'\');9 ch=1F(it.5i||it.Cz||\'\');9 g8=1F(it.g8||it.4o||\'\');9 jX=1F(it.Cy||it.Cx||it.Cw||it.Cv||\'\');Q`<j J="2O-5G-1d"><j J="2O-5G-2h">${5K}${g8?`•${g8}`:\'\'}${ch?`•${ch}`:\'\'}</j><j J="2O-5G-P">${P||\'jYç\'}</j>${jX?`<j J="2O-5G-2u"w="1r-1Q:6C;1n:#g7">🎙${jX}</j>`:\'\'}</j>`}).4d(\'\')+(dz.1j>g6.1j?`<j w="1n:#86;1f-1W:.4P;1r-1Q:5V">+${dz.1j-g6.1j}maç7m…</j>`:\'\')}9 1u=a9.iv(\'.2O-1u\');if(1u){1u.1X.3a(\'qH\');1u.1S=()=>qL()}}1o(e){a9.1B=\'<j J="2O-5G-1d">4Aın akışı alı8Vı.</j>\'}})()}9 dy=I.O(\'2O-qF\');if(dy){9 jW=(bI||[]).5t(0,3);if(jW.1j===0){dy.1B=\'<j J="2O-5G-1d">qKüz qJ 53.</j>\'}1i{dy.1B=jW.1O(n=>`<j J="2O-5G-1d"><j J="2O-5G-2h">${1F(n.2h||\'\')}</j><j J="2O-5G-P">${1F(n.P||\'\')}</j><j J="2O-5G-2u">${1F(1D(n.2u||\'\')).5t(0,qI)}${(n.2u||\'\').1j>qI?\'...\':\'\'}</j></j>`).4d(\'\')}9 1u=dy.iv(\'.2O-1u\');if(1u){1u.1X.3a(\'qH\');1u.1S=()=>jV()}}9 jU=I.O(\'2O-6B\');if(jU){9 q=1D((4I&&4I.6B&&4I.6B.4i)?4I.6B.4i:(2l.49(\'jS\')||\'\')).1t();jU.1B=q?1F(q):\'<1b w="1n:#bE">jTün için 1R söz qGş.</1b>\'}1y{9 b1=I.O(\'2O-78-7b\');9 b2=I.O(\'2O-78-qF\');9 b3=I.O(\'2O-78-6B\');if(b1)b1.w.13=\'1p\';if(b2)b2.w.13=\'1p\';if(b3)b3.w.13=(2p&&4n?\'cJ-1Z\':\'1p\')}1o(e){}}V Cu(qD){if(!2p){Z.19("jN","Bu iş7k için 3o Ct Cs.","4y");Q}if(!4n){Z.19("Crı","DüqE Cq Cpı. Öbp \'Düb7 Aç\' Co.","3P");Q}if(qD!==\'6B\'){Z.19("7s","Bu 9W qCık iV güqB.","3P");Q}9 6Q=1D((4I&&4I.6B&&4I.6B.4i)?4I.6B.4i:(2l.49(\'jS\')||\'\')).1t();Z.19({P:"Günün Sözü",15:"1k",Cn:6Q,Cm:"jTünün sözünü 9R…",3m:1w,33:"5T",41:"4xç",4c:(2W)=>(2W||\'\').1t()}).1J(2f=>{if(!2f.4W)Q;9 2W=2f.R||\'\';1y{2l.6p(\'jS\',2W)}1o(e){}bH(\'Cl\',{2b:\'6B\',P:\'Günün Sözü\',4i:2W,qA:\'\'}).1J(()=>{4I=4I||{};4I.6B={2b:\'6B\',P:\'Günün Sözü\',4i:2W,qA:\'\'};1y{2l.6p(\'jR\',1P.2e(4I||{}))}1o(e){}a8();Z.19("8x","Günün sözü güdx.","1N")}).1o(()=>{a8();Z.19("8x","Günün sözü güdx (Ck).","1N")})})}V Cj(qz){9 1u=(jQ||[]).5z(x=>1D(x.id)===1D(qz));if(!1u){Z.19(\'2o\',\'79 4Nı.\',\'1T\');Q}9J(1u)}18 8U=[];V qx(){1y{Q(5Y 3d===\'V\')?3d():\'\'}1o(e){Q\'\'}}2F V ds(qy){9 bG={2K:qy,32:(2d||\'\'),3l:qx()};9 r=1E 2U(2w,{2T:"2S",2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e(bG)});9 d=1E r.2B();if(!d||d.2m!=="1N")cK 1H aR((d&&d.3v)?d.3v:"jP alı8Vı.");Q d.1a||d.3e||[]}2F V jO(){1y{9 6A=(5Y 7r!=="g5"&&7r)?7r["a7"]:4Z;if(6A&&!g4(6A)){Z.19("jN","qmış 8Lına 6MşCi 53.","4y");Q}}1o(e){}9 3s=I.O(\'a7-4w\');if(!3s)Q;3s.w.13=\'1Z\';I.1s.1X.3a(\'fs-aZ\');I.1s.w.bB=\'qb\';9 av=I.O(\'t-6T-jB\');9 nm=I.O(\'t-6T-3r\');9 rl=I.O(\'t-6T-4G\');if(av)av.2c=(2d||\'U\').1t().5t(0,1).6y();if(nm)nm.2c=2d||\'5Iıcı\';if(rl)rl.2c=2p?\'qa\':\'fW\';if(8U.1j===0){18 dw=[];1y{dw=1E ds("Ch")}1o(e){}8U=(3H.4j(dw)&&dw.1j)?dw.1O(o=>({4H:o.4H||o.g2||o.Cg||\'\',P:o.P||o.Başlık||o.no||o.bD||o[\'bD Adı\']||o[\'bD Cf\']||\'\',2u:o.2u||o.Açı6n||o.Ce||o.6q||o[\'6q/7M\']||o.7M||\'\',qw:o.qw||o.Öfl||o.Cd||\'\',qv:o.qv||o.İjM||o.Cc||\'\',qu:o.qu||o.Cb||\'\',qt:o.qt||o.jL||\'\'})):(3H.4j(2n.jK)&&2n.jK.1j?2n.jK:qs)}dr();dp();qr(\'1a\')}V Ca(){9 3s=I.O(\'a7-4w\');if(3s)3s.w.13=\'1p\';I.1s.1X.4v(\'fs-aZ\');I.1s.w.bB=\'\'}V qr(4b){I.3Q(\'#a7-4w .q-72-1d\').1K(i=>i.1X.4v(\'2Z\'));I.3Q(\'#a7-4w .q-72-1d\').1K(i=>{if((i.81(\'1S\')||\'\').21(`"${4b}"`))i.1X.3a(\'2Z\')});I.3Q(\'#a7-4w .q-5d-8u\').1K(s=>s.1X.4v(\'2Z\'));9 el=I.O(`t-5d-${4b}`);if(el)el.1X.3a(\'2Z\')}V C9(){9 dv=I.O(\'t-1a-du\');if(!dv)Q;9 qq=3H.aN(1H 9z((8U||[]).1O(o=>o.4H).1Y(9A))).67();dv.1B=\'<1e R="28">Tüm C8</1e>\'+qq.1O(s=>`<1e R="${1F(s)}">${1F(s)}</1e>`).4d(\'\')}V dr(){9 20=I.O(\'t-1a-20\');if(!20)Q;9 q=(I.O(\'t-1a-51\')?.R||\'\').2y();9 38=(8U||[]).1Y(o=>{9 3k=`${o.P||\'\'}${o.2u||\'\'}${o.4H||\'\'}${o.7f||\'\'}`.2y();9 qp=!q||3k.21(q);Q qp});9 5C=(2p&&4n)?`<j w="20-7q:1/-1;13:1Z;3L:1z;2g-3e:3x;1r:5V 0 42;"><1m J="x-1c x-1c-3o"1S="qn()"><i J="2a fa-aP"></i> bD 4Y</1m></j>`:\'\';if(38.1j===0){20.1B=5C+\'<j w="4D:.7;22:g3;20-7q:1/-1">C7ç 4Nı.</j>\';9 bF=I.O(\'t-1a-4l\');if(bF)bF.2c=\'0 9Vıt\';Q}9 bF=I.O(\'t-1a-4l\');if(bF)bF.2c=`${38.1j}9Vıt`;20.1B=5C+38.1O((o,2t)=>`<j J="q-a6-1u"1S="qi(${2t})"w="9E:9D"><j J="t-a6-eP"><j w="66-2i:0"><j J="q-1d-P"w="1f-1W:1.C6">${1F(o.P||\'bD\')}</j></j><j J="t-a6-2V">${1F(o.4H||o.7f||\'\')}</j></j><j J="t-a6-2u">${1F((o.2u||\'\').5t(0,qo))}${(o.2u||\'\').1j>qo?\'...\':\'\'}</j><j w="1r-1Q:1z;1n:#bE;1f-1W:.6z">(6q için tıjF)</j>${(2p&&4n)?`<j w="1r-1Q:42;13:1Z;3L:1z"><1m J="x-1c x-1c-3o"1S="43.5g(); ql(${2t});"><i J="2a fa-7Q"></i> Dü6j</1m><1m J="x-1c x-1c-3o"1S="43.5g(); jJ(${2t});"><i J="2a fa-cI"></i> 8w</1m></j>`:``}</j>`).4d(\'\')}V qn(){Z.19({P:"qmış qk 4Y",1M:`<15 id="to-P"J="1h-15"1v="Başlık"><15 id="to-du"J="1h-15"1v="g2 / eY (7N)"><1k id="to-2u"J="1h-1k"1v="Açı6n"></1k><1k id="to-3W"J="1h-1k"1v="6q (7N)"></1k>`,3m:1w,33:"4Y",41:"4xç",4c:()=>{9 P=(I.O(\'to-P\').R||\'\').1t();if(!P)Q Z.4X("Başlık 5S");Q{id:\'iy\'+3j.3w(),P,4H:(I.O(\'to-du\').R||\'\').1t(),2u:(I.O(\'to-2u\').R||\'\').1t(),3W:(I.O(\'to-3W\').R||\'\').1t(),}}}).1J(2F 2f=>{if(!2f.4W)Q;9 v=2f.R;Z.19({P:\'eG...\',3R:()=>Z.4z(),31:1l});1y{9 r=1E 2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:\'qj\',32:2d,3l:3d(),jI:\'\',jH:\'\',...v})});9 d=1E r.2B();if(d.2m===\'1N\'){Z.19({1U:\'1N\',P:\'i0\',3J:9w,31:1l});1E ds();dr()}1i{Z.19(\'2o\',d.3v||\'eF\',\'1T\')}}1o(e){Z.19(\'2o\',\'6i 4mı.\',\'1T\')}})}2F V ql(2t){9 o=(8U||[])[2t];if(!o)Q;9{R:v}=1E Z.19({P:"qk Dü6j",1M:`<15 id="to-P"J="1h-15"1v="Başlık"R="${1F(o.P||\'\')}"><15 id="to-du"J="1h-15"1v="g2 / eY"R="${1F(o.4H||\'\')}"><1k id="to-2u"J="1h-1k"1v="Açı6n">${1F(o.2u||\'\')}</1k><1k id="to-3W"J="1h-1k"1v="6q">${1F(o.3W||\'\')}</1k>`,3m:1w,33:"5T",41:"4xç",4c:()=>{9 P=(I.O(\'to-P\').R||\'\').1t();if(!P)Q Z.4X("Başlık 5S");Q{P,4H:(I.O(\'to-du\').R||\'\').1t(),2u:(I.O(\'to-2u\').R||\'\').1t(),3W:(I.O(\'to-3W\').R||\'\').1t(),}}});if(!v)Q;Z.19({P:\'aM...\',3R:()=>Z.4z(),31:1l});1y{9 r=1E 2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:\'qj\',32:2d,3l:3d(),jI:o.P,jH:o.4H,...v})});9 d=1E r.2B();if(d.2m===\'1N\'){Z.19({1U:\'1N\',P:\'8x\',3J:9w,31:1l});1E ds();dr()}1i{Z.19(\'2o\',d.3v||\'eA\',\'1T\')}}1o(e){Z.19(\'2o\',\'6i 4mı.\',\'1T\')}}V jJ(2t){9 o=(8U||[])[2t];if(!o)Q;Z.19({P:"cE mi?",X:"bD hW alıhV.",1U:"4y",3m:1w,33:"8w",41:"4xç"}).1J(2F 2f=>{if(!2f.4W)Q;1y{9 r=1E 2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:\'jJ\',32:2d,3l:3d(),jI:o.P,jH:o.4H})});9 d=1E r.2B();if(d.2m===\'1N\'){1E ds();dr();Z.19({1U:\'1N\',P:\'mV\',3J:8v,31:1l})}1i{Z.19(\'2o\',d.3v||\'mU\',\'1T\')}}1o(e){Z.19(\'2o\',\'6i 4mı.\',\'1T\')}})}V qi(2t){9 o=(8U||[])[2t];if(!o)Q;Z.19({P:`<i J="2a fa-48"w="1n:#84"></i>${1F(o.P||\'\')}`,1M:`<j w="X-2g:2C;5s-3f:1.6"><j w="1r-3q:1z"><b>g2:</b> ${1F(o.4H||\'-\')}</j><j>${1F(o.2u||\'6q 53.\').3D(/\\n/g,\'<br>\')}</j></j>`,g1:1w,31:1l,2i:\'C5\',29:\'#bC\'})}V dp(){9 8C=I.O(\'t-C4-20\');if(!8C)Q;18 38=(dq||[]);1y{9 ov=1P.7S(2l.49(\'jE\')||\'[]\');if(3H.4j(ov)&&ov.1j)38=ov}1o(e){}9 5C=(2p&&4n)?`<j w="13:1Z;3L:1z;2g-3e:3x;1r:5V 0 42;"><1m J="x-1c x-1c-3o"1S="qg()"><i J="2a fa-aP"></i> 4e 4Y</1m></j>`:\'\';if(38.1j===0){8C.1B=5C+\'<j w="22:aQ;4D:.7">4e 4Nı.</j>\';Q}8C.1B=5C+38.1O((s,i)=>`<j J="2H-1d"w="1V-2C-1n:#jG;9E:9D"1S="8B(\'${5U(s.X||\'\')}\')"><1b J="2H-P">${1F(s.P||\'4e\')}</1b><j J="2H-2u"w="7d-5F:8E-5s">${1F(s.X||\'\')}</j><j w="13:1Z;3L:1z;2g-3e:3x;cR-4i:5F-cQ;1r-1Q:1z"><j J="2H-7f"w="29:6l(16,dk,qh,.i4);1n:#jG;1V:4C 3I 6l(16,dk,qh,.25)">TıjF&aS</j>${(2p&&4n)?`<j w="13:1Z;3L:5q"><1m J="x-1c x-1c-3o"1S="43.5g(); qf(${i});"><i J="2a fa-7Q"></i></1m><1m J="x-1c x-1c-3o"1S="43.5g(); qe(${i});"><i J="2a fa-cI"></i></1m></j>`:``}</j></j>`).4d(\'\')}V g0(){1y{9 ov=1P.7S(2l.49(\'jE\')||\'[]\');if(3H.4j(ov)&&ov.1j)Q ov}1o(e){}Q(dq||[])}V fZ(3t){2l.6p(\'jE\',1P.2e(3t||[]))}V qg(){Z.19({P:"4e 4Y",1M:`<15 id="ts-P"J="1h-15"1v="Başlık"><1k id="ts-X"J="1h-1k"1v="4e 83"></1k>`,3m:1w,33:"4Y",41:"4xç",4c:()=>{9 P=(I.O(\'ts-P\').R||\'\').1t();9 X=(I.O(\'ts-X\').R||\'\').1t();if(!X)Q Z.4X("4e 83 5S");Q{id:\'iy\'+3j.3w(),P:P||\'4e\',X}}}).1J(2f=>{if(!2f.4W)Q;9 3t=g0();3t.nV(2f.R);fZ(3t);dp()})}V qf(2t){9 3t=g0();9 s=3t[2t];if(!s)Q;Z.19({P:"4e Dü6j",1M:`<15 id="ts-P"J="1h-15"1v="Başlık"R="${1F(s.P||\'\')}"><1k id="ts-X"J="1h-1k"1v="4e 83">${1F(s.X||\'\')}</1k>`,3m:1w,33:"5T",41:"4xç",4c:()=>{9 P=(I.O(\'ts-P\').R||\'\').1t();9 X=(I.O(\'ts-X\').R||\'\').1t();if(!X)Q Z.4X("4e 83 5S");Q{...s,P:P||\'4e\',X}}}).1J(2f=>{if(!2f.4W)Q;3t[2t]=2f.R;fZ(3t);dp()})}V qe(2t){Z.19({P:"cE mi?",1U:"4y",3m:1w,33:"8w",41:"4xç"}).1J(2f=>{if(!2f.4W)Q;9 3t=g0().1Y((a5,i)=>i!==2t);fZ(3t);dp()})}V C3(){9 2k=I.O(\'t-8G\');if(!2k)Q;9 8G=(qc||[]).1Y(t=>(t.52||\'\')===\'7pış\'||(t.P||\'\').2y().21(\'fYış\'));if(8G.1j===0){2k.1B=\'<j w="4D:.7;22:1z">Bu pS C2ış döküb4/eğ7o görünmü58.</j>\';Q}2k.1B=8G.1O(d=>`<j J="2H-1d"w="1V-2C-1n:3p(--82)"><1b J="2H-2h">${1F((d.jD||\'\')+(d.fX?(\' → \'+d.fX):\'\'))}</1b><1b J="2H-P">${1F(d.P||\'\')}</1b><j J="2H-2u">${1F(d.2u||\'\')}</j>${d.1x&&d.1x!==\'N/A\'?`<a J="1c 1c-1x"9G="${1F(d.1x)}"52="9F">5f</a>`:\'\'}${d.a4&&d.a4!==\'N/A\'?`<a J="1c 1c-1x"9G="${1F(d.a4)}"52="9F">Döküb4</a>`:\'\'}</j>`).4d(\'\')}2F V jC(4b){9 3s=I.O(\'2J-4w\');if(!3s)Q;3s.w.13=\'1Z\';I.1s.1X.3a(\'fs-aZ\');I.1s.w.bB=\'qb\';9 av=I.O(\'x-6T-jB\');9 nm=I.O(\'x-6T-3r\');9 rl=I.O(\'x-6T-4G\');if(av)av.2c=(2d||\'U\').1t().5t(0,1).6y();if(nm)nm.2c=2d||\'5Iıcı\';if(rl)rl.2c=2p?\'qa\':\'fW\';1y{if((!48||48.1j===0)&&2n.jA){9 q9=[\'x-4B-38\',\'x-4u-38\',\'x-3V-38\',\'x-4t-38\',\'x-5Q\'];q9.1K(id=>{9 el=I.O(id);if(el)el.1B=\'<j J="2O-5G-1d">Yü9N...</j>\'});1E 2n.jA}}1o(e){}1y{o5()}1o(e){}hS(4b||\'4B\')}V C1(){9 3s=I.O(\'2J-4w\');if(3s)3s.w.13=\'1p\';I.1s.1X.4v(\'fs-aZ\');I.1s.w.bB=\'\'}V hS(4b){I.3Q(\'#2J-4w .q-72-1d\').1K(i=>i.1X.4v(\'2Z\'));9 aK=I.5e(`#2J-4w.q-72-1d[1a-2J-4b="${4b}"]`);if(aK){aK.1X.3a(\'2Z\')}1i{I.3Q(\'#2J-4w .q-72-1d\').1K(i=>{9 oc=(i.81(\'1S\')||\'\');if(oc.21(`\'${4b}\'`)||oc.21(`\\"${4b}\\"`))i.1X.3a(\'2Z\')})}I.3Q(\'#2J-4w .q-5d-8u\').1K(s=>s.1X.4v(\'2Z\'));9 el=I.O(`x-5d-${4b}`);if(el)el.1X.3a(\'2Z\')}9 eV={"4B":[{"P":"jy a3 – bAı 4Aı23 fT C0 dnşıbz","1s":"Müş7i 3z yaşadığı 45ın ya da 45ıfS 8Q 1R 3z 3p mı 36 4R? 5J 1R 3z 3p 2I 4p fR fQği yönü7l 62 7g.\\nMüş7i BZığı 6w iY ‘da BY 36 4R. ArçBX/BW/BV/BU pU fj a3 fV jy a3’BT 2I 8Q 3z cLı23 62 7g.\\BSıbh BR dışı23 yaşBQ 1R 3z 2I a3 ve BP q8 bağ6xısını BO 7Y BN 5H. « dnşadığınız 6S 36 BM a3 ve BL q8 bağ6xısını BK 10 sn 6R jz açBJ q7? BIı4E jz 45ını açıp 36 BH q7? (jbıca öq2 7U q1 fUıp 7Y açtı8N 6R, dh 7Z 63ığı 6w q0 bağlı pZ 7m pY 1R bağ6xı pXğı d7 pW)\\fy 9O iE 2I jy a3 f0ıcısı4E bq://fP.fO.bs.tr/ 1R hız 80 d3ı 8T fN 7jşfMı 5H.\\nHız 80 8T 8 q6 5Xı23 2I 8S bağ6xı hızının düşük bjğdm 8S fv sağd6ıcısı fLşby geçfK 5H.\\n8 q6 üfJ 2I müşff 6S göjx kısa 1R pV BG 4R.\\BF a1ı ve hız BE q5ç4kı göjx ps alındı8N 6R müş8D pT için 4p pt pRği j7 fgığı23 6v 3y 62 j6ği yönü7l 62 7g.\\fy dcı gün içbm fH pQ 9Uı müşfG yaşı58 2I tüm d8 fF’a arıza a1ı açılır. 8P fEç müş4F 3y sınırlı 2I 17:8R – fD:8R fCıfB db d9şı23 fA 1R 3z 64ığına cY 6v göfz için bt 7jşılır."},{"P":"BD bi – bAı 4Aı23 fT 7V dnşıbz","1s":"Müş7i 3z yaşadığı 45ın ya da 45ıfS 8Q 1R 3z 3p mı 36 4R? 5J 1R 3z 3p 2I 4p fR fQği yönü7l 62 7g.(Müş4F İoK 4f fj iş9Y q4 d0 q3 BC, mümküBB dcı iş9Y q4 BA q3 36 Bz, By db d9ş4kı4E 36 Bx Bw)\\jv 1R 3z 53 2I, fP.fO.bs.tr 1x ü4Q hız 80 d3ı 8T fN 7jşfMı 5H.\\nHız 80 8T 8 bx 5Xı23 2I 8S bağ6xı hızının düşük bjğu 8S Bv sağd6ıcısı 3y fLşby geçfK 5H. (Öq2 7U q1 fUıp 7Y açtı8N 6R dh 7Z 63ığı 6w q0 bağlı pZ 7m pY 1R bağ6xı pXğı d7 pW)\\n8 bx üfJ 2I, 8J Bt Bs 4f fuın Br 7Y yüBq Bp, 3z 9O pu Bo 6S göjx pV a1ı 5H.\\n 4. Hız 80, 6w pU Bn ve sürüm bt alındı8N 6R, pT için 4p pS pRği, j7 fgığı23 e-jw  3y 62 j6ği yönü7l 62 7g.\\n 5. 8P dcı gün içja fH pQ 9Uı müşfG yaşı58 2I tüm d8 fF’a arıza a1ı açılır. 8P fEç müş4F 3y sınırlı  2I 17:8R – fD:8R fCıfB db d9şı23 fA 1R 3z 64ığına cY 6v göfz için bt 7jşılır."},{"P":"pP – bAı 4Aı23 fT 7V dnşıbz","1s":"Müş7i 3z yaşadığı 45ın ya da 45ıfS 8Q 1R 3z 3p mı 36 4R? 5J 1R 3z 3p 2I 4p fR fQği yönü7l 62 7g.\\jv 1R 3z değj2, öpN bq://fP.fO.bs.tr/ 1R hız 80 d3ı 8T fN 7jşfMı 5H.\\nHız 80 8T 8 bx 5Xı23 2I 8S bağ6xı hızının düşük bjğdm 8S fv sağd6ıcısı fLşby geçfK 5H.\\n8 bx üfJ 2I müşff aşağıbh adıbvı iWı 5H.\\n3. pPın iş9Y Bm öğBl, görüşme ü4Q ‘’Bk’’ 4f ‘’pO’’ kıBjı4E müş4F djı 36 4R.\\n(Bi 10 üBh iş9Y d4 Bg pO kıiU göBf.)\\n4. 6i 36 8Lı23 36 fI pM, ok 3y göiP pv, dg 3y 9Vıp 7X 64ığı ve kırmızı 9W içiL dg 3y dl a2 kaç pL iş7k sağj9ığı 36 4R.\\n5. 1 – 35 juı jt jsı9S, bu jr cWığı23 3z yaşanıjq, dl a2 7m hızlı jp sübw jo ve f8 jn 1R şd1 7Z sağjm jl.jk.jj.ji, dk.11.14.27 4f jh.jg.jf.8 djı 36 je.\\n6. Be jd pK pJ 6R pIı pH 8Lı23 ‘’Bd’’ ‘’Bc’’ kısa Bbı pG, kısa pF adıbv 3y müş7i dh pE a2 bağpDığı B9, en jc dg 3y değişpC f0ıcı açıp pBırdı8N 6R 7Y 45ını 36 pA iF. (jbıca müş4F 45ıfxı df değil, fq 7U pz 4f py seçip 36 fI öj5)\\n7. 8P dcı gün içja fH iş9Y d4 4f pw 9Uı müşfG yaşı58 2I tüm d8 fF’a arıza a1ı açılır. 8P fEç müş4F 3y sınırlı 2I 17:8R – fD:8R fCıfB db d9şı23 fA 1R 3z 64ığına cY 6v göfz için bt 7jşılır"},{"P":"B8 bf","1s":"35 sn juı jt jsı9S, bu jr cWığı23 3z yaşanıjq, dl a2 7m hızlı jp sübw jo ve f8 jn 1R şd1 7Z sağjm jl.jk.jj.ji, dk.11.14.27 4f jh.jg.jf.8 djı 36 je."},{"P":"B7 – bAı 4Aı23 fT 7V dnşıbz","1s":"Müş7i 3z yaşadığı 45ın ya da 45ıfS 8Q 1R 3z 3p mı 36 4R? 5J 1R 3z 3p 2I 4p fR fQği yönü7l 62 7g.\\jv 1R 3z değj2, öpN bq://fP.fO.bs.tr/ 1R hız 80 d3ı 8T fN 7jşfMı 5H.\\nHız 80 8T 8 bx 5Xı23 2I 8S bağ6xı hızının düşük bjğdm 8S fv sağd6ıcısı fLşby geçfK 5H.\\n8 bx üfJ 2I müşff aşağıbh adıbvı iWı 5H.\\oO ü4Q ‘’B6’’ kıB5 müş4F djı 36 4R.\\B4 36 8Lı23 36 fI pM, ‘’B3 B2’’ kısmı23 9Vıp 7X 64ığı,  9W içiL dg 3y dl a2 kaç pL iş7k sağj9ığı 36 4R.\\n1 – 35 juı jt jsı9S, bu jr cWığı23 3z yaşanıjq, dl a2 7m hızlı jp sübw jo ve f8 jn 1R şd1 7Z sağjm jl.jk.jj.ji, dk.11.14.27 4f jh.jg.jf.8 djı 36 je.\\B1 jd pK pJ 6R pIı pH 8Lı23 ‘’B0’’ kısa AZ pG, kısa pF adıbv 3y müş7i dh pE a2 bağpDığı jd, en jc dg 3y değişpC f0ıcı açıp pBırdı8N 6R 7Y 45ını 36 pA iF. (jbıca müş4F 45ıfxı df değil, fq 7U pz 4f py seçip 36 fI öj5)\\fy dcı gün içja fH iş9Y d4 4f pw 9Uı müşfG yaşı58 2I tüm d8 fF’a arıza a1ı açılır. 8P fEç müş4F 3y sınırlı 2I 17:8R – fD:8R fCıfB db d9şı23 fA 1R 3z 64ığına cY 6v göfz için bt 7jşılır."},{"P":"‘’4Aı23 AX 1R AW a0ştu’’ 7nısı","1s":"Bu p7ı 8Q 1R 45ın 6S bjğAV ya da 3Nıcı Tüpr sınıpqı dışı23 1R pv 6Mşim sağj9ığı23 9Qşımıza çıAUır.\\ftıcının 3z yaşadığı 45ın 36 4R ve 8Q 1R 45ın 6S 7X 64ığı j8 4R.\\AT’da AS 8Lı4E ip 7W alınır ve iCışı 1R AR 7X 64ığı j8 4R.\\ftıcı iCışı23 2I 6Mşim sağAQğı d7 7g, fw 3Nı58 2I APı 5H.\\AO AN kısmı23 AM ALırılır ve 3Nıcıf6 7Y bbş p2 36 pu AK 4R.\\AJ AI 4f 9Uı 1R ağda bu b9 AHının alınıp alıpmığı j8 4R.\\iZ ve pk pj ve açma iş8M AGır.\\fy 9O iE 2I j7 için 6w ve diğer d8 4p pt 62 j6ği AF. AE de 3Nıcıf6 alıfk ps 7K 4R."}],"4u":[{"P":"ERİŞİM bf","1s":"‘’AD ppı po Tüpr sınıpqı dışı23 AC AB.’’ 7nısı\\AAıfk b9 müş7i 9Z dışı23 iOı ve 9Z içbm 2I fw ya da j4 1R fuın 6wı23 9T iOı4E Azır.\\n\\nMüş8D 9Z dışı23 7X 64ığı j1, 9Z dışı23 2I ‘’Ax ppı po 45ıfxın 9Z dışı4E Awği’’ yönü7l 62 7g.\\Av içbm 2I fw ya da j4 1R fuın 6wı23 9T 7X ya da 64ığı j1. 6K 2I pn dışı bı9Xılıp 7Y oQ öj5.\\Au ya da j4 1R 8J j3ı58 2I müş7i ip 7W öğAt ve bq://tr.As.bs/Aq/Ap-my-ip/ ip 7W 36 4R.  Aoı An Am o2 ü4Q alınıp alıpmığının 36ü için bq://Al.io Aj Ai 36 4R.\\Ah 7W 9Z dışı ya da Ag d7 Af 1R fv sağd6ıcısı değj2 müş8D Aeğu Ac Ab, 9Z vb. 1R or 7X 64ığı ya da 6wının şAa 6wı 7X 64ığı j1."},{"P":"‘’IP pl’’ 7nısı","1s":"İp pl 6S 8Q 1R 3z 53 2I, 6v 4f şd5 1R çok A9 iIı A8 iHı alınır.\\ftıcının ip 7W A7 da 7X ya da 64ığı, iY – A6 – A5 A4 iNüsü ü4Q 36 A3 çı9Qı9S. İA2 1R seçA1 7U pk pj ve açma iş8M 63ırı9S."}],"3V":[{"P":"73 8P A0 zZıl zYılır?","1s":"cF piı ph\\iZ piı ph\\zX zWı başlığı23 fuın açızVı ya da zU zT zSı şo8 4p j0 3y 9QşılaşzR. Bu 54 j0, 3Nıcı zQ doğzP zO zN 6MşzM zL zK.\\zJın p9 sürümü\\nÖzI j0ı\\zH zG\\zF zE/zD zC çalışan zB 8J\\iZın güpg oiı (pf d4 sürüzA)\\ftıcıya zz eH:\\pd açılı58 mu, zy açıpe zxı58 mu?\\pd sürümü, 6w iş9Y d4 sürümü zw? (iY 36ü)\\zv zu zt 9Wı 3p mı?"}],"4t":[{"P":"‘’pc bn iKı’’ 7nısı","1s":"Gözs ki özr doğzq ‘’zp’’ iS iX 9P, küçük iG 3y 9Rıldığı23 ‘’pc bn iKı’’ 4mı alınmıştır. Bu b9 3y 9Qşılaşıldığı23 iX p3 frış, pb, küçük iG ya da boşzo bı9Xıp0 9Rıldığını zn, 3Nıcıyı bu doğzm doğru 9Rım için yözk zj."},{"P":"‘’8O bn 6K p8’’ 7nısı","1s":"Göfd öp6 bg p9 1R p5 9P 9Rıldığı23 ‘’8O bn 6K p8’’ p7ısı alınır."},{"P":"‘’Geçp4 8O bn’’ 7nısı","1s":"Göfd öp6 bg 7m öbp 3Nılmış 1R p5 9P 9Rıldığı23 ‘’Geçp4 8O bn’’ 4mı alınır.\\zi p3 d0 zh 3Nıldığını aşağıbh göfd bg zg 9Wı23 op p2 görüntüzf."},{"P":"ze bi 9B 7V","1s":"zdı zc, 3Nıcı4k fe iR cZ ü4Q S zb z9 iWı23 oU 6sın oTız8ı23 4f bl oYçoXştiğbm, üoS iV 7U z7şz6.  Bu z5, 3Nıcının 8J ü4Q fq 7U 57 fh d3ı z4.\\n\\z3 işz2 başarılı z1 için:\\n fe iR cZ ü4Q 6sın fp iş8M 7hılız0 3NıyZ yY iQı, 6t anı23 fm açık p1ıdır.\\n 9B iş8M 8J içyX 7hıyWıdır.\\yV yU iDı4E yT ü4Q “yS” kıiU 3Nıp0 yöoZ sağyR.  5Iıcı başarılı 1R şd1 57 fh 63ı8N 6R, 57 oNı yQ oYçoXşir ve oW 9VıyPı23 o6 iş7k aşağıbh bg görünür (yO göoM bg).  Bu iş7k, yN doğru şd1 oVıyMı için öyL."},{"P":"cF cZ bi 9B 7V","1s":"Müşol cF cZ ü4Q fiıyK oU 6sın oTığı 4f bl bjğu yJ oj ücX 9T ot.\\nÜoS 9T yI için, 8J ü4Q 57 6t yHı oP. 6u 6t oR, 6sın fp oR d0 oG oFği iQı açık 2I, o yG açıyF 6t oQ oP.\\oO ü4Q ‘’yE’’ kıiU 3Nılır.\\nMüş4F 57 fh 63ı8N 6R ücX oNı ve yD o7ıl gözüktüğü göoM oL.\\yC 6t yB öfl görüntüsü yA oL."},{"P":"fcİfb bf","1s":"İoK bi 6u 9B ‘’oJ BaşoIına oH’’ 7V\\n\\nİos fiıf7 müş4F 57 6t iş8M 63ığı23 ‘’oJ BaşoIına oH’’ 4mı iM 2I, fm açık iS oG oFği 3y 6sın alınmış, oD 6t 63ığı 6v 7W 9Uı 1R 6v oC.\\n\\oBı 6v 7W 3y 57 6t 63ığı23 ‘’oA’’ kısmı23 öfl 8L görüntüsü7l kırmızı oz alıfk ‘’yz’’  kısmı çı9Q, ok 3y göiP ID kısmı4E doğru ücVği ID oyı 3y ox."},{"P":"fcİfb bf","1s":"fj ‘’6u Başka fo 5Iıcıya oE fnğu İçin 6u iT İş8M Başarısız fn’’ 7V\\n\\ow fiıf7 müş4F 57 6t iş8M 63ığı23 ‘’6u Başka fo 5Iıcıya oE fnğu İçin 6u iT İş8M Başarısız fn’’ 4mı iM 2I, fm açık iS iR cZ yx iQı 3y 6sın alınmış, oD 6t 63ığı 6v 7W 9Uı 1R 6v oC.\\n\\oBı 6v 7W 3y 57 6t 63ığı23 ‘’oA’’ kısmı23 öfl 8L görüntüsü7l kırmızı oz alıfk ‘’yw fe yv’’  kısmı çı9Q, ok 3y göiP ID kısmı4E doğru ücVği ID oyı 3y ox."},{"P":"fcİfb bf","1s":"fj bi 6u 9B İş7k ouı 4f ÜcX yu 7V\\ow fiıf7 müş4F ö7P ytış iOına rağiN 57 fh 63ığı23 ‘’İş7k fgı, İş7k ouı 4f iJ 4Nı’’ 4mı iM ve ücX 9T ot 2I, müşff oq ys 7jşıomı 5H.\\yr 9P, fe iDı4E ö7P 7hıldığına cY müş8D göyq ö7P ypı (yo) içiL or ynır.\\on oq 9P 3y ücVği oh ü4Q aşağıbh göfd bg og > oe > ym kısmı23 yl cWığı ykıp ‘’yj yh’’ kısmı4E op 7hılıp, ücX ID’yg ‘’yf ID’’ ü4Q ooşı9S."},{"P":"fcİfb bf","1s":"Tüoa iJ iKı 4f iJ ye Değil 7V\\on b9, ob ID 4f Geçf5 f9 iIı 9Rıomı4E iHı alınır.  Müşol f8 ydı büyük küçük yc 9Qıştıyb 4f y9 iHı oj bu 3z alıy8.\\nÇözüm 7U iG 4mı oiı için oh>og>oe>y7 y6 kısmı4E od cWığı y5, ob ID y4ını ‘’y3 ID’’ kısmı4E y2ıp, 3Nıcı Tüoa y1 o9 ‘’y0’’ kısmı4E geçf5 9P o9, 3Nıcıya 7jştığımıf7, ID ve Geçf5 9P xZ 7hıştırır şo8 xY iF.\\xXı 3z 9O iE 2I, 3Nıcıf6 xW alıp, ID ve geçf5 xV 3y 3Nıcının ücVğbd xU xT. Müş7i ücVğbd xS iDı4E 7hıldı 2I, müş8D şxR o7ıl güxQği 3y o6 62 7g."}]};V o5(){9 o4=(48||[]).1Y(c=>1D(c.4o||\'\').2y()===\'4p\');18 bc=[];1y{bc=1P.7S(2l.49(\'iz\')||\'[]\')}1o(e){bc=[]}9 o3=(3H.4j(bc)&&bc.1j)?bc:o4;9 8I={4B:[],4u:[],3V:[],4t:[],5Q:[]};o3.1K(c=>{9 3k=`${c.P||\'\'}${c.X||\'\'}${c.1C||\'\'}`.2y();if(3k.21(\'45ın\')||3k.21(\'xP\')||3k.21(\'xO\')||3k.21(\'akış\')||3k.21(\'tv\')){8I.4B.5E(c)}1i if(3k.21(\'6Mşim\')||3k.21(\'o2\')||3k.21(\'xN\')||3k.21(\'8K\')||3k.21(\'bbş\')||3k.21(\'iCışı\')){8I.4u.5E(c)}1i if(3k.21(\'3V\')||3k.21(\'8J\')||3k.21(\'b9\')||3k.21(\'xM\')||3k.21(\'xL\')){8I.3V.5E(c)}1i if(3k.21(\'6t\')||3k.21(\'6sın\')||3k.21(\'6sıxK\')||3k.21(\'xJ\')||3k.21(\'ö7P\')||3k.21(\'o1\')||3k.21(\'xI\')){8I.4t.5E(c)}1i{8I.4B.5E(c)}8I.5Q.5E(c)});2n.f3=8I;9 b8=(o0,2b,f4)=>{9 9I=I.O(o0);if(!9I)Q;9I.iB=()=>8H(2b,9I.R||\'\',f4)};b8(\'x-51-4B\',\'4B\',\'x-4B-38\');b8(\'x-51-4u\',\'4u\',\'x-4u-38\');b8(\'x-51-3V\',\'3V\',\'x-3V-38\');b8(\'x-51-4t\',\'4t\',\'x-4t-38\');b8(\'x-51-5Q\',\'5Q\',\'x-5Q-38\');8H(\'4B\',\'\',\'x-4B-38\');8H(\'4u\',\'\',\'x-4u-38\');8H(\'3V\',\'\',\'x-3V-38\');8H(\'4t\',\'\',\'x-4t-38\');8H(\'5Q\',\'\',\'x-5Q-38\')}18 b6=1l;V 8H(cT,q,f4){9 44=I.O(f4);if(!44)Q;9 28=(2n.f3&&2n.f3[cT])?2n.f3[cT]:[];9 aV=1D(q||\'\').1t().2y();9 3C=!aV?28:28.1Y(c=>{9 3k=`${c.P||\'\'}${c.X||\'\'}${c.1C||\'\'}${c.1x||\'\'}`.2y();Q 3k.21(aV)});9 5C=(2p?`<j w="13:1Z;3L:1z;2g-3e:3x;1r:1z 0 f2;"><1m J="x-1c x-1c-3o"1S="nX()"><i J="2a fa-7Q"></i> ${b6 ? \'Düb7 f1\' : \'Düb7 Aç\'}</1m>${b6?`<1m J="x-1c x-1c-3o"1S="nW(\'${cT}\')"><i J="2a fa-aP"></i> 79 4Y</1m>`:``}<1b w="1n:#iA;1f-2j:cH;1f-1W:.4P">Bu düxH f0ıcıda xGır(nS).</1b></j>`:\'\');if(!3C.1j){44.1B=5C+\'<j J="2O-5G-1d">9Kıt 4Nı.</j>\';Q}44.1B=5C+`<j J="x-1u-20">${3C.1O((c,2t)=>nZ(c,2t)).4d(\'\')}</j>`}V cS(c,2t){Q(c&&(c.id||c.3U))?1D(c.id||c.3U):`${(c.P||\'\').5t(0,40)}xF${2t}`}V nZ(c,2t){9 P=1F(c.P||\'\');9 2V=1F(c.3U||c.4o||\'aUİK\');9 eZ=(c.X||\'\').3E();9 X=1F(eZ);9 1x=(c.1x||\'\').1t();9 1C=(c.1C||\'\').1t();9 2b=cS(c,2t);9 eO=(eZ&&eZ.1j>nD)||(1C&&1C.1j>nC)||!!1x;Q`<j J="x-1u"1a-2b="${1F(2b)}"><j J="x-1u-eP"><j J="x-1u-P">${P}</j><j J="x-1u-2V">${2V}</j></j><j J="x-1u-1s">${X?`<j J="x-1u-X x-1u-X-ig">${X}</j>`:``}${eO?`<1m J="x-nz"1S=\'nY(${1P.2e(2b)})\'>ny ic</1m>`:``}</j><j J="x-1u-cN">${1C?`<1m J="x-1c x-1c-6O"1S=\'8B(${1P.2e(1C)})\'><i J="2a fa-6O"></i> aS</1m>`:``}${2p&&b6?`<1m J="x-1c x-1c-3o"1S="nU(${1P.2e(2b)})"><i J="2a fa-7Q"></i> Dü6j</1m><1m J="x-1c x-1c-3o"1S="nT(${1P.2e(2b)})"><i J="2a fa-cI"></i> 8w</1m>`:``}</j></j>`}V nY(2b){1y{9 28=ii();18 7T=4Z;if(1D(2b||\'\').5B(\'2t:\')){9 n=37(1D(2b).6N(\':\')[1],10);if(!6r.cU(n))7T=28[n]}1i{7T=28.5z((c,2t)=>cS(c,2t)===2b)||4Z}if(!7T){Z.19({1U:\'4y\',P:\'9Kıt 4Nı\',3J:9w,31:1l});Q}9J({P:7T.P||\'6q\',X:7T.X||\'\',1C:7T.1C||\'\',61:7T.61||\'\',1x:7T.1x||\'\'})}1o(e){Z.19(\'2o\',\'6q açıxEı.\',\'1T\')}}V nX(){b6=!b6;1y{9u()}1o(e){}}V eX(){1y{9 3t=1P.7S(2l.49(\'iz\')||\'[]\');if(3H.4j(3t))Q 3t}1o(e){}Q[]}V eW(3t){2l.6p(\'iz\',1P.2e(3t||[]))}V nW(cT){Z.19({P:"73 79 4Y",1M:`<15 id="tc-P"J="1h-15"1v="Başlık"><15 id="tc-2V"J="1h-15"1v="eY (ör: aUİK)"><15 id="tc-1x"J="1h-15"1v="5f (7N)"><1k id="tc-X"J="1h-1k"1v="Açı6n"></1k><1k id="tc-1C"J="1h-1k"1v="4e (7N)"></1k>`,3m:1w,33:"4Y",41:"4xç",4c:()=>{9 P=(I.O(\'tc-P\').R||\'\').1t();if(!P)Q Z.4X("Başlık 5S");Q{id:\'iy\'+3j.3w(),P,3U:(I.O(\'tc-2V\').R||\'aUİK\').1t(),1x:(I.O(\'tc-1x\').R||\'\').1t(),X:(I.O(\'tc-X\').R||\'\').1t(),1C:(I.O(\'tc-1C\').R||\'\').1t(),4o:\'4p\'}}}).1J(2f=>{if(!2f.4W)Q;9 6Q=eX();9 b5=(48||[]).1Y(c=>1D(c.4o||\'\').2y()===\'4p\');9 3t=(6Q.1j?6Q:b5);3t.nV(2f.R);eW(3t);1y{9u()}1o(e){}})}V nU(2b){9 6Q=eX();9 b5=(48||[]).1Y(c=>1D(c.4o||\'\').2y()===\'4p\');9 3t=(6Q.1j?6Q:b5);9 2t=3t.xD((c,i)=>cS(c,i)===2b);if(2t<0)Q;9 c=3t[2t]||{};Z.19({P:"79ı Dü6j",1M:`<15 id="tc-P"J="1h-15"1v="Başlık"R="${1F(c.P||\'\')}"><15 id="tc-2V"J="1h-15"1v="eY"R="${1F(c.3U||c.4o||\'aUİK\')}"><15 id="tc-1x"J="1h-15"1v="5f"R="${1F(c.1x||\'\')}"><1k id="tc-X"J="1h-1k"1v="Açı6n">${1F(c.X||\'\')}</1k><1k id="tc-1C"J="1h-1k"1v="4e">${1F(c.1C||\'\')}</1k>`,3m:1w,33:"5T",41:"4xç",4c:()=>{9 P=(I.O(\'tc-P\').R||\'\').1t();if(!P)Q Z.4X("Başlık 5S");Q{...c,P,3U:(I.O(\'tc-2V\').R||\'aUİK\').1t(),1x:(I.O(\'tc-1x\').R||\'\').1t(),X:(I.O(\'tc-X\').R||\'\').1t(),1C:(I.O(\'tc-1C\').R||\'\').1t(),4o:\'4p\'}}}).1J(2f=>{if(!2f.4W)Q;3t[2t]=2f.R;eW(3t);1y{9u()}1o(e){}})}V nT(2b){Z.19({P:"cE mi?",X:"Bu xC nS xB xA.",1U:"4y",3m:1w,33:"8w",41:"4xç"}).1J(2f=>{if(!2f.4W)Q;9 6Q=eX();9 b5=(48||[]).1Y(c=>1D(c.4o||\'\').2y()===\'4p\');9 3t=(6Q.1j?6Q:b5);9 cP=3t.1Y((c,i)=>cS(c,i)!==2b);eW(cP);1y{9u()}1o(e){}})}V 8H(55,38,nR=1l){9 el=I.O(55);if(!el)Q;if(!38||38.1j===0){el.1B=\'<j w="22:aQ;4D:.7">Bu başlık 5Xı23 iç4K 53.</j>\';Q}el.1B=38.1O((c)=>`<j J="2H-1d"w="9E:9D"1S="9J(${1P.2e(c).3D(/</g,\'\\ie\')})"><1b J="2H-P">${1F(c.P||\'\')}</1b>${nR?`<1b J="2H-7f"w="29:#xz;1n:#xy;1V:4C 3I #xx">${1F(c.4o||\'\')}</1b>`:\'\'}<j J="2H-2u"w="7d-5F:8E-5s">${1F(c.X||\'\')}</j>${c.1C?`<j J="1C-2k"w="1r-1Q:1z"><b>4e:</b><j w="1r-1Q:5V;7d-5F:8E-5s">${1F(c.1C||\'\')}</j><j w="X-2g:4L;1r-1Q:1z"><1m J="1c 1c-6O"1S="43.5g(); 8B(\'${5U(c.1C||\'\')}\')">aS</1m></j></j>`:\'\'}</j>`).4d(\'\')}V nQ(){9 1O={4B:\'x-4B-8G\',4u:\'x-4u-8G\',3V:\'x-3V-8G\',4t:\'x-4t-8G\'};74.6P(1O).1K(2b=>{9 el=I.O(1O[2b]);if(!el)Q;1y{9 3e=(eV&&eV[2b])?eV[2b]:[];if(!3H.4j(3e)||3e.1j===0){el.1B=\'<j w="22:42 76;4D:.7">Bu başlık 5Xı23 4p döküb4 4Nı.</j>\';Q}el.1B=3e.1O((it,2t)=>`<j J="5W-1u"><1m 1A="1m"J="5W-eP"1S="nP(eU)"><1b J="5W-P">${1F(it.P||(\'İç4K \'+(2t+1)))}</1b><i J="2a fa-b0-ix"></i></1m><j J="5W-1s"w="13:1p; 7d-5F:8E-5s">${1F(it.1s||\'\')}</j></j>`).4d(\'\')}1o(6o){6h.1T(\'nQ 1T\',6o);el.1B=\'<j w="22:42 76;4D:.7">Döküxw yüiw. (xv 36 xu)</j>\'}})}V nP(1c){1y{9 1u=1c.iv(\'.5W-1u\');if(!1u)Q;9 1s=1u.5e(\'.5W-1s\');if(!1s)Q;9 is=1s.w.13!==\'1p\';1s.w.13=is?\'1p\':\'2G\';1u.1X.iu(\'aZ\',!is)}1o(e){}}V hO(55){9 2k=I.O(55);if(!2k)Q;2n.5D=2n.5D||{56:\'4O\',5h:[]};if(!8F||74.6P(8F).1j===0){2k.1B=\'<j w="22:aQ;4D:.7">xt yü9N...</j>\';eT().1J(()=>hO(55));Q}cO(55)}V cO(55){9 2k=I.O(55);if(!2k)Q;9 st=2n.5D||{56:\'4O\',5h:[]};9 3M=8F[st.56];if(!3M){2k.1B=`<j J="2J-61">2o:Adım 4Nı(${1F(1D(st.56))}).</j>`;Q}9 nO=st.5h&&st.5h.1j>0;18 1M=`<j w="13:1Z; 3L:5q; 2g-3e:3x; cR-4i:5F-cQ; 1r-3q:42; 1Z-3s:3s"><j w="13:1Z; 3L:5q; 2g-3e:3x">${nO?`<1m 1A="1m"J="2J-1c 2J-1c-1e"1S="nK(\'${55}\')">⬅aY</1m>`:\'\'}<1m 1A="1m"J="2J-1c 2J-1c-1e"1S="nI(\'${55}\')">↻Sıfıxs</1m></j><j w="4D:.7; 1f-1W:.4P">Adım:${1F(3M.P||\'\')}</j></j><j J="2J-7L-P">${1F(3M.P||\'\')}</j>`;if(3M.X){1M+=`<j w="1f-1W:7e; 1r:1z 0; 7d-5F:8E-5s">${1F(3M.X)}</j>`}if(3M.1C){1M+=`<j J="2J-1C-2k"><1b J="2J-1C-1q">Müş8D iq:</1b>${1F(3M.1C)}</j>`}if(3M.61){1M+=`<j J="2J-61">${1F(3M.61)}</j>`}if(3H.4j(3M.7c)&&3M.7c.1j){1M+=`<j J="2J-7c-8C">`;3M.7c.1K(1c=>{9 nN=1c.w===\'1e\'?\'2J-1c-1e\':\'2J-1c-aX\';1M+=`<1m 1A="1m"J="2J-1c ${nN}"1S="nL(\'${55}\',\'${5U(1c.cP||\'4O\')}\')">${1F(1c.X||\'\')}</1m>`});1M+=`</j>`}2k.1B=1M}V nL(55,eS){2n.5D=2n.5D||{56:\'4O\',5h:[]};2n.5D.5h.5E(2n.5D.56);2n.5D.56=eS;cO(55)}V nK(55){2n.5D=2n.5D||{56:\'4O\',5h:[]};if(2n.5D.5h.1j){2n.5D.56=2n.5D.5h.nJ();cO(55)}}V nI(55){2n.5D={56:\'4O\',5h:[]};cO(55)}V ii(){Q(48||[]).1O((c,i)=>({...c,ih:i})).1Y(c=>1D(c.4o||\'\').2y()===\'4p\'&&1D(c.5r||\'\').2y()!==\'nq\')}2F V nE(){if(!2p)Q;9{R:v}=1E Z.19({P:\'73 79 4Y\',1M:`<15 id="tc-P"J="1h-15"1v="Başlık"><1k id="tc-X"J="1h-1k"1v="Açı6n"></1k><1k id="tc-1C"J="1h-1k"1v="4e (7N)"></1k><15 id="tc-1x"J="1h-15"1v="5f (7N)">`,3m:1w,33:\'4Y\',41:\'4xç\',4c:()=>{9 P=(I.O(\'tc-P\').R||\'\').1t();if(!P)Q Z.4X(\'Başlık 5S\');9 7b=1H 3j();9 7R=7b.eR()+"."+(7b.9M()+1)+"."+7b.9L();Q{nG:\'1u\',4o:\'73\',P,X:(I.O(\'tc-X\').R||\'\').1t(),1C:(I.O(\'tc-1C\').R||\'\').1t(),3U:\'\',1x:(I.O(\'tc-1x\').R||\'\').1t(),5r:\'6K\',2h:7R}}});if(!v)Q;Z.19({P:\'eG...\',3R:()=>Z.4z(),31:1l});1y{9 r=1E 2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:\'nF\',32:2d,3l:3d(),...v})});9 d=1E r.2B();if(d.2m===\'1N\'){Z.19({1U:\'1N\',P:\'i0\',3J:9w,31:1l});1E aW();9u()}1i{Z.19(\'2o\',d.3v||\'eF\',\'1T\')}}1o(e){Z.19(\'2o\',\'6i 4mı.\',\'1T\')}}2F V nB(eQ){if(!2p)Q;9 it=(48||[])[eQ];if(!it)Q;9{R:v}=1E Z.19({P:\'73 79ı Dü6j\',1M:`<15 id="tc-P"J="1h-15"1v="Başlık"R="${1F(it.P||\'\')}"><1k id="tc-X"J="1h-1k"1v="Açı6n">${1F(it.X||\'\')}</1k><1k id="tc-1C"J="1h-1k"1v="4e">${1F(it.1C||\'\')}</1k><15 id="tc-1x"J="1h-15"1v="5f"R="${1F(it.1x||\'\')}">`,3m:1w,33:\'5T\',41:\'4xç\',4c:()=>{9 P=(I.O(\'tc-P\').R||\'\').1t();if(!P)Q Z.4X(\'Başlık 5S\');Q{P,X:(I.O(\'tc-X\').R||\'\').1t(),1C:(I.O(\'tc-1C\').R||\'\').1t(),1x:(I.O(\'tc-1x\').R||\'\').1t(),}}});if(!v)Q;9 3T=it.P;if(v.X!==(it.X||\'\'))3S(3T,\'6m\',v.X,\'1u\');3F(()=>{if(v.1C!==(it.1C||\'\'))3S(3T,\'4e\',v.1C,\'1u\')},xr);3F(()=>{if(v.1x!==(it.1x||\'\'))3S(3T,\'5f\',v.1x,\'1u\')},ik);3F(()=>{if(v.P!==3T)3S(3T,\'77\',v.P,\'1u\')},xq)}V nA(eQ){if(!2p)Q;9 it=(48||[])[eQ];if(!it)Q;Z.19({P:\'cE mi?\',X:\'79 hW alıhV.\',1U:\'4y\',3m:1w,33:\'8w\',41:\'4xç\'}).1J(2f=>{if(!2f.4W)Q;3S(it.P,\'ij\',\'7a\',\'1u\')})}V nx(q=\'\'){9 2k=I.O(\'x-5Q\');if(!2k)Q;9 aV=1D(q||\'\').1t().2y();9 28=ii();9 3C=!aV?28:28.1Y(c=>{9 3k=`${c.P||\'\'}${c.X||\'\'}${c.1C||\'\'}${c.1x||\'\'}`.2y();Q 3k.21(aV)});9 5C=(2p&&4n)?`<j w="13:1Z;3L:1z;2g-3e:3x;1Z-3s:3s;1r-3q:1z"><1m J="x-1c x-1c-3o"1S="nE()"><i J="2a fa-aP"></i> 79 4Y</1m></j>`:``;if(!3C.1j){2k.1B=5C+\'<j w="4D:.7;22:aQ">9Kıt 4Nı.</j>\';Q}2k.1B=5C+`<j J="x-1u-20">${3C.1O(c=>{9 eO=((c.X||\'\').1j>nD)||((c.1C||\'\').1j>nC)||!!(c.1x||\'\');9 aT={P:c.P,X:c.X||\'\',1C:c.1C||\'\',1x:c.1x||\'\'};9 78=(2p&&4n)?`<1m J="x-1c x-1c-3o"1S="43.5g();nB(${c.ih})"><i J="2a fa-7Q"></i> Dü6j</1m><1m J="x-1c x-1c-3o"1S="43.5g();nA(${c.ih})"><i J="2a fa-cI"></i> 8w</1m>`:``;Q`<j J="x-1u"w="9E:9D"1S=\'9J(${1P.2e(aT).3D(/</g,\'\\\\ie\')})\'><j J="x-1u-eP"><j J="x-1u-P">${1F(c.P||\'\')}</j><j J="x-1u-2V">aUİK</j></j><j J="x-1u-1s">${(c.X||\'\')?`<j J="x-1u-X x-1u-X-ig">${1F(c.X||\'\')}</j>` : `<j w="4D:.7">İç4K 53</j>`}${eO?`<1m J="x-nz"1S=\'43.5g();9J(${1P.2e(aT).3D(/</g,\'\\\\ie\')})\'>ny ic</1m>`:``}</j><j J="x-1u-cN"1S="43.5g();">${(c.1C||\'\')?`<1m J="x-1c x-1c-6O"1S=\'8B(${1P.2e(c.1C||\'\')})\'><i J="2a fa-6O"></i> aS</1m>`:``}${78}</j></j>`}).4d(\'\')}</j>`}V 9u(){9 9I=I.O(\'x-5Q-51\');nx(9I?9I.R:\'\')}V i9(){if(!3H.4j(8A)||8A.1j===0)Q;9 nv=(2n.ib&&2n.ib.1j)?2n.ib:nw;8A.1K(s=>{9 3k=`${s.P||\'\'}${s.2u||\'\'}${s.3W||\'\'}`.2y();9 eN=nv.5z(r=>3k.21(1D(r.3r||\'\').2y().4M(\'*\',\'\').1t().6N(\' \')[0]));if(eN){9 5Z=`4Aın cLıxpş:${eN.9H||eN.cM}`;if(s.54&&!s.54.21(\'4Aın cLı\'))s.54=`${s.54}•${5Z}`;1i if(!s.54)s.54=5Z;if(s.3W&&!s.3W.21(\'4Aın cLı\'))s.3W=`${s.3W}\\n\\n${5Z}`;1i if(!s.3W)s.3W=5Z}})}9 ia=2n.nu;2n.nu=V(){1y{if(5Y ia===\'V\')ia()}1o(e){}1y{i9()}1o(e){}};18 eJ=4Z;18 i3=0;18 eL=4Z;18 i7=0;9 eE={4B:\'4Aın 7Oı\',4u:\'n9şim 7Oı\',3V:\'cF n2ı\',4t:\'9B 7Oı\',3P:\'Sık n0 eH\',8t:\'Ö7P 7Oı\'};V xo(4b){Q 4b}V np(3h){9 c=(3h||"").3E().1t().2y();if(c.5B("45"))Q"4B";if(c.5B("6M"))Q"4u";if(c.5B("3V"))Q"3V";if(c.5B("xn"))Q"4t";if(c.5B("xm"))Q"3P";if(c.5B("öde")||c.5B("xl")||c.21("ö7P")||c.21("xk"))Q"8t";Q""}2F V nf(){if(!2w){if(5Y i8==="V")i8("2w xjı değil. xiğ xh xg.");cK 1H aR("2w xf")}9 2f=1E 2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:"ns"})});9 1a=1E 2f.2B();if(1a.2m!=="1N")cK 1H aR(1a.3v||"ns nr");9 8y=3H.4j(1a.1a)?1a.1a:[];Q 8y.1Y(r=>(r.eM||"").3E().1t().2y()!=="nq").1O(r=>({aJ:np(r.eB),9v:(r.eB||"").1t(),4V:(r.Başlık||r.no||r.77||r["Başlık"]||"").3E().1t(),9y:(r.İç4K||r.xe||r.2N||r["İç4K"]||"").3E(),9x:(r.Adım||r.xd||r.xc||r["Adım"]||"").3E(),7K:(r.7M||"").3E(),1x:(r.5f||"").3E(),hX:(r.eM||"").3E()})).1Y(x=>x.aJ&&x.4V)}2F V nn(){if(!2w)Q[];1y{9 r=1E 2U(2w,{2T:\'2S\',2R:{"2N-2r":"X/2Q;2M=2L-8"},1s:1P.2e({2K:\'nc\'})});9 d=1E r.2B();if(d&&d.2m===\'1N\'&&3H.4j(d.eI))Q d.eI;Q[]}1o(e){Q[]}}2F V hZ(cG=1l){9 3w=3j.3w();if(!cG&&eL&&(3w-i7)<xb)Q eL;9 6L=1E nn();eL=6L;i7=3w;Q 6L}V 5p(s){Q(s||"").3E().3D(/[&<>"\']/g,m=>({"&":"&nl;","<":"&lt;",">":"&gt;","\\"":"&nk;","\'":"&#39;"}[m]))}V hP(3K,3e){9 44=I.O(3K==="4B"?"x-4B-38":3K==="4u"?"x-4u-38":3K==="3V"?"x-3V-38":3K==="4t"?"x-4t-38":3K==="3P"?"x-3P-38":3K==="8t"?"x-8t-38":"");if(!44)Q;if(!3e||3e.1j===0){44.1B=`<j w="22:aQ;4D:.75">Bu başlık 5Xı23 i6üz iç4K 53.(xa:x9)</j>`;Q}9 nj=(2p&&4n)?`<j w="13:1Z;3L:1z;2g-3e:3x;1r:0 0 42;"><1m J="x-1c x-1c-3o"1S="mZ(\'${3K}\')"><i J=\\"2a fa-aP\\"></i> aO aL 4Y</1m></j>`:``;V ng(3C){44.1B=nj+3C.1O((it,2t)=>{9 1s=[it.9y?`<j J="q-5W-1s">${it.9y}</j>`:"",it.9x?`<j J="q-5W-i5"><b>Adım:</b> ${5p(it.9x)}</j>`:"",it.7K?`<j J="q-5W-i5"><b>7M:</b> ${5p(it.7K)}</j>`:"",it.1x?`<j J="q-5W-i5"><b>5f:</b> <a 9G="${5p(it.1x)}" 52="9F">${5p(it.1x)}</a></j>`:""].4d("");9 nh=(2p&&4n)?`<1b w="x8:4L;13:cJ-1Z;3L:5q"1S="43.5g();43.ni();"><1m J="x-1c x-1c-3o"w="22:5V 1z"1S="mY(\'${3K}\',\'${5U(it.4V)}\')"><i J=\\"2a fa-7Q\\"></i></1m><1m J="x-1c x-1c-3o"w="22:5V 1z"1S="hU(\'${3K}\',\'${5U(it.4V)}\')"><i J=\\"2a fa-cI\\"></i></1m></1b>`:``;Q`<3b J="q-x7"w="1r-3q:1z;29:#8z;1V-5A:42;1V:4C 3I 6l(0,0,0,.i4);22:1z 42"><eK w="9E:9D;1f-2j:cH">${5p(it.4V)}${nh}</eK><j w="22:1z 76 76 76">${1s}</j></3b>`}).4d("")}ng(3e)}2F V 8s(cG=1l){9 3w=3j.3w();if(!cG&&eJ&&(3w-i3)<x6)Q eJ;1y{9 8y=1E nf();eJ=8y;i3=3w;Q 8y}1o(e){6h.1T("[nb x5]",e);Q[]}}2F V ez(3K){1y{9 15=I.O(`x-${3K}-51`);9 q=(15?15.R:\'\').2y().1t();9 28=1E 8s(1l);9 i2=28.1Y(x=>x.aJ===3K);9 3C=!q?i2:i2.1Y(x=>(x.4V||\'\').2y().21(q)||(x.9y||\'\').2y().21(q)||(x.9x||\'\').2y().21(q)||(x.7K||\'\').2y().21(q));hP(3K,3C)}1o(e){6h.1T(e)}}18 9C=4Z;2F V x4(){if(9C)Q 9C;1y{9 r=1E 2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:\'nc\'})});9 d=1E r.2B();if(d&&d.2m===\'1N\'&&3H.4j(d.eI)){9C=d.eI.1Y(9A);Q 9C}}1o(e){6h.1T(\'[nb x3]\',e)}9C=[];Q 9C}V x2(3K){9 m={4B:\'4Aın 7Oı\',4u:\'n9şim 7Oı\',3V:\'cF n2ı\',4t:\'9B 7Oı\',3P:\'Sık n0 eH\',8t:\'Ö7P 7Oı\'};Q m[3K]||\'4Aın 7Oı\'}2F V mZ(3K){if(!2p)Q;9 6L=1E hZ(1l);9 i1=eE[3K]||\'\';9 3n=(6L&&6L.1j?6L:74.mX(eE)).1O(c=>1D(c||\'\').1t()).1Y(9A);9 eD=3H.aN(1H 9z(3n.1O(x=>x.2y()))).1O(k=>3n.5z(x=>x.2y()===k));9 eC=eD.1O(c=>`<1e R="${5p(c)}"${c===i1?\'6k\':\'\'}>${5p(c)}</1e>`).4d(\'\');9{R:v}=1E Z.19({P:\'73 aL 4Y\',1M:`<34 id="td-3h"J="1h-34"w="2i:2x%;3i-2i:hY">${eC}</34><15 id="td-P"J="1h-15"1v="Başlık"><1k id="td-4i"J="1h-1k"1v="İç4K"></1k><15 id="td-7L"J="1h-15"1v="Adım (7N)"><15 id="td-1L"J="1h-15"1v="7M (7N)"><15 id="td-1x"J="1h-15"1v="5f (7N)">`,3m:1w,33:\'4Y\',41:\'4xç\',4c:()=>{9 3h=(I.O(\'td-3h\')?.R||i1||\'\').1t();if(!3h)Q Z.4X(\'eB 5S\');9 P=(I.O(\'td-P\').R||\'\').1t();if(!P)Q Z.4X(\'Başlık 5S\');Q{9v:3h,4V:P,9y:(I.O(\'td-4i\').R||\'\').1t(),9x:(I.O(\'td-7L\').R||\'\').1t(),7K:(I.O(\'td-1L\').R||\'\').1t(),1x:(I.O(\'td-1x\').R||\'\').1t(),hX:\'6K\'}}});if(!v)Q;Z.19({P:\'eG...\',3R:()=>Z.4z(),31:1l});1y{9 r=1E 2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:\'mW\',32:2d,3l:3d(),cD:\'\',hT:\'\',...v})});9 d=1E r.2B();if(d.2m===\'1N\'){Z.19({1U:\'1N\',P:\'i0\',3J:9w,31:1l});1E 8s(1w);ez(3K)}1i{Z.19(\'2o\',d.3v||\'eF\',\'1T\')}}1o(e){Z.19(\'2o\',\'6i 4mı.\',\'1T\')}}2F V mY(3K,4V){if(!2p)Q;9 28=1E 8s(1l);9 it=28.5z(x=>x.aJ===3K&&(x.4V||\'\')===4V);if(!it)Q;9 6L=1E hZ(1l);9 3n=(6L&&6L.1j?6L:74.mX(eE)).1O(c=>1D(c||\'\').1t()).1Y(9A);9 eD=3H.aN(1H 9z(3n.1O(x=>x.2y()))).1O(k=>3n.5z(x=>x.2y()===k));9 eC=eD.1O(c=>`<1e R="${5p(c)}"${(c===it.9v)?\'6k\':\'\'}>${5p(c)}</1e>`).4d(\'\');9{R:v}=1E Z.19({P:\'73 x1 Dü6j\',1M:`<34 id="td-3h"J="1h-34"w="2i:2x%;3i-2i:hY">${eC}</34><15 id="td-P"J="1h-15"1v="Başlık"R="${5p(it.4V||\'\')}"><1k id="td-4i"J="1h-1k"1v="İç4K">${5p(it.9y||\'\')}</1k><15 id="td-7L"J="1h-15"1v="Adım"R="${5p(it.9x||\'\')}"><15 id="td-1L"J="1h-15"1v="7M"R="${5p(it.7K||\'\')}"><15 id="td-1x"J="1h-15"1v="5f"R="${5p(it.1x||\'\')}">`,3m:1w,33:\'5T\',41:\'4xç\',4c:()=>{9 3h=(I.O(\'td-3h\')?.R||it.9v||\'\').1t();if(!3h)Q Z.4X(\'eB 5S\');9 P=(I.O(\'td-P\').R||\'\').1t();if(!P)Q Z.4X(\'Başlık 5S\');Q{9v:3h,4V:P,9y:(I.O(\'td-4i\').R||\'\').1t(),9x:(I.O(\'td-7L\').R||\'\').1t(),7K:(I.O(\'td-1L\').R||\'\').1t(),1x:(I.O(\'td-1x\').R||\'\').1t(),hX:\'6K\'}}});if(!v)Q;Z.19({P:\'aM...\',3R:()=>Z.4z(),31:1l});1y{9 r=1E 2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:\'mW\',32:2d,3l:3d(),cD:it.9v,hT:it.4V,...v})});9 d=1E r.2B();if(d.2m===\'1N\'){Z.19({1U:\'1N\',P:\'8x\',3J:9w,31:1l});1E 8s(1w);ez(3K)}1i{Z.19(\'2o\',d.3v||\'eA\',\'1T\')}}1o(e){Z.19(\'2o\',\'6i 4mı.\',\'1T\')}}V hU(3K,4V){if(!2p)Q;Z.19({P:\'cE mi?\',X:\'aL hW alıhV.\',1U:\'4y\',3m:1w,33:\'8w\',41:\'4xç\'}).1J(2F 2f=>{if(!2f.4W)Q;1y{9 28=1E 8s(1l);9 it=28.5z(x=>x.aJ===3K&&(x.4V||\'\')===4V);9 cD=it?it.9v:3K;9 r=1E 2U(2w,{2T:\'2S\',2R:{\'2N-2r\':\'X/2Q;2M=2L-8\'},1s:1P.2e({2K:\'hU\',32:2d,3l:3d(),cD:cD,hT:4V})});9 d=1E r.2B();if(d.2m===\'1N\'){1E 8s(1w);ez(3K);Z.19({1U:\'1N\',P:\'mV\',3J:8v,31:1l})}1i{Z.19(\'2o\',d.3v||\'mU\',\'1T\')}}1o(e){Z.19(\'2o\',\'6i 4mı.\',\'1T\')}})}2n.hS=2F V(4b){1y{I.3Q(\'#2J-4w .q-72-1d\').1K(li=>li.1X.4v(\'2Z\'));9 hR={5R:\'x-5d-5R\',4u:\'x-5d-4u\',3V:\'x-5d-3V\',4t:\'x-5d-4t\',8t:\'x-5d-8t\',5Q:\'x-5d-5Q\',3P:\'x-5d-3P\'};9 mT=hR[4b]||hR[\'5R\'];9 aK=I.5e(`#2J-4w.q-72-1d[1a-2J-4b="${4b}"]`);if(aK)aK.1X.3a(\'2Z\');I.3Q(\'#2J-4w .q-5d-8u\').1K(v=>v.1X.4v(\'2Z\'));9 hQ=I.O(mT);if(hQ)hQ.1X.3a(\'2Z\');if([\'4u\',\'3V\',\'4t\',\'8t\',\'3P\'].21(4b)){9 28=1E 8s(1l);9 3C=28.1Y(x=>x.aJ===4b);hP(4b,3C)}if(4b===\'5R\'){1y{hO(\'x-5R\')}1o(e){6h.1T(e)}}if(4b===\'5Q\'){1y{9u()}1o(e){6h.1T(e)}}}1o(e){6h.1T(e)}};1y{2n.hN=hN}1o(e){}',62,2912,'|||||||||const||||||||||div|||||||||||||style||||||||||||document|class|||||getElementById|title|return|value||||function||text||Swal||||display||input|||let|fire|data|span|btn|item|option|font|swal|swal2|else|length|textarea|false|button|color|catch|none|label|margin|body|trim|card|placeholder|true|link|try|10px|type|innerHTML|script|String|await|escapeHtml|formValues|new|score|then|forEach|note|html|success|map|JSON|top|bir|onclick|error|icon|border|size|classList|filter|flex|grid|includes|padding|nda|||group||all|background|fas|key|innerText|currentUser|stringify|res|align|date|width|weight|box|localStorage|result|window|Hata|isAdminMode|agentSelect|Type||idx|desc|feedback|SCRIPT_URL|100|toLowerCase|period|eval|json|left|agent|groupSelect|async|block|news|ise|tech|action|utf|charset|Content|home|manual|plain|headers|POST|method|fetch|badge|val|2026|index|active||showConfirmButton|username|confirmButtonText|select||kontrol|parseInt|list||add|details|pts|getToken|items|height|bold|cat|max|Date|hay|token|showCancelButton|opts|admin|var|bottom|name|wrap|arr|sport|message|now|center|ile|sorun|2027|callId|filtered|replace|toString|setTimeout|row|Array|solid|timer|tabKey|gap|stepData|kullan|2025|info|querySelectorAll|didOpen|sendUpdate|originalTitle|code|app|detail|5px|dash|opt||cancelButtonText|12px|event|listEl|yay|||database|getItem|Math|tab|preConfirm|join|Script|veya|agentName|response|content|isArray|lar|count|hatas|isEditingActive|category|teknik|groups|nbsp|currentCategory|activation|access|remove|fullscreen|Vazge|warning|showLoading|Yay|broadcast|1px|opacity|ndan|teri|role|segment|homeBlocks|position|erik|right|replaceAll|bulunamad|start|9rem|zerinden|edilir|2028|total|byAgent|baslik|isConfirmed|showValidationMessage|Ekle|null||search|target|yok|tip|targetId|currentStep|paket|yor|15px|form|game|quiz|view|querySelector|Link|stopPropagation|history|channel|criteria|adminUserList|targetAgent|evalItem|disabled|ballWrap|__escapeHtml|8px|status|line|slice|modal|agentGroup|ratio|goalMsg|searchInput|find|radius|startsWith|bar|embeddedTwState|push|space|mini|istenir|Kullan|Genel|time|allEvaluationsData|targetGroup|selectedGroup|month|lobby|cards|wizard|zorunlu|Kaydet|escapeForJsString|6px|doc|alt|typeof|extra||alert|bilgi|yapt|olmad||min|sort|for|bPts|container|eee|ring|options|pCurrentQ|btns|enabled|console|Sunucu|zenle|selected|rgba|Text|klama|err|setItem|Detay|Number|sat|aktivasyon|Paket|eposta|cihaz|lant|toUpperCase|8rem|perm|quote|4px|criteriaList|header|resolve|year|twState|selectEl|removeItem|Aktif|cats|eri|split|copy|keys|cur|sonra|sorunu|side|startEpoch|slider|evalData|cVal|mPts|indexOf||random|nav|Teknik|Object||2px|Title|edit|Kart|Pasif|today|buttons|white|1rem|tag|verilir|yap|terinin|payla|lem|nde|daha|Uyar|itim|Telesat|column|menuPermissions|Bilgi|2029|1500|isChat|contentHtml|controls|feedbackType|table|context|avg|textContent|shotDir|toast|loader|qdTimer|sales|ticker|out|not|step|Not|opsiyonel|Sorunlar|deme|pen|dateStr|parse|found|olarak|Sorunu|adresi|olup|tekrar|izleme|testi|getAttribute|secondary|metni|0e1b42||666|nemli|isTelesatis|callDate|Yok|red|2e7d32|important|1fr|pScore|optionsEl|qEl|penalty|keeperWrap|ball|quizQuestions|exp|pronunciation|fav|isMandatory|parts|allowedGroups|loadTechDocsIfNeeded|payment|section|1000|Sil|Kaydedildi|rows|fff|sportsData|copyText|area|teriye|pre|techWizardData|docs|renderTechList|buckets|uygulama|login|ekran|lemi|ktan|Kampanya|Sorun|genel|00|internet|sonucu|telesalesOffers|namad|description|TL|offer|isCriteriaBased||fullText|35px|wrapper|Chat||substring|fabb00|appendChild|createElement|detailEl|filteredUsers|strong|d32f2f|user|topIssues|chartData|className|firstAnswerIndex|qdScore|qdStep|guide|TR|bucket|activeCards|cardPreview|errorMsg|maxTotal|currentTotal|noteInput|filterTechCards|kategori|1200|adim|icerik|Set|Boolean|Aktivasyon|__techCategoryOptions|pointer|cursor|_blank|href|end|inp|showCardDetail|Kay|getFullYear|getMonth|kleniyor|devam|kodu|kar|yaz|labilir|aktif|farkl|kay|alan|rak|letim|yurt|olu|kayd|sitemize|TV|docLink|_|training|telesales|renderHomePanels|todayEl|match|padStart|screen|||hideHomeScreen|fetchFeedbackLogs|fetchEvaluationsForAgent|points|callid|||setButtonScore||detailHtml|85rem|periodString||borderColor||questionStats||tabName|sSportRole|wizardStepsData|keeper|msg|double|jokers|optEl|currentQ|rawData|quickEditDropdown|dateString|favs|categoryKey|byData|Konu|Kaydediliyor|from|Yeni|plus|16px|Error|Kopyala|detailObj|TEKN|query|loadContentData|primary|Geri|open|chevron||||man|base|techEditMode|zenlemeyi|bindSearch|hata||giri|override|ini||SORUNLARI|gibi|daki|Uygulama|oldu||yenileme|inde|Kodu||nce|https||com|bilgileri||mlar|resi|mbps|ime|yorum|Canl|overflow|f8f9fa|Teklif|999|cnt|payload|apiCall|newsData|getTime|dateISO|arad|olabilir|iptal|loadFeedbackList|detailsArr|600px|Feedback|Puan|oldDetails|Call|Mail|criteriaFieldsHtml|Tarih|tfen|editBtn|MANUEL|topic|formatDateToDDMMYYYY|required|Tip|currentMonth|logRow|aSel|gSel|tEl|||renderStep|restartBtn|pCorrectCount|shooterWrap|pBalls||tbody|leaderboard|qdQueue||correct|qdTimeLeft|day|byDate|dot|update|fix|30px|toLocaleLowerCase|sessionTimeout|sSportGroup|sSportToken|perms|savedRole|ringEl|liveScoreEl|checked|keyKategori|Silinsin|App|force|800|trash|inline|throw|hakk|duration|actions|embeddedTwRender|next|between|justify|techCardKey|bucketKey|isNaN|yeli|aral|yelik|dair|Store|hangi|ekilde||yapmas|sistemi|ifre|lay|bilgisi|bilgilerle|arkada||ekip|ayn|||auto|sunucu|sadece||sunucular|185|web|unu|Ya||renderTelesalesScripts|salesScripts|renderTelesalesDataOffers|fetchSheetObjects||seg|sel|loaded|ncellendi|annEl|todays|cardGrid|empty|geri|100px|f9f9f9|dashboard|close|dateParts|toISOString|question|500|Promise|evaluations|sizing|600|feedbackLogsData|Individual|parsed|dashboardChart|qShortText|qFullText|das|logout|manualFeedbackBtn|assignBtn|adminFilters|aaa|pWrongCount|show|900|updateJokerButtons|doubleChanceUsed|half|call|idxs|updateQuickHud|bank|incorrect|correctAns|doubleBtn|halfBtn|callBtn|444|Metin|preview|borderLeft|updateSearchResultCount||||htmlContent|loading|changePasswordPopup||sSportUser||addCardDropdown|loadingMsg|savedGroup|normalizeList||filterTechDocList|Kaydedilemedi|Kategori|optionsHtml|uniq|TECH_TAB_LABELS|Eklenemedi|Ekleniyor|Sorular|categories|__techDocsCache|summary|__techCatsCache|Durum|hit|hasDetail|head|dbIndex|getDate|newStep|loadTechWizardData|this|TECH_DOC_CONTENT|saveTechOverride|getTechOverride|Etiket|rawText|taray|Kapat|14px|__techBuckets|listId|ici|dan|zda|genellikle|Kod||VASYON|AKT|rseldeki|Google|teriden|tamamland|aktivasyonu|uygulamam|Android|nan|rnek|cihazda|Oldu|Bir|alma|manuel|yanl||nKullan|uygulaman|servis|VPN|nlar|nSorun|nderilmesi|sistemsel|ndaki|vardiyas|01|birka|Erlab|terilerde|benzer|edilmesi|zerinde|mesi|ileti|mas|bizimle|hiztesti|www|inceledi|ekibin|nlarda|Donma|kapat|olmayan|Temsilci|endDate|telesat|saveTelesalesScriptsStore|getTelesalesScriptsStore|showCloseButton|Segment|20px|isAllowedByPerm|undefined|shown|555|league|showHomeScreen|AYLIK|YILLIK|hem|paketi||recalcTotalScore||recalcTotalSliderScore||allowEscapeKey|allowOutsideClick|Manuel|dashed|grow|range|Max|bAct|good|live||circle|Bildirim|foundUser|maxHeight|netim|silent|collapse|ed6c02|decision|shadow|columns|template|cols|currentYear|isManual|e65100|loadTrainingData|focusConfirm|fullLabel|dataIndex|legend|chartLabels|ctx|toFixed|statsArray|acc|matchAgent|matchGroup|filteredRows|populateDashboardFilters|qusers|quality|twRenderStep|restart|||loadWizardData|shooter|shoot|isCorrect|dive|floor|Soru|setDoubleIndicator|pQuestionQueue|quickDecisionQuestions|Okunu|long|isPast||dateLabelByKey|itemsRaw|2000|Category|700px|2500|Detail|pron|cardEl|addEventListener|absolute|relative|catSelectHTML|Quiz|Duyuru|scriptCont|renderCards|catNorm|highlightText|steps|reject|__dataLoadedResolve|pass|sSportLoginAt|sSportSessionDay|setHomeWelcomeUser|locadmin|loadMenuPermissions|ALL|checkbox|allowed|openMenuPermissions|renderTechWizardInto|__renderTechList|viewEl|tabMap|switchTechTab|keyBaslik|deleteTechDoc|nacak|pasife|durum|420px|getTechDocCategoryOptions|Eklendi|defaultLabel|scoped|__techDocsLoadedAt|08|meta|hen|__techCatsLoadedAt|showGlobalError|applySportsRights|_orig_afterDataLoaded|sportRightsFromSheet|oku||u003c||truncate|__dbIndex|__getTechCardsForUi|Status|700||||||iletilecek||isOpen||toggle|closest|klenemedi|down|local_|techCardsOverride|888|oninput|yurtd|taraf|eder|iletebiliriz|harf|dolay|hatal|Abone|Bulunamad|erisinde|geliyor|men|olmas|sterilen|hesab|Play|olan|Atama|sayolu|otomatik|uygulamas|kampanya|TVmanager|nCihaz|sorunlar|sorulur|ilse|kullanm|benzeri|nerilir|verilece|inceleme|teyit|lad|erinde|Ayr|uygun|sunucuyu|edilmelidir|178|175|195|249|103|192|193|lanabilen|sorunsuz|veren|tepsi|yorsa|saniye|say|normal|aras|nGenel|posta|steren|Smart|yeniden|__dataLoadedPromise|avatar|openTechArea|startDate|telesalesScriptsOverride|kla|10b981|keySegment|keyTitle|deleteTelesalesOffer|telesalesOffersFromSheet|Cevap|pucu|Yetkisiz|openTelesalesArea|Veri|cardsData|homeBlocksCache|homeQuote|Bug|quoteEl|openNews|latest|spk|Ma|fetchBroadcastFlow|kadar|net|NCAA|ikna|nedeni|number|cNote|updateRowSliderScore|bad|mAct||gAct|oldItem|fetchCriteria|agentGroupRaw|logEvaluation|formattedCallDate|callDateRaw||lamaz||80px|40px|URL||users|fetchUserListForAdmin|Temsilciler|Ekibi||scoreColor|75rem|Tarihi|fff8e1|normalEvaluations|reverse|fetchEvaluations|forcedName|Evet|check|rawCallDate|resize|zel|Bilgilendirme|monthOptions|nem|Telefon|MONTH_NAMES|333|cleanCallId|feedbackItems|manualBtn|updateTrainingTarget|completeTraining|startTraining|aArr|earned|verisi|updateDashRingTitle|round|gradient|conic|selectedAgent|monthSelect|loadQualityDashboard|refreshFeedbackData|Gruplar|element|defaultTab|dashFilterArea|oldModal|openQualityArea||contentDiv|backBtn||green|ade|fetchLeaderboard|ddd||resetField||||loadPenaltyQuestion|450|showWrong|fromCharCode|pAskedCount|pickNextQuestion||hub|closeModal|Tamam|clearInterval|finishQuickDecision|renderQuickQuestion|Hemen|removeCount|optLen|guess|experts|Bey|joker|pencil|dateLabelTr|pastByDate|renderSection|Yakla|upcomingByDate|announcer|dateKeys|fff5f5|iklik|tickerText|activeNews|Icon|Pronunciation|kon|Spor|ptal|getCategorySelectHtml|quizAns|quizOpts|quizQ||quizExtra|Desc|Metni|newsExtra|sportExtra|extraCont|catCont||filterContent||editing||alertTxt|isFav|filterCategory||searchTerm||safeTitle||QuizOptions|parseDateTRToTS|SHA256|CryptoJS|tir|password|startSessionTimer||main|Misafir|isLocAdmin||filterButtons|checkAdmin|BAKIM_MODU|loadHomeBlocks|uName|uPass|el2|savedUser|loginAt|sessionDay|VALID_CATEGORIES|clean|getFavs|added|activeBtn|menus|set|getMyRole|allowedRoles|roles|viewId|Silinemedi|Silindi|upsertTechDoc|values|editTechDoc|addTechDoc|Sorulan||Hatalar|||||||Eri||TECH|getTechDocCategories|||__fetchTechDocs|render|adminBtns|preventDefault|adminBar|quot|amp||__fetchTechDocCategories|Baslik|__normalizeTechCategory|pasif|failed|getTechDocs||afterDataLoaded|rights|SPORTS_RIGHTS_FALLBACK|renderTechCardsTab|Devam|readmore|deleteTechCardSheet|editTechCardSheet|120|180|addTechCardSheet|addCard|cardType||embeddedTwReset|pop|embeddedTwBack|embeddedTwChangeStep||cls|backVisible|toggleDocAccordion|renderTechDocs|showCategory|local|deleteTechCard|editTechCard|unshift|addTechCard|toggleTechEdit|openTechCardDetail|techCardHtml|inputId|google|vpn|techCards|baseCards|renderTechSections|ilgili|nas|eklinde|bulup|rksat|Hizmet||tarih|General||Reporting|Tvmanager|olmamas|bazen||teriler|lmas|nBu|ula|arama|GPA|yer||olmuyor|Tamamlanamad||nAndroid|bulabiliriz|aramas|alana|Subscriberlog|nFarkl|adresidir|ancak|Ait|kimli|Apple|Aittir|kas|Abonelik|OS|gibidir|rsellerdeki|atamas|nMindbehind|gerekiyor|denemesi|yaparken|yelikleri|ald|abonelik|tan|log|ekle|ger|nlendirme|larak|olmal|yaparak|kodunun|ersiz|promosyon|rnekteki|uyar|Edilemedi|eski||eksik|Promosyon|nUygulama|lmadan|Eski|ncel|Nedenler|Kaynakl|kapama|modem|Karantina|nmad|devre|sebebiyle|haklar|rlar|rkiye|bilgiler|ekibimize|etmesi|yerden|sunucuda||1080p|720|etmesini|kapatt|tirip|land|bizim|yoldaki|kullanarak|destek|canl|ettikten|tespit|saniyede|gereken|ncelikle|pingwindows10|Bilgisayar|cihazlarda|iletildi|ekibe|incelenmesi|marka|video|verilebilir|olaca|iyi|olursa|modeme|modemi|neri|cihazdan|sistemli|sonu|Mbps|misiniz|elektrik|lists|Admin|hidden|trainingData||deleteTelesalesScript|editTelesalesScript|addTelesalesScript|129|showTelesalesOfferDetail|upsertTelesalesOffer|Teklifi|editTelesalesOffer|TeleSat|addTelesalesOffer|140|okQ|segs|switchTelesalesTab|TELESales_OFFERS_FALLBACK|reply|objection|tips|example|safeGetToken|actionName|cardId|visibleGroups|ncelleniyor|art|kind|zenleme|ann|eklenmemi|clickable|160|duyuru|Hen|openBroadcastFlow|todayISO|iso|toISO|setActiveFilterButton|Tenis|seasons|2030|Ligi|Basketbol|LaLiga|Bundesliga|teklif|sunulan|edilen|talepleri|gelen||Inbound|INBOUND|1499|olmak|yard|fiyatlar|indirimli||zmek|yenilenmedi|||inin|aboneli|nedenle|recinden|yenilenemeyen|cret||||fakat|giren|recine|GRACE||VE||ACT|109|ksek|oran|ndirim|kazan|eden|bitimine|bulunmu|talebinde|Aboneli|NG|CANCELL|anda|sonlanm|ard|herhangi|ayl|NBACK|continue|string|ccc|custom|Orta|medium|badScore|mediumScore|inner|outer|1976d2|2rem|targetCallId|editEvaluation|calldate|Tipi|fafafa|Detaylar|rlan|Haz|iniz|Rapor||removeChild|download|setAttribute||url|blob|csvData|exportEvaluations|ndir|marginTop|0px|||toggleEvaluationDetail|groupName|updateAgentListBasedOnGroup|evaluation|||listenDateDisplay||Dinlenme|callDateDisplay|agentNameDisplay|noteDisplay|rowColor|reverseButtons|kaydet|yeni|Yine|Dinleme|kerrer|warn|isDup|normCallId|normAgent|zorunludur|alanlar|aretli|save|newHtmlContent|187|250|focus|95rem|accent|giriniz|Medya|Sosyal|Destek|Kanal|bildirim|isCurrent|infoType|calendar|footer|feedbackTopic|feedbackClass|formatPeriod|isEvaluationDetail|Sadece|isManualFeedback|isMailFeedback|||creator|Ata|onchange|||ste|Linki|trainingId|Tamamlad|openTrainingLink||statusHtml|docHtml|||targetUser|||||trainings|callbacks|tooltip|plugins|f0f0f0|beginAtZero|scales|indexAxis|maintainAspectRatio|responsive|borderRadius|borderWidth|1b5e20|b71c1c|125|108|237|211|backgroundColor|datasets|labels|Chart|Ortalama|parseFloat|percentage|safeParseDetails|renderDashboardChart|renderDashAgentScores|rate|targetHit|curr|matchMonth|selectedMonth|eDate|fetchEvaluationsForDashboard|refreshQualityData|fetchEvaluationsForFeedback|shouldRefresh|agents|localeCompare|updateFeedbackAgentList|populateFeedbackFilters|cand|tryList|object|evals|Ortalamas|Durumu|updateDashAgentList|selectIds|populateMonthFilterFull|switchQualityTab|charAt||fullScreen|twChangeStep|btnClass||safeScript|copyScriptContent|Asistan|finally|Yeniden|Yanl|totalShots|finishPenaltyGame|textDecoration|first|wrong|goal|2400|balls|miss|low|1400|shootBall|letter|soru|buildQuestionQueue|startPenaltySession|medal|bgStyle|showLobby|timeout|1800|answerQuick|txt|quick|take|yenileyin|sayfay|openQuickDecisionGame|plan|zet|Ne|ullar|elendi|expert|isActive|openSales|detailText||pronDetail|showSportDetail||pronHtml|editSport|openGuide|str|format|weekday|numeric|digit|DateTimeFormat|Intl|_formatBroadcastDateTr|980|divider|Gelecek|sub|past|emptyText|css|d9534f|e9e9e9|passiveBadge|passiveStyle|editNews|animation|startTicker|statusOptions|typeOptions|Sat|Alt|Code|change|fontSize|italic|transparent|f0e68c|inherit|family|110px|e0e0e0|editContent|eklendi|sorusu|ans|Giriniz|toggleAddFields|Detayl|Bilinmeyen|Modu|dropdownQuickEdit|safeText|regex|formattedText|toggleFavorite|favClass|editIconHtml|newBadge|isNew|star|isFavorite|QuizAnswer|old|ifrenizi|venlik|clearTimeout|usernameInput|passInput|dropdownPerms|pointerEvents|Kalite|isQualityUser|control|maintenance|hashedPass|girisYap|isTooOld|isOtherDay|maxAgeMs|todayKey|savedToken|checkSession|encodedText|diffDays|diffTime|cleanDate|sSportFavs|sliders|ffcdd2|maxScores|scoreBadges|Yetkiler|tableHtml|netimi|Yetki|rowsHtml|thead|Men|cells|FALSE|normMap|chat|getMenuPermissions|applyMenuPermissions|shortcut|menu|navButtons|grp|getMyGroup|normalizeRole|normalizeGroup|blocks|Konuyu|techTabLabel|CATS|loadTechCategoryOptions|DOCS|120000|accordion|float|Teknik_Dokumanlar|Sheet|300000|Step|Adim|Icerik|missing|ayarlayabilirsin|alttan|Sa|ayarl|odeme|ode|bil|akt|__normalizeTechTab|biti|1100|350|rla|Sihirbaz|edin|Konsolu|manlar|dde3ff|2b3a8a|eef2ff|silinecek|veriden|kart|findIndex|lamad|__|saklan|zenlemeler|apple|store|nalma|versiyon|crash|proxy|buffer|don|ncelleyebilece|ifresini|biz|yapabiliriz|kendimiz|kod|onay|nAyn|ilerlemesini|kopyala|UniqueID|bilgilerini|arat|Extrenal|numaras|belirleyip|Provisions|Thirtdparty|nabiliyor|sistemden||rabiliyor|harfleri|baz|Active|Subscriber|sine|Identifer||Transaction|ayarlan|tarihi|Payments|almaktad|makbuz|faturas|nderilen|nGPA|kodunu|yapm|Bulunamama|Package|Validate|gmail||packageValidation|yandaki|butonu|nPaket|loglarda|paketapple|kken|hesap|yapmalar|olabilmeleri|zaman|zdan|nemlidir|mlanmas|paketin|ekli|tlar|sistemde|lanabilir|paketgoogle|Mindbehind|ekibi|nDestek|lmal|erisinden|Gmail|lan|rken|olabilmesi|leminin|nAktivasyon|gerekmektedir|durumda|meyebiliyor|aktifle|klar|Plus||Sport|durumlarda|Baz|Playstore|leyebiliriz|Campaign|hesapta|nPromosyon|gerekir|nlendirmemiz||rultuda|tespitle|luk|YILLIKLOCA|rusu|rnekte|rselde|depolama|yeterli|nCihazda|nedir|kapan|yoksa|Sorulabilecek|mleri|fazla|planda|Arka|RAM|nDolu|cihazlar|nUyumsuz|nbellek|nUygulaman|olur|neden|ilememesine|uygulamaya|etkileyerek|rudan|deneyimini|abiliriz|kapanmas|kendine|kendi|lmamas|hatalar|nApp|Yap|Nas|Analizi|enek|kinci|edilerek|Gate|Admission|CMS|karantina|girilmesinden|defa|irket|otel|lokasyonun||bulundu|bilinen|ISP|nIp|girilip|adresine||vpnapi|adresin|zamanda|Ayn|whats|tools||wizcase|renilir|nVPN|nYurt|izlenemedi|lisans||kaynaklanmaktad|nAl|verilememektedir|hizmet|Lisans|Excel|iletilir|uygulan|mesaj|veri|nMobil|rica|sonland|oturumlar|Devices|nTVmanager|kapatmas|layamayaca|konum|SubscriberLog|nTvmanager|kmaktad|unda|kesinti|beklenmedik||yolunu|macOShost|nUygun|loss|packet|nSunucu|sayolundan|pingmacOS|MacOS|YAYIN|sunucusunu||yollar|host2|Host|Uygun|nderilebilir|cihazlara|zeri|Windows|sayollar|pingWindows7|renilip|sitemi|model|durumunda|istenilir|klenmesi|silip|temizlenmesi|verilerin||servisi|istenebilir|etmeleri|gerekirse|edilebilir|mobil|nse|izliyorsa|Mobil|testinin|nVideo|talep|edebilir|Ard|abilir|kesip|modeminizin|ederken|verilmesi|kesilip|modemin|anan|durumlar|nYukar|lerden|Altus|Grundig|Beko|elik|loglardan|kulland|Problemi|closeFullTech|atanm|renderTelesalesDocs|scripts|720px|02rem|Sonu|Segmentler|hydrateTelesalesSegmentFilter|closeFullTelesales|Itiraz|Ipucu|Ornek|Aciklama|Adi|SEGMENT|getTelesalesOffers|imin|openCardDetail|yerel|updateHomeBlock|inputPlaceholder|inputValue|demelisin|kapal|modu|Kapal|gerekli|yetkisi|editHomeBlock|commentators|commentator|spikers|spiker|platform|setHours|test|emptyMessage|Kald|BKFC|Boks|Warriors|Cage|MMA|PFL|Oktagon|bizde|sonuna|Gecesi|UFC|Wimbledon|and|Turnuvalar|ATP|Moto3|Moto2|MotoGP|IndyCar|Nascar|nabilir|WRC|Sudamericana|Copa|Kupas|Libertadores|belirsiz|Sezon|Yunanistan|EuroCup|NBA|NFL|Futbol|Amerikan|Premiership|sko||Hollanda|Lig|Pro||Arabistan|Suudi|Portugal|Liga|Portekiz||Serie|talya|spanya|programlar|dyo|Euroleague|139|119|1399|1299|updateEvaluation|ncelle|Revize|readonly|ZENLENEN|nceleniyor|erlendirilen|temsilci|listeden||logEvaluationPopup|indirildi|click|fileName|createObjectURL|csv|ufeff|Blob|ndirilsin|scrollHeight|getCriteria|getUserList|6rem|headphones|phone|tirme|Geli|2c3e50|ffebee|zorla|turulsun|zaten|duplicate|Duplicate|musun|istiyor|turmak|kaydedilmi|some|Yaz|vertical|transition|dcdcdc|fcfcfc|metnini|detayl|bildirimin|Buraya|123456|Etkile||Bilgilendirmesi|konusu|Listesi|addManualFeedbackPopup|comment|week|7rem|evaluator|erleyen|Belirtilmemi|Konusu|erlendirme|0288d1|2196f3|filtrelenmi|lenecek|mail|formatlama|ekilirken|Logs|feedbackLogs|atand|assignTraining|Atan|Alan|iye|Ekip|Herkese|20dk||PDF|Drive|Video|talimatlar|klamas|assignTrainingPopup|aretlendi|Harika|Sonra|Daha|onayla|ysan|anlad|inceleyip|itimi|bulunmamaktad|erli|bulunmuyor|Atanm|Atayan|Biti|lang|Belirtilmedi|Atanma|file|Git||itime|Tamamland|done|isCompleted|asAdmin|getTrainings|Oran|lenemedi|destroy|chart|breakdown|reduce|scores|Tak|titleEl|closeFullQuality|assign|filters|netici|twResetWizard|twGoBack|encodeURIComponent|back|openTechWizard|redo|3rem|yellow|HATA|ekme|Verisi|openWizard|logQuiz|latabilirsin|oynamak|bbb|ruluk|Skor|TT|MA|5rem|Laz|Antrenman|EFSANE|f0b500|300|ARI|KURTARDI|scale|transform|160px|ef9a9a|ef5350|a5d6a7|kemmel|GOL|run|ffc107||Hakk|Kalan|formatta|shift|average|games|rank|lmad|colspan|getLeaderboard|startGameFromLobby|openPenaltyGame|deneyebilirsin|rekor|lat|stersen|Skorun|0rem|Karar|Bitti|bitti|650|setInterval|ekleyin|sorular|panelden|klenmedi|startQuickDecision|resetQuickDecision|empati|almak|Kontrol|kselt|Ses|alal|raya|aksiyon|mle|tirici|Sakinle|yapars|zmedi|Kimse|sinirli|kler|hataya|yapmak|Uygunluk|deyip|mla|kampanyay|Direkt|yararlanam|Kampanyadan|azalt|aramay|memnuniyet|kanal|Net|aray|Tekrar|rehber|asistan|nlendir|kanala|anlat|kapatal|istiyorum|etmeyi|izole|Cihaz|imdi|yle|oluyor|kablo|Wi|telefon|Hangi|hangisi|Teknikte|donuyor|sona|daralt|ayarlar|fabrika|DNS|nternet|rlat|ifreyi|ilk|iknay|yumu|itiraz|analizi|ihtiya|Empati|yapacak|sunay|alternatif|avantajlara|anl|sizi|Hakl|latal|lemini|yakla|edece|pahal|Fiyat|QUICK_DECISION_BANK|openGameHub|2200|cevap|kez|ift|through|uygulanamaz|soruda|ilim|emin|eminim|Bundan|tahminim|Benim|cevapl|soruyu|Jokeri|Han|Esra|Deniz|Umut|useJoker|indicator|contains|toggleSales|detay|lightbulb|039|microphone|86rem|nowrap|222|f8f8f8|999px|62vh|getBroadcastFlow|PAS|infinite||linear|190s|scroll|Duyuruyu|150px|ecfdf5||Metnini|editSales|120px|3500||quizAnswer|quizOptions|lacak|Terimi|girilecek|metin|buraya|ndeksi|lle|Virg|enekler|Se|Gizle|futbol|FontAwesome|Sorusu|Scripti|Ekleyeceksin|addNewCardPopup|1600|originalText|updateContent|isVisible|zenleyebilirsiniz|erikleri|klayarak|ikonlar|Kalem|times|toggleEditMode|820px|decoration|noreferrer|rel|kalite|searchResultCount|highlight|RegExp|external|YEN|far|777|getTechWizardData|Wizard|getWizardData|lam|Sunucuya|Hatas|Veriler|quickdecision|fetchData|ifreniz|newPass|oldPass|changePassword|leniyor|Alanlar|Mevcut|edemezsiniz|tirmeden|Belirleyin|toggleUserDropdown|openUserMenu|28800000|nedeniyle|Doldu|Oturum|ara|eriklerde|Arama|grayscale|dropdownAddCard|Hatal|ifremi|tirin|forceChange|rulan|Enter|enterBas|DOMContentLoaded|123|keyCode||onkeydown|contextmenu|kopyalay|Kopyalanamad|Kopyaland|execCommand|decodeURIComponent||ceil|abs|kald|Favorilerden|Favorilere|welcome|setMenuPermissions|90px|f7f7f7|sticky|rmez|gruplar|ayar|grup|bazl|sekme|yonetim|telesatis|okunamad|rol|LocAdmin|getHomeBlocks|Aral|Kas|Ekim|Eyl|ustos|Temmuz|Haziran|May|Nisan|Mart|ubat|Ocak|kna|API|exec|AKfycbx9LV5bCnRRu4sBx9z6mZqUiDCqRI3yJeh4td4ba1n8Zx4ebSRQ2FvtwSVEg4zsbVeZ|macros|PUSULA_SCRIPT_URL|Pusula'.split('|'),0,{}))
+const BAKIM_MODU = false;
+
+function showGlobalError(message){
+  // Kullanıcılara kırmızı bant gösterme (istek: ekran temiz kalsın)
+  // Sadece konsola yaz ve (locadmin/admin ise) küçük bir toast göster.
+  try{ console.warn("[Pusula]", message); }catch(e){}
+  try{
+    const role = localStorage.getItem("sSportRole")||"";
+    if(role==="admin" || role==="locadmin"){
+      Swal.fire({toast:true,position:'bottom-end',icon:'warning',title:String(message||'Uyarı'),showConfirmButton:false,timer:2500});
+    }
+  }catch(e){}
+}
+
+// Apps Script URL'si
+let SCRIPT_URL = localStorage.getItem("PUSULA_SCRIPT_URL") || "https://script.google.com/macros/s/AKfycbx9LV5bCnRRu4sBx9z6mZqUiDCqRI3yJeh4td4ba1n8Zx4ebSRQ2FvtwSVEg4zsbVeZ/exec"; // Apps Script Web App URL
+
+// ---- API CALL helper (Menu/Yetki vs için gerekli) ----
+async function apiCall(action, payload = {}) {
+  const username = (typeof currentUser !== "undefined" && currentUser) ? currentUser : (localStorage.getItem("sSportUser") || "");
+  const token = (typeof getToken === "function" ? getToken() : localStorage.getItem("sSportToken")) || "";
+  const res = await fetch(SCRIPT_URL, {
+    method: "POST",
+    headers: { "Content-Type": "text/plain;charset=utf-8" },
+    body: JSON.stringify({ action, username, token, ...payload })
+  });
+  const json = await res.json();
+  if (json.result !== "success") throw new Error(json.message || json.error || "API error");
+  return json;
+}
+
+// SweetAlert2 yoksa minimal yedek (sessiz kırılma olmasın)
+if (typeof Swal === "undefined") {
+  window.Swal = { 
+    fire: (a,b,c)=>{ try{ alert((a&&a.title)||a||b||c||""); }catch(e){} },
+  };
+}
+
+
+
+// Oyun Değişkenleri
+let jokers = { call: 1, half: 1, double: 1 };
+let doubleChanceUsed = false;
+let firstAnswerIndex = -1;
+const VALID_CATEGORIES = ['Teknik', 'İkna', 'Kampanya', 'Bilgi'];
+const MONTH_NAMES = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+// --- GLOBAL DEĞİŞKENLER ---
+let database = [], cardsData = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [], quickDecisionQuestions = [];
+
+// Data load barrier (prevents Tech/Telesales first-render flicker)
+let __dataLoadedResolve;
+window.__dataLoadedPromise = new Promise(r=>{ __dataLoadedResolve = r; });
+let techWizardData = {}; // Teknik Sihirbaz Verisi
+let currentUser = "";
+
+// -------------------- Menu Permissions (LocAdmin) --------------------
+let menuPermissions = null; // { key: {allowedGroups:[], allowedRoles:[]} }
+
+// -------------------- HomeBlocks (Ana Sayfa blok içerikleri) --------------------
+let homeBlocks = {}; // { quote:{...}, ... }
+
+function loadHomeBlocks(){
+  // herkes için okunabilir (sheet'ten)
+  return apiCall("getHomeBlocks", {}).then(res=>{
+    homeBlocks = (res && res.blocks) ? res.blocks : {};
+    // local fallback cache
+    try{ localStorage.setItem('homeBlocksCache', JSON.stringify(homeBlocks||{})); }catch(e){}
+    try{ renderHomePanels(); }catch(e){}
+    return homeBlocks;
+  }).catch(e=>{
+    // sessiz fallback
+    try{ homeBlocks = JSON.parse(localStorage.getItem('homeBlocksCache')||'{}') || {}; }catch(_){ homeBlocks = {}; }
+    try{ renderHomePanels(); }catch(_){}
+    return homeBlocks;
+  });
+}
+
+function normalizeRole(v){
+  return String(v||'').trim().toLowerCase();
+}
+function normalizeGroup(v){
+  // normalize Turkish chars & case so comparisons work
+  const s = String(v||'').trim().toLowerCase();
+  const tr = s.replaceAll('ş','s').replaceAll('Ş','s')
+              .replaceAll('ı','i').replaceAll('İ','i')
+              .replaceAll('ğ','g').replaceAll('Ğ','g')
+              .replaceAll('ü','u').replaceAll('Ü','u')
+              .replaceAll('ö','o').replaceAll('Ö','o')
+              .replaceAll('ç','c').replaceAll('Ç','c');
+  // map common variants to display names used in permissions table
+  if(tr.includes('telesat')) return 'Telesatış';
+  if(tr.includes('teknik')) return 'Teknik';
+  if(tr.includes('chat')) return 'Chat';
+  return String(v||'').trim();
+}
+
+function normalizeList(v){
+  if(!v) return [];
+  return String(v).split(',').map(s=>s.trim()).filter(Boolean);
+}
+function getMyGroup(){ return normalizeGroup(localStorage.getItem("sSportGroup")||""); }
+function getMyRole(){ return normalizeRole(localStorage.getItem("sSportRole")||""); }
+
+function isAllowedByPerm(perm){
+  if(!perm) return true;
+  if(perm.enabled === false) return false;
+  const role=getMyRole(), grp=getMyGroup();
+  const roles=perm.allowedRoles||[];
+  let groups=perm.allowedGroups||[];
+  // "ALL" varsa herkese açık kabul et
+  if(groups.indexOf("ALL")>-1) groups=[];
+  if(roles.length && roles.indexOf(role)===-1) return false;
+  if(groups.length && groups.indexOf(grp)===-1) return false;
+  return true;
+}
+function applyMenuPermissions(){
+  try{
+    const navButtons = document.querySelectorAll('[data-menu-key]');
+    navButtons.forEach(btn=>{
+      const key = btn.getAttribute('data-menu-key');
+      const perm = menuPermissions && menuPermissions[key];
+      btn.style.display = isAllowedByPerm(perm) ? '' : 'none';
+    });
+    // Hızlı kısayollar (ana sayfa)
+    document.querySelectorAll('[data-shortcut-key]').forEach(el=>{
+      const key=el.getAttribute('data-shortcut-key');
+      const perm = menuPermissions && menuPermissions[key];
+      el.style.display = isAllowedByPerm(perm) ? '' : 'none';
+    });
+  }catch(e){}
+}
+function loadMenuPermissions(){
+  // herkes için okunabilir
+  return apiCall("getMenuPermissions", {}).then(res=>{
+    if(res && res.result==="success"){
+      menuPermissions = {};
+      (res.items||[]).forEach(it=>{
+        menuPermissions[it.key] = {
+          allowedGroups: normalizeList(it.allowedGroups),
+          enabled: (it.enabled === false || String(it.enabled).toUpperCase()==="FALSE") ? false : true,
+          allowedRoles: normalizeList(it.allowedRoles) // backward-compat if still present
+        };
+      });
+      applyMenuPermissions();
+    }
+  }).catch(()=>{});
+}
+
+// LocAdmin panel
+function openMenuPermissions(){
+  const role=getMyRole();
+  // İstek: Yetki Yönetimi sadece LocAdmin rolünde görünsün ve çalışsın
+  if(role!=="locadmin"){
+    Swal.fire("Yetkisiz", "Yetki Yönetimi sadece LocAdmin rolünde kullanılabilir.", "warning");
+    return;
+  }
+  apiCall("getMenuPermissions",{}).then(res=>{
+    if(!res || res.result!=="success"){
+      Swal.fire("Hata","Yetkiler okunamadı","error");
+      return;
+    }
+
+    // Grupları backend'den al, yoksa items içinden türet
+    let groups = (res.groups||[]).map(g=>String(g||"").trim()).filter(Boolean);
+    if(!groups.length){
+      const set=new Set();
+      (res.items||[]).forEach(it=>{
+        normalizeList(it.allowedGroups).forEach(g=>{
+          const gg=String(g||"").trim();
+          if(gg && gg.toUpperCase()!=="ALL") set.add(gg);
+        });
+      });
+      groups=[...set];
+    }
+    // Hepsini baş harf büyüt, yaygın isimleri normalize et
+    const normMap={"chat":"Chat","telesatış":"Telesatış","telesatis":"Telesatış","yönetim":"Yönetim","yonetim":"Yönetim","teknik":"Teknik"};
+    groups = groups.map(g=>{
+      const k=g.toLowerCase();
+      return normMap[k] || (g.charAt(0).toUpperCase()+g.slice(1));
+    });
+
+    const menus = (res.items||[]);
+
+    const rowsHtml = menus.map(m=>{
+      const allowed = normalizeList(m.allowedGroups);
+      const enabled = !(m.enabled === false || String(m.enabled).toUpperCase()==="FALSE");
+      const cells = groups.map(g=>{
+        const checked = (allowed.length===0 || allowed.indexOf("ALL")>-1) ? true : (allowed.indexOf(g)>-1);
+        return `<td style="text-align:center">
+          <input type="checkbox" data-mk="${m.key}" data-g="${g}" ${checked?'checked':''}/>
+        </td>`;
+      }).join('');
+      return `<tr>
+        <td style="font-weight:600">${escapeHtml(m.title||m.label||m.key)}</td>
+        <td style="text-align:center"><input type="checkbox" data-enabled="${m.key}" ${enabled?'checked':''}/></td>
+        ${cells}
+      </tr>`;
+    }).join('');
+
+    const tableHtml = `
+      <div style="text-align:left;margin-bottom:10px;color:#444">
+        Menü/sekme bazlı “hangi grup görsün” ayarı. İşaretli olmayan gruplar menüyü görmez.
+      </div>
+      <div style="max-height:420px;overflow:auto;border:1px solid rgba(0,0,0,.08);border-radius:12px">
+        <table style="width:100%;border-collapse:collapse">
+          <thead style="position:sticky;top:0;background:#f7f7f7;z-index:1">
+            <tr>
+              <th style="text-align:left;padding:12px">Menü</th>
+              <th style="text-align:center;padding:12px;width:90px">Aktif</th>
+              ${groups.map(g=>`<th style="text-align:center;padding:12px">${escapeHtml(g)}</th>`).join('')}
+            </tr>
+          </thead>
+          <tbody>
+            ${rowsHtml}
+          </tbody>
+        </table>
+      </div>`;
+
+    Swal.fire({
+      title: "Yetki Yönetimi",
+      html: tableHtml,
+      width: 980,
+      showCancelButton: true,
+      confirmButtonText: "Kaydet",
+      cancelButtonText: "Vazgeç",
+      preConfirm: ()=>{
+        const out = {};
+        menus.forEach(m=>{ out[m.key] = { allowedGroups: [], enabled: true }; });
+        // enabled
+        document.querySelectorAll('input[type="checkbox"][data-enabled]').forEach(cb=>{
+          const k=cb.getAttribute('data-enabled');
+          if(out[k]) out[k].enabled = !!cb.checked;
+        });
+        // groups
+        document.querySelectorAll('input[type="checkbox"][data-mk]').forEach(cb=>{
+          const k=cb.getAttribute('data-mk');
+          const g=cb.getAttribute('data-g');
+          if(cb.checked && out[k]) out[k].allowedGroups.push(g);
+        });
+        // Hepsi seçiliyse "ALL" olarak yaz (daha temiz)
+        Object.keys(out).forEach(k=>{
+          const arr = out[k].allowedGroups||[];
+          if(arr.length===groups.length){
+            out[k].allowedGroups = ["ALL"];
+          }
+        });
+        return out;
+      }
+    }).then(r=>{
+      if(!r.isConfirmed) return;
+      const payload = r.value || {};
+      apiCall("setMenuPermissions",{ items: payload }).then(sv=>{
+        if(sv && sv.result==="success"){
+          Swal.fire("Kaydedildi","Yetkiler güncellendi.","success");
+          loadMenuPermissions();
+        } else {
+          Swal.fire("Hata", (sv&&sv.message)||"Kaydedilemedi", "error");
+        }
+      });
+    });
+  });
+}
+// --------------------------------------------------------------------
+let isAdminMode = false;
+let isLocAdmin = false;
+let isEditingActive = false;
+let sessionTimeout;
+let activeCards = [];
+let currentCategory = "home";
+let adminUserList = [];
+let allEvaluationsData = [];
+let wizardStepsData = {};
+let trainingData = [];
+// YENİ: Chart instance'ı tutmak için
+let dashboardChart = null;
+// YENİ: Feedback Log Verisi (Manuel kayıt detayları için)
+let feedbackLogsData = [];
+// ==========================================================
+// --- KALİTE PUANLAMA LOGİĞİ: CHAT (BUTON TABANLI) ---
+// ==========================================================
+window.setButtonScore = function(index, score, max) {
+    const row = document.getElementById(`row-${index}`);
+    const badge = document.getElementById(`badge-${index}`);
+    const noteInput = document.getElementById(`note-${index}`);
+    const buttons = row.querySelectorAll('.eval-button');
+    
+    buttons.forEach(b => b.classList.remove('active'));
+    
+    const activeBtn = row.querySelector('.eval-button[data-score="' + score + '"]');
+    if (activeBtn) activeBtn.classList.add('active');
+    
+    badge.innerText = score;
+    
+    if (score < max) {
+        noteInput.style.display = 'block';
+        badge.style.background = '#d32f2f'; 
+        row.style.borderColor = '#ffcdd2';
+        row.style.background = '#fff5f5';
+    } else {
+        noteInput.style.display = 'none';
+        noteInput.value = ''; 
+        badge.style.background = '#2e7d32'; 
+        row.style.borderColor = '#eee';
+        row.style.background = '#fff';
+    }
+    window.recalcTotalScore();
+};
+window.recalcTotalScore = function() {
+    let currentTotal = 0;
+    let maxTotal = 0;
+    
+    const scoreBadges = document.querySelectorAll('.score-badge');
+    scoreBadges.forEach(b => { currentTotal += parseInt(b.innerText) || 0; });
+    
+    const maxScores = document.querySelectorAll('.criteria-row');
+    maxScores.forEach(row => { maxTotal += parseInt(row.getAttribute('data-max-score')) || 0; });
+    
+    const liveScoreEl = document.getElementById('live-score');
+    const ringEl = document.getElementById('score-ring');
+    
+    if(liveScoreEl) liveScoreEl.innerText = currentTotal;
+    if(ringEl) {
+        let color = '#2e7d32';
+        let ratio = maxTotal > 0 ? (currentTotal / maxTotal) * 100 : 0;
+        if(ratio < 50) color = '#d32f2f';
+        else if(ratio < 85) color = '#ed6c02';
+        else if(ratio < 95) color = '#fabb00';
+        ringEl.style.background = `conic-gradient(${color} ${ratio}%, #444 ${ratio}%)`;
+    }
+};
+// ==========================================================
+// --- KALİTE PUANLAMA LOGİĞİ: TELE SATIŞ (SLIDER TABANLI) ---
+// ==========================================================
+window.updateRowSliderScore = function(index, max) {
+    const slider = document.getElementById(`slider-${index}`);
+    const badge = document.getElementById(`badge-${index}`);
+    const noteInput = document.getElementById(`note-${index}`);
+    const row = document.getElementById(`row-${index}`);
+    if(!slider) return;
+    const val = parseInt(slider.value);
+    badge.innerText = val;
+    
+    if (val < max) {
+        noteInput.style.display = 'block';
+        badge.style.background = '#d32f2f';
+        row.style.borderColor = '#ffcdd2';
+        row.style.background = '#fff5f5';
+    } else {
+        noteInput.style.display = 'none';
+        noteInput.value = '';
+        badge.style.background = '#2e7d32';
+        row.style.borderColor = '#eee';
+        row.style.background = '#fff';
+    }
+    window.recalcTotalSliderScore();
+};
+window.recalcTotalSliderScore = function() {
+    let currentTotal = 0;
+    let maxTotal = 0;
+    const sliders = document.querySelectorAll('.slider-input');
+    
+    sliders.forEach(s => {
+        currentTotal += parseInt(s.value) || 0;
+        maxTotal += parseInt(s.getAttribute('max')) || 0;
+    });
+    const liveScoreEl = document.getElementById('live-score');
+    const ringEl = document.getElementById('score-ring');
+    
+    if(liveScoreEl) liveScoreEl.innerText = currentTotal;
+    if(ringEl) {
+        let color = '#2e7d32';
+        let ratio = maxTotal > 0 ? (currentTotal / maxTotal) * 100 : 0;
+        if(ratio < 50) color = '#d32f2f';
+        else if(ratio < 85) color = '#ed6c02';
+        else if(ratio < 95) color = '#fabb00';
+        ringEl.style.background = `conic-gradient(${color} ${ratio}%, #444 ${ratio}%)`;
+    }
+};
+// --- YARDIMCI FONKSİYONLAR ---
+function getToken() { return localStorage.getItem("sSportToken"); }
+function setHomeWelcomeUser(name){
+  try{
+    const el = document.getElementById("home-welcome-user");
+    if(el) el.textContent = (name||"Misafir");
+  }catch(e){}
+}
+
+function getFavs() { return JSON.parse(localStorage.getItem('sSportFavs') || '[]'); }
+function toggleFavorite(title) {
+    event.stopPropagation();
+    let favs = getFavs();
+    if (favs.includes(title)) { favs = favs.filter(t => t !== title); } 
+    else { favs.push(title); }
+    localStorage.setItem('sSportFavs', JSON.stringify(favs));
+    try {
+        const added = favs.includes(title);
+        Swal.fire({toast:true, position:'top-end', icon: added ? 'success' : 'info', title: added ? 'Favorilere eklendi' : 'Favorilerden kaldırıldı', showConfirmButton:false, timer:1200});
+    } catch(e) {}
+
+    if (currentCategory === 'fav') { filterCategory(document.querySelector('.btn-fav'), 'fav'); } 
+    else { renderCards(activeCards); }
+    try { updateSearchResultCount(activeCards.length || 0, database.length); } catch(e) {}
+}
+function isFav(title) { return getFavs().includes(title); }
+function formatDateToDDMMYYYY(dateString) {
+    if (!dateString) return 'N/A';
+    // Eğer format dd.MM.yyyy olarak geliyorsa direkt dön
+    if (dateString.match(/^\d{2}\.\d{2}\.\d{4}/)) { return dateString.split(' ')[0]; }
+    try {
+        const date = new Date(dateString);
+        if (isNaN(date.getTime())) { return dateString; }
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}.${month}.${year}`;
+    } catch (e) { return dateString; }
+}
+
+function parseDateTRToTS(s){
+    try{
+        if(!s) return 0;
+        const clean = String(s).split(' ')[0];
+        if(clean.includes('.')){
+            const parts = clean.split('.');
+            if(parts.length >= 3){
+                const dd = parseInt(parts[0],10);
+                const mm = parseInt(parts[1],10);
+                const yy = parseInt(parts[2],10);
+                const d = new Date(yy, mm-1, dd);
+                return d.getTime() || 0;
+            }
+        }
+        const d = new Date(s);
+        return d.getTime() || 0;
+    }catch(e){ return 0; }
+}
+
+function isNew(dateStr) {
+    if (!dateStr) return false;
+    let date;
+    if (dateStr.indexOf('.') > -1) {
+        const cleanDate = dateStr.split(' ')[0];
+        const parts = cleanDate.split('.');
+        // GG.AA.YYYY -> YYYY-AA-GG formatına çevir
+        date = new Date(parts[2], parts[1] - 1, parts[0]);
+    } else {
+        date = new Date(dateStr);
+    }
+    if (isNaN(date.getTime())) return false;
+    const now = new Date();
+    const diffTime = Math.abs(now - date);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    return diffDays <= 3;
+}
+function getCategorySelectHtml(currentCategory, id) {
+    let options = VALID_CATEGORIES.map(cat => `<option value="${cat}" ${cat === currentCategory ? 'selected' : ''}>${cat}</option>`).join('');
+    if (currentCategory && !VALID_CATEGORIES.includes(currentCategory)) {
+        options = `<option value="${currentCategory}" selected>${currentCategory} (Hata)</option>` + options;
+    }
+    return `<select id="${id}" class="swal2-input" style="width:100%; margin-top:5px;">${options}</select>`;
+}
+function escapeForJsString(text) {
+    if (!text) return "";
+    return text.toString().replace(/\\/g, '\\\\').replace(/'/g, '\\\'').replace(/"/g, '\\"').replace(/\n/g, '\\n').replace(/\r/g, '');
+}
+function copyScriptContent(encodedText) {
+    const text = decodeURIComponent(encodedText);
+    copyText(text);
+}
+function copyText(t) {
+    // navigator.clipboard.writeText yerine execCommand kullanıldı (iFrame uyumluluğu için)
+    const textarea = document.createElement('textarea');
+    textarea.value = t.replace(/\\n/g, '\n');
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+        document.execCommand('copy');
+        Swal.fire({icon:'success', title:'Kopyalandı', toast:true, position:'top-end', showConfirmButton:false, timer:1500});
+    } catch (err) {
+        Swal.fire({icon:'error', title:'Kopyalanamadı', text:'Lütfen manuel kopyalayın.', toast:true, position:'top-end', showConfirmButton:false, timer:2500});
+    }
+    document.body.removeChild(textarea);
+}
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.onkeydown = function(e) { if(e.keyCode == 123) return false; }
+document.addEventListener('DOMContentLoaded', () => { checkSession(); });
+// --- SESSION & LOGIN ---
+function checkSession() {
+    const savedUser = localStorage.getItem("sSportUser");
+    const savedToken = localStorage.getItem("sSportToken");
+    const savedRole = localStorage.getItem("sSportRole");
+    const savedGroup = localStorage.getItem("sSportGroup");
+
+    // ✅ Oturumun tarayıcı/PC kapat-aç sonrası ertesi güne sarkmaması için:
+    // - Aynı gün değilse otomatik çıkış
+    // - Ayrıca 12 saati geçtiyse otomatik çıkış
+    const todayKey = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+    const sessionDay = localStorage.getItem("sSportSessionDay") || "";
+    const loginAt = parseInt(localStorage.getItem("sSportLoginAt") || "0", 10);
+    const maxAgeMs = 12 * 60 * 60 * 1000; // 12 saat
+
+    if (savedUser && savedToken) {
+        const isOtherDay = (!sessionDay || sessionDay !== todayKey);
+        const isTooOld = (!loginAt || (Date.now() - loginAt) > maxAgeMs);
+
+        if (isOtherDay || isTooOld) {
+            try { logout(); } catch (e) {
+                localStorage.removeItem("sSportUser");
+                localStorage.removeItem("sSportToken");
+                localStorage.removeItem("sSportRole");
+                localStorage.removeItem("sSportGroup");
+                localStorage.removeItem("sSportSessionDay");
+                localStorage.removeItem("sSportLoginAt");
+            }
+            return;
+        }
+
+        currentUser = savedUser;
+        document.getElementById("login-screen").style.display = "none";
+        document.getElementById("user-display").innerText = currentUser;
+        setHomeWelcomeUser(currentUser);
+
+        checkAdmin(savedRole);
+
+        try{
+            if(savedGroup){
+                const el=document.getElementById("t-side-role"); if(el) el.textContent=savedGroup;
+                const el2=document.getElementById("tech-side-role"); if(el2) el2.textContent=savedGroup;
+            }
+        }catch(e){}
+
+        startSessionTimer();
+
+        // ✅ YENİ: Yenilemede de menü/blok yetkilerini uygula
+        try{ loadMenuPermissions(); }catch(e){}
+        try{ loadHomeBlocks(); }catch(e){}
+
+        if (BAKIM_MODU) {
+            document.getElementById("maintenance-screen").style.display = "flex";
+        } else {
+            document.getElementById("main-app").style.display = "block";
+
+            loadContentData();
+            loadWizardData();
+            loadTechWizardData();
+
+            // Eğer qusers rolündeyse, ana içeriği gizle ve kalite modülünü aç
+            if (savedRole === 'qusers') {
+                const grid = document.getElementById('cardGrid'); if (grid) grid.style.display = 'none';
+                const controls = document.querySelector('.control-wrapper'); if (controls) controls.style.display = 'none';
+                const ticker = document.querySelector('.news-ticker-box'); if (ticker) ticker.style.display = 'none';
+
+                openQualityArea(); // Yeni Full Screen Modül
+            }
+        }
+    }
+}
+function enterBas(e) { if (e.key === "Enter") girisYap(); }
+function girisYap() {
+    const uName = document.getElementById("usernameInput").value.trim();
+    const uPass = document.getElementById("passInput").value.trim();
+    const loadingMsg = document.getElementById("loading-msg");
+    const errorMsg = document.getElementById("error-msg");
+    if(!uName || !uPass) { errorMsg.innerText = "Lütfen bilgileri giriniz."; errorMsg.style.display = "block"; return; }
+    
+    loadingMsg.style.display = "block";
+    loadingMsg.innerText = "Doğrulanıyor...";
+    errorMsg.style.display = "none";
+    document.querySelector('.login-btn').disabled = true;
+    
+    const hashedPass = CryptoJS.SHA256(uPass).toString();
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "login", username: uName, password: hashedPass })
+    }).then(response => response.json())
+    .then(data => {
+        loadingMsg.style.display = "none";
+        document.querySelector('.login-btn').disabled = false;
+        
+        if (data.result === "success") {
+            currentUser = data.username;
+            localStorage.setItem("sSportUser", currentUser);
+            localStorage.setItem("sSportToken", data.token);
+            localStorage.setItem("sSportRole", data.role);
+            if (data.group) localStorage.setItem("sSportGroup", data.group);
+            // ✅ Oturum zaman damgası (ertesi gün otomatik çıkış için)
+            localStorage.setItem("sSportSessionDay", new Date().toISOString().slice(0, 10));
+            localStorage.setItem("sSportLoginAt", String(Date.now()));
+            
+            const savedRole = data.role;
+            if (data.forceChange === true) {
+                Swal.fire({
+                    icon: 'warning', title: ' ⚠️  Güvenlik Uyarısı',
+                    text: 'İlk girişiniz. Lütfen şifrenizi değiştirin.',
+                    allowOutsideClick: false, allowEscapeKey: false, confirmButtonText: 'Şifremi Değiştir'
+                }).then(() => { changePasswordPopup(true); });
+            } else {
+                document.getElementById("login-screen").style.display = "none";
+                document.getElementById("user-display").innerText = currentUser;
+                setHomeWelcomeUser(currentUser);
+                const savedGroup = data.group || localStorage.getItem('sSportGroup') || '';
+                checkAdmin(savedRole);
+                startSessionTimer();
+                // Menü yetkilerini ve ana sayfa bloklarını login sonrası yükle
+                try{ loadMenuPermissions(); }catch(e){}
+                try{ loadHomeBlocks(); }catch(e){}
+                
+                if (BAKIM_MODU) {
+                    document.getElementById("maintenance-screen").style.display = "flex";
+                } else {
+                    document.getElementById("main-app").style.display = "block";
+                    loadContentData();
+                    loadWizardData();
+                    loadTechWizardData();
+                    
+                    if (savedRole === 'qusers') { 
+                        const grid = document.getElementById('cardGrid'); if (grid) grid.style.display = 'none';
+                        const controls = document.querySelector('.control-wrapper'); if (controls) controls.style.display = 'none';
+                        const ticker = document.querySelector('.news-ticker-box'); if (ticker) ticker.style.display = 'none';
+                        openQualityArea();
+                    }
+                }
+            }
+        } else {
+            errorMsg.innerText = data.message || "Hatalı giriş!";
+            errorMsg.style.display = "block";
+        }
+    }).catch(error => {
+        loadingMsg.style.display = "none";
+        document.querySelector('.login-btn').disabled = false;
+        errorMsg.innerText = "Sunucu hatası! Lütfen sayfayı yenileyin.";
+        errorMsg.style.display = "block";
+    });
+}
+function checkAdmin(role) {
+    const addCardDropdown = document.getElementById('dropdownAddCard');
+    const quickEditDropdown = document.getElementById('dropdownQuickEdit');
+    
+    isAdminMode = (role === "admin" || role === "locadmin");
+    isLocAdmin = (role === "locadmin");
+    isEditingActive = false;
+    document.body.classList.remove('editing');
+    
+    const isQualityUser = (role === 'qusers');
+    const filterButtons = document.querySelectorAll('.filter-btn:not(.btn-fav)'); 
+    
+    if (isQualityUser) {
+        filterButtons.forEach(btn => {
+            if (btn.innerText.indexOf('Kalite') === -1) {
+                btn.style.opacity = '0.5';
+                btn.style.pointerEvents = 'none';
+                btn.style.filter = 'grayscale(100%)';
+            } else { btn.style.filter = 'none'; }
+        });
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) { searchInput.disabled = true; searchInput.placeholder = "Arama devre dışı (Kalite Modu)"; searchInput.style.opacity = '0.6'; }
+    } else {
+        filterButtons.forEach(btn => {
+            btn.style.opacity = '1';
+            btn.style.pointerEvents = 'auto';
+            btn.style.filter = 'none';
+        });
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) { searchInput.disabled = false; searchInput.placeholder = "İçeriklerde hızlı ara..."; searchInput.style.opacity = '1'; }
+    }
+    
+    if(isAdminMode) {
+        if(addCardDropdown) addCardDropdown.style.display = 'flex';
+        if(quickEditDropdown) {
+            quickEditDropdown.style.display = 'flex';
+            // İstek: Yetki Yönetimi sadece LocAdmin rolünde görünsün
+            const perms = document.getElementById('dropdownPerms');
+            if(perms) perms.style.display = (isLocAdmin ? 'flex' : 'none');
+            quickEditDropdown.innerHTML = '<i class="fas fa-pen" style="color:var(--secondary);"></i> Düzenlemeyi Aç';
+            quickEditDropdown.classList.remove('active');
+        }
+    } else {
+        if(addCardDropdown) addCardDropdown.style.display = 'none';
+        if(quickEditDropdown) quickEditDropdown.style.display = 'none';
+        const perms = document.getElementById('dropdownPerms');
+        if(perms) perms.style.display = 'none';
+    }
+}
+function logout() {
+    currentUser = ""; isAdminMode = false; isEditingActive = false;
+    try{ document.getElementById("user-display").innerText = "Misafir"; }catch(e){}
+    setHomeWelcomeUser("Misafir");
+    document.body.classList.remove('editing');
+    localStorage.removeItem("sSportUser"); localStorage.removeItem("sSportToken"); localStorage.removeItem("sSportRole"); localStorage.removeItem("sSportGroup"); localStorage.removeItem("sSportSessionDay"); localStorage.removeItem("sSportLoginAt");
+    if (sessionTimeout) clearTimeout(sessionTimeout);
+    document.getElementById("main-app").style.display = "none";
+    document.getElementById("login-screen").style.display = "flex";
+    document.getElementById("passInput").value = "";
+    document.getElementById("usernameInput").value = "";
+    document.getElementById("error-msg").style.display = "none";
+    
+    // Fullscreen'i kapat
+    document.getElementById('quality-fullscreen').style.display = 'none';
+    try{ document.getElementById('tech-fullscreen').style.display='none'; }catch(e){}
+    try{ document.getElementById('telesales-fullscreen').style.display='none'; }catch(e){}
+}
+function startSessionTimer() {
+    if (sessionTimeout) clearTimeout(sessionTimeout);
+    // 8 saat (28800000 ms)
+    sessionTimeout = setTimeout(() => {
+        Swal.fire({ icon: 'warning', title: 'Oturum Süresi Doldu', text: 'Güvenlik nedeniyle otomatik çıkış yapıldı.', confirmButtonText: 'Tamam' }).then(() => { logout(); });
+    },  28800000); 
+}
+function openUserMenu() { toggleUserDropdown(); }
+async function changePasswordPopup(isMandatory = false) {
+    const { value: formValues } = await Swal.fire({
+        title: isMandatory ? 'Yeni Şifre Belirleyin' : 'Şifre Değiştir',
+        html: `${isMandatory ? '<p style="font-size:0.9rem; color:#d32f2f;">İlk giriş şifrenizi değiştirmeden devam edemezsiniz.</p>' : ''}<input id="swal-old-pass" type="password" class="swal2-input" placeholder="Eski Şifre (Mevcut)"><input id="swal-new-pass" type="password" class="swal2-input" placeholder="Yeni Şifre">`,
+        focusConfirm: false, showCancelButton: !isMandatory, allowOutsideClick: !isMandatory, allowEscapeKey: !isMandatory,
+        confirmButtonText: 'Değiştir', cancelButtonText: 'İptal',
+        preConfirm: () => {
+            const o = document.getElementById('swal-old-pass').value;
+            const n = document.getElementById('swal-new-pass').value;
+            if(!o || !n) { Swal.showValidationMessage('Alanlar boş bırakılamaz'); }
+            return [ o, n ]
+        }
+    });
+    if (formValues) {
+        Swal.fire({ title: 'İşleniyor...', didOpen: () => { Swal.showLoading() } });
+        fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({
+                action: "changePassword", username: currentUser,
+                oldPass: CryptoJS.SHA256(formValues[0]).toString(),
+                newPass: CryptoJS.SHA256(formValues[1]).toString(),
+                token: getToken()
+            })
+        }).then(response => response.json()).then(data => {
+            if(data.result === "success") {
+                Swal.fire('Başarılı!', 'Şifreniz güncellendi. Yeniden giriş yapınız.', 'success').then(() => { logout(); });
+            } else {
+                Swal.fire('Hata', data.message || 'İşlem başarısız.', 'error').then(() => { if(isMandatory) changePasswordPopup(true); });
+            }
+        }).catch(err => { Swal.fire('Hata', 'Sunucu hatası.', 'error'); if(isMandatory) changePasswordPopup(true); });
+    } else if (isMandatory) { changePasswordPopup(true); }
+}
+// --- DATA FETCHING ---
+function loadContentData() {
+    document.getElementById('loading').style.display = 'block';
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "fetchData" })
+    }).then(response => response.json()).then(data => {
+        document.getElementById('loading').style.display = 'none';
+        if (data.result === "success") {
+            const rawData = data.data;
+            database = rawData.filter(i => ['card','bilgi','teknik','kampanya','ikna'].includes(i.Type.toLowerCase())).map(i => ({
+                title: i.Title, category: i.Category, text: i.Text, script: i.Script, code: i.Code, link: i.Link, date: formatDateToDDMMYYYY(i.Date)
+            }));
+            // Yeni eklenenleri üstte göstermek için tarihe göre (azalan) sırala
+            database.sort((a,b) => parseDateTRToTS(b.date) - parseDateTRToTS(a.date));
+            newsData = rawData.filter(i => i.Type.toLowerCase() === 'news').map(i => ({
+                date: formatDateToDDMMYYYY(i.Date), title: i.Title, desc: i.Text, type: i.Category, status: i.Status
+            }));
+            sportsData = rawData.filter(i => i.Type.toLowerCase() === 'sport').map(i => ({
+                title: i.Title, icon: i.Icon, desc: i.Text, tip: i.Tip, detail: i.Detail, pronunciation: i.Pronunciation
+            }));
+            try{ applySportsRights(); }catch(e){}
+
+            salesScripts = rawData.filter(i => i.Type.toLowerCase() === 'sales').map(i => ({ title: i.Title, text: i.Text }));
+            quizQuestions = rawData.filter(i => i.Type.toLowerCase() === 'quiz').map(i => ({
+                q: i.Text, opts: i.QuizOptions ? i.QuizOptions.split(',').map(o => o.trim()) : [], a: parseInt(i.QuizAnswer)
+            }));
+            // Hızlı Karar soruları (Google Sheet'ten): Type = quickdecision
+            // Beklenen: Text | QuizOptions (| ile ayrılmış) | QuizAnswer (0-based index) | Detail (opsiyonel)
+            quickDecisionQuestions = rawData
+                .filter(i => (i.Type || '').toLowerCase() === 'quickdecision')
+                .map(i => {
+                    const opts = String(i.QuizOptions || '').split('|').map(x => x.trim()).filter(Boolean);
+                    let a = parseInt(i.QuizAnswer, 10);
+                    if (isNaN(a)) a = 0;
+                    if (a < 0) a = 0;
+                    if (opts.length && a >= opts.length) a = opts.length - 1;
+                    const exp = (i.Detail || '').toString().trim();
+                    return { q: (i.Text || '').toString().trim(), opts, a, exp };
+                })
+                .filter(x => x.q && Array.isArray(x.opts) && x.opts.length >= 2);
+
+            
+            if(currentCategory === 'fav') { filterCategory(document.querySelector('.btn-fav'), 'fav'); } 
+            else { activeCards = database; if(currentCategory==='home'){ showHomeScreen(); } else { hideHomeScreen(); renderCards(database); } }
+            startTicker();
+            try { updateSearchResultCount(activeCards.length || database.length, database.length); } catch(e) {}
+        } else { document.getElementById('loading').innerHTML = `Veriler alınamadı: ${data.message || 'Bilinmeyen Hata'}`; }
+    }).catch(error => { document.getElementById('loading').innerHTML = 'Bağlantı Hatası! Sunucuya ulaşılamıyor.'; }).finally(()=>{ try{ __dataLoadedResolve && __dataLoadedResolve(); }catch(e){} });
+            cardsData = database; // geriye dönük uyumluluk
+
+}
+function loadWizardData() {
+    return new Promise((resolve, reject) => {
+        fetch(SCRIPT_URL, {
+            method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: "getWizardData" })
+        }).then(response => response.json()).then(data => {
+            if (data.result === "success" && data.steps) { wizardStepsData = data.steps; resolve(); } 
+            else { wizardStepsData = {}; reject(new Error("Wizard verisi yüklenemedi.")); }
+        }).catch(error => { wizardStepsData = {}; reject(error); });
+    });
+}
+function loadTechWizardData() {
+    return new Promise((resolve, reject) => {
+        fetch(SCRIPT_URL, {
+            method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: "getTechWizardData" })
+        }).then(response => response.json()).then(data => {
+            if (data.result === "success" && data.steps) { techWizardData = data.steps; resolve(); } 
+            else { techWizardData = {}; }
+        }).catch(error => { techWizardData = {}; });
+    });
+}
+// --- RENDER & FILTERING ---
+function renderCards(data) {
+    activeCards = data;
+    const container = document.getElementById('cardGrid');
+    container.innerHTML = '';
+    
+    if (data.length === 0) { container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:20px; color:#777;">Kayıt bulunamadı.</div>'; return; }
+    data.forEach((item, index) => {
+        const safeTitle = escapeForJsString(item.title);
+        const isFavorite = isFav(item.title);
+        const favClass = isFavorite ? 'fas fa-star active' : 'far fa-star';
+        const newBadge = isNew(item.date) ? '<span class="new-badge">YENİ</span>' : '';
+        const editIconHtml = (isAdminMode && isEditingActive) ? `<i class="fas fa-pencil-alt edit-icon" onclick="editContent(${index})" style="display:block;"></i>` : '';
+        let formattedText = (item.text || "").replace(/\n/g, '<br>').replace(/\*(.*?)\*/g, '<b>$1</b>');
+        
+        container.innerHTML += `<div class="card ${item.category}">${newBadge}
+            <div class="icon-wrapper">${editIconHtml}<i class="${favClass} fav-icon" onclick="toggleFavorite('${safeTitle}')"></i></div>
+            <div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div>
+            <div class="card-content" onclick="showCardDetail('${safeTitle}', '${escapeForJsString(item.text)}')">
+                <div class="card-text-truncate">${highlightText(formattedText)}</div>
+                <div style="font-size:0.8rem; color:#999; margin-top:5px; text-align:right;">(Tamamını oku)</div>
+            </div>
+            <div class="script-box">${highlightText(item.script)}</div>
+            <div class="card-actions">
+                <button class="btn btn-copy" onclick="copyText('${escapeForJsString(item.script)}')"><i class="fas fa-copy"></i> Kopyala</button>
+                ${item.code ? `<button class="btn btn-copy" style="background:var(--secondary); color:#333;" onclick="copyText('${escapeForJsString(item.code)}')">Kod</button>` : ''}
+                ${item.link ? `<a href="${item.link}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>` : ''}
+            </div>
+        </div>`;
+    });
+}
+function highlightText(htmlContent) {
+    if (!htmlContent) return "";
+    const searchTerm = document.getElementById('searchInput').value.toLocaleLowerCase('tr-TR').trim();
+    if (!searchTerm) return htmlContent;
+    try { const regex = new RegExp(`(${searchTerm})`, "gi"); return htmlContent.toString().replace(regex, '<span class="highlight">$1</span>'); } catch(e) { return htmlContent; }
+}
+
+function updateSearchResultCount(count, total) {
+    const el = document.getElementById('searchResultCount');
+    if(!el) return;
+    // sadece arama yazıldığında veya filtre fav/tekil seçildiğinde göster
+    const search = (document.getElementById('searchInput')?.value || '').trim();
+    const show = !!search || (currentCategory && currentCategory !== 'all');
+    if(!show) { el.style.display = 'none'; el.innerText = ''; return; }
+    el.style.display = 'block';
+    el.innerText = `🔎 ${count} sonuç${total != null ? ' / ' + total : ''}`;
+}
+
+
+
+function filterCategory(btn, cat) {
+    // Ana Sayfa özel ekran
+    if (cat === "home") {
+        currentCategory = "home";
+        setActiveFilterButton(btn);
+        showHomeScreen();
+        return;
+    }
+
+
+    // Tam ekran modüller
+    const catNorm = String(cat||'').toLowerCase();
+    if (catNorm.includes('teknik')) {
+        hideHomeScreen();
+        openTechArea('broadcast');
+        return;
+    }
+    if (catNorm.includes('telesat')) {
+        hideHomeScreen();
+        openTelesalesArea();
+        return;
+    }
+    if (catNorm.includes('kalite')) {
+        hideHomeScreen();
+        // kalite için mevcut davranış: card list (varsa) - burada özel modül yoksa devam
+    }
+    currentCategory = cat;
+    hideHomeScreen();
+
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    filterContent();
+}
+function filterContent() {
+    const search = document.getElementById('searchInput').value.toLocaleLowerCase('tr-TR').trim();
+    // Ana sayfa (home) özel ekran:
+    // - Arama boşsa ana sayfa kartları görünür (home-screen)
+    // - Arama yapılırsa ana sayfadan çıkıp kartlar üzerinde filtre uygulanır
+    if (currentCategory === 'home') {
+        if (!search) {
+            updateSearchResultCount(database.length, database.length);
+            showHomeScreen();
+            return;
+        }
+        // Arama varsa: home ekranını gizle ve tüm kartlar içinde ara
+        hideHomeScreen();
+    }
+
+    let filtered = database;
+    if (currentCategory === 'fav') { filtered = filtered.filter(i => isFav(i.title)); }
+    else if (currentCategory !== 'all' && currentCategory !== 'home') { filtered = filtered.filter(i => i.category === currentCategory); }
+    
+    if (search) {
+        filtered = filtered.filter(item => {
+            const title = (item.title || "").toString().toLocaleLowerCase('tr-TR');
+            const text = (item.text || "").toString().toLocaleLowerCase('tr-TR');
+            const script = (item.script || "").toString().toLocaleLowerCase('tr-TR');
+            const code = (item.code || "").toString().toLocaleLowerCase('tr-TR');
+            return title.includes(search) || text.includes(search) || script.includes(search) || code.includes(search);
+        });
+    }
+    activeCards = filtered;
+    updateSearchResultCount(filtered.length, database.length);
+    renderCards(filtered);
+}
+function showCardDetail(title, text) {
+    // Geriye dönük uyumluluk: showCardDetail(cardObj) çağrısını da destekle
+    if (title && typeof title === 'object') {
+        const c = title;
+        const t = c.title || c.name || 'Detay';
+        const body = (c.text || c.desc || '').toString();
+        const script = (c.script || '').toString();
+        const alertTxt = (c.alert || '').toString();
+        const link = (c.link || '').toString();
+        const html = `
+          <div style="text-align:left; font-size:1rem; line-height:1.6; white-space:pre-line;">
+            ${escapeHtml(body).replace(/\n/g,'<br>')}
+            ${link ? `<div style="margin-top:12px"><a href="${escapeHtml(link)}" target="_blank" rel="noreferrer" style="font-weight:800;color:var(--info);text-decoration:none"><i class=\"fas fa-link\"></i> Link</a></div>` : ''}
+            ${script ? `<div class="tech-script-box" style="margin-top:12px">
+                <span class="tech-script-label">Müşteriye iletilecek:</span>${escapeHtml(script).replace(/\n/g,'<br>')}
+              </div>` : ''}
+            ${alertTxt ? `<div class="tech-alert" style="margin-top:12px">${escapeHtml(alertTxt).replace(/\n/g,'<br>')}</div>` : ''}
+          </div>`;
+        Swal.fire({ title: t, html, showCloseButton: true, showConfirmButton: false, width: '820px', background: '#f8f9fa' });
+        return;
+    }
+
+    const safeText = (text ?? '').toString();
+    Swal.fire({
+        title: title,
+        html: `<div style="text-align:left; font-size:1rem; line-height:1.6;">${escapeHtml(safeText).replace(/\n/g,'<br>')}</div>`,
+        showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa'
+    });
+}
+
+function toggleEditMode() {
+    if (!isAdminMode) return;
+    isEditingActive = !isEditingActive;
+    document.body.classList.toggle('editing', isEditingActive);
+    
+    const btn = document.getElementById('dropdownQuickEdit');
+    if(isEditingActive) {
+        btn.classList.add('active');
+        btn.innerHTML = '<i class="fas fa-times" style="color:var(--accent);"></i> Düzenlemeyi Kapat';
+        Swal.fire({ icon: 'success', title: 'Düzenleme Modu AÇIK', text: 'Kalem ikonlarına tıklayarak içerikleri düzenleyebilirsiniz.', timer: 1500, showConfirmButton: false });
+    } else {
+        btn.classList.remove('active');
+        btn.innerHTML = '<i class="fas fa-pen" style="color:var(--secondary);"></i> Düzenlemeyi Aç';
+    }
+    filterContent();
+    try{ if(currentCategory==='home') renderHomePanels(); }catch(e){}
+    if(document.getElementById('guide-modal').style.display === 'flex') openGuide();
+    if(document.getElementById('sales-modal').style.display === 'flex') openSales();
+    if(document.getElementById('news-modal').style.display === 'flex') openNews();
+}
+function sendUpdate(o, c, v, t='card') {
+    if (!Swal.isVisible()) Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } });
+    fetch(SCRIPT_URL, {
+        method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ action: "updateContent", title: o, column: c, value: v, type: t, originalText: o, username: currentUser, token: getToken() })
+    }).then(r => r.json()).then(data => {
+        if (data.result === "success") {
+            Swal.fire({icon: 'success', title: 'Başarılı', timer: 1500, showConfirmButton: false});
+            setTimeout(loadContentData, 1600);
+        } else { Swal.fire('Hata', 'Kaydedilemedi: ' + (data.message || 'Bilinmeyen Hata'), 'error'); }
+    }).catch(err => Swal.fire('Hata', 'Sunucu hatası.', 'error'));
+}
+// --- CRUD OPERASYONLARI (ADMIN) ---
+async function addNewCardPopup() {
+    const catSelectHTML = getCategorySelectHtml('Bilgi', 'swal-new-cat');
+    const { value: formValues } = await Swal.fire({
+        title: 'Yeni İçerik Ekle',
+        html: `
+        <div style="margin-bottom:15px; text-align:left;">
+            <label style="font-weight:bold; font-size:0.9rem;">Ne Ekleyeceksin?</label>
+            <select id="swal-type-select" class="swal2-input" style="width:100%; margin-top:5px; height:35px; font-size:0.9rem;" onchange="toggleAddFields()">
+                <option value="card"> 📌  Bilgi Kartı</option>
+                <option value="news"> 📢  Duyuru</option>
+                <option value="sales"> 📞  Telesatış Scripti</option>
+                <option value="sport"> 🏆  Spor İçeriği</option>
+                <option value="quiz"> ❓  Quiz Sorusu</option>
+            </select>
+        </div>
+        <div id="preview-card" class="card Bilgi" style="text-align:left; box-shadow:none; border:1px solid #e0e0e0; margin-top:10px;">
+            <div class="card-header" style="align-items: center; gap: 10px;">
+                <input id="swal-new-title" class="swal2-input" style="margin:0; height:40px; flex-grow:1; border:none; border-bottom:2px solid #eee; padding:0 5px; font-weight:bold; color:#0e1b42;" placeholder="Başlık Giriniz...">
+                <div id="cat-container" style="width: 110px;">${catSelectHTML}</div>
+            </div>
+            <div class="card-content" style="margin-bottom:10px;">
+                <textarea id="swal-new-text" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; resize:none; font-family:inherit; min-height:100px; padding:10px; background:#f9f9f9;" placeholder="İçerik metni..."></textarea>
+            </div>
+            <div id="script-container" class="script-box" style="padding:0; border:1px solid #f0e68c;">
+                <textarea id="swal-new-script" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; background:transparent; font-style:italic; min-height:80px; font-size:0.9rem;" placeholder="Script metni (İsteğe bağlı)..."></textarea>
+            </div>
+            <div id="extra-container" class="card-actions" style="margin-top:15px; display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+                <div style="position:relative;"><i class="fas fa-code" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-new-code" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" placeholder="Kod"></div>
+                <div style="position:relative;"><i class="fas fa-link" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-new-link" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" placeholder="Link"></div>
+            </div>
+            <div id="sport-extra" style="display:none; padding:10px;">
+                <label style="font-weight:bold;">Kısa Açıklama (Desc)</label><input id="swal-sport-tip" class="swal2-input" placeholder="Kısa İpucu/Tip">
+                <label style="font-weight:bold;">Detaylı Metin (Detail)</label><input id="swal-sport-detail" class="swal2-input" placeholder="Detaylı Açıklama (Alt Metin)">
+                <label style="font-weight:bold;">Okunuşu (Pronunciation)</label><input id="swal-sport-pron" class="swal2-input" placeholder="Okunuşu">
+                <label style="font-weight:bold;">İkon Sınıfı (Icon)</label><input id="swal-sport-icon" class="swal2-input" placeholder="FontAwesome İkon Sınıfı (e.g., fa-futbol)">
+            </div>
+            <div id="news-extra" style="display:none; padding:10px;">
+                <label style="font-weight:bold;">Duyuru Tipi</label><select id="swal-news-type" class="swal2-input"><option value="info">Bilgi</option><option value="update">Değişiklik</option><option value="fix">Çözüldü</option></select>
+                <label style="font-weight:bold;">Durum</label><select id="swal-news-status" class="swal2-input"><option value="Aktif">Aktif</option><option value="Pasif">Pasif (Gizle)</option></select>
+            </div>
+            <div id="quiz-extra" style="display:none; padding:10px;">
+                <label style="font-weight:bold;">Soru Metni (Text)</label><textarea id="swal-quiz-q" class="swal2-textarea" placeholder="Quiz sorusu..."></textarea>
+                <label style="font-weight:bold;">Seçenekler (Virgülle Ayırın)</label><input id="swal-quiz-opts" class="swal2-input" placeholder="Örn: şık A,şık B,şık C,şık D">
+                <label style="font-weight:bold;">Doğru Cevap İndeksi</label><input id="swal-quiz-ans" type="number" class="swal2-input" placeholder="0 (A), 1 (B), 2 (C) veya 3 (D)" min="0" max="3">
+            </div>
+        </div>`,
+        width: '700px', showCancelButton: true, confirmButtonText: '<i class="fas fa-plus"></i> Ekle', cancelButtonText: 'İptal', focusConfirm: false,
+        didOpen: () => {
+            const selectEl = document.getElementById('swal-new-cat');
+            const cardEl = document.getElementById('preview-card');
+            selectEl.style.margin = "0"; selectEl.style.height = "30px"; selectEl.style.fontSize = "0.8rem"; selectEl.style.padding = "0 5px";
+            selectEl.addEventListener('change', function() { cardEl.className = 'card ' + this.value; });
+            
+            window.toggleAddFields = function() {
+                const type = document.getElementById('swal-type-select').value;
+                const catCont = document.getElementById('cat-container');
+                const scriptCont = document.getElementById('script-container');
+                const extraCont = document.getElementById('extra-container');
+                const sportExtra = document.getElementById('sport-extra');
+                const newsExtra = document.getElementById('news-extra');
+                const quizExtra = document.getElementById('quiz-extra');
+                const cardPreview = document.getElementById('preview-card');
+                
+                catCont.style.display = 'none'; scriptCont.style.display = 'none'; extraCont.style.display = 'none';
+                sportExtra.style.display = 'none'; newsExtra.style.display = 'none'; quizExtra.style.display = 'none';
+                document.getElementById('swal-new-title').value = ''; document.getElementById('swal-new-text').value = '';
+                cardPreview.style.borderLeft = "5px solid var(--info)"; cardPreview.className = 'card Bilgi';
+                
+                if (type === 'card') {
+                    catCont.style.display = 'block'; scriptCont.style.display = 'block'; extraCont.style.display = 'grid';
+                    cardPreview.className = 'card ' + document.getElementById('swal-new-cat').value;
+                    document.getElementById('swal-new-title').placeholder = "Başlık Giriniz..."; document.getElementById('swal-new-text').placeholder = "İçerik metni...";
+                } else if (type === 'sales') {
+                    scriptCont.style.display = 'block';
+                    document.getElementById('swal-new-script').placeholder = "Satış Metni...";
+                    cardPreview.style.borderLeft = "5px solid var(--sales)";
+                    document.getElementById('swal-new-title').placeholder = "Script Başlığı..."; document.getElementById('swal-new-text').placeholder = "Sadece buraya metin girilecek.";
+                } else if (type === 'sport') {
+                    sportExtra.style.display = 'block';
+                    cardPreview.style.borderLeft = "5px solid var(--primary)";
+                    document.getElementById('swal-new-title').placeholder = "Spor Terimi Başlığı..."; document.getElementById('swal-new-text').placeholder = "Kısa Açıklama (Desc)...";
+                } else if (type === 'news') {
+                    newsExtra.style.display = 'block';
+                    cardPreview.style.borderLeft = "5px solid var(--secondary)";
+                    document.getElementById('swal-new-title').placeholder = "Duyuru Başlığı..."; document.getElementById('swal-new-text').placeholder = "Duyuru Metni (Desc)...";
+                } else if (type === 'quiz') {
+                    quizExtra.style.display = 'block';
+                    document.getElementById('swal-new-title').placeholder = "Quiz Başlığı (Örn: Soru 1)"; document.getElementById('swal-new-text').placeholder = "Bu alan boş bırakılacak.";
+                    cardPreview.style.borderLeft = "5px solid var(--quiz)";
+                }
+            };
+        },
+        preConfirm: () => {
+            const type = document.getElementById('swal-type-select').value;
+            const today = new Date();
+            const dateStr = today.getDate() + "." + (today.getMonth()+1) + "." + today.getFullYear();
+            const quizOpts = type === 'quiz' ? document.getElementById('swal-quiz-opts').value : '';
+            const quizAns = type === 'quiz' ? document.getElementById('swal-quiz-ans').value : '';
+            const quizQ = type === 'quiz' ? document.getElementById('swal-quiz-q').value : '';
+            if (type === 'quiz' && (!quizQ || !quizOpts || quizAns === '')) { Swal.showValidationMessage('Quiz sorusu için tüm alanlar zorunludur.'); return false; }
+            return {
+                cardType: type,
+                category: type === 'card' ? document.getElementById('swal-new-cat').value : (type === 'news' ? document.getElementById('swal-news-type').value : ''),
+                title: document.getElementById('swal-new-title').value,
+                text: type === 'quiz' ? quizQ : document.getElementById('swal-new-text').value,
+                script: (type === 'card' || type === 'sales') ? document.getElementById('swal-new-script').value : '',
+                code: type === 'card' ? document.getElementById('swal-new-code').value : '',
+                status: type === 'news' ? document.getElementById('swal-news-status').value : '',
+                link: type === 'card' ? document.getElementById('swal-new-link').value : '',
+                tip: type === 'sport' ? document.getElementById('swal-sport-tip').value : '',
+                detail: type === 'sport' ? document.getElementById('swal-sport-detail').value : '',
+                pronunciation: type === 'sport' ? document.getElementById('swal-sport-pron').value : '',
+                icon: type === 'sport' ? document.getElementById('swal-sport-icon').value : '',
+                date: dateStr, quizOptions: quizOpts, quizAnswer: quizAns
+            }
+        }
+    });
+    if (formValues) {
+        if(!formValues.title) { Swal.fire('Hata', 'Başlık zorunlu!', 'error'); return; }
+        Swal.fire({ title: 'Ekleniyor...', didOpen: () => { Swal.showLoading() } });
+        fetch(SCRIPT_URL, {
+            method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: "addCard", username: currentUser, token: getToken(), ...formValues })
+        }).then(response => response.json()).then(data => {
+            if (data.result === "success") {
+                Swal.fire({icon: 'success', title: 'Başarılı', text: 'İçerik eklendi.', timer: 2000, showConfirmButton: false});
+                setTimeout(loadContentData, 3500);
+            } else { Swal.fire('Hata', data.message || 'Eklenemedi.', 'error'); }
+        }).catch(err => Swal.fire('Hata', 'Sunucu hatası: ' + err, 'error'));
+    }
+}
+async function editContent(index) {
+    const item = activeCards[index];
+    const catSelectHTML = getCategorySelectHtml(item.category, 'swal-cat');
+    const { value: formValues } = await Swal.fire({
+        title: 'Kartı Düzenle',
+        html: `
+        <div id="preview-card-edit" class="card ${item.category}" style="text-align:left; box-shadow:none; border:1px solid #e0e0e0; margin-top:10px;">
+            <div class="card-header" style="align-items: center; gap: 10px;">
+                <input id="swal-title" class="swal2-input" style="margin:0; height:40px; flex-grow:1; border:none; border-bottom:2px solid #eee; padding:0 5px; font-weight:bold; color:#0e1b42;" value="${item.title}" placeholder="Başlık">
+                <div style="width: 110px;">${catSelectHTML}</div>
+            </div>
+            <div class="card-content" style="margin-bottom:10px;">
+                <textarea id="swal-text" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; resize:none; font-family:inherit; min-height:120px; padding:10px; background:#f9f9f9;" placeholder="İçerik metni...">${(item.text || '').toString().replace(/<br>/g,'\n')}</textarea>
+            </div>
+            <div class="script-box" style="padding:0; border:1px solid #f0e68c;">
+                <textarea id="swal-script" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; background:transparent; font-style:italic; min-height:80px; font-size:0.9rem;" placeholder="Script metni...">${(item.script || '').toString().replace(/<br>/g,'\n')}</textarea>
+            </div>
+            <div class="card-actions" style="margin-top:15px; display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+                <div style="position:relative;"><i class="fas fa-code" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-code" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" value="${item.code || ''}" placeholder="Kod"></div>
+                <div style="position:relative;"><i class="fas fa-link" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-link" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" value="${item.link || ''}" placeholder="Link"></div>
+            </div>
+        </div>`,
+        width: '700px', showCancelButton: true, confirmButtonText: '<i class="fas fa-save"></i> Kaydet', cancelButtonText: 'İptal', focusConfirm: false,
+        didOpen: () => {
+            const selectEl = document.getElementById('swal-cat');
+            const cardEl = document.getElementById('preview-card-edit');
+            selectEl.style.margin = "0"; selectEl.style.height = "30px"; selectEl.style.fontSize = "0.8rem"; selectEl.style.padding = "0 5px";
+            selectEl.addEventListener('change', function() { cardEl.className = 'card ' + this.value; });
+        },
+        preConfirm: () => {
+            return {
+                cat: document.getElementById('swal-cat').value,
+                title: document.getElementById('swal-title').value,
+                text: document.getElementById('swal-text').value,
+                script: document.getElementById('swal-script').value,
+                code: document.getElementById('swal-code').value,
+                link: document.getElementById('swal-link').value
+            }
+        }
+    });
+    if (formValues) {
+        if(formValues.cat !== item.category) sendUpdate(item.title, "Category", formValues.cat, 'card');
+        if(formValues.text !== (item.text || '').replace(/<br>/g,'\n')) setTimeout(() => sendUpdate(item.title, "Text", formValues.text, 'card'), 500);
+        if(formValues.script !== (item.script || '').replace(/<br>/g,'\n')) setTimeout(() => sendUpdate(item.title, "Script", formValues.script, 'card'), 1000);
+        if(formValues.code !== (item.code || '')) setTimeout(() => sendUpdate(item.title, "Code", formValues.code, 'card'), 1500);
+        if(formValues.link !== (item.link || '')) setTimeout(() => sendUpdate(item.title, "Link", formValues.link, 'card'), 2000);
+        if(formValues.title !== item.title) setTimeout(() => sendUpdate(item.title, "Title", formValues.title, 'card'), 2500);
+    }
+}
+async function editSport(title) {
+    event.stopPropagation();
+    const s = sportsData.find(item => item.title === title);
+    if (!s) return Swal.fire('Hata', 'İçerik bulunamadı.', 'error');
+    const { value: formValues } = await Swal.fire({
+        title: 'Spor İçeriğini Düzenle',
+        html: `
+        <div class="card" style="text-align:left; border-left: 5px solid var(--primary); padding:15px; background:#f8f9fa;">
+            <label style="font-weight:bold;">Başlık</label><input id="swal-title" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${s.title}">
+            <label style="font-weight:bold;">Açıklama (Kısa)</label><textarea id="swal-desc" class="swal2-textarea" style="margin-bottom:10px;">${s.desc || ''}</textarea>
+            <label style="font-weight:bold;">İpucu (Tip)</label><input id="swal-tip" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${s.tip || ''}">
+            <label style="font-weight:bold;">Detay (Alt Metin)</label><textarea id="swal-detail" class="swal2-textarea" style="margin-bottom:10px;">${s.detail || ''}</textarea>
+            <label style="font-weight:bold;">Okunuşu</label><input id="swal-pron" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${s.pronunciation || ''}">
+            <label style="font-weight:bold;">İkon Sınıfı</label><input id="swal-icon" class="swal2-input" style="width:100%;" value="${s.icon || ''}">
+        </div>`,
+        width: '700px', showCancelButton: true, confirmButtonText: 'Kaydet',
+        preConfirm: () => [
+            document.getElementById('swal-title').value, document.getElementById('swal-desc').value, document.getElementById('swal-tip').value,
+            document.getElementById('swal-detail').value, document.getElementById('swal-pron').value, document.getElementById('swal-icon').value
+        ]
+    });
+    if (formValues) {
+        const originalTitle = s.title;
+        if(formValues[1] !== s.desc) sendUpdate(originalTitle, "Text", formValues[1], 'sport');
+        if(formValues[2] !== s.tip) setTimeout(() => sendUpdate(originalTitle, "Tip", formValues[2], 'sport'), 500);
+        if(formValues[3] !== s.detail) setTimeout(() => sendUpdate(originalTitle, "Detail", formValues[3], 'sport'), 1000);
+        if(formValues[4] !== s.pronunciation) setTimeout(() => sendUpdate(originalTitle, "Pronunciation", formValues[4], 'sport'), 1500);
+        if(formValues[5] !== s.icon) setTimeout(() => sendUpdate(originalTitle, "Icon", formValues[5], 'sport'), 2000);
+        if(formValues[0] !== originalTitle) setTimeout(() => sendUpdate(originalTitle, "Title", formValues[0], 'sport'), 2500);
+    }
+}
+async function editSales(title) {
+    event.stopPropagation();
+    const s = salesScripts.find(item => item.title === title);
+    if (!s) return Swal.fire('Hata', 'İçerik bulunamadı.', 'error');
+    const { value: formValues } = await Swal.fire({
+        title: 'Satış Metnini Düzenle',
+        html: `<div class="card" style="text-align:left; border-left: 5px solid var(--sales); padding:15px; background:#ecfdf5;"><label style="font-weight:bold;">Başlık</label><input id="swal-title" class="swal2-input" style="width:100%; margin-bottom:10px;"
+        value="${s.title}"><label style="font-weight:bold;">Metin</label><textarea id="swal-text" class="swal2-textarea" style="min-height:150px;">${s.text || ''}</textarea></div>`,
+        width: '700px', showCancelButton: true, confirmButtonText: 'Kaydet',
+        preConfirm: () => [ document.getElementById('swal-title').value, document.getElementById('swal-text').value ]
+    });
+    if (formValues) {
+        const originalTitle = s.title;
+        if(formValues[1] !== s.text) sendUpdate(originalTitle, "Text", formValues[1], 'sales');
+        if(formValues[0] !== originalTitle) setTimeout(() => sendUpdate(originalTitle, "Title", formValues[0], 'sales'), 500);
+    }
+}
+async function editNews(index) {
+    const i = newsData[index];
+    let statusOptions = `<option value="Aktif" ${i.status !== 'Pasif' ? 'selected' : ''}>Aktif</option><option value="Pasif" ${i.status === 'Pasif' ? 'selected' : ''}>Pasif</option>`;
+    let typeOptions = `<option value="info" ${i.type === 'info' ? 'selected' : ''}>Bilgi</option><option value="update" ${i.type === 'update' ? 'selected' : ''}>Değişiklik</option><option value="fix" ${i.type === 'fix' ? 'selected' : ''}>Çözüldü</option>`;
+    
+    const { value: formValues } = await Swal.fire({
+        title: 'Duyuruyu Düzenle',
+        html: `<div class="card" style="text-align:left; border-left: 5px solid var(--secondary); padding:15px; background:#fff8e1;"><label style="font-weight:bold;">Başlık</label><input id="swal-title" class="swal2-input" style="width:100%; margin-bottom:10px;"
+        value="${i.title || ''}"><div style="display:flex; gap:10px; margin-bottom:10px;"><div style="flex:1;"><label style="font-weight:bold;">Tarih</label><input id="swal-date" class="swal2-input" style="width:100%;"
+        value="${i.date || ''}"></div><div style="flex:1;"><label style="font-weight:bold;">Tür</label><select id="swal-type" class="swal2-input" style="width:100%;">${typeOptions}</select></div></div><label style="font-weight:bold;">Metin</label><textarea id="swal-desc" class="swal2-textarea" style="margin-bottom:10px;">${i.desc || ''}</textarea><label style="font-weight:bold;">Durum</label><select id="swal-status" class="swal2-input" style="width:100%;">${statusOptions}</select></div>`,
+        width: '600px', showCancelButton: true, confirmButtonText: 'Kaydet',
+        preConfirm: () => [
+            document.getElementById('swal-title').value, document.getElementById('swal-date').value,
+            document.getElementById('swal-desc').value, document.getElementById('swal-type').value, document.getElementById('swal-status').value
+        ]
+    });
+    if (formValues) {
+        const originalTitle = i.title;
+        if(formValues[1] !== i.date) sendUpdate(originalTitle, "Date", formValues[1], 'news');
+        if(formValues[2] !== i.desc) setTimeout(() => sendUpdate(originalTitle, "Text", formValues[2], 'news'), 500);
+        if(formValues[3] !== i.type) setTimeout(() => sendUpdate(originalTitle, "Category", formValues[3], 'news'), 1000);
+        if(formValues[4] !== i.status) setTimeout(() => sendUpdate(originalTitle, "Status", formValues[4], 'news'), 1500);
+        if(formValues[0] !== originalTitle) setTimeout(() => sendUpdate(originalTitle, "Title", formValues[0], 'news'), 2000);
+    }
+}
+// --- STANDARD MODALS (TICKER, NEWS, GUIDE, SALES) ---
+function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+function startTicker() {
+    const t = document.getElementById('ticker-content');
+    const activeNews = newsData.filter(i => i.status !== 'Pasif');
+    if(activeNews.length === 0) { t.innerHTML = "Güncel duyuru yok."; t.style.animation = 'none'; return; }
+    
+    let tickerText = activeNews.map(i => {
+        return `<span style="color:#fabb00; font-weight:bold;">[${i.date}]</span> <span style="color:#fff;">${i.title}:</span> <span style="color:#ddd;">${i.desc}</span>`;
+    }).join(' &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; ');
+    t.innerHTML = tickerText + ' &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; ' + tickerText;
+    t.style.animation = 'ticker-scroll 190s linear infinite';
+}
+function openNews() {
+    document.getElementById('news-modal').style.display = 'flex';
+    const c = document.getElementById('news-container');
+    c.innerHTML = '';
+    newsData.forEach((i, index) => {
+        let cl = i.type === 'fix' ? 'tag-fix' : (i.type === 'update' ? 'tag-update' : 'tag-info');
+        let tx = i.type === 'fix' ? 'Çözüldü' : (i.type === 'update' ? 'Değişiklik' : 'Bilgi');
+        let passiveStyle = i.status === 'Pasif' ? 'opacity:0.5; background:#eee;' : '';
+        let passiveBadge = i.status === 'Pasif' ? '<span class="news-tag" style="background:#555; color:white;">PASİF</span>' : '';
+        let editBtn = (isAdminMode && isEditingActive) ? `<i class="fas fa-pencil-alt edit-icon" style="top:0; right:0; font-size:0.9rem; padding:4px;" onclick="event.stopPropagation(); editNews(${index})"></i>` : '';
+        c.innerHTML += `<div class="news-item" style="${passiveStyle}">${editBtn}<span class="news-date">${i.date}</span><span class="news-title">${i.title} ${passiveBadge}</span><div class="news-desc">${i.desc}</div><span class="news-tag ${cl}">${tx}</span></div>`;
+    });
+}
+
+
+// =========================
+// ✅ Yayın Akışı (E-Tablo'dan)
+// =========================
+async function fetchBroadcastFlow() {
+    const r = await fetch(SCRIPT_URL, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({
+            action: "getBroadcastFlow",
+            username: (typeof currentUser !== "undefined" ? currentUser : ""),
+            token: (typeof getToken === "function" ? getToken() : "")
+        })
+    });
+
+    const d = await r.json();
+    if (!d || d.result !== "success") {
+        throw new Error((d && d.message) ? d.message : "Yayın akışı alınamadı.");
+    }
+    return d.items || [];
+}
+
+async function openBroadcastFlow() {
+  Swal.fire({
+    title: "Yayın Akışı",
+    didOpen: () => Swal.showLoading(),
+    showConfirmButton: false
+  });
+
+  try {
+    const itemsRaw = await fetchBroadcastFlow();
+
+    if (!itemsRaw || !itemsRaw.length) {
+      Swal.fire("Yayın Akışı", "Kayıt bulunamadı.", "info");
+      return;
+    }
+
+    // ✅ Sıralama (epoch varsa kesin, yoksa tarih+saate göre)
+    const items = [...itemsRaw].sort((a, b) => {
+      const ae = Number(a?.startEpoch || 0);
+      const be = Number(b?.startEpoch || 0);
+      if (ae && be) return ae - be;
+
+      const ak = String(a?.dateISO || a?.date || "") + " " + String(a?.time || "");
+      const bk = String(b?.dateISO || b?.date || "") + " " + String(b?.time || "");
+      return ak.localeCompare(bk);
+    });
+
+    const now = Date.now();
+
+    // ✅ Tarihe göre grupla (dateISO)
+    const byDate = {};
+    const dateLabelByKey = {};
+    items.forEach(it => {
+      const key = String(it?.dateISO || it?.date || "Tarih Yok");
+      if (!byDate[key]) byDate[key] = [];
+      byDate[key].push(it);
+
+      if (!dateLabelByKey[key]) {
+        dateLabelByKey[key] = String(it?.dateLabelTr || "");
+      }
+    });
+
+    // ✅ Popup CSS (Swal içi)
+    const css = `
+      <style>
+        .ba-wrap{ text-align:left; max-height:62vh; overflow:auto; padding-right:6px; }
+        .ba-day{ margin:14px 0 8px; font-weight:900; color:#0e1b42; display:flex; align-items:center; gap:10px; }
+
+        .ba-section{ margin:16px 0 8px; font-weight:900; color:#0e1b42; font-size:1rem; }
+        .ba-divider{ margin:14px 0; height:1px; background:#e9e9e9; }
+        .ba-empty{ padding:10px 12px; border:1px dashed #ddd; border-radius:12px; background:#fafafa; color:#666; margin:10px 0; font-weight:700; }
+        .ba-badge{ font-size:.75rem; padding:4px 8px; border-radius:999px; border:1px solid #e9e9e9; background:#f8f8f8; color:#444; }
+        .ba-grid{ display:grid; gap:8px; }
+        .ba-row{
+          border:1px solid #eee;
+          border-left:4px solid var(--secondary);
+          border-radius:12px;
+          padding:10px 12px;
+          background:#fff;
+        }
+        .ba-row.past{
+          border-left-color:#d9534f;
+          background:#fff5f5;
+        }
+        .ba-top{ display:flex; justify-content:space-between; gap:12px; align-items:flex-start; }
+        .ba-title{ font-weight:900; color:#222; line-height:1.25; }
+        .ba-time{ font-weight:900; color:#0e1b42; white-space:nowrap; }
+        .ba-sub{ margin-top:6px; font-size:.86rem; color:#666; display:flex; gap:14px; flex-wrap:wrap; }
+        .ba-legend{ display:flex; gap:10px; flex-wrap:wrap; margin:6px 0 10px; }
+        .ba-dot{ display:inline-flex; align-items:center; gap:6px; font-size:.8rem; color:#444; }
+        .ba-dot i{ width:10px; height:10px; border-radius:50%; display:inline-block; }
+        .ba-dot .up{ background:var(--secondary); }
+        .ba-dot .pa{ background:#d9534f; }
+      </style>
+    `;
+
+    let html = `${css}<div class="ba-wrap">`;
+    html += `
+      <div class="ba-legend">
+        <span class="ba-dot"><i class="up"></i> Yaklaşan / Gelecek</span>
+        <span class="ba-dot"><i class="pa"></i> Tarihi Geçmiş</span>
+      </div>
+    `;
+
+        // ✅ Yaklaşan / Gelecek ve Geçmiş olarak ayır
+    const upcomingByDate = {};
+    const pastByDate = {};
+    const dateKeys = Object.keys(byDate);
+
+    dateKeys.forEach(key => {
+      const arr = byDate[key] || [];
+      arr.forEach(it => {
+        const startEpoch = Number(it?.startEpoch || 0);
+        const isPast = startEpoch ? (startEpoch < now) : false;
+        const bucket = isPast ? pastByDate : upcomingByDate;
+        if (!bucket[key]) bucket[key] = [];
+        bucket[key].push(it);
+      });
+    });
+
+    const renderSection = (title, bucket, emptyText) => {
+      const keys = dateKeys.filter(k => (bucket[k] && bucket[k].length));
+      if (!keys.length) {
+        html += `<div class="ba-empty">${escapeHtml(emptyText)}</div>`;
+        return;
+      }
+      html += `<div class="ba-section">${escapeHtml(title)}</div>`;
+      keys.forEach(key => {
+        const label = dateLabelByKey[key] || _formatBroadcastDateTr({ dateISO: key });
+        html += `<div class="ba-day">${escapeHtml(label)}</div>`;
+        html += `<div class="ba-grid">`;
+
+        bucket[key].forEach(it => {
+          const startEpoch = Number(it?.startEpoch || 0);
+          const isPast = startEpoch ? (startEpoch < now) : false;
+
+          const time = String(it?.time || "").trim();
+          const event = String(it?.event || "").trim();
+          const announcer = String(it?.announcer || "").trim();
+
+          html += `
+            <div class="ba-row ${isPast ? "past" : ""}">
+              <div class="ba-top">
+                <div class="ba-title">${escapeHtml(event || "-")}</div>
+                <div class="ba-time">${escapeHtml(time || "")}</div>
+              </div>
+              <div class="ba-sub">
+                <span><i class="fas fa-microphone"></i> ${escapeHtml(announcer || "-")}</span>
+              </div>
+            </div>`;
+        });
+
+        html += `</div>`;
+      });
+    };
+
+    // ✅ Önce yaklaşanlar, sonra geçmişler
+    renderSection("Yaklaşan / Gelecek", upcomingByDate, "Yaklaşan yayın bulunamadı.");
+    html += `<div class="ba-divider"></div>`;
+    renderSection("Geçmiş", pastByDate, "Geçmiş yayın bulunamadı.");
+
+    html += `</div>`;
+
+    Swal.fire({
+      title: "Yayın Akışı",
+      html,
+      width: 980,
+      confirmButtonText: "Kapat"
+    });
+
+  } catch (err) {
+    Swal.fire("Hata", err?.message || "Yayın akışı alınamadı.", "error");
+  }
+}
+
+// XSS koruması
+
+function _formatBroadcastDateTr(it) {
+    // Backend yeni alanları gönderiyorsa kullan
+    if (it && it.dateLabelTr) return String(it.dateLabelTr);
+
+    // Fallback: it.dateISO (yyyy-mm-dd) veya it.date
+    const s = String(it?.dateISO || it?.date || "").trim();
+    if (!s) return "Tarih Yok";
+
+    // ISO yyyy-mm-dd
+    const m = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+    if (m) {
+        const d = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+        return new Intl.DateTimeFormat("tr-TR", { day: "2-digit", month: "long", year: "numeric", weekday: "long" }).format(d);
+    }
+
+    // dd.mm.yyyy / dd/mm/yyyy
+    const m2 = s.match(/^(\d{1,2})[\./-](\d{1,2})[\./-](\d{4})/);
+    if (m2) {
+        const d = new Date(Number(m2[3]), Number(m2[2]) - 1, Number(m2[1]));
+        return new Intl.DateTimeFormat("tr-TR", { day: "2-digit", month: "long", year: "numeric", weekday: "long" }).format(d);
+    }
+
+    return s; // en kötü haliyle göster
+}
+
+function escapeHtml(str) {
+    return String(str ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+}
+
+function openGuide() {
+    document.getElementById('guide-modal').style.display = 'flex';
+    const grid = document.getElementById('guide-grid');
+    grid.innerHTML = '';
+    sportsData.forEach((s, index) => {
+        let pronHtml = s.pronunciation ? `<div class="pronunciation-badge"> 🗣️  ${s.pronunciation}</div>` : '';
+        let editBtn = (isAdminMode && isEditingActive) ? `<i class="fas fa-pencil-alt edit-icon" style="top:5px; right:5px; z-index:50;" onclick="event.stopPropagation(); editSport('${escapeForJsString(s.title)}')"></i>` : '';
+        grid.innerHTML += `<div class="guide-item" onclick="showSportDetail(${index})">${editBtn}<i class="fas ${s.icon} guide-icon"></i><span class="guide-title">${s.title}</span>${pronHtml}<div class="guide-desc">${s.desc}</div><div class="guide-tip"><i class="fas fa-lightbulb"></i> ${s.tip}</div><div style="font-size:0.8rem; color:#999; margin-top:5px;">(Detay için tıkla)</div></div>`;
+    });
+}
+function showSportDetail(index) {
+    const sport = sportsData[index];
+    const detailText = sport.detail ? sport.detail.replace(/\n/g,'<br>') : "Bu içerik için henüz detay eklenmemiş.";
+    const pronDetail = sport.pronunciation ? `<div style="color:#e65100; font-weight:bold; margin-bottom:15px;"> 🗣️  Okunuşu: ${sport.pronunciation}</div>` : '';
+    Swal.fire({
+        title: `<i class="fas ${sport.icon}" style="color:#0e1b42;"></i> ${sport.title}`,
+        html: `${pronDetail}<div style="text-align:left; font-size:1rem; line-height:1.6;">${detailText}</div>`,
+        showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa'
+    });
+}
+function openSales() {
+    // TeleSatış artık tam ekran modül
+    openTelesalesArea();
+}
+function toggleSales(index) {
+    const item = document.getElementById(`sales-${index}`);
+    const icon = document.getElementById(`icon-${index}`);
+    item.classList.toggle('active');
+    if(item.classList.contains('active')){ icon.classList.replace('fa-chevron-down', 'fa-chevron-up'); } 
+    else { icon.classList.replace('fa-chevron-up', 'fa-chevron-down'); }
+}
+
+// --- PENALTY GAME ---
+// Tasarım/Güncelleme: Tekrarlayan soru engeli, akıllı 50:50, double rozet, daha net maç sonu ekranı
+
+let pScore = 0, pBalls = 10, pCurrentQ = null;
+let pQuestionQueue = [];        // oturum boyunca sorulacak soru indeksleri (karıştırılmış)
+let pAskedCount = 0;            // kaç soru soruldu
+let pCorrectCount = 0;          // kaç doğru
+let pWrongCount = 0;            // kaç yanlış
+
+function setDoubleIndicator(isActive) {
+    const el = document.getElementById('double-indicator');
+    if (!el) return;
+    el.style.display = isActive ? 'inline-flex' : 'none';
+}
+
+function updateJokerButtons() {
+    const callBtn = document.getElementById('joker-call');
+    const halfBtn = document.getElementById('joker-half');
+    const doubleBtn = document.getElementById('joker-double');
+
+    if (callBtn) callBtn.disabled = jokers.call === 0;
+    if (halfBtn) halfBtn.disabled = jokers.half === 0;
+    if (doubleBtn) doubleBtn.disabled = jokers.double === 0 || firstAnswerIndex !== -1;
+
+    // Double aktifken diğerleri kilitlensin
+    if (firstAnswerIndex !== -1) {
+        if (callBtn) callBtn.disabled = true;
+        if (halfBtn) halfBtn.disabled = true;
+        if (doubleBtn) doubleBtn.disabled = true;
+    }
+}
+
+function useJoker(type) {
+    if (!pCurrentQ) return;
+    if (jokers[type] === 0) return;
+    if (firstAnswerIndex !== -1 && type !== 'double') return;
+
+    jokers[type] = 0;
+    updateJokerButtons();
+
+    const currentQ = pCurrentQ;
+    const correctAns = currentQ.a;
+    const btns = document.querySelectorAll('.penalty-btn');
+
+    if (type === 'call') {
+        const experts = ["Umut Bey", "Doğuş Bey", "Deniz Bey", "Esra Hanım"];
+        const expert = experts[Math.floor(Math.random() * experts.length)];
+
+        let guess = correctAns;
+        // %80 doğru, %20 yanlış tahmin
+        if (Math.random() > 0.8 && currentQ.opts.length > 1) {
+            const incorrect = currentQ.opts.map((_, i) => i).filter(i => i !== correctAns);
+            guess = incorrect[Math.floor(Math.random() * incorrect.length)] ?? correctAns;
+        }
+
+        Swal.fire({
+            icon: 'info',
+            title: ' 📞 Telefon Jokeri',
+            html: `${expert} soruyu cevaplıyor...<br><br>"Benim tahminim **${String.fromCharCode(65 + guess)}** şıkkı. Bundan ${Math.random() < 0.8 ? "çok eminim" : "emin değilim"}."`,
+            confirmButtonText: 'Kapat'
+        });
+
+    } else if (type === 'half') {
+        const optLen = Array.isArray(currentQ.opts) ? currentQ.opts.length : 0;
+        if (optLen <= 2) {
+            Swal.fire({ icon:'info', title:'✂️ 50:50', text:'Bu soruda 50:50 uygulanamaz.', toast:true, position:'top', showConfirmButton:false, timer:1800 });
+            return;
+        }
+
+        // 4+ şıkta 2 yanlış, 3 şıkta 1 yanlış ele
+        const removeCount = optLen >= 4 ? 2 : 1;
+        const incorrect = currentQ.opts.map((_, i) => i).filter(i => i !== correctAns);
+        incorrect.sort(() => Math.random() - 0.5).slice(0, removeCount).forEach(idx => {
+            const b = btns[idx];
+            if (!b) return;
+            b.disabled = true;
+            b.style.textDecoration = 'line-through';
+            b.style.opacity = '0.4';
+        });
+
+        Swal.fire({
+            icon: 'success',
+            title: ' ✂️ 50:50',
+            text: removeCount === 2 ? 'İki yanlış şık elendi!' : 'Bir yanlış şık elendi!',
+            toast: true,
+            position: 'top',
+            showConfirmButton: false,
+            timer: 1400
+        });
+
+    } else if (type === 'double') {
+        doubleChanceUsed = true;
+        setDoubleIndicator(true);
+        Swal.fire({
+            icon: 'warning',
+            title: '2️ ⃣ Çift Cevap',
+            text: 'Bir kez yanlış cevap hakkın var.',
+            toast: true,
+            position: 'top',
+            showConfirmButton: false,
+            timer: 2200
+        });
+    }
+}
+
+
+function openGameHub() {
+    document.getElementById('game-hub-modal').style.display = 'flex';
+}
+
+function openQuickDecisionGame() {
+    try { closeModal('game-hub-modal'); } catch(e) {}
+    document.getElementById('quick-modal').style.display = 'flex';
+
+    // Lobby ekranı
+    const lobby = document.getElementById('qd-lobby');
+    const game = document.getElementById('qd-game');
+    if (lobby) lobby.style.display = 'block';
+    if (game) game.style.display = 'none';
+
+    // Reset göstergeler
+    const t = document.getElementById('qd-time'); if (t) t.innerText = '30';
+    const s = document.getElementById('qd-score'); if (s) s.innerText = '0';
+    const st = document.getElementById('qd-step'); if (st) st.innerText = '0';
+}
+
+// --- HIZLI KARAR OYUNU ---
+let qdTimer = null;
+let qdTimeLeft = 30;
+let qdScore = 0;
+let qdStep = 0;
+let qdQueue = [];
+
+const QUICK_DECISION_BANK = [
+  {
+    q: 'Müşteri: "Fiyat pahalı, iptal edeceğim." İlk yaklaşımın ne olmalı?',
+    opts: [
+      'Hemen iptal işlemini başlatalım.',
+      'Haklısınız, sizi anlıyorum. Paket/avantajlara göre alternatif sunayım mı?',
+      'Kampanya yok, yapacak bir şey yok.'
+    ],
+    a: 1,
+    exp: 'Empati + ihtiyaç analizi itirazı yumuşatır ve iknayı artırır.'
+  },
+  {
+    q: 'Müşteri: "Uygulama açılmıyor." En hızlı ilk kontrol ne?',
+    opts: [
+      'Şifreyi sıfırlat.',
+      'İnternet bağlantısı / VPN / DNS kontrolü yaptır.',
+      'Hemen cihazı fabrika ayarlarına döndür.'
+    ],
+    a: 1,
+    exp: 'Önce kök nedeni daralt: bağlantı mı uygulama mı? Büyük adımları sona bırak.'
+  },
+  {
+    q: 'Müşteri: "Yayın donuyor." Teknikte doğru soru hangisi?',
+    opts: [
+      'Hangi cihazda (TV/telefon) ve hangi ağda (Wi‑Fi/kablo) oluyor?',
+      'Kaç gündür böyle?',
+      'Şimdi kapatıp açın.'
+    ],
+    a: 0,
+    exp: 'Cihaz + ağ bilgisi, sorunu hızlı izole etmeyi sağlar.'
+  },
+  {
+    q: 'Müşteri: "İade istiyorum." En doğru yönlendirme?',
+    opts: [
+      'Hemen kapatalım.',
+      'İade koşulları ve adımları net anlat, doğru kanala yönlendir (asistan/rehber).',
+      'Tekrar arayın.'
+    ],
+    a: 1,
+    exp: 'Net süreç + doğru kanal = memnuniyet + tekrar aramayı azaltır.'
+  },
+  {
+    q: 'Müşteri: "Kampanyadan yararlanamıyorum." İlk adım?',
+    opts: [
+      'Kampanya koşulları (tarih/paket/cihaz) uygun mu kontrol et.',
+      'Direkt kampanyayı tanımla.',
+      'Sorun yok deyip kapat.'
+    ],
+    a: 0,
+    exp: 'Uygunluk kontrolü yapılmadan işlem yapmak hataya sürükler.'
+  },
+  {
+    q: 'Müşteri sinirli: "Kimse çözmedi!" Ne yaparsın?',
+    opts: [
+      'Sakinleştirici bir cümle + özet + net aksiyon planı.',
+      'Sıraya alalım.',
+      'Ses yükselt.'
+    ],
+    a: 0,
+    exp: 'Kontrolü geri almak için empati + özet + plan üçlüsü çalışır.'
+  }
+];
+
+function resetQuickDecision() {
+    if (qdTimer) { clearInterval(qdTimer); qdTimer = null; }
+    qdTimeLeft = 30; qdScore = 0; qdStep = 0; qdQueue = [];
+    openQuickDecisionGame();
+}
+
+function startQuickDecision() {
+    const bank = Array.isArray(quickDecisionQuestions) ? quickDecisionQuestions : [];
+    if (!bank.length) {
+        Swal.fire('Bilgi', 'Sorular henüz yüklenmedi. Lütfen admin panelden soruları ekleyin ve sayfayı yenileyin.', 'info');
+        return;
+    }
+
+    const take = Math.min(5, bank.length);
+    const idxs = Array.from({length: bank.length}, (_,i)=>i).sort(()=>Math.random()-0.5).slice(0, take);
+    qdQueue = idxs.map(i => bank[i]);
+    qdTimeLeft = 30;
+    qdScore = 0;
+    qdStep = 0;
+
+    const lobby = document.getElementById('qd-lobby');
+    const game = document.getElementById('qd-game');
+    if (lobby) lobby.style.display = 'none';
+    if (game) game.style.display = 'block';
+
+    updateQuickHud();
+    renderQuickQuestion();
+
+    if (qdTimer) clearInterval(qdTimer);
+    qdTimer = setInterval(() => {
+        qdTimeLeft -= 1;
+        updateQuickHud();
+        if (qdTimeLeft <= 0) {
+            finishQuickDecision(true);
+        }
+    }, 1000);
+}
+
+function updateQuickHud() {
+    const t = document.getElementById('qd-time'); if (t) t.innerText = String(Math.max(0, qdTimeLeft));
+    const s = document.getElementById('qd-score'); if (s) s.innerText = String(qdScore);
+    const st = document.getElementById('qd-step'); if (st) st.innerText = String(qdStep);
+}
+
+function renderQuickQuestion() {
+    const q = qdQueue[qdStep];
+    const qEl = document.getElementById('qd-question');
+    const optEl = document.getElementById('qd-options');
+    if (!qEl || !optEl || !q) return;
+
+    qEl.innerText = q.q;
+    optEl.innerHTML = '';
+
+    q.opts.forEach((txt, i) => {
+        const b = document.createElement('button');
+        b.className = 'quick-opt';
+        b.innerText = txt;
+        b.onclick = () => answerQuick(i);
+        optEl.appendChild(b);
+    });
+}
+
+function answerQuick(idx) {
+    const q = qdQueue[qdStep];
+    const optEl = document.getElementById('qd-options');
+    if (!q || !optEl) return;
+
+    const btns = Array.from(optEl.querySelectorAll('button'));
+    btns.forEach(b => b.disabled = true);
+
+    const correct = (idx === q.a);
+
+    if (btns[idx]) btns[idx].classList.add(correct ? 'good' : 'bad');
+    if (!correct && btns[q.a]) btns[q.a].classList.add('good');
+
+    // puanlama: doğru +2, yanlış -1
+    qdScore += correct ? 2 : -1;
+    if (qdScore < 0) qdScore = 0;
+    updateQuickHud();
+
+    Swal.fire({
+        toast: true,
+        position: 'top',
+        icon: correct ? 'success' : 'warning',
+        title: correct ? 'Doğru seçim!' : 'Yanlış seçim',
+        text: q.exp,
+        showConfirmButton: false,
+        timer: 1800
+    });
+
+    setTimeout(() => {
+        qdStep += 1;
+        updateQuickHud();
+        if (qdStep >= qdQueue.length) finishQuickDecision(false);
+        else renderQuickQuestion();
+    }, 650);
+}
+
+function finishQuickDecision(timeout) {
+    if (qdTimer) { clearInterval(qdTimer); qdTimer = null; }
+
+    const msg = timeout ? 'Süre bitti!' : 'Bitti!';
+    Swal.fire({
+        icon: 'info',
+        title: `🧠 Hızlı Karar ${msg}`,
+        html: `<div style="text-align:center;">
+                <div style="font-size:1.0rem; margin-bottom:8px;">Skorun: <b>${qdScore}</b></div>
+                <div style="color:#666; font-size:0.9rem;">İstersen yeniden başlatıp rekor deneyebilirsin.</div>
+              </div>`,
+        confirmButtonText: 'Tamam'
+    });
+
+    // Lobby'e dön
+    const lobby = document.getElementById('qd-lobby');
+    const game = document.getElementById('qd-game');
+    if (lobby) lobby.style.display = 'block';
+    if (game) game.style.display = 'none';
+    const t = document.getElementById('qd-time'); if (t) t.innerText = '30';
+    const st = document.getElementById('qd-step'); if (st) st.innerText = '0';
+}
+
+function openPenaltyGame() {
+    try { closeModal('game-hub-modal'); } catch(e) {}
+    document.getElementById('penalty-modal').style.display = 'flex';
+    showLobby();
+}
+
+function showLobby() {
+    document.getElementById('penalty-lobby').style.display = 'flex';
+    document.getElementById('penalty-game-area').style.display = 'none';
+    fetchLeaderboard();
+}
+
+function startGameFromLobby() {
+    document.getElementById('penalty-lobby').style.display = 'none';
+    document.getElementById('penalty-game-area').style.display = 'block';
+    startPenaltySession();
+}
+
+function fetchLeaderboard() {
+    const tbody = document.getElementById('leaderboard-body');
+    const loader = document.getElementById('leaderboard-loader');
+    const table = document.getElementById('leaderboard-table');
+
+    if (!tbody || !loader || !table) return;
+
+    tbody.innerHTML = '';
+    loader.style.display = 'block';
+    table.style.display = 'none';
+
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "getLeaderboard" })
+    })
+    .then(r => r.json())
+    .then(data => {
+        loader.style.display = 'none';
+        if (data.result !== "success") {
+            loader.innerText = "Yüklenemedi.";
+            loader.style.display = 'block';
+            return;
+        }
+
+        table.style.display = 'table';
+        let html = '';
+
+        if (!data.leaderboard || data.leaderboard.length === 0) {
+            html = '<tr><td colspan="4" style="text-align:center;">Henüz maç yapılmadı.</td></tr>';
+        } else {
+            data.leaderboard.forEach((u, i) => {
+                const medal = i===0 ? '🥇' : (i===1 ? '🥈' : (i===2 ? '🥉' : `<span class="rank-badge">${i+1}</span>`));
+                const bgStyle = (u.username === currentUser) ? 'background:rgba(250, 187, 0, 0.1);' : '';
+                html += `<tr style="${bgStyle}"><td>${medal}</td><td>${u.username}</td><td>${u.games}</td><td>${u.average}</td></tr>`;
+            });
+        }
+        tbody.innerHTML = html;
+    })
+    .catch(() => {
+        loader.style.display = 'none';
+        loader.innerText = "Bağlantı hatası.";
+        loader.style.display = 'block';
+    });
+}
+
+function buildQuestionQueue() {
+    const n = quizQuestions.length;
+    const idxs = Array.from({ length: n }, (_, i) => i);
+    idxs.sort(() => Math.random() - 0.5);
+
+    // 10 soru için yeter yoksa, yine de döngüye sokmayalım: kalan toplarda tekrar olabilir.
+    // ama önce tüm sorular bir kez gelsin.
+    return idxs;
+}
+
+function startPenaltySession() {
+    // Session reset
+    pScore = 0;
+    pBalls = 10;
+    pAskedCount = 0;
+    pCorrectCount = 0;
+    pWrongCount = 0;
+
+    jokers = { call: 1, half: 1, double: 1 };
+    doubleChanceUsed = false;
+    firstAnswerIndex = -1;
+    setDoubleIndicator(false);
+
+    // Soru kuyruğu
+    pQuestionQueue = buildQuestionQueue();
+
+    updateJokerButtons();
+    document.getElementById('p-score').innerText = pScore;
+    document.getElementById('p-balls').innerText = pBalls;
+
+    const restartBtn = document.getElementById('p-restart-btn');
+    const optionsEl = document.getElementById('p-options');
+    if (restartBtn) restartBtn.style.display = 'none';
+    if (optionsEl) optionsEl.style.display = 'grid';
+
+    resetField();
+    loadPenaltyQuestion();
+}
+
+function pickNextQuestion() {
+    if (quizQuestions.length === 0) return null;
+
+    // Önce kuyruktan tüket
+    if (pQuestionQueue.length > 0) {
+        const i = pQuestionQueue.shift();
+        return quizQuestions[i];
+    }
+
+    // Kuyruk bitti ama top devam ediyor: artık random (soru azsa)
+    return quizQuestions[Math.floor(Math.random() * quizQuestions.length)];
+}
+
+function loadPenaltyQuestion() {
+    if (pBalls <= 0) { finishPenaltyGame(); return; }
+    if (!Array.isArray(quizQuestions) || quizQuestions.length === 0) {
+        Swal.fire('Hata', 'Soru yok!', 'warning');
+        return;
+    }
+
+    pCurrentQ = pickNextQuestion();
+    if (!pCurrentQ || !pCurrentQ.opts || pCurrentQ.opts.length < 2) {
+        Swal.fire('Hata', 'Bu soru hatalı formatta (şık yok).', 'error');
+        // bir sonraki soruyu dene
+        pCurrentQ = pickNextQuestion();
+        if (!pCurrentQ) return;
+    }
+
+    pAskedCount++;
+    doubleChanceUsed = false;
+    firstAnswerIndex = -1;
+    setDoubleIndicator(false);
+    updateJokerButtons();
+
+    const qEl = document.getElementById('p-question-text');
+    if (qEl) qEl.innerText = pCurrentQ.q || "Soru";
+
+    let html = '';
+    pCurrentQ.opts.forEach((opt, index) => {
+        const letter = String.fromCharCode(65 + index);
+        html += `<button class="penalty-btn" onclick="shootBall(${index})">${letter}: ${opt}</button>`;
+    });
+
+    const optionsEl = document.getElementById('p-options');
+    if (optionsEl) optionsEl.innerHTML = html;
+}
+
+function shootBall(idx) {
+    const btns = document.querySelectorAll('.penalty-btn');
+    const isCorrect = (idx === pCurrentQ.a);
+
+    // Double joker: ilk yanlışta bir hak daha
+    if (!isCorrect && doubleChanceUsed && firstAnswerIndex === -1) {
+        firstAnswerIndex = idx;
+        if (btns[idx]) {
+            btns[idx].classList.add('wrong-first-try');
+            btns[idx].disabled = true;
+        }
+        Swal.fire({ toast: true, position: 'top', icon: 'info', title: 'İlk Hata! Kalan Hakkın: 1', showConfirmButton: false, timer: 1400, background: '#ffc107' });
+        updateJokerButtons();
+        return;
+    }
+
+    // Artık atış kesinleşti
+    btns.forEach(b => b.disabled = true);
+
+    const ballWrap = document.getElementById('ball-wrap');
+    const keeperWrap = document.getElementById('keeper-wrap');
+    const shooterWrap = document.getElementById('shooter-wrap');
+    const goalMsg = document.getElementById('goal-msg');
+
+    const shotDir = Math.floor(Math.random() * 4);
+    if (shooterWrap) shooterWrap.classList.add('shooter-run');
+
+    setTimeout(() => {
+        if (keeperWrap) {
+            if (isCorrect) {
+                if (shotDir === 0 || shotDir === 2) keeperWrap.classList.add('keeper-dive-right');
+                else keeperWrap.classList.add('keeper-dive-left');
+            } else {
+                if (shotDir === 0 || shotDir === 2) keeperWrap.classList.add('keeper-dive-left');
+                else keeperWrap.classList.add('keeper-dive-right');
+            }
+        }
+
+        if (isCorrect) {
+            if (ballWrap) {
+                if (shotDir === 0) ballWrap.classList.add('ball-shoot-left-top');
+                else if (shotDir === 1) ballWrap.classList.add('ball-shoot-right-top');
+                else if (shotDir === 2) ballWrap.classList.add('ball-shoot-left-low');
+                else ballWrap.classList.add('ball-shoot-right-low');
+            }
+
+            setTimeout(() => {
+                if (goalMsg) {
+                    goalMsg.innerText = "GOL!!!";
+                    goalMsg.style.color = "#fabb00";
+                    goalMsg.classList.add('show');
+                }
+                pScore++;
+                pCorrectCount++;
+                document.getElementById('p-score').innerText = pScore;
+
+                Swal.fire({ toast:true, position:'top', icon:'success', title:'Mükemmel Şut!', showConfirmButton:false, timer:900, background:'#a5d6a7' });
+            }, 450);
+
+        } else {
+            pWrongCount++;
+
+            const showWrong = () => {
+                if (goalMsg) {
+                    goalMsg.style.color = "#ef5350";
+                    goalMsg.classList.add('show');
+                }
+                Swal.fire({ icon:'error', title:'Kaçırdın!', text:`Doğru: ${String.fromCharCode(65 + pCurrentQ.a)}`, showConfirmButton:true, timer:2400, background:'#ef9a9a' });
+            };
+
+            if (Math.random() > 0.5) {
+                if (ballWrap) {
+                    ballWrap.style.bottom = "160px";
+                    ballWrap.style.left = (shotDir === 0 || shotDir === 2) ? "40%" : "60%";
+                    ballWrap.style.transform = "scale(0.6)";
+                }
+                setTimeout(() => { if (goalMsg) goalMsg.innerText = "KURTARDI!"; showWrong(); }, 450);
+            } else {
+                if (ballWrap) ballWrap.classList.add(Math.random() > 0.5 ? 'ball-miss-left' : 'ball-miss-right');
+                setTimeout(() => { if (goalMsg) goalMsg.innerText = "DIŞARI!"; showWrong(); }, 450);
+            }
+        }
+    }, 300);
+
+    // top azalt
+    pBalls--;
+    document.getElementById('p-balls').innerText = pBalls;
+
+    setTimeout(() => { resetField(); loadPenaltyQuestion(); }, 2400);
+}
+
+function resetField() {
+    const ballWrap = document.getElementById('ball-wrap');
+    const keeperWrap = document.getElementById('keeper-wrap');
+    const shooterWrap = document.getElementById('shooter-wrap');
+    const goalMsg = document.getElementById('goal-msg');
+
+    if (ballWrap) { ballWrap.className = 'ball-wrapper'; ballWrap.style = ""; }
+    if (keeperWrap) keeperWrap.className = 'keeper-wrapper';
+    if (shooterWrap) shooterWrap.className = 'shooter-wrapper';
+    if (goalMsg) goalMsg.classList.remove('show');
+
+    document.querySelectorAll('.penalty-btn').forEach(b => {
+        b.classList.remove('wrong-first-try');
+        b.style.textDecoration = '';
+        b.style.opacity = '';
+        b.style.background = '#fabb00';
+        b.style.color = '#0e1b42';
+        b.style.borderColor = '#f0b500';
+        b.disabled = false;
+    });
+}
+
+function finishPenaltyGame() {
+    const totalShots = 10;
+    const title = pScore >= 8 ? "EFSANE! 🏆" : (pScore >= 5 ? "İyi Maçtı! 👏" : "Antrenman Lazım 🤕");
+    const acc = Math.round((pCorrectCount / Math.max(1, (pCorrectCount + pWrongCount))) * 100);
+
+    const qEl = document.getElementById('p-question-text');
+    if (qEl) {
+        qEl.innerHTML = `
+            <div style="font-size:1.5rem; color:#fabb00; font-weight:800;">MAÇ BİTTİ!</div>
+            <div style="margin-top:4px; font-size:1.1rem; color:#fff;">${title}</div>
+            <div style="margin-top:8px; font-size:1rem; color:#ddd;">
+                <b>Skor:</b> ${pScore}/${totalShots} &nbsp; • &nbsp;
+                <b>Doğruluk:</b> ${acc}%
+            </div>
+            <div style="margin-top:6px; font-size:0.9rem; color:#bbb;">
+                Doğru: ${pCorrectCount} &nbsp; | &nbsp; Yanlış: ${pWrongCount}
+            </div>
+            <div style="margin-top:10px; font-size:0.85rem; color:#aaa;">
+                Yeniden oynamak için aşağıdan başlatabilirsin.
+            </div>
+        `;
+    }
+
+    const optionsEl = document.getElementById('p-options');
+    const restartBtn = document.getElementById('p-restart-btn');
+    if (optionsEl) optionsEl.style.display = 'none';
+    if (restartBtn) restartBtn.style.display = 'block';
+
+    // Leaderboard log (mevcut backend uyumu)
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "logQuiz", username: currentUser, token: getToken(), score: pScore * 10, total: 100 })
+    }).finally(() => {
+        // lobby tablosunu güncel tut
+        setTimeout(fetchLeaderboard, 600);
+    });
+}
+
+
+// --- WIZARD FUNCTIONS ---
+function openWizard(){
+    document.getElementById('wizard-modal').style.display='flex';
+    if (Object.keys(wizardStepsData).length === 0) {
+        Swal.fire({ title: 'İade Asistanı Verisi Yükleniyor...', didOpen: () => Swal.showLoading() });
+        loadWizardData().then(() => { Swal.close(); if (wizardStepsData['start']) renderStep('start'); else document.getElementById('wizard-body').innerHTML = '<h2 style="color:red;">Asistan verisi eksik.</h2>'; })
+        .catch(() => { Swal.close(); document.getElementById('wizard-body').innerHTML = '<h2 style="color:red;">Veri çekme hatası.</h2>'; });
+    } else { renderStep('start'); }
+}
+function renderStep(k){
+    const s = wizardStepsData[k];
+    if (!s) { document.getElementById('wizard-body').innerHTML = `<h2 style="color:red;">HATA: Adım ID (${k}) yok.</h2>`; return; }
+    const b = document.getElementById('wizard-body');
+    let h = `<h2 style="color:var(--primary);">${s.title || ''}</h2>`;
+    if(s.result) {
+        let i = s.result === 'red' ? ' 🛑 ' : (s.result === 'green' ? ' ✅ ' : ' ⚠️ ');
+        let c = s.result === 'red' ? 'res-red' : (s.result === 'green' ? 'res-green' : 'res-yellow');
+        h += `<div class="result-box ${c}"><div style="font-size:3rem;margin-bottom:10px;">${i}</div><h3>${s.title}</h3><p>${s.text}</p>${s.script ? `<div class="script-box">${s.script}</div>` : ''}</div><button class="restart-btn" onclick="renderStep('start')"><i class="fas fa-redo"></i> Başa Dön</button>`;
+    } else {
+        h += `<p>${s.text}</p><div class="wizard-options">`;
+        s.options.forEach(o => { h += `<button class="option-btn" onclick="renderStep('${o.next}')"><i class="fas fa-chevron-right"></i> ${o.text}</button>`; });
+        h += `</div>`; if(k !== 'start') h += `<button class="restart-btn" onclick="renderStep('start')" style="background:#eee;color:#333;margin-top:15px;">Başa Dön</button>`;
+    }
+    b.innerHTML = h;
+}
+// --- TECH WIZARD ---
+const twState = { currentStep: 'start', history: [] };
+function openTechWizard() {
+    // Teknik Sihirbaz artık Teknik (tam ekran) içinde
+    openTechArea('wizard');
+}
+function twRenderStep() {
+    const contentDiv = document.getElementById('tech-wizard-content');
+    const backBtn = document.getElementById('tw-btn-back');
+    const stepData = techWizardData[twState.currentStep];
+    if (twState.history.length > 0) backBtn.style.display = 'block'; else backBtn.style.display = 'none';
+    if (!stepData) { contentDiv.innerHTML = `<div class="alert" style="color:red;">Hata: Adım bulunamadı (${twState.currentStep}).</div>`; return; }
+    let html = `<div class="tech-step-title">${stepData.title || ''}</div>`;
+    if (stepData.text) html += `<p style="font-size:1rem; margin-bottom:15px;">${stepData.text}</p>`;
+    if (stepData.script) {
+        const safeScript = encodeURIComponent(stepData.script);
+        html += `<div class="tech-script-box"><span class="tech-script-label">Müşteriye iletilecek:</span>"${stepData.script}"<div style="margin-top:10px; text-align:right;"><button class="btn btn-copy" style="font-size:0.8rem; padding:5px 10px;" onclick="copyScriptContent('${safeScript}')"><i class="fas fa-copy"></i> Kopyala</button></div></div>`;
+    }
+    if (stepData.alert) html += `<div class="tech-alert">${stepData.alert}</div>`;
+    if (stepData.buttons && stepData.buttons.length > 0) {
+        html += `<div class="tech-buttons-area">`;
+        stepData.buttons.forEach(btn => { let btnClass = btn.style === 'option' ? 'tech-btn-option' : 'tech-btn-primary'; html += `<button class="tech-btn ${btnClass}" onclick="twChangeStep('${btn.next}')">${btn.text}</button>`; });
+        html += `</div>`;
+    }
+    contentDiv.innerHTML = html;
+}
+function twChangeStep(newStep) { twState.history.push(twState.currentStep); twState.currentStep = newStep; twRenderStep(); }
+function twGoBack() { if (twState.history.length > 0) { twState.currentStep = twState.history.pop(); twRenderStep(); } }
+function twResetWizard() { twState.currentStep = 'start'; twState.history = []; twRenderStep(); }
+// ==========================================================
+// --- YENİ KALİTE LMS MODÜLÜ (TAM EKRAN ENTEGRASYONU) ---
+// ==========================================================
+// Modülü Aç
+function openQualityArea() {
+    // Eski modalı kapat (eğer açıksa)
+    const oldModal = document.getElementById('quality-modal');
+    if(oldModal) oldModal.style.display = 'none';
+    // Tam ekranı aç
+    const fullScreen = document.getElementById('quality-fullscreen');
+    fullScreen.style.display = 'flex';
+    // Kullanıcı bilgisini güncelle
+    document.getElementById('q-side-name').innerText = currentUser;
+    document.getElementById('q-side-role').innerText = isAdminMode ? 'Yönetici' : 'Temsilci';
+    document.getElementById('q-side-avatar').innerText = currentUser.charAt(0).toUpperCase();
+    // Dönem filtresini doldur
+    populateMonthFilterFull();
+    // Yetki kontrolü (Admin butonlarını göster/gizle)
+    const adminFilters = document.getElementById('admin-filters');
+    const assignBtn = document.getElementById('assign-training-btn');
+    const manualFeedbackBtn = document.getElementById('manual-feedback-admin-btn');
+    
+    if (isAdminMode) {
+        if(adminFilters) adminFilters.style.display = 'flex';
+        if(assignBtn) assignBtn.style.display = 'block';
+        if(manualFeedbackBtn) manualFeedbackBtn.style.display = 'flex';
+        
+        // Kullanıcı listesi boşsa çek, sonra filtreleri doldur
+        if (adminUserList.length === 0) {
+            fetchUserListForAdmin().then(users => {
+                const groupSelect = document.getElementById('q-admin-group');
+                if(groupSelect) {
+                    const groups = [...new Set(users.map(u => u.group))].sort();
+                    groupSelect.innerHTML = `<option value="all">Tüm Gruplar</option>` + groups.map(g => `<option value="${g}">${g}</option>`).join('');
+                    updateAgentListBasedOnGroup();
+                }
+                populateDashboardFilters(); // Dashboard filtrelerini de doldur
+            });
+        } else {
+            populateDashboardFilters(); // Liste zaten varsa direkt doldur
+        }
+    } else {
+        if(adminFilters) adminFilters.style.display = 'none';
+        if(assignBtn) assignBtn.style.display = 'none';
+        if(manualFeedbackBtn) manualFeedbackBtn.style.display = 'none';
+        
+        // Admin değilse filtreleri gizle
+        const dashFilterArea = document.querySelector('#view-dashboard .q-view-header > div');
+        if(dashFilterArea && dashFilterArea.style.display !== 'none') {
+             // Burada basitçe dashboard filtre fonksiyonu admin kontrolü yapıyor.
+             populateDashboardFilters(); 
+        }
+    }
+    // Varsayılan sekmeyi aç
+    // Tıklanma simülasyonu ile ilk sekmeyi aktif et
+    const defaultTab = document.querySelector('.q-nav-item.active');
+    if (defaultTab) {
+        switchQualityTab('dashboard', defaultTab);
+    }
+}
+// Modülü Kapat
+function closeFullQuality() {
+    document.getElementById('quality-fullscreen').style.display = 'none';
+    // Eğer qusers ise (sadece kalite yetkisi varsa) logout yapmalı veya uyarı vermeli
+    if(localStorage.getItem("sSportRole") === 'qusers') {
+        logout();
+    }
+}
+// Sekme Değiştirme
+function switchQualityTab(tabName, element) {
+    // Menu active class
+    document.querySelectorAll('.q-nav-item').forEach(item => item.classList.remove('active'));
+    // Element varsa onu aktif yap, yoksa varsayılanı (dashboard) bulup aktif yap
+    if (element) {
+        element.classList.add('active');
+    } else {
+        document.querySelector(`.q-nav-item[onclick*="${tabName}"]`).classList.add('active');
+    }
+    
+    // View active class
+    document.querySelectorAll('.q-view-section').forEach(section => section.classList.remove('active'));
+    document.getElementById(`view-${tabName}`).classList.add('active');
+    // Veri Yükleme
+    if (tabName === 'dashboard') loadQualityDashboard();
+    else if (tabName === 'evaluations') fetchEvaluationsForAgent();
+    // DÜZELTME: Feedback sekmesi açılırken önce Feedback_Logs çekilmeli
+    else if (tabName === 'feedback') {
+        populateFeedbackFilters();
+        refreshFeedbackData();
+    }
+    else if (tabName === 'training') loadTrainingData();
+}
+// --- DASHBOARD FONKSİYONLARI ---
+function populateMonthFilterFull() {
+    const selectIds = ['q-dash-month']; // Sadece yeni filtre
+    const now = new Date();
+    const currentMonth = now.getMonth();
+    const currentYear = now.getFullYear();
+    
+    selectIds.forEach(id => {
+        const el = document.getElementById(id);
+        if(!el) return;
+        el.innerHTML = '';
+        for (let i = 0; i < 6; i++) {
+            let month = (currentMonth - i + 12) % 12;
+            let year = currentYear - (currentMonth - i < 0 ? 1 : 0);
+            const value = `${String(month + 1).padStart(2, '0')}.${year}`;
+            const text = `${MONTH_NAMES[month]} ${year}`;
+            const opt = document.createElement('option');
+            opt.value = value; opt.textContent = text;
+            if(i===0) opt.selected = true;
+            el.appendChild(opt);
+        }
+    });
+}
+// YENİ: Dashboard Filtrelerini Doldurma
+function populateDashboardFilters() {
+    const groupSelect = document.getElementById('q-dash-group');
+    const agentSelect = document.getElementById('q-dash-agent');
+    if(!isAdminMode) {
+        if(groupSelect) groupSelect.style.display = 'none';
+        if(agentSelect) agentSelect.style.display = 'none';
+        return;
+    } else {
+        if(groupSelect) groupSelect.style.display = 'block';
+        if(agentSelect) agentSelect.style.display = 'block';
+    }
+    
+    if(!groupSelect) return;
+    
+    const groups = [...new Set(adminUserList.map(u => u.group).filter(g => g))].sort();
+    groupSelect.innerHTML = '<option value="all">Tüm Gruplar</option>';
+    groups.forEach(g => {
+        const opt = document.createElement('option');
+        opt.value = g; opt.innerText = g;
+        groupSelect.appendChild(opt);
+    });
+    // İlk yüklemede tüm agentları listele
+    updateDashAgentList();
+}
+// YENİ: Dashboard Agent Listesini Güncelleme
+function updateDashAgentList() {
+    const groupSelect = document.getElementById('q-dash-group');
+    const agentSelect = document.getElementById('q-dash-agent');
+    if(!agentSelect) return;
+    const selectedGroup = groupSelect.value;
+    agentSelect.innerHTML = '<option value="all">Tüm Temsilciler</option>';
+    
+    let filteredUsers = adminUserList;
+    if (selectedGroup !== 'all') {
+        filteredUsers = adminUserList.filter(u => u.group === selectedGroup);
+    }
+    filteredUsers.forEach(u => {
+        const opt = document.createElement('option');
+        opt.value = u.name; 
+        opt.innerText = u.name;
+        agentSelect.appendChild(opt);
+    });
+    
+    updateDashRingTitle();
+    refreshQualityData();
+}
+
+// ✅ Dashboard ring başlığı + admin temsilci ortalamaları
+function updateDashRingTitle() {
+    const titleEl = document.getElementById('q-dash-ring-title') || document.getElementById('q-dash-ring-title'.replace('title','title'));
+    // (id kesin: q-dash-ring-title)
+    const tEl = document.getElementById('q-dash-ring-title');
+    if(!tEl) return;
+
+    if(!isAdminMode) {
+        tEl.textContent = 'Puan Durumu';
+        return;
+    }
+
+    const gSel = document.getElementById('q-dash-group');
+    const aSel = document.getElementById('q-dash-agent');
+    const g = gSel ? gSel.value : 'all';
+    const a = aSel ? aSel.value : 'all';
+
+    if(a && a !== 'all') {
+        tEl.textContent = `${a} Puan Durumu`;
+    } else if(g && g !== 'all') {
+        tEl.textContent = `${g} Takım Ortalaması`;
+    } else {
+        tEl.textContent = 'Genel Puan Ortalaması';
+    }
+}
+
+// Admin için: temsilci ortalamaları listesini bas
+function renderDashAgentScores(evals) {
+    const box = document.getElementById('q-dash-agent-scores');
+    if(!box) return;
+
+    // Sadece admin + agent=all iken göster (yoksa gereksiz kalabalık)
+    if(!isAdminMode) { box.style.display='none'; return; }
+
+    const gSel = document.getElementById('q-dash-group');
+    const aSel = document.getElementById('q-dash-agent');
+    const g = gSel ? gSel.value : 'all';
+    const a = aSel ? aSel.value : 'all';
+
+    if(a && a !== 'all') { box.style.display='none'; return; }
+
+    // evals -> agent bazlı ortalama
+    const byAgent = {};
+    (evals || []).forEach(e => {
+        const agent = e.agent || 'N/A';
+        const group = e.group || '';
+        const score = parseFloat(e.score) || 0;
+        if(!byAgent[agent]) byAgent[agent] = { total:0, count:0, group: group };
+        byAgent[agent].total += score;
+        byAgent[agent].count += 1;
+        // group boşsa son görüleni yaz
+        if(!byAgent[agent].group && group) byAgent[agent].group = group;
+    });
+
+    const rows = Object.keys(byAgent).map(name => {
+        const o = byAgent[name];
+        return { name, group: o.group || (g !== 'all' ? g : ''), avg: o.count ? (o.total/o.count) : 0, count:o.count };
+    });
+
+    // Eğer group seçiliyse sadece o grubun kullanıcıları zaten geliyor; ama garanti olsun
+    const filteredRows = (g && g !== 'all') ? rows.filter(r => (r.group || '') === g) : rows;
+
+    // Sırala: en düşük ortalama üstte (iyileştirme alanı)
+    filteredRows.sort((x,y)=> x.avg - y.avg);
+
+    if(filteredRows.length === 0) { box.style.display='none'; return; }
+
+    // İlk 8 kişiyi göster
+    const top = filteredRows.slice(0, 8);
+
+    box.innerHTML = top.map(r => `
+        <div class="das-item">
+            <div class="das-left">
+                <span class="das-name">${escapeHtml(r.name)}</span>
+                ${r.group ? `<span class="das-group">${escapeHtml(r.group)}</span>` : ``}
+            </div>
+            <div class="das-score">${(r.avg||0).toFixed(1)}</div>
+        </div>
+    `).join('');
+
+    box.style.display = 'grid';
+}
+
+// Detay alanını toleranslı parse et
+function safeParseDetails(details) {
+    if(!details) return null;
+    if(Array.isArray(details)) return details;
+    if(typeof details === 'object') return details;
+    if(typeof details === 'string') {
+        const s = details.trim();
+        if(!s) return null;
+        // Bazı eski kayıtlar çift tırnak kaçışlı gelebilir
+        const tryList = [s, s.replace(/\"/g,'"'), s.replace(/'/g,'"')];
+        for(const cand of tryList){
+            try{
+                const parsed = JSON.parse(cand);
+                if(Array.isArray(parsed)) return parsed;
+            }catch(e){}
+        }
+    }
+    return null;
+}
+
+// ✅ YENİ: Feedback (Geri Bildirimler) Filtrelerini Doldurma
+function populateFeedbackFilters() {
+    const groupSelect = document.getElementById('q-feedback-group');
+    const agentSelect = document.getElementById('q-feedback-agent');
+    if (!groupSelect || !agentSelect) return;
+
+    if(!isAdminMode) {
+        groupSelect.style.display = 'none';
+        agentSelect.style.display = 'none';
+        return;
+    } else {
+        groupSelect.style.display = 'block';
+        agentSelect.style.display = 'block';
+    }
+
+    const groups = [...new Set(adminUserList.map(u => u.group).filter(g => g))].sort();
+    groupSelect.innerHTML = '<option value="all">Tüm Gruplar</option>';
+    groups.forEach(g => {
+        const opt = document.createElement('option');
+        opt.value = g;
+        opt.textContent = g;
+        groupSelect.appendChild(opt);
+    });
+
+    // İlk yüklemede tüm agentları listele
+    updateFeedbackAgentList(false);
+}
+
+function updateFeedbackAgentList(shouldRefresh=true) {
+    const groupSelect = document.getElementById('q-feedback-group');
+    const agentSelect = document.getElementById('q-feedback-agent');
+    if(!groupSelect || !agentSelect) return;
+
+    const selectedGroup = groupSelect.value;
+
+    // seçilen gruba göre kullanıcıları filtrele
+    const filteredUsers = adminUserList.filter(u => {
+        if(!u || !u.username) return false;
+        if(selectedGroup === 'all') return true;
+        return u.group === selectedGroup;
+    });
+
+    const agents = filteredUsers
+        .map(u => u.username)
+        .filter(a => a)
+        .sort((a,b) => a.localeCompare(b, 'tr'));
+
+    agentSelect.innerHTML = '<option value="all">Tüm Temsilciler</option>';
+    agents.forEach(a => {
+        const opt = document.createElement('option');
+        opt.value = a;
+        opt.textContent = a;
+        agentSelect.appendChild(opt);
+    });
+
+    if(shouldRefresh) refreshFeedbackData();
+}
+
+async function fetchEvaluationsForFeedback() {
+    const groupSelect = document.getElementById('q-feedback-group');
+    const agentSelect = document.getElementById('q-feedback-agent');
+
+    let targetAgent = currentUser;
+    let targetGroup = 'all';
+
+    if (isAdminMode) {
+        targetAgent = agentSelect ? agentSelect.value : 'all';
+        targetGroup = groupSelect ? groupSelect.value : 'all';
+    }
+
+    try {
+        const response = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({
+                action: 'fetchEvaluations',
+                targetAgent: targetAgent,
+                targetGroup: targetGroup,
+                username: currentUser,
+                token: getToken()
+            })
+        });
+        const data = await response.json();
+        if (data.result === "success") {
+            allEvaluationsData = (data.evaluations || []).reverse();
+        } else {
+            allEvaluationsData = [];
+        }
+    } catch (e) {
+        allEvaluationsData = [];
+    }
+}
+
+async function refreshFeedbackData() {
+    // Feedback ekranı için (admin filtrelerine göre) değerlendirmeleri + logları çek, sonra listeyi bas
+    await fetchEvaluationsForFeedback();
+    await fetchFeedbackLogs();
+    loadFeedbackList();
+}
+
+
+function refreshQualityData() {
+    loadQualityDashboard();
+}
+async function fetchEvaluationsForDashboard() {
+    // Dashboard filtrelerine göre değerlendirmeleri çek (admin ise seçilen grup/temsilciye göre)
+    const groupSelect = document.getElementById('q-dash-group');
+    const agentSelect = document.getElementById('q-dash-agent');
+
+    let targetAgent = currentUser;
+    let targetGroup = 'all';
+
+    if (isAdminMode) {
+        targetAgent = agentSelect ? agentSelect.value : 'all';
+        targetGroup = groupSelect ? groupSelect.value : 'all';
+    }
+
+    try {
+        const response = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({
+                action: "fetchEvaluations",
+                targetAgent: targetAgent,
+                targetGroup: targetGroup,
+                username: currentUser,
+                token: getToken()
+            })
+        });
+        const data = await response.json();
+        if (data.result === "success") {
+            allEvaluationsData = (data.evaluations || []).reverse();
+        } else {
+            allEvaluationsData = [];
+        }
+    } catch (e) {
+        allEvaluationsData = [];
+    }
+}
+function loadQualityDashboard() {
+    // Verileri çek (silent mode), veri gelince grafikleri çiz
+    fetchEvaluationsForDashboard().then(() => {
+        const monthSelect = document.getElementById('q-dash-month');
+        const groupSelect = document.getElementById('q-dash-group');
+        const agentSelect = document.getElementById('q-dash-agent');
+        const selectedMonth = monthSelect ? monthSelect.value : '';
+        const selectedGroup = groupSelect ? groupSelect.value : 'all';
+        const selectedAgent = agentSelect ? agentSelect.value : 'all';
+        
+        let filtered = allEvaluationsData.filter(e => {
+            const eDate = e.date.substring(3); // dd.MM.yyyy -> MM.yyyy
+            const matchMonth = (eDate === selectedMonth);
+            
+            let matchGroup = true;
+            let matchAgent = true;
+            // Admin filtreleme mantığı
+            if (isAdminMode) {
+                // Eğer veri içinde grup bilgisi varsa onu kullan, yoksa adminUserList'ten bakmak gerekir.
+                if (selectedGroup !== 'all') {
+                    if (e.group) {
+                        matchGroup = (e.group === selectedGroup);
+                    } else {
+                        const user = adminUserList.find(u => u.name === e.agent);
+                        matchGroup = (user && user.group === selectedGroup);
+                    }
+                }
+                
+                if (selectedAgent !== 'all' && e.agent !== selectedAgent) matchAgent = false;
+            } else {
+                // Admin değilse sadece kendi verisi
+                if(e.agent !== currentUser) matchAgent = false;
+            }
+            // MANUEL kayıtları dashboard'da gösterme
+            const isManual = e.callId && String(e.callId).toUpperCase().startsWith('MANUEL-');
+            return matchMonth && matchGroup && matchAgent && !isManual;
+        });
+        const total = filtered.reduce((acc, curr) => acc + (parseInt(curr.score)||0), 0);
+        const count = filtered.length;
+        const avg = count > 0 ? (total / count).toFixed(1) : 0;
+        const targetHit = filtered.filter(e => e.score >= 90).length;
+        const rate = count > 0 ? Math.round((targetHit / count) * 100) : 0;
+        // UI Güncelle
+        document.getElementById('q-dash-score').innerText = avg;
+        document.getElementById('q-dash-count').innerText = count;
+        document.getElementById('q-dash-target').innerText = `%${rate}`;
+        
+        // Ring Chart Rengi
+        const ring = document.getElementById('q-dash-ring');
+        let color = '#2e7d32';
+        if(avg < 70) color = '#d32f2f'; else if(avg < 85) color = '#ed6c02';
+        const ratio = (avg / 100) * 100;
+        if(ring) ring.style.background = `conic-gradient(${color} ${ratio}%, #eee ${ratio}%)`;
+        if(document.getElementById('q-dash-ring-text')) document.getElementById('q-dash-ring-text').innerText = Math.round(avg);
+        updateDashRingTitle();
+        // Admin için: temsilci ortalamaları
+        renderDashAgentScores(filtered);
+        // Grafik Çizdir
+        renderDashboardChart(filtered);
+    });
+}
+function renderDashboardChart(data) {
+    const ctx = document.getElementById('q-breakdown-chart');
+    if (!ctx) return;
+    if (dashboardChart) {
+        dashboardChart.destroy();
+    }
+    // --- KRİTER BAZLI ANALİZ ---
+    let questionStats = {};
+    if (data.length > 0) {
+        data.forEach(item => {
+            try {
+                // Detay verisini kontrol et, string ise parse et
+                let details = safeParseDetails(item.details);
+                
+                if(Array.isArray(details)) {
+                    details.forEach(d => {
+                        let qFullText = d.q; // Tam metin
+                        // Soruyu anahtar olarak kullan (kısaltılmış versiyonu)
+                        let qShortText = qFullText.length > 25 ? qFullText.substring(0, 25) + '...' : qFullText;
+                        
+                        if (!questionStats[qShortText]) {
+                            // fullText'i tutuyoruz ki tooltip'te gösterebilelim
+                            questionStats[qShortText] = { earned: 0, max: 0, fullText: qFullText }; 
+                        }
+                        
+                        questionStats[qShortText].earned += parseInt(d.score || 0);
+                        questionStats[qShortText].max += parseInt(d.max || 0);
+                    });
+                }
+            } catch (e) {
+                // JSON parse hatası veya eski veri formatı
+                console.log("Detay verisi işlenemedi", e);
+            }
+        });
+    }
+    // İstatistikleri diziye çevirip başarı oranına göre sırala
+    let statsArray = Object.keys(questionStats).map(key => {
+        let s = questionStats[key];
+        // Başarı oranı %
+        let percentage = s.max > 0 ? (s.earned / s.max) * 100 : 0;
+        return { label: key, fullLabel: s.fullText, value: percentage };
+    });
+    
+    // Başarı oranına göre artan sıralama (En düşük başarı en başta)
+    statsArray.sort((a, b) => a.value - b.value);
+    // Eğer detay kırılımı yoksa (eski/boş kayıtlar), temsilci ortalamasına göre kırılım göster
+    if (statsArray.length === 0) {
+        const byAgent = {};
+        data.forEach(it => {
+            const a = it.agent || 'N/A';
+            const s = parseFloat(it.score) || 0;
+            if(!byAgent[a]) byAgent[a] = { total:0, count:0 };
+            byAgent[a].total += s;
+            byAgent[a].count += 1;
+        });
+        const aArr = Object.keys(byAgent).map(name => ({
+            label: name.length > 25 ? name.substring(0,25) + '...' : name,
+            fullLabel: name,
+            value: byAgent[name].count ? (byAgent[name].total/byAgent[name].count) : 0
+        }));
+        aArr.sort((x,y)=> x.value - y.value);
+        let topIssues = aArr.slice(0, 6);
+        let chartLabels = topIssues.map(i => i.label);
+        let chartData = topIssues.map(i => i.value.toFixed(1));
+
+        dashboardChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: chartLabels,
+                datasets: [{
+                    label: 'Ortalama Puan',
+                    data: chartData,
+                    backgroundColor: chartData.map(val => val < 70 ? 'rgba(211, 47, 47, 0.7)' : (val < 85 ? 'rgba(237, 108, 2, 0.7)' : 'rgba(46, 125, 50, 0.7)')),
+                    borderColor: chartData.map(val => val < 70 ? '#b71c1c' : (val < 85 ? '#e65100' : '#1b5e20')),
+                    borderWidth: 1,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                scales: {
+                    x: { beginAtZero: true, max: 100, grid: { color: '#f0f0f0' } },
+                    y: { grid: { display: false } }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            title: function(context) {
+                                if (context.length > 0) return topIssues[context[0].dataIndex].fullLabel;
+                                return '';
+                            },
+                            label: function(context) {
+                                return context.parsed.x + ' Ortalama';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        return;
+    }
+
+    // Sadece en düşük 6 kriteri göster
+    let topIssues = statsArray.slice(0, 6);
+ 
+    let chartLabels = topIssues.map(i => i.label);
+    let chartData = topIssues.map(i => i.value.toFixed(1));
+    dashboardChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: chartLabels,
+            datasets: [{
+                label: 'Başarı Oranı (%)',
+                data: chartData,
+                // Kriter Bazlı Renklendirme
+                backgroundColor: chartData.map(val => val < 70 ? 'rgba(211, 47, 47, 0.7)' : (val < 90 ? 'rgba(237, 108, 2, 0.7)' : 'rgba(46, 125, 50, 0.7)')),
+                borderColor: chartData.map(val => val < 70 ? '#b71c1c' : (val < 90 ? '#e65100' : '#1b5e20')),
+                borderWidth: 1,
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: 'y', // Yatay çubuk grafik
+            scales: {
+                x: { 
+                    beginAtZero: true, 
+                    max: 100,
+                    grid: { color: '#f0f0f0' }
+                },
+                y: {
+                    grid: { display: false }
+                }
+            },
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        // Tooltip başlığında tam metni gösterilmesi
+                        title: function(context) {
+                            if (context.length > 0) {
+                                const dataIndex = context[0].dataIndex;
+                                // fullLabel'i kullanarak tam metni döndür
+                                return topIssues[dataIndex].fullLabel; 
+                            }
+                            return '';
+                        },
+                        label: function(context) {
+                            return context.parsed.x + '% Başarı';
+                        }
+                    }
+                }
+            }
+        }
+    });
+}
+// --- EĞİTİM MODÜLÜ (YENİ) ---
+function loadTrainingData() {
+    const listEl = document.getElementById('training-list');
+    listEl.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Yükleniyor...</div>';
+    
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "getTrainings", username: currentUser, token: getToken(), asAdmin: isAdminMode })
+    }).then(r => r.json()).then(data => {
+        listEl.innerHTML = '';
+        if(data.result === 'success' && data.trainings.length > 0) {
+            data.trainings.forEach(t => {
+                let statusHtml = t.isCompleted 
+                    ? `<button class="t-btn t-btn-done"><i class="fas fa-check"></i> Tamamlandı</button>`
+                    : `<button class="t-btn t-btn-start" onclick="openTrainingLink('${t.id}', '${t.link}')">Eğitime Git</button>`;
+                
+                let docHtml = t.docLink && t.docLink !== 'N/A' 
+                    ? `<a href="${t.docLink}" target="_blank" class="t-doc-link"><i class="fas fa-file-download"></i> Dökümanı İndir</a>` 
+                    : '';
+                
+                // GÜNCELLENMİŞ KART YAPISI (Tarih ve Süre Eklendi)
+                listEl.innerHTML += `
+                <div class="t-card">
+                    <div class="t-card-header">
+                        <span>${t.title}${isAdminMode ? ` <span style=\"font-weight:600; opacity:.8; font-size:.75rem\">(${t.target}${t.target==='Individual' && t.targetUser ? ' • '+t.targetUser : ''})</span>` : ''}</span>
+                        <span class="t-status-badge">Atanma: ${t.date}</span>
+                    </div>
+                    <div class="t-card-body">
+                        ${t.desc}
+                        ${docHtml}
+                        <div style="margin-top:10px; display:flex; justify-content:space-between; font-size:0.8rem; color:#666; padding-top:10px; border-top:1px dashed #eee;">
+                            <div><strong>Süre:</strong> ${t.duration || 'Belirtilmedi'}</div>
+                            <div><strong>Başlangıç:</strong> ${t.startDate || 'N/A'} - <strong>Bitiş:</strong> ${t.endDate || 'N/A'}</div>
+                        </div>
+                        <div style="font-size:0.8rem; color:#999; margin-top:5px;">Atayan: ${t.creator}</div>
+                    </div>
+                    <div class="t-card-footer">
+                        ${statusHtml}
+                    </div>
+                </div>`;
+            });
+        } else {
+            listEl.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:20px; color:#888;">Atanmış eğitim bulunmuyor.</div>';
+        }
+    });
+}
+function startTraining(id){
+    fetch(SCRIPT_URL, {
+        method:'POST',
+        headers:{"Content-Type":"text/plain;charset=utf-8"},
+        body: JSON.stringify({ action: "startTraining", trainingId: id, username: currentUser, token: getToken() })
+    }).then(r=>r.json()).catch(()=>{});
+}
+
+function openTrainingLink(id, link) {
+    startTraining(id);
+    if(link && link !== 'N/A') {
+        window.open(link, '_blank');
+    } else {
+        Swal.fire('Uyarı', 'Bu eğitim için geçerli bir link bulunmamaktadır.', 'warning');
+    }
+    
+    // Linke tıkladıktan sonra onay sor
+    Swal.fire({
+        title: 'Eğitimi Tamamladın mı?',
+        text: "Eğitim içeriğini inceleyip anladıysan onayla.",
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Evet, Tamamladım',
+        cancelButtonText: 'Daha Sonra'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            completeTraining(id);
+        }
+    });
+}
+function completeTraining(id) {
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "completeTraining", trainingId: id, username: currentUser, token: getToken() })
+    }).then(r => r.json()).then(d => {
+        if(d.result === 'success') {
+            Swal.fire('Harika!', 'Eğitim tamamlandı olarak işaretlendi.', 'success');
+            loadTrainingData();
+        } else {
+            Swal.fire('Hata', d.message, 'error');
+        }
+    });
+}
+async function assignTrainingPopup() {
+    const { value: formValues } = await Swal.fire({
+        title: 'Yeni Eğitim & Döküman Ata',
+        html: `
+            <div class="t-modal-grid">
+                <input id="swal-t-title" class="swal2-input" placeholder="Eğitim Başlığı" style="grid-column: 1 / 4;">
+                <textarea id="swal-t-desc" class="swal2-textarea" style="height:100px; grid-column: 1 / 4;" placeholder="Eğitim açıklaması veya talimatlar..."></textarea>
+                <input id="swal-t-link" class="swal2-input" placeholder="Video/Eğitim Linki (URL)" style="grid-column: 1 / 4;">
+                <input id="swal-t-doc" class="swal2-input" placeholder="Döküman Linki (Drive/PDF URL) (İsteğe Bağlı)" style="grid-column: 1 / 4;">
+                <input type="date" id="swal-t-start" class="swal2-input" value="${new Date().toISOString().substring(0, 10)}">
+                <input type="date" id="swal-t-end" class="swal2-input">
+                <input id="swal-t-duration" class="swal2-input" placeholder="Süre (Örn: 20dk)">
+            </div>
+            <select id="swal-t-target" class="swal2-input" onchange="updateTrainingTarget(this.value)" style="margin-top:10px;">
+                <option value="Genel">Herkese (Tüm Ekip)</option>
+                <option value="Telesatış">Telesatış Ekibi</option>
+                <option value="Chat">Chat Ekibi</option>
+                <option value="Individual">Kişiye Özel</option>
+            </select>
+            <select id="swal-t-agent" class="swal2-input" style="display:none; width:100%;"></select>
+        `,
+        focusConfirm: false,
+        showCancelButton: true,
+        confirmButtonText: 'Ata',
+        didOpen: () => {
+            window.updateTrainingTarget = function(val) {
+                const agentSelect = document.getElementById('swal-t-agent');
+                agentSelect.style.display = val === 'Individual' ? 'block' : 'none';
+                if (val === 'Individual') {
+                    agentSelect.innerHTML = adminUserList.map(u => `<option value="${u.name}">${u.name}</option>`).join('');
+                }
+            };
+            updateTrainingTarget('Genel');
+        },
+        preConfirm: () => {
+            const target = document.getElementById('swal-t-target').value;
+            const agent = target === 'Individual' ? document.getElementById('swal-t-agent').value : '';
+            if (!document.getElementById('swal-t-title').value || (!target && !agent)) {
+                Swal.showValidationMessage('Başlık ve Atama Alanı boş bırakılamaz');
+                return false;
+            }
+            return {
+                title: document.getElementById('swal-t-title').value,
+                desc: document.getElementById('swal-t-desc').value,
+                link: document.getElementById('swal-t-link').value,
+                docLink: document.getElementById('swal-t-doc').value || 'N/A',
+                target: target,
+                targetAgent: agent, // Kişiye özel atama için
+                creator: currentUser,
+                startDate: formatDateToDDMMYYYY(document.getElementById('swal-t-start').value), 
+                endDate: formatDateToDDMMYYYY(document.getElementById('swal-t-end').value), 
+                duration: document.getElementById('swal-t-duration').value 
+            }
+        }
+    });
+    if (formValues) {
+        Swal.fire({title:'Atanıyor...', didOpen:()=>Swal.showLoading()});
+        fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: "assignTraining", username: currentUser, token: getToken(), ...formValues })
+        }).then(r=>r.json()).then(d=>{
+            Swal.fire('Başarılı', 'Eğitim atandı.', 'success');
+            loadTrainingData();
+        });
+    }
+}
+// --- FEEDBACK MODÜLÜ ---
+
+// YENİ FONKSİYON: Feedback_Logs'u çekmek için
+async function fetchFeedbackLogs() {
+    try {
+        const res = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: "fetchFeedbackLogs", username: currentUser, token: getToken() })
+        });
+        const data = await res.json();
+        if (data.result === "success") {
+            feedbackLogsData = data.feedbackLogs || [];
+        } else {
+            feedbackLogsData = [];
+        }
+    } catch (error) {
+        console.error("Feedback Logs çekilirken hata oluştu:", error);
+        feedbackLogsData = [];
+    }
+}
+
+// YARDIMCI FONKSİYON: Dönem bilgisini MM.YYYY formatında döndürür
+function formatPeriod(periodString) {
+    if (!periodString || periodString === 'N/A') return 'N/A';
+    
+    // Zaten MM.YYYY formatındaysa direkt döndür
+    if (periodString.match(/^\d{2}\.\d{4}$/)) {
+        return periodString;
+    }
+    
+    // Eğer uzun bir Date string'i ise (ör: Wed Oct 01 2025...) tarih nesnesine çevir
+    try {
+        const date = new Date(periodString);
+        if (!isNaN(date.getTime())) {
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const year = date.getFullYear();
+            return `${month}.${year}`;
+        }
+    } catch (e) {
+        // Hata oluşursa olduğu gibi bırak veya N/A döndür
+        console.error("Dönem formatlama hatası:", e);
+    }
+    
+    return periodString; // Başka formatta gelirse yine de olduğu gibi döndür
+}
+
+function loadFeedbackList() {
+    const listEl = document.getElementById('feedback-list');
+    listEl.innerHTML = '';
+    
+    // Admin butonunu göster/gizle
+    const manualBtn = document.getElementById('manual-feedback-admin-btn');
+    if(manualBtn) manualBtn.style.display = isAdminMode ? 'flex' : 'none';
+    
+    // YENİ FİLTRELEME MANTIĞI: Sadece feedbackType 'Mail' olanlar VEYA callId 'MANUEL' olanlar listelenir.
+    const feedbackItems = allEvaluationsData.filter(e => {
+        // feedbackType kontrolü (Büyük/küçük harf duyarlılığını ortadan kaldırırız)
+        const isMailFeedback = e.feedbackType && e.feedbackType.toLowerCase() === 'mail';
+        // Manuel kontrolü
+        const isManualFeedback = e.callId && String(e.callId).toUpperCase().startsWith('MANUEL-');
+        
+        return isMailFeedback || isManualFeedback;
+    });
+    if(feedbackItems.length === 0) {
+        listEl.innerHTML = '<div style="padding:20px; text-align:center; color:#888;">Görüntülenecek filtrelenmiş geri bildirim yok (Sadece Mail veya Manuel).</div>';
+        return;
+    }
+    
+    feedbackItems.forEach(e => {
+        // Geliştirme: Çağrı Tarihi ve ID eklendi (Gelişmiş Kart Tasarımı)
+        const feedbackClass = e.feedbackType === 'Sözlü' ? '#2196f3' : (e.feedbackType === 'Mail' ? '#e65100' : (e.feedbackType === 'Bilgilendirme' ? '#0288d1' : (e.feedbackType === 'Feedback' ? '#2e7d32' : '#10b981')));
+        
+        // MANUEL CallID'den ön eki temizle
+        const cleanCallId = String(e.callId).toUpperCase().startsWith('MANUEL-') ? String(e.callId).substring(7) : e.callId;
+        
+        // Konu/Başlık bilgisi 'details' alanından gelir (Manuel geri bildirim için)
+        // Eğer detay alanı JSON ise (yani normal değerlendirme) veya boşsa varsayılan metin kullan
+        const isEvaluationDetail = String(e.details).startsWith('[');
+        const feedbackTopic = isEvaluationDetail ? 'Değerlendirme Konusu' : (e.details || 'Belirtilmemiş');
+        
+        // Dönem, Kanal ve Tipi belirle (Manuel kayıtlarda bu bilgileri Evaluations'tan değil, Feedback_Logs'tan çekiyoruz)
+        const isManual = String(e.callId).toUpperCase().startsWith('MANUEL-');
+        
+        let period = e.period || e.date.substring(3);
+        let channel = (e.channel && String(e.channel).trim()) ? String(e.channel).trim() : 'Yok';
+        const infoType = e.feedbackType || 'Yok';
+
+        // DÜZELTME MANTIĞI: Eğer kayıt Manuel ise, detaylı bilgiyi feedbackLogsData'dan çek.
+        if (isManual) {
+            // CallId'deki MANUEL- ön ekini atarak Feedback_Logs'taki Call_ID ile eşleştirme
+            const logRow = feedbackLogsData.find(x => String(x.callId) === String(cleanCallId));
+            if (logRow) {
+                // Apps Script'ten gelen period değerini formatla (Tarih Nesnesi/String olma ihtimaline karşı)
+                period = formatPeriod(logRow.period) || period;
+                channel = logRow.channel && logRow.channel !== 'N/A' ? logRow.channel : 'Yok';
+            }
+        }
+        
+        listEl.innerHTML += `
+            <div class="feedback-card" style="border-left-color: ${feedbackClass};">
+                <div class="feedback-header">
+                    <div style="font-weight:bold; color:#0e1b42; font-size:1.1rem;">${e.agent}</div>
+                    <div class="feedback-info-right">
+                        <span><i class="fas fa-user-check"></i> Değerleyen: ${e.evaluator}</span>
+                        <span><i class="fas fa-id-badge"></i> Çağrı ID: ${cleanCallId}</span>
+                        <span><i class="fas fa-calendar-alt"></i> Tarih: ${e.callDate}</span>
+                    </div>
+                </div>
+                <div class="feedback-body">
+                    <div style="font-weight:bold; color:#333; margin-bottom:5px;">Konu/Açıklama: ${feedbackTopic}</div>
+                    <div style="color:#555; line-height:1.5; font-size:0.95rem;">${e.feedback}</div>
+                </div>
+                <div class="feedback-footer">
+                     <div style="display:flex; gap:10px; font-size:0.7rem; color:#666; font-weight:600; margin-right:10px;">
+                        <span><i class="fas fa-calendar-week"></i> Dönem: ${period}</span>
+                        <span><i class="fas fa-comment-alt"></i> Kanal: ${channel}</span>
+                        <span><i class="fas fa-tag"></i> Tip: ${infoType}</span>
+                     </div>
+                     
+            </div>`;
+    });
+}
+// Adminler için manuel geri bildirim ekleme (Çağrı dışı konular için)
+async function addManualFeedbackPopup() {
+    if (!isAdminMode) return;
+    
+    // Admin user listesi yoksa yükle
+    if (adminUserList.length === 0) {
+        Swal.fire({ title: 'Kullanıcı Listesi Yükleniyor...', didOpen: () => Swal.showLoading() });
+        await fetchUserListForAdmin();
+        Swal.close();
+    }
+    // Dönem filtre seçeneklerini oluştur
+    const now = new Date();
+    const currentMonth = now.getMonth();
+    const currentYear = now.getFullYear();
+    let monthOptions = '';
+    for (let i = 0; i < 6; i++) {
+        let month = (currentMonth - i + 12) % 12;
+        let year = currentYear - (currentMonth - i < 0 ? 1 : 0);
+        const text = `${MONTH_NAMES[month]} ${year}`;
+        const value = `${String(month + 1).padStart(2, '0')}.${year}`; // Backend'in beklediği MM.YYYY formatı
+        const isCurrent = (i === 0);
+        monthOptions += `<option value="${value}" ${isCurrent ? 'selected' : ''}>${text}</option>`;
+    }
+    
+    // YENİ HTML TASARIMI: Daha düzenli ve etiketli form
+    const newHtmlContent = `
+        <div class="manual-feedback-form">
+            <div class="form-group">
+                <label for="manual-q-agent">Temsilci Adı <span class="required">*</span></label>
+                <select id="manual-q-agent" class="swal2-input"></select>
+            </div>
+            <div class="form-group">
+                <label for="manual-q-topic">Konu / Başlık <span class="required">*</span></label>
+                <input id="manual-q-topic" class="swal2-input" placeholder="Geri bildirim konusu (Örn: Yeni Kampanya Bilgilendirmesi)">
+            </div>
+            
+            <div class="grid-2-cols">
+                <div class="form-group">
+                    <label for="manual-q-callid">Çağrı/Etkileşim ID <span class="required">*</span></label>
+                    <input id="manual-q-callid" class="swal2-input" placeholder="ID (Örn: 123456)">
+                </div>
+                <div class="form-group">
+                    <label for="manual-q-date">Tarih <span class="required">*</span></label>
+                    <input type="date" id="manual-q-date" class="swal2-input" value="${new Date().toISOString().substring(0, 10)}">
+                </div>
+            </div>
+            <div class="grid-3-cols">
+                <div class="form-group">
+                    <label for="manual-q-channel">Kanal</label>
+                    <select id="manual-q-channel" class="swal2-input">
+                        <option value="Telefon">Telefon</option>
+                        <option value="Canlı Destek">Canlı Destek</option>
+                        <option value="E-posta">E-posta</option>
+                        <option value="Sosyal Medya">Sosyal Medya</option>
+                        <option value="Yok">Yok/Diğer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="manual-q-period">Dönem</label>
+                    <select id="manual-q-period" class="swal2-input">${monthOptions}</select>
+                </div>
+                <div class="form-group">
+                    <label for="manual-q-type">Tip</label>
+                    <select id="manual-q-type" class="swal2-input">
+                        <option value="Feedback">Feedback</option>
+                        <option value="Bilgilendirme">Bilgilendirme</option>
+                        <option value="Sözlü">Sözlü</option>
+                        <option value="Mail">Mail</option>
+                        <option value="Özel">Özel Konu</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="manual-q-feedback">Geri Bildirim Detayları <span class="required">*</span></label>
+                <textarea id="manual-q-feedback" class="swal2-textarea" placeholder="Buraya geri bildirimin detaylı metnini giriniz..."></textarea>
+            </div>
+        </div>
+        <style>
+            /* Manuel Geri Bildirim Formu Stil İyileştirmeleri */
+            .manual-feedback-form {
+                text-align: left;
+                padding: 10px;
+                background: #fcfcfc;
+                border-radius: 8px;
+                border: 1px solid #eee;
+            }
+            .form-group {
+                margin-bottom: 12px;
+            }
+            .form-group label {
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: var(--primary);
+                display: block;
+                margin-bottom: 4px;
+            }
+            .grid-2-cols {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+            .grid-3-cols {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 15px;
+            }
+            .required {
+                color: var(--accent);
+                font-size: 0.9rem;
+            }
+            /* Input/Select/Textarea stillerini genel swal2-input stilinden devraldık */
+            .manual-feedback-form .swal2-input, .manual-feedback-form .swal2-textarea {
+                width: 100% !important;
+                box-sizing: border-box !important;
+                margin: 0 !important;
+                padding: 10px 12px !important;
+                border: 1px solid #dcdcdc !important;
+                border-radius: 6px !important;
+                font-size: 0.95rem !important;
+                transition: border-color 0.2s, box-shadow 0.2s;
+            }
+            .manual-feedback-form .swal2-input:focus, .manual-feedback-form .swal2-textarea:focus {
+                border-color: var(--secondary) !important;
+                box-shadow: 0 0 0 2px rgba(250, 187, 0, 0.2) !important;
+            }
+            .manual-feedback-form .swal2-textarea {
+                min-height: 100px;
+                resize: vertical;
+            }
+        </style>
+    `;
+    
+    // Modalı görüntüdeki gibi düzenledik (Agent Select ve sade alanlar)
+    const { value: formValues } = await Swal.fire({
+        title: 'Manuel Geri Bildirim Yaz',
+        html: newHtmlContent,
+        width: '600px', // Modal genişliğini artırdık
+        showCancelButton: true,
+        confirmButtonText: '<i class="fas fa-save"></i> Kaydet',
+        didOpen: () => {
+            const sel = document.getElementById('manual-q-agent');
+            adminUserList.forEach(u => sel.innerHTML += `<option value="${u.name}">${u.name}</option>`);
+        },
+        preConfirm: () => {
+            const agentName = document.getElementById('manual-q-agent').value;
+            const topic = document.getElementById('manual-q-topic').value;
+            const feedback = document.getElementById('manual-q-feedback').value;
+            const feedbackType = document.getElementById('manual-q-type').value;
+            
+            // YENİ ALANLAR
+            const channel = document.getElementById('manual-q-channel').value;
+            const period = document.getElementById('manual-q-period').value; // MM.YYYY formatında
+            
+            // YENİ ZORUNLU KONTROLLER
+            const callId = document.getElementById('manual-q-callid').value.trim();
+            const rawCallDate = document.getElementById('manual-q-date').value;
+            const callDate = formatDateToDDMMYYYY(rawCallDate);
+            if (!agentName || !feedback || !callId || !rawCallDate || !topic) { // Konu/Başlık da zorunlu yapıldı
+                 Swal.showValidationMessage('Tüm (*) işaretli alanlar zorunludur!'); 
+                 return false;
+            }
+            
+            // Konu sadece başlık olarak gönderiliyor. Dönem ve Kanal ayrı alanlar olarak gönderilecek.
+            return {
+                agentName,
+                // Backend'de ayrı loglama için CallID'yi MANUEL ile başlatıyoruz.
+                callId: "MANUEL-" + callId, 
+                callDate: callDate,
+                score: 100, // Manuel olduğu için tam puan
+                details: topic, // Sadece konuyu gönderiyoruz
+                feedback,
+                feedbackType,
+                agentGroup: "Genel", // Manuel olduğu için Genel Grup olarak kaydedilir.
+                // ÇÖZÜM: Yeni alanları ekliyoruz
+                channel: channel,
+                period: period
+            };
+        }
+    });
+    if (formValues) {
+        // MÜKERRER KONTROL: Aynı temsilci + aynı Call ID daha önce kaydedildiyse uyar
+        try {
+            const normAgent = String(formValues.agentName || '').trim().toLowerCase();
+            const normCallId = String(formValues.callId || '').trim();
+            const isDup = Array.isArray(allEvaluationsData) && allEvaluationsData.some(e =>
+                String(e.agent || e.agentName || '').trim().toLowerCase() === normAgent &&
+                String(e.callId || '').trim() === normCallId
+            );
+
+            if (isDup) {
+                const decision = await Swal.fire({
+                    icon: 'warning',
+                    title: 'Mükerrer Dinleme',
+                    html: `<div style="text-align:left; line-height:1.4;">
+                            <b>${formValues.agentName}</b> için <b>Call ID: ${escapeHtml(formValues.callId)}</b> daha önce kaydedilmiş görünüyor.<br>
+                            <span style="color:#666; font-size:0.9rem;">Yine de yeni kayıt oluşturmak istiyor musun?</span>
+                           </div>`,
+                    showCancelButton: true,
+                    confirmButtonText: 'Evet, kaydet',
+                    cancelButtonText: 'Vazgeç',
+                    reverseButtons: true
+                });
+                if (!decision.isConfirmed) return;
+            }
+        } catch (e) {
+            console.warn('Duplicate check failed', e);
+        }
+
+        Swal.fire({ title: 'Kaydediliyor...', didOpen: () => Swal.showLoading() });
+        fetch(SCRIPT_URL, { 
+            method: 'POST', 
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: "logEvaluation", username: currentUser, token: getToken(), ...formValues }) 
+        })
+        .then(r => r.json()).then(async d => {
+            if (d.result === "success") { 
+                Swal.fire({ icon: 'success', title: 'Kaydedildi', timer: 1500, showConfirmButton: false });
+                // DÜZELTME: Hem evaluations hem de feedback logs güncellenmeli
+                fetchEvaluationsForAgent(formValues.agentName);
+                fetchFeedbackLogs().then(() => { loadFeedbackList(); });
+            } else if (d.result === "duplicate") {
+                const decision = await Swal.fire({
+                    icon: 'warning',
+                    title: 'Mükerrer Dinleme',
+                    html: `<div style="text-align:left; line-height:1.4;">
+                            <b>${formValues.agentName}</b> için <b>Call ID: ${escapeHtml(formValues.callId)}</b> zaten var.<br>
+                            <span style="color:#666; font-size:0.9rem;">Yine de yeni kayıt oluşturulsun mu?</span>
+                           </div>`,
+                    showCancelButton: true,
+                    confirmButtonText: 'Evet, zorla kaydet',
+                    cancelButtonText: 'Vazgeç',
+                    reverseButtons: true
+                });
+                if (decision.isConfirmed) {
+                    Swal.fire({ title: 'Kaydediliyor...', didOpen: () => Swal.showLoading() });
+                    fetch(SCRIPT_URL, { 
+                        method: 'POST',
+                        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                        body: JSON.stringify({ action: "logEvaluation", username: currentUser, token: getToken(), force: true, ...formValues })
+                    }).then(r2 => r2.json()).then(d2 => {
+                        if (d2.result === "success") {
+                            Swal.fire({ icon: 'success', title: 'Kaydedildi', timer: 1500, showConfirmButton: false });
+                            fetchEvaluationsForAgent(formValues.agentName);
+                            fetchFeedbackLogs().then(() => { loadFeedbackList(); });
+                        } else {
+                            Swal.fire('Hata', d2.message, 'error');
+                        }
+                    });
+                }
+            } else { 
+                Swal.fire('Hata', d.message, 'error'); 
+            }
+        });
+    }
+}
+async function fetchEvaluationsForAgent(forcedName, silent=false) {
+    const listEl = document.getElementById('evaluations-list');
+    if(!silent) listEl.innerHTML = 'Yükleniyor...';
+    const groupSelect = document.getElementById('q-admin-group');
+    const agentSelect = document.getElementById('q-admin-agent');
+    
+    let targetAgent = forcedName || currentUser;
+    let targetGroup = 'all';
+    
+    if (isAdminMode && agentSelect) {
+        targetAgent = forcedName || agentSelect.value;
+        targetGroup = groupSelect ? groupSelect.value : 'all';
+    }
+    try {
+        const response = await fetch(SCRIPT_URL, {
+            method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: "fetchEvaluations", targetAgent: targetAgent, targetGroup: targetGroup, username: currentUser, token: getToken() })
+        });
+        const data = await response.json();
+        
+        if (data.result === "success") {
+            // En yeni en üstte olması için ters çevir
+            allEvaluationsData = data.evaluations.reverse();
+            if(silent) return; // Silent mode ise burada bitir (veri yüklendi)
+            listEl.innerHTML = '';
+            
+            // Sadece normal değerlendirmeleri filtrele ve göster
+            const normalEvaluations = allEvaluationsData.filter(e => !String(e.callId).toUpperCase().startsWith('MANUEL-'));
+            if (normalEvaluations.length === 0) { listEl.innerHTML = `<p style="text-align:center; color:#666;">Kayıt yok.</p>`; return; }
+            
+            normalEvaluations.forEach((evalItem, index) => {
+                const scoreColor = evalItem.score >= 90 ? '#2e7d32' : (evalItem.score >= 70 ? '#ed6c02' : '#d32f2f');
+                let editBtn = isAdminMode ? `<i class="fas fa-pen" style="font-size:1rem; color:#fabb00; cursor:pointer; margin-right:5px;" onclick="event.stopPropagation(); editEvaluation('${evalItem.callId}')"></i>` : '';
+                let agentNameDisplay = (targetAgent === 'all' || targetAgent === targetGroup) ? `<span style="font-size:0.8rem; font-weight:bold; color:#555; background:#eee; padding:2px 6px; border-radius:4px; margin-left:10px;">${evalItem.agent}</span>` : '';
+                
+                // Detay HTML oluşturma
+                let detailHtml = '';
+                try {
+                    // JSON'ı işlerken olası hatalara karşı try-catch
+                    const detailObj = JSON.parse(evalItem.details);
+                    detailHtml = '<table style="width:100%; font-size:0.85rem; border-collapse:collapse; margin-top:10px;">';
+                    if (Array.isArray(detailObj)) {
+                        detailObj.forEach(item => {
+                            let rowColor = item.score < item.max ? '#ffebee' : '#f9f9f9';
+                            let noteDisplay = item.note ? `<br><em style="color: #d32f2f; font-size:0.8rem;">(Not: ${item.note})</em>` : '';
+                            detailHtml += `<tr style="background:${rowColor}; border-bottom:1px solid #fff;">
+                                <td style="padding:8px; border-radius:4px;">${item.q}${noteDisplay}</td>
+                                <td style="padding:8px; font-weight:bold; text-align:right;">${item.score}/${item.max}</td>
+                            </tr>`;
+                        });
+                    } else {
+                        // JSON olmasına rağmen array değilse (manuel notlar)
+                        detailHtml = `<p style="white-space:pre-wrap; margin:0; font-size:0.9rem; background:#fff8e1; padding:10px; border-radius:4px;">${evalItem.details}</p>`;
+                    }
+                    detailHtml += '</table>';
+                } catch (e) { 
+                    // JSON parse hatası veya eski/manuel veri formatı
+                    detailHtml = `<p style="white-space:pre-wrap; margin:0; font-size:0.9rem; background:#fff8e1; padding:10px; border-radius:4px;">${evalItem.details}</p>`; 
+                }
+                
+                // Geliştirme: Çağrı Tarihi ve Dinlenme Tarihi
+                const callDateDisplay = evalItem.callDate && evalItem.callDate !== 'N/A' ? evalItem.callDate : 'N/A';
+                const listenDateDisplay = evalItem.date || 'N/A';
+                
+                listEl.innerHTML += `
+                <div class="evaluation-summary" id="eval-summary-${index}" style="border-left:4px solid ${scoreColor}; padding:15px; margin-bottom:10px; border-radius:8px; background:#fff; cursor:pointer;" onclick="toggleEvaluationDetail(${index})">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <div>
+                            <div style="font-weight:700; color:#2c3e50;">${evalItem.agent} ${agentNameDisplay}</div>
+                            <!-- Geliştirme: Çağrı Tarihi ve Dinlenme Tarihi -->
+                            <div class="eval-date-info">
+                                <span><i class="fas fa-phone"></i> Çağrı: ${callDateDisplay}</span>
+                                <span><i class="fas fa-headphones"></i> Dinlenme: ${listenDateDisplay}</span>
+                            </div>
+                            <div style="font-size:0.75rem; color:#999; margin-top:2px;">ID: ${evalItem.callId}</div>
+                        </div>
+                        <div style="text-align:right;">
+                             ${editBtn} <span style="font-weight:800; font-size:1.6rem; color:${scoreColor};">${evalItem.score}</span>
+                        </div>
+                    </div>
+                    <div class="evaluation-details-content" id="eval-details-${index}">
+                        ${detailHtml}
+                        <div style="margin-top:10px; background:#f8f9fa; padding:10px; border-radius:4px;">
+                            <strong>Feedback:</strong> ${evalItem.feedback || '-'}
+                        </div>
+                    </div>
+                </div>`;
+            });
+        }
+    } catch(err) { if(!silent) listEl.innerHTML = `<p style="color:red; text-align:center;">Hata oluştu.</p>`; }
+}
+function updateAgentListBasedOnGroup() {
+    const groupSelect = document.getElementById('q-admin-group');
+    const agentSelect = document.getElementById('q-admin-agent');
+    if(!groupSelect || !agentSelect) return;
+    const selectedGroup = groupSelect.value;
+    agentSelect.innerHTML = '';
+    
+    let filteredUsers = adminUserList;
+    if (selectedGroup !== 'all') {
+        filteredUsers = adminUserList.filter(u => u.group === selectedGroup);
+        agentSelect.innerHTML = `<option value="all">-- Tüm ${selectedGroup} Ekibi --</option>`;
+    } else {
+        agentSelect.innerHTML = `<option value="all">-- Tüm Temsilciler --</option>`;
+    }
+    filteredUsers.forEach(u => { agentSelect.innerHTML += `<option value="${u.name}">${u.name}</option>`; });
+    fetchEvaluationsForAgent();
+}
+function fetchUserListForAdmin() {
+    return new Promise((resolve) => {
+        fetch(SCRIPT_URL, {
+            method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: "getUserList", username: currentUser, token: getToken() })
+        }).then(response => response.json()).then(data => {
+            if (data.result === "success") { adminUserList = data.users.filter(u => u.group !== 'Yönetim'); resolve(adminUserList); } 
+            else resolve([]);
+        }).catch(err => resolve([]));
+    });
+}
+function fetchCriteria(groupName) {
+    return new Promise((resolve) => {
+        fetch(SCRIPT_URL, {
+            method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: "getCriteria", group: groupName, username: currentUser, token: getToken() })
+        }).then(response => response.json()).then(data => {
+            if (data.result === "success") resolve(data.criteria || []); else resolve([]);
+        }).catch(err => resolve([]));
+    });
+}
+function toggleEvaluationDetail(index) {
+    const detailEl = document.getElementById(`eval-details-${index}`);
+    if (detailEl.style.maxHeight && detailEl.style.maxHeight !== '0px') { detailEl.style.maxHeight = '0px'; detailEl.style.marginTop = '0'; } 
+    else { detailEl.style.maxHeight = detailEl.scrollHeight + 500 + 'px'; detailEl.style.marginTop = '10px'; }
+}
+async function exportEvaluations() {
+    if (!isAdminMode) return;
+    const { isConfirmed } = await Swal.fire({ icon: 'question', title: 'Rapor İndirilsin mi?', showCancelButton: true, confirmButtonText: 'İndir' });
+    if (!isConfirmed) return;
+    Swal.fire({ title: 'Hazırlanıyor...', didOpen: () => Swal.showLoading() });
+    
+    const groupSelect = document.getElementById('q-admin-group');
+    const agentSelect = document.getElementById('q-admin-agent');
+    
+    fetch(SCRIPT_URL, {
+        method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({
+            action: "exportEvaluations",
+            targetAgent: agentSelect ? agentSelect.value : 'all',
+            targetGroup: groupSelect ? groupSelect.value : 'all',
+            username: currentUser, token: getToken()
+        })
+    }).then(r => r.json()).then(data => {
+        if (data.result === "success" && data.csvData) {
+            const blob = new Blob(["\ufeff" + data.csvData], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement("a");
+            const url = URL.createObjectURL(blob);
+            link.setAttribute("href", url); link.setAttribute("download", data.fileName);
+            document.body.appendChild(link); link.click(); document.body.removeChild(link);
+            Swal.fire('Başarılı', 'Rapor indirildi.', 'success');
+        } else { Swal.fire('Hata', data.message || 'Veri alınamadı.', 'error'); }
+    });
+}
+// --- EVALUATION POPUP & EDIT ---
+async function logEvaluationPopup() {
+    const agentSelect = document.getElementById('q-admin-agent');
+    const agentName = agentSelect ? agentSelect.value : "";
+    
+    if (!agentName || agentName === 'all') { Swal.fire('Uyarı', 'Lütfen listeden bir temsilci seçiniz.', 'warning'); return; }
+    
+    let agentGroup = 'Genel';
+    const foundUser = adminUserList.find(u => u.name.toLowerCase() === agentName.toLowerCase());
+    if (foundUser && foundUser.group) { agentGroup = foundUser.group; }
+    
+    const isChat = agentGroup.indexOf('Chat') > -1;
+    const isTelesatis = agentGroup.indexOf('Telesatış') > -1;
+    if (isChat) agentGroup = 'Chat';
+    
+    Swal.fire({ title: 'Hazırlanıyor...', didOpen: () => Swal.showLoading() });
+    let criteriaList = [];
+    if(agentGroup && agentGroup !== 'Genel') { criteriaList = await fetchCriteria(agentGroup); } 
+    Swal.close();
+    
+    const isCriteriaBased = criteriaList.length > 0;
+    let criteriaFieldsHtml = '';
+    
+    if (isCriteriaBased) {
+        criteriaFieldsHtml += `<div class="criteria-container">`;
+        criteriaList.forEach((c, i) => {
+            let pts = parseInt(c.points) || 0;
+            if (pts === 0) return;
+            // Geliştirme: Puan başlığı üstüne gelince tam metin gösterilmesi için title eklendi
+            const fullText = escapeForJsString(c.text); 
+            if (isChat) {
+                let mPts = parseInt(c.mediumScore) || 0; let bPts = parseInt(c.badScore) || 0;
+                criteriaFieldsHtml += `<div class="criteria-row" id="row-${i}" data-max-score="${pts}"><div class="criteria-header"><span title="${fullText}">${i+1}. ${c.text}</span><span style="font-size:0.8rem;">Max: ${pts}</span></div><div class="criteria-controls"><div class="eval-button-group"><button class="eval-button eval-good active" data-score="${pts}" onclick="setButtonScore(${i}, ${pts}, ${pts})">İyi (${pts})</button>${mPts > 0 ? `<button class="eval-button eval-medium" data-score="${mPts}" onclick="setButtonScore(${i}, ${mPts}, ${pts})">Orta (${mPts})</button>` : ''}${bPts > 0 ? `<button class="eval-button eval-bad" data-score="${bPts}" onclick="setButtonScore(${i}, ${bPts}, ${pts})">Kötü (${bPts})</button>` : ''}</div><span class="score-badge" id="badge-${i}" style="margin-top:8px; display:block; background:#2e7d32;">${pts}</span></div><input type="text" id="note-${i}" class="note-input" placeholder="Not..." style="display:none;"></div>`;
+            } else if (isTelesatis) {
+                 criteriaFieldsHtml += `<div class="criteria-row" id="row-${i}" data-max-score="${pts}"><div class="criteria-header"><span title="${fullText}">${i+1}. ${c.text}</span><span>Max: ${pts}</span></div><div class="criteria-controls" style="display:flex; align-items:center; gap:15px; background:#f9f9f9;"><input type="range" class="custom-range slider-input" id="slider-${i}" min="0" max="${pts}" value="${pts}" data-index="${i}" oninput="updateRowSliderScore(${i}, ${pts})" style="flex-grow:1;"><span class="score-badge" id="badge-${i}" style="background:#2e7d32;">${pts}</span></div><input type="text" id="note-${i}" class="note-input" placeholder="Not..." style="display:none;"></div>`;
+            }
+        });
+        criteriaFieldsHtml += `</div>`;
+    }
+    
+    // GÜNCELLENMİŞ MODAL: Call ID zorunlu yapıldı
+    const contentHtml = `
+        <div class="eval-modal-wrapper">
+            <div class="score-dashboard"><div><div style="font-size:0.9rem;">Değerlendirilen</div><div style="font-size:1.2rem; font-weight:bold; color:#fabb00;">${agentName}</div></div><div class="score-circle-outer" id="score-ring"><div class="score-circle-inner" id="live-score">${isCriteriaBased ? '100' : '100'}</div></div></div>
+            <div class="eval-header-card"><div><label>Call ID <span style="color:red;">*</span></label><input id="eval-callid" class="swal2-input" style="height:35px; margin:0; width:100%;" placeholder="Call ID"></div><div><label>Tarih</label><input type="date" id="eval-calldate" class="swal2-input" style="height:35px; margin:0; width:100%;" value="${new Date().toISOString().substring(0, 10)}"></div></div>
+            ${isCriteriaBased ? criteriaFieldsHtml : `<div style="padding:15px; border:1px dashed #ccc; text-align:center;"><label>Manuel Puan</label><br><input id="eval-manual-score" type="number" class="swal2-input" value="100" min="0" max="100" style="width:100px; text-align:center;"></div><textarea id="eval-details" class="swal2-textarea" placeholder="Detaylar..."></textarea>`}
+            <div style="margin-top:15px; padding:10px; background:#fafafa; border:1px solid #eee;"><label>Geri Bildirim Tipi</label><select id="feedback-type" class="swal2-input" style="width:100%; height:40px; margin:0;"><option value="Yok" selected>Yok</option><option value="Sözlü">Sözlü</option><option value="Mail">Mail</option></select></div>
+            <div style="margin-top:15px;"><label>Genel Geri Bildirim</label><textarea id="eval-feedback" class="swal2-textarea" style="margin-top:5px; height:80px;"></textarea></div>
+        </div>`;
+    
+    const { value: formValues } = await Swal.fire({
+        html: contentHtml,
+        width: '600px',
+        showCancelButton: true,
+        confirmButtonText: ' 💾  Kaydet',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        didOpen: () => { 
+            if (isTelesatis) window.recalcTotalSliderScore(); 
+            else if (isChat) window.recalcTotalScore(); 
+        },
+        preConfirm: () => {
+            const callId = document.getElementById('eval-callid').value.trim();
+            if (!callId) {
+                Swal.showValidationMessage('Call ID alanı boş bırakılamaz!');
+                return false;
+            }
+            
+            const callDateRaw = document.getElementById('eval-calldate').value;
+            const dateParts = callDateRaw.split('-');
+            const formattedCallDate = dateParts.length === 3 ? `${dateParts[2]}.${dateParts[1]}.${dateParts[0]}` : callDateRaw;
+            
+            if (isCriteriaBased) {
+                let total = 0; let detailsArr = [];
+                for (let i = 0; i < criteriaList.length; i++) {
+                    const c = criteriaList[i]; if (parseInt(c.points) === 0) continue;
+                    let val = 0; let note = document.getElementById(`note-${i}`).value;
+                    if (isChat) val = parseInt(document.getElementById(`badge-${i}`).innerText) || 0;
+                    else if (isTelesatis) val = parseInt(document.getElementById(`slider-${i}`).value) || 0;
+                    total += val; detailsArr.push({ q: c.text, max: parseInt(c.points), score: val, note: note });
+                }
+                return { agentName, agentGroup, callId, callDate: formattedCallDate, score: total, details: JSON.stringify(detailsArr), feedback: document.getElementById('eval-feedback').value, feedbackType: document.getElementById('feedback-type').value };
+            } else {
+                return { agentName, agentGroup, callId, callDate: formattedCallDate, score: parseInt(document.getElementById('eval-manual-score').value), details: document.getElementById('eval-details').value, feedback: document.getElementById('feedback-type').value };
+            }
+        }
+    });
+    if (formValues) {
+        Swal.fire({ title: 'Kaydediliyor...', didOpen: () => Swal.showLoading() });
+        fetch(SCRIPT_URL, { 
+            method: 'POST', 
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: "logEvaluation", username: currentUser, token: getToken(), ...formValues }) 
+        })
+        .then(r => r.json()).then(d => {
+            if (d.result === "success") { 
+                Swal.fire({ icon: 'success', title: 'Kaydedildi', timer: 1500, showConfirmButton: false });
+                // DÜZELTME: Hem evaluations hem de feedback logs güncellenmeli
+                fetchEvaluationsForAgent(formValues.agentName);
+                fetchFeedbackLogs().then(() => {
+                    loadFeedbackList();
+                });
+            } else { 
+                Swal.fire('Hata', d.message, 'error'); 
+            }
+        });
+    }
+}
+async function editEvaluation(targetCallId) {
+    const evalData = allEvaluationsData.find(item => String(item.callId).trim() === String(targetCallId).trim());
+    if (!evalData) { Swal.fire('Hata', 'Kayıt bulunamadı.', 'error'); return; }
+    
+    const agentName = evalData.agent;
+    const agentGroupRaw = evalData.group || 'Genel';
+    const isChat = agentGroupRaw.indexOf('Chat') > -1;
+    const isTelesatis = agentGroupRaw.indexOf('Telesatış') > -1;
+    let agentGroup = isChat ? 'Chat' : (isTelesatis ? 'Telesatış' : 'Genel');
+    
+    Swal.fire({ title: 'İnceleniyor...', didOpen: () => Swal.showLoading() });
+    let criteriaList = [];
+    if(agentGroup && agentGroup !== 'Genel') criteriaList = await fetchCriteria(agentGroup);
+    Swal.close();
+    
+    const isCriteriaBased = criteriaList.length > 0;
+    let oldDetails = []; try { oldDetails = JSON.parse(evalData.details || "[]"); } catch(e) { oldDetails = []; }
+    
+    // GÜNCELLENMİŞ MODAL: Call ID gösteriliyor
+    let contentHtml = `<div class="eval-modal-wrapper" style="border-top:5px solid #1976d2;"><div class="score-dashboard"><div><div style="font-size:0.9rem;">DÜZENLENEN</div><div style="font-size:1.2rem; font-weight:bold; color:#1976d2;">${agentName}</div></div><div class="score-circle-outer" id="score-ring"><div class="score-circle-inner" id="live-score">${evalData.score}</div></div></div><div class="eval-header-card"><div><label>Call ID</label><input id="eval-callid" class="swal2-input" value="${evalData.callId}" readonly style="background:#eee; height:35px; width:100%;"></div></div>`;
+    
+    if (isCriteriaBased) {
+        contentHtml += `<div class="criteria-container">`;
+        criteriaList.forEach((c, i) => {
+            let pts = parseInt(c.points) || 0; if(pts===0) return;
+            let mPts = parseInt(c.mediumScore) || 0; let bPts = parseInt(c.badScore) || 0;
+            let oldItem = oldDetails.find(d => d.q === c.text) || (oldDetails[i] ? oldDetails[i] : {score:pts, note:''});
+            let cVal = parseInt(oldItem.score); let cNote = oldItem.note || '';
+            
+            // Geliştirme: Puan başlığı üstüne gelince tam metin gösterilmesi için title eklendi
+            const fullText = escapeForJsString(c.text); 
+            if (isChat) {
+                let gAct = cVal === pts ? 'active' : ''; let mAct = (cVal===mPts && mPts!==0) ? 'active' : ''; let bAct = (cVal===bPts && bPts!==0) ? 'active' : '';
+                if(cVal===0 && bPts===0) bAct = 'active'; else if (cVal===0 && bPts>0) { gAct=''; mAct=''; bAct=''; }
+                contentHtml += `<div class="criteria-row" id="row-${i}" data-max-score="${pts}"><div class="criteria-header"><span title="${fullText}">${i+1}. ${c.text}</span><span>Max: ${pts}</span></div><div class="criteria-controls"><div class="eval-button-group"><button class="eval-button eval-good ${gAct}" data-score="${pts}" onclick="setButtonScore(${i}, ${pts}, ${pts})">İyi</button>${mPts>0?`<button class="eval-button eval-medium ${mAct}" data-score="${mPts}" onclick="setButtonScore(${i}, ${mPts}, ${pts})">Orta</button>`:''}${bPts>0?`<button class="eval-button eval-bad ${bAct}" data-score="${bPts}" onclick="setButtonScore(${i}, ${bPts}, ${pts})">Kötü</button>`:''}</div><span class="score-badge" id="badge-${i}">${cVal}</span></div><input type="text" id="note-${i}" class="note-input" value="${cNote}" style="display:${cVal<pts?'block':'none'}"></div>`;
+            } else if (isTelesatis) {
+                contentHtml += `<div class="criteria-row" id="row-${i}" data-max-score="${pts}"><div class="criteria-header"><span title="${fullText}">${i+1}. ${c.text}</span><span>Max: ${pts}</span></div><div class="criteria-controls" style="display:flex; background:#f9f9f9;"><input type="range" class="custom-range slider-input" id="slider-${i}" min="0" max="${pts}" value="${cVal}" data-index="${i}" oninput="updateRowSliderScore(${i}, ${pts})" style="flex-grow:1;"><span class="score-badge" id="badge-${i}">${cVal}</span></div><input type="text" id="note-${i}" class="note-input" value="${cNote}" style="display:${cVal<pts?'block':'none'}"></div>`;
+            }
+        });
+        contentHtml += `</div>`;
+    } else {
+        contentHtml += `<div style="padding:15px; border:1px dashed #ccc; text-align:center;"><label>Manuel Puan</label><br><input id="eval-manual-score" type="number" class="swal2-input" value="${evalData.score}" min="0" max="100" style="width:100px;"></div><textarea id="eval-details" class="swal2-textarea">${typeof evalData.details==='string'?evalData.details:''}</textarea>`;
+    }
+    contentHtml += `<div><label>Revize Feedback</label><textarea id="eval-feedback" class="swal2-textarea">${evalData.feedback||''}</textarea></div></div>`;
+    
+    const { value: formValues } = await Swal.fire({
+        html: contentHtml,
+        width: '600px',
+        showCancelButton: true,
+        confirmButtonText: ' 💾  Güncelle',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        didOpen: () => { if (isTelesatis) window.recalcTotalSliderScore(); else if (isChat) window.recalcTotalScore(); },
+        preConfirm: () => {
+            const callId = document.getElementById('eval-callid').value;
+            const feedback = document.getElementById('eval-feedback').value;
+            if (isCriteriaBased) {
+                let total = 0; let detailsArr = [];
+                for (let i = 0; i < criteriaList.length; i++) {
+                    const c = criteriaList[i]; if (parseInt(c.points) === 0) continue;
+                    let val = 0; let note = document.getElementById(`note-${i}`).value;
+                    if (isChat) val = parseInt(document.getElementById(`badge-${i}`).innerText) || 0;
+                    else if (isTelesatis) val = parseInt(document.getElementById(`slider-${i}`).value) || 0;
+                    else val = parseInt(c.points);
+                    total += val; detailsArr.push({ q: c.text, max: parseInt(c.points), score: val, note: note });
+                }
+                return { agentName, callId, score: total, details: JSON.stringify(detailsArr), feedback };
+            } else {
+                return { agentName, callId, score: parseInt(document.getElementById('eval-manual-score').value), details: document.getElementById('eval-details').value, feedback };
+            }
+        }
+    });
+    if (formValues) {
+        Swal.fire({ title: 'Güncelleniyor...', didOpen: () => Swal.showLoading() });
+        fetch(SCRIPT_URL, { 
+            method: 'POST', 
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: "updateEvaluation", username: currentUser, token: getToken(), ...formValues }) 
+        })
+        .then(r => r.json()).then(d => {
+            if (d.result === "success") { 
+                Swal.fire({ icon: 'success', title: 'Güncellendi', timer: 1500, showConfirmButton: false }); 
+                // DÜZELTME: Güncelleme sonrası hem evaluations hem de feedback logs güncellenmeli
+                fetchEvaluationsForAgent(agentName);
+                fetchFeedbackLogs().then(() => {
+                    loadFeedbackList();
+                });
+            } 
+            else { Swal.fire('Hata', d.message, 'error'); }
+        });
+    }
+}
+
+/* =========================================================
+   ANA SAYFA + TEKNİK + TELESATIŞ (FULLSCREEN) GÜNCELLEMESİ
+   ========================================================= */
+
+const TELESales_OFFERS_FALLBACK = [{"offer": "YILLIK - 1299 TL", "segment": "WİNBACK", "description": "Kullanıcı daha önce aylık ya da yıllık herhangi bir paket kullanmış, ardından paket sonlanmış ve şu anda aktif paketi olmayan kullanıcıları aradığımız bir data", "note": "Kullanıcının izleme geçmişi olabilir."}, {"offer": "AYLIK  - 6 AY 109 TL", "segment": "WİNBACK", "description": "Kullanıcı daha önce aylık ya da yıllık herhangi bir paket kullanmış, ardından paket sonlanmış ve şu anda aktif paketi olmayan kullanıcıları aradığımız bir data", "note": "Kullanıcının izleme geçmişi olabilir."}, {"offer": "YILLIK - 1399 TL", "segment": "CANCELLİNG", "description": "Aboneliğinde iptal talebinde bulunmuş, paket süresi bitimine kadar erişime devam eden, geri kazanım için aradığımız bir data", "note": "Kullanıcının izleme geçmişi olabilir. İndirim oranı yüksek + Kullanıcının bir iptal nedeni olabilir"}, {"offer": "AYLIK  - 6 AY 119 TL", "segment": "CANCELLİNG", "description": "Aboneliğinde iptal talebinde bulunmuş, paket süresi bitimine kadar erişime devam eden, geri kazanım için aradığımız bir data", "note": "Kullanıcının izleme geçmişi olabilir. İndirim oranı yüksek + Kullanıcının bir iptal nedeni olabilir"}, {"offer": "YILLIK - 1499 TL", "segment": "ACTİVE GRACE", "description": "Paket yenileme sürecine giren fakat ücret alınamadığı için paketi yenilenemeyen kullanıcıları aradığımız bir data", "note": "Paket yenileme sürecinden bir ödeme sorunu oluştuğunu bu nedenle aboneliğinin yenilenmediğini, kullanıcıya hem bu sorunu çözmek hem de indirimli fiyatlar üzerinden yardımcı olmak +İçerik"}, {"offer": "AYLIK  - 6 AY 109 TL", "segment": "ACTİVE GRACE", "description": "Paket yenileme sürecine giren fakat ücret alınamadığı için paketi yenilenemeyen kullanıcıları aradığımız bir data", "note": "Paket yenileme sürecinden bir ödeme sorunu oluştuğunu bu nedenle aboneliğinin yenilenmediğini, kullanıcıya hem bu sorunu çözmek hem de indirimli fiyatlar üzerinden yardımcı olmak +İçerik"}, {"offer": "YILLIK - 1499 TL", "segment": "INBOUND", "description": "Inbound üzerinden gelen satın alma talepleri ya da satışa ikna edilen kullanıcılar için sunulan teklif", "note": ""}, {"offer": "AYLIK - 6 AY 139,5 TL", "segment": "INBOUND", "description": "Inbound üzerinden gelen satın alma talepleri ya da satışa ikna edilen kullanıcılar için sunulan teklif", "note": ""}];
+const SPORTS_RIGHTS_FALLBACK = [{"item": "Euroleague maçları ve stüdyo programları", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": ""}, {"item": "Bundesliga", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": ""}, {"item": "Bundesliga 2", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": ""}, {"item": "İspanya LaLiga önemli maçları", "period": "2025 - 2026 / 2026 - 2027", "note": ""}, {"item": "LaLiga 2 önemli maçları", "period": "2025 - 2026 / 2026 - 2027", "note": ""}, {"item": "İtalya Serie A önemli maçları", "period": "2025 - 2026 / 2026 - 2027", "note": ""}, {"item": "Portekiz Liga Portugal önemli maçları", "period": "2025 - 2026", "note": ""}, {"item": "Suudi Arabistan Pro Lig önemli maçları", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": ""}, {"item": "Hollanda Ligi", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": ""}, {"item": "İskoçya Premiership önemli maçları", "period": "2025 - 2026 / 2026 - 2027", "note": ""}, {"item": "NCAA Amerikan Futbol", "period": "2025 - 2026 / 2026 - 2027", "note": ""}, {"item": "NCAA Basketbol", "period": "2025 - 2026 / 2026 - 2027", "note": ""}, {"item": "NFL", "period": "2025 - 2026", "note": ""}, {"item": "NBA", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": ""}, {"item": "EuroCup", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": ""}, {"item": "Yunanistan Basketbol Ligi önemli maçları", "period": "2025 - 2026 Sezon belirsiz", "note": ""}, {"item": "NCAA", "period": "2025 - 2026 / 2026 - 2027", "note": ""}, {"item": "Libertadores Kupası", "period": "2027, 2028, 2029, 2030 (4 seasons)", "note": ""}, {"item": "Copa Sudamericana", "period": "2027, 2028, 2029, 2030 (4 seasons)", "note": ""}, {"item": "WRC", "period": "2025", "note": "2026 da alınabilir net değil"}, {"item": "Nascar", "period": "2025 - 2026 - 2027 - 2028 ve 2029", "note": ""}, {"item": "IndyCar", "period": "2025 - 2026 - 2027", "note": ""}, {"item": "MotoGP - Moto2 - Moto3", "period": "2025 - 2026 - 2027", "note": ""}, {"item": "ATP Tenis Turnuvaları önemli maçlar", "period": "2025 - 2026 - 2027 and 2028", "note": ""}, {"item": "Wimbledon Tenis önemli maçlar", "period": "2025 - 2026 - 2027", "note": ""}, {"item": "UFC Dövüş Gecesi yayınları", "period": "2027 sonuna kadar bizde", "note": ""}, {"item": "Oktagon", "period": "2025", "note": ""}, {"item": "PFL MMA", "period": "2025", "note": ""}, {"item": "Cage Warriors Boks Maçları", "period": "2025", "note": ""}, {"item": "BKFC", "period": "Kaldırıldı", "note": ""}];
+
+function setActiveFilterButton(btn){
+    try{
+        document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+        if(btn) btn.classList.add('active');
+    }catch(e){}
+}
+
+function showHomeScreen(){
+    const home = document.getElementById('home-screen');
+    const grid = document.getElementById('cardGrid');
+    const empty = document.getElementById('emptyMessage');
+    if (home) home.style.display = 'block';
+    if (grid) grid.style.display = 'none';
+    if (empty) empty.style.display = 'none';
+    renderHomePanels();
+}
+
+function hideHomeScreen(){
+    const home = document.getElementById('home-screen');
+    if (home) home.style.display = 'none';
+    const grid = document.getElementById('cardGrid');
+    if (grid) grid.style.display = 'grid';
+}
+
+function renderHomePanels(){
+    // --- BUGÜN NELER VAR? (Yayın Akışı / bugünün maçları) ---
+    const todayEl = document.getElementById('home-today');
+    if(todayEl){
+        todayEl.innerHTML = '<div class="home-mini-item">Yayın akışı yükleniyor...</div>';
+        (async()=>{
+            try{
+                const items = await fetchBroadcastFlow();
+               const d = new Date();
+const todayISO = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+
+
+                const toISO = (val)=>{
+                    const s = String(val||'').trim();
+                    if(!s) return '';
+                    if(/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
+                    // dd.MM.yyyy
+                    const m = s.match(/^(\d{2})\.(\d{2})\.(\d{4})$/);
+                    if(m) return `${m[3]}-${m[2]}-${m[1]}`;
+                    return '';
+                };
+
+                const todays = (items||[]).filter(it=>{
+                    const iso = toISO(it.dateISO || it.date);
+                    if(iso !== todayISO) return false;
+
+                    // Saati geçen karşılaşmalar görünmesin
+                    const now = Date.now();
+                    const se = Number(it.startEpoch || 0);
+                    if(se) return se > now;
+                    const t = String(it.time || '').trim();
+                    const m = t.match(/^(\d{2}):(\d{2})(?::(\d{2}))?$/);
+                    if(!m) return true; // saat formatı yoksa göster
+                    const hh = parseInt(m[1],10), mm = parseInt(m[2],10), ss = parseInt(m[3]||'0',10);
+                    const dt = new Date();
+                    dt.setHours(hh,mm,ss,0);
+                    return dt.getTime() > now;
+                });
+
+                if(!todays.length){
+                    todayEl.innerHTML = '<div class="home-mini-item">Bugün için yayın akışı kaydı bulunamadı.</div>';
+                }else{
+                    const shown = todays.slice(0,4);
+                    todayEl.innerHTML = shown.map(it=>{
+                        const time = escapeHtml(it.time || '');
+                        const title = escapeHtml(it.match || it.title || it.event || '');
+                        const ch = escapeHtml(it.channel || it.platform || '');
+                        const league = escapeHtml(it.league || it.category || '');
+                        const spk = escapeHtml(it.spiker || it.spikers || it.commentator || it.commentators || '');
+                        return `
+                          <div class="home-mini-item">
+                            <div class="home-mini-date">${time}${league?` • ${league}`:''}${ch?` • ${ch}`:''}</div>
+                            <div class="home-mini-title">${title || 'Maç'}</div>
+                            ${spk ? `<div class="home-mini-desc" style="margin-top:4px;color:#555">🎙 ${spk}</div>` : ''}
+                          </div>
+                        `;
+                    }).join('') + (todays.length>shown.length ? `<div style="color:#666;font-size:.9rem;margin-top:6px">+${todays.length-shown.length} maç daha…</div>` : '');
+                }
+
+
+                // kartı tıklayınca yayın akışına git
+                const card = todayEl.closest('.home-card');
+                if(card){
+                    card.classList.add('clickable');
+                    card.onclick = ()=>openBroadcastFlow();
+                }
+            }catch(e){
+                todayEl.innerHTML = '<div class="home-mini-item">Yayın akışı alınamadı.</div>';
+            }
+        })();
+    }
+
+    // --- DUYURULAR (son 3 duyuru) ---
+    const annEl = document.getElementById('home-ann');
+    if(annEl){
+        const latest = (newsData || []).slice(0,3);
+        if(latest.length===0){
+            annEl.innerHTML = '<div class="home-mini-item">Henüz duyuru yok.</div>';
+        }else{
+            annEl.innerHTML = latest.map(n=>`
+                <div class="home-mini-item">
+                  <div class="home-mini-date">${escapeHtml(n.date||'')}</div>
+                  <div class="home-mini-title">${escapeHtml(n.title||'')}</div>
+                  <div class="home-mini-desc">${escapeHtml(String(n.desc||'')).slice(0,160)}${(n.desc||'').length>160?'...':''}</div>
+                </div>
+            `).join('');
+        }
+        const card = annEl.closest('.home-card');
+        if(card){
+            card.classList.add('clickable');
+            card.onclick = ()=>openNews();
+        }
+    }
+
+    // --- GÜNÜN SÖZÜ (HomeBlocks -> e-tabla) ---
+    const quoteEl = document.getElementById('home-quote');
+    if(quoteEl){
+        const q = String((homeBlocks && homeBlocks.quote && homeBlocks.quote.content) ? homeBlocks.quote.content : (localStorage.getItem('homeQuote')||'')).trim();
+        quoteEl.innerHTML = q ? escapeHtml(q) : '<span style="color:#999">Bugün için bir söz eklenmemiş.</span>';
+    }
+
+    // Admin: edit butonlarını aç
+    try{
+        const b1 = document.getElementById('home-edit-today');
+        const b2 = document.getElementById('home-edit-ann');
+        const b3 = document.getElementById('home-edit-quote');
+        if(b1) b1.style.display = 'none'; // artık dinamik
+        if(b2) b2.style.display = 'none'; // duyuru dinamik
+        if(b3) b3.style.display = (isAdminMode && isEditingActive ? 'inline-flex' : 'none');
+    }catch(e){}
+}
+
+
+
+// Ana Sayfa - Günün Sözü düzenleme (sadece admin mod + düzenleme açıkken)
+function editHomeBlock(kind){
+    if(!isAdminMode){
+        Swal.fire("Yetkisiz", "Bu işlem için admin yetkisi gerekli.", "warning");
+        return;
+    }
+    if(!isEditingActive){
+        Swal.fire("Kapalı", "Düzenleme modu kapalı. Önce 'Düzenlemeyi Aç' demelisin.", "info");
+        return;
+    }
+    if(kind !== 'quote'){
+        Swal.fire("Bilgi", "Bu alan artık otomatik güncelleniyor.", "info");
+        return;
+    }
+    const cur = String((homeBlocks && homeBlocks.quote && homeBlocks.quote.content) ? homeBlocks.quote.content : (localStorage.getItem('homeQuote') || '')).trim();
+    Swal.fire({
+        title: "Günün Sözü",
+        input: "textarea",
+        inputValue: cur,
+        inputPlaceholder: "Bugünün sözünü yaz…",
+        showCancelButton: true,
+        confirmButtonText: "Kaydet",
+        cancelButtonText: "Vazgeç",
+        preConfirm: (val)=> (val||'').trim()
+    }).then(res=>{
+        if(!res.isConfirmed) return;
+        const val = res.value || '';
+        // local fallback
+        try{ localStorage.setItem('homeQuote', val); }catch(e){}
+        // e-tabla (HomeBlocks)
+        apiCall('updateHomeBlock', { key:'quote', title:'Günün Sözü', content: val, visibleGroups:'' })
+          .then(()=>{
+            homeBlocks = homeBlocks || {};
+            homeBlocks.quote = { key:'quote', title:'Günün Sözü', content: val, visibleGroups:'' };
+            try{ localStorage.setItem('homeBlocksCache', JSON.stringify(homeBlocks||{})); }catch(e){}
+            renderHomePanels();
+            Swal.fire("Kaydedildi", "Günün sözü güncellendi.", "success");
+          })
+          .catch(()=>{
+            renderHomePanels();
+            Swal.fire("Kaydedildi", "Günün sözü güncellendi (yerel).", "success");
+          });
+    });
+}
+
+// Kart detayını doğrudan açmak için küçük bir yardımcı
+function openCardDetail(cardId){
+    const card = (cardsData||[]).find(x=>String(x.id)===String(cardId));
+    if(!card){Swal.fire('Hata','Kart bulunamadı.','error');return;}
+    showCardDetail(card);
+}
+
+/* -------------------------
+   TELE SATIŞ FULLSCREEN
+--------------------------*/
+let telesalesOffers = [];
+function safeGetToken(){
+    try{ return (typeof getToken === 'function') ? getToken() : ''; }catch(e){ return ''; }
+}
+async function fetchSheetObjects(actionName){
+    const payload = { action: actionName, username: (currentUser||''), token: safeGetToken() };
+    const r = await fetch(SCRIPT_URL, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(payload)
+    });
+    const d = await r.json();
+    if(!d || d.result !== "success") throw new Error((d && d.message) ? d.message : "Veri alınamadı.");
+    // backend handleFetchData returns {data:[...]} ; other handlers may use {items:[...]}
+    return d.data || d.items || [];
+}
+
+async function openTelesalesArea(){
+    // Menü yetkisi: telesales (TeleSatış) - yetkisiz kullanıcı fullscreen'e giremesin
+    try{
+        const perm = (typeof menuPermissions!=="undefined" && menuPermissions) ? menuPermissions["telesales"] : null;
+        if(perm && !isAllowedByPerm(perm)){
+            Swal.fire("Yetkisiz", "TeleSatış ekranına erişimin yok.", "warning");
+            return;
+        }
+    }catch(e){}
+
+    const wrap = document.getElementById('telesales-fullscreen');
+    if(!wrap) return;
+    wrap.style.display = 'flex';
+    document.body.classList.add('fs-open');
+    document.body.style.overflow='hidden';
+
+    // Sidebar profil
+    const av = document.getElementById('t-side-avatar');
+    const nm = document.getElementById('t-side-name');
+    const rl = document.getElementById('t-side-role');
+    if(av) av.innerText = (currentUser||'U').trim().slice(0,1).toUpperCase();
+    if(nm) nm.innerText = currentUser || 'Kullanıcı';
+    if(rl) rl.innerText = isAdminMode ? 'Admin' : 'Temsilci';
+
+    // Data teklifleri: önce e-tabladan çekmeyi dene, olmazsa fallback
+    if(telesalesOffers.length===0){
+        let loaded = [];
+        try{
+            loaded = await fetchSheetObjects("getTelesalesOffers");
+        }catch(e){
+            // sessiz fallback
+        }
+        telesalesOffers = (Array.isArray(loaded) && loaded.length)
+            ? loaded.map(o=>({
+                segment: o.segment || o.Segment || o.SEGMENT || '',
+                title: o.title || o.Başlık || o.Baslik || o.Teklif || o['Teklif Adı'] || o['Teklif Adi'] || '',
+                desc: o.desc || o.Açıklama || o.Aciklama || o.Detay || o['Detay/Not'] || o.Not || '',
+                example: o.example || o.Örnek || o.Ornek || '',
+                tips: o.tips || o.İpucu || o.Ipucu || '',
+                objection: o.objection || o.Itiraz || '',
+                reply: o.reply || o.Cevap || ''
+            }))
+            : (Array.isArray(window.telesalesOffersFromSheet) && window.telesalesOffersFromSheet.length
+                ? window.telesalesOffersFromSheet
+                : TELESales_OFFERS_FALLBACK);
+    }
+
+    // Segment filtresi kaldırıldı
+    renderTelesalesDataOffers();
+    renderTelesalesScripts();
+    switchTelesalesTab('data');
+}
+
+function closeFullTelesales(){
+    const wrap = document.getElementById('telesales-fullscreen');
+    if(wrap) wrap.style.display = 'none';
+    document.body.classList.remove('fs-open');
+    document.body.style.overflow='';
+}
+
+function switchTelesalesTab(tab){
+    document.querySelectorAll('#telesales-fullscreen .q-nav-item').forEach(i=>i.classList.remove('active'));
+    // Set active nav by onclick marker
+    document.querySelectorAll('#telesales-fullscreen .q-nav-item').forEach(i=>{
+        if((i.getAttribute('onclick')||'').includes(`"${tab}"`)) i.classList.add('active');
+    });
+
+    document.querySelectorAll('#telesales-fullscreen .q-view-section').forEach(s=>s.classList.remove('active'));
+    const el = document.getElementById(`t-view-${tab}`);
+    if(el) el.classList.add('active');
+}
+
+function hydrateTelesalesSegmentFilter(){
+    const sel = document.getElementById('t-data-seg');
+    if(!sel) return;
+    const segs = Array.from(new Set((telesalesOffers||[]).map(o=>o.segment).filter(Boolean))).sort();
+    sel.innerHTML = '<option value="all">Tüm Segmentler</option>' + segs.map(s=>`<option value="${escapeHtml(s)}">${escapeHtml(s)}</option>`).join('');
+}
+
+function renderTelesalesDataOffers(){
+    const grid = document.getElementById('t-data-grid');
+    if(!grid) return;
+
+    const q = (document.getElementById('t-data-search')?.value||'').toLowerCase();
+
+    const list = (telesalesOffers||[]).filter(o=>{
+        const hay = `${o.title||''} ${o.desc||''} ${o.segment||''} ${o.tag||''}`.toLowerCase();
+        const okQ = !q || hay.includes(q);
+        return okQ;
+    });
+
+    const bar = (isAdminMode && isEditingActive) ? `
+        <div style="grid-column:1/-1;display:flex;gap:10px;align-items:center;margin:6px 0 12px;">
+          <button class="x-btn x-btn-admin" onclick="addTelesalesOffer()"><i class="fas fa-plus"></i> Teklif Ekle</button>
+        </div>
+    ` : '';
+
+    if(list.length===0){
+        grid.innerHTML = bar + '<div style="opacity:.7;padding:20px;grid-column:1/-1">Sonuç bulunamadı.</div>';
+        const cnt = document.getElementById('t-data-count'); if(cnt) cnt.innerText = '0 kayıt';
+        return;
+    }
+
+    const cnt = document.getElementById('t-data-count');
+    if(cnt) cnt.innerText = `${list.length} kayıt`;
+
+    grid.innerHTML = bar + list.map((o, idx)=>`
+        <div class="q-training-card" onclick="showTelesalesOfferDetail(${idx})" style="cursor:pointer">
+          <div class="t-training-head">
+            <div style="min-width:0">
+              <div class="q-item-title" style="font-size:1.02rem">${escapeHtml(o.title||'Teklif')}</div>
+            </div>
+            <div class="t-training-badge">${escapeHtml(o.segment||o.tag||'')}</div>
+          </div>
+          <div class="t-training-desc">${escapeHtml((o.desc||'').slice(0,140))}${(o.desc||'').length>140?'...':''}</div>
+          <div style="margin-top:10px;color:#999;font-size:.8rem">(Detay için tıkla)</div>
+          ${(isAdminMode && isEditingActive) ? `
+            <div style="margin-top:12px;display:flex;gap:10px">
+              <button class="x-btn x-btn-admin" onclick="event.stopPropagation(); editTelesalesOffer(${idx});"><i class="fas fa-pen"></i> Düzenle</button>
+              <button class="x-btn x-btn-admin" onclick="event.stopPropagation(); deleteTelesalesOffer(${idx});"><i class="fas fa-trash"></i> Sil</button>
+            </div>
+          ` : ``}
+        </div>
+    `).join('');
+}
+
+function addTelesalesOffer(){
+    Swal.fire({
+        title:"TeleSatış Teklifi Ekle",
+        html: `
+          <input id="to-title" class="swal2-input" placeholder="Başlık">
+          <input id="to-seg" class="swal2-input" placeholder="Segment / Etiket (opsiyonel)">
+          <textarea id="to-desc" class="swal2-textarea" placeholder="Açıklama"></textarea>
+          <textarea id="to-detail" class="swal2-textarea" placeholder="Detay (opsiyonel)"></textarea>
+        `,
+        showCancelButton:true,
+        confirmButtonText:"Ekle",
+        cancelButtonText:"Vazgeç",
+        preConfirm: ()=>{
+            const title=(document.getElementById('to-title').value||'').trim();
+            if(!title) return Swal.showValidationMessage("Başlık zorunlu");
+            return {
+                id:'local_'+Date.now(),
+                title,
+                segment:(document.getElementById('to-seg').value||'').trim(),
+                desc:(document.getElementById('to-desc').value||'').trim(),
+                detail:(document.getElementById('to-detail').value||'').trim(),
+            };
+        }
+    }).then(async res=>{
+        if(!res.isConfirmed) return;
+        const v = res.value;
+        Swal.fire({ title:'Ekleniyor...', didOpen:()=>Swal.showLoading(), showConfirmButton:false });
+        try{
+          const r = await fetch(SCRIPT_URL, {
+            method:'POST',
+            headers:{'Content-Type':'text/plain;charset=utf-8'},
+            body: JSON.stringify({ action:'upsertTelesalesOffer', username: currentUser, token: getToken(), keyTitle: '', keySegment: '', ...v })
+          });
+          const d = await r.json();
+          if(d.result==='success'){
+            Swal.fire({ icon:'success', title:'Eklendi', timer:1200, showConfirmButton:false });
+            await fetchSheetObjects();
+            renderTelesalesDataOffers();
+          }else{
+            Swal.fire('Hata', d.message||'Eklenemedi', 'error');
+          }
+        }catch(e){
+          Swal.fire('Hata','Sunucu hatası.', 'error');
+        }
+    });
+}
+
+async function editTelesalesOffer(idx){
+    const o = (telesalesOffers||[])[idx];
+    if(!o) return;
+    const { value: v } = await Swal.fire({
+        title:"Teklifi Düzenle",
+        html: `
+          <input id="to-title" class="swal2-input" placeholder="Başlık" value="${escapeHtml(o.title||'')}">
+          <input id="to-seg" class="swal2-input" placeholder="Segment / Etiket" value="${escapeHtml(o.segment||'')}">
+          <textarea id="to-desc" class="swal2-textarea" placeholder="Açıklama">${escapeHtml(o.desc||'')}</textarea>
+          <textarea id="to-detail" class="swal2-textarea" placeholder="Detay">${escapeHtml(o.detail||'')}</textarea>
+        `,
+        showCancelButton:true,
+        confirmButtonText:"Kaydet",
+        cancelButtonText:"Vazgeç",
+        preConfirm: ()=>{
+            const title=(document.getElementById('to-title').value||'').trim();
+            if(!title) return Swal.showValidationMessage("Başlık zorunlu");
+            return {
+                title,
+                segment:(document.getElementById('to-seg').value||'').trim(),
+                desc:(document.getElementById('to-desc').value||'').trim(),
+                detail:(document.getElementById('to-detail').value||'').trim(),
+            };
+        }
+    });
+    if(!v) return;
+
+    Swal.fire({ title:'Kaydediliyor...', didOpen:()=>Swal.showLoading(), showConfirmButton:false });
+    try{
+      const r = await fetch(SCRIPT_URL, {
+        method:'POST',
+        headers:{'Content-Type':'text/plain;charset=utf-8'},
+        body: JSON.stringify({ action:'upsertTelesalesOffer', username: currentUser, token: getToken(), keyTitle: o.title, keySegment: o.segment, ...v })
+      });
+      const d = await r.json();
+      if(d.result==='success'){
+        Swal.fire({ icon:'success', title:'Kaydedildi', timer:1200, showConfirmButton:false });
+        await fetchSheetObjects();
+        renderTelesalesDataOffers();
+      }else{
+        Swal.fire('Hata', d.message||'Kaydedilemedi', 'error');
+      }
+    }catch(e){
+      Swal.fire('Hata','Sunucu hatası.', 'error');
+    }
+}
+
+function deleteTelesalesOffer(idx){
+    const o = (telesalesOffers||[])[idx];
+    if(!o) return;
+    Swal.fire({
+        title:"Silinsin mi?",
+        text:"Teklif pasife alınacak.",
+        icon:"warning",
+        showCancelButton:true,
+        confirmButtonText:"Sil",
+        cancelButtonText:"Vazgeç"
+    }).then(async res=>{
+        if(!res.isConfirmed) return;
+        try{
+          const r = await fetch(SCRIPT_URL, {
+            method:'POST',
+            headers:{'Content-Type':'text/plain;charset=utf-8'},
+            body: JSON.stringify({ action:'deleteTelesalesOffer', username: currentUser, token: getToken(), keyTitle: o.title, keySegment: o.segment })
+          });
+          const d = await r.json();
+          if(d.result==='success'){
+            await fetchSheetObjects();
+            renderTelesalesDataOffers();
+            Swal.fire({ icon:'success', title:'Silindi', timer:1000, showConfirmButton:false });
+          }else{
+            Swal.fire('Hata', d.message||'Silinemedi', 'error');
+          }
+        }catch(e){
+          Swal.fire('Hata','Sunucu hatası.', 'error');
+        }
+    });
+}
+
+function showTelesalesOfferDetail(idx){
+    const o = (telesalesOffers||[])[idx];
+    if(!o) return;
+    Swal.fire({
+        title: `<i class="fas fa-database" style="color:#0e1b42"></i> ${escapeHtml(o.title||'')}`,
+        html: `<div style="text-align:left;line-height:1.6">
+                <div style="margin-bottom:10px"><b>Segment:</b> ${escapeHtml(o.segment||'-')}</div>
+                <div>${escapeHtml(o.desc||'Detay yok.').replace(/\n/g,'<br>')}</div>
+              </div>`,
+        showCloseButton:true,
+        showConfirmButton:false,
+        width:'720px',
+        background:'#f8f9fa'
+    });
+}
+
+function renderTelesalesScripts(){
+    const area = document.getElementById('t-scripts-grid');
+    if(!area) return;
+
+    let list = (salesScripts||[]);
+    try{
+        const ov = JSON.parse(localStorage.getItem('telesalesScriptsOverride') || '[]');
+        if(Array.isArray(ov) && ov.length) list = ov;
+    }catch(e){}
+
+    // İstek: TeleSatış Scriptler'deki ayrı "Düzenlemeyi Aç" kalksın.
+    // Düzenleme sadece üst kullanıcı menüsündeki global "Düzenlemeyi Aç" aktifken yapılabilsin.
+    const bar = (isAdminMode && isEditingActive) ? `
+        <div style="display:flex;gap:10px;align-items:center;margin:6px 0 12px;">
+          <button class="x-btn x-btn-admin" onclick="addTelesalesScript()"><i class="fas fa-plus"></i> Script Ekle</button>
+        </div>
+    ` : '';
+
+    if(list.length===0){
+        area.innerHTML = bar + '<div style="padding:16px;opacity:.7">Script bulunamadı.</div>';
+        return;
+    }
+
+    area.innerHTML = bar + list.map((s, i)=>`
+      <div class="news-item" style="border-left-color:#10b981;cursor:pointer" onclick="copyText('${escapeForJsString(s.text||'')}')">
+        <span class="news-title">${escapeHtml(s.title||'Script')}</span>
+        <div class="news-desc" style="white-space:pre-line">${escapeHtml(s.text||'')}</div>
+        <div style="display:flex;gap:10px;align-items:center;justify-content:space-between;margin-top:10px">
+          <div class="news-tag" style="background:rgba(16,185,129,.08);color:#10b981;border:1px solid rgba(16,185,129,.25)">Tıkla & Kopyala</div>
+          ${(isAdminMode && isEditingActive) ? `
+            <div style="display:flex;gap:8px">
+              <button class="x-btn x-btn-admin" onclick="event.stopPropagation(); editTelesalesScript(${i});"><i class="fas fa-pen"></i></button>
+              <button class="x-btn x-btn-admin" onclick="event.stopPropagation(); deleteTelesalesScript(${i});"><i class="fas fa-trash"></i></button>
+            </div>
+          ` : ``}
+        </div>
+      </div>
+    `).join('');
+}
+
+function getTelesalesScriptsStore(){
+    try{
+        const ov = JSON.parse(localStorage.getItem('telesalesScriptsOverride') || '[]');
+        if(Array.isArray(ov) && ov.length) return ov;
+    }catch(e){}
+    return (salesScripts||[]);
+}
+function saveTelesalesScriptsStore(arr){
+    localStorage.setItem('telesalesScriptsOverride', JSON.stringify(arr||[]));
+}
+
+function addTelesalesScript(){
+    Swal.fire({
+        title:"Script Ekle",
+        html: `
+          <input id="ts-title" class="swal2-input" placeholder="Başlık">
+          <textarea id="ts-text" class="swal2-textarea" placeholder="Script metni"></textarea>
+        `,
+        showCancelButton:true,
+        confirmButtonText:"Ekle",
+        cancelButtonText:"Vazgeç",
+        preConfirm: ()=>{
+            const title=(document.getElementById('ts-title').value||'').trim();
+            const text=(document.getElementById('ts-text').value||'').trim();
+            if(!text) return Swal.showValidationMessage("Script metni zorunlu");
+            return { id:'local_'+Date.now(), title: title||'Script', text };
+        }
+    }).then(res=>{
+        if(!res.isConfirmed) return;
+        const arr = getTelesalesScriptsStore();
+        arr.unshift(res.value);
+        saveTelesalesScriptsStore(arr);
+        renderTelesalesScripts();
+    });
+}
+
+function editTelesalesScript(idx){
+    const arr = getTelesalesScriptsStore();
+    const s = arr[idx];
+    if(!s) return;
+    Swal.fire({
+        title:"Script Düzenle",
+        html: `
+          <input id="ts-title" class="swal2-input" placeholder="Başlık" value="${escapeHtml(s.title||'')}">
+          <textarea id="ts-text" class="swal2-textarea" placeholder="Script metni">${escapeHtml(s.text||'')}</textarea>
+        `,
+        showCancelButton:true,
+        confirmButtonText:"Kaydet",
+        cancelButtonText:"Vazgeç",
+        preConfirm: ()=>{
+            const title=(document.getElementById('ts-title').value||'').trim();
+            const text=(document.getElementById('ts-text').value||'').trim();
+            if(!text) return Swal.showValidationMessage("Script metni zorunlu");
+            return { ...s, title: title||'Script', text };
+        }
+    }).then(res=>{
+        if(!res.isConfirmed) return;
+        arr[idx]=res.value;
+        saveTelesalesScriptsStore(arr);
+        renderTelesalesScripts();
+    });
+}
+function deleteTelesalesScript(idx){
+    Swal.fire({title:"Silinsin mi?", icon:"warning", showCancelButton:true, confirmButtonText:"Sil", cancelButtonText:"Vazgeç"}).then(res=>{
+        if(!res.isConfirmed) return;
+        const arr = getTelesalesScriptsStore().filter((_,i)=>i!==idx);
+        saveTelesalesScriptsStore(arr);
+        renderTelesalesScripts();
+    });
+}
+
+function renderTelesalesDocs(){
+    const box = document.getElementById('t-docs');
+    if(!box) return;
+    const docs = (trainingData||[]).filter(t=>(t.target||'')==='Telesatış' || (t.title||'').toLowerCase().includes('telesatış'));
+    if(docs.length===0){
+        box.innerHTML = '<div style="opacity:.7;padding:10px">Bu ekibe atanmış döküman/eğitim görünmüyor.</div>';
+        return;
+    }
+    box.innerHTML = docs.map(d=>`
+      <div class="news-item" style="border-left-color:var(--secondary)">
+        <span class="news-date">${escapeHtml((d.startDate||'') + (d.endDate?(' → '+d.endDate):''))}</span>
+        <span class="news-title">${escapeHtml(d.title||'')}</span>
+        <div class="news-desc">${escapeHtml(d.desc||'')}</div>
+        ${d.link && d.link!=='N/A' ? `<a class="btn btn-link" href="${escapeHtml(d.link)}" target="_blank">Link</a>`:''}
+        ${d.docLink && d.docLink!=='N/A' ? `<a class="btn btn-link" href="${escapeHtml(d.docLink)}" target="_blank">Döküman</a>`:''}
+      </div>
+    `).join('');
+}
+
+/* -------------------------
+   TEKNİK FULLSCREEN
+--------------------------*/
+async function openTechArea(tab){
+    const wrap = document.getElementById('tech-fullscreen');
+    if(!wrap) return;
+    wrap.style.display = 'flex';
+    document.body.classList.add('fs-open');
+    document.body.style.overflow='hidden';
+
+    // Sidebar profil
+    const av = document.getElementById('x-side-avatar');
+    const nm = document.getElementById('x-side-name');
+    const rl = document.getElementById('x-side-role');
+    if(av) av.innerText = (currentUser||'U').trim().slice(0,1).toUpperCase();
+    if(nm) nm.innerText = currentUser || 'Kullanıcı';
+    if(rl) rl.innerText = isAdminMode ? 'Admin' : 'Temsilci';
+
+    // İlk açılışta "bozuk görünüm" (flicker) olmasın: veri gelene kadar bekle
+    try{
+        if((!database || database.length===0) && window.__dataLoadedPromise){
+            const lists = ['x-broadcast-list','x-access-list','x-app-list','x-activation-list','x-cards'];
+            lists.forEach(id=>{ const el=document.getElementById(id); if(el) el.innerHTML = '<div class="home-mini-item">Yükleniyor...</div>'; });
+            await window.__dataLoadedPromise;
+        }
+    }catch(e){}
+
+    // İçerikleri (bucket/list) hazırla
+    try{ renderTechSections(); }catch(e){}
+
+    // Sekmeyi aç
+    switchTechTab(tab || 'broadcast');
+}
+
+function closeFullTech(){
+    const wrap = document.getElementById('tech-fullscreen');
+    if(wrap) wrap.style.display = 'none';
+    document.body.classList.remove('fs-open');
+    document.body.style.overflow='';
+}
+
+function switchTechTab(tab){
+    // Sidebar aktif öğeyi doğru belirle
+    // (önce data-tech-tab kullan, yoksa onclick içeriği ile fallback yap)
+    document.querySelectorAll('#tech-fullscreen .q-nav-item').forEach(i=>i.classList.remove('active'));
+
+    const byData = document.querySelector(`#tech-fullscreen .q-nav-item[data-tech-tab="${tab}"]`);
+    if(byData){
+        byData.classList.add('active');
+    }else{
+        document.querySelectorAll('#tech-fullscreen .q-nav-item').forEach(i=>{
+            const oc = (i.getAttribute('onclick') || '');
+            if(oc.includes(`'${tab}'`) || oc.includes(`\"${tab}\"`)) i.classList.add('active');
+        });
+    }
+
+    document.querySelectorAll('#tech-fullscreen .q-view-section').forEach(s=>s.classList.remove('active'));
+    const el = document.getElementById(`x-view-${tab}`);
+    if(el) el.classList.add('active');
+}
+
+const TECH_DOC_CONTENT = {"broadcast": [{"title": "Smart TV – Canlı Yayında Donma Problemi Yaşıyorum", "body": "Müşterinin sorun yaşadığı yayın ya da yayınlarda genel bir sorun var mı kontrol edilir? Genel bir sorun var ise teknik ekibin incelediği yönünde bilgi verilir.\nMüşterinin kullandığı cihaz TVmanager ‘da loglardan kontrol edilir. Arçelik/Beko/Grundig/Altus marka Android TV olmayan Smart TV’lerden ise genel sorun hakkında bilgi verilir.\nYukarıdaki durumlar dışında yaşanan bir sorun ise TV ve modemin elektrik bağlantısını kesilip tekrar verilmesi istenir. « Yaşadığınız sorunu kontrol ederken TV ve modeminizin elektrik bağlantısını kesip 10 sn sonra yeniden açabilir misiniz? Ardından yeniden yayını açıp kontrol edebilir misiniz? (Ayrıca öneri olarak modemi kapatıp tekrar açtıktan sonra, sadece izleme yaptığı cihaz modeme bağlı olursa daha iyi bir bağlantı olacağı bilgisi verilebilir)\nSorun devam eder ise Smart TV tarayıcısından https://www.hiztesti.com.tr/ bir hız testi yapması sonucu bizimle paylaşması istenir.\nHız testi sonucu 8 Mbps altında ise internet bağlantı hızının düşük olduğunu internet servis sağlayıcısı iletişime geçmesi istenir.\n8 Mbps üzerinde ise müşteriden sorunu gösteren kısa bir video talep edilir.\nVideo kaydı ve hız testinin sonuçları gösteren bilgiler alındıktan sonra müşteriye incelenmesi için teknik ekibimize iletildiği inceleme tamamlandığında eposta ile bilgi verileceği yönünde bilgi verilir.\nSorun aynı gün içinde benzer cihazlarda farklı müşterilerde yaşıyor ise tüm bilgilerle Erlab’a arıza kaydı açılır. Sorun birkaç müşteri ile sınırlı ise 17:00 – 01:00 vardiyasındaki ekip arkadaşında sistemsel bir sorun olmadığına dair eposta gönderilmesi için bilgileri paylaşılır."}, {"title": "Mobil Uygulama – Canlı Yayında Donma Sorunu Yaşıyorum", "body": "Müşterinin sorun yaşadığı yayın ya da yayınlarda genel bir sorun var mı kontrol edilir? Genel bir sorun var ise teknik ekibin incelediği yönünde bilgi verilir.(Müşteri İOS veya Android işletim sistemli hangi cihazdan izliyorsa, mümkünse aynı işletim sistemli mobil cihazdan kontrol edilebilir, gerekirse ekip arkadaşlarından kontrol etmeleri istenebilir)\nGenel bir sorun yok ise, www.hiztesti.com.tr link üzerinden hız testi yapması sonucu bizimle paylaşması istenir.\nHız testi sonucu 8 mbps altında ise internet bağlantı hızının düşük olduğu internet servisi sağlayıcısı ile iletişime geçmesi istenir. (Öneri olarak modemi kapatıp tekrar açtıktan sonra sadece izleme yaptığı cihaz modeme bağlı olursa daha iyi bir bağlantı olacağı bilgisi verilebilir)\n8 mbps üzerinde ise, uygulama verilerin temizlenmesi veya uygulamanın silip tekrar yüklenmesi istenilir, sorun devam etmesi durumunda sorunu gösteren video kaydı istenir.\n 4. Hız testi, cihaz marka model ve sürüm bilgileri alındıktan sonra, incelenmesi için teknik ekibe iletildiği, inceleme tamamlandığında e-posta  ile bilgi verileceği yönünde bilgi verilir.\n 5. Sorun aynı gün içerinde benzer cihazlarda farklı müşterilerde yaşıyor ise tüm bilgilerle Erlab’a arıza kaydı açılır. Sorun birkaç müşteri ile sınırlı  ise 17:00 – 01:00 vardiyasındaki ekip arkadaşında sistemsel bir sorun olmadığına dair eposta gönderilmesi için bilgileri paylaşılır."}, {"title": "Bilgisayar – Canlı Yayında Donma Sorunu Yaşıyorum", "body": "Müşterinin sorun yaşadığı yayın ya da yayınlarda genel bir sorun var mı kontrol edilir? Genel bir sorun var ise teknik ekibin incelediği yönünde bilgi verilir.\nGenel bir sorun değilse, öncelikle https://www.hiztesti.com.tr/ bir hız testi yapması sonucu bizimle paylaşması istenir.\nHız testi sonucu 8 mbps altında ise internet bağlantı hızının düşük olduğunu internet servis sağlayıcısı iletişime geçmesi istenir.\n8 mbps üzerinde ise müşteriden aşağıdaki adımları uygulaması istenir.\n3. Bilgisayarın işletim sitemi öğrenilip, görüşme üzerinden ‘’pingWindows7’’ veya ‘’pingwindows10’’ kısayollarından müşteri sunucuları kontrol edilir.\n(Windows 10 üzeri işletim sistemi cihazlara pingwindows10 kısayolu gönderilebilir.)\n4. Sunucu kontrol ekranında kontrol edilmesi gereken, ok ile gösterilen yerden, sunucu ile kayıp olup olmadığı ve kırmızı alan içerisinde sunucu ile web sitemize kaç saniyede işlem sağladığı kontrol edilir.\n5. 1 – 35 arası normal sayılabilir, bu saniye aralığında sorun yaşanıyorsa, web sitemize daha hızlı tepsi süresi veren ve genellikle sorunsuz bir şekilde izleme sağlanabilen 193.192.103.249, 185.11.14.27 veya 195.175.178.8 sunucuları kontrol edilmelidir.\n6. Uygun sunucuyu tespit ettikten sonra canlı destek ekranında ‘’Host’’ ‘’host2’’ kısa yolları kullanarak, kısa yoldaki adımlar ile müşterinin sadece bizim sitemize bağlandığı sunucusunu, en uygun sunucu ile değiştirip tarayıcı açıp kapattırdıktan sonra tekrar yayını kontrol etmesini iletebiliriz. (Ayrıca müşteri yayınları auto değil, manuel olarak 720 veya 1080p seçip kontrol edilmesi önerilir)\n7. Sorun aynı gün içerinde benzer işletim sistemi veya sunucuda farklı müşterilerde yaşıyor ise tüm bilgilerle Erlab’a arıza kaydı açılır. Sorun birkaç müşteri ile sınırlı ise 17:00 – 01:00 vardiyasındaki ekip arkadaşında sistemsel bir sorun olmadığına dair eposta gönderilmesi için bilgileri paylaşılır"}, {"title": "YAYIN SORUNLARI", "body": "35 sn arası normal sayılabilir, bu saniye aralığında sorun yaşanıyorsa, web sitemize daha hızlı tepsi süresi veren ve genellikle sorunsuz bir şekilde izleme sağlanabilen 193.192.103.249, 185.11.14.27 veya 195.175.178.8 sunucuları kontrol edilmelidir."}, {"title": "MacOS – Canlı Yayında Donma Sorunu Yaşıyorum", "body": "Müşterinin sorun yaşadığı yayın ya da yayınlarda genel bir sorun var mı kontrol edilir? Genel bir sorun var ise teknik ekibin incelediği yönünde bilgi verilir.\nGenel bir sorun değilse, öncelikle https://www.hiztesti.com.tr/ bir hız testi yapması sonucu bizimle paylaşması istenir.\nHız testi sonucu 8 mbps altında ise internet bağlantı hızının düşük olduğunu internet servis sağlayıcısı iletişime geçmesi istenir.\n8 mbps üzerinde ise müşteriden aşağıdaki adımları uygulaması istenir.\nMindbehind üzerinden ‘’pingmacOS’’ kısayolundan müşteri sunucuları kontrol edilir.\nSunucu kontrol ekranında kontrol edilmesi gereken, ‘’packet loss’’ kısmında kayıp olup olmadığı,  alan içerisinde sunucu ile web sitemize kaç saniyede işlem sağladığı kontrol edilir.\n1 – 35 arası normal sayılabilir, bu saniye aralığında sorun yaşanıyorsa, web sitemize daha hızlı tepsi süresi veren ve genellikle sorunsuz bir şekilde izleme sağlanabilen 193.192.103.249, 185.11.14.27 veya 195.175.178.8 sunucuları kontrol edilmelidir.\nUygun sunucuyu tespit ettikten sonra canlı destek ekranında ‘’macOShost’’ kısa yolunu kullanarak, kısa yoldaki adımlar ile müşterinin sadece bizim sitemize bağlandığı sunucuyu, en uygun sunucu ile değiştirip tarayıcı açıp kapattırdıktan sonra tekrar yayını kontrol etmesini iletebiliriz. (Ayrıca müşteri yayınları auto değil, manuel olarak 720 veya 1080p seçip kontrol edilmesi önerilir)\nSorun aynı gün içerinde benzer işletim sistemi veya sunucuda farklı müşterilerde yaşıyor ise tüm bilgilerle Erlab’a arıza kaydı açılır. Sorun birkaç müşteri ile sınırlı ise 17:00 – 01:00 vardiyasındaki ekip arkadaşında sistemsel bir sorun olmadığına dair eposta gönderilmesi için bilgileri paylaşılır."}, {"title": "‘’Yayında beklenmedik bir kesinti oluştu’’ Uyarısı", "body": "Bu uyarı genel bir yayın sorunu olduğunda ya da kullanıcı Türkiye sınırları dışında bir yerden erişim sağladığında karşımıza çıkmaktadır.\nKullanıcının sorun yaşadığı yayın kontrol edilir ve genel bir yayın sorunu olup olmadığı teyit edilir.\nTvmanager’da SubscriberLog ekranından ip adresi alınır ve yurtdışı bir konum olup olmadığı teyit edilir.\nKullanıcı yurtdışında ise erişim sağlayamayacağı bilgisi verilir, VPN kullanıyor ise kapatması istenir.\nTVmanager Devices kısmında oturumlar sonlandırılır ve kullanıcıdan tekrar giriş yaparak kontrol etmesi rica edilir.\nMobil veri veya farklı bir ağda bu hata mesajının alınıp alınmadığı teyit edilir.\nCihaz ve modem kapama ve açma işlemi uygulanır.\nSorun devam eder ise inceleme için cihaz ve diğer bilgilerle teknik ekibimize bilgi verileceği iletilir. Excel de kullanıcıdan alınan bilgiler not edilir."}], "access": [{"title": "ERİŞİM SORUNLARI", "body": "‘’Lisans hakları sebebiyle Türkiye sınırları dışında hizmet verilememektedir.’’ Uyarısı\nAlınan hata müşterinin yurt dışında olması ve yurt içinde ise VPN ya da benzeri bir uygulamanın cihazında aktif olmasından kaynaklanmaktadır.\n\nMüşteriye yurt dışında olup olmadığı sorulur, yurt dışında ise ‘’lisans hakları sebebiyle yayınların yurt dışından izlenemediği’’ yönünde bilgi verilir.\nYurt içinde ise VPN ya da benzeri bir uygulamanın cihazında aktif olup ya da olmadığı sorulur. Aktif ise devre dışı bırakılıp tekrar denemesi önerilir.\nVPN ya da benzeri bir uygulama kullanmıyor ise müşterinin ip adresi öğrenilir ve https://tr.wizcase.com/tools/whats-my-ip/ ip adresi kontrol edilir.  Aynı zamanda adresin vpn üzerinden alınıp alınmadığının kontrolü için https://vpnapi.io adresine girilip kontrol edilir.\nIp adresi yurt dışı ya da ISP bilgisi bilinen bir servis sağlayıcısı değilse müşteriye bulunduğu lokasyonun otel, yurt vb. bir yer olup olmadığı ya da cihazının şirket cihazı olup olmadığı sorulur."}, {"title": "‘’IP Karantina’’ Uyarısı", "body": "İp Karantina sorunu genel bir sorun yok ise, eposta veya şifre bir çok defa hatalı girilmesinden dolayı alınır.\nKullanıcının ip adresi karantina da olup ya da olmadığı, TVmanager – CMS – Admission Gate menüsü üzerinden kontrol edilerek çıkarılabilir. İkinci bir seçenek olarak modem kapama ve açma işlemi yaptırılabilir."}], "app": [{"title": "Teknik Sorun Analizi Nasıl Yapılır?", "body": "App Kaynaklı Nedenler\nCihaz Kaynaklı Nedenler\nApp hataları başlığında uygulamanın açılmaması ya da kendi kendine kapanması şeklinde teknik sorunlar ile karşılaşabiliriz. Bu tip sorunlar, kullanıcı deneyimini doğrudan etkileyerek uygulamaya erişilememesine neden olur.\nUygulamanın eski sürümü\nÖnbellek sorunları\nUyumsuz cihazlar\nDolu RAM/Arka planda çalışan fazla uygulama\nCihazın güncel olmaması (Eski sistemi sürümleri)\nKullanıcıya Sorulabilecek Sorular:\nUygulama açılıyor mu, yoksa açılmadan kapanıyor mu?\nUygulama sürümü, cihaz işletim sistemi sürümü nedir? (TVmanager kontrolü)\nCihazda yeterli depolama alanı var mı?"}], "activation": [{"title": "‘’Promosyon Kodu Bulunamadı’’ Uyarısı", "body": "Görselde ki örnekte doğrusu ‘’YILLIKLOCA’’ olan kampanya kodu, küçük harf ile yazıldığında ‘’Promosyon Kodu Bulunamadı’’ hatası alınmıştır. Bu hata ile karşılaşıldığında kampanya kodunun yanlış, eksik, küçük harf ya da boşluk bırakılarak yazıldığını tespitle, kullanıcıyı bu doğrultuda doğru yazım için yönlendirmemiz gerekir."}, {"title": "‘’Kampanya Kodu Aktif Edilemedi’’ Uyarısı", "body": "Görseldeki örnekteki gibi eski bir promosyon kodu yazıldığında ‘’Kampanya Kodu Aktif Edilemedi’’ uyarısı alınır."}, {"title": "‘’Geçersiz Kampanya Kodu’’ Uyarısı", "body": "Görseldeki örnekteki gibi daha önce kullanılmış bir promosyon kodu yazıldığında ‘’Geçersiz Kampanya Kodu’’ hatası alınır.\nPromosyon kodunun hangi hesapta kullanıldığını aşağıdaki görseldeki gibi Campaign alanında arama yaparak görüntüleyebiliriz."}, {"title": "Playstore Uygulama Aktivasyon Sorunu", "body": "Bazı durumlarda, kullanıcılar Google Play Store üzerinden S Sport Plus uygulamasında abonelik satın aldıklarında veya yenileme gerçekleştiğinde, üyelikleri otomatik olarak aktifleşmeyebiliyor.  Bu durumda, kullanıcının uygulama üzerinden manuel olarak paket aktivasyonu yapması gerekmektedir.\n\nAktivasyon işleminin başarılı olabilmesi için:\n Google Play Store üzerinden satın alma işlemi yapılırken kullanılan Gmail hesabı, aktivasyon anında cihazda açık olmalıdır.\n Aktivasyon işlemi uygulama içerisinden yapılmalıdır.\nDestek ekibi tarafından Mindbehind üzerinden “paketgoogle” kısayolu kullanılarak yönlendirme sağlanabilir.  Kullanıcı başarılı bir şekilde paket aktivasyonu yaptıktan sonra, paket ataması sistemde gerçekleşir ve log kayıtlarında ilgili işlem aşağıdaki gibi görünür (ekli görsellerdeki gibi).  Bu işlem, paketin doğru şekilde tanımlanması için önemlidir."}, {"title": "App Store Uygulama Aktivasyon Sorunu", "body": "Müşteriler App Store üzerinden uygulamamızdan abonelik satın aldığı veya yenileme olduğu zaman bazen üyelik aktif olmuyor.\nÜyelikleri aktif olabilmeleri için, uygulama üzerinden paket aktivasyon yapmaları gerekiyor. Paket aktivasyon yaparken, satın alma yaparken hangi Apple kimliği hesabı açık ise, o hesap açıkken aktivasyon denemesi gerekiyor.\nMindbehind üzerinden ‘’paketapple’’ kısayolu kullanılır.\nMüşteri paket aktivasyonu yaptıktan sonra üyelik ataması ve loglarda nasıl gözüktüğü görsellerdeki gibidir.\nPaket aktivasyon butonu örnek görüntüsü yandaki gibidir."}, {"title": "AKTİVASYON SORUNLARI", "body": "İOS Uygulama Paket Aktivasyon ‘’Abonelik Başkasına Aittir’’ Sorunu\n\nİos uygulamamızda müşteri paket aktivasyon işlemi yaptığında ‘’Abonelik Başkasına Aittir’’ hatası geliyor ise, cihazda açık olan Apple kimliği ile satın alınmış, ancak aktivasyon yaptığı eposta adresi farklı bir eposta adresidir.\n\nFarklı eposta adresi ile paket aktivasyon yaptığında ‘’Subscriberlog’’ kısmında örnek ekran görüntüsünde kırmızı alana alınan ‘’packageValidation’’  kısmı çıkar, ok ile gösterilen ID kısmından doğru üyeliği ID araması ile bulabiliriz."}, {"title": "AKTİVASYON SORUNLARI", "body": "Android ‘’Paket Başka Bir Kullanıcıya Ait Olduğu İçin Paket Atama İşlemi Başarısız Oldu’’ Sorunu\n\nAndroid uygulamamızda müşteri paket aktivasyon işlemi yaptığında ‘’Paket Başka Bir Kullanıcıya Ait Olduğu İçin Paket Atama İşlemi Başarısız Oldu’’ hatası geliyor ise, cihazda açık olan Play Store gmail hesabı ile satın alınmış, ancak aktivasyon yaptığı eposta adresi farklı bir eposta adresidir.\n\nFarklı eposta adresi ile paket aktivasyon yaptığında ‘’Subscriberlog’’ kısmında örnek ekran görüntüsünde kırmızı alana alınan ‘’Validate Google Package’’  kısmı çıkar, ok ile gösterilen ID kısmından doğru üyeliği ID araması ile bulabiliriz."}, {"title": "AKTİVASYON SORUNLARI", "body": "Android Uygulama Paket Aktivasyon İşlem Tamamlanamadı veya Üyelik Bulunamama Sorunu\nAndroid uygulamamızda müşteri ödeme yapmış olmasına rağmen paket aktivasyonu yaptığında ‘’İşlem tamamlandı, İşlem Tamamlanamadı veya Abone bulunamadı’’ hatası geliyor ve üyelik aktif olmuyor ise, müşteriden GPA kodunu paylaşılması istenir.\nGPA kodu, Google tarafından ödeme yapıldığına dair müşteriye gönderilen ödeme faturası (makbuz) içerisinde yer almaktadır.\nBu GPA kodu ile üyeliği Tvmanager üzerinden aşağıdaki görseldeki gibi Reporting > General > Payments kısmında tarihi aralığı ayarlanıp ‘’Transaction Identifer’’ kısmından arama yapılıp, üyelik ID’sine ‘’Subscriber ID’’ üzerinden ulaşılabilir."}, {"title": "AKTİVASYON SORUNLARI", "body": "Türksat Abone Bulunamadı veya Abone Active Değil Sorunu\nBu hata, Hizmet ID veya Geçici Kod hatalı yazılmasından dolayı alınır.  Müşteriler genellikle bazı büyük küçük harfleri karıştırabiliyor veya sistemden dolayı bazen bu sorun alınabiliyor.\nÇözüm olarak harf hatası olmaması için Tvmanager>Reporting>General>Thirtdparty Provisions kısmından tarih aralığı belirleyip, Hizmet ID numarasını ‘’Extrenal ID’’ kısmından aratıp, kullanıcı Türksat bilgilerini bulup ‘’UniqueID’’ kısmından geçici kodu bulup, kullanıcıya paylaştığımızda, ID ve Geçici kodu kopyala yapıştırır şeklinde ilerlemesini iletebiliriz.\nAynı sorun devam eder ise, kullanıcıdan onay alıp, ID ve geçici kod ile kullanıcının üyeliğini kendimiz yapabiliriz. Müşterinin üyeliğini biz tarafından yapıldı ise, müşteriye şifresini nasıl güncelleyebileceği ile ilgili bilgi verilir."}]};
+
+function renderTechSections(){
+    // Kaynak: Sheet'ten gelen teknik kartlar + admin override (localStorage)
+    const baseCards = (database||[]).filter(c=>String(c.category||'').toLowerCase()==='teknik');
+    let override = [];
+    try{ override = JSON.parse(localStorage.getItem('techCardsOverride') || '[]'); }catch(e){ override = []; }
+    const techCards = (Array.isArray(override) && override.length) ? override : baseCards;
+
+    // Heuristik sınıflandırma
+    const buckets = {broadcast:[], access:[], app:[], activation:[], cards:[]};
+    techCards.forEach(c=>{
+        const hay = `${c.title||''} ${c.text||''} ${c.script||''}`.toLowerCase();
+        if(hay.includes('yayın') || hay.includes('don') || hay.includes('buffer') || hay.includes('akış') || hay.includes('tv')){
+            buckets.broadcast.push(c);
+        }else if(hay.includes('erişim') || hay.includes('vpn') || hay.includes('proxy') || hay.includes('login') || hay.includes('giriş') || hay.includes('yurtdışı')){
+            buckets.access.push(c);
+        }else if(hay.includes('app') || hay.includes('uygulama') || hay.includes('hata') || hay.includes('crash') || hay.includes('versiyon')){
+            buckets.app.push(c);
+        }else if(hay.includes('aktivasyon') || hay.includes('satın') || hay.includes('satınalma') || hay.includes('store') || hay.includes('ödeme') || hay.includes('google') || hay.includes('apple')){
+            buckets.activation.push(c);
+        }else{
+            buckets.broadcast.push(c);
+        }
+        buckets.cards.push(c);
+    });
+
+    window.__techBuckets = buckets;
+
+    // Search input bağlama
+    const bindSearch = (inputId, key, listId)=>{
+        const inp = document.getElementById(inputId);
+        if(!inp) return;
+        inp.oninput = ()=> renderTechList(key, inp.value || '', listId);
+    };
+
+    bindSearch('x-search-broadcast','broadcast','x-broadcast-list');
+    bindSearch('x-search-access','access','x-access-list');
+    bindSearch('x-search-app','app','x-app-list');
+    bindSearch('x-search-activation','activation','x-activation-list');
+    bindSearch('x-search-cards','cards','x-cards-list');
+
+    // İlk çizim
+    renderTechList('broadcast','', 'x-broadcast-list');
+    renderTechList('access','', 'x-access-list');
+    renderTechList('app','', 'x-app-list');
+    renderTechList('activation','', 'x-activation-list');
+    renderTechList('cards','', 'x-cards-list');
+}
+
+let techEditMode = false;
+
+function renderTechList(bucketKey, q, listId){
+    const listEl = document.getElementById(listId);
+    if(!listEl) return;
+
+    const all = (window.__techBuckets && window.__techBuckets[bucketKey]) ? window.__techBuckets[bucketKey] : [];
+    const query = String(q||'').trim().toLowerCase();
+
+    const filtered = !query ? all : all.filter(c=>{
+        const hay = `${c.title||''} ${c.text||''} ${c.script||''} ${c.link||''}`.toLowerCase();
+        return hay.includes(query);
+    });
+
+    const bar = (isAdminMode ? `
+        <div style="display:flex;gap:10px;align-items:center;margin:10px 0 14px;">
+          <button class="x-btn x-btn-admin" onclick="toggleTechEdit()"><i class="fas fa-pen"></i> ${techEditMode ? 'Düzenlemeyi Kapat' : 'Düzenlemeyi Aç'}</button>
+          ${techEditMode ? `<button class="x-btn x-btn-admin" onclick="addTechCard('${bucketKey}')"><i class="fas fa-plus"></i> Kart Ekle</button>` : ``}
+          <span style="color:#888;font-weight:800;font-size:.9rem">Bu düzenlemeler tarayıcıda saklanır (local).</span>
+        </div>
+    ` : '');
+
+    if(!filtered.length){
+        listEl.innerHTML = bar + '<div class="home-mini-item">Kayıt bulunamadı.</div>';
+        return;
+    }
+
+    listEl.innerHTML = bar + `
+      <div class="x-card-grid">
+        ${filtered.map((c, idx)=> techCardHtml(c, idx)).join('')}
+      </div>
+    `;
+}
+
+function techCardKey(c, idx){
+    return (c && (c.id || c.code)) ? String(c.id||c.code) : `${(c.title||'').slice(0,40)}__${idx}`;
+}
+
+function techCardHtml(c, idx){
+    const title = escapeHtml(c.title||'');
+    const badge = escapeHtml(c.code || c.category || 'TEKNİK');
+    const rawText = (c.text||'').toString();
+    const text = escapeHtml(rawText);
+    const link = (c.link||'').trim();
+    const script = (c.script||'').trim();
+    const key = techCardKey(c, idx);
+
+    // Detay butonunu gösterme kriteri (uzun metin / script / link)
+    const hasDetail = (rawText && rawText.length > 180) || (script && script.length > 120) || !!link;
+
+    return `
+      <div class="x-card" data-key="${escapeHtml(key)}">
+        <div class="x-card-head">
+          <div class="x-card-title">${title}</div>
+          <div class="x-card-badge">${badge}</div>
+        </div>
+        <div class="x-card-body">
+          ${text ? `<div class="x-card-text x-card-text-truncate">${text}</div>` : ``}
+          ${hasDetail ? `<button class="x-readmore" onclick='openTechCardDetail(${JSON.stringify(key)})'>Devam oku</button>` : ``}
+        </div>
+        <div class="x-card-actions">
+          ${script ? `<button class="x-btn x-btn-copy" onclick='copyText(${JSON.stringify(script)})'><i class="fas fa-copy"></i> Kopyala</button>` : ``}
+          ${isAdminMode && techEditMode ? `
+            <button class="x-btn x-btn-admin" onclick="editTechCard(${JSON.stringify(key)})"><i class="fas fa-pen"></i> Düzenle</button>
+            <button class="x-btn x-btn-admin" onclick="deleteTechCard(${JSON.stringify(key)})"><i class="fas fa-trash"></i> Sil</button>
+          ` : ``}
+        </div>
+      </div>
+    `;
+}
+
+// Teknik kart detayını popup'ta aç (ana ekran kartları gibi)
+function openTechCardDetail(key){
+    try{
+        const all = __getTechCardsForUi();
+        // key: "<id>" veya "idx:<n>" olabilir
+        let found = null;
+        if(String(key||'').startsWith('idx:')){
+            const n = parseInt(String(key).split(':')[1],10);
+            if(!Number.isNaN(n)) found = all[n];
+        }else{
+            found = all.find((c, idx)=>techCardKey(c, idx)===key) || null;
+        }
+        if(!found){
+            Swal.fire({icon:'warning', title:'Kayıt bulunamadı', timer:1200, showConfirmButton:false});
+            return;
+        }
+
+        // showCardDetail(obj) zaten script/link vs. destekliyor
+        showCardDetail({
+            title: found.title || 'Detay',
+            text: found.text || '',
+            script: found.script || '',
+            alert: found.alert || '',
+            link: found.link || ''
+        });
+    }catch(e){
+        Swal.fire('Hata', 'Detay açılamadı.', 'error');
+    }
+}
+
+function toggleTechEdit(){
+    techEditMode = !techEditMode;
+    // fullscreen teknik kartlar sekmesini tazele
+    try{ filterTechCards(); }catch(e){}
+}
+
+function getTechOverride(){
+    try{
+        const arr = JSON.parse(localStorage.getItem('techCardsOverride') || '[]');
+        if(Array.isArray(arr)) return arr;
+    }catch(e){}
+    return [];
+}
+
+function saveTechOverride(arr){
+    localStorage.setItem('techCardsOverride', JSON.stringify(arr||[]));
+}
+
+function addTechCard(bucketKey){
+    Swal.fire({
+        title: "Teknik Kart Ekle",
+        html: `
+          <input id="tc-title" class="swal2-input" placeholder="Başlık">
+          <input id="tc-badge" class="swal2-input" placeholder="Etiket (ör: TEKNİK)">
+          <input id="tc-link" class="swal2-input" placeholder="Link (opsiyonel)">
+          <textarea id="tc-text" class="swal2-textarea" placeholder="Açıklama"></textarea>
+          <textarea id="tc-script" class="swal2-textarea" placeholder="Script (opsiyonel)"></textarea>
+        `,
+        showCancelButton: true,
+        confirmButtonText: "Ekle",
+        cancelButtonText: "Vazgeç",
+        preConfirm: ()=>{
+            const title = (document.getElementById('tc-title').value||'').trim();
+            if(!title) return Swal.showValidationMessage("Başlık zorunlu");
+            return {
+                id: 'local_' + Date.now(),
+                title,
+                code: (document.getElementById('tc-badge').value||'TEKNİK').trim(),
+                link: (document.getElementById('tc-link').value||'').trim(),
+                text: (document.getElementById('tc-text').value||'').trim(),
+                script: (document.getElementById('tc-script').value||'').trim(),
+                category: 'teknik'
+            };
+        }
+    }).then(res=>{
+        if(!res.isConfirmed) return;
+        const cur = getTechOverride();
+        const base = (database||[]).filter(c=>String(c.category||'').toLowerCase()==='teknik');
+        const arr = (cur.length ? cur : base);
+        arr.unshift(res.value);
+        saveTechOverride(arr);
+        try{ filterTechCards(); }catch(e){}
+    });
+}
+
+function editTechCard(key){
+    const cur = getTechOverride();
+    const base = (database||[]).filter(c=>String(c.category||'').toLowerCase()==='teknik');
+    const arr = (cur.length ? cur : base);
+    const idx = arr.findIndex((c,i)=>techCardKey(c,i)===key);
+    if(idx<0) return;
+
+    const c = arr[idx] || {};
+    Swal.fire({
+        title: "Kartı Düzenle",
+        html: `
+          <input id="tc-title" class="swal2-input" placeholder="Başlık" value="${escapeHtml(c.title||'')}">
+          <input id="tc-badge" class="swal2-input" placeholder="Etiket" value="${escapeHtml(c.code||c.category||'TEKNİK')}">
+          <input id="tc-link" class="swal2-input" placeholder="Link" value="${escapeHtml(c.link||'')}">
+          <textarea id="tc-text" class="swal2-textarea" placeholder="Açıklama">${escapeHtml(c.text||'')}</textarea>
+          <textarea id="tc-script" class="swal2-textarea" placeholder="Script">${escapeHtml(c.script||'')}</textarea>
+        `,
+        showCancelButton: true,
+        confirmButtonText: "Kaydet",
+        cancelButtonText: "Vazgeç",
+        preConfirm: ()=>{
+            const title = (document.getElementById('tc-title').value||'').trim();
+            if(!title) return Swal.showValidationMessage("Başlık zorunlu");
+            return {
+                ...c,
+                title,
+                code: (document.getElementById('tc-badge').value||'TEKNİK').trim(),
+                link: (document.getElementById('tc-link').value||'').trim(),
+                text: (document.getElementById('tc-text').value||'').trim(),
+                script: (document.getElementById('tc-script').value||'').trim(),
+                category: 'teknik'
+            };
+        }
+    }).then(res=>{
+        if(!res.isConfirmed) return;
+        arr[idx]=res.value;
+        saveTechOverride(arr);
+        try{ filterTechCards(); }catch(e){}
+    });
+}
+
+function deleteTechCard(key){
+    Swal.fire({
+        title:"Silinsin mi?",
+        text:"Bu kart local veriden silinecek.",
+        icon:"warning",
+        showCancelButton:true,
+        confirmButtonText:"Sil",
+        cancelButtonText:"Vazgeç"
+    }).then(res=>{
+        if(!res.isConfirmed) return;
+        const cur = getTechOverride();
+        const base = (database||[]).filter(c=>String(c.category||'').toLowerCase()==='teknik');
+        const arr = (cur.length ? cur : base);
+        const next = arr.filter((c,i)=>techCardKey(c,i)!==key);
+        saveTechOverride(next);
+        try{ filterTechCards(); }catch(e){}
+    });
+}
+
+function renderTechList(targetId, list, showCategory=false){
+    const el = document.getElementById(targetId);
+    if(!el) return;
+    if(!list || list.length===0){
+        el.innerHTML = '<div style="padding:16px;opacity:.7">Bu başlık altında içerik yok.</div>';
+        return;
+    }
+    el.innerHTML = list.map((c)=>`
+      <div class="news-item" style="cursor:pointer" onclick="showCardDetail(${JSON.stringify(c).replace(/</g,'\u003c')})">
+        <span class="news-title">${escapeHtml(c.title||'')}</span>
+        ${showCategory ? `<span class="news-tag" style="background:#eef2ff;color:#2b3a8a;border:1px solid #dde3ff">${escapeHtml(c.category||'')}</span>`:''}
+        <div class="news-desc" style="white-space:pre-line">${escapeHtml(c.text||'')}</div>
+        ${c.script ? `<div class="script-box" style="margin-top:10px"><b>Script:</b><div style="margin-top:6px;white-space:pre-line">${escapeHtml(c.script||'')}</div><div style="text-align:right;margin-top:10px"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${escapeForJsString(c.script||'')}')">Kopyala</button></div></div>`:''}
+      </div>
+    `).join('');
+}
+
+function renderTechDocs(){
+    const map = {
+        broadcast: 'x-broadcast-docs',
+        access: 'x-access-docs',
+        app: 'x-app-docs',
+        activation: 'x-activation-docs'
+    };
+
+    Object.keys(map).forEach(key=>{
+        const el = document.getElementById(map[key]);
+        if(!el) return;
+
+        try{
+            const items = (TECH_DOC_CONTENT && TECH_DOC_CONTENT[key]) ? TECH_DOC_CONTENT[key] : [];
+            if(!Array.isArray(items) || items.length===0){
+                el.innerHTML = '<div style="padding:12px 2px;opacity:.7">Bu başlık altında teknik döküman bulunamadı.</div>';
+                return;
+            }
+
+            el.innerHTML = items.map((it,idx)=>`
+                <div class="doc-card">
+                  <button type="button" class="doc-head" onclick="toggleDocAccordion(this)">
+                    <span class="doc-title">${escapeHtml(it.title||('İçerik ' + (idx+1)))}</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="doc-body" style="display:none; white-space:pre-line">${escapeHtml(it.body||'')}</div>
+                </div>
+            `).join('');
+        }catch(err){
+            console.error('renderTechDocs error', err);
+            el.innerHTML = '<div style="padding:12px 2px;opacity:.7">Dökümanlar yüklenemedi. (Konsolu kontrol edin)</div>';
+        }
+    });
+}
+
+function toggleDocAccordion(btn){
+    try{
+        const card = btn.closest('.doc-card');
+        if(!card) return;
+        const body = card.querySelector('.doc-body');
+        if(!body) return;
+        const isOpen = body.style.display !== 'none';
+        body.style.display = isOpen ? 'none' : 'block';
+        card.classList.toggle('open', !isOpen);
+    }catch(e){}
+}
+
+
+function renderTechWizardInto(targetId){
+    const box = document.getElementById(targetId);
+    if(!box) return;
+
+    // Ayrı state: fullscreen içindeki gömülü sihirbaz
+    window.embeddedTwState = window.embeddedTwState || { currentStep: 'start', history: [] };
+
+    // Veri yoksa yükle
+    if(!techWizardData || Object.keys(techWizardData).length === 0){
+        box.innerHTML = '<div style="padding:16px;opacity:.7">Sihirbaz yükleniyor...</div>';
+        loadTechWizardData().then(()=>renderTechWizardInto(targetId));
+        return;
+    }
+
+    embeddedTwRender(targetId);
+}
+
+function embeddedTwRender(targetId){
+    const box = document.getElementById(targetId);
+    if(!box) return;
+
+    const st = window.embeddedTwState || { currentStep:'start', history:[] };
+    const stepData = techWizardData[st.currentStep];
+
+    if(!stepData){
+        box.innerHTML = `<div class="tech-alert">Hata: Adım bulunamadı (${escapeHtml(String(st.currentStep))}).</div>`;
+        return;
+    }
+
+    const backVisible = st.history && st.history.length>0;
+
+    let html = `
+      <div style="display:flex; gap:8px; align-items:center; justify-content:space-between; margin-bottom:12px; flex-wrap:wrap">
+        <div style="display:flex; gap:8px; align-items:center">
+          ${backVisible ? `<button type="button" class="tech-btn tech-btn-option" onclick="embeddedTwBack('${targetId}')">⬅ Geri</button>` : ''}
+          <button type="button" class="tech-btn tech-btn-option" onclick="embeddedTwReset('${targetId}')">↻ Sıfırla</button>
+        </div>
+        <div style="opacity:.7; font-size:.9rem">Adım: ${escapeHtml(stepData.title || '')}</div>
+      </div>
+
+      <div class="tech-step-title">${escapeHtml(stepData.title || '')}</div>
+    `;
+
+    if(stepData.text){
+        html += `<div style="font-size:1rem; margin:10px 0; white-space:pre-line">${escapeHtml(stepData.text)}</div>`;
+    }
+    if(stepData.script){
+        html += `<div class="tech-script-box"><span class="tech-script-label">Müşteriye iletilecek:</span>${escapeHtml(stepData.script)}</div>`;
+    }
+    if(stepData.alert){
+        html += `<div class="tech-alert">${escapeHtml(stepData.alert)}</div>`;
+    }
+
+    if(Array.isArray(stepData.buttons) && stepData.buttons.length){
+        html += `<div class="tech-buttons-area">`;
+        stepData.buttons.forEach(btn=>{
+            const cls = btn.style === 'option' ? 'tech-btn-option' : 'tech-btn-primary';
+            html += `<button type="button" class="tech-btn ${cls}" onclick="embeddedTwChangeStep('${targetId}','${escapeForJsString(btn.next||'start')}')">${escapeHtml(btn.text||'')}</button>`;
+        });
+        html += `</div>`;
+    }
+
+    box.innerHTML = html;
+}
+
+function embeddedTwChangeStep(targetId, newStep){
+    window.embeddedTwState = window.embeddedTwState || { currentStep:'start', history:[] };
+    window.embeddedTwState.history.push(window.embeddedTwState.currentStep);
+    window.embeddedTwState.currentStep = newStep;
+    embeddedTwRender(targetId);
+}
+function embeddedTwBack(targetId){
+    window.embeddedTwState = window.embeddedTwState || { currentStep:'start', history:[] };
+    if(window.embeddedTwState.history.length){
+        window.embeddedTwState.currentStep = window.embeddedTwState.history.pop();
+        embeddedTwRender(targetId);
+    }
+}
+function embeddedTwReset(targetId){
+    window.embeddedTwState = { currentStep:'start', history:[] };
+    embeddedTwRender(targetId);
+}
+
+/* -------------------------
+   TEKNİK KARTLAR (FULLSCREEN)
+   - Eski kart görünümü (liste)
+   - Düzenleme, E-Tablo (Data) üzerinden (updateContent/addCard)
+--------------------------*/
+
+function __getTechCardsForUi(){
+    return (database||[])
+      .map((c, i)=>({ ...c, __dbIndex: i }))
+      .filter(c=>String(c.category||'').toLowerCase()==='teknik' && String(c.status||'').toLowerCase()!=='pasif');
+}
+
+async function addTechCardSheet(){
+    if(!isAdminMode) return;
+    const { value: v } = await Swal.fire({
+      title: 'Teknik Kart Ekle',
+      html: `
+        <input id="tc-title" class="swal2-input" placeholder="Başlık">
+        <textarea id="tc-text" class="swal2-textarea" placeholder="Açıklama"></textarea>
+        <textarea id="tc-script" class="swal2-textarea" placeholder="Script (opsiyonel)"></textarea>
+        <input id="tc-link" class="swal2-input" placeholder="Link (opsiyonel)">
+      `,
+      showCancelButton: true,
+      confirmButtonText: 'Ekle',
+      cancelButtonText: 'Vazgeç',
+      preConfirm: ()=>{
+        const title = (document.getElementById('tc-title').value||'').trim();
+        if(!title) return Swal.showValidationMessage('Başlık zorunlu');
+        const today = new Date();
+        const dateStr = today.getDate() + "." + (today.getMonth()+1) + "." + today.getFullYear();
+        return {
+          cardType: 'card',
+          category: 'Teknik',
+          title,
+          text: (document.getElementById('tc-text').value||'').trim(),
+          script: (document.getElementById('tc-script').value||'').trim(),
+          code: '',
+          link: (document.getElementById('tc-link').value||'').trim(),
+          status: 'Aktif',
+          date: dateStr
+        };
+      }
+    });
+    if(!v) return;
+
+    Swal.fire({ title: 'Ekleniyor...', didOpen: () => Swal.showLoading(), showConfirmButton:false });
+    try{
+      const r = await fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ action: 'addCard', username: currentUser, token: getToken(), ...v })
+      });
+      const d = await r.json();
+      if(d.result==='success'){
+        Swal.fire({ icon:'success', title:'Eklendi', timer: 1200, showConfirmButton:false });
+        await loadContentData();
+        filterTechCards();
+      }else{
+        Swal.fire('Hata', d.message||'Eklenemedi', 'error');
+      }
+    }catch(e){
+      Swal.fire('Hata','Sunucu hatası.','error');
+    }
+}
+
+async function editTechCardSheet(dbIndex){
+    if(!isAdminMode) return;
+    const it = (database||[])[dbIndex];
+    if(!it) return;
+    const { value: v } = await Swal.fire({
+      title: 'Teknik Kartı Düzenle',
+      html: `
+        <input id="tc-title" class="swal2-input" placeholder="Başlık" value="${escapeHtml(it.title||'')}">
+        <textarea id="tc-text" class="swal2-textarea" placeholder="Açıklama">${escapeHtml(it.text||'')}</textarea>
+        <textarea id="tc-script" class="swal2-textarea" placeholder="Script">${escapeHtml(it.script||'')}</textarea>
+        <input id="tc-link" class="swal2-input" placeholder="Link" value="${escapeHtml(it.link||'')}">
+      `,
+      showCancelButton: true,
+      confirmButtonText: 'Kaydet',
+      cancelButtonText: 'Vazgeç',
+      preConfirm: ()=>{
+        const title = (document.getElementById('tc-title').value||'').trim();
+        if(!title) return Swal.showValidationMessage('Başlık zorunlu');
+        return {
+          title,
+          text: (document.getElementById('tc-text').value||'').trim(),
+          script: (document.getElementById('tc-script').value||'').trim(),
+          link: (document.getElementById('tc-link').value||'').trim(),
+        };
+      }
+    });
+    if(!v) return;
+    const originalTitle = it.title;
+    // sendUpdate sırayla update eder
+    if(v.text !== (it.text||'')) sendUpdate(originalTitle, 'Text', v.text, 'card');
+    setTimeout(()=>{ if(v.script !== (it.script||'')) sendUpdate(originalTitle, 'Script', v.script, 'card'); }, 350);
+    setTimeout(()=>{ if(v.link !== (it.link||'')) sendUpdate(originalTitle, 'Link', v.link, 'card'); }, 700);
+    setTimeout(()=>{ if(v.title !== originalTitle) sendUpdate(originalTitle, 'Title', v.title, 'card'); }, 1100);
+}
+
+function deleteTechCardSheet(dbIndex){
+    if(!isAdminMode) return;
+    const it = (database||[])[dbIndex];
+    if(!it) return;
+    Swal.fire({
+      title:'Silinsin mi?',
+      text:'Kart pasife alınacak.',
+      icon:'warning',
+      showCancelButton:true,
+      confirmButtonText:'Sil',
+      cancelButtonText:'Vazgeç'
+    }).then(res=>{
+      if(!res.isConfirmed) return;
+      sendUpdate(it.title, 'Status', 'Pasif', 'card');
+    });
+}
+
+function renderTechCardsTab(q=''){
+    const box = document.getElementById('x-cards');
+    if(!box) return;
+
+    const query = String(q||'').trim().toLowerCase();
+    const all = __getTechCardsForUi();
+    const filtered = !query ? all : all.filter(c=>{
+      const hay = `${c.title||''} ${c.text||''} ${c.script||''} ${c.link||''}`.toLowerCase();
+      return hay.includes(query);
+    });
+
+    const bar = (isAdminMode && isEditingActive)
+      ? `<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px">
+           <button class="x-btn x-btn-admin" onclick="addTechCardSheet()"><i class="fas fa-plus"></i> Kart Ekle</button>
+         </div>`
+      : ``;
+
+    if(!filtered.length){
+      box.innerHTML = bar + '<div style="opacity:.7;padding:16px">Kayıt bulunamadı.</div>';
+      return;
+    }
+
+    box.innerHTML = bar + `
+      <div class="x-card-grid">
+        ${filtered.map(c=>{
+          const hasDetail = ((c.text||'').length > 180) || ((c.script||'').length > 120) || !!(c.link||'');
+          const detailObj = { title:c.title, text:c.text||'', script:c.script||'', link:c.link||'' };
+          const edit = (isAdminMode && isEditingActive)
+            ? `
+              <button class="x-btn x-btn-admin" onclick="event.stopPropagation();editTechCardSheet(${c.__dbIndex})"><i class="fas fa-pen"></i> Düzenle</button>
+              <button class="x-btn x-btn-admin" onclick="event.stopPropagation();deleteTechCardSheet(${c.__dbIndex})"><i class="fas fa-trash"></i> Sil</button>
+            `
+            : ``;
+          return `
+            <div class="x-card" style="cursor:pointer" onclick='showCardDetail(${JSON.stringify(detailObj).replace(/</g,'\\u003c')})'>
+              <div class="x-card-head">
+                <div class="x-card-title">${escapeHtml(c.title||'')}</div>
+                <div class="x-card-badge">TEKNİK</div>
+              </div>
+              <div class="x-card-body">
+                ${(c.text||'') ? `<div class="x-card-text x-card-text-truncate">${escapeHtml(c.text||'')}</div>` : `<div style="opacity:.7">İçerik yok</div>`}
+                ${hasDetail ? `<button class="x-readmore" onclick='event.stopPropagation();showCardDetail(${JSON.stringify(detailObj).replace(/</g,'\\u003c')})'>Devam oku</button>` : ``}
+              </div>
+              <div class="x-card-actions" onclick="event.stopPropagation();">
+                ${(c.script||'') ? `<button class="x-btn x-btn-copy" onclick='copyText(${JSON.stringify(c.script||'')})'><i class="fas fa-copy"></i> Kopyala</button>` : ``}
+                ${edit}
+              </div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    `;
+}
+
+function filterTechCards(){
+    const inp = document.getElementById('x-cards-search');
+    renderTechCardsTab(inp ? inp.value : '');
+}
+
+
+function applySportsRights(){
+    if(!Array.isArray(sportsData) || sportsData.length===0) return;
+    const rights = (window.sportRightsFromSheet && window.sportRightsFromSheet.length) ? window.sportRightsFromSheet : SPORTS_RIGHTS_FALLBACK;
+    sportsData.forEach(s=>{
+        const hay = `${s.title||''} ${s.desc||''} ${s.detail||''}`.toLowerCase();
+        const hit = rights.find(r=>hay.includes(String(r.name||'').toLowerCase().replaceAll('*','').trim().split(' ')[0]));
+        if(hit){
+            const extra = `Yayın hakkı bitiş: ${hit.end || hit.duration}`;
+            if(s.tip && !s.tip.includes('Yayın hakkı')) s.tip = `${s.tip} • ${extra}`;
+            else if(!s.tip) s.tip = extra;
+            if(s.detail && !s.detail.includes('Yayın hakkı')) s.detail = `${s.detail}\n\n${extra}`;
+            else if(!s.detail) s.detail = extra;
+        }
+    });
+}
+
+// Var olan veri yüklemesi bittikten sonra hak bilgisi ekle
+const _orig_afterDataLoaded = window.afterDataLoaded;
+window.afterDataLoaded = function(){
+    try{ if(typeof _orig_afterDataLoaded==='function') _orig_afterDataLoaded(); }catch(e){}
+    try{ applySportsRights(); }catch(e){}
+};
+
+
+// ======================
+// TECH DOCS - SHEET BIND
+// ======================
+let __techDocsCache = null;
+let __techDocsLoadedAt = 0;
+let __techCatsCache = null;
+let __techCatsLoadedAt = 0;
+
+const TECH_TAB_LABELS = {
+  broadcast: 'Yayın Sorunları',
+  access: 'Erişim Sorunları',
+  app: 'App Hataları',
+  activation: 'Aktivasyon Sorunları',
+  info: 'Sık Sorulan Sorular',
+  payment: 'Ödeme Sorunları'
+};
+
+function __normalizeTechTab(tab){
+  // tab ids: broadcast, access, app, activation
+  return tab;
+}
+function __normalizeTechCategory(cat){
+  const c = (cat||"").toString().trim().toLowerCase();
+  if(c.startsWith("yay")) return "broadcast";
+  if(c.startsWith("eri")) return "access";
+  if(c.startsWith("app")) return "app";
+  if(c.startsWith("akt")) return "activation";
+  if(c.startsWith("bil")) return "info";
+  if(c.startsWith("öde") || c.startsWith("ode") || c.includes("ödeme") || c.includes("odeme")) return "payment";
+  return "";
+}
+
+async function __fetchTechDocs(){
+  if(!SCRIPT_URL){
+    if(typeof showGlobalError === "function") showGlobalError("SCRIPT_URL ayarlı değil. Sağ alttan ayarlayabilirsin.");
+    throw new Error("SCRIPT_URL missing");
+  }
+  const res = await fetch(SCRIPT_URL, {
+    method: 'POST',
+    headers: { "Content-Type": "text/plain;charset=utf-8" },
+    body: JSON.stringify({ action: "getTechDocs" })
+  });
+  const data = await res.json();
+  if(data.result !== "success") throw new Error(data.message || "getTechDocs failed");
+  const rows = Array.isArray(data.data) ? data.data : [];
+  return rows
+    .filter(r => (r.Durum||"").toString().trim().toLowerCase() !== "pasif")
+    .map(r => ({
+      categoryKey: __normalizeTechCategory(r.Kategori),
+      kategori: (r.Kategori||"").trim(),
+      baslik: (r.Başlık || r.Baslik || r.Title || r["Başlık"] || "").toString().trim(),
+      icerik: (r.İçerik || r.Icerik || r.Content || r["İçerik"] || "").toString(),
+      adim: (r.Adım || r.Adim || r.Step || r["Adım"] || "").toString(),
+      not: (r.Not || "").toString(),
+      link: (r.Link || "").toString(),
+      durum: (r.Durum || "").toString()
+    }))
+    .filter(x => x.categoryKey && x.baslik);
+}
+
+async function __fetchTechDocCategories(){
+  // K sütunundan okunan kategori listesi (boşsa A sütunundan türetilir)
+  if(!SCRIPT_URL) return [];
+  try{
+    const r = await fetch(SCRIPT_URL, {
+      method:'POST',
+      headers:{"Content-Type":"text/plain;charset=utf-8"},
+      body: JSON.stringify({ action: 'getTechDocCategories' })
+    });
+    const d = await r.json();
+    if(d && d.result === 'success' && Array.isArray(d.categories)) return d.categories;
+    return [];
+  }catch(e){
+    return [];
+  }
+}
+
+async function getTechDocCategoryOptions(force=false){
+  const now = Date.now();
+  if(!force && __techCatsCache && (now-__techCatsLoadedAt) < 300000) return __techCatsCache; // 5dk
+  const cats = await __fetchTechDocCategories();
+  __techCatsCache = cats;
+  __techCatsLoadedAt = now;
+  return cats;
+}
+
+function __escapeHtml(s){
+  return (s||"").toString().replace(/[&<>"']/g, m => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"
+  }[m]));
+}
+
+function __renderTechList(tabKey, items){
+  const listEl = document.getElementById(
+    tabKey==="broadcast" ? "x-broadcast-list" :
+    tabKey==="access" ? "x-access-list" :
+    tabKey==="app" ? "x-app-list" :
+    tabKey==="activation" ? "x-activation-list" :
+    tabKey==="info" ? "x-info-list" :
+    tabKey==="payment" ? "x-payment-list" : ""
+  );
+  if(!listEl) return;
+
+  if(!items || items.length===0){
+    listEl.innerHTML = `<div style="padding:16px;opacity:.75">Bu başlık altında henüz içerik yok. (Sheet: Teknik_Dokumanlar)</div>`;
+    return;
+  }
+
+  // Admin bar (düzenleme global menüden açılır)
+  const adminBar = (isAdminMode && isEditingActive)
+    ? `<div style="display:flex;gap:10px;align-items:center;margin:0 0 12px;">
+         <button class="x-btn x-btn-admin" onclick="addTechDoc('${tabKey}')"><i class=\"fas fa-plus\"></i> Yeni Konu Ekle</button>
+       </div>`
+    : ``;
+
+  function render(filtered){
+    listEl.innerHTML = adminBar + filtered.map((it, idx) => {
+      const body = [
+        it.icerik ? `<div class="q-doc-body">${it.icerik}</div>` : "",
+        it.adim ? `<div class="q-doc-meta"><b>Adım:</b> ${__escapeHtml(it.adim)}</div>` : "",
+        it.not ? `<div class="q-doc-meta"><b>Not:</b> ${__escapeHtml(it.not)}</div>` : "",
+        it.link ? `<div class="q-doc-meta"><b>Link:</b> <a href="${__escapeHtml(it.link)}" target="_blank">${__escapeHtml(it.link)}</a></div>` : ""
+      ].join("");
+      const adminBtns = (isAdminMode && isEditingActive)
+        ? `<span style="float:right;display:inline-flex;gap:8px" onclick="event.stopPropagation();event.preventDefault();">
+             <button class="x-btn x-btn-admin" style="padding:6px 10px" onclick="editTechDoc('${tabKey}','${escapeForJsString(it.baslik)}')"><i class=\"fas fa-pen\"></i></button>
+             <button class="x-btn x-btn-admin" style="padding:6px 10px" onclick="deleteTechDoc('${tabKey}','${escapeForJsString(it.baslik)}')"><i class=\"fas fa-trash\"></i></button>
+           </span>`
+        : ``;
+      return `
+        <details class="q-accordion" style="margin-bottom:10px;background:#fff;border-radius:12px;border:1px solid rgba(0,0,0,.08);padding:10px 12px">
+          <summary style="cursor:pointer;font-weight:800">${__escapeHtml(it.baslik)}${adminBtns}</summary>
+          <div style="padding:10px 2px 2px 2px">${body}</div>
+        </details>
+      `;
+    }).join("");
+  }
+
+  render(items);
+}
+
+async function loadTechDocsIfNeeded(force=false){
+  const now = Date.now();
+  if(!force && __techDocsCache && (now-__techDocsLoadedAt)<120000) return __techDocsCache; // 2dk cache
+  try{
+    const rows = await __fetchTechDocs();
+    __techDocsCache = rows;
+    __techDocsLoadedAt = now;
+    return rows;
+  }catch(e){
+    console.error("[TECH DOCS]", e);
+    return [];
+  }
+}
+
+// Teknik fullscreen üst arama kutuları (index.html) için
+async function filterTechDocList(tabKey){
+  try{
+    const input = document.getElementById(`x-${tabKey}-search`);
+    const q = (input ? input.value : '').toLowerCase().trim();
+    const all = await loadTechDocsIfNeeded(false);
+    const scoped = all.filter(x => x.categoryKey === tabKey);
+    const filtered = !q ? scoped : scoped.filter(x =>
+      (x.baslik||'').toLowerCase().includes(q) ||
+      (x.icerik||'').toLowerCase().includes(q) ||
+      (x.adim||'').toLowerCase().includes(q) ||
+      (x.not||'').toLowerCase().includes(q)
+    );
+    __renderTechList(tabKey, filtered);
+  }catch(e){
+    console.error(e);
+  }
+}
+
+// Teknik_Dokumanlar kategori listesi (Sheet K sütunu)
+let __techCategoryOptions = null;
+async function loadTechCategoryOptions(){
+  if(__techCategoryOptions) return __techCategoryOptions;
+  try{
+    const r = await fetch(SCRIPT_URL, {
+      method:'POST',
+      headers:{'Content-Type':'text/plain;charset=utf-8'},
+      body: JSON.stringify({ action:'getTechDocCategories' })
+    });
+    const d = await r.json();
+    if(d && d.result==='success' && Array.isArray(d.categories)){
+      __techCategoryOptions = d.categories.filter(Boolean);
+      return __techCategoryOptions;
+    }
+  }catch(e){ console.error('[TECH CATS]', e); }
+  __techCategoryOptions = [];
+  return __techCategoryOptions;
+}
+
+function techTabLabel(tabKey){
+  const m = { broadcast:'Yayın Sorunları', access:'Erişim Sorunları', app:'App Hataları', activation:'Aktivasyon Sorunları', info:'Sık Sorulan Sorular', payment:'Ödeme Sorunları' };
+  return m[tabKey] || 'Yayın Sorunları';
+}
+
+// ---------------------------
+// TECH DOCS (Sheet) - Admin CRUD
+// ---------------------------
+async function addTechDoc(tabKey){
+  if(!isAdminMode) return;
+  const cats = await getTechDocCategoryOptions(false);
+  const defaultLabel = TECH_TAB_LABELS[tabKey] || '';
+  const opts = (cats && cats.length ? cats : Object.values(TECH_TAB_LABELS))
+    .map(c=>String(c||'').trim()).filter(Boolean);
+  const uniq = Array.from(new Set(opts.map(x=>x.toLowerCase()))).map(k=>opts.find(x=>x.toLowerCase()===k));
+  const optionsHtml = uniq.map(c=>`<option value="${__escapeHtml(c)}" ${c===defaultLabel?'selected':''}>${__escapeHtml(c)}</option>`).join('');
+  const { value: v } = await Swal.fire({
+    title: 'Teknik Konu Ekle',
+    html: `
+      <select id="td-cat" class="swal2-select" style="width:100%;max-width:420px">
+        ${optionsHtml}
+      </select>
+      <input id="td-title" class="swal2-input" placeholder="Başlık">
+      <textarea id="td-content" class="swal2-textarea" placeholder="İçerik"></textarea>
+      <input id="td-step" class="swal2-input" placeholder="Adım (opsiyonel)">
+      <input id="td-note" class="swal2-input" placeholder="Not (opsiyonel)">
+      <input id="td-link" class="swal2-input" placeholder="Link (opsiyonel)">
+    `,
+    showCancelButton:true,
+    confirmButtonText:'Ekle',
+    cancelButtonText:'Vazgeç',
+    preConfirm: ()=>{
+      const cat = (document.getElementById('td-cat')?.value || defaultLabel || '').trim();
+      if(!cat) return Swal.showValidationMessage('Kategori zorunlu');
+      const title = (document.getElementById('td-title').value||'').trim();
+      if(!title) return Swal.showValidationMessage('Başlık zorunlu');
+      return {
+        kategori: cat,
+        baslik: title,
+        icerik: (document.getElementById('td-content').value||'').trim(),
+        adim: (document.getElementById('td-step').value||'').trim(),
+        not: (document.getElementById('td-note').value||'').trim(),
+        link: (document.getElementById('td-link').value||'').trim(),
+        durum: 'Aktif'
+      };
+    }
+  });
+  if(!v) return;
+
+  Swal.fire({ title:'Ekleniyor...', didOpen:()=>Swal.showLoading(), showConfirmButton:false });
+  try{
+    const r = await fetch(SCRIPT_URL, {
+      method:'POST',
+      headers:{'Content-Type':'text/plain;charset=utf-8'},
+      body: JSON.stringify({ action:'upsertTechDoc', username: currentUser, token: getToken(), keyKategori:'', keyBaslik:'', ...v })
+    });
+    const d = await r.json();
+    if(d.result==='success'){
+      Swal.fire({ icon:'success', title:'Eklendi', timer:1200, showConfirmButton:false });
+      await loadTechDocsIfNeeded(true);
+      filterTechDocList(tabKey);
+    }else{
+      Swal.fire('Hata', d.message||'Eklenemedi', 'error');
+    }
+  }catch(e){
+    Swal.fire('Hata','Sunucu hatası.', 'error');
+  }
+}
+
+async function editTechDoc(tabKey, baslik){
+  if(!isAdminMode) return;
+  const all = await loadTechDocsIfNeeded(false);
+  const it = all.find(x=>x.categoryKey===tabKey && (x.baslik||'')===baslik);
+  if(!it) return;
+  const cats = await getTechDocCategoryOptions(false);
+  const opts = (cats && cats.length ? cats : Object.values(TECH_TAB_LABELS))
+    .map(c=>String(c||'').trim()).filter(Boolean);
+  const uniq = Array.from(new Set(opts.map(x=>x.toLowerCase()))).map(k=>opts.find(x=>x.toLowerCase()===k));
+  const optionsHtml = uniq.map(c=>`<option value="${__escapeHtml(c)}" ${(c===it.kategori)?'selected':''}>${__escapeHtml(c)}</option>`).join('');
+  const { value: v } = await Swal.fire({
+    title: 'Teknik Konuyu Düzenle',
+    html: `
+      <select id="td-cat" class="swal2-select" style="width:100%;max-width:420px">
+        ${optionsHtml}
+      </select>
+      <input id="td-title" class="swal2-input" placeholder="Başlık" value="${__escapeHtml(it.baslik||'')}">
+      <textarea id="td-content" class="swal2-textarea" placeholder="İçerik">${__escapeHtml(it.icerik||'')}</textarea>
+      <input id="td-step" class="swal2-input" placeholder="Adım" value="${__escapeHtml(it.adim||'')}">
+      <input id="td-note" class="swal2-input" placeholder="Not" value="${__escapeHtml(it.not||'')}">
+      <input id="td-link" class="swal2-input" placeholder="Link" value="${__escapeHtml(it.link||'')}">
+    `,
+    showCancelButton:true,
+    confirmButtonText:'Kaydet',
+    cancelButtonText:'Vazgeç',
+    preConfirm: ()=>{
+      const cat = (document.getElementById('td-cat')?.value || it.kategori || '').trim();
+      if(!cat) return Swal.showValidationMessage('Kategori zorunlu');
+      const title = (document.getElementById('td-title').value||'').trim();
+      if(!title) return Swal.showValidationMessage('Başlık zorunlu');
+      return {
+        kategori: cat,
+        baslik: title,
+        icerik: (document.getElementById('td-content').value||'').trim(),
+        adim: (document.getElementById('td-step').value||'').trim(),
+        not: (document.getElementById('td-note').value||'').trim(),
+        link: (document.getElementById('td-link').value||'').trim(),
+        durum: 'Aktif'
+      };
+    }
+  });
+  if(!v) return;
+
+  Swal.fire({ title:'Kaydediliyor...', didOpen:()=>Swal.showLoading(), showConfirmButton:false });
+  try{
+    const r = await fetch(SCRIPT_URL, {
+      method:'POST',
+      headers:{'Content-Type':'text/plain;charset=utf-8'},
+      body: JSON.stringify({ action:'upsertTechDoc', username: currentUser, token: getToken(), keyKategori: it.kategori, keyBaslik: it.baslik, ...v })
+    });
+    const d = await r.json();
+    if(d.result==='success'){
+      Swal.fire({ icon:'success', title:'Kaydedildi', timer:1200, showConfirmButton:false });
+      await loadTechDocsIfNeeded(true);
+      filterTechDocList(tabKey);
+    }else{
+      Swal.fire('Hata', d.message||'Kaydedilemedi', 'error');
+    }
+  }catch(e){
+    Swal.fire('Hata','Sunucu hatası.', 'error');
+  }
+}
+
+function deleteTechDoc(tabKey, baslik){
+  if(!isAdminMode) return;
+  Swal.fire({
+    title:'Silinsin mi?',
+    text:'Konu pasife alınacak.',
+    icon:'warning',
+    showCancelButton:true,
+    confirmButtonText:'Sil',
+    cancelButtonText:'Vazgeç'
+  }).then(async res=>{
+    if(!res.isConfirmed) return;
+    try{
+      const all = await loadTechDocsIfNeeded(false);
+      const it = all.find(x=>x.categoryKey===tabKey && (x.baslik||'')===baslik);
+      const keyKategori = it ? it.kategori : tabKey;
+      const r = await fetch(SCRIPT_URL, {
+        method:'POST',
+        headers:{'Content-Type':'text/plain;charset=utf-8'},
+        body: JSON.stringify({ action:'deleteTechDoc', username: currentUser, token: getToken(), keyKategori: keyKategori, keyBaslik: baslik })
+      });
+      const d = await r.json();
+      if(d.result==='success'){
+        await loadTechDocsIfNeeded(true);
+        filterTechDocList(tabKey);
+        Swal.fire({ icon:'success', title:'Silindi', timer:1000, showConfirmButton:false });
+      }else{
+        Swal.fire('Hata', d.message||'Silinemedi', 'error');
+      }
+    }catch(e){
+      Swal.fire('Hata','Sunucu hatası.', 'error');
+    }
+  });
+}
+
+// override / extend existing switchTechTab
+window.switchTechTab = async function(tab){
+  try{
+    // existing visual tab switch
+    document.querySelectorAll('#tech-fullscreen .q-nav-item').forEach(li => li.classList.remove('active'));
+    const tabMap = {wizard:'x-view-wizard',access:'x-view-access',app:'x-view-app',activation:'x-view-activation',payment:'x-view-payment',cards:'x-view-cards',info:'x-view-info'};
+    const viewId = tabMap[tab] || tabMap['wizard'];
+    // activate clicked item
+    const byData = document.querySelector(`#tech-fullscreen .q-nav-item[data-tech-tab="${tab}"]`);
+    if(byData) byData.classList.add('active');
+document.querySelectorAll('#tech-fullscreen .q-view-section').forEach(v => v.classList.remove('active'));
+    const viewEl = document.getElementById(viewId);
+    if(viewEl) viewEl.classList.add('active');
+
+    if(['access','app','activation','payment','info'].includes(tab)){
+      const all = await loadTechDocsIfNeeded(false);
+      const filtered = all.filter(x => x.categoryKey === tab);
+      __renderTechList(tab, filtered);
+    }
+
+    if(tab === 'wizard'){
+      // Teknik sihirbazı fullscreen içine göm
+      try{ renderTechWizardInto('x-wizard'); }catch(e){ console.error(e); }
+    }
+
+    if(tab === 'cards'){
+      try{ filterTechCards(); }catch(e){ console.error(e); }
+    }
+  }catch(e){
+    console.error(e);
+  }
+};
+
+// expose for onclick
+try{ window.openMenuPermissions = openMenuPermissions; }catch(e){}
