@@ -6227,5 +6227,5 @@ window.switchTechTab = async function (tab) {
     }
 };
 
-// expose for onclick
+
 try { window.openMenuPermissions = openMenuPermissions; } catch (e) { }
