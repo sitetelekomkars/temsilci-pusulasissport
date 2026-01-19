@@ -1,34 +1,1024 @@
-function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(raw);_0xc2170b=842346^842338;const _0xe672b=s['\u0073\u0070\u006C\u0069\u0074']("\u002D");if(_0xe672b['\u006C\u0065\u006E\u0067\u0074\u0068']>=(415550^415548)){let _0xg4b2ba;const _0xcg0a=_0xe672b[481318^481318]['\u0074\u0072\u0069\u006D']();_0xg4b2ba="gjdbke".split("").reverse().join("");const _0x1facde=_0xe672b[102283^102282]['\u0074\u0072\u0069\u006D']();const _0x2faab=new Date(_0xcg0a);const _0xf2_0xef8=new Date(_0x1facde);if(!isNaN(_0x2faab)&&!isNaN(_0xf2_0xef8)){var _0x1fd=(456490^456482)+(430995^431002);const _0x43d3b=_0x2faab['\u0067\u0065\u0074\u004D\u006F\u006E\u0074\u0068']()===_0xf2_0xef8['\u0067\u0065\u0074\u004D\u006F\u006E\u0074\u0068']()&&_0x2faab['\u0067\u0065\u0074\u0046\u0075\u006C\u006C\u0059\u0065\u0061\u0072']()===_0xf2_0xef8['\u0067\u0065\u0074\u0046\u0075\u006C\u006C\u0059\u0065\u0061\u0072']();_0x1fd=(197322^197314)+(501038^501030);if(_0x43d3b){const _0x20_0xd53=_0x2faab['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u0044\u0061\u0074\u0065\u0053\u0074\u0072\u0069\u006E\u0067']("\u0074\u0072\u002D\u0054\u0052",{"day":"\u0032\u002D\u0064\u0069\u0067\u0069\u0074"});const _0x1e479c=_0xf2_0xef8['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u0044\u0061\u0074\u0065\u0053\u0074\u0072\u0069\u006E\u0067']("RT-rt".split("").reverse().join(""),{'\u0064\u0061\u0079':'2-digit'});const _0x8f1eda=_0x2faab['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u0044\u0061\u0074\u0065\u0053\u0074\u0072\u0069\u006E\u0067']("RT-rt".split("").reverse().join(""),{'\u006D\u006F\u006E\u0074\u0068':'long',"year":"\u006E\u0075\u006D\u0065\u0072\u0069\u0063"});return`${_0x20_0xd53} - ${_0x1e479c} ${_0x8f1eda}`;}else{const _0xdg6ecd=_0x2faab['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u0044\u0061\u0074\u0065\u0053\u0074\u0072\u0069\u006E\u0067']("\u0074\u0072\u002D\u0054\u0052",{"day":"\u0032\u002D\u0064\u0069\u0067\u0069\u0074",'\u006D\u006F\u006E\u0074\u0068':"\u006C\u006F\u006E\u0067","year":"\u006E\u0075\u006D\u0065\u0072\u0069\u0063"});var _0xc97gge=(505466^505464)+(419839^419832);const _0x8g2b=_0xf2_0xef8['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u0044\u0061\u0074\u0065\u0053\u0074\u0072\u0069\u006E\u0067']("\u0074\u0072\u002D\u0054\u0052",{"day":'2-digit','\u006D\u006F\u006E\u0074\u0068':'long',"year":"\u006E\u0075\u006D\u0065\u0072\u0069\u0063"});_0xc97gge=(366874^366876)+(547706^547706);return`${_0xdg6ecd} - ${_0x8g2b}`;}}}}catch(e){}return raw||'';}function formatShiftDate(d){try{const _0x23839a=new Date(d);if(!isNaN(_0x23839a)){return _0x23839a['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u0044\u0061\u0074\u0065\u0053\u0074\u0072\u0069\u006E\u0067']("\u0074\u0072\u002D\u0054\u0052",{'\u0077\u0065\u0065\u006B\u0064\u0061\u0079':"\u0073\u0068\u006F\u0072\u0074","day":"\u0032\u002D\u0064\u0069\u0067\u0069\u0074","month":"\u0032\u002D\u0064\u0069\u0067\u0069\u0074"});}}catch(e){}return d;}let _0x23abfb;const BAKIM_MODU=false;_0x23abfb=(698232^698232)+(643626^643628);function showGlobalError(message){try{console['\u0077\u0061\u0072\u006E']("]alusuP[".split("").reverse().join(""),message);}catch(e){}try{let _0xc471db;const _0x8e6b=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0052\u006F\u006C\u0065")||"";_0xc471db=370750^370746;if(_0x8e6b==="\u0061\u0064\u006D\u0069\u006E"||_0x8e6b==="nimdacol".split("").reverse().join("")){Swal['\u0066\u0069\u0072\u0065']({'\u0074\u006F\u0061\u0073\u0074':!![],"position":"\u0062\u006F\u0074\u0074\u006F\u006D\u002D\u0065\u006E\u0064","icon":"\u0077\u0061\u0072\u006E\u0069\u006E\u0067",'\u0074\u0069\u0074\u006C\u0065':String(message||"\u0131rayU".split("").reverse().join("")),'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false,'\u0074\u0069\u006D\u0065\u0072':2500});}}catch(e){}}let SCRIPT_URL=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0050\u0055\u0053\u0055\u004C\u0041\u005F\u0053\u0043\u0052\u0049\u0050\u0054\u005F\u0055\u0052\u004C")||"cexe/ZeVbsz4gEVSwtvF2QRSbe4xZ8n1ab4dt4heJy3IRqCDiUqZm6z9xBs4uRRnCb5VL9xbcyfKA/s/sorcam/moc.elgoog.tpircs//:sptth".split("").reverse().join("");async function apiCall(action,payload={},_0xf2464f,_0x6237bc){var _0xagca5b=(694906^694910)+(169762^169770);const _0x82eecf=typeof currentUser!=="\u0075\u006E\u0064\u0065\u0066\u0069\u006E\u0065\u0064"&&currentUser?currentUser:localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("resUtropSs".split("").reverse().join(""))||"";_0xagca5b="mejlnf".split("").reverse().join("");const _0xbec7c=(typeof getToken==="noitcnuf".split("").reverse().join("")?getToken():localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0054\u006F\u006B\u0065\u006E"))||"";_0xf2464f=(618124^618123)+(630827^630829);const _0xb8g02a=globalUserIP||"";const _0x16ee=await fetch(SCRIPT_URL,{"method":"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":action,"username":_0x82eecf,"token":_0xbec7c,"ip":_0xb8g02a,...payload})});_0x6237bc=(431821^431813)+(143569^143575);const _0xd1e7ae=await _0x16ee['\u006A\u0073\u006F\u006E']();if(_0xd1e7ae['\u0072\u0065\u0073\u0075\u006C\u0074']!=="sseccus".split("").reverse().join(""))throw new Error(_0xd1e7ae['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||_0xd1e7ae['\u0065\u0072\u0072\u006F\u0072']||"\u0041\u0050\u0049\u0020\u0065\u0072\u0072\u006F\u0072");return _0xd1e7ae;}if(typeof Swal==="\u0075\u006E\u0064\u0065\u0066\u0069\u006E\u0065\u0064"){window['\u0053\u0077\u0061\u006C']={'\u0066\u0069\u0072\u0065':(a,b,c)=>{try{alert(a&&a['\u0074\u0069\u0074\u006C\u0065']||a||b||c||"");}catch(e){}}};}let _0xdef5c;let jokers={'\u0063\u0061\u006C\u006C':1,"half":1,"double":1};_0xdef5c=(737497^737502)+(532908^532909);var _0xfa1c=(247076^247072)+(559672^559673);let doubleChanceUsed=false;_0xfa1c=171623^171623;let firstAnswerIndex=-(308094^308095);var _0xaeb4e=(645778^645787)+(418645^418640);const VALID_CATEGORIES=["\u0054\u0065\u006B\u006E\u0069\u006B","\u0130\u006B\u006E\u0061","\u004B\u0061\u006D\u0070\u0061\u006E\u0079\u0061","igliB".split("").reverse().join("")];_0xaeb4e=(347431^347427)+(199054^199049);var _0xge9ccb=(440786^440791)+(212179^212181);const MONTH_NAMES=["\u004F\u0063\u0061\u006B","\u015E\u0075\u0062\u0061\u0074","\u004D\u0061\u0072\u0074","\u004E\u0069\u0073\u0061\u006E","\u004D\u0061\u0079\u0131\u0073","\u0048\u0061\u007A\u0069\u0072\u0061\u006E","\u0054\u0065\u006D\u006D\u0075\u007A","\u0041\u011F\u0075\u0073\u0074\u006F\u0073","\u0045\u0079\u006C\u00FC\u006C","mikE".split("").reverse().join(""),"\u004B\u0061\u0073\u0131\u006D","\u0041\u0072\u0061\u006C\u0131\u006B"];_0xge9ccb=(637498^637499)+(152159^152152);let database=[],newsData=[],sportsData=[],salesScripts=[],quizQuestions=[],quickDecisionQuestions=[];var _0xba_0xg99=(745473^745474)+(564600^564605);let __dataLoadedResolve;_0xba_0xg99=(403488^403496)+(630951^630951);window['\u005F\u005F\u0064\u0061\u0074\u0061\u004C\u006F\u0061\u0064\u0065\u0064\u0050\u0072\u006F\u006D\u0069\u0073\u0065']=new Promise(r=>{__dataLoadedResolve=r;});var _0x_0x2fb=(677151^677149)+(242897^242900);let techWizardData={};_0x_0x2fb=217972^217968;let currentUser="";var _0xe58ca=(876806^876802)+(437088^437089);let globalUserIP="";_0xe58ca=266009^266000;var _0xb_0xd5d=(699305^699297)+(912710^912704);let homeBlocks={};_0xb_0xd5d='\u0070\u006B\u0070\u006A\u0068\u006D';function loadHomeBlocks(){return apiCall("skcolBemoHteg".split("").reverse().join(""),{})['\u0074\u0068\u0065\u006E'](res=>{homeBlocks=res&&res['\u0062\u006C\u006F\u0063\u006B\u0073']?res['\u0062\u006C\u006F\u0063\u006B\u0073']:{};try{localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("\u0068\u006F\u006D\u0065\u0042\u006C\u006F\u0063\u006B\u0073\u0043\u0061\u0063\u0068\u0065",JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](homeBlocks||{}));}catch(e){}try{renderHomePanels();}catch(e){}return homeBlocks;})['\u0063\u0061\u0074\u0063\u0068'](e=>{try{homeBlocks=JSON['\u0070\u0061\u0072\u0073\u0065'](localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0068\u006F\u006D\u0065\u0042\u006C\u006F\u0063\u006B\u0073\u0043\u0061\u0063\u0068\u0065")||"\u007B\u007D")||{};}catch(_){homeBlocks={};}try{renderHomePanels();}catch(_){}return homeBlocks;});}function normalizeRole(v){return String(v||'')['\u0074\u0072\u0069\u006D']()['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();}function normalizeGroup(v){if(!v)return"";var _0xbcbd=(394051^394055)+(820567^820574);let s=String(v)['\u0074\u0072\u0069\u006D']()['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("\u0307i".split("").reverse().join(""),'\u0067'),"\u0069")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u0131','\u0067'),"\u0069")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u015F','\u0067'),"\u0073")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u011F','\u0067'),"\u0067")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u00FC','\u0067'),"\u0075")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u00F6','\u0067'),"\u006F")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u00E7','\u0067'),"\u0063");_0xbcbd='\u0069\u006E\u0068\u0065\u006F\u006E';return s['\u0063\u0068\u0061\u0072\u0041\u0074'](479922^479922)['\u0074\u006F\u0055\u0070\u0070\u0065\u0072\u0043\u0061\u0073\u0065']()+s['\u0073\u006C\u0069\u0063\u0065'](668807^668806);}function normalizeList(v){if(!v)return[];return String(v)['\u0073\u0070\u006C\u0069\u0074']("\u002C")['\u006D\u0061\u0070'](s=>s['\u0074\u0072\u0069\u006D']())['\u0066\u0069\u006C\u0074\u0065\u0072'](Boolean);}function getMyGroup(){return normalizeGroup(localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("puorGtropSs".split("").reverse().join(""))||"");}function getMyRole(){return normalizeRole(localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0052\u006F\u006C\u0065")||"");}let activeRole="";let isAdminMode=false;var _0xg64gfc=(306938^306941)+(408924^408925);let isLocAdmin=false;_0xg64gfc='\u006B\u0066\u0062\u0068\u0070\u0070';let isEditingActive=false;let _0x07c2e;let sessionTimeout;_0x07c2e=(188472^188474)+(931735^931730);let activeCards=[];let currentCategory="emoh".split("").reverse().join("");let adminUserList=[];let allEvaluationsData=[];let wizardStepsData={};let _0x2eeb3c;let trainingData=[];_0x2eeb3c=291247^291240;let dashboardChart=null;var _0xf6765c=(704058^704060)+(687273^687274);let dashTrendChart=null;_0xf6765c=(354811^354808)+(907065^907071);let dashChannelChart=null;var _0x56g=(883969^883977)+(444623^444622);let dashScoreDistChart=null;_0x56g="igpdbb".split("").reverse().join("");let dashGroupAvgChart=null;var _0x1dcf=(377879^377872)+(414814^414812);let feedbackLogsData=[];_0x1dcf=(680812^680808)+(854740^854748);window['\u0073\u0065\u0074\u0042\u0075\u0074\u0074\u006F\u006E\u0053\u0063\u006F\u0072\u0065']=function(index,score,max,_0xf823b,_0x8ac34d,_0x2_0xc5b){const _0xde6f8e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`row-${index}`);_0xf823b='\u006B\u0070\u0066\u0064\u006D\u006F';const _0x21b2a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`badge-${index}`);const _0xa5b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`note-${index}`);const _0xaf9ae=_0xde6f8e['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("nottub-lave.".split("").reverse().join(""));_0x8ac34d=(306789^306796)+(976770^976770);_0xaf9ae['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](b=>b['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("\u0061\u0063\u0074\u0069\u0076\u0065"));const _0xe6155b=_0xde6f8e['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("\"=erocs-atad[nottub-lave.".split("").reverse().join("")+score+"]\"".split("").reverse().join(""));_0x2_0xc5b=(763292^763295)+(352533^352530);if(_0xe6155b)_0xe6155b['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0063\u0074\u0069\u0076\u0065");_0x21b2a['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=score;if(score<max){_0xa5b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";_0x21b2a['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']="\u0023\u0064\u0033\u0032\u0066\u0032\u0066";_0xde6f8e['\u0073\u0074\u0079\u006C\u0065']['\u0062\u006F\u0072\u0064\u0065\u0072\u0043\u006F\u006C\u006F\u0072']="\u0023\u0066\u0066\u0063\u0064\u0064\u0032";_0xde6f8e['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']="5f5fff#".split("").reverse().join("");}else{_0xa5b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";_0xa5b['\u0076\u0061\u006C\u0075\u0065']='';_0x21b2a['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']="23d7e2#".split("").reverse().join("");_0xde6f8e['\u0073\u0074\u0079\u006C\u0065']['\u0062\u006F\u0072\u0064\u0065\u0072\u0043\u006F\u006C\u006F\u0072']="eee#".split("").reverse().join("");_0xde6f8e['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']="fff#".split("").reverse().join("");}window['\u0072\u0065\u0063\u0061\u006C\u0063\u0054\u006F\u0074\u0061\u006C\u0053\u0063\u006F\u0072\u0065']();};window['\u0072\u0065\u0063\u0061\u006C\u0063\u0054\u006F\u0074\u0061\u006C\u0053\u0063\u006F\u0072\u0065']=function(_0x3d_0x5e6,_0x89f5cb,_0x3_0x47a,_0x939gfc,_0xd176a){_0x89f5cb=678418^678418;_0x3d_0x5e6=(507582^507576)+(404786^404791);_0x939gfc=447583^447583;_0x3_0x47a=324748^324746;var _0xe4af=(131917^131914)+(705557^705556);const _0xebc=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("egdab-erocs.".split("").reverse().join(""));_0xe4af=313112^313113;_0xebc['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](b=>{_0x89f5cb+=parseInt(b['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074'])||189371^189371;});var _0x7d467f=(614660^614663)+(959662^959663);const _0x5d759a=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u002E\u0063\u0072\u0069\u0074\u0065\u0072\u0069\u0061\u002D\u0072\u006F\u0077");_0x7d467f="mijbcg".split("").reverse().join("");_0x5d759a['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](row=>{_0x939gfc+=parseInt(row['\u0067\u0065\u0074\u0041\u0074\u0074\u0072\u0069\u0062\u0075\u0074\u0065']("\u0064\u0061\u0074\u0061\u002D\u006D\u0061\u0078\u002D\u0073\u0063\u006F\u0072\u0065"))||546071^546071;});const _0x2fb0eg=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("erocs-evil".split("").reverse().join(""));_0xd176a=963183^963175;const _0x3347ba=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("gnir-erocs".split("").reverse().join(""));if(_0x2fb0eg)_0x2fb0eg['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=_0x89f5cb;if(_0x3347ba){let _0xg961g="23d7e2#".split("").reverse().join("");var _0xb7150g=(881233^881237)+(269593^269599);let _0x73g36a=_0x939gfc>(627684^627684)?_0x89f5cb/_0x939gfc*(679822^679914):440609^440609;_0xb7150g=(890030^890027)+(829702^829697);if(_0x73g36a<(174815^174829))_0xg961g="f2f23d#".split("").reverse().join("");else if(_0x73g36a<(216288^216245))_0xg961g="\u0023\u0065\u0064\u0036\u0063\u0030\u0032";else if(_0x73g36a<(346952^346903))_0xg961g="\u0023\u0066\u0061\u0062\u0062\u0030\u0030";_0x3347ba['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']=`conic-gradient(${_0xg961g} ${_0x73g36a}%, #444 ${_0x73g36a}%)`;}};window['\u0075\u0070\u0064\u0061\u0074\u0065\u0052\u006F\u0077\u0053\u006C\u0069\u0064\u0065\u0072\u0053\u0063\u006F\u0072\u0065']=function(index,max,_0x54c33a){var _0x4_0x23c=(825604^825601)+(371291^371282);const _0x1c5c5d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`slider-${index}`);_0x4_0x23c=(728785^728785)+(270743^270742);const _0x316c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`badge-${index}`);_0x54c33a=258373^258368;const _0x7e63f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`note-${index}`);const _0xgc1dd=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`row-${index}`);if(!_0x1c5c5d)return;var _0xeaf=(915899^915891)+(673528^673521);const _0xca767c=parseInt(_0x1c5c5d['\u0076\u0061\u006C\u0075\u0065']);_0xeaf="pqhbhq".split("").reverse().join("");_0x316c['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=_0xca767c;if(_0xca767c<max){_0x7e63f['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";_0x316c['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']="f2f23d#".split("").reverse().join("");_0xgc1dd['\u0073\u0074\u0079\u006C\u0065']['\u0062\u006F\u0072\u0064\u0065\u0072\u0043\u006F\u006C\u006F\u0072']="\u0023\u0066\u0066\u0063\u0064\u0064\u0032";_0xgc1dd['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']="\u0023\u0066\u0066\u0066\u0035\u0066\u0035";}else{_0x7e63f['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");_0x7e63f['\u0076\u0061\u006C\u0075\u0065']='';_0x316c['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']="23d7e2#".split("").reverse().join("");_0xgc1dd['\u0073\u0074\u0079\u006C\u0065']['\u0062\u006F\u0072\u0064\u0065\u0072\u0043\u006F\u006C\u006F\u0072']="\u0023\u0065\u0065\u0065";_0xgc1dd['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']="\u0023\u0066\u0066\u0066";}window['\u0072\u0065\u0063\u0061\u006C\u0063\u0054\u006F\u0074\u0061\u006C\u0053\u006C\u0069\u0064\u0065\u0072\u0053\u0063\u006F\u0072\u0065']();};window['\u0072\u0065\u0063\u0061\u006C\u0063\u0054\u006F\u0074\u0061\u006C\u0053\u006C\u0069\u0064\u0065\u0072\u0053\u0063\u006F\u0072\u0065']=function(_0x4ba75a,_0x1a73a,_0x22_0xd58,_0x894c){_0x1a73a=250857^250857;_0x4ba75a=(340062^340060)+(219446^219454);_0x22_0xd58=834114^834114;const _0xbcd=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("tupni-redils.".split("").reverse().join(""));_0xbcd['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](s=>{_0x1a73a+=parseInt(s['\u0076\u0061\u006C\u0075\u0065'])||503576^503576;_0x22_0xd58+=parseInt(s['\u0067\u0065\u0074\u0041\u0074\u0074\u0072\u0069\u0062\u0075\u0074\u0065']("xam".split("").reverse().join("")))||873849^873849;});const _0xead=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("erocs-evil".split("").reverse().join(""));_0x894c='\u0061\u006E\u0065\u0070\u0070\u006E';var _0x411bb=(132933^132928)+(806761^806765);const _0xdfe=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0063\u006F\u0072\u0065\u002D\u0072\u0069\u006E\u0067");_0x411bb=911171^911171;if(_0xead)_0xead['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=_0x1a73a;if(_0xdfe){var _0x9a9dbe=(838530^838532)+(103438^103431);let _0xgag="\u0023\u0032\u0065\u0037\u0064\u0033\u0032";_0x9a9dbe=864419^864427;var _0x3875f=(687784^687784)+(982042^982041);let _0xf9c=_0x22_0xd58>(382555^382555)?_0x1a73a/_0x22_0xd58*(700419^700519):845969^845969;_0x3875f=436567^436560;if(_0xf9c<(288033^288019))_0xgag="\u0023\u0064\u0033\u0032\u0066\u0032\u0066";else if(_0xf9c<(914733^914808))_0xgag="\u0023\u0065\u0064\u0036\u0063\u0030\u0032";else if(_0xf9c<(540523^540468))_0xgag="00bbaf#".split("").reverse().join("");_0xdfe['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']=`conic-gradient(${_0xgag} ${_0xf9c}%, #444 ${_0xf9c}%)`;}};function getToken(){return localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0054\u006F\u006B\u0065\u006E");}function setHomeWelcomeUser(name){try{let _0xa6e74a;const _0x589d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0068\u006F\u006D\u0065\u002D\u0077\u0065\u006C\u0063\u006F\u006D\u0065\u002D\u0075\u0073\u0065\u0072");_0xa6e74a=461477^461475;if(_0x589d)_0x589d['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']=name||"\u004D\u0069\u0073\u0061\u0066\u0069\u0072";}catch(e){}}function getFavs(){return JSON['\u0070\u0061\u0072\u0073\u0065'](localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0046\u0061\u0076\u0073")||"\u005B\u005D");}function toggleFavorite(title,_0x1b81bg){event['\u0073\u0074\u006F\u0070\u0050\u0072\u006F\u0070\u0061\u0067\u0061\u0074\u0069\u006F\u006E']();let _0x8ed9c=getFavs();_0x1b81bg=979410^979412;if(_0x8ed9c['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](title)){_0x8ed9c=_0x8ed9c['\u0066\u0069\u006C\u0074\u0065\u0072'](t=>t!==title);}else{_0x8ed9c['\u0070\u0075\u0073\u0068'](title);}localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0046\u0061\u0076\u0073",JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](_0x8ed9c));try{var _0x336bfa=(240166^240166)+(312469^312469);const _0x4cab5f=_0x8ed9c['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](title);_0x336bfa=787355^787359;Swal['\u0066\u0069\u0072\u0065']({'\u0074\u006F\u0061\u0073\u0074':!![],"position":"\u0074\u006F\u0070\u002D\u0065\u006E\u0064","icon":_0x4cab5f?"sseccus".split("").reverse().join(""):"\u0069\u006E\u0066\u006F","title":_0x4cab5f?"\u0046\u0061\u0076\u006F\u0072\u0069\u006C\u0065\u0072\u0065\u0020\u0065\u006B\u006C\u0065\u006E\u0064\u0069":"\u0046\u0061\u0076\u006F\u0072\u0069\u006C\u0065\u0072\u0064\u0065\u006E\u0020\u006B\u0061\u006C\u0064\u0131\u0072\u0131\u006C\u0064\u0131",'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false,"timer":1200});}catch(e){}if(currentCategory==="vaf".split("").reverse().join("")){filterCategory(document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("\u002E\u0062\u0074\u006E\u002D\u0066\u0061\u0076"),"\u0066\u0061\u0076");}else{renderCards(activeCards);}try{updateSearchResultCount(activeCards['\u006C\u0065\u006E\u0067\u0074\u0068']||559360^559360,database['\u006C\u0065\u006E\u0067\u0074\u0068']);}catch(e){}}function isFav(title){return getFavs()['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](title);}function formatDateToDDMMYYYY(dateString){if(!dateString)return"A/N".split("").reverse().join("");if(dateString['\u006D\u0061\u0074\u0063\u0068'](new RegExp("}4{d\\.\\}2{d\\.\\}2{d\\^".split("").reverse().join(""),""))){return dateString['\u0073\u0070\u006C\u0069\u0074']("\u0020")[352017^352017];}try{let _0x17992a;const _0x23_0x8gb=new Date(dateString);_0x17992a='\u0069\u006F\u0064\u0070\u0063\u0061';if(isNaN(_0x23_0x8gb['\u0067\u0065\u0074\u0054\u0069\u006D\u0065']())){return dateString;}const _0x424b8b=String(_0x23_0x8gb['\u0067\u0065\u0074\u0044\u0061\u0074\u0065']())['\u0070\u0061\u0064\u0053\u0074\u0061\u0072\u0074'](659277^659279,"\u0030");const _0xf2d9a=String(_0x23_0x8gb['\u0067\u0065\u0074\u004D\u006F\u006E\u0074\u0068']()+(502506^502507))['\u0070\u0061\u0064\u0053\u0074\u0061\u0072\u0074'](844230^844228,"\u0030");let _0x7a7e;const _0x6298a=_0x23_0x8gb['\u0067\u0065\u0074\u0046\u0075\u006C\u006C\u0059\u0065\u0061\u0072']();_0x7a7e='\u006B\u0067\u0069\u006F\u0069\u0066';return`${_0x424b8b}.${_0xf2d9a}.${_0x6298a}`;}catch(e){return dateString;}}function processImageUrl(url){if(!url)return'';try{let _0xfff2g='';const m=url['\u006D\u0061\u0074\u0063\u0068'](new RegExp('\u005C\u002F\u0064\u005C\u002F\u0028\u005B\u002D\u005C\u0077\u005D\u002B\u0029',""))||url['\u006D\u0061\u0074\u0063\u0068'](new RegExp('\u0069\u0064\u003D\u0028\u005B\u002D\u005C\u0077\u005D\u002B\u0029',""));if(m&&m[215306^215307])_0xfff2g=m[520224^520225];if(_0xfff2g&&url['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("moc.elgoog.evird".split("").reverse().join(""))){return"\u0068\u0074\u0074\u0070\u0073\u003A\u002F\u002F\u0064\u0072\u0069\u0076\u0065\u002E\u0067\u006F\u006F\u0067\u006C\u0065\u002E\u0063\u006F\u006D\u002F\u0074\u0068\u0075\u006D\u0062\u006E\u0061\u0069\u006C\u003F\u0069\u0064\u003D"+_0xfff2g+"0001w=zs&".split("").reverse().join("");}}catch(e){}return url;}function parseDateTRToTS(s){try{if(!s)return 415635^415635;const _0x69a=String(s)['\u0073\u0070\u006C\u0069\u0074']("\u0020")[246407^246407];if(_0x69a['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u002E")){var _0x5_0x5ba=(202122^202127)+(838775^838774);const _0x44591a=_0x69a['\u0073\u0070\u006C\u0069\u0074']("\u002E");_0x5_0x5ba=999771^999762;if(_0x44591a['\u006C\u0065\u006E\u0067\u0074\u0068']>=(255660^255663)){const _0x36a7c=parseInt(_0x44591a[706236^706236],879655^879661);let _0xb5fb3e;const _0xadbf=parseInt(_0x44591a[436112^436113],129435^129425);_0xb5fb3e="pnihmj".split("").reverse().join("");const _0x5ff49f=parseInt(_0x44591a[223910^223908],292220^292214);const d=new Date(_0x5ff49f,_0xadbf-(248074^248075),_0x36a7c);return d['\u0067\u0065\u0074\u0054\u0069\u006D\u0065']()||900802^900802;}}var _0x4371dd=(346799^346798)+(924955^924946);const d=new Date(s);_0x4371dd=889930^889928;return d['\u0067\u0065\u0074\u0054\u0069\u006D\u0065']()||624504^624504;}catch(e){return 337785^337785;}}function isNew(dateStr,_0x24_0x194,_0xa7586d){if(!dateStr)return false;if(dateStr['\u0069\u006E\u0064\u0065\u0078\u004F\u0066']("\u002E")>-(729203^729202)){var _0xe1859f=(985250^985248)+(998891^998894);const _0x6f1a=dateStr['\u0073\u0070\u006C\u0069\u0074']("\u0020")[839016^839016];_0xe1859f=299440^299445;const _0x89ccd=_0x6f1a['\u0073\u0070\u006C\u0069\u0074']("\u002E");_0x24_0x194=new Date(_0x89ccd[656805^656807],_0x89ccd[643145^643144]-(617465^617464),_0x89ccd[709725^709725]);}else{_0x24_0x194=new Date(dateStr);}if(isNaN(_0x24_0x194['\u0067\u0065\u0074\u0054\u0069\u006D\u0065']()))return false;const _0x2df9a=new Date();const _0xdbc6g=Math['\u0061\u0062\u0073'](_0x2df9a-_0x24_0x194);_0xa7586d=(951643^951644)+(208990^208984);const _0x8a7gdb=Math['\u0063\u0065\u0069\u006C'](_0xdbc6g/((611599^612071)*(941028^941016)*(269662^269666)*(499127^499119)));return _0x8a7gdb<=(963122^963121);}function getCategorySelectHtml(currentCategory,id,_0xdd401e){let _0xa3b=VALID_CATEGORIES['\u006D\u0061\u0070'](cat=>`<option value="${cat}" ${cat===currentCategory?"detceles".split("").reverse().join(""):''}>${cat}</option>`)['\u006A\u006F\u0069\u006E']('');_0xdd401e=(575519^575513)+(857130^857133);if(currentCategory&&!VALID_CATEGORIES['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](currentCategory)){_0xa3b=`<option value="${currentCategory}" selected>${currentCategory} (Hata)</option>`+_0xa3b;}return`<select id="${id}" class="swal2-input" style="width:100%; margin-top:5px;">${_0xa3b}</select>`;}function escapeForJsString(text){if(!text)return"";return text['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("\\\\".split("").reverse().join(""),'\u0067'),"\u005C\u005C")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u0027','\u0067'),"\u005C\u0027")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u0022','\u0067'),"\"\\".split("").reverse().join(""))['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("n\\".split("").reverse().join(""),'\u0067'),"n\\".split("").reverse().join(""))['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u005C\u0072','\u0067'),'');}function copyScriptContent(encodedText){const _0x03e=decodeURIComponent(encodedText);copyText(_0x03e);}function copyText(t){const _0x5g7afb=document['\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006C\u0065\u006D\u0065\u006E\u0074']("\u0074\u0065\u0078\u0074\u0061\u0072\u0065\u0061");_0x5g7afb['\u0076\u0061\u006C\u0075\u0065']=t['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("n\\\\".split("").reverse().join(""),'\u0067'),"\u000A");document['\u0062\u006F\u0064\u0079']['\u0061\u0070\u0070\u0065\u006E\u0064\u0043\u0068\u0069\u006C\u0064'](_0x5g7afb);_0x5g7afb['\u0073\u0065\u006C\u0065\u0063\u0074']();try{document['\u0065\u0078\u0065\u0063\u0043\u006F\u006D\u006D\u0061\u006E\u0064']("\u0063\u006F\u0070\u0079");Swal['\u0066\u0069\u0072\u0065']({"icon":"\u0073\u0075\u0063\u0063\u0065\u0073\u0073",'\u0074\u0069\u0074\u006C\u0065':'Kopyalandı','\u0074\u006F\u0061\u0073\u0074':!![],'\u0070\u006F\u0073\u0069\u0074\u0069\u006F\u006E':"\u0074\u006F\u0070\u002D\u0065\u006E\u0064",'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false,'\u0074\u0069\u006D\u0065\u0072':1500});}catch(err){Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':"\u0065\u0072\u0072\u006F\u0072","title":"\u004B\u006F\u0070\u0079\u0061\u006C\u0061\u006E\u0061\u006D\u0061\u0064\u0131","text":'Lütfen manuel kopyalayın.','\u0074\u006F\u0061\u0073\u0074':!![],"position":'top-end','\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false,"timer":2500});}document['\u0062\u006F\u0064\u0079']['\u0072\u0065\u006D\u006F\u0076\u0065\u0043\u0068\u0069\u006C\u0064'](_0x5g7afb);}document['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("unemtxetnoc".split("").reverse().join(""),event=>event['\u0070\u0072\u0065\u0076\u0065\u006E\u0074\u0044\u0065\u0066\u0061\u0075\u006C\u0074']());document['\u006F\u006E\u006B\u0065\u0079\u0064\u006F\u0077\u006E']=function(e){if(e['\u006B\u0065\u0079\u0043\u006F\u0064\u0065']==(429500^429511))return false;};document['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("\u0044\u004F\u004D\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u004C\u006F\u0061\u0064\u0065\u0064",()=>{checkSession();fetch("/nosj/oc.ipapi//:sptth".split("").reverse().join(""))['\u0074\u0068\u0065\u006E'](r=>r['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](d=>{globalUserIP=`${d['\u0069\u0070']} [${d['\u0063\u0069\u0074\u0079']||"\u002D"}, ${d['\u0072\u0065\u0067\u0069\u006F\u006E']||"\u002D"}]`;})['\u0063\u0061\u0074\u0063\u0068'](()=>{});});function checkSession(_0xf791b){const _0x439a=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0055\u0073\u0065\u0072");const _0x90d04b=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0054\u006F\u006B\u0065\u006E");const _0x7a98gc=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("eloRtropSs".split("").reverse().join(""));const _0xc9a0g=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("puorGtropSs".split("").reverse().join(""));const _0x2a55eb=new Date()['\u0074\u006F\u0049\u0053\u004F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0073\u006C\u0069\u0063\u0065'](657410^657410,255880^255874);const _0x077f3f=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("yaDnoisseStropSs".split("").reverse().join(""))||"";const _0x4b171c=parseInt(localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u004C\u006F\u0067\u0069\u006E\u0041\u0074")||"\u0030",307703^307709);_0xf791b='\u0068\u0062\u006C\u0062\u006B\u0068';const _0xa0a=(228306^228318)*(709069^709105)*(967441^967469)*(598746^598322);if(_0x439a&&_0x90d04b){var _0xd669g=(449835^449835)+(158018^158021);const _0x8c9c2c=!_0x077f3f||_0x077f3f!==_0x2a55eb;_0xd669g=(571907^571909)+(131860^131863);var _0x2dac3b=(787254^787250)+(209710^209704);const _0x8b2=!_0x4b171c||Date['\u006E\u006F\u0077']()-_0x4b171c>_0xa0a;_0x2dac3b=895904^895907;if(_0x8c9c2c||_0x8b2){try{logout();}catch(e){localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0055\u0073\u0065\u0072");localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("nekoTtropSs".split("").reverse().join(""));localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0052\u006F\u006C\u0065");localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0047\u0072\u006F\u0075\u0070");localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("yaDnoisseStropSs".split("").reverse().join(""));localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u004C\u006F\u0067\u0069\u006E\u0041\u0074");}return;}currentUser=_0x439a;document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006C\u006F\u0067\u0069\u006E\u002D\u0073\u0063\u0072\u0065\u0065\u006E")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0075\u0073\u0065\u0072\u002D\u0064\u0069\u0073\u0070\u006C\u0061\u0079")['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=currentUser;setHomeWelcomeUser(currentUser);checkAdmin(_0x7a98gc);if(localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("egnahCecroFtropSs".split("").reverse().join(""))==="eurt".split("").reverse().join("")){changePasswordPopup(!![]);return;}try{if(_0xc9a0g){var _0x88c=(347071^347065)+(650199^650195);const _0x9b7c2e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("elor-edis-t".split("").reverse().join(""));_0x88c=(781844^781841)+(689434^689434);if(_0x9b7c2e)_0x9b7c2e['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']=_0xc9a0g;const _0xgaafgc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0065\u0063\u0068\u002D\u0073\u0069\u0064\u0065\u002D\u0072\u006F\u006C\u0065");if(_0xgaafgc)_0xgaafgc['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']=_0xc9a0g;}}catch(e){}startSessionTimer();try{loadHomeBlocks();}catch(e){}try{loadPermissionsOnStartup();}catch(e){}if(BAKIM_MODU){document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("neercs-ecnanetniam".split("").reverse().join(""))['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0066\u006C\u0065\u0078";}else{document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006D\u0061\u0069\u006E\u002D\u0061\u0070\u0070")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="kcolb".split("").reverse().join("");loadContentData();loadWizardData();loadTechWizardData();}}}function enterBas(e){if(e['\u006B\u0065\u0079']==="\u0045\u006E\u0074\u0065\u0072")girisYap();}async function girisYap(){const _0xg3_0x646=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065\u0049\u006E\u0070\u0075\u0074")['\u0076\u0061\u006C\u0075\u0065']['\u0074\u0072\u0069\u006D']();var _0xe896f=(748464^748467)+(417850^417843);const _0xed9ded=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u0061\u0073\u0073\u0049\u006E\u0070\u0075\u0074")['\u0076\u0061\u006C\u0075\u0065']['\u0074\u0072\u0069\u006D']();_0xe896f='\u0068\u0063\u0062\u0064\u0070\u0063';const _0x1e4ba=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("gsm-gnidaol".split("").reverse().join(""));const _0x414a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0065\u0072\u0072\u006F\u0072\u002D\u006D\u0073\u0067");if(!_0xg3_0x646||!_0xed9ded){_0x414a['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="\u004C\u00FC\u0074\u0066\u0065\u006E\u0020\u0062\u0069\u006C\u0067\u0069\u006C\u0065\u0072\u0069\u0020\u0067\u0069\u0072\u0069\u006E\u0069\u007A\u002E";_0x414a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";return;}_0x1e4ba['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="kcolb".split("").reverse().join("");_0x1e4ba['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="...roy\u0131nalur\u011FoD".split("").reverse().join("");_0x414a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("ntb-nigol.".split("").reverse().join(""))['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=!![];if(!globalUserIP){try{var _0xecb5cf=(352807^352801)+(214982^214990);const _0x127df=await fetch("/nosj/oc.ipapi//:sptth".split("").reverse().join(""));_0xecb5cf='\u0064\u0066\u0062\u006A\u0071\u0066';var _0x156f9e=(767975^767973)+(439884^439883);const _0x931f=await _0x127df['\u006A\u0073\u006F\u006E']();_0x156f9e="lmgqid".split("").reverse().join("");globalUserIP=`${_0x931f['\u0069\u0070']} [${_0x931f['\u0063\u0069\u0074\u0079']||"\u002D"}, ${_0x931f['\u0072\u0065\u0067\u0069\u006F\u006E']||"\u002D"}]`;}catch(e){globalUserIP="";}}var _0x0a_0xd6f=(947540^947542)+(439547^439549);const _0xb3_0xefg=CryptoJS['\u0053\u0048\u0041\u0032\u0035\u0036'](_0xed9ded)['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']();_0x0a_0xd6f=(735698^735700)+(419202^419205);fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':'POST','\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"\u006C\u006F\u0067\u0069\u006E","username":_0xg3_0x646,"password":_0xb3_0xefg,'\u0069\u0070':globalUserIP||""})})['\u0074\u0068\u0065\u006E'](response=>response['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](data=>{_0x1e4ba['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("\u002E\u006C\u006F\u0067\u0069\u006E\u002D\u0062\u0074\u006E")['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=false;if(data['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")){currentUser=data['\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065'];localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("resUtropSs".split("").reverse().join(""),currentUser);localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0054\u006F\u006B\u0065\u006E",data['\u0074\u006F\u006B\u0065\u006E']);localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0052\u006F\u006C\u0065",data['\u0072\u006F\u006C\u0065']);if(data['\u0067\u0072\u006F\u0075\u0070'])localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0047\u0072\u006F\u0075\u0070",data['\u0067\u0072\u006F\u0075\u0070']);localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0053\u0065\u0073\u0073\u0069\u006F\u006E\u0044\u0061\u0079",new Date()['\u0074\u006F\u0049\u0053\u004F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0073\u006C\u0069\u0063\u0065'](257641^257641,737233^737243));localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("tAnigoLtropSs".split("").reverse().join(""),String(Date['\u006E\u006F\u0077']()));if(data['\u0066\u006F\u0072\u0063\u0065\u0043\u0068\u0061\u006E\u0067\u0065']===!![]){localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0046\u006F\u0072\u0063\u0065\u0043\u0068\u0061\u006E\u0067\u0065","eurt".split("").reverse().join(""));Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':"\u0077\u0061\u0072\u006E\u0069\u006E\u0067",'\u0074\u0069\u0074\u006C\u0065':' ⚠️  Güvenlik Uyarısı',"text":'İlk girişiniz. Lütfen şifrenizi değiştirin.','\u0061\u006C\u006C\u006F\u0077\u004F\u0075\u0074\u0073\u0069\u0064\u0065\u0043\u006C\u0069\u0063\u006B':false,'\u0061\u006C\u006C\u006F\u0077\u0045\u0073\u0063\u0061\u0070\u0065\u004B\u0065\u0079':false,"confirmButtonText":'Şifremi Değiştir'})['\u0074\u0068\u0065\u006E'](()=>{changePasswordPopup(!![]);});}else{localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0046\u006F\u0072\u0063\u0065\u0043\u0068\u0061\u006E\u0067\u0065");document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("neercs-nigol".split("").reverse().join(""))['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("yalpsid-resu".split("").reverse().join(""))['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=currentUser;setHomeWelcomeUser(currentUser);var _0xd133d=(863192^863184)+(937992^937992);const _0x4e0d=data['\u0067\u0072\u006F\u0075\u0070']||localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("puorGtropSs".split("").reverse().join(""))||'';_0xd133d=(398775^398783)+(991741^991738);checkAdmin(data['\u0072\u006F\u006C\u0065']);startSessionTimer();if(BAKIM_MODU){document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006D\u0061\u0069\u006E\u0074\u0065\u006E\u0061\u006E\u0063\u0065\u002D\u0073\u0063\u0072\u0065\u0065\u006E")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="xelf".split("").reverse().join("");}else{document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006D\u0061\u0069\u006E\u002D\u0061\u0070\u0070")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";loadPermissionsOnStartup()['\u0074\u0068\u0065\u006E'](()=>{loadHomeBlocks();loadContentData();loadWizardData();loadTechWizardData();});}}}else{_0x414a['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=data['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u0048\u0061\u0074\u0061\u006C\u0131\u0020\u0067\u0069\u0072\u0069\u015F\u0021";_0x414a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";}})['\u0063\u0061\u0074\u0063\u0068'](error=>{_0x1e4ba['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("ntb-nigol.".split("").reverse().join(""))['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=false;_0x414a['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=".niyeliney \u0131yafyas pide lortnok izinitenretni neft\xFCL !\u0131satah ucunus ayev unuros \u0131tnal\u011FaB".split("").reverse().join("");_0x414a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="kcolb".split("").reverse().join("");console['\u0065\u0072\u0072\u006F\u0072']("\u004C\u006F\u0067\u0069\u006E\u0020\u0065\u0072\u0072\u006F\u0072\u003A",error);});}function checkAdmin(role,_0x2a59ad){var _0x36gd2e=(173500^173500)+(562749^562744);const _0xfffb8f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0064\u0072\u006F\u0070\u0064\u006F\u0077\u006E\u0041\u0064\u0064\u0043\u0061\u0072\u0064");_0x36gd2e="fpompn".split("").reverse().join("");const _0x216b0g=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("egamInwodpord".split("").reverse().join(""));_0x2a59ad='\u0062\u006E\u006D\u006C\u0069\u0069';const _0xafae=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0064\u0072\u006F\u0070\u0064\u006F\u0077\u006E\u0051\u0075\u0069\u0063\u006B\u0045\u0064\u0069\u0074");activeRole=role;isAdminMode=role==="\u0061\u0064\u006D\u0069\u006E"||role==="nimdacol".split("").reverse().join("");isLocAdmin=role==="\u006C\u006F\u0063\u0061\u0064\u006D\u0069\u006E";isEditingActive=false;document['\u0062\u006F\u0064\u0079']['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("gnitide".split("").reverse().join(""));if(isAdminMode){if(_0xfffb8f)_0xfffb8f['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="xelf".split("").reverse().join("");if(_0x216b0g)_0x216b0g['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0066\u006C\u0065\u0078";if(_0xafae){_0xafae['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="xelf".split("").reverse().join("");const perms=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("smrePnwodpord".split("").reverse().join(""));if(perms)perms['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="xelf".split("").reverse().join("");const activeUsersBtn=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0064\u0072\u006F\u0070\u0064\u006F\u0077\u006E\u0041\u0063\u0074\u0069\u0076\u0065\u0055\u0073\u0065\u0072\u0073");if(activeUsersBtn)activeUsersBtn['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0066\u006C\u0065\u0078";_0xafae['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u0069\u0020\u0063\u006C\u0061\u0073\u0073\u003D\u0022\u0066\u0061\u0073\u0020\u0066\u0061\u002D\u0070\u0065\u006E\u0022\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0063\u006F\u006C\u006F\u0072\u003A\u0076\u0061\u0072\u0028\u002D\u002D\u0073\u0065\u0063\u006F\u006E\u0064\u0061\u0072\u0079\u0029\u003B\u0022\u003E\u003C\u002F\u0069\u003E\u0020\u0044\u00FC\u007A\u0065\u006E\u006C\u0065\u006D\u0065\u0079\u0069\u0020\u0041\u00E7";_0xafae['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("evitca".split("").reverse().join(""));}}else{if(_0xfffb8f)_0xfffb8f['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";if(_0x216b0g)_0x216b0g['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";if(_0xafae)_0xafae['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");let _0x0f816f;const perms=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("smrePnwodpord".split("").reverse().join(""));_0x0f816f=226612^226611;if(perms)perms['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";let _0xc1d;const activeUsersBtn=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0064\u0072\u006F\u0070\u0064\u006F\u0077\u006E\u0041\u0063\u0074\u0069\u0076\u0065\u0055\u0073\u0065\u0072\u0073");_0xc1d=(179717^179714)+(644603^644607);if(activeUsersBtn)activeUsersBtn['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");}try{applyPermissionsToUI();}catch(e){}}function logout(){currentUser="";isAdminMode=false;isEditingActive=false;try{document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0075\u0073\u0065\u0072\u002D\u0064\u0069\u0073\u0070\u006C\u0061\u0079")['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="\u004D\u0069\u0073\u0061\u0066\u0069\u0072";}catch(e){}setHomeWelcomeUser("rifasiM".split("").reverse().join(""));document['\u0062\u006F\u0064\u0079']['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("gnitide".split("").reverse().join(""));localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("resUtropSs".split("").reverse().join(""));localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0054\u006F\u006B\u0065\u006E");localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0052\u006F\u006C\u0065");localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0047\u0072\u006F\u0075\u0070");localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0053\u0065\u0073\u0073\u0069\u006F\u006E\u0044\u0061\u0079");localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("tAnigoLtropSs".split("").reverse().join(""));localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("egnahCecroFtropSs".split("").reverse().join(""));if(sessionTimeout)clearTimeout(sessionTimeout);document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ppa-niam".split("").reverse().join(""))['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006C\u006F\u0067\u0069\u006E\u002D\u0073\u0063\u0072\u0065\u0065\u006E")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="xelf".split("").reverse().join("");document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u0061\u0073\u0073\u0049\u006E\u0070\u0075\u0074")['\u0076\u0061\u006C\u0075\u0065']="";document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tupnIemanresu".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']="";document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0065\u0072\u0072\u006F\u0072\u002D\u006D\u0073\u0067")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("neercslluf-ytilauq".split("").reverse().join(""))['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");try{document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("neercslluf-hcet".split("").reverse().join(""))['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";}catch(e){}try{document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("neercslluf-selaselet".split("").reverse().join(""))['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";}catch(e){}}function startSessionTimer(){if(sessionTimeout)clearTimeout(sessionTimeout);sessionTimeout=setTimeout(()=>{Swal['\u0066\u0069\u0072\u0065']({"icon":'warning','\u0074\u0069\u0074\u006C\u0065':"\u004F\u0074\u0075\u0072\u0075\u006D\u0020\u0053\u00FC\u0072\u0065\u0073\u0069\u0020\u0044\u006F\u006C\u0064\u0075",'\u0074\u0065\u0078\u0074':"\u0047\u00FC\u0076\u0065\u006E\u006C\u0069\u006B\u0020\u006E\u0065\u0064\u0065\u006E\u0069\u0079\u006C\u0065\u0020\u006F\u0074\u006F\u006D\u0061\u0074\u0069\u006B\u0020\u00E7\u0131\u006B\u0131\u015F\u0020\u0079\u0061\u0070\u0131\u006C\u0064\u0131\u002E",'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0054\u0061\u006D\u0061\u006D"})['\u0074\u0068\u0065\u006E'](()=>{logout();});},28800000);}function openUserMenu(){toggleUserDropdown();}async function changePasswordPopup(isMandatory=false){const{"value":formValues}=await Swal['\u0066\u0069\u0072\u0065']({"title":isMandatory?"\u0059\u0065\u006E\u0069\u0020\u015E\u0069\u0066\u0072\u0065\u0020\u0042\u0065\u006C\u0069\u0072\u006C\u0065\u0079\u0069\u006E":"rit\u015Fi\u011FeD erfi\u015E".split("").reverse().join(""),'\u0068\u0074\u006D\u006C':`${isMandatory?">p/<.ziniszemede maved nedemrit\u015Fi\u011Fed izinerfi\u015F \u015Firig kl\u0130>\";f2f23d#:roloc ;mer9.0:ezis-tnof\"=elyts p<".split("").reverse().join(""):''}<input id="swal-old-pass" type="password" class="swal2-input" placeholder="Eski Şifre (Mevcut)"><input id="swal-new-pass" type="password" class="swal2-input" placeholder="Yeni Şifre">`,"focusConfirm":false,"showCancelButton":!isMandatory,'\u0061\u006C\u006C\u006F\u0077\u004F\u0075\u0074\u0073\u0069\u0064\u0065\u0043\u006C\u0069\u0063\u006B':!isMandatory,"allowEscapeKey":!isMandatory,"confirmButtonText":'Değiştir','\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':'İptal',"preConfirm":()=>{const o=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ssap-dlo-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'];const n=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ssap-wen-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'];if(!o||!n){Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("zamal\u0131kar\u0131b \u015Fob ralnalA".split("").reverse().join(""));}return[o,n];}});if(formValues){Swal['\u0066\u0069\u0072\u0065']({"title":"\u0130\u015F\u006C\u0065\u006E\u0069\u0079\u006F\u0072\u002E\u002E\u002E","didOpen":()=>{Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']();}});fetch(SCRIPT_URL,{"method":"\u0050\u004F\u0053\u0054","headers":{"Content-Type":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":"\u0063\u0068\u0061\u006E\u0067\u0065\u0050\u0061\u0073\u0073\u0077\u006F\u0072\u0064","username":currentUser,'\u006F\u006C\u0064\u0050\u0061\u0073\u0073':CryptoJS['\u0053\u0048\u0041\u0032\u0035\u0036'](formValues[718810^718810])['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067'](),'\u006E\u0065\u0077\u0050\u0061\u0073\u0073':CryptoJS['\u0053\u0048\u0041\u0032\u0035\u0036'](formValues[295238^295239])['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067'](),'\u0074\u006F\u006B\u0065\u006E':getToken()})})['\u0074\u0068\u0065\u006E'](response=>response['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](data=>{if(data['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0046\u006F\u0072\u0063\u0065\u0043\u0068\u0061\u006E\u0067\u0065");Swal['\u0066\u0069\u0072\u0065']("!\u0131l\u0131ra\u015FaB".split("").reverse().join(""),"\u015E\u0069\u0066\u0072\u0065\u006E\u0069\u007A\u0020\u0067\u00FC\u006E\u0063\u0065\u006C\u006C\u0065\u006E\u0064\u0069\u002E\u0020\u0059\u0065\u006E\u0069\u0064\u0065\u006E\u0020\u0067\u0069\u0072\u0069\u015F\u0020\u0079\u0061\u0070\u0131\u006E\u0131\u007A\u002E","sseccus".split("").reverse().join(""))['\u0074\u0068\u0065\u006E'](()=>{logout();});}else{Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",data['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u0130\u015F\u006C\u0065\u006D\u0020\u0062\u0061\u015F\u0061\u0072\u0131\u0073\u0131\u007A\u002E","\u0065\u0072\u0072\u006F\u0072")['\u0074\u0068\u0065\u006E'](()=>{if(isMandatory)changePasswordPopup(!![]);});}})['\u0063\u0061\u0074\u0063\u0068'](err=>{Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),"\u0053\u0075\u006E\u0075\u0063\u0075\u0020\u0068\u0061\u0074\u0061\u0073\u0131\u002E","\u0065\u0072\u0072\u006F\u0072");if(isMandatory)changePasswordPopup(!![]);});}else if(isMandatory){changePasswordPopup(!![]);}}function processRawData(rawData){if(!Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](rawData))return;database=[];newsData=[];sportsData=[];salesScripts=[];quizQuestions=[];quickDecisionQuestions=[];rawData['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](i=>{const _0x680e0c=(i['\u0054\u0079\u0070\u0065']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();const _0x434c=(i['\u0043\u0061\u0074\u0065\u0067\u006F\u0072\u0079']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();if(["drac".split("").reverse().join(""),"\u0062\u0069\u006C\u0067\u0069","kinket".split("").reverse().join(""),"aynapmak".split("").reverse().join(""),"\u0069\u006B\u006E\u0061"]['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](_0x680e0c)){database['\u0070\u0075\u0073\u0068']({'\u0074\u0069\u0074\u006C\u0065':i['\u0054\u0069\u0074\u006C\u0065'],'\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079':i['\u0043\u0061\u0074\u0065\u0067\u006F\u0072\u0079'],'\u0074\u0065\u0078\u0074':i['\u0054\u0065\u0078\u0074'],"script":i['\u0053\u0063\u0072\u0069\u0070\u0074'],"code":i['\u0043\u006F\u0064\u0065'],"link":i['\u004C\u0069\u006E\u006B'],'\u0069\u006D\u0061\u0067\u0065':i['\u0049\u006D\u0061\u0067\u0065'],"date":formatDateToDDMMYYYY(i['\u0044\u0061\u0074\u0065'])});}else if(_0x680e0c==="\u006E\u0065\u0077\u0073"){newsData['\u0070\u0075\u0073\u0068']({'\u0064\u0061\u0074\u0065':formatDateToDDMMYYYY(i['\u0044\u0061\u0074\u0065']),'\u0074\u0069\u0074\u006C\u0065':i['\u0054\u0069\u0074\u006C\u0065'],'\u0064\u0065\u0073\u0063':i['\u0054\u0065\u0078\u0074'],'\u0074\u0079\u0070\u0065':i['\u0043\u0061\u0074\u0065\u0067\u006F\u0072\u0079'],"status":i['\u0053\u0074\u0061\u0074\u0075\u0073'],"image":i['\u0049\u006D\u0061\u0067\u0065']});}else if(_0x680e0c==="trops".split("").reverse().join("")){sportsData['\u0070\u0075\u0073\u0068']({'\u0074\u0069\u0074\u006C\u0065':i['\u0054\u0069\u0074\u006C\u0065'],'\u0069\u0063\u006F\u006E':i['\u0049\u0063\u006F\u006E'],'\u0064\u0065\u0073\u0063':i['\u0054\u0065\u0078\u0074'],'\u0074\u0069\u0070':i['\u0054\u0069\u0070'],"detail":i['\u0044\u0065\u0074\u0061\u0069\u006C'],"pronunciation":i['\u0050\u0072\u006F\u006E\u0075\u006E\u0063\u0069\u0061\u0074\u0069\u006F\u006E']});}else if(_0x680e0c==="\u0073\u0061\u006C\u0065\u0073"){salesScripts['\u0070\u0075\u0073\u0068']({'\u0074\u0069\u0074\u006C\u0065':i['\u0054\u0069\u0074\u006C\u0065'],'\u0074\u0065\u0078\u0074':i['\u0054\u0065\u0078\u0074']});}else if(_0x680e0c==="\u0071\u0075\u0069\u007A"){quizQuestions['\u0070\u0075\u0073\u0068']({'\u0071':i['\u0054\u0065\u0078\u0074'],'\u006F\u0070\u0074\u0073':i['\u0051\u0075\u0069\u007A\u004F\u0070\u0074\u0069\u006F\u006E\u0073']?i['\u0051\u0075\u0069\u007A\u004F\u0070\u0074\u0069\u006F\u006E\u0073']['\u0073\u0070\u006C\u0069\u0074']("\u002C")['\u006D\u0061\u0070'](o=>o['\u0074\u0072\u0069\u006D']()):[],'\u0061':parseInt(i['\u0051\u0075\u0069\u007A\u0041\u006E\u0073\u0077\u0065\u0072'])});}else if(_0x680e0c==="\u0071\u0075\u0069\u0063\u006B\u0064\u0065\u0063\u0069\u0073\u0069\u006F\u006E"){const _0x33923e=String(i['\u0051\u0075\u0069\u007A\u004F\u0070\u0074\u0069\u006F\u006E\u0073']||'')['\u0073\u0070\u006C\u0069\u0074']("\u007C")['\u006D\u0061\u0070'](x=>x['\u0074\u0072\u0069\u006D']())['\u0066\u0069\u006C\u0074\u0065\u0072'](Boolean);var _0x06cfcf=(992110^992102)+(713116^713113);let a=parseInt(i['\u0051\u0075\u0069\u007A\u0041\u006E\u0073\u0077\u0065\u0072'],299803^299793);_0x06cfcf=872307^872308;if(isNaN(a))a=683546^683546;if(a<(584060^584060))a=776801^776801;if(_0x33923e['\u006C\u0065\u006E\u0067\u0074\u0068']&&a>=_0x33923e['\u006C\u0065\u006E\u0067\u0074\u0068'])a=_0x33923e['\u006C\u0065\u006E\u0067\u0074\u0068']-(853590^853591);var _0xab9bb=(764479^764470)+(689455^689447);const _0xbe3b5a=(i['\u0044\u0065\u0074\u0061\u0069\u006C']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0074\u0072\u0069\u006D']();_0xab9bb="cleejo".split("").reverse().join("");if((i['\u0054\u0065\u0078\u0074']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0074\u0072\u0069\u006D']()&&Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0x33923e)&&_0x33923e['\u006C\u0065\u006E\u0067\u0074\u0068']>=(734726^734724)){quickDecisionQuestions['\u0070\u0075\u0073\u0068']({'\u0071':(i['\u0054\u0065\u0078\u0074']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0074\u0072\u0069\u006D'](),'\u006F\u0070\u0074\u0073':_0x33923e,'\u0061':a,"exp":_0xbe3b5a});}}});database['\u0073\u006F\u0072\u0074']((a,b)=>parseDateTRToTS(b['\u0064\u0061\u0074\u0065'])-parseDateTRToTS(a['\u0064\u0061\u0074\u0065']));newsData['\u0073\u006F\u0072\u0074']((a,b)=>parseDateTRToTS(b['\u0064\u0061\u0074\u0065'])-parseDateTRToTS(a['\u0064\u0061\u0074\u0065']));try{applySportsRights();}catch(e){}if(currentCategory==="\u0066\u0061\u0076"){filterCategory(document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("\u002E\u0062\u0074\u006E\u002D\u0066\u0061\u0076"),"\u0066\u0061\u0076");}else{activeCards=database;if(currentCategory==="\u0068\u006F\u006D\u0065"){showHomeScreen();}else{hideHomeScreen();renderCards(database);}}startTicker();try{updateSearchResultCount(activeCards['\u006C\u0065\u006E\u0067\u0074\u0068']||database['\u006C\u0065\u006E\u0067\u0074\u0068'],database['\u006C\u0065\u006E\u0067\u0074\u0068']);}catch(e){}}function loadContentData(_0xadf5d){var _0xg_0x7e1=(585901^585901)+(715220^715221);_0xadf5d="\u0073\u0053\u0070\u006F\u0072\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u0043\u0061\u0063\u0068\u0065";_0xg_0x7e1=896482^896487;var _0x219b7b=(398824^398825)+(576513^576512);let _0xb11g=false;_0x219b7b=(443532^443524)+(278828^278830);try{const _0x74c6cg=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D'](_0xadf5d);if(_0x74c6cg){let _0xfc253b;const _0x811eb=JSON['\u0070\u0061\u0072\u0073\u0065'](_0x74c6cg);_0xfc253b='\u0064\u0064\u0062\u0069\u0066\u0066';if(_0x811eb&&Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0x811eb)&&_0x811eb['\u006C\u0065\u006E\u0067\u0074\u0068']>(364040^364040)){console['\u006C\u006F\u0067'](".idnelk\xFCy netkellebn\xF6 relireV ]ehcaC[".split("").reverse().join(""));document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("gnidaol".split("").reverse().join(""))['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";processRawData(_0x811eb);_0xb11g=!![];}}}catch(e){console['\u0077\u0061\u0072\u006E']("\u0043\u0061\u0063\u0068\u0065\u0020\u0072\u0065\u0061\u0064\u0020\u0065\u0072\u0072\u006F\u0072\u003A",e);}if(!_0xb11g){document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006C\u006F\u0061\u0064\u0069\u006E\u0067")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";}fetch(SCRIPT_URL,{"method":'POST','\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"Content-Type":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"\u0066\u0065\u0074\u0063\u0068\u0044\u0061\u0074\u0061"})})['\u0074\u0068\u0065\u006E'](response=>response['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](data=>{if(!_0xb11g)document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("gnidaol".split("").reverse().join(""))['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";if(data['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")){try{localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D'](_0xadf5d,JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](data['\u0064\u0061\u0074\u0061']));}catch(e){}processRawData(data['\u0064\u0061\u0074\u0061']);}else{if(!_0xb11g)document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("gnidaol".split("").reverse().join(""))['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=`Veriler alınamadı: ${data['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"ataH neyemniliB".split("").reverse().join("")}`;}})['\u0063\u0061\u0074\u0063\u0068'](error=>{if(!_0xb11g)document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006C\u006F\u0061\u0064\u0069\u006E\u0067")['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u0042\u0061\u011F\u006C\u0061\u006E\u0074\u0131\u0020\u0048\u0061\u0074\u0061\u0073\u0131\u0021\u0020\u0053\u0075\u006E\u0075\u0063\u0075\u0079\u0061\u0020\u0075\u006C\u0061\u015F\u0131\u006C\u0061\u006D\u0131\u0079\u006F\u0072\u002E";})['\u0066\u0069\u006E\u0061\u006C\u006C\u0079'](()=>{try{__dataLoadedResolve&&__dataLoadedResolve();}catch(e){}});}function loadWizardData(){return new Promise((resolve,reject)=>{fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},"body":JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":"\u0067\u0065\u0074\u0057\u0069\u007A\u0061\u0072\u0064\u0044\u0061\u0074\u0061"})})['\u0074\u0068\u0065\u006E'](response=>response['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](data=>{if(data['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")&&data['\u0073\u0074\u0065\u0070\u0073']){wizardStepsData=data['\u0073\u0074\u0065\u0070\u0073'];resolve();}else{wizardStepsData={};reject(new Error("\u0057\u0069\u007A\u0061\u0072\u0064\u0020\u0076\u0065\u0072\u0069\u0073\u0069\u0020\u0079\u00FC\u006B\u006C\u0065\u006E\u0065\u006D\u0065\u0064\u0069\u002E"));}})['\u0063\u0061\u0074\u0063\u0068'](error=>{wizardStepsData={};reject(error);});});}function loadTechWizardData(){return new Promise((resolve,reject)=>{fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0050\u004F\u0053\u0054","headers":{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"\u0067\u0065\u0074\u0054\u0065\u0063\u0068\u0057\u0069\u007A\u0061\u0072\u0064\u0044\u0061\u0074\u0061"})})['\u0074\u0068\u0065\u006E'](response=>response['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](data=>{if(data['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")&&data['\u0073\u0074\u0065\u0070\u0073']){techWizardData=data['\u0073\u0074\u0065\u0070\u0073'];resolve();}else{techWizardData={};}})['\u0063\u0061\u0074\u0063\u0068'](error=>{techWizardData={};});});}function renderCards(data){try{activeCards=data;const _0x02fdff=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("dirGdrac".split("").reverse().join(""));if(!_0x02fdff){if(typeof console!=="denifednu".split("").reverse().join(""))console['\u0065\u0072\u0072\u006F\u0072']("\u0063\u0061\u0072\u0064\u0047\u0072\u0069\u0064\u0020\u0062\u0075\u006C\u0075\u006E\u0061\u006D\u0061\u0064\u0131");return;}if(data['\u006C\u0065\u006E\u0067\u0074\u0068']===(722189^722189)){_0x02fdff['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=">vid/<.\u0131damanulub t\u0131yaK>\";777#:roloc ;xp02:gniddap ;retnec:ngila-txet ;1-/1:nmuloc-dirg\"=elyts vid<".split("").reverse().join("");return;}let _0x5f15ae;const _0x7da8eb=data['\u006D\u0061\u0070']((item,index)=>{const _0x5eb=escapeForJsString(item['\u0074\u0069\u0074\u006C\u0065']);const _0xd5c=isFav(item['\u0074\u0069\u0074\u006C\u0065']);var _0xf79cda=(571674^571678)+(876684^876681);const _0x93abc=_0xd5c?"evitca rats-af saf".split("").reverse().join(""):"\u0066\u0061\u0072\u0020\u0066\u0061\u002D\u0073\u0074\u0061\u0072";_0xf79cda=(123372^123375)+(413139^413136);let _0xb3dad;const _0xd8bba=isNew(item['\u0064\u0061\u0074\u0065'])?"\u003C\u0073\u0070\u0061\u006E\u0020\u0063\u006C\u0061\u0073\u0073\u003D\u0022\u006E\u0065\u0077\u002D\u0062\u0061\u0064\u0067\u0065\u0022\u003E\u0059\u0045\u004E\u0130\u003C\u002F\u0073\u0070\u0061\u006E\u003E":'';_0xb3dad=210300^210292;let _0xc16c;const _0xa15c=isAdminMode&&isEditingActive?`<i class="fas fa-pencil-alt edit-icon" onclick="editContent(${index})" style="display:block;"></i>`:'';_0xc16c="lfqdcf".split("").reverse().join("");var _0x542cf=(270376^270377)+(452338^452343);let _0x225f=(item['\u0074\u0065\u0078\u0074']||"")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("n\\".split("").reverse().join(""),'\u0067'),">rb<".split("").reverse().join(""))['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u005C\u002A\u0028\u002E\u002A\u003F\u0029\u005C\u002A','\u0067'),">b/<1$>b<".split("").reverse().join(""));_0x542cf=(204820^204828)+(555031^555031);let _0x6_0xc20;const _0x95abad=item['\u0069\u006D\u0061\u0067\u0065']?`<div style="margin-bottom:8px;"><img src="${processImageUrl(item['\u0069\u006D\u0061\u0067\u0065'])}" loading="lazy" onerror="this.style.display='none'" style="max-width:100%;border-radius:6px;max-height:150px;object-fit:cover;"></div>`:'';_0x6_0xc20=(938718^938712)+(277280^277283);return`<div class="card ${item['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079']}">${_0xd8bba}
-                <div class="icon-wrapper">${_0xa15c}<i class="${_0x93abc} fav-icon" onclick="toggleFavorite('${_0x5eb}')"></i></div>
-                <div class="card-header"><h3 class="card-title">${highlightText(item['\u0074\u0069\u0074\u006C\u0065'])}</h3><span class="badge">${item['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079']}</span></div>
+
+
+function formatWeekLabel(raw) {
+    try {
+        if (!raw) return '';
+        const s = String(raw);
+        const parts = s.split('-');
+        if (parts.length >= 2) {
+            const startStr = parts[0].trim();
+            const endStr = parts[1].trim();
+            const d1 = new Date(startStr);
+            const d2 = new Date(endStr);
+            if (!isNaN(d1) && !isNaN(d2)) {
+                const sameMonth = d1.getMonth() === d2.getMonth() && d1.getFullYear() === d2.getFullYear();
+                if (sameMonth) {
+                    const day1 = d1.toLocaleDateString('tr-TR', { day: '2-digit' });
+                    const day2 = d2.toLocaleDateString('tr-TR', { day: '2-digit' });
+                    const monthYear = d1.toLocaleDateString('tr-TR', { month: 'long', year: 'numeric' });
+                    return `${day1} - ${day2} ${monthYear}`;
+                } else {
+                    const full1 = d1.toLocaleDateString('tr-TR', { day: '2-digit', month: 'long', year: 'numeric' });
+                    const full2 = d2.toLocaleDateString('tr-TR', { day: '2-digit', month: 'long', year: 'numeric' });
+                    return `${full1} - ${full2}`;
+                }
+            }
+        }
+    } catch (e) { }
+    return raw || '';
+}
+
+function formatShiftDate(d) {
+    try {
+        const dt = new Date(d);
+        if (!isNaN(dt)) {
+            return dt.toLocaleDateString('tr-TR', { weekday: 'short', day: '2-digit', month: '2-digit' });
+        }
+    } catch (e) { }
+    return d;
+}
+
+const BAKIM_MODU = false;
+
+function showGlobalError(message) {
+    // Kullanıcılara kırmızı bant gösterme (istek: ekran temiz kalsın)
+    // Sadece konsola yaz ve (locadmin/admin ise) küçük bir toast göster.
+    try { console.warn("[Pusula]", message); } catch (e) { }
+    try {
+        const role = localStorage.getItem("sSportRole") || "";
+        if (role === "admin" || role === "locadmin") {
+            Swal.fire({ toast: true, position: 'bottom-end', icon: 'warning', title: String(message || 'Uyarı'), showConfirmButton: false, timer: 2500 });
+        }
+    } catch (e) { }
+}
+
+// Apps Script URL'si
+let SCRIPT_URL = localStorage.getItem("PUSULA_SCRIPT_URL") || "https://script.google.com/macros/s/AKfycbx9LV5bCnRRu4sBx9z6mZqUiDCqRI3yJeh4td4ba1n8Zx4ebSRQ2FvtwSVEg4zsbVeZ/exec"; // Apps Script Web App URL
+
+// ---- API CALL helper (Menu/Yetki vs için gerekli) ----
+async function apiCall(action, payload = {}) {
+    const username = (typeof currentUser !== "undefined" && currentUser) ? currentUser : (localStorage.getItem("sSportUser") || "");
+    const token = (typeof getToken === "function" ? getToken() : localStorage.getItem("sSportToken")) || "";
+
+    // IP adresini her API çağrısında gönder
+    const ip = globalUserIP || "";
+
+    const res = await fetch(SCRIPT_URL, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action, username, token, ip, ...payload })
+    });
+    const json = await res.json();
+    if (json.result !== "success") throw new Error(json.message || json.error || "API error");
+    return json;
+}
+
+// SweetAlert2 yoksa minimal yedek (sessiz kırılma olmasın)
+if (typeof Swal === "undefined") {
+    window.Swal = {
+        fire: (a, b, c) => { try { alert((a && a.title) || a || b || c || ""); } catch (e) { } },
+    };
+}
+
+
+
+// Oyun Değişkenleri
+let jokers = { call: 1, half: 1, double: 1 };
+let doubleChanceUsed = false;
+let firstAnswerIndex = -1;
+const VALID_CATEGORIES = ['Teknik', 'İkna', 'Kampanya', 'Bilgi'];
+const MONTH_NAMES = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+// --- GLOBAL DEĞİŞKENLER ---
+let database = [], newsData = [], sportsData = [], salesScripts = [], quizQuestions = [], quickDecisionQuestions = [];
+
+// Data load barrier (prevents Tech/Telesales first-render flicker)
+let __dataLoadedResolve;
+window.__dataLoadedPromise = new Promise(r => { __dataLoadedResolve = r; });
+let techWizardData = {}; // Teknik Sihirbaz Verisi
+let currentUser = "";
+let globalUserIP = "";
+
+// -------------------- HomeBlocks (Ana Sayfa blok içerikleri) --------------------
+let homeBlocks = {}; // { quote:{...}, ... }
+
+function loadHomeBlocks() {
+    // herkes için okunabilir (sheet'ten)
+    return apiCall("getHomeBlocks", {}).then(res => {
+        homeBlocks = (res && res.blocks) ? res.blocks : {};
+        // local fallback cache
+        try { localStorage.setItem('homeBlocksCache', JSON.stringify(homeBlocks || {})); } catch (e) { }
+        try { renderHomePanels(); } catch (e) { }
+        return homeBlocks;
+    }).catch(e => {
+        // sessiz fallback
+        try { homeBlocks = JSON.parse(localStorage.getItem('homeBlocksCache') || '{}') || {}; } catch (_) { homeBlocks = {}; }
+        try { renderHomePanels(); } catch (_) { }
+        return homeBlocks;
+    });
+}
+
+function normalizeRole(v) {
+    return String(v || '').trim().toLowerCase();
+}
+function normalizeGroup(v) {
+    if (!v) return "";
+    let s = String(v).trim().toLowerCase()
+        .replace(/i̇/g, 'i').replace(/ı/g, 'i')
+        .replace(/ş/g, 's').replace(/ğ/g, 'g')
+        .replace(/ü/g, 'u').replace(/ö/g, 'o')
+        .replace(/ç/g, 'c');
+
+    // NOT: Grup bazlı form eşleşmesi logEvaluationPopup içinde yapılıyor.
+    return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+function normalizeList(v) {
+    if (!v) return [];
+    return String(v).split(',').map(s => s.trim()).filter(Boolean);
+}
+function getMyGroup() { return normalizeGroup(localStorage.getItem("sSportGroup") || ""); }
+function getMyRole() { return normalizeRole(localStorage.getItem("sSportRole") || ""); }
+
+
+// --------------------------------------------------------------------
+let activeRole = "";
+let isAdminMode = false;
+let isLocAdmin = false;
+let isEditingActive = false;
+let sessionTimeout;
+let activeCards = [];
+let currentCategory = "home";
+let adminUserList = [];
+let allEvaluationsData = [];
+let wizardStepsData = {};
+let trainingData = [];
+// YENİ: Chart instance'ı tutmak için
+let dashboardChart = null;
+let dashTrendChart = null;
+let dashChannelChart = null;
+let dashScoreDistChart = null;
+let dashGroupAvgChart = null;
+// YENİ: Feedback Log Verisi (Manuel kayıt detayları için)
+let feedbackLogsData = [];
+// ==========================================================
+// --- KALİTE PUANLAMA LOGİĞİ: CHAT (BUTON TABANLI) ---
+// ==========================================================
+window.setButtonScore = function (index, score, max) {
+    const row = document.getElementById(`row-${index}`);
+    const badge = document.getElementById(`badge-${index}`);
+    const noteInput = document.getElementById(`note-${index}`);
+    const buttons = row.querySelectorAll('.eval-button');
+
+    buttons.forEach(b => b.classList.remove('active'));
+
+    const activeBtn = row.querySelector('.eval-button[data-score="' + score + '"]');
+    if (activeBtn) activeBtn.classList.add('active');
+
+    badge.innerText = score;
+
+    if (score < max) {
+        noteInput.style.display = 'block';
+        badge.style.background = '#d32f2f';
+        row.style.borderColor = '#ffcdd2';
+        row.style.background = '#fff5f5';
+    } else {
+        noteInput.style.display = 'none';
+        noteInput.value = '';
+        badge.style.background = '#2e7d32';
+        row.style.borderColor = '#eee';
+        row.style.background = '#fff';
+    }
+    window.recalcTotalScore();
+};
+window.recalcTotalScore = function () {
+    let currentTotal = 0;
+    let maxTotal = 0;
+
+    const scoreBadges = document.querySelectorAll('.score-badge');
+    scoreBadges.forEach(b => { currentTotal += parseInt(b.innerText) || 0; });
+
+    const maxScores = document.querySelectorAll('.criteria-row');
+    maxScores.forEach(row => { maxTotal += parseInt(row.getAttribute('data-max-score')) || 0; });
+
+    const liveScoreEl = document.getElementById('live-score');
+    const ringEl = document.getElementById('score-ring');
+
+    if (liveScoreEl) liveScoreEl.innerText = currentTotal;
+    if (ringEl) {
+        let color = '#2e7d32';
+        let ratio = maxTotal > 0 ? (currentTotal / maxTotal) * 100 : 0;
+        if (ratio < 50) color = '#d32f2f';
+        else if (ratio < 85) color = '#ed6c02';
+        else if (ratio < 95) color = '#fabb00';
+        ringEl.style.background = `conic-gradient(${color} ${ratio}%, #444 ${ratio}%)`;
+    }
+};
+// ==========================================================
+// --- KALİTE PUANLAMA LOGİĞİ: TELE SATIŞ (SLIDER TABANLI) ---
+// ==========================================================
+window.updateRowSliderScore = function (index, max) {
+    const slider = document.getElementById(`slider-${index}`);
+    const badge = document.getElementById(`badge-${index}`);
+    const noteInput = document.getElementById(`note-${index}`);
+    const row = document.getElementById(`row-${index}`);
+    if (!slider) return;
+    const val = parseInt(slider.value);
+    badge.innerText = val;
+
+    if (val < max) {
+        noteInput.style.display = 'block';
+        badge.style.background = '#d32f2f';
+        row.style.borderColor = '#ffcdd2';
+        row.style.background = '#fff5f5';
+    } else {
+        noteInput.style.display = 'none';
+        noteInput.value = '';
+        badge.style.background = '#2e7d32';
+        row.style.borderColor = '#eee';
+        row.style.background = '#fff';
+    }
+    window.recalcTotalSliderScore();
+};
+window.recalcTotalSliderScore = function () {
+    let currentTotal = 0;
+    let maxTotal = 0;
+    const sliders = document.querySelectorAll('.slider-input');
+
+    sliders.forEach(s => {
+        currentTotal += parseInt(s.value) || 0;
+        maxTotal += parseInt(s.getAttribute('max')) || 0;
+    });
+    const liveScoreEl = document.getElementById('live-score');
+    const ringEl = document.getElementById('score-ring');
+
+    if (liveScoreEl) liveScoreEl.innerText = currentTotal;
+    if (ringEl) {
+        let color = '#2e7d32';
+        let ratio = maxTotal > 0 ? (currentTotal / maxTotal) * 100 : 0;
+        if (ratio < 50) color = '#d32f2f';
+        else if (ratio < 85) color = '#ed6c02';
+        else if (ratio < 95) color = '#fabb00';
+        ringEl.style.background = `conic-gradient(${color} ${ratio}%, #444 ${ratio}%)`;
+    }
+};
+// --- YARDIMCI FONKSİYONLAR ---
+function getToken() { return localStorage.getItem("sSportToken"); }
+function setHomeWelcomeUser(name) {
+    try {
+        const el = document.getElementById("home-welcome-user");
+        if (el) el.textContent = (name || "Misafir");
+    } catch (e) { }
+}
+
+function getFavs() { return JSON.parse(localStorage.getItem('sSportFavs') || '[]'); }
+function toggleFavorite(title) {
+    event.stopPropagation();
+    let favs = getFavs();
+    if (favs.includes(title)) { favs = favs.filter(t => t !== title); }
+    else { favs.push(title); }
+    localStorage.setItem('sSportFavs', JSON.stringify(favs));
+    try {
+        const added = favs.includes(title);
+        Swal.fire({ toast: true, position: 'top-end', icon: added ? 'success' : 'info', title: added ? 'Favorilere eklendi' : 'Favorilerden kaldırıldı', showConfirmButton: false, timer: 1200 });
+    } catch (e) { }
+
+    if (currentCategory === 'fav') { filterCategory(document.querySelector('.btn-fav'), 'fav'); }
+    else { renderCards(activeCards); }
+    try { updateSearchResultCount(activeCards.length || 0, database.length); } catch (e) { }
+}
+function isFav(title) { return getFavs().includes(title); }
+function formatDateToDDMMYYYY(dateString) {
+    if (!dateString) return 'N/A';
+    // Eğer format dd.MM.yyyy olarak geliyorsa direkt dön
+    if (dateString.match(/^\d{2}\.\d{2}\.\d{4}/)) { return dateString.split(' ')[0]; }
+    try {
+        const date = new Date(dateString);
+        if (isNaN(date.getTime())) { return dateString; }
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}.${month}.${year}`;
+    } catch (e) { return dateString; }
+}
+
+function processImageUrl(url) {
+    if (!url) return '';
+    // Drive linki düzeltme: /d/ID veya id=ID -> thumbnail?sz=w1000
+    try {
+        let id = '';
+        const m = url.match(/\/d\/([-\w]+)/) || url.match(/id=([-\w]+)/);
+        if (m && m[1]) id = m[1];
+        if (id && url.includes('drive.google.com')) {
+            return 'https://drive.google.com/thumbnail?id=' + id + '&sz=w1000';
+        }
+    } catch (e) { }
+    return url;
+}
+
+function parseDateTRToTS(s) {
+    try {
+        if (!s) return 0;
+        const clean = String(s).split(' ')[0];
+        if (clean.includes('.')) {
+            const parts = clean.split('.');
+            if (parts.length >= 3) {
+                const dd = parseInt(parts[0], 10);
+                const mm = parseInt(parts[1], 10);
+                const yy = parseInt(parts[2], 10);
+                const d = new Date(yy, mm - 1, dd);
+                return d.getTime() || 0;
+            }
+        }
+        const d = new Date(s);
+        return d.getTime() || 0;
+    } catch (e) { return 0; }
+}
+
+function isNew(dateStr) {
+    if (!dateStr) return false;
+    let date;
+    if (dateStr.indexOf('.') > -1) {
+        const cleanDate = dateStr.split(' ')[0];
+        const parts = cleanDate.split('.');
+        // GG.AA.YYYY -> YYYY-AA-GG formatına çevir
+        date = new Date(parts[2], parts[1] - 1, parts[0]);
+    } else {
+        date = new Date(dateStr);
+    }
+    if (isNaN(date.getTime())) return false;
+    const now = new Date();
+    const diffTime = Math.abs(now - date);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    return diffDays <= 3;
+}
+function getCategorySelectHtml(currentCategory, id) {
+    let options = VALID_CATEGORIES.map(cat => `<option value="${cat}" ${cat === currentCategory ? 'selected' : ''}>${cat}</option>`).join('');
+    if (currentCategory && !VALID_CATEGORIES.includes(currentCategory)) {
+        options = `<option value="${currentCategory}" selected>${currentCategory} (Hata)</option>` + options;
+    }
+    return `<select id="${id}" class="swal2-input" style="width:100%; margin-top:5px;">${options}</select>`;
+}
+function escapeForJsString(text) {
+    if (!text) return "";
+    return text.toString().replace(/\\/g, '\\\\').replace(/'/g, '\\\'').replace(/"/g, '\\"').replace(/\n/g, '\\n').replace(/\r/g, '');
+}
+function copyScriptContent(encodedText) {
+    const text = decodeURIComponent(encodedText);
+    copyText(text);
+}
+function copyText(t) {
+    // navigator.clipboard.writeText yerine execCommand kullanıldı (iFrame uyumluluğu için)
+    const textarea = document.createElement('textarea');
+    textarea.value = t.replace(/\\n/g, '\n');
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+        document.execCommand('copy');
+        Swal.fire({ icon: 'success', title: 'Kopyalandı', toast: true, position: 'top-end', showConfirmButton: false, timer: 1500 });
+    } catch (err) {
+        Swal.fire({ icon: 'error', title: 'Kopyalanamadı', text: 'Lütfen manuel kopyalayın.', toast: true, position: 'top-end', showConfirmButton: false, timer: 2500 });
+    }
+    document.body.removeChild(textarea);
+}
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.onkeydown = function (e) { if (e.keyCode == 123) return false; }
+document.addEventListener('DOMContentLoaded', () => {
+    checkSession();
+    // IP Fetch (Konum destekli)
+    fetch('https://ipapi.co/json/')
+        .then(r => r.json())
+        .then(d => { globalUserIP = `${d.ip} [${d.city || '-'}, ${d.region || '-'}]`; })
+        .catch(() => { });
+});
+// --- SESSION & LOGIN ---
+function checkSession() {
+    const savedUser = localStorage.getItem("sSportUser");
+    const savedToken = localStorage.getItem("sSportToken");
+    const savedRole = localStorage.getItem("sSportRole");
+    const savedGroup = localStorage.getItem("sSportGroup");
+
+    // ✅ Oturumun tarayıcı/PC kapat-aç sonrası ertesi güne sarkmaması için:
+    // - Aynı gün değilse otomatik çıkış
+    // - Ayrıca 12 saati geçtiyse otomatik çıkış
+    const todayKey = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+    const sessionDay = localStorage.getItem("sSportSessionDay") || "";
+    const loginAt = parseInt(localStorage.getItem("sSportLoginAt") || "0", 10);
+    const maxAgeMs = 12 * 60 * 60 * 1000; // 12 saat
+
+    if (savedUser && savedToken) {
+        const isOtherDay = (!sessionDay || sessionDay !== todayKey);
+        const isTooOld = (!loginAt || (Date.now() - loginAt) > maxAgeMs);
+
+        if (isOtherDay || isTooOld) {
+            try { logout(); } catch (e) {
+                localStorage.removeItem("sSportUser");
+                localStorage.removeItem("sSportToken");
+                localStorage.removeItem("sSportRole");
+                localStorage.removeItem("sSportGroup");
+                localStorage.removeItem("sSportSessionDay");
+                localStorage.removeItem("sSportLoginAt");
+            }
+            return;
+        }
+
+        currentUser = savedUser;
+        document.getElementById("login-screen").style.display = "none";
+        document.getElementById("user-display").innerText = currentUser;
+        setHomeWelcomeUser(currentUser);
+
+        checkAdmin(savedRole);
+
+        // ✅ Zorunlu şifre değişimi kontrolü (Sayfa yenilense de kaçamaz)
+        if (localStorage.getItem("sSportForceChange") === "true") {
+            changePasswordPopup(true);
+            return;
+        }
+
+
+        try {
+            if (savedGroup) {
+                const el = document.getElementById("t-side-role"); if (el) el.textContent = savedGroup;
+                const el2 = document.getElementById("tech-side-role"); if (el2) el2.textContent = savedGroup;
+            }
+        } catch (e) { }
+
+        startSessionTimer();
+
+        // ✅ YENİ: Yenilemede de menü/blok yetkilerini uygula
+        try { loadHomeBlocks(); } catch (e) { }
+        try { loadPermissionsOnStartup(); } catch (e) { }
+        if (BAKIM_MODU) {
+            document.getElementById("maintenance-screen").style.display = "flex";
+        } else {
+            document.getElementById("main-app").style.display = "block";
+
+            loadContentData();
+            loadWizardData();
+            loadTechWizardData();
+
+            // qusers auto-open kaldırıldı (istek üzerine)
+        }
+    }
+}
+function enterBas(e) { if (e.key === "Enter") girisYap(); }
+async function girisYap() {
+    const uName = document.getElementById("usernameInput").value.trim();
+    const uPass = document.getElementById("passInput").value.trim();
+    const loadingMsg = document.getElementById("loading-msg");
+    const errorMsg = document.getElementById("error-msg");
+    if (!uName || !uPass) { errorMsg.innerText = "Lütfen bilgileri giriniz."; errorMsg.style.display = "block"; return; }
+
+    loadingMsg.style.display = "block";
+    loadingMsg.innerText = "Doğrulanıyor...";
+    errorMsg.style.display = "none";
+    document.querySelector('.login-btn').disabled = true;
+
+    // IP adresini al (henüz alınmadıysa)
+    if (!globalUserIP) {
+        try {
+            const ipResponse = await fetch('https://ipapi.co/json/');
+            const ipData = await ipResponse.json();
+            globalUserIP = `${ipData.ip} [${ipData.city || '-'}, ${ipData.region || '-'}]`;
+        } catch (e) {
+            // IP alınamazsa boş bırak
+            globalUserIP = "";
+        }
+    }
+
+    const hashedPass = CryptoJS.SHA256(uPass).toString();
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "login", username: uName, password: hashedPass, ip: globalUserIP || "" })
+    }).then(response => response.json())
+        .then(data => {
+            loadingMsg.style.display = "none";
+            document.querySelector('.login-btn').disabled = false;
+
+            if (data.result === "success") {
+                currentUser = data.username;
+                localStorage.setItem("sSportUser", currentUser);
+                localStorage.setItem("sSportToken", data.token);
+                localStorage.setItem("sSportRole", data.role);
+                if (data.group) localStorage.setItem("sSportGroup", data.group);
+                // ✅ Oturum zaman damgası (ertesi gün otomatik çıkış için)
+                localStorage.setItem("sSportSessionDay", new Date().toISOString().slice(0, 10));
+                localStorage.setItem("sSportLoginAt", String(Date.now()));
+
+                if (data.forceChange === true) {
+                    localStorage.setItem("sSportForceChange", "true"); // Bayrağı sakla
+                    Swal.fire({
+                        icon: 'warning', title: ' ⚠️  Güvenlik Uyarısı',
+                        text: 'İlk girişiniz. Lütfen şifrenizi değiştirin.',
+                        allowOutsideClick: false, allowEscapeKey: false, confirmButtonText: 'Şifremi Değiştir'
+                    }).then(() => { changePasswordPopup(true); });
+                } else {
+                    localStorage.removeItem("sSportForceChange"); // Tedbir amaçlı sil
+                    document.getElementById("login-screen").style.display = "none";
+                    document.getElementById("user-display").innerText = currentUser;
+                    setHomeWelcomeUser(currentUser);
+                    const savedGroup = data.group || localStorage.getItem('sSportGroup') || '';
+                    checkAdmin(data.role); // ✅ DÜZELTME: savedRole yerine data.role kullanıldı
+                    startSessionTimer();
+
+                    if (BAKIM_MODU) {
+                        document.getElementById("maintenance-screen").style.display = "flex";
+                    } else {
+                        document.getElementById("main-app").style.display = "block";
+                        // Menü yetkilerini ve ana sayfa bloklarını login sonrası yükle
+                        // ✅ YENİ: Veri yüklemeden önce yetkileri yükle ve bekle
+                        loadPermissionsOnStartup().then(() => {
+                            loadHomeBlocks();
+                            loadContentData();
+                            loadWizardData();
+                            loadTechWizardData();
+                        });
+                    }
+                }
+            } else {
+                errorMsg.innerText = data.message || "Hatalı giriş!";
+                errorMsg.style.display = "block";
+            }
+        }).catch(error => {
+            loadingMsg.style.display = "none";
+            document.querySelector('.login-btn').disabled = false;
+            errorMsg.innerText = "Bağlantı sorunu veya sunucu hatası! Lütfen internetinizi kontrol edip sayfayı yenileyin.";
+            errorMsg.style.display = "block";
+            console.error("Login error:", error);
+        });
+}
+function checkAdmin(role) {
+    const addCardDropdown = document.getElementById('dropdownAddCard');
+    const imageDropdown = document.getElementById('dropdownImage');
+    const quickEditDropdown = document.getElementById('dropdownQuickEdit');
+
+    activeRole = role;
+    isAdminMode = (role === "admin" || role === "locadmin");
+    isLocAdmin = (role === "locadmin");
+    isEditingActive = false;
+    document.body.classList.remove('editing');
+
+    // Eski qusers manual logic kaldırıldı (Artık hasPerm/applyPermissionsToUI kullanılıyor)
+
+
+    if (isAdminMode) {
+        if (addCardDropdown) addCardDropdown.style.display = 'flex';
+        if (imageDropdown) imageDropdown.style.display = 'flex';
+        if (quickEditDropdown) {
+            quickEditDropdown.style.display = 'flex';
+            // Yetki Yönetimi ve Aktif Kullanıcılar (Artık hasPerm/applyPermissionsToUI ile yönetiliyor)
+            const perms = document.getElementById('dropdownPerms');
+            if (perms) perms.style.display = 'flex';
+
+            const activeUsersBtn = document.getElementById('dropdownActiveUsers');
+            if (activeUsersBtn) activeUsersBtn.style.display = 'flex';
+
+            quickEditDropdown.innerHTML = '<i class="fas fa-pen" style="color:var(--secondary);"></i> Düzenlemeyi Aç';
+            quickEditDropdown.classList.remove('active');
+        }
+    } else {
+        if (addCardDropdown) addCardDropdown.style.display = 'none';
+        if (imageDropdown) imageDropdown.style.display = 'none';
+        if (quickEditDropdown) quickEditDropdown.style.display = 'none';
+        const perms = document.getElementById('dropdownPerms');
+        if (perms) perms.style.display = 'none';
+        const activeUsersBtn = document.getElementById('dropdownActiveUsers');
+        if (activeUsersBtn) activeUsersBtn.style.display = 'none';
+    }
+
+    // RBAC Yetkilerini uygula
+    try { applyPermissionsToUI(); } catch (e) { }
+}
+function logout() {
+    currentUser = ""; isAdminMode = false; isEditingActive = false;
+    try { document.getElementById("user-display").innerText = "Misafir"; } catch (e) { }
+    setHomeWelcomeUser("Misafir");
+    document.body.classList.remove('editing');
+    localStorage.removeItem("sSportUser"); localStorage.removeItem("sSportToken"); localStorage.removeItem("sSportRole"); localStorage.removeItem("sSportGroup"); localStorage.removeItem("sSportSessionDay"); localStorage.removeItem("sSportLoginAt");
+    localStorage.removeItem("sSportForceChange"); // Bayrağı temizle
+    if (sessionTimeout) clearTimeout(sessionTimeout);
+    document.getElementById("main-app").style.display = "none";
+    document.getElementById("login-screen").style.display = "flex";
+    document.getElementById("passInput").value = "";
+    document.getElementById("usernameInput").value = "";
+    document.getElementById("error-msg").style.display = "none";
+
+    // Fullscreen'i kapat
+    document.getElementById('quality-fullscreen').style.display = 'none';
+    try { document.getElementById('tech-fullscreen').style.display = 'none'; } catch (e) { }
+    try { document.getElementById('telesales-fullscreen').style.display = 'none'; } catch (e) { }
+}
+function startSessionTimer() {
+    if (sessionTimeout) clearTimeout(sessionTimeout);
+    // 8 saat (28800000 ms)
+    sessionTimeout = setTimeout(() => {
+        Swal.fire({ icon: 'warning', title: 'Oturum Süresi Doldu', text: 'Güvenlik nedeniyle otomatik çıkış yapıldı.', confirmButtonText: 'Tamam' }).then(() => { logout(); });
+    }, 28800000);
+}
+function openUserMenu() { toggleUserDropdown(); }
+async function changePasswordPopup(isMandatory = false) {
+    const { value: formValues } = await Swal.fire({
+        title: isMandatory ? 'Yeni Şifre Belirleyin' : 'Şifre Değiştir',
+        html: `${isMandatory ? '<p style="font-size:0.9rem; color:#d32f2f;">İlk giriş şifrenizi değiştirmeden devam edemezsiniz.</p>' : ''}<input id="swal-old-pass" type="password" class="swal2-input" placeholder="Eski Şifre (Mevcut)"><input id="swal-new-pass" type="password" class="swal2-input" placeholder="Yeni Şifre">`,
+        focusConfirm: false, showCancelButton: !isMandatory, allowOutsideClick: !isMandatory, allowEscapeKey: !isMandatory,
+        confirmButtonText: 'Değiştir', cancelButtonText: 'İptal',
+        preConfirm: () => {
+            const o = document.getElementById('swal-old-pass').value;
+            const n = document.getElementById('swal-new-pass').value;
+            if (!o || !n) { Swal.showValidationMessage('Alanlar boş bırakılamaz'); }
+            return [o, n]
+        }
+    });
+    if (formValues) {
+        Swal.fire({ title: 'İşleniyor...', didOpen: () => { Swal.showLoading() } });
+        fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({
+                action: "changePassword", username: currentUser,
+                oldPass: CryptoJS.SHA256(formValues[0]).toString(),
+                newPass: CryptoJS.SHA256(formValues[1]).toString(),
+                token: getToken()
+            })
+        }).then(response => response.json()).then(data => {
+            if (data.result === "success") {
+                localStorage.removeItem("sSportForceChange"); // Başarılı olunca bayrağı kaldır
+                Swal.fire('Başarılı!', 'Şifreniz güncellendi. Yeniden giriş yapınız.', 'success').then(() => { logout(); });
+            } else {
+                Swal.fire('Hata', data.message || 'İşlem başarısız.', 'error').then(() => { if (isMandatory) changePasswordPopup(true); });
+            }
+        }).catch(err => { Swal.fire('Hata', 'Sunucu hatası.', 'error'); if (isMandatory) changePasswordPopup(true); });
+    } else if (isMandatory) { changePasswordPopup(true); }
+}
+// --- DATA FETCHING ---
+// --- DATA PROCESSING (Refactored for Cache Support) ---
+function processRawData(rawData) {
+    if (!Array.isArray(rawData)) return;
+
+    // Reset arrays
+    database = []; newsData = []; sportsData = []; salesScripts = []; quizQuestions = []; quickDecisionQuestions = [];
+
+    // Single pass optimization
+    rawData.forEach(i => {
+        const type = (i.Type || '').toLowerCase();
+        const category = (i.Category || '').toLowerCase();
+
+        // Database (Cards)
+        if (['card', 'bilgi', 'teknik', 'kampanya', 'ikna'].includes(type)) {
+            database.push({
+                title: i.Title, category: i.Category, text: i.Text, script: i.Script, code: i.Code, link: i.Link, image: i.Image, date: formatDateToDDMMYYYY(i.Date)
+            });
+        }
+        // News
+        else if (type === 'news') {
+            newsData.push({
+                date: formatDateToDDMMYYYY(i.Date), title: i.Title, desc: i.Text, type: i.Category, status: i.Status, image: i.Image
+            });
+        }
+        // Sport
+        else if (type === 'sport') {
+            sportsData.push({
+                title: i.Title, icon: i.Icon, desc: i.Text, tip: i.Tip, detail: i.Detail, pronunciation: i.Pronunciation
+            });
+        }
+        // Sales
+        else if (type === 'sales') {
+            salesScripts.push({ title: i.Title, text: i.Text });
+        }
+        // Quiz
+        else if (type === 'quiz') {
+            quizQuestions.push({
+                q: i.Text, opts: i.QuizOptions ? i.QuizOptions.split(',').map(o => o.trim()) : [], a: parseInt(i.QuizAnswer)
+            });
+        }
+        // Quick Decision
+        else if (type === 'quickdecision') {
+            const opts = String(i.QuizOptions || '').split('|').map(x => x.trim()).filter(Boolean);
+            let a = parseInt(i.QuizAnswer, 10);
+            if (isNaN(a)) a = 0;
+            if (a < 0) a = 0;
+            if (opts.length && a >= opts.length) a = opts.length - 1;
+            const exp = (i.Detail || '').toString().trim();
+            if ((i.Text || '').toString().trim() && Array.isArray(opts) && opts.length >= 2) {
+                quickDecisionQuestions.push({ q: (i.Text || '').toString().trim(), opts, a, exp });
+            }
+        }
+    });
+
+    // Post-process
+    database.sort((a, b) => parseDateTRToTS(b.date) - parseDateTRToTS(a.date));
+    newsData.sort((a, b) => parseDateTRToTS(b.date) - parseDateTRToTS(a.date));
+    try { applySportsRights(); } catch (e) { }
+
+    // cardsData alias removed
+
+    if (currentCategory === 'fav') { filterCategory(document.querySelector('.btn-fav'), 'fav'); }
+    else {
+        activeCards = database;
+        if (currentCategory === 'home') { showHomeScreen(); }
+        else { hideHomeScreen(); renderCards(database); }
+    }
+    startTicker();
+    try { updateSearchResultCount(activeCards.length || database.length, database.length); } catch (e) { }
+}
+
+function loadContentData() {
+    const CACHE_KEY = "sSportContentCache";
+    let loadedFromCache = false;
+
+    // 1. Try Cache
+    try {
+        const cached = localStorage.getItem(CACHE_KEY);
+        if (cached) {
+            const parsed = JSON.parse(cached);
+            if (parsed && Array.isArray(parsed) && parsed.length > 0) {
+                console.log("[Cache] Veriler önbellekten yüklendi.");
+                document.getElementById('loading').style.display = 'none';
+                processRawData(parsed);
+                loadedFromCache = true;
+            }
+        }
+    } catch (e) { console.warn("Cache read error:", e); }
+
+    // If no cache, show loader
+    if (!loadedFromCache) {
+        document.getElementById('loading').style.display = 'block';
+    }
+
+    // 2. Fetch Fresh Data
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "fetchData" })
+    }).then(response => response.json()).then(data => {
+        if (!loadedFromCache) document.getElementById('loading').style.display = 'none';
+
+        if (data.result === "success") {
+            // Update Cache
+            try { localStorage.setItem(CACHE_KEY, JSON.stringify(data.data)); } catch (e) { }
+            // Render
+            processRawData(data.data);
+        } else {
+            if (!loadedFromCache) document.getElementById('loading').innerHTML = `Veriler alınamadı: ${data.message || 'Bilinmeyen Hata'}`;
+        }
+    }).catch(error => {
+        if (!loadedFromCache) document.getElementById('loading').innerHTML = 'Bağlantı Hatası! Sunucuya ulaşılamıyor.';
+    }).finally(() => { try { __dataLoadedResolve && __dataLoadedResolve(); } catch (e) { } });
+}
+function loadWizardData() {
+    return new Promise((resolve, reject) => {
+        fetch(SCRIPT_URL, {
+            method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: "getWizardData" })
+        }).then(response => response.json()).then(data => {
+            if (data.result === "success" && data.steps) { wizardStepsData = data.steps; resolve(); }
+            else { wizardStepsData = {}; reject(new Error("Wizard verisi yüklenemedi.")); }
+        }).catch(error => { wizardStepsData = {}; reject(error); });
+    });
+}
+function loadTechWizardData() {
+    return new Promise((resolve, reject) => {
+        fetch(SCRIPT_URL, {
+            method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: "getTechWizardData" })
+        }).then(response => response.json()).then(data => {
+            if (data.result === "success" && data.steps) { techWizardData = data.steps; resolve(); }
+            else { techWizardData = {}; }
+        }).catch(error => { techWizardData = {}; });
+    });
+}
+// --- RENDER & FILTERING ---
+function renderCards(data) {
+    try {
+        activeCards = data;
+        const container = document.getElementById('cardGrid');
+        if (!container) {
+            if (typeof console !== 'undefined') console.error('cardGrid bulunamadı');
+            return;
+        }
+
+        if (data.length === 0) {
+            container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:20px; color:#777;">Kayıt bulunamadı.</div>';
+            return;
+        }
+
+        // Performance Optimization: Build HTML string first, then inject once.
+        const htmlChunks = data.map((item, index) => {
+            const safeTitle = escapeForJsString(item.title);
+            const isFavorite = isFav(item.title);
+            const favClass = isFavorite ? 'fas fa-star active' : 'far fa-star';
+            const newBadge = isNew(item.date) ? '<span class="new-badge">YENİ</span>' : '';
+            const editIconHtml = (isAdminMode && isEditingActive) ? `<i class="fas fa-pencil-alt edit-icon" onclick="editContent(${index})" style="display:block;"></i>` : '';
+            let formattedText = (item.text || "").replace(/\n/g, '<br>').replace(/\*(.*?)\*/g, '<b>$1</b>');
+
+            const imgNotif = item.image ? `<div style="margin-bottom:8px;"><img src="${processImageUrl(item.image)}" loading="lazy" onerror="this.style.display='none'" style="max-width:100%;border-radius:6px;max-height:150px;object-fit:cover;"></div>` : '';
+
+            return `<div class="card ${item.category}">${newBadge}
+                <div class="icon-wrapper">${editIconHtml}<i class="${favClass} fav-icon" onclick="toggleFavorite('${safeTitle}')"></i></div>
+                <div class="card-header"><h3 class="card-title">${highlightText(item.title)}</h3><span class="badge">${item.category}</span></div>
                 <div class="card-content" onclick="showCardDetailByIndex(${index})">
-                    ${_0x95abad}
-                    <div class="card-text-truncate">${highlightText(_0x225f)}</div>
+                    ${imgNotif}
+                    <div class="card-text-truncate">${highlightText(formattedText)}</div>
                     <div style="font-size:0.8rem; color:#999; margin-top:5px; text-align:right;">(Tamamını oku)</div>
                 </div>
-                <div class="script-box">${highlightText(item['\u0073\u0063\u0072\u0069\u0070\u0074'])}</div>
+                <div class="script-box">${highlightText(item.script)}</div>
                 <div class="card-actions">
-                    <button class="btn btn-copy" onclick="copyText('${escapeForJsString(item['\u0073\u0063\u0072\u0069\u0070\u0074'])}')"><i class="fas fa-copy"></i> Kopyala</button>
-                    ${item['\u0063\u006F\u0064\u0065']?`<button class="btn btn-copy" style="background:var(--secondary); color:#333;" onclick="copyText('${escapeForJsString(item['\u0063\u006F\u0064\u0065'])}')">Kod</button>`:''}
-                    ${item['\u006C\u0069\u006E\u006B']?`<a href="${item['\u006C\u0069\u006E\u006B']}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>`:''}
+                    <button class="btn btn-copy" onclick="copyText('${escapeForJsString(item.script)}')"><i class="fas fa-copy"></i> Kopyala</button>
+                    ${item.code ? `<button class="btn btn-copy" style="background:var(--secondary); color:#333;" onclick="copyText('${escapeForJsString(item.code)}')">Kod</button>` : ''}
+                    ${item.link ? `<a href="${item.link}" target="_blank" class="btn btn-link"><i class="fas fa-external-link-alt"></i> Link</a>` : ''}
                 </div>
-            </div>`;});_0x5f15ae=(119432^119433)+(191676^191674);_0x02fdff['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x7da8eb['\u006A\u006F\u0069\u006E']('');}catch(e){try{if(typeof showGlobalError==="noitcnuf".split("").reverse().join("")){showGlobalError("\u004B\u0061\u0072\u0074\u006C\u0061\u0072\u0020\u0079\u00FC\u006B\u006C\u0065\u006E\u0065\u006D\u0065\u0064\u0069\u003A\u0020"+(e&&e['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']?e['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']:String(e)));}}catch(_){}if(typeof console!=="denifednu".split("").reverse().join(""))console['\u0065\u0072\u0072\u006F\u0072']("\u005B\u0072\u0065\u006E\u0064\u0065\u0072\u0043\u0061\u0072\u0064\u0073\u005D",e);}}function highlightText(htmlContent){if(!htmlContent)return"";var _0x277eb=(512117^512112)+(619808^619808);const _0x47de2g=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0065\u0061\u0072\u0063\u0068\u0049\u006E\u0070\u0075\u0074")['\u0076\u0061\u006C\u0075\u0065']['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']("\u0074\u0072\u002D\u0054\u0052")['\u0074\u0072\u0069\u006D']();_0x277eb="opacgg".split("").reverse().join("");if(!_0x47de2g)return htmlContent;try{let _0xeae8d;const _0xf3fe2e=new RegExp(`(${_0x47de2g})`,"\u0067\u0069");_0xeae8d=(888264^888270)+(316175^316172);return htmlContent['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](_0xf3fe2e,"\u003C\u0073\u0070\u0061\u006E\u0020\u0063\u006C\u0061\u0073\u0073\u003D\u0022\u0068\u0069\u0067\u0068\u006C\u0069\u0067\u0068\u0074\u0022\u003E\u0024\u0031\u003C\u002F\u0073\u0070\u0061\u006E\u003E");}catch(e){return htmlContent;}}function updateSearchResultCount(count,total,_0x1818eb,_0x8806b){var _0xebd=(992969^992971)+(317579^317583);const _0xf2707d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tnuoCtluseRhcraes".split("").reverse().join(""));_0xebd='\u0061\u006D\u006C\u006A\u0062\u006A';if(!_0xf2707d)return;const _0x6161e=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tupnIhcraes".split("").reverse().join(""))?.value||'')['\u0074\u0072\u0069\u006D']();_0x1818eb=773950^773950;const _0x05de=!!_0x6161e||currentCategory&&currentCategory!=="lla".split("").reverse().join("");_0x8806b=(125897^125901)+(763461^763457);if(!_0x05de){_0xf2707d['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";_0xf2707d['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']='';return;}_0xf2707d['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";_0xf2707d['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=`🔎 ${count} sonuç${total!=null?" / ".split("").reverse().join("")+total:''}`;}function filterCategory(btn,cat){if(cat==="emoh".split("").reverse().join("")){currentCategory="\u0068\u006F\u006D\u0065";setActiveFilterButton(btn);showHomeScreen();return;}const _0x805de=String(cat||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();if(_0x805de['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("kinket".split("").reverse().join(""))){hideHomeScreen();openTechArea("tsacdaorb".split("").reverse().join(""));return;}if(_0x805de['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("taselet".split("").reverse().join(""))){hideHomeScreen();openTelesalesArea();return;}if(_0x805de['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u006B\u0061\u006C\u0069\u0074\u0065")){hideHomeScreen();}currentCategory=cat;hideHomeScreen();document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("ntb-retlif.".split("").reverse().join(""))['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](b=>b['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("\u0061\u0063\u0074\u0069\u0076\u0065"));btn['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0063\u0074\u0069\u0076\u0065");filterContent();}function filterContent(_0x27dfda){const _0xfc5eg=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0065\u0061\u0072\u0063\u0068\u0049\u006E\u0070\u0075\u0074")['\u0076\u0061\u006C\u0075\u0065']['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']("\u0074\u0072\u002D\u0054\u0052")['\u0074\u0072\u0069\u006D']();_0x27dfda=(852389^852385)+(287998^287990);if(currentCategory==="\u0068\u006F\u006D\u0065"){if(!_0xfc5eg){updateSearchResultCount(database['\u006C\u0065\u006E\u0067\u0074\u0068'],database['\u006C\u0065\u006E\u0067\u0074\u0068']);showHomeScreen();return;}hideHomeScreen();}let _0xbdffb=database;if(currentCategory==="\u0066\u0061\u0076"){_0xbdffb=_0xbdffb['\u0066\u0069\u006C\u0074\u0065\u0072'](i=>isFav(i['\u0074\u0069\u0074\u006C\u0065']));}else if(currentCategory!=="\u0061\u006C\u006C"&&currentCategory!=="\u0068\u006F\u006D\u0065"){_0xbdffb=_0xbdffb['\u0066\u0069\u006C\u0074\u0065\u0072'](i=>i['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079']===currentCategory);}if(_0xfc5eg){_0xbdffb=_0xbdffb['\u0066\u0069\u006C\u0074\u0065\u0072'](item=>{const _0xbffcb=(item['\u0074\u0069\u0074\u006C\u0065']||"")['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']("\u0074\u0072\u002D\u0054\u0052");const _0x944e6g=(item['\u0074\u0065\u0078\u0074']||"")['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']("\u0074\u0072\u002D\u0054\u0052");var _0xc_0x494=(423275^423277)+(639083^639075);const _0xea8f=(item['\u0073\u0063\u0072\u0069\u0070\u0074']||"")['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']("RT-rt".split("").reverse().join(""));_0xc_0x494="nemblm".split("").reverse().join("");var _0x8gd=(165731^165738)+(988840^988847);const _0x363gdb=(item['\u0063\u006F\u0064\u0065']||"")['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']("RT-rt".split("").reverse().join(""));_0x8gd='\u0068\u0069\u0067\u006F\u0068\u006F';return _0xbffcb['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](_0xfc5eg)||_0x944e6g['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](_0xfc5eg)||_0xea8f['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](_0xfc5eg)||_0x363gdb['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](_0xfc5eg);});}activeCards=_0xbdffb;updateSearchResultCount(_0xbdffb['\u006C\u0065\u006E\u0067\u0074\u0068'],database['\u006C\u0065\u006E\u0067\u0074\u0068']);renderCards(_0xbdffb);}function showCardDetail(title,text){if(title&&typeof title==="\u006F\u0062\u006A\u0065\u0063\u0074"){var _0x61af1f=(514490^514482)+(682997^682995);const c=title;_0x61af1f=593931^593929;var _0xd2e5b=(722790^722785)+(333702^333702);const t=c['\u0074\u0069\u0074\u006C\u0065']||c['\u006E\u0061\u006D\u0065']||"\u0044\u0065\u0074\u0061\u0079";_0xd2e5b=(169175^169168)+(470057^470059);let _0x4fe87e;const _0xfa256e=(c['\u0074\u0065\u0078\u0074']||c['\u0064\u0065\u0073\u0063']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']();_0x4fe87e=(418459^418458)+(326896^326901);const _0x829b7f=(c['\u0073\u0063\u0072\u0069\u0070\u0074']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']();let _0x68cd;const _0x28_0x2e9=(c['\u0061\u006C\u0065\u0072\u0074']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']();_0x68cd=(753035^753027)+(879703^879699);var _0x066f=(125274^125273)+(957437^957435);const _0xe36c8g=(c['\u006C\u0069\u006E\u006B']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']();_0x066f='\u006D\u0063\u0065\u0071\u0063\u006A';var _0x77a10f=(927321^927326)+(245879^245886);const _0xf943f=`
+            </div>`;
+        });
+
+        container.innerHTML = htmlChunks.join('');
+
+    } catch (e) {
+        try {
+            if (typeof showGlobalError === 'function') {
+                showGlobalError('Kartlar yüklenemedi: ' + (e && e.message ? e.message : String(e)));
+            }
+        } catch (_) { }
+        if (typeof console !== 'undefined') console.error('[renderCards]', e);
+    }
+}
+function highlightText(htmlContent) {
+    if (!htmlContent) return "";
+    const searchTerm = document.getElementById('searchInput').value.toLocaleLowerCase('tr-TR').trim();
+    if (!searchTerm) return htmlContent;
+    try { const regex = new RegExp(`(${searchTerm})`, "gi"); return htmlContent.toString().replace(regex, '<span class="highlight">$1</span>'); } catch (e) { return htmlContent; }
+}
+
+function updateSearchResultCount(count, total) {
+    const el = document.getElementById('searchResultCount');
+    if (!el) return;
+    // sadece arama yazıldığında veya filtre fav/tekil seçildiğinde göster
+    const search = (document.getElementById('searchInput')?.value || '').trim();
+    const show = !!search || (currentCategory && currentCategory !== 'all');
+    if (!show) { el.style.display = 'none'; el.innerText = ''; return; }
+    el.style.display = 'block';
+    el.innerText = `🔎 ${count} sonuç${total != null ? ' / ' + total : ''}`;
+}
+
+
+
+function filterCategory(btn, cat) {
+    // Ana Sayfa özel ekran
+    if (cat === "home") {
+        currentCategory = "home";
+        setActiveFilterButton(btn);
+        showHomeScreen();
+        return;
+    }
+
+
+    // Tam ekran modüller
+    const catNorm = String(cat || '').toLowerCase();
+    if (catNorm.includes('teknik')) {
+        hideHomeScreen();
+        openTechArea('broadcast');
+        return;
+    }
+    if (catNorm.includes('telesat')) {
+        hideHomeScreen();
+        openTelesalesArea();
+        return;
+    }
+    if (catNorm.includes('kalite')) {
+        hideHomeScreen();
+        // kalite için mevcut davranış: card list (varsa) - burada özel modül yoksa devam
+    }
+    currentCategory = cat;
+    hideHomeScreen();
+
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    filterContent();
+}
+function filterContent() {
+    const search = document.getElementById('searchInput').value.toLocaleLowerCase('tr-TR').trim();
+    // Ana sayfa (home) özel ekran:
+    // - Arama boşsa ana sayfa kartları görünür (home-screen)
+    // - Arama yapılırsa ana sayfadan çıkıp kartlar üzerinde filtre uygulanır
+    if (currentCategory === 'home') {
+        if (!search) {
+            updateSearchResultCount(database.length, database.length);
+            showHomeScreen();
+            return;
+        }
+        // Arama varsa: home ekranını gizle ve tüm kartlar içinde ara
+        hideHomeScreen();
+    }
+
+    let filtered = database;
+    if (currentCategory === 'fav') { filtered = filtered.filter(i => isFav(i.title)); }
+    else if (currentCategory !== 'all' && currentCategory !== 'home') { filtered = filtered.filter(i => i.category === currentCategory); }
+
+    if (search) {
+        filtered = filtered.filter(item => {
+            const title = (item.title || "").toString().toLocaleLowerCase('tr-TR');
+            const text = (item.text || "").toString().toLocaleLowerCase('tr-TR');
+            const script = (item.script || "").toString().toLocaleLowerCase('tr-TR');
+            const code = (item.code || "").toString().toLocaleLowerCase('tr-TR');
+            return title.includes(search) || text.includes(search) || script.includes(search) || code.includes(search);
+        });
+    }
+    activeCards = filtered;
+    updateSearchResultCount(filtered.length, database.length);
+    renderCards(filtered);
+}
+function showCardDetail(title, text) {
+    // Geriye dönük uyumluluk: showCardDetail(cardObj) çağrısını da destekle
+    if (title && typeof title === 'object') {
+        const c = title;
+        const t = c.title || c.name || 'Detay';
+        const body = (c.text || c.desc || '').toString();
+        const script = (c.script || '').toString();
+        const alertTxt = (c.alert || '').toString();
+        const link = (c.link || '').toString();
+        const html = `
           <div style="text-align:left; font-size:1rem; line-height:1.6; white-space:pre-line;">
-            ${escapeHtml(_0xfa256e)['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("n\\".split("").reverse().join(""),'\u0067'),">rb<".split("").reverse().join(""))}
-            ${_0xe36c8g?`<div style="margin-top:12px"><a href="${escapeHtml(_0xe36c8g)}" target="_blank" rel="noreferrer" style="font-weight:800;color:var(--info);text-decoration:none"><i class=\"fas fa-link\"></i> Link</a></div>`:''}
-            ${_0x829b7f?`<div class="tech-script-box" style="margin-top:12px">
-                <span class="tech-script-label">Müşteriye iletilecek:</span>${escapeHtml(_0x829b7f)['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("n\\".split("").reverse().join(""),'\u0067'),"\u003C\u0062\u0072\u003E")}
-              </div>`:''}
-            ${_0x28_0x2e9?`<div class="tech-alert" style="margin-top:12px">${escapeHtml(_0x28_0x2e9)['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u005C\u006E','\u0067'),"\u003C\u0062\u0072\u003E")}</div>`:''}
-          </div>`;_0x77a10f="omjnlp".split("").reverse().join("");Swal['\u0066\u0069\u0072\u0065']({"title":t,'\u0068\u0074\u006D\u006C':_0xf943f,'\u0073\u0068\u006F\u0077\u0043\u006C\u006F\u0073\u0065\u0042\u0075\u0074\u0074\u006F\u006E':!![],'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false,"width":'820px','\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064':"\u0023\u0066\u0038\u0066\u0039\u0066\u0061"});return;}const _0xe11e1d=(text??'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']();Swal['\u0066\u0069\u0072\u0065']({"title":title,"html":`<div style="text-align:left; font-size:1rem; line-height:1.6;">${escapeHtml(_0xe11e1d)['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u005C\u006E','\u0067'),">rb<".split("").reverse().join(""))}</div>`,'\u0073\u0068\u006F\u0077\u0043\u006C\u006F\u0073\u0065\u0042\u0075\u0074\u0074\u006F\u006E':!![],'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false,'\u0077\u0069\u0064\u0074\u0068':'600px',"background":"\u0023\u0066\u0038\u0066\u0039\u0066\u0061"});}function showCardDetailByIndex(index,_0xc6d9ed,_0x6bcc9d,_0x8a32d){var _0xc2f13e=(689456^689462)+(794763^794764);const _0xd_0xg70=activeCards[index];_0xc2f13e=(416216^416209)+(273709^273708);if(!_0xd_0xg70)return;const t=_0xd_0xg70['\u0074\u0069\u0074\u006C\u0065']||"\u0044\u0065\u0074\u0061\u0079";_0xc6d9ed=(778728^778731)+(929321^929326);const _0xb171e=(_0xd_0xg70['\u0074\u0065\u0078\u0074']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']();_0x6bcc9d=625848^625841;var _0x829aba=(677157^677159)+(250311^250306);const _0x2fa59f=(_0xd_0xg70['\u0073\u0063\u0072\u0069\u0070\u0074']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']();_0x829aba=(382255^382248)+(443679^443678);const _0xgfc=(_0xd_0xg70['\u006C\u0069\u006E\u006B']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']();_0x8a32d=(170394^170393)+(514761^514766);const _0x2eb6d=(_0xd_0xg70['\u0069\u006D\u0061\u0067\u0065']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']();var _0x897efe=(912833^912841)+(192828^192824);const _0x08684a=processImageUrl(_0x2eb6d);_0x897efe=(144680^144680)+(570172^570168);var _0x1c163b=(247326^247323)+(981244^981241);const _0xad6ced=`
+            ${escapeHtml(body).replace(/\n/g, '<br>')}
+            ${link ? `<div style="margin-top:12px"><a href="${escapeHtml(link)}" target="_blank" rel="noreferrer" style="font-weight:800;color:var(--info);text-decoration:none"><i class=\"fas fa-link\"></i> Link</a></div>` : ''}
+            ${script ? `<div class="tech-script-box" style="margin-top:12px">
+                <span class="tech-script-label">Müşteriye iletilecek:</span>${escapeHtml(script).replace(/\n/g, '<br>')}
+              </div>` : ''}
+            ${alertTxt ? `<div class="tech-alert" style="margin-top:12px">${escapeHtml(alertTxt).replace(/\n/g, '<br>')}</div>` : ''}
+          </div>`;
+        Swal.fire({ title: t, html, showCloseButton: true, showConfirmButton: false, width: '820px', background: '#f8f9fa' });
+        return;
+    }
+
+    const safeText = (text ?? '').toString();
+    // Image support (passed via different flow usually, but handle basic text case)
+    Swal.fire({
+        title: title,
+        html: `<div style="text-align:left; font-size:1rem; line-height:1.6;">${escapeHtml(safeText).replace(/\n/g, '<br>')}</div>`,
+        showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa'
+    });
+}
+
+function showCardDetailByIndex(index) {
+    const item = activeCards[index];
+    if (!item) return;
+
+    const t = item.title || 'Detay';
+    const body = (item.text || '').toString();
+    const script = (item.script || '').toString();
+    const link = (item.link || '').toString();
+    const img = (item.image || '').toString();
+    const processedImg = processImageUrl(img);
+
+    const html = `
       <div style="text-align:left; font-size:1rem; line-height:1.6; white-space:pre-line;">
-        ${_0x2eb6d?`<div style="margin-bottom:15px;text-align:center;"><img src="${escapeHtml(_0x08684a)}" onerror="this.style.display='none'" style="max-width:100%;border-radius:8px;"></div>`:''}
-        ${escapeHtml(_0xb171e)['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u005C\u006E','\u0067'),"\u003C\u0062\u0072\u003E")}
-        ${_0xgfc?`<div style="margin-top:12px"><a href="${escapeHtml(_0xgfc)}" target="_blank" rel="noreferrer" style="font-weight:800;color:var(--info);text-decoration:none"><i class="fas fa-link"></i> Link</a></div>`:''}
-        ${_0x2fa59f?`<div class="tech-script-box" style="margin-top:12px">
-            <span class="tech-script-label">Müşteriye iletilecek:</span>${escapeHtml(_0x2fa59f)['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u005C\u006E','\u0067'),"\u003C\u0062\u0072\u003E")}
-          </div>`:''}
-      </div>`;_0x1c163b=(560196^560198)+(635726^635721);Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':t,'\u0068\u0074\u006D\u006C':_0xad6ced,"showCloseButton":!![],"showConfirmButton":false,"width":"\u0038\u0032\u0030\u0070\u0078",'\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064':"\u0023\u0066\u0038\u0066\u0039\u0066\u0061"});}function toggleEditMode(){if(!isAdminMode)return;isEditingActive=!isEditingActive;document['\u0062\u006F\u0064\u0079']['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0074\u006F\u0067\u0067\u006C\u0065']("gnitide".split("").reverse().join(""),isEditingActive);const _0xg269ef=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tidEkciuQnwodpord".split("").reverse().join(""));if(isEditingActive){_0xg269ef['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("evitca".split("").reverse().join(""));_0xg269ef['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u0069\u0020\u0063\u006C\u0061\u0073\u0073\u003D\u0022\u0066\u0061\u0073\u0020\u0066\u0061\u002D\u0074\u0069\u006D\u0065\u0073\u0022\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0063\u006F\u006C\u006F\u0072\u003A\u0076\u0061\u0072\u0028\u002D\u002D\u0061\u0063\u0063\u0065\u006E\u0074\u0029\u003B\u0022\u003E\u003C\u002F\u0069\u003E\u0020\u0044\u00FC\u007A\u0065\u006E\u006C\u0065\u006D\u0065\u0079\u0069\u0020\u004B\u0061\u0070\u0061\u0074";Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':'success','\u0074\u0069\u0074\u006C\u0065':"\u0044\u00FC\u007A\u0065\u006E\u006C\u0065\u006D\u0065\u0020\u004D\u006F\u0064\u0075\u0020\u0041\u00C7\u0049\u004B","text":"\u004B\u0061\u006C\u0065\u006D\u0020\u0069\u006B\u006F\u006E\u006C\u0061\u0072\u0131\u006E\u0061\u0020\u0074\u0131\u006B\u006C\u0061\u0079\u0061\u0072\u0061\u006B\u0020\u0069\u00E7\u0065\u0072\u0069\u006B\u006C\u0065\u0072\u0069\u0020\u0064\u00FC\u007A\u0065\u006E\u006C\u0065\u0079\u0065\u0062\u0069\u006C\u0069\u0072\u0073\u0069\u006E\u0069\u007A\u002E",'\u0074\u0069\u006D\u0065\u0072':1500,'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false});}else{_0xg269ef['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("\u0061\u0063\u0074\u0069\u0076\u0065");_0xg269ef['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u0069\u0020\u0063\u006C\u0061\u0073\u0073\u003D\u0022\u0066\u0061\u0073\u0020\u0066\u0061\u002D\u0070\u0065\u006E\u0022\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0063\u006F\u006C\u006F\u0072\u003A\u0076\u0061\u0072\u0028\u002D\u002D\u0073\u0065\u0063\u006F\u006E\u0064\u0061\u0072\u0079\u0029\u003B\u0022\u003E\u003C\u002F\u0069\u003E\u0020\u0044\u00FC\u007A\u0065\u006E\u006C\u0065\u006D\u0065\u0079\u0069\u0020\u0041\u00E7";}filterContent();try{if(currentCategory==="\u0068\u006F\u006D\u0065")renderHomePanels();}catch(e){}if(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0067\u0075\u0069\u0064\u0065\u002D\u006D\u006F\u0064\u0061\u006C")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']==="\u0066\u006C\u0065\u0078")openGuide();if(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0061\u006C\u0065\u0073\u002D\u006D\u006F\u0064\u0061\u006C")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']==="\u0066\u006C\u0065\u0078")openSales();if(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ladom-swen".split("").reverse().join(""))['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']==="xelf".split("").reverse().join(""))openNews();}function sendUpdate(o,c,v,t="\u0063\u0061\u0072\u0064"){if(!Swal['\u0069\u0073\u0056\u0069\u0073\u0069\u0062\u006C\u0065']())Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u004B\u0061\u0079\u0064\u0065\u0064\u0069\u006C\u0069\u0079\u006F\u0072\u002E\u002E\u002E",'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>{Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']();}});fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},"body":JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"\u0075\u0070\u0064\u0061\u0074\u0065\u0043\u006F\u006E\u0074\u0065\u006E\u0074",'\u0074\u0069\u0074\u006C\u0065':o,'\u0063\u006F\u006C\u0075\u006D\u006E':c,'\u0076\u0061\u006C\u0075\u0065':v,'\u0074\u0079\u0070\u0065':t,'\u006F\u0072\u0069\u0067\u0069\u006E\u0061\u006C\u0054\u0065\u0078\u0074':o,'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken()})})['\u0074\u0068\u0065\u006E'](r=>r['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](data=>{if(data['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':"\u0073\u0075\u0063\u0063\u0065\u0073\u0073",'\u0074\u0069\u0074\u006C\u0065':"\u0042\u0061\u015F\u0061\u0072\u0131\u006C\u0131","timer":1500,"showConfirmButton":false});setTimeout(loadContentData,433191^432743);}else{Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061","\u004B\u0061\u0079\u0064\u0065\u0064\u0069\u006C\u0065\u006D\u0065\u0064\u0069\u003A\u0020"+(data['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u0042\u0069\u006C\u0069\u006E\u006D\u0065\u0079\u0065\u006E\u0020\u0048\u0061\u0074\u0061"),"rorre".split("").reverse().join(""));}})['\u0063\u0061\u0074\u0063\u0068'](err=>Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061","\u0053\u0075\u006E\u0075\u0063\u0075\u0020\u0068\u0061\u0074\u0061\u0073\u0131\u002E","\u0065\u0072\u0072\u006F\u0072"));}async function addNewCardPopup(){const _0xc528ee=getCategorySelectHtml("igliB".split("").reverse().join(""),"\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0063\u0061\u0074");const{'\u0076\u0061\u006C\u0075\u0065':formValues}=await Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':'Yeni İçerik Ekle',"html":`
+        ${img ? `<div style="margin-bottom:15px;text-align:center;"><img src="${escapeHtml(processedImg)}" onerror="this.style.display='none'" style="max-width:100%;border-radius:8px;"></div>` : ''}
+        ${escapeHtml(body).replace(/\n/g, '<br>')}
+        ${link ? `<div style="margin-top:12px"><a href="${escapeHtml(link)}" target="_blank" rel="noreferrer" style="font-weight:800;color:var(--info);text-decoration:none"><i class="fas fa-link"></i> Link</a></div>` : ''}
+        ${script ? `<div class="tech-script-box" style="margin-top:12px">
+            <span class="tech-script-label">Müşteriye iletilecek:</span>${escapeHtml(script).replace(/\n/g, '<br>')}
+          </div>` : ''}
+      </div>`;
+
+    Swal.fire({ title: t, html, showCloseButton: true, showConfirmButton: false, width: '820px', background: '#f8f9fa' });
+}
+
+function toggleEditMode() {
+    if (!isAdminMode) return;
+    isEditingActive = !isEditingActive;
+    document.body.classList.toggle('editing', isEditingActive);
+
+    const btn = document.getElementById('dropdownQuickEdit');
+    if (isEditingActive) {
+        btn.classList.add('active');
+        btn.innerHTML = '<i class="fas fa-times" style="color:var(--accent);"></i> Düzenlemeyi Kapat';
+        Swal.fire({ icon: 'success', title: 'Düzenleme Modu AÇIK', text: 'Kalem ikonlarına tıklayarak içerikleri düzenleyebilirsiniz.', timer: 1500, showConfirmButton: false });
+    } else {
+        btn.classList.remove('active');
+        btn.innerHTML = '<i class="fas fa-pen" style="color:var(--secondary);"></i> Düzenlemeyi Aç';
+    }
+    filterContent();
+    try { if (currentCategory === 'home') renderHomePanels(); } catch (e) { }
+    if (document.getElementById('guide-modal').style.display === 'flex') openGuide();
+    if (document.getElementById('sales-modal').style.display === 'flex') openSales();
+    if (document.getElementById('news-modal').style.display === 'flex') openNews();
+}
+function sendUpdate(o, c, v, t = 'card') {
+    if (!Swal.isVisible()) Swal.fire({ title: 'Kaydediliyor...', didOpen: () => { Swal.showLoading() } });
+    fetch(SCRIPT_URL, {
+        method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ action: "updateContent", title: o, column: c, value: v, type: t, originalText: o, username: currentUser, token: getToken() })
+    }).then(r => r.json()).then(data => {
+        if (data.result === "success") {
+            Swal.fire({ icon: 'success', title: 'Başarılı', timer: 1500, showConfirmButton: false });
+            setTimeout(loadContentData, 1600);
+        } else { Swal.fire('Hata', 'Kaydedilemedi: ' + (data.message || 'Bilinmeyen Hata'), 'error'); }
+    }).catch(err => Swal.fire('Hata', 'Sunucu hatası.', 'error'));
+}
+// --- CRUD OPERASYONLARI (ADMIN) ---
+async function addNewCardPopup() {
+    const catSelectHTML = getCategorySelectHtml('Bilgi', 'swal-new-cat');
+    const { value: formValues } = await Swal.fire({
+        title: 'Yeni İçerik Ekle',
+        html: `
         <div style="margin-bottom:15px; text-align:left;">
             <label style="font-weight:bold; font-size:0.9rem;">Ne Ekleyeceksin?</label>
             <select id="swal-type-select" class="swal2-input" style="width:100%; margin-top:5px; height:35px; font-size:0.9rem;" onchange="toggleAddFields()">
@@ -42,7 +1032,7 @@ function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(
         <div id="preview-card" class="card Bilgi" style="text-align:left; box-shadow:none; border:1px solid #e0e0e0; margin-top:10px;">
             <div class="card-header" style="align-items: center; gap: 10px;">
                 <input id="swal-new-title" class="swal2-input" style="margin:0; height:40px; flex-grow:1; border:none; border-bottom:2px solid #eee; padding:0 5px; font-weight:bold; color:#0e1b42;" placeholder="Başlık Giriniz...">
-                <div id="cat-container" style="width: 110px;">${_0xc528ee}</div>
+                <div id="cat-container" style="width: 110px;">${catSelectHTML}</div>
             </div>
             <div class="card-content" style="margin-bottom:10px;">
                 <textarea id="swal-new-text" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; resize:none; font-family:inherit; min-height:100px; padding:10px; background:#f9f9f9;" placeholder="İçerik metni..."></textarea>
@@ -69,35 +1059,299 @@ function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(
                 <label style="font-weight:bold;">Seçenekler (Virgülle Ayırın)</label><input id="swal-quiz-opts" class="swal2-input" placeholder="Örn: şık A,şık B,şık C,şık D">
                 <label style="font-weight:bold;">Doğru Cevap İndeksi</label><input id="swal-quiz-ans" type="number" class="swal2-input" placeholder="0 (A), 1 (B), 2 (C) veya 3 (D)" min="0" max="3">
             </div>
-        </div>`,'\u0077\u0069\u0064\u0074\u0068':"\u0037\u0030\u0030\u0070\u0078","showCancelButton":!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':'<i class="fas fa-plus"></i> Ekle','\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0130\u0070\u0074\u0061\u006C",'\u0066\u006F\u0063\u0075\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D':false,"didOpen":()=>{const _0x56cbc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0063\u0061\u0074");const _0xc62e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("drac-weiverp".split("").reverse().join(""));_0x56cbc['\u0073\u0074\u0079\u006C\u0065']['\u006D\u0061\u0072\u0067\u0069\u006E']="\u0030";_0x56cbc['\u0073\u0074\u0079\u006C\u0065']['\u0068\u0065\u0069\u0067\u0068\u0074']="xp03".split("").reverse().join("");_0x56cbc['\u0073\u0074\u0079\u006C\u0065']['\u0066\u006F\u006E\u0074\u0053\u0069\u007A\u0065']="\u0030\u002E\u0038\u0072\u0065\u006D";_0x56cbc['\u0073\u0074\u0079\u006C\u0065']['\u0070\u0061\u0064\u0064\u0069\u006E\u0067']="xp5 0".split("").reverse().join("");_0x56cbc['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("\u0063\u0068\u0061\u006E\u0067\u0065",function(){_0xc62e['\u0063\u006C\u0061\u0073\u0073\u004E\u0061\u006D\u0065']=" drac".split("").reverse().join("")+this['\u0076\u0061\u006C\u0075\u0065'];});window['\u0074\u006F\u0067\u0067\u006C\u0065\u0041\u0064\u0064\u0046\u0069\u0065\u006C\u0064\u0073']=function(_0xdfbffc,_0xb156b){var _0x2f96ed=(531265^531264)+(476826^476826);const _0x81c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u0079\u0070\u0065\u002D\u0073\u0065\u006C\u0065\u0063\u0074")['\u0076\u0061\u006C\u0075\u0065'];_0x2f96ed='\u006F\u006A\u0071\u006A\u0065\u0069';var _0xb400g=(415637^415645)+(772361^772360);const _0xdg5c4b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0063\u0061\u0074\u002D\u0063\u006F\u006E\u0074\u0061\u0069\u006E\u0065\u0072");_0xb400g=(850913^850920)+(174128^174132);const _0xec70b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("reniatnoc-tpircs".split("").reverse().join(""));_0xdfbffc=(966120^966125)+(135501^135502);var _0x9d16a=(331707^331707)+(443305^443307);const _0x4gf2a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0065\u0078\u0074\u0072\u0061\u002D\u0063\u006F\u006E\u0074\u0061\u0069\u006E\u0065\u0072");_0x9d16a='\u0064\u006E\u0065\u0068\u0061\u0063';var _0x3856cf=(157781^157781)+(193534^193527);const _0x662d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("artxe-trops".split("").reverse().join(""));_0x3856cf=(879945^879948)+(627013^627010);const _0x556ccd=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006E\u0065\u0077\u0073\u002D\u0065\u0078\u0074\u0072\u0061");const _0xadd=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0075\u0069\u007A\u002D\u0065\u0078\u0074\u0072\u0061");_0xb156b=696307^696308;const _0xbb_0x30a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u0072\u0065\u0076\u0069\u0065\u0077\u002D\u0063\u0061\u0072\u0064");_0xdg5c4b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";_0xec70b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");_0x4gf2a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";_0x662d['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";_0x556ccd['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";_0xadd['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0074\u0069\u0074\u006C\u0065")['\u0076\u0061\u006C\u0075\u0065']='';document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("txet-wen-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']='';_0xbb_0x30a['\u0073\u0074\u0079\u006C\u0065']['\u0062\u006F\u0072\u0064\u0065\u0072\u004C\u0065\u0066\u0074']=")ofni--(rav dilos xp5".split("").reverse().join("");_0xbb_0x30a['\u0063\u006C\u0061\u0073\u0073\u004E\u0061\u006D\u0065']="\u0063\u0061\u0072\u0064\u0020\u0042\u0069\u006C\u0067\u0069";if(_0x81c==="drac".split("").reverse().join("")){_0xdg5c4b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";_0xec70b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="kcolb".split("").reverse().join("");_0x4gf2a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0067\u0072\u0069\u0064";_0xbb_0x30a['\u0063\u006C\u0061\u0073\u0073\u004E\u0061\u006D\u0065']="\u0063\u0061\u0072\u0064\u0020"+document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0063\u0061\u0074")['\u0076\u0061\u006C\u0075\u0065'];document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0074\u0069\u0074\u006C\u0065")['\u0070\u006C\u0061\u0063\u0065\u0068\u006F\u006C\u0064\u0065\u0072']="...ziniriG k\u0131l\u015FaB".split("").reverse().join("");document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0074\u0065\u0078\u0074")['\u0070\u006C\u0061\u0063\u0065\u0068\u006F\u006C\u0064\u0065\u0072']="\u0130\u00E7\u0065\u0072\u0069\u006B\u0020\u006D\u0065\u0074\u006E\u0069\u002E\u002E\u002E";}else if(_0x81c==="selas".split("").reverse().join("")){_0xec70b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0073\u0063\u0072\u0069\u0070\u0074")['\u0070\u006C\u0061\u0063\u0065\u0068\u006F\u006C\u0064\u0065\u0072']="...inteM \u015F\u0131taS".split("").reverse().join("");_0xbb_0x30a['\u0073\u0074\u0079\u006C\u0065']['\u0062\u006F\u0072\u0064\u0065\u0072\u004C\u0065\u0066\u0074']="\u0035\u0070\u0078\u0020\u0073\u006F\u006C\u0069\u0064\u0020\u0076\u0061\u0072\u0028\u002D\u002D\u0073\u0061\u006C\u0065\u0073\u0029";document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("eltit-wen-laws".split("").reverse().join(""))['\u0070\u006C\u0061\u0063\u0065\u0068\u006F\u006C\u0064\u0065\u0072']="\u0053\u0063\u0072\u0069\u0070\u0074\u0020\u0042\u0061\u015F\u006C\u0131\u011F\u0131\u002E\u002E\u002E";document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0074\u0065\u0078\u0074")['\u0070\u006C\u0061\u0063\u0065\u0068\u006F\u006C\u0064\u0065\u0072']=".kecelirig nitem ayarub ecedaS".split("").reverse().join("");}else if(_0x81c==="trops".split("").reverse().join("")){_0x662d['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="kcolb".split("").reverse().join("");_0xbb_0x30a['\u0073\u0074\u0079\u006C\u0065']['\u0062\u006F\u0072\u0064\u0065\u0072\u004C\u0065\u0066\u0074']="\u0035\u0070\u0078\u0020\u0073\u006F\u006C\u0069\u0064\u0020\u0076\u0061\u0072\u0028\u002D\u002D\u0070\u0072\u0069\u006D\u0061\u0072\u0079\u0029";document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0074\u0069\u0074\u006C\u0065")['\u0070\u006C\u0061\u0063\u0065\u0068\u006F\u006C\u0064\u0065\u0072']="...\u0131\u011F\u0131l\u015FaB imireT ropS".split("").reverse().join("");document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("txet-wen-laws".split("").reverse().join(""))['\u0070\u006C\u0061\u0063\u0065\u0068\u006F\u006C\u0064\u0065\u0072']="\u004B\u0131\u0073\u0061\u0020\u0041\u00E7\u0131\u006B\u006C\u0061\u006D\u0061\u0020\u0028\u0044\u0065\u0073\u0063\u0029\u002E\u002E\u002E";}else if(_0x81c==="\u006E\u0065\u0077\u0073"){_0x556ccd['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";_0xbb_0x30a['\u0073\u0074\u0079\u006C\u0065']['\u0062\u006F\u0072\u0064\u0065\u0072\u004C\u0065\u0066\u0074']=")yradnoces--(rav dilos xp5".split("").reverse().join("");document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0074\u0069\u0074\u006C\u0065")['\u0070\u006C\u0061\u0063\u0065\u0068\u006F\u006C\u0064\u0065\u0072']="...\u0131\u011F\u0131l\u015FaB uruyuD".split("").reverse().join("");document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0074\u0065\u0078\u0074")['\u0070\u006C\u0061\u0063\u0065\u0068\u006F\u006C\u0064\u0065\u0072']="...)cseD( inteM uruyuD".split("").reverse().join("");}else if(_0x81c==="\u0071\u0075\u0069\u007A"){_0xadd['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="kcolb".split("").reverse().join("");document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0074\u0069\u0074\u006C\u0065")['\u0070\u006C\u0061\u0063\u0065\u0068\u006F\u006C\u0064\u0065\u0072']="\u0051\u0075\u0069\u007A\u0020\u0042\u0061\u015F\u006C\u0131\u011F\u0131\u0020\u0028\u00D6\u0072\u006E\u003A\u0020\u0053\u006F\u0072\u0075\u0020\u0031\u0029";document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0074\u0065\u0078\u0074")['\u0070\u006C\u0061\u0063\u0065\u0068\u006F\u006C\u0064\u0065\u0072']="\u0042\u0075\u0020\u0061\u006C\u0061\u006E\u0020\u0062\u006F\u015F\u0020\u0062\u0131\u0072\u0061\u006B\u0131\u006C\u0061\u0063\u0061\u006B\u002E";_0xbb_0x30a['\u0073\u0074\u0079\u006C\u0065']['\u0062\u006F\u0072\u0064\u0065\u0072\u004C\u0065\u0066\u0074']="\u0035\u0070\u0078\u0020\u0073\u006F\u006C\u0069\u0064\u0020\u0076\u0061\u0072\u0028\u002D\u002D\u0071\u0075\u0069\u007A\u0029";}};},'\u0070\u0072\u0065\u0043\u006F\u006E\u0066\u0069\u0072\u006D':()=>{let _0xf3a8e;const type=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u0079\u0070\u0065\u002D\u0073\u0065\u006C\u0065\u0063\u0074")['\u0076\u0061\u006C\u0075\u0065'];_0xf3a8e='\u0068\u0062\u0069\u006C\u006E\u0066';const _0x3ae=new Date();const _0x86b=_0x3ae['\u0067\u0065\u0074\u0044\u0061\u0074\u0065']()+"\u002E"+(_0x3ae['\u0067\u0065\u0074\u004D\u006F\u006E\u0074\u0068']()+(237954^237955))+"\u002E"+_0x3ae['\u0067\u0065\u0074\u0046\u0075\u006C\u006C\u0059\u0065\u0061\u0072']();let _0x46ce6f;const _0x6d80ba=type==="\u0071\u0075\u0069\u007A"?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0071\u0075\u0069\u007A\u002D\u006F\u0070\u0074\u0073")['\u0076\u0061\u006C\u0075\u0065']:'';_0x46ce6f=581418^581422;let _0x7_0xb64;const _0xa21f=type==="ziuq".split("").reverse().join("")?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("sna-ziuq-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']:'';_0x7_0xb64=(829714^829718)+(638817^638822);var _0xd4fa=(266324^266324)+(797069^797070);const _0x5e7cfc=type==="ziuq".split("").reverse().join("")?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0071\u0075\u0069\u007A\u002D\u0071")['\u0076\u0061\u006C\u0075\u0065']:'';_0xd4fa=183865^183864;if(type==="\u0071\u0075\u0069\u007A"&&(!_0x5e7cfc||!_0x6d80ba||_0xa21f==='')){Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065'](".rudulnuroz ralnala m\xFCt ni\xE7i usuros ziuQ".split("").reverse().join(""));return false;}return{'\u0063\u0061\u0072\u0064\u0054\u0079\u0070\u0065':type,'\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079':type==="drac".split("").reverse().join("")?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tac-wen-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']:type==="\u006E\u0065\u0077\u0073"?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u0073\u002D\u0074\u0079\u0070\u0065")['\u0076\u0061\u006C\u0075\u0065']:'','\u0074\u0069\u0074\u006C\u0065':document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("eltit-wen-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'],'\u0074\u0065\u0078\u0074':type==="ziuq".split("").reverse().join("")?_0x5e7cfc:document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("txet-wen-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'],"script":type==="drac".split("").reverse().join("")||type==="\u0073\u0061\u006C\u0065\u0073"?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0073\u0063\u0072\u0069\u0070\u0074")['\u0076\u0061\u006C\u0075\u0065']:'','\u0063\u006F\u0064\u0065':type==="drac".split("").reverse().join("")?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u0063\u006F\u0064\u0065")['\u0076\u0061\u006C\u0075\u0065']:'',"status":type==="\u006E\u0065\u0077\u0073"?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u0073\u002D\u0073\u0074\u0061\u0074\u0075\u0073")['\u0076\u0061\u006C\u0075\u0065']:'','\u006C\u0069\u006E\u006B':type==="drac".split("").reverse().join("")?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006E\u0065\u0077\u002D\u006C\u0069\u006E\u006B")['\u0076\u0061\u006C\u0075\u0065']:'','\u0074\u0069\u0070':type==="trops".split("").reverse().join("")?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0073\u0070\u006F\u0072\u0074\u002D\u0074\u0069\u0070")['\u0076\u0061\u006C\u0075\u0065']:'',"detail":type==="trops".split("").reverse().join("")?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0073\u0070\u006F\u0072\u0074\u002D\u0064\u0065\u0074\u0061\u0069\u006C")['\u0076\u0061\u006C\u0075\u0065']:'','\u0070\u0072\u006F\u006E\u0075\u006E\u0063\u0069\u0061\u0074\u0069\u006F\u006E':type==="trops".split("").reverse().join("")?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0073\u0070\u006F\u0072\u0074\u002D\u0070\u0072\u006F\u006E")['\u0076\u0061\u006C\u0075\u0065']:'',"icon":type==="trops".split("").reverse().join("")?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0073\u0070\u006F\u0072\u0074\u002D\u0069\u0063\u006F\u006E")['\u0076\u0061\u006C\u0075\u0065']:'',"date":_0x86b,'\u0071\u0075\u0069\u007A\u004F\u0070\u0074\u0069\u006F\u006E\u0073':_0x6d80ba,"quizAnswer":_0xa21f};}});if(formValues){if(!formValues['\u0074\u0069\u0074\u006C\u0065']){Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061","!ulnuroz k\u0131l\u015FaB".split("").reverse().join(""),"\u0065\u0072\u0072\u006F\u0072");return;}Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u0045\u006B\u006C\u0065\u006E\u0069\u0079\u006F\u0072\u002E\u002E\u002E",'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>{Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']();}});fetch(SCRIPT_URL,{"method":"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":'text/plain;charset=utf-8'},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"addCard",'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken(),...formValues})})['\u0074\u0068\u0065\u006E'](response=>response['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](data=>{if(data['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){Swal['\u0066\u0069\u0072\u0065']({"icon":'success','\u0074\u0069\u0074\u006C\u0065':"\u0042\u0061\u015F\u0061\u0072\u0131\u006C\u0131","text":"\u0130\u00E7\u0065\u0072\u0069\u006B\u0020\u0065\u006B\u006C\u0065\u006E\u0064\u0069\u002E",'\u0074\u0069\u006D\u0065\u0072':2000,'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false});setTimeout(loadContentData,447464^450116);}else{Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),data['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u0045\u006B\u006C\u0065\u006E\u0065\u006D\u0065\u0064\u0069\u002E","\u0065\u0072\u0072\u006F\u0072");}})['\u0063\u0061\u0074\u0063\u0068'](err=>Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061","\u0053\u0075\u006E\u0075\u0063\u0075\u0020\u0068\u0061\u0074\u0061\u0073\u0131\u003A\u0020"+err,"\u0065\u0072\u0072\u006F\u0072"));}}async function editContent(index){const _0x1dd24f=activeCards[index];var _0x6e11f=(943945^943950)+(520655^520654);const _0x5825a=getCategorySelectHtml(_0x1dd24f['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079'],"\u0073\u0077\u0061\u006C\u002D\u0063\u0061\u0074");_0x6e11f=(843896^843902)+(802432^802433);const{'\u0076\u0061\u006C\u0075\u0065':formValues}=await Swal['\u0066\u0069\u0072\u0065']({"title":"\u004B\u0061\u0072\u0074\u0131\u0020\u0044\u00FC\u007A\u0065\u006E\u006C\u0065",'\u0068\u0074\u006D\u006C':`
-        <div id="preview-card-edit" class="card ${_0x1dd24f['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079']}" style="text-align:left; box-shadow:none; border:1px solid #e0e0e0; margin-top:10px;">
+        </div>`,
+        width: '700px', showCancelButton: true, confirmButtonText: '<i class="fas fa-plus"></i> Ekle', cancelButtonText: 'İptal', focusConfirm: false,
+        didOpen: () => {
+            const selectEl = document.getElementById('swal-new-cat');
+            const cardEl = document.getElementById('preview-card');
+            selectEl.style.margin = "0"; selectEl.style.height = "30px"; selectEl.style.fontSize = "0.8rem"; selectEl.style.padding = "0 5px";
+            selectEl.addEventListener('change', function () { cardEl.className = 'card ' + this.value; });
+
+            window.toggleAddFields = function () {
+                const type = document.getElementById('swal-type-select').value;
+                const catCont = document.getElementById('cat-container');
+                const scriptCont = document.getElementById('script-container');
+                const extraCont = document.getElementById('extra-container');
+                const sportExtra = document.getElementById('sport-extra');
+                const newsExtra = document.getElementById('news-extra');
+                const quizExtra = document.getElementById('quiz-extra');
+                const cardPreview = document.getElementById('preview-card');
+
+                catCont.style.display = 'none'; scriptCont.style.display = 'none'; extraCont.style.display = 'none';
+                sportExtra.style.display = 'none'; newsExtra.style.display = 'none'; quizExtra.style.display = 'none';
+                document.getElementById('swal-new-title').value = ''; document.getElementById('swal-new-text').value = '';
+                cardPreview.style.borderLeft = "5px solid var(--info)"; cardPreview.className = 'card Bilgi';
+
+                if (type === 'card') {
+                    catCont.style.display = 'block'; scriptCont.style.display = 'block'; extraCont.style.display = 'grid';
+                    cardPreview.className = 'card ' + document.getElementById('swal-new-cat').value;
+                    document.getElementById('swal-new-title').placeholder = "Başlık Giriniz..."; document.getElementById('swal-new-text').placeholder = "İçerik metni...";
+                } else if (type === 'sales') {
+                    scriptCont.style.display = 'block';
+                    document.getElementById('swal-new-script').placeholder = "Satış Metni...";
+                    cardPreview.style.borderLeft = "5px solid var(--sales)";
+                    document.getElementById('swal-new-title').placeholder = "Script Başlığı..."; document.getElementById('swal-new-text').placeholder = "Sadece buraya metin girilecek.";
+                } else if (type === 'sport') {
+                    sportExtra.style.display = 'block';
+                    cardPreview.style.borderLeft = "5px solid var(--primary)";
+                    document.getElementById('swal-new-title').placeholder = "Spor Terimi Başlığı..."; document.getElementById('swal-new-text').placeholder = "Kısa Açıklama (Desc)...";
+                } else if (type === 'news') {
+                    newsExtra.style.display = 'block';
+                    cardPreview.style.borderLeft = "5px solid var(--secondary)";
+                    document.getElementById('swal-new-title').placeholder = "Duyuru Başlığı..."; document.getElementById('swal-new-text').placeholder = "Duyuru Metni (Desc)...";
+                } else if (type === 'quiz') {
+                    quizExtra.style.display = 'block';
+                    document.getElementById('swal-new-title').placeholder = "Quiz Başlığı (Örn: Soru 1)"; document.getElementById('swal-new-text').placeholder = "Bu alan boş bırakılacak.";
+                    cardPreview.style.borderLeft = "5px solid var(--quiz)";
+                }
+            };
+        },
+        preConfirm: () => {
+            const type = document.getElementById('swal-type-select').value;
+            const today = new Date();
+            const dateStr = today.getDate() + "." + (today.getMonth() + 1) + "." + today.getFullYear();
+            const quizOpts = type === 'quiz' ? document.getElementById('swal-quiz-opts').value : '';
+            const quizAns = type === 'quiz' ? document.getElementById('swal-quiz-ans').value : '';
+            const quizQ = type === 'quiz' ? document.getElementById('swal-quiz-q').value : '';
+            if (type === 'quiz' && (!quizQ || !quizOpts || quizAns === '')) { Swal.showValidationMessage('Quiz sorusu için tüm alanlar zorunludur.'); return false; }
+            return {
+                cardType: type,
+                category: type === 'card' ? document.getElementById('swal-new-cat').value : (type === 'news' ? document.getElementById('swal-news-type').value : ''),
+                title: document.getElementById('swal-new-title').value,
+                text: type === 'quiz' ? quizQ : document.getElementById('swal-new-text').value,
+                script: (type === 'card' || type === 'sales') ? document.getElementById('swal-new-script').value : '',
+                code: type === 'card' ? document.getElementById('swal-new-code').value : '',
+                status: type === 'news' ? document.getElementById('swal-news-status').value : '',
+                link: type === 'card' ? document.getElementById('swal-new-link').value : '',
+                tip: type === 'sport' ? document.getElementById('swal-sport-tip').value : '',
+                detail: type === 'sport' ? document.getElementById('swal-sport-detail').value : '',
+                pronunciation: type === 'sport' ? document.getElementById('swal-sport-pron').value : '',
+                icon: type === 'sport' ? document.getElementById('swal-sport-icon').value : '',
+                date: dateStr, quizOptions: quizOpts, quizAnswer: quizAns
+            }
+        }
+    });
+    if (formValues) {
+        if (!formValues.title) { Swal.fire('Hata', 'Başlık zorunlu!', 'error'); return; }
+        Swal.fire({ title: 'Ekleniyor...', didOpen: () => { Swal.showLoading() } });
+        fetch(SCRIPT_URL, {
+            method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: "addCard", username: currentUser, token: getToken(), ...formValues })
+        }).then(response => response.json()).then(data => {
+            if (data.result === "success") {
+                Swal.fire({ icon: 'success', title: 'Başarılı', text: 'İçerik eklendi.', timer: 2000, showConfirmButton: false });
+                setTimeout(loadContentData, 3500);
+            } else { Swal.fire('Hata', data.message || 'Eklenemedi.', 'error'); }
+        }).catch(err => Swal.fire('Hata', 'Sunucu hatası: ' + err, 'error'));
+    }
+}
+async function editContent(index) {
+    const item = activeCards[index];
+    const catSelectHTML = getCategorySelectHtml(item.category, 'swal-cat');
+    const { value: formValues } = await Swal.fire({
+        title: 'Kartı Düzenle',
+        html: `
+        <div id="preview-card-edit" class="card ${item.category}" style="text-align:left; box-shadow:none; border:1px solid #e0e0e0; margin-top:10px;">
             <div class="card-header" style="align-items: center; gap: 10px;">
-                <input id="swal-title" class="swal2-input" style="margin:0; height:40px; flex-grow:1; border:none; border-bottom:2px solid #eee; padding:0 5px; font-weight:bold; color:#0e1b42;" value="${_0x1dd24f['\u0074\u0069\u0074\u006C\u0065']}" placeholder="Başlık">
-                <div style="width: 110px;">${_0x5825a}</div>
+                <input id="swal-title" class="swal2-input" style="margin:0; height:40px; flex-grow:1; border:none; border-bottom:2px solid #eee; padding:0 5px; font-weight:bold; color:#0e1b42;" value="${item.title}" placeholder="Başlık">
+                <div style="width: 110px;">${catSelectHTML}</div>
             </div>
             <div class="card-content" style="margin-bottom:10px;">
-                <textarea id="swal-text" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; resize:none; font-family:inherit; min-height:120px; padding:10px; background:#f9f9f9;" placeholder="İçerik metni...">${(_0x1dd24f['\u0074\u0065\u0078\u0074']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp(">rb<".split("").reverse().join(""),'\u0067'),"\u000A")}</textarea>
+                <textarea id="swal-text" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; resize:none; font-family:inherit; min-height:120px; padding:10px; background:#f9f9f9;" placeholder="İçerik metni...">${(item.text || '').toString().replace(/<br>/g, '\n')}</textarea>
             </div>
             <div class="script-box" style="padding:0; border:1px solid #f0e68c;">
-                <textarea id="swal-script" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; background:transparent; font-style:italic; min-height:80px; font-size:0.9rem;" placeholder="Script metni...">${(_0x1dd24f['\u0073\u0063\u0072\u0069\u0070\u0074']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u003C\u0062\u0072\u003E','\u0067'),"\u000A")}</textarea>
+                <textarea id="swal-script" class="swal2-textarea" style="margin:0; width:100%; box-sizing:border-box; border:none; background:transparent; font-style:italic; min-height:80px; font-size:0.9rem;" placeholder="Script metni...">${(item.script || '').toString().replace(/<br>/g, '\n')}</textarea>
             </div>
             <div class="card-actions" style="margin-top:15px; display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
-                <div style="position:relative;"><i class="fas fa-code" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-code" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" value="${_0x1dd24f['\u0063\u006F\u0064\u0065']||''}" placeholder="Kod"></div>
-                <div style="position:relative;"><i class="fas fa-link" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-link" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" value="${_0x1dd24f['\u006C\u0069\u006E\u006B']||''}" placeholder="Link"></div>
-                <div style="position:relative;grid-column: 1 / -1;"><i class="fas fa-image" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-image" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px; width: 100%; box-sizing: border-box;" value="${_0x1dd24f['\u0069\u006D\u0061\u0067\u0065']||''}" placeholder="Görsel Linki (Drive vb.)"></div>
+                <div style="position:relative;"><i class="fas fa-code" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-code" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" value="${item.code || ''}" placeholder="Kod"></div>
+                <div style="position:relative;"><i class="fas fa-link" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-link" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px;" value="${item.link || ''}" placeholder="Link"></div>
+                <div style="position:relative;grid-column: 1 / -1;"><i class="fas fa-image" style="position:absolute; left:10px; top:10px; color:#aaa;"></i><input id="swal-image" class="swal2-input" style="margin:0; height:35px; font-size:0.85rem; padding-left:30px; width: 100%; box-sizing: border-box;" value="${item.image || ''}" placeholder="Görsel Linki (Drive vb.)"></div>
             </div>
-        </div>`,"width":'700px',"showCancelButton":!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u003C\u0069\u0020\u0063\u006C\u0061\u0073\u0073\u003D\u0022\u0066\u0061\u0073\u0020\u0066\u0061\u002D\u0073\u0061\u0076\u0065\u0022\u003E\u003C\u002F\u0069\u003E\u0020\u004B\u0061\u0079\u0064\u0065\u0074",'\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':'İptal','\u0066\u006F\u0063\u0075\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D':false,'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>{let _0xdd883c;const _0x2b18b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0063\u0061\u0074");_0xdd883c=(644587^644579)+(965244^965241);var _0xcef4d=(195890^195898)+(790312^790319);const _0x578gf=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tide-drac-weiverp".split("").reverse().join(""));_0xcef4d='\u006B\u0064\u0065\u006F\u006C\u006A';_0x2b18b['\u0073\u0074\u0079\u006C\u0065']['\u006D\u0061\u0072\u0067\u0069\u006E']="\u0030";_0x2b18b['\u0073\u0074\u0079\u006C\u0065']['\u0068\u0065\u0069\u0067\u0068\u0074']="\u0033\u0030\u0070\u0078";_0x2b18b['\u0073\u0074\u0079\u006C\u0065']['\u0066\u006F\u006E\u0074\u0053\u0069\u007A\u0065']="\u0030\u002E\u0038\u0072\u0065\u006D";_0x2b18b['\u0073\u0074\u0079\u006C\u0065']['\u0070\u0061\u0064\u0064\u0069\u006E\u0067']="\u0030\u0020\u0035\u0070\u0078";_0x2b18b['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("\u0063\u0068\u0061\u006E\u0067\u0065",function(){_0x578gf['\u0063\u006C\u0061\u0073\u0073\u004E\u0061\u006D\u0065']="\u0063\u0061\u0072\u0064\u0020"+this['\u0076\u0061\u006C\u0075\u0065'];});},"preConfirm":()=>{return{"cat":document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0063\u0061\u0074")['\u0076\u0061\u006C\u0075\u0065'],"title":document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u0069\u0074\u006C\u0065")['\u0076\u0061\u006C\u0075\u0065'],'\u0074\u0065\u0078\u0074':document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u0065\u0078\u0074")['\u0076\u0061\u006C\u0075\u0065'],"script":document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0073\u0063\u0072\u0069\u0070\u0074")['\u0076\u0061\u006C\u0075\u0065'],'\u0063\u006F\u0064\u0065':document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0063\u006F\u0064\u0065")['\u0076\u0061\u006C\u0075\u0065'],'\u006C\u0069\u006E\u006B':document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u006C\u0069\u006E\u006B")['\u0076\u0061\u006C\u0075\u0065'],"image":document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("egami-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']};}});if(formValues){if(formValues['\u0063\u0061\u0074']!==_0x1dd24f['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079'])sendUpdate(_0x1dd24f['\u0074\u0069\u0074\u006C\u0065'],"\u0043\u0061\u0074\u0065\u0067\u006F\u0072\u0079",formValues['\u0063\u0061\u0074'],"drac".split("").reverse().join(""));if(formValues['\u0074\u0065\u0078\u0074']!==(_0x1dd24f['\u0074\u0065\u0078\u0074']||'')['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u003C\u0062\u0072\u003E','\u0067'),"\u000A"))setTimeout(()=>sendUpdate(_0x1dd24f['\u0074\u0069\u0074\u006C\u0065'],"\u0054\u0065\u0078\u0074",formValues['\u0074\u0065\u0078\u0074'],"\u0063\u0061\u0072\u0064"),307669^307233);if(formValues['\u0073\u0063\u0072\u0069\u0070\u0074']!==(_0x1dd24f['\u0073\u0063\u0072\u0069\u0070\u0074']||'')['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u003C\u0062\u0072\u003E','\u0067'),"\u000A"))setTimeout(()=>sendUpdate(_0x1dd24f['\u0074\u0069\u0074\u006C\u0065'],"\u0053\u0063\u0072\u0069\u0070\u0074",formValues['\u0073\u0063\u0072\u0069\u0070\u0074'],"\u0063\u0061\u0072\u0064"),246167^246399);if(formValues['\u0063\u006F\u0064\u0065']!==(_0x1dd24f['\u0063\u006F\u0064\u0065']||''))setTimeout(()=>sendUpdate(_0x1dd24f['\u0074\u0069\u0074\u006C\u0065'],"\u0043\u006F\u0064\u0065",formValues['\u0063\u006F\u0064\u0065'],"drac".split("").reverse().join("")),872482^873982);if(formValues['\u006C\u0069\u006E\u006B']!==(_0x1dd24f['\u006C\u0069\u006E\u006B']||''))setTimeout(()=>sendUpdate(_0x1dd24f['\u0074\u0069\u0074\u006C\u0065'],"\u004C\u0069\u006E\u006B",formValues['\u006C\u0069\u006E\u006B'],"\u0063\u0061\u0072\u0064"),960305^958689);if(formValues['\u0069\u006D\u0061\u0067\u0065']!==(_0x1dd24f['\u0069\u006D\u0061\u0067\u0065']||''))setTimeout(()=>sendUpdate(_0x1dd24f['\u0074\u0069\u0074\u006C\u0065'],"egamI".split("").reverse().join(""),formValues['\u0069\u006D\u0061\u0067\u0065'],"drac".split("").reverse().join("")),200128^197898);if(formValues['\u0074\u0069\u0074\u006C\u0065']!==_0x1dd24f['\u0074\u0069\u0074\u006C\u0065'])setTimeout(()=>sendUpdate(_0x1dd24f['\u0074\u0069\u0074\u006C\u0065'],"\u0054\u0069\u0074\u006C\u0065",formValues['\u0074\u0069\u0074\u006C\u0065'],"\u0063\u0061\u0072\u0064"),778558^780538);}}async function editSport(title){event['\u0073\u0074\u006F\u0070\u0050\u0072\u006F\u0070\u0061\u0067\u0061\u0074\u0069\u006F\u006E']();const s=sportsData['\u0066\u0069\u006E\u0064'](item=>item['\u0074\u0069\u0074\u006C\u0065']===title);if(!s)return Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061","\u0130\u00E7\u0065\u0072\u0069\u006B\u0020\u0062\u0075\u006C\u0075\u006E\u0061\u006D\u0061\u0064\u0131\u002E","rorre".split("").reverse().join(""));const{'\u0076\u0061\u006C\u0075\u0065':formValues}=await Swal['\u0066\u0069\u0072\u0065']({"title":"\u0053\u0070\u006F\u0072\u0020\u0130\u00E7\u0065\u0072\u0069\u011F\u0069\u006E\u0069\u0020\u0044\u00FC\u007A\u0065\u006E\u006C\u0065","html":`
+        </div>`,
+        width: '700px', showCancelButton: true, confirmButtonText: '<i class="fas fa-save"></i> Kaydet', cancelButtonText: 'İptal', focusConfirm: false,
+        didOpen: () => {
+            const selectEl = document.getElementById('swal-cat');
+            const cardEl = document.getElementById('preview-card-edit');
+            selectEl.style.margin = "0"; selectEl.style.height = "30px"; selectEl.style.fontSize = "0.8rem"; selectEl.style.padding = "0 5px";
+            selectEl.addEventListener('change', function () { cardEl.className = 'card ' + this.value; });
+        },
+        preConfirm: () => {
+            return {
+                cat: document.getElementById('swal-cat').value,
+                title: document.getElementById('swal-title').value,
+                text: document.getElementById('swal-text').value,
+                script: document.getElementById('swal-script').value,
+                code: document.getElementById('swal-code').value,
+                link: document.getElementById('swal-link').value,
+                image: document.getElementById('swal-image').value
+            }
+        }
+    });
+    if (formValues) {
+        if (formValues.cat !== item.category) sendUpdate(item.title, "Category", formValues.cat, 'card');
+        if (formValues.text !== (item.text || '').replace(/<br>/g, '\n')) setTimeout(() => sendUpdate(item.title, "Text", formValues.text, 'card'), 500);
+        if (formValues.script !== (item.script || '').replace(/<br>/g, '\n')) setTimeout(() => sendUpdate(item.title, "Script", formValues.script, 'card'), 1000);
+        if (formValues.code !== (item.code || '')) setTimeout(() => sendUpdate(item.title, "Code", formValues.code, 'card'), 1500);
+        if (formValues.link !== (item.link || '')) setTimeout(() => sendUpdate(item.title, "Link", formValues.link, 'card'), 2000);
+        if (formValues.image !== (item.image || '')) setTimeout(() => sendUpdate(item.title, "Image", formValues.image, 'card'), 2250);
+        if (formValues.title !== item.title) setTimeout(() => sendUpdate(item.title, "Title", formValues.title, 'card'), 2500);
+    }
+}
+async function editSport(title) {
+    event.stopPropagation();
+    const s = sportsData.find(item => item.title === title);
+    if (!s) return Swal.fire('Hata', 'İçerik bulunamadı.', 'error');
+    const { value: formValues } = await Swal.fire({
+        title: 'Spor İçeriğini Düzenle',
+        html: `
         <div class="card" style="text-align:left; border-left: 5px solid var(--primary); padding:15px; background:#f8f9fa;">
-            <label style="font-weight:bold;">Başlık</label><input id="swal-title" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${s['\u0074\u0069\u0074\u006C\u0065']}">
-            <label style="font-weight:bold;">Açıklama (Kısa)</label><textarea id="swal-desc" class="swal2-textarea" style="margin-bottom:10px;">${s['\u0064\u0065\u0073\u0063']||''}</textarea>
-            <label style="font-weight:bold;">İpucu (Tip)</label><input id="swal-tip" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${s['\u0074\u0069\u0070']||''}">
-            <label style="font-weight:bold;">Detay (Alt Metin)</label><textarea id="swal-detail" class="swal2-textarea" style="margin-bottom:10px;">${s['\u0064\u0065\u0074\u0061\u0069\u006C']||''}</textarea>
-            <label style="font-weight:bold;">Okunuşu</label><input id="swal-pron" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${s['\u0070\u0072\u006F\u006E\u0075\u006E\u0063\u0069\u0061\u0074\u0069\u006F\u006E']||''}">
-            <label style="font-weight:bold;">İkon Sınıfı</label><input id="swal-icon" class="swal2-input" style="width:100%;" value="${s['\u0069\u0063\u006F\u006E']||''}">
-        </div>`,"width":'700px','\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],"confirmButtonText":"\u004B\u0061\u0079\u0064\u0065\u0074","preConfirm":()=>[document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u0069\u0074\u006C\u0065")['\u0076\u0061\u006C\u0075\u0065'],document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("csed-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'],document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u0069\u0070")['\u0076\u0061\u006C\u0075\u0065'],document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0064\u0065\u0074\u0061\u0069\u006C")['\u0076\u0061\u006C\u0075\u0065'],document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0070\u0072\u006F\u006E")['\u0076\u0061\u006C\u0075\u0065'],document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0069\u0063\u006F\u006E")['\u0076\u0061\u006C\u0075\u0065']]});if(formValues){const _0x1c5b=s['\u0074\u0069\u0074\u006C\u0065'];if(formValues[832424^832425]!==s['\u0064\u0065\u0073\u0063'])sendUpdate(_0x1c5b,"\u0054\u0065\u0078\u0074",formValues[590967^590966],"trops".split("").reverse().join(""));if(formValues[758128^758130]!==s['\u0074\u0069\u0070'])setTimeout(()=>sendUpdate(_0x1c5b,"piT".split("").reverse().join(""),formValues[810014^810012],"\u0073\u0070\u006F\u0072\u0074"),226502^226610);if(formValues[477347^477344]!==s['\u0064\u0065\u0074\u0061\u0069\u006C'])setTimeout(()=>sendUpdate(_0x1c5b,"\u0044\u0065\u0074\u0061\u0069\u006C",formValues[298874^298873],"\u0073\u0070\u006F\u0072\u0074"),101648^102136);if(formValues[749036^749032]!==s['\u0070\u0072\u006F\u006E\u0075\u006E\u0063\u0069\u0061\u0074\u0069\u006F\u006E'])setTimeout(()=>sendUpdate(_0x1c5b,"\u0050\u0072\u006F\u006E\u0075\u006E\u0063\u0069\u0061\u0074\u0069\u006F\u006E",formValues[716434^716438],"trops".split("").reverse().join("")),142039^143115);if(formValues[745842^745847]!==s['\u0069\u0063\u006F\u006E'])setTimeout(()=>sendUpdate(_0x1c5b,"\u0049\u0063\u006F\u006E",formValues[703626^703631],"trops".split("").reverse().join("")),694292^696260);if(formValues[984579^984579]!==_0x1c5b)setTimeout(()=>sendUpdate(_0x1c5b,"\u0054\u0069\u0074\u006C\u0065",formValues[641943^641943],"\u0073\u0070\u006F\u0072\u0074"),686025^687629);}}async function editSales(title,_0x590eba){event['\u0073\u0074\u006F\u0070\u0050\u0072\u006F\u0070\u0061\u0067\u0061\u0074\u0069\u006F\u006E']();const s=salesScripts['\u0066\u0069\u006E\u0064'](item=>item['\u0074\u0069\u0074\u006C\u0065']===title);_0x590eba=(361263^361260)+(333473^333476);if(!s)return Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),".\u0131damanulub kire\xE7\u0130".split("").reverse().join(""),"\u0065\u0072\u0072\u006F\u0072");const{'\u0076\u0061\u006C\u0075\u0065':formValues}=await Swal['\u0066\u0069\u0072\u0065']({"title":'Satış Metnini Düzenle',"html":`<div class="card" style="text-align:left; border-left: 5px solid var(--sales); padding:15px; background:#ecfdf5;"><label style="font-weight:bold;">Başlık</label><input id="swal-title" class="swal2-input" style="width:100%; margin-bottom:10px;"
-        value="${s['\u0074\u0069\u0074\u006C\u0065']}"><label style="font-weight:bold;">Metin</label><textarea id="swal-text" class="swal2-textarea" style="min-height:150px;">${s['\u0074\u0065\u0078\u0074']||''}</textarea></div>`,"width":'700px',"showCancelButton":!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u004B\u0061\u0079\u0064\u0065\u0074","preConfirm":()=>[document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u0069\u0074\u006C\u0065")['\u0076\u0061\u006C\u0075\u0065'],document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("txet-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']]});if(formValues){let _0xb266c;const _0x24ec0e=s['\u0074\u0069\u0074\u006C\u0065'];_0xb266c=(561621^561622)+(621027^621026);if(formValues[663646^663647]!==s['\u0074\u0065\u0078\u0074'])sendUpdate(_0x24ec0e,"\u0054\u0065\u0078\u0074",formValues[787025^787024],"\u0073\u0061\u006C\u0065\u0073");if(formValues[915880^915880]!==_0x24ec0e)setTimeout(()=>sendUpdate(_0x24ec0e,"\u0054\u0069\u0074\u006C\u0065",formValues[975610^975610],"selas".split("").reverse().join("")),567639^567459);}}async function editNews(index,_0xad085f){var _0x7f32ca=(853822^853819)+(495093^495095);const i=newsData[index];_0x7f32ca=(376500^376500)+(206492^206488);var _0x4813c=(589747^589747)+(261897^261896);let _0xee_0xddb=`<option value="Aktif" ${i['\u0073\u0074\u0061\u0074\u0075\u0073']!=="\u0050\u0061\u0073\u0069\u0066"?"\u0073\u0065\u006C\u0065\u0063\u0074\u0065\u0064":''}>Aktif</option><option value="Pasif" ${i['\u0073\u0074\u0061\u0074\u0075\u0073']==="\u0050\u0061\u0073\u0069\u0066"?"detceles".split("").reverse().join(""):''}>Pasif</option>`;_0x4813c="mibqdp".split("").reverse().join("");let _0x05e5b=`<option value="info" ${i['\u0074\u0079\u0070\u0065']==="\u0069\u006E\u0066\u006F"?"\u0073\u0065\u006C\u0065\u0063\u0074\u0065\u0064":''}>Bilgi</option><option value="update" ${i['\u0074\u0079\u0070\u0065']==="etadpu".split("").reverse().join("")?"\u0073\u0065\u006C\u0065\u0063\u0074\u0065\u0064":''}>Değişiklik</option><option value="fix" ${i['\u0074\u0079\u0070\u0065']==="xif".split("").reverse().join("")?"detceles".split("").reverse().join(""):''}>Çözüldü</option>`;_0xad085f=(766404^766413)+(812036^812039);const{"value":formValues}=await Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u0044\u0075\u0079\u0075\u0072\u0075\u0079\u0075\u0020\u0044\u00FC\u007A\u0065\u006E\u006C\u0065","html":`<div class="card" style="text-align:left; border-left: 5px solid var(--secondary); padding:15px; background:#fff8e1;"><label style="font-weight:bold;">Başlık</label><input id="swal-title" class="swal2-input" style="width:100%; margin-bottom:10px;"
-        value="${i['\u0074\u0069\u0074\u006C\u0065']||''}"><div style="display:flex; gap:10px; margin-bottom:10px;"><div style="flex:1;"><label style="font-weight:bold;">Tarih</label><input id="swal-date" class="swal2-input" style="width:100%;"
-        value="${i['\u0064\u0061\u0074\u0065']||''}"></div><div style="flex:1;"><label style="font-weight:bold;">Tür</label><select id="swal-type" class="swal2-input" style="width:100%;">${_0x05e5b}</select></div></div><label style="font-weight:bold;">Metin</label><textarea id="swal-desc" class="swal2-textarea" style="margin-bottom:10px;">${i['\u0064\u0065\u0073\u0063']||''}</textarea><label style="font-weight:bold;">Görsel Linki</label><input id="swal-image" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${i['\u0069\u006D\u0061\u0067\u0065']||''}" placeholder="Görsel URL (opsiyonel)"><label style="font-weight:bold;">Durum</label><select id="swal-status" class="swal2-input" style="width:100%;">${_0xee_0xddb}</select></div>`,'\u0077\u0069\u0064\u0074\u0068':'600px','\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],"confirmButtonText":"\u004B\u0061\u0079\u0064\u0065\u0074",'\u0070\u0072\u0065\u0043\u006F\u006E\u0066\u0069\u0072\u006D':()=>[document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u0069\u0074\u006C\u0065")['\u0076\u0061\u006C\u0075\u0065'],document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0064\u0061\u0074\u0065")['\u0076\u0061\u006C\u0075\u0065'],document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("csed-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'],document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u0079\u0070\u0065")['\u0076\u0061\u006C\u0075\u0065'],document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0073\u0074\u0061\u0074\u0075\u0073")['\u0076\u0061\u006C\u0075\u0065'],document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("egami-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']]});if(formValues){const _0x5a6g=i['\u0074\u0069\u0074\u006C\u0065'];if(formValues[324607^324606]!==i['\u0064\u0061\u0074\u0065'])sendUpdate(_0x5a6g,"etaD".split("").reverse().join(""),formValues[333867^333866],"swen".split("").reverse().join(""));if(formValues[686945^686947]!==i['\u0064\u0065\u0073\u0063'])setTimeout(()=>sendUpdate(_0x5a6g,"\u0054\u0065\u0078\u0074",formValues[879654^879652],"\u006E\u0065\u0077\u0073"),298538^298974);if(formValues[502633^502634]!==i['\u0074\u0079\u0070\u0065'])setTimeout(()=>sendUpdate(_0x5a6g,"\u0043\u0061\u0074\u0065\u0067\u006F\u0072\u0079",formValues[290527^290524],"\u006E\u0065\u0077\u0073"),971023^971495);if(formValues[283987^283991]!==i['\u0073\u0074\u0061\u0074\u0075\u0073'])setTimeout(()=>sendUpdate(_0x5a6g,"sutatS".split("").reverse().join(""),formValues[721606^721602],"\u006E\u0065\u0077\u0073"),765577^764757);if(formValues[816968^816973]!==(i['\u0069\u006D\u0061\u0067\u0065']||''))setTimeout(()=>sendUpdate(_0x5a6g,"\u0049\u006D\u0061\u0067\u0065",formValues[751185^751188],"swen".split("").reverse().join("")),737754^739084);if(formValues[691006^691006]!==_0x5a6g)setTimeout(()=>sendUpdate(_0x5a6g,"eltiT".split("").reverse().join(""),formValues[377488^377488],"\u006E\u0065\u0077\u0073"),547583^548143);}}function closeModal(id){document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](id)['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");}function startTicker(_0xcb2f,_0xg2_0xbe7){var _0x8294ag=(298888^298893)+(575404^575396);const t=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tnetnoc-rekcit".split("").reverse().join(""));_0x8294ag='\u006D\u0064\u0063\u006C\u0062\u006E';const _0xc6b1ce=newsData['\u0066\u0069\u006C\u0074\u0065\u0072'](i=>i['\u0073\u0074\u0061\u0074\u0075\u0073']!=="\u0050\u0061\u0073\u0069\u0066");_0xcb2f=(514623^514623)+(326033^326033);if(_0xc6b1ce['\u006C\u0065\u006E\u0067\u0074\u0068']===(972575^972575)){t['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u0047\u00FC\u006E\u0063\u0065\u006C\u0020\u0064\u0075\u0079\u0075\u0072\u0075\u0020\u0079\u006F\u006B\u002E";t['\u0073\u0074\u0079\u006C\u0065']['\u0061\u006E\u0069\u006D\u0061\u0074\u0069\u006F\u006E']="enon".split("").reverse().join("");return;}let _0x6879d=_0xc6b1ce['\u006D\u0061\u0070'](i=>{return`<span style="color:#fabb00; font-weight:bold;">[${i['\u0064\u0061\u0074\u0065']}]</span> <span style="color:#fff;">${i['\u0074\u0069\u0074\u006C\u0065']}:</span> <span style="color:#ddd;">${i['\u0064\u0065\u0073\u0063']}</span>`;})['\u006A\u006F\u0069\u006E'](" ;psbn&;psbn&;psbn&;psbn& \u2022 ;psbn&;psbn&;psbn&;psbn& ".split("").reverse().join(""));_0xg2_0xbe7='\u0063\u0066\u0062\u0061\u006E\u006F';t['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x6879d+"\u0020\u0026\u006E\u0062\u0073\u0070\u003B\u0026\u006E\u0062\u0073\u0070\u003B\u0026\u006E\u0062\u0073\u0070\u003B\u0026\u006E\u0062\u0073\u0070\u003B\u0020\u2022\u0020\u0026\u006E\u0062\u0073\u0070\u003B\u0026\u006E\u0062\u0073\u0070\u003B\u0026\u006E\u0062\u0073\u0070\u003B\u0026\u006E\u0062\u0073\u0070\u003B\u0020"+_0x6879d;t['\u0073\u0074\u0079\u006C\u0065']['\u0061\u006E\u0069\u006D\u0061\u0074\u0069\u006F\u006E']="etinifni raenil s091 llorcs-rekcit".split("").reverse().join("");}function openNews(){document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006E\u0065\u0077\u0073\u002D\u006D\u006F\u0064\u0061\u006C")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0066\u006C\u0065\u0078";const c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006E\u0065\u0077\u0073\u002D\u0063\u006F\u006E\u0074\u0061\u0069\u006E\u0065\u0072");c['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']='';newsData['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((i,index)=>{let _0x14239c=i['\u0074\u0079\u0070\u0065']==="\u0066\u0069\u0078"?"\u0074\u0061\u0067\u002D\u0066\u0069\u0078":i['\u0074\u0079\u0070\u0065']==="\u0075\u0070\u0064\u0061\u0074\u0065"?"etadpu-gat".split("").reverse().join(""):"\u0074\u0061\u0067\u002D\u0069\u006E\u0066\u006F";let _0xfcd52c=i['\u0074\u0079\u0070\u0065']==="xif".split("").reverse().join("")?"\u00C7\u00F6\u007A\u00FC\u006C\u0064\u00FC":i['\u0074\u0079\u0070\u0065']==="etadpu".split("").reverse().join("")?"\u0044\u0065\u011F\u0069\u015F\u0069\u006B\u006C\u0069\u006B":"\u0042\u0069\u006C\u0067\u0069";var _0xf3486d=(629200^629208)+(686485^686486);let _0xa6_0xe1f=i['\u0073\u0074\u0061\u0074\u0075\u0073']==="fisaP".split("").reverse().join("")?"\u006F\u0070\u0061\u0063\u0069\u0074\u0079\u003A\u0030\u002E\u0035\u003B\u0020\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064\u003A\u0023\u0065\u0065\u0065\u003B":'';_0xf3486d=129806^129804;var _0x39e7e=(797469^797470)+(903272^903264);let _0x13e=i['\u0073\u0074\u0061\u0074\u0075\u0073']==="fisaP".split("").reverse().join("")?">naps/<F\u0130SAP>\";etihw:roloc ;555#:dnuorgkcab\"=elyts \"gat-swen\"=ssalc naps<".split("").reverse().join(""):'';_0x39e7e="iepipg".split("").reverse().join("");let _0x13a7f=isAdminMode&&isEditingActive?`<i class="fas fa-pencil-alt edit-icon" style="top:0; right:0; font-size:0.9rem; padding:4px;" onclick="event.stopPropagation(); editNews(${index})"></i>`:'';let _0xe62c2e;let _0x2714a=i['\u0069\u006D\u0061\u0067\u0065']?`<div style="margin:10px 0;"><img src="${processImageUrl(i['\u0069\u006D\u0061\u0067\u0065'])}" loading="lazy" onerror="this.style.display='none'" style="max-width:100%; border-radius:8px; max-height:300px; object-fit:cover;"></div>`:'';_0xe62c2e=(321114^321107)+(114819^114817);c['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']+=`<div class="news-item" style="${_0xa6_0xe1f}">${_0x13a7f}<span class="news-date">${i['\u0064\u0061\u0074\u0065']}</span><span class="news-title">${i['\u0074\u0069\u0074\u006C\u0065']} ${_0x13e}</span>${_0x2714a}<div class="news-desc" style="white-space: pre-line">${i['\u0064\u0065\u0073\u0063']}</div><span class="news-tag ${_0x14239c}">${_0xfcd52c}</span></div>`;});}async function fetchBroadcastFlow(_0x8_0xf5a){const d=await apiCall("\u0067\u0065\u0074\u0042\u0072\u006F\u0061\u0064\u0063\u0061\u0073\u0074\u0046\u006C\u006F\u0077");_0x8_0xf5a=(149266^149270)+(899902^899895);return d['\u0069\u0074\u0065\u006D\u0073']||[];}async function openBroadcastFlow(){Swal['\u0066\u0069\u0072\u0065']({"title":"Yayın Akışı",'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067'](),'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false});try{const _0x29_0xbcc=await fetchBroadcastFlow();if(!_0x29_0xbcc||!_0x29_0xbcc['\u006C\u0065\u006E\u0067\u0074\u0068']){Swal['\u0066\u0069\u0072\u0065']("\u0059\u0061\u0079\u0131\u006E\u0020\u0041\u006B\u0131\u015F\u0131","\u004B\u0061\u0079\u0131\u0074\u0020\u0062\u0075\u006C\u0075\u006E\u0061\u006D\u0061\u0064\u0131\u002E","\u0069\u006E\u0066\u006F");return;}const _0x6d99f=[..._0x29_0xbcc]['\u0073\u006F\u0072\u0074']((a,b)=>{var _0x6326d=(349017^349008)+(604154^604159);const _0x91b0e=Number(a?.startEpoch||193070^193070);_0x6326d=(216685^216686)+(622599^622599);var _0x796c=(700702^700697)+(489256^489262);const _0x921bce=Number(b?.startEpoch||268595^268595);_0x796c="hganjq".split("").reverse().join("");if(_0x91b0e&&_0x921bce)return _0x91b0e-_0x921bce;var _0x39f2b=(138789^138786)+(673738^673739);const _0x4ced=String(a?.dateISO||a?.date||"")+"\u0020"+String(a?.time||"");_0x39f2b=902313^902318;const _0x049fd=String(b?.dateISO||b?.date||"")+"\u0020"+String(b?.time||"");return _0x4ced['\u006C\u006F\u0063\u0061\u006C\u0065\u0043\u006F\u006D\u0070\u0061\u0072\u0065'](_0x049fd);});const _0xfg2aef=Date['\u006E\u006F\u0077']();var _0xa3eb=(164738^164746)+(544960^544960);const _0xebc37f={};_0xa3eb=(516117^516125)+(278470^278465);let _0x2a64c;const _0x6c_0xf1f={};_0x2a64c=453988^453986;_0x6d99f['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](it=>{const _0x6cbee=String(it?.dateISO||it?.date||"koY hiraT".split("").reverse().join(""));if(!_0xebc37f[_0x6cbee])_0xebc37f[_0x6cbee]=[];_0xebc37f[_0x6cbee]['\u0070\u0075\u0073\u0068'](it);if(!_0x6c_0xf1f[_0x6cbee]){_0x6c_0xf1f[_0x6cbee]=String(it?.dateLabelTr||"");}});var _0xbbcb=(965560^965567)+(778259^778263);const _0x1bee=`
+            <label style="font-weight:bold;">Başlık</label><input id="swal-title" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${s.title}">
+            <label style="font-weight:bold;">Açıklama (Kısa)</label><textarea id="swal-desc" class="swal2-textarea" style="margin-bottom:10px;">${s.desc || ''}</textarea>
+            <label style="font-weight:bold;">İpucu (Tip)</label><input id="swal-tip" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${s.tip || ''}">
+            <label style="font-weight:bold;">Detay (Alt Metin)</label><textarea id="swal-detail" class="swal2-textarea" style="margin-bottom:10px;">${s.detail || ''}</textarea>
+            <label style="font-weight:bold;">Okunuşu</label><input id="swal-pron" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${s.pronunciation || ''}">
+            <label style="font-weight:bold;">İkon Sınıfı</label><input id="swal-icon" class="swal2-input" style="width:100%;" value="${s.icon || ''}">
+        </div>`,
+        width: '700px', showCancelButton: true, confirmButtonText: 'Kaydet',
+        preConfirm: () => [
+            document.getElementById('swal-title').value, document.getElementById('swal-desc').value, document.getElementById('swal-tip').value,
+            document.getElementById('swal-detail').value, document.getElementById('swal-pron').value, document.getElementById('swal-icon').value
+        ]
+    });
+    if (formValues) {
+        const originalTitle = s.title;
+        if (formValues[1] !== s.desc) sendUpdate(originalTitle, "Text", formValues[1], 'sport');
+        if (formValues[2] !== s.tip) setTimeout(() => sendUpdate(originalTitle, "Tip", formValues[2], 'sport'), 500);
+        if (formValues[3] !== s.detail) setTimeout(() => sendUpdate(originalTitle, "Detail", formValues[3], 'sport'), 1000);
+        if (formValues[4] !== s.pronunciation) setTimeout(() => sendUpdate(originalTitle, "Pronunciation", formValues[4], 'sport'), 1500);
+        if (formValues[5] !== s.icon) setTimeout(() => sendUpdate(originalTitle, "Icon", formValues[5], 'sport'), 2000);
+        if (formValues[0] !== originalTitle) setTimeout(() => sendUpdate(originalTitle, "Title", formValues[0], 'sport'), 2500);
+    }
+}
+async function editSales(title) {
+    event.stopPropagation();
+    const s = salesScripts.find(item => item.title === title);
+    if (!s) return Swal.fire('Hata', 'İçerik bulunamadı.', 'error');
+    const { value: formValues } = await Swal.fire({
+        title: 'Satış Metnini Düzenle',
+        html: `<div class="card" style="text-align:left; border-left: 5px solid var(--sales); padding:15px; background:#ecfdf5;"><label style="font-weight:bold;">Başlık</label><input id="swal-title" class="swal2-input" style="width:100%; margin-bottom:10px;"
+        value="${s.title}"><label style="font-weight:bold;">Metin</label><textarea id="swal-text" class="swal2-textarea" style="min-height:150px;">${s.text || ''}</textarea></div>`,
+        width: '700px', showCancelButton: true, confirmButtonText: 'Kaydet',
+        preConfirm: () => [document.getElementById('swal-title').value, document.getElementById('swal-text').value]
+    });
+    if (formValues) {
+        const originalTitle = s.title;
+        if (formValues[1] !== s.text) sendUpdate(originalTitle, "Text", formValues[1], 'sales');
+        if (formValues[0] !== originalTitle) setTimeout(() => sendUpdate(originalTitle, "Title", formValues[0], 'sales'), 500);
+    }
+}
+async function editNews(index) {
+    const i = newsData[index];
+    let statusOptions = `<option value="Aktif" ${i.status !== 'Pasif' ? 'selected' : ''}>Aktif</option><option value="Pasif" ${i.status === 'Pasif' ? 'selected' : ''}>Pasif</option>`;
+    let typeOptions = `<option value="info" ${i.type === 'info' ? 'selected' : ''}>Bilgi</option><option value="update" ${i.type === 'update' ? 'selected' : ''}>Değişiklik</option><option value="fix" ${i.type === 'fix' ? 'selected' : ''}>Çözüldü</option>`;
+
+    const { value: formValues } = await Swal.fire({
+        title: 'Duyuruyu Düzenle',
+        html: `<div class="card" style="text-align:left; border-left: 5px solid var(--secondary); padding:15px; background:#fff8e1;"><label style="font-weight:bold;">Başlık</label><input id="swal-title" class="swal2-input" style="width:100%; margin-bottom:10px;"
+        value="${i.title || ''}"><div style="display:flex; gap:10px; margin-bottom:10px;"><div style="flex:1;"><label style="font-weight:bold;">Tarih</label><input id="swal-date" class="swal2-input" style="width:100%;"
+        value="${i.date || ''}"></div><div style="flex:1;"><label style="font-weight:bold;">Tür</label><select id="swal-type" class="swal2-input" style="width:100%;">${typeOptions}</select></div></div><label style="font-weight:bold;">Metin</label><textarea id="swal-desc" class="swal2-textarea" style="margin-bottom:10px;">${i.desc || ''}</textarea><label style="font-weight:bold;">Görsel Linki</label><input id="swal-image" class="swal2-input" style="width:100%; margin-bottom:10px;" value="${i.image || ''}" placeholder="Görsel URL (opsiyonel)"><label style="font-weight:bold;">Durum</label><select id="swal-status" class="swal2-input" style="width:100%;">${statusOptions}</select></div>`,
+        width: '600px', showCancelButton: true, confirmButtonText: 'Kaydet',
+        preConfirm: () => [
+            document.getElementById('swal-title').value, document.getElementById('swal-date').value,
+            document.getElementById('swal-desc').value, document.getElementById('swal-type').value, document.getElementById('swal-status').value,
+            document.getElementById('swal-image').value
+        ]
+    });
+    if (formValues) {
+        const originalTitle = i.title;
+        if (formValues[1] !== i.date) sendUpdate(originalTitle, "Date", formValues[1], 'news');
+        if (formValues[2] !== i.desc) setTimeout(() => sendUpdate(originalTitle, "Text", formValues[2], 'news'), 500);
+        if (formValues[3] !== i.type) setTimeout(() => sendUpdate(originalTitle, "Category", formValues[3], 'news'), 1000);
+        if (formValues[4] !== i.status) setTimeout(() => sendUpdate(originalTitle, "Status", formValues[4], 'news'), 1500);
+        if (formValues[5] !== (i.image || '')) setTimeout(() => sendUpdate(originalTitle, "Image", formValues[5], 'news'), 1750);
+        if (formValues[0] !== originalTitle) setTimeout(() => sendUpdate(originalTitle, "Title", formValues[0], 'news'), 2000);
+    }
+}
+// --- STANDARD MODALS (TICKER, NEWS, GUIDE, SALES) ---
+function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+function startTicker() {
+    const t = document.getElementById('ticker-content');
+    const activeNews = newsData.filter(i => i.status !== 'Pasif');
+    if (activeNews.length === 0) { t.innerHTML = "Güncel duyuru yok."; t.style.animation = 'none'; return; }
+
+    let tickerText = activeNews.map(i => {
+        return `<span style="color:#fabb00; font-weight:bold;">[${i.date}]</span> <span style="color:#fff;">${i.title}:</span> <span style="color:#ddd;">${i.desc}</span>`;
+    }).join(' &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; ');
+    t.innerHTML = tickerText + ' &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; ' + tickerText;
+    t.style.animation = 'ticker-scroll 190s linear infinite';
+}
+function openNews() {
+    document.getElementById('news-modal').style.display = 'flex';
+    const c = document.getElementById('news-container');
+    c.innerHTML = '';
+    newsData.forEach((i, index) => {
+        let cl = i.type === 'fix' ? 'tag-fix' : (i.type === 'update' ? 'tag-update' : 'tag-info');
+        let tx = i.type === 'fix' ? 'Çözüldü' : (i.type === 'update' ? 'Değişiklik' : 'Bilgi');
+        let passiveStyle = i.status === 'Pasif' ? 'opacity:0.5; background:#eee;' : '';
+        let passiveBadge = i.status === 'Pasif' ? '<span class="news-tag" style="background:#555; color:white;">PASİF</span>' : '';
+        let editBtn = (isAdminMode && isEditingActive) ? `<i class="fas fa-pencil-alt edit-icon" style="top:0; right:0; font-size:0.9rem; padding:4px;" onclick="event.stopPropagation(); editNews(${index})"></i>` : '';
+        let imageHtml = i.image ? `<div style="margin:10px 0;"><img src="${processImageUrl(i.image)}" loading="lazy" onerror="this.style.display='none'" style="max-width:100%; border-radius:8px; max-height:300px; object-fit:cover;"></div>` : '';
+        c.innerHTML += `<div class="news-item" style="${passiveStyle}">${editBtn}<span class="news-date">${i.date}</span><span class="news-title">${i.title} ${passiveBadge}</span>${imageHtml}<div class="news-desc" style="white-space: pre-line">${i.desc}</div><span class="news-tag ${cl}">${tx}</span></div>`;
+    });
+}
+
+
+// =========================
+// ✅ Yayın Akışı (E-Tablo'dan)
+// =========================
+async function fetchBroadcastFlow() {
+    const d = await apiCall("getBroadcastFlow");
+    return d.items || [];
+}
+
+async function openBroadcastFlow() {
+    Swal.fire({
+        title: "Yayın Akışı",
+        didOpen: () => Swal.showLoading(),
+        showConfirmButton: false
+    });
+
+    try {
+        const itemsRaw = await fetchBroadcastFlow();
+
+        if (!itemsRaw || !itemsRaw.length) {
+            Swal.fire("Yayın Akışı", "Kayıt bulunamadı.", "info");
+            return;
+        }
+
+        // ✅ Sıralama (epoch varsa kesin, yoksa tarih+saate göre)
+        const items = [...itemsRaw].sort((a, b) => {
+            const ae = Number(a?.startEpoch || 0);
+            const be = Number(b?.startEpoch || 0);
+            if (ae && be) return ae - be;
+
+            const ak = String(a?.dateISO || a?.date || "") + " " + String(a?.time || "");
+            const bk = String(b?.dateISO || b?.date || "") + " " + String(b?.time || "");
+            return ak.localeCompare(bk);
+        });
+
+        const now = Date.now();
+
+        // ✅ Tarihe göre grupla (dateISO)
+        const byDate = {};
+        const dateLabelByKey = {};
+        items.forEach(it => {
+            const key = String(it?.dateISO || it?.date || "Tarih Yok");
+            if (!byDate[key]) byDate[key] = [];
+            byDate[key].push(it);
+
+            if (!dateLabelByKey[key]) {
+                dateLabelByKey[key] = String(it?.dateLabelTr || "");
+            }
+        });
+
+        // ✅ Popup CSS (Swal içi)
+        const css = `
       <style>
         .ba-wrap{ text-align:left; max-height:62vh; overflow:auto; padding-right:6px; }
         .ba-day{ margin:14px 0 8px; font-weight:900; color:#0e1b42; display:flex; align-items:center; gap:10px; }
@@ -128,29 +1382,809 @@ function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(
         .ba-dot .up{ background:var(--secondary); }
         .ba-dot .pa{ background:#d9534f; }
       </style>
-    `;_0xbbcb='\u006E\u0063\u0067\u0063\u0068\u0069';let _0x30_0x2b8=`${_0x1bee}<div class="ba-wrap">`;_0x30_0x2b8+=`
+    `;
+
+        let html = `${css}<div class="ba-wrap">`;
+        html += `
       <div class="ba-legend">
         <span class="ba-dot"><i class="up"></i> Yaklaşan / Gelecek</span>
         <span class="ba-dot"><i class="pa"></i> Tarihi Geçmiş</span>
       </div>
-    `;const _0x6b2={};const _0x2a2={};var _0xbfecf=(738896^738898)+(635621^635617);const _0x9e9a3f=Object['\u006B\u0065\u0079\u0073'](_0xebc37f);_0xbfecf="emfjch".split("").reverse().join("");_0x9e9a3f['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](key=>{var _0xdaa1fg=(169361^169362)+(924114^924114);const _0x3923a=_0xebc37f[key]||[];_0xdaa1fg="nmglih".split("").reverse().join("");_0x3923a['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](it=>{var _0x2151gf=(807600^807606)+(853699^853703);const startEpoch=Number(it?.startEpoch||209646^209646);_0x2151gf="aihcpd".split("").reverse().join("");const isPast=startEpoch?startEpoch<_0xfg2aef:false;var _0xa0228f=(164850^164858)+(774610^774613);const _0x2c2=isPast?_0x2a2:_0x6b2;_0xa0228f=446153^446144;if(!_0x2c2[key])_0x2c2[key]=[];_0x2c2[key]['\u0070\u0075\u0073\u0068'](it);});});const _0xb5_0xb0e=(title,bucket,emptyText)=>{let _0xff_0x0d6;const _0xad5ddb=_0x9e9a3f['\u0066\u0069\u006C\u0074\u0065\u0072'](k=>bucket[k]&&bucket[k]['\u006C\u0065\u006E\u0067\u0074\u0068']);_0xff_0x0d6=960872^960875;if(!_0xad5ddb['\u006C\u0065\u006E\u0067\u0074\u0068']){_0x30_0x2b8+=`<div class="ba-empty">${escapeHtml(emptyText)}</div>`;return;}_0x30_0x2b8+=`<div class="ba-section">${escapeHtml(title)}</div>`;_0xad5ddb['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](key=>{const _0xe5_0xdg6=_0x6c_0xf1f[key]||_formatBroadcastDateTr({"dateISO":key});_0x30_0x2b8+=`<div class="ba-day">${escapeHtml(_0xe5_0xdg6)}</div>`;_0x30_0x2b8+=`<div class="ba-grid">`;bucket[key]['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](it=>{const startEpoch=Number(it?.startEpoch||807772^807772);const isPast=startEpoch?startEpoch<_0xfg2aef:false;const _0x94b88d=String(it?.time||"")['\u0074\u0072\u0069\u006D']();var _0x7d55ee=(449522^449530)+(911433^911437);const _0xeg_0x896=String(it?.event||"")['\u0074\u0072\u0069\u006D']();_0x7d55ee=(935590^935587)+(804519^804512);var _0x68e5ga=(365448^365452)+(889166^889159);const _0x83d3ef=String(it?.announcer||"")['\u0074\u0072\u0069\u006D']();_0x68e5ga=625096^625098;_0x30_0x2b8+=`
-            <div class="ba-row ${isPast?"\u0070\u0061\u0073\u0074":""}">
+    `;
+
+        // ✅ Yaklaşan / Gelecek ve Geçmiş olarak ayır
+        const upcomingByDate = {};
+        const pastByDate = {};
+        const dateKeys = Object.keys(byDate);
+
+        dateKeys.forEach(key => {
+            const arr = byDate[key] || [];
+            arr.forEach(it => {
+                const startEpoch = Number(it?.startEpoch || 0);
+                const isPast = startEpoch ? (startEpoch < now) : false;
+                const bucket = isPast ? pastByDate : upcomingByDate;
+                if (!bucket[key]) bucket[key] = [];
+                bucket[key].push(it);
+            });
+        });
+
+        const renderSection = (title, bucket, emptyText) => {
+            const keys = dateKeys.filter(k => (bucket[k] && bucket[k].length));
+            if (!keys.length) {
+                html += `<div class="ba-empty">${escapeHtml(emptyText)}</div>`;
+                return;
+            }
+            html += `<div class="ba-section">${escapeHtml(title)}</div>`;
+            keys.forEach(key => {
+                const label = dateLabelByKey[key] || _formatBroadcastDateTr({ dateISO: key });
+                html += `<div class="ba-day">${escapeHtml(label)}</div>`;
+                html += `<div class="ba-grid">`;
+
+                bucket[key].forEach(it => {
+                    const startEpoch = Number(it?.startEpoch || 0);
+                    const isPast = startEpoch ? (startEpoch < now) : false;
+
+                    const time = String(it?.time || "").trim();
+                    const event = String(it?.event || "").trim();
+                    const announcer = String(it?.announcer || "").trim();
+
+                    html += `
+            <div class="ba-row ${isPast ? "past" : ""}">
               <div class="ba-top">
-                <div class="ba-title">${escapeHtml(_0xeg_0x896||"\u002D")}</div>
-                <div class="ba-time">${escapeHtml(_0x94b88d||"")}</div>
+                <div class="ba-title">${escapeHtml(event || "-")}</div>
+                <div class="ba-time">${escapeHtml(time || "")}</div>
               </div>
               <div class="ba-sub">
-                <span><i class="fas fa-microphone"></i> ${escapeHtml(_0x83d3ef||"\u002D")}</span>
+                <span><i class="fas fa-microphone"></i> ${escapeHtml(announcer || "-")}</span>
               </div>
-            </div>`;});_0x30_0x2b8+=`</div>`;});};_0xb5_0xb0e("\u0059\u0061\u006B\u006C\u0061\u015F\u0061\u006E\u0020\u002F\u0020\u0047\u0065\u006C\u0065\u0063\u0065\u006B",_0x6b2,"\u0059\u0061\u006B\u006C\u0061\u015F\u0061\u006E\u0020\u0079\u0061\u0079\u0131\u006E\u0020\u0062\u0075\u006C\u0075\u006E\u0061\u006D\u0061\u0064\u0131\u002E");_0x30_0x2b8+=`<div class="ba-divider"></div>`;_0xb5_0xb0e("\u0047\u0065\u00E7\u006D\u0069\u015F",_0x2a2,"\u0047\u0065\u00E7\u006D\u0069\u015F\u0020\u0079\u0061\u0079\u0131\u006E\u0020\u0062\u0075\u006C\u0075\u006E\u0061\u006D\u0061\u0064\u0131\u002E");_0x30_0x2b8+=`</div>`;Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"Yayın Akışı",'\u0068\u0074\u006D\u006C':_0x30_0x2b8,'\u0077\u0069\u0064\u0074\u0068':980,"confirmButtonText":"\u004B\u0061\u0070\u0061\u0074"});}catch(err){Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",err?.message||"\u0059\u0061\u0079\u0131\u006E\u0020\u0061\u006B\u0131\u015F\u0131\u0020\u0061\u006C\u0131\u006E\u0061\u006D\u0061\u0064\u0131\u002E","rorre".split("").reverse().join(""));}}function _formatBroadcastDateTr(it){if(it&&it['\u0064\u0061\u0074\u0065\u004C\u0061\u0062\u0065\u006C\u0054\u0072'])return String(it['\u0064\u0061\u0074\u0065\u004C\u0061\u0062\u0065\u006C\u0054\u0072']);var _0x214b=(422699^422697)+(994488^994490);const s=String(it?.dateISO||it?.date||"")['\u0074\u0072\u0069\u006D']();_0x214b=(839901^839897)+(855983^855974);if(!s)return"\u0054\u0061\u0072\u0069\u0068\u0020\u0059\u006F\u006B";var _0xdb4aa=(675006^675005)+(335347^335345);const m=s['\u006D\u0061\u0074\u0063\u0068'](new RegExp('\u005E\u0028\u005C\u0064\u007B\u0034\u007D\u0029\u002D\u0028\u005C\u0064\u007B\u0031\u002C\u0032\u007D\u0029\u002D\u0028\u005C\u0064\u007B\u0031\u002C\u0032\u007D\u0029',""));_0xdb4aa=(113830^113830)+(593244^593237);if(m){var _0xdb823a=(500720^500721)+(851049^851040);const d=new Date(Number(m[242689^242688]),Number(m[393799^393797])-(947566^947567),Number(m[687974^687973]));_0xdb823a=301445^301442;return new Intl['\u0044\u0061\u0074\u0065\u0054\u0069\u006D\u0065\u0046\u006F\u0072\u006D\u0061\u0074']("\u0074\u0072\u002D\u0054\u0052",{'\u0064\u0061\u0079':"\u0032\u002D\u0064\u0069\u0067\u0069\u0074","month":"\u006C\u006F\u006E\u0067",'\u0079\u0065\u0061\u0072':"\u006E\u0075\u006D\u0065\u0072\u0069\u0063","weekday":"\u006C\u006F\u006E\u0067"})['\u0066\u006F\u0072\u006D\u0061\u0074'](d);}const _0xfd379b=s['\u006D\u0061\u0074\u0063\u0068'](new RegExp(")}4{d\\(]-/.\\[)}2,1{d\\(]-/.\\[)}2,1{d\\(^".split("").reverse().join(""),""));if(_0xfd379b){var _0x2e920e=(267666^267671)+(870141^870137);const d=new Date(Number(_0xfd379b[903326^903325]),Number(_0xfd379b[778805^778807])-(590257^590256),Number(_0xfd379b[195348^195349]));_0x2e920e=(541062^541058)+(574131^574134);return new Intl['\u0044\u0061\u0074\u0065\u0054\u0069\u006D\u0065\u0046\u006F\u0072\u006D\u0061\u0074']("\u0074\u0072\u002D\u0054\u0052",{'\u0064\u0061\u0079':"2-digit",'\u006D\u006F\u006E\u0074\u0068':"\u006C\u006F\u006E\u0067","year":"\u006E\u0075\u006D\u0065\u0072\u0069\u0063",'\u0077\u0065\u0065\u006B\u0064\u0061\u0079':"\u006C\u006F\u006E\u0067"})['\u0066\u006F\u0072\u006D\u0061\u0074'](d);}return s;}function escapeHtml(str){return String(str??"")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065\u0041\u006C\u006C']("\u0026","\u0026\u0061\u006D\u0070\u003B")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065\u0041\u006C\u006C']("\u003C","\u0026\u006C\u0074\u003B")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065\u0041\u006C\u006C']("\u003E","\u0026\u0067\u0074\u003B")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065\u0041\u006C\u006C']("\u0022",";touq&".split("").reverse().join(""))['\u0072\u0065\u0070\u006C\u0061\u0063\u0065\u0041\u006C\u006C']("\u0027",";930#&".split("").reverse().join(""));}var _0xfda1ad=(147215^147207)+(757140^757149);const __escapeHtml=escapeHtml;_0xfda1ad=424838^424838;var _0x8b1b6d=(177932^177935)+(807348^807349);const _escapeHtml=escapeHtml;_0x8b1b6d=864368^864371;var _0x8fgaf=(453833^453825)+(962186^962178);const DEBUG=(()=>{try{return localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("GUBED".split("").reverse().join(""))==="\u0031";}catch(e){return false;}})();_0x8fgaf=(757086^757086)+(753756^753748);function dlog(...args){try{if(DEBUG)console['\u006C\u006F\u0067'](...args);}catch(e){}}function safeLocalStorageSet(key,value,maxBytes=(661761^661765)*(632631^631607)*(608822^609846)){try{let _0x9_0xfb4;const _0x17eaf=JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](value);_0x9_0xfb4=(775659^775663)+(329568^329573);if(_0x17eaf['\u006C\u0065\u006E\u0067\u0074\u0068']*(249052^249054)>maxBytes){try{Swal['\u0066\u0069\u0072\u0065']("\u0131rayU".split("").reverse().join(""),"\u0056\u0065\u0072\u0069\u0020\u00E7\u006F\u006B\u0020\u0062\u00FC\u0079\u00FC\u006B\u002C\u0020\u006B\u0061\u0079\u0064\u0065\u0064\u0069\u006C\u0065\u006D\u0065\u0064\u0069","\u0077\u0061\u0072\u006E\u0069\u006E\u0067");}catch(e){}return false;}localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D'](key,_0x17eaf);return!![];}catch(e){if(e&&(e['\u006E\u0061\u006D\u0065']==="\u0051\u0075\u006F\u0074\u0061\u0045\u0078\u0063\u0065\u0065\u0064\u0065\u0064\u0045\u0072\u0072\u006F\u0072"||e['\u006E\u0061\u006D\u0065']==="\u004E\u0053\u005F\u0045\u0052\u0052\u004F\u0052\u005F\u0044\u004F\u004D\u005F\u0051\u0055\u004F\u0054\u0041\u005F\u0052\u0045\u0041\u0043\u0048\u0045\u0044")){try{Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),"\u0044\u0065\u0070\u006F\u006C\u0061\u006D\u0061\u0020\u0061\u006C\u0061\u006E\u0131\u0020\u0064\u006F\u006C\u0075","\u0065\u0072\u0072\u006F\u0072");}catch(x){}}else{dlog("\u005B\u0073\u0061\u0066\u0065\u004C\u006F\u0063\u0061\u006C\u0053\u0074\u006F\u0072\u0061\u0067\u0065\u0053\u0065\u0074\u005D",e);}return false;}}function safeLocalStorageGet(key,fallback=null){try{const _0x1cf=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D'](key);if(_0x1cf==null)return fallback;return JSON['\u0070\u0061\u0072\u0073\u0065'](_0x1cf);}catch(e){return fallback;}}var _0x51827a=(896464^896473)+(356566^356566);const storage={"set":(k,v)=>safeLocalStorageSet(k,v),'\u0067\u0065\u0074':(k,fb=null)=>safeLocalStorageGet(k,fb),'\u0064\u0065\u006C':k=>{try{localStorage['\u0072\u0065\u006D\u006F\u0076\u0065\u0049\u0074\u0065\u006D'](k);}catch(e){}}};_0x51827a=(879450^879449)+(491610^491608);window['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("rorre".split("").reverse().join(""),function(e){try{if(isAdminMode||isLocAdmin)dlog("]rorrE labolG[".split("").reverse().join(""),e&&(e['\u0065\u0072\u0072\u006F\u0072']||e['\u006D\u0065\u0073\u0073\u0061\u0067\u0065'])?e['\u0065\u0072\u0072\u006F\u0072']||e['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']:e);}catch(_){}try{if(typeof showGlobalError==="\u0066\u0075\u006E\u0063\u0074\u0069\u006F\u006E")showGlobalError(" :atah neyemnelkeB".split("").reverse().join("")+(e&&e['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']?e['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']:"\u0042\u0069\u006C\u0069\u006E\u006D\u0065\u0079\u0065\u006E"));}catch(_){}});window['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("\u0075\u006E\u0068\u0061\u006E\u0064\u006C\u0065\u0064\u0072\u0065\u006A\u0065\u0063\u0074\u0069\u006F\u006E",function(e){try{if(isAdminMode||isLocAdmin)dlog("\u005B\u0055\u006E\u0068\u0061\u006E\u0064\u006C\u0065\u0064\u0020\u0050\u0072\u006F\u006D\u0069\u0073\u0065\u005D",e&&e['\u0072\u0065\u0061\u0073\u006F\u006E']?e['\u0072\u0065\u0061\u0073\u006F\u006E']:e);}catch(_){}try{if(typeof showGlobalError==="noitcnuf".split("").reverse().join(""))showGlobalError("\u0042\u0065\u006B\u006C\u0065\u006E\u006D\u0065\u0079\u0065\u006E\u0020\u0068\u0061\u0074\u0061\u003A\u0020"+(e&&e['\u0072\u0065\u0061\u0073\u006F\u006E']&&e['\u0072\u0065\u0061\u0073\u006F\u006E']['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']?e['\u0072\u0065\u0061\u0073\u006F\u006E']['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']:"\u0042\u0069\u006C\u0069\u006E\u006D\u0065\u0079\u0065\u006E"));}catch(_){}});function openGuide(){document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0067\u0075\u0069\u0064\u0065\u002D\u006D\u006F\u0064\u0061\u006C")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="xelf".split("").reverse().join("");const _0x1b98cc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0067\u0075\u0069\u0064\u0065\u002D\u0067\u0072\u0069\u0064");_0x1b98cc['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']='';sportsData['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((s,index)=>{var _0xbgfbf=(849835^849839)+(456127^456120);let _0xd33c8c=s['\u0070\u0072\u006F\u006E\u0075\u006E\u0063\u0069\u0061\u0074\u0069\u006F\u006E']?`<div class="pronunciation-badge"> 🗣️  ${s['\u0070\u0072\u006F\u006E\u0075\u006E\u0063\u0069\u0061\u0074\u0069\u006F\u006E']}</div>`:'';_0xbgfbf=(280945^280948)+(286038^286036);let _0x136eae;let _0x42cdg=isAdminMode&&isEditingActive?`<i class="fas fa-pencil-alt edit-icon" style="top:5px; right:5px; z-index:50;" onclick="event.stopPropagation(); editSport('${escapeForJsString(s['\u0074\u0069\u0074\u006C\u0065'])}')"></i>`:'';_0x136eae=532367^532358;_0x1b98cc['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']+=`<div class="guide-item" onclick="showSportDetail(${index})">${_0x42cdg}<i class="fas ${s['\u0069\u0063\u006F\u006E']} guide-icon"></i><span class="guide-title">${s['\u0074\u0069\u0074\u006C\u0065']}</span>${_0xd33c8c}<div class="guide-desc" style="white-space: pre-line">${s['\u0064\u0065\u0073\u0063']}</div><div class="guide-tip"><i class="fas fa-lightbulb"></i> ${s['\u0074\u0069\u0070']}</div><div style="font-size:0.8rem; color:#999; margin-top:5px;">(Detay için tıkla)</div></div>`;});}function showSportDetail(index){const _0xge3cgd=sportsData[index];const _0xgfebe=_0xge3cgd['\u0064\u0065\u0074\u0061\u0069\u006C']?_0xge3cgd['\u0064\u0065\u0074\u0061\u0069\u006C']['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u005C\u006E','\u0067'),"\u003C\u0062\u0072\u003E"):".\u015Fimemnelke yated z\xFCneh ni\xE7i kire\xE7i uB".split("").reverse().join("");var _0xb1abf=(372884^372887)+(640733^640733);const _0xg3624a=_0xge3cgd['\u0070\u0072\u006F\u006E\u0075\u006E\u0063\u0069\u0061\u0074\u0069\u006F\u006E']?`<div style="color:#e65100; font-weight:bold; margin-bottom:15px;"> 🗣️  Okunuşu: ${_0xge3cgd['\u0070\u0072\u006F\u006E\u0075\u006E\u0063\u0069\u0061\u0074\u0069\u006F\u006E']}</div>`:'';_0xb1abf=(361419^361421)+(977040^977042);Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':`<i class="fas ${_0xge3cgd['\u0069\u0063\u006F\u006E']}" style="color:#0e1b42;"></i> ${_0xge3cgd['\u0074\u0069\u0074\u006C\u0065']}`,'\u0068\u0074\u006D\u006C':`${_0xg3624a}<div style="text-align:left; font-size:1rem; line-height:1.6;">${_0xgfebe}</div>`,'\u0073\u0068\u006F\u0077\u0043\u006C\u006F\u0073\u0065\u0042\u0075\u0074\u0074\u006F\u006E':!![],"showConfirmButton":false,"width":"\u0036\u0030\u0030\u0070\u0078",'\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064':"\u0023\u0066\u0038\u0066\u0039\u0066\u0061"});}function openSales(){openTelesalesArea();}function toggleSales(index){const _0x0249bf=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`sales-${index}`);const _0x947c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`icon-${index}`);_0x0249bf['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0074\u006F\u0067\u0067\u006C\u0065']("evitca".split("").reverse().join(""));if(_0x0249bf['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0063\u006F\u006E\u0074\u0061\u0069\u006E\u0073']("evitca".split("").reverse().join(""))){_0x947c['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u0070\u006C\u0061\u0063\u0065']("\u0066\u0061\u002D\u0063\u0068\u0065\u0076\u0072\u006F\u006E\u002D\u0064\u006F\u0077\u006E","\u0066\u0061\u002D\u0063\u0068\u0065\u0076\u0072\u006F\u006E\u002D\u0075\u0070");}else{_0x947c['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u0070\u006C\u0061\u0063\u0065']("\u0066\u0061\u002D\u0063\u0068\u0065\u0076\u0072\u006F\u006E\u002D\u0075\u0070","\u0066\u0061\u002D\u0063\u0068\u0065\u0076\u0072\u006F\u006E\u002D\u0064\u006F\u0077\u006E");}}let pScore=326332^326332,pBalls=841358^841348,pCurrentQ=null;var _0x1c5g=(313155^313153)+(439352^439358);let pQuestionQueue=[];_0x1c5g=495815^495814;let pAskedCount=757797^757797;let pCorrectCount=989875^989875;let pWrongCount=856345^856345;function setDoubleIndicator(isActive){var _0xdb1d=(656362^656363)+(584349^584347);const _0x18fd=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("rotacidni-elbuod".split("").reverse().join(""));_0xdb1d=(107009^107017)+(507647^507645);if(!_0x18fd)return;_0x18fd['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']=isActive?"\u0069\u006E\u006C\u0069\u006E\u0065\u002D\u0066\u006C\u0065\u0078":"enon".split("").reverse().join("");}function updateJokerButtons(){const _0x44dab=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006A\u006F\u006B\u0065\u0072\u002D\u0063\u0061\u006C\u006C");const _0x614e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006A\u006F\u006B\u0065\u0072\u002D\u0068\u0061\u006C\u0066");const _0xc5fba=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006A\u006F\u006B\u0065\u0072\u002D\u0064\u006F\u0075\u0062\u006C\u0065");if(_0x44dab)_0x44dab['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=jokers['\u0063\u0061\u006C\u006C']===(755257^755257);if(_0x614e)_0x614e['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=jokers['\u0068\u0061\u006C\u0066']===(944872^944872);if(_0xc5fba)_0xc5fba['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=jokers['\u0064\u006F\u0075\u0062\u006C\u0065']===(434971^434971)||firstAnswerIndex!==-(879934^879935);if(firstAnswerIndex!==-(618689^618688)){if(_0x44dab)_0x44dab['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=!![];if(_0x614e)_0x614e['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=!![];if(_0xc5fba)_0xc5fba['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=!![];}}function useJoker(type){if(!pCurrentQ)return;if(jokers[type]===(855566^855566))return;if(firstAnswerIndex!==-(552400^552401)&&type!=="\u0064\u006F\u0075\u0062\u006C\u0065")return;jokers[type]=410232^410232;updateJokerButtons();var _0x73b3b=(280416^280416)+(557180^557183);const _0xab6fgb=pCurrentQ;_0x73b3b=(634002^634004)+(206862^206860);const _0xeaed=_0xab6fgb['\u0061'];const _0xa358f=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u002E\u0070\u0065\u006E\u0061\u006C\u0074\u0079\u002D\u0062\u0074\u006E");if(type==="\u0063\u0061\u006C\u006C"){const _0xfagde=["\u0055\u006D\u0075\u0074\u0020\u0042\u0065\u0079","\u0044\u006F\u011F\u0075\u015F\u0020\u0042\u0065\u0079","\u0044\u0065\u006E\u0069\u007A\u0020\u0042\u0065\u0079","\u0045\u0073\u0072\u0061\u0020\u0048\u0061\u006E\u0131\u006D"];const _0x8cedb=_0xfagde[Math['\u0066\u006C\u006F\u006F\u0072'](Math['\u0072\u0061\u006E\u0064\u006F\u006D']()*_0xfagde['\u006C\u0065\u006E\u0067\u0074\u0068'])];let _0xb9f3fc=_0xeaed;if(Math['\u0072\u0061\u006E\u0064\u006F\u006D']()>0.8&&_0xab6fgb['\u006F\u0070\u0074\u0073']['\u006C\u0065\u006E\u0067\u0074\u0068']>(273155^273154)){const incorrect=_0xab6fgb['\u006F\u0070\u0074\u0073']['\u006D\u0061\u0070']((_,i)=>i)['\u0066\u0069\u006C\u0074\u0065\u0072'](i=>i!==_0xeaed);_0xb9f3fc=incorrect[Math['\u0066\u006C\u006F\u006F\u0072'](Math['\u0072\u0061\u006E\u0064\u006F\u006D']()*incorrect['\u006C\u0065\u006E\u0067\u0074\u0068'])]??_0xeaed;}Swal['\u0066\u0069\u0072\u0065']({"icon":'info',"title":"\u0020\uD83D\uDCDE\u0020\u0054\u0065\u006C\u0065\u0066\u006F\u006E\u0020\u004A\u006F\u006B\u0065\u0072\u0069","html":`${_0x8cedb} soruyu cevaplıyor...<br><br>"Benim tahminim **${String['\u0066\u0072\u006F\u006D\u0043\u0068\u0061\u0072\u0043\u006F\u0064\u0065']((341043^341106)+_0xb9f3fc)}** şıkkı. Bundan ${Math['\u0072\u0061\u006E\u0064\u006F\u006D']()<0.8?"minime ko\xE7".split("").reverse().join(""):"\u0065\u006D\u0069\u006E\u0020\u0064\u0065\u011F\u0069\u006C\u0069\u006D"}."`,'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':'Kapat'});}else if(type==="\u0068\u0061\u006C\u0066"){var _0x7b_0xgaa=(575203^575202)+(359340^359338);const _0x938ae=Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0xab6fgb['\u006F\u0070\u0074\u0073'])?_0xab6fgb['\u006F\u0070\u0074\u0073']['\u006C\u0065\u006E\u0067\u0074\u0068']:427410^427410;_0x7b_0xgaa=(555358^555353)+(349264^349264);if(_0x938ae<=(634910^634908)){Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':'info',"title":"\u2702\uFE0F\u0020\u0035\u0030\u003A\u0035\u0030","text":"\u0042\u0075\u0020\u0073\u006F\u0072\u0075\u0064\u0061\u0020\u0035\u0030\u003A\u0035\u0030\u0020\u0075\u0079\u0067\u0075\u006C\u0061\u006E\u0061\u006D\u0061\u007A\u002E",'\u0074\u006F\u0061\u0073\u0074':!![],'\u0070\u006F\u0073\u0069\u0074\u0069\u006F\u006E':'top',"showConfirmButton":false,'\u0074\u0069\u006D\u0065\u0072':1800});return;}var _0x0528fc=(591195^591187)+(735890^735888);const _0xf29ac=_0x938ae>=(929660^929656)?128367^128365:647454^647455;_0x0528fc="cegcbj".split("").reverse().join("");const incorrect=_0xab6fgb['\u006F\u0070\u0074\u0073']['\u006D\u0061\u0070']((_,i)=>i)['\u0066\u0069\u006C\u0074\u0065\u0072'](i=>i!==_0xeaed);incorrect['\u0073\u006F\u0072\u0074'](()=>Math['\u0072\u0061\u006E\u0064\u006F\u006D']()-0.5)['\u0073\u006C\u0069\u0063\u0065'](245114^245114,_0xf29ac)['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](idx=>{var _0xc24d=(958069^958069)+(261850^261849);const b=_0xa358f[idx];_0xc24d="lppjoh".split("").reverse().join("");if(!b)return;b['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=!![];b['\u0073\u0074\u0079\u006C\u0065']['\u0074\u0065\u0078\u0074\u0044\u0065\u0063\u006F\u0072\u0061\u0074\u0069\u006F\u006E']="hguorht-enil".split("").reverse().join("");b['\u0073\u0074\u0079\u006C\u0065']['\u006F\u0070\u0061\u0063\u0069\u0074\u0079']="4.0".split("").reverse().join("");});Swal['\u0066\u0069\u0072\u0065']({"icon":'success',"title":"\u0020\u2702\uFE0F\u0020\u0035\u0030\u003A\u0035\u0030",'\u0074\u0065\u0078\u0074':_0xf29ac===(854409^854411)?"\u0130\u006B\u0069\u0020\u0079\u0061\u006E\u006C\u0131\u015F\u0020\u015F\u0131\u006B\u0020\u0065\u006C\u0065\u006E\u0064\u0069\u0021":"!idnele k\u0131\u015F \u015F\u0131lnay riB".split("").reverse().join(""),'\u0074\u006F\u0061\u0073\u0074':!![],"position":"\u0074\u006F\u0070","showConfirmButton":false,'\u0074\u0069\u006D\u0065\u0072':1400});}else if(type==="elbuod".split("").reverse().join("")){doubleChanceUsed=!![];setDoubleIndicator(!![]);Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':'warning','\u0074\u0069\u0074\u006C\u0065':"\u0032\uFE0F\u0020\u20E3\u0020\u00C7\u0069\u0066\u0074\u0020\u0043\u0065\u0076\u0061\u0070","text":'Bir kez yanlış cevap hakkın var.',"toast":!![],"position":"\u0074\u006F\u0070","showConfirmButton":false,"timer":2200});}}function openGameHub(){document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0067\u0061\u006D\u0065\u002D\u0068\u0075\u0062\u002D\u006D\u006F\u0064\u0061\u006C")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0066\u006C\u0065\u0078";}function openQuickDecisionGame(_0x6014fg){try{closeModal("\u0067\u0061\u006D\u0065\u002D\u0068\u0075\u0062\u002D\u006D\u006F\u0064\u0061\u006C");}catch(e){}document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ladom-kciuq".split("").reverse().join(""))['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="xelf".split("").reverse().join("");var _0x51b=(208076^208079)+(760427^760425);const _0x594b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ybbol-dq".split("").reverse().join(""));_0x51b=270291^270295;const _0xgc7c4a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0064\u002D\u0067\u0061\u006D\u0065");if(_0x594b)_0x594b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";if(_0xgc7c4a)_0xgc7c4a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";const t=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0064\u002D\u0074\u0069\u006D\u0065");_0x6014fg='\u0065\u0064\u006E\u0064\u006C\u006C';if(t)t['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="\u0033\u0030";const s=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("erocs-dq".split("").reverse().join(""));if(s)s['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="\u0030";const _0x35_0x221=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0064\u002D\u0073\u0074\u0065\u0070");if(_0x35_0x221)_0x35_0x221['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="\u0030";}let _0x90a;let qdTimer=null;_0x90a=579258^579263;let _0x7b2;let qdTimeLeft=495052^495058;_0x7b2=(468429^468420)+(350817^350816);let qdScore=419927^419927;let _0xa5c35b;let qdStep=208112^208112;_0xa5c35b='\u006E\u006B\u0065\u0071\u0063\u0071';let _0x8e01eb;let qdQueue=[];_0x8e01eb=(920537^920536)+(589813^589810);const QUICK_DECISION_BANK=[{'\u0071':'Müşteri: "Fiyat pahalı, iptal edeceğim." İlk yaklaşımın ne olmalı?',"opts":["\u0048\u0065\u006D\u0065\u006E\u0020\u0069\u0070\u0074\u0061\u006C\u0020\u0069\u015F\u006C\u0065\u006D\u0069\u006E\u0069\u0020\u0062\u0061\u015F\u006C\u0061\u0074\u0061\u006C\u0131\u006D\u002E","\u0048\u0061\u006B\u006C\u0131\u0073\u0131\u006E\u0131\u007A\u002C\u0020\u0073\u0069\u007A\u0069\u0020\u0061\u006E\u006C\u0131\u0079\u006F\u0072\u0075\u006D\u002E\u0020\u0050\u0061\u006B\u0065\u0074\u002F\u0061\u0076\u0061\u006E\u0074\u0061\u006A\u006C\u0061\u0072\u0061\u0020\u0067\u00F6\u0072\u0065\u0020\u0061\u006C\u0074\u0065\u0072\u006E\u0061\u0074\u0069\u0066\u0020\u0073\u0075\u006E\u0061\u0079\u0131\u006D\u0020\u006D\u0131\u003F","\u004B\u0061\u006D\u0070\u0061\u006E\u0079\u0061\u0020\u0079\u006F\u006B\u002C\u0020\u0079\u0061\u0070\u0061\u0063\u0061\u006B\u0020\u0062\u0069\u0072\u0020\u015F\u0065\u0079\u0020\u0079\u006F\u006B\u002E"],'\u0061':1,'\u0065\u0078\u0070':'Empati + ihtiyaç analizi itirazı yumuşatır ve iknayı artırır.'},{'\u0071':"\u004D\u00FC\u015F\u0074\u0065\u0072\u0069\u003A\u0020\u0022\u0055\u0079\u0067\u0075\u006C\u0061\u006D\u0061\u0020\u0061\u00E7\u0131\u006C\u006D\u0131\u0079\u006F\u0072\u002E\u0022\u0020\u0045\u006E\u0020\u0068\u0131\u007A\u006C\u0131\u0020\u0069\u006C\u006B\u0020\u006B\u006F\u006E\u0074\u0072\u006F\u006C\u0020\u006E\u0065\u003F","opts":[".talr\u0131f\u0131s iyerfi\u015E".split("").reverse().join(""),"\u0130\u006E\u0074\u0065\u0072\u006E\u0065\u0074\u0020\u0062\u0061\u011F\u006C\u0061\u006E\u0074\u0131\u0073\u0131\u0020\u002F\u0020\u0056\u0050\u004E\u0020\u002F\u0020\u0044\u004E\u0053\u0020\u006B\u006F\u006E\u0074\u0072\u006F\u006C\u00FC\u0020\u0079\u0061\u0070\u0074\u0131\u0072\u002E","\u0048\u0065\u006D\u0065\u006E\u0020\u0063\u0069\u0068\u0061\u007A\u0131\u0020\u0066\u0061\u0062\u0072\u0069\u006B\u0061\u0020\u0061\u0079\u0061\u0072\u006C\u0061\u0072\u0131\u006E\u0061\u0020\u0064\u00F6\u006E\u0064\u00FC\u0072\u002E"],'\u0061':1,"exp":"\u00D6\u006E\u0063\u0065\u0020\u006B\u00F6\u006B\u0020\u006E\u0065\u0064\u0065\u006E\u0069\u0020\u0064\u0061\u0072\u0061\u006C\u0074\u003A\u0020\u0062\u0061\u011F\u006C\u0061\u006E\u0074\u0131\u0020\u006D\u0131\u0020\u0075\u0079\u0067\u0075\u006C\u0061\u006D\u0061\u0020\u006D\u0131\u003F\u0020\u0042\u00FC\u0079\u00FC\u006B\u0020\u0061\u0064\u0131\u006D\u006C\u0061\u0072\u0131\u0020\u0073\u006F\u006E\u0061\u0020\u0062\u0131\u0072\u0061\u006B\u002E"},{'\u0071':"\u004D\u00FC\u015F\u0074\u0065\u0072\u0069\u003A\u0020\u0022\u0059\u0061\u0079\u0131\u006E\u0020\u0064\u006F\u006E\u0075\u0079\u006F\u0072\u002E\u0022\u0020\u0054\u0065\u006B\u006E\u0069\u006B\u0074\u0065\u0020\u0064\u006F\u011F\u0072\u0075\u0020\u0073\u006F\u0072\u0075\u0020\u0068\u0061\u006E\u0067\u0069\u0073\u0069\u003F",'\u006F\u0070\u0074\u0073':["\u0048\u0061\u006E\u0067\u0069\u0020\u0063\u0069\u0068\u0061\u007A\u0064\u0061\u0020\u0028\u0054\u0056\u002F\u0074\u0065\u006C\u0065\u0066\u006F\u006E\u0029\u0020\u0076\u0065\u0020\u0068\u0061\u006E\u0067\u0069\u0020\u0061\u011F\u0064\u0061\u0020\u0028\u0057\u0069\u2011\u0046\u0069\u002F\u006B\u0061\u0062\u006C\u006F\u0029\u0020\u006F\u006C\u0075\u0079\u006F\u0072\u003F","\u004B\u0061\u00E7\u0020\u0067\u00FC\u006E\u0064\u00FC\u0072\u0020\u0062\u00F6\u0079\u006C\u0065\u003F","\u015E\u0069\u006D\u0064\u0069\u0020\u006B\u0061\u0070\u0061\u0074\u0131\u0070\u0020\u0061\u00E7\u0131\u006E\u002E"],'\u0061':0,'\u0065\u0078\u0070':"\u0043\u0069\u0068\u0061\u007A\u0020\u002B\u0020\u0061\u011F\u0020\u0062\u0069\u006C\u0067\u0069\u0073\u0069\u002C\u0020\u0073\u006F\u0072\u0075\u006E\u0075\u0020\u0068\u0131\u007A\u006C\u0131\u0020\u0069\u007A\u006F\u006C\u0065\u0020\u0065\u0074\u006D\u0065\u0079\u0069\u0020\u0073\u0061\u011F\u006C\u0061\u0072\u002E"},{'\u0071':'Müşteri: "İade istiyorum." En doğru yönlendirme?','\u006F\u0070\u0074\u0073':[".m\u0131latapak nemeH".split("").reverse().join(""),".)rebher/natsisa( ridneln\xF6y alanak ur\u011Fod ,talna ten \u0131ralm\u0131da ev \u0131rallu\u015Fok eda\u0130".split("").reverse().join(""),"\u0054\u0065\u006B\u0072\u0061\u0072\u0020\u0061\u0072\u0061\u0079\u0131\u006E\u002E"],'\u0061':1,'\u0065\u0078\u0070':"\u004E\u0065\u0074\u0020\u0073\u00FC\u0072\u0065\u00E7\u0020\u002B\u0020\u0064\u006F\u011F\u0072\u0075\u0020\u006B\u0061\u006E\u0061\u006C\u0020\u003D\u0020\u006D\u0065\u006D\u006E\u0075\u006E\u0069\u0079\u0065\u0074\u0020\u002B\u0020\u0074\u0065\u006B\u0072\u0061\u0072\u0020\u0061\u0072\u0061\u006D\u0061\u0079\u0131\u0020\u0061\u007A\u0061\u006C\u0074\u0131\u0072\u002E"},{'\u0071':'Müşteri: "Kampanyadan yararlanamıyorum." İlk adım?','\u006F\u0070\u0074\u0073':["\u004B\u0061\u006D\u0070\u0061\u006E\u0079\u0061\u0020\u006B\u006F\u015F\u0075\u006C\u006C\u0061\u0072\u0131\u0020\u0028\u0074\u0061\u0072\u0069\u0068\u002F\u0070\u0061\u006B\u0065\u0074\u002F\u0063\u0069\u0068\u0061\u007A\u0029\u0020\u0075\u0079\u0067\u0075\u006E\u0020\u006D\u0075\u0020\u006B\u006F\u006E\u0074\u0072\u006F\u006C\u0020\u0065\u0074\u002E","\u0044\u0069\u0072\u0065\u006B\u0074\u0020\u006B\u0061\u006D\u0070\u0061\u006E\u0079\u0061\u0079\u0131\u0020\u0074\u0061\u006E\u0131\u006D\u006C\u0061\u002E","\u0053\u006F\u0072\u0075\u006E\u0020\u0079\u006F\u006B\u0020\u0064\u0065\u0079\u0069\u0070\u0020\u006B\u0061\u0070\u0061\u0074\u002E"],'\u0061':0,'\u0065\u0078\u0070':"\u0055\u0079\u0067\u0075\u006E\u006C\u0075\u006B\u0020\u006B\u006F\u006E\u0074\u0072\u006F\u006C\u00FC\u0020\u0079\u0061\u0070\u0131\u006C\u006D\u0061\u0064\u0061\u006E\u0020\u0069\u015F\u006C\u0065\u006D\u0020\u0079\u0061\u0070\u006D\u0061\u006B\u0020\u0068\u0061\u0074\u0061\u0079\u0061\u0020\u0073\u00FC\u0072\u00FC\u006B\u006C\u0065\u0072\u002E"},{'\u0071':"\u004D\u00FC\u015F\u0074\u0065\u0072\u0069\u0020\u0073\u0069\u006E\u0069\u0072\u006C\u0069\u003A\u0020\u0022\u004B\u0069\u006D\u0073\u0065\u0020\u00E7\u00F6\u007A\u006D\u0065\u0064\u0069\u0021\u0022\u0020\u004E\u0065\u0020\u0079\u0061\u0070\u0061\u0072\u0073\u0131\u006E\u003F",'\u006F\u0070\u0074\u0073':[".\u0131nalp noyiska ten + tez\xF6 + elm\xFCc rib icirit\u015FelnikaS".split("").reverse().join(""),".m\u0131lala ayar\u0131S".split("").reverse().join(""),"\u0053\u0065\u0073\u0020\u0079\u00FC\u006B\u0073\u0065\u006C\u0074\u002E"],'\u0061':0,"exp":'Kontrolü geri almak için empati + özet + plan üçlüsü çalışır.'}];function resetQuickDecision(){if(qdTimer){clearInterval(qdTimer);qdTimer=null;}qdTimeLeft=296737^296767;qdScore=586536^586536;qdStep=968194^968194;qdQueue=[];openQuickDecisionGame();}function startQuickDecision(_0x670bcc){const _0x46fgdf=Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](quickDecisionQuestions)&&quickDecisionQuestions['\u006C\u0065\u006E\u0067\u0074\u0068']?quickDecisionQuestions:QUICK_DECISION_BANK;if(!_0x46fgdf['\u006C\u0065\u006E\u0067\u0074\u0068']){Swal['\u0066\u0069\u0072\u0065']("igliB".split("").reverse().join(""),".niyeliney \u0131yafyas ev niyelke \u0131raluros nedlenap nimda neft\xFCL .idemnelk\xFCy z\xFCneh raluroS".split("").reverse().join(""),"ofni".split("").reverse().join(""));return;}const _0x4a59fe=Math['\u006D\u0069\u006E'](125385^125388,_0x46fgdf['\u006C\u0065\u006E\u0067\u0074\u0068']);const _0x29311g=Array['\u0066\u0072\u006F\u006D']({'\u006C\u0065\u006E\u0067\u0074\u0068':_0x46fgdf['\u006C\u0065\u006E\u0067\u0074\u0068']},(_,i)=>i)['\u0073\u006F\u0072\u0074'](()=>Math['\u0072\u0061\u006E\u0064\u006F\u006D']()-0.5)['\u0073\u006C\u0069\u0063\u0065'](610856^610856,_0x4a59fe);_0x670bcc=(121942^121938)+(183863^183858);qdQueue=_0x29311g['\u006D\u0061\u0070'](i=>_0x46fgdf[i]);qdTimeLeft=472488^472502;qdScore=605559^605559;qdStep=376494^376494;const _0xb6b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ybbol-dq".split("").reverse().join(""));var _0xced=(543786^543789)+(433579^433571);const _0xg47eab=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0064\u002D\u0067\u0061\u006D\u0065");_0xced=(235243^235243)+(922444^922441);if(_0xb6b)_0xb6b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";if(_0xg47eab)_0xg47eab['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";updateQuickHud();renderQuickQuestion();if(qdTimer)clearInterval(qdTimer);qdTimer=setInterval(()=>{qdTimeLeft-=222925^222924;updateQuickHud();if(qdTimeLeft<=(293701^293701)){finishQuickDecision(!![]);}},743478^744414);}function updateQuickHud(_0x6788e){const t=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0064\u002D\u0074\u0069\u006D\u0065");if(t)t['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=String(Math['\u006D\u0061\u0078'](979934^979934,qdTimeLeft));const s=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0064\u002D\u0073\u0063\u006F\u0072\u0065");_0x6788e=851669^851668;if(s)s['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=String(qdScore);const _0x5a364e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0064\u002D\u0073\u0074\u0065\u0070");if(_0x5a364e)_0x5a364e['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=String(qdStep);}function renderQuickQuestion(){const q=qdQueue[qdStep];const _0xg4_0xe41=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0064\u002D\u0071\u0075\u0065\u0073\u0074\u0069\u006F\u006E");const _0x6dg79b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0064\u002D\u006F\u0070\u0074\u0069\u006F\u006E\u0073");if(!_0xg4_0xe41||!_0x6dg79b||!q)return;_0xg4_0xe41['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=q['\u0071'];_0x6dg79b['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']='';q['\u006F\u0070\u0074\u0073']['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((txt,i)=>{let _0xg20c;const b=document['\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006C\u0065\u006D\u0065\u006E\u0074']("\u0062\u0075\u0074\u0074\u006F\u006E");_0xg20c=(219295^219293)+(510705^510704);b['\u0063\u006C\u0061\u0073\u0073\u004E\u0061\u006D\u0065']="tpo-kciuq".split("").reverse().join("");b['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=txt;b['\u006F\u006E\u0063\u006C\u0069\u0063\u006B']=()=>answerQuick(i);_0x6dg79b['\u0061\u0070\u0070\u0065\u006E\u0064\u0043\u0068\u0069\u006C\u0064'](b);});}function answerQuick(idx){const q=qdQueue[qdStep];const _0x68fd2g=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0064\u002D\u006F\u0070\u0074\u0069\u006F\u006E\u0073");if(!q||!_0x68fd2g)return;var _0x17af6e=(163582^163580)+(451700^451708);const _0x636e=Array['\u0066\u0072\u006F\u006D'](_0x68fd2g['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u0062\u0075\u0074\u0074\u006F\u006E"));_0x17af6e=(841926^841925)+(365375^365370);_0x636e['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](b=>b['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=!![]);var _0xf64bfc=(710222^710221)+(339812^339813);const _0x94cdb=idx===q['\u0061'];_0xf64bfc=235976^235983;if(_0x636e[idx])_0x636e[idx]['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064'](_0x94cdb?"\u0067\u006F\u006F\u0064":"\u0062\u0061\u0064");if(!_0x94cdb&&_0x636e[q['\u0061']])_0x636e[q['\u0061']]['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0067\u006F\u006F\u0064");qdScore+=_0x94cdb?144378^144376:-(182129^182128);if(qdScore<(110052^110052))qdScore=427735^427735;updateQuickHud();Swal['\u0066\u0069\u0072\u0065']({'\u0074\u006F\u0061\u0073\u0074':!![],'\u0070\u006F\u0073\u0069\u0074\u0069\u006F\u006E':"\u0074\u006F\u0070",'\u0069\u0063\u006F\u006E':_0x94cdb?"sseccus".split("").reverse().join(""):"gninraw".split("").reverse().join(""),'\u0074\u0069\u0074\u006C\u0065':_0x94cdb?"!mi\xE7es ur\u011FoD".split("").reverse().join(""):"\u0059\u0061\u006E\u006C\u0131\u015F\u0020\u0073\u0065\u00E7\u0069\u006D",'\u0074\u0065\u0078\u0074':q['\u0065\u0078\u0070'],'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false,'\u0074\u0069\u006D\u0065\u0072':1100});setTimeout(()=>{qdStep+=347392^347393;updateQuickHud();if(qdStep>=qdQueue['\u006C\u0065\u006E\u0067\u0074\u0068'])finishQuickDecision(false);else renderQuickQuestion();},450268^449622);}function finishQuickDecision(timeout,_0xb7a){if(qdTimer){clearInterval(qdTimer);qdTimer=null;}const _0x36_0xfb7=timeout?"!ittib er\xFCS".split("").reverse().join(""):"!ittiB".split("").reverse().join("");_0xb7a=(340399^340393)+(908007^908000);Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':'info',"title":`🧠 Hızlı Karar ${_0x36_0xfb7}`,'\u0068\u0074\u006D\u006C':`<div style="text-align:center;">
+            </div>`;
+                });
+
+                html += `</div>`;
+            });
+        };
+
+        // ✅ Önce yaklaşanlar, sonra geçmişler
+        renderSection("Yaklaşan / Gelecek", upcomingByDate, "Yaklaşan yayın bulunamadı.");
+        html += `<div class="ba-divider"></div>`;
+        renderSection("Geçmiş", pastByDate, "Geçmiş yayın bulunamadı.");
+
+        html += `</div>`;
+
+        Swal.fire({
+            title: "Yayın Akışı",
+            html,
+            width: 980,
+            confirmButtonText: "Kapat"
+        });
+
+    } catch (err) {
+        Swal.fire("Hata", err?.message || "Yayın akışı alınamadı.", "error");
+    }
+}
+
+// XSS koruması
+
+function _formatBroadcastDateTr(it) {
+    // Backend yeni alanları gönderiyorsa kullan
+    if (it && it.dateLabelTr) return String(it.dateLabelTr);
+
+    // Fallback: it.dateISO (yyyy-mm-dd) veya it.date
+    const s = String(it?.dateISO || it?.date || "").trim();
+    if (!s) return "Tarih Yok";
+
+    // ISO yyyy-mm-dd
+    const m = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+    if (m) {
+        const d = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+        return new Intl.DateTimeFormat("tr-TR", { day: "2-digit", month: "long", year: "numeric", weekday: "long" }).format(d);
+    }
+
+    // dd.mm.yyyy / dd/mm/yyyy
+    const m2 = s.match(/^(\d{1,2})[\./-](\d{1,2})[\./-](\d{4})/);
+    if (m2) {
+        const d = new Date(Number(m2[3]), Number(m2[2]) - 1, Number(m2[1]));
+        return new Intl.DateTimeFormat("tr-TR", { day: "2-digit", month: "long", year: "numeric", weekday: "long" }).format(d);
+    }
+
+    return s; // en kötü haliyle göster
+}
+
+function escapeHtml(str) {
+    return String(str ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+}
+const __escapeHtml = escapeHtml;
+const _escapeHtml = escapeHtml;
+
+// ------------------------------------------------------------
+// Sağlamlaştırma (hata yönetimi + localStorage güvenli yazma)
+// ------------------------------------------------------------
+const DEBUG = (() => {
+    try { return localStorage.getItem('DEBUG') === '1'; } catch (e) { return false; }
+})();
+
+function dlog(...args) {
+    try { if (DEBUG) console.log(...args); } catch (e) { }
+}
+
+function safeLocalStorageSet(key, value, maxBytes = 4 * 1024 * 1024) { // ~4MB
+    try {
+        const str = JSON.stringify(value);
+        // Basit boyut kontrolü (UTF-16 yaklaşığı)
+        if (str.length * 2 > maxBytes) {
+            try { Swal.fire('Uyarı', 'Veri çok büyük, kaydedilemedi', 'warning'); } catch (e) { }
+            return false;
+        }
+        localStorage.setItem(key, str);
+        return true;
+    } catch (e) {
+        if (e && (e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')) {
+            try { Swal.fire('Hata', 'Depolama alanı dolu', 'error'); } catch (x) { }
+        } else {
+            dlog('[safeLocalStorageSet]', e);
+        }
+        return false;
+    }
+}
+
+function safeLocalStorageGet(key, fallback = null) {
+    try {
+        const raw = localStorage.getItem(key);
+        if (raw == null) return fallback;
+        return JSON.parse(raw);
+    } catch (e) {
+        return fallback;
+    }
+}
+
+const storage = {
+    set: (k, v) => safeLocalStorageSet(k, v),
+    get: (k, fb = null) => safeLocalStorageGet(k, fb),
+    del: (k) => { try { localStorage.removeItem(k); } catch (e) { } }
+};
+
+// Global error handlers (kullanıcıya sade mesaj, admin'e detay log)
+window.addEventListener('error', function (e) {
+    try { if (isAdminMode || isLocAdmin) dlog('[Global Error]', e && (e.error || e.message) ? (e.error || e.message) : e); } catch (_) { }
+    try { if (typeof showGlobalError === 'function') showGlobalError('Beklenmeyen hata: ' + (e && e.message ? e.message : 'Bilinmeyen')); } catch (_) { }
+});
+
+window.addEventListener('unhandledrejection', function (e) {
+    try { if (isAdminMode || isLocAdmin) dlog('[Unhandled Promise]', e && e.reason ? e.reason : e); } catch (_) { }
+    try { if (typeof showGlobalError === 'function') showGlobalError('Beklenmeyen hata: ' + (e && e.reason && e.reason.message ? e.reason.message : 'Bilinmeyen')); } catch (_) { }
+});
+
+
+function openGuide() {
+    document.getElementById('guide-modal').style.display = 'flex';
+    const grid = document.getElementById('guide-grid');
+    grid.innerHTML = '';
+    sportsData.forEach((s, index) => {
+        let pronHtml = s.pronunciation ? `<div class="pronunciation-badge"> 🗣️  ${s.pronunciation}</div>` : '';
+        let editBtn = (isAdminMode && isEditingActive) ? `<i class="fas fa-pencil-alt edit-icon" style="top:5px; right:5px; z-index:50;" onclick="event.stopPropagation(); editSport('${escapeForJsString(s.title)}')"></i>` : '';
+        grid.innerHTML += `<div class="guide-item" onclick="showSportDetail(${index})">${editBtn}<i class="fas ${s.icon} guide-icon"></i><span class="guide-title">${s.title}</span>${pronHtml}<div class="guide-desc" style="white-space: pre-line">${s.desc}</div><div class="guide-tip"><i class="fas fa-lightbulb"></i> ${s.tip}</div><div style="font-size:0.8rem; color:#999; margin-top:5px;">(Detay için tıkla)</div></div>`;
+    });
+}
+function showSportDetail(index) {
+    const sport = sportsData[index];
+    const detailText = sport.detail ? sport.detail.replace(/\n/g, '<br>') : "Bu içerik için henüz detay eklenmemiş.";
+    const pronDetail = sport.pronunciation ? `<div style="color:#e65100; font-weight:bold; margin-bottom:15px;"> 🗣️  Okunuşu: ${sport.pronunciation}</div>` : '';
+    Swal.fire({
+        title: `<i class="fas ${sport.icon}" style="color:#0e1b42;"></i> ${sport.title}`,
+        html: `${pronDetail}<div style="text-align:left; font-size:1rem; line-height:1.6;">${detailText}</div>`,
+        showCloseButton: true, showConfirmButton: false, width: '600px', background: '#f8f9fa'
+    });
+}
+function openSales() {
+    // TeleSatış artık tam ekran modül
+    openTelesalesArea();
+}
+function toggleSales(index) {
+    const item = document.getElementById(`sales-${index}`);
+    const icon = document.getElementById(`icon-${index}`);
+    item.classList.toggle('active');
+    if (item.classList.contains('active')) { icon.classList.replace('fa-chevron-down', 'fa-chevron-up'); }
+    else { icon.classList.replace('fa-chevron-up', 'fa-chevron-down'); }
+}
+
+// --- PENALTY GAME ---
+// Tasarım/Güncelleme: Tekrarlayan soru engeli, akıllı 50:50, double rozet, daha net maç sonu ekranı
+
+let pScore = 0, pBalls = 10, pCurrentQ = null;
+let pQuestionQueue = [];        // oturum boyunca sorulacak soru indeksleri (karıştırılmış)
+let pAskedCount = 0;            // kaç soru soruldu
+let pCorrectCount = 0;          // kaç doğru
+let pWrongCount = 0;            // kaç yanlış
+
+function setDoubleIndicator(isActive) {
+    const el = document.getElementById('double-indicator');
+    if (!el) return;
+    el.style.display = isActive ? 'inline-flex' : 'none';
+}
+
+function updateJokerButtons() {
+    const callBtn = document.getElementById('joker-call');
+    const halfBtn = document.getElementById('joker-half');
+    const doubleBtn = document.getElementById('joker-double');
+
+    if (callBtn) callBtn.disabled = jokers.call === 0;
+    if (halfBtn) halfBtn.disabled = jokers.half === 0;
+    if (doubleBtn) doubleBtn.disabled = jokers.double === 0 || firstAnswerIndex !== -1;
+
+    // Double aktifken diğerleri kilitlensin
+    if (firstAnswerIndex !== -1) {
+        if (callBtn) callBtn.disabled = true;
+        if (halfBtn) halfBtn.disabled = true;
+        if (doubleBtn) doubleBtn.disabled = true;
+    }
+}
+
+function useJoker(type) {
+    if (!pCurrentQ) return;
+    if (jokers[type] === 0) return;
+    if (firstAnswerIndex !== -1 && type !== 'double') return;
+
+    jokers[type] = 0;
+    updateJokerButtons();
+
+    const currentQ = pCurrentQ;
+    const correctAns = currentQ.a;
+    const btns = document.querySelectorAll('.penalty-btn');
+
+    if (type === 'call') {
+        const experts = ["Umut Bey", "Doğuş Bey", "Deniz Bey", "Esra Hanım"];
+        const expert = experts[Math.floor(Math.random() * experts.length)];
+
+        let guess = correctAns;
+        // %80 doğru, %20 yanlış tahmin
+        if (Math.random() > 0.8 && currentQ.opts.length > 1) {
+            const incorrect = currentQ.opts.map((_, i) => i).filter(i => i !== correctAns);
+            guess = incorrect[Math.floor(Math.random() * incorrect.length)] ?? correctAns;
+        }
+
+        Swal.fire({
+            icon: 'info',
+            title: ' 📞 Telefon Jokeri',
+            html: `${expert} soruyu cevaplıyor...<br><br>"Benim tahminim **${String.fromCharCode(65 + guess)}** şıkkı. Bundan ${Math.random() < 0.8 ? "çok eminim" : "emin değilim"}."`,
+            confirmButtonText: 'Kapat'
+        });
+
+    } else if (type === 'half') {
+        const optLen = Array.isArray(currentQ.opts) ? currentQ.opts.length : 0;
+        if (optLen <= 2) {
+            Swal.fire({ icon: 'info', title: '✂️ 50:50', text: 'Bu soruda 50:50 uygulanamaz.', toast: true, position: 'top', showConfirmButton: false, timer: 1800 });
+            return;
+        }
+
+        // 4+ şıkta 2 yanlış, 3 şıkta 1 yanlış ele
+        const removeCount = optLen >= 4 ? 2 : 1;
+        const incorrect = currentQ.opts.map((_, i) => i).filter(i => i !== correctAns);
+        incorrect.sort(() => Math.random() - 0.5).slice(0, removeCount).forEach(idx => {
+            const b = btns[idx];
+            if (!b) return;
+            b.disabled = true;
+            b.style.textDecoration = 'line-through';
+            b.style.opacity = '0.4';
+        });
+
+        Swal.fire({
+            icon: 'success',
+            title: ' ✂️ 50:50',
+            text: removeCount === 2 ? 'İki yanlış şık elendi!' : 'Bir yanlış şık elendi!',
+            toast: true,
+            position: 'top',
+            showConfirmButton: false,
+            timer: 1400
+        });
+
+    } else if (type === 'double') {
+        doubleChanceUsed = true;
+        setDoubleIndicator(true);
+        Swal.fire({
+            icon: 'warning',
+            title: '2️ ⃣ Çift Cevap',
+            text: 'Bir kez yanlış cevap hakkın var.',
+            toast: true,
+            position: 'top',
+            showConfirmButton: false,
+            timer: 2200
+        });
+    }
+}
+
+
+function openGameHub() {
+    document.getElementById('game-hub-modal').style.display = 'flex';
+}
+
+function openQuickDecisionGame() {
+    try { closeModal('game-hub-modal'); } catch (e) { }
+    document.getElementById('quick-modal').style.display = 'flex';
+
+    // Lobby ekranı
+    const lobby = document.getElementById('qd-lobby');
+    const game = document.getElementById('qd-game');
+    if (lobby) lobby.style.display = 'block';
+    if (game) game.style.display = 'none';
+
+    // Reset göstergeler
+    const t = document.getElementById('qd-time'); if (t) t.innerText = '30';
+    const s = document.getElementById('qd-score'); if (s) s.innerText = '0';
+    const st = document.getElementById('qd-step'); if (st) st.innerText = '0';
+}
+
+// --- HIZLI KARAR OYUNU ---
+let qdTimer = null;
+let qdTimeLeft = 30;
+let qdScore = 0;
+let qdStep = 0;
+let qdQueue = [];
+
+const QUICK_DECISION_BANK = [
+    {
+        q: 'Müşteri: "Fiyat pahalı, iptal edeceğim." İlk yaklaşımın ne olmalı?',
+        opts: [
+            'Hemen iptal işlemini başlatalım.',
+            'Haklısınız, sizi anlıyorum. Paket/avantajlara göre alternatif sunayım mı?',
+            'Kampanya yok, yapacak bir şey yok.'
+        ],
+        a: 1,
+        exp: 'Empati + ihtiyaç analizi itirazı yumuşatır ve iknayı artırır.'
+    },
+    {
+        q: 'Müşteri: "Uygulama açılmıyor." En hızlı ilk kontrol ne?',
+        opts: [
+            'Şifreyi sıfırlat.',
+            'İnternet bağlantısı / VPN / DNS kontrolü yaptır.',
+            'Hemen cihazı fabrika ayarlarına döndür.'
+        ],
+        a: 1,
+        exp: 'Önce kök nedeni daralt: bağlantı mı uygulama mı? Büyük adımları sona bırak.'
+    },
+    {
+        q: 'Müşteri: "Yayın donuyor." Teknikte doğru soru hangisi?',
+        opts: [
+            'Hangi cihazda (TV/telefon) ve hangi ağda (Wi‑Fi/kablo) oluyor?',
+            'Kaç gündür böyle?',
+            'Şimdi kapatıp açın.'
+        ],
+        a: 0,
+        exp: 'Cihaz + ağ bilgisi, sorunu hızlı izole etmeyi sağlar.'
+    },
+    {
+        q: 'Müşteri: "İade istiyorum." En doğru yönlendirme?',
+        opts: [
+            'Hemen kapatalım.',
+            'İade koşulları ve adımları net anlat, doğru kanala yönlendir (asistan/rehber).',
+            'Tekrar arayın.'
+        ],
+        a: 1,
+        exp: 'Net süreç + doğru kanal = memnuniyet + tekrar aramayı azaltır.'
+    },
+    {
+        q: 'Müşteri: "Kampanyadan yararlanamıyorum." İlk adım?',
+        opts: [
+            'Kampanya koşulları (tarih/paket/cihaz) uygun mu kontrol et.',
+            'Direkt kampanyayı tanımla.',
+            'Sorun yok deyip kapat.'
+        ],
+        a: 0,
+        exp: 'Uygunluk kontrolü yapılmadan işlem yapmak hataya sürükler.'
+    },
+    {
+        q: 'Müşteri sinirli: "Kimse çözmedi!" Ne yaparsın?',
+        opts: [
+            'Sakinleştirici bir cümle + özet + net aksiyon planı.',
+            'Sıraya alalım.',
+            'Ses yükselt.'
+        ],
+        a: 0,
+        exp: 'Kontrolü geri almak için empati + özet + plan üçlüsü çalışır.'
+    }
+];
+
+function resetQuickDecision() {
+    if (qdTimer) { clearInterval(qdTimer); qdTimer = null; }
+    qdTimeLeft = 30; qdScore = 0; qdStep = 0; qdQueue = [];
+    openQuickDecisionGame();
+}
+
+function startQuickDecision() {
+    const bank = (Array.isArray(quickDecisionQuestions) && quickDecisionQuestions.length) ? quickDecisionQuestions : QUICK_DECISION_BANK;
+    if (!bank.length) {
+        Swal.fire('Bilgi', 'Sorular henüz yüklenmedi. Lütfen admin panelden soruları ekleyin ve sayfayı yenileyin.', 'info');
+        return;
+    }
+
+    const take = Math.min(5, bank.length);
+    const idxs = Array.from({ length: bank.length }, (_, i) => i).sort(() => Math.random() - 0.5).slice(0, take);
+    qdQueue = idxs.map(i => bank[i]);
+    qdTimeLeft = 30;
+    qdScore = 0;
+    qdStep = 0;
+
+    const lobby = document.getElementById('qd-lobby');
+    const game = document.getElementById('qd-game');
+    if (lobby) lobby.style.display = 'none';
+    if (game) game.style.display = 'block';
+
+    updateQuickHud();
+    renderQuickQuestion();
+
+    if (qdTimer) clearInterval(qdTimer);
+    qdTimer = setInterval(() => {
+        qdTimeLeft -= 1;
+        updateQuickHud();
+        if (qdTimeLeft <= 0) {
+            finishQuickDecision(true);
+        }
+    }, 1000);
+}
+
+function updateQuickHud() {
+    const t = document.getElementById('qd-time'); if (t) t.innerText = String(Math.max(0, qdTimeLeft));
+    const s = document.getElementById('qd-score'); if (s) s.innerText = String(qdScore);
+    const st = document.getElementById('qd-step'); if (st) st.innerText = String(qdStep);
+}
+
+function renderQuickQuestion() {
+    const q = qdQueue[qdStep];
+    const qEl = document.getElementById('qd-question');
+    const optEl = document.getElementById('qd-options');
+    if (!qEl || !optEl || !q) return;
+
+    qEl.innerText = q.q;
+    optEl.innerHTML = '';
+
+    q.opts.forEach((txt, i) => {
+        const b = document.createElement('button');
+        b.className = 'quick-opt';
+        b.innerText = txt;
+        b.onclick = () => answerQuick(i);
+        optEl.appendChild(b);
+    });
+}
+
+function answerQuick(idx) {
+    const q = qdQueue[qdStep];
+    const optEl = document.getElementById('qd-options');
+    if (!q || !optEl) return;
+
+    const btns = Array.from(optEl.querySelectorAll('button'));
+    btns.forEach(b => b.disabled = true);
+
+    const correct = (idx === q.a);
+
+    if (btns[idx]) btns[idx].classList.add(correct ? 'good' : 'bad');
+    if (!correct && btns[q.a]) btns[q.a].classList.add('good');
+
+    // puanlama: doğru +2, yanlış -1
+    qdScore += correct ? 2 : -1;
+    if (qdScore < 0) qdScore = 0;
+    updateQuickHud();
+
+    Swal.fire({
+        toast: true,
+        position: 'top',
+        icon: correct ? 'success' : 'warning',
+        title: correct ? 'Doğru seçim!' : 'Yanlış seçim',
+        text: q.exp,
+        showConfirmButton: false,
+        timer: 1100
+    });
+
+    setTimeout(() => {
+        qdStep += 1;
+        updateQuickHud();
+        if (qdStep >= qdQueue.length) finishQuickDecision(false);
+        else renderQuickQuestion();
+    }, 650);
+}
+
+function finishQuickDecision(timeout) {
+    if (qdTimer) { clearInterval(qdTimer); qdTimer = null; }
+
+    const msg = timeout ? 'Süre bitti!' : 'Bitti!';
+    Swal.fire({
+        icon: 'info',
+        title: `🧠 Hızlı Karar ${msg}`,
+        html: `<div style="text-align:center;">
                 <div style="font-size:1.0rem; margin-bottom:8px;">Skorun: <b>${qdScore}</b></div>
                 <div style="color:#666; font-size:0.9rem;">İstersen yeniden başlatıp rekor deneyebilirsin.</div>
-              </div>`,'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0054\u0061\u006D\u0061\u006D"});const _0xa17e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0064\u002D\u006C\u006F\u0062\u0062\u0079");var _0x650c2g=(846256^846256)+(277672^277673);const _0xc11bb=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("emag-dq".split("").reverse().join(""));_0x650c2g=(139288^139289)+(870306^870310);if(_0xa17e)_0xa17e['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="kcolb".split("").reverse().join("");if(_0xc11bb)_0xc11bb['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";const t=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0064\u002D\u0074\u0069\u006D\u0065");if(t)t['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="\u0033\u0030";const _0xcfb4bb=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("pets-dq".split("").reverse().join(""));if(_0xcfb4bb)_0xcfb4bb['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="\u0030";}function openPenaltyGame(){try{closeModal("\u0067\u0061\u006D\u0065\u002D\u0068\u0075\u0062\u002D\u006D\u006F\u0064\u0061\u006C");}catch(e){}document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u0065\u006E\u0061\u006C\u0074\u0079\u002D\u006D\u006F\u0064\u0061\u006C")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="xelf".split("").reverse().join("");showLobby();}function showLobby(){document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u0065\u006E\u0061\u006C\u0074\u0079\u002D\u006C\u006F\u0062\u0062\u0079")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0066\u006C\u0065\u0078";document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u0065\u006E\u0061\u006C\u0074\u0079\u002D\u0067\u0061\u006D\u0065\u002D\u0061\u0072\u0065\u0061")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");fetchLeaderboard();}function startGameFromLobby(){document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ybbol-ytlanep".split("").reverse().join(""))['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u0065\u006E\u0061\u006C\u0074\u0079\u002D\u0067\u0061\u006D\u0065\u002D\u0061\u0072\u0065\u0061")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";startPenaltySession();}function fetchLeaderboard(){var _0xda57de=(825499^825501)+(793680^793680);const _0x23ccc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006C\u0065\u0061\u0064\u0065\u0072\u0062\u006F\u0061\u0072\u0064\u002D\u0062\u006F\u0064\u0079");_0xda57de="eebegq".split("").reverse().join("");var _0x5b4fab=(681508^681505)+(293438^293437);const _0x37_0x1eb=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("redaol-draobredael".split("").reverse().join(""));_0x5b4fab=(251280^251285)+(986131^986129);var _0x78b28d=(422700^422696)+(336762^336766);const _0x7911a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006C\u0065\u0061\u0064\u0065\u0072\u0062\u006F\u0061\u0072\u0064\u002D\u0074\u0061\u0062\u006C\u0065");_0x78b28d=861531^861533;if(!_0x23ccc||!_0x37_0x1eb||!_0x7911a)return;_0x23ccc['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']='';_0x37_0x1eb['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";_0x7911a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";fetch(SCRIPT_URL,{"method":"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"text/plain;charset=utf-8"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":"getLeaderboard"})})['\u0074\u0068\u0065\u006E'](r=>r['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](data=>{_0x37_0x1eb['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");if(data['\u0072\u0065\u0073\u0075\u006C\u0074']!=="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){_0x37_0x1eb['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="\u0059\u00FC\u006B\u006C\u0065\u006E\u0065\u006D\u0065\u0064\u0069\u002E";_0x37_0x1eb['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";return;}_0x7911a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0074\u0061\u0062\u006C\u0065";let _0xgf0c='';if(!data['\u006C\u0065\u0061\u0064\u0065\u0072\u0062\u006F\u0061\u0072\u0064']||data['\u006C\u0065\u0061\u0064\u0065\u0072\u0062\u006F\u0061\u0072\u0064']['\u006C\u0065\u006E\u0067\u0074\u0068']===(588065^588065)){_0xgf0c="\u003C\u0074\u0072\u003E\u003C\u0074\u0064\u0020\u0063\u006F\u006C\u0073\u0070\u0061\u006E\u003D\u0022\u0034\u0022\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0074\u0065\u0078\u0074\u002D\u0061\u006C\u0069\u0067\u006E\u003A\u0063\u0065\u006E\u0074\u0065\u0072\u003B\u0022\u003E\u0048\u0065\u006E\u00FC\u007A\u0020\u006D\u0061\u00E7\u0020\u0079\u0061\u0070\u0131\u006C\u006D\u0061\u0064\u0131\u002E\u003C\u002F\u0074\u0064\u003E\u003C\u002F\u0074\u0072\u003E";}else{data['\u006C\u0065\u0061\u0064\u0065\u0072\u0062\u006F\u0061\u0072\u0064']['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((u,i)=>{const _0x46gdg=i===(920735^920735)?"\uDD47\uD83E".split("").reverse().join(""):i===(249407^249406)?"\uD83E\uDD48":i===(598117^598119)?"\uD83E\uDD49":`<span class="rank-badge">${i+(470534^470535)}</span>`;const _0xdf67de=u['\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065']===currentUser?"\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064\u003A\u0072\u0067\u0062\u0061\u0028\u0032\u0035\u0030\u002C\u0020\u0031\u0038\u0037\u002C\u0020\u0030\u002C\u0020\u0030\u002E\u0031\u0029\u003B":'';_0xgf0c+=`<tr style="${_0xdf67de}"><td>${_0x46gdg}</td><td>${u['\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065']}</td><td>${u['\u0067\u0061\u006D\u0065\u0073']}</td><td>${u['\u0061\u0076\u0065\u0072\u0061\u0067\u0065']}</td></tr>`;});}_0x23ccc['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0xgf0c;})['\u0063\u0061\u0074\u0063\u0068'](()=>{_0x37_0x1eb['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";_0x37_0x1eb['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="\u0042\u0061\u011F\u006C\u0061\u006E\u0074\u0131\u0020\u0068\u0061\u0074\u0061\u0073\u0131\u002E";_0x37_0x1eb['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="kcolb".split("").reverse().join("");});}function buildQuestionQueue(){const n=quizQuestions['\u006C\u0065\u006E\u0067\u0074\u0068'];var _0x6438d=(734841^734845)+(632352^632354);const _0x7a33df=Array['\u0066\u0072\u006F\u006D']({'\u006C\u0065\u006E\u0067\u0074\u0068':n},(_,i)=>i);_0x6438d='\u006C\u0062\u0069\u006C\u0068\u0065';_0x7a33df['\u0073\u006F\u0072\u0074'](()=>Math['\u0072\u0061\u006E\u0064\u006F\u006D']()-0.5);return _0x7a33df;}function startPenaltySession(){pScore=969621^969621;pBalls=603163^603153;pAskedCount=671374^671374;pCorrectCount=612103^612103;pWrongCount=534269^534269;jokers={"call":1,"half":1,"double":1};doubleChanceUsed=false;firstAnswerIndex=-(276803^276802);setDoubleIndicator(false);pQuestionQueue=buildQuestionQueue();updateJokerButtons();document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("erocs-p".split("").reverse().join(""))['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=pScore;document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u002D\u0062\u0061\u006C\u006C\u0073")['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=pBalls;var _0xf7e1b=(641982^641982)+(629669^629676);const _0xe4a5ec=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u002D\u0072\u0065\u0073\u0074\u0061\u0072\u0074\u002D\u0062\u0074\u006E");_0xf7e1b='\u0066\u0068\u0061\u0066\u006D\u0062';const _0x8e178b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u002D\u006F\u0070\u0074\u0069\u006F\u006E\u0073");if(_0xe4a5ec)_0xe4a5ec['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";if(_0x8e178b)_0x8e178b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="dirg".split("").reverse().join("");resetField();loadPenaltyQuestion();}function pickNextQuestion(){if(quizQuestions['\u006C\u0065\u006E\u0067\u0074\u0068']===(609456^609456))return null;if(pQuestionQueue['\u006C\u0065\u006E\u0067\u0074\u0068']>(586888^586888)){const i=pQuestionQueue['\u0073\u0068\u0069\u0066\u0074']();return quizQuestions[i];}return quizQuestions[Math['\u0066\u006C\u006F\u006F\u0072'](Math['\u0072\u0061\u006E\u0064\u006F\u006D']()*quizQuestions['\u006C\u0065\u006E\u0067\u0074\u0068'])];}function loadPenaltyQuestion(_0xg16cce){if(pBalls<=(705456^705456)){finishPenaltyGame();return;}if(!Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](quizQuestions)||quizQuestions['\u006C\u0065\u006E\u0067\u0074\u0068']===(227770^227770)){Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061","!koy uroS".split("").reverse().join(""),"\u0077\u0061\u0072\u006E\u0069\u006E\u0067");return;}pCurrentQ=pickNextQuestion();if(!pCurrentQ||!pCurrentQ['\u006F\u0070\u0074\u0073']||pCurrentQ['\u006F\u0070\u0074\u0073']['\u006C\u0065\u006E\u0067\u0074\u0068']<(942174^942172)){Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061","\u0042\u0075\u0020\u0073\u006F\u0072\u0075\u0020\u0068\u0061\u0074\u0061\u006C\u0131\u0020\u0066\u006F\u0072\u006D\u0061\u0074\u0074\u0061\u0020\u0028\u015F\u0131\u006B\u0020\u0079\u006F\u006B\u0029\u002E","\u0065\u0072\u0072\u006F\u0072");pCurrentQ=pickNextQuestion();if(!pCurrentQ)return;}pAskedCount++;doubleChanceUsed=false;firstAnswerIndex=-(121376^121377);setDoubleIndicator(false);updateJokerButtons();const _0x4f436b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("txet-noitseuq-p".split("").reverse().join(""));if(_0x4f436b)_0x4f436b['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=pCurrentQ['\u0071']||"\u0053\u006F\u0072\u0075";var _0x0c1e6c=(969019^969018)+(797074^797073);_0xg16cce='';_0x0c1e6c=573940^573941;pCurrentQ['\u006F\u0070\u0074\u0073']['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((opt,index)=>{var _0x4129f=(940084^940080)+(941295^941287);const _0xad_0x93f=String['\u0066\u0072\u006F\u006D\u0043\u0068\u0061\u0072\u0043\u006F\u0064\u0065']((997307^997370)+index);_0x4129f=(940317^940318)+(671827^671827);_0xg16cce+=`<button class="penalty-btn" onclick="shootBall(${index})">${_0xad_0x93f}: ${opt}</button>`;});var _0xg5b8ab=(867181^867179)+(494272^494275);const _0xec905d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("snoitpo-p".split("").reverse().join(""));_0xg5b8ab=202787^202784;if(_0xec905d)_0xec905d['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0xg16cce;}function shootBall(idx,_0xf1a3cc,_0x4318ae){const _0x49d25b=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("ntb-ytlanep.".split("").reverse().join(""));_0xf1a3cc=121841^121844;const _0x4de29f=idx===pCurrentQ['\u0061'];_0x4318ae=(361503^361502)+(548881^548887);if(!_0x4de29f&&doubleChanceUsed&&firstAnswerIndex===-(535369^535368)){firstAnswerIndex=idx;if(_0x49d25b[idx]){_0x49d25b[idx]['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0077\u0072\u006F\u006E\u0067\u002D\u0066\u0069\u0072\u0073\u0074\u002D\u0074\u0072\u0079");_0x49d25b[idx]['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=!![];}Swal['\u0066\u0069\u0072\u0065']({'\u0074\u006F\u0061\u0073\u0074':!![],"position":"\u0074\u006F\u0070","icon":"\u0069\u006E\u0066\u006F","title":"\u0130\u006C\u006B\u0020\u0048\u0061\u0074\u0061\u0021\u0020\u004B\u0061\u006C\u0061\u006E\u0020\u0048\u0061\u006B\u006B\u0131\u006E\u003A\u0020\u0031",'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false,"timer":1400,'\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064':"\u0023\u0066\u0066\u0063\u0031\u0030\u0037"});updateJokerButtons();return;}_0x49d25b['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](b=>b['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=!![]);var _0xfe02f=(677705^677705)+(350298^350301);const _0x9dae=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0062\u0061\u006C\u006C\u002D\u0077\u0072\u0061\u0070");_0xfe02f=922403^922402;var _0xb7g8a=(874342^874341)+(447469^447467);const _0x4bd=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006B\u0065\u0065\u0070\u0065\u0072\u002D\u0077\u0072\u0061\u0070");_0xb7g8a=(424319^424317)+(117027^117028);const _0xc73e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0068\u006F\u006F\u0074\u0065\u0072\u002D\u0077\u0072\u0061\u0070");const _0xcb5e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("gsm-laog".split("").reverse().join(""));const _0x0c1ef=Math['\u0066\u006C\u006F\u006F\u0072'](Math['\u0072\u0061\u006E\u0064\u006F\u006D']()*(649231^649227));if(_0xc73e)_0xc73e['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0073\u0068\u006F\u006F\u0074\u0065\u0072\u002D\u0072\u0075\u006E");setTimeout(()=>{if(_0x4bd){if(_0x4de29f){if(_0x0c1ef===(972975^972975)||_0x0c1ef===(159874^159872))_0x4bd['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u006B\u0065\u0065\u0070\u0065\u0072\u002D\u0064\u0069\u0076\u0065\u002D\u0072\u0069\u0067\u0068\u0074");else _0x4bd['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u006B\u0065\u0065\u0070\u0065\u0072\u002D\u0064\u0069\u0076\u0065\u002D\u006C\u0065\u0066\u0074");}else{if(_0x0c1ef===(829373^829373)||_0x0c1ef===(719488^719490))_0x4bd['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("tfel-evid-repeek".split("").reverse().join(""));else _0x4bd['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u006B\u0065\u0065\u0070\u0065\u0072\u002D\u0064\u0069\u0076\u0065\u002D\u0072\u0069\u0067\u0068\u0074");}}if(_0x4de29f){if(_0x9dae){if(_0x0c1ef===(532587^532587))_0x9dae['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("pot-tfel-toohs-llab".split("").reverse().join(""));else if(_0x0c1ef===(264976^264977))_0x9dae['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("pot-thgir-toohs-llab".split("").reverse().join(""));else if(_0x0c1ef===(575493^575495))_0x9dae['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0062\u0061\u006C\u006C\u002D\u0073\u0068\u006F\u006F\u0074\u002D\u006C\u0065\u0066\u0074\u002D\u006C\u006F\u0077");else _0x9dae['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("wol-thgir-toohs-llab".split("").reverse().join(""));}setTimeout(()=>{if(_0xcb5e){_0xcb5e['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="\u0047\u004F\u004C\u0021\u0021\u0021";_0xcb5e['\u0073\u0074\u0079\u006C\u0065']['\u0063\u006F\u006C\u006F\u0072']="\u0023\u0066\u0061\u0062\u0062\u0030\u0030";_0xcb5e['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("wohs".split("").reverse().join(""));}pScore++;pCorrectCount++;document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u002D\u0073\u0063\u006F\u0072\u0065")['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=pScore;Swal['\u0066\u0069\u0072\u0065']({'\u0074\u006F\u0061\u0073\u0074':!![],'\u0070\u006F\u0073\u0069\u0074\u0069\u006F\u006E':"\u0074\u006F\u0070",'\u0069\u0063\u006F\u006E':'success',"title":"\u004D\u00FC\u006B\u0065\u006D\u006D\u0065\u006C\u0020\u015E\u0075\u0074\u0021","showConfirmButton":false,'\u0074\u0069\u006D\u0065\u0072':900,'\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064':"\u0023\u0061\u0035\u0064\u0036\u0061\u0037"});},820896^821090);}else{pWrongCount++;let _0x2c_0x7f6;const _0x6ec82b=()=>{if(_0xcb5e){_0xcb5e['\u0073\u0074\u0079\u006C\u0065']['\u0063\u006F\u006C\u006F\u0072']="\u0023\u0065\u0066\u0035\u0033\u0035\u0030";_0xcb5e['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("wohs".split("").reverse().join(""));}Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':'error',"title":"\u004B\u0061\u00E7\u0131\u0072\u0064\u0131\u006E\u0021",'\u0074\u0065\u0078\u0074':`Doğru: ${String['\u0066\u0072\u006F\u006D\u0043\u0068\u0061\u0072\u0043\u006F\u0064\u0065']((193454^193519)+pCurrentQ['\u0061'])}`,"showConfirmButton":!![],"timer":2400,'\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064':'#ef9a9a'});};_0x2c_0x7f6=(518850^518848)+(141712^141718);if(Math['\u0072\u0061\u006E\u0064\u006F\u006D']()>0.5){if(_0x9dae){_0x9dae['\u0073\u0074\u0079\u006C\u0065']['\u0062\u006F\u0074\u0074\u006F\u006D']="xp061".split("").reverse().join("");_0x9dae['\u0073\u0074\u0079\u006C\u0065']['\u006C\u0065\u0066\u0074']=_0x0c1ef===(258471^258471)||_0x0c1ef===(215145^215147)?"\u0034\u0030\u0025":"%06".split("").reverse().join("");_0x9dae['\u0073\u0074\u0079\u006C\u0065']['\u0074\u0072\u0061\u006E\u0073\u0066\u006F\u0072\u006D']=")6.0(elacs".split("").reverse().join("");}setTimeout(()=>{if(_0xcb5e)_0xcb5e['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="!IDRATRUK".split("").reverse().join("");_0x6ec82b();},169160^169226);}else{if(_0x9dae)_0x9dae['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064'](Math['\u0072\u0061\u006E\u0064\u006F\u006D']()>0.5?"\u0062\u0061\u006C\u006C\u002D\u006D\u0069\u0073\u0073\u002D\u006C\u0065\u0066\u0074":"\u0062\u0061\u006C\u006C\u002D\u006D\u0069\u0073\u0073\u002D\u0072\u0069\u0067\u0068\u0074");setTimeout(()=>{if(_0xcb5e)_0xcb5e['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="\u0044\u0049\u015E\u0041\u0052\u0049\u0021";_0x6ec82b();},213190^213252);}}},473990^473770);pBalls--;document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u002D\u0062\u0061\u006C\u006C\u0073")['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=pBalls;setTimeout(()=>{resetField();loadPenaltyQuestion();},162967^161271);}function resetField(_0x10_0x41a,_0x6gfd){const _0x38_0xe63=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0062\u0061\u006C\u006C\u002D\u0077\u0072\u0061\u0070");_0x10_0x41a=(681685^681681)+(138613^138612);const _0x39_0x8d3=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006B\u0065\u0065\u0070\u0065\u0072\u002D\u0077\u0072\u0061\u0070");var _0xgb51ed=(194189^194186)+(364631^364625);const _0xgb481d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0068\u006F\u006F\u0074\u0065\u0072\u002D\u0077\u0072\u0061\u0070");_0xgb51ed='\u0070\u0066\u006F\u0070\u006B\u006B';const _0x8307e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0067\u006F\u0061\u006C\u002D\u006D\u0073\u0067");_0x6gfd='\u006C\u006F\u0069\u006F\u006B\u006A';if(_0x38_0xe63){_0x38_0xe63['\u0063\u006C\u0061\u0073\u0073\u004E\u0061\u006D\u0065']="\u0062\u0061\u006C\u006C\u002D\u0077\u0072\u0061\u0070\u0070\u0065\u0072";_0x38_0xe63['\u0073\u0074\u0079\u006C\u0065']="";}if(_0x39_0x8d3)_0x39_0x8d3['\u0063\u006C\u0061\u0073\u0073\u004E\u0061\u006D\u0065']="\u006B\u0065\u0065\u0070\u0065\u0072\u002D\u0077\u0072\u0061\u0070\u0070\u0065\u0072";if(_0xgb481d)_0xgb481d['\u0063\u006C\u0061\u0073\u0073\u004E\u0061\u006D\u0065']="\u0073\u0068\u006F\u006F\u0074\u0065\u0072\u002D\u0077\u0072\u0061\u0070\u0070\u0065\u0072";if(_0x8307e)_0x8307e['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("\u0073\u0068\u006F\u0077");document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("ntb-ytlanep.".split("").reverse().join(""))['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](b=>{b['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("\u0077\u0072\u006F\u006E\u0067\u002D\u0066\u0069\u0072\u0073\u0074\u002D\u0074\u0072\u0079");b['\u0073\u0074\u0079\u006C\u0065']['\u0074\u0065\u0078\u0074\u0044\u0065\u0063\u006F\u0072\u0061\u0074\u0069\u006F\u006E']='';b['\u0073\u0074\u0079\u006C\u0065']['\u006F\u0070\u0061\u0063\u0069\u0074\u0079']='';b['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']="\u0023\u0066\u0061\u0062\u0062\u0030\u0030";b['\u0073\u0074\u0079\u006C\u0065']['\u0063\u006F\u006C\u006F\u0072']="24b1e0#".split("").reverse().join("");b['\u0073\u0074\u0079\u006C\u0065']['\u0062\u006F\u0072\u0064\u0065\u0072\u0043\u006F\u006C\u006F\u0072']="005b0f#".split("").reverse().join("");b['\u0064\u0069\u0073\u0061\u0062\u006C\u0065\u0064']=false;});}function finishPenaltyGame(_0x947bf,_0x98afe){var _0x3a6eb=(663084^663084)+(378421^378428);_0x947bf=743555^743561;_0x3a6eb=(854212^854211)+(923582^923574);const _0x249cb=pScore>=(906695^906703)?"\uDFC6\uD83C !ENASFE".split("").reverse().join(""):pScore>=(900434^900439)?"\uDC4F\uD83D !\u0131t\xE7aM iy\u0130".split("").reverse().join(""):"\u0041\u006E\u0074\u0072\u0065\u006E\u006D\u0061\u006E\u0020\u004C\u0061\u007A\u0131\u006D\u0020\uD83E\uDD15";const _0xf220f=Math['\u0072\u006F\u0075\u006E\u0064'](pCorrectCount/Math['\u006D\u0061\u0078'](195165^195164,pCorrectCount+pWrongCount)*(547654^547618));var _0xg3db=(993556^993555)+(900720^900720);const _0x40g=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u002D\u0071\u0075\u0065\u0073\u0074\u0069\u006F\u006E\u002D\u0074\u0065\u0078\u0074");_0xg3db=(470154^470147)+(640368^640372);if(_0x40g){_0x40g['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=`
+              </div>`,
+        confirmButtonText: 'Tamam'
+    });
+
+    // Lobby'e dön
+    const lobby = document.getElementById('qd-lobby');
+    const game = document.getElementById('qd-game');
+    if (lobby) lobby.style.display = 'block';
+    if (game) game.style.display = 'none';
+    const t = document.getElementById('qd-time'); if (t) t.innerText = '30';
+    const st = document.getElementById('qd-step'); if (st) st.innerText = '0';
+}
+
+function openPenaltyGame() {
+    try { closeModal('game-hub-modal'); } catch (e) { }
+    document.getElementById('penalty-modal').style.display = 'flex';
+    showLobby();
+}
+
+function showLobby() {
+    document.getElementById('penalty-lobby').style.display = 'flex';
+    document.getElementById('penalty-game-area').style.display = 'none';
+    fetchLeaderboard();
+}
+
+function startGameFromLobby() {
+    document.getElementById('penalty-lobby').style.display = 'none';
+    document.getElementById('penalty-game-area').style.display = 'block';
+    startPenaltySession();
+}
+
+function fetchLeaderboard() {
+    const tbody = document.getElementById('leaderboard-body');
+    const loader = document.getElementById('leaderboard-loader');
+    const table = document.getElementById('leaderboard-table');
+
+    if (!tbody || !loader || !table) return;
+
+    tbody.innerHTML = '';
+    loader.style.display = 'block';
+    table.style.display = 'none';
+
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "getLeaderboard" })
+    })
+        .then(r => r.json())
+        .then(data => {
+            loader.style.display = 'none';
+            if (data.result !== "success") {
+                loader.innerText = "Yüklenemedi.";
+                loader.style.display = 'block';
+                return;
+            }
+
+            table.style.display = 'table';
+            let html = '';
+
+            if (!data.leaderboard || data.leaderboard.length === 0) {
+                html = '<tr><td colspan="4" style="text-align:center;">Henüz maç yapılmadı.</td></tr>';
+            } else {
+                data.leaderboard.forEach((u, i) => {
+                    const medal = i === 0 ? '🥇' : (i === 1 ? '🥈' : (i === 2 ? '🥉' : `<span class="rank-badge">${i + 1}</span>`));
+                    const bgStyle = (u.username === currentUser) ? 'background:rgba(250, 187, 0, 0.1);' : '';
+                    html += `<tr style="${bgStyle}"><td>${medal}</td><td>${u.username}</td><td>${u.games}</td><td>${u.average}</td></tr>`;
+                });
+            }
+            tbody.innerHTML = html;
+        })
+        .catch(() => {
+            loader.style.display = 'none';
+            loader.innerText = "Bağlantı hatası.";
+            loader.style.display = 'block';
+        });
+}
+
+function buildQuestionQueue() {
+    const n = quizQuestions.length;
+    const idxs = Array.from({ length: n }, (_, i) => i);
+    idxs.sort(() => Math.random() - 0.5);
+
+    // 10 soru için yeter yoksa, yine de döngüye sokmayalım: kalan toplarda tekrar olabilir.
+    // ama önce tüm sorular bir kez gelsin.
+    return idxs;
+}
+
+function startPenaltySession() {
+    // Session reset
+    pScore = 0;
+    pBalls = 10;
+    pAskedCount = 0;
+    pCorrectCount = 0;
+    pWrongCount = 0;
+
+    jokers = { call: 1, half: 1, double: 1 };
+    doubleChanceUsed = false;
+    firstAnswerIndex = -1;
+    setDoubleIndicator(false);
+
+    // Soru kuyruğu
+    pQuestionQueue = buildQuestionQueue();
+
+    updateJokerButtons();
+    document.getElementById('p-score').innerText = pScore;
+    document.getElementById('p-balls').innerText = pBalls;
+
+    const restartBtn = document.getElementById('p-restart-btn');
+    const optionsEl = document.getElementById('p-options');
+    if (restartBtn) restartBtn.style.display = 'none';
+    if (optionsEl) optionsEl.style.display = 'grid';
+
+    resetField();
+    loadPenaltyQuestion();
+}
+
+function pickNextQuestion() {
+    if (quizQuestions.length === 0) return null;
+
+    // Önce kuyruktan tüket
+    if (pQuestionQueue.length > 0) {
+        const i = pQuestionQueue.shift();
+        return quizQuestions[i];
+    }
+
+    // Kuyruk bitti ama top devam ediyor: artık random (soru azsa)
+    return quizQuestions[Math.floor(Math.random() * quizQuestions.length)];
+}
+
+function loadPenaltyQuestion() {
+    if (pBalls <= 0) { finishPenaltyGame(); return; }
+    if (!Array.isArray(quizQuestions) || quizQuestions.length === 0) {
+        Swal.fire('Hata', 'Soru yok!', 'warning');
+        return;
+    }
+
+    pCurrentQ = pickNextQuestion();
+    if (!pCurrentQ || !pCurrentQ.opts || pCurrentQ.opts.length < 2) {
+        Swal.fire('Hata', 'Bu soru hatalı formatta (şık yok).', 'error');
+        // bir sonraki soruyu dene
+        pCurrentQ = pickNextQuestion();
+        if (!pCurrentQ) return;
+    }
+
+    pAskedCount++;
+    doubleChanceUsed = false;
+    firstAnswerIndex = -1;
+    setDoubleIndicator(false);
+    updateJokerButtons();
+
+    const qEl = document.getElementById('p-question-text');
+    if (qEl) qEl.innerText = pCurrentQ.q || "Soru";
+
+    let html = '';
+    pCurrentQ.opts.forEach((opt, index) => {
+        const letter = String.fromCharCode(65 + index);
+        html += `<button class="penalty-btn" onclick="shootBall(${index})">${letter}: ${opt}</button>`;
+    });
+
+    const optionsEl = document.getElementById('p-options');
+    if (optionsEl) optionsEl.innerHTML = html;
+}
+
+function shootBall(idx) {
+    const btns = document.querySelectorAll('.penalty-btn');
+    const isCorrect = (idx === pCurrentQ.a);
+
+    // Double joker: ilk yanlışta bir hak daha
+    if (!isCorrect && doubleChanceUsed && firstAnswerIndex === -1) {
+        firstAnswerIndex = idx;
+        if (btns[idx]) {
+            btns[idx].classList.add('wrong-first-try');
+            btns[idx].disabled = true;
+        }
+        Swal.fire({ toast: true, position: 'top', icon: 'info', title: 'İlk Hata! Kalan Hakkın: 1', showConfirmButton: false, timer: 1400, background: '#ffc107' });
+        updateJokerButtons();
+        return;
+    }
+
+    // Artık atış kesinleşti
+    btns.forEach(b => b.disabled = true);
+
+    const ballWrap = document.getElementById('ball-wrap');
+    const keeperWrap = document.getElementById('keeper-wrap');
+    const shooterWrap = document.getElementById('shooter-wrap');
+    const goalMsg = document.getElementById('goal-msg');
+
+    const shotDir = Math.floor(Math.random() * 4);
+    if (shooterWrap) shooterWrap.classList.add('shooter-run');
+
+    setTimeout(() => {
+        if (keeperWrap) {
+            if (isCorrect) {
+                if (shotDir === 0 || shotDir === 2) keeperWrap.classList.add('keeper-dive-right');
+                else keeperWrap.classList.add('keeper-dive-left');
+            } else {
+                if (shotDir === 0 || shotDir === 2) keeperWrap.classList.add('keeper-dive-left');
+                else keeperWrap.classList.add('keeper-dive-right');
+            }
+        }
+
+        if (isCorrect) {
+            if (ballWrap) {
+                if (shotDir === 0) ballWrap.classList.add('ball-shoot-left-top');
+                else if (shotDir === 1) ballWrap.classList.add('ball-shoot-right-top');
+                else if (shotDir === 2) ballWrap.classList.add('ball-shoot-left-low');
+                else ballWrap.classList.add('ball-shoot-right-low');
+            }
+
+            setTimeout(() => {
+                if (goalMsg) {
+                    goalMsg.innerText = "GOL!!!";
+                    goalMsg.style.color = "#fabb00";
+                    goalMsg.classList.add('show');
+                }
+                pScore++;
+                pCorrectCount++;
+                document.getElementById('p-score').innerText = pScore;
+
+                Swal.fire({ toast: true, position: 'top', icon: 'success', title: 'Mükemmel Şut!', showConfirmButton: false, timer: 900, background: '#a5d6a7' });
+            }, 450);
+
+        } else {
+            pWrongCount++;
+
+            const showWrong = () => {
+                if (goalMsg) {
+                    goalMsg.style.color = "#ef5350";
+                    goalMsg.classList.add('show');
+                }
+                Swal.fire({ icon: 'error', title: 'Kaçırdın!', text: `Doğru: ${String.fromCharCode(65 + pCurrentQ.a)}`, showConfirmButton: true, timer: 2400, background: '#ef9a9a' });
+            };
+
+            if (Math.random() > 0.5) {
+                if (ballWrap) {
+                    ballWrap.style.bottom = "160px";
+                    ballWrap.style.left = (shotDir === 0 || shotDir === 2) ? "40%" : "60%";
+                    ballWrap.style.transform = "scale(0.6)";
+                }
+                setTimeout(() => { if (goalMsg) goalMsg.innerText = "KURTARDI!"; showWrong(); }, 450);
+            } else {
+                if (ballWrap) ballWrap.classList.add(Math.random() > 0.5 ? 'ball-miss-left' : 'ball-miss-right');
+                setTimeout(() => { if (goalMsg) goalMsg.innerText = "DIŞARI!"; showWrong(); }, 450);
+            }
+        }
+    }, 300);
+
+    // top azalt
+    pBalls--;
+    document.getElementById('p-balls').innerText = pBalls;
+
+    setTimeout(() => { resetField(); loadPenaltyQuestion(); }, 2400);
+}
+
+function resetField() {
+    const ballWrap = document.getElementById('ball-wrap');
+    const keeperWrap = document.getElementById('keeper-wrap');
+    const shooterWrap = document.getElementById('shooter-wrap');
+    const goalMsg = document.getElementById('goal-msg');
+
+    if (ballWrap) { ballWrap.className = 'ball-wrapper'; ballWrap.style = ""; }
+    if (keeperWrap) keeperWrap.className = 'keeper-wrapper';
+    if (shooterWrap) shooterWrap.className = 'shooter-wrapper';
+    if (goalMsg) goalMsg.classList.remove('show');
+
+    document.querySelectorAll('.penalty-btn').forEach(b => {
+        b.classList.remove('wrong-first-try');
+        b.style.textDecoration = '';
+        b.style.opacity = '';
+        b.style.background = '#fabb00';
+        b.style.color = '#0e1b42';
+        b.style.borderColor = '#f0b500';
+        b.disabled = false;
+    });
+}
+
+function finishPenaltyGame() {
+    const totalShots = 10;
+    const title = pScore >= 8 ? "EFSANE! 🏆" : (pScore >= 5 ? "İyi Maçtı! 👏" : "Antrenman Lazım 🤕");
+    const acc = Math.round((pCorrectCount / Math.max(1, (pCorrectCount + pWrongCount))) * 100);
+
+    const qEl = document.getElementById('p-question-text');
+    if (qEl) {
+        qEl.innerHTML = `
             <div style="font-size:1.5rem; color:#fabb00; font-weight:800;">MAÇ BİTTİ!</div>
-            <div style="margin-top:4px; font-size:1.1rem; color:#fff;">${_0x249cb}</div>
+            <div style="margin-top:4px; font-size:1.1rem; color:#fff;">${title}</div>
             <div style="margin-top:8px; font-size:1rem; color:#ddd;">
-                <b>Skor:</b> ${pScore}/${_0x947bf} &nbsp; • &nbsp;
-                <b>Doğruluk:</b> ${_0xf220f}%
+                <b>Skor:</b> ${pScore}/${totalShots} &nbsp; • &nbsp;
+                <b>Doğruluk:</b> ${acc}%
             </div>
             <div style="margin-top:6px; font-size:0.9rem; color:#bbb;">
                 Doğru: ${pCorrectCount} &nbsp; | &nbsp; Yanlış: ${pWrongCount}
@@ -158,33 +2192,1130 @@ function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(
             <div style="margin-top:10px; font-size:0.85rem; color:#aaa;">
                 Yeniden oynamak için aşağıdan başlatabilirsin.
             </div>
-        `;}const _0x7ed70e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("snoitpo-p".split("").reverse().join(""));const _0xd3b2f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0070\u002D\u0072\u0065\u0073\u0074\u0061\u0072\u0074\u002D\u0062\u0074\u006E");_0x98afe=(654373^654368)+(444071^444064);if(_0x7ed70e)_0x7ed70e['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";if(_0xd3b2f)_0xd3b2f['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="kcolb".split("").reverse().join("");fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"Content-Type":"text/plain;charset=utf-8"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"\u006C\u006F\u0067\u0051\u0075\u0069\u007A",'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken(),'\u0073\u0063\u006F\u0072\u0065':pScore*(821156^821166),"total":100})})['\u0066\u0069\u006E\u0061\u006C\u006C\u0079'](()=>{setTimeout(fetchLeaderboard,518573^519157);});}function openWizard(){document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0077\u0069\u007A\u0061\u0072\u0064\u002D\u006D\u006F\u0064\u0061\u006C")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="xelf".split("").reverse().join("");if(Object['\u006B\u0065\u0079\u0073'](wizardStepsData)['\u006C\u0065\u006E\u0067\u0074\u0068']===(452931^452931)){Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u0130\u0061\u0064\u0065\u0020\u0041\u0073\u0069\u0073\u0074\u0061\u006E\u0131\u0020\u0056\u0065\u0072\u0069\u0073\u0069\u0020\u0059\u00FC\u006B\u006C\u0065\u006E\u0069\u0079\u006F\u0072\u002E\u002E\u002E",'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']()});loadWizardData()['\u0074\u0068\u0065\u006E'](()=>{Swal['\u0063\u006C\u006F\u0073\u0065']();if(wizardStepsData["\u0073\u0074\u0061\u0072\u0074"])renderStep("\u0073\u0074\u0061\u0072\u0074");else document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ydob-draziw".split("").reverse().join(""))['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u0068\u0032\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0063\u006F\u006C\u006F\u0072\u003A\u0072\u0065\u0064\u003B\u0022\u003E\u0041\u0073\u0069\u0073\u0074\u0061\u006E\u0020\u0076\u0065\u0072\u0069\u0073\u0069\u0020\u0065\u006B\u0073\u0069\u006B\u002E\u003C\u002F\u0068\u0032\u003E";})['\u0063\u0061\u0074\u0063\u0068'](()=>{Swal['\u0063\u006C\u006F\u0073\u0065']();document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ydob-draziw".split("").reverse().join(""))['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u0068\u0032\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0063\u006F\u006C\u006F\u0072\u003A\u0072\u0065\u0064\u003B\u0022\u003E\u0056\u0065\u0072\u0069\u0020\u00E7\u0065\u006B\u006D\u0065\u0020\u0068\u0061\u0074\u0061\u0073\u0131\u002E\u003C\u002F\u0068\u0032\u003E";});}else{renderStep("\u0073\u0074\u0061\u0072\u0074");}}function renderStep(k,_0x9bgdfa){const s=wizardStepsData[k];_0x9bgdfa=(236312^236313)+(335740^335740);if(!s){document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ydob-draziw".split("").reverse().join(""))['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=`<h2 style="color:red;">HATA: Adım ID (${k}) yok.</h2>`;return;}var _0x84g7fb=(752835^752833)+(978203^978202);const b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ydob-draziw".split("").reverse().join(""));_0x84g7fb=(901296^901297)+(733043^733045);let h=`<h2 style="color:var(--primary);">${s['\u0074\u0069\u0074\u006C\u0065']||''}</h2>`;if(s['\u0072\u0065\u0073\u0075\u006C\u0074']){let i=s['\u0072\u0065\u0073\u0075\u006C\u0074']==="der".split("").reverse().join("")?" \uDED1\uD83D ".split("").reverse().join(""):s['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0067\u0072\u0065\u0065\u006E"?" \u2705 ".split("").reverse().join(""):"\u0020\u26A0\uFE0F\u0020";var _0xd4a81d=(955083^955082)+(398541^398543);let c=s['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0072\u0065\u0064"?"der-ser".split("").reverse().join(""):s['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0067\u0072\u0065\u0065\u006E"?"neerg-ser".split("").reverse().join(""):"wolley-ser".split("").reverse().join("");_0xd4a81d=436507^436504;h+=`<div class="result-box ${c}"><div style="font-size:3rem;margin-bottom:10px;">${i}</div><h3>${s['\u0074\u0069\u0074\u006C\u0065']}</h3><p>${s['\u0074\u0065\u0078\u0074']}</p>${s['\u0073\u0063\u0072\u0069\u0070\u0074']?`<div class="script-box">${s['\u0073\u0063\u0072\u0069\u0070\u0074']}</div>`:''}</div><button class="restart-btn" onclick="renderStep('start')"><i class="fas fa-redo"></i> Başa Dön</button>`;}else{h+=`<p>${s['\u0074\u0065\u0078\u0074']}</p><div class="wizard-options">`;s['\u006F\u0070\u0074\u0069\u006F\u006E\u0073']['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](o=>{h+=`<button class="option-btn" onclick="renderStep('${o['\u006E\u0065\u0078\u0074']}')"><i class="fas fa-chevron-right"></i> ${o['\u0074\u0065\u0078\u0074']}</button>`;});h+=`</div>`;if(k!=="trats".split("").reverse().join(""))h+=`<button class="restart-btn" onclick="renderStep('start')" style="background:#eee;color:#333;margin-top:15px;">Başa Dön</button>`;}b['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=h;}const twState={'\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070':'start',"history":[]};function openTechWizard(){openTechArea("draziw".split("").reverse().join(""));}function twRenderStep(){const _0xddc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0065\u0063\u0068\u002D\u0077\u0069\u007A\u0061\u0072\u0064\u002D\u0063\u006F\u006E\u0074\u0065\u006E\u0074");const _0xa9decd=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0077\u002D\u0062\u0074\u006E\u002D\u0062\u0061\u0063\u006B");const _0x32d1e=techWizardData[twState['\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070']];if(twState['\u0068\u0069\u0073\u0074\u006F\u0072\u0079']['\u006C\u0065\u006E\u0067\u0074\u0068']>(100859^100859))_0xa9decd['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";else _0xa9decd['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");if(!_0x32d1e){_0xddc['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=`<div class="alert" style="color:red;">Hata: Adım bulunamadı (${twState['\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070']}).</div>`;return;}var _0xd2ddab=(690649^690655)+(819315^819317);let _0x66e2ae=`<div class="tech-step-title">${_0x32d1e['\u0074\u0069\u0074\u006C\u0065']||''}</div>`;_0xd2ddab=(304610^304608)+(989627^989631);if(_0x32d1e['\u0074\u0065\u0078\u0074'])_0x66e2ae+=`<p style="font-size:1rem; margin-bottom:15px;">${_0x32d1e['\u0074\u0065\u0078\u0074']}</p>`;if(_0x32d1e['\u0073\u0063\u0072\u0069\u0070\u0074']){const _0x5d19f=encodeURIComponent(_0x32d1e['\u0073\u0063\u0072\u0069\u0070\u0074']);_0x66e2ae+=`<div class="tech-script-box"><span class="tech-script-label">Müşteriye iletilecek:</span>"${_0x32d1e['\u0073\u0063\u0072\u0069\u0070\u0074']}"<div style="margin-top:10px; text-align:right;"><button class="btn btn-copy" style="font-size:0.8rem; padding:5px 10px;" onclick="copyScriptContent('${_0x5d19f}')"><i class="fas fa-copy"></i> Kopyala</button></div></div>`;}if(_0x32d1e['\u0061\u006C\u0065\u0072\u0074'])_0x66e2ae+=`<div class="tech-alert">${_0x32d1e['\u0061\u006C\u0065\u0072\u0074']}</div>`;if(_0x32d1e['\u0062\u0075\u0074\u0074\u006F\u006E\u0073']&&_0x32d1e['\u0062\u0075\u0074\u0074\u006F\u006E\u0073']['\u006C\u0065\u006E\u0067\u0074\u0068']>(776820^776820)){_0x66e2ae+=`<div class="tech-buttons-area">`;_0x32d1e['\u0062\u0075\u0074\u0074\u006F\u006E\u0073']['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](btn=>{let _0x40_0xa48=btn['\u0073\u0074\u0079\u006C\u0065']==="\u006F\u0070\u0074\u0069\u006F\u006E"?"noitpo-ntb-hcet".split("").reverse().join(""):"\u0074\u0065\u0063\u0068\u002D\u0062\u0074\u006E\u002D\u0070\u0072\u0069\u006D\u0061\u0072\u0079";_0x66e2ae+=`<button class="tech-btn ${_0x40_0xa48}" onclick="twChangeStep('${btn['\u006E\u0065\u0078\u0074']}')">${btn['\u0074\u0065\u0078\u0074']}</button>`;});_0x66e2ae+=`</div>`;}_0xddc['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x66e2ae;}function twChangeStep(newStep){twState['\u0068\u0069\u0073\u0074\u006F\u0072\u0079']['\u0070\u0075\u0073\u0068'](twState['\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070']);twState['\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070']=newStep;twRenderStep();}function twGoBack(){if(twState['\u0068\u0069\u0073\u0074\u006F\u0072\u0079']['\u006C\u0065\u006E\u0067\u0074\u0068']>(673027^673027)){twState['\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070']=twState['\u0068\u0069\u0073\u0074\u006F\u0072\u0079']['\u0070\u006F\u0070']();twRenderStep();}}function twResetWizard(){twState['\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070']="trats".split("").reverse().join("");twState['\u0068\u0069\u0073\u0074\u006F\u0072\u0079']=[];twRenderStep();}function openQualityArea(_0xd5e23f){var _0xddbgf=(326042^326035)+(217822^217823);const _0x965ffa=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ladom-ytilauq".split("").reverse().join(""));_0xddbgf='\u0061\u0071\u0062\u0069\u0064\u006E';if(_0x965ffa)_0x965ffa['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";var _0x6a79c=(476452^476454)+(341400^341393);const _0x8c93f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("neercslluf-ytilauq".split("").reverse().join(""));_0x6a79c=(287312^287312)+(272683^272682);_0x8c93f['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="xelf".split("").reverse().join("");document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0073\u0069\u0064\u0065\u002D\u006E\u0061\u006D\u0065")['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=currentUser;document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0073\u0069\u0064\u0065\u002D\u0072\u006F\u006C\u0065")['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=isAdminMode?"\u0059\u00F6\u006E\u0065\u0074\u0069\u0063\u0069":"iclismeT".split("").reverse().join("");document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ratava-edis-q".split("").reverse().join(""))['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=currentUser['\u0063\u0068\u0061\u0072\u0041\u0074'](888760^888760)['\u0074\u006F\u0055\u0070\u0070\u0065\u0072\u0043\u0061\u0073\u0065']();populateMonthFilterFull();const _0x976c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("sretlif-nimda".split("").reverse().join(""));const _0x4ae13b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0061\u0073\u0073\u0069\u0067\u006E\u002D\u0074\u0072\u0061\u0069\u006E\u0069\u006E\u0067\u002D\u0062\u0074\u006E");const _0xb313da=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006D\u0061\u006E\u0075\u0061\u006C\u002D\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u002D\u0061\u0064\u006D\u0069\u006E\u002D\u0062\u0074\u006E");_0xd5e23f=(311791^311783)+(729646^729638);if(isAdminMode){if(_0x976c)_0x976c['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0066\u006C\u0065\u0078";if(_0x4ae13b)_0x4ae13b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";if(_0xb313da)_0xb313da['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0066\u006C\u0065\u0078";if(adminUserList['\u006C\u0065\u006E\u0067\u0074\u0068']===(477965^477965)){fetchUserListForAdmin()['\u0074\u0068\u0065\u006E'](users=>{let _0xe3adgc;const _0x7186e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0061\u0064\u006D\u0069\u006E\u002D\u0067\u0072\u006F\u0075\u0070");_0xe3adgc=(314392^314396)+(631953^631956);if(_0x7186e){const _0x2333ab=[...new Set(users['\u006D\u0061\u0070'](u=>u['\u0067\u0072\u006F\u0075\u0070']))]['\u0073\u006F\u0072\u0074']();_0x7186e['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=`<option value="all">Tüm Gruplar</option>`+_0x2333ab['\u006D\u0061\u0070'](g=>`<option value="${g}">${g}</option>`)['\u006A\u006F\u0069\u006E']('');updateAgentListBasedOnGroup();}populateDashboardFilters();});}else{populateDashboardFilters();}}else{if(_0x976c)_0x976c['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");if(_0x4ae13b)_0x4ae13b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";if(_0xb313da)_0xb313da['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");let _0x9bbeee;const _0x9bbb=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("\u0023\u0076\u0069\u0065\u0077\u002D\u0064\u0061\u0073\u0068\u0062\u006F\u0061\u0072\u0064\u0020\u002E\u0071\u002D\u0076\u0069\u0065\u0077\u002D\u0068\u0065\u0061\u0064\u0065\u0072\u0020\u003E\u0020\u0064\u0069\u0076");_0x9bbeee='\u006D\u006C\u0061\u006B\u006D\u0067';if(_0x9bbb&&_0x9bbb['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']!=="\u006E\u006F\u006E\u0065"){populateDashboardFilters();}}const _0x2g20d=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("\u002E\u0071\u002D\u006E\u0061\u0076\u002D\u0069\u0074\u0065\u006D\u002E\u0061\u0063\u0074\u0069\u0076\u0065");if(_0x2g20d){switchQualityTab("draobhsad".split("").reverse().join(""),_0x2g20d);}}function closeFullQuality(){document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u0075\u0061\u006C\u0069\u0074\u0079\u002D\u0066\u0075\u006C\u006C\u0073\u0063\u0072\u0065\u0065\u006E")['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";if(localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("eloRtropSs".split("").reverse().join(""))==="sresuq".split("").reverse().join("")){logout();}}function switchQualityTab(tabName,element){document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("meti-van-q.".split("").reverse().join(""))['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](item=>item['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("evitca".split("").reverse().join("")));if(element){element['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0063\u0074\u0069\u0076\u0065");}else{document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072'](`.q-nav-item[onclick*="${tabName}"]`)['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0063\u0074\u0069\u0076\u0065");}document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u002E\u0071\u002D\u0076\u0069\u0065\u0077\u002D\u0073\u0065\u0063\u0074\u0069\u006F\u006E")['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](section=>section['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("\u0061\u0063\u0074\u0069\u0076\u0065"));document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`view-${tabName}`)['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("evitca".split("").reverse().join(""));if(tabName==="draobhsad".split("").reverse().join(""))loadQualityDashboard();else if(tabName==="snoitaulave".split("").reverse().join(""))fetchEvaluationsForAgent();else if(tabName==="\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B"){populateFeedbackFilters();refreshFeedbackData();}else if(tabName==="\u0074\u0072\u0061\u0069\u006E\u0069\u006E\u0067")loadTrainingData();}function populateMonthFilterFull(_0x52fceb){const _0x63a6cd=["\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u006D\u006F\u006E\u0074\u0068","\u0071\u002D\u0065\u0076\u0061\u006C\u002D\u006D\u006F\u006E\u0074\u0068"];const _0x1424b=new Date();var _0x44427g=(544591^544590)+(546021^546016);const _0xf7bee=_0x1424b['\u0067\u0065\u0074\u004D\u006F\u006E\u0074\u0068']();_0x44427g=(867866^867869)+(944285^944283);const _0x95cfd=_0x1424b['\u0067\u0065\u0074\u0046\u0075\u006C\u006C\u0059\u0065\u0061\u0072']();_0x52fceb=(735330^735328)+(106446^106439);_0x63a6cd['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](id=>{var _0x97f4f=(722024^722028)+(431307^431299);const _0x5de=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](id);_0x97f4f=(775440^775441)+(558415^558407);if(!_0x5de)return;_0x5de['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']='';for(let i=526436^526436;i<(653302^653296);i++){let _0x71e;let _0x383f6a=(_0xf7bee-i+(793402^793398))%(750608^750620);_0x71e=935524^935522;let _0x39cf=_0x95cfd-(_0xf7bee-i<(979250^979250)?115602^115603:259153^259153);var _0x7985a=(805468^805464)+(425402^425395);const _0xf7cc=`${String(_0x383f6a+(953805^953804))['\u0070\u0061\u0064\u0053\u0074\u0061\u0072\u0074'](477864^477866,"\u0030")}.${_0x39cf}`;_0x7985a=939475^939483;var _0xf855cc=(524432^524440)+(359213^359213);const _0xd76g6d=`${MONTH_NAMES[_0x383f6a]} ${_0x39cf}`;_0xf855cc='\u0062\u0062\u006C\u0064\u0065\u0070';var _0x08fa=(860722^860726)+(834865^834870);const _0xc4129b=document['\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006C\u0065\u006D\u0065\u006E\u0074']("\u006F\u0070\u0074\u0069\u006F\u006E");_0x08fa=(167319^167313)+(643018^643023);_0xc4129b['\u0076\u0061\u006C\u0075\u0065']=_0xf7cc;_0xc4129b['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']=_0xd76g6d;if(i===(911801^911801))_0xc4129b['\u0073\u0065\u006C\u0065\u0063\u0074\u0065\u0064']=!![];_0x5de['\u0061\u0070\u0070\u0065\u006E\u0064\u0043\u0068\u0069\u006C\u0064'](_0xc4129b);}});}function populateDashboardFilters(){const _0x670d6b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0067\u0072\u006F\u0075\u0070");const _0x3c4e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0061\u0067\u0065\u006E\u0074");const _0x8cda=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("lennahc-hsad-q".split("").reverse().join(""));if(!isAdminMode){if(_0x670d6b)_0x670d6b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";if(_0x3c4e)_0x3c4e['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");return;}else{if(_0x670d6b)_0x670d6b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="kcolb".split("").reverse().join("");if(_0x3c4e)_0x3c4e['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";}if(!_0x670d6b)return;var _0xcbc9f=(955579^955577)+(813456^813458);const _0xcfe84c=[...new Set(adminUserList['\u006D\u0061\u0070'](u=>u['\u0067\u0072\u006F\u0075\u0070'])['\u0066\u0069\u006C\u0074\u0065\u0072'](g=>g))]['\u0073\u006F\u0072\u0074']();_0xcbc9f=320786^320788;_0x670d6b['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u006F\u0070\u0074\u0069\u006F\u006E\u0020\u0076\u0061\u006C\u0075\u0065\u003D\u0022\u0061\u006C\u006C\u0022\u003E\u0054\u00FC\u006D\u0020\u0047\u0072\u0075\u0070\u006C\u0061\u0072\u003C\u002F\u006F\u0070\u0074\u0069\u006F\u006E\u003E";_0xcfe84c['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](g=>{var _0x8576d=(906478^906474)+(359221^359228);const _0x77634e=document['\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006C\u0065\u006D\u0065\u006E\u0074']("\u006F\u0070\u0074\u0069\u006F\u006E");_0x8576d="jfnjhj".split("").reverse().join("");_0x77634e['\u0076\u0061\u006C\u0075\u0065']=g;_0x77634e['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=g;_0x670d6b['\u0061\u0070\u0070\u0065\u006E\u0064\u0043\u0068\u0069\u006C\u0064'](_0x77634e);});updateDashAgentList();}function updateDashAgentList(_0x5be2cf,_0x178ac){const _0x158bbf=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("puorg-hsad-q".split("").reverse().join(""));_0x5be2cf=(186373^186370)+(152892^152893);const _0x504c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0061\u0067\u0065\u006E\u0074");if(!_0x504c)return;const _0x476cdg=_0x158bbf['\u0076\u0061\u006C\u0075\u0065'];_0x178ac=957592^957594;_0x504c['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=">noitpo/<reliclismeT m\xFCT>\"lla\"=eulav noitpo<".split("").reverse().join("");var _0x1a81cf=(490396^490397)+(533690^533695);let _0xd40cc=adminUserList;_0x1a81cf=209094^209090;if(_0x476cdg!=="\u0061\u006C\u006C"){_0xd40cc=adminUserList['\u0066\u0069\u006C\u0074\u0065\u0072'](u=>u['\u0067\u0072\u006F\u0075\u0070']===_0x476cdg);}_0xd40cc['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](u=>{const _0x7884cb=document['\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006C\u0065\u006D\u0065\u006E\u0074']("noitpo".split("").reverse().join(""));_0x7884cb['\u0076\u0061\u006C\u0075\u0065']=u['\u006E\u0061\u006D\u0065'];_0x7884cb['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=u['\u006E\u0061\u006D\u0065'];_0x504c['\u0061\u0070\u0070\u0065\u006E\u0064\u0043\u0068\u0069\u006C\u0064'](_0x7884cb);});updateDashRingTitle();refreshQualityData();}function updateDashRingTitle(_0xcffb,_0xf42a3b,_0x7262e){const _0xbcd1c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("eltit-gnir-hsad-q".split("").reverse().join(""))||document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0072\u0069\u006E\u0067\u002D\u0074\u0069\u0074\u006C\u0065"['\u0072\u0065\u0070\u006C\u0061\u0063\u0065']("\u0074\u0069\u0074\u006C\u0065","eltit".split("").reverse().join("")));const _0xc07cdd=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("eltit-gnir-hsad-q".split("").reverse().join(""));_0xcffb='\u006C\u0068\u0061\u0067\u0063\u0067';if(!_0xc07cdd)return;if(!isAdminMode){_0xc07cdd['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']="umuruD nauP".split("").reverse().join("");return;}var _0xedfd=(333831^333831)+(808564^808572);const _0xb83a6c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("puorg-hsad-q".split("").reverse().join(""));_0xedfd="hcjeib".split("").reverse().join("");var _0xa874d=(599487^599486)+(704202^704203);const _0x7d1f7f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0061\u0067\u0065\u006E\u0074");_0xa874d=511362^511367;const g=_0xb83a6c?_0xb83a6c['\u0076\u0061\u006C\u0075\u0065']:"lla".split("").reverse().join("");_0xf42a3b=932328^932331;const a=_0x7d1f7f?_0x7d1f7f['\u0076\u0061\u006C\u0075\u0065']:"lla".split("").reverse().join("");_0x7262e=553257^553263;if(a&&a!=="lla".split("").reverse().join("")){_0xc07cdd['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']=`${a} Puan Durumu`;}else if(g&&g!=="\u0061\u006C\u006C"){_0xc07cdd['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']=`${g} Takım Ortalaması`;}else{_0xc07cdd['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']="\u0047\u0065\u006E\u0065\u006C\u0020\u0050\u0075\u0061\u006E\u0020\u004F\u0072\u0074\u0061\u006C\u0061\u006D\u0061\u0073\u0131";}}function renderDashAgentScores(evals,_0xc46d){const _0x6e5gb=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0061\u0067\u0065\u006E\u0074\u002D\u0073\u0063\u006F\u0072\u0065\u0073");if(!_0x6e5gb)return;if(!isAdminMode){_0x6e5gb['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";return;}const _0x8c16dd=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0067\u0072\u006F\u0075\u0070");_0xc46d='\u0068\u006F\u0071\u006B\u006E\u006B';const _0xdcbb2f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tnega-hsad-q".split("").reverse().join(""));const g=_0x8c16dd?_0x8c16dd['\u0076\u0061\u006C\u0075\u0065']:"\u0061\u006C\u006C";const a=_0xdcbb2f?_0xdcbb2f['\u0076\u0061\u006C\u0075\u0065']:"lla".split("").reverse().join("");if(a&&a!=="\u0061\u006C\u006C"){_0x6e5gb['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";return;}const _0x8aca={};(evals||[])['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](e=>{var _0xcb_0x51d=(749008^749017)+(704167^704162);const _0xb5bac=e['\u0061\u0067\u0065\u006E\u0074']||"\u004E\u002F\u0041";_0xcb_0x51d=(619838^619834)+(500880^500885);var _0xa9d=(826030^826028)+(276501^276508);const _0x6b92eb=e['\u0067\u0072\u006F\u0075\u0070']||'';_0xa9d=(334780^334782)+(652863^652858);let _0x3c86b;const _0xa67g=parseFloat(e['\u0073\u0063\u006F\u0072\u0065'])||536312^536312;_0x3c86b=(703967^703963)+(305946^305945);if(!_0x8aca[_0xb5bac])_0x8aca[_0xb5bac]={'\u0074\u006F\u0074\u0061\u006C':0,'\u0063\u006F\u0075\u006E\u0074':0,'\u0067\u0072\u006F\u0075\u0070':_0x6b92eb};_0x8aca[_0xb5bac]['\u0074\u006F\u0074\u0061\u006C']+=_0xa67g;_0x8aca[_0xb5bac]['\u0063\u006F\u0075\u006E\u0074']+=198882^198883;if(!_0x8aca[_0xb5bac]['\u0067\u0072\u006F\u0075\u0070']&&_0x6b92eb)_0x8aca[_0xb5bac]['\u0067\u0072\u006F\u0075\u0070']=_0x6b92eb;});const _0xg1323a=Object['\u006B\u0065\u0079\u0073'](_0x8aca)['\u006D\u0061\u0070'](name=>{var _0x23b=(936362^936367)+(887498^887501);const o=_0x8aca[name];_0x23b=(938471^938467)+(921006^921006);return{"name":name,"group":o['\u0067\u0072\u006F\u0075\u0070']||(g!=="lla".split("").reverse().join("")?g:''),'\u0061\u0076\u0067':o['\u0063\u006F\u0075\u006E\u0074']?o['\u0074\u006F\u0074\u0061\u006C']/o['\u0063\u006F\u0075\u006E\u0074']:385286^385286,"count":o['\u0063\u006F\u0075\u006E\u0074']};});const _0x7cd44b=g&&g!=="\u0061\u006C\u006C"?_0xg1323a['\u0066\u0069\u006C\u0074\u0065\u0072'](r=>(r['\u0067\u0072\u006F\u0075\u0070']||'')===g):_0xg1323a;_0x7cd44b['\u0073\u006F\u0072\u0074']((x,y)=>x['\u0061\u0076\u0067']-y['\u0061\u0076\u0067']);if(_0x7cd44b['\u006C\u0065\u006E\u0067\u0074\u0068']===(241006^241006)){_0x6e5gb['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";return;}var _0x52af=(375803^375807)+(767130^767122);const _0x6bbbc=_0x7cd44b['\u0073\u006C\u0069\u0063\u0065'](548472^548472,237215^237207);_0x52af=641698^641701;_0x6e5gb['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x6bbbc['\u006D\u0061\u0070'](r=>`
+        `;
+    }
+
+    const optionsEl = document.getElementById('p-options');
+    const restartBtn = document.getElementById('p-restart-btn');
+    if (optionsEl) optionsEl.style.display = 'none';
+    if (restartBtn) restartBtn.style.display = 'block';
+
+    // Leaderboard log (mevcut backend uyumu)
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "logQuiz", username: currentUser, token: getToken(), score: pScore * 10, total: 100 })
+    }).finally(() => {
+        // lobby tablosunu güncel tut
+        setTimeout(fetchLeaderboard, 600);
+    });
+}
+
+
+// --- WIZARD FUNCTIONS ---
+function openWizard() {
+    document.getElementById('wizard-modal').style.display = 'flex';
+    if (Object.keys(wizardStepsData).length === 0) {
+        Swal.fire({ title: 'İade Asistanı Verisi Yükleniyor...', didOpen: () => Swal.showLoading() });
+        loadWizardData().then(() => { Swal.close(); if (wizardStepsData['start']) renderStep('start'); else document.getElementById('wizard-body').innerHTML = '<h2 style="color:red;">Asistan verisi eksik.</h2>'; })
+            .catch(() => { Swal.close(); document.getElementById('wizard-body').innerHTML = '<h2 style="color:red;">Veri çekme hatası.</h2>'; });
+    } else { renderStep('start'); }
+}
+function renderStep(k) {
+    const s = wizardStepsData[k];
+    if (!s) { document.getElementById('wizard-body').innerHTML = `<h2 style="color:red;">HATA: Adım ID (${k}) yok.</h2>`; return; }
+    const b = document.getElementById('wizard-body');
+    let h = `<h2 style="color:var(--primary);">${s.title || ''}</h2>`;
+    if (s.result) {
+        let i = s.result === 'red' ? ' 🛑 ' : (s.result === 'green' ? ' ✅ ' : ' ⚠️ ');
+        let c = s.result === 'red' ? 'res-red' : (s.result === 'green' ? 'res-green' : 'res-yellow');
+        h += `<div class="result-box ${c}"><div style="font-size:3rem;margin-bottom:10px;">${i}</div><h3>${s.title}</h3><p>${s.text}</p>${s.script ? `<div class="script-box">${s.script}</div>` : ''}</div><button class="restart-btn" onclick="renderStep('start')"><i class="fas fa-redo"></i> Başa Dön</button>`;
+    } else {
+        h += `<p>${s.text}</p><div class="wizard-options">`;
+        s.options.forEach(o => { h += `<button class="option-btn" onclick="renderStep('${o.next}')"><i class="fas fa-chevron-right"></i> ${o.text}</button>`; });
+        h += `</div>`; if (k !== 'start') h += `<button class="restart-btn" onclick="renderStep('start')" style="background:#eee;color:#333;margin-top:15px;">Başa Dön</button>`;
+    }
+    b.innerHTML = h;
+}
+// --- TECH WIZARD ---
+const twState = { currentStep: 'start', history: [] };
+function openTechWizard() {
+    // Teknik Sihirbaz artık Teknik (tam ekran) içinde
+    openTechArea('wizard');
+}
+function twRenderStep() {
+    const contentDiv = document.getElementById('tech-wizard-content');
+    const backBtn = document.getElementById('tw-btn-back');
+    const stepData = techWizardData[twState.currentStep];
+    if (twState.history.length > 0) backBtn.style.display = 'block'; else backBtn.style.display = 'none';
+    if (!stepData) { contentDiv.innerHTML = `<div class="alert" style="color:red;">Hata: Adım bulunamadı (${twState.currentStep}).</div>`; return; }
+    let html = `<div class="tech-step-title">${stepData.title || ''}</div>`;
+    if (stepData.text) html += `<p style="font-size:1rem; margin-bottom:15px;">${stepData.text}</p>`;
+    if (stepData.script) {
+        const safeScript = encodeURIComponent(stepData.script);
+        html += `<div class="tech-script-box"><span class="tech-script-label">Müşteriye iletilecek:</span>"${stepData.script}"<div style="margin-top:10px; text-align:right;"><button class="btn btn-copy" style="font-size:0.8rem; padding:5px 10px;" onclick="copyScriptContent('${safeScript}')"><i class="fas fa-copy"></i> Kopyala</button></div></div>`;
+    }
+    if (stepData.alert) html += `<div class="tech-alert">${stepData.alert}</div>`;
+    if (stepData.buttons && stepData.buttons.length > 0) {
+        html += `<div class="tech-buttons-area">`;
+        stepData.buttons.forEach(btn => { let btnClass = btn.style === 'option' ? 'tech-btn-option' : 'tech-btn-primary'; html += `<button class="tech-btn ${btnClass}" onclick="twChangeStep('${btn.next}')">${btn.text}</button>`; });
+        html += `</div>`;
+    }
+    contentDiv.innerHTML = html;
+}
+function twChangeStep(newStep) { twState.history.push(twState.currentStep); twState.currentStep = newStep; twRenderStep(); }
+function twGoBack() { if (twState.history.length > 0) { twState.currentStep = twState.history.pop(); twRenderStep(); } }
+function twResetWizard() { twState.currentStep = 'start'; twState.history = []; twRenderStep(); }
+// ==========================================================
+// --- YENİ KALİTE LMS MODÜLÜ (TAM EKRAN ENTEGRASYONU) ---
+// ==========================================================
+// Modülü Aç
+function openQualityArea() {
+    // Eski modalı kapat (eğer açıksa)
+    const oldModal = document.getElementById('quality-modal');
+    if (oldModal) oldModal.style.display = 'none';
+    // Tam ekranı aç
+    const fullScreen = document.getElementById('quality-fullscreen');
+    fullScreen.style.display = 'flex';
+    // Kullanıcı bilgisini güncelle
+    document.getElementById('q-side-name').innerText = currentUser;
+    document.getElementById('q-side-role').innerText = isAdminMode ? 'Yönetici' : 'Temsilci';
+    document.getElementById('q-side-avatar').innerText = currentUser.charAt(0).toUpperCase();
+    // Dönem filtresini doldur
+    populateMonthFilterFull();
+    // Yetki kontrolü (Admin butonlarını göster/gizle)
+    const adminFilters = document.getElementById('admin-filters');
+    const assignBtn = document.getElementById('assign-training-btn');
+    const manualFeedbackBtn = document.getElementById('manual-feedback-admin-btn');
+
+    if (isAdminMode) {
+        if (adminFilters) adminFilters.style.display = 'flex';
+        if (assignBtn) assignBtn.style.display = 'block';
+        if (manualFeedbackBtn) manualFeedbackBtn.style.display = 'flex';
+
+        // Kullanıcı listesi boşsa çek, sonra filtreleri doldur
+        if (adminUserList.length === 0) {
+            fetchUserListForAdmin().then(users => {
+                const groupSelect = document.getElementById('q-admin-group');
+                if (groupSelect) {
+                    const groups = [...new Set(users.map(u => u.group))].sort();
+                    groupSelect.innerHTML = `<option value="all">Tüm Gruplar</option>` + groups.map(g => `<option value="${g}">${g}</option>`).join('');
+                    updateAgentListBasedOnGroup();
+                }
+                populateDashboardFilters(); // Dashboard filtrelerini de doldur
+            });
+        } else {
+            populateDashboardFilters(); // Liste zaten varsa direkt doldur
+        }
+    } else {
+        if (adminFilters) adminFilters.style.display = 'none';
+        if (assignBtn) assignBtn.style.display = 'none';
+        if (manualFeedbackBtn) manualFeedbackBtn.style.display = 'none';
+
+        // Admin değilse filtreleri gizle
+        const dashFilterArea = document.querySelector('#view-dashboard .q-view-header > div');
+        if (dashFilterArea && dashFilterArea.style.display !== 'none') {
+            // Burada basitçe dashboard filtre fonksiyonu admin kontrolü yapıyor.
+            populateDashboardFilters();
+        }
+    }
+    // Varsayılan sekmeyi aç
+    // Tıklanma simülasyonu ile ilk sekmeyi aktif et
+    const defaultTab = document.querySelector('.q-nav-item.active');
+    if (defaultTab) {
+        switchQualityTab('dashboard', defaultTab);
+    }
+}
+// Modülü Kapat
+function closeFullQuality() {
+    document.getElementById('quality-fullscreen').style.display = 'none';
+    // Eğer qusers ise (sadece kalite yetkisi varsa) logout yapmalı veya uyarı vermeli
+    if (localStorage.getItem("sSportRole") === 'qusers') {
+        logout();
+    }
+}
+// Sekme Değiştirme
+function switchQualityTab(tabName, element) {
+    // Menu active class
+    document.querySelectorAll('.q-nav-item').forEach(item => item.classList.remove('active'));
+    // Element varsa onu aktif yap, yoksa varsayılanı (dashboard) bulup aktif yap
+    if (element) {
+        element.classList.add('active');
+    } else {
+        document.querySelector(`.q-nav-item[onclick*="${tabName}"]`).classList.add('active');
+    }
+
+    // View active class
+    document.querySelectorAll('.q-view-section').forEach(section => section.classList.remove('active'));
+    document.getElementById(`view-${tabName}`).classList.add('active');
+    // Veri Yükleme
+    if (tabName === 'dashboard') loadQualityDashboard();
+    else if (tabName === 'evaluations') fetchEvaluationsForAgent();
+    // DÜZELTME: Feedback sekmesi açılırken önce Feedback_Logs çekilmeli
+    else if (tabName === 'feedback') {
+        populateFeedbackFilters();
+        refreshFeedbackData();
+    }
+    else if (tabName === 'training') loadTrainingData();
+}
+// --- DASHBOARD FONKSİYONLARI ---
+function populateMonthFilterFull() {
+    const selectIds = ['q-dash-month', 'q-eval-month']; // Dashboard + Değerlendirme listesi
+    const now = new Date();
+    const currentMonth = now.getMonth();
+    const currentYear = now.getFullYear();
+
+    selectIds.forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.innerHTML = '';
+        for (let i = 0; i < 6; i++) {
+            let month = (currentMonth - i + 12) % 12;
+            let year = currentYear - (currentMonth - i < 0 ? 1 : 0);
+            const value = `${String(month + 1).padStart(2, '0')}.${year}`;
+            const text = `${MONTH_NAMES[month]} ${year}`;
+            const opt = document.createElement('option');
+            opt.value = value; opt.textContent = text;
+            if (i === 0) opt.selected = true;
+            el.appendChild(opt);
+        }
+    });
+}
+// YENİ: Dashboard Filtrelerini Doldurma
+function populateDashboardFilters() {
+    const groupSelect = document.getElementById('q-dash-group');
+    const agentSelect = document.getElementById('q-dash-agent');
+    const channelSelect = document.getElementById('q-dash-channel');
+    if (!isAdminMode) {
+        if (groupSelect) groupSelect.style.display = 'none';
+        if (agentSelect) agentSelect.style.display = 'none';
+        return;
+    } else {
+        if (groupSelect) groupSelect.style.display = 'block';
+        if (agentSelect) agentSelect.style.display = 'block';
+    }
+
+    if (!groupSelect) return;
+
+    const groups = [...new Set(adminUserList.map(u => u.group).filter(g => g))].sort();
+    groupSelect.innerHTML = '<option value="all">Tüm Gruplar</option>';
+    groups.forEach(g => {
+        const opt = document.createElement('option');
+        opt.value = g; opt.innerText = g;
+        groupSelect.appendChild(opt);
+    });
+    // İlk yüklemede tüm agentları listele
+    updateDashAgentList();
+}
+// YENİ: Dashboard Agent Listesini Güncelleme
+function updateDashAgentList() {
+    const groupSelect = document.getElementById('q-dash-group');
+    const agentSelect = document.getElementById('q-dash-agent');
+    if (!agentSelect) return;
+    const selectedGroup = groupSelect.value;
+    agentSelect.innerHTML = '<option value="all">Tüm Temsilciler</option>';
+
+    let filteredUsers = adminUserList;
+    if (selectedGroup !== 'all') {
+        filteredUsers = adminUserList.filter(u => u.group === selectedGroup);
+    }
+    filteredUsers.forEach(u => {
+        const opt = document.createElement('option');
+        opt.value = u.name;
+        opt.innerText = u.name;
+        agentSelect.appendChild(opt);
+    });
+
+    updateDashRingTitle();
+    refreshQualityData();
+}
+
+// ✅ Dashboard ring başlığı + admin temsilci ortalamaları
+function updateDashRingTitle() {
+    const titleEl = document.getElementById('q-dash-ring-title') || document.getElementById('q-dash-ring-title'.replace('title', 'title'));
+    // (id kesin: q-dash-ring-title)
+    const tEl = document.getElementById('q-dash-ring-title');
+    if (!tEl) return;
+
+    if (!isAdminMode) {
+        tEl.textContent = 'Puan Durumu';
+        return;
+    }
+
+    const gSel = document.getElementById('q-dash-group');
+    const aSel = document.getElementById('q-dash-agent');
+    const g = gSel ? gSel.value : 'all';
+    const a = aSel ? aSel.value : 'all';
+
+    if (a && a !== 'all') {
+        tEl.textContent = `${a} Puan Durumu`;
+    } else if (g && g !== 'all') {
+        tEl.textContent = `${g} Takım Ortalaması`;
+    } else {
+        tEl.textContent = 'Genel Puan Ortalaması';
+    }
+}
+
+// Admin için: temsilci ortalamaları listesini bas
+function renderDashAgentScores(evals) {
+    const box = document.getElementById('q-dash-agent-scores');
+    if (!box) return;
+
+    // Sadece admin + agent=all iken göster (yoksa gereksiz kalabalık)
+    if (!isAdminMode) { box.style.display = 'none'; return; }
+
+    const gSel = document.getElementById('q-dash-group');
+    const aSel = document.getElementById('q-dash-agent');
+    const g = gSel ? gSel.value : 'all';
+    const a = aSel ? aSel.value : 'all';
+
+    if (a && a !== 'all') { box.style.display = 'none'; return; }
+
+    // evals -> agent bazlı ortalama
+    const byAgent = {};
+    (evals || []).forEach(e => {
+        const agent = e.agent || 'N/A';
+        const group = e.group || '';
+        const score = parseFloat(e.score) || 0;
+        if (!byAgent[agent]) byAgent[agent] = { total: 0, count: 0, group: group };
+        byAgent[agent].total += score;
+        byAgent[agent].count += 1;
+        // group boşsa son görüleni yaz
+        if (!byAgent[agent].group && group) byAgent[agent].group = group;
+    });
+
+    const rows = Object.keys(byAgent).map(name => {
+        const o = byAgent[name];
+        return { name, group: o.group || (g !== 'all' ? g : ''), avg: o.count ? (o.total / o.count) : 0, count: o.count };
+    });
+
+    // Eğer group seçiliyse sadece o grubun kullanıcıları zaten geliyor; ama garanti olsun
+    const filteredRows = (g && g !== 'all') ? rows.filter(r => (r.group || '') === g) : rows;
+
+    // Sırala: en düşük ortalama üstte (iyileştirme alanı)
+    filteredRows.sort((x, y) => x.avg - y.avg);
+
+    if (filteredRows.length === 0) { box.style.display = 'none'; return; }
+
+    // İlk 8 kişiyi göster
+    const top = filteredRows.slice(0, 8);
+
+    box.innerHTML = top.map(r => `
         <div class="das-item">
             <div class="das-left">
-                <span class="das-name">${escapeHtml(r['\u006E\u0061\u006D\u0065'])}</span>
-                ${r['\u0067\u0072\u006F\u0075\u0070']?`<span class="das-group">${escapeHtml(r['\u0067\u0072\u006F\u0075\u0070'])}</span>`:``}
+                <span class="das-name">${escapeHtml(r.name)}</span>
+                ${r.group ? `<span class="das-group">${escapeHtml(r.group)}</span>` : ``}
             </div>
-            <div class="das-score">${(r['\u0061\u0076\u0067']||616328^616328)['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](525634^525635)}</div>
+            <div class="das-score">${(r.avg || 0).toFixed(1)}</div>
         </div>
-    `)['\u006A\u006F\u0069\u006E']('');_0x6e5gb['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0067\u0072\u0069\u0064";}function deriveChannelFromGroup(group,_0x1c67c){const g=String(group||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();_0x1c67c="ocnked".split("").reverse().join("");if(!g)return"\u006F\u0074\u0068\u0065\u0072";if(g['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0074\u0065\u006C\u0065\u0073\u0061\u0074")||g['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0074\u0065\u006C\u0065\u0073\u0061\u0074\u0131\u015F")||g==="\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073")return"selas".split("").reverse().join("");if(g['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0063\u0068\u0061\u0074"))return"\u0063\u0068\u0061\u0074";return"rehto".split("").reverse().join("");}function safeParseDetails(details){if(!details)return null;if(Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](details))return details;if(typeof details==="\u006F\u0062\u006A\u0065\u0063\u0074")return details;if(typeof details==="\u0073\u0074\u0072\u0069\u006E\u0067"){const s=details['\u0074\u0072\u0069\u006D']();if(!s)return null;let _0xfg71gf;const _0x4aage=[s,s['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("\"\\".split("").reverse().join(""),'\u0067'),"\u0022"),s['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u0027','\u0067'),"\u0022")];_0xfg71gf=(569393^569399)+(974681^974681);for(const _0x5628f of _0x4aage){try{var _0xb1fc5b=(131672^131665)+(585995^585986);const _0xc7a3bg=JSON['\u0070\u0061\u0072\u0073\u0065'](_0x5628f);_0xb1fc5b=(903156^903158)+(543494^543494);if(Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0xc7a3bg))return _0xc7a3bg;}catch(e){}}}return null;}function populateFeedbackFilters(_0xbebb7a){const _0x6489a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("puorg-kcabdeef-q".split("").reverse().join(""));const _0x41_0xcc1=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u002D\u0061\u0067\u0065\u006E\u0074");_0xbebb7a=(870227^870234)+(150709^150707);if(!_0x6489a||!_0x41_0xcc1)return;if(!isAdminMode){_0x6489a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";_0x41_0xcc1['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";return;}else{_0x6489a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";_0x41_0xcc1['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";}var _0x185ddc=(459678^459679)+(333617^333616);const _0x1e_0x8e2=[...new Set(adminUserList['\u006D\u0061\u0070'](u=>u['\u0067\u0072\u006F\u0075\u0070'])['\u0066\u0069\u006C\u0074\u0065\u0072'](g=>g))]['\u0073\u006F\u0072\u0074']();_0x185ddc='\u0064\u0070\u006B\u0067\u0066\u006B';_0x6489a['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u006F\u0070\u0074\u0069\u006F\u006E\u0020\u0076\u0061\u006C\u0075\u0065\u003D\u0022\u0061\u006C\u006C\u0022\u003E\u0054\u00FC\u006D\u0020\u0047\u0072\u0075\u0070\u006C\u0061\u0072\u003C\u002F\u006F\u0070\u0074\u0069\u006F\u006E\u003E";_0x1e_0x8e2['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](g=>{const _0x51c2ce=document['\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006C\u0065\u006D\u0065\u006E\u0074']("noitpo".split("").reverse().join(""));_0x51c2ce['\u0076\u0061\u006C\u0075\u0065']=g;_0x51c2ce['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']=g;_0x6489a['\u0061\u0070\u0070\u0065\u006E\u0064\u0043\u0068\u0069\u006C\u0064'](_0x51c2ce);});updateFeedbackAgentList(false);}function updateFeedbackAgentList(shouldRefresh=!![],_0xc7bcdf){const _0xaed3f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u002D\u0067\u0072\u006F\u0075\u0070");const _0x99bgc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u002D\u0061\u0067\u0065\u006E\u0074");_0xc7bcdf='\u0067\u006A\u006C\u0070\u006D\u0062';if(!_0xaed3f||!_0x99bgc)return;var _0xdec=(800845^800845)+(530080^530081);const _0x695dda=_0xaed3f['\u0076\u0061\u006C\u0075\u0065'];_0xdec=(767151^767151)+(751571^751575);var _0xec5d6b=(290512^290514)+(354931^354932);const _0x998g1a=adminUserList['\u0066\u0069\u006C\u0074\u0065\u0072'](u=>{if(!u||!u['\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065'])return false;if(_0x695dda==="\u0061\u006C\u006C")return!![];return u['\u0067\u0072\u006F\u0075\u0070']===_0x695dda;});_0xec5d6b='\u006F\u006D\u006F\u0070\u0070\u006B';const _0xd43e=_0x998g1a['\u006D\u0061\u0070'](u=>u['\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065'])['\u0066\u0069\u006C\u0074\u0065\u0072'](a=>a)['\u0073\u006F\u0072\u0074']((a,b)=>a['\u006C\u006F\u0063\u0061\u006C\u0065\u0043\u006F\u006D\u0070\u0061\u0072\u0065'](b,"\u0074\u0072"));_0x99bgc['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=">noitpo/<reliclismeT m\xFCT>\"lla\"=eulav noitpo<".split("").reverse().join("");_0xd43e['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](a=>{const _0xd383b=document['\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006C\u0065\u006D\u0065\u006E\u0074']("\u006F\u0070\u0074\u0069\u006F\u006E");_0xd383b['\u0076\u0061\u006C\u0075\u0065']=a;_0xd383b['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']=a;_0x99bgc['\u0061\u0070\u0070\u0065\u006E\u0064\u0043\u0068\u0069\u006C\u0064'](_0xd383b);});if(shouldRefresh)refreshFeedbackData();}async function fetchEvaluationsForFeedback(_0xfd_0x185,_0x3g8bbc){var _0x03fa5a=(874293^874291)+(214422^214423);const _0x42_0x463=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u002D\u0067\u0072\u006F\u0075\u0070");_0x03fa5a=170166^170162;var _0x6be75b=(360752^360761)+(497461^497460);const _0xfb_0xeed=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u002D\u0061\u0067\u0065\u006E\u0074");_0x6be75b=(953711^953707)+(825876^825874);var _0xdd7bce=(833313^833315)+(238188^238188);let _0x89b4f=currentUser;_0xdd7bce=(941056^941057)+(316550^316559);_0x3g8bbc="lla".split("").reverse().join("");_0xfd_0x185=(793570^793569)+(791095^791091);if(isAdminMode){_0x89b4f=_0xfb_0xeed?_0xfb_0xeed['\u0076\u0061\u006C\u0075\u0065']:"\u0061\u006C\u006C";_0x3g8bbc=_0x42_0x463?_0x42_0x463['\u0076\u0061\u006C\u0075\u0065']:"lla".split("").reverse().join("");}try{let _0x2c1a7b;const _0x0da4d=await fetch(SCRIPT_URL,{"method":'POST','\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{'Content-Type':"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},"body":JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":'fetchEvaluations','\u0074\u0061\u0072\u0067\u0065\u0074\u0041\u0067\u0065\u006E\u0074':_0x89b4f,"targetGroup":_0x3g8bbc,'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,"token":getToken()})});_0x2c1a7b='\u0066\u0062\u0061\u0061\u0064\u006A';const _0x69e88a=await _0x0da4d['\u006A\u0073\u006F\u006E']();if(_0x69e88a['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){allEvaluationsData=(_0x69e88a['\u0065\u0076\u0061\u006C\u0075\u0061\u0074\u0069\u006F\u006E\u0073']||[])['\u0072\u0065\u0076\u0065\u0072\u0073\u0065']();}else{allEvaluationsData=[];}}catch(e){allEvaluationsData=[];}}async function refreshFeedbackData(){await fetchEvaluationsForFeedback();await fetchFeedbackLogs();loadFeedbackList();}function refreshQualityData(){loadQualityDashboard();}async function fetchEvaluationsForDashboard(_0xebfe){const _0x953g9e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0067\u0072\u006F\u0075\u0070");const _0xbdc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0061\u0067\u0065\u006E\u0074");var _0x247d=(883574^883569)+(204014^204012);let _0x18662f=currentUser;_0x247d=(367201^367208)+(742137^742141);_0xebfe="lla".split("").reverse().join("");if(isAdminMode){_0x18662f=_0xbdc?_0xbdc['\u0076\u0061\u006C\u0075\u0065']:"lla".split("").reverse().join("");_0xebfe=_0x953g9e?_0x953g9e['\u0076\u0061\u006C\u0075\u0065']:"lla".split("").reverse().join("");}try{const _0xgbfd=await fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0050\u004F\u0053\u0054","headers":{"Content-Type":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":"\u0066\u0065\u0074\u0063\u0068\u0045\u0076\u0061\u006C\u0075\u0061\u0074\u0069\u006F\u006E\u0073",'\u0074\u0061\u0072\u0067\u0065\u0074\u0041\u0067\u0065\u006E\u0074':_0x18662f,"targetGroup":_0xebfe,"username":currentUser,"token":getToken()})});var _0x76556d=(689322^689315)+(960890^960883);const _0x57635d=await _0xgbfd['\u006A\u0073\u006F\u006E']();_0x76556d=(168360^168366)+(991991^991991);if(_0x57635d['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){allEvaluationsData=(_0x57635d['\u0065\u0076\u0061\u006C\u0075\u0061\u0074\u0069\u006F\u006E\u0073']||[])['\u0072\u0065\u0076\u0065\u0072\u0073\u0065']();}else{allEvaluationsData=[];}}catch(e){allEvaluationsData=[];}}function loadQualityDashboard(){fetchEvaluationsForDashboard()['\u0074\u0068\u0065\u006E'](()=>{const _0x773g=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u006D\u006F\u006E\u0074\u0068");var _0x4f_0xab1=(100818^100821)+(998847^998839);const _0x81f16b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0067\u0072\u006F\u0075\u0070");_0x4f_0xab1=(986397^986394)+(863330^863335);const _0x14dc6d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0061\u0067\u0065\u006E\u0074");const _0x81ebb=_0x773g?_0x773g['\u0076\u0061\u006C\u0075\u0065']:'';var _0x2d7g=(873506^873507)+(878350^878342);const _0xg01f=_0x81f16b?_0x81f16b['\u0076\u0061\u006C\u0075\u0065']:"lla".split("").reverse().join("");_0x2d7g=(628951^628951)+(719624^719631);let _0xde6fa;const _0x9486dc=_0x14dc6d?_0x14dc6d['\u0076\u0061\u006C\u0075\u0065']:"\u0061\u006C\u006C";_0xde6fa=(819443^819446)+(329781^329788);let _0xc6d82f;const _0xf4ad8g="\u0061\u006C\u006C";_0xc6d82f='\u006A\u0069\u0061\u0063\u006F\u0068';let _0x62a3cd=allEvaluationsData['\u0066\u0069\u006C\u0074\u0065\u0072'](e=>{const _0xa7ge0c=e['\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065']&&e['\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065']!=="\u004E\u002F\u0041"?e['\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065']:e['\u0064\u0061\u0074\u0065'];if(!_0xa7ge0c||typeof _0xa7ge0c!=="\u0073\u0074\u0072\u0069\u006E\u0067")return false;let _0x706f4g;const _0x9e_0xdgf=_0xa7ge0c['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](576969^576970);_0x706f4g='\u0062\u0064\u0068\u0062\u0067\u0064';const _0x1369e=_0x9e_0xdgf===_0x81ebb;let _0xff65cf=!![];var _0x6fa9fa=(976229^976225)+(526997^526999);let _0xg518c=!![];_0x6fa9fa=306480^306483;if(isAdminMode){if(_0xg01f!=="\u0061\u006C\u006C"){if(e['\u0067\u0072\u006F\u0075\u0070']){_0xff65cf=e['\u0067\u0072\u006F\u0075\u0070']===_0xg01f;}else{var _0xbf387f=(350381^350379)+(117497^117503);const _0xb8c3fa=adminUserList['\u0066\u0069\u006E\u0064'](u=>u['\u006E\u0061\u006D\u0065']===e['\u0061\u0067\u0065\u006E\u0074']);_0xbf387f=867766^867760;_0xff65cf=_0xb8c3fa&&_0xb8c3fa['\u0067\u0072\u006F\u0075\u0070']===_0xg01f;}}if(_0x9486dc!=="lla".split("").reverse().join("")&&e['\u0061\u0067\u0065\u006E\u0074']!==_0x9486dc)_0xg518c=false;}else{if(e['\u0061\u0067\u0065\u006E\u0074']!==currentUser)_0xg518c=false;}var _0x14684e=(851985^851992)+(719413^719411);const _0x520bcc=e['\u0063\u0061\u006C\u006C\u0049\u0064']&&String(e['\u0063\u0061\u006C\u006C\u0049\u0064'])['\u0074\u006F\u0055\u0070\u0070\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("\u004D\u0041\u004E\u0055\u0045\u004C\u002D");_0x14684e=250280^250282;return _0x1369e&&_0xff65cf&&_0xg518c&&!_0x520bcc;});var _0xe93a8f=(225541^225549)+(398004^398003);const _0x36cb1a=_0x62a3cd['\u0072\u0065\u0064\u0075\u0063\u0065']((acc,curr)=>acc+(parseInt(curr['\u0073\u0063\u006F\u0072\u0065'])||603580^603580),984109^984109);_0xe93a8f=(731273^731278)+(444435^444432);let _0xbb8gbc;const _0xcb1a=_0x62a3cd['\u006C\u0065\u006E\u0067\u0074\u0068'];_0xbb8gbc=(571065^571071)+(368249^368251);var _0xaf89b=(717274^717279)+(215740^215740);const _0x43_0x6g2=_0xcb1a>(505276^505276)?(_0x36cb1a/_0xcb1a)['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](416537^416536):279658^279658;_0xaf89b=(651874^651876)+(362898^362900);const _0x4b96d=_0x62a3cd['\u0066\u0069\u006C\u0074\u0065\u0072'](e=>e['\u0073\u0063\u006F\u0072\u0065']>=(385022^384932))['\u006C\u0065\u006E\u0067\u0074\u0068'];const _0x33f5fa=_0xcb1a>(141166^141166)?Math['\u0072\u006F\u0075\u006E\u0064'](_0x4b96d/_0xcb1a*(656793^656893)):785621^785621;var _0x54da9f=(321721^321724)+(653155^653159);let _0x44_0x193="\u002D";_0x54da9f=(567696^567698)+(558117^558125);try{var _0xd2cg=(287991^287991)+(879352^879359);const _0x1f7c={};_0xd2cg=(491683^491681)+(973310^973307);_0x62a3cd['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](item=>{const _0x64575c=safeParseDetails(item['\u0064\u0065\u0074\u0061\u0069\u006C\u0073']);if(!Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0x64575c))return;_0x64575c['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](d=>{const _0x894d=String(d['\u0071']||'')['\u0074\u0072\u0069\u006D']();if(!_0x894d)return;const _0x6ff1ab=parseFloat(d['\u0073\u0063\u006F\u0072\u0065']||622829^622829)||956662^956662;var _0xbd9bg=(629410^629411)+(187827^187828);const _0xg830f=parseFloat(d['\u006D\u0061\u0078']||628821^628821)||208242^208242;_0xbd9bg='\u006F\u0063\u006B\u0067\u0063\u006B';if(!_0x1f7c[_0x894d])_0x1f7c[_0x894d]={'\u0065\u0061\u0072\u006E\u0065\u0064':0,'\u006D\u0061\u0078':0};_0x1f7c[_0x894d]['\u0065\u0061\u0072\u006E\u0065\u0064']+=_0x6ff1ab;_0x1f7c[_0x894d]['\u006D\u0061\u0078']+=_0xg830f;});});let _0x7fcd;const _0x95abc=Object['\u006B\u0065\u0079\u0073'](_0x1f7c)['\u006D\u0061\u0070'](k=>{const o=_0x1f7c[k];const _0xc62efa=o['\u006D\u0061\u0078']>(706599^706599)?o['\u0065\u0061\u0072\u006E\u0065\u0064']/o['\u006D\u0061\u0078']*(989861^989889):760922^760894;return{'\u006B':k,"pct":_0xc62efa};})['\u0073\u006F\u0072\u0074']((a,b)=>a['\u0070\u0063\u0074']-b['\u0070\u0063\u0074']);_0x7fcd=150965^150965;if(_0x95abc['\u006C\u0065\u006E\u0067\u0074\u0068']){let _0xf_0x118;const k=_0x95abc[646108^646108]['\u006B'];_0xf_0x118=(165533^165532)+(206414^206412);_0x44_0x193=k['\u006C\u0065\u006E\u0067\u0074\u0068']>(352218^352198)?k['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](643574^643574,903517^903489)+"\u2026":k;}}catch(e){}const _0xdeb24f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tsrow-hsad-q".split("").reverse().join(""));if(_0xdeb24f)_0xdeb24f['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=_0x44_0x193;document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0073\u0063\u006F\u0072\u0065")['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=_0x43_0x6g2;document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0063\u006F\u0075\u006E\u0074")['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=_0xcb1a;document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tegrat-hsad-q".split("").reverse().join(""))['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=`%${_0x33f5fa}`;const _0x5ga3c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0072\u0069\u006E\u0067");var _0x3dg=(651822^651814)+(573588^573587);let _0x45_0xfdg="\u0023\u0032\u0065\u0037\u0064\u0033\u0032";_0x3dg=870919^870915;if(_0x43_0x6g2<(229446^229376))_0x45_0xfdg="f2f23d#".split("").reverse().join("");else if(_0x43_0x6g2<(448821^448864))_0x45_0xfdg="\u0023\u0065\u0064\u0036\u0063\u0030\u0032";const _0xc824d=_0x43_0x6g2/(979159^979123)*(742849^742821);if(_0x5ga3c)_0x5ga3c['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']=`conic-gradient(${_0x45_0xfdg} ${_0xc824d}%, #eee ${_0xc824d}%)`;if(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("txet-gnir-hsad-q".split("").reverse().join("")))document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("txet-gnir-hsad-q".split("").reverse().join(""))['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=Math['\u0072\u006F\u0075\u006E\u0064'](_0x43_0x6g2);updateDashRingTitle();renderDashAgentScores(_0x62a3cd);renderDashboardCharts(_0x62a3cd);});}function renderDashboardChart(data,_0xe8a){const _0x13gc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0062\u0072\u0065\u0061\u006B\u0064\u006F\u0077\u006E\u002D\u0063\u0068\u0061\u0072\u0074");if(!_0x13gc)return;if(dashboardChart){dashboardChart['\u0064\u0065\u0073\u0074\u0072\u006F\u0079']();}let _0x167f={};if(data['\u006C\u0065\u006E\u0067\u0074\u0068']>(773502^773502)){data['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](item=>{try{let _0x8cdcd;let _0xa453d=safeParseDetails(item['\u0064\u0065\u0074\u0061\u0069\u006C\u0073']);_0x8cdcd=(929639^929632)+(406425^406424);if(Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0xa453d)){_0xa453d['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](d=>{let _0x36c4ab=d['\u0071'];let _0xa7_0xaed=_0x36c4ab['\u006C\u0065\u006E\u0067\u0074\u0068']>(581798^581823)?_0x36c4ab['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](816028^816028,543185^543176)+"\u002E\u002E\u002E":_0x36c4ab;if(!_0x167f[_0xa7_0xaed]){_0x167f[_0xa7_0xaed]={'\u0065\u0061\u0072\u006E\u0065\u0064':0,"max":0,"fullText":_0x36c4ab};}_0x167f[_0xa7_0xaed]['\u0065\u0061\u0072\u006E\u0065\u0064']+=parseInt(d['\u0073\u0063\u006F\u0072\u0065']||469665^469665);_0x167f[_0xa7_0xaed]['\u006D\u0061\u0078']+=parseInt(d['\u006D\u0061\u0078']||287711^287711);});}}catch(e){console['\u006C\u006F\u0067']("idemenel\u015Fi isirev yateD".split("").reverse().join(""),e);}});}var _0xfb367e=(491213^491205)+(891775^891774);let _0x8fc05c=Object['\u006B\u0065\u0079\u0073'](_0x167f)['\u006D\u0061\u0070'](key=>{let s=_0x167f[key];var _0xg5316c=(849178^849179)+(233401^233400);let _0xc2eaad=s['\u006D\u0061\u0078']>(560869^560869)?s['\u0065\u0061\u0072\u006E\u0065\u0064']/s['\u006D\u0061\u0078']*(356223^356123):760862^760862;_0xg5316c=(640978^640983)+(596884^596893);return{'\u006C\u0061\u0062\u0065\u006C':key,'\u0066\u0075\u006C\u006C\u004C\u0061\u0062\u0065\u006C':s['\u0066\u0075\u006C\u006C\u0054\u0065\u0078\u0074'],"value":_0xc2eaad};});_0xfb367e=(769985^769993)+(442395^442386);_0x8fc05c['\u0073\u006F\u0072\u0074']((a,b)=>a['\u0076\u0061\u006C\u0075\u0065']-b['\u0076\u0061\u006C\u0075\u0065']);if(_0x8fc05c['\u006C\u0065\u006E\u0067\u0074\u0068']===(325708^325708)){const _0x928fd={};data['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](it=>{var _0x467b1b=(940575^940569)+(243703^243696);const a=it['\u0061\u0067\u0065\u006E\u0074']||"A/N".split("").reverse().join("");_0x467b1b=(251247^251247)+(648141^648136);const s=parseFloat(it['\u0073\u0063\u006F\u0072\u0065'])||362475^362475;if(!_0x928fd[a])_0x928fd[a]={'\u0074\u006F\u0074\u0061\u006C':0,"count":0};_0x928fd[a]['\u0074\u006F\u0074\u0061\u006C']+=s;_0x928fd[a]['\u0063\u006F\u0075\u006E\u0074']+=857682^857683;});const _0x4e2fdc=Object['\u006B\u0065\u0079\u0073'](_0x928fd)['\u006D\u0061\u0070'](name=>({'\u006C\u0061\u0062\u0065\u006C':name['\u006C\u0065\u006E\u0067\u0074\u0068']>(194325^194316)?name['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](261954^261954,521143^521134)+"\u002E\u002E\u002E":name,'\u0066\u0075\u006C\u006C\u004C\u0061\u0062\u0065\u006C':name,'\u0076\u0061\u006C\u0075\u0065':_0x928fd[name]['\u0063\u006F\u0075\u006E\u0074']?_0x928fd[name]['\u0074\u006F\u0074\u0061\u006C']/_0x928fd[name]['\u0063\u006F\u0075\u006E\u0074']:322233^322233}));_0x4e2fdc['\u0073\u006F\u0072\u0074']((x,y)=>x['\u0076\u0061\u006C\u0075\u0065']-y['\u0076\u0061\u006C\u0075\u0065']);let topIssues=_0x4e2fdc['\u0073\u006C\u0069\u0063\u0065'](762838^762838,371413^371411);var _0x176fa=(830059^830050)+(365259^365263);let chartLabels=topIssues['\u006D\u0061\u0070'](i=>i['\u006C\u0061\u0062\u0065\u006C']);_0x176fa=884732^884725;let chartData=topIssues['\u006D\u0061\u0070'](i=>i['\u0076\u0061\u006C\u0075\u0065']['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](575715^575714));dashboardChart=new Chart(_0x13gc,{"type":"\u0062\u0061\u0072",'\u0070\u006C\u0075\u0067\u0069\u006E\u0073':[valueLabelPlugin],"data":{'\u006C\u0061\u0062\u0065\u006C\u0073':chartLabels,'\u0064\u0061\u0074\u0061\u0073\u0065\u0074\u0073':[{'\u006C\u0061\u0062\u0065\u006C':"\u004F\u0072\u0074\u0061\u006C\u0061\u006D\u0061\u0020\u0050\u0075\u0061\u006E","data":chartData,"backgroundColor":chartData['\u006D\u0061\u0070'](val=>val<(810101^810035)?")7.0 ,74 ,74 ,112(abgr".split("").reverse().join(""):val<(556799^556714)?"\u0072\u0067\u0062\u0061\u0028\u0032\u0033\u0037\u002C\u0020\u0031\u0030\u0038\u002C\u0020\u0032\u002C\u0020\u0030\u002E\u0037\u0029":"\u0072\u0067\u0062\u0061\u0028\u0034\u0036\u002C\u0020\u0031\u0032\u0035\u002C\u0020\u0035\u0030\u002C\u0020\u0030\u002E\u0037\u0029"),"borderColor":chartData['\u006D\u0061\u0070'](val=>val<(994281^994223)?"c1c17b#".split("").reverse().join(""):val<(437106^437031)?"\u0023\u0065\u0036\u0035\u0031\u0030\u0030":"02e5b1#".split("").reverse().join("")),'\u0062\u006F\u0072\u0064\u0065\u0072\u0057\u0069\u0064\u0074\u0068':1,'\u0062\u006F\u0072\u0064\u0065\u0072\u0052\u0061\u0064\u0069\u0075\u0073':4}]},"options":{'\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0069\u0076\u0065':!![],'\u006D\u0061\u0069\u006E\u0074\u0061\u0069\u006E\u0041\u0073\u0070\u0065\u0063\u0074\u0052\u0061\u0074\u0069\u006F':false,'\u0069\u006E\u0064\u0065\u0078\u0041\u0078\u0069\u0073':"\u0079",'\u0073\u0063\u0061\u006C\u0065\u0073':{'\u0078':{"beginAtZero":!![],'\u006D\u0061\u0078':100,"grid":{'\u0063\u006F\u006C\u006F\u0072':"\u0023\u0066\u0030\u0066\u0030\u0066\u0030"}},'\u0079':{"grid":{"display":false}}},'\u0070\u006C\u0075\u0067\u0069\u006E\u0073':{'\u006C\u0065\u0067\u0065\u006E\u0064':{"display":false},"valueLabelPlugin":{"formatter":v=>`${Number(v)['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](949924^949925)}`},'\u0074\u006F\u006F\u006C\u0074\u0069\u0070':{'\u0063\u0061\u006C\u006C\u0062\u0061\u0063\u006B\u0073':{'\u0074\u0069\u0074\u006C\u0065':function(context){if(context['\u006C\u0065\u006E\u0067\u0074\u0068']>(393161^393161))return topIssues[context[945037^945037]['\u0064\u0061\u0074\u0061\u0049\u006E\u0064\u0065\u0078']]['\u0066\u0075\u006C\u006C\u004C\u0061\u0062\u0065\u006C'];return'';},"label":function(context){return context['\u0070\u0061\u0072\u0073\u0065\u0064']['\u0078']+"\u0020\u004F\u0072\u0074\u0061\u006C\u0061\u006D\u0061";}}}}}});return;}let topIssues=_0x8fc05c['\u0073\u006C\u0069\u0063\u0065'](517900^517900,833062^833056);let chartLabels=topIssues['\u006D\u0061\u0070'](i=>i['\u006C\u0061\u0062\u0065\u006C']);let chartData=topIssues['\u006D\u0061\u0070'](i=>i['\u0076\u0061\u006C\u0075\u0065']['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](930871^930870));_0xe8a=(307173^307169)+(335197^335188);dashboardChart=new Chart(_0x13gc,{"type":'bar',"plugins":[valueLabelPlugin],'\u0064\u0061\u0074\u0061':{"labels":chartLabels,'\u0064\u0061\u0074\u0061\u0073\u0065\u0074\u0073':[{"label":'Başarı Oranı (%)',"data":chartData,'\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064\u0043\u006F\u006C\u006F\u0072':chartData['\u006D\u0061\u0070'](val=>val<(664377^664447)?"\u0072\u0067\u0062\u0061\u0028\u0032\u0031\u0031\u002C\u0020\u0034\u0037\u002C\u0020\u0034\u0037\u002C\u0020\u0030\u002E\u0037\u0029":val<(961268^961198)?"\u0072\u0067\u0062\u0061\u0028\u0032\u0033\u0037\u002C\u0020\u0031\u0030\u0038\u002C\u0020\u0032\u002C\u0020\u0030\u002E\u0037\u0029":")7.0 ,05 ,521 ,64(abgr".split("").reverse().join("")),"borderColor":chartData['\u006D\u0061\u0070'](val=>val<(156301^156363)?"\u0023\u0062\u0037\u0031\u0063\u0031\u0063":val<(993868^993814)?"00156e#".split("").reverse().join(""):"\u0023\u0031\u0062\u0035\u0065\u0032\u0030"),"borderWidth":1,'\u0062\u006F\u0072\u0064\u0065\u0072\u0052\u0061\u0064\u0069\u0075\u0073':4}]},'\u006F\u0070\u0074\u0069\u006F\u006E\u0073':{'\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0069\u0076\u0065':!![],"maintainAspectRatio":false,'\u0069\u006E\u0064\u0065\u0078\u0041\u0078\u0069\u0073':"\u0079","scales":{'\u0078':{'\u0062\u0065\u0067\u0069\u006E\u0041\u0074\u005A\u0065\u0072\u006F':!![],'\u006D\u0061\u0078':100,'\u0067\u0072\u0069\u0064':{"color":'#f0f0f0'}},'\u0079':{"grid":{'\u0064\u0069\u0073\u0070\u006C\u0061\u0079':false}}},"plugins":{"legend":{'\u0064\u0069\u0073\u0070\u006C\u0061\u0079':false},"valueLabelPlugin":{'\u0066\u006F\u0072\u006D\u0061\u0074\u0074\u0065\u0072':v=>`${Number(v)['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](356566^356567)}%`},"tooltip":{"callbacks":{'\u0074\u0069\u0074\u006C\u0065':function(context){if(context['\u006C\u0065\u006E\u0067\u0074\u0068']>(307026^307026)){const _0xbc328e=context[570548^570548]['\u0064\u0061\u0074\u0061\u0049\u006E\u0064\u0065\u0078'];return topIssues[_0xbc328e]['\u0066\u0075\u006C\u006C\u004C\u0061\u0062\u0065\u006C'];}return'';},'\u006C\u0061\u0062\u0065\u006C':function(context){return context['\u0070\u0061\u0072\u0073\u0065\u0064']['\u0078']+"\u0025\u0020\u0042\u0061\u015F\u0061\u0072\u0131";}}}}}});}function destroyIfExists(chart){try{if(chart)chart['\u0064\u0065\u0073\u0074\u0072\u006F\u0079']();}catch(e){}}const valueLabelPlugin={'\u0069\u0064':"\u0076\u0061\u006C\u0075\u0065\u004C\u0061\u0062\u0065\u006C\u0050\u006C\u0075\u0067\u0069\u006E",afterDatasetsDraw(chart,args,pluginOptions){const opt=pluginOptions||{};if(opt['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']===false)return;const ctx=chart['\u0063\u0074\u0078'];const type=chart['\u0063\u006F\u006E\u0066\u0069\u0067']['\u0074\u0079\u0070\u0065'];const datasets=chart['\u0064\u0061\u0074\u0061']&&chart['\u0064\u0061\u0074\u0061']['\u0064\u0061\u0074\u0061\u0073\u0065\u0074\u0073']?chart['\u0064\u0061\u0074\u0061']['\u0064\u0061\u0074\u0061\u0073\u0065\u0074\u0073']:[];ctx['\u0073\u0061\u0076\u0065']();ctx['\u0066\u006F\u006E\u0074']=opt['\u0066\u006F\u006E\u0074']||"fires-snas xp11 006".split("").reverse().join("");ctx['\u0066\u0069\u006C\u006C\u0053\u0074\u0079\u006C\u0065']=opt['\u0063\u006F\u006C\u006F\u0072']||"\u0023\u0033\u0037\u0034\u0031\u0035\u0031";ctx['\u0074\u0065\u0078\u0074\u0041\u006C\u0069\u0067\u006E']="retnec".split("").reverse().join("");ctx['\u0074\u0065\u0078\u0074\u0042\u0061\u0073\u0065\u006C\u0069\u006E\u0065']="\u006D\u0069\u0064\u0064\u006C\u0065";const format=typeof opt['\u0066\u006F\u0072\u006D\u0061\u0074\u0074\u0065\u0072']==="\u0066\u0075\u006E\u0063\u0074\u0069\u006F\u006E"?opt['\u0066\u006F\u0072\u006D\u0061\u0074\u0074\u0065\u0072']:v=>v===null||typeof v==="\u0075\u006E\u0064\u0065\u0066\u0069\u006E\u0065\u0064"?'':String(v);if(type==="tunhguod".split("").reverse().join("")||type==="eip".split("").reverse().join("")){const total=datasets[751231^751231]&&Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](datasets[624337^624337]['\u0064\u0061\u0074\u0061'])?datasets[370706^370706]['\u0064\u0061\u0074\u0061']['\u0072\u0065\u0064\u0075\u0063\u0065']((a,b)=>a+(parseFloat(b)||574362^574362),870886^870886):115076^115076;const meta=chart['\u0067\u0065\u0074\u0044\u0061\u0074\u0061\u0073\u0065\u0074\u004D\u0065\u0074\u0061'](418140^418140);meta['\u0064\u0061\u0074\u0061']['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((arc,i)=>{const raw=(datasets[664819^664819]['\u0064\u0061\u0074\u0061']||[])[i];const val=parseFloat(raw)||418169^418169;if(!val||!total)return;let _0xb2_0xbb1;const pct=val/total*(943571^943543);_0xb2_0xbb1=(224516^224514)+(611314^611317);if(pct<(opt['\u006D\u0069\u006E\u0050\u0065\u0072\u0063\u0065\u006E\u0074\u0054\u006F\u0053\u0068\u006F\u0077']||535313^535317))return;const p=arc['\u0074\u006F\u006F\u006C\u0074\u0069\u0070\u0050\u006F\u0073\u0069\u0074\u0069\u006F\u006E']();ctx['\u0066\u0069\u006C\u006C\u0054\u0065\u0078\u0074'](opt['\u0073\u0068\u006F\u0077\u0050\u0065\u0072\u0063\u0065\u006E\u0074']?`${pct['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](676315^676315)}%`:format(raw,i,chart),p['\u0078'],p['\u0079']);});ctx['\u0072\u0065\u0073\u0074\u006F\u0072\u0065']();return;}datasets['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((ds,di)=>{const meta=chart['\u0067\u0065\u0074\u0044\u0061\u0074\u0061\u0073\u0065\u0074\u004D\u0065\u0074\u0061'](di);if(meta['\u0068\u0069\u0064\u0064\u0065\u006E'])return;meta['\u0064\u0061\u0074\u0061']['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((el,i)=>{const raw=Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](ds['\u0064\u0061\u0074\u0061'])?ds['\u0064\u0061\u0074\u0061'][i]:null;var _0x123f6d=(661251^661250)+(213871^213862);const txt=format(raw,i,chart);_0x123f6d=(776772^776771)+(919391^919384);if(!txt)return;const pos=el['\u0074\u006F\u006F\u006C\u0074\u0069\u0070\u0050\u006F\u0073\u0069\u0074\u0069\u006F\u006E']();var _0x330f=(140554^140559)+(686721^686728);const dy=type==="\u0062\u0061\u0072"?-(566466^566472):-(526513^526525);_0x330f=(945592^945599)+(971163^971167);ctx['\u0066\u0069\u006C\u006C\u0054\u0065\u0078\u0074'](txt,pos['\u0078'],pos['\u0079']+dy);});});ctx['\u0072\u0065\u0073\u0074\u006F\u0072\u0065']();}};function renderDashboardCharts(filtered){renderDashboardChart(filtered);renderDashboardTrendChart(filtered);renderDashboardChannelChart(filtered);renderDashboardScoreDistributionChart(filtered);renderDashboardGroupAvgChart(filtered);}function renderDashboardTrendChart(data){var _0xa6cd=(433943^433936)+(688122^688124);const _0x472cb=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0074\u0072\u0065\u006E\u0064\u002D\u0063\u0068\u0061\u0072\u0074");_0xa6cd='\u0068\u0069\u0070\u0070\u0066\u0068';if(!_0x472cb)return;destroyIfExists(dashTrendChart);const _0x541ef={};(data||[])['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](e=>{var _0x1f29cc=(851507^851505)+(994785^994786);const _0xg3ga=String(e['\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065']||e['\u0064\u0061\u0074\u0065']||'')['\u0074\u0072\u0069\u006D']();_0x1f29cc=(308807^308814)+(522669^522670);if(!_0xg3ga)return;let _0xg0a;const s=parseFloat(e['\u0073\u0063\u006F\u0072\u0065'])||455324^455324;_0xg0a='\u006B\u006F\u0066\u006D\u0069\u006C';if(!_0x541ef[_0xg3ga])_0x541ef[_0xg3ga]={'\u0074\u006F\u0074\u0061\u006C':0,'\u0063\u006F\u0075\u006E\u0074':0};_0x541ef[_0xg3ga]['\u0074\u006F\u0074\u0061\u006C']+=s;_0x541ef[_0xg3ga]['\u0063\u006F\u0075\u006E\u0074']+=279424^279425;});const _0x9444ab=Object['\u006B\u0065\u0079\u0073'](_0x541ef)['\u0073\u006F\u0072\u0074']((a,b)=>{const _0xe5f4a=a['\u0073\u0070\u006C\u0069\u0074']("\u002E");const _0xe5c=b['\u0073\u0070\u006C\u0069\u0074']("\u002E");var _0x11e3c=(878873^878864)+(674965^674972);const _0x33648c=new Date(Number(_0xe5f4a[179840^179842]),Number(_0xe5f4a[738911^738910])-(353692^353693),Number(_0xe5f4a[562982^562982]));_0x11e3c='\u0068\u006D\u006E\u006D\u0063\u0063';let _0xa959d;const _0xb9dd=new Date(Number(_0xe5c[403539^403537]),Number(_0xe5c[140714^140715])-(991758^991759),Number(_0xe5c[192303^192303]));_0xa959d=612641^612646;return _0x33648c-_0xb9dd;});const _0xfe_0x235=_0x9444ab['\u006D\u0061\u0070'](d=>d['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](153335^153335,740569^740572));const _0x2afffb=_0x9444ab['\u006D\u0061\u0070'](d=>(_0x541ef[d]['\u0063\u006F\u0075\u006E\u0074']?_0x541ef[d]['\u0074\u006F\u0074\u0061\u006C']/_0x541ef[d]['\u0063\u006F\u0075\u006E\u0074']:782912^782912)['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](389510^389511));const _0x4f2=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0074\u0072\u0065\u006E\u0064\u002D\u0073\u0075\u0062");if(_0x4f2){_0x4f2['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']=_0x9444ab['\u006C\u0065\u006E\u0067\u0074\u0068']?`${_0x9444ab['\u006C\u0065\u006E\u0067\u0074\u0068']} gün • günlük ortalama`:"\u0056\u0065\u0072\u0069\u0020\u0079\u006F\u006B";}dashTrendChart=new Chart(_0x472cb,{'\u0074\u0079\u0070\u0065':'line',"plugins":[valueLabelPlugin],'\u0064\u0061\u0074\u0061':{'\u006C\u0061\u0062\u0065\u006C\u0073':_0xfe_0x235,'\u0064\u0061\u0074\u0061\u0073\u0065\u0074\u0073':[{'\u006C\u0061\u0062\u0065\u006C':"\u0047\u00FC\u006E\u006C\u00FC\u006B\u0020\u004F\u0072\u0074\u0061\u006C\u0061\u006D\u0061",'\u0064\u0061\u0074\u0061':_0x2afffb,'\u0074\u0065\u006E\u0073\u0069\u006F\u006E':0.25,'\u0066\u0069\u006C\u006C':false,"pointRadius":3,"pointHoverRadius":4,"borderWidth":2}]},'\u006F\u0070\u0074\u0069\u006F\u006E\u0073':{'\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0069\u0076\u0065':!![],'\u006D\u0061\u0069\u006E\u0074\u0061\u0069\u006E\u0041\u0073\u0070\u0065\u0063\u0074\u0052\u0061\u0074\u0069\u006F':false,'\u0073\u0063\u0061\u006C\u0065\u0073':{'\u0079':{"beginAtZero":!![],'\u006D\u0061\u0078':100,'\u0067\u0072\u0069\u0064':{'\u0063\u006F\u006C\u006F\u0072':'#f0f0f0'}},'\u0078':{"grid":{'\u0064\u0069\u0073\u0070\u006C\u0061\u0079':false}}},'\u0070\u006C\u0075\u0067\u0069\u006E\u0073':{'\u006C\u0065\u0067\u0065\u006E\u0064':{"display":false},"valueLabelPlugin":{'\u0066\u006F\u0072\u006D\u0061\u0074\u0074\u0065\u0072':v=>`${Number(v)['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](795537^795536)}`},'\u0074\u006F\u006F\u006C\u0074\u0069\u0070':{'\u0063\u0061\u006C\u006C\u0062\u0061\u0063\u006B\u0073':{'\u006C\u0061\u0062\u0065\u006C':ctx=>`${ctx['\u0070\u0061\u0072\u0073\u0065\u0064']['\u0079']} Ortalama`}}}}});}function renderDashboardChannelChart(data,_0x73abb,_0x2aa87f){const _0x931cf=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0063\u0068\u0061\u006E\u006E\u0065\u006C\u002D\u0063\u0068\u0061\u0072\u0074");if(!_0x931cf)return;destroyIfExists(dashChannelChart);const _0x95d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("puorg-hsad-q".split("").reverse().join(""));_0x73abb='\u0062\u0064\u006B\u006D\u0068\u0069';var _0x41gce=(329083^329084)+(417604^417607);const _0xbfcccf=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tnega-hsad-q".split("").reverse().join(""));_0x41gce=(667890^667894)+(273345^273350);var _0x11_0xf3g=(707712^707716)+(113175^113174);const _0x35a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0064\u0061\u0073\u0068\u002D\u0063\u0068\u0061\u006E\u006E\u0065\u006C");_0x11_0xf3g='\u0063\u006E\u0071\u006E\u006A\u0063';const g=_0x95d?_0x95d['\u0076\u0061\u006C\u0075\u0065']:"lla".split("").reverse().join("");var _0xbbef4b=(500796^500788)+(417906^417906);const a=_0xbfcccf?_0xbfcccf['\u0076\u0061\u006C\u0075\u0065']:"\u0061\u006C\u006C";_0xbbef4b='\u0067\u0069\u006B\u006A\u0064\u0069';const _0x817b2g=_0x35a?_0x35a['\u0076\u0061\u006C\u0075\u0065']:"\u0061\u006C\u006C";_0x2aa87f="\u0063\u0068\u0061\u006E\u006E\u0065\u006C";if(_0x817b2g!=="\u0061\u006C\u006C"||a&&a!=="\u0061\u006C\u006C")_0x2aa87f="epyTkcabdeef".split("").reverse().join("");const _0xb7_0x558={};(data||[])['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](e=>{const _0x1a_0x5f4=_0x2aa87f==="lennahc".split("").reverse().join("")?deriveChannelFromGroup(e['\u0067\u0072\u006F\u0075\u0070']):String(e['\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u0054\u0079\u0070\u0065']||"koY".split("").reverse().join(""));if(!_0xb7_0x558[_0x1a_0x5f4])_0xb7_0x558[_0x1a_0x5f4]=154016^154016;_0xb7_0x558[_0x1a_0x5f4]+=324591^324590;});const _0x1f36e=Object['\u006B\u0065\u0079\u0073'](_0xb7_0x558);var _0xd4bab=(947905^947908)+(806243^806247);const _0xe213g=_0x1f36e['\u006D\u0061\u0070'](k=>_0xb7_0x558[k]);_0xd4bab=(333427^333424)+(907734^907742);const _0x44536a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0063\u0068\u0061\u006E\u006E\u0065\u006C\u002D\u0073\u0075\u0062");if(_0x44536a){if(_0x2aa87f==="lennahc".split("").reverse().join(""))_0x44536a['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']="\u0053\u0061\u0074\u0131\u015F\u0020\u002F\u0020\u0043\u0068\u0061\u0074\u0020\u002F\u0020\u0044\u0069\u011F\u0065\u0072";else _0x44536a['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']="\u0131m\u0131l\u0131\u011Fad epyT kcabdeeF".split("").reverse().join("");}dashChannelChart=new Chart(_0x931cf,{"type":"\u0064\u006F\u0075\u0067\u0068\u006E\u0075\u0074",'\u0070\u006C\u0075\u0067\u0069\u006E\u0073':[valueLabelPlugin],'\u0064\u0061\u0074\u0061':{'\u006C\u0061\u0062\u0065\u006C\u0073':_0x1f36e,"datasets":[{'\u0064\u0061\u0074\u0061':_0xe213g,'\u0062\u006F\u0072\u0064\u0065\u0072\u0057\u0069\u0064\u0074\u0068':1}]},'\u006F\u0070\u0074\u0069\u006F\u006E\u0073':{'\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0069\u0076\u0065':!![],"maintainAspectRatio":false,"plugins":{'\u006C\u0065\u0067\u0065\u006E\u0064':{'\u0070\u006F\u0073\u0069\u0074\u0069\u006F\u006E':'bottom'},"valueLabelPlugin":{'\u0073\u0068\u006F\u0077\u0050\u0065\u0072\u0063\u0065\u006E\u0074':!![],'\u006D\u0069\u006E\u0050\u0065\u0072\u0063\u0065\u006E\u0074\u0054\u006F\u0053\u0068\u006F\u0077':4},'\u0074\u006F\u006F\u006C\u0074\u0069\u0070':{"callbacks":{'\u006C\u0061\u0062\u0065\u006C':ctx=>`${ctx['\u006C\u0061\u0062\u0065\u006C']}: ${ctx['\u0066\u006F\u0072\u006D\u0061\u0074\u0074\u0065\u0064\u0056\u0061\u006C\u0075\u0065']}`}}}}});}function renderDashboardScoreDistributionChart(data){const _0x368g9f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0073\u0063\u006F\u0072\u0065\u002D\u0064\u0069\u0073\u0074\u002D\u0063\u0068\u0061\u0072\u0074");if(!_0x368g9f)return;destroyIfExists(dashScoreDistChart);const _0x2498de=[{'\u006C\u0061\u0062\u0065\u006C':"\u0030\u002D\u0035\u0039",'\u006D\u0069\u006E':0,"max":59},{'\u006C\u0061\u0062\u0065\u006C':'60-69',"min":60,'\u006D\u0061\u0078':69},{"label":"\u0037\u0030\u002D\u0037\u0039","min":70,'\u006D\u0061\u0078':79},{'\u006C\u0061\u0062\u0065\u006C':"\u0038\u0030\u002D\u0038\u0039",'\u006D\u0069\u006E':80,"max":89},{"label":'90-100',"min":90,'\u006D\u0061\u0078':100}];var _0xb6b7e=(738096^738099)+(219690^219690);const _0x8gdec=_0x2498de['\u006D\u0061\u0070'](()=>678414^678414);_0xb6b7e=(127174^127174)+(326172^326174);(data||[])['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](e=>{var _0xfgaa=(220257^220258)+(554473^554477);const s=Math['\u0072\u006F\u0075\u006E\u0064'](parseFloat(e['\u0073\u0063\u006F\u0072\u0065'])||390850^390850);_0xfgaa=901877^901884;for(let i=855921^855921;i<_0x2498de['\u006C\u0065\u006E\u0067\u0074\u0068'];i++){if(s>=_0x2498de[i]['\u006D\u0069\u006E']&&s<=_0x2498de[i]['\u006D\u0061\u0078']){_0x8gdec[i]++;break;}}});dashScoreDistChart=new Chart(_0x368g9f,{"type":'bar',"plugins":[valueLabelPlugin],"data":{'\u006C\u0061\u0062\u0065\u006C\u0073':_0x2498de['\u006D\u0061\u0070'](r=>r['\u006C\u0061\u0062\u0065\u006C']),'\u0064\u0061\u0074\u0061\u0073\u0065\u0074\u0073':[{"label":'Adet','\u0064\u0061\u0074\u0061':_0x8gdec,"borderWidth":1,"borderRadius":6}]},'\u006F\u0070\u0074\u0069\u006F\u006E\u0073':{"responsive":!![],'\u006D\u0061\u0069\u006E\u0074\u0061\u0069\u006E\u0041\u0073\u0070\u0065\u0063\u0074\u0052\u0061\u0074\u0069\u006F':false,'\u0073\u0063\u0061\u006C\u0065\u0073':{'\u0079':{'\u0062\u0065\u0067\u0069\u006E\u0041\u0074\u005A\u0065\u0072\u006F':!![],"grid":{'\u0063\u006F\u006C\u006F\u0072':"\u0023\u0066\u0030\u0066\u0030\u0066\u0030"}},'\u0078':{'\u0067\u0072\u0069\u0064':{"display":false}}},'\u0070\u006C\u0075\u0067\u0069\u006E\u0073':{"legend":{'\u0064\u0069\u0073\u0070\u006C\u0061\u0079':false},"valueLabelPlugin":{"formatter":v=>`${v}`},"tooltip":{'\u0063\u0061\u006C\u006C\u0062\u0061\u0063\u006B\u0073':{"label":ctx=>`${ctx['\u0070\u0061\u0072\u0073\u0065\u0064']['\u0079']} kayıt`}}}}});}function renderDashboardGroupAvgChart(data,_0x12ea){var _0xa_0x6d8=(306043^306042)+(304881^304884);const _0xde3a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0067\u0072\u006F\u0075\u0070\u002D\u0061\u0076\u0067\u002D\u0063\u0068\u0061\u0072\u0074");_0xa_0x6d8=647544^647547;if(!_0xde3a)return;destroyIfExists(dashGroupAvgChart);const _0x7683g={};(data||[])['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](e=>{var _0x7920f=(762610^762613)+(666761^666761);const g=String(e['\u0067\u0072\u006F\u0075\u0070']||"leneG".split("").reverse().join(""));_0x7920f=(359402^359394)+(589731^589734);var _0x12_0x8d5=(737108^737105)+(240072^240073);const s=parseFloat(e['\u0073\u0063\u006F\u0072\u0065'])||981698^981698;_0x12_0x8d5=(661668^661676)+(505070^505063);if(!_0x7683g[g])_0x7683g[g]={'\u0074\u006F\u0074\u0061\u006C':0,"count":0};_0x7683g[g]['\u0074\u006F\u0074\u0061\u006C']+=s;_0x7683g[g]['\u0063\u006F\u0075\u006E\u0074']+=810550^810551;});const _0xf6744d=Object['\u006B\u0065\u0079\u0073'](_0x7683g)['\u006D\u0061\u0070'](g=>({'\u0067':g,"avg":_0x7683g[g]['\u0063\u006F\u0075\u006E\u0074']?_0x7683g[g]['\u0074\u006F\u0074\u0061\u006C']/_0x7683g[g]['\u0063\u006F\u0075\u006E\u0074']:119477^119477,"count":_0x7683g[g]['\u0063\u006F\u0075\u006E\u0074']}))['\u0073\u006F\u0072\u0074']((a,b)=>a['\u0061\u0076\u0067']-b['\u0061\u0076\u0067']);var _0x7g_0x2b4=(349373^349372)+(574619^574620);const _0x7eac=_0xf6744d['\u006D\u0061\u0070'](r=>r['\u0067']['\u006C\u0065\u006E\u0067\u0074\u0068']>(262799^262809)?r['\u0067']['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](735225^735225,888067^888085)+"\u2026":r['\u0067']);_0x7g_0x2b4=(676968^676973)+(900680^900683);var _0x8ad73c=(266505^266504)+(394954^394955);const _0x158g=_0xf6744d['\u006D\u0061\u0070'](r=>r['\u0061\u0076\u0067']['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](433073^433072));_0x8ad73c=(509966^509958)+(221190^221191);const _0x4e9f9a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0067\u0072\u006F\u0075\u0070\u002D\u0073\u0075\u0062");_0x12ea='\u006A\u0068\u0067\u0068\u006C\u0065';if(_0x4e9f9a){_0x4e9f9a['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']=_0xf6744d['\u006C\u0065\u006E\u0067\u0074\u0068']?`${_0xf6744d['\u006C\u0065\u006E\u0067\u0074\u0068']} takım • en düşükten en yükseğe`:"\u0056\u0065\u0072\u0069\u0020\u0079\u006F\u006B";}dashGroupAvgChart=new Chart(_0xde3a,{"type":'bar',"plugins":[valueLabelPlugin],'\u0064\u0061\u0074\u0061':{'\u006C\u0061\u0062\u0065\u006C\u0073':_0x7eac,"datasets":[{"label":"\u004F\u0072\u0074\u0061\u006C\u0061\u006D\u0061","data":_0x158g,'\u0062\u006F\u0072\u0064\u0065\u0072\u0057\u0069\u0064\u0074\u0068':1,"borderRadius":6}]},'\u006F\u0070\u0074\u0069\u006F\u006E\u0073':{'\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0069\u0076\u0065':!![],"maintainAspectRatio":false,'\u0069\u006E\u0064\u0065\u0078\u0041\u0078\u0069\u0073':"\u0079",'\u0073\u0063\u0061\u006C\u0065\u0073':{'\u0078':{'\u0062\u0065\u0067\u0069\u006E\u0041\u0074\u005A\u0065\u0072\u006F':!![],'\u006D\u0061\u0078':100,'\u0067\u0072\u0069\u0064':{'\u0063\u006F\u006C\u006F\u0072':"\u0023\u0066\u0030\u0066\u0030\u0066\u0030"}},'\u0079':{"grid":{'\u0064\u0069\u0073\u0070\u006C\u0061\u0079':false}}},'\u0070\u006C\u0075\u0067\u0069\u006E\u0073':{'\u006C\u0065\u0067\u0065\u006E\u0064':{'\u0064\u0069\u0073\u0070\u006C\u0061\u0079':false},'\u0076\u0061\u006C\u0075\u0065\u004C\u0061\u0062\u0065\u006C\u0050\u006C\u0075\u0067\u0069\u006E':{'\u0066\u006F\u0072\u006D\u0061\u0074\u0074\u0065\u0072':v=>`${Number(v)['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](753933^753932)}`},"tooltip":{'\u0063\u0061\u006C\u006C\u0062\u0061\u0063\u006B\u0073':{"title":ctx=>_0xf6744d[ctx[721729^721729]['\u0064\u0061\u0074\u0061\u0049\u006E\u0064\u0065\u0078']]['\u0067'],'\u006C\u0061\u0062\u0065\u006C':ctx=>`${ctx['\u0070\u0061\u0072\u0073\u0065\u0064']['\u0078']} Ortalama (${_0xf6744d[ctx['\u0064\u0061\u0074\u0061\u0049\u006E\u0064\u0065\u0078']]['\u0063\u006F\u0075\u006E\u0074']} kayıt)`}}}}});}function loadTrainingData(){const _0x949fad=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0072\u0061\u0069\u006E\u0069\u006E\u0067\u002D\u006C\u0069\u0073\u0074");_0x949fad['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=">vid/<...royinelk\xFCY>\";retnec:ngila-txet ;1-/1:nmuloc-dirg\"=elyts vid<".split("").reverse().join("");fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':'POST',"headers":{"Content-Type":"text/plain;charset=utf-8"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"\u0067\u0065\u0074\u0054\u0072\u0061\u0069\u006E\u0069\u006E\u0067\u0073",'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken(),"asAdmin":isAdminMode})})['\u0074\u0068\u0065\u006E'](r=>r['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](data=>{_0x949fad['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']='';if(data['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")&&data['\u0074\u0072\u0061\u0069\u006E\u0069\u006E\u0067\u0073']['\u006C\u0065\u006E\u0067\u0074\u0068']>(756261^756261)){data['\u0074\u0072\u0061\u0069\u006E\u0069\u006E\u0067\u0073']['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](t=>{var _0xc130c=(192948^192946)+(672312^672317);let _0xg24cee=t['\u0069\u0073\u0043\u006F\u006D\u0070\u006C\u0065\u0074\u0065\u0064']?`<button class="t-btn t-btn-done"><i class="fas fa-check"></i> Tamamlandı</button>`:`<button class="t-btn t-btn-start" onclick="openTrainingLink('${t['\u0069\u0064']}', '${t['\u006C\u0069\u006E\u006B']}')">Eğitime Git</button>`;_0xc130c=(915222^915223)+(387230^387223);let _0xa9d2=t['\u0064\u006F\u0063\u004C\u0069\u006E\u006B']&&t['\u0064\u006F\u0063\u004C\u0069\u006E\u006B']!=="\u004E\u002F\u0041"?`<a href="${t['\u0064\u006F\u0063\u004C\u0069\u006E\u006B']}" target="_blank" class="t-doc-link"><i class="fas fa-file-download"></i> Dökümanı İndir</a>`:'';_0x949fad['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']+=`
+    `).join('');
+
+    box.style.display = 'grid';
+}
+
+// Detay alanını toleranslı parse et
+function deriveChannelFromGroup(group) {
+    const g = String(group || '').toLowerCase();
+    if (!g) return 'other';
+    if (g.includes('telesat') || g.includes('telesatış') || g === 'telesales') return 'sales';
+    if (g.includes('chat')) return 'chat';
+    return 'other';
+}
+
+function safeParseDetails(details) {
+    if (!details) return null;
+    if (Array.isArray(details)) return details;
+    if (typeof details === 'object') return details;
+    if (typeof details === 'string') {
+        const s = details.trim();
+        if (!s) return null;
+        // Bazı eski kayıtlar çift tırnak kaçışlı gelebilir
+        const tryList = [s, s.replace(/\"/g, '"'), s.replace(/'/g, '"')];
+        for (const cand of tryList) {
+            try {
+                const parsed = JSON.parse(cand);
+                if (Array.isArray(parsed)) return parsed;
+            } catch (e) { }
+        }
+    }
+    return null;
+}
+
+// ✅ YENİ: Feedback (Geri Bildirimler) Filtrelerini Doldurma
+function populateFeedbackFilters() {
+    const groupSelect = document.getElementById('q-feedback-group');
+    const agentSelect = document.getElementById('q-feedback-agent');
+    if (!groupSelect || !agentSelect) return;
+
+    if (!isAdminMode) {
+        groupSelect.style.display = 'none';
+        agentSelect.style.display = 'none';
+        return;
+    } else {
+        groupSelect.style.display = 'block';
+        agentSelect.style.display = 'block';
+    }
+
+    const groups = [...new Set(adminUserList.map(u => u.group).filter(g => g))].sort();
+    groupSelect.innerHTML = '<option value="all">Tüm Gruplar</option>';
+    groups.forEach(g => {
+        const opt = document.createElement('option');
+        opt.value = g;
+        opt.textContent = g;
+        groupSelect.appendChild(opt);
+    });
+
+    // İlk yüklemede tüm agentları listele
+    updateFeedbackAgentList(false);
+}
+
+function updateFeedbackAgentList(shouldRefresh = true) {
+    const groupSelect = document.getElementById('q-feedback-group');
+    const agentSelect = document.getElementById('q-feedback-agent');
+    if (!groupSelect || !agentSelect) return;
+
+    const selectedGroup = groupSelect.value;
+
+    // seçilen gruba göre kullanıcıları filtrele
+    const filteredUsers = adminUserList.filter(u => {
+        if (!u || !u.username) return false;
+        if (selectedGroup === 'all') return true;
+        return u.group === selectedGroup;
+    });
+
+    const agents = filteredUsers
+        .map(u => u.username)
+        .filter(a => a)
+        .sort((a, b) => a.localeCompare(b, 'tr'));
+
+    agentSelect.innerHTML = '<option value="all">Tüm Temsilciler</option>';
+    agents.forEach(a => {
+        const opt = document.createElement('option');
+        opt.value = a;
+        opt.textContent = a;
+        agentSelect.appendChild(opt);
+    });
+
+    if (shouldRefresh) refreshFeedbackData();
+}
+
+async function fetchEvaluationsForFeedback() {
+    const groupSelect = document.getElementById('q-feedback-group');
+    const agentSelect = document.getElementById('q-feedback-agent');
+
+    let targetAgent = currentUser;
+    let targetGroup = 'all';
+
+    if (isAdminMode) {
+        targetAgent = agentSelect ? agentSelect.value : 'all';
+        targetGroup = groupSelect ? groupSelect.value : 'all';
+    }
+
+    try {
+        const response = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({
+                action: 'fetchEvaluations',
+                targetAgent: targetAgent,
+                targetGroup: targetGroup,
+                username: currentUser,
+                token: getToken()
+            })
+        });
+        const data = await response.json();
+        if (data.result === "success") {
+            allEvaluationsData = (data.evaluations || []).reverse();
+        } else {
+            allEvaluationsData = [];
+        }
+    } catch (e) {
+        allEvaluationsData = [];
+    }
+}
+
+async function refreshFeedbackData() {
+    // Feedback ekranı için (admin filtrelerine göre) değerlendirmeleri + logları çek, sonra listeyi bas
+    await fetchEvaluationsForFeedback();
+    await fetchFeedbackLogs();
+    loadFeedbackList();
+}
+
+
+function refreshQualityData() {
+    loadQualityDashboard();
+}
+async function fetchEvaluationsForDashboard() {
+    // Dashboard filtrelerine göre değerlendirmeleri çek (admin ise seçilen grup/temsilciye göre)
+    const groupSelect = document.getElementById('q-dash-group');
+    const agentSelect = document.getElementById('q-dash-agent');
+
+    let targetAgent = currentUser;
+    let targetGroup = 'all';
+
+    if (isAdminMode) {
+        targetAgent = agentSelect ? agentSelect.value : 'all';
+        targetGroup = groupSelect ? groupSelect.value : 'all';
+    }
+
+    try {
+        const response = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({
+                action: "fetchEvaluations",
+                targetAgent: targetAgent,
+                targetGroup: targetGroup,
+                username: currentUser,
+                token: getToken()
+            })
+        });
+        const data = await response.json();
+        if (data.result === "success") {
+            allEvaluationsData = (data.evaluations || []).reverse();
+        } else {
+            allEvaluationsData = [];
+        }
+    } catch (e) {
+        allEvaluationsData = [];
+    }
+}
+function loadQualityDashboard() {
+    // Verileri çek (silent mode), veri gelince grafikleri çiz
+    fetchEvaluationsForDashboard().then(() => {
+        const monthSelect = document.getElementById('q-dash-month');
+        const groupSelect = document.getElementById('q-dash-group');
+        const agentSelect = document.getElementById('q-dash-agent');
+        const selectedMonth = monthSelect ? monthSelect.value : '';
+        const selectedGroup = groupSelect ? groupSelect.value : 'all';
+        const selectedAgent = agentSelect ? agentSelect.value : 'all';
+        const selectedChannel = "all";
+        let filtered = allEvaluationsData.filter(e => {
+            const rawDate = (e.callDate && e.callDate !== 'N/A') ? e.callDate : e.date;
+            if (!rawDate || typeof rawDate !== 'string') return false;
+            const eDate = rawDate.substring(3); // dd.MM.yyyy -> MM.yyyy
+            const matchMonth = (eDate === selectedMonth);
+
+            let matchGroup = true;
+            let matchAgent = true;
+            // Admin filtreleme mantığı
+            if (isAdminMode) {
+                // Eğer veri içinde grup bilgisi varsa onu kullan, yoksa adminUserList'ten bakmak gerekir.
+                if (selectedGroup !== 'all') {
+                    if (e.group) {
+                        matchGroup = (e.group === selectedGroup);
+                    } else {
+                        const user = adminUserList.find(u => u.name === e.agent);
+                        matchGroup = (user && user.group === selectedGroup);
+                    }
+                }
+
+                if (selectedAgent !== 'all' && e.agent !== selectedAgent) matchAgent = false;
+            } else {
+                // Admin değilse sadece kendi verisi
+                if (e.agent !== currentUser) matchAgent = false;
+            }
+            // MANUEL kayıtları dashboard'da gösterme
+            const isManual = e.callId && String(e.callId).toUpperCase().startsWith('MANUEL-');
+            return matchMonth && matchGroup && matchAgent && !isManual;
+        });
+        const total = filtered.reduce((acc, curr) => acc + (parseInt(curr.score) || 0), 0);
+        const count = filtered.length;
+        const avg = count > 0 ? (total / count).toFixed(1) : 0;
+        const targetHit = filtered.filter(e => e.score >= 90).length;
+        const rate = count > 0 ? Math.round((targetHit / count) * 100) : 0;
+        // En zayıf kriter (detay varsa)
+        let worstLabel = '-';
+        try {
+            const qs = {};
+            filtered.forEach(item => {
+                const details = safeParseDetails(item.details);
+                if (!Array.isArray(details)) return;
+                details.forEach(d => {
+                    const key = String(d.q || '').trim();
+                    if (!key) return;
+                    const earned = parseFloat(d.score || 0) || 0;
+                    const maxv = parseFloat(d.max || 0) || 0;
+                    if (!qs[key]) qs[key] = { earned: 0, max: 0 };
+                    qs[key].earned += earned;
+                    qs[key].max += maxv;
+                });
+            });
+            const arr = Object.keys(qs).map(k => {
+                const o = qs[k];
+                const pct = o.max > 0 ? (o.earned / o.max) * 100 : 100;
+                return { k, pct };
+            }).sort((a, b) => a.pct - b.pct);
+            if (arr.length) {
+                const k = arr[0].k;
+                worstLabel = k.length > 28 ? (k.substring(0, 28) + '…') : k;
+            }
+        } catch (e) { }
+        const worstEl = document.getElementById('q-dash-worst');
+        if (worstEl) worstEl.innerText = worstLabel;
+
+        // UI Güncelle
+        document.getElementById('q-dash-score').innerText = avg;
+        document.getElementById('q-dash-count').innerText = count;
+        document.getElementById('q-dash-target').innerText = `%${rate}`;
+
+        // Ring Chart Rengi
+        const ring = document.getElementById('q-dash-ring');
+        let color = '#2e7d32';
+        if (avg < 70) color = '#d32f2f'; else if (avg < 85) color = '#ed6c02';
+        const ratio = (avg / 100) * 100;
+        if (ring) ring.style.background = `conic-gradient(${color} ${ratio}%, #eee ${ratio}%)`;
+        if (document.getElementById('q-dash-ring-text')) document.getElementById('q-dash-ring-text').innerText = Math.round(avg);
+        updateDashRingTitle();
+        // Admin için: temsilci ortalamaları
+        renderDashAgentScores(filtered);
+        // Grafik Çizdir
+        renderDashboardCharts(filtered);
+    });
+}
+function renderDashboardChart(data) {
+    const ctx = document.getElementById('q-breakdown-chart');
+    if (!ctx) return;
+    if (dashboardChart) {
+        dashboardChart.destroy();
+    }
+    // --- KRİTER BAZLI ANALİZ ---
+    let questionStats = {};
+    if (data.length > 0) {
+        data.forEach(item => {
+            try {
+                // Detay verisini kontrol et, string ise parse et
+                let details = safeParseDetails(item.details);
+
+                if (Array.isArray(details)) {
+                    details.forEach(d => {
+                        let qFullText = d.q; // Tam metin
+                        // Soruyu anahtar olarak kullan (kısaltılmış versiyonu)
+                        let qShortText = qFullText.length > 25 ? qFullText.substring(0, 25) + '...' : qFullText;
+
+                        if (!questionStats[qShortText]) {
+                            // fullText'i tutuyoruz ki tooltip'te gösterebilelim
+                            questionStats[qShortText] = { earned: 0, max: 0, fullText: qFullText };
+                        }
+
+                        questionStats[qShortText].earned += parseInt(d.score || 0);
+                        questionStats[qShortText].max += parseInt(d.max || 0);
+                    });
+                }
+            } catch (e) {
+                // JSON parse hatası veya eski veri formatı
+                console.log("Detay verisi işlenemedi", e);
+            }
+        });
+    }
+    // İstatistikleri diziye çevirip başarı oranına göre sırala
+    let statsArray = Object.keys(questionStats).map(key => {
+        let s = questionStats[key];
+        // Başarı oranı %
+        let percentage = s.max > 0 ? (s.earned / s.max) * 100 : 0;
+        return { label: key, fullLabel: s.fullText, value: percentage };
+    });
+
+    // Başarı oranına göre artan sıralama (En düşük başarı en başta)
+    statsArray.sort((a, b) => a.value - b.value);
+    // Eğer detay kırılımı yoksa (eski/boş kayıtlar), temsilci ortalamasına göre kırılım göster
+    if (statsArray.length === 0) {
+        const byAgent = {};
+        data.forEach(it => {
+            const a = it.agent || 'N/A';
+            const s = parseFloat(it.score) || 0;
+            if (!byAgent[a]) byAgent[a] = { total: 0, count: 0 };
+            byAgent[a].total += s;
+            byAgent[a].count += 1;
+        });
+        const aArr = Object.keys(byAgent).map(name => ({
+            label: name.length > 25 ? name.substring(0, 25) + '...' : name,
+            fullLabel: name,
+            value: byAgent[name].count ? (byAgent[name].total / byAgent[name].count) : 0
+        }));
+        aArr.sort((x, y) => x.value - y.value);
+        let topIssues = aArr.slice(0, 6);
+        let chartLabels = topIssues.map(i => i.label);
+        let chartData = topIssues.map(i => i.value.toFixed(1));
+
+        dashboardChart = new Chart(ctx, {
+            type: 'bar',
+            plugins: [valueLabelPlugin],
+            data: {
+                labels: chartLabels,
+                datasets: [{
+                    label: 'Ortalama Puan',
+                    data: chartData,
+                    backgroundColor: chartData.map(val => val < 70 ? 'rgba(211, 47, 47, 0.7)' : (val < 85 ? 'rgba(237, 108, 2, 0.7)' : 'rgba(46, 125, 50, 0.7)')),
+                    borderColor: chartData.map(val => val < 70 ? '#b71c1c' : (val < 85 ? '#e65100' : '#1b5e20')),
+                    borderWidth: 1,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                scales: {
+                    x: { beginAtZero: true, max: 100, grid: { color: '#f0f0f0' } },
+                    y: { grid: { display: false } }
+                },
+                plugins: {
+                    legend: { display: false },
+                    valueLabelPlugin: { formatter: (v) => `${Number(v).toFixed(1)}` },
+                    tooltip: {
+                        callbacks: {
+                            title: function (context) {
+                                if (context.length > 0) return topIssues[context[0].dataIndex].fullLabel;
+                                return '';
+                            },
+                            label: function (context) {
+                                return context.parsed.x + ' Ortalama';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        return;
+    }
+
+    // Sadece en düşük 6 kriteri göster
+    let topIssues = statsArray.slice(0, 6);
+
+    let chartLabels = topIssues.map(i => i.label);
+    let chartData = topIssues.map(i => i.value.toFixed(1));
+    dashboardChart = new Chart(ctx, {
+        type: 'bar',
+        plugins: [valueLabelPlugin],
+        data: {
+            labels: chartLabels,
+            datasets: [{
+                label: 'Başarı Oranı (%)',
+                data: chartData,
+                // Kriter Bazlı Renklendirme
+                backgroundColor: chartData.map(val => val < 70 ? 'rgba(211, 47, 47, 0.7)' : (val < 90 ? 'rgba(237, 108, 2, 0.7)' : 'rgba(46, 125, 50, 0.7)')),
+                borderColor: chartData.map(val => val < 70 ? '#b71c1c' : (val < 90 ? '#e65100' : '#1b5e20')),
+                borderWidth: 1,
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: 'y', // Yatay çubuk grafik
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    max: 100,
+                    grid: { color: '#f0f0f0' }
+                },
+                y: {
+                    grid: { display: false }
+                }
+            },
+            plugins: {
+                legend: { display: false },
+                valueLabelPlugin: { formatter: (v) => `${Number(v).toFixed(1)}%` },
+                tooltip: {
+                    callbacks: {
+                        // Tooltip başlığında tam metni gösterilmesi
+                        title: function (context) {
+                            if (context.length > 0) {
+                                const dataIndex = context[0].dataIndex;
+                                // fullLabel'i kullanarak tam metni döndür
+                                return topIssues[dataIndex].fullLabel;
+                            }
+                            return '';
+                        },
+                        label: function (context) {
+                            return context.parsed.x + '% Başarı';
+                        }
+                    }
+                }
+            }
+        }
+    });
+}
+
+
+function destroyIfExists(chart) {
+    try { if (chart) chart.destroy(); } catch (e) { }
+}
+
+// --- Chart veri etiketleri (harici plugin gerektirmez) ---
+// Chart.js v3+ uyumlu, bar/line/doughnut üzerinde değerleri yazar.
+const valueLabelPlugin = {
+    id: 'valueLabelPlugin',
+    afterDatasetsDraw(chart, args, pluginOptions) {
+        const opt = pluginOptions || {};
+        if (opt.display === false) return;
+        const ctx = chart.ctx;
+        const type = chart.config.type;
+        const datasets = chart.data && chart.data.datasets ? chart.data.datasets : [];
+
+        ctx.save();
+        ctx.font = opt.font || '600 11px sans-serif';
+        ctx.fillStyle = opt.color || '#374151';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        const format = typeof opt.formatter === 'function'
+            ? opt.formatter
+            : (v) => (v === null || typeof v === 'undefined' ? '' : String(v));
+
+        if (type === 'doughnut' || type === 'pie') {
+            const total = (datasets[0] && Array.isArray(datasets[0].data))
+                ? datasets[0].data.reduce((a, b) => a + (parseFloat(b) || 0), 0)
+                : 0;
+            const meta = chart.getDatasetMeta(0);
+            meta.data.forEach((arc, i) => {
+                const raw = (datasets[0].data || [])[i];
+                const val = parseFloat(raw) || 0;
+                if (!val || !total) return;
+                const pct = (val / total) * 100;
+                if (pct < (opt.minPercentToShow || 4)) return;
+                const p = arc.tooltipPosition();
+                ctx.fillText((opt.showPercent ? `${pct.toFixed(0)}%` : format(raw, i, chart)), p.x, p.y);
+            });
+            ctx.restore();
+            return;
+        }
+
+        datasets.forEach((ds, di) => {
+            const meta = chart.getDatasetMeta(di);
+            if (meta.hidden) return;
+            meta.data.forEach((el, i) => {
+                const raw = Array.isArray(ds.data) ? ds.data[i] : null;
+                const txt = format(raw, i, chart);
+                if (!txt) return;
+                const pos = el.tooltipPosition();
+                const dy = (type === 'bar') ? -10 : -12;
+                ctx.fillText(txt, pos.x, pos.y + dy);
+            });
+        });
+
+        ctx.restore();
+    }
+};
+
+function renderDashboardCharts(filtered) {
+    renderDashboardChart(filtered); // mevcut: kriter bazlı bar
+    renderDashboardTrendChart(filtered);
+    renderDashboardChannelChart(filtered);
+    renderDashboardScoreDistributionChart(filtered);
+    renderDashboardGroupAvgChart(filtered);
+}
+
+function renderDashboardTrendChart(data) {
+    const canvas = document.getElementById('q-trend-chart');
+    if (!canvas) return;
+    destroyIfExists(dashTrendChart);
+
+    // Günlük ortalama (dd.MM.yyyy)
+    const byDay = {};
+    (data || []).forEach(e => {
+        const day = String(e.callDate || e.date || '').trim();
+        if (!day) return;
+        const s = parseFloat(e.score) || 0;
+        if (!byDay[day]) byDay[day] = { total: 0, count: 0 };
+        byDay[day].total += s;
+        byDay[day].count += 1;
+    });
+
+    const days = Object.keys(byDay).sort((a, b) => {
+        // dd.MM.yyyy
+        const pa = a.split('.'); const pb = b.split('.');
+        const da = new Date(Number(pa[2]), Number(pa[1]) - 1, Number(pa[0]));
+        const db = new Date(Number(pb[2]), Number(pb[1]) - 1, Number(pb[0]));
+        return da - db;
+    });
+
+    const labels = days.map(d => d.substring(0, 5)); // dd.MM
+    const values = days.map(d => (byDay[d].count ? (byDay[d].total / byDay[d].count) : 0).toFixed(1));
+
+    const sub = document.getElementById('q-trend-sub');
+    if (sub) {
+        sub.textContent = days.length ? `${days.length} gün • günlük ortalama` : 'Veri yok';
+    }
+
+    dashTrendChart = new Chart(canvas, {
+        type: 'line',
+        plugins: [valueLabelPlugin],
+        data: {
+            labels,
+            datasets: [{
+                label: 'Günlük Ortalama',
+                data: values,
+                tension: 0.25,
+                fill: false,
+                pointRadius: 3,
+                pointHoverRadius: 4,
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: { beginAtZero: true, max: 100, grid: { color: '#f0f0f0' } },
+                x: { grid: { display: false } }
+            },
+            plugins: {
+                legend: { display: false },
+                valueLabelPlugin: { formatter: (v) => `${Number(v).toFixed(1)}` },
+                tooltip: { callbacks: { label: (ctx) => `${ctx.parsed.y} Ortalama` } }
+            }
+        }
+    });
+}
+
+function renderDashboardChannelChart(data) {
+    const canvas = document.getElementById('q-channel-chart');
+    if (!canvas) return;
+    destroyIfExists(dashChannelChart);
+
+    const gSel = document.getElementById('q-dash-group');
+    const aSel = document.getElementById('q-dash-agent');
+    const chSel = document.getElementById('q-dash-channel');
+    const g = gSel ? gSel.value : 'all';
+    const a = aSel ? aSel.value : 'all';
+    const ch = chSel ? chSel.value : 'all';
+
+    let mode = 'channel';
+    // Daraltılmış görünümde kanal dağılımı anlamlı değilse, feedbackType dağılımına dön
+    if (ch !== 'all' || (a && a !== 'all')) mode = 'feedbackType';
+
+    const buckets = {};
+    (data || []).forEach(e => {
+        const key = mode === 'channel' ? deriveChannelFromGroup(e.group) : String(e.feedbackType || 'Yok');
+        if (!buckets[key]) buckets[key] = 0;
+        buckets[key] += 1;
+    });
+
+    const labels = Object.keys(buckets);
+    const values = labels.map(k => buckets[k]);
+
+    const sub = document.getElementById('q-channel-sub');
+    if (sub) {
+        if (mode === 'channel') sub.textContent = 'Satış / Chat / Diğer';
+        else sub.textContent = 'Feedback Type dağılımı';
+    }
+
+    dashChannelChart = new Chart(canvas, {
+        type: 'doughnut',
+        plugins: [valueLabelPlugin],
+        data: {
+            labels,
+            datasets: [{ data: values, borderWidth: 1 }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'bottom' },
+                valueLabelPlugin: { showPercent: true, minPercentToShow: 4 },
+                tooltip: { callbacks: { label: (ctx) => `${ctx.label}: ${ctx.formattedValue}` } }
+            }
+        }
+    });
+}
+
+function renderDashboardScoreDistributionChart(data) {
+    const canvas = document.getElementById('q-score-dist-chart');
+    if (!canvas) return;
+    destroyIfExists(dashScoreDistChart);
+
+    const ranges = [
+        { label: '0-59', min: 0, max: 59 },
+        { label: '60-69', min: 60, max: 69 },
+        { label: '70-79', min: 70, max: 79 },
+        { label: '80-89', min: 80, max: 89 },
+        { label: '90-100', min: 90, max: 100 },
+    ];
+    const counts = ranges.map(() => 0);
+    (data || []).forEach(e => {
+        const s = Math.round(parseFloat(e.score) || 0);
+        for (let i = 0; i < ranges.length; i++) {
+            if (s >= ranges[i].min && s <= ranges[i].max) { counts[i]++; break; }
+        }
+    });
+
+    dashScoreDistChart = new Chart(canvas, {
+        type: 'bar',
+        plugins: [valueLabelPlugin],
+        data: {
+            labels: ranges.map(r => r.label),
+            datasets: [{ label: 'Adet', data: counts, borderWidth: 1, borderRadius: 6 }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: { beginAtZero: true, grid: { color: '#f0f0f0' } },
+                x: { grid: { display: false } }
+            },
+            plugins: {
+                legend: { display: false },
+                valueLabelPlugin: { formatter: (v) => `${v}` },
+                tooltip: { callbacks: { label: (ctx) => `${ctx.parsed.y} kayıt` } }
+            }
+        }
+    });
+}
+
+function renderDashboardGroupAvgChart(data) {
+    const canvas = document.getElementById('q-group-avg-chart');
+    if (!canvas) return;
+    destroyIfExists(dashGroupAvgChart);
+
+    // Grup ortalamaları (admin için anlamlı)
+    const byGroup = {};
+    (data || []).forEach(e => {
+        const g = String(e.group || 'Genel');
+        const s = parseFloat(e.score) || 0;
+        if (!byGroup[g]) byGroup[g] = { total: 0, count: 0 };
+        byGroup[g].total += s;
+        byGroup[g].count += 1;
+    });
+
+    const rows = Object.keys(byGroup).map(g => ({
+        g,
+        avg: byGroup[g].count ? (byGroup[g].total / byGroup[g].count) : 0,
+        count: byGroup[g].count
+    })).sort((a, b) => a.avg - b.avg);
+
+    const labels = rows.map(r => r.g.length > 22 ? (r.g.substring(0, 22) + '…') : r.g);
+    const values = rows.map(r => r.avg.toFixed(1));
+
+    const sub = document.getElementById('q-group-sub');
+    if (sub) {
+        sub.textContent = rows.length ? `${rows.length} takım • en düşükten en yükseğe` : 'Veri yok';
+    }
+
+    dashGroupAvgChart = new Chart(canvas, {
+        type: 'bar',
+        plugins: [valueLabelPlugin],
+        data: {
+            labels,
+            datasets: [{ label: 'Ortalama', data: values, borderWidth: 1, borderRadius: 6 }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: 'y',
+            scales: {
+                x: { beginAtZero: true, max: 100, grid: { color: '#f0f0f0' } },
+                y: { grid: { display: false } }
+            },
+            plugins: {
+                legend: { display: false },
+                valueLabelPlugin: { formatter: (v) => `${Number(v).toFixed(1)}` },
+                tooltip: {
+                    callbacks: {
+                        title: (ctx) => rows[ctx[0].dataIndex].g,
+                        label: (ctx) => `${ctx.parsed.x} Ortalama (${rows[ctx.dataIndex].count} kayıt)`
+                    }
+                }
+            }
+        }
+    });
+}
+// --- EĞİTİM MODÜLÜ (YENİ) ---
+function loadTrainingData() {
+    const listEl = document.getElementById('training-list');
+    listEl.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Yükleniyor...</div>';
+
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "getTrainings", username: currentUser, token: getToken(), asAdmin: isAdminMode })
+    }).then(r => r.json()).then(data => {
+        listEl.innerHTML = '';
+        if (data.result === 'success' && data.trainings.length > 0) {
+            data.trainings.forEach(t => {
+                let statusHtml = t.isCompleted
+                    ? `<button class="t-btn t-btn-done"><i class="fas fa-check"></i> Tamamlandı</button>`
+                    : `<button class="t-btn t-btn-start" onclick="openTrainingLink('${t.id}', '${t.link}')">Eğitime Git</button>`;
+
+                let docHtml = t.docLink && t.docLink !== 'N/A'
+                    ? `<a href="${t.docLink}" target="_blank" class="t-doc-link"><i class="fas fa-file-download"></i> Dökümanı İndir</a>`
+                    : '';
+
+                // GÜNCELLENMİŞ KART YAPISI (Tarih ve Süre Eklendi)
+                listEl.innerHTML += `
                 <div class="t-card">
                     <div class="t-card-header">
-                        <span>${t['\u0074\u0069\u0074\u006C\u0065']}${isAdminMode?` <span style=\"font-weight:600; opacity:.8; font-size:.75rem\">(${t['\u0074\u0061\u0072\u0067\u0065\u0074']}${t['\u0074\u0061\u0072\u0067\u0065\u0074']==="\u0049\u006E\u0064\u0069\u0076\u0069\u0064\u0075\u0061\u006C"&&t['\u0074\u0061\u0072\u0067\u0065\u0074\u0055\u0073\u0065\u0072']?"\u0020\u2022\u0020"+t['\u0074\u0061\u0072\u0067\u0065\u0074\u0055\u0073\u0065\u0072']:''})</span>`:''}</span>
-                        <span class="t-status-badge">Atanma: ${t['\u0064\u0061\u0074\u0065']}</span>
+                        <span>${t.title}${isAdminMode ? ` <span style=\"font-weight:600; opacity:.8; font-size:.75rem\">(${t.target}${t.target === 'Individual' && t.targetUser ? ' • ' + t.targetUser : ''})</span>` : ''}</span>
+                        <span class="t-status-badge">Atanma: ${t.date}</span>
                     </div>
                     <div class="t-card-body">
-                        ${t['\u0064\u0065\u0073\u0063']}
-                        ${_0xa9d2}
+                        ${t.desc}
+                        ${docHtml}
                         <div style="margin-top:10px; display:flex; justify-content:space-between; font-size:0.8rem; color:#666; padding-top:10px; border-top:1px dashed #eee;">
-                            <div><strong>Süre:</strong> ${t['\u0064\u0075\u0072\u0061\u0074\u0069\u006F\u006E']||"idemlitrileB".split("").reverse().join("")}</div>
-                            <div><strong>Başlangıç:</strong> ${t['\u0073\u0074\u0061\u0072\u0074\u0044\u0061\u0074\u0065']||"\u004E\u002F\u0041"} - <strong>Bitiş:</strong> ${t['\u0065\u006E\u0064\u0044\u0061\u0074\u0065']||"\u004E\u002F\u0041"}</div>
+                            <div><strong>Süre:</strong> ${t.duration || 'Belirtilmedi'}</div>
+                            <div><strong>Başlangıç:</strong> ${t.startDate || 'N/A'} - <strong>Bitiş:</strong> ${t.endDate || 'N/A'}</div>
                         </div>
-                        <div style="font-size:0.8rem; color:#999; margin-top:5px;">Atayan: ${t['\u0063\u0072\u0065\u0061\u0074\u006F\u0072']}</div>
+                        <div style="font-size:0.8rem; color:#999; margin-top:5px;">Atayan: ${t.creator}</div>
                     </div>
                     <div class="t-card-footer">
-                        ${_0xg24cee}
+                        ${statusHtml}
                     </div>
-                </div>`;});}else{_0x949fad['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=">vid/<.royumnulub miti\u011Fe \u015F\u0131mnatA>\";888#:roloc ;xp02:gniddap ;retnec:ngila-txet ;1-/1:nmuloc-dirg\"=elyts vid<".split("").reverse().join("");}});}function startTraining(id){fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0050\u004F\u0053\u0054","headers":{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"text/plain;charset=utf-8"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"\u0073\u0074\u0061\u0072\u0074\u0054\u0072\u0061\u0069\u006E\u0069\u006E\u0067","trainingId":id,'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken()})})['\u0074\u0068\u0065\u006E'](r=>r['\u006A\u0073\u006F\u006E']())['\u0063\u0061\u0074\u0063\u0068'](()=>{});}function openTrainingLink(id,link){startTraining(id);if(link&&link!=="\u004E\u002F\u0041"){window['\u006F\u0070\u0065\u006E'](link,"\u005F\u0062\u006C\u0061\u006E\u006B");}else{Swal['\u0066\u0069\u0072\u0065']("\u0131rayU".split("").reverse().join(""),"\u0042\u0075\u0020\u0065\u011F\u0069\u0074\u0069\u006D\u0020\u0069\u00E7\u0069\u006E\u0020\u0067\u0065\u00E7\u0065\u0072\u006C\u0069\u0020\u0062\u0069\u0072\u0020\u006C\u0069\u006E\u006B\u0020\u0062\u0075\u006C\u0075\u006E\u006D\u0061\u006D\u0061\u006B\u0074\u0061\u0064\u0131\u0072\u002E","\u0077\u0061\u0072\u006E\u0069\u006E\u0067");}Swal['\u0066\u0069\u0072\u0065']({"title":'Eğitimi Tamamladın mı?','\u0074\u0065\u0078\u0074':"\u0045\u011F\u0069\u0074\u0069\u006D\u0020\u0069\u00E7\u0065\u0072\u0069\u011F\u0069\u006E\u0069\u0020\u0069\u006E\u0063\u0065\u006C\u0065\u0079\u0069\u0070\u0020\u0061\u006E\u006C\u0061\u0064\u0131\u0079\u0073\u0061\u006E\u0020\u006F\u006E\u0061\u0079\u006C\u0061\u002E","icon":'question',"showCancelButton":!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':'Evet, Tamamladım','\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':'Daha Sonra'})['\u0074\u0068\u0065\u006E'](result=>{if(result['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064']){completeTraining(id);}});}function completeTraining(id){fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':'POST','\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"Content-Type":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":"completeTraining",'\u0074\u0072\u0061\u0069\u006E\u0069\u006E\u0067\u0049\u0064':id,"username":currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken()})})['\u0074\u0068\u0065\u006E'](r=>r['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](d=>{if(d['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){Swal['\u0066\u0069\u0072\u0065']("!akiraH".split("").reverse().join(""),".idneltera\u015Fi karalo \u0131dnalmamat miti\u011FE".split("").reverse().join(""),"\u0073\u0075\u0063\u0063\u0065\u0073\u0073");loadTrainingData();}else{Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),d['\u006D\u0065\u0073\u0073\u0061\u0067\u0065'],"\u0065\u0072\u0072\u006F\u0072");}});}async function assignTrainingPopup(){const{"value":formValues}=await Swal['\u0066\u0069\u0072\u0065']({"title":"\u0059\u0065\u006E\u0069\u0020\u0045\u011F\u0069\u0074\u0069\u006D\u0020\u0026\u0020\u0044\u00F6\u006B\u00FC\u006D\u0061\u006E\u0020\u0041\u0074\u0061","html":`
+                </div>`;
+            });
+        } else {
+            listEl.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:20px; color:#888;">Atanmış eğitim bulunmuyor.</div>';
+        }
+    });
+}
+function startTraining(id) {
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "startTraining", trainingId: id, username: currentUser, token: getToken() })
+    }).then(r => r.json()).catch(() => { });
+}
+
+function openTrainingLink(id, link) {
+    startTraining(id);
+    if (link && link !== 'N/A') {
+        window.open(link, '_blank');
+    } else {
+        Swal.fire('Uyarı', 'Bu eğitim için geçerli bir link bulunmamaktadır.', 'warning');
+    }
+
+    // Linke tıkladıktan sonra onay sor
+    Swal.fire({
+        title: 'Eğitimi Tamamladın mı?',
+        text: "Eğitim içeriğini inceleyip anladıysan onayla.",
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Evet, Tamamladım',
+        cancelButtonText: 'Daha Sonra'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            completeTraining(id);
+        }
+    });
+}
+function completeTraining(id) {
+    fetch(SCRIPT_URL, {
+        method: 'POST',
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "completeTraining", trainingId: id, username: currentUser, token: getToken() })
+    }).then(r => r.json()).then(d => {
+        if (d.result === 'success') {
+            Swal.fire('Harika!', 'Eğitim tamamlandı olarak işaretlendi.', 'success');
+            loadTrainingData();
+        } else {
+            Swal.fire('Hata', d.message, 'error');
+        }
+    });
+}
+async function assignTrainingPopup() {
+    const { value: formValues } = await Swal.fire({
+        title: 'Yeni Eğitim & Döküman Ata',
+        html: `
             <div class="t-modal-grid">
                 <input id="swal-t-title" class="swal2-input" placeholder="Eğitim Başlığı" style="grid-column: 1 / 4;">
                 <textarea id="swal-t-desc" class="swal2-textarea" style="height:100px; grid-column: 1 / 4;" placeholder="Eğitim açıklaması veya talimatlar..."></textarea>
@@ -194,7 +3325,7 @@ function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(
                 <div style="grid-column:1/4; font-size:0.78rem; color:#6b7280; margin-top:-4px;">
                   İstersen dosyayı buradan yükle (PDF/Word/PowerPoint...). Yüklenen dosya eğitim kartında “Dökümanı İndir” olarak görünür.
                 </div>
-                <input type="date" id="swal-t-start" class="swal2-input" value="${new Date()['\u0074\u006F\u0049\u0053\u004F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](783276^783276,329679^329669)}">
+                <input type="date" id="swal-t-start" class="swal2-input" value="${new Date().toISOString().substring(0, 10)}">
                 <input type="date" id="swal-t-end" class="swal2-input">
                 <input id="swal-t-duration" class="swal2-input" placeholder="Süre (Örn: 20dk)">
             </div>
@@ -205,28 +3336,227 @@ function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(
                 <option value="Individual">Kişiye Özel</option>
             </select>
             <select id="swal-t-agent" class="swal2-input" style="display:none; width:100%;"></select>
-        `,'\u0066\u006F\u0063\u0075\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D':false,"showCancelButton":!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':'Ata',"didOpen":()=>{window['\u005F\u005F\u0074\u0072\u0061\u0069\u006E\u0069\u006E\u0067\u0055\u0070\u006C\u006F\u0061\u0064']={'\u006E\u0061\u006D\u0065':'','\u006D\u0069\u006D\u0065':'',"b64":''};const _0x5a8ee=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u002D\u0066\u0069\u006C\u0065");if(_0x5a8ee){_0x5a8ee['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("\u0063\u0068\u0061\u006E\u0067\u0065",ev=>{let _0x656f2a;const f=ev['\u0074\u0061\u0072\u0067\u0065\u0074']['\u0066\u0069\u006C\u0065\u0073']&&ev['\u0074\u0061\u0072\u0067\u0065\u0074']['\u0066\u0069\u006C\u0065\u0073'][983501^983501];_0x656f2a=(690159^690150)+(577594^577599);if(!f){window['\u005F\u005F\u0074\u0072\u0061\u0069\u006E\u0069\u006E\u0067\u0055\u0070\u006C\u006F\u0061\u0064']={'\u006E\u0061\u006D\u0065':'','\u006D\u0069\u006D\u0065':'',"b64":''};return;}var _0x75e7eb=(872650^872654)+(125212^125210);const _0xe802f=new FileReader();_0x75e7eb="oaelcl".split("").reverse().join("");_0xe802f['\u006F\u006E\u006C\u006F\u0061\u0064']=()=>{const _0xd12a=String(_0xe802f['\u0072\u0065\u0073\u0075\u006C\u0074']||'');var _0x13_0x149=(493614^493610)+(771715^771722);const _0xcg082d=_0xd12a['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u002C")?_0xd12a['\u0073\u0070\u006C\u0069\u0074']("\u002C")[588045^588044]:'';_0x13_0x149=(878933^878931)+(229670^229669);window['\u005F\u005F\u0074\u0072\u0061\u0069\u006E\u0069\u006E\u0067\u0055\u0070\u006C\u006F\u0061\u0064']={"name":f['\u006E\u0061\u006D\u0065'],"mime":f['\u0074\u0079\u0070\u0065']||"\u0061\u0070\u0070\u006C\u0069\u0063\u0061\u0074\u0069\u006F\u006E\u002F\u006F\u0063\u0074\u0065\u0074\u002D\u0073\u0074\u0072\u0065\u0061\u006D",'\u0062\u0036\u0034':_0xcg082d};};_0xe802f['\u0072\u0065\u0061\u0064\u0041\u0073\u0044\u0061\u0074\u0061\u0055\u0052\u004C'](f);});}window['\u0075\u0070\u0064\u0061\u0074\u0065\u0054\u0072\u0061\u0069\u006E\u0069\u006E\u0067\u0054\u0061\u0072\u0067\u0065\u0074']=function(val){var _0x1329g=(873543^873541)+(230177^230177);const _0x56cd=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tnega-t-laws".split("").reverse().join(""));_0x1329g=888032^888037;_0x56cd['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']=val==="\u0049\u006E\u0064\u0069\u0076\u0069\u0064\u0075\u0061\u006C"?"\u0062\u006C\u006F\u0063\u006B":"\u006E\u006F\u006E\u0065";if(val==="laudividnI".split("").reverse().join("")){_0x56cd['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=adminUserList['\u006D\u0061\u0070'](u=>`<option value="${u['\u006E\u0061\u006D\u0065']}">${u['\u006E\u0061\u006D\u0065']}</option>`)['\u006A\u006F\u0069\u006E']('');}};updateTrainingTarget("\u0047\u0065\u006E\u0065\u006C");},"preConfirm":()=>{let _0xdad88a;const _0x4a2=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u002D\u0074\u0061\u0072\u0067\u0065\u0074")['\u0076\u0061\u006C\u0075\u0065'];_0xdad88a="ejbdnm".split("").reverse().join("");let _0xdg50ed;const _0x46_0x21b=_0x4a2==="\u0049\u006E\u0064\u0069\u0076\u0069\u0064\u0075\u0061\u006C"?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u002D\u0061\u0067\u0065\u006E\u0074")['\u0076\u0061\u006C\u0075\u0065']:'';_0xdg50ed=(513977^513979)+(228655^228647);if(!document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u002D\u0074\u0069\u0074\u006C\u0065")['\u0076\u0061\u006C\u0075\u0065']||!_0x4a2&&!_0x46_0x21b){Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("zamal\u0131kar\u0131b \u015Fob \u0131nalA amatA ev k\u0131l\u015FaB".split("").reverse().join(""));return false;}return{'\u0074\u0069\u0074\u006C\u0065':document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u002D\u0074\u0069\u0074\u006C\u0065")['\u0076\u0061\u006C\u0075\u0065'],"desc":document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u002D\u0064\u0065\u0073\u0063")['\u0076\u0061\u006C\u0075\u0065'],'\u006C\u0069\u006E\u006B':document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("knil-t-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'],'\u0064\u006F\u0063\u004C\u0069\u006E\u006B':document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("cod-t-laws".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||"\u004E\u002F\u0041","docFile":window['\u005F\u005F\u0074\u0072\u0061\u0069\u006E\u0069\u006E\u0067\u0055\u0070\u006C\u006F\u0061\u0064']&&window['\u005F\u005F\u0074\u0072\u0061\u0069\u006E\u0069\u006E\u0067\u0055\u0070\u006C\u006F\u0061\u0064']['\u0062\u0036\u0034']?window['\u005F\u005F\u0074\u0072\u0061\u0069\u006E\u0069\u006E\u0067\u0055\u0070\u006C\u006F\u0061\u0064']:null,'\u0074\u0061\u0072\u0067\u0065\u0074':_0x4a2,"targetAgent":_0x46_0x21b,'\u0063\u0072\u0065\u0061\u0074\u006F\u0072':currentUser,'\u0073\u0074\u0061\u0072\u0074\u0044\u0061\u0074\u0065':formatDateToDDMMYYYY(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u002D\u0073\u0074\u0061\u0072\u0074")['\u0076\u0061\u006C\u0075\u0065']),'\u0065\u006E\u0064\u0044\u0061\u0074\u0065':formatDateToDDMMYYYY(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u002D\u0065\u006E\u0064")['\u0076\u0061\u006C\u0075\u0065']),'\u0064\u0075\u0072\u0061\u0074\u0069\u006F\u006E':document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0074\u002D\u0064\u0075\u0072\u0061\u0074\u0069\u006F\u006E")['\u0076\u0061\u006C\u0075\u0065']};}});if(formValues){try{Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u0041\u0074\u0061\u006E\u0131\u0079\u006F\u0072\u002E\u002E\u002E",'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']()});if(formValues['\u0064\u006F\u0063\u0046\u0069\u006C\u0065']){var _0x0bf5ba=(684101^684108)+(992442^992442);const _0xg30gfd=await apiCall("coDgniniarTdaolpu".split("").reverse().join(""),{'\u0066\u0069\u006C\u0065\u004E\u0061\u006D\u0065':formValues['\u0064\u006F\u0063\u0046\u0069\u006C\u0065']['\u006E\u0061\u006D\u0065'],'\u006D\u0069\u006D\u0065\u0054\u0079\u0070\u0065':formValues['\u0064\u006F\u0063\u0046\u0069\u006C\u0065']['\u006D\u0069\u006D\u0065'],'\u0062\u0061\u0073\u0065\u0036\u0034':formValues['\u0064\u006F\u0063\u0046\u0069\u006C\u0065']['\u0062\u0036\u0034']});_0x0bf5ba=(455815^455822)+(242422^242431);formValues['\u0064\u006F\u0063\u004C\u0069\u006E\u006B']=_0xg30gfd&&_0xg30gfd['\u0075\u0072\u006C']?_0xg30gfd['\u0075\u0072\u006C']:formValues['\u0064\u006F\u0063\u004C\u0069\u006E\u006B'];}var _0x2ef=(398719^398716)+(481444^481444);const d=await apiCall("\u0061\u0073\u0073\u0069\u0067\u006E\u0054\u0072\u0061\u0069\u006E\u0069\u006E\u0067",{...formValues});_0x2ef="laqllp".split("").reverse().join("");if(d&&d['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")){Swal['\u0066\u0069\u0072\u0065']("\u0131l\u0131ra\u015FaB".split("").reverse().join(""),"\u0045\u011F\u0069\u0074\u0069\u006D\u0020\u0061\u0074\u0061\u006E\u0064\u0131\u002E","\u0073\u0075\u0063\u0063\u0065\u0073\u0073");loadTrainingData();}else{Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),d&&d['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u0130\u015F\u006C\u0065\u006D\u0020\u0062\u0061\u015F\u0061\u0072\u0131\u0073\u0131\u007A","\u0065\u0072\u0072\u006F\u0072");}}catch(e){Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",e['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"z\u0131s\u0131ra\u015Fab mel\u015F\u0130".split("").reverse().join(""),"\u0065\u0072\u0072\u006F\u0072");}}}async function fetchFeedbackLogs(){try{const _0x6a0e=await fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"Content-Type":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":"\u0066\u0065\u0074\u0063\u0068\u0046\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u004C\u006F\u0067\u0073","username":currentUser,"token":getToken()})});var _0x080e=(639085^639084)+(595850^595842);const _0x6gee1b=await _0x6a0e['\u006A\u0073\u006F\u006E']();_0x080e=(903302^903296)+(634729^634732);if(_0x6gee1b['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")){feedbackLogsData=_0x6gee1b['\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u004C\u006F\u0067\u0073']||[];}else{feedbackLogsData=[];}}catch(error){console['\u0065\u0072\u0072\u006F\u0072'](":ut\u015Fulo atah nekrilike\xE7 sgoL kcabdeeF".split("").reverse().join(""),error);feedbackLogsData=[];}}function formatPeriod(periodString){if(!periodString||periodString==="\u004E\u002F\u0041")return"A/N".split("").reverse().join("");if(periodString['\u006D\u0061\u0074\u0063\u0068'](new RegExp('\u005E\u005C\u0064\u007B\u0032\u007D\u005C\u002E\u005C\u0064\u007B\u0034\u007D\u0024',""))){return periodString;}try{const _0x1a68ee=new Date(periodString);if(!isNaN(_0x1a68ee['\u0067\u0065\u0074\u0054\u0069\u006D\u0065']())){var _0xf52ed=(331478^331478)+(514998^514998);const _0xff5d=String(_0x1a68ee['\u0067\u0065\u0074\u004D\u006F\u006E\u0074\u0068']()+(767080^767081))['\u0070\u0061\u0064\u0053\u0074\u0061\u0072\u0074'](416984^416986,"\u0030");_0xf52ed="pqghfn".split("").reverse().join("");let _0xb240cf;const _0x5b2d=_0x1a68ee['\u0067\u0065\u0074\u0046\u0075\u006C\u006C\u0059\u0065\u0061\u0072']();_0xb240cf=(730797^730798)+(211023^211016);return`${_0xff5d}.${_0x5b2d}`;}}catch(e){console['\u0065\u0072\u0072\u006F\u0072']("\u0044\u00F6\u006E\u0065\u006D\u0020\u0066\u006F\u0072\u006D\u0061\u0074\u006C\u0061\u006D\u0061\u0020\u0068\u0061\u0074\u0061\u0073\u0131\u003A",e);}return periodString;}function loadFeedbackList(){const _0x794a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tsil-kcabdeef".split("").reverse().join(""));_0x794a['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']='';var _0xg2a1c=(114019^114021)+(806291^806291);const _0xba63b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ntb-nimda-kcabdeef-launam".split("").reverse().join(""));_0xg2a1c="kbnboi".split("").reverse().join("");if(_0xba63b)_0xba63b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']=isAdminMode?"xelf".split("").reverse().join(""):"\u006E\u006F\u006E\u0065";const _0xgb_0xaf3=allEvaluationsData['\u0066\u0069\u006C\u0074\u0065\u0072'](e=>{let _0xab_0x576;const _0x84e1ba=e['\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u0054\u0079\u0070\u0065']&&e['\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u0054\u0079\u0070\u0065']['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()==="liam".split("").reverse().join("");_0xab_0x576=(166897^166905)+(768055^768054);const _0x56914e=e['\u0063\u0061\u006C\u006C\u0049\u0064']&&String(e['\u0063\u0061\u006C\u006C\u0049\u0064'])['\u0074\u006F\u0055\u0070\u0070\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("-LEUNAM".split("").reverse().join(""));return _0x84e1ba||_0x56914e;});if(_0xgb_0xaf3['\u006C\u0065\u006E\u0067\u0074\u0068']===(922430^922430)){_0x794a['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=">vid/<.)leunaM ayev liaM ecedaS( koy miridlib ireg \u015Fimnelertlif kecenel\xFCtn\xFCr\xF6G>\";888#:roloc ;retnec:ngila-txet ;xp02:gniddap\"=elyts vid<".split("").reverse().join("");return;}_0xgb_0xaf3['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](e=>{let _0x12e;const _0xg7fb9f=e['\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u0054\u0079\u0070\u0065']==="\xFClz\xF6S".split("").reverse().join("")?"\u0023\u0032\u0031\u0039\u0036\u0066\u0033":e['\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u0054\u0079\u0070\u0065']==="\u004D\u0061\u0069\u006C"?"\u0023\u0065\u0036\u0035\u0031\u0030\u0030":e['\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u0054\u0079\u0070\u0065']==="\u0042\u0069\u006C\u0067\u0069\u006C\u0065\u006E\u0064\u0069\u0072\u006D\u0065"?"1d8820#".split("").reverse().join(""):e['\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u0054\u0079\u0070\u0065']==="kcabdeeF".split("").reverse().join("")?"\u0023\u0032\u0065\u0037\u0064\u0033\u0032":"189b01#".split("").reverse().join("");_0x12e=784911^784905;const _0xd7721c=String(e['\u0063\u0061\u006C\u006C\u0049\u0064'])['\u0074\u006F\u0055\u0070\u0070\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("\u004D\u0041\u004E\u0055\u0045\u004C\u002D")?String(e['\u0063\u0061\u006C\u006C\u0049\u0064'])['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](965942^965937):e['\u0063\u0061\u006C\u006C\u0049\u0064'];const _0x8b0ffa=String(e['\u0064\u0065\u0074\u0061\u0069\u006C\u0073'])['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("\u005B");const _0xd24f=_0x8b0ffa?"\u0044\u0065\u011F\u0065\u0072\u006C\u0065\u006E\u0064\u0069\u0072\u006D\u0065\u0020\u004B\u006F\u006E\u0075\u0073\u0075":e['\u0064\u0065\u0074\u0061\u0069\u006C\u0073']||"\u0042\u0065\u006C\u0069\u0072\u0074\u0069\u006C\u006D\u0065\u006D\u0069\u015F";const _0x1b4fd=String(e['\u0063\u0061\u006C\u006C\u0049\u0064'])['\u0074\u006F\u0055\u0070\u0070\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("\u004D\u0041\u004E\u0055\u0045\u004C\u002D");let _0xf6ff9d=e['\u0070\u0065\u0072\u0069\u006F\u0064']||e['\u0064\u0061\u0074\u0065']['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](542601^542602);let _0xbc5b;let _0xb8f6af=e['\u0063\u0068\u0061\u006E\u006E\u0065\u006C']&&String(e['\u0063\u0068\u0061\u006E\u006E\u0065\u006C'])['\u0074\u0072\u0069\u006D']()?String(e['\u0063\u0068\u0061\u006E\u006E\u0065\u006C'])['\u0074\u0072\u0069\u006D']():"\u0059\u006F\u006B";_0xbc5b=872164^872164;const _0x48_0x197=e['\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u0054\u0079\u0070\u0065']||"koY".split("").reverse().join("");if(_0x1b4fd){var _0xcc5ccf=(224855^224853)+(165768^165773);const _0xfe3fc=feedbackLogsData['\u0066\u0069\u006E\u0064'](x=>String(x['\u0063\u0061\u006C\u006C\u0049\u0064'])===String(_0xd7721c));_0xcc5ccf='\u006B\u006E\u006E\u0071\u0066\u006F';if(_0xfe3fc){_0xf6ff9d=formatPeriod(_0xfe3fc['\u0070\u0065\u0072\u0069\u006F\u0064'])||_0xf6ff9d;_0xb8f6af=_0xfe3fc['\u0063\u0068\u0061\u006E\u006E\u0065\u006C']&&_0xfe3fc['\u0063\u0068\u0061\u006E\u006E\u0065\u006C']!=="\u004E\u002F\u0041"?_0xfe3fc['\u0063\u0068\u0061\u006E\u006E\u0065\u006C']:"koY".split("").reverse().join("");}}_0x794a['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']+=`
-            <div class="feedback-card" style="border-left-color: ${_0xg7fb9f};">
+        `,
+        focusConfirm: false,
+        showCancelButton: true,
+        confirmButtonText: 'Ata',
+        didOpen: () => {
+            // Dosya upload (base64)
+            window.__trainingUpload = { name: '', mime: '', b64: '' };
+            const fileInp = document.getElementById('swal-t-file');
+            if (fileInp) {
+                fileInp.addEventListener('change', (ev) => {
+                    const f = ev.target.files && ev.target.files[0];
+                    if (!f) { window.__trainingUpload = { name: '', mime: '', b64: '' }; return; }
+                    const reader = new FileReader();
+                    reader.onload = () => {
+                        const res = String(reader.result || '');
+                        const b64 = res.includes(',') ? res.split(',')[1] : '';
+                        window.__trainingUpload = { name: f.name, mime: f.type || 'application/octet-stream', b64 };
+                    };
+                    reader.readAsDataURL(f);
+                });
+            }
+            window.updateTrainingTarget = function (val) {
+                const agentSelect = document.getElementById('swal-t-agent');
+                agentSelect.style.display = val === 'Individual' ? 'block' : 'none';
+                if (val === 'Individual') {
+                    agentSelect.innerHTML = adminUserList.map(u => `<option value="${u.name}">${u.name}</option>`).join('');
+                }
+            };
+            updateTrainingTarget('Genel');
+        },
+        preConfirm: () => {
+            const target = document.getElementById('swal-t-target').value;
+            const agent = target === 'Individual' ? document.getElementById('swal-t-agent').value : '';
+            if (!document.getElementById('swal-t-title').value || (!target && !agent)) {
+                Swal.showValidationMessage('Başlık ve Atama Alanı boş bırakılamaz');
+                return false;
+            }
+            return {
+                title: document.getElementById('swal-t-title').value,
+                desc: document.getElementById('swal-t-desc').value,
+                link: document.getElementById('swal-t-link').value,
+                docLink: document.getElementById('swal-t-doc').value || 'N/A',
+                docFile: (window.__trainingUpload && window.__trainingUpload.b64) ? window.__trainingUpload : null,
+                target: target,
+                targetAgent: agent, // Kişiye özel atama için
+                creator: currentUser,
+                startDate: formatDateToDDMMYYYY(document.getElementById('swal-t-start').value),
+                endDate: formatDateToDDMMYYYY(document.getElementById('swal-t-end').value),
+                duration: document.getElementById('swal-t-duration').value
+            }
+        }
+    });
+    if (formValues) {
+        try {
+            Swal.fire({ title: 'Atanıyor...', didOpen: () => Swal.showLoading() });
+            // Dosya seçildiyse önce Drive'a yükle
+            if (formValues.docFile) {
+                const up = await apiCall('uploadTrainingDoc', { fileName: formValues.docFile.name, mimeType: formValues.docFile.mime, base64: formValues.docFile.b64 });
+                formValues.docLink = (up && up.url) ? up.url : formValues.docLink;
+            }
+            const d = await apiCall('assignTraining', { ...formValues });
+            if (d && d.result === 'success') {
+                Swal.fire('Başarılı', 'Eğitim atandı.', 'success');
+                loadTrainingData();
+            } else {
+                Swal.fire('Hata', (d && d.message) || 'İşlem başarısız', 'error');
+            }
+        } catch (e) {
+            Swal.fire('Hata', e.message || 'İşlem başarısız', 'error');
+        }
+    }
+}
+// --- FEEDBACK MODÜLÜ ---
+
+// YENİ FONKSİYON: Feedback_Logs'u çekmek için
+async function fetchFeedbackLogs() {
+    try {
+        const res = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: "fetchFeedbackLogs", username: currentUser, token: getToken() })
+        });
+        const data = await res.json();
+        if (data.result === "success") {
+            feedbackLogsData = data.feedbackLogs || [];
+        } else {
+            feedbackLogsData = [];
+        }
+    } catch (error) {
+        console.error("Feedback Logs çekilirken hata oluştu:", error);
+        feedbackLogsData = [];
+    }
+}
+
+// YARDIMCI FONKSİYON: Dönem bilgisini MM.YYYY formatında döndürür
+function formatPeriod(periodString) {
+    if (!periodString || periodString === 'N/A') return 'N/A';
+
+    // Zaten MM.YYYY formatındaysa direkt döndür
+    if (periodString.match(/^\d{2}\.\d{4}$/)) {
+        return periodString;
+    }
+
+    // Eğer uzun bir Date string'i ise (ör: Wed Oct 01 2025...) tarih nesnesine çevir
+    try {
+        const date = new Date(periodString);
+        if (!isNaN(date.getTime())) {
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const year = date.getFullYear();
+            return `${month}.${year}`;
+        }
+    } catch (e) {
+        // Hata oluşursa olduğu gibi bırak veya N/A döndür
+        console.error("Dönem formatlama hatası:", e);
+    }
+
+    return periodString; // Başka formatta gelirse yine de olduğu gibi döndür
+}
+
+function loadFeedbackList() {
+    const listEl = document.getElementById('feedback-list');
+    listEl.innerHTML = '';
+
+    // Admin butonunu göster/gizle
+    const manualBtn = document.getElementById('manual-feedback-admin-btn');
+    if (manualBtn) manualBtn.style.display = isAdminMode ? 'flex' : 'none';
+
+    // YENİ FİLTRELEME MANTIĞI: Sadece feedbackType 'Mail' olanlar VEYA callId 'MANUEL' olanlar listelenir.
+    const feedbackItems = allEvaluationsData.filter(e => {
+        // feedbackType kontrolü (Büyük/küçük harf duyarlılığını ortadan kaldırırız)
+        const isMailFeedback = e.feedbackType && e.feedbackType.toLowerCase() === 'mail';
+        // Manuel kontrolü
+        const isManualFeedback = e.callId && String(e.callId).toUpperCase().startsWith('MANUEL-');
+
+        return isMailFeedback || isManualFeedback;
+    });
+    if (feedbackItems.length === 0) {
+        listEl.innerHTML = '<div style="padding:20px; text-align:center; color:#888;">Görüntülenecek filtrelenmiş geri bildirim yok (Sadece Mail veya Manuel).</div>';
+        return;
+    }
+
+    feedbackItems.forEach(e => {
+        // Geliştirme: Çağrı Tarihi ve ID eklendi (Gelişmiş Kart Tasarımı)
+        const feedbackClass = e.feedbackType === 'Sözlü' ? '#2196f3' : (e.feedbackType === 'Mail' ? '#e65100' : (e.feedbackType === 'Bilgilendirme' ? '#0288d1' : (e.feedbackType === 'Feedback' ? '#2e7d32' : '#10b981')));
+
+        // MANUEL CallID'den ön eki temizle
+        const cleanCallId = String(e.callId).toUpperCase().startsWith('MANUEL-') ? String(e.callId).substring(7) : e.callId;
+
+        // Konu/Başlık bilgisi 'details' alanından gelir (Manuel geri bildirim için)
+        // Eğer detay alanı JSON ise (yani normal değerlendirme) veya boşsa varsayılan metin kullan
+        const isEvaluationDetail = String(e.details).startsWith('[');
+        const feedbackTopic = isEvaluationDetail ? 'Değerlendirme Konusu' : (e.details || 'Belirtilmemiş');
+
+        // Dönem, Kanal ve Tipi belirle (Manuel kayıtlarda bu bilgileri Evaluations'tan değil, Feedback_Logs'tan çekiyoruz)
+        const isManual = String(e.callId).toUpperCase().startsWith('MANUEL-');
+
+        let period = e.period || e.date.substring(3);
+        let channel = (e.channel && String(e.channel).trim()) ? String(e.channel).trim() : 'Yok';
+        const infoType = e.feedbackType || 'Yok';
+
+        // DÜZELTME MANTIĞI: Eğer kayıt Manuel ise, detaylı bilgiyi feedbackLogsData'dan çek.
+        if (isManual) {
+            // CallId'deki MANUEL- ön ekini atarak Feedback_Logs'taki Call_ID ile eşleştirme
+            const logRow = feedbackLogsData.find(x => String(x.callId) === String(cleanCallId));
+            if (logRow) {
+                // Apps Script'ten gelen period değerini formatla (Tarih Nesnesi/String olma ihtimaline karşı)
+                period = formatPeriod(logRow.period) || period;
+                channel = logRow.channel && logRow.channel !== 'N/A' ? logRow.channel : 'Yok';
+            }
+        }
+
+        listEl.innerHTML += `
+            <div class="feedback-card" style="border-left-color: ${feedbackClass};">
                 <div class="feedback-header">
-                    <div style="font-weight:bold; color:#0e1b42; font-size:1.1rem;">${e['\u0061\u0067\u0065\u006E\u0074']}</div>
+                    <div style="font-weight:bold; color:#0e1b42; font-size:1.1rem;">${e.agent}</div>
                     <div class="feedback-info-right">
-                        <span><i class="fas fa-user-check"></i> Değerleyen: ${e['\u0065\u0076\u0061\u006C\u0075\u0061\u0074\u006F\u0072']}</span>
-                        <span><i class="fas fa-id-badge"></i> Çağrı ID: ${_0xd7721c}</span>
-                        <span><i class="fas fa-calendar-alt"></i> Tarih: ${e['\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065']}</span>
+                        <span><i class="fas fa-user-check"></i> Değerleyen: ${e.evaluator}</span>
+                        <span><i class="fas fa-id-badge"></i> Çağrı ID: ${cleanCallId}</span>
+                        <span><i class="fas fa-calendar-alt"></i> Tarih: ${e.callDate}</span>
                     </div>
                 </div>
                 <div class="feedback-body">
-                    <div style="font-weight:bold; color:#333; margin-bottom:5px;">Konu/Açıklama: ${_0xd24f}</div>
-                    <div style="color:#555; line-height:1.5; font-size:0.95rem;">${e['\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B']}</div>
+                    <div style="font-weight:bold; color:#333; margin-bottom:5px;">Konu/Açıklama: ${feedbackTopic}</div>
+                    <div style="color:#555; line-height:1.5; font-size:0.95rem;">${e.feedback}</div>
                 </div>
                 <div class="feedback-footer">
                      <div style="display:flex; gap:10px; font-size:0.7rem; color:#666; font-weight:600; margin-right:10px;">
-                        <span><i class="fas fa-calendar-week"></i> Dönem: ${_0xf6ff9d}</span>
-                        <span><i class="fas fa-comment-alt"></i> Kanal: ${_0xb8f6af}</span>
-                        <span><i class="fas fa-tag"></i> Tip: ${_0x48_0x197}</span>
+                        <span><i class="fas fa-calendar-week"></i> Dönem: ${period}</span>
+                        <span><i class="fas fa-comment-alt"></i> Kanal: ${channel}</span>
+                        <span><i class="fas fa-tag"></i> Tip: ${infoType}</span>
                      </div>
                      
-            </div>`;});}async function addManualFeedbackPopup(_0xe259f,_0x902a0f,_0x67ada){if(!isAdminMode)return;if(adminUserList['\u006C\u0065\u006E\u0067\u0074\u0068']===(543217^543217)){Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':'Kullanıcı Listesi Yükleniyor...',"didOpen":()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']()});await fetchUserListForAdmin();Swal['\u0063\u006C\u006F\u0073\u0065']();}const _0xaaa33d=new Date();const _0xeb3d=_0xaaa33d['\u0067\u0065\u0074\u004D\u006F\u006E\u0074\u0068']();_0xe259f=390899^390898;var _0x287fd=(829788^829789)+(674289^674291);const _0xb0geef=_0xaaa33d['\u0067\u0065\u0074\u0046\u0075\u006C\u006C\u0059\u0065\u0061\u0072']();_0x287fd=(770238^770233)+(545934^545926);_0x67ada='';_0x902a0f='\u0070\u006A\u0067\u0070\u0065\u0070';for(let i=767789^767789;i<(375003^375005);i++){var _0x956fc=(381168^381176)+(166858^166859);let _0xaa22d=(_0xeb3d-i+(525450^525446))%(293427^293439);_0x956fc=(475106^475111)+(123347^123346);let _0xde_0xbbb;let _0x49_0xae3=_0xb0geef-(_0xeb3d-i<(906528^906528)?555991^555990:761799^761799);_0xde_0xbbb=(211489^211488)+(845221^845219);const _0xb348f=`${MONTH_NAMES[_0xaa22d]} ${_0x49_0xae3}`;const _0xa6ag=`${String(_0xaa22d+(591624^591625))['\u0070\u0061\u0064\u0053\u0074\u0061\u0072\u0074'](632359^632357,"\u0030")}.${_0x49_0xae3}`;const _0xf5511e=i===(556020^556020);_0x67ada+=`<option value="${_0xa6ag}" ${_0xf5511e?"\u0073\u0065\u006C\u0065\u0063\u0074\u0065\u0064":''}>${_0xb348f}</option>`;}var _0xfd2ea=(836944^836945)+(208990^208987);const _0x9a15d=`
+            </div>`;
+    });
+}
+// Adminler için manuel geri bildirim ekleme (Çağrı dışı konular için)
+async function addManualFeedbackPopup() {
+    if (!isAdminMode) return;
+
+    // Admin user listesi yoksa yükle
+    if (adminUserList.length === 0) {
+        Swal.fire({ title: 'Kullanıcı Listesi Yükleniyor...', didOpen: () => Swal.showLoading() });
+        await fetchUserListForAdmin();
+        Swal.close();
+    }
+    // Dönem filtre seçeneklerini oluştur
+    const now = new Date();
+    const currentMonth = now.getMonth();
+    const currentYear = now.getFullYear();
+    let monthOptions = '';
+    for (let i = 0; i < 6; i++) {
+        let month = (currentMonth - i + 12) % 12;
+        let year = currentYear - (currentMonth - i < 0 ? 1 : 0);
+        const text = `${MONTH_NAMES[month]} ${year}`;
+        const value = `${String(month + 1).padStart(2, '0')}.${year}`; // Backend'in beklediği MM.YYYY formatı
+        const isCurrent = (i === 0);
+        monthOptions += `<option value="${value}" ${isCurrent ? 'selected' : ''}>${text}</option>`;
+    }
+
+    // YENİ HTML TASARIMI: Daha düzenli ve etiketli form
+    const newHtmlContent = `
         <div class="manual-feedback-form">
             <div class="form-group">
                 <label for="manual-q-agent">Temsilci Adı <span class="required">*</span></label>
@@ -244,7 +3574,7 @@ function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(
                 </div>
                 <div class="form-group">
                     <label for="manual-q-date">Tarih <span class="required">*</span></label>
-                    <input type="date" id="manual-q-date" class="swal2-input" value="${new Date()['\u0074\u006F\u0049\u0053\u004F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](247745^247745,768987^768977)}">
+                    <input type="date" id="manual-q-date" class="swal2-input" value="${new Date().toISOString().substring(0, 10)}">
                 </div>
             </div>
             <div class="grid-3-cols">
@@ -260,7 +3590,7 @@ function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(
                 </div>
                 <div class="form-group">
                     <label for="manual-q-period">Dönem</label>
-                    <select id="manual-q-period" class="swal2-input">${_0x67ada}</select>
+                    <select id="manual-q-period" class="swal2-input">${monthOptions}</select>
                 </div>
                 <div class="form-group">
                     <label for="manual-q-type">Tip</label>
@@ -332,263 +3662,2286 @@ function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(
                 resize: vertical;
             }
         </style>
-    `;_0xfd2ea=(691472^691481)+(412631^412625);const{"value":formValues}=await Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':'Manuel Geri Bildirim Yaz',"html":_0x9a15d,'\u0077\u0069\u0064\u0074\u0068':'600px',"showCancelButton":!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u003C\u0069\u0020\u0063\u006C\u0061\u0073\u0073\u003D\u0022\u0066\u0061\u0073\u0020\u0066\u0061\u002D\u0073\u0061\u0076\u0065\u0022\u003E\u003C\u002F\u0069\u003E\u0020\u004B\u0061\u0079\u0064\u0065\u0074","didOpen":()=>{var _0xg18ead=(976811^976815)+(312603^312595);const _0xc3e5d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tnega-q-launam".split("").reverse().join(""));_0xg18ead=(324776^324779)+(579639^579632);adminUserList['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](u=>_0xc3e5d['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']+=`<option value="${u['\u006E\u0061\u006D\u0065']}">${u['\u006E\u0061\u006D\u0065']}</option>`);},'\u0070\u0072\u0065\u0043\u006F\u006E\u0066\u0069\u0072\u006D':()=>{let _0x5c655f;const _0x3b503e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tnega-q-launam".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'];_0x5c655f=(416913^416913)+(121939^121946);const _0x92f4g=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006D\u0061\u006E\u0075\u0061\u006C\u002D\u0071\u002D\u0074\u006F\u0070\u0069\u0063")['\u0076\u0061\u006C\u0075\u0065'];const _0xf1ccca=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("kcabdeef-q-launam".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'];let _0x3b12b;const _0x33c1c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006D\u0061\u006E\u0075\u0061\u006C\u002D\u0071\u002D\u0074\u0079\u0070\u0065")['\u0076\u0061\u006C\u0075\u0065'];_0x3b12b=(307593^307592)+(954779^954780);const _0xe04a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("lennahc-q-launam".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'];var _0x879a0g=(978515^978513)+(477846^477844);const _0xc178f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006D\u0061\u006E\u0075\u0061\u006C\u002D\u0071\u002D\u0070\u0065\u0072\u0069\u006F\u0064")['\u0076\u0061\u006C\u0075\u0065'];_0x879a0g='\u0067\u006D\u0065\u006A\u006D\u006D';const _0xc367d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u006D\u0061\u006E\u0075\u0061\u006C\u002D\u0071\u002D\u0063\u0061\u006C\u006C\u0069\u0064")['\u0076\u0061\u006C\u0075\u0065']['\u0074\u0072\u0069\u006D']();const _0xba3=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("etad-q-launam".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'];const _0xbceae=formatDateToDDMMYYYY(_0xba3);if(!_0x3b503e||!_0xf1ccca||!_0xc367d||!_0xba3||!_0x92f4g){Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("!rudulnuroz ralnala iltera\u015Fi )*( m\xFCT".split("").reverse().join(""));return false;}return{'\u0061\u0067\u0065\u006E\u0074\u004E\u0061\u006D\u0065':_0x3b503e,'\u0063\u0061\u006C\u006C\u0049\u0064':"\u004D\u0041\u004E\u0055\u0045\u004C\u002D"+_0xc367d,"callDate":_0xbceae,'\u0073\u0063\u006F\u0072\u0065':100,'\u0064\u0065\u0074\u0061\u0069\u006C\u0073':_0x92f4g,"feedback":_0xf1ccca,'\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u0054\u0079\u0070\u0065':_0x33c1c,'\u0061\u0067\u0065\u006E\u0074\u0047\u0072\u006F\u0075\u0070':"Genel",'\u0063\u0068\u0061\u006E\u006E\u0065\u006C':_0xe04a,'\u0070\u0065\u0072\u0069\u006F\u0064':_0xc178f};}});if(formValues){try{const _0x87868c=String(formValues['\u0061\u0067\u0065\u006E\u0074\u004E\u0061\u006D\u0065']||'')['\u0074\u0072\u0069\u006D']()['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();const _0xa3d6a=String(formValues['\u0063\u0061\u006C\u006C\u0049\u0064']||'')['\u0074\u0072\u0069\u006D']();let _0x69f6cb;const _0x565d3g=Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](allEvaluationsData)&&allEvaluationsData['\u0073\u006F\u006D\u0065'](e=>String(e['\u0061\u0067\u0065\u006E\u0074']||e['\u0061\u0067\u0065\u006E\u0074\u004E\u0061\u006D\u0065']||'')['\u0074\u0072\u0069\u006D']()['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()===_0x87868c&&String(e['\u0063\u0061\u006C\u006C\u0049\u0064']||'')['\u0074\u0072\u0069\u006D']()===_0xa3d6a);_0x69f6cb=242698^242690;if(_0x565d3g){const decision=await Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':"\u0077\u0061\u0072\u006E\u0069\u006E\u0067","title":'Mükerrer Dinleme','\u0068\u0074\u006D\u006C':`<div style="text-align:left; line-height:1.4;">
-                            <b>${formValues['\u0061\u0067\u0065\u006E\u0074\u004E\u0061\u006D\u0065']}</b> için <b>Call ID: ${escapeHtml(formValues['\u0063\u0061\u006C\u006C\u0049\u0064'])}</b> daha önce kaydedilmiş görünüyor.<br>
+    `;
+
+    // Modalı görüntüdeki gibi düzenledik (Agent Select ve sade alanlar)
+    const { value: formValues } = await Swal.fire({
+        title: 'Manuel Geri Bildirim Yaz',
+        html: newHtmlContent,
+        width: '600px', // Modal genişliğini artırdık
+        showCancelButton: true,
+        confirmButtonText: '<i class="fas fa-save"></i> Kaydet',
+        didOpen: () => {
+            const sel = document.getElementById('manual-q-agent');
+            adminUserList.forEach(u => sel.innerHTML += `<option value="${u.name}">${u.name}</option>`);
+        },
+        preConfirm: () => {
+            const agentName = document.getElementById('manual-q-agent').value;
+            const topic = document.getElementById('manual-q-topic').value;
+            const feedback = document.getElementById('manual-q-feedback').value;
+            const feedbackType = document.getElementById('manual-q-type').value;
+
+            // YENİ ALANLAR
+            const channel = document.getElementById('manual-q-channel').value;
+            const period = document.getElementById('manual-q-period').value; // MM.YYYY formatında
+
+            // YENİ ZORUNLU KONTROLLER
+            const callId = document.getElementById('manual-q-callid').value.trim();
+            const rawCallDate = document.getElementById('manual-q-date').value;
+            const callDate = formatDateToDDMMYYYY(rawCallDate);
+            if (!agentName || !feedback || !callId || !rawCallDate || !topic) { // Konu/Başlık da zorunlu yapıldı
+                Swal.showValidationMessage('Tüm (*) işaretli alanlar zorunludur!');
+                return false;
+            }
+
+            // Konu sadece başlık olarak gönderiliyor. Dönem ve Kanal ayrı alanlar olarak gönderilecek.
+            return {
+                agentName,
+                // Backend'de ayrı loglama için CallID'yi MANUEL ile başlatıyoruz.
+                callId: "MANUEL-" + callId,
+                callDate: callDate,
+                score: 100, // Manuel olduğu için tam puan
+                details: topic, // Sadece konuyu gönderiyoruz
+                feedback,
+                feedbackType,
+                agentGroup: "Genel", // Manuel olduğu için Genel Grup olarak kaydedilir.
+                // ÇÖZÜM: Yeni alanları ekliyoruz
+                channel: channel,
+                period: period
+            };
+        }
+    });
+    if (formValues) {
+        // MÜKERRER KONTROL: Aynı temsilci + aynı Call ID daha önce kaydedildiyse uyar
+        try {
+            const normAgent = String(formValues.agentName || '').trim().toLowerCase();
+            const normCallId = String(formValues.callId || '').trim();
+            const isDup = Array.isArray(allEvaluationsData) && allEvaluationsData.some(e =>
+                String(e.agent || e.agentName || '').trim().toLowerCase() === normAgent &&
+                String(e.callId || '').trim() === normCallId
+            );
+
+            if (isDup) {
+                const decision = await Swal.fire({
+                    icon: 'warning',
+                    title: 'Mükerrer Dinleme',
+                    html: `<div style="text-align:left; line-height:1.4;">
+                            <b>${formValues.agentName}</b> için <b>Call ID: ${escapeHtml(formValues.callId)}</b> daha önce kaydedilmiş görünüyor.<br>
                             <span style="color:#666; font-size:0.9rem;">Yine de yeni kayıt oluşturmak istiyor musun?</span>
-                           </div>`,"showCancelButton":!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':'Evet, kaydet',"cancelButtonText":'Vazgeç',"reverseButtons":!![]});if(!decision['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064'])return;}}catch(e){console['\u0077\u0061\u0072\u006E']("deliaf kcehc etacilpuD".split("").reverse().join(""),e);}Swal['\u0066\u0069\u0072\u0065']({"title":'Kaydediliyor...','\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']()});fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{'Content-Type':"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"logEvaluation","username":currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken(),...formValues})})['\u0074\u0068\u0065\u006E'](r=>r['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](async d=>{if(d['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':"\u0073\u0075\u0063\u0063\u0065\u0073\u0073",'\u0074\u0069\u0074\u006C\u0065':'Kaydedildi','\u0074\u0069\u006D\u0065\u0072':1500,"showConfirmButton":false});fetchEvaluationsForAgent(formValues['\u0061\u0067\u0065\u006E\u0074\u004E\u0061\u006D\u0065']);fetchFeedbackLogs()['\u0074\u0068\u0065\u006E'](()=>{loadFeedbackList();});}else if(d['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0064\u0075\u0070\u006C\u0069\u0063\u0061\u0074\u0065"){const decision=await Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':"\u0077\u0061\u0072\u006E\u0069\u006E\u0067","title":'Mükerrer Dinleme','\u0068\u0074\u006D\u006C':`<div style="text-align:left; line-height:1.4;">
-                            <b>${formValues['\u0061\u0067\u0065\u006E\u0074\u004E\u0061\u006D\u0065']}</b> için <b>Call ID: ${escapeHtml(formValues['\u0063\u0061\u006C\u006C\u0049\u0064'])}</b> zaten var.<br>
+                           </div>`,
+                    showCancelButton: true,
+                    confirmButtonText: 'Evet, kaydet',
+                    cancelButtonText: 'Vazgeç',
+                    reverseButtons: true
+                });
+                if (!decision.isConfirmed) return;
+            }
+        } catch (e) {
+            console.warn('Duplicate check failed', e);
+        }
+
+        Swal.fire({ title: 'Kaydediliyor...', didOpen: () => Swal.showLoading() });
+        fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: "logEvaluation", username: currentUser, token: getToken(), ...formValues })
+        })
+            .then(r => r.json()).then(async d => {
+                if (d.result === "success") {
+                    Swal.fire({ icon: 'success', title: 'Kaydedildi', timer: 1500, showConfirmButton: false });
+                    // DÜZELTME: Hem evaluations hem de feedback logs güncellenmeli
+                    fetchEvaluationsForAgent(formValues.agentName);
+                    fetchFeedbackLogs().then(() => { loadFeedbackList(); });
+                } else if (d.result === "duplicate") {
+                    const decision = await Swal.fire({
+                        icon: 'warning',
+                        title: 'Mükerrer Dinleme',
+                        html: `<div style="text-align:left; line-height:1.4;">
+                            <b>${formValues.agentName}</b> için <b>Call ID: ${escapeHtml(formValues.callId)}</b> zaten var.<br>
                             <span style="color:#666; font-size:0.9rem;">Yine de yeni kayıt oluşturulsun mu?</span>
-                           </div>`,'\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':'Evet, zorla kaydet','\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0056\u0061\u007A\u0067\u0065\u00E7",'\u0072\u0065\u0076\u0065\u0072\u0073\u0065\u0042\u0075\u0074\u0074\u006F\u006E\u0073':!![]});if(decision['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064']){Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u004B\u0061\u0079\u0064\u0065\u0064\u0069\u006C\u0069\u0079\u006F\u0072\u002E\u002E\u002E",'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']()});fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':'POST','\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{'Content-Type':"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":"\u006C\u006F\u0067\u0045\u0076\u0061\u006C\u0075\u0061\u0074\u0069\u006F\u006E",'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,"token":getToken(),"force":!![],...formValues})})['\u0074\u0068\u0065\u006E'](r2=>r2['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](d2=>{if(d2['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){Swal['\u0066\u0069\u0072\u0065']({"icon":"\u0073\u0075\u0063\u0063\u0065\u0073\u0073","title":'Kaydedildi','\u0074\u0069\u006D\u0065\u0072':1500,'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false});fetchEvaluationsForAgent(formValues['\u0061\u0067\u0065\u006E\u0074\u004E\u0061\u006D\u0065']);fetchFeedbackLogs()['\u0074\u0068\u0065\u006E'](()=>{loadFeedbackList();});}else{Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",d2['\u006D\u0065\u0073\u0073\u0061\u0067\u0065'],"rorre".split("").reverse().join(""));}});}}else{Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",d['\u006D\u0065\u0073\u0073\u0061\u0067\u0065'],"rorre".split("").reverse().join(""));}});}}async function fetchEvaluationsForAgent(forcedName,silent=false,_0x86a6c,_0x9fbb6b){const _0x22c57a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tsil-snoitaulave".split("").reverse().join(""));if(!silent)_0x22c57a['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u0059\u00FC\u006B\u006C\u0065\u006E\u0069\u0079\u006F\u0072\u002E\u002E\u002E";var _0x32da3g=(984607^984598)+(978509^978500);const _0x864c8b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0061\u0064\u006D\u0069\u006E\u002D\u0067\u0072\u006F\u0075\u0070");_0x32da3g=(790414^790407)+(681102^681103);const _0x5579c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0061\u0064\u006D\u0069\u006E\u002D\u0061\u0067\u0065\u006E\u0074");_0x86a6c=(411146^411144)+(568983^568978);let _0xg5_0x236=forcedName||currentUser;var _0x5984g=(866823^866830)+(512870^512866);_0x9fbb6b="\u0061\u006C\u006C";_0x5984g='\u0062\u0065\u006F\u006E\u0064\u0068';if(isAdminMode&&_0x5579c){_0xg5_0x236=forcedName||_0x5579c['\u0076\u0061\u006C\u0075\u0065'];_0x9fbb6b=_0x864c8b?_0x864c8b['\u0076\u0061\u006C\u0075\u0065']:"\u0061\u006C\u006C";}try{const _0x93c82e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("htnom-lave-q".split("").reverse().join(""));var _0xe070c=(660880^660884)+(637562^637565);const _0x71f3e=_0x93c82e?_0x93c82e['\u0076\u0061\u006C\u0075\u0065']:null;_0xe070c='\u0065\u0069\u0071\u0067\u0069\u006F';const _0x50_0x69c=await fetch(SCRIPT_URL,{"method":"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":"fetchEvaluations",'\u0074\u0061\u0072\u0067\u0065\u0074\u0041\u0067\u0065\u006E\u0074':_0xg5_0x236,'\u0074\u0061\u0072\u0067\u0065\u0074\u0047\u0072\u006F\u0075\u0070':_0x9fbb6b,'\u0070\u0065\u0072\u0069\u006F\u0064':_0x71f3e,'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken()})});var _0xd9a=(112624^112632)+(821806^821806);const _0x87dede=await _0x50_0x69c['\u006A\u0073\u006F\u006E']();_0xd9a=(582449^582451)+(677187^677191);if(_0x87dede['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){allEvaluationsData=_0x87dede['\u0065\u0076\u0061\u006C\u0075\u0061\u0074\u0069\u006F\u006E\u0073']['\u0072\u0065\u0076\u0065\u0072\u0073\u0065']();if(silent)return;_0x22c57a['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']='';let _0x23gf;const _0x3fcacc=allEvaluationsData['\u0066\u0069\u006C\u0074\u0065\u0072'](e=>!String(e['\u0063\u0061\u006C\u006C\u0049\u0064'])['\u0074\u006F\u0055\u0070\u0070\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("-LEUNAM".split("").reverse().join("")));_0x23gf=550987^550979;let _0x255bd=_0x3fcacc;let _0x27e3c;const _0x4f3=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("htnom-lave-q".split("").reverse().join(""));_0x27e3c=693777^693781;const _0x2b2=_0x4f3?_0x4f3['\u0076\u0061\u006C\u0075\u0065']:null;if(_0x2b2){_0x255bd=_0x3fcacc['\u0066\u0069\u006C\u0074\u0065\u0072'](e=>{if(!e['\u0064\u0061\u0074\u0065'])return false;const _0xce34ec=String(e['\u0064\u0061\u0074\u0065'])['\u0073\u0070\u006C\u0069\u0074']("\u002E");if(_0xce34ec['\u006C\u0065\u006E\u0067\u0074\u0068']<(246507^246504))return false;const _0x2cdcc=`${_0xce34ec[831148^831149]['\u0070\u0061\u0064\u0053\u0074\u0061\u0072\u0074'](141405^141407,"\u0030")}.${_0xce34ec[803859^803857]}`;return _0x2cdcc===_0x2b2;});}if(_0x255bd['\u006C\u0065\u006E\u0067\u0074\u0068']===(723977^723977)){_0x22c57a['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=">p/<.koy t\u0131yaK>\";666#:roloc ;retnec:ngila-txet ;xp02:gniddap\"=elyts p<".split("").reverse().join("");return;}let _0xa38efb;let _0x6776ff="";_0xa38efb=517174^517169;_0x255bd['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((evalItem,index)=>{let _0x86f;const _0xbdfe8f=evalItem['\u0073\u0063\u006F\u0072\u0065']>=(963725^963799)?"\u0023\u0032\u0065\u0037\u0064\u0033\u0032":evalItem['\u0073\u0063\u006F\u0072\u0065']>=(928732^928666)?"\u0023\u0065\u0064\u0036\u0063\u0030\u0032":"f2f23d#".split("").reverse().join("");_0x86f=(853223^853230)+(992001^992005);let _0x44cc=isAdminMode?`<i class="fas fa-pen" style="font-size:1rem; color:#fabb00; cursor:pointer; margin-right:5px;" onclick="event.stopPropagation(); editEvaluation('${evalItem['\u0063\u0061\u006C\u006C\u0049\u0064']}')"></i>`:'';const _0xbg9aca=escapeHtml(evalItem['\u0061\u0067\u0065\u006E\u0074']||'');const _0xb7305a=evalItem['\u0061\u0067\u0065\u006E\u0074\u004E\u0061\u006D\u0065']!=null?String(evalItem['\u0061\u0067\u0065\u006E\u0074\u004E\u0061\u006D\u0065'])['\u0074\u0072\u0069\u006D']():'';const _0x31ffdf=_0xb7305a&&_0xb7305a!==String(evalItem['\u0061\u0067\u0065\u006E\u0074']||'')['\u0074\u0072\u0069\u006D']();var _0xf4825c=(913961^913961)+(456914^456914);let _0xg735ef=(_0xg5_0x236==="lla".split("").reverse().join("")||_0xg5_0x236===_0x9fbb6b)&&_0x31ffdf?`<span style="font-size:0.8rem; font-weight:bold; color:#555; background:#eee; padding:2px 6px; border-radius:4px; margin-left:10px;">${escapeHtml(_0xb7305a)}</span>`:'';_0xf4825c='\u0066\u006E\u0066\u0068\u0064\u0066';let _0x8517df='';try{let _0xae_0x413;const _0x4d2df=JSON['\u0070\u0061\u0072\u0073\u0065'](evalItem['\u0064\u0065\u0074\u0061\u0069\u006C\u0073']);_0xae_0x413=(998423^998417)+(308114^308117);_0x8517df="\u003C\u0074\u0061\u0062\u006C\u0065\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0077\u0069\u0064\u0074\u0068\u003A\u0031\u0030\u0030\u0025\u003B\u0020\u0066\u006F\u006E\u0074\u002D\u0073\u0069\u007A\u0065\u003A\u0030\u002E\u0038\u0035\u0072\u0065\u006D\u003B\u0020\u0062\u006F\u0072\u0064\u0065\u0072\u002D\u0063\u006F\u006C\u006C\u0061\u0070\u0073\u0065\u003A\u0063\u006F\u006C\u006C\u0061\u0070\u0073\u0065\u003B\u0020\u006D\u0061\u0072\u0067\u0069\u006E\u002D\u0074\u006F\u0070\u003A\u0031\u0030\u0070\u0078\u003B\u0022\u003E";if(Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0x4d2df)){_0x4d2df['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](item=>{var _0x9gf=(889873^889881)+(568022^568030);let _0x50e32e=item['\u0073\u0063\u006F\u0072\u0065']<item['\u006D\u0061\u0078']?"\u0023\u0066\u0066\u0065\u0062\u0065\u0065":"\u0023\u0066\u0039\u0066\u0039\u0066\u0039";_0x9gf=496698^496697;let _0x22c=item['\u006E\u006F\u0074\u0065']?`<br><em style="color: #d32f2f; font-size:0.8rem;">(Not: ${item['\u006E\u006F\u0074\u0065']})</em>`:'';_0x8517df+=`<tr style="background:${_0x50e32e}; border-bottom:1px solid #fff;">
-                                <td style="padding:8px; border-radius:4px;">${item['\u0071']}${_0x22c}</td>
-                                <td style="padding:8px; font-weight:bold; text-align:right;">${item['\u0073\u0063\u006F\u0072\u0065']}/${item['\u006D\u0061\u0078']}</td>
-                            </tr>`;});}else{_0x8517df=`<p style="white-space:pre-wrap; margin:0; font-size:0.9rem; background:#fff8e1; padding:10px; border-radius:4px;">${evalItem['\u0064\u0065\u0074\u0061\u0069\u006C\u0073']}</p>`;}_0x8517df+=">elbat/<".split("").reverse().join("");}catch(e){_0x8517df=`<p style="white-space:pre-wrap; margin:0; font-size:0.9rem; background:#fff8e1; padding:10px; border-radius:4px;">${evalItem['\u0064\u0065\u0074\u0061\u0069\u006C\u0073']}</p>`;}var _0x543f2b=(925820^925819)+(262924^262927);const _0xf9ca=evalItem['\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065']&&evalItem['\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065']!=="\u004E\u002F\u0041"?evalItem['\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065']:"\u004E\u002F\u0041";_0x543f2b=442748^442740;const _0x67c02e=evalItem['\u0064\u0061\u0074\u0065']||"\u004E\u002F\u0041";_0x6776ff+=`
-                <div class="evaluation-summary" id="eval-summary-${index}" style="border-left:4px solid ${_0xbdfe8f}; padding:15px; margin-bottom:10px; border-radius:8px; background:#fff; cursor:pointer;" onclick="toggleEvaluationDetail(${index})">
+                           </div>`,
+                        showCancelButton: true,
+                        confirmButtonText: 'Evet, zorla kaydet',
+                        cancelButtonText: 'Vazgeç',
+                        reverseButtons: true
+                    });
+                    if (decision.isConfirmed) {
+                        Swal.fire({ title: 'Kaydediliyor...', didOpen: () => Swal.showLoading() });
+                        fetch(SCRIPT_URL, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                            body: JSON.stringify({ action: "logEvaluation", username: currentUser, token: getToken(), force: true, ...formValues })
+                        }).then(r2 => r2.json()).then(d2 => {
+                            if (d2.result === "success") {
+                                Swal.fire({ icon: 'success', title: 'Kaydedildi', timer: 1500, showConfirmButton: false });
+                                fetchEvaluationsForAgent(formValues.agentName);
+                                fetchFeedbackLogs().then(() => { loadFeedbackList(); });
+                            } else {
+                                Swal.fire('Hata', d2.message, 'error');
+                            }
+                        });
+                    }
+                } else {
+                    Swal.fire('Hata', d.message, 'error');
+                }
+            });
+    }
+}
+async function fetchEvaluationsForAgent(forcedName, silent = false) {
+    const listEl = document.getElementById('evaluations-list');
+    if (!silent) listEl.innerHTML = 'Yükleniyor...';
+    const groupSelect = document.getElementById('q-admin-group');
+    const agentSelect = document.getElementById('q-admin-agent');
+
+    let targetAgent = forcedName || currentUser;
+    let targetGroup = 'all';
+
+    if (isAdminMode && agentSelect) {
+        targetAgent = forcedName || agentSelect.value;
+        targetGroup = groupSelect ? groupSelect.value : 'all';
+    }
+    try {
+        const periodSelect = document.getElementById('q-eval-month');
+        const selectedPeriod = periodSelect ? periodSelect.value : null;
+
+        const response = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({
+                action: "fetchEvaluations",
+                targetAgent: targetAgent,
+                targetGroup: targetGroup,
+                period: selectedPeriod,
+                username: currentUser,
+                token: getToken()
+            })
+        });
+        const data = await response.json();
+
+        if (data.result === "success") {
+            // En yeni en üstte olması için ters çevir
+            allEvaluationsData = data.evaluations.reverse();
+            if (silent) return; // Silent mode ise burada bitir (veri yüklendi)
+            listEl.innerHTML = '';
+
+            // Sadece normal değerlendirmeleri filtrele ve göster
+            const normalEvaluations = allEvaluationsData.filter(e => !String(e.callId).toUpperCase().startsWith('MANUEL-'));
+
+            // Dönem filtresini uygula (seçili ay / yıl)
+            let filteredEvaluations = normalEvaluations;
+            const periodSelectForList = document.getElementById('q-eval-month');
+            const selectedPeriodForList = periodSelectForList ? periodSelectForList.value : null;
+            if (selectedPeriodForList) {
+                filteredEvaluations = normalEvaluations.filter(e => {
+                    if (!e.date) return false;
+                    const parts = String(e.date).split('.');
+                    if (parts.length < 3) return false;
+                    const monthYear = `${parts[1].padStart(2, '0')}.${parts[2]}`;
+                    return monthYear === selectedPeriodForList;
+                });
+            }
+
+            if (filteredEvaluations.length === 0) {
+                listEl.innerHTML = '<p style="padding:20px; text-align:center; color:#666;">Kayıt yok.</p>';
+                return;
+            }
+
+            let listElBuffer = ""; // Buffer tanımla
+            filteredEvaluations.forEach((evalItem, index) => {
+                const scoreColor = evalItem.score >= 90 ? '#2e7d32' : (evalItem.score >= 70 ? '#ed6c02' : '#d32f2f');
+                let editBtn = isAdminMode ? `<i class="fas fa-pen" style="font-size:1rem; color:#fabb00; cursor:pointer; margin-right:5px;" onclick="event.stopPropagation(); editEvaluation('${evalItem.callId}')"></i>` : '';
+                // İsim iki kez yazılmasın: agent zaten başlıkta var. Eğer agentName gibi ayrı bir alan varsa onu göster.
+                const baseAgent = escapeHtml(evalItem.agent || '');
+                const altNameRaw = (evalItem.agentName != null) ? String(evalItem.agentName).trim() : '';
+                const showAltName = altNameRaw && altNameRaw !== String(evalItem.agent || '').trim();
+                let agentNameDisplay = (targetAgent === 'all' || targetAgent === targetGroup) && showAltName
+                    ? `<span style="font-size:0.8rem; font-weight:bold; color:#555; background:#eee; padding:2px 6px; border-radius:4px; margin-left:10px;">${escapeHtml(altNameRaw)}</span>`
+                    : '';
+
+                // Detay HTML oluşturma
+                let detailHtml = '';
+                try {
+                    // JSON'ı işlerken olası hatalara karşı try-catch
+                    const detailObj = JSON.parse(evalItem.details);
+                    detailHtml = '<table style="width:100%; font-size:0.85rem; border-collapse:collapse; margin-top:10px;">';
+                    if (Array.isArray(detailObj)) {
+                        detailObj.forEach(item => {
+                            let rowColor = item.score < item.max ? '#ffebee' : '#f9f9f9';
+                            let noteDisplay = item.note ? `<br><em style="color: #d32f2f; font-size:0.8rem;">(Not: ${item.note})</em>` : '';
+                            detailHtml += `<tr style="background:${rowColor}; border-bottom:1px solid #fff;">
+                                <td style="padding:8px; border-radius:4px;">${item.q}${noteDisplay}</td>
+                                <td style="padding:8px; font-weight:bold; text-align:right;">${item.score}/${item.max}</td>
+                            </tr>`;
+                        });
+                    } else {
+                        // JSON olmasına rağmen array değilse (manuel notlar)
+                        detailHtml = `<p style="white-space:pre-wrap; margin:0; font-size:0.9rem; background:#fff8e1; padding:10px; border-radius:4px;">${evalItem.details}</p>`;
+                    }
+                    detailHtml += '</table>';
+                } catch (e) {
+                    // JSON parse hatası veya eski/manuel veri formatı
+                    detailHtml = `<p style="white-space:pre-wrap; margin:0; font-size:0.9rem; background:#fff8e1; padding:10px; border-radius:4px;">${evalItem.details}</p>`;
+                }
+
+                // Geliştirme: Çağrı Tarihi ve Dinlenme Tarihi
+                const callDateDisplay = evalItem.callDate && evalItem.callDate !== 'N/A' ? evalItem.callDate : 'N/A';
+                const listenDateDisplay = evalItem.date || 'N/A';
+
+                // HTML Buffer (Performans için)
+                listElBuffer += `
+                <div class="evaluation-summary" id="eval-summary-${index}" style="border-left:4px solid ${scoreColor}; padding:15px; margin-bottom:10px; border-radius:8px; background:#fff; cursor:pointer;" onclick="toggleEvaluationDetail(${index})">
                     <div style="display:flex; justify-content:space-between; align-items:center;">
                         <div>
-                            <div style="font-weight:700; color:#2c3e50;">${_0xbg9aca} ${_0xg735ef}</div>
+                            <div style="font-weight:700; color:#2c3e50;">${baseAgent} ${agentNameDisplay}</div>
                             <!-- Geliştirme: Çağrı Tarihi ve Dinlenme Tarihi -->
                             <div class="eval-date-info">
-                                <span><i class="fas fa-phone"></i> Çağrı: ${_0xf9ca}</span>
-                                <span><i class="fas fa-headphones"></i> Dinlenme: ${_0x67c02e}</span>
+                                <span><i class="fas fa-phone"></i> Çağrı: ${callDateDisplay}</span>
+                                <span><i class="fas fa-headphones"></i> Dinlenme: ${listenDateDisplay}</span>
                             </div>
                             <div style="margin-top:5px;">
-                                <span class="eval-id-badge" onclick="event.stopPropagation(); copyText('${escapeHtml(evalItem['\u0063\u0061\u006C\u006C\u0049\u0064']||'')}')" title="Kopyala"><i class="fas fa-copy"></i> ${escapeHtml(evalItem['\u0063\u0061\u006C\u006C\u0049\u0064']||'')}</span>
+                                <span class="eval-id-badge" onclick="event.stopPropagation(); copyText('${escapeHtml(evalItem.callId || '')}')" title="Kopyala"><i class="fas fa-copy"></i> ${escapeHtml(evalItem.callId || '')}</span>
                             </div>
                         </div>
                         <div style="text-align:right;">
-                             ${_0x44cc} <span style="font-weight:800; font-size:1.6rem; color:${_0xbdfe8f};">${evalItem['\u0073\u0063\u006F\u0072\u0065']}</span>
+                             ${editBtn} <span style="font-weight:800; font-size:1.6rem; color:${scoreColor};">${evalItem.score}</span>
                         </div>
                     </div>
                     <div class="evaluation-details-content" id="eval-details-${index}">
-                        ${_0x8517df}
+                        ${detailHtml}
                         <div style="margin-top:10px; background:#f8f9fa; padding:10px; border-radius:4px;">
-                            <strong>Feedback:</strong> ${evalItem['\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B']||"\u002D"}
+                            <strong>Feedback:</strong> ${evalItem.feedback || '-'}
                         </div>
                     </div>
-                </div>`;});_0x22c57a['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x6776ff;}}catch(err){if(!silent)_0x22c57a['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=`<p style="color:red; text-align:center;">Hata oluştu.</p>`;}}function updateAgentListBasedOnGroup(_0xf4cc7b){const _0x85cc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("puorg-nimda-q".split("").reverse().join(""));const _0xaf_0xac6=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0061\u0064\u006D\u0069\u006E\u002D\u0061\u0067\u0065\u006E\u0074");_0xf4cc7b=(875492^875493)+(595792^595795);if(!_0x85cc||!_0xaf_0xac6)return;const _0x45ef3d=_0x85cc['\u0076\u0061\u006C\u0075\u0065'];_0xaf_0xac6['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']='';let _0x533g8g=adminUserList;if(_0x45ef3d!=="lla".split("").reverse().join("")){_0x533g8g=adminUserList['\u0066\u0069\u006C\u0074\u0065\u0072'](u=>u['\u0067\u0072\u006F\u0075\u0070']===_0x45ef3d);_0xaf_0xac6['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=`<option value="all">-- Tüm ${_0x45ef3d} Ekibi --</option>`;}else{_0xaf_0xac6['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=`<option value="all">-- Tüm Temsilciler --</option>`;}_0x533g8g['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](u=>{_0xaf_0xac6['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']+=`<option value="${u['\u006E\u0061\u006D\u0065']}">${u['\u006E\u0061\u006D\u0065']}</option>`;});fetchEvaluationsForAgent();}function fetchUserListForAdmin(){return new Promise(resolve=>{fetch(SCRIPT_URL,{"method":'POST',"headers":{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"getUserList",'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken()})})['\u0074\u0068\u0065\u006E'](response=>response['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](data=>{if(data['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")){adminUserList=data['\u0075\u0073\u0065\u0072\u0073']['\u0066\u0069\u006C\u0074\u0065\u0072'](u=>{var _0x73e3c=(745325^745324)+(839429^839429);const r=String(u['\u0072\u006F\u006C\u0065']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0074\u0072\u0069\u006D']();_0x73e3c='\u006A\u006A\u006F\u006A\u0066\u006A';return(r==="resu".split("").reverse().join("")||r==="sresuq".split("").reverse().join(""))&&u['\u0067\u0072\u006F\u0075\u0070']!=="\u0059\u00F6\u006E\u0065\u0074\u0069\u006D";});resolve(adminUserList);}else resolve([]);})['\u0063\u0061\u0074\u0063\u0068'](err=>resolve([]));});}function fetchCriteria(groupName){return new Promise(resolve=>{fetch(SCRIPT_URL,{"method":"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"text/plain;charset=utf-8"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":"\u0067\u0065\u0074\u0043\u0072\u0069\u0074\u0065\u0072\u0069\u0061",'\u0067\u0072\u006F\u0075\u0070':groupName,'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken()})})['\u0074\u0068\u0065\u006E'](response=>response['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](data=>{if(data['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073")resolve(data['\u0063\u0072\u0069\u0074\u0065\u0072\u0069\u0061']||[]);else resolve([]);})['\u0063\u0061\u0074\u0063\u0068'](err=>resolve([]));});}function toggleEvaluationDetail(index){var _0xd1dbc=(560272^560281)+(131810^131815);const _0xfed7de=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`eval-details-${index}`);_0xd1dbc=124089^124095;if(_0xfed7de['\u0073\u0074\u0079\u006C\u0065']['\u006D\u0061\u0078\u0048\u0065\u0069\u0067\u0068\u0074']&&_0xfed7de['\u0073\u0074\u0079\u006C\u0065']['\u006D\u0061\u0078\u0048\u0065\u0069\u0067\u0068\u0074']!=="\u0030\u0070\u0078"){_0xfed7de['\u0073\u0074\u0079\u006C\u0065']['\u006D\u0061\u0078\u0048\u0065\u0069\u0067\u0068\u0074']="\u0030\u0070\u0078";_0xfed7de['\u0073\u0074\u0079\u006C\u0065']['\u006D\u0061\u0072\u0067\u0069\u006E\u0054\u006F\u0070']="\u0030";}else{_0xfed7de['\u0073\u0074\u0079\u006C\u0065']['\u006D\u0061\u0078\u0048\u0065\u0069\u0067\u0068\u0074']=_0xfed7de['\u0073\u0063\u0072\u006F\u006C\u006C\u0048\u0065\u0069\u0067\u0068\u0074']+(676220^675976)+"xp".split("").reverse().join("");_0xfed7de['\u0073\u0074\u0079\u006C\u0065']['\u006D\u0061\u0072\u0067\u0069\u006E\u0054\u006F\u0070']="\u0031\u0030\u0070\u0078";}}async function exportEvaluations(){if(!isAdminMode)return;const{"isConfirmed":isConfirmed}=await Swal['\u0066\u0069\u0072\u0065']({"icon":'question',"title":'Rapor İndirilsin mi?',"showCancelButton":!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0130\u006E\u0064\u0069\u0072"});if(!isConfirmed)return;Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u0048\u0061\u007A\u0131\u0072\u006C\u0061\u006E\u0131\u0079\u006F\u0072\u002E\u002E\u002E","didOpen":()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']()});var _0xdaa5a=(140712^140716)+(751985^751987);const _0x4ffd=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("puorg-nimda-q".split("").reverse().join(""));_0xdaa5a=(747371^747362)+(640328^640332);const _0x262ac=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0061\u0064\u006D\u0069\u006E\u002D\u0061\u0067\u0065\u006E\u0074");fetch(SCRIPT_URL,{"method":'POST',"headers":{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":"\u0065\u0078\u0070\u006F\u0072\u0074\u0045\u0076\u0061\u006C\u0075\u0061\u0074\u0069\u006F\u006E\u0073","targetAgent":_0x262ac?_0x262ac['\u0076\u0061\u006C\u0075\u0065']:"lla".split("").reverse().join(""),"targetGroup":_0x4ffd?_0x4ffd['\u0076\u0061\u006C\u0075\u0065']:"\u0061\u006C\u006C",'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken()})})['\u0074\u0068\u0065\u006E'](r=>r['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](data=>{if(data['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")&&data['\u0063\u0073\u0076\u0044\u0061\u0074\u0061']){var _0xgdeg=(249067^249070)+(499275^499277);const _0xf4d5bg=new Blob(["\ufeff"+data['\u0063\u0073\u0076\u0044\u0061\u0074\u0061']],{'\u0074\u0079\u0070\u0065':"\u0074\u0065\u0078\u0074\u002F\u0063\u0073\u0076\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038\u003B"});_0xgdeg=168163^168170;var _0x25d1gg=(134208^134208)+(322482^322487);const _0x9357da=document['\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006C\u0065\u006D\u0065\u006E\u0074']("\u0061");_0x25d1gg=(666407^666406)+(258475^258474);var _0x959b=(382129^382137)+(704386^704391);const _0xace=URL['\u0063\u0072\u0065\u0061\u0074\u0065\u004F\u0062\u006A\u0065\u0063\u0074\u0055\u0052\u004C'](_0xf4d5bg);_0x959b=198117^198112;_0x9357da['\u0073\u0065\u0074\u0041\u0074\u0074\u0072\u0069\u0062\u0075\u0074\u0065']("ferh".split("").reverse().join(""),_0xace);_0x9357da['\u0073\u0065\u0074\u0041\u0074\u0074\u0072\u0069\u0062\u0075\u0074\u0065']("daolnwod".split("").reverse().join(""),data['\u0066\u0069\u006C\u0065\u004E\u0061\u006D\u0065']);document['\u0062\u006F\u0064\u0079']['\u0061\u0070\u0070\u0065\u006E\u0064\u0043\u0068\u0069\u006C\u0064'](_0x9357da);_0x9357da['\u0063\u006C\u0069\u0063\u006B']();document['\u0062\u006F\u0064\u0079']['\u0072\u0065\u006D\u006F\u0076\u0065\u0043\u0068\u0069\u006C\u0064'](_0x9357da);Swal['\u0066\u0069\u0072\u0065']("\u0042\u0061\u015F\u0061\u0072\u0131\u006C\u0131","\u0052\u0061\u0070\u006F\u0072\u0020\u0069\u006E\u0064\u0069\u0072\u0069\u006C\u0064\u0069\u002E","\u0073\u0075\u0063\u0063\u0065\u0073\u0073");}else{Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",data['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u0056\u0065\u0072\u0069\u0020\u0061\u006C\u0131\u006E\u0061\u006D\u0061\u0064\u0131\u002E","\u0065\u0072\u0072\u006F\u0072");}});}async function logEvaluationPopup(_0xbd83df,_0x845gb,_0x39914c,_0xca371b){var _0xa4eef=(241263^241258)+(503038^503038);const _0x67c7d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0071\u002D\u0061\u0064\u006D\u0069\u006E\u002D\u0061\u0067\u0065\u006E\u0074");_0xa4eef=(172295^172302)+(466647^466654);const _0x4f7f=_0x67c7d?_0x67c7d['\u0076\u0061\u006C\u0075\u0065']:"";if(!_0x4f7f||_0x4f7f==="\u0061\u006C\u006C"){Swal['\u0066\u0069\u0072\u0065']("\u0055\u0079\u0061\u0072\u0131","\u004C\u00FC\u0074\u0066\u0065\u006E\u0020\u006C\u0069\u0073\u0074\u0065\u0064\u0065\u006E\u0020\u0062\u0069\u0072\u0020\u0074\u0065\u006D\u0073\u0069\u006C\u0063\u0069\u0020\u0073\u0065\u00E7\u0069\u006E\u0069\u007A\u002E","\u0077\u0061\u0072\u006E\u0069\u006E\u0067");return;}_0x845gb="\u0047\u0065\u006E\u0065\u006C";_0xbd83df='\u006A\u0071\u006A\u0068\u0070\u006C';var _0x76d=(130234^130239)+(288742^288738);const _0xc57a8c=adminUserList['\u0066\u0069\u006E\u0064'](u=>u['\u006E\u0061\u006D\u0065']['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()===_0x4f7f['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']());_0x76d=(993897^993896)+(334501^334498);if(_0xc57a8c&&_0xc57a8c['\u0067\u0072\u006F\u0075\u0070']){_0x845gb=_0xc57a8c['\u0067\u0072\u006F\u0075\u0070'];}var _0x006bag=(937600^937605)+(443443^443440);const _0x38e2e=_0x845gb['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("\u0307i".split("").reverse().join(""),'\u0067'),"\u0069")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u0131','\u0067'),"\u0069")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u015F','\u0067'),"\u0073")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u011F','\u0067'),"\u0067")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u00FC','\u0067'),"\u0075")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u00F6','\u0067'),"\u006F")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u00E7','\u0067'),"\u0063")['\u0074\u0072\u0069\u006D']();_0x006bag=(186689^186689)+(655807^655800);const _0x9ad=_0x38e2e['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0063\u0068\u0061\u0074")||_0x38e2e==="bo".split("").reverse().join("");const _0xcd91f=_0x38e2e['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("taselet".split("").reverse().join(""));let _0x52_0x4c5=_0x845gb;_0x39914c='\u0069\u0064\u006E\u0063\u006C\u006A';if(_0x9ad)_0x52_0x4c5="\u0043\u0068\u0061\u0074";else if(_0xcd91f)_0x52_0x4c5="\u015F\u0131taseleT".split("").reverse().join("");Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u0048\u0061\u007A\u0131\u0072\u006C\u0061\u006E\u0131\u0079\u006F\u0072\u002E\u002E\u002E",'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']()});let _0x721f7f=[];if(_0x52_0x4c5&&_0x52_0x4c5!=="\u0047\u0065\u006E\u0065\u006C"){_0x721f7f=await fetchCriteria(_0x52_0x4c5);}Swal['\u0063\u006C\u006F\u0073\u0065']();const _0x1443d=_0x721f7f['\u006C\u0065\u006E\u0067\u0074\u0068']>(463047^463047);_0xca371b='';if(_0x1443d){_0xca371b+=`<div class="criteria-container">`;_0x721f7f['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((c,i)=>{let _0xb12f4e=parseInt(c['\u0070\u006F\u0069\u006E\u0074\u0073'])||401115^401115;if(_0xb12f4e===(670392^670392))return;var _0x443d=(331335^331330)+(205819^205811);const _0x0f7ff=escapeForJsString(c['\u0074\u0065\u0078\u0074']);_0x443d=851893^851893;if(_0x9ad){let _0xc5_0xc51=parseInt(c['\u006D\u0065\u0064\u0069\u0075\u006D\u0053\u0063\u006F\u0072\u0065'])||883405^883405;let _0x3855d=parseInt(c['\u0062\u0061\u0064\u0053\u0063\u006F\u0072\u0065'])||147845^147845;_0xca371b+=`<div class="criteria-row" id="row-${i}" data-max-score="${_0xb12f4e}"><div class="criteria-header"><span title="${_0x0f7ff}">${i+(445406^445407)}. ${c['\u0074\u0065\u0078\u0074']}</span><span style="font-size:0.8rem;">Max: ${_0xb12f4e}</span></div><div class="criteria-controls"><div class="eval-button-group"><button class="eval-button eval-good active" data-score="${_0xb12f4e}" onclick="setButtonScore(${i}, ${_0xb12f4e}, ${_0xb12f4e})">İyi (${_0xb12f4e})</button>${_0xc5_0xc51>(762800^762800)?`<button class="eval-button eval-medium" data-score="${_0xc5_0xc51}" onclick="setButtonScore(${i}, ${_0xc5_0xc51}, ${_0xb12f4e})">Orta (${_0xc5_0xc51})</button>`:''}${_0x3855d>(642284^642284)?`<button class="eval-button eval-bad" data-score="${_0x3855d}" onclick="setButtonScore(${i}, ${_0x3855d}, ${_0xb12f4e})">Kötü (${_0x3855d})</button>`:''}</div><span class="score-badge" id="badge-${i}" style="margin-top:8px; display:block; background:#2e7d32;">${_0xb12f4e}</span></div><input type="text" id="note-${i}" class="note-input" placeholder="Not..." style="display:none;"></div>`;}else if(_0xcd91f){_0xca371b+=`<div class="criteria-row" id="row-${i}" data-max-score="${_0xb12f4e}"><div class="criteria-header"><span title="${_0x0f7ff}">${i+(938974^938975)}. ${c['\u0074\u0065\u0078\u0074']}</span><span>Max: ${_0xb12f4e}</span></div><div class="criteria-controls" style="display:flex; align-items:center; gap:15px; background:#f9f9f9;"><input type="range" class="custom-range slider-input" id="slider-${i}" min="0" max="${_0xb12f4e}" value="${_0xb12f4e}" data-index="${i}" oninput="updateRowSliderScore(${i}, ${_0xb12f4e})" style="flex-grow:1;"><span class="score-badge" id="badge-${i}" style="background:#2e7d32;">${_0xb12f4e}</span></div><input type="text" id="note-${i}" class="note-input" placeholder="Not..." style="display:none;"></div>`;}});_0xca371b+=`</div>`;}const _0xa2c7ba=`
+                </div>`;
+            });
+            listEl.innerHTML = listElBuffer; // Tek seferde DOM update
+        }
+    } catch (err) { if (!silent) listEl.innerHTML = `<p style="color:red; text-align:center;">Hata oluştu.</p>`; }
+}
+function updateAgentListBasedOnGroup() {
+    const groupSelect = document.getElementById('q-admin-group');
+    const agentSelect = document.getElementById('q-admin-agent');
+    if (!groupSelect || !agentSelect) return;
+    const selectedGroup = groupSelect.value;
+    agentSelect.innerHTML = '';
+
+    let filteredUsers = adminUserList;
+    if (selectedGroup !== 'all') {
+        filteredUsers = adminUserList.filter(u => u.group === selectedGroup);
+        agentSelect.innerHTML = `<option value="all">-- Tüm ${selectedGroup} Ekibi --</option>`;
+    } else {
+        agentSelect.innerHTML = `<option value="all">-- Tüm Temsilciler --</option>`;
+    }
+    filteredUsers.forEach(u => { agentSelect.innerHTML += `<option value="${u.name}">${u.name}</option>`; });
+    fetchEvaluationsForAgent();
+}
+function fetchUserListForAdmin() {
+    return new Promise((resolve) => {
+        fetch(SCRIPT_URL, {
+            method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: "getUserList", username: currentUser, token: getToken() })
+        }).then(response => response.json()).then(data => {
+            if (data.result === "success") {
+                // Sadece rütbesi 'user' veya 'qusers' olanları (temsilcileri) göster
+                // Yönetim grubunu ve Admin/LocAdmin rütbelerini listeden temizle
+                adminUserList = data.users.filter(u => {
+                    const r = String(u.role || '').toLowerCase().trim();
+                    return (r === 'user' || r === 'qusers') && u.group !== 'Yönetim';
+                });
+                resolve(adminUserList);
+            }
+            else resolve([]);
+        }).catch(err => resolve([]));
+    });
+}
+function fetchCriteria(groupName) {
+    return new Promise((resolve) => {
+        fetch(SCRIPT_URL, {
+            method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: "getCriteria", group: groupName, username: currentUser, token: getToken() })
+        }).then(response => response.json()).then(data => {
+            if (data.result === "success") resolve(data.criteria || []); else resolve([]);
+        }).catch(err => resolve([]));
+    });
+}
+function toggleEvaluationDetail(index) {
+    const detailEl = document.getElementById(`eval-details-${index}`);
+    if (detailEl.style.maxHeight && detailEl.style.maxHeight !== '0px') { detailEl.style.maxHeight = '0px'; detailEl.style.marginTop = '0'; }
+    else { detailEl.style.maxHeight = detailEl.scrollHeight + 500 + 'px'; detailEl.style.marginTop = '10px'; }
+}
+async function exportEvaluations() {
+    if (!isAdminMode) return;
+    const { isConfirmed } = await Swal.fire({ icon: 'question', title: 'Rapor İndirilsin mi?', showCancelButton: true, confirmButtonText: 'İndir' });
+    if (!isConfirmed) return;
+    Swal.fire({ title: 'Hazırlanıyor...', didOpen: () => Swal.showLoading() });
+
+    const groupSelect = document.getElementById('q-admin-group');
+    const agentSelect = document.getElementById('q-admin-agent');
+
+    fetch(SCRIPT_URL, {
+        method: 'POST', headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({
+            action: "exportEvaluations",
+            targetAgent: agentSelect ? agentSelect.value : 'all',
+            targetGroup: groupSelect ? groupSelect.value : 'all',
+            username: currentUser, token: getToken()
+        })
+    }).then(r => r.json()).then(data => {
+        if (data.result === "success" && data.csvData) {
+            const blob = new Blob(["\ufeff" + data.csvData], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement("a");
+            const url = URL.createObjectURL(blob);
+            link.setAttribute("href", url); link.setAttribute("download", data.fileName);
+            document.body.appendChild(link); link.click(); document.body.removeChild(link);
+            Swal.fire('Başarılı', 'Rapor indirildi.', 'success');
+        } else { Swal.fire('Hata', data.message || 'Veri alınamadı.', 'error'); }
+    });
+}
+// --- EVALUATION POPUP & EDIT ---
+async function logEvaluationPopup() {
+    const agentSelect = document.getElementById('q-admin-agent');
+    const agentName = agentSelect ? agentSelect.value : "";
+
+    if (!agentName || agentName === 'all') { Swal.fire('Uyarı', 'Lütfen listeden bir temsilci seçiniz.', 'warning'); return; }
+
+    let agentGroup = 'Genel';
+    const foundUser = adminUserList.find(u => u.name.toLowerCase() === agentName.toLowerCase());
+    if (foundUser && foundUser.group) { agentGroup = foundUser.group; }
+
+    // Güçlü Normalizasyon
+    const cleanGroup = agentGroup.toLowerCase()
+        .replace(/i̇/g, 'i').replace(/ı/g, 'i').replace(/ş/g, 's')
+        .replace(/ğ/g, 'g').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ç/g, 'c').trim();
+
+    const isChat = cleanGroup.includes('chat') || cleanGroup === 'ob';
+    const isTelesatis = cleanGroup.includes('telesat');
+
+    let criteriaGroup = agentGroup;
+    if (isChat) criteriaGroup = 'Chat';
+    else if (isTelesatis) criteriaGroup = 'Telesatış';
+
+    Swal.fire({ title: 'Hazırlanıyor...', didOpen: () => Swal.showLoading() });
+    let criteriaList = [];
+    if (criteriaGroup && criteriaGroup !== 'Genel') { criteriaList = await fetchCriteria(criteriaGroup); }
+    Swal.close();
+
+    const isCriteriaBased = criteriaList.length > 0;
+    let criteriaFieldsHtml = '';
+
+    if (isCriteriaBased) {
+        criteriaFieldsHtml += `<div class="criteria-container">`;
+        criteriaList.forEach((c, i) => {
+            let pts = parseInt(c.points) || 0;
+            if (pts === 0) return;
+            // Geliştirme: Puan başlığı üstüne gelince tam metin gösterilmesi için title eklendi
+            const fullText = escapeForJsString(c.text);
+            if (isChat) {
+                let mPts = parseInt(c.mediumScore) || 0; let bPts = parseInt(c.badScore) || 0;
+                criteriaFieldsHtml += `<div class="criteria-row" id="row-${i}" data-max-score="${pts}"><div class="criteria-header"><span title="${fullText}">${i + 1}. ${c.text}</span><span style="font-size:0.8rem;">Max: ${pts}</span></div><div class="criteria-controls"><div class="eval-button-group"><button class="eval-button eval-good active" data-score="${pts}" onclick="setButtonScore(${i}, ${pts}, ${pts})">İyi (${pts})</button>${mPts > 0 ? `<button class="eval-button eval-medium" data-score="${mPts}" onclick="setButtonScore(${i}, ${mPts}, ${pts})">Orta (${mPts})</button>` : ''}${bPts > 0 ? `<button class="eval-button eval-bad" data-score="${bPts}" onclick="setButtonScore(${i}, ${bPts}, ${pts})">Kötü (${bPts})</button>` : ''}</div><span class="score-badge" id="badge-${i}" style="margin-top:8px; display:block; background:#2e7d32;">${pts}</span></div><input type="text" id="note-${i}" class="note-input" placeholder="Not..." style="display:none;"></div>`;
+            } else if (isTelesatis) {
+                criteriaFieldsHtml += `<div class="criteria-row" id="row-${i}" data-max-score="${pts}"><div class="criteria-header"><span title="${fullText}">${i + 1}. ${c.text}</span><span>Max: ${pts}</span></div><div class="criteria-controls" style="display:flex; align-items:center; gap:15px; background:#f9f9f9;"><input type="range" class="custom-range slider-input" id="slider-${i}" min="0" max="${pts}" value="${pts}" data-index="${i}" oninput="updateRowSliderScore(${i}, ${pts})" style="flex-grow:1;"><span class="score-badge" id="badge-${i}" style="background:#2e7d32;">${pts}</span></div><input type="text" id="note-${i}" class="note-input" placeholder="Not..." style="display:none;"></div>`;
+            }
+        });
+        criteriaFieldsHtml += `</div>`;
+    }
+
+    // GÜNCELLENMİŞ MODAL: Call ID zorunlu yapıldı
+    const contentHtml = `
         <div class="eval-modal-wrapper">
-            <div class="score-dashboard"><div><div style="font-size:0.9rem;">Değerlendirilen</div><div style="font-size:1.2rem; font-weight:bold; color:#fabb00;">${_0x4f7f}</div></div><div class="score-circle-outer" id="score-ring"><div class="score-circle-inner" id="live-score">${_0x1443d?"\u0031\u0030\u0030":"001".split("").reverse().join("")}</div></div></div>
-            <div class="eval-header-card"><div><label>Call ID <span style="color:red;">*</span></label><input id="eval-callid" class="swal2-input" style="height:35px; margin:0; width:100%;" placeholder="Call ID"></div><div><label>Tarih</label><input type="date" id="eval-calldate" class="swal2-input" style="height:35px; margin:0; width:100%;" value="${new Date()['\u0074\u006F\u0049\u0053\u004F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](950286^950286,370684^370678)}"></div></div>
-            ${_0x1443d?_0xca371b:`<div style="padding:15px; border:1px dashed #ccc; text-align:center;"><label>Manuel Puan</label><br><input id="eval-manual-score" type="number" class="swal2-input" value="100" min="0" max="100" style="width:100px; text-align:center;"></div><textarea id="eval-details" class="swal2-textarea" placeholder="Detaylar..."></textarea>`}
+            <div class="score-dashboard"><div><div style="font-size:0.9rem;">Değerlendirilen</div><div style="font-size:1.2rem; font-weight:bold; color:#fabb00;">${agentName}</div></div><div class="score-circle-outer" id="score-ring"><div class="score-circle-inner" id="live-score">${isCriteriaBased ? '100' : '100'}</div></div></div>
+            <div class="eval-header-card"><div><label>Call ID <span style="color:red;">*</span></label><input id="eval-callid" class="swal2-input" style="height:35px; margin:0; width:100%;" placeholder="Call ID"></div><div><label>Tarih</label><input type="date" id="eval-calldate" class="swal2-input" style="height:35px; margin:0; width:100%;" value="${new Date().toISOString().substring(0, 10)}"></div></div>
+            ${isCriteriaBased ? criteriaFieldsHtml : `<div style="padding:15px; border:1px dashed #ccc; text-align:center;"><label>Manuel Puan</label><br><input id="eval-manual-score" type="number" class="swal2-input" value="100" min="0" max="100" style="width:100px; text-align:center;"></div><textarea id="eval-details" class="swal2-textarea" placeholder="Detaylar..."></textarea>`}
             <div style="margin-top:15px; padding:10px; background:#fafafa; border:1px solid #eee;"><label>Geri Bildirim Tipi</label><select id="feedback-type" class="swal2-input" style="width:100%; height:40px; margin:0;"><option value="Yok" selected>Yok</option><option value="Sözlü">Sözlü</option><option value="Mail">Mail</option></select></div>
             <div style="margin-top:15px;"><label>Genel Geri Bildirim</label><textarea id="eval-feedback" class="swal2-textarea" style="margin-top:5px; height:80px;"></textarea></div>
-        </div>`;const{'\u0076\u0061\u006C\u0075\u0065':formValues}=await Swal['\u0066\u0069\u0072\u0065']({'\u0068\u0074\u006D\u006C':_0xa2c7ba,'\u0077\u0069\u0064\u0074\u0068':"\u0036\u0030\u0030\u0070\u0078",'\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],"confirmButtonText":"\u0020\uD83D\uDCBE\u0020\u0020\u004B\u0061\u0079\u0064\u0065\u0074","allowOutsideClick":false,'\u0061\u006C\u006C\u006F\u0077\u0045\u0073\u0063\u0061\u0070\u0065\u004B\u0065\u0079':false,"didOpen":()=>{if(_0xcd91f)window['\u0072\u0065\u0063\u0061\u006C\u0063\u0054\u006F\u0074\u0061\u006C\u0053\u006C\u0069\u0064\u0065\u0072\u0053\u0063\u006F\u0072\u0065']();else if(_0x9ad)window['\u0072\u0065\u0063\u0061\u006C\u0063\u0054\u006F\u0074\u0061\u006C\u0053\u0063\u006F\u0072\u0065']();},"preConfirm":()=>{var _0x6b_0x4ad=(268407^268403)+(240885^240882);const _0xc698ce=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("dillac-lave".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']['\u0074\u0072\u0069\u006D']();_0x6b_0x4ad=(111296^111305)+(983487^983478);if(!_0xc698ce){Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("\u0043\u0061\u006C\u006C\u0020\u0049\u0044\u0020\u0061\u006C\u0061\u006E\u0131\u0020\u0062\u006F\u015F\u0020\u0062\u0131\u0072\u0061\u006B\u0131\u006C\u0061\u006D\u0061\u007A\u0021");return false;}let _0xebadfc;const _0xe48dg=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("etadllac-lave".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'];_0xebadfc='\u0071\u0063\u006E\u0062\u0068\u0067';const _0x8c6e2f=_0xe48dg['\u0073\u0070\u006C\u0069\u0074']("\u002D");var _0x13d=(571539^571541)+(987706^987699);const _0x224ec=_0x8c6e2f['\u006C\u0065\u006E\u0067\u0074\u0068']===(683530^683529)?`${_0x8c6e2f[171559^171557]}.${_0x8c6e2f[494962^494963]}.${_0x8c6e2f[723827^723827]}`:_0xe48dg;_0x13d=(160258^160259)+(203021^203020);if(_0x1443d){let _0xbcdeb=512079^512079;let _0x072ff;let _0x38b=[];_0x072ff=762402^762411;for(let i=646407^646407;i<_0x721f7f['\u006C\u0065\u006E\u0067\u0074\u0068'];i++){let _0x248ad;const c=_0x721f7f[i];_0x248ad=(492765^492765)+(386987^386989);if(parseInt(c['\u0070\u006F\u0069\u006E\u0074\u0073'])===(381090^381090))continue;var _0xfbe=(411133^411129)+(604917^604918);let _0x583c2d=867848^867848;_0xfbe=366110^366103;let _0x6677ed;let _0x09c87b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`note-${i}`)['\u0076\u0061\u006C\u0075\u0065'];_0x6677ed='\u0062\u006E\u0063\u0067\u0064\u0068';if(_0x9ad)_0x583c2d=parseInt(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`badge-${i}`)['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074'])||918090^918090;else if(_0xcd91f)_0x583c2d=parseInt(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`slider-${i}`)['\u0076\u0061\u006C\u0075\u0065'])||210323^210323;_0xbcdeb+=_0x583c2d;_0x38b['\u0070\u0075\u0073\u0068']({'\u0071':c['\u0074\u0065\u0078\u0074'],'\u006D\u0061\u0078':parseInt(c['\u0070\u006F\u0069\u006E\u0074\u0073']),"score":_0x583c2d,'\u006E\u006F\u0074\u0065':_0x09c87b});}return{'\u0061\u0067\u0065\u006E\u0074\u004E\u0061\u006D\u0065':_0x4f7f,'\u0061\u0067\u0065\u006E\u0074\u0047\u0072\u006F\u0075\u0070':_0x845gb,"callId":_0xc698ce,'\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065':_0x224ec,'\u0073\u0063\u006F\u0072\u0065':_0xbcdeb,'\u0064\u0065\u0074\u0061\u0069\u006C\u0073':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](_0x38b),"feedback":document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("kcabdeef-lave".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'],'\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u0054\u0079\u0070\u0065':document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u002D\u0074\u0079\u0070\u0065")['\u0076\u0061\u006C\u0075\u0065']};}else{return{"agentName":_0x4f7f,'\u0061\u0067\u0065\u006E\u0074\u0047\u0072\u006F\u0075\u0070':_0x845gb,'\u0063\u0061\u006C\u006C\u0049\u0064':_0xc698ce,"callDate":_0x224ec,"score":parseInt(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("erocs-launam-lave".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']),'\u0064\u0065\u0074\u0061\u0069\u006C\u0073':document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0065\u0076\u0061\u006C\u002D\u0064\u0065\u0074\u0061\u0069\u006C\u0073")['\u0076\u0061\u006C\u0075\u0065'],'\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B':document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B\u002D\u0074\u0079\u0070\u0065")['\u0076\u0061\u006C\u0075\u0065']};}}});if(formValues){Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':'Kaydediliyor...',"didOpen":()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']()});fetch(SCRIPT_URL,{"method":"\u0050\u004F\u0053\u0054","headers":{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":'text/plain;charset=utf-8'},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"\u006C\u006F\u0067\u0045\u0076\u0061\u006C\u0075\u0061\u0074\u0069\u006F\u006E","username":currentUser,"token":getToken(),...formValues})})['\u0074\u0068\u0065\u006E'](r=>r['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](d=>{if(d['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){Swal['\u0066\u0069\u0072\u0065']({"icon":'success',"title":'Kaydedildi','\u0074\u0069\u006D\u0065\u0072':1500,'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false});fetchEvaluationsForAgent(formValues['\u0061\u0067\u0065\u006E\u0074\u004E\u0061\u006D\u0065']);fetchFeedbackLogs()['\u0074\u0068\u0065\u006E'](()=>{loadFeedbackList();});}else{Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",d['\u006D\u0065\u0073\u0073\u0061\u0067\u0065'],"rorre".split("").reverse().join(""));}});}}async function editEvaluation(targetCallId,_0x09df2c,_0xb8ga1d,_0xe23a){const _0xa6g3c=allEvaluationsData['\u0066\u0069\u006E\u0064'](item=>String(item['\u0063\u0061\u006C\u006C\u0049\u0064'])['\u0074\u0072\u0069\u006D']()===String(targetCallId)['\u0074\u0072\u0069\u006D']());if(!_0xa6g3c){Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",".\u0131damanulub t\u0131yaK".split("").reverse().join(""),"\u0065\u0072\u0072\u006F\u0072");return;}const _0x58c59a=_0xa6g3c['\u0061\u0067\u0065\u006E\u0074'];const _0xa8f=_0xa6g3c['\u0067\u0072\u006F\u0075\u0070']||"\u0047\u0065\u006E\u0065\u006C";_0x09df2c=678554^678555;const _0xf453c=_0xa8f['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("\u0307i".split("").reverse().join(""),'\u0067'),"\u0069")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u0131','\u0067'),"\u0069")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u015F','\u0067'),"\u0073")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u011F','\u0067'),"\u0067")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u00FC','\u0067'),"\u0075")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u00F6','\u0067'),"\u006F")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u00E7','\u0067'),"\u0063")['\u0074\u0072\u0069\u006D']();_0xb8ga1d=(270133^270129)+(754272^754281);var _0x3a992c=(127205^127204)+(742172^742168);const _0xff6b=_0xf453c['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0063\u0068\u0061\u0074")||_0xf453c==="bo".split("").reverse().join("");_0x3a992c="jchjpg".split("").reverse().join("");const _0x3352a=_0xf453c['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0074\u0065\u006C\u0065\u0073\u0061\u0074");let _0xcb2f2=_0xa8f;if(_0xff6b)_0xcb2f2="tahC".split("").reverse().join("");else if(_0x3352a)_0xcb2f2="\u015F\u0131taseleT".split("").reverse().join("");Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u0130\u006E\u0063\u0065\u006C\u0065\u006E\u0069\u0079\u006F\u0072\u002E\u002E\u002E",'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']()});let _0x22e27b=[];if(_0xcb2f2&&_0xcb2f2!=="leneG".split("").reverse().join(""))_0x22e27b=await fetchCriteria(_0xcb2f2);Swal['\u0063\u006C\u006F\u0073\u0065']();var _0x336de=(743782^743776)+(518360^518364);const _0x71e11f=_0x22e27b['\u006C\u0065\u006E\u0067\u0074\u0068']>(670121^670121);_0x336de=(305412^305411)+(978551^978548);var _0x83db=(258253^258245)+(799924^799933);let _0xc6_0x63a=[];_0x83db=906379^906371;try{_0xc6_0x63a=JSON['\u0070\u0061\u0072\u0073\u0065'](_0xa6g3c['\u0064\u0065\u0074\u0061\u0069\u006C\u0073']||"][".split("").reverse().join(""));}catch(e){_0xc6_0x63a=[];}_0xe23a="";if(_0xa6g3c['\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065']){var _0x7fd4cc=(204471^204471)+(410674^410678);let _0xd3_0x2aa=_0xa6g3c['\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065']['\u0073\u0070\u006C\u0069\u0074']("\u002E");_0x7fd4cc=(615057^615063)+(254259^254257);if(_0xd3_0x2aa['\u006C\u0065\u006E\u0067\u0074\u0068']===(120974^120973))_0xe23a=`${_0xd3_0x2aa[755302^755300]}-${_0xd3_0x2aa[185792^185793]}-${_0xd3_0x2aa[731159^731159]}`;else _0xe23a=_0xa6g3c['\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065'];}var _0x4857fb=(450429^450425)+(863918^863919);let _0x7419cd=`<div class="eval-modal-wrapper" style="border-top:5px solid #1976d2;"><div class="score-dashboard"><div><div style="font-size:0.9rem;">DÜZENLENEN</div><div style="font-size:1.2rem; font-weight:bold; color:#1976d2;">${_0x58c59a}</div></div><div class="score-circle-outer" id="score-ring"><div class="score-circle-inner" id="live-score">${_0xa6g3c['\u0073\u0063\u006F\u0072\u0065']}</div></div></div><div class="eval-header-card"><div><label>Call ID</label><input id="eval-callid" class="swal2-input" value="${_0xa6g3c['\u0063\u0061\u006C\u006C\u0049\u0064']}" readonly style="background:#eee; height:35px; width:100%;"></div><div><label>Çağrı Tarihi</label><input type="date" id="eval-calldate" class="swal2-input" style="height:35px; margin:0; width:100%;" value="${_0xe23a}"></div></div>`;_0x4857fb=525148^525151;if(_0x71e11f){_0x7419cd+=`<div class="criteria-container">`;_0x22e27b['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((c,i)=>{let _0xe91cc;let _0x6350b=parseInt(c['\u0070\u006F\u0069\u006E\u0074\u0073'])||528469^528469;_0xe91cc="dahbje".split("").reverse().join("");if(_0x6350b===(973312^973312))return;let _0x53_0xeg1=parseInt(c['\u006D\u0065\u0064\u0069\u0075\u006D\u0053\u0063\u006F\u0072\u0065'])||679359^679359;let _0x2b2b=parseInt(c['\u0062\u0061\u0064\u0053\u0063\u006F\u0072\u0065'])||498788^498788;let _0xe3a1dc;let _0xff0a8a=_0xc6_0x63a['\u0066\u0069\u006E\u0064'](d=>d['\u0071']===c['\u0074\u0065\u0078\u0074'])||(_0xc6_0x63a[i]?_0xc6_0x63a[i]:{'\u0073\u0063\u006F\u0072\u0065':_0x6350b,'\u006E\u006F\u0074\u0065':''});_0xe3a1dc='\u0068\u0068\u0070\u006C\u006C\u006B';let _0x57ad=parseInt(_0xff0a8a['\u0073\u0063\u006F\u0072\u0065']);let _0xbc7be=_0xff0a8a['\u006E\u006F\u0074\u0065']||'';const _0x78e2f=escapeForJsString(c['\u0074\u0065\u0078\u0074']);if(_0xff6b){var _0x6669bd=(582951^582958)+(373677^373679);let _0x08bg=_0x57ad===_0x6350b?"evitca".split("").reverse().join(""):'';_0x6669bd=(559621^559618)+(482233^482239);let _0x3de3b;let _0x289e4a=_0x57ad===_0x53_0xeg1&&_0x53_0xeg1!==(760662^760662)?"\u0061\u0063\u0074\u0069\u0076\u0065":'';_0x3de3b=(215528^215535)+(541178^541177);let _0x18b8aa;let _0x9d743c=_0x57ad===_0x2b2b&&_0x2b2b!==(293181^293181)?"\u0061\u0063\u0074\u0069\u0076\u0065":'';_0x18b8aa=(261489^261495)+(677678^677677);if(_0x57ad===(176046^176046)&&_0x2b2b===(520102^520102))_0x9d743c="\u0061\u0063\u0074\u0069\u0076\u0065";else if(_0x57ad===(357249^357249)&&_0x2b2b>(565841^565841)){_0x08bg='';_0x289e4a='';_0x9d743c='';}_0x7419cd+=`<div class="criteria-row" id="row-${i}" data-max-score="${_0x6350b}"><div class="criteria-header"><span title="${_0x78e2f}">${i+(989554^989555)}. ${c['\u0074\u0065\u0078\u0074']}</span><span>Max: ${_0x6350b}</span></div><div class="criteria-controls"><div class="eval-button-group"><button class="eval-button eval-good ${_0x08bg}" data-score="${_0x6350b}" onclick="setButtonScore(${i}, ${_0x6350b}, ${_0x6350b})">İyi</button>${_0x53_0xeg1>(729133^729133)?`<button class="eval-button eval-medium ${_0x289e4a}" data-score="${_0x53_0xeg1}" onclick="setButtonScore(${i}, ${_0x53_0xeg1}, ${_0x6350b})">Orta</button>`:''}${_0x2b2b>(445202^445202)?`<button class="eval-button eval-bad ${_0x9d743c}" data-score="${_0x2b2b}" onclick="setButtonScore(${i}, ${_0x2b2b}, ${_0x6350b})">Kötü</button>`:''}</div><span class="score-badge" id="badge-${i}">${_0x57ad}</span></div><input type="text" id="note-${i}" class="note-input" value="${_0xbc7be}" style="display:${_0x57ad<_0x6350b?"\u0062\u006C\u006F\u0063\u006B":"\u006E\u006F\u006E\u0065"}"></div>`;}else if(_0x3352a){_0x7419cd+=`<div class="criteria-row" id="row-${i}" data-max-score="${_0x6350b}"><div class="criteria-header"><span title="${_0x78e2f}">${i+(158496^158497)}. ${c['\u0074\u0065\u0078\u0074']}</span><span>Max: ${_0x6350b}</span></div><div class="criteria-controls" style="display:flex; background:#f9f9f9;"><input type="range" class="custom-range slider-input" id="slider-${i}" min="0" max="${_0x6350b}" value="${_0x57ad}" data-index="${i}" oninput="updateRowSliderScore(${i}, ${_0x6350b})" style="flex-grow:1;"><span class="score-badge" id="badge-${i}">${_0x57ad}</span></div><input type="text" id="note-${i}" class="note-input" value="${_0xbc7be}" style="display:${_0x57ad<_0x6350b?"\u0062\u006C\u006F\u0063\u006B":"enon".split("").reverse().join("")}"></div>`;}});_0x7419cd+=`</div>`;}else{_0x7419cd+=`<div style="padding:15px; border:1px dashed #ccc; text-align:center;"><label>Manuel Puan</label><br><input id="eval-manual-score" type="number" class="swal2-input" value="${_0xa6g3c['\u0073\u0063\u006F\u0072\u0065']}" min="0" max="100" style="width:100px;"></div><textarea id="eval-details" class="swal2-textarea">${typeof _0xa6g3c['\u0064\u0065\u0074\u0061\u0069\u006C\u0073']==="\u0073\u0074\u0072\u0069\u006E\u0067"?_0xa6g3c['\u0064\u0065\u0074\u0061\u0069\u006C\u0073']:''}</textarea>`;}_0x7419cd+=`<div><label>Revize Feedback</label><textarea id="eval-feedback" class="swal2-textarea">${_0xa6g3c['\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B']||''}</textarea></div></div>`;const{"value":formValues}=await Swal['\u0066\u0069\u0072\u0065']({"html":_0x7419cd,'\u0077\u0069\u0064\u0074\u0068':"\u0036\u0030\u0030\u0070\u0078",'\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':' 💾  Güncelle','\u0061\u006C\u006C\u006F\u0077\u004F\u0075\u0074\u0073\u0069\u0064\u0065\u0043\u006C\u0069\u0063\u006B':false,'\u0061\u006C\u006C\u006F\u0077\u0045\u0073\u0063\u0061\u0070\u0065\u004B\u0065\u0079':false,'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>{if(_0x3352a)window['\u0072\u0065\u0063\u0061\u006C\u0063\u0054\u006F\u0074\u0061\u006C\u0053\u006C\u0069\u0064\u0065\u0072\u0053\u0063\u006F\u0072\u0065']();else if(_0xff6b)window['\u0072\u0065\u0063\u0061\u006C\u0063\u0054\u006F\u0074\u0061\u006C\u0053\u0063\u006F\u0072\u0065']();},'\u0070\u0072\u0065\u0043\u006F\u006E\u0066\u0069\u0072\u006D':()=>{const _0x68ca=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("dillac-lave".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'];const _0xb8688c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0065\u0076\u0061\u006C\u002D\u0063\u0061\u006C\u006C\u0064\u0061\u0074\u0065")['\u0076\u0061\u006C\u0075\u0065'];var _0x99d48e=(334053^334054)+(318597^318594);let _0x54_0xafe=_0xb8688c;_0x99d48e=(421445^421441)+(994693^994692);if(_0xb8688c['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u002D")){let _0xadb8c;const p=_0xb8688c['\u0073\u0070\u006C\u0069\u0074']("\u002D");_0xadb8c='\u006C\u006C\u006C\u006F\u0069\u0068';if(p['\u006C\u0065\u006E\u0067\u0074\u0068']===(556739^556736))_0x54_0xafe=`${p[586509^586511]}.${p[198635^198634]}.${p[864581^864581]}`;}const _0xd6g=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0065\u0076\u0061\u006C\u002D\u0066\u0065\u0065\u0064\u0062\u0061\u0063\u006B")['\u0076\u0061\u006C\u0075\u0065'];if(_0x71e11f){let _0x336dfb=614801^614801;let _0x7bc27b;let _0xf9ae=[];_0x7bc27b=(521367^521375)+(997070^997063);for(let i=700569^700569;i<_0x22e27b['\u006C\u0065\u006E\u0067\u0074\u0068'];i++){var _0x45g87f=(388158^388151)+(444472^444475);const c=_0x22e27b[i];_0x45g87f=(224928^224932)+(393221^393219);if(parseInt(c['\u0070\u006F\u0069\u006E\u0074\u0073'])===(728959^728959))continue;let _0x55_0xfec=836276^836276;let _0x7cfd;let _0xg3cfgg=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`note-${i}`)['\u0076\u0061\u006C\u0075\u0065'];_0x7cfd=(615636^615644)+(834949^834950);if(_0xff6b)_0x55_0xfec=parseInt(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`badge-${i}`)['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074'])||817491^817491;else if(_0x3352a)_0x55_0xfec=parseInt(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`slider-${i}`)['\u0076\u0061\u006C\u0075\u0065'])||582042^582042;else _0x55_0xfec=parseInt(c['\u0070\u006F\u0069\u006E\u0074\u0073']);_0x336dfb+=_0x55_0xfec;_0xf9ae['\u0070\u0075\u0073\u0068']({'\u0071':c['\u0074\u0065\u0078\u0074'],'\u006D\u0061\u0078':parseInt(c['\u0070\u006F\u0069\u006E\u0074\u0073']),"score":_0x55_0xfec,"note":_0xg3cfgg});}return{'\u0061\u0067\u0065\u006E\u0074\u004E\u0061\u006D\u0065':_0x58c59a,'\u0063\u0061\u006C\u006C\u0049\u0064':_0x68ca,'\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065':_0x54_0xafe,"score":_0x336dfb,"details":JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](_0xf9ae),"feedback":_0xd6g};}else{return{"agentName":_0x58c59a,'\u0063\u0061\u006C\u006C\u0049\u0064':_0x68ca,'\u0063\u0061\u006C\u006C\u0044\u0061\u0074\u0065':_0x54_0xafe,"score":parseInt(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0065\u0076\u0061\u006C\u002D\u006D\u0061\u006E\u0075\u0061\u006C\u002D\u0073\u0063\u006F\u0072\u0065")['\u0076\u0061\u006C\u0075\u0065']),'\u0064\u0065\u0074\u0061\u0069\u006C\u0073':document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("sliated-lave".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'],"feedback":_0xd6g};}}});if(formValues){Swal['\u0066\u0069\u0072\u0065']({"title":'Güncelleniyor...','\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']()});fetch(SCRIPT_URL,{"method":"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":"updateEvaluation","username":currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken(),...formValues})})['\u0074\u0068\u0065\u006E'](r=>r['\u006A\u0073\u006F\u006E']())['\u0074\u0068\u0065\u006E'](d=>{if(d['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':'success',"title":"\u0047\u00FC\u006E\u0063\u0065\u006C\u006C\u0065\u006E\u0064\u0069","timer":1500,'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false});fetchEvaluationsForAgent(_0x58c59a);fetchFeedbackLogs()['\u0074\u0068\u0065\u006E'](()=>{loadFeedbackList();});}else{Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",d['\u006D\u0065\u0073\u0073\u0061\u0067\u0065'],"\u0065\u0072\u0072\u006F\u0072");}});}}const TELESales_OFFERS_FALLBACK=[{"offer":"YILLIK - 1299 TL","\u0073\u0065\u0067\u006D\u0065\u006E\u0074":"WİNBACK","\u0064\u0065\u0073\u0063\u0072\u0069\u0070\u0074\u0069\u006F\u006E":"\u004B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131\u0020\u0064\u0061\u0068\u0061\u0020\u00F6\u006E\u0063\u0065\u0020\u0061\u0079\u006C\u0131\u006B\u0020\u0079\u0061\u0020\u0064\u0061\u0020\u0079\u0131\u006C\u006C\u0131\u006B\u0020\u0068\u0065\u0072\u0068\u0061\u006E\u0067\u0069\u0020\u0062\u0069\u0072\u0020\u0070\u0061\u006B\u0065\u0074\u0020\u006B\u0075\u006C\u006C\u0061\u006E\u006D\u0131\u015F\u002C\u0020\u0061\u0072\u0064\u0131\u006E\u0064\u0061\u006E\u0020\u0070\u0061\u006B\u0065\u0074\u0020\u0073\u006F\u006E\u006C\u0061\u006E\u006D\u0131\u015F\u0020\u0076\u0065\u0020\u015F\u0075\u0020\u0061\u006E\u0064\u0061\u0020\u0061\u006B\u0074\u0069\u0066\u0020\u0070\u0061\u006B\u0065\u0074\u0069\u0020\u006F\u006C\u006D\u0061\u0079\u0061\u006E\u0020\u006B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131\u006C\u0061\u0072\u0131\u0020\u0061\u0072\u0061\u0064\u0131\u011F\u0131\u006D\u0131\u007A\u0020\u0062\u0069\u0072\u0020\u0064\u0061\u0074\u0061","\u006E\u006F\u0074\u0065":"Kullanıcının izleme geçmişi olabilir."},{"offer":"AYLIK  - 6 AY 109 TL","\u0073\u0065\u0067\u006D\u0065\u006E\u0074":"\u0057\u0130\u004E\u0042\u0041\u0043\u004B","\u0064\u0065\u0073\u0063\u0072\u0069\u0070\u0074\u0069\u006F\u006E":"\u004B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131\u0020\u0064\u0061\u0068\u0061\u0020\u00F6\u006E\u0063\u0065\u0020\u0061\u0079\u006C\u0131\u006B\u0020\u0079\u0061\u0020\u0064\u0061\u0020\u0079\u0131\u006C\u006C\u0131\u006B\u0020\u0068\u0065\u0072\u0068\u0061\u006E\u0067\u0069\u0020\u0062\u0069\u0072\u0020\u0070\u0061\u006B\u0065\u0074\u0020\u006B\u0075\u006C\u006C\u0061\u006E\u006D\u0131\u015F\u002C\u0020\u0061\u0072\u0064\u0131\u006E\u0064\u0061\u006E\u0020\u0070\u0061\u006B\u0065\u0074\u0020\u0073\u006F\u006E\u006C\u0061\u006E\u006D\u0131\u015F\u0020\u0076\u0065\u0020\u015F\u0075\u0020\u0061\u006E\u0064\u0061\u0020\u0061\u006B\u0074\u0069\u0066\u0020\u0070\u0061\u006B\u0065\u0074\u0069\u0020\u006F\u006C\u006D\u0061\u0079\u0061\u006E\u0020\u006B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131\u006C\u0061\u0072\u0131\u0020\u0061\u0072\u0061\u0064\u0131\u011F\u0131\u006D\u0131\u007A\u0020\u0062\u0069\u0072\u0020\u0064\u0061\u0074\u0061","note":"Kullanıcının izleme geçmişi olabilir."},{"offer":"YILLIK - 1399 TL","\u0073\u0065\u0067\u006D\u0065\u006E\u0074":"\u0043\u0041\u004E\u0043\u0045\u004C\u004C\u0130\u004E\u0047","description":"\u0041\u0062\u006F\u006E\u0065\u006C\u0069\u011F\u0069\u006E\u0064\u0065\u0020\u0069\u0070\u0074\u0061\u006C\u0020\u0074\u0061\u006C\u0065\u0062\u0069\u006E\u0064\u0065\u0020\u0062\u0075\u006C\u0075\u006E\u006D\u0075\u015F\u002C\u0020\u0070\u0061\u006B\u0065\u0074\u0020\u0073\u00FC\u0072\u0065\u0073\u0069\u0020\u0062\u0069\u0074\u0069\u006D\u0069\u006E\u0065\u0020\u006B\u0061\u0064\u0061\u0072\u0020\u0065\u0072\u0069\u015F\u0069\u006D\u0065\u0020\u0064\u0065\u0076\u0061\u006D\u0020\u0065\u0064\u0065\u006E\u002C\u0020\u0067\u0065\u0072\u0069\u0020\u006B\u0061\u007A\u0061\u006E\u0131\u006D\u0020\u0069\u00E7\u0069\u006E\u0020\u0061\u0072\u0061\u0064\u0131\u011F\u0131\u006D\u0131\u007A\u0020\u0062\u0069\u0072\u0020\u0064\u0061\u0074\u0061","note":"Kullanıcının izleme geçmişi olabilir. İndirim oranı yüksek + Kullanıcının bir iptal nedeni olabilir"},{"offer":"\u0041\u0059\u004C\u0049\u004B\u0020\u0020\u002D\u0020\u0036\u0020\u0041\u0059\u0020\u0031\u0031\u0039\u0020\u0054\u004C","\u0073\u0065\u0067\u006D\u0065\u006E\u0074":"CANCELLİNG","description":"\u0041\u0062\u006F\u006E\u0065\u006C\u0069\u011F\u0069\u006E\u0064\u0065\u0020\u0069\u0070\u0074\u0061\u006C\u0020\u0074\u0061\u006C\u0065\u0062\u0069\u006E\u0064\u0065\u0020\u0062\u0075\u006C\u0075\u006E\u006D\u0075\u015F\u002C\u0020\u0070\u0061\u006B\u0065\u0074\u0020\u0073\u00FC\u0072\u0065\u0073\u0069\u0020\u0062\u0069\u0074\u0069\u006D\u0069\u006E\u0065\u0020\u006B\u0061\u0064\u0061\u0072\u0020\u0065\u0072\u0069\u015F\u0069\u006D\u0065\u0020\u0064\u0065\u0076\u0061\u006D\u0020\u0065\u0064\u0065\u006E\u002C\u0020\u0067\u0065\u0072\u0069\u0020\u006B\u0061\u007A\u0061\u006E\u0131\u006D\u0020\u0069\u00E7\u0069\u006E\u0020\u0061\u0072\u0061\u0064\u0131\u011F\u0131\u006D\u0131\u007A\u0020\u0062\u0069\u0072\u0020\u0064\u0061\u0074\u0061","note":"\u004B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131\u006E\u0131\u006E\u0020\u0069\u007A\u006C\u0065\u006D\u0065\u0020\u0067\u0065\u00E7\u006D\u0069\u015F\u0069\u0020\u006F\u006C\u0061\u0062\u0069\u006C\u0069\u0072\u002E\u0020\u0130\u006E\u0064\u0069\u0072\u0069\u006D\u0020\u006F\u0072\u0061\u006E\u0131\u0020\u0079\u00FC\u006B\u0073\u0065\u006B\u0020\u002B\u0020\u004B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131\u006E\u0131\u006E\u0020\u0062\u0069\u0072\u0020\u0069\u0070\u0074\u0061\u006C\u0020\u006E\u0065\u0064\u0065\u006E\u0069\u0020\u006F\u006C\u0061\u0062\u0069\u006C\u0069\u0072"},{"\u006F\u0066\u0066\u0065\u0072":"\u0059\u0049\u004C\u004C\u0049\u004B\u0020\u002D\u0020\u0031\u0034\u0039\u0039\u0020\u0054\u004C","\u0073\u0065\u0067\u006D\u0065\u006E\u0074":"ACTİVE GRACE","\u0064\u0065\u0073\u0063\u0072\u0069\u0070\u0074\u0069\u006F\u006E":"Paket yenileme sürecine giren fakat ücret alınamadığı için paketi yenilenemeyen kullanıcıları aradığımız bir data","\u006E\u006F\u0074\u0065":"\u0050\u0061\u006B\u0065\u0074\u0020\u0079\u0065\u006E\u0069\u006C\u0065\u006D\u0065\u0020\u0073\u00FC\u0072\u0065\u0063\u0069\u006E\u0064\u0065\u006E\u0020\u0062\u0069\u0072\u0020\u00F6\u0064\u0065\u006D\u0065\u0020\u0073\u006F\u0072\u0075\u006E\u0075\u0020\u006F\u006C\u0075\u015F\u0074\u0075\u011F\u0075\u006E\u0075\u0020\u0062\u0075\u0020\u006E\u0065\u0064\u0065\u006E\u006C\u0065\u0020\u0061\u0062\u006F\u006E\u0065\u006C\u0069\u011F\u0069\u006E\u0069\u006E\u0020\u0079\u0065\u006E\u0069\u006C\u0065\u006E\u006D\u0065\u0064\u0069\u011F\u0069\u006E\u0069\u002C\u0020\u006B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131\u0079\u0061\u0020\u0068\u0065\u006D\u0020\u0062\u0075\u0020\u0073\u006F\u0072\u0075\u006E\u0075\u0020\u00E7\u00F6\u007A\u006D\u0065\u006B\u0020\u0068\u0065\u006D\u0020\u0064\u0065\u0020\u0069\u006E\u0064\u0069\u0072\u0069\u006D\u006C\u0069\u0020\u0066\u0069\u0079\u0061\u0074\u006C\u0061\u0072\u0020\u00FC\u007A\u0065\u0072\u0069\u006E\u0064\u0065\u006E\u0020\u0079\u0061\u0072\u0064\u0131\u006D\u0063\u0131\u0020\u006F\u006C\u006D\u0061\u006B\u0020\u002B\u0130\u00E7\u0065\u0072\u0069\u006B"},{"offer":"\u0041\u0059\u004C\u0049\u004B\u0020\u0020\u002D\u0020\u0036\u0020\u0041\u0059\u0020\u0031\u0030\u0039\u0020\u0054\u004C","\u0073\u0065\u0067\u006D\u0065\u006E\u0074":"ACTİVE GRACE","\u0064\u0065\u0073\u0063\u0072\u0069\u0070\u0074\u0069\u006F\u006E":"Paket yenileme sürecine giren fakat ücret alınamadığı için paketi yenilenemeyen kullanıcıları aradığımız bir data","note":"\u0050\u0061\u006B\u0065\u0074\u0020\u0079\u0065\u006E\u0069\u006C\u0065\u006D\u0065\u0020\u0073\u00FC\u0072\u0065\u0063\u0069\u006E\u0064\u0065\u006E\u0020\u0062\u0069\u0072\u0020\u00F6\u0064\u0065\u006D\u0065\u0020\u0073\u006F\u0072\u0075\u006E\u0075\u0020\u006F\u006C\u0075\u015F\u0074\u0075\u011F\u0075\u006E\u0075\u0020\u0062\u0075\u0020\u006E\u0065\u0064\u0065\u006E\u006C\u0065\u0020\u0061\u0062\u006F\u006E\u0065\u006C\u0069\u011F\u0069\u006E\u0069\u006E\u0020\u0079\u0065\u006E\u0069\u006C\u0065\u006E\u006D\u0065\u0064\u0069\u011F\u0069\u006E\u0069\u002C\u0020\u006B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131\u0079\u0061\u0020\u0068\u0065\u006D\u0020\u0062\u0075\u0020\u0073\u006F\u0072\u0075\u006E\u0075\u0020\u00E7\u00F6\u007A\u006D\u0065\u006B\u0020\u0068\u0065\u006D\u0020\u0064\u0065\u0020\u0069\u006E\u0064\u0069\u0072\u0069\u006D\u006C\u0069\u0020\u0066\u0069\u0079\u0061\u0074\u006C\u0061\u0072\u0020\u00FC\u007A\u0065\u0072\u0069\u006E\u0064\u0065\u006E\u0020\u0079\u0061\u0072\u0064\u0131\u006D\u0063\u0131\u0020\u006F\u006C\u006D\u0061\u006B\u0020\u002B\u0130\u00E7\u0065\u0072\u0069\u006B"},{"\u006F\u0066\u0066\u0065\u0072":"YILLIK - 1499 TL","\u0073\u0065\u0067\u006D\u0065\u006E\u0074":"INBOUND","\u0064\u0065\u0073\u0063\u0072\u0069\u0070\u0074\u0069\u006F\u006E":"Inbound üzerinden gelen satın alma talepleri ya da satışa ikna edilen kullanıcılar için sunulan teklif","\u006E\u006F\u0074\u0065":""},{"\u006F\u0066\u0066\u0065\u0072":"AYLIK - 6 AY 139,5 TL","segment":"\u0049\u004E\u0042\u004F\u0055\u004E\u0044","\u0064\u0065\u0073\u0063\u0072\u0069\u0070\u0074\u0069\u006F\u006E":"Inbound üzerinden gelen satın alma talepleri ya da satışa ikna edilen kullanıcılar için sunulan teklif","note":""}];const SPORTS_RIGHTS_FALLBACK=[{"\u0069\u0074\u0065\u006D":"\u0045\u0075\u0072\u006F\u006C\u0065\u0061\u0067\u0075\u0065\u0020\u006D\u0061\u00E7\u006C\u0061\u0072\u0131\u0020\u0076\u0065\u0020\u0073\u0074\u00FC\u0064\u0079\u006F\u0020\u0070\u0072\u006F\u0067\u0072\u0061\u006D\u006C\u0061\u0072\u0131","period":"\u0032\u0030\u0032\u0035\u002D\u0032\u0030\u0032\u0036\u0020\u002F\u0020\u0032\u0030\u0032\u0036\u002D\u0020\u0032\u0030\u0032\u0037\u0020\u002F\u0020\u0032\u0030\u0032\u0037\u002D\u0032\u0030\u0032\u0038\u0020\u002F\u0020\u0032\u0030\u0032\u0038\u002D\u0032\u0030\u0032\u0039","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"Bundesliga","\u0070\u0065\u0072\u0069\u006F\u0064":"2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029","\u006E\u006F\u0074\u0065":""},{"item":"\u0042\u0075\u006E\u0064\u0065\u0073\u006C\u0069\u0067\u0061\u0020\u0032","period":"\u0032\u0030\u0032\u0035\u002D\u0032\u0030\u0032\u0036\u0020\u002F\u0020\u0032\u0030\u0032\u0036\u002D\u0020\u0032\u0030\u0032\u0037\u0020\u002F\u0020\u0032\u0030\u0032\u0037\u002D\u0032\u0030\u0032\u0038\u0020\u002F\u0020\u0032\u0030\u0032\u0038\u002D\u0032\u0030\u0032\u0039","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"İspanya LaLiga önemli maçları","period":"2025 - 2026 / 2026 - 2027","note":""},{"\u0069\u0074\u0065\u006D":"\u004C\u0061\u004C\u0069\u0067\u0061\u0020\u0032\u0020\u00F6\u006E\u0065\u006D\u006C\u0069\u0020\u006D\u0061\u00E7\u006C\u0061\u0072\u0131","\u0070\u0065\u0072\u0069\u006F\u0064":"\u0032\u0030\u0032\u0035\u0020\u002D\u0020\u0032\u0030\u0032\u0036\u0020\u002F\u0020\u0032\u0030\u0032\u0036\u0020\u002D\u0020\u0032\u0030\u0032\u0037","\u006E\u006F\u0074\u0065":""},{"item":"İtalya Serie A önemli maçları","period":"\u0032\u0030\u0032\u0035\u0020\u002D\u0020\u0032\u0030\u0032\u0036\u0020\u002F\u0020\u0032\u0030\u0032\u0036\u0020\u002D\u0020\u0032\u0030\u0032\u0037","note":""},{"item":"Portekiz Liga Portugal önemli maçları","\u0070\u0065\u0072\u0069\u006F\u0064":"2025 - 2026","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"Suudi Arabistan Pro Lig önemli maçları","period":"\u0032\u0030\u0032\u0035\u002D\u0032\u0030\u0032\u0036\u0020\u002F\u0020\u0032\u0030\u0032\u0036\u002D\u0020\u0032\u0030\u0032\u0037\u0020\u002F\u0020\u0032\u0030\u0032\u0037\u002D\u0032\u0030\u0032\u0038\u0020\u002F\u0020\u0032\u0030\u0032\u0038\u002D\u0032\u0030\u0032\u0039","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"Hollanda Ligi","\u0070\u0065\u0072\u0069\u006F\u0064":"\u0032\u0030\u0032\u0035\u002D\u0032\u0030\u0032\u0036\u0020\u002F\u0020\u0032\u0030\u0032\u0036\u002D\u0020\u0032\u0030\u0032\u0037\u0020\u002F\u0020\u0032\u0030\u0032\u0037\u002D\u0032\u0030\u0032\u0038\u0020\u002F\u0020\u0032\u0030\u0032\u0038\u002D\u0032\u0030\u0032\u0039","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"\u0130\u0073\u006B\u006F\u00E7\u0079\u0061\u0020\u0050\u0072\u0065\u006D\u0069\u0065\u0072\u0073\u0068\u0069\u0070\u0020\u00F6\u006E\u0065\u006D\u006C\u0069\u0020\u006D\u0061\u00E7\u006C\u0061\u0072\u0131","\u0070\u0065\u0072\u0069\u006F\u0064":"\u0032\u0030\u0032\u0035\u0020\u002D\u0020\u0032\u0030\u0032\u0036\u0020\u002F\u0020\u0032\u0030\u0032\u0036\u0020\u002D\u0020\u0032\u0030\u0032\u0037","\u006E\u006F\u0074\u0065":""},{"item":"NCAA Amerikan Futbol","\u0070\u0065\u0072\u0069\u006F\u0064":"\u0032\u0030\u0032\u0035\u0020\u002D\u0020\u0032\u0030\u0032\u0036\u0020\u002F\u0020\u0032\u0030\u0032\u0036\u0020\u002D\u0020\u0032\u0030\u0032\u0037","\u006E\u006F\u0074\u0065":""},{"item":"\u004E\u0043\u0041\u0041\u0020\u0042\u0061\u0073\u006B\u0065\u0074\u0062\u006F\u006C","\u0070\u0065\u0072\u0069\u006F\u0064":"2025 - 2026 / 2026 - 2027","\u006E\u006F\u0074\u0065":""},{"item":"NFL","\u0070\u0065\u0072\u0069\u006F\u0064":"2025 - 2026","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"\u004E\u0042\u0041","period":"2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029","note":""},{"\u0069\u0074\u0065\u006D":"\u0045\u0075\u0072\u006F\u0043\u0075\u0070","\u0070\u0065\u0072\u0069\u006F\u0064":"\u0032\u0030\u0032\u0035\u002D\u0032\u0030\u0032\u0036\u0020\u002F\u0020\u0032\u0030\u0032\u0036\u002D\u0020\u0032\u0030\u0032\u0037\u0020\u002F\u0020\u0032\u0030\u0032\u0037\u002D\u0032\u0030\u0032\u0038\u0020\u002F\u0020\u0032\u0030\u0032\u0038\u002D\u0032\u0030\u0032\u0039","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"Yunanistan Basketbol Ligi önemli maçları","\u0070\u0065\u0072\u0069\u006F\u0064":"\u0032\u0030\u0032\u0035\u0020\u002D\u0020\u0032\u0030\u0032\u0036\u0020\u0053\u0065\u007A\u006F\u006E\u0020\u0062\u0065\u006C\u0069\u0072\u0073\u0069\u007A","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"\u004E\u0043\u0041\u0041","period":"\u0032\u0030\u0032\u0035\u0020\u002D\u0020\u0032\u0030\u0032\u0036\u0020\u002F\u0020\u0032\u0030\u0032\u0036\u0020\u002D\u0020\u0032\u0030\u0032\u0037","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"\u004C\u0069\u0062\u0065\u0072\u0074\u0061\u0064\u006F\u0072\u0065\u0073\u0020\u004B\u0075\u0070\u0061\u0073\u0131","\u0070\u0065\u0072\u0069\u006F\u0064":"2027, 2028, 2029, 2030 (4 seasons)","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"\u0043\u006F\u0070\u0061\u0020\u0053\u0075\u0064\u0061\u006D\u0065\u0072\u0069\u0063\u0061\u006E\u0061","\u0070\u0065\u0072\u0069\u006F\u0064":"\u0032\u0030\u0032\u0037\u002C\u0020\u0032\u0030\u0032\u0038\u002C\u0020\u0032\u0030\u0032\u0039\u002C\u0020\u0032\u0030\u0033\u0030\u0020\u0028\u0034\u0020\u0073\u0065\u0061\u0073\u006F\u006E\u0073\u0029","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"WRC","\u0070\u0065\u0072\u0069\u006F\u0064":"\u0032\u0030\u0032\u0035","note":"\u0032\u0030\u0032\u0036\u0020\u0064\u0061\u0020\u0061\u006C\u0131\u006E\u0061\u0062\u0069\u006C\u0069\u0072\u0020\u006E\u0065\u0074\u0020\u0064\u0065\u011F\u0069\u006C"},{"\u0069\u0074\u0065\u006D":"Nascar","\u0070\u0065\u0072\u0069\u006F\u0064":"\u0032\u0030\u0032\u0035\u0020\u002D\u0020\u0032\u0030\u0032\u0036\u0020\u002D\u0020\u0032\u0030\u0032\u0037\u0020\u002D\u0020\u0032\u0030\u0032\u0038\u0020\u0076\u0065\u0020\u0032\u0030\u0032\u0039","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"IndyCar","period":"\u0032\u0030\u0032\u0035\u0020\u002D\u0020\u0032\u0030\u0032\u0036\u0020\u002D\u0020\u0032\u0030\u0032\u0037","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"\u004D\u006F\u0074\u006F\u0047\u0050\u0020\u002D\u0020\u004D\u006F\u0074\u006F\u0032\u0020\u002D\u0020\u004D\u006F\u0074\u006F\u0033","period":"\u0032\u0030\u0032\u0035\u0020\u002D\u0020\u0032\u0030\u0032\u0036\u0020\u002D\u0020\u0032\u0030\u0032\u0037","\u006E\u006F\u0074\u0065":""},{"item":"\u0041\u0054\u0050\u0020\u0054\u0065\u006E\u0069\u0073\u0020\u0054\u0075\u0072\u006E\u0075\u0076\u0061\u006C\u0061\u0072\u0131\u0020\u00F6\u006E\u0065\u006D\u006C\u0069\u0020\u006D\u0061\u00E7\u006C\u0061\u0072","\u0070\u0065\u0072\u0069\u006F\u0064":"\u0032\u0030\u0032\u0035\u0020\u002D\u0020\u0032\u0030\u0032\u0036\u0020\u002D\u0020\u0032\u0030\u0032\u0037\u0020\u0061\u006E\u0064\u0020\u0032\u0030\u0032\u0038","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"\u0057\u0069\u006D\u0062\u006C\u0065\u0064\u006F\u006E\u0020\u0054\u0065\u006E\u0069\u0073\u0020\u00F6\u006E\u0065\u006D\u006C\u0069\u0020\u006D\u0061\u00E7\u006C\u0061\u0072","\u0070\u0065\u0072\u0069\u006F\u0064":"2025 - 2026 - 2027","note":""},{"\u0069\u0074\u0065\u006D":"UFC Dövüş Gecesi yayınları","period":"\u0032\u0030\u0032\u0037\u0020\u0073\u006F\u006E\u0075\u006E\u0061\u0020\u006B\u0061\u0064\u0061\u0072\u0020\u0062\u0069\u007A\u0064\u0065","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"\u004F\u006B\u0074\u0061\u0067\u006F\u006E","period":"2025","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"\u0050\u0046\u004C\u0020\u004D\u004D\u0041","period":"\u0032\u0030\u0032\u0035","\u006E\u006F\u0074\u0065":""},{"item":"Cage Warriors Boks Maçları","period":"\u0032\u0030\u0032\u0035","\u006E\u006F\u0074\u0065":""},{"\u0069\u0074\u0065\u006D":"\u0042\u004B\u0046\u0043","\u0070\u0065\u0072\u0069\u006F\u0064":"\u004B\u0061\u006C\u0064\u0131\u0072\u0131\u006C\u0064\u0131","note":""}];function setActiveFilterButton(btn){try{document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u002E\u0066\u0069\u006C\u0074\u0065\u0072\u002D\u0062\u0074\u006E")['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](b=>b['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("evitca".split("").reverse().join("")));if(btn)btn['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0063\u0074\u0069\u0076\u0065");}catch(e){}}function showHomeScreen(_0x141c){const _0x9f_0x624=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0068\u006F\u006D\u0065\u002D\u0073\u0063\u0072\u0065\u0065\u006E");_0x141c="mbmihh".split("").reverse().join("");var _0xc9c=(894211^894214)+(123081^123081);const _0xf485bd=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0063\u0061\u0072\u0064\u0047\u0072\u0069\u0064");_0xc9c='\u006A\u006F\u0068\u006C\u0063\u0069';const _0x57_0xb79=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("egasseMytpme".split("").reverse().join(""));if(_0x9f_0x624)_0x9f_0x624['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0062\u006C\u006F\u0063\u006B";if(_0xf485bd)_0xf485bd['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";if(_0x57_0xb79)_0x57_0xb79['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";renderHomePanels();}function hideHomeScreen(_0xa5a8dd){var _0xa6b=(852937^852940)+(777231^777225);const _0xcc_0x8fc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("neercs-emoh".split("").reverse().join(""));_0xa6b=(190087^190082)+(764558^764557);if(_0xcc_0x8fc)_0xcc_0x8fc['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");const _0x36d6g=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("dirGdrac".split("").reverse().join(""));_0xa5a8dd=(534995^534995)+(340235^340227);if(_0x36d6g)_0x36d6g['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="dirg".split("").reverse().join("");}function renderHomePanels(_0xf9f){var _0x197e8g=(853334^853334)+(796618^796611);const _0x93a0e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("yadot-emoh".split("").reverse().join(""));_0x197e8g=(872602^872594)+(911568^911576);if(_0x93a0e){_0x93a0e['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=">vid/<...royinelk\xFCy \u0131\u015F\u0131ka n\u0131yaY>\"meti-inim-emoh\"=ssalc vid<".split("").reverse().join("");(async()=>{try{const _0xed199b=await fetchBroadcastFlow();let _0xb321e;const d=new Date();_0xb321e=(104385^104388)+(573493^573489);let _0xe86cbe;const _0x76b=`${d['\u0067\u0065\u0074\u0046\u0075\u006C\u006C\u0059\u0065\u0061\u0072']()}-${String(d['\u0067\u0065\u0074\u004D\u006F\u006E\u0074\u0068']()+(826698^826699))['\u0070\u0061\u0064\u0053\u0074\u0061\u0072\u0074'](849834^849832,"\u0030")}-${String(d['\u0067\u0065\u0074\u0044\u0061\u0074\u0065']())['\u0070\u0061\u0064\u0053\u0074\u0061\u0072\u0074'](838689^838691,"\u0030")}`;_0xe86cbe=(692745^692747)+(183826^183828);var _0xf5b6b=(282285^282286)+(571203^571201);const _0x2144cc=val=>{var _0xcda=(377389^377387)+(326804^326804);const s=String(val||'')['\u0074\u0072\u0069\u006D']();_0xcda='\u0061\u006F\u0066\u006F\u0066\u0066';if(!s)return'';if(new RegExp('\u005E\u005C\u0064\u007B\u0034\u007D\u002D\u005C\u0064\u007B\u0032\u007D\u002D\u005C\u0064\u007B\u0032\u007D\u0024',"")['\u0074\u0065\u0073\u0074'](s))return s;const m=s['\u006D\u0061\u0074\u0063\u0068'](new RegExp('\u005E\u0028\u005C\u0064\u007B\u0032\u007D\u0029\u005C\u002E\u0028\u005C\u0064\u007B\u0032\u007D\u0029\u005C\u002E\u0028\u005C\u0064\u007B\u0034\u007D\u0029\u0024',""));if(m)return`${m[422560^422563]}-${m[458076^458078]}-${m[781832^781833]}`;return'';};_0xf5b6b=(333985^333989)+(777184^777185);const _0xa74e=(_0xed199b||[])['\u0066\u0069\u006C\u0074\u0065\u0072'](it=>{const _0xec_0xf0c=_0x2144cc(it['\u0064\u0061\u0074\u0065\u0049\u0053\u004F']||it['\u0064\u0061\u0074\u0065']);if(_0xec_0xf0c!==_0x76b)return false;const _0xb4dd=Date['\u006E\u006F\u0077']();const _0x854ffa=Number(it['\u0073\u0074\u0061\u0072\u0074\u0045\u0070\u006F\u0063\u0068']||918947^918947);if(_0x854ffa)return _0x854ffa>_0xb4dd;const t=String(it['\u0074\u0069\u006D\u0065']||'')['\u0074\u0072\u0069\u006D']();var _0xfd0e=(408248^408249)+(469946^469944);const m=t['\u006D\u0061\u0074\u0063\u0068'](new RegExp('\u005E\u0028\u005C\u0064\u007B\u0032\u007D\u0029\u003A\u0028\u005C\u0064\u007B\u0032\u007D\u0029\u0028\u003F\u003A\u003A\u0028\u005C\u0064\u007B\u0032\u007D\u0029\u0029\u003F\u0024',""));_0xfd0e=(121576^121583)+(286531^286534);if(!m)return!![];const _0x611ecd=parseInt(m[600302^600303],331888^331898),_0xad91f=parseInt(m[228052^228054],394849^394859),_0x79b2d=parseInt(m[915115^915112]||"\u0030",967623^967629);const _0x048fac=new Date();_0x048fac['\u0073\u0065\u0074\u0048\u006F\u0075\u0072\u0073'](_0x611ecd,_0xad91f,_0x79b2d,101245^101245);return _0x048fac['\u0067\u0065\u0074\u0054\u0069\u006D\u0065']()>_0xb4dd;});if(!_0xa74e['\u006C\u0065\u006E\u0067\u0074\u0068']){_0x93a0e['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=">vid/<.\u0131damanulub \u0131dyak \u0131\u015F\u0131ka n\u0131yay ni\xE7i n\xFCguB>\"meti-inim-emoh\"=ssalc vid<".split("").reverse().join("");}else{const _0x3b3a5a=_0xa74e['\u0073\u006C\u0069\u0063\u0065'](879834^879834,362334^362330);_0x93a0e['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x3b3a5a['\u006D\u0061\u0070'](it=>{var _0x2e783b=(416174^416170)+(742827^742831);const _0x55e7ab=escapeHtml(it['\u0074\u0069\u006D\u0065']||'');_0x2e783b=(690857^690863)+(495609^495612);const _0xg7eg6f=escapeHtml(it['\u006D\u0061\u0074\u0063\u0068']||it['\u0074\u0069\u0074\u006C\u0065']||it['\u0065\u0076\u0065\u006E\u0074']||'');const _0x15d92a=escapeHtml(it['\u0063\u0068\u0061\u006E\u006E\u0065\u006C']||it['\u0070\u006C\u0061\u0074\u0066\u006F\u0072\u006D']||'');let _0xb382c;const _0xge3cb=escapeHtml(it['\u006C\u0065\u0061\u0067\u0075\u0065']||it['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079']||'');_0xb382c="ijcgfj".split("").reverse().join("");const _0x701d=escapeHtml(it['\u0073\u0070\u0069\u006B\u0065\u0072']||it['\u0073\u0070\u0069\u006B\u0065\u0072\u0073']||it['\u0063\u006F\u006D\u006D\u0065\u006E\u0074\u0061\u0074\u006F\u0072']||it['\u0063\u006F\u006D\u006D\u0065\u006E\u0074\u0061\u0074\u006F\u0072\u0073']||'');return`
+        </div>`;
+
+    const { value: formValues } = await Swal.fire({
+        html: contentHtml,
+        width: '600px',
+        showCancelButton: true,
+        confirmButtonText: ' 💾  Kaydet',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        didOpen: () => {
+            if (isTelesatis) window.recalcTotalSliderScore();
+            else if (isChat) window.recalcTotalScore();
+        },
+        preConfirm: () => {
+            const callId = document.getElementById('eval-callid').value.trim();
+            if (!callId) {
+                Swal.showValidationMessage('Call ID alanı boş bırakılamaz!');
+                return false;
+            }
+
+            const callDateRaw = document.getElementById('eval-calldate').value;
+            const dateParts = callDateRaw.split('-');
+            const formattedCallDate = dateParts.length === 3 ? `${dateParts[2]}.${dateParts[1]}.${dateParts[0]}` : callDateRaw;
+
+            if (isCriteriaBased) {
+                let total = 0; let detailsArr = [];
+                for (let i = 0; i < criteriaList.length; i++) {
+                    const c = criteriaList[i]; if (parseInt(c.points) === 0) continue;
+                    let val = 0; let note = document.getElementById(`note-${i}`).value;
+                    if (isChat) val = parseInt(document.getElementById(`badge-${i}`).innerText) || 0;
+                    else if (isTelesatis) val = parseInt(document.getElementById(`slider-${i}`).value) || 0;
+                    total += val; detailsArr.push({ q: c.text, max: parseInt(c.points), score: val, note: note });
+                }
+                return { agentName, agentGroup, callId, callDate: formattedCallDate, score: total, details: JSON.stringify(detailsArr), feedback: document.getElementById('eval-feedback').value, feedbackType: document.getElementById('feedback-type').value };
+            } else {
+                return { agentName, agentGroup, callId, callDate: formattedCallDate, score: parseInt(document.getElementById('eval-manual-score').value), details: document.getElementById('eval-details').value, feedback: document.getElementById('feedback-type').value };
+            }
+        }
+    });
+    if (formValues) {
+        Swal.fire({ title: 'Kaydediliyor...', didOpen: () => Swal.showLoading() });
+        fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: "logEvaluation", username: currentUser, token: getToken(), ...formValues })
+        })
+            .then(r => r.json()).then(d => {
+                if (d.result === "success") {
+                    Swal.fire({ icon: 'success', title: 'Kaydedildi', timer: 1500, showConfirmButton: false });
+                    // DÜZELTME: Hem evaluations hem de feedback logs güncellenmeli
+                    fetchEvaluationsForAgent(formValues.agentName);
+                    fetchFeedbackLogs().then(() => {
+                        loadFeedbackList();
+                    });
+                } else {
+                    Swal.fire('Hata', d.message, 'error');
+                }
+            });
+    }
+}
+async function editEvaluation(targetCallId) {
+    const evalData = allEvaluationsData.find(item => String(item.callId).trim() === String(targetCallId).trim());
+    if (!evalData) { Swal.fire('Hata', 'Kayıt bulunamadı.', 'error'); return; }
+
+    const agentName = evalData.agent;
+    const agentGroup = evalData.group || 'Genel';
+
+    // Güçlü Normalizasyon
+    const cleanGroup = agentGroup.toLowerCase()
+        .replace(/i̇/g, 'i').replace(/ı/g, 'i').replace(/ş/g, 's')
+        .replace(/ğ/g, 'g').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ç/g, 'c').trim();
+
+    const isChat = cleanGroup.includes('chat') || cleanGroup === 'ob';
+    const isTelesatis = cleanGroup.includes('telesat');
+
+    let criteriaGroup = agentGroup;
+    if (isChat) criteriaGroup = 'Chat';
+    else if (isTelesatis) criteriaGroup = 'Telesatış';
+
+
+    Swal.fire({ title: 'İnceleniyor...', didOpen: () => Swal.showLoading() });
+    let criteriaList = [];
+    if (criteriaGroup && criteriaGroup !== 'Genel') criteriaList = await fetchCriteria(criteriaGroup);
+    Swal.close();
+
+    const isCriteriaBased = criteriaList.length > 0;
+    let oldDetails = []; try { oldDetails = JSON.parse(evalData.details || "[]"); } catch (e) { oldDetails = []; }
+
+    // Tarihi formatla: dd.MM.yyyy -> yyyy-MM-dd (input type=date için)
+    let safeDateVal = "";
+    if (evalData.callDate) {
+        let parts = evalData.callDate.split('.');
+        if (parts.length === 3) safeDateVal = `${parts[2]}-${parts[1]}-${parts[0]}`;
+        else safeDateVal = evalData.callDate;
+    }
+
+    // GÜNCELLENMİŞ MODAL: Call ID gösteriliyor + Tarih Eklendi
+    let contentHtml = `<div class="eval-modal-wrapper" style="border-top:5px solid #1976d2;"><div class="score-dashboard"><div><div style="font-size:0.9rem;">DÜZENLENEN</div><div style="font-size:1.2rem; font-weight:bold; color:#1976d2;">${agentName}</div></div><div class="score-circle-outer" id="score-ring"><div class="score-circle-inner" id="live-score">${evalData.score}</div></div></div><div class="eval-header-card"><div><label>Call ID</label><input id="eval-callid" class="swal2-input" value="${evalData.callId}" readonly style="background:#eee; height:35px; width:100%;"></div><div><label>Çağrı Tarihi</label><input type="date" id="eval-calldate" class="swal2-input" style="height:35px; margin:0; width:100%;" value="${safeDateVal}"></div></div>`;
+
+    if (isCriteriaBased) {
+        contentHtml += `<div class="criteria-container">`;
+        criteriaList.forEach((c, i) => {
+            let pts = parseInt(c.points) || 0; if (pts === 0) return;
+            let mPts = parseInt(c.mediumScore) || 0; let bPts = parseInt(c.badScore) || 0;
+            let oldItem = oldDetails.find(d => d.q === c.text) || (oldDetails[i] ? oldDetails[i] : { score: pts, note: '' });
+            let cVal = parseInt(oldItem.score); let cNote = oldItem.note || '';
+
+            // Geliştirme: Puan başlığı üstüne gelince tam metin gösterilmesi için title eklendi
+            const fullText = escapeForJsString(c.text);
+            if (isChat) {
+                let gAct = cVal === pts ? 'active' : ''; let mAct = (cVal === mPts && mPts !== 0) ? 'active' : ''; let bAct = (cVal === bPts && bPts !== 0) ? 'active' : '';
+                if (cVal === 0 && bPts === 0) bAct = 'active'; else if (cVal === 0 && bPts > 0) { gAct = ''; mAct = ''; bAct = ''; }
+                contentHtml += `<div class="criteria-row" id="row-${i}" data-max-score="${pts}"><div class="criteria-header"><span title="${fullText}">${i + 1}. ${c.text}</span><span>Max: ${pts}</span></div><div class="criteria-controls"><div class="eval-button-group"><button class="eval-button eval-good ${gAct}" data-score="${pts}" onclick="setButtonScore(${i}, ${pts}, ${pts})">İyi</button>${mPts > 0 ? `<button class="eval-button eval-medium ${mAct}" data-score="${mPts}" onclick="setButtonScore(${i}, ${mPts}, ${pts})">Orta</button>` : ''}${bPts > 0 ? `<button class="eval-button eval-bad ${bAct}" data-score="${bPts}" onclick="setButtonScore(${i}, ${bPts}, ${pts})">Kötü</button>` : ''}</div><span class="score-badge" id="badge-${i}">${cVal}</span></div><input type="text" id="note-${i}" class="note-input" value="${cNote}" style="display:${cVal < pts ? 'block' : 'none'}"></div>`;
+            } else if (isTelesatis) {
+                contentHtml += `<div class="criteria-row" id="row-${i}" data-max-score="${pts}"><div class="criteria-header"><span title="${fullText}">${i + 1}. ${c.text}</span><span>Max: ${pts}</span></div><div class="criteria-controls" style="display:flex; background:#f9f9f9;"><input type="range" class="custom-range slider-input" id="slider-${i}" min="0" max="${pts}" value="${cVal}" data-index="${i}" oninput="updateRowSliderScore(${i}, ${pts})" style="flex-grow:1;"><span class="score-badge" id="badge-${i}">${cVal}</span></div><input type="text" id="note-${i}" class="note-input" value="${cNote}" style="display:${cVal < pts ? 'block' : 'none'}"></div>`;
+            }
+        });
+        contentHtml += `</div>`;
+    } else {
+        contentHtml += `<div style="padding:15px; border:1px dashed #ccc; text-align:center;"><label>Manuel Puan</label><br><input id="eval-manual-score" type="number" class="swal2-input" value="${evalData.score}" min="0" max="100" style="width:100px;"></div><textarea id="eval-details" class="swal2-textarea">${typeof evalData.details === 'string' ? evalData.details : ''}</textarea>`;
+    }
+    contentHtml += `<div><label>Revize Feedback</label><textarea id="eval-feedback" class="swal2-textarea">${evalData.feedback || ''}</textarea></div></div>`;
+
+    const { value: formValues } = await Swal.fire({
+        html: contentHtml,
+        width: '600px',
+        showCancelButton: true,
+        confirmButtonText: ' 💾  Güncelle',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        didOpen: () => { if (isTelesatis) window.recalcTotalSliderScore(); else if (isChat) window.recalcTotalScore(); },
+        preConfirm: () => {
+            const callId = document.getElementById('eval-callid').value;
+            // Tarihi geri topla
+            const rawDate = document.getElementById('eval-calldate').value;
+            let callDate = rawDate;
+            if (rawDate.includes('-')) {
+                const p = rawDate.split('-');
+                if (p.length === 3) callDate = `${p[2]}.${p[1]}.${p[0]}`;
+            }
+
+            const feedback = document.getElementById('eval-feedback').value;
+            if (isCriteriaBased) {
+                let total = 0; let detailsArr = [];
+                for (let i = 0; i < criteriaList.length; i++) {
+                    const c = criteriaList[i]; if (parseInt(c.points) === 0) continue;
+                    let val = 0; let note = document.getElementById(`note-${i}`).value;
+                    if (isChat) val = parseInt(document.getElementById(`badge-${i}`).innerText) || 0;
+                    else if (isTelesatis) val = parseInt(document.getElementById(`slider-${i}`).value) || 0;
+                    else val = parseInt(c.points);
+                    total += val; detailsArr.push({ q: c.text, max: parseInt(c.points), score: val, note: note });
+                }
+                return { agentName, callId, callDate, score: total, details: JSON.stringify(detailsArr), feedback };
+            } else {
+                return { agentName, callId, callDate, score: parseInt(document.getElementById('eval-manual-score').value), details: document.getElementById('eval-details').value, feedback };
+            }
+        }
+    });
+    if (formValues) {
+        Swal.fire({ title: 'Güncelleniyor...', didOpen: () => Swal.showLoading() });
+        fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: "updateEvaluation", username: currentUser, token: getToken(), ...formValues })
+        })
+            .then(r => r.json()).then(d => {
+                if (d.result === "success") {
+                    Swal.fire({ icon: 'success', title: 'Güncellendi', timer: 1500, showConfirmButton: false });
+                    // DÜZELTME: Güncelleme sonrası hem evaluations hem de feedback logs güncellenmeli
+                    fetchEvaluationsForAgent(agentName);
+                    fetchFeedbackLogs().then(() => {
+                        loadFeedbackList();
+                    });
+                }
+                else { Swal.fire('Hata', d.message, 'error'); }
+            });
+    }
+}
+
+/* =========================================================
+   ANA SAYFA + TEKNİK + TELESATIŞ (FULLSCREEN) GÜNCELLEMESİ
+   ========================================================= */
+
+const TELESales_OFFERS_FALLBACK = [{ "offer": "YILLIK - 1299 TL", "segment": "WİNBACK", "description": "Kullanıcı daha önce aylık ya da yıllık herhangi bir paket kullanmış, ardından paket sonlanmış ve şu anda aktif paketi olmayan kullanıcıları aradığımız bir data", "note": "Kullanıcının izleme geçmişi olabilir." }, { "offer": "AYLIK  - 6 AY 109 TL", "segment": "WİNBACK", "description": "Kullanıcı daha önce aylık ya da yıllık herhangi bir paket kullanmış, ardından paket sonlanmış ve şu anda aktif paketi olmayan kullanıcıları aradığımız bir data", "note": "Kullanıcının izleme geçmişi olabilir." }, { "offer": "YILLIK - 1399 TL", "segment": "CANCELLİNG", "description": "Aboneliğinde iptal talebinde bulunmuş, paket süresi bitimine kadar erişime devam eden, geri kazanım için aradığımız bir data", "note": "Kullanıcının izleme geçmişi olabilir. İndirim oranı yüksek + Kullanıcının bir iptal nedeni olabilir" }, { "offer": "AYLIK  - 6 AY 119 TL", "segment": "CANCELLİNG", "description": "Aboneliğinde iptal talebinde bulunmuş, paket süresi bitimine kadar erişime devam eden, geri kazanım için aradığımız bir data", "note": "Kullanıcının izleme geçmişi olabilir. İndirim oranı yüksek + Kullanıcının bir iptal nedeni olabilir" }, { "offer": "YILLIK - 1499 TL", "segment": "ACTİVE GRACE", "description": "Paket yenileme sürecine giren fakat ücret alınamadığı için paketi yenilenemeyen kullanıcıları aradığımız bir data", "note": "Paket yenileme sürecinden bir ödeme sorunu oluştuğunu bu nedenle aboneliğinin yenilenmediğini, kullanıcıya hem bu sorunu çözmek hem de indirimli fiyatlar üzerinden yardımcı olmak +İçerik" }, { "offer": "AYLIK  - 6 AY 109 TL", "segment": "ACTİVE GRACE", "description": "Paket yenileme sürecine giren fakat ücret alınamadığı için paketi yenilenemeyen kullanıcıları aradığımız bir data", "note": "Paket yenileme sürecinden bir ödeme sorunu oluştuğunu bu nedenle aboneliğinin yenilenmediğini, kullanıcıya hem bu sorunu çözmek hem de indirimli fiyatlar üzerinden yardımcı olmak +İçerik" }, { "offer": "YILLIK - 1499 TL", "segment": "INBOUND", "description": "Inbound üzerinden gelen satın alma talepleri ya da satışa ikna edilen kullanıcılar için sunulan teklif", "note": "" }, { "offer": "AYLIK - 6 AY 139,5 TL", "segment": "INBOUND", "description": "Inbound üzerinden gelen satın alma talepleri ya da satışa ikna edilen kullanıcılar için sunulan teklif", "note": "" }];
+const SPORTS_RIGHTS_FALLBACK = [{ "item": "Euroleague maçları ve stüdyo programları", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": "" }, { "item": "Bundesliga", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": "" }, { "item": "Bundesliga 2", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": "" }, { "item": "İspanya LaLiga önemli maçları", "period": "2025 - 2026 / 2026 - 2027", "note": "" }, { "item": "LaLiga 2 önemli maçları", "period": "2025 - 2026 / 2026 - 2027", "note": "" }, { "item": "İtalya Serie A önemli maçları", "period": "2025 - 2026 / 2026 - 2027", "note": "" }, { "item": "Portekiz Liga Portugal önemli maçları", "period": "2025 - 2026", "note": "" }, { "item": "Suudi Arabistan Pro Lig önemli maçları", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": "" }, { "item": "Hollanda Ligi", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": "" }, { "item": "İskoçya Premiership önemli maçları", "period": "2025 - 2026 / 2026 - 2027", "note": "" }, { "item": "NCAA Amerikan Futbol", "period": "2025 - 2026 / 2026 - 2027", "note": "" }, { "item": "NCAA Basketbol", "period": "2025 - 2026 / 2026 - 2027", "note": "" }, { "item": "NFL", "period": "2025 - 2026", "note": "" }, { "item": "NBA", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": "" }, { "item": "EuroCup", "period": "2025-2026 / 2026- 2027 / 2027-2028 / 2028-2029", "note": "" }, { "item": "Yunanistan Basketbol Ligi önemli maçları", "period": "2025 - 2026 Sezon belirsiz", "note": "" }, { "item": "NCAA", "period": "2025 - 2026 / 2026 - 2027", "note": "" }, { "item": "Libertadores Kupası", "period": "2027, 2028, 2029, 2030 (4 seasons)", "note": "" }, { "item": "Copa Sudamericana", "period": "2027, 2028, 2029, 2030 (4 seasons)", "note": "" }, { "item": "WRC", "period": "2025", "note": "2026 da alınabilir net değil" }, { "item": "Nascar", "period": "2025 - 2026 - 2027 - 2028 ve 2029", "note": "" }, { "item": "IndyCar", "period": "2025 - 2026 - 2027", "note": "" }, { "item": "MotoGP - Moto2 - Moto3", "period": "2025 - 2026 - 2027", "note": "" }, { "item": "ATP Tenis Turnuvaları önemli maçlar", "period": "2025 - 2026 - 2027 and 2028", "note": "" }, { "item": "Wimbledon Tenis önemli maçlar", "period": "2025 - 2026 - 2027", "note": "" }, { "item": "UFC Dövüş Gecesi yayınları", "period": "2027 sonuna kadar bizde", "note": "" }, { "item": "Oktagon", "period": "2025", "note": "" }, { "item": "PFL MMA", "period": "2025", "note": "" }, { "item": "Cage Warriors Boks Maçları", "period": "2025", "note": "" }, { "item": "BKFC", "period": "Kaldırıldı", "note": "" }];
+
+function setActiveFilterButton(btn) {
+    try {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        if (btn) btn.classList.add('active');
+    } catch (e) { }
+}
+
+function showHomeScreen() {
+    const home = document.getElementById('home-screen');
+    const grid = document.getElementById('cardGrid');
+    const empty = document.getElementById('emptyMessage');
+    if (home) home.style.display = 'block';
+    if (grid) grid.style.display = 'none';
+    if (empty) empty.style.display = 'none';
+    renderHomePanels();
+}
+
+function hideHomeScreen() {
+    const home = document.getElementById('home-screen');
+    if (home) home.style.display = 'none';
+    const grid = document.getElementById('cardGrid');
+    if (grid) grid.style.display = 'grid';
+}
+
+function renderHomePanels() {
+    // --- BUGÜN NELER VAR? (Yayın Akışı / bugünün maçları) ---
+    const todayEl = document.getElementById('home-today');
+    if (todayEl) {
+        todayEl.innerHTML = '<div class="home-mini-item">Yayın akışı yükleniyor...</div>';
+        (async () => {
+            try {
+                const items = await fetchBroadcastFlow();
+                const d = new Date();
+                const todayISO = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+
+
+                const toISO = (val) => {
+                    const s = String(val || '').trim();
+                    if (!s) return '';
+                    if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
+                    // dd.MM.yyyy
+                    const m = s.match(/^(\d{2})\.(\d{2})\.(\d{4})$/);
+                    if (m) return `${m[3]}-${m[2]}-${m[1]}`;
+                    return '';
+                };
+
+                const todays = (items || []).filter(it => {
+                    const iso = toISO(it.dateISO || it.date);
+                    if (iso !== todayISO) return false;
+
+                    // Saati geçen karşılaşmalar görünmesin
+                    const now = Date.now();
+                    const se = Number(it.startEpoch || 0);
+                    if (se) return se > now;
+                    const t = String(it.time || '').trim();
+                    const m = t.match(/^(\d{2}):(\d{2})(?::(\d{2}))?$/);
+                    if (!m) return true; // saat formatı yoksa göster
+                    const hh = parseInt(m[1], 10), mm = parseInt(m[2], 10), ss = parseInt(m[3] || '0', 10);
+                    const dt = new Date();
+                    dt.setHours(hh, mm, ss, 0);
+                    return dt.getTime() > now;
+                });
+
+                if (!todays.length) {
+                    todayEl.innerHTML = '<div class="home-mini-item">Bugün için yayın akışı kaydı bulunamadı.</div>';
+                } else {
+                    const shown = todays.slice(0, 4);
+                    todayEl.innerHTML = shown.map(it => {
+                        const time = escapeHtml(it.time || '');
+                        const title = escapeHtml(it.match || it.title || it.event || '');
+                        const ch = escapeHtml(it.channel || it.platform || '');
+                        const league = escapeHtml(it.league || it.category || '');
+                        const spk = escapeHtml(it.spiker || it.spikers || it.commentator || it.commentators || '');
+                        return `
                           <div class="home-mini-item">
-                            <div class="home-mini-date">${_0x55e7ab}${_0xge3cb?` • ${_0xge3cb}`:''}${_0x15d92a?` • ${_0x15d92a}`:''}</div>
-                            <div class="home-mini-title">${_0xg7eg6f||"\u004D\u0061\u00E7"}</div>
-                            ${_0x701d?`<div class="home-mini-desc" style="margin-top:4px;color:#555">🎙 ${_0x701d}</div>`:''}
+                            <div class="home-mini-date">${time}${league ? ` • ${league}` : ''}${ch ? ` • ${ch}` : ''}</div>
+                            <div class="home-mini-title">${title || 'Maç'}</div>
+                            ${spk ? `<div class="home-mini-desc" style="margin-top:4px;color:#555">🎙 ${spk}</div>` : ''}
                           </div>
-                        `;})['\u006A\u006F\u0069\u006E']('')+(_0xa74e['\u006C\u0065\u006E\u0067\u0074\u0068']>_0x3b3a5a['\u006C\u0065\u006E\u0067\u0074\u0068']?`<div style="color:#666;font-size:.9rem;margin-top:6px">+${_0xa74e['\u006C\u0065\u006E\u0067\u0074\u0068']-_0x3b3a5a['\u006C\u0065\u006E\u0067\u0074\u0068']} maç daha…</div>`:'');}const card=_0x93a0e['\u0063\u006C\u006F\u0073\u0065\u0073\u0074']("\u002E\u0068\u006F\u006D\u0065\u002D\u0063\u0061\u0072\u0064");if(card){card['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("elbakcilc".split("").reverse().join(""));card['\u006F\u006E\u0063\u006C\u0069\u0063\u006B']=()=>openBroadcastFlow();}}catch(e){_0x93a0e['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u0064\u0069\u0076\u0020\u0063\u006C\u0061\u0073\u0073\u003D\u0022\u0068\u006F\u006D\u0065\u002D\u006D\u0069\u006E\u0069\u002D\u0069\u0074\u0065\u006D\u0022\u003E\u0059\u0061\u0079\u0131\u006E\u0020\u0061\u006B\u0131\u015F\u0131\u0020\u0061\u006C\u0131\u006E\u0061\u006D\u0061\u0064\u0131\u002E\u003C\u002F\u0064\u0069\u0076\u003E";}})();}var _0x5g_0x593=(653223^653218)+(813129^813121);const _0xegdec=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("nna-emoh".split("").reverse().join(""));_0x5g_0x593='\u0070\u0064\u0070\u0065\u006C\u006C';if(_0xegdec){let _0x7ae2b;const _0xd69gb=(newsData||[])['\u0073\u006C\u0069\u0063\u0065'](910645^910645,839955^839952);_0x7ae2b='\u006D\u0069\u006E\u006E\u0066\u0070';if(_0xd69gb['\u006C\u0065\u006E\u0067\u0074\u0068']===(225783^225783)){_0xegdec['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u0064\u0069\u0076\u0020\u0063\u006C\u0061\u0073\u0073\u003D\u0022\u0068\u006F\u006D\u0065\u002D\u006D\u0069\u006E\u0069\u002D\u0069\u0074\u0065\u006D\u0022\u003E\u0048\u0065\u006E\u00FC\u007A\u0020\u0064\u0075\u0079\u0075\u0072\u0075\u0020\u0079\u006F\u006B\u002E\u003C\u002F\u0064\u0069\u0076\u003E";}else{_0xegdec['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0xd69gb['\u006D\u0061\u0070'](n=>`
+                        `;
+                    }).join('') + (todays.length > shown.length ? `<div style="color:#666;font-size:.9rem;margin-top:6px">+${todays.length - shown.length} maç daha…</div>` : '');
+                }
+
+
+                // kartı tıklayınca yayın akışına git
+                const card = todayEl.closest('.home-card');
+                if (card) {
+                    card.classList.add('clickable');
+                    card.onclick = () => openBroadcastFlow();
+                }
+            } catch (e) {
+                todayEl.innerHTML = '<div class="home-mini-item">Yayın akışı alınamadı.</div>';
+            }
+        })();
+    }
+
+    // --- DUYURULAR (son 3 duyuru) ---
+    const annEl = document.getElementById('home-ann');
+    if (annEl) {
+        const latest = (newsData || []).slice(0, 3);
+        if (latest.length === 0) {
+            annEl.innerHTML = '<div class="home-mini-item">Henüz duyuru yok.</div>';
+        } else {
+            annEl.innerHTML = latest.map(n => `
                 <div class="home-mini-item">
-                  <div class="home-mini-date">${escapeHtml(n['\u0064\u0061\u0074\u0065']||'')}</div>
-                  <div class="home-mini-title">${escapeHtml(n['\u0074\u0069\u0074\u006C\u0065']||'')}</div>
-                  <div class="home-mini-desc" style="white-space: pre-line">${escapeHtml(String(n['\u0064\u0065\u0073\u0063']||''))['\u0073\u006C\u0069\u0063\u0065'](300928^300928,338391^338295)}${(n['\u0064\u0065\u0073\u0063']||'')['\u006C\u0065\u006E\u0067\u0074\u0068']>(162967^162871)?"...".split("").reverse().join(""):''}</div>
+                  <div class="home-mini-date">${escapeHtml(n.date || '')}</div>
+                  <div class="home-mini-title">${escapeHtml(n.title || '')}</div>
+                  <div class="home-mini-desc" style="white-space: pre-line">${escapeHtml(String(n.desc || '')).slice(0, 160)}${(n.desc || '').length > 160 ? '...' : ''}</div>
                 </div>
-            `)['\u006A\u006F\u0069\u006E']('');}let _0xf237c;const card=_0xegdec['\u0063\u006C\u006F\u0073\u0065\u0073\u0074']("drac-emoh.".split("").reverse().join(""));_0xf237c=(846196^846193)+(964445^964442);if(card){card['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0063\u006C\u0069\u0063\u006B\u0061\u0062\u006C\u0065");card['\u006F\u006E\u0063\u006C\u0069\u0063\u006B']=()=>openNews();}}const _0xf4_0xa62=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0068\u006F\u006D\u0065\u002D\u0071\u0075\u006F\u0074\u0065");_0xf9f='\u006D\u006F\u0066\u0062\u0063\u0067';if(_0xf4_0xa62){const q=String(homeBlocks&&homeBlocks['\u0071\u0075\u006F\u0074\u0065']&&homeBlocks['\u0071\u0075\u006F\u0074\u0065']['\u0063\u006F\u006E\u0074\u0065\u006E\u0074']?homeBlocks['\u0071\u0075\u006F\u0074\u0065']['\u0063\u006F\u006E\u0074\u0065\u006E\u0074']:localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("etouQemoh".split("").reverse().join(""))||'')['\u0074\u0072\u0069\u006D']();_0xf4_0xa62['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=q?escapeHtml(q):"\u003C\u0073\u0070\u0061\u006E\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0063\u006F\u006C\u006F\u0072\u003A\u0023\u0039\u0039\u0039\u0022\u003E\u0042\u0075\u0067\u00FC\u006E\u0020\u0069\u00E7\u0069\u006E\u0020\u0062\u0069\u0072\u0020\u0073\u00F6\u007A\u0020\u0065\u006B\u006C\u0065\u006E\u006D\u0065\u006D\u0069\u015F\u002E\u003C\u002F\u0073\u0070\u0061\u006E\u003E";}try{let _0x4a976a;const _0xaa_0xf06=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0068\u006F\u006D\u0065\u002D\u0065\u0064\u0069\u0074\u002D\u0074\u006F\u0064\u0061\u0079");_0x4a976a=(231953^231958)+(610319^610315);const _0x60_0x9g8=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0068\u006F\u006D\u0065\u002D\u0065\u0064\u0069\u0074\u002D\u0061\u006E\u006E");let _0x6f4g;const _0x43g9f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0068\u006F\u006D\u0065\u002D\u0065\u0064\u0069\u0074\u002D\u0071\u0075\u006F\u0074\u0065");_0x6f4g=(612512^612513)+(967128^967131);if(_0xaa_0xf06)_0xaa_0xf06['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");if(_0x60_0x9g8)_0x60_0x9g8['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");if(_0x43g9f)_0x43g9f['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']=isAdminMode&&isEditingActive?"\u0069\u006E\u006C\u0069\u006E\u0065\u002D\u0066\u006C\u0065\u0078":"\u006E\u006F\u006E\u0065";}catch(e){}}function editHomeBlock(kind){if(!isAdminMode){Swal['\u0066\u0069\u0072\u0065']("\u0059\u0065\u0074\u006B\u0069\u0073\u0069\u007A","\u0042\u0075\u0020\u0069\u015F\u006C\u0065\u006D\u0020\u0069\u00E7\u0069\u006E\u0020\u0061\u0064\u006D\u0069\u006E\u0020\u0079\u0065\u0074\u006B\u0069\u0073\u0069\u0020\u0067\u0065\u0072\u0065\u006B\u006C\u0069\u002E","gninraw".split("").reverse().join(""));return;}if(!isEditingActive){Swal['\u0066\u0069\u0072\u0065']("\u004B\u0061\u0070\u0061\u006C\u0131","\u0044\u00FC\u007A\u0065\u006E\u006C\u0065\u006D\u0065\u0020\u006D\u006F\u0064\u0075\u0020\u006B\u0061\u0070\u0061\u006C\u0131\u002E\u0020\u00D6\u006E\u0063\u0065\u0020\u0027\u0044\u00FC\u007A\u0065\u006E\u006C\u0065\u006D\u0065\u0079\u0069\u0020\u0041\u00E7\u0027\u0020\u0064\u0065\u006D\u0065\u006C\u0069\u0073\u0069\u006E\u002E","ofni".split("").reverse().join(""));return;}if(kind!=="etouq".split("").reverse().join("")){Swal['\u0066\u0069\u0072\u0065']("\u0042\u0069\u006C\u0067\u0069",".royinellecn\xFCg kitamoto k\u0131tra nala uB".split("").reverse().join(""),"\u0069\u006E\u0066\u006F");return;}var _0x3a536c=(534155^534147)+(572138^572137);const _0xgce1d=String(homeBlocks&&homeBlocks['\u0071\u0075\u006F\u0074\u0065']&&homeBlocks['\u0071\u0075\u006F\u0074\u0065']['\u0063\u006F\u006E\u0074\u0065\u006E\u0074']?homeBlocks['\u0071\u0075\u006F\u0074\u0065']['\u0063\u006F\u006E\u0074\u0065\u006E\u0074']:localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0068\u006F\u006D\u0065\u0051\u0075\u006F\u0074\u0065")||'')['\u0074\u0072\u0069\u006D']();_0x3a536c=(286245^286253)+(275080^275082);Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u0047\u00FC\u006E\u00FC\u006E\u0020\u0053\u00F6\u007A\u00FC","input":"\u0074\u0065\u0078\u0074\u0061\u0072\u0065\u0061",'\u0069\u006E\u0070\u0075\u0074\u0056\u0061\u006C\u0075\u0065':_0xgce1d,'\u0069\u006E\u0070\u0075\u0074\u0050\u006C\u0061\u0063\u0065\u0068\u006F\u006C\u0064\u0065\u0072':"Bugünün sözünü yaz…",'\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u004B\u0061\u0079\u0064\u0065\u0074",'\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"Vazgeç","preConfirm":val=>(val||'')['\u0074\u0072\u0069\u006D']()})['\u0074\u0068\u0065\u006E'](res=>{if(!res['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064'])return;let _0x7fce;const _0xa8322b=res['\u0076\u0061\u006C\u0075\u0065']||'';_0x7fce=(769128^769132)+(998111^998104);try{localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("\u0068\u006F\u006D\u0065\u0051\u0075\u006F\u0074\u0065",_0xa8322b);}catch(e){}apiCall("\u0075\u0070\u0064\u0061\u0074\u0065\u0048\u006F\u006D\u0065\u0042\u006C\u006F\u0063\u006B",{'\u006B\u0065\u0079':"\u0071\u0075\u006F\u0074\u0065",'\u0074\u0069\u0074\u006C\u0065':"\u0047\u00FC\u006E\u00FC\u006E\u0020\u0053\u00F6\u007A\u00FC",'\u0063\u006F\u006E\u0074\u0065\u006E\u0074':_0xa8322b,'\u0076\u0069\u0073\u0069\u0062\u006C\u0065\u0047\u0072\u006F\u0075\u0070\u0073':''})['\u0074\u0068\u0065\u006E'](()=>{homeBlocks=homeBlocks||{};homeBlocks['\u0071\u0075\u006F\u0074\u0065']={"key":'quote',"title":'Günün Sözü',"content":_0xa8322b,'\u0076\u0069\u0073\u0069\u0062\u006C\u0065\u0047\u0072\u006F\u0075\u0070\u0073':''};try{localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("ehcaCskcolBemoh".split("").reverse().join(""),JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](homeBlocks||{}));}catch(e){}renderHomePanels();Swal['\u0066\u0069\u0072\u0065']("\u004B\u0061\u0079\u0064\u0065\u0064\u0069\u006C\u0064\u0069",".idnellecn\xFCg \xFCz\xF6s n\xFCn\xFCG".split("").reverse().join(""),"sseccus".split("").reverse().join(""));})['\u0063\u0061\u0074\u0063\u0068'](()=>{renderHomePanels();Swal['\u0066\u0069\u0072\u0065']("idlidedyaK".split("").reverse().join(""),".)lerey( idnellecn\xFCg \xFCz\xF6s n\xFCn\xFCG".split("").reverse().join(""),"\u0073\u0075\u0063\u0063\u0065\u0073\u0073");});});}function openCardDetail(cardId){const _0x9fgg=(database||[])['\u0066\u0069\u006E\u0064'](x=>String(x['\u0069\u0064'])===String(cardId));if(!_0x9fgg){Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),"\u004B\u0061\u0072\u0074\u0020\u0062\u0075\u006C\u0075\u006E\u0061\u006D\u0061\u0064\u0131\u002E","\u0065\u0072\u0072\u006F\u0072");return;}showCardDetail(_0x9fgg);}let telesalesOffers=[];var _0x5d1dg=(130224^130231)+(815265^815271);let telesalesScriptsLoaded=false;_0x5d1dg='\u006E\u0062\u006F\u0064\u006C\u0070';function safeGetToken(){try{return typeof getToken==="\u0066\u0075\u006E\u0063\u0074\u0069\u006F\u006E"?getToken():'';}catch(e){return'';}}async function fetchSheetObjects(actionName){const d=await apiCall(actionName);return d['\u0064\u0061\u0074\u0061']||d['\u0069\u0074\u0065\u006D\u0073']||[];}async function maybeLoadTelesalesScriptsFromSheet(){if(telesalesScriptsLoaded)return;telesalesScriptsLoaded=!![];try{var _0x78c=(541865^541870)+(406604^406602);const _0x4f4=JSON['\u0070\u0061\u0072\u0073\u0065'](localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u0053\u0063\u0072\u0069\u0070\u0074\u0073\u004F\u0076\u0065\u0072\u0072\u0069\u0064\u0065")||"\u005B\u005D");_0x78c=(882185^882185)+(916221^916222);if(Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0x4f4)&&_0x4f4['\u006C\u0065\u006E\u0067\u0074\u0068'])return;}catch(e){}try{let _0xa2_0xd9b;const _0xca325a=await fetchSheetObjects("stpircSselaseleTteg".split("").reverse().join(""));_0xa2_0xd9b=555397^555393;if(Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0xca325a)&&_0xca325a['\u006C\u0065\u006E\u0067\u0074\u0068']){window['\u0073\u0061\u006C\u0065\u0073\u0053\u0063\u0072\u0069\u0070\u0074\u0073']=_0xca325a['\u006D\u0061\u0070'](s=>({"id":s['\u0069\u0064']||s['\u0049\u0044']||s['\u0049\u0064']||'','\u0074\u0069\u0074\u006C\u0065':s['\u0074\u0069\u0074\u006C\u0065']||s['\u0042\u0061\u015F\u006C\u0131\u006B']||s['\u0042\u0061\u0073\u006C\u0069\u006B']||s['\u0053\u0063\u0072\u0069\u0070\u0074']||s["\u0053\u0063\u0072\u0069\u0070\u0074\u0020\u0042\u0061\u015F\u006C\u0131\u011F\u0131"]||"\u0053\u0063\u0072\u0069\u0070\u0074","text":s['\u0074\u0065\u0078\u0074']||s['\u004D\u0065\u0074\u0069\u006E']||s["\u0053\u0063\u0072\u0069\u0070\u0074\u0020\u004D\u0065\u0074\u006E\u0069"]||s['\u0063\u006F\u006E\u0074\u0065\u006E\u0074']||''}))['\u0066\u0069\u006C\u0074\u0065\u0072'](x=>x['\u0074\u0065\u0078\u0074']);}}catch(e){}}async function syncTelesalesScriptsToSheet(arr){try{await apiCall("\u0073\u0061\u0076\u0065\u0054\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u0053\u0063\u0072\u0069\u0070\u0074\u0073",{'\u0073\u0063\u0072\u0069\u0070\u0074\u0073':arr||[]});}catch(e){}}async function openTelesalesArea(_0x2gc72b){try{var _0x2b_0xfg8=(840327^840325)+(635654^635652);const _0x80a89c=typeof menuPermissions!=="\u0075\u006E\u0064\u0065\u0066\u0069\u006E\u0065\u0064"&&menuPermissions?menuPermissions["\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073"]:null;_0x2b_0xfg8='\u006C\u006F\u0064\u006F\u006D\u006A';if(_0x80a89c&&!isAllowedByPerm(_0x80a89c)){Swal['\u0066\u0069\u0072\u0065']("zisikteY".split("").reverse().join(""),"\u0054\u0065\u006C\u0065\u0053\u0061\u0074\u0131\u015F\u0020\u0065\u006B\u0072\u0061\u006E\u0131\u006E\u0061\u0020\u0065\u0072\u0069\u015F\u0069\u006D\u0069\u006E\u0020\u0079\u006F\u006B\u002E","gninraw".split("").reverse().join(""));return;}}catch(e){}const _0x35ee=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("neercslluf-selaselet".split("").reverse().join(""));_0x2gc72b=(841073^841073)+(509449^509451);if(!_0x35ee)return;_0x35ee['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="xelf".split("").reverse().join("");document['\u0062\u006F\u0064\u0079']['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0066\u0073\u002D\u006F\u0070\u0065\u006E");document['\u0062\u006F\u0064\u0079']['\u0073\u0074\u0079\u006C\u0065']['\u006F\u0076\u0065\u0072\u0066\u006C\u006F\u0077']="neddih".split("").reverse().join("");const _0x31e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u002D\u0073\u0069\u0064\u0065\u002D\u0061\u0076\u0061\u0074\u0061\u0072");var _0x2ba=(364976^364984)+(241415^241423);const _0xe97daa=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u002D\u0073\u0069\u0064\u0065\u002D\u006E\u0061\u006D\u0065");_0x2ba=(415379^415386)+(231211^231203);const _0x92e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u002D\u0073\u0069\u0064\u0065\u002D\u0072\u006F\u006C\u0065");if(_0x31e)_0x31e['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=(currentUser||"\u0055")['\u0074\u0072\u0069\u006D']()['\u0073\u006C\u0069\u0063\u0065'](994947^994947,442008^442009)['\u0074\u006F\u0055\u0070\u0070\u0065\u0072\u0043\u0061\u0073\u0065']();if(_0xe97daa)_0xe97daa['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=currentUser||"\u004B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131";if(_0x92e)_0x92e['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=isAdminMode?"nimdA".split("").reverse().join(""):"\u0054\u0065\u006D\u0073\u0069\u006C\u0063\u0069";if(telesalesOffers['\u006C\u0065\u006E\u0067\u0074\u0068']===(910831^910831)){var _0xcefbcg=(607405^607403)+(184288^184294);let _0xc84c8g=[];_0xcefbcg=(327558^327559)+(444778^444782);try{_0xc84c8g=await fetchSheetObjects("\u0067\u0065\u0074\u0054\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u004F\u0066\u0066\u0065\u0072\u0073");}catch(e){}telesalesOffers=Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0xc84c8g)&&_0xc84c8g['\u006C\u0065\u006E\u0067\u0074\u0068']?_0xc84c8g['\u006D\u0061\u0070'](o=>({'\u0073\u0065\u0067\u006D\u0065\u006E\u0074':o['\u0073\u0065\u0067\u006D\u0065\u006E\u0074']||o['\u0053\u0065\u0067\u006D\u0065\u006E\u0074']||o['\u0053\u0045\u0047\u004D\u0045\u004E\u0054']||'',"title":o['\u0074\u0069\u0074\u006C\u0065']||o['\u0042\u0061\u015F\u006C\u0131\u006B']||o['\u0042\u0061\u0073\u006C\u0069\u006B']||o['\u0054\u0065\u006B\u006C\u0069\u0066']||o['Teklif Adı']||o['Teklif Adi']||'',"desc":o['\u0064\u0065\u0073\u0063']||o['\u0041\u00E7\u0131\u006B\u006C\u0061\u006D\u0061']||o['\u0041\u0063\u0069\u006B\u006C\u0061\u006D\u0061']||o['\u0044\u0065\u0074\u0061\u0079']||o['Detay/Not']||'','\u006E\u006F\u0074\u0065':o['\u006E\u006F\u0074\u0065']||o['\u004E\u006F\u0074']||o['\u004E\u006F\u0074\u0065']||'',"image":o['\u0069\u006D\u0061\u0067\u0065']||o['\u0049\u006D\u0061\u0067\u0065']||o['\u0047\u00F6\u0072\u0073\u0065\u006C']||o['\u0047\u006F\u0072\u0073\u0065\u006C']||'','\u0065\u0078\u0061\u006D\u0070\u006C\u0065':o['\u0065\u0078\u0061\u006D\u0070\u006C\u0065']||o['\u00D6\u0072\u006E\u0065\u006B']||o['\u004F\u0072\u006E\u0065\u006B']||'','\u0074\u0069\u0070\u0073':o['\u0074\u0069\u0070\u0073']||o['\u0130\u0070\u0075\u0063\u0075']||o['\u0049\u0070\u0075\u0063\u0075']||'','\u006F\u0062\u006A\u0065\u0063\u0074\u0069\u006F\u006E':o['\u006F\u0062\u006A\u0065\u0063\u0074\u0069\u006F\u006E']||o['\u0049\u0074\u0069\u0072\u0061\u007A']||'','\u0072\u0065\u0070\u006C\u0079':o['\u0072\u0065\u0070\u006C\u0079']||o['\u0043\u0065\u0076\u0061\u0070']||''})):Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](window['\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u004F\u0066\u0066\u0065\u0072\u0073\u0046\u0072\u006F\u006D\u0053\u0068\u0065\u0065\u0074'])&&window['\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u004F\u0066\u0066\u0065\u0072\u0073\u0046\u0072\u006F\u006D\u0053\u0068\u0065\u0065\u0074']['\u006C\u0065\u006E\u0067\u0074\u0068']?window['\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u004F\u0066\u0066\u0065\u0072\u0073\u0046\u0072\u006F\u006D\u0053\u0068\u0065\u0065\u0074']:TELESales_OFFERS_FALLBACK;}renderTelesalesDataOffers();await maybeLoadTelesalesScriptsFromSheet();renderTelesalesScripts();switchTelesalesTab("\u0064\u0061\u0074\u0061");}function closeFullTelesales(){const _0x5663d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u002D\u0066\u0075\u006C\u006C\u0073\u0063\u0072\u0065\u0065\u006E");if(_0x5663d)_0x5663d['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";document['\u0062\u006F\u0064\u0079']['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("nepo-sf".split("").reverse().join(""));document['\u0062\u006F\u0064\u0079']['\u0073\u0074\u0079\u006C\u0065']['\u006F\u0076\u0065\u0072\u0066\u006C\u006F\u0077']='';}function switchTelesalesTab(tab){document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u0023\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u002D\u0066\u0075\u006C\u006C\u0073\u0063\u0072\u0065\u0065\u006E\u0020\u002E\u0071\u002D\u006E\u0061\u0076\u002D\u0069\u0074\u0065\u006D")['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](i=>i['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("evitca".split("").reverse().join("")));document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("meti-van-q. neercslluf-selaselet#".split("").reverse().join(""))['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](i=>{if((i['\u0067\u0065\u0074\u0041\u0074\u0074\u0072\u0069\u0062\u0075\u0074\u0065']("\u006F\u006E\u0063\u006C\u0069\u0063\u006B")||'')['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](`"${tab}"`))i['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0063\u0074\u0069\u0076\u0065");});document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u0023\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u002D\u0066\u0075\u006C\u006C\u0073\u0063\u0072\u0065\u0065\u006E\u0020\u002E\u0071\u002D\u0076\u0069\u0065\u0077\u002D\u0073\u0065\u0063\u0074\u0069\u006F\u006E")['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](s=>s['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("\u0061\u0063\u0074\u0069\u0076\u0065"));const _0xd2301c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`t-view-${tab}`);if(_0xd2301c)_0xd2301c['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0063\u0074\u0069\u0076\u0065");}function hydrateTelesalesSegmentFilter(){const _0x5ba=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ges-atad-t".split("").reverse().join(""));if(!_0x5ba)return;const _0x78b22d=Array['\u0066\u0072\u006F\u006D'](new Set((telesalesOffers||[])['\u006D\u0061\u0070'](o=>o['\u0073\u0065\u0067\u006D\u0065\u006E\u0074'])['\u0066\u0069\u006C\u0074\u0065\u0072'](Boolean)))['\u0073\u006F\u0072\u0074']();_0x5ba['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=">noitpo/<reltnemgeS m\xFCT>\"lla\"=eulav noitpo<".split("").reverse().join("")+_0x78b22d['\u006D\u0061\u0070'](s=>`<option value="${escapeHtml(s)}">${escapeHtml(s)}</option>`)['\u006A\u006F\u0069\u006E']('');}function renderTelesalesDataOffers(){const _0x585fgd=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u002D\u0064\u0061\u0074\u0061\u002D\u0067\u0072\u0069\u0064");if(!_0x585fgd)return;var _0xa9d2g=(961855^961854)+(422487^422481);const q=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("hcraes-atad-t".split("").reverse().join(""))?.value||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();_0xa9d2g='\u0062\u006D\u006D\u0062\u0064\u0065';var _0x76df=(992240^992248)+(403947^403938);const _0x463bef=(telesalesOffers||[])['\u0066\u0069\u006C\u0074\u0065\u0072'](o=>{const _0xa8_0x612=`${o['\u0074\u0069\u0074\u006C\u0065']||''} ${o['\u0064\u0065\u0073\u0063']||''} ${o['\u0073\u0065\u0067\u006D\u0065\u006E\u0074']||''} ${o['\u0074\u0061\u0067']||''}`['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();const _0x3d1gac=!q||_0xa8_0x612['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](q);return _0x3d1gac;});_0x76df=(390811^390809)+(549597^549598);const _0x8ge0fc=isAdminMode&&isEditingActive?`
+            `).join('');
+        }
+        const card = annEl.closest('.home-card');
+        if (card) {
+            card.classList.add('clickable');
+            card.onclick = () => openNews();
+        }
+    }
+
+    // --- GÜNÜN SÖZÜ (HomeBlocks -> e-tabla) ---
+    const quoteEl = document.getElementById('home-quote');
+    if (quoteEl) {
+        const q = String((homeBlocks && homeBlocks.quote && homeBlocks.quote.content) ? homeBlocks.quote.content : (localStorage.getItem('homeQuote') || '')).trim();
+        quoteEl.innerHTML = q ? escapeHtml(q) : '<span style="color:#999">Bugün için bir söz eklenmemiş.</span>';
+    }
+
+    // Admin: edit butonlarını aç
+    try {
+        const b1 = document.getElementById('home-edit-today');
+        const b2 = document.getElementById('home-edit-ann');
+        const b3 = document.getElementById('home-edit-quote');
+        if (b1) b1.style.display = 'none'; // artık dinamik
+        if (b2) b2.style.display = 'none'; // duyuru dinamik
+        if (b3) b3.style.display = (isAdminMode && isEditingActive ? 'inline-flex' : 'none');
+    } catch (e) { }
+}
+
+
+
+// Ana Sayfa - Günün Sözü düzenleme (sadece admin mod + düzenleme açıkken)
+function editHomeBlock(kind) {
+    if (!isAdminMode) {
+        Swal.fire("Yetkisiz", "Bu işlem için admin yetkisi gerekli.", "warning");
+        return;
+    }
+    if (!isEditingActive) {
+        Swal.fire("Kapalı", "Düzenleme modu kapalı. Önce 'Düzenlemeyi Aç' demelisin.", "info");
+        return;
+    }
+    if (kind !== 'quote') {
+        Swal.fire("Bilgi", "Bu alan artık otomatik güncelleniyor.", "info");
+        return;
+    }
+    const cur = String((homeBlocks && homeBlocks.quote && homeBlocks.quote.content) ? homeBlocks.quote.content : (localStorage.getItem('homeQuote') || '')).trim();
+    Swal.fire({
+        title: "Günün Sözü",
+        input: "textarea",
+        inputValue: cur,
+        inputPlaceholder: "Bugünün sözünü yaz…",
+        showCancelButton: true,
+        confirmButtonText: "Kaydet",
+        cancelButtonText: "Vazgeç",
+        preConfirm: (val) => (val || '').trim()
+    }).then(res => {
+        if (!res.isConfirmed) return;
+        const val = res.value || '';
+        // local fallback
+        try { localStorage.setItem('homeQuote', val); } catch (e) { }
+        // e-tabla (HomeBlocks)
+        apiCall('updateHomeBlock', { key: 'quote', title: 'Günün Sözü', content: val, visibleGroups: '' })
+            .then(() => {
+                homeBlocks = homeBlocks || {};
+                homeBlocks.quote = { key: 'quote', title: 'Günün Sözü', content: val, visibleGroups: '' };
+                try { localStorage.setItem('homeBlocksCache', JSON.stringify(homeBlocks || {})); } catch (e) { }
+                renderHomePanels();
+                Swal.fire("Kaydedildi", "Günün sözü güncellendi.", "success");
+            })
+            .catch(() => {
+                renderHomePanels();
+                Swal.fire("Kaydedildi", "Günün sözü güncellendi (yerel).", "success");
+            });
+    });
+}
+
+// Kart detayını doğrudan açmak için küçük bir yardımcı
+function openCardDetail(cardId) {
+    const card = (database || []).find(x => String(x.id) === String(cardId));
+    if (!card) { Swal.fire('Hata', 'Kart bulunamadı.', 'error'); return; }
+    showCardDetail(card);
+}
+
+/* -------------------------
+   TELE SATIŞ FULLSCREEN
+--------------------------*/
+let telesalesOffers = [];
+let telesalesScriptsLoaded = false;
+function safeGetToken() {
+    try { return (typeof getToken === 'function') ? getToken() : ''; } catch (e) { return ''; }
+}
+async function fetchSheetObjects(actionName) {
+    const d = await apiCall(actionName);
+    // backend handleFetchData returns {data:[...]} ; other handlers may use {items:[...]}
+    return d.data || d.items || [];
+}
+
+async function maybeLoadTelesalesScriptsFromSheet() {
+    if (telesalesScriptsLoaded) return;
+    telesalesScriptsLoaded = true;
+    // Eğer kullanıcı local override yaptıysa sheet'ten ezmeyelim
+    try {
+        const ov = JSON.parse(localStorage.getItem('telesalesScriptsOverride') || '[]');
+        if (Array.isArray(ov) && ov.length) return;
+    } catch (e) { }
+    try {
+        const loaded = await fetchSheetObjects('getTelesalesScripts');
+        if (Array.isArray(loaded) && loaded.length) {
+            // Sheet kolon adlarını normalize et
+            window.salesScripts = loaded.map(s => ({
+                id: s.id || s.ID || s.Id || '',
+                title: s.title || s.Başlık || s.Baslik || s.Script || s['Script Başlığı'] || 'Script',
+                text: s.text || s.Metin || s['Script Metni'] || s.content || ''
+            })).filter(x => x.text);
+        }
+    } catch (e) {
+        // sessiz fallback
+    }
+}
+
+async function syncTelesalesScriptsToSheet(arr) {
+    // Backend desteği varsa Sheets'e yaz; yoksa sessizce local'de kalsın.
+    try {
+        await apiCall('saveTelesalesScripts', { scripts: arr || [] });
+    } catch (e) {
+        // sessiz fallback
+    }
+}
+
+async function openTelesalesArea() {
+    // Menü yetkisi: telesales (TeleSatış) - yetkisiz kullanıcı fullscreen'e giremesin
+    try {
+        const perm = (typeof menuPermissions !== "undefined" && menuPermissions) ? menuPermissions["telesales"] : null;
+        if (perm && !isAllowedByPerm(perm)) {
+            Swal.fire("Yetkisiz", "TeleSatış ekranına erişimin yok.", "warning");
+            return;
+        }
+    } catch (e) { }
+
+    const wrap = document.getElementById('telesales-fullscreen');
+    if (!wrap) return;
+    wrap.style.display = 'flex';
+    document.body.classList.add('fs-open');
+    document.body.style.overflow = 'hidden';
+
+    // Sidebar profil
+    const av = document.getElementById('t-side-avatar');
+    const nm = document.getElementById('t-side-name');
+    const rl = document.getElementById('t-side-role');
+    if (av) av.innerText = (currentUser || 'U').trim().slice(0, 1).toUpperCase();
+    if (nm) nm.innerText = currentUser || 'Kullanıcı';
+    if (rl) rl.innerText = isAdminMode ? 'Admin' : 'Temsilci';
+
+    // Data teklifleri: önce e-tabladan çekmeyi dene, olmazsa fallback
+    if (telesalesOffers.length === 0) {
+        let loaded = [];
+        try {
+            loaded = await fetchSheetObjects("getTelesalesOffers");
+        } catch (e) {
+            // sessiz fallback
+        }
+        telesalesOffers = (Array.isArray(loaded) && loaded.length)
+            ? loaded.map(o => ({
+                segment: o.segment || o.Segment || o.SEGMENT || '',
+                title: o.title || o.Başlık || o.Baslik || o.Teklif || o['Teklif Adı'] || o['Teklif Adi'] || '',
+                desc: o.desc || o.Açıklama || o.Aciklama || o.Detay || o['Detay/Not'] || '',
+                note: o.note || o.Not || o.Note || '',
+                image: o.image || o.Image || o.Görsel || o.Gorsel || '',
+                example: o.example || o.Örnek || o.Ornek || '',
+                tips: o.tips || o.İpucu || o.Ipucu || '',
+                objection: o.objection || o.Itiraz || '',
+                reply: o.reply || o.Cevap || ''
+            }))
+            : (Array.isArray(window.telesalesOffersFromSheet) && window.telesalesOffersFromSheet.length
+                ? window.telesalesOffersFromSheet
+                : TELESales_OFFERS_FALLBACK);
+    }
+
+    // Segment filtresi kaldırıldı
+    renderTelesalesDataOffers();
+    // Scriptler: sheet'ten çekmeyi dene
+    await maybeLoadTelesalesScriptsFromSheet();
+    renderTelesalesScripts();
+    switchTelesalesTab('data');
+}
+
+function closeFullTelesales() {
+    const wrap = document.getElementById('telesales-fullscreen');
+    if (wrap) wrap.style.display = 'none';
+    document.body.classList.remove('fs-open');
+    document.body.style.overflow = '';
+}
+
+function switchTelesalesTab(tab) {
+    document.querySelectorAll('#telesales-fullscreen .q-nav-item').forEach(i => i.classList.remove('active'));
+    // Set active nav by onclick marker
+    document.querySelectorAll('#telesales-fullscreen .q-nav-item').forEach(i => {
+        if ((i.getAttribute('onclick') || '').includes(`"${tab}"`)) i.classList.add('active');
+    });
+
+    document.querySelectorAll('#telesales-fullscreen .q-view-section').forEach(s => s.classList.remove('active'));
+    const el = document.getElementById(`t-view-${tab}`);
+    if (el) el.classList.add('active');
+}
+
+function hydrateTelesalesSegmentFilter() {
+    const sel = document.getElementById('t-data-seg');
+    if (!sel) return;
+    const segs = Array.from(new Set((telesalesOffers || []).map(o => o.segment).filter(Boolean))).sort();
+    sel.innerHTML = '<option value="all">Tüm Segmentler</option>' + segs.map(s => `<option value="${escapeHtml(s)}">${escapeHtml(s)}</option>`).join('');
+}
+
+function renderTelesalesDataOffers() {
+    const grid = document.getElementById('t-data-grid');
+    if (!grid) return;
+
+    const q = (document.getElementById('t-data-search')?.value || '').toLowerCase();
+
+    const list = (telesalesOffers || []).filter(o => {
+        const hay = `${o.title || ''} ${o.desc || ''} ${o.segment || ''} ${o.tag || ''}`.toLowerCase();
+        const okQ = !q || hay.includes(q);
+        return okQ;
+    });
+
+    const bar = (isAdminMode && isEditingActive) ? `
         <div style="grid-column:1/-1;display:flex;gap:10px;align-items:center;margin:6px 0 12px;">
           <button class="x-btn x-btn-admin" onclick="addTelesalesOffer()"><i class="fas fa-plus"></i> Teklif Ekle</button>
         </div>
-    `:'';if(_0x463bef['\u006C\u0065\u006E\u0067\u0074\u0068']===(209040^209040)){_0x585fgd['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x8ge0fc+"\u003C\u0064\u0069\u0076\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u006F\u0070\u0061\u0063\u0069\u0074\u0079\u003A\u002E\u0037\u003B\u0070\u0061\u0064\u0064\u0069\u006E\u0067\u003A\u0032\u0030\u0070\u0078\u003B\u0067\u0072\u0069\u0064\u002D\u0063\u006F\u006C\u0075\u006D\u006E\u003A\u0031\u002F\u002D\u0031\u0022\u003E\u0053\u006F\u006E\u0075\u00E7\u0020\u0062\u0075\u006C\u0075\u006E\u0061\u006D\u0061\u0064\u0131\u002E\u003C\u002F\u0064\u0069\u0076\u003E";let _0x9f3e;const cnt=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u002D\u0064\u0061\u0074\u0061\u002D\u0063\u006F\u0075\u006E\u0074");_0x9f3e=(533031^533028)+(460953^460944);if(cnt)cnt['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="\u0030\u0020\u006B\u0061\u0079\u0131\u0074";return;}const cnt=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tnuoc-atad-t".split("").reverse().join(""));if(cnt)cnt['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=`${_0x463bef['\u006C\u0065\u006E\u0067\u0074\u0068']} kayıt`;_0x585fgd['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x8ge0fc+_0x463bef['\u006D\u0061\u0070']((o,idx)=>{var _0x34cg=(365552^365552)+(384739^384747);const _0x0ffe9d=o['\u0069\u006D\u0061\u0067\u0065']?`<div style="height:120px;overflow:hidden;border-radius:6px;margin-bottom:8px;"><img src="${processImageUrl(o['\u0069\u006D\u0061\u0067\u0065'])}" style="width:100%;height:100%;object-fit:cover;"></div>`:'';_0x34cg=233334^233334;return`
+    ` : '';
+
+    if (list.length === 0) {
+        grid.innerHTML = bar + '<div style="opacity:.7;padding:20px;grid-column:1/-1">Sonuç bulunamadı.</div>';
+        const cnt = document.getElementById('t-data-count'); if (cnt) cnt.innerText = '0 kayıt';
+        return;
+    }
+
+    const cnt = document.getElementById('t-data-count');
+    if (cnt) cnt.innerText = `${list.length} kayıt`;
+
+    grid.innerHTML = bar + list.map((o, idx) => {
+        const imgHtml = o.image ? `<div style="height:120px;overflow:hidden;border-radius:6px;margin-bottom:8px;"><img src="${processImageUrl(o.image)}" style="width:100%;height:100%;object-fit:cover;"></div>` : '';
+        return `
         <div class="q-training-card" onclick="showTelesalesOfferDetail(${idx})" style="cursor:pointer">
-          ${_0x0ffe9d}
+          ${imgHtml}
           <div class="t-training-head">
             <div style="min-width:0">
-              <div class="q-item-title" style="font-size:1.02rem">${escapeHtml(o['\u0074\u0069\u0074\u006C\u0065']||"filkeT".split("").reverse().join(""))}</div>
+              <div class="q-item-title" style="font-size:1.02rem">${escapeHtml(o.title || 'Teklif')}</div>
             </div>
-            <div class="t-training-badge">${escapeHtml(o['\u0073\u0065\u0067\u006D\u0065\u006E\u0074']||o['\u0074\u0061\u0067']||'')}</div>
+            <div class="t-training-badge">${escapeHtml(o.segment || o.tag || '')}</div>
           </div>
-          <div class="t-training-desc" style="white-space: pre-line">${escapeHtml((o['\u0064\u0065\u0073\u0063']||'')['\u0073\u006C\u0069\u0063\u0065'](796858^796858,715067^715191))}${(o['\u0064\u0065\u0073\u0063']||'')['\u006C\u0065\u006E\u0067\u0074\u0068']>(746644^746520)?"\u002E\u002E\u002E":''}</div>
+          <div class="t-training-desc" style="white-space: pre-line">${escapeHtml((o.desc || '').slice(0, 140))}${(o.desc || '').length > 140 ? '...' : ''}</div>
           <div style="margin-top:10px;color:#999;font-size:.8rem">(Detay için tıkla)</div>
-          ${isAdminMode&&isEditingActive?`
+          ${(isAdminMode && isEditingActive) ? `
             <div style="margin-top:12px;display:flex;gap:10px">
               <button class="x-btn x-btn-admin" onclick="event.stopPropagation(); editTelesalesOffer(${idx});"><i class="fas fa-pen"></i> Düzenle</button>
               <button class="x-btn x-btn-admin" onclick="event.stopPropagation(); deleteTelesalesOffer(${idx});"><i class="fas fa-trash"></i> Sil</button>
             </div>
-          `:``}
+          ` : ``}
         </div>
-    `;})['\u006A\u006F\u0069\u006E']('');}function addTelesalesOffer(){Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"TeleSatış Teklifi Ekle","html":`
+    `;
+    }).join('');
+}
+
+function addTelesalesOffer() {
+    Swal.fire({
+        title: "TeleSatış Teklifi Ekle",
+        html: `
           <input id="to-title" class="swal2-input" placeholder="Başlık*" style="margin-bottom:10px">
           <input id="to-seg" class="swal2-input" placeholder="Segment" style="margin-bottom:10px">
            <input id="to-img" class="swal2-input" placeholder="Görsel URL (İsteğe bağlı)" style="margin-bottom:10px">
           <textarea id="to-desc" class="swal2-textarea" placeholder="Açıklama" style="margin-bottom:10px"></textarea>
           <textarea id="to-note" class="swal2-textarea" placeholder="Not (Kritik Bilgi)"></textarea>
          <textarea id="to-detail" class="swal2-textarea" placeholder="Diğer Detay"></textarea>
-        `,'\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],"confirmButtonText":"\u0045\u006B\u006C\u0065","cancelButtonText":"Vazgeç",'\u0070\u0072\u0065\u0043\u006F\u006E\u0066\u0069\u0072\u006D':()=>{const _0xb8626e=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u006F\u002D\u0074\u0069\u0074\u006C\u0065")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']();if(!_0xb8626e)return Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("\u0042\u0061\u015F\u006C\u0131\u006B\u0020\u007A\u006F\u0072\u0075\u006E\u006C\u0075");return{"title":_0xb8626e,'\u0073\u0065\u0067\u006D\u0065\u006E\u0074':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("ges-ot".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0069\u006D\u0061\u0067\u0065':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("gmi-ot".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),"desc":(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("csed-ot".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u006E\u006F\u0074\u0065':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u006F\u002D\u006E\u006F\u0074\u0065")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),"detail":(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u006F\u002D\u0064\u0065\u0074\u0061\u0069\u006C")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0070\u006B':Date['\u006E\u006F\u0077']()['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()};}})['\u0074\u0068\u0065\u006E'](async res=>{if(!res['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064'])return;const v=res['\u0076\u0061\u006C\u0075\u0065'];Swal['\u0066\u0069\u0072\u0065']({"title":"\u0045\u006B\u006C\u0065\u006E\u0069\u0079\u006F\u0072\u002E\u002E\u002E",'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067'](),'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false});try{telesalesOffers['\u0075\u006E\u0073\u0068\u0069\u0066\u0074'](v);const r=await fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0050\u004F\u0053\u0054","headers":{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":'text/plain;charset=utf-8'},"body":JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"\u0073\u0061\u0076\u0065\u0041\u006C\u006C\u0054\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u004F\u0066\u0066\u0065\u0072\u0073",'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken(),'\u006F\u0066\u0066\u0065\u0072\u0073':telesalesOffers})});var _0x3cd=(787807^787798)+(494898^494896);const d=await r['\u006A\u0073\u006F\u006E']();_0x3cd=379957^379958;if(d['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")){Swal['\u0066\u0069\u0072\u0065']({"icon":'success','\u0074\u0069\u0074\u006C\u0065':'Eklendi','\u0074\u0069\u006D\u0065\u0072':1200,'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false});renderTelesalesDataOffers();}else{telesalesOffers['\u0073\u0068\u0069\u0066\u0074']();Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),d['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"idemenelkE".split("").reverse().join(""),"\u0065\u0072\u0072\u006F\u0072");}}catch(e){Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),"\u0053\u0075\u006E\u0075\u0063\u0075\u0020\u0068\u0061\u0074\u0061\u0073\u0131\u002E","rorre".split("").reverse().join(""));}});}async function editTelesalesOffer(idx,_0xdaa9g){const o=(telesalesOffers||[])[idx];_0xdaa9g=(296669^296665)+(411326^411323);if(!o)return;const{'\u0076\u0061\u006C\u0075\u0065':v}=await Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u0054\u0065\u006B\u006C\u0069\u0066\u0069\u0020\u0044\u00FC\u007A\u0065\u006E\u006C\u0065",'\u0068\u0074\u006D\u006C':`
-          <label>Başlık</label><input id="to-title" class="swal2-input" value="${escapeHtml(o['\u0074\u0069\u0074\u006C\u0065']||'')}">
-          <label>Segment</label><input id="to-seg" class="swal2-input" value="${escapeHtml(o['\u0073\u0065\u0067\u006D\u0065\u006E\u0074']||'')}">
-          <label>Görsel</label><input id="to-img" class="swal2-input" value="${escapeHtml(o['\u0069\u006D\u0061\u0067\u0065']||'')}">
-          <label>Açıklama</label><textarea id="to-desc" class="swal2-textarea">${escapeHtml(o['\u0064\u0065\u0073\u0063']||'')}</textarea>
-           <label>Not</label><textarea id="to-note" class="swal2-textarea">${escapeHtml(o['\u006E\u006F\u0074\u0065']||'')}</textarea>
-          <label>Detay</label><textarea id="to-detail" class="swal2-textarea">${escapeHtml(o['\u0064\u0065\u0074\u0061\u0069\u006C']||'')}</textarea>
-        `,"showCancelButton":!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u004B\u0061\u0079\u0064\u0065\u0074","preConfirm":()=>{let _0x4a_0xca6;const _0x5fc=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("eltit-ot".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']();_0x4a_0xca6=244735^244726;if(!_0x5fc)return Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("\u0042\u0061\u015F\u006C\u0131\u006B\u0020\u007A\u006F\u0072\u0075\u006E\u006C\u0075");return{'\u0074\u0069\u0074\u006C\u0065':_0x5fc,'\u0073\u0065\u0067\u006D\u0065\u006E\u0074':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u006F\u002D\u0073\u0065\u0067")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0069\u006D\u0061\u0067\u0065':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u006F\u002D\u0069\u006D\u0067")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),"desc":(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u006F\u002D\u0064\u0065\u0073\u0063")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),"note":(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u006F\u002D\u006E\u006F\u0074\u0065")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0064\u0065\u0074\u0061\u0069\u006C':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("liated-ot".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']()};}});if(!v)return;Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':'Kaydediliyor...',"didOpen":()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067'](),"showConfirmButton":false});const _0x40ba6d=telesalesOffers[idx];telesalesOffers[idx]={..._0x40ba6d,...v};try{let _0x5e4cg;const r=await fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':'POST','\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":'text/plain;charset=utf-8'},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"\u0073\u0061\u0076\u0065\u0041\u006C\u006C\u0054\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u004F\u0066\u0066\u0065\u0072\u0073",'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,"token":getToken(),"offers":telesalesOffers})});_0x5e4cg=299424^299429;const d=await r['\u006A\u0073\u006F\u006E']();if(d['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){Swal['\u0066\u0069\u0072\u0065']({"icon":"\u0073\u0075\u0063\u0063\u0065\u0073\u0073","title":"\u004B\u0061\u0079\u0064\u0065\u0064\u0069\u006C\u0064\u0069",'\u0074\u0069\u006D\u0065\u0072':1200,"showConfirmButton":false});renderTelesalesDataOffers();}else{telesalesOffers[idx]=_0x40ba6d;Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",d['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u004B\u0061\u0079\u0064\u0065\u0064\u0069\u006C\u0065\u006D\u0065\u0064\u0069","\u0065\u0072\u0072\u006F\u0072");}}catch(e){telesalesOffers[idx]=_0x40ba6d;Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",".\u0131satah ucunuS".split("").reverse().join(""),"\u0065\u0072\u0072\u006F\u0072");}}function deleteTelesalesOffer(idx){Swal['\u0066\u0069\u0072\u0065']({"title":"\u0053\u0069\u006C\u0069\u006E\u0073\u0069\u006E\u0020\u006D\u0069\u003F","text":"\u0042\u0075\u0020\u0074\u0065\u006B\u006C\u0069\u0066\u0020\u006B\u0061\u006C\u0131\u0063\u0131\u0020\u006F\u006C\u0061\u0072\u0061\u006B\u0020\u0073\u0069\u006C\u0069\u006E\u0065\u0063\u0065\u006B\u002E",'\u0069\u0063\u006F\u006E':"warning",'\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0053\u0069\u006C"})['\u0074\u0068\u0065\u006E'](async res=>{if(!res['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064'])return;const _0x073b=telesalesOffers[idx];telesalesOffers['\u0073\u0070\u006C\u0069\u0063\u0065'](idx,897419^897418);try{const r=await fetch(SCRIPT_URL,{"method":"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"\u0073\u0061\u0076\u0065\u0041\u006C\u006C\u0054\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u004F\u0066\u0066\u0065\u0072\u0073","username":currentUser,"token":getToken(),'\u006F\u0066\u0066\u0065\u0072\u0073':telesalesOffers})});var _0x236d8e=(197882^197887)+(288783^288782);const d=await r['\u006A\u0073\u006F\u006E']();_0x236d8e=308075^308073;if(d['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")){renderTelesalesDataOffers();Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':'success',"title":'Silindi','\u0074\u0069\u006D\u0065\u0072':1000,'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false});}else{telesalesOffers['\u0073\u0070\u006C\u0069\u0063\u0065'](idx,508166^508166,_0x073b);Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),d['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u0053\u0069\u006C\u0069\u006E\u0065\u006D\u0065\u0064\u0069","rorre".split("").reverse().join(""));}}catch(e){telesalesOffers['\u0073\u0070\u006C\u0069\u0063\u0065'](idx,411137^411137,_0x073b);Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",".\u0131satah ucunuS".split("").reverse().join(""),"\u0065\u0072\u0072\u006F\u0072");}});}function showTelesalesOfferDetail(idx){const o=(telesalesOffers||[])[idx];if(!o)return;const _0xa9f=o['\u0069\u006D\u0061\u0067\u0065']?`<img src="${processImageUrl(o['\u0069\u006D\u0061\u0067\u0065'])}" style="max-width:100%;border-radius:6px;margin-bottom:15px;">`:'';Swal['\u0066\u0069\u0072\u0065']({"title":escapeHtml(o['\u0074\u0069\u0074\u006C\u0065']||''),'\u0068\u0074\u006D\u006C':`<div style="text-align:left;line-height:1.6">
-                ${_0xa9f}
-                <div style="margin-bottom:10px"><b>Segment:</b> ${escapeHtml(o['\u0073\u0065\u0067\u006D\u0065\u006E\u0074']||"\u002D")}</div>
-                 ${o['\u006E\u006F\u0074\u0065']?`<div style="margin-bottom:10px;background:#fff3cd;padding:8px;border-radius:4px;border-left:4px solid #ffc107;white-space: pre-line"><b>Not:</b> ${escapeHtml(o['\u006E\u006F\u0074\u0065'])}</div>`:''}
-                 <div style="white-space: pre-line">${escapeHtml(o['\u0064\u0065\u0073\u0063']||".koy yateD".split("").reverse().join(""))}</div>
-                 ${o['\u0064\u0065\u0074\u0061\u0069\u006C']?`<hr><div style="font-size:0.9rem;color:#666;white-space: pre-line">${escapeHtml(o['\u0064\u0065\u0074\u0061\u0069\u006C'])}</div>`:''}
-              </div>`,'\u0073\u0068\u006F\u0077\u0043\u006C\u006F\u0073\u0065\u0042\u0075\u0074\u0074\u006F\u006E':!![],"showConfirmButton":false,"width":"\u0037\u0032\u0030\u0070\u0078",'\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064':"\u0023\u0066\u0038\u0066\u0039\u0066\u0061"});}function renderTelesalesScripts(){const _0x3a22e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u002D\u0073\u0063\u0072\u0069\u0070\u0074\u0073\u002D\u0067\u0072\u0069\u0064");if(!_0x3a22e)return;let _0x2b4f=salesScripts||[];try{const _0x57fb=JSON['\u0070\u0061\u0072\u0073\u0065'](localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u0053\u0063\u0072\u0069\u0070\u0074\u0073\u004F\u0076\u0065\u0072\u0072\u0069\u0064\u0065")||"][".split("").reverse().join(""));if(Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0x57fb)&&_0x57fb['\u006C\u0065\u006E\u0067\u0074\u0068'])_0x2b4f=_0x57fb;}catch(e){}const _0x1g27de=isAdminMode&&isEditingActive?`
+        `,
+        showCancelButton: true,
+        confirmButtonText: "Ekle",
+        cancelButtonText: "Vazgeç",
+        preConfirm: () => {
+            const title = (document.getElementById('to-title').value || '').trim();
+            if (!title) return Swal.showValidationMessage("Başlık zorunlu");
+            return {
+                title,
+                segment: (document.getElementById('to-seg').value || '').trim(),
+                image: (document.getElementById('to-img').value || '').trim(),
+                desc: (document.getElementById('to-desc').value || '').trim(),
+                note: (document.getElementById('to-note').value || '').trim(),
+                detail: (document.getElementById('to-detail').value || '').trim(),
+                pk: Date.now().toString()
+            };
+        }
+    }).then(async res => {
+        if (!res.isConfirmed) return;
+        const v = res.value;
+        Swal.fire({ title: 'Ekleniyor...', didOpen: () => Swal.showLoading(), showConfirmButton: false });
+        try {
+            telesalesOffers.unshift(v);
+            const r = await fetch(SCRIPT_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                body: JSON.stringify({ action: 'saveAllTelesalesOffers', username: currentUser, token: getToken(), offers: telesalesOffers })
+            });
+            const d = await r.json();
+            if (d.result === 'success') {
+                Swal.fire({ icon: 'success', title: 'Eklendi', timer: 1200, showConfirmButton: false });
+                renderTelesalesDataOffers();
+            } else {
+                telesalesOffers.shift();
+                Swal.fire('Hata', d.message || 'Eklenemedi', 'error');
+            }
+        } catch (e) {
+            Swal.fire('Hata', 'Sunucu hatası.', 'error');
+        }
+    });
+}
+
+async function editTelesalesOffer(idx) {
+    const o = (telesalesOffers || [])[idx];
+    if (!o) return;
+    const { value: v } = await Swal.fire({
+        title: "Teklifi Düzenle",
+        html: `
+          <label>Başlık</label><input id="to-title" class="swal2-input" value="${escapeHtml(o.title || '')}">
+          <label>Segment</label><input id="to-seg" class="swal2-input" value="${escapeHtml(o.segment || '')}">
+          <label>Görsel</label><input id="to-img" class="swal2-input" value="${escapeHtml(o.image || '')}">
+          <label>Açıklama</label><textarea id="to-desc" class="swal2-textarea">${escapeHtml(o.desc || '')}</textarea>
+           <label>Not</label><textarea id="to-note" class="swal2-textarea">${escapeHtml(o.note || '')}</textarea>
+          <label>Detay</label><textarea id="to-detail" class="swal2-textarea">${escapeHtml(o.detail || '')}</textarea>
+        `,
+        showCancelButton: true,
+        confirmButtonText: "Kaydet",
+        preConfirm: () => {
+            const title = (document.getElementById('to-title').value || '').trim();
+            if (!title) return Swal.showValidationMessage("Başlık zorunlu");
+            return {
+                title,
+                segment: (document.getElementById('to-seg').value || '').trim(),
+                image: (document.getElementById('to-img').value || '').trim(),
+                desc: (document.getElementById('to-desc').value || '').trim(),
+                note: (document.getElementById('to-note').value || '').trim(),
+                detail: (document.getElementById('to-detail').value || '').trim()
+            };
+        }
+    });
+    if (!v) return;
+
+    Swal.fire({ title: 'Kaydediliyor...', didOpen: () => Swal.showLoading(), showConfirmButton: false });
+    const oldVal = telesalesOffers[idx];
+    telesalesOffers[idx] = { ...oldVal, ...v };
+    try {
+        const r = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: 'saveAllTelesalesOffers', username: currentUser, token: getToken(), offers: telesalesOffers })
+        });
+        const d = await r.json();
+        if (d.result === 'success') {
+            Swal.fire({ icon: 'success', title: 'Kaydedildi', timer: 1200, showConfirmButton: false });
+            renderTelesalesDataOffers();
+        } else {
+            telesalesOffers[idx] = oldVal;
+            Swal.fire('Hata', d.message || 'Kaydedilemedi', 'error');
+        }
+    } catch (e) {
+        telesalesOffers[idx] = oldVal;
+        Swal.fire('Hata', 'Sunucu hatası.', 'error');
+    }
+}
+
+function deleteTelesalesOffer(idx) {
+    Swal.fire({
+        title: "Silinsin mi?",
+        text: "Bu teklif kalıcı olarak silinecek.",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Sil"
+    }).then(async res => {
+        if (!res.isConfirmed) return;
+        const oldVal = telesalesOffers[idx];
+        telesalesOffers.splice(idx, 1);
+        try {
+            const r = await fetch(SCRIPT_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                body: JSON.stringify({ action: 'saveAllTelesalesOffers', username: currentUser, token: getToken(), offers: telesalesOffers })
+            });
+            const d = await r.json();
+            if (d.result === 'success') {
+                renderTelesalesDataOffers();
+                Swal.fire({ icon: 'success', title: 'Silindi', timer: 1000, showConfirmButton: false });
+            } else {
+                telesalesOffers.splice(idx, 0, oldVal);
+                Swal.fire('Hata', d.message || 'Silinemedi', 'error');
+            }
+        } catch (e) {
+            telesalesOffers.splice(idx, 0, oldVal);
+            Swal.fire('Hata', 'Sunucu hatası.', 'error');
+        }
+    });
+}
+
+function showTelesalesOfferDetail(idx) {
+    const o = (telesalesOffers || [])[idx];
+    if (!o) return;
+    const imgHtml = o.image ? `<img src="${processImageUrl(o.image)}" style="max-width:100%;border-radius:6px;margin-bottom:15px;">` : '';
+    Swal.fire({
+        title: escapeHtml(o.title || ''),
+        html: `<div style="text-align:left;line-height:1.6">
+                ${imgHtml}
+                <div style="margin-bottom:10px"><b>Segment:</b> ${escapeHtml(o.segment || '-')}</div>
+                 ${o.note ? `<div style="margin-bottom:10px;background:#fff3cd;padding:8px;border-radius:4px;border-left:4px solid #ffc107;white-space: pre-line"><b>Not:</b> ${escapeHtml(o.note)}</div>` : ''}
+                 <div style="white-space: pre-line">${escapeHtml(o.desc || 'Detay yok.')}</div>
+                 ${o.detail ? `<hr><div style="font-size:0.9rem;color:#666;white-space: pre-line">${escapeHtml(o.detail)}</div>` : ''}
+              </div>`,
+        showCloseButton: true,
+        showConfirmButton: false,
+        width: '720px',
+        background: '#f8f9fa'
+    });
+}
+
+function renderTelesalesScripts() {
+    const area = document.getElementById('t-scripts-grid');
+    if (!area) return;
+
+    let list = (salesScripts || []);
+    try {
+        const ov = JSON.parse(localStorage.getItem('telesalesScriptsOverride') || '[]');
+        if (Array.isArray(ov) && ov.length) list = ov;
+    } catch (e) { }
+
+    // İstek: TeleSatış Scriptler'deki ayrı "Düzenlemeyi Aç" kalksın.
+    // Düzenleme sadece üst kullanıcı menüsündeki global "Düzenlemeyi Aç" aktifken yapılabilsin.
+    const bar = (isAdminMode && isEditingActive) ? `
         <div style="display:flex;gap:10px;align-items:center;margin:6px 0 12px;">
           <button class="x-btn x-btn-admin" onclick="addTelesalesScript()"><i class="fas fa-plus"></i> Script Ekle</button>
         </div>
-    `:'';if(_0x2b4f['\u006C\u0065\u006E\u0067\u0074\u0068']===(777178^777178)){_0x3a22e['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x1g27de+">vid/<.\u0131damanulub tpircS>\"7.:yticapo;xp61:gniddap\"=elyts vid<".split("").reverse().join("");return;}_0x3a22e['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x1g27de+_0x2b4f['\u006D\u0061\u0070']((s,i)=>`
-      <div class="news-item" style="border-left-color:#10b981;cursor:pointer" onclick="copyText('${escapeForJsString(s['\u0074\u0065\u0078\u0074']||'')}')">
-        <span class="news-title">${escapeHtml(s['\u0074\u0069\u0074\u006C\u0065']||"\u0053\u0063\u0072\u0069\u0070\u0074")}</span>
-        <div class="news-desc" style="white-space:pre-line">${escapeHtml(s['\u0074\u0065\u0078\u0074']||'')}</div>
+    ` : '';
+
+    if (list.length === 0) {
+        area.innerHTML = bar + '<div style="padding:16px;opacity:.7">Script bulunamadı.</div>';
+        return;
+    }
+
+    area.innerHTML = bar + list.map((s, i) => `
+      <div class="news-item" style="border-left-color:#10b981;cursor:pointer" onclick="copyText('${escapeForJsString(s.text || '')}')">
+        <span class="news-title">${escapeHtml(s.title || 'Script')}</span>
+        <div class="news-desc" style="white-space:pre-line">${escapeHtml(s.text || '')}</div>
         <div style="display:flex;gap:10px;align-items:center;justify-content:space-between;margin-top:10px">
           <div class="news-tag" style="background:rgba(16,185,129,.08);color:#10b981;border:1px solid rgba(16,185,129,.25)">Tıkla & Kopyala</div>
-          ${isAdminMode&&isEditingActive?`
+          ${(isAdminMode && isEditingActive) ? `
             <div style="display:flex;gap:8px">
               <button class="x-btn x-btn-admin" onclick="event.stopPropagation(); editTelesalesScript(${i});"><i class="fas fa-pen"></i></button>
               <button class="x-btn x-btn-admin" onclick="event.stopPropagation(); deleteTelesalesScript(${i});"><i class="fas fa-trash"></i></button>
             </div>
-          `:``}
+          ` : ``}
         </div>
       </div>
-    `)['\u006A\u006F\u0069\u006E']('');}function getTelesalesScriptsStore(){try{let _0xb9ae;const _0xe814db=JSON['\u0070\u0061\u0072\u0073\u0065'](localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("edirrevOstpircSselaselet".split("").reverse().join(""))||"][".split("").reverse().join(""));_0xb9ae='\u0062\u0070\u0071\u006B\u006B\u0063';if(Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0xe814db)&&_0xe814db['\u006C\u0065\u006E\u0067\u0074\u0068'])return _0xe814db;}catch(e){}return salesScripts||[];}function saveTelesalesScriptsStore(arr){localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073\u0053\u0063\u0072\u0069\u0070\u0074\u0073\u004F\u0076\u0065\u0072\u0072\u0069\u0064\u0065",JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](arr||[]));}function addTelesalesScript(){Swal['\u0066\u0069\u0072\u0065']({"title":"\u0053\u0063\u0072\u0069\u0070\u0074\u0020\u0045\u006B\u006C\u0065",'\u0068\u0074\u006D\u006C':`
+    `).join('');
+}
+
+function getTelesalesScriptsStore() {
+    try {
+        const ov = JSON.parse(localStorage.getItem('telesalesScriptsOverride') || '[]');
+        if (Array.isArray(ov) && ov.length) return ov;
+    } catch (e) { }
+    return (salesScripts || []);
+}
+function saveTelesalesScriptsStore(arr) {
+    localStorage.setItem('telesalesScriptsOverride', JSON.stringify(arr || []));
+}
+
+function addTelesalesScript() {
+    Swal.fire({
+        title: "Script Ekle",
+        html: `
           <input id="ts-title" class="swal2-input" placeholder="Başlık">
           <textarea id="ts-text" class="swal2-textarea" placeholder="Script metni"></textarea>
-        `,"showCancelButton":!![],"confirmButtonText":"\u0045\u006B\u006C\u0065","cancelButtonText":"Vazgeç","preConfirm":()=>{let _0x18d;const _0x5f6d=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0073\u002D\u0074\u0069\u0074\u006C\u0065")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']();_0x18d=218990^218989;let _0xfa_0xb27;const _0xbge1eb=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0073\u002D\u0074\u0065\u0078\u0074")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']();_0xfa_0xb27=725657^725659;if(!_0xbge1eb)return Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("ulnuroz intem tpircS".split("").reverse().join(""));return{'\u0069\u0064':"\u006C\u006F\u0063\u0061\u006C\u005F"+Date['\u006E\u006F\u0077'](),'\u0074\u0069\u0074\u006C\u0065':_0x5f6d||"tpircS".split("").reverse().join(""),"text":_0xbge1eb};}})['\u0074\u0068\u0065\u006E'](res=>{if(!res['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064'])return;var _0x3219ed=(989557^989555)+(236998^237007);const _0x3bcab=getTelesalesScriptsStore();_0x3219ed='\u006E\u006B\u0064\u006C\u006E\u0071';_0x3bcab['\u0075\u006E\u0073\u0068\u0069\u0066\u0074'](res['\u0076\u0061\u006C\u0075\u0065']);saveTelesalesScriptsStore(_0x3bcab);syncTelesalesScriptsToSheet(_0x3bcab);renderTelesalesScripts();});}function editTelesalesScript(idx,_0x5b3e2f){var _0xbe_0xfdc=(568222^568221)+(615716^615718);const _0x712de=getTelesalesScriptsStore();_0xbe_0xfdc=(454907^454899)+(947827^947825);const s=_0x712de[idx];_0x5b3e2f='\u0063\u0070\u006A\u006E\u0067\u0071';if(!s)return;Swal['\u0066\u0069\u0072\u0065']({"title":"Script Düzenle","html":`
-          <input id="ts-title" class="swal2-input" placeholder="Başlık" value="${escapeHtml(s['\u0074\u0069\u0074\u006C\u0065']||'')}">
-          <textarea id="ts-text" class="swal2-textarea" placeholder="Script metni">${escapeHtml(s['\u0074\u0065\u0078\u0074']||'')}</textarea>
-        `,"showCancelButton":!![],"confirmButtonText":"Kaydet","cancelButtonText":"Vazgeç",'\u0070\u0072\u0065\u0043\u006F\u006E\u0066\u0069\u0072\u006D':()=>{const _0xa9ced=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0073\u002D\u0074\u0069\u0074\u006C\u0065")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']();const _0x77de=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("txet-st".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']();if(!_0x77de)return Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("\u0053\u0063\u0072\u0069\u0070\u0074\u0020\u006D\u0065\u0074\u006E\u0069\u0020\u007A\u006F\u0072\u0075\u006E\u006C\u0075");return{...s,"title":_0xa9ced||"\u0053\u0063\u0072\u0069\u0070\u0074",'\u0074\u0065\u0078\u0074':_0x77de};}})['\u0074\u0068\u0065\u006E'](res=>{if(!res['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064'])return;_0x712de[idx]=res['\u0076\u0061\u006C\u0075\u0065'];saveTelesalesScriptsStore(_0x712de);syncTelesalesScriptsToSheet(_0x712de);renderTelesalesScripts();});}function deleteTelesalesScript(idx){Swal['\u0066\u0069\u0072\u0065']({"title":"\u0053\u0069\u006C\u0069\u006E\u0073\u0069\u006E\u0020\u006D\u0069\u003F",'\u0069\u0063\u006F\u006E':"warning","showCancelButton":!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"Sil",'\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0056\u0061\u007A\u0067\u0065\u00E7"})['\u0074\u0068\u0065\u006E'](res=>{if(!res['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064'])return;var _0x0e_0xffb=(823392^823401)+(805989^805987);const _0x61_0x75a=getTelesalesScriptsStore()['\u0066\u0069\u006C\u0074\u0065\u0072']((_,i)=>i!==idx);_0x0e_0xffb="llccol".split("").reverse().join("");saveTelesalesScriptsStore(_0x61_0x75a);syncTelesalesScriptsToSheet(_0x61_0x75a);renderTelesalesScripts();});}function renderTelesalesDocs(){var _0x3b31be=(155470^155470)+(748828^748824);const _0x9dba6d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u002D\u0064\u006F\u0063\u0073");_0x3b31be="fnbeka".split("").reverse().join("");if(!_0x9dba6d)return;var _0x8823c=(772053^772048)+(354408^354401);const _0xf003d=(trainingData||[])['\u0066\u0069\u006C\u0074\u0065\u0072'](t=>(t['\u0074\u0061\u0072\u0067\u0065\u0074']||'')==="\u015F\u0131taseleT".split("").reverse().join("")||(t['\u0074\u0069\u0074\u006C\u0065']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u015F\u0131taselet".split("").reverse().join("")));_0x8823c=782305^782307;if(_0xf003d['\u006C\u0065\u006E\u0067\u0074\u0068']===(323535^323535)){_0x9dba6d['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=">vid/<.roy\xFCmn\xFCr\xF6g miti\u011Fe/nam\xFCk\xF6d \u015F\u0131mnata ebike uB>\"xp01:gniddap;7.:yticapo\"=elyts vid<".split("").reverse().join("");return;}_0x9dba6d['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0xf003d['\u006D\u0061\u0070'](d=>`
+        `,
+        showCancelButton: true,
+        confirmButtonText: "Ekle",
+        cancelButtonText: "Vazgeç",
+        preConfirm: () => {
+            const title = (document.getElementById('ts-title').value || '').trim();
+            const text = (document.getElementById('ts-text').value || '').trim();
+            if (!text) return Swal.showValidationMessage("Script metni zorunlu");
+            return { id: 'local_' + Date.now(), title: title || 'Script', text };
+        }
+    }).then(res => {
+        if (!res.isConfirmed) return;
+        const arr = getTelesalesScriptsStore();
+        arr.unshift(res.value);
+        saveTelesalesScriptsStore(arr);
+        // mümkünse sheet'e de yaz
+        syncTelesalesScriptsToSheet(arr);
+        renderTelesalesScripts();
+    });
+}
+
+function editTelesalesScript(idx) {
+    const arr = getTelesalesScriptsStore();
+    const s = arr[idx];
+    if (!s) return;
+    Swal.fire({
+        title: "Script Düzenle",
+        html: `
+          <input id="ts-title" class="swal2-input" placeholder="Başlık" value="${escapeHtml(s.title || '')}">
+          <textarea id="ts-text" class="swal2-textarea" placeholder="Script metni">${escapeHtml(s.text || '')}</textarea>
+        `,
+        showCancelButton: true,
+        confirmButtonText: "Kaydet",
+        cancelButtonText: "Vazgeç",
+        preConfirm: () => {
+            const title = (document.getElementById('ts-title').value || '').trim();
+            const text = (document.getElementById('ts-text').value || '').trim();
+            if (!text) return Swal.showValidationMessage("Script metni zorunlu");
+            return { ...s, title: title || 'Script', text };
+        }
+    }).then(res => {
+        if (!res.isConfirmed) return;
+        arr[idx] = res.value;
+        saveTelesalesScriptsStore(arr);
+        syncTelesalesScriptsToSheet(arr);
+        renderTelesalesScripts();
+    });
+}
+function deleteTelesalesScript(idx) {
+    Swal.fire({ title: "Silinsin mi?", icon: "warning", showCancelButton: true, confirmButtonText: "Sil", cancelButtonText: "Vazgeç" }).then(res => {
+        if (!res.isConfirmed) return;
+        const arr = getTelesalesScriptsStore().filter((_, i) => i !== idx);
+        saveTelesalesScriptsStore(arr);
+        syncTelesalesScriptsToSheet(arr);
+        renderTelesalesScripts();
+    });
+}
+
+function renderTelesalesDocs() {
+    const box = document.getElementById('t-docs');
+    if (!box) return;
+    const docs = (trainingData || []).filter(t => (t.target || '') === 'Telesatış' || (t.title || '').toLowerCase().includes('telesatış'));
+    if (docs.length === 0) {
+        box.innerHTML = '<div style="opacity:.7;padding:10px">Bu ekibe atanmış döküman/eğitim görünmüyor.</div>';
+        return;
+    }
+    box.innerHTML = docs.map(d => `
       <div class="news-item" style="border-left-color:var(--secondary)">
-        <span class="news-date">${escapeHtml((d['\u0073\u0074\u0061\u0072\u0074\u0044\u0061\u0074\u0065']||'')+(d['\u0065\u006E\u0064\u0044\u0061\u0074\u0065']?"\u0020\u2192\u0020"+d['\u0065\u006E\u0064\u0044\u0061\u0074\u0065']:''))}</span>
-        <span class="news-title">${escapeHtml(d['\u0074\u0069\u0074\u006C\u0065']||'')}</span>
-        <div class="news-desc">${escapeHtml(d['\u0064\u0065\u0073\u0063']||'')}</div>
-        ${d['\u006C\u0069\u006E\u006B']&&d['\u006C\u0069\u006E\u006B']!=="A/N".split("").reverse().join("")?`<a class="btn btn-link" href="${escapeHtml(d['\u006C\u0069\u006E\u006B'])}" target="_blank">Link</a>`:''}
-        ${d['\u0064\u006F\u0063\u004C\u0069\u006E\u006B']&&d['\u0064\u006F\u0063\u004C\u0069\u006E\u006B']!=="\u004E\u002F\u0041"?`<a class="btn btn-link" href="${escapeHtml(d['\u0064\u006F\u0063\u004C\u0069\u006E\u006B'])}" target="_blank">Döküman</a>`:''}
+        <span class="news-date">${escapeHtml((d.startDate || '') + (d.endDate ? (' → ' + d.endDate) : ''))}</span>
+        <span class="news-title">${escapeHtml(d.title || '')}</span>
+        <div class="news-desc">${escapeHtml(d.desc || '')}</div>
+        ${d.link && d.link !== 'N/A' ? `<a class="btn btn-link" href="${escapeHtml(d.link)}" target="_blank">Link</a>` : ''}
+        ${d.docLink && d.docLink !== 'N/A' ? `<a class="btn btn-link" href="${escapeHtml(d.docLink)}" target="_blank">Döküman</a>` : ''}
       </div>
-    `)['\u006A\u006F\u0069\u006E']('');}async function openTechArea(tab){var _0xbeaa=(661600^661603)+(246507^246511);const _0x62_0x3df=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("neercslluf-hcet".split("").reverse().join(""));_0xbeaa=(346766^346761)+(681387^681389);if(!_0x62_0x3df)return;_0x62_0x3df['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0066\u006C\u0065\u0078";document['\u0062\u006F\u0064\u0079']['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("nepo-sf".split("").reverse().join(""));document['\u0062\u006F\u0064\u0079']['\u0073\u0074\u0079\u006C\u0065']['\u006F\u0076\u0065\u0072\u0066\u006C\u006F\u0077']="neddih".split("").reverse().join("");const _0x3575f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0078\u002D\u0073\u0069\u0064\u0065\u002D\u0061\u0076\u0061\u0074\u0061\u0072");const _0x6af5f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0078\u002D\u0073\u0069\u0064\u0065\u002D\u006E\u0061\u006D\u0065");var _0xbf4bc=(574786^574785)+(849859^849857);const _0xb5cc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0078\u002D\u0073\u0069\u0064\u0065\u002D\u0072\u006F\u006C\u0065");_0xbf4bc=(211962^211955)+(166918^166919);if(_0x3575f)_0x3575f['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=(currentUser||"\u0055")['\u0074\u0072\u0069\u006D']()['\u0073\u006C\u0069\u0063\u0065'](943653^943653,962567^962566)['\u0074\u006F\u0055\u0070\u0070\u0065\u0072\u0043\u0061\u0073\u0065']();if(_0x6af5f)_0x6af5f['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=currentUser||"\u004B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131";if(_0xb5cc)_0xb5cc['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=isAdminMode?"\u0041\u0064\u006D\u0069\u006E":"iclismeT".split("").reverse().join("");try{if((!database||database['\u006C\u0065\u006E\u0067\u0074\u0068']===(441370^441370))&&window['\u005F\u005F\u0064\u0061\u0074\u0061\u004C\u006F\u0061\u0064\u0065\u0064\u0050\u0072\u006F\u006D\u0069\u0073\u0065']){var _0xa3_0x351=(681120^681121)+(814803^814811);const _0x7154f=["tsil-tsacdaorb-x".split("").reverse().join(""),"\u0078\u002D\u0061\u0063\u0063\u0065\u0073\u0073\u002D\u006C\u0069\u0073\u0074","\u0078\u002D\u0061\u0070\u0070\u002D\u006C\u0069\u0073\u0074","\u0078\u002D\u0061\u0063\u0074\u0069\u0076\u0061\u0074\u0069\u006F\u006E\u002D\u006C\u0069\u0073\u0074","sdrac-x".split("").reverse().join("")];_0xa3_0x351=708909^708906;_0x7154f['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](id=>{var _0xfffdd=(706569^706571)+(685330^685332);const _0x87f43f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](id);_0xfffdd=878080^878088;if(_0x87f43f)_0x87f43f['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u0064\u0069\u0076\u0020\u0063\u006C\u0061\u0073\u0073\u003D\u0022\u0068\u006F\u006D\u0065\u002D\u006D\u0069\u006E\u0069\u002D\u0069\u0074\u0065\u006D\u0022\u003E\u0059\u00FC\u006B\u006C\u0065\u006E\u0069\u0079\u006F\u0072\u002E\u002E\u002E\u003C\u002F\u0064\u0069\u0076\u003E";});await window['\u005F\u005F\u0064\u0061\u0074\u0061\u004C\u006F\u0061\u0064\u0065\u0064\u0050\u0072\u006F\u006D\u0069\u0073\u0065'];}}catch(e){}try{renderTechSections();}catch(e){}switchTechTab(tab||"\u0062\u0072\u006F\u0061\u0064\u0063\u0061\u0073\u0074");}function closeFullTech(_0x55e7d){const _0xb77bdc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0065\u0063\u0068\u002D\u0066\u0075\u006C\u006C\u0073\u0063\u0072\u0065\u0065\u006E");_0x55e7d=533681^533681;if(_0xb77bdc)_0xb77bdc['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";document['\u0062\u006F\u0064\u0079']['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("\u0066\u0073\u002D\u006F\u0070\u0065\u006E");document['\u0062\u006F\u0064\u0079']['\u0073\u0074\u0079\u006C\u0065']['\u006F\u0076\u0065\u0072\u0066\u006C\u006F\u0077']='';}function switchTechTab(tab){document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("meti-van-q. neercslluf-hcet#".split("").reverse().join(""))['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](i=>i['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("evitca".split("").reverse().join("")));var _0xb9db=(829001^828993)+(318327^318334);const _0xcea7c=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072'](`#tech-fullscreen .q-nav-item[data-tech-tab="${tab}"]`);_0xb9db="djgkoq".split("").reverse().join("");if(_0xcea7c){_0xcea7c['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("evitca".split("").reverse().join(""));}else{document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("meti-van-q. neercslluf-hcet#".split("").reverse().join(""))['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](i=>{const _0x7bff0e=i['\u0067\u0065\u0074\u0041\u0074\u0074\u0072\u0069\u0062\u0075\u0074\u0065']("kcilcno".split("").reverse().join(""))||'';if(_0x7bff0e['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](`'${tab}'`)||_0x7bff0e['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](`\"${tab}\"`))i['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0063\u0074\u0069\u0076\u0065");});}document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u0023\u0074\u0065\u0063\u0068\u002D\u0066\u0075\u006C\u006C\u0073\u0063\u0072\u0065\u0065\u006E\u0020\u002E\u0071\u002D\u0076\u0069\u0065\u0077\u002D\u0073\u0065\u0063\u0074\u0069\u006F\u006E")['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](s=>s['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("evitca".split("").reverse().join("")));var _0xa4_0xebb=(789911^789904)+(388335^388330);const _0xed357e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`x-view-${tab}`);_0xa4_0xebb="fkbgcf".split("").reverse().join("");if(_0xed357e)_0xed357e['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0063\u0074\u0069\u0076\u0065");}async function openShiftArea(tab,_0xbb655d){const _0x0a12a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("neercslluf-tfihs".split("").reverse().join(""));_0xbb655d=(180863^180863)+(616619^616616);if(!_0x0a12a)return;_0x0a12a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u0066\u006C\u0065\u0078";document['\u0062\u006F\u0064\u0079']['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0066\u0073\u002D\u006F\u0070\u0065\u006E");document['\u0062\u006F\u0064\u0079']['\u0073\u0074\u0079\u006C\u0065']['\u006F\u0076\u0065\u0072\u0066\u006C\u006F\u0077']="\u0068\u0069\u0064\u0064\u0065\u006E";var _0x48c1fe=(884711^884710)+(656920^656922);const _0xgc2=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0068\u0069\u0066\u0074\u002D\u0073\u0069\u0064\u0065\u002D\u0061\u0076\u0061\u0074\u0061\u0072");_0x48c1fe='\u0067\u0061\u006F\u006B\u0065\u006D';var _0x859b=(183252^183248)+(185588^185586);const _0xdf63ce=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0068\u0069\u0066\u0074\u002D\u0073\u0069\u0064\u0065\u002D\u006E\u0061\u006D\u0065");_0x859b=238479^238477;var _0xf9ce=(598565^598567)+(329000^329005);const _0xb9c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("elor-edis-tfihs".split("").reverse().join(""));_0xf9ce=(157658^157663)+(710904^710906);if(_0xgc2)_0xgc2['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=(currentUser||"\u0055")['\u0074\u0072\u0069\u006D']()['\u0073\u006C\u0069\u0063\u0065'](618919^618919,134165^134164)['\u0074\u006F\u0055\u0070\u0070\u0065\u0072\u0043\u0061\u0073\u0065']();if(_0xdf63ce)_0xdf63ce['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=currentUser||"\u004B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131";if(_0xb9c)_0xb9c['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=isAdminMode?"iciten\xF6Y".split("").reverse().join(""):"iclismeT".split("").reverse().join("");await loadShiftData();switchShiftTab(tab||"\u0070\u006C\u0061\u006E");}function closeFullShift(_0x47g08a){const _0xef6d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("neercslluf-tfihs".split("").reverse().join(""));_0x47g08a="cciljp".split("").reverse().join("");if(_0xef6d)_0xef6d['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";document['\u0062\u006F\u0064\u0079']['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("\u0066\u0073\u002D\u006F\u0070\u0065\u006E");document['\u0062\u006F\u0064\u0079']['\u0073\u0074\u0079\u006C\u0065']['\u006F\u0076\u0065\u0072\u0066\u006C\u006F\u0077']='';}function switchShiftTab(tab){document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("meti-van-q. neercslluf-tfihs#".split("").reverse().join(""))['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](i=>i['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("\u0061\u0063\u0074\u0069\u0076\u0065"));const _0x164de=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072'](`#shift-fullscreen .q-nav-item[data-shift-tab="${tab}"]`);if(_0x164de)_0x164de['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("evitca".split("").reverse().join(""));document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u0023\u0073\u0068\u0069\u0066\u0074\u002D\u0066\u0075\u006C\u006C\u0073\u0063\u0072\u0065\u0065\u006E\u0020\u002E\u0071\u002D\u0076\u0069\u0065\u0077\u002D\u0073\u0065\u0063\u0074\u0069\u006F\u006E")['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](s=>s['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("\u0061\u0063\u0074\u0069\u0076\u0065"));const _0x8f_0x657=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`shift-view-${tab}`);if(_0x8f_0x657)_0x8f_0x657['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("evitca".split("").reverse().join(""));}async function loadShiftData(){try{const _0xf40c8g=await apiCall("\u0067\u0065\u0074\u0053\u0068\u0069\u0066\u0074\u0044\u0061\u0074\u0061");renderShiftData(_0xf40c8g['\u0073\u0068\u0069\u0066\u0074\u0073']||{});}catch(e){console['\u0065\u0072\u0072\u006F\u0072'](e);Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",e['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u0056\u0061\u0072\u0064\u0069\u0079\u0061\u0020\u0076\u0065\u0072\u0069\u006C\u0065\u0072\u0069\u0020\u0061\u006C\u0131\u006E\u0131\u0072\u006B\u0065\u006E\u0020\u0062\u0069\u0072\u0020\u0068\u0061\u0074\u0061\u0020\u006F\u006C\u0075\u015F\u0074\u0075\u002E","\u0065\u0072\u0072\u006F\u0072");}}function renderShiftData(shifts,_0xgcgf6f){const _0xfb1dc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0068\u0069\u0066\u0074\u002D\u0077\u0065\u0065\u006B\u002D\u006C\u0061\u0062\u0065\u006C");if(_0xfb1dc){_0xfb1dc['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']=formatWeekLabel(shifts['\u0077\u0065\u0065\u006B\u004C\u0061\u0062\u0065\u006C']||'');}const _0x84cd9c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0068\u0069\u0066\u0074\u002D\u0070\u006C\u0061\u006E\u002D\u006D\u0079");_0xgcgf6f=(255521^255523)+(933666^933664);if(_0x84cd9c){var _0xa9acea=(754287^754286)+(589665^589673);const _0xc8_0x971=shifts['\u006D\u0079\u0052\u006F\u0077'];_0xa9acea=(639485^639485)+(426102^426103);let _0x14_0xcc2;const headers=shifts['\u0068\u0065\u0061\u0064\u0065\u0072\u0073']||[];_0x14_0xcc2=(475222^475220)+(568936^568938);if(_0xc8_0x971&&headers['\u006C\u0065\u006E\u0067\u0074\u0068']){const _0xb6227c=headers['\u006D\u0061\u0070']((h,idx)=>{const v=(_0xc8_0x971['\u0063\u0065\u006C\u006C\u0073']||[])[idx]||'';return`<div class="shift-day"><div class="shift-day-date">${formatShiftDate(h)}</div><div class="shift-day-slot">${escapeHtml(v)}</div></div>`;})['\u006A\u006F\u0069\u006E']('');_0x84cd9c['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=`
+    `).join('');
+}
+
+/* -------------------------
+   TEKNİK FULLSCREEN
+--------------------------*/
+async function openTechArea(tab) {
+    const wrap = document.getElementById('tech-fullscreen');
+    if (!wrap) return;
+    wrap.style.display = 'flex';
+    document.body.classList.add('fs-open');
+    document.body.style.overflow = 'hidden';
+
+    // Sidebar profil
+    const av = document.getElementById('x-side-avatar');
+    const nm = document.getElementById('x-side-name');
+    const rl = document.getElementById('x-side-role');
+    if (av) av.innerText = (currentUser || 'U').trim().slice(0, 1).toUpperCase();
+    if (nm) nm.innerText = currentUser || 'Kullanıcı';
+    if (rl) rl.innerText = isAdminMode ? 'Admin' : 'Temsilci';
+
+    // İlk açılışta "bozuk görünüm" (flicker) olmasın: veri gelene kadar bekle
+    try {
+        if ((!database || database.length === 0) && window.__dataLoadedPromise) {
+            const lists = ['x-broadcast-list', 'x-access-list', 'x-app-list', 'x-activation-list', 'x-cards'];
+            lists.forEach(id => { const el = document.getElementById(id); if (el) el.innerHTML = '<div class="home-mini-item">Yükleniyor...</div>'; });
+            await window.__dataLoadedPromise;
+        }
+    } catch (e) { }
+
+    // İçerikleri (bucket/list) hazırla
+    try { renderTechSections(); } catch (e) { }
+
+    // Sekmeyi aç
+    switchTechTab(tab || 'broadcast');
+}
+
+function closeFullTech() {
+    const wrap = document.getElementById('tech-fullscreen');
+    if (wrap) wrap.style.display = 'none';
+    document.body.classList.remove('fs-open');
+    document.body.style.overflow = '';
+}
+
+function switchTechTab(tab) {
+    // Sidebar aktif öğeyi doğru belirle
+    // (önce data-tech-tab kullan, yoksa onclick içeriği ile fallback yap)
+    document.querySelectorAll('#tech-fullscreen .q-nav-item').forEach(i => i.classList.remove('active'));
+
+    const byData = document.querySelector(`#tech-fullscreen .q-nav-item[data-tech-tab="${tab}"]`);
+    if (byData) {
+        byData.classList.add('active');
+    } else {
+        document.querySelectorAll('#tech-fullscreen .q-nav-item').forEach(i => {
+            const oc = (i.getAttribute('onclick') || '');
+            if (oc.includes(`'${tab}'`) || oc.includes(`\"${tab}\"`)) i.classList.add('active');
+        });
+    }
+
+    document.querySelectorAll('#tech-fullscreen .q-view-section').forEach(s => s.classList.remove('active'));
+    const el = document.getElementById(`x-view-${tab}`);
+    if (el) el.classList.add('active');
+}
+
+
+// --------------    VARDİYA FULLSCREEN ---------------------
+async function openShiftArea(tab) {
+    const wrap = document.getElementById('shift-fullscreen');
+    if (!wrap) return;
+    wrap.style.display = 'flex';
+    document.body.classList.add('fs-open');
+    document.body.style.overflow = 'hidden';
+
+    const av = document.getElementById('shift-side-avatar');
+    const nm = document.getElementById('shift-side-name');
+    const rl = document.getElementById('shift-side-role');
+    if (av) av.innerText = (currentUser || 'U').trim().slice(0, 1).toUpperCase();
+    if (nm) nm.innerText = currentUser || 'Kullanıcı';
+    if (rl) rl.innerText = isAdminMode ? 'Yönetici' : 'Temsilci';
+
+    await loadShiftData();
+    switchShiftTab(tab || 'plan');
+}
+
+function closeFullShift() {
+    const wrap = document.getElementById('shift-fullscreen');
+    if (wrap) wrap.style.display = 'none';
+    document.body.classList.remove('fs-open');
+    document.body.style.overflow = '';
+}
+
+function switchShiftTab(tab) {
+    document.querySelectorAll('#shift-fullscreen .q-nav-item').forEach(i => i.classList.remove('active'));
+    const nav = document.querySelector(`#shift-fullscreen .q-nav-item[data-shift-tab="${tab}"]`);
+    if (nav) nav.classList.add('active');
+
+    document.querySelectorAll('#shift-fullscreen .q-view-section').forEach(s => s.classList.remove('active'));
+    const view = document.getElementById(`shift-view-${tab}`);
+    if (view) view.classList.add('active');
+}
+
+async function loadShiftData() {
+    try {
+        const data = await apiCall("getShiftData");
+        renderShiftData(data.shifts || {});
+    } catch (e) {
+        console.error(e);
+        Swal.fire('Hata', e.message || 'Vardiya verileri alınırken bir hata oluştu.', 'error');
+    }
+}
+
+function renderShiftData(shifts) {
+    const weekLabelEl = document.getElementById('shift-week-label');
+    if (weekLabelEl) {
+        weekLabelEl.textContent = formatWeekLabel(shifts.weekLabel || '');
+    }
+
+    const myPlanEl = document.getElementById('shift-plan-my');
+    if (myPlanEl) {
+        const myRow = shifts.myRow;
+        const headers = shifts.headers || [];
+        if (myRow && headers.length) {
+            const cellsHtml = headers.map((h, idx) => {
+                const v = (myRow.cells || [])[idx] || '';
+                return `<div class="shift-day"><div class="shift-day-date">${formatShiftDate(h)}</div><div class="shift-day-slot">${escapeHtml(v)}</div></div>`;
+            }).join('');
+            myPlanEl.innerHTML = `
                 <div class="shift-card-header">Benim Vardiyam</div>
-                <div class="shift-card-body">${_0xb6227c}</div>
-            `;}else{_0x84cd9c['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u0070\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0063\u006F\u006C\u006F\u0072\u003A\u0023\u0036\u0036\u0036\u003B\u0022\u003E\u0056\u0061\u0072\u0064\u0069\u0079\u0061\u0020\u0074\u0061\u0062\u006C\u006F\u0073\u0075\u006E\u0064\u0061\u0020\u0061\u0064\u0131\u006E\u0131\u007A\u0020\u0062\u0075\u006C\u0075\u006E\u0061\u006D\u0061\u0064\u0131\u002E\u003C\u002F\u0070\u003E";}}const _0xe5fg=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0068\u0069\u0066\u0074\u002D\u0070\u006C\u0061\u006E\u002D\u0074\u0061\u0062\u006C\u0065");if(_0xe5fg){let _0xaa8a9c;const headers=shifts['\u0068\u0065\u0061\u0064\u0065\u0072\u0073']||[];_0xaa8a9c="gafamm".split("").reverse().join("");const _0xd1af=shifts['\u0072\u006F\u0077\u0073']||[];if(!headers['\u006C\u0065\u006E\u0067\u0074\u0068']||!_0xd1af['\u006C\u0065\u006E\u0067\u0074\u0068']){_0xe5fg['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=">p/<.\u0131damnalr\u0131zah z\xFCneh usolbat ayidraV>\";666#:roloc\"=elyts p<".split("").reverse().join("");}else{let _0x72b;let _0x5b8ef=">ht/<iclismeT>ht<>rt<>daeht<>\"elbat-tfihs\"=ssalc elbat<".split("").reverse().join("");_0x72b=(360636^360638)+(871222^871218);headers['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](h=>{_0x5b8ef+=`<th>${formatShiftDate(h)}</th>`;});_0x5b8ef+="\u003C\u002F\u0074\u0072\u003E\u003C\u002F\u0074\u0068\u0065\u0061\u0064\u003E\u003C\u0074\u0062\u006F\u0064\u0079\u003E";_0xd1af['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](r=>{_0x5b8ef+="\u003C\u0074\u0072\u003E";_0x5b8ef+=`<td>${escapeHtml(r['\u006E\u0061\u006D\u0065'])}</td>`;headers['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((h,idx)=>{const v=(r['\u0063\u0065\u006C\u006C\u0073']||[])[idx]||'';_0x5b8ef+=`<td>${escapeHtml(v)}</td>`;});_0x5b8ef+=">rt/<".split("").reverse().join("");});_0x5b8ef+="\u003C\u002F\u0074\u0062\u006F\u0064\u0079\u003E\u003C\u002F\u0074\u0061\u0062\u006C\u0065\u003E";_0xe5fg['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x5b8ef;}}const _0x0b08d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tsil-stseuqer-tfihs".split("").reverse().join(""));if(_0x0b08d){const _0x421d=shifts['\u006D\u0079\u0052\u0065\u0071\u0075\u0065\u0073\u0074\u0073']||[];if(!_0x421d['\u006C\u0065\u006E\u0067\u0074\u0068']){_0x0b08d['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u0070\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0063\u006F\u006C\u006F\u0072\u003A\u0023\u0036\u0036\u0036\u003B\u0022\u003E\u0048\u0065\u006E\u00FC\u007A\u0020\u006F\u006C\u0075\u015F\u0074\u0075\u0072\u0075\u006C\u006D\u0075\u015F\u0020\u0076\u0061\u0072\u0064\u0069\u0079\u0061\u0020\u0074\u0061\u006C\u0065\u0062\u0069\u006E\u0020\u0079\u006F\u006B\u002E\u003C\u002F\u0070\u003E";}else{_0x0b08d['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x421d['\u006D\u0061\u0070'](r=>`
+                <div class="shift-card-body">${cellsHtml}</div>
+            `;
+        } else {
+            myPlanEl.innerHTML = '<p style="color:#666;">Vardiya tablosunda adınız bulunamadı.</p>';
+        }
+    }
+
+    const tableWrap = document.getElementById('shift-plan-table');
+    if (tableWrap) {
+        const headers = shifts.headers || [];
+        const rows = shifts.rows || [];
+        if (!headers.length || !rows.length) {
+            tableWrap.innerHTML = '<p style="color:#666;">Vardiya tablosu henüz hazırlanmadı.</p>';
+        } else {
+            let html = '<table class="shift-table"><thead><tr><th>Temsilci</th>';
+            headers.forEach(h => { html += `<th>${formatShiftDate(h)}</th>`; });
+            html += '</tr></thead><tbody>';
+            rows.forEach(r => {
+                html += '<tr>';
+                html += `<td>${escapeHtml(r.name)}</td>`;
+                headers.forEach((h, idx) => {
+                    const v = (r.cells || [])[idx] || '';
+                    html += `<td>${escapeHtml(v)}</td>`;
+                });
+                html += '</tr>';
+            });
+            html += '</tbody></table>';
+            tableWrap.innerHTML = html;
+        }
+    }
+
+    const listEl = document.getElementById('shift-requests-list');
+    if (listEl) {
+        const reqs = shifts.myRequests || [];
+        if (!reqs.length) {
+            listEl.innerHTML = '<p style="color:#666;">Henüz oluşturulmuş vardiya talebin yok.</p>';
+        } else {
+            listEl.innerHTML = reqs.map(r => `
                 <div class="shift-request-item">
                     <div class="shift-request-top">
-                        <span class="shift-request-date">${escapeHtml(r['\u0064\u0061\u0074\u0065']||'')}</span>
-                        <span class="shift-request-status">${escapeHtml(r['\u0073\u0074\u0061\u0074\u0075\u0073']||"\u0041\u00E7\u0131\u006B")}</span>
+                        <span class="shift-request-date">${escapeHtml(r.date || '')}</span>
+                        <span class="shift-request-status">${escapeHtml(r.status || 'Açık')}</span>
                     </div>
                     <div class="shift-request-body">
-                        <div><strong>Tür:</strong> ${escapeHtml(r['\u0074\u0079\u0070\u0065']||'')}</div>
-                        <div><strong>Mevcut:</strong> ${escapeHtml(r['\u0063\u0075\u0072\u0072\u0065\u006E\u0074']||'')}</div>
-                        <div><strong>Talep Edilen:</strong> ${escapeHtml(r['\u0072\u0065\u0071\u0075\u0065\u0073\u0074\u0065\u0064']||'')}</div>
-                        ${r['\u0066\u0072\u0069\u0065\u006E\u0064']?`<div><strong>Arkadaş:</strong> ${escapeHtml(r['\u0066\u0072\u0069\u0065\u006E\u0064']||'')}</div>`:''}
-                        ${r['\u0066\u0072\u0069\u0065\u006E\u0064\u0053\u0068\u0069\u0066\u0074']?`<div><strong>Arkadaş Vardiyası:</strong> ${escapeHtml(r['\u0066\u0072\u0069\u0065\u006E\u0064\u0053\u0068\u0069\u0066\u0074']||'')}</div>`:''}
-                        ${r['\u006E\u006F\u0074\u0065']?`<div><strong>Not:</strong> ${escapeHtml(r['\u006E\u006F\u0074\u0065']||'')}</div>`:''}
+                        <div><strong>Tür:</strong> ${escapeHtml(r.type || '')}</div>
+                        <div><strong>Mevcut:</strong> ${escapeHtml(r.current || '')}</div>
+                        <div><strong>Talep Edilen:</strong> ${escapeHtml(r.requested || '')}</div>
+                        ${r.friend ? `<div><strong>Arkadaş:</strong> ${escapeHtml(r.friend || '')}</div>` : ''}
+                        ${r.friendShift ? `<div><strong>Arkadaş Vardiyası:</strong> ${escapeHtml(r.friendShift || '')}</div>` : ''}
+                        ${r.note ? `<div><strong>Not:</strong> ${escapeHtml(r.note || '')}</div>` : ''}
                     </div>
-                    <div class="shift-request-footer">${escapeHtml(r['\u0074\u0069\u006D\u0065\u0073\u0074\u0061\u006D\u0070']||'')}</div>
+                    <div class="shift-request-footer">${escapeHtml(r.timestamp || '')}</div>
                 </div>
-            `)['\u006A\u006F\u0069\u006E']('');}}}async function submitShiftRequest(evt,_0xf8d78a,_0x23ad,_0xb5448a){if(evt)evt['\u0070\u0072\u0065\u0076\u0065\u006E\u0074\u0044\u0065\u0066\u0061\u0075\u006C\u0074']();const _0xd7d4c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("etad-qer-tfihs".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'];_0xf8d78a=(735527^735535)+(321483^321484);const _0x5f43dc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0068\u0069\u0066\u0074\u002D\u0072\u0065\u0071\u002D\u0074\u0079\u0070\u0065")['\u0076\u0061\u006C\u0075\u0065'];const _0x354c4a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tnerruc-qer-tfihs".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'];const _0xe57g1b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0068\u0069\u0066\u0074\u002D\u0072\u0065\u0071\u002D\u0072\u0065\u0071\u0075\u0065\u0073\u0074\u0065\u0064")['\u0076\u0061\u006C\u0075\u0065'];_0x23ad=(192189^192185)+(973986^973988);const _0xeea36b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("dneirf-qer-tfihs".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065'];const _0xd4b0ff=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0068\u0069\u0066\u0074\u002D\u0072\u0065\u0071\u002D\u0066\u0072\u0069\u0065\u006E\u0064\u002D\u0073\u0068\u0069\u0066\u0074")['\u0076\u0061\u006C\u0075\u0065'];const _0x0bd=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0068\u0069\u0066\u0074\u002D\u0072\u0065\u0071\u002D\u006E\u006F\u0074\u0065")['\u0076\u0061\u006C\u0075\u0065'];_0xb5448a="igeqoj".split("").reverse().join("");if(!_0xd7d4c||!_0xe57g1b){Swal['\u0066\u0069\u0072\u0065']("\u0055\u0079\u0061\u0072\u0131","\u0054\u0061\u0072\u0069\u0068\u0020\u0076\u0065\u0020\u0074\u0061\u006C\u0065\u0070\u0020\u0065\u0064\u0069\u006C\u0065\u006E\u0020\u0076\u0061\u0072\u0064\u0069\u0079\u0061\u0020\u0061\u006C\u0061\u006E\u006C\u0061\u0072\u0131\u0020\u007A\u006F\u0072\u0075\u006E\u006C\u0075\u0064\u0075\u0072\u002E","gninraw".split("").reverse().join(""));return;}try{const _0xe61c=await apiCall("\u0073\u0075\u0062\u006D\u0069\u0074\u0053\u0068\u0069\u0066\u0074\u0052\u0065\u0071\u0075\u0065\u0073\u0074",{'\u0064\u0061\u0074\u0065':_0xd7d4c,'\u0074\u0079\u0070\u0065':_0x5f43dc,"current":_0x354c4a,'\u0072\u0065\u0071\u0075\u0065\u0073\u0074\u0065\u0064':_0xe57g1b,"friend":_0xeea36b,"friendShift":_0xd4b0ff,'\u006E\u006F\u0074\u0065':_0x0bd,'\u0077\u0065\u0065\u006B':document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0068\u0069\u0066\u0074\u002D\u0077\u0065\u0065\u006B\u002D\u006C\u0061\u0062\u0065\u006C")?document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0068\u0069\u0066\u0074\u002D\u0077\u0065\u0065\u006B\u002D\u006C\u0061\u0062\u0065\u006C")['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']:''});Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':'success','\u0074\u0069\u0074\u006C\u0065':'Kaydedildi',"text":"\u0056\u0061\u0072\u0064\u0069\u0079\u0061\u0020\u0074\u0061\u006C\u0065\u0062\u0069\u006E\u0020\u006B\u0061\u0079\u0064\u0065\u0064\u0069\u006C\u0064\u0069\u002E","timer":1500,"showConfirmButton":false});const _0xaeea4a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("mrof-tseuqer-tfihs".split("").reverse().join(""));if(_0xaeea4a)_0xaeea4a['\u0072\u0065\u0073\u0065\u0074']();await loadShiftData();}catch(e){console['\u0065\u0072\u0072\u006F\u0072'](e);Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),e['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u0054\u0061\u006C\u0065\u0070\u0020\u006B\u0061\u0079\u0064\u0065\u0064\u0069\u006C\u0065\u006D\u0065\u0064\u0069\u002E","\u0065\u0072\u0072\u006F\u0072");}}var _0xc2_0xe6b=(355918^355913)+(493869^493867);const TECH_DOC_CONTENT={"broadcast":[{"title":"\u0053\u006D\u0061\u0072\u0074\u0020\u0054\u0056\u0020\u2013\u0020\u0043\u0061\u006E\u006C\u0131\u0020\u0059\u0061\u0079\u0131\u006E\u0064\u0061\u0020\u0044\u006F\u006E\u006D\u0061\u0020\u0050\u0072\u006F\u0062\u006C\u0065\u006D\u0069\u0020\u0059\u0061\u015F\u0131\u0079\u006F\u0072\u0075\u006D","body":"Müşterinin sorun yaşadığı yayın ya da yayınlarda genel bir sorun var mı kontrol edilir? Genel bir sorun var ise teknik ekibin incelediği yönünde bilgi verilir.\nMüşterinin kullandığı cihaz TVmanager ‘da loglardan kontrol edilir. Arçelik/Beko/Grundig/Altus marka Android TV olmayan Smart TV’lerden ise genel sorun hakkında bilgi verilir.\nYukarıdaki durumlar dışında yaşanan bir sorun ise TV ve modemin elektrik bağlantısını kesilip tekrar verilmesi istenir. « Yaşadığınız sorunu kontrol ederken TV ve modeminizin elektrik bağlantısını kesip 10 sn sonra yeniden açabilir misiniz? Ardından yeniden yayını açıp kontrol edebilir misiniz? (Ayrıca öneri olarak modemi kapatıp tekrar açtıktan sonra, sadece izleme yaptığı cihaz modeme bağlı olursa daha iyi bir bağlantı olacağı bilgisi verilebilir)\nSorun devam eder ise Smart TV tarayıcısından https://www.hiztesti.com.tr/ bir hız testi yapması sonucu bizimle paylaşması istenir.\nHız testi sonucu 8 Mbps altında ise internet bağlantı hızının düşük olduğunu internet servis sağlayıcısı iletişime geçmesi istenir.\n8 Mbps üzerinde ise müşteriden sorunu gösteren kısa bir video talep edilir.\nVideo kaydı ve hız testinin sonuçları gösteren bilgiler alındıktan sonra müşteriye incelenmesi için teknik ekibimize iletildiği inceleme tamamlandığında eposta ile bilgi verileceği yönünde bilgi verilir.\nSorun aynı gün içinde benzer cihazlarda farklı müşterilerde yaşıyor ise tüm bilgilerle Erlab’a arıza kaydı açılır. Sorun birkaç müşteri ile sınırlı ise 17:00 – 01:00 vardiyasındaki ekip arkadaşında sistemsel bir sorun olmadığına dair eposta gönderilmesi için bilgileri paylaşılır."},{"\u0074\u0069\u0074\u006C\u0065":"\u004D\u006F\u0062\u0069\u006C\u0020\u0055\u0079\u0067\u0075\u006C\u0061\u006D\u0061\u0020\u2013\u0020\u0043\u0061\u006E\u006C\u0131\u0020\u0059\u0061\u0079\u0131\u006E\u0064\u0061\u0020\u0044\u006F\u006E\u006D\u0061\u0020\u0053\u006F\u0072\u0075\u006E\u0075\u0020\u0059\u0061\u015F\u0131\u0079\u006F\u0072\u0075\u006D","\u0062\u006F\u0064\u0079":"Müşterinin sorun yaşadığı yayın ya da yayınlarda genel bir sorun var mı kontrol edilir? Genel bir sorun var ise teknik ekibin incelediği yönünde bilgi verilir.(Müşteri İOS veya Android işletim sistemli hangi cihazdan izliyorsa, mümkünse aynı işletim sistemli mobil cihazdan kontrol edilebilir, gerekirse ekip arkadaşlarından kontrol etmeleri istenebilir)\nGenel bir sorun yok ise, www.hiztesti.com.tr link üzerinden hız testi yapması sonucu bizimle paylaşması istenir.\nHız testi sonucu 8 mbps altında ise internet bağlantı hızının düşük olduğu internet servisi sağlayıcısı ile iletişime geçmesi istenir. (Öneri olarak modemi kapatıp tekrar açtıktan sonra sadece izleme yaptığı cihaz modeme bağlı olursa daha iyi bir bağlantı olacağı bilgisi verilebilir)\n8 mbps üzerinde ise, uygulama verilerin temizlenmesi veya uygulamanın silip tekrar yüklenmesi istenilir, sorun devam etmesi durumunda sorunu gösteren video kaydı istenir.\n 4. Hız testi, cihaz marka model ve sürüm bilgileri alındıktan sonra, incelenmesi için teknik ekibe iletildiği, inceleme tamamlandığında e-posta  ile bilgi verileceği yönünde bilgi verilir.\n 5. Sorun aynı gün içerinde benzer cihazlarda farklı müşterilerde yaşıyor ise tüm bilgilerle Erlab’a arıza kaydı açılır. Sorun birkaç müşteri ile sınırlı  ise 17:00 – 01:00 vardiyasındaki ekip arkadaşında sistemsel bir sorun olmadığına dair eposta gönderilmesi için bilgileri paylaşılır."},{"title":"Bilgisayar – Canlı Yayında Donma Sorunu Yaşıyorum","body":"Müşterinin sorun yaşadığı yayın ya da yayınlarda genel bir sorun var mı kontrol edilir? Genel bir sorun var ise teknik ekibin incelediği yönünde bilgi verilir.\nGenel bir sorun değilse, öncelikle https://www.hiztesti.com.tr/ bir hız testi yapması sonucu bizimle paylaşması istenir.\nHız testi sonucu 8 mbps altında ise internet bağlantı hızının düşük olduğunu internet servis sağlayıcısı iletişime geçmesi istenir.\n8 mbps üzerinde ise müşteriden aşağıdaki adımları uygulaması istenir.\n3. Bilgisayarın işletim sitemi öğrenilip, görüşme üzerinden ‘’pingWindows7’’ veya ‘’pingwindows10’’ kısayollarından müşteri sunucuları kontrol edilir.\n(Windows 10 üzeri işletim sistemi cihazlara pingwindows10 kısayolu gönderilebilir.)\n4. Sunucu kontrol ekranında kontrol edilmesi gereken, ok ile gösterilen yerden, sunucu ile kayıp olup olmadığı ve kırmızı alan içerisinde sunucu ile web sitemize kaç saniyede işlem sağladığı kontrol edilir.\n5. 1 – 35 arası normal sayılabilir, bu saniye aralığında sorun yaşanıyorsa, web sitemize daha hızlı tepsi süresi veren ve genellikle sorunsuz bir şekilde izleme sağlanabilen 193.192.103.249, 185.11.14.27 veya 195.175.178.8 sunucuları kontrol edilmelidir.\n6. Uygun sunucuyu tespit ettikten sonra canlı destek ekranında ‘’Host’’ ‘’host2’’ kısa yolları kullanarak, kısa yoldaki adımlar ile müşterinin sadece bizim sitemize bağlandığı sunucusunu, en uygun sunucu ile değiştirip tarayıcı açıp kapattırdıktan sonra tekrar yayını kontrol etmesini iletebiliriz. (Ayrıca müşteri yayınları auto değil, manuel olarak 720 veya 1080p seçip kontrol edilmesi önerilir)\n7. Sorun aynı gün içerinde benzer işletim sistemi veya sunucuda farklı müşterilerde yaşıyor ise tüm bilgilerle Erlab’a arıza kaydı açılır. Sorun birkaç müşteri ile sınırlı ise 17:00 – 01:00 vardiyasındaki ekip arkadaşında sistemsel bir sorun olmadığına dair eposta gönderilmesi için bilgileri paylaşılır"},{"title":"\u0059\u0041\u0059\u0049\u004E\u0020\u0053\u004F\u0052\u0055\u004E\u004C\u0041\u0052\u0049","body":"\u0033\u0035\u0020\u0073\u006E\u0020\u0061\u0072\u0061\u0073\u0131\u0020\u006E\u006F\u0072\u006D\u0061\u006C\u0020\u0073\u0061\u0079\u0131\u006C\u0061\u0062\u0069\u006C\u0069\u0072\u002C\u0020\u0062\u0075\u0020\u0073\u0061\u006E\u0069\u0079\u0065\u0020\u0061\u0072\u0061\u006C\u0131\u011F\u0131\u006E\u0064\u0061\u0020\u0073\u006F\u0072\u0075\u006E\u0020\u0079\u0061\u015F\u0061\u006E\u0131\u0079\u006F\u0072\u0073\u0061\u002C\u0020\u0077\u0065\u0062\u0020\u0073\u0069\u0074\u0065\u006D\u0069\u007A\u0065\u0020\u0064\u0061\u0068\u0061\u0020\u0068\u0131\u007A\u006C\u0131\u0020\u0074\u0065\u0070\u0073\u0069\u0020\u0073\u00FC\u0072\u0065\u0073\u0069\u0020\u0076\u0065\u0072\u0065\u006E\u0020\u0076\u0065\u0020\u0067\u0065\u006E\u0065\u006C\u006C\u0069\u006B\u006C\u0065\u0020\u0073\u006F\u0072\u0075\u006E\u0073\u0075\u007A\u0020\u0062\u0069\u0072\u0020\u015F\u0065\u006B\u0069\u006C\u0064\u0065\u0020\u0069\u007A\u006C\u0065\u006D\u0065\u0020\u0073\u0061\u011F\u006C\u0061\u006E\u0061\u0062\u0069\u006C\u0065\u006E\u0020\u0031\u0039\u0033\u002E\u0031\u0039\u0032\u002E\u0031\u0030\u0033\u002E\u0032\u0034\u0039\u002C\u0020\u0031\u0038\u0035\u002E\u0031\u0031\u002E\u0031\u0034\u002E\u0032\u0037\u0020\u0076\u0065\u0079\u0061\u0020\u0031\u0039\u0035\u002E\u0031\u0037\u0035\u002E\u0031\u0037\u0038\u002E\u0038\u0020\u0073\u0075\u006E\u0075\u0063\u0075\u006C\u0061\u0072\u0131\u0020\u006B\u006F\u006E\u0074\u0072\u006F\u006C\u0020\u0065\u0064\u0069\u006C\u006D\u0065\u006C\u0069\u0064\u0069\u0072\u002E"},{"title":"\u004D\u0061\u0063\u004F\u0053\u0020\u2013\u0020\u0043\u0061\u006E\u006C\u0131\u0020\u0059\u0061\u0079\u0131\u006E\u0064\u0061\u0020\u0044\u006F\u006E\u006D\u0061\u0020\u0053\u006F\u0072\u0075\u006E\u0075\u0020\u0059\u0061\u015F\u0131\u0079\u006F\u0072\u0075\u006D","\u0062\u006F\u0064\u0079":"Müşterinin sorun yaşadığı yayın ya da yayınlarda genel bir sorun var mı kontrol edilir? Genel bir sorun var ise teknik ekibin incelediği yönünde bilgi verilir.\nGenel bir sorun değilse, öncelikle https://www.hiztesti.com.tr/ bir hız testi yapması sonucu bizimle paylaşması istenir.\nHız testi sonucu 8 mbps altında ise internet bağlantı hızının düşük olduğunu internet servis sağlayıcısı iletişime geçmesi istenir.\n8 mbps üzerinde ise müşteriden aşağıdaki adımları uygulaması istenir.\nMindbehind üzerinden ‘’pingmacOS’’ kısayolundan müşteri sunucuları kontrol edilir.\nSunucu kontrol ekranında kontrol edilmesi gereken, ‘’packet loss’’ kısmında kayıp olup olmadığı,  alan içerisinde sunucu ile web sitemize kaç saniyede işlem sağladığı kontrol edilir.\n1 – 35 arası normal sayılabilir, bu saniye aralığında sorun yaşanıyorsa, web sitemize daha hızlı tepsi süresi veren ve genellikle sorunsuz bir şekilde izleme sağlanabilen 193.192.103.249, 185.11.14.27 veya 195.175.178.8 sunucuları kontrol edilmelidir.\nUygun sunucuyu tespit ettikten sonra canlı destek ekranında ‘’macOShost’’ kısa yolunu kullanarak, kısa yoldaki adımlar ile müşterinin sadece bizim sitemize bağlandığı sunucuyu, en uygun sunucu ile değiştirip tarayıcı açıp kapattırdıktan sonra tekrar yayını kontrol etmesini iletebiliriz. (Ayrıca müşteri yayınları auto değil, manuel olarak 720 veya 1080p seçip kontrol edilmesi önerilir)\nSorun aynı gün içerinde benzer işletim sistemi veya sunucuda farklı müşterilerde yaşıyor ise tüm bilgilerle Erlab’a arıza kaydı açılır. Sorun birkaç müşteri ile sınırlı ise 17:00 – 01:00 vardiyasındaki ekip arkadaşında sistemsel bir sorun olmadığına dair eposta gönderilmesi için bilgileri paylaşılır."},{"title":"\u2018\u2019\u0059\u0061\u0079\u0131\u006E\u0064\u0061\u0020\u0062\u0065\u006B\u006C\u0065\u006E\u006D\u0065\u0064\u0069\u006B\u0020\u0062\u0069\u0072\u0020\u006B\u0065\u0073\u0069\u006E\u0074\u0069\u0020\u006F\u006C\u0075\u015F\u0074\u0075\u2019\u2019\u0020\u0055\u0079\u0061\u0072\u0131\u0073\u0131","\u0062\u006F\u0064\u0079":"Bu uyarı genel bir yayın sorunu olduğunda ya da kullanıcı Türkiye sınırları dışında bir yerden erişim sağladığında karşımıza çıkmaktadır.\nKullanıcının sorun yaşadığı yayın kontrol edilir ve genel bir yayın sorunu olup olmadığı teyit edilir.\nTvmanager’da SubscriberLog ekranından ip adresi alınır ve yurtdışı bir konum olup olmadığı teyit edilir.\nKullanıcı yurtdışında ise erişim sağlayamayacağı bilgisi verilir, VPN kullanıyor ise kapatması istenir.\nTVmanager Devices kısmında oturumlar sonlandırılır ve kullanıcıdan tekrar giriş yaparak kontrol etmesi rica edilir.\nMobil veri veya farklı bir ağda bu hata mesajının alınıp alınmadığı teyit edilir.\nCihaz ve modem kapama ve açma işlemi uygulanır.\nSorun devam eder ise inceleme için cihaz ve diğer bilgilerle teknik ekibimize bilgi verileceği iletilir. Excel de kullanıcıdan alınan bilgiler not edilir."}],"\u0061\u0063\u0063\u0065\u0073\u0073":[{"title":"\u0045\u0052\u0130\u015E\u0130\u004D\u0020\u0053\u004F\u0052\u0055\u004E\u004C\u0041\u0052\u0049","\u0062\u006F\u0064\u0079":"‘’Lisans hakları sebebiyle Türkiye sınırları dışında hizmet verilememektedir.’’ Uyarısı\nAlınan hata müşterinin yurt dışında olması ve yurt içinde ise VPN ya da benzeri bir uygulamanın cihazında aktif olmasından kaynaklanmaktadır.\n\nMüşteriye yurt dışında olup olmadığı sorulur, yurt dışında ise ‘’lisans hakları sebebiyle yayınların yurt dışından izlenemediği’’ yönünde bilgi verilir.\nYurt içinde ise VPN ya da benzeri bir uygulamanın cihazında aktif olup ya da olmadığı sorulur. Aktif ise devre dışı bırakılıp tekrar denemesi önerilir.\nVPN ya da benzeri bir uygulama kullanmıyor ise müşterinin ip adresi öğrenilir ve https://tr.wizcase.com/tools/whats-my-ip/ ip adresi kontrol edilir.  Aynı zamanda adresin vpn üzerinden alınıp alınmadığının kontrolü için https://vpnapi.io adresine girilip kontrol edilir.\nIp adresi yurt dışı ya da ISP bilgisi bilinen bir servis sağlayıcısı değilse müşteriye bulunduğu lokasyonun otel, yurt vb. bir yer olup olmadığı ya da cihazının şirket cihazı olup olmadığı sorulur."},{"title":"‘’IP Karantina’’ Uyarısı","\u0062\u006F\u0064\u0079":"\u0130\u0070\u0020\u004B\u0061\u0072\u0061\u006E\u0074\u0069\u006E\u0061\u0020\u0073\u006F\u0072\u0075\u006E\u0075\u0020\u0067\u0065\u006E\u0065\u006C\u0020\u0062\u0069\u0072\u0020\u0073\u006F\u0072\u0075\u006E\u0020\u0079\u006F\u006B\u0020\u0069\u0073\u0065\u002C\u0020\u0065\u0070\u006F\u0073\u0074\u0061\u0020\u0076\u0065\u0079\u0061\u0020\u015F\u0069\u0066\u0072\u0065\u0020\u0062\u0069\u0072\u0020\u00E7\u006F\u006B\u0020\u0064\u0065\u0066\u0061\u0020\u0068\u0061\u0074\u0061\u006C\u0131\u0020\u0067\u0069\u0072\u0069\u006C\u006D\u0065\u0073\u0069\u006E\u0064\u0065\u006E\u0020\u0064\u006F\u006C\u0061\u0079\u0131\u0020\u0061\u006C\u0131\u006E\u0131\u0072\u002E\u000A\u004B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131\u006E\u0131\u006E\u0020\u0069\u0070\u0020\u0061\u0064\u0072\u0065\u0073\u0069\u0020\u006B\u0061\u0072\u0061\u006E\u0074\u0069\u006E\u0061\u0020\u0064\u0061\u0020\u006F\u006C\u0075\u0070\u0020\u0079\u0061\u0020\u0064\u0061\u0020\u006F\u006C\u006D\u0061\u0064\u0131\u011F\u0131\u002C\u0020\u0054\u0056\u006D\u0061\u006E\u0061\u0067\u0065\u0072\u0020\u2013\u0020\u0043\u004D\u0053\u0020\u2013\u0020\u0041\u0064\u006D\u0069\u0073\u0073\u0069\u006F\u006E\u0020\u0047\u0061\u0074\u0065\u0020\u006D\u0065\u006E\u00FC\u0073\u00FC\u0020\u00FC\u007A\u0065\u0072\u0069\u006E\u0064\u0065\u006E\u0020\u006B\u006F\u006E\u0074\u0072\u006F\u006C\u0020\u0065\u0064\u0069\u006C\u0065\u0072\u0065\u006B\u0020\u00E7\u0131\u006B\u0061\u0072\u0131\u006C\u0061\u0062\u0069\u006C\u0069\u0072\u002E\u0020\u0130\u006B\u0069\u006E\u0063\u0069\u0020\u0062\u0069\u0072\u0020\u0073\u0065\u00E7\u0065\u006E\u0065\u006B\u0020\u006F\u006C\u0061\u0072\u0061\u006B\u0020\u006D\u006F\u0064\u0065\u006D\u0020\u006B\u0061\u0070\u0061\u006D\u0061\u0020\u0076\u0065\u0020\u0061\u00E7\u006D\u0061\u0020\u0069\u015F\u006C\u0065\u006D\u0069\u0020\u0079\u0061\u0070\u0074\u0131\u0072\u0131\u006C\u0061\u0062\u0069\u006C\u0069\u0072\u002E"}],"app":[{"\u0074\u0069\u0074\u006C\u0065":"\u0054\u0065\u006B\u006E\u0069\u006B\u0020\u0053\u006F\u0072\u0075\u006E\u0020\u0041\u006E\u0061\u006C\u0069\u007A\u0069\u0020\u004E\u0061\u0073\u0131\u006C\u0020\u0059\u0061\u0070\u0131\u006C\u0131\u0072\u003F","\u0062\u006F\u0064\u0079":"App Kaynaklı Nedenler\nCihaz Kaynaklı Nedenler\nApp hataları başlığında uygulamanın açılmaması ya da kendi kendine kapanması şeklinde teknik sorunlar ile karşılaşabiliriz. Bu tip sorunlar, kullanıcı deneyimini doğrudan etkileyerek uygulamaya erişilememesine neden olur.\nUygulamanın eski sürümü\nÖnbellek sorunları\nUyumsuz cihazlar\nDolu RAM/Arka planda çalışan fazla uygulama\nCihazın güncel olmaması (Eski sistemi sürümleri)\nKullanıcıya Sorulabilecek Sorular:\nUygulama açılıyor mu, yoksa açılmadan kapanıyor mu?\nUygulama sürümü, cihaz işletim sistemi sürümü nedir? (TVmanager kontrolü)\nCihazda yeterli depolama alanı var mı?"}],"\u0061\u0063\u0074\u0069\u0076\u0061\u0074\u0069\u006F\u006E":[{"\u0074\u0069\u0074\u006C\u0065":"‘’Promosyon Kodu Bulunamadı’’ Uyarısı","\u0062\u006F\u0064\u0079":"\u0047\u00F6\u0072\u0073\u0065\u006C\u0064\u0065\u0020\u006B\u0069\u0020\u00F6\u0072\u006E\u0065\u006B\u0074\u0065\u0020\u0064\u006F\u011F\u0072\u0075\u0073\u0075\u0020\u2018\u2019\u0059\u0049\u004C\u004C\u0049\u004B\u004C\u004F\u0043\u0041\u2019\u2019\u0020\u006F\u006C\u0061\u006E\u0020\u006B\u0061\u006D\u0070\u0061\u006E\u0079\u0061\u0020\u006B\u006F\u0064\u0075\u002C\u0020\u006B\u00FC\u00E7\u00FC\u006B\u0020\u0068\u0061\u0072\u0066\u0020\u0069\u006C\u0065\u0020\u0079\u0061\u007A\u0131\u006C\u0064\u0131\u011F\u0131\u006E\u0064\u0061\u0020\u2018\u2019\u0050\u0072\u006F\u006D\u006F\u0073\u0079\u006F\u006E\u0020\u004B\u006F\u0064\u0075\u0020\u0042\u0075\u006C\u0075\u006E\u0061\u006D\u0061\u0064\u0131\u2019\u2019\u0020\u0068\u0061\u0074\u0061\u0073\u0131\u0020\u0061\u006C\u0131\u006E\u006D\u0131\u015F\u0074\u0131\u0072\u002E\u0020\u0042\u0075\u0020\u0068\u0061\u0074\u0061\u0020\u0069\u006C\u0065\u0020\u006B\u0061\u0072\u015F\u0131\u006C\u0061\u015F\u0131\u006C\u0064\u0131\u011F\u0131\u006E\u0064\u0061\u0020\u006B\u0061\u006D\u0070\u0061\u006E\u0079\u0061\u0020\u006B\u006F\u0064\u0075\u006E\u0075\u006E\u0020\u0079\u0061\u006E\u006C\u0131\u015F\u002C\u0020\u0065\u006B\u0073\u0069\u006B\u002C\u0020\u006B\u00FC\u00E7\u00FC\u006B\u0020\u0068\u0061\u0072\u0066\u0020\u0079\u0061\u0020\u0064\u0061\u0020\u0062\u006F\u015F\u006C\u0075\u006B\u0020\u0062\u0131\u0072\u0061\u006B\u0131\u006C\u0061\u0072\u0061\u006B\u0020\u0079\u0061\u007A\u0131\u006C\u0064\u0131\u011F\u0131\u006E\u0131\u0020\u0074\u0065\u0073\u0070\u0069\u0074\u006C\u0065\u002C\u0020\u006B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131\u0079\u0131\u0020\u0062\u0075\u0020\u0064\u006F\u011F\u0072\u0075\u006C\u0074\u0075\u0064\u0061\u0020\u0064\u006F\u011F\u0072\u0075\u0020\u0079\u0061\u007A\u0131\u006D\u0020\u0069\u00E7\u0069\u006E\u0020\u0079\u00F6\u006E\u006C\u0065\u006E\u0064\u0069\u0072\u006D\u0065\u006D\u0069\u007A\u0020\u0067\u0065\u0072\u0065\u006B\u0069\u0072\u002E"},{"\u0074\u0069\u0074\u006C\u0065":"\u2018\u2019\u004B\u0061\u006D\u0070\u0061\u006E\u0079\u0061\u0020\u004B\u006F\u0064\u0075\u0020\u0041\u006B\u0074\u0069\u0066\u0020\u0045\u0064\u0069\u006C\u0065\u006D\u0065\u0064\u0069\u2019\u2019\u0020\u0055\u0079\u0061\u0072\u0131\u0073\u0131","\u0062\u006F\u0064\u0079":"\u0047\u00F6\u0072\u0073\u0065\u006C\u0064\u0065\u006B\u0069\u0020\u00F6\u0072\u006E\u0065\u006B\u0074\u0065\u006B\u0069\u0020\u0067\u0069\u0062\u0069\u0020\u0065\u0073\u006B\u0069\u0020\u0062\u0069\u0072\u0020\u0070\u0072\u006F\u006D\u006F\u0073\u0079\u006F\u006E\u0020\u006B\u006F\u0064\u0075\u0020\u0079\u0061\u007A\u0131\u006C\u0064\u0131\u011F\u0131\u006E\u0064\u0061\u0020\u2018\u2019\u004B\u0061\u006D\u0070\u0061\u006E\u0079\u0061\u0020\u004B\u006F\u0064\u0075\u0020\u0041\u006B\u0074\u0069\u0066\u0020\u0045\u0064\u0069\u006C\u0065\u006D\u0065\u0064\u0069\u2019\u2019\u0020\u0075\u0079\u0061\u0072\u0131\u0073\u0131\u0020\u0061\u006C\u0131\u006E\u0131\u0072\u002E"},{"title":"‘’Geçersiz Kampanya Kodu’’ Uyarısı","\u0062\u006F\u0064\u0079":"Görseldeki örnekteki gibi daha önce kullanılmış bir promosyon kodu yazıldığında ‘’Geçersiz Kampanya Kodu’’ hatası alınır.\nPromosyon kodunun hangi hesapta kullanıldığını aşağıdaki görseldeki gibi Campaign alanında arama yaparak görüntüleyebiliriz."},{"\u0074\u0069\u0074\u006C\u0065":"Playstore Uygulama Aktivasyon Sorunu","\u0062\u006F\u0064\u0079":"Bazı durumlarda, kullanıcılar Google Play Store üzerinden S Sport Plus uygulamasında abonelik satın aldıklarında veya yenileme gerçekleştiğinde, üyelikleri otomatik olarak aktifleşmeyebiliyor.  Bu durumda, kullanıcının uygulama üzerinden manuel olarak paket aktivasyonu yapması gerekmektedir.\n\nAktivasyon işleminin başarılı olabilmesi için:\n Google Play Store üzerinden satın alma işlemi yapılırken kullanılan Gmail hesabı, aktivasyon anında cihazda açık olmalıdır.\n Aktivasyon işlemi uygulama içerisinden yapılmalıdır.\nDestek ekibi tarafından Mindbehind üzerinden “paketgoogle” kısayolu kullanılarak yönlendirme sağlanabilir.  Kullanıcı başarılı bir şekilde paket aktivasyonu yaptıktan sonra, paket ataması sistemde gerçekleşir ve log kayıtlarında ilgili işlem aşağıdaki gibi görünür (ekli görsellerdeki gibi).  Bu işlem, paketin doğru şekilde tanımlanması için önemlidir."},{"title":"App Store Uygulama Aktivasyon Sorunu","\u0062\u006F\u0064\u0079":"Müşteriler App Store üzerinden uygulamamızdan abonelik satın aldığı veya yenileme olduğu zaman bazen üyelik aktif olmuyor.\nÜyelikleri aktif olabilmeleri için, uygulama üzerinden paket aktivasyon yapmaları gerekiyor. Paket aktivasyon yaparken, satın alma yaparken hangi Apple kimliği hesabı açık ise, o hesap açıkken aktivasyon denemesi gerekiyor.\nMindbehind üzerinden ‘’paketapple’’ kısayolu kullanılır.\nMüşteri paket aktivasyonu yaptıktan sonra üyelik ataması ve loglarda nasıl gözüktüğü görsellerdeki gibidir.\nPaket aktivasyon butonu örnek görüntüsü yandaki gibidir."},{"\u0074\u0069\u0074\u006C\u0065":"AKTİVASYON SORUNLARI","\u0062\u006F\u0064\u0079":"İOS Uygulama Paket Aktivasyon ‘’Abonelik Başkasına Aittir’’ Sorunu\n\nİos uygulamamızda müşteri paket aktivasyon işlemi yaptığında ‘’Abonelik Başkasına Aittir’’ hatası geliyor ise, cihazda açık olan Apple kimliği ile satın alınmış, ancak aktivasyon yaptığı eposta adresi farklı bir eposta adresidir.\n\nFarklı eposta adresi ile paket aktivasyon yaptığında ‘’Subscriberlog’’ kısmında örnek ekran görüntüsünde kırmızı alana alınan ‘’packageValidation’’  kısmı çıkar, ok ile gösterilen ID kısmından doğru üyeliği ID araması ile bulabiliriz."},{"title":"\u0041\u004B\u0054\u0130\u0056\u0041\u0053\u0059\u004F\u004E\u0020\u0053\u004F\u0052\u0055\u004E\u004C\u0041\u0052\u0049","body":"Android ‘’Paket Başka Bir Kullanıcıya Ait Olduğu İçin Paket Atama İşlemi Başarısız Oldu’’ Sorunu\n\nAndroid uygulamamızda müşteri paket aktivasyon işlemi yaptığında ‘’Paket Başka Bir Kullanıcıya Ait Olduğu İçin Paket Atama İşlemi Başarısız Oldu’’ hatası geliyor ise, cihazda açık olan Play Store gmail hesabı ile satın alınmış, ancak aktivasyon yaptığı eposta adresi farklı bir eposta adresidir.\n\nFarklı eposta adresi ile paket aktivasyon yaptığında ‘’Subscriberlog’’ kısmında örnek ekran görüntüsünde kırmızı alana alınan ‘’Validate Google Package’’  kısmı çıkar, ok ile gösterilen ID kısmından doğru üyeliği ID araması ile bulabiliriz."},{"\u0074\u0069\u0074\u006C\u0065":"\u0041\u004B\u0054\u0130\u0056\u0041\u0053\u0059\u004F\u004E\u0020\u0053\u004F\u0052\u0055\u004E\u004C\u0041\u0052\u0049","body":"Android Uygulama Paket Aktivasyon İşlem Tamamlanamadı veya Üyelik Bulunamama Sorunu\nAndroid uygulamamızda müşteri ödeme yapmış olmasına rağmen paket aktivasyonu yaptığında ‘’İşlem tamamlandı, İşlem Tamamlanamadı veya Abone bulunamadı’’ hatası geliyor ve üyelik aktif olmuyor ise, müşteriden GPA kodunu paylaşılması istenir.\nGPA kodu, Google tarafından ödeme yapıldığına dair müşteriye gönderilen ödeme faturası (makbuz) içerisinde yer almaktadır.\nBu GPA kodu ile üyeliği Tvmanager üzerinden aşağıdaki görseldeki gibi Reporting > General > Payments kısmında tarihi aralığı ayarlanıp ‘’Transaction Identifer’’ kısmından arama yapılıp, üyelik ID’sine ‘’Subscriber ID’’ üzerinden ulaşılabilir."},{"\u0074\u0069\u0074\u006C\u0065":"\u0041\u004B\u0054\u0130\u0056\u0041\u0053\u0059\u004F\u004E\u0020\u0053\u004F\u0052\u0055\u004E\u004C\u0041\u0052\u0049","\u0062\u006F\u0064\u0079":"Türksat Abone Bulunamadı veya Abone Active Değil Sorunu\nBu hata, Hizmet ID veya Geçici Kod hatalı yazılmasından dolayı alınır.  Müşteriler genellikle bazı büyük küçük harfleri karıştırabiliyor veya sistemden dolayı bazen bu sorun alınabiliyor.\nÇözüm olarak harf hatası olmaması için Tvmanager>Reporting>General>Thirtdparty Provisions kısmından tarih aralığı belirleyip, Hizmet ID numarasını ‘’Extrenal ID’’ kısmından aratıp, kullanıcı Türksat bilgilerini bulup ‘’UniqueID’’ kısmından geçici kodu bulup, kullanıcıya paylaştığımızda, ID ve Geçici kodu kopyala yapıştırır şeklinde ilerlemesini iletebiliriz.\nAynı sorun devam eder ise, kullanıcıdan onay alıp, ID ve geçici kod ile kullanıcının üyeliğini kendimiz yapabiliriz. Müşterinin üyeliğini biz tarafından yapıldı ise, müşteriye şifresini nasıl güncelleyebileceği ile ilgili bilgi verilir."}]};_0xc2_0xe6b=(938809^938815)+(630441^630432);function renderTechSections(){const _0x6a_0x789=(database||[])['\u0066\u0069\u006C\u0074\u0065\u0072'](c=>String(c['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()==="\u0074\u0065\u006B\u006E\u0069\u006B");let _0x95287c=[];try{_0x95287c=JSON['\u0070\u0061\u0072\u0073\u0065'](localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0074\u0065\u0063\u0068\u0043\u0061\u0072\u0064\u0073\u004F\u0076\u0065\u0072\u0072\u0069\u0064\u0065")||"\u005B\u005D");}catch(e){_0x95287c=[];}const _0xa4964g=Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0x95287c)&&_0x95287c['\u006C\u0065\u006E\u0067\u0074\u0068']?_0x95287c:_0x6a_0x789;const _0x3g477c={"broadcast":[],'\u0061\u0063\u0063\u0065\u0073\u0073':[],'\u0061\u0070\u0070':[],"activation":[],'\u0063\u0061\u0072\u0064\u0073':[]};_0xa4964g['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](c=>{const _0x63_0x927=`${c['\u0074\u0069\u0074\u006C\u0065']||''} ${c['\u0074\u0065\u0078\u0074']||''} ${c['\u0073\u0063\u0072\u0069\u0070\u0074']||''}`['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();if(_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("n\u0131yay".split("").reverse().join(""))||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0064\u006F\u006E")||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0062\u0075\u0066\u0066\u0065\u0072")||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u015F\u0131ka".split("").reverse().join(""))||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("vt".split("").reverse().join(""))){_0x3g477c['\u0062\u0072\u006F\u0061\u0064\u0063\u0061\u0073\u0074']['\u0070\u0075\u0073\u0068'](c);}else if(_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0065\u0072\u0069\u015F\u0069\u006D")||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0076\u0070\u006E")||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0070\u0072\u006F\u0078\u0079")||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u006C\u006F\u0067\u0069\u006E")||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0067\u0069\u0072\u0069\u015F")||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0079\u0075\u0072\u0074\u0064\u0131\u015F\u0131")){_0x3g477c['\u0061\u0063\u0063\u0065\u0073\u0073']['\u0070\u0075\u0073\u0068'](c);}else if(_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("ppa".split("").reverse().join(""))||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("amalugyu".split("").reverse().join(""))||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("atah".split("").reverse().join(""))||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("hsarc".split("").reverse().join(""))||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0076\u0065\u0072\u0073\u0069\u0079\u006F\u006E")){_0x3g477c['\u0061\u0070\u0070']['\u0070\u0075\u0073\u0068'](c);}else if(_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0061\u006B\u0074\u0069\u0076\u0061\u0073\u0079\u006F\u006E")||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0073\u0061\u0074\u0131\u006E")||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0073\u0061\u0074\u0131\u006E\u0061\u006C\u006D\u0061")||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0073\u0074\u006F\u0072\u0065")||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u00F6\u0064\u0065\u006D\u0065")||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0067\u006F\u006F\u0067\u006C\u0065")||_0x63_0x927['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0061\u0070\u0070\u006C\u0065")){_0x3g477c['\u0061\u0063\u0074\u0069\u0076\u0061\u0074\u0069\u006F\u006E']['\u0070\u0075\u0073\u0068'](c);}else{_0x3g477c['\u0062\u0072\u006F\u0061\u0064\u0063\u0061\u0073\u0074']['\u0070\u0075\u0073\u0068'](c);}_0x3g477c['\u0063\u0061\u0072\u0064\u0073']['\u0070\u0075\u0073\u0068'](c);});window['\u005F\u005F\u0074\u0065\u0063\u0068\u0042\u0075\u0063\u006B\u0065\u0074\u0073']=_0x3g477c;const _0xb4c4b=(inputId,key,listId)=>{const _0x1ae18d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](inputId);if(!_0x1ae18d)return;_0x1ae18d['\u006F\u006E\u0069\u006E\u0070\u0075\u0074']=()=>renderTechList(key,_0x1ae18d['\u0076\u0061\u006C\u0075\u0065']||'',listId);};_0xb4c4b("\u0078\u002D\u0073\u0065\u0061\u0072\u0063\u0068\u002D\u0062\u0072\u006F\u0061\u0064\u0063\u0061\u0073\u0074","tsacdaorb".split("").reverse().join(""),"\u0078\u002D\u0062\u0072\u006F\u0061\u0064\u0063\u0061\u0073\u0074\u002D\u006C\u0069\u0073\u0074");_0xb4c4b("\u0078\u002D\u0073\u0065\u0061\u0072\u0063\u0068\u002D\u0061\u0063\u0063\u0065\u0073\u0073","ssecca".split("").reverse().join(""),"tsil-ssecca-x".split("").reverse().join(""));_0xb4c4b("\u0078\u002D\u0073\u0065\u0061\u0072\u0063\u0068\u002D\u0061\u0070\u0070","ppa".split("").reverse().join(""),"\u0078\u002D\u0061\u0070\u0070\u002D\u006C\u0069\u0073\u0074");_0xb4c4b("\u0078\u002D\u0073\u0065\u0061\u0072\u0063\u0068\u002D\u0061\u0063\u0074\u0069\u0076\u0061\u0074\u0069\u006F\u006E","noitavitca".split("").reverse().join(""),"\u0078\u002D\u0061\u0063\u0074\u0069\u0076\u0061\u0074\u0069\u006F\u006E\u002D\u006C\u0069\u0073\u0074");_0xb4c4b("sdrac-hcraes-x".split("").reverse().join(""),"\u0063\u0061\u0072\u0064\u0073","tsil-sdrac-x".split("").reverse().join(""));renderTechList("tsacdaorb".split("").reverse().join(""),'',"\u0078\u002D\u0062\u0072\u006F\u0061\u0064\u0063\u0061\u0073\u0074\u002D\u006C\u0069\u0073\u0074");renderTechList("\u0061\u0063\u0063\u0065\u0073\u0073",'',"\u0078\u002D\u0061\u0063\u0063\u0065\u0073\u0073\u002D\u006C\u0069\u0073\u0074");renderTechList("ppa".split("").reverse().join(""),'',"\u0078\u002D\u0061\u0070\u0070\u002D\u006C\u0069\u0073\u0074");renderTechList("noitavitca".split("").reverse().join(""),'',"tsil-noitavitca-x".split("").reverse().join(""));renderTechList("\u0063\u0061\u0072\u0064\u0073",'',"\u0078\u002D\u0063\u0061\u0072\u0064\u0073\u002D\u006C\u0069\u0073\u0074");}let _0x15_0x1db;let techEditMode=false;_0x15_0x1db=(924617^924620)+(892925^892927);function renderTechList(bucketKey,q,listId){const _0x8e534b=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](listId);if(!_0x8e534b)return;var _0x6138ag=(213169^213171)+(868439^868432);const _0xa0fbc=window['\u005F\u005F\u0074\u0065\u0063\u0068\u0042\u0075\u0063\u006B\u0065\u0074\u0073']&&window['\u005F\u005F\u0074\u0065\u0063\u0068\u0042\u0075\u0063\u006B\u0065\u0074\u0073'][bucketKey]?window['\u005F\u005F\u0074\u0065\u0063\u0068\u0042\u0075\u0063\u006B\u0065\u0074\u0073'][bucketKey]:[];_0x6138ag=139588^139585;const _0xag969e=String(q||'')['\u0074\u0072\u0069\u006D']()['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();var _0x1g9fb=(596181^596189)+(470352^470358);const _0x0249b=!_0xag969e?_0xa0fbc:_0xa0fbc['\u0066\u0069\u006C\u0074\u0065\u0072'](c=>{const _0x8786aa=`${c['\u0074\u0069\u0074\u006C\u0065']||''} ${c['\u0074\u0065\u0078\u0074']||''} ${c['\u0073\u0063\u0072\u0069\u0070\u0074']||''} ${c['\u006C\u0069\u006E\u006B']||''}`['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();return _0x8786aa['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](_0xag969e);});_0x1g9fb="jnecho".split("").reverse().join("");var _0xfd3f=(462411^462415)+(709379^709379);const _0xbb6g=isAdminMode?`
+            `).join('');
+        }
+    }
+}
+
+async function submitShiftRequest(evt) {
+    if (evt) evt.preventDefault();
+
+    const date = document.getElementById('shift-req-date').value;
+    const type = document.getElementById('shift-req-type').value;
+    const current = document.getElementById('shift-req-current').value;
+    const requested = document.getElementById('shift-req-requested').value;
+    const friend = document.getElementById('shift-req-friend').value;
+    const friendShift = document.getElementById('shift-req-friend-shift').value;
+    const note = document.getElementById('shift-req-note').value;
+
+    if (!date || !requested) {
+        Swal.fire('Uyarı', 'Tarih ve talep edilen vardiya alanları zorunludur.', 'warning');
+        return;
+    }
+
+    try {
+        const data = await apiCall("submitShiftRequest", {
+            date: date,
+            type: type,
+            current: current,
+            requested: requested,
+            friend: friend,
+            friendShift: friendShift,
+            note: note,
+            week: document.getElementById('shift-week-label') ? document.getElementById('shift-week-label').textContent : ''
+        });
+        Swal.fire({ icon: 'success', title: 'Kaydedildi', text: 'Vardiya talebin kaydedildi.', timer: 1500, showConfirmButton: false });
+        const form = document.getElementById('shift-request-form');
+        if (form) form.reset();
+        await loadShiftData();
+    } catch (e) {
+        console.error(e);
+        Swal.fire('Hata', e.message || 'Talep kaydedilemedi.', 'error');
+    }
+}
+
+const TECH_DOC_CONTENT = { "broadcast": [{ "title": "Smart TV – Canlı Yayında Donma Problemi Yaşıyorum", "body": "Müşterinin sorun yaşadığı yayın ya da yayınlarda genel bir sorun var mı kontrol edilir? Genel bir sorun var ise teknik ekibin incelediği yönünde bilgi verilir.\nMüşterinin kullandığı cihaz TVmanager ‘da loglardan kontrol edilir. Arçelik/Beko/Grundig/Altus marka Android TV olmayan Smart TV’lerden ise genel sorun hakkında bilgi verilir.\nYukarıdaki durumlar dışında yaşanan bir sorun ise TV ve modemin elektrik bağlantısını kesilip tekrar verilmesi istenir. « Yaşadığınız sorunu kontrol ederken TV ve modeminizin elektrik bağlantısını kesip 10 sn sonra yeniden açabilir misiniz? Ardından yeniden yayını açıp kontrol edebilir misiniz? (Ayrıca öneri olarak modemi kapatıp tekrar açtıktan sonra, sadece izleme yaptığı cihaz modeme bağlı olursa daha iyi bir bağlantı olacağı bilgisi verilebilir)\nSorun devam eder ise Smart TV tarayıcısından https://www.hiztesti.com.tr/ bir hız testi yapması sonucu bizimle paylaşması istenir.\nHız testi sonucu 8 Mbps altında ise internet bağlantı hızının düşük olduğunu internet servis sağlayıcısı iletişime geçmesi istenir.\n8 Mbps üzerinde ise müşteriden sorunu gösteren kısa bir video talep edilir.\nVideo kaydı ve hız testinin sonuçları gösteren bilgiler alındıktan sonra müşteriye incelenmesi için teknik ekibimize iletildiği inceleme tamamlandığında eposta ile bilgi verileceği yönünde bilgi verilir.\nSorun aynı gün içinde benzer cihazlarda farklı müşterilerde yaşıyor ise tüm bilgilerle Erlab’a arıza kaydı açılır. Sorun birkaç müşteri ile sınırlı ise 17:00 – 01:00 vardiyasındaki ekip arkadaşında sistemsel bir sorun olmadığına dair eposta gönderilmesi için bilgileri paylaşılır." }, { "title": "Mobil Uygulama – Canlı Yayında Donma Sorunu Yaşıyorum", "body": "Müşterinin sorun yaşadığı yayın ya da yayınlarda genel bir sorun var mı kontrol edilir? Genel bir sorun var ise teknik ekibin incelediği yönünde bilgi verilir.(Müşteri İOS veya Android işletim sistemli hangi cihazdan izliyorsa, mümkünse aynı işletim sistemli mobil cihazdan kontrol edilebilir, gerekirse ekip arkadaşlarından kontrol etmeleri istenebilir)\nGenel bir sorun yok ise, www.hiztesti.com.tr link üzerinden hız testi yapması sonucu bizimle paylaşması istenir.\nHız testi sonucu 8 mbps altında ise internet bağlantı hızının düşük olduğu internet servisi sağlayıcısı ile iletişime geçmesi istenir. (Öneri olarak modemi kapatıp tekrar açtıktan sonra sadece izleme yaptığı cihaz modeme bağlı olursa daha iyi bir bağlantı olacağı bilgisi verilebilir)\n8 mbps üzerinde ise, uygulama verilerin temizlenmesi veya uygulamanın silip tekrar yüklenmesi istenilir, sorun devam etmesi durumunda sorunu gösteren video kaydı istenir.\n 4. Hız testi, cihaz marka model ve sürüm bilgileri alındıktan sonra, incelenmesi için teknik ekibe iletildiği, inceleme tamamlandığında e-posta  ile bilgi verileceği yönünde bilgi verilir.\n 5. Sorun aynı gün içerinde benzer cihazlarda farklı müşterilerde yaşıyor ise tüm bilgilerle Erlab’a arıza kaydı açılır. Sorun birkaç müşteri ile sınırlı  ise 17:00 – 01:00 vardiyasındaki ekip arkadaşında sistemsel bir sorun olmadığına dair eposta gönderilmesi için bilgileri paylaşılır." }, { "title": "Bilgisayar – Canlı Yayında Donma Sorunu Yaşıyorum", "body": "Müşterinin sorun yaşadığı yayın ya da yayınlarda genel bir sorun var mı kontrol edilir? Genel bir sorun var ise teknik ekibin incelediği yönünde bilgi verilir.\nGenel bir sorun değilse, öncelikle https://www.hiztesti.com.tr/ bir hız testi yapması sonucu bizimle paylaşması istenir.\nHız testi sonucu 8 mbps altında ise internet bağlantı hızının düşük olduğunu internet servis sağlayıcısı iletişime geçmesi istenir.\n8 mbps üzerinde ise müşteriden aşağıdaki adımları uygulaması istenir.\n3. Bilgisayarın işletim sitemi öğrenilip, görüşme üzerinden ‘’pingWindows7’’ veya ‘’pingwindows10’’ kısayollarından müşteri sunucuları kontrol edilir.\n(Windows 10 üzeri işletim sistemi cihazlara pingwindows10 kısayolu gönderilebilir.)\n4. Sunucu kontrol ekranında kontrol edilmesi gereken, ok ile gösterilen yerden, sunucu ile kayıp olup olmadığı ve kırmızı alan içerisinde sunucu ile web sitemize kaç saniyede işlem sağladığı kontrol edilir.\n5. 1 – 35 arası normal sayılabilir, bu saniye aralığında sorun yaşanıyorsa, web sitemize daha hızlı tepsi süresi veren ve genellikle sorunsuz bir şekilde izleme sağlanabilen 193.192.103.249, 185.11.14.27 veya 195.175.178.8 sunucuları kontrol edilmelidir.\n6. Uygun sunucuyu tespit ettikten sonra canlı destek ekranında ‘’Host’’ ‘’host2’’ kısa yolları kullanarak, kısa yoldaki adımlar ile müşterinin sadece bizim sitemize bağlandığı sunucusunu, en uygun sunucu ile değiştirip tarayıcı açıp kapattırdıktan sonra tekrar yayını kontrol etmesini iletebiliriz. (Ayrıca müşteri yayınları auto değil, manuel olarak 720 veya 1080p seçip kontrol edilmesi önerilir)\n7. Sorun aynı gün içerinde benzer işletim sistemi veya sunucuda farklı müşterilerde yaşıyor ise tüm bilgilerle Erlab’a arıza kaydı açılır. Sorun birkaç müşteri ile sınırlı ise 17:00 – 01:00 vardiyasındaki ekip arkadaşında sistemsel bir sorun olmadığına dair eposta gönderilmesi için bilgileri paylaşılır" }, { "title": "YAYIN SORUNLARI", "body": "35 sn arası normal sayılabilir, bu saniye aralığında sorun yaşanıyorsa, web sitemize daha hızlı tepsi süresi veren ve genellikle sorunsuz bir şekilde izleme sağlanabilen 193.192.103.249, 185.11.14.27 veya 195.175.178.8 sunucuları kontrol edilmelidir." }, { "title": "MacOS – Canlı Yayında Donma Sorunu Yaşıyorum", "body": "Müşterinin sorun yaşadığı yayın ya da yayınlarda genel bir sorun var mı kontrol edilir? Genel bir sorun var ise teknik ekibin incelediği yönünde bilgi verilir.\nGenel bir sorun değilse, öncelikle https://www.hiztesti.com.tr/ bir hız testi yapması sonucu bizimle paylaşması istenir.\nHız testi sonucu 8 mbps altında ise internet bağlantı hızının düşük olduğunu internet servis sağlayıcısı iletişime geçmesi istenir.\n8 mbps üzerinde ise müşteriden aşağıdaki adımları uygulaması istenir.\nMindbehind üzerinden ‘’pingmacOS’’ kısayolundan müşteri sunucuları kontrol edilir.\nSunucu kontrol ekranında kontrol edilmesi gereken, ‘’packet loss’’ kısmında kayıp olup olmadığı,  alan içerisinde sunucu ile web sitemize kaç saniyede işlem sağladığı kontrol edilir.\n1 – 35 arası normal sayılabilir, bu saniye aralığında sorun yaşanıyorsa, web sitemize daha hızlı tepsi süresi veren ve genellikle sorunsuz bir şekilde izleme sağlanabilen 193.192.103.249, 185.11.14.27 veya 195.175.178.8 sunucuları kontrol edilmelidir.\nUygun sunucuyu tespit ettikten sonra canlı destek ekranında ‘’macOShost’’ kısa yolunu kullanarak, kısa yoldaki adımlar ile müşterinin sadece bizim sitemize bağlandığı sunucuyu, en uygun sunucu ile değiştirip tarayıcı açıp kapattırdıktan sonra tekrar yayını kontrol etmesini iletebiliriz. (Ayrıca müşteri yayınları auto değil, manuel olarak 720 veya 1080p seçip kontrol edilmesi önerilir)\nSorun aynı gün içerinde benzer işletim sistemi veya sunucuda farklı müşterilerde yaşıyor ise tüm bilgilerle Erlab’a arıza kaydı açılır. Sorun birkaç müşteri ile sınırlı ise 17:00 – 01:00 vardiyasındaki ekip arkadaşında sistemsel bir sorun olmadığına dair eposta gönderilmesi için bilgileri paylaşılır." }, { "title": "‘’Yayında beklenmedik bir kesinti oluştu’’ Uyarısı", "body": "Bu uyarı genel bir yayın sorunu olduğunda ya da kullanıcı Türkiye sınırları dışında bir yerden erişim sağladığında karşımıza çıkmaktadır.\nKullanıcının sorun yaşadığı yayın kontrol edilir ve genel bir yayın sorunu olup olmadığı teyit edilir.\nTvmanager’da SubscriberLog ekranından ip adresi alınır ve yurtdışı bir konum olup olmadığı teyit edilir.\nKullanıcı yurtdışında ise erişim sağlayamayacağı bilgisi verilir, VPN kullanıyor ise kapatması istenir.\nTVmanager Devices kısmında oturumlar sonlandırılır ve kullanıcıdan tekrar giriş yaparak kontrol etmesi rica edilir.\nMobil veri veya farklı bir ağda bu hata mesajının alınıp alınmadığı teyit edilir.\nCihaz ve modem kapama ve açma işlemi uygulanır.\nSorun devam eder ise inceleme için cihaz ve diğer bilgilerle teknik ekibimize bilgi verileceği iletilir. Excel de kullanıcıdan alınan bilgiler not edilir." }], "access": [{ "title": "ERİŞİM SORUNLARI", "body": "‘’Lisans hakları sebebiyle Türkiye sınırları dışında hizmet verilememektedir.’’ Uyarısı\nAlınan hata müşterinin yurt dışında olması ve yurt içinde ise VPN ya da benzeri bir uygulamanın cihazında aktif olmasından kaynaklanmaktadır.\n\nMüşteriye yurt dışında olup olmadığı sorulur, yurt dışında ise ‘’lisans hakları sebebiyle yayınların yurt dışından izlenemediği’’ yönünde bilgi verilir.\nYurt içinde ise VPN ya da benzeri bir uygulamanın cihazında aktif olup ya da olmadığı sorulur. Aktif ise devre dışı bırakılıp tekrar denemesi önerilir.\nVPN ya da benzeri bir uygulama kullanmıyor ise müşterinin ip adresi öğrenilir ve https://tr.wizcase.com/tools/whats-my-ip/ ip adresi kontrol edilir.  Aynı zamanda adresin vpn üzerinden alınıp alınmadığının kontrolü için https://vpnapi.io adresine girilip kontrol edilir.\nIp adresi yurt dışı ya da ISP bilgisi bilinen bir servis sağlayıcısı değilse müşteriye bulunduğu lokasyonun otel, yurt vb. bir yer olup olmadığı ya da cihazının şirket cihazı olup olmadığı sorulur." }, { "title": "‘’IP Karantina’’ Uyarısı", "body": "İp Karantina sorunu genel bir sorun yok ise, eposta veya şifre bir çok defa hatalı girilmesinden dolayı alınır.\nKullanıcının ip adresi karantina da olup ya da olmadığı, TVmanager – CMS – Admission Gate menüsü üzerinden kontrol edilerek çıkarılabilir. İkinci bir seçenek olarak modem kapama ve açma işlemi yaptırılabilir." }], "app": [{ "title": "Teknik Sorun Analizi Nasıl Yapılır?", "body": "App Kaynaklı Nedenler\nCihaz Kaynaklı Nedenler\nApp hataları başlığında uygulamanın açılmaması ya da kendi kendine kapanması şeklinde teknik sorunlar ile karşılaşabiliriz. Bu tip sorunlar, kullanıcı deneyimini doğrudan etkileyerek uygulamaya erişilememesine neden olur.\nUygulamanın eski sürümü\nÖnbellek sorunları\nUyumsuz cihazlar\nDolu RAM/Arka planda çalışan fazla uygulama\nCihazın güncel olmaması (Eski sistemi sürümleri)\nKullanıcıya Sorulabilecek Sorular:\nUygulama açılıyor mu, yoksa açılmadan kapanıyor mu?\nUygulama sürümü, cihaz işletim sistemi sürümü nedir? (TVmanager kontrolü)\nCihazda yeterli depolama alanı var mı?" }], "activation": [{ "title": "‘’Promosyon Kodu Bulunamadı’’ Uyarısı", "body": "Görselde ki örnekte doğrusu ‘’YILLIKLOCA’’ olan kampanya kodu, küçük harf ile yazıldığında ‘’Promosyon Kodu Bulunamadı’’ hatası alınmıştır. Bu hata ile karşılaşıldığında kampanya kodunun yanlış, eksik, küçük harf ya da boşluk bırakılarak yazıldığını tespitle, kullanıcıyı bu doğrultuda doğru yazım için yönlendirmemiz gerekir." }, { "title": "‘’Kampanya Kodu Aktif Edilemedi’’ Uyarısı", "body": "Görseldeki örnekteki gibi eski bir promosyon kodu yazıldığında ‘’Kampanya Kodu Aktif Edilemedi’’ uyarısı alınır." }, { "title": "‘’Geçersiz Kampanya Kodu’’ Uyarısı", "body": "Görseldeki örnekteki gibi daha önce kullanılmış bir promosyon kodu yazıldığında ‘’Geçersiz Kampanya Kodu’’ hatası alınır.\nPromosyon kodunun hangi hesapta kullanıldığını aşağıdaki görseldeki gibi Campaign alanında arama yaparak görüntüleyebiliriz." }, { "title": "Playstore Uygulama Aktivasyon Sorunu", "body": "Bazı durumlarda, kullanıcılar Google Play Store üzerinden S Sport Plus uygulamasında abonelik satın aldıklarında veya yenileme gerçekleştiğinde, üyelikleri otomatik olarak aktifleşmeyebiliyor.  Bu durumda, kullanıcının uygulama üzerinden manuel olarak paket aktivasyonu yapması gerekmektedir.\n\nAktivasyon işleminin başarılı olabilmesi için:\n Google Play Store üzerinden satın alma işlemi yapılırken kullanılan Gmail hesabı, aktivasyon anında cihazda açık olmalıdır.\n Aktivasyon işlemi uygulama içerisinden yapılmalıdır.\nDestek ekibi tarafından Mindbehind üzerinden “paketgoogle” kısayolu kullanılarak yönlendirme sağlanabilir.  Kullanıcı başarılı bir şekilde paket aktivasyonu yaptıktan sonra, paket ataması sistemde gerçekleşir ve log kayıtlarında ilgili işlem aşağıdaki gibi görünür (ekli görsellerdeki gibi).  Bu işlem, paketin doğru şekilde tanımlanması için önemlidir." }, { "title": "App Store Uygulama Aktivasyon Sorunu", "body": "Müşteriler App Store üzerinden uygulamamızdan abonelik satın aldığı veya yenileme olduğu zaman bazen üyelik aktif olmuyor.\nÜyelikleri aktif olabilmeleri için, uygulama üzerinden paket aktivasyon yapmaları gerekiyor. Paket aktivasyon yaparken, satın alma yaparken hangi Apple kimliği hesabı açık ise, o hesap açıkken aktivasyon denemesi gerekiyor.\nMindbehind üzerinden ‘’paketapple’’ kısayolu kullanılır.\nMüşteri paket aktivasyonu yaptıktan sonra üyelik ataması ve loglarda nasıl gözüktüğü görsellerdeki gibidir.\nPaket aktivasyon butonu örnek görüntüsü yandaki gibidir." }, { "title": "AKTİVASYON SORUNLARI", "body": "İOS Uygulama Paket Aktivasyon ‘’Abonelik Başkasına Aittir’’ Sorunu\n\nİos uygulamamızda müşteri paket aktivasyon işlemi yaptığında ‘’Abonelik Başkasına Aittir’’ hatası geliyor ise, cihazda açık olan Apple kimliği ile satın alınmış, ancak aktivasyon yaptığı eposta adresi farklı bir eposta adresidir.\n\nFarklı eposta adresi ile paket aktivasyon yaptığında ‘’Subscriberlog’’ kısmında örnek ekran görüntüsünde kırmızı alana alınan ‘’packageValidation’’  kısmı çıkar, ok ile gösterilen ID kısmından doğru üyeliği ID araması ile bulabiliriz." }, { "title": "AKTİVASYON SORUNLARI", "body": "Android ‘’Paket Başka Bir Kullanıcıya Ait Olduğu İçin Paket Atama İşlemi Başarısız Oldu’’ Sorunu\n\nAndroid uygulamamızda müşteri paket aktivasyon işlemi yaptığında ‘’Paket Başka Bir Kullanıcıya Ait Olduğu İçin Paket Atama İşlemi Başarısız Oldu’’ hatası geliyor ise, cihazda açık olan Play Store gmail hesabı ile satın alınmış, ancak aktivasyon yaptığı eposta adresi farklı bir eposta adresidir.\n\nFarklı eposta adresi ile paket aktivasyon yaptığında ‘’Subscriberlog’’ kısmında örnek ekran görüntüsünde kırmızı alana alınan ‘’Validate Google Package’’  kısmı çıkar, ok ile gösterilen ID kısmından doğru üyeliği ID araması ile bulabiliriz." }, { "title": "AKTİVASYON SORUNLARI", "body": "Android Uygulama Paket Aktivasyon İşlem Tamamlanamadı veya Üyelik Bulunamama Sorunu\nAndroid uygulamamızda müşteri ödeme yapmış olmasına rağmen paket aktivasyonu yaptığında ‘’İşlem tamamlandı, İşlem Tamamlanamadı veya Abone bulunamadı’’ hatası geliyor ve üyelik aktif olmuyor ise, müşteriden GPA kodunu paylaşılması istenir.\nGPA kodu, Google tarafından ödeme yapıldığına dair müşteriye gönderilen ödeme faturası (makbuz) içerisinde yer almaktadır.\nBu GPA kodu ile üyeliği Tvmanager üzerinden aşağıdaki görseldeki gibi Reporting > General > Payments kısmında tarihi aralığı ayarlanıp ‘’Transaction Identifer’’ kısmından arama yapılıp, üyelik ID’sine ‘’Subscriber ID’’ üzerinden ulaşılabilir." }, { "title": "AKTİVASYON SORUNLARI", "body": "Türksat Abone Bulunamadı veya Abone Active Değil Sorunu\nBu hata, Hizmet ID veya Geçici Kod hatalı yazılmasından dolayı alınır.  Müşteriler genellikle bazı büyük küçük harfleri karıştırabiliyor veya sistemden dolayı bazen bu sorun alınabiliyor.\nÇözüm olarak harf hatası olmaması için Tvmanager>Reporting>General>Thirtdparty Provisions kısmından tarih aralığı belirleyip, Hizmet ID numarasını ‘’Extrenal ID’’ kısmından aratıp, kullanıcı Türksat bilgilerini bulup ‘’UniqueID’’ kısmından geçici kodu bulup, kullanıcıya paylaştığımızda, ID ve Geçici kodu kopyala yapıştırır şeklinde ilerlemesini iletebiliriz.\nAynı sorun devam eder ise, kullanıcıdan onay alıp, ID ve geçici kod ile kullanıcının üyeliğini kendimiz yapabiliriz. Müşterinin üyeliğini biz tarafından yapıldı ise, müşteriye şifresini nasıl güncelleyebileceği ile ilgili bilgi verilir." }] };
+
+function renderTechSections() {
+    // Kaynak: Sheet'ten gelen teknik kartlar + admin override (localStorage)
+    const baseCards = (database || []).filter(c => String(c.category || '').toLowerCase() === 'teknik');
+    let override = [];
+    try { override = JSON.parse(localStorage.getItem('techCardsOverride') || '[]'); } catch (e) { override = []; }
+    const techCards = (Array.isArray(override) && override.length) ? override : baseCards;
+
+    // Heuristik sınıflandırma
+    const buckets = { broadcast: [], access: [], app: [], activation: [], cards: [] };
+    techCards.forEach(c => {
+        const hay = `${c.title || ''} ${c.text || ''} ${c.script || ''}`.toLowerCase();
+        if (hay.includes('yayın') || hay.includes('don') || hay.includes('buffer') || hay.includes('akış') || hay.includes('tv')) {
+            buckets.broadcast.push(c);
+        } else if (hay.includes('erişim') || hay.includes('vpn') || hay.includes('proxy') || hay.includes('login') || hay.includes('giriş') || hay.includes('yurtdışı')) {
+            buckets.access.push(c);
+        } else if (hay.includes('app') || hay.includes('uygulama') || hay.includes('hata') || hay.includes('crash') || hay.includes('versiyon')) {
+            buckets.app.push(c);
+        } else if (hay.includes('aktivasyon') || hay.includes('satın') || hay.includes('satınalma') || hay.includes('store') || hay.includes('ödeme') || hay.includes('google') || hay.includes('apple')) {
+            buckets.activation.push(c);
+        } else {
+            buckets.broadcast.push(c);
+        }
+        buckets.cards.push(c);
+    });
+
+    window.__techBuckets = buckets;
+
+    // Search input bağlama
+    const bindSearch = (inputId, key, listId) => {
+        const inp = document.getElementById(inputId);
+        if (!inp) return;
+        inp.oninput = () => renderTechList(key, inp.value || '', listId);
+    };
+
+    bindSearch('x-search-broadcast', 'broadcast', 'x-broadcast-list');
+    bindSearch('x-search-access', 'access', 'x-access-list');
+    bindSearch('x-search-app', 'app', 'x-app-list');
+    bindSearch('x-search-activation', 'activation', 'x-activation-list');
+    bindSearch('x-search-cards', 'cards', 'x-cards-list');
+
+    // İlk çizim
+    renderTechList('broadcast', '', 'x-broadcast-list');
+    renderTechList('access', '', 'x-access-list');
+    renderTechList('app', '', 'x-app-list');
+    renderTechList('activation', '', 'x-activation-list');
+    renderTechList('cards', '', 'x-cards-list');
+}
+
+let techEditMode = false;
+
+function renderTechList(bucketKey, q, listId) {
+    const listEl = document.getElementById(listId);
+    if (!listEl) return;
+
+    const all = (window.__techBuckets && window.__techBuckets[bucketKey]) ? window.__techBuckets[bucketKey] : [];
+    const query = String(q || '').trim().toLowerCase();
+
+    const filtered = !query ? all : all.filter(c => {
+        const hay = `${c.title || ''} ${c.text || ''} ${c.script || ''} ${c.link || ''}`.toLowerCase();
+        return hay.includes(query);
+    });
+
+    const bar = (isAdminMode ? `
         <div style="display:flex;gap:10px;align-items:center;margin:10px 0 14px;">
-          <button class="x-btn x-btn-admin" onclick="toggleTechEdit()"><i class="fas fa-pen"></i> ${techEditMode?"\u0044\u00FC\u007A\u0065\u006E\u006C\u0065\u006D\u0065\u0079\u0069\u0020\u004B\u0061\u0070\u0061\u0074":"\u0044\u00FC\u007A\u0065\u006E\u006C\u0065\u006D\u0065\u0079\u0069\u0020\u0041\u00E7"}</button>
-          ${techEditMode?`<button class="x-btn x-btn-admin" onclick="addTechCard('${bucketKey}')"><i class="fas fa-plus"></i> Kart Ekle</button>`:``}
+          <button class="x-btn x-btn-admin" onclick="toggleTechEdit()"><i class="fas fa-pen"></i> ${techEditMode ? 'Düzenlemeyi Kapat' : 'Düzenlemeyi Aç'}</button>
+          ${techEditMode ? `<button class="x-btn x-btn-admin" onclick="addTechCard('${bucketKey}')"><i class="fas fa-plus"></i> Kart Ekle</button>` : ``}
           <span style="color:#888;font-weight:800;font-size:.9rem">Bu düzenlemeler tarayıcıda saklanır (local).</span>
         </div>
-    `:'';_0xfd3f=652664^652668;if(!_0x0249b['\u006C\u0065\u006E\u0067\u0074\u0068']){_0x8e534b['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0xbb6g+">vid/<.\u0131damanulub t\u0131yaK>\"meti-inim-emoh\"=ssalc vid<".split("").reverse().join("");return;}_0x8e534b['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0xbb6g+`
+    ` : '');
+
+    if (!filtered.length) {
+        listEl.innerHTML = bar + '<div class="home-mini-item">Kayıt bulunamadı.</div>';
+        return;
+    }
+
+    listEl.innerHTML = bar + `
       <div class="x-card-grid">
-        ${_0x0249b['\u006D\u0061\u0070']((c,idx)=>techCardHtml(c,idx))['\u006A\u006F\u0069\u006E']('')}
+        ${filtered.map((c, idx) => techCardHtml(c, idx)).join('')}
       </div>
-    `;}function techCardKey(c,idx){return c&&(c['\u0069\u0064']||c['\u0063\u006F\u0064\u0065'])?String(c['\u0069\u0064']||c['\u0063\u006F\u0064\u0065']):`${(c['\u0074\u0069\u0074\u006C\u0065']||'')['\u0073\u006C\u0069\u0063\u0065'](512346^512346,264938^264898)}__${idx}`;}function techCardHtml(c,idx,_0x1a15e,_0x16_0x745,_0x8b_0x76b){const _0xge9a7c=escapeHtml(c['\u0074\u0069\u0074\u006C\u0065']||'');const _0x9762de=escapeHtml(c['\u0063\u006F\u0064\u0065']||c['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079']||"K\u0130NKET".split("").reverse().join(""));var _0xadb6ce=(299697^299696)+(113639^113633);const _0x8d52b=(c['\u0074\u0065\u0078\u0074']||'')['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']();_0xadb6ce='\u006B\u0067\u0063\u006C\u0061\u006F';const _0xb6f=escapeHtml(_0x8d52b);_0x1a15e=(727644^727645)+(239938^239941);const _0xe5cb=(c['\u006C\u0069\u006E\u006B']||'')['\u0074\u0072\u0069\u006D']();const _0xdf_0x3ga=(c['\u0073\u0063\u0072\u0069\u0070\u0074']||'')['\u0074\u0072\u0069\u006D']();_0x16_0x745='\u0067\u0067\u006B\u006C\u0070\u0061';const _0x2bdf=techCardKey(c,idx);_0x8b_0x76b=605007^605005;var _0x3539cf=(320866^320865)+(988546^988551);const _0xb30c=_0x8d52b&&_0x8d52b['\u006C\u0065\u006E\u0067\u0074\u0068']>(793922^794102)||_0xdf_0x3ga&&_0xdf_0x3ga['\u006C\u0065\u006E\u0067\u0074\u0068']>(725323^725299)||!!_0xe5cb;_0x3539cf=645236^645244;return`
-      <div class="x-card" data-key="${escapeHtml(_0x2bdf)}">
+    `;
+}
+
+function techCardKey(c, idx) {
+    return (c && (c.id || c.code)) ? String(c.id || c.code) : `${(c.title || '').slice(0, 40)}__${idx}`;
+}
+
+function techCardHtml(c, idx) {
+    const title = escapeHtml(c.title || '');
+    const badge = escapeHtml(c.code || c.category || 'TEKNİK');
+    const rawText = (c.text || '').toString();
+    const text = escapeHtml(rawText);
+    const link = (c.link || '').trim();
+    const script = (c.script || '').trim();
+    const key = techCardKey(c, idx);
+
+    // Detay butonunu gösterme kriteri (uzun metin / script / link)
+    const hasDetail = (rawText && rawText.length > 180) || (script && script.length > 120) || !!link;
+
+    return `
+      <div class="x-card" data-key="${escapeHtml(key)}">
         <div class="x-card-head">
-          <div class="x-card-title">${_0xge9a7c}</div>
-          <div class="x-card-badge">${_0x9762de}</div>
+          <div class="x-card-title">${title}</div>
+          <div class="x-card-badge">${badge}</div>
         </div>
         <div class="x-card-body">
-          ${_0xb6f?`<div class="x-card-text x-card-text-truncate">${_0xb6f}</div>`:``}
-          ${_0xb30c?`<button class="x-readmore" onclick='openTechCardDetail(${JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](_0x2bdf)})'>Devam oku</button>`:``}
+          ${text ? `<div class="x-card-text x-card-text-truncate">${text}</div>` : ``}
+          ${hasDetail ? `<button class="x-readmore" onclick='openTechCardDetail(${JSON.stringify(key)})'>Devam oku</button>` : ``}
         </div>
         <div class="x-card-actions">
-          ${_0xdf_0x3ga?`<button class="x-btn x-btn-copy" onclick='copyText(${JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](_0xdf_0x3ga)})'><i class="fas fa-copy"></i> Kopyala</button>`:``}
-          ${isAdminMode&&techEditMode?`
-            <button class="x-btn x-btn-admin" onclick="editTechCard(${JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](_0x2bdf)})"><i class="fas fa-pen"></i> Düzenle</button>
-            <button class="x-btn x-btn-admin" onclick="deleteTechCard(${JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](_0x2bdf)})"><i class="fas fa-trash"></i> Sil</button>
-          `:``}
+          ${script ? `<button class="x-btn x-btn-copy" onclick='copyText(${JSON.stringify(script)})'><i class="fas fa-copy"></i> Kopyala</button>` : ``}
+          ${isAdminMode && techEditMode ? `
+            <button class="x-btn x-btn-admin" onclick="editTechCard(${JSON.stringify(key)})"><i class="fas fa-pen"></i> Düzenle</button>
+            <button class="x-btn x-btn-admin" onclick="deleteTechCard(${JSON.stringify(key)})"><i class="fas fa-trash"></i> Sil</button>
+          ` : ``}
         </div>
       </div>
-    `;}function openTechCardDetail(key){try{const _0x64_0x416=__getTechCardsForUi();let _0xd058fc=null;if(String(key||'')['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("\u0069\u0064\u0078\u003A")){let _0x8dd49b;const n=parseInt(String(key)['\u0073\u0070\u006C\u0069\u0074']("\u003A")[807279^807278],782180^782190);_0x8dd49b=(340105^340108)+(166217^166208);if(!Number['\u0069\u0073\u004E\u0061\u004E'](n))_0xd058fc=_0x64_0x416[n];}else{_0xd058fc=_0x64_0x416['\u0066\u0069\u006E\u0064']((c,idx)=>techCardKey(c,idx)===key)||null;}if(!_0xd058fc){Swal['\u0066\u0069\u0072\u0065']({"icon":"\u0077\u0061\u0072\u006E\u0069\u006E\u0067",'\u0074\u0069\u0074\u006C\u0065':"\u004B\u0061\u0079\u0131\u0074\u0020\u0062\u0075\u006C\u0075\u006E\u0061\u006D\u0061\u0064\u0131",'\u0074\u0069\u006D\u0065\u0072':1200,'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false});return;}showCardDetail({"title":_0xd058fc['\u0074\u0069\u0074\u006C\u0065']||"yateD".split("").reverse().join(""),'\u0074\u0065\u0078\u0074':_0xd058fc['\u0074\u0065\u0078\u0074']||'','\u0073\u0063\u0072\u0069\u0070\u0074':_0xd058fc['\u0073\u0063\u0072\u0069\u0070\u0074']||'',"alert":_0xd058fc['\u0061\u006C\u0065\u0072\u0074']||'','\u006C\u0069\u006E\u006B':_0xd058fc['\u006C\u0069\u006E\u006B']||''});}catch(e){Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),"\u0044\u0065\u0074\u0061\u0079\u0020\u0061\u00E7\u0131\u006C\u0061\u006D\u0061\u0064\u0131\u002E","\u0065\u0072\u0072\u006F\u0072");}}function toggleTechEdit(){techEditMode=!techEditMode;try{filterTechCards();}catch(e){}}function getTechOverride(){try{var _0xf30e=(954042^954042)+(282590^282583);const _0xc1de5e=JSON['\u0070\u0061\u0072\u0073\u0065'](localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0074\u0065\u0063\u0068\u0043\u0061\u0072\u0064\u0073\u004F\u0076\u0065\u0072\u0072\u0069\u0064\u0065")||"\u005B\u005D");_0xf30e=902449^902450;if(Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0xc1de5e))return _0xc1de5e;}catch(e){}return[];}function saveTechOverride(arr){storage['\u0073\u0065\u0074']("edirrevOsdraChcet".split("").reverse().join(""),arr||[]);}function addTechCard(bucketKey){Swal['\u0066\u0069\u0072\u0065']({"title":"\u0054\u0065\u006B\u006E\u0069\u006B\u0020\u004B\u0061\u0072\u0074\u0020\u0045\u006B\u006C\u0065",'\u0068\u0074\u006D\u006C':`
+    `;
+}
+
+// Teknik kart detayını popup'ta aç (ana ekran kartları gibi)
+function openTechCardDetail(key) {
+    try {
+        const all = __getTechCardsForUi();
+        // key: "<id>" veya "idx:<n>" olabilir
+        let found = null;
+        if (String(key || '').startsWith('idx:')) {
+            const n = parseInt(String(key).split(':')[1], 10);
+            if (!Number.isNaN(n)) found = all[n];
+        } else {
+            found = all.find((c, idx) => techCardKey(c, idx) === key) || null;
+        }
+        if (!found) {
+            Swal.fire({ icon: 'warning', title: 'Kayıt bulunamadı', timer: 1200, showConfirmButton: false });
+            return;
+        }
+
+        // showCardDetail(obj) zaten script/link vs. destekliyor
+        showCardDetail({
+            title: found.title || 'Detay',
+            text: found.text || '',
+            script: found.script || '',
+            alert: found.alert || '',
+            link: found.link || ''
+        });
+    } catch (e) {
+        Swal.fire('Hata', 'Detay açılamadı.', 'error');
+    }
+}
+
+function toggleTechEdit() {
+    techEditMode = !techEditMode;
+    // fullscreen teknik kartlar sekmesini tazele
+    try { filterTechCards(); } catch (e) { }
+}
+
+function getTechOverride() {
+    try {
+        const arr = JSON.parse(localStorage.getItem('techCardsOverride') || '[]');
+        if (Array.isArray(arr)) return arr;
+    } catch (e) { }
+    return [];
+}
+
+function saveTechOverride(arr) {
+    // localStorage limit / quota hatalarında uygulama çökmesin
+    storage.set('techCardsOverride', (arr || []));
+}
+
+function addTechCard(bucketKey) {
+    Swal.fire({
+        title: "Teknik Kart Ekle",
+        html: `
           <input id="tc-title" class="swal2-input" placeholder="Başlık">
           <input id="tc-badge" class="swal2-input" placeholder="Etiket (ör: TEKNİK)">
           <input id="tc-link" class="swal2-input" placeholder="Link (opsiyonel)">
           <textarea id="tc-text" class="swal2-textarea" placeholder="Açıklama"></textarea>
           <textarea id="tc-script" class="swal2-textarea" placeholder="Script (opsiyonel)"></textarea>
-        `,"showCancelButton":!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0045\u006B\u006C\u0065","cancelButtonText":"\u0056\u0061\u007A\u0067\u0065\u00E7","preConfirm":()=>{const _0xegd=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("eltit-ct".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']();if(!_0xegd)return Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("\u0042\u0061\u015F\u006C\u0131\u006B\u0020\u007A\u006F\u0072\u0075\u006E\u006C\u0075");return{"id":"_lacol".split("").reverse().join("")+Date['\u006E\u006F\u0077'](),'\u0074\u0069\u0074\u006C\u0065':_0xegd,"code":(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0063\u002D\u0062\u0061\u0064\u0067\u0065")['\u0076\u0061\u006C\u0075\u0065']||"K\u0130NKET".split("").reverse().join(""))['\u0074\u0072\u0069\u006D'](),'\u006C\u0069\u006E\u006B':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0063\u002D\u006C\u0069\u006E\u006B")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0074\u0065\u0078\u0074':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0063\u002D\u0074\u0065\u0078\u0074")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),"script":(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tpircs-ct".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079':'teknik'};}})['\u0074\u0068\u0065\u006E'](res=>{if(!res['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064'])return;var _0x4ba94e=(958556^958548)+(162732^162733);const _0xe6cec=getTechOverride();_0x4ba94e=(822480^822489)+(953005^953004);const _0x9c813e=(database||[])['\u0066\u0069\u006C\u0074\u0065\u0072'](c=>String(c['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()==="\u0074\u0065\u006B\u006E\u0069\u006B");const _0xb58d=_0xe6cec['\u006C\u0065\u006E\u0067\u0074\u0068']?_0xe6cec:_0x9c813e;_0xb58d['\u0075\u006E\u0073\u0068\u0069\u0066\u0074'](res['\u0076\u0061\u006C\u0075\u0065']);saveTechOverride(_0xb58d);try{filterTechCards();}catch(e){}});}function editTechCard(key,_0xb4b6be){const _0x6c42e=getTechOverride();var _0xd0ae2d=(473471^473470)+(122854^122854);const _0x65_0x741=(database||[])['\u0066\u0069\u006C\u0074\u0065\u0072'](c=>String(c['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()==="kinket".split("").reverse().join(""));_0xd0ae2d="kjcglq".split("").reverse().join("");const _0x33a=_0x6c42e['\u006C\u0065\u006E\u0067\u0074\u0068']?_0x6c42e:_0x65_0x741;const _0x66_0xcee=_0x33a['\u0066\u0069\u006E\u0064\u0049\u006E\u0064\u0065\u0078']((c,i)=>techCardKey(c,i)===key);if(_0x66_0xcee<(789791^789791))return;const c=_0x33a[_0x66_0xcee]||{};_0xb4b6be=250065^250065;Swal['\u0066\u0069\u0072\u0065']({"title":"\u004B\u0061\u0072\u0074\u0131\u0020\u0044\u00FC\u007A\u0065\u006E\u006C\u0065","html":`
-          <input id="tc-title" class="swal2-input" placeholder="Başlık" value="${escapeHtml(c['\u0074\u0069\u0074\u006C\u0065']||'')}">
-          <input id="tc-badge" class="swal2-input" placeholder="Etiket" value="${escapeHtml(c['\u0063\u006F\u0064\u0065']||c['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079']||"\u0054\u0045\u004B\u004E\u0130\u004B")}">
-          <input id="tc-link" class="swal2-input" placeholder="Link" value="${escapeHtml(c['\u006C\u0069\u006E\u006B']||'')}">
-          <textarea id="tc-text" class="swal2-textarea" placeholder="Açıklama">${escapeHtml(c['\u0074\u0065\u0078\u0074']||'')}</textarea>
-          <textarea id="tc-script" class="swal2-textarea" placeholder="Script">${escapeHtml(c['\u0073\u0063\u0072\u0069\u0070\u0074']||'')}</textarea>
-        `,"showCancelButton":!![],"confirmButtonText":"Kaydet",'\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0056\u0061\u007A\u0067\u0065\u00E7","preConfirm":()=>{let _0x3bea8c;const _0x3egc8d=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("eltit-ct".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']();_0x3bea8c=(311643^311634)+(116659^116662);if(!_0x3egc8d)return Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("ulnuroz k\u0131l\u015FaB".split("").reverse().join(""));return{...c,'\u0074\u0069\u0074\u006C\u0065':_0x3egc8d,'\u0063\u006F\u0064\u0065':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0063\u002D\u0062\u0061\u0064\u0067\u0065")['\u0076\u0061\u006C\u0075\u0065']||"\u0054\u0045\u004B\u004E\u0130\u004B")['\u0074\u0072\u0069\u006D'](),'\u006C\u0069\u006E\u006B':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("knil-ct".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0074\u0065\u0078\u0074':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("txet-ct".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0073\u0063\u0072\u0069\u0070\u0074':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0063\u002D\u0073\u0063\u0072\u0069\u0070\u0074")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079':"\u0074\u0065\u006B\u006E\u0069\u006B"};}})['\u0074\u0068\u0065\u006E'](res=>{if(!res['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064'])return;_0x33a[_0x66_0xcee]=res['\u0076\u0061\u006C\u0075\u0065'];saveTechOverride(_0x33a);try{filterTechCards();}catch(e){}});}function deleteTechCard(key){Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u0053\u0069\u006C\u0069\u006E\u0073\u0069\u006E\u0020\u006D\u0069\u003F","text":"\u0042\u0075\u0020\u006B\u0061\u0072\u0074\u0020\u006C\u006F\u0063\u0061\u006C\u0020\u0076\u0065\u0072\u0069\u0064\u0065\u006E\u0020\u0073\u0069\u006C\u0069\u006E\u0065\u0063\u0065\u006B\u002E",'\u0069\u0063\u006F\u006E':"warning",'\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0053\u0069\u006C",'\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0056\u0061\u007A\u0067\u0065\u00E7"})['\u0074\u0068\u0065\u006E'](res=>{if(!res['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064'])return;const _0x6511e=getTechOverride();let _0xcdbbcb;const _0xd6e=(database||[])['\u0066\u0069\u006C\u0074\u0065\u0072'](c=>String(c['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()==="\u0074\u0065\u006B\u006E\u0069\u006B");_0xcdbbcb=(561127^561127)+(343303^343301);const _0x86c37e=_0x6511e['\u006C\u0065\u006E\u0067\u0074\u0068']?_0x6511e:_0xd6e;var _0x03336a=(160459^160457)+(625770^625768);const _0xc91e1f=_0x86c37e['\u0066\u0069\u006C\u0074\u0065\u0072']((c,i)=>techCardKey(c,i)!==key);_0x03336a=434083^434084;saveTechOverride(_0xc91e1f);try{filterTechCards();}catch(e){}});}function renderTechList(targetId,list,showCategory=false,_0x5gg){const _0x598ff=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](targetId);_0x5gg=(578116^578115)+(302916^302913);if(!_0x598ff)return;if(!list||list['\u006C\u0065\u006E\u0067\u0074\u0068']===(201683^201683)){_0x598ff['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u0064\u0069\u0076\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0070\u0061\u0064\u0064\u0069\u006E\u0067\u003A\u0031\u0036\u0070\u0078\u003B\u006F\u0070\u0061\u0063\u0069\u0074\u0079\u003A\u002E\u0037\u0022\u003E\u0042\u0075\u0020\u0062\u0061\u015F\u006C\u0131\u006B\u0020\u0061\u006C\u0074\u0131\u006E\u0064\u0061\u0020\u0069\u00E7\u0065\u0072\u0069\u006B\u0020\u0079\u006F\u006B\u002E\u003C\u002F\u0064\u0069\u0076\u003E";return;}_0x598ff['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=list['\u006D\u0061\u0070'](c=>`
-      <div class="news-item" style="cursor:pointer" onclick="showCardDetail(${JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](c)['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u003C','\u0067'),'\u003c')})">
-        <span class="news-title">${escapeHtml(c['\u0074\u0069\u0074\u006C\u0065']||'')}</span>
-        ${showCategory?`<span class="news-tag" style="background:#eef2ff;color:#2b3a8a;border:1px solid #dde3ff">${escapeHtml(c['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079']||'')}</span>`:''}
-        <div class="news-desc" style="white-space:pre-line">${escapeHtml(c['\u0074\u0065\u0078\u0074']||'')}</div>
-        ${c['\u0073\u0063\u0072\u0069\u0070\u0074']?`<div class="script-box" style="margin-top:10px"><b>Script:</b><div style="margin-top:6px;white-space:pre-line">${escapeHtml(c['\u0073\u0063\u0072\u0069\u0070\u0074']||'')}</div><div style="text-align:right;margin-top:10px"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${escapeForJsString(c['\u0073\u0063\u0072\u0069\u0070\u0074']||'')}')">Kopyala</button></div></div>`:''}
+        `,
+        showCancelButton: true,
+        confirmButtonText: "Ekle",
+        cancelButtonText: "Vazgeç",
+        preConfirm: () => {
+            const title = (document.getElementById('tc-title').value || '').trim();
+            if (!title) return Swal.showValidationMessage("Başlık zorunlu");
+            return {
+                id: 'local_' + Date.now(),
+                title,
+                code: (document.getElementById('tc-badge').value || 'TEKNİK').trim(),
+                link: (document.getElementById('tc-link').value || '').trim(),
+                text: (document.getElementById('tc-text').value || '').trim(),
+                script: (document.getElementById('tc-script').value || '').trim(),
+                category: 'teknik'
+            };
+        }
+    }).then(res => {
+        if (!res.isConfirmed) return;
+        const cur = getTechOverride();
+        const base = (database || []).filter(c => String(c.category || '').toLowerCase() === 'teknik');
+        const arr = (cur.length ? cur : base);
+        arr.unshift(res.value);
+        saveTechOverride(arr);
+        try { filterTechCards(); } catch (e) { }
+    });
+}
+
+function editTechCard(key) {
+    const cur = getTechOverride();
+    const base = (database || []).filter(c => String(c.category || '').toLowerCase() === 'teknik');
+    const arr = (cur.length ? cur : base);
+    const idx = arr.findIndex((c, i) => techCardKey(c, i) === key);
+    if (idx < 0) return;
+
+    const c = arr[idx] || {};
+    Swal.fire({
+        title: "Kartı Düzenle",
+        html: `
+          <input id="tc-title" class="swal2-input" placeholder="Başlık" value="${escapeHtml(c.title || '')}">
+          <input id="tc-badge" class="swal2-input" placeholder="Etiket" value="${escapeHtml(c.code || c.category || 'TEKNİK')}">
+          <input id="tc-link" class="swal2-input" placeholder="Link" value="${escapeHtml(c.link || '')}">
+          <textarea id="tc-text" class="swal2-textarea" placeholder="Açıklama">${escapeHtml(c.text || '')}</textarea>
+          <textarea id="tc-script" class="swal2-textarea" placeholder="Script">${escapeHtml(c.script || '')}</textarea>
+        `,
+        showCancelButton: true,
+        confirmButtonText: "Kaydet",
+        cancelButtonText: "Vazgeç",
+        preConfirm: () => {
+            const title = (document.getElementById('tc-title').value || '').trim();
+            if (!title) return Swal.showValidationMessage("Başlık zorunlu");
+            return {
+                ...c,
+                title,
+                code: (document.getElementById('tc-badge').value || 'TEKNİK').trim(),
+                link: (document.getElementById('tc-link').value || '').trim(),
+                text: (document.getElementById('tc-text').value || '').trim(),
+                script: (document.getElementById('tc-script').value || '').trim(),
+                category: 'teknik'
+            };
+        }
+    }).then(res => {
+        if (!res.isConfirmed) return;
+        arr[idx] = res.value;
+        saveTechOverride(arr);
+        try { filterTechCards(); } catch (e) { }
+    });
+}
+
+function deleteTechCard(key) {
+    Swal.fire({
+        title: "Silinsin mi?",
+        text: "Bu kart local veriden silinecek.",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Sil",
+        cancelButtonText: "Vazgeç"
+    }).then(res => {
+        if (!res.isConfirmed) return;
+        const cur = getTechOverride();
+        const base = (database || []).filter(c => String(c.category || '').toLowerCase() === 'teknik');
+        const arr = (cur.length ? cur : base);
+        const next = arr.filter((c, i) => techCardKey(c, i) !== key);
+        saveTechOverride(next);
+        try { filterTechCards(); } catch (e) { }
+    });
+}
+
+function renderTechList(targetId, list, showCategory = false) {
+    const el = document.getElementById(targetId);
+    if (!el) return;
+    if (!list || list.length === 0) {
+        el.innerHTML = '<div style="padding:16px;opacity:.7">Bu başlık altında içerik yok.</div>';
+        return;
+    }
+    el.innerHTML = list.map((c) => `
+      <div class="news-item" style="cursor:pointer" onclick="showCardDetail(${JSON.stringify(c).replace(/</g, '\u003c')})">
+        <span class="news-title">${escapeHtml(c.title || '')}</span>
+        ${showCategory ? `<span class="news-tag" style="background:#eef2ff;color:#2b3a8a;border:1px solid #dde3ff">${escapeHtml(c.category || '')}</span>` : ''}
+        <div class="news-desc" style="white-space:pre-line">${escapeHtml(c.text || '')}</div>
+        ${c.script ? `<div class="script-box" style="margin-top:10px"><b>Script:</b><div style="margin-top:6px;white-space:pre-line">${escapeHtml(c.script || '')}</div><div style="text-align:right;margin-top:10px"><button class="btn btn-copy" onclick="event.stopPropagation(); copyText('${escapeForJsString(c.script || '')}')">Kopyala</button></div></div>` : ''}
       </div>
-    `)['\u006A\u006F\u0069\u006E']('');}function renderTechDocs(){var _0x4a3g=(829663^829655)+(731389^731391);const _0xf7c={"broadcast":'x-broadcast-docs','\u0061\u0063\u0063\u0065\u0073\u0073':"\u0078\u002D\u0061\u0063\u0063\u0065\u0073\u0073\u002D\u0064\u006F\u0063\u0073",'\u0061\u0070\u0070':"\u0078\u002D\u0061\u0070\u0070\u002D\u0064\u006F\u0063\u0073",'\u0061\u0063\u0074\u0069\u0076\u0061\u0074\u0069\u006F\u006E':"\u0078\u002D\u0061\u0063\u0074\u0069\u0076\u0061\u0074\u0069\u006F\u006E\u002D\u0064\u006F\u0063\u0073"};_0x4a3g=(609074^609074)+(656512^656518);Object['\u006B\u0065\u0079\u0073'](_0xf7c)['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](key=>{const _0x01dd4a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](_0xf7c[key]);if(!_0x01dd4a)return;try{var _0x0cafea=(172428^172431)+(965569^965572);const _0xa5b2=TECH_DOC_CONTENT&&TECH_DOC_CONTENT[key]?TECH_DOC_CONTENT[key]:[];_0x0cafea='\u0067\u0069\u0067\u006F\u0063\u006A';if(!Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0xa5b2)||_0xa5b2['\u006C\u0065\u006E\u0067\u0074\u0068']===(669701^669701)){_0x01dd4a['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u0064\u0069\u0076\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0070\u0061\u0064\u0064\u0069\u006E\u0067\u003A\u0031\u0032\u0070\u0078\u0020\u0032\u0070\u0078\u003B\u006F\u0070\u0061\u0063\u0069\u0074\u0079\u003A\u002E\u0037\u0022\u003E\u0042\u0075\u0020\u0062\u0061\u015F\u006C\u0131\u006B\u0020\u0061\u006C\u0074\u0131\u006E\u0064\u0061\u0020\u0074\u0065\u006B\u006E\u0069\u006B\u0020\u0064\u00F6\u006B\u00FC\u006D\u0061\u006E\u0020\u0062\u0075\u006C\u0075\u006E\u0061\u006D\u0061\u0064\u0131\u002E\u003C\u002F\u0064\u0069\u0076\u003E";return;}_0x01dd4a['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0xa5b2['\u006D\u0061\u0070']((it,idx)=>`
+    `).join('');
+}
+
+function renderTechDocs() {
+    const map = {
+        broadcast: 'x-broadcast-docs',
+        access: 'x-access-docs',
+        app: 'x-app-docs',
+        activation: 'x-activation-docs'
+    };
+
+    Object.keys(map).forEach(key => {
+        const el = document.getElementById(map[key]);
+        if (!el) return;
+
+        try {
+            const items = (TECH_DOC_CONTENT && TECH_DOC_CONTENT[key]) ? TECH_DOC_CONTENT[key] : [];
+            if (!Array.isArray(items) || items.length === 0) {
+                el.innerHTML = '<div style="padding:12px 2px;opacity:.7">Bu başlık altında teknik döküman bulunamadı.</div>';
+                return;
+            }
+
+            el.innerHTML = items.map((it, idx) => `
                 <div class="doc-card">
                   <button type="button" class="doc-head" onclick="toggleDocAccordion(this)">
-                    <span class="doc-title">${escapeHtml(it['\u0074\u0069\u0074\u006C\u0065']||"\u0130\u00E7\u0065\u0072\u0069\u006B\u0020"+(idx+(246758^246759)))}</span>
+                    <span class="doc-title">${escapeHtml(it.title || ('İçerik ' + (idx + 1)))}</span>
                     <i class="fas fa-chevron-down"></i>
                   </button>
-                  <div class="doc-body" style="display:none; white-space:pre-line">${escapeHtml(it['\u0062\u006F\u0064\u0079']||'')}</div>
+                  <div class="doc-body" style="display:none; white-space:pre-line">${escapeHtml(it.body || '')}</div>
                 </div>
-            `)['\u006A\u006F\u0069\u006E']('');}catch(err){console['\u0065\u0072\u0072\u006F\u0072']("\u0072\u0065\u006E\u0064\u0065\u0072\u0054\u0065\u0063\u0068\u0044\u006F\u0063\u0073\u0020\u0065\u0072\u0072\u006F\u0072",err);_0x01dd4a['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']="\u003C\u0064\u0069\u0076\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0070\u0061\u0064\u0064\u0069\u006E\u0067\u003A\u0031\u0032\u0070\u0078\u0020\u0032\u0070\u0078\u003B\u006F\u0070\u0061\u0063\u0069\u0074\u0079\u003A\u002E\u0037\u0022\u003E\u0044\u00F6\u006B\u00FC\u006D\u0061\u006E\u006C\u0061\u0072\u0020\u0079\u00FC\u006B\u006C\u0065\u006E\u0065\u006D\u0065\u0064\u0069\u002E\u0020\u0028\u004B\u006F\u006E\u0073\u006F\u006C\u0075\u0020\u006B\u006F\u006E\u0074\u0072\u006F\u006C\u0020\u0065\u0064\u0069\u006E\u0029\u003C\u002F\u0064\u0069\u0076\u003E";}});}function toggleDocAccordion(btn){try{let _0xa9dc;const _0xb9f=btn['\u0063\u006C\u006F\u0073\u0065\u0073\u0074']("drac-cod.".split("").reverse().join(""));_0xa9dc='\u0064\u0061\u006E\u006A\u0068\u006B';if(!_0xb9f)return;let _0x30d14f;const _0xb7dd1b=_0xb9f['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("ydob-cod.".split("").reverse().join(""));_0x30d14f=(660207^660202)+(403512^403513);if(!_0xb7dd1b)return;const _0x38fabf=_0xb7dd1b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']!=="enon".split("").reverse().join("");_0xb7dd1b['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']=_0x38fabf?"\u006E\u006F\u006E\u0065":"\u0062\u006C\u006F\u0063\u006B";_0xb9f['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0074\u006F\u0067\u0067\u006C\u0065']("\u006F\u0070\u0065\u006E",!_0x38fabf);}catch(e){}}function renderTechWizardInto(targetId){var _0xd4731b=(705891^705898)+(813680^813687);const _0x4e430f=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](targetId);_0xd4731b="fdkjke".split("").reverse().join("");if(!_0x4e430f)return;window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']=window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']||{'\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070':"\u0073\u0074\u0061\u0072\u0074","history":[]};if(!techWizardData||Object['\u006B\u0065\u0079\u0073'](techWizardData)['\u006C\u0065\u006E\u0067\u0074\u0068']===(897381^897381)){_0x4e430f['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=">vid/<...royinelk\xFCy zabrihiS>\"7.:yticapo;xp61:gniddap\"=elyts vid<".split("").reverse().join("");loadTechWizardData()['\u0074\u0068\u0065\u006E'](()=>renderTechWizardInto(targetId));return;}embeddedTwRender(targetId);}function embeddedTwRender(targetId,_0xde2){var _0x66ca=(139883^139881)+(233875^233872);const _0xff2=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](targetId);_0x66ca='\u006B\u0069\u0061\u006B\u0063\u0066';if(!_0xff2)return;const _0xd2ff=window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']||{'\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070':"\u0073\u0074\u0061\u0072\u0074",'\u0068\u0069\u0073\u0074\u006F\u0072\u0079':[]};const _0x5521ce=techWizardData[_0xd2ff['\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070']];if(!_0x5521ce){_0xff2['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=`<div class="tech-alert">Hata: Adım bulunamadı (${escapeHtml(String(_0xd2ff['\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070']))}).</div>`;return;}var _0xba2=(992486^992495)+(795326^795326);const _0x9dcf=_0xd2ff['\u0068\u0069\u0073\u0074\u006F\u0072\u0079']&&_0xd2ff['\u0068\u0069\u0073\u0074\u006F\u0072\u0079']['\u006C\u0065\u006E\u0067\u0074\u0068']>(906445^906445);_0xba2='\u0064\u006A\u006D\u0068\u006C\u006A';let _0x8f481d=`
+            `).join('');
+        } catch (err) {
+            console.error('renderTechDocs error', err);
+            el.innerHTML = '<div style="padding:12px 2px;opacity:.7">Dökümanlar yüklenemedi. (Konsolu kontrol edin)</div>';
+        }
+    });
+}
+
+function toggleDocAccordion(btn) {
+    try {
+        const card = btn.closest('.doc-card');
+        if (!card) return;
+        const body = card.querySelector('.doc-body');
+        if (!body) return;
+        const isOpen = body.style.display !== 'none';
+        body.style.display = isOpen ? 'none' : 'block';
+        card.classList.toggle('open', !isOpen);
+    } catch (e) { }
+}
+
+
+function renderTechWizardInto(targetId) {
+    const box = document.getElementById(targetId);
+    if (!box) return;
+
+    // Ayrı state: fullscreen içindeki gömülü sihirbaz
+    window.embeddedTwState = window.embeddedTwState || { currentStep: 'start', history: [] };
+
+    // Veri yoksa yükle
+    if (!techWizardData || Object.keys(techWizardData).length === 0) {
+        box.innerHTML = '<div style="padding:16px;opacity:.7">Sihirbaz yükleniyor...</div>';
+        loadTechWizardData().then(() => renderTechWizardInto(targetId));
+        return;
+    }
+
+    embeddedTwRender(targetId);
+}
+
+function embeddedTwRender(targetId) {
+    const box = document.getElementById(targetId);
+    if (!box) return;
+
+    const st = window.embeddedTwState || { currentStep: 'start', history: [] };
+    const stepData = techWizardData[st.currentStep];
+
+    if (!stepData) {
+        box.innerHTML = `<div class="tech-alert">Hata: Adım bulunamadı (${escapeHtml(String(st.currentStep))}).</div>`;
+        return;
+    }
+
+    const backVisible = st.history && st.history.length > 0;
+
+    let html = `
       <div style="display:flex; gap:8px; align-items:center; justify-content:space-between; margin-bottom:12px; flex-wrap:wrap">
         <div style="display:flex; gap:8px; align-items:center">
-          ${_0x9dcf?`<button type="button" class="tech-btn tech-btn-option" onclick="embeddedTwBack('${targetId}')">⬅ Geri</button>`:''}
+          ${backVisible ? `<button type="button" class="tech-btn tech-btn-option" onclick="embeddedTwBack('${targetId}')">⬅ Geri</button>` : ''}
           <button type="button" class="tech-btn tech-btn-option" onclick="embeddedTwReset('${targetId}')">↻ Sıfırla</button>
         </div>
-        <div style="opacity:.7; font-size:.9rem">Adım: ${escapeHtml(_0x5521ce['\u0074\u0069\u0074\u006C\u0065']||'')}</div>
+        <div style="opacity:.7; font-size:.9rem">Adım: ${escapeHtml(stepData.title || '')}</div>
       </div>
 
-      <div class="tech-step-title">${escapeHtml(_0x5521ce['\u0074\u0069\u0074\u006C\u0065']||'')}</div>
-    `;_0xde2='\u0068\u006E\u006D\u0063\u006E\u006D';if(_0x5521ce['\u0074\u0065\u0078\u0074']){_0x8f481d+=`<div style="font-size:1rem; margin:10px 0; white-space:pre-line">${escapeHtml(_0x5521ce['\u0074\u0065\u0078\u0074'])}</div>`;}if(_0x5521ce['\u0073\u0063\u0072\u0069\u0070\u0074']){_0x8f481d+=`<div class="tech-script-box"><span class="tech-script-label">Müşteriye iletilecek:</span>${escapeHtml(_0x5521ce['\u0073\u0063\u0072\u0069\u0070\u0074'])}</div>`;}if(_0x5521ce['\u0061\u006C\u0065\u0072\u0074']){_0x8f481d+=`<div class="tech-alert">${escapeHtml(_0x5521ce['\u0061\u006C\u0065\u0072\u0074'])}</div>`;}if(Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0x5521ce['\u0062\u0075\u0074\u0074\u006F\u006E\u0073'])&&_0x5521ce['\u0062\u0075\u0074\u0074\u006F\u006E\u0073']['\u006C\u0065\u006E\u0067\u0074\u0068']){_0x8f481d+=`<div class="tech-buttons-area">`;_0x5521ce['\u0062\u0075\u0074\u0074\u006F\u006E\u0073']['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](btn=>{let _0x2a_0x487;const _0x67908a=btn['\u0073\u0074\u0079\u006C\u0065']==="\u006F\u0070\u0074\u0069\u006F\u006E"?"\u0074\u0065\u0063\u0068\u002D\u0062\u0074\u006E\u002D\u006F\u0070\u0074\u0069\u006F\u006E":"\u0074\u0065\u0063\u0068\u002D\u0062\u0074\u006E\u002D\u0070\u0072\u0069\u006D\u0061\u0072\u0079";_0x2a_0x487=(816935^816935)+(497491^497492);_0x8f481d+=`<button type="button" class="tech-btn ${_0x67908a}" onclick="embeddedTwChangeStep('${targetId}','${escapeForJsString(btn['\u006E\u0065\u0078\u0074']||"trats".split("").reverse().join(""))}')">${escapeHtml(btn['\u0074\u0065\u0078\u0074']||'')}</button>`;});_0x8f481d+=`</div>`;}_0xff2['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x8f481d;}function embeddedTwChangeStep(targetId,newStep){window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']=window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']||{'\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070':"\u0073\u0074\u0061\u0072\u0074","history":[]};window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']['\u0068\u0069\u0073\u0074\u006F\u0072\u0079']['\u0070\u0075\u0073\u0068'](window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']['\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070']);window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']['\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070']=newStep;embeddedTwRender(targetId);}function embeddedTwBack(targetId){window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']=window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']||{'\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070':'start','\u0068\u0069\u0073\u0074\u006F\u0072\u0079':[]};if(window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']['\u0068\u0069\u0073\u0074\u006F\u0072\u0079']['\u006C\u0065\u006E\u0067\u0074\u0068']){window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']['\u0063\u0075\u0072\u0072\u0065\u006E\u0074\u0053\u0074\u0065\u0070']=window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']['\u0068\u0069\u0073\u0074\u006F\u0072\u0079']['\u0070\u006F\u0070']();embeddedTwRender(targetId);}}function embeddedTwReset(targetId){window['\u0065\u006D\u0062\u0065\u0064\u0064\u0065\u0064\u0054\u0077\u0053\u0074\u0061\u0074\u0065']={"currentStep":'start',"history":[]};embeddedTwRender(targetId);}function __getTechCardsForUi(){return(database||[])['\u006D\u0061\u0070']((c,i)=>({...c,'\u005F\u005F\u0064\u0062\u0049\u006E\u0064\u0065\u0078':i}))['\u0066\u0069\u006C\u0074\u0065\u0072'](c=>String(c['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()==="\u0074\u0065\u006B\u006E\u0069\u006B"&&String(c['\u0073\u0074\u0061\u0074\u0075\u0073']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()!=="\u0070\u0061\u0073\u0069\u0066");}async function addTechCardSheet(){if(!isAdminMode)return;const{'\u0076\u0061\u006C\u0075\u0065':v}=await Swal['\u0066\u0069\u0072\u0065']({"title":'Teknik Kart Ekle','\u0068\u0074\u006D\u006C':`
+      <div class="tech-step-title">${escapeHtml(stepData.title || '')}</div>
+    `;
+
+    if (stepData.text) {
+        html += `<div style="font-size:1rem; margin:10px 0; white-space:pre-line">${escapeHtml(stepData.text)}</div>`;
+    }
+    if (stepData.script) {
+        html += `<div class="tech-script-box"><span class="tech-script-label">Müşteriye iletilecek:</span>${escapeHtml(stepData.script)}</div>`;
+    }
+    if (stepData.alert) {
+        html += `<div class="tech-alert">${escapeHtml(stepData.alert)}</div>`;
+    }
+
+    if (Array.isArray(stepData.buttons) && stepData.buttons.length) {
+        html += `<div class="tech-buttons-area">`;
+        stepData.buttons.forEach(btn => {
+            const cls = btn.style === 'option' ? 'tech-btn-option' : 'tech-btn-primary';
+            html += `<button type="button" class="tech-btn ${cls}" onclick="embeddedTwChangeStep('${targetId}','${escapeForJsString(btn.next || 'start')}')">${escapeHtml(btn.text || '')}</button>`;
+        });
+        html += `</div>`;
+    }
+
+    box.innerHTML = html;
+}
+
+function embeddedTwChangeStep(targetId, newStep) {
+    window.embeddedTwState = window.embeddedTwState || { currentStep: 'start', history: [] };
+    window.embeddedTwState.history.push(window.embeddedTwState.currentStep);
+    window.embeddedTwState.currentStep = newStep;
+    embeddedTwRender(targetId);
+}
+function embeddedTwBack(targetId) {
+    window.embeddedTwState = window.embeddedTwState || { currentStep: 'start', history: [] };
+    if (window.embeddedTwState.history.length) {
+        window.embeddedTwState.currentStep = window.embeddedTwState.history.pop();
+        embeddedTwRender(targetId);
+    }
+}
+function embeddedTwReset(targetId) {
+    window.embeddedTwState = { currentStep: 'start', history: [] };
+    embeddedTwRender(targetId);
+}
+
+/* -------------------------
+   TEKNİK KARTLAR (FULLSCREEN)
+   - Eski kart görünümü (liste)
+   - Düzenleme, E-Tablo (Data) üzerinden (updateContent/addCard)
+--------------------------*/
+
+function __getTechCardsForUi() {
+    return (database || [])
+        .map((c, i) => ({ ...c, __dbIndex: i }))
+        .filter(c => String(c.category || '').toLowerCase() === 'teknik' && String(c.status || '').toLowerCase() !== 'pasif');
+}
+
+async function addTechCardSheet() {
+    if (!isAdminMode) return;
+    const { value: v } = await Swal.fire({
+        title: 'Teknik Kart Ekle',
+        html: `
         <input id="tc-title" class="swal2-input" placeholder="Başlık">
         <textarea id="tc-text" class="swal2-textarea" placeholder="Açıklama"></textarea>
         <textarea id="tc-script" class="swal2-textarea" placeholder="Script (opsiyonel)"></textarea>
         <input id="tc-link" class="swal2-input" placeholder="Link (opsiyonel)">
-      `,'\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],"confirmButtonText":"\u0045\u006B\u006C\u0065",'\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':'Vazgeç',"preConfirm":()=>{var _0xc9aba=(899312^899319)+(693118^693115);const _0xa447f=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0063\u002D\u0074\u0069\u0074\u006C\u0065")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']();_0xc9aba="hncian".split("").reverse().join("");if(!_0xa447f)return Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("\u0042\u0061\u015F\u006C\u0131\u006B\u0020\u007A\u006F\u0072\u0075\u006E\u006C\u0075");const _0x2ddda=new Date();const _0x2ab7af=_0x2ddda['\u0067\u0065\u0074\u0044\u0061\u0074\u0065']()+"\u002E"+(_0x2ddda['\u0067\u0065\u0074\u004D\u006F\u006E\u0074\u0068']()+(849424^849425))+"\u002E"+_0x2ddda['\u0067\u0065\u0074\u0046\u0075\u006C\u006C\u0059\u0065\u0061\u0072']();return{'\u0063\u0061\u0072\u0064\u0054\u0079\u0070\u0065':"\u0063\u0061\u0072\u0064",'\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079':"\u0054\u0065\u006B\u006E\u0069\u006B",'\u0074\u0069\u0074\u006C\u0065':_0xa447f,'\u0074\u0065\u0078\u0074':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0063\u002D\u0074\u0065\u0078\u0074")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0073\u0063\u0072\u0069\u0070\u0074':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0063\u002D\u0073\u0063\u0072\u0069\u0070\u0074")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0063\u006F\u0064\u0065':'',"link":(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0063\u002D\u006C\u0069\u006E\u006B")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0073\u0074\u0061\u0074\u0075\u0073':"\u0041\u006B\u0074\u0069\u0066",'\u0064\u0061\u0074\u0065':_0x2ab7af};}});if(!v)return;Swal['\u0066\u0069\u0072\u0065']({"title":"\u0045\u006B\u006C\u0065\u006E\u0069\u0079\u006F\u0072\u002E\u002E\u002E",'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067'](),"showConfirmButton":false});try{const r=await fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},"body":JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":'addCard',"username":currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken(),...v})});const d=await r['\u006A\u0073\u006F\u006E']();if(d['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){Swal['\u0066\u0069\u0072\u0065']({"icon":'success','\u0074\u0069\u0074\u006C\u0065':"\u0045\u006B\u006C\u0065\u006E\u0064\u0069",'\u0074\u0069\u006D\u0065\u0072':1200,"showConfirmButton":false});await loadContentData();filterTechCards();}else{Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),d['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"idemenelkE".split("").reverse().join(""),"\u0065\u0072\u0072\u006F\u0072");}}catch(e){Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061","\u0053\u0075\u006E\u0075\u0063\u0075\u0020\u0068\u0061\u0074\u0061\u0073\u0131\u002E","\u0065\u0072\u0072\u006F\u0072");}}async function editTechCardSheet(dbIndex){if(!isAdminMode)return;const _0x3497c=(database||[])[dbIndex];if(!_0x3497c)return;const{'\u0076\u0061\u006C\u0075\u0065':v}=await Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':'Teknik Kartı Düzenle',"html":`
-        <input id="tc-title" class="swal2-input" placeholder="Başlık" value="${escapeHtml(_0x3497c['\u0074\u0069\u0074\u006C\u0065']||'')}">
-        <textarea id="tc-text" class="swal2-textarea" placeholder="Açıklama">${escapeHtml(_0x3497c['\u0074\u0065\u0078\u0074']||'')}</textarea>
-        <textarea id="tc-script" class="swal2-textarea" placeholder="Script">${escapeHtml(_0x3497c['\u0073\u0063\u0072\u0069\u0070\u0074']||'')}</textarea>
-        <input id="tc-link" class="swal2-input" placeholder="Link" value="${escapeHtml(_0x3497c['\u006C\u0069\u006E\u006B']||'')}">
-      `,'\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':'Kaydet',"cancelButtonText":'Vazgeç','\u0070\u0072\u0065\u0043\u006F\u006E\u0066\u0069\u0072\u006D':()=>{const _0x898d=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0063\u002D\u0074\u0069\u0074\u006C\u0065")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']();if(!_0x898d)return Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("\u0042\u0061\u015F\u006C\u0131\u006B\u0020\u007A\u006F\u0072\u0075\u006E\u006C\u0075");return{'\u0074\u0069\u0074\u006C\u0065':_0x898d,'\u0074\u0065\u0078\u0074':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("txet-ct".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),"script":(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0063\u002D\u0073\u0063\u0072\u0069\u0070\u0074")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u006C\u0069\u006E\u006B':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("knil-ct".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']()};}});if(!v)return;var _0xa8a=(388188^388186)+(202614^202614);const _0x84ba3f=_0x3497c['\u0074\u0069\u0074\u006C\u0065'];_0xa8a=(212895^212888)+(787500^787492);if(v['\u0074\u0065\u0078\u0074']!==(_0x3497c['\u0074\u0065\u0078\u0074']||''))sendUpdate(_0x84ba3f,"\u0054\u0065\u0078\u0074",v['\u0074\u0065\u0078\u0074'],"drac".split("").reverse().join(""));setTimeout(()=>{if(v['\u0073\u0063\u0072\u0069\u0070\u0074']!==(_0x3497c['\u0073\u0063\u0072\u0069\u0070\u0074']||''))sendUpdate(_0x84ba3f,"\u0053\u0063\u0072\u0069\u0070\u0074",v['\u0073\u0063\u0072\u0069\u0070\u0074'],"drac".split("").reverse().join(""));},394990^395184);setTimeout(()=>{if(v['\u006C\u0069\u006E\u006B']!==(_0x3497c['\u006C\u0069\u006E\u006B']||''))sendUpdate(_0x84ba3f,"\u004C\u0069\u006E\u006B",v['\u006C\u0069\u006E\u006B'],"\u0063\u0061\u0072\u0064");},693240^692548);setTimeout(()=>{if(v['\u0074\u0069\u0074\u006C\u0065']!==_0x84ba3f)sendUpdate(_0x84ba3f,"\u0054\u0069\u0074\u006C\u0065",v['\u0074\u0069\u0074\u006C\u0065'],"\u0063\u0061\u0072\u0064");},693935^692963);}function deleteTechCardSheet(dbIndex){if(!isAdminMode)return;var _0x53cd6b=(469270^469269)+(773685^773686);const _0xe0ab6b=(database||[])[dbIndex];_0x53cd6b='\u0064\u0070\u006F\u006B\u0062\u006F';if(!_0xe0ab6b)return;Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u0053\u0069\u006C\u0069\u006E\u0073\u0069\u006E\u0020\u006D\u0069\u003F",'\u0074\u0065\u0078\u0074':"\u004B\u0061\u0072\u0074\u0020\u0070\u0061\u0073\u0069\u0066\u0065\u0020\u0061\u006C\u0131\u006E\u0061\u0063\u0061\u006B\u002E",'\u0069\u0063\u006F\u006E':'warning','\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0053\u0069\u006C",'\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0056\u0061\u007A\u0067\u0065\u00E7"})['\u0074\u0068\u0065\u006E'](res=>{if(!res['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064'])return;sendUpdate(_0xe0ab6b['\u0074\u0069\u0074\u006C\u0065'],"\u0053\u0074\u0061\u0074\u0075\u0073","\u0050\u0061\u0073\u0069\u0066","\u0063\u0061\u0072\u0064");});}function renderTechCardsTab(q='',_0x254ca,_0x6e4ceb){const _0x4bg4c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("sdrac-x".split("").reverse().join(""));_0x254ca='\u006F\u006F\u0067\u0071\u0067\u0068';if(!_0x4bg4c)return;const _0x5c4acb=String(q||'')['\u0074\u0072\u0069\u006D']()['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();const _0xg785c=__getTechCardsForUi();_0x6e4ceb=593950^593948;const _0xfac2dc=!_0x5c4acb?_0xg785c:_0xg785c['\u0066\u0069\u006C\u0074\u0065\u0072'](c=>{const _0x4b28a=`${c['\u0074\u0069\u0074\u006C\u0065']||''} ${c['\u0074\u0065\u0078\u0074']||''} ${c['\u0073\u0063\u0072\u0069\u0070\u0074']||''} ${c['\u006C\u0069\u006E\u006B']||''}`['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();return _0x4b28a['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](_0x5c4acb);});const _0x464dec=isAdminMode&&isEditingActive?`<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px">
+      `,
+        showCancelButton: true,
+        confirmButtonText: 'Ekle',
+        cancelButtonText: 'Vazgeç',
+        preConfirm: () => {
+            const title = (document.getElementById('tc-title').value || '').trim();
+            if (!title) return Swal.showValidationMessage('Başlık zorunlu');
+            const today = new Date();
+            const dateStr = today.getDate() + "." + (today.getMonth() + 1) + "." + today.getFullYear();
+            return {
+                cardType: 'card',
+                category: 'Teknik',
+                title,
+                text: (document.getElementById('tc-text').value || '').trim(),
+                script: (document.getElementById('tc-script').value || '').trim(),
+                code: '',
+                link: (document.getElementById('tc-link').value || '').trim(),
+                status: 'Aktif',
+                date: dateStr
+            };
+        }
+    });
+    if (!v) return;
+
+    Swal.fire({ title: 'Ekleniyor...', didOpen: () => Swal.showLoading(), showConfirmButton: false });
+    try {
+        const r = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: 'addCard', username: currentUser, token: getToken(), ...v })
+        });
+        const d = await r.json();
+        if (d.result === 'success') {
+            Swal.fire({ icon: 'success', title: 'Eklendi', timer: 1200, showConfirmButton: false });
+            await loadContentData();
+            filterTechCards();
+        } else {
+            Swal.fire('Hata', d.message || 'Eklenemedi', 'error');
+        }
+    } catch (e) {
+        Swal.fire('Hata', 'Sunucu hatası.', 'error');
+    }
+}
+
+async function editTechCardSheet(dbIndex) {
+    if (!isAdminMode) return;
+    const it = (database || [])[dbIndex];
+    if (!it) return;
+    const { value: v } = await Swal.fire({
+        title: 'Teknik Kartı Düzenle',
+        html: `
+        <input id="tc-title" class="swal2-input" placeholder="Başlık" value="${escapeHtml(it.title || '')}">
+        <textarea id="tc-text" class="swal2-textarea" placeholder="Açıklama">${escapeHtml(it.text || '')}</textarea>
+        <textarea id="tc-script" class="swal2-textarea" placeholder="Script">${escapeHtml(it.script || '')}</textarea>
+        <input id="tc-link" class="swal2-input" placeholder="Link" value="${escapeHtml(it.link || '')}">
+      `,
+        showCancelButton: true,
+        confirmButtonText: 'Kaydet',
+        cancelButtonText: 'Vazgeç',
+        preConfirm: () => {
+            const title = (document.getElementById('tc-title').value || '').trim();
+            if (!title) return Swal.showValidationMessage('Başlık zorunlu');
+            return {
+                title,
+                text: (document.getElementById('tc-text').value || '').trim(),
+                script: (document.getElementById('tc-script').value || '').trim(),
+                link: (document.getElementById('tc-link').value || '').trim(),
+            };
+        }
+    });
+    if (!v) return;
+    const originalTitle = it.title;
+    // sendUpdate sırayla update eder
+    if (v.text !== (it.text || '')) sendUpdate(originalTitle, 'Text', v.text, 'card');
+    setTimeout(() => { if (v.script !== (it.script || '')) sendUpdate(originalTitle, 'Script', v.script, 'card'); }, 350);
+    setTimeout(() => { if (v.link !== (it.link || '')) sendUpdate(originalTitle, 'Link', v.link, 'card'); }, 700);
+    setTimeout(() => { if (v.title !== originalTitle) sendUpdate(originalTitle, 'Title', v.title, 'card'); }, 1100);
+}
+
+function deleteTechCardSheet(dbIndex) {
+    if (!isAdminMode) return;
+    const it = (database || [])[dbIndex];
+    if (!it) return;
+    Swal.fire({
+        title: 'Silinsin mi?',
+        text: 'Kart pasife alınacak.',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Sil',
+        cancelButtonText: 'Vazgeç'
+    }).then(res => {
+        if (!res.isConfirmed) return;
+        sendUpdate(it.title, 'Status', 'Pasif', 'card');
+    });
+}
+
+function renderTechCardsTab(q = '') {
+    const box = document.getElementById('x-cards');
+    if (!box) return;
+
+    const query = String(q || '').trim().toLowerCase();
+    const all = __getTechCardsForUi();
+    const filtered = !query ? all : all.filter(c => {
+        const hay = `${c.title || ''} ${c.text || ''} ${c.script || ''} ${c.link || ''}`.toLowerCase();
+        return hay.includes(query);
+    });
+
+    const bar = (isAdminMode && isEditingActive)
+        ? `<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px">
            <button class="x-btn x-btn-admin" onclick="addTechCardSheet()"><i class="fas fa-plus"></i> Kart Ekle</button>
-         </div>`:``;if(!_0xfac2dc['\u006C\u0065\u006E\u0067\u0074\u0068']){_0x4bg4c['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x464dec+">vid/<.\u0131damanulub t\u0131yaK>\"xp61:gniddap;7.:yticapo\"=elyts vid<".split("").reverse().join("");return;}_0x4bg4c['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x464dec+`
+         </div>`
+        : ``;
+
+    if (!filtered.length) {
+        box.innerHTML = bar + '<div style="opacity:.7;padding:16px">Kayıt bulunamadı.</div>';
+        return;
+    }
+
+    box.innerHTML = bar + `
       <div class="x-card-grid">
-        ${_0xfac2dc['\u006D\u0061\u0070'](c=>{var _0x17_0xec2=(163512^163505)+(383515^383516);const _0xf5ff9c=(c['\u0074\u0065\u0078\u0074']||'')['\u006C\u0065\u006E\u0067\u0074\u0068']>(939411^939303)||(c['\u0073\u0063\u0072\u0069\u0070\u0074']||'')['\u006C\u0065\u006E\u0067\u0074\u0068']>(536856^536928)||!!(c['\u006C\u0069\u006E\u006B']||'');_0x17_0xec2='\u006F\u006B\u006F\u006A\u0069\u0070';const _0xg4g84e={"title":c['\u0074\u0069\u0074\u006C\u0065'],"text":c['\u0074\u0065\u0078\u0074']||'','\u0073\u0063\u0072\u0069\u0070\u0074':c['\u0073\u0063\u0072\u0069\u0070\u0074']||'','\u006C\u0069\u006E\u006B':c['\u006C\u0069\u006E\u006B']||''};const _0x27cd5a=isAdminMode&&isEditingActive?`
-              <button class="x-btn x-btn-admin" onclick="event.stopPropagation();editTechCardSheet(${c['\u005F\u005F\u0064\u0062\u0049\u006E\u0064\u0065\u0078']})"><i class="fas fa-pen"></i> Düzenle</button>
-              <button class="x-btn x-btn-admin" onclick="event.stopPropagation();deleteTechCardSheet(${c['\u005F\u005F\u0064\u0062\u0049\u006E\u0064\u0065\u0078']})"><i class="fas fa-trash"></i> Sil</button>
-            `:``;return`
-            <div class="x-card" style="cursor:pointer" onclick='showCardDetail(${JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](_0xg4g84e)['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u003C','\u0067'),'\\u003c')})'>
+        ${filtered.map(c => {
+        const hasDetail = ((c.text || '').length > 180) || ((c.script || '').length > 120) || !!(c.link || '');
+        const detailObj = { title: c.title, text: c.text || '', script: c.script || '', link: c.link || '' };
+        const edit = (isAdminMode && isEditingActive)
+            ? `
+              <button class="x-btn x-btn-admin" onclick="event.stopPropagation();editTechCardSheet(${c.__dbIndex})"><i class="fas fa-pen"></i> Düzenle</button>
+              <button class="x-btn x-btn-admin" onclick="event.stopPropagation();deleteTechCardSheet(${c.__dbIndex})"><i class="fas fa-trash"></i> Sil</button>
+            `
+            : ``;
+        return `
+            <div class="x-card" style="cursor:pointer" onclick='showCardDetail(${JSON.stringify(detailObj).replace(/</g, '\\u003c')})'>
               <div class="x-card-head">
-                <div class="x-card-title">${escapeHtml(c['\u0074\u0069\u0074\u006C\u0065']||'')}</div>
+                <div class="x-card-title">${escapeHtml(c.title || '')}</div>
                 <div class="x-card-badge">TEKNİK</div>
               </div>
               <div class="x-card-body">
-                ${c['\u0074\u0065\u0078\u0074']||''?`<div class="x-card-text x-card-text-truncate">${escapeHtml(c['\u0074\u0065\u0078\u0074']||'')}</div>`:`<div style="opacity:.7">İçerik yok</div>`}
-                ${_0xf5ff9c?`<button class="x-readmore" onclick='event.stopPropagation();showCardDetail(${JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](_0xg4g84e)['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u003C','\u0067'),'\\u003c')})'>Devam oku</button>`:``}
+                ${(c.text || '') ? `<div class="x-card-text x-card-text-truncate">${escapeHtml(c.text || '')}</div>` : `<div style="opacity:.7">İçerik yok</div>`}
+                ${hasDetail ? `<button class="x-readmore" onclick='event.stopPropagation();showCardDetail(${JSON.stringify(detailObj).replace(/</g, '\\u003c')})'>Devam oku</button>` : ``}
               </div>
               <div class="x-card-actions" onclick="event.stopPropagation();">
-                ${c['\u0073\u0063\u0072\u0069\u0070\u0074']||''?`<button class="x-btn x-btn-copy" onclick='copyText(${JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](c['\u0073\u0063\u0072\u0069\u0070\u0074']||'')})'><i class="fas fa-copy"></i> Kopyala</button>`:``}
-                ${_0x27cd5a}
+                ${(c.script || '') ? `<button class="x-btn x-btn-copy" onclick='copyText(${JSON.stringify(c.script || '')})'><i class="fas fa-copy"></i> Kopyala</button>` : ``}
+                ${edit}
               </div>
             </div>
-          `;})['\u006A\u006F\u0069\u006E']('')}
+          `;
+    }).join('')}
       </div>
-    `;}function filterTechCards(){var _0xf76b=(231010^231009)+(672354^672355);const _0xb5eb=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("hcraes-sdrac-x".split("").reverse().join(""));_0xf76b=311802^311794;renderTechCardsTab(_0xb5eb?_0xb5eb['\u0076\u0061\u006C\u0075\u0065']:'');}function applySportsRights(){if(!Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](sportsData)||sportsData['\u006C\u0065\u006E\u0067\u0074\u0068']===(675618^675618))return;const _0xe02cb=window['\u0073\u0070\u006F\u0072\u0074\u0052\u0069\u0067\u0068\u0074\u0073\u0046\u0072\u006F\u006D\u0053\u0068\u0065\u0065\u0074']&&window['\u0073\u0070\u006F\u0072\u0074\u0052\u0069\u0067\u0068\u0074\u0073\u0046\u0072\u006F\u006D\u0053\u0068\u0065\u0065\u0074']['\u006C\u0065\u006E\u0067\u0074\u0068']?window['\u0073\u0070\u006F\u0072\u0074\u0052\u0069\u0067\u0068\u0074\u0073\u0046\u0072\u006F\u006D\u0053\u0068\u0065\u0065\u0074']:SPORTS_RIGHTS_FALLBACK;sportsData['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](s=>{let _0x182f;const _0x389ba=`${s['\u0074\u0069\u0074\u006C\u0065']||''} ${s['\u0064\u0065\u0073\u0063']||''} ${s['\u0064\u0065\u0074\u0061\u0069\u006C']||''}`['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();_0x182f=(409728^409732)+(203730^203735);var _0x74fd0a=(853618^853617)+(224556^224557);const _0xa3a8d=_0xe02cb['\u0066\u0069\u006E\u0064'](r=>_0x389ba['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](String(r['\u006E\u0061\u006D\u0065']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0072\u0065\u0070\u006C\u0061\u0063\u0065\u0041\u006C\u006C']("\u002A",'')['\u0074\u0072\u0069\u006D']()['\u0073\u0070\u006C\u0069\u0074']("\u0020")[515958^515958]));_0x74fd0a="kibcej".split("").reverse().join("");if(_0xa3a8d){const _0x6285a=`Yayın hakkı bitiş: ${_0xa3a8d['\u0065\u006E\u0064']||_0xa3a8d['\u0064\u0075\u0072\u0061\u0074\u0069\u006F\u006E']}`;if(s['\u0074\u0069\u0070']&&!s['\u0074\u0069\u0070']['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0059\u0061\u0079\u0131\u006E\u0020\u0068\u0061\u006B\u006B\u0131"))s['\u0074\u0069\u0070']=`${s['\u0074\u0069\u0070']} • ${_0x6285a}`;else if(!s['\u0074\u0069\u0070'])s['\u0074\u0069\u0070']=_0x6285a;if(s['\u0064\u0065\u0074\u0061\u0069\u006C']&&!s['\u0064\u0065\u0074\u0061\u0069\u006C']['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u0059\u0061\u0079\u0131\u006E\u0020\u0068\u0061\u006B\u006B\u0131"))s['\u0064\u0065\u0074\u0061\u0069\u006C']=`${s['\u0064\u0065\u0074\u0061\u0069\u006C']}\n\n${_0x6285a}`;else if(!s['\u0064\u0065\u0074\u0061\u0069\u006C'])s['\u0064\u0065\u0074\u0061\u0069\u006C']=_0x6285a;}});}const _orig_afterDataLoaded=window['\u0061\u0066\u0074\u0065\u0072\u0044\u0061\u0074\u0061\u004C\u006F\u0061\u0064\u0065\u0064'];window['\u0061\u0066\u0074\u0065\u0072\u0044\u0061\u0074\u0061\u004C\u006F\u0061\u0064\u0065\u0064']=function(){try{if(typeof _orig_afterDataLoaded==="\u0066\u0075\u006E\u0063\u0074\u0069\u006F\u006E")_orig_afterDataLoaded();}catch(e){}try{applySportsRights();}catch(e){}};let __techDocsCache=null;let __techDocsLoadedAt=950521^950521;var _0xccf=(164512^164512)+(349363^349362);let __techCatsCache=null;_0xccf=110552^110559;let __techCatsLoadedAt=523520^523520;var _0x4gd4a=(717947^717939)+(660655^660648);const TECH_TAB_LABELS={'\u0062\u0072\u006F\u0061\u0064\u0063\u0061\u0073\u0074':"\u0059\u0061\u0079\u0131\u006E\u0020\u0053\u006F\u0072\u0075\u006E\u006C\u0061\u0072\u0131","access":"\u0045\u0072\u0069\u015F\u0069\u006D\u0020\u0053\u006F\u0072\u0075\u006E\u006C\u0061\u0072\u0131","app":"\u0041\u0070\u0070\u0020\u0048\u0061\u0074\u0061\u006C\u0061\u0072\u0131",'\u0061\u0063\u0074\u0069\u0076\u0061\u0074\u0069\u006F\u006E':'Aktivasyon Sorunları',"info":"\u0053\u0131\u006B\u0020\u0053\u006F\u0072\u0075\u006C\u0061\u006E\u0020\u0053\u006F\u0072\u0075\u006C\u0061\u0072","payment":'Ödeme Sorunları'};_0x4gd4a='\u0063\u0068\u0066\u006E\u0069\u006B';function __normalizeTechTab(tab){return tab;}function __normalizeTechCategory(cat){var _0x2b36aa=(876454^876453)+(103594^103599);const c=(cat||"")['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0074\u0072\u0069\u006D']()['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();_0x2b36aa="hknqdf".split("").reverse().join("");if(c['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("yay".split("").reverse().join("")))return"tsacdaorb".split("").reverse().join("");if(c['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("ire".split("").reverse().join("")))return"ssecca".split("").reverse().join("");if(c['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("\u0061\u0070\u0070"))return"ppa".split("").reverse().join("");if(c['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("tka".split("").reverse().join("")))return"\u0061\u0063\u0074\u0069\u0076\u0061\u0074\u0069\u006F\u006E";if(c['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("\u0062\u0069\u006C"))return"\u0069\u006E\u0066\u006F";if(c['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("\u00F6\u0064\u0065")||c['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("\u006F\u0064\u0065")||c['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u00F6\u0064\u0065\u006D\u0065")||c['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u006F\u0064\u0065\u006D\u0065"))return"\u0070\u0061\u0079\u006D\u0065\u006E\u0074";return"";}async function __fetchTechDocs(){if(!SCRIPT_URL)throw new Error("gnissim LRU_TPIRCS".split("").reverse().join(""));const _0x9d2e=await apiCall("scoDhceTteg".split("").reverse().join(""));const _0x19c54b=Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](_0x9d2e['\u0064\u0061\u0074\u0061'])?_0x9d2e['\u0064\u0061\u0074\u0061']:[];return _0x19c54b['\u0066\u0069\u006C\u0074\u0065\u0072'](r=>(r['\u0044\u0075\u0072\u0075\u006D']||"")['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0074\u0072\u0069\u006D']()['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()!=="\u0070\u0061\u0073\u0069\u0066")['\u006D\u0061\u0070'](r=>({'\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079\u004B\u0065\u0079':__normalizeTechCategory(r['\u004B\u0061\u0074\u0065\u0067\u006F\u0072\u0069']),'\u006B\u0061\u0074\u0065\u0067\u006F\u0072\u0069':(r['\u004B\u0061\u0074\u0065\u0067\u006F\u0072\u0069']||"")['\u0074\u0072\u0069\u006D'](),"baslik":(r['\u0042\u0061\u015F\u006C\u0131\u006B']||r['\u0042\u0061\u0073\u006C\u0069\u006B']||r['\u0054\u0069\u0074\u006C\u0065']||r["Başlık"]||"")['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()['\u0074\u0072\u0069\u006D'](),'\u0069\u0063\u0065\u0072\u0069\u006B':(r['\u0130\u00E7\u0065\u0072\u0069\u006B']||r['\u0049\u0063\u0065\u0072\u0069\u006B']||r['\u0043\u006F\u006E\u0074\u0065\u006E\u0074']||r["\u0130\u00E7\u0065\u0072\u0069\u006B"]||"")['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067'](),"adim":(r['\u0041\u0064\u0131\u006D']||r['\u0041\u0064\u0069\u006D']||r['\u0053\u0074\u0065\u0070']||r["Adım"]||"")['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067'](),'\u006E\u006F\u0074':(r['\u004E\u006F\u0074']||"")['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067'](),'\u006C\u0069\u006E\u006B':(r['\u004C\u0069\u006E\u006B']||"")['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067'](),'\u0069\u006D\u0061\u0067\u0065':(r['\u0052\u0065\u0073\u0069\u006D']||r['\u0049\u006D\u0061\u0067\u0065']||r['\u0047\u00F6\u0072\u0073\u0065\u006C']||r['\u0047\u006F\u0072\u0073\u0065\u006C']||"")['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067'](),'\u0064\u0075\u0072\u0075\u006D':(r['\u0044\u0075\u0072\u0075\u006D']||"")['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']()}))['\u0066\u0069\u006C\u0074\u0065\u0072'](x=>x['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079\u004B\u0065\u0079']&&x['\u0062\u0061\u0073\u006C\u0069\u006B']);}async function __fetchTechDocCategories(){if(!SCRIPT_URL)return[];try{const r=await fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0050\u004F\u0053\u0054","headers":{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},"body":JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":"\u0067\u0065\u0074\u0054\u0065\u0063\u0068\u0044\u006F\u0063\u0043\u0061\u0074\u0065\u0067\u006F\u0072\u0069\u0065\u0073"})});let _0x911c;const d=await r['\u006A\u0073\u006F\u006E']();_0x911c=(636048^636051)+(179682^179686);if(d&&d['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")&&Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](d['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0069\u0065\u0073']))return d['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0069\u0065\u0073'];return[];}catch(e){return[];}}async function getTechDocCategoryOptions(force=false,_0x1329ff){const _0x6bbb=Date['\u006E\u006F\u0077']();_0x1329ff="jpebpa".split("").reverse().join("");if(!force&&__techCatsCache&&_0x6bbb-__techCatsLoadedAt<300000)return __techCatsCache;const _0x7a2=await __fetchTechDocCategories();__techCatsCache=_0x7a2;__techCatsLoadedAt=_0x6bbb;return _0x7a2;}function __renderTechList(tabKey,items){var _0xcfa05a=(944816^944825)+(663340^663342);const _0x13daf=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](tabKey==="tsacdaorb".split("").reverse().join("")?"\u0078\u002D\u0062\u0072\u006F\u0061\u0064\u0063\u0061\u0073\u0074\u002D\u006C\u0069\u0073\u0074":tabKey==="ssecca".split("").reverse().join("")?"\u0078\u002D\u0061\u0063\u0063\u0065\u0073\u0073\u002D\u006C\u0069\u0073\u0074":tabKey==="\u0061\u0070\u0070"?"tsil-ppa-x".split("").reverse().join(""):tabKey==="noitavitca".split("").reverse().join("")?"tsil-noitavitca-x".split("").reverse().join(""):tabKey==="\u0069\u006E\u0066\u006F"?"\u0078\u002D\u0069\u006E\u0066\u006F\u002D\u006C\u0069\u0073\u0074":tabKey==="\u0070\u0061\u0079\u006D\u0065\u006E\u0074"?"tsil-tnemyap-x".split("").reverse().join(""):"");_0xcfa05a="eiccmf".split("").reverse().join("");if(!_0x13daf)return;if(!items||items['\u006C\u0065\u006E\u0067\u0074\u0068']===(649177^649177)){_0x13daf['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=`<div style="padding:16px;opacity:.75">Bu başlık altında henüz içerik yok. (Sheet: Teknik_Dokumanlar)</div>`;return;}const _0x86g2ac=isAdminMode&&isEditingActive?`<div style="display:flex;gap:10px;align-items:center;margin:0 0 12px;">
+    `;
+}
+
+function filterTechCards() {
+    const inp = document.getElementById('x-cards-search');
+    renderTechCardsTab(inp ? inp.value : '');
+}
+
+
+function applySportsRights() {
+    if (!Array.isArray(sportsData) || sportsData.length === 0) return;
+    const rights = (window.sportRightsFromSheet && window.sportRightsFromSheet.length) ? window.sportRightsFromSheet : SPORTS_RIGHTS_FALLBACK;
+    sportsData.forEach(s => {
+        const hay = `${s.title || ''} ${s.desc || ''} ${s.detail || ''}`.toLowerCase();
+        const hit = rights.find(r => hay.includes(String(r.name || '').toLowerCase().replaceAll('*', '').trim().split(' ')[0]));
+        if (hit) {
+            const extra = `Yayın hakkı bitiş: ${hit.end || hit.duration}`;
+            if (s.tip && !s.tip.includes('Yayın hakkı')) s.tip = `${s.tip} • ${extra}`;
+            else if (!s.tip) s.tip = extra;
+            if (s.detail && !s.detail.includes('Yayın hakkı')) s.detail = `${s.detail}\n\n${extra}`;
+            else if (!s.detail) s.detail = extra;
+        }
+    });
+}
+
+// Var olan veri yüklemesi bittikten sonra hak bilgisi ekle
+const _orig_afterDataLoaded = window.afterDataLoaded;
+window.afterDataLoaded = function () {
+    try { if (typeof _orig_afterDataLoaded === 'function') _orig_afterDataLoaded(); } catch (e) { }
+    try { applySportsRights(); } catch (e) { }
+};
+
+
+// ======================
+// TECH DOCS - SHEET BIND
+// ======================
+let __techDocsCache = null;
+let __techDocsLoadedAt = 0;
+let __techCatsCache = null;
+let __techCatsLoadedAt = 0;
+
+const TECH_TAB_LABELS = {
+    broadcast: 'Yayın Sorunları',
+    access: 'Erişim Sorunları',
+    app: 'App Hataları',
+    activation: 'Aktivasyon Sorunları',
+    info: 'Sık Sorulan Sorular',
+    payment: 'Ödeme Sorunları'
+};
+
+function __normalizeTechTab(tab) {
+    // tab ids: broadcast, access, app, activation
+    return tab;
+}
+function __normalizeTechCategory(cat) {
+    const c = (cat || "").toString().trim().toLowerCase();
+    if (c.startsWith("yay")) return "broadcast";
+    if (c.startsWith("eri")) return "access";
+    if (c.startsWith("app")) return "app";
+    if (c.startsWith("akt")) return "activation";
+    if (c.startsWith("bil")) return "info";
+    if (c.startsWith("öde") || c.startsWith("ode") || c.includes("ödeme") || c.includes("odeme")) return "payment";
+    return "";
+}
+
+
+
+async function __fetchTechDocs() {
+    if (!SCRIPT_URL) throw new Error("SCRIPT_URL missing");
+    const data = await apiCall("getTechDocs");
+    const rows = Array.isArray(data.data) ? data.data : [];
+    return rows
+        .filter(r => (r.Durum || "").toString().trim().toLowerCase() !== "pasif")
+        .map(r => ({
+            categoryKey: __normalizeTechCategory(r.Kategori),
+            kategori: (r.Kategori || "").trim(),
+            baslik: (r.Başlık || r.Baslik || r.Title || r["Başlık"] || "").toString().trim(),
+            icerik: (r.İçerik || r.Icerik || r.Content || r["İçerik"] || "").toString(),
+            adim: (r.Adım || r.Adim || r.Step || r["Adım"] || "").toString(),
+            not: (r.Not || "").toString(),
+            link: (r.Link || "").toString(),
+            image: (r.Resim || r.Image || r.Görsel || r.Gorsel || "").toString(),
+            durum: (r.Durum || "").toString()
+        }))
+        .filter(x => x.categoryKey && x.baslik);
+}
+
+async function __fetchTechDocCategories() {
+    // K sütunundan okunan kategori listesi (boşsa A sütunundan türetilir)
+    if (!SCRIPT_URL) return [];
+    try {
+        const r = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({ action: 'getTechDocCategories' })
+        });
+        const d = await r.json();
+        if (d && d.result === 'success' && Array.isArray(d.categories)) return d.categories;
+        return [];
+    } catch (e) {
+        return [];
+    }
+}
+
+async function getTechDocCategoryOptions(force = false) {
+    const now = Date.now();
+    if (!force && __techCatsCache && (now - __techCatsLoadedAt) < 300000) return __techCatsCache; // 5dk
+    const cats = await __fetchTechDocCategories();
+    __techCatsCache = cats;
+    __techCatsLoadedAt = now;
+    return cats;
+}
+
+
+
+function __renderTechList(tabKey, items) {
+    const listEl = document.getElementById(
+        tabKey === "broadcast" ? "x-broadcast-list" :
+            tabKey === "access" ? "x-access-list" :
+                tabKey === "app" ? "x-app-list" :
+                    tabKey === "activation" ? "x-activation-list" :
+                        tabKey === "info" ? "x-info-list" :
+                            tabKey === "payment" ? "x-payment-list" : ""
+    );
+    if (!listEl) return;
+
+    if (!items || items.length === 0) {
+        listEl.innerHTML = `<div style="padding:16px;opacity:.75">Bu başlık altında henüz içerik yok. (Sheet: Teknik_Dokumanlar)</div>`;
+        return;
+    }
+
+    // Admin bar (düzenleme global menüden açılır)
+    const adminBar = (isAdminMode && isEditingActive)
+        ? `<div style="display:flex;gap:10px;align-items:center;margin:0 0 12px;">
          <button class="x-btn x-btn-admin" onclick="addTechDoc('${tabKey}')"><i class=\"fas fa-plus\"></i> Yeni Konu Ekle</button>
-       </div>`:``;function _0x4f98bb(filtered){_0x13daf['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=_0x86g2ac+filtered['\u006D\u0061\u0070']((it,idx)=>{const _0xd8a66a=[it['\u0069\u0063\u0065\u0072\u0069\u006B']?`<div class="q-doc-body" style="white-space: pre-line">${it['\u0069\u0063\u0065\u0072\u0069\u006B']}</div>`:"",it['\u0069\u006D\u0061\u0067\u0065']?`<div style="margin:10px 0;"><img src="${processImageUrl(it['\u0069\u006D\u0061\u0067\u0065'])}" loading="lazy" onerror="this.style.display='none'" style="max-width:100%; border-radius:8px; max-height:300px; object-fit:cover;"></div>`:"",it['\u0061\u0064\u0069\u006D']?`<div class="q-doc-meta" style="white-space: pre-line"><b>Adım:</b> ${escapeHtml(it['\u0061\u0064\u0069\u006D'])}</div>`:"",it['\u006E\u006F\u0074']?`<div class="q-doc-meta" style="white-space: pre-line"><b>Not:</b> ${escapeHtml(it['\u006E\u006F\u0074'])}</div>`:"",it['\u006C\u0069\u006E\u006B']?`<div class="q-doc-meta"><b>Link:</b> <a href="${escapeHtml(it['\u006C\u0069\u006E\u006B'])}" target="_blank">${escapeHtml(it['\u006C\u0069\u006E\u006B'])}</a></div>`:""]['\u006A\u006F\u0069\u006E']("");var _0xe_0x9fc=(270857^270849)+(972378^972371);const _0xfage=isAdminMode&&isEditingActive?`<span style="float:right;display:inline-flex;gap:8px" onclick="event.stopPropagation();event.preventDefault();">
-             <button class="x-btn x-btn-admin" style="padding:6px 10px" onclick="editTechDoc('${tabKey}','${escapeForJsString(it['\u0062\u0061\u0073\u006C\u0069\u006B'])}')"><i class=\"fas fa-pen\"></i></button>
-             <button class="x-btn x-btn-admin" style="padding:6px 10px" onclick="deleteTechDoc('${tabKey}','${escapeForJsString(it['\u0062\u0061\u0073\u006C\u0069\u006B'])}')"><i class=\"fas fa-trash\"></i></button>
-           </span>`:``;_0xe_0x9fc='\u0070\u006E\u0063\u006F\u0067\u006C';return`
+       </div>`
+        : ``;
+
+    function render(filtered) {
+        listEl.innerHTML = adminBar + filtered.map((it, idx) => {
+            const body = [
+                it.icerik ? `<div class="q-doc-body" style="white-space: pre-line">${it.icerik}</div>` : "",
+                it.image ? `<div style="margin:10px 0;"><img src="${processImageUrl(it.image)}" loading="lazy" onerror="this.style.display='none'" style="max-width:100%; border-radius:8px; max-height:300px; object-fit:cover;"></div>` : "",
+                it.adim ? `<div class="q-doc-meta" style="white-space: pre-line"><b>Adım:</b> ${escapeHtml(it.adim)}</div>` : "",
+                it.not ? `<div class="q-doc-meta" style="white-space: pre-line"><b>Not:</b> ${escapeHtml(it.not)}</div>` : "",
+                it.link ? `<div class="q-doc-meta"><b>Link:</b> <a href="${escapeHtml(it.link)}" target="_blank">${escapeHtml(it.link)}</a></div>` : ""
+            ].join("");
+            const adminBtns = (isAdminMode && isEditingActive)
+                ? `<span style="float:right;display:inline-flex;gap:8px" onclick="event.stopPropagation();event.preventDefault();">
+             <button class="x-btn x-btn-admin" style="padding:6px 10px" onclick="editTechDoc('${tabKey}','${escapeForJsString(it.baslik)}')"><i class=\"fas fa-pen\"></i></button>
+             <button class="x-btn x-btn-admin" style="padding:6px 10px" onclick="deleteTechDoc('${tabKey}','${escapeForJsString(it.baslik)}')"><i class=\"fas fa-trash\"></i></button>
+           </span>`
+                : ``;
+            return `
         <details class="q-accordion" style="margin-bottom:10px;background:#fff;border-radius:12px;border:1px solid rgba(0,0,0,.08);padding:10px 12px">
-          <summary style="cursor:pointer;font-weight:800">${escapeHtml(it['\u0062\u0061\u0073\u006C\u0069\u006B'])}${_0xfage}</summary>
-          <div style="padding:10px 2px 2px 2px">${_0xd8a66a}</div>
+          <summary style="cursor:pointer;font-weight:800">${escapeHtml(it.baslik)}${adminBtns}</summary>
+          <div style="padding:10px 2px 2px 2px">${body}</div>
         </details>
-      `;})['\u006A\u006F\u0069\u006E']("");}_0x4f98bb(items);}async function loadTechDocsIfNeeded(force=false){var _0xbb1da=(785038^785032)+(672530^672534);const _0xc9_0xded=Date['\u006E\u006F\u0077']();_0xbb1da=423400^423393;if(!force&&__techDocsCache&&_0xc9_0xded-__techDocsLoadedAt<120000)return __techDocsCache;try{const _0x3e4fac=await __fetchTechDocs();__techDocsCache=_0x3e4fac;__techDocsLoadedAt=_0xc9_0xded;return _0x3e4fac;}catch(e){console['\u0065\u0072\u0072\u006F\u0072']("\u005B\u0054\u0045\u0043\u0048\u0020\u0044\u004F\u0043\u0053\u005D",e);return[];}}async function filterTechDocList(tabKey){try{const _0x323c9c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](`x-${tabKey}-search`);var _0xc4f11a=(113029^113027)+(158039^158034);const q=(_0x323c9c?_0x323c9c['\u0076\u0061\u006C\u0075\u0065']:'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0074\u0072\u0069\u006D']();_0xc4f11a=485622^485621;var _0xbbacd=(861068^861064)+(331749^331746);const _0x4a7d=await loadTechDocsIfNeeded(false);_0xbbacd=(349552^349561)+(791842^791840);const _0x3bf6ca=_0x4a7d['\u0066\u0069\u006C\u0074\u0065\u0072'](x=>x['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079\u004B\u0065\u0079']===tabKey);var _0xfg5g0b=(580553^580558)+(445722^445727);const _0x6d2a=!q?_0x3bf6ca:_0x3bf6ca['\u0066\u0069\u006C\u0074\u0065\u0072'](x=>(x['\u0062\u0061\u0073\u006C\u0069\u006B']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](q)||(x['\u0069\u0063\u0065\u0072\u0069\u006B']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](q)||(x['\u0061\u0064\u0069\u006D']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](q)||(x['\u006E\u006F\u0074']||'')['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](q));_0xfg5g0b=246772^246768;__renderTechList(tabKey,_0x6d2a);}catch(e){console['\u0065\u0072\u0072\u006F\u0072'](e);}}let __techCategoryOptions=null;async function loadTechCategoryOptions(){if(__techCategoryOptions)return __techCategoryOptions;try{const r=await fetch(SCRIPT_URL,{"method":"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{'Content-Type':"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({"action":'getTechDocCategories'})});const d=await r['\u006A\u0073\u006F\u006E']();if(d&&d['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")&&Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](d['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0069\u0065\u0073'])){__techCategoryOptions=d['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0069\u0065\u0073']['\u0066\u0069\u006C\u0074\u0065\u0072'](Boolean);return __techCategoryOptions;}}catch(e){console['\u0065\u0072\u0072\u006F\u0072']("]STAC HCET[".split("").reverse().join(""),e);}__techCategoryOptions=[];return __techCategoryOptions;}function techTabLabel(tabKey,_0xde2c8f){const m={'\u0062\u0072\u006F\u0061\u0064\u0063\u0061\u0073\u0074':'Yayın Sorunları','\u0061\u0063\u0063\u0065\u0073\u0073':"\u0045\u0072\u0069\u015F\u0069\u006D\u0020\u0053\u006F\u0072\u0075\u006E\u006C\u0061\u0072\u0131","app":"\u0041\u0070\u0070\u0020\u0048\u0061\u0074\u0061\u006C\u0061\u0072\u0131",'\u0061\u0063\u0074\u0069\u0076\u0061\u0074\u0069\u006F\u006E':"\u0041\u006B\u0074\u0069\u0076\u0061\u0073\u0079\u006F\u006E\u0020\u0053\u006F\u0072\u0075\u006E\u006C\u0061\u0072\u0131","info":"\u0053\u0131\u006B\u0020\u0053\u006F\u0072\u0075\u006C\u0061\u006E\u0020\u0053\u006F\u0072\u0075\u006C\u0061\u0072",'\u0070\u0061\u0079\u006D\u0065\u006E\u0074':'Ödeme Sorunları'};_0xde2c8f=(858195^858202)+(287104^287113);return m[tabKey]||"\u0059\u0061\u0079\u0131\u006E\u0020\u0053\u006F\u0072\u0075\u006E\u006C\u0061\u0072\u0131";}async function addTechDoc(tabKey,_0xb9fa6e){if(!isAdminMode)return;const _0x2bd6e=await getTechDocCategoryOptions(false);const _0x4agbea=TECH_TAB_LABELS[tabKey]||'';const _0xbddf6e=(_0x2bd6e&&_0x2bd6e['\u006C\u0065\u006E\u0067\u0074\u0068']?_0x2bd6e:Object['\u0076\u0061\u006C\u0075\u0065\u0073'](TECH_TAB_LABELS))['\u006D\u0061\u0070'](c=>String(c||'')['\u0074\u0072\u0069\u006D']())['\u0066\u0069\u006C\u0074\u0065\u0072'](Boolean);_0xb9fa6e=(954715^954714)+(263225^263216);var _0x18_0xc8e=(151519^151512)+(595733^595728);const _0xg2f=Array['\u0066\u0072\u006F\u006D'](new Set(_0xbddf6e['\u006D\u0061\u0070'](x=>x['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']())))['\u006D\u0061\u0070'](k=>_0xbddf6e['\u0066\u0069\u006E\u0064'](x=>x['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()===k));_0x18_0xc8e=536442^536444;const _0xeddce=_0xg2f['\u006D\u0061\u0070'](c=>`<option value="${escapeHtml(c)}" ${c===_0x4agbea?"\u0073\u0065\u006C\u0065\u0063\u0074\u0065\u0064":''}>${escapeHtml(c)}</option>`)['\u006A\u006F\u0069\u006E']('');const{'\u0076\u0061\u006C\u0075\u0065':v}=await Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':'Teknik Konu Ekle','\u0068\u0074\u006D\u006C':`
+      `;
+        }).join("");
+    }
+
+    render(items);
+}
+
+async function loadTechDocsIfNeeded(force = false) {
+    const now = Date.now();
+    if (!force && __techDocsCache && (now - __techDocsLoadedAt) < 120000) return __techDocsCache; // 2dk cache
+    try {
+        const rows = await __fetchTechDocs();
+        __techDocsCache = rows;
+        __techDocsLoadedAt = now;
+        return rows;
+    } catch (e) {
+        console.error("[TECH DOCS]", e);
+        return [];
+    }
+}
+
+// Teknik fullscreen üst arama kutuları (index.html) için
+async function filterTechDocList(tabKey) {
+    try {
+        const input = document.getElementById(`x-${tabKey}-search`);
+        const q = (input ? input.value : '').toLowerCase().trim();
+        const all = await loadTechDocsIfNeeded(false);
+        const scoped = all.filter(x => x.categoryKey === tabKey);
+        const filtered = !q ? scoped : scoped.filter(x =>
+            (x.baslik || '').toLowerCase().includes(q) ||
+            (x.icerik || '').toLowerCase().includes(q) ||
+            (x.adim || '').toLowerCase().includes(q) ||
+            (x.not || '').toLowerCase().includes(q)
+        );
+        __renderTechList(tabKey, filtered);
+    } catch (e) {
+        console.error(e);
+    }
+}
+
+// Teknik_Dokumanlar kategori listesi (Sheet K sütunu)
+let __techCategoryOptions = null;
+async function loadTechCategoryOptions() {
+    if (__techCategoryOptions) return __techCategoryOptions;
+    try {
+        const r = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: 'getTechDocCategories' })
+        });
+        const d = await r.json();
+        if (d && d.result === 'success' && Array.isArray(d.categories)) {
+            __techCategoryOptions = d.categories.filter(Boolean);
+            return __techCategoryOptions;
+        }
+    } catch (e) { console.error('[TECH CATS]', e); }
+    __techCategoryOptions = [];
+    return __techCategoryOptions;
+}
+
+function techTabLabel(tabKey) {
+    const m = { broadcast: 'Yayın Sorunları', access: 'Erişim Sorunları', app: 'App Hataları', activation: 'Aktivasyon Sorunları', info: 'Sık Sorulan Sorular', payment: 'Ödeme Sorunları' };
+    return m[tabKey] || 'Yayın Sorunları';
+}
+
+// ---------------------------
+// TECH DOCS (Sheet) - Admin CRUD
+// ---------------------------
+async function addTechDoc(tabKey) {
+    if (!isAdminMode) return;
+    const cats = await getTechDocCategoryOptions(false);
+    const defaultLabel = TECH_TAB_LABELS[tabKey] || '';
+    const opts = (cats && cats.length ? cats : Object.values(TECH_TAB_LABELS))
+        .map(c => String(c || '').trim()).filter(Boolean);
+    const uniq = Array.from(new Set(opts.map(x => x.toLowerCase()))).map(k => opts.find(x => x.toLowerCase() === k));
+    const optionsHtml = uniq.map(c => `<option value="${escapeHtml(c)}" ${c === defaultLabel ? 'selected' : ''}>${escapeHtml(c)}</option>`).join('');
+    const { value: v } = await Swal.fire({
+        title: 'Teknik Konu Ekle',
+        html: `
       <select id="td-cat" class="swal2-select" style="width:100%;max-width:420px">
-        ${_0xeddce}
+        ${optionsHtml}
       </select>
       <input id="td-title" class="swal2-input" placeholder="Başlık">
       <textarea id="td-content" class="swal2-textarea" placeholder="İçerik"></textarea>
@@ -596,46 +5949,306 @@ function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(
       <input id="td-note" class="swal2-input" placeholder="Not (opsiyonel)">
       <input id="td-link" class="swal2-input" placeholder="Link (opsiyonel)">
       <input id="td-image" class="swal2-input" placeholder="Görsel Linki (opsiyonel)">
-    `,"showCancelButton":!![],"confirmButtonText":'Ekle',"cancelButtonText":"\u0056\u0061\u007A\u0067\u0065\u00E7",'\u0070\u0072\u0065\u0043\u006F\u006E\u0066\u0069\u0072\u006D':()=>{const _0xa0067e=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tac-dt".split("").reverse().join(""))?.value||_0x4agbea||'')['\u0074\u0072\u0069\u006D']();if(!_0xa0067e)return Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("\u004B\u0061\u0074\u0065\u0067\u006F\u0072\u0069\u0020\u007A\u006F\u0072\u0075\u006E\u006C\u0075");let _0x8fd69b;const _0xfd33e=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("eltit-dt".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']();_0x8fd69b=(166237^166229)+(610377^610368);if(!_0xfd33e)return Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("ulnuroz k\u0131l\u015FaB".split("").reverse().join(""));return{"kategori":_0xa0067e,"baslik":_0xfd33e,'\u0069\u0063\u0065\u0072\u0069\u006B':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tnetnoc-dt".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),"adim":(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0064\u002D\u0073\u0074\u0065\u0070")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),"not":(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0064\u002D\u006E\u006F\u0074\u0065")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),"link":(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0064\u002D\u006C\u0069\u006E\u006B")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),"image":(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("egami-dt".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0064\u0075\u0072\u0075\u006D':'Aktif'};}});if(!v)return;Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':'Ekleniyor...','\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067'](),"showConfirmButton":false});try{const r=await fetch(SCRIPT_URL,{"method":"\u0050\u004F\u0053\u0054",'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},"body":JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"\u0075\u0070\u0073\u0065\u0072\u0074\u0054\u0065\u0063\u0068\u0044\u006F\u0063",'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,"token":getToken(),"keyKategori":'',"keyBaslik":'',...v})});var _0x52a57d=(822247^822245)+(944143^944140);const d=await r['\u006A\u0073\u006F\u006E']();_0x52a57d='\u0066\u0061\u0062\u0063\u006E\u006B';if(d['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")){Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':"\u0073\u0075\u0063\u0063\u0065\u0073\u0073",'\u0074\u0069\u0074\u006C\u0065':'Eklendi',"timer":1200,"showConfirmButton":false});await loadTechDocsIfNeeded(!![]);filterTechDocList(tabKey);}else{Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",d['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u0045\u006B\u006C\u0065\u006E\u0065\u006D\u0065\u0064\u0069","rorre".split("").reverse().join(""));}}catch(e){Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),"\u0053\u0075\u006E\u0075\u0063\u0075\u0020\u0068\u0061\u0074\u0061\u0073\u0131\u002E","\u0065\u0072\u0072\u006F\u0072");}}async function editTechDoc(tabKey,baslik){if(!isAdminMode)return;var _0xbd_0xb61=(167520^167527)+(941304^941304);const _0x418b2d=await loadTechDocsIfNeeded(false);_0xbd_0xb61=(927051^927050)+(435459^435457);var _0x1b_0xa54=(902151^902150)+(600787^600786);const _0x68_0x21b=_0x418b2d['\u0066\u0069\u006E\u0064'](x=>x['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079\u004B\u0065\u0079']===tabKey&&(x['\u0062\u0061\u0073\u006C\u0069\u006B']||'')===baslik);_0x1b_0xa54=331345^331346;if(!_0x68_0x21b)return;var _0x84bdac=(530477^530469)+(909744^909752);const _0x3171a=await getTechDocCategoryOptions(false);_0x84bdac=169104^169106;const _0xdbe=(_0x3171a&&_0x3171a['\u006C\u0065\u006E\u0067\u0074\u0068']?_0x3171a:Object['\u0076\u0061\u006C\u0075\u0065\u0073'](TECH_TAB_LABELS))['\u006D\u0061\u0070'](c=>String(c||'')['\u0074\u0072\u0069\u006D']())['\u0066\u0069\u006C\u0074\u0065\u0072'](Boolean);const _0x1be0ea=Array['\u0066\u0072\u006F\u006D'](new Set(_0xdbe['\u006D\u0061\u0070'](x=>x['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']())))['\u006D\u0061\u0070'](k=>_0xdbe['\u0066\u0069\u006E\u0064'](x=>x['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()===k));var _0x19_0xc18=(462127^462127)+(725682^725691);const _0x75dcb=_0x1be0ea['\u006D\u0061\u0070'](c=>`<option value="${escapeHtml(c)}" ${c===_0x68_0x21b['\u006B\u0061\u0074\u0065\u0067\u006F\u0072\u0069']?"\u0073\u0065\u006C\u0065\u0063\u0074\u0065\u0064":''}>${escapeHtml(c)}</option>`)['\u006A\u006F\u0069\u006E']('');_0x19_0xc18=(864748^864749)+(330770^330772);const{'\u0076\u0061\u006C\u0075\u0065':v}=await Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':'Teknik Konuyu Düzenle','\u0068\u0074\u006D\u006C':`
+    `,
+        showCancelButton: true,
+        confirmButtonText: 'Ekle',
+        cancelButtonText: 'Vazgeç',
+        preConfirm: () => {
+            const cat = (document.getElementById('td-cat')?.value || defaultLabel || '').trim();
+            if (!cat) return Swal.showValidationMessage('Kategori zorunlu');
+            const title = (document.getElementById('td-title').value || '').trim();
+            if (!title) return Swal.showValidationMessage('Başlık zorunlu');
+            return {
+                kategori: cat,
+                baslik: title,
+                icerik: (document.getElementById('td-content').value || '').trim(),
+                adim: (document.getElementById('td-step').value || '').trim(),
+                not: (document.getElementById('td-note').value || '').trim(),
+                link: (document.getElementById('td-link').value || '').trim(),
+                image: (document.getElementById('td-image').value || '').trim(),
+                durum: 'Aktif'
+            };
+        }
+    });
+    if (!v) return;
+
+    Swal.fire({ title: 'Ekleniyor...', didOpen: () => Swal.showLoading(), showConfirmButton: false });
+    try {
+        const r = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: 'upsertTechDoc', username: currentUser, token: getToken(), keyKategori: '', keyBaslik: '', ...v })
+        });
+        const d = await r.json();
+        if (d.result === 'success') {
+            Swal.fire({ icon: 'success', title: 'Eklendi', timer: 1200, showConfirmButton: false });
+            await loadTechDocsIfNeeded(true);
+            filterTechDocList(tabKey);
+        } else {
+            Swal.fire('Hata', d.message || 'Eklenemedi', 'error');
+        }
+    } catch (e) {
+        Swal.fire('Hata', 'Sunucu hatası.', 'error');
+    }
+}
+
+async function editTechDoc(tabKey, baslik) {
+    if (!isAdminMode) return;
+    const all = await loadTechDocsIfNeeded(false);
+    const it = all.find(x => x.categoryKey === tabKey && (x.baslik || '') === baslik);
+    if (!it) return;
+    const cats = await getTechDocCategoryOptions(false);
+    const opts = (cats && cats.length ? cats : Object.values(TECH_TAB_LABELS))
+        .map(c => String(c || '').trim()).filter(Boolean);
+    const uniq = Array.from(new Set(opts.map(x => x.toLowerCase()))).map(k => opts.find(x => x.toLowerCase() === k));
+    const optionsHtml = uniq.map(c => `<option value="${escapeHtml(c)}" ${(c === it.kategori) ? 'selected' : ''}>${escapeHtml(c)}</option>`).join('');
+    const { value: v } = await Swal.fire({
+        title: 'Teknik Konuyu Düzenle',
+        html: `
       <select id="td-cat" class="swal2-select" style="width:100%;max-width:420px">
-        ${_0x75dcb}
+        ${optionsHtml}
       </select>
-      <input id="td-title" class="swal2-input" placeholder="Başlık" value="${escapeHtml(_0x68_0x21b['\u0062\u0061\u0073\u006C\u0069\u006B']||'')}">
-      <textarea id="td-content" class="swal2-textarea" placeholder="İçerik">${escapeHtml(_0x68_0x21b['\u0069\u0063\u0065\u0072\u0069\u006B']||'')}</textarea>
-      <input id="td-step" class="swal2-input" placeholder="Adım" value="${escapeHtml(_0x68_0x21b['\u0061\u0064\u0069\u006D']||'')}">
-      <input id="td-note" class="swal2-input" placeholder="Not" value="${escapeHtml(_0x68_0x21b['\u006E\u006F\u0074']||'')}">
-      <input id="td-link" class="swal2-input" placeholder="Link" value="${escapeHtml(_0x68_0x21b['\u006C\u0069\u006E\u006B']||'')}">
-      <input id="td-image" class="swal2-input" placeholder="Görsel Linki" value="${escapeHtml(_0x68_0x21b['\u0069\u006D\u0061\u0067\u0065']||'')}">
-    `,"showCancelButton":!![],'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':'Kaydet',"cancelButtonText":'Vazgeç','\u0070\u0072\u0065\u0043\u006F\u006E\u0066\u0069\u0072\u006D':()=>{const _0xd23g9a=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tac-dt".split("").reverse().join(""))?.value||_0x68_0x21b['\u006B\u0061\u0074\u0065\u0067\u006F\u0072\u0069']||'')['\u0074\u0072\u0069\u006D']();if(!_0xd23g9a)return Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("\u004B\u0061\u0074\u0065\u0067\u006F\u0072\u0069\u0020\u007A\u006F\u0072\u0075\u006E\u006C\u0075");let _0xc43b6d;const _0xffbff=(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("eltit-dt".split("").reverse().join(""))['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D']();_0xc43b6d=719740^719732;if(!_0xffbff)return Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065']("\u0042\u0061\u015F\u006C\u0131\u006B\u0020\u007A\u006F\u0072\u0075\u006E\u006C\u0075");return{'\u006B\u0061\u0074\u0065\u0067\u006F\u0072\u0069':_0xd23g9a,"baslik":_0xffbff,'\u0069\u0063\u0065\u0072\u0069\u006B':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0064\u002D\u0063\u006F\u006E\u0074\u0065\u006E\u0074")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0061\u0064\u0069\u006D':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0064\u002D\u0073\u0074\u0065\u0070")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u006E\u006F\u0074':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0064\u002D\u006E\u006F\u0074\u0065")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u006C\u0069\u006E\u006B':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0064\u002D\u006C\u0069\u006E\u006B")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),'\u0069\u006D\u0061\u0067\u0065':(document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0074\u0064\u002D\u0069\u006D\u0061\u0067\u0065")['\u0076\u0061\u006C\u0075\u0065']||'')['\u0074\u0072\u0069\u006D'](),"durum":"\u0041\u006B\u0074\u0069\u0066"};}});if(!v)return;Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u004B\u0061\u0079\u0064\u0065\u0064\u0069\u006C\u0069\u0079\u006F\u0072\u002E\u002E\u002E","didOpen":()=>Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067'](),'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':false});try{const r=await fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':'POST',"headers":{"\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065":"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':"\u0075\u0070\u0073\u0065\u0072\u0074\u0054\u0065\u0063\u0068\u0044\u006F\u0063",'\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken(),"keyKategori":_0x68_0x21b['\u006B\u0061\u0074\u0065\u0067\u006F\u0072\u0069'],'\u006B\u0065\u0079\u0042\u0061\u0073\u006C\u0069\u006B':_0x68_0x21b['\u0062\u0061\u0073\u006C\u0069\u006B'],...v})});let _0xe2_0x2b4;const d=await r['\u006A\u0073\u006F\u006E']();_0xe2_0x2b4=151974^151972;if(d['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){Swal['\u0066\u0069\u0072\u0065']({"icon":"\u0073\u0075\u0063\u0063\u0065\u0073\u0073",'\u0074\u0069\u0074\u006C\u0065':'Kaydedildi',"timer":1200,"showConfirmButton":false});await loadTechDocsIfNeeded(!![]);filterTechDocList(tabKey);}else{Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",d['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u004B\u0061\u0079\u0064\u0065\u0064\u0069\u006C\u0065\u006D\u0065\u0064\u0069","rorre".split("").reverse().join(""));}}catch(e){Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",".\u0131satah ucunuS".split("").reverse().join(""),"\u0065\u0072\u0072\u006F\u0072");}}function deleteTechDoc(tabKey,baslik){if(!isAdminMode)return;Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':'Silinsin mi?','\u0074\u0065\u0078\u0074':'Konu pasife alınacak.','\u0069\u0063\u006F\u006E':'warning','\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],"confirmButtonText":"\u0053\u0069\u006C",'\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0056\u0061\u007A\u0067\u0065\u00E7"})['\u0074\u0068\u0065\u006E'](async res=>{if(!res['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064'])return;try{const _0xc395fe=await loadTechDocsIfNeeded(false);let _0x197a;const _0x69_0xb38=_0xc395fe['\u0066\u0069\u006E\u0064'](x=>x['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079\u004B\u0065\u0079']===tabKey&&(x['\u0062\u0061\u0073\u006C\u0069\u006B']||'')===baslik);_0x197a=(821324^821317)+(656972^656973);const _0xeagd6d=_0x69_0xb38?_0x69_0xb38['\u006B\u0061\u0074\u0065\u0067\u006F\u0072\u0069']:tabKey;var _0xbfcd9f=(806897^806897)+(866931^866938);const r=await fetch(SCRIPT_URL,{'\u006D\u0065\u0074\u0068\u006F\u0064':'POST','\u0068\u0065\u0061\u0064\u0065\u0072\u0073':{'Content-Type':"\u0074\u0065\u0078\u0074\u002F\u0070\u006C\u0061\u0069\u006E\u003B\u0063\u0068\u0061\u0072\u0073\u0065\u0074\u003D\u0075\u0074\u0066\u002D\u0038"},'\u0062\u006F\u0064\u0079':JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({'\u0061\u0063\u0074\u0069\u006F\u006E':'deleteTechDoc','\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065':currentUser,'\u0074\u006F\u006B\u0065\u006E':getToken(),'\u006B\u0065\u0079\u004B\u0061\u0074\u0065\u0067\u006F\u0072\u0069':_0xeagd6d,'\u006B\u0065\u0079\u0042\u0061\u0073\u006C\u0069\u006B':baslik})});_0xbfcd9f=362467^362471;var _0x4e62a=(668628^668630)+(708209^708212);const d=await r['\u006A\u0073\u006F\u006E']();_0x4e62a='\u0066\u006B\u0070\u006F\u006A\u0062';if(d['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")){await loadTechDocsIfNeeded(!![]);filterTechDocList(tabKey);Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':'success','\u0074\u0069\u0074\u006C\u0065':'Silindi','\u0074\u0069\u006D\u0065\u0072':1000,"showConfirmButton":false});}else{Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),d['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u0053\u0069\u006C\u0069\u006E\u0065\u006D\u0065\u0064\u0069","\u0065\u0072\u0072\u006F\u0072");}}catch(e){Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061","\u0053\u0075\u006E\u0075\u0063\u0075\u0020\u0068\u0061\u0074\u0061\u0073\u0131\u002E","rorre".split("").reverse().join(""));}});}window['\u0073\u0077\u0069\u0074\u0063\u0068\u0054\u0065\u0063\u0068\u0054\u0061\u0062']=async function(tab){try{document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u0023\u0074\u0065\u0063\u0068\u002D\u0066\u0075\u006C\u006C\u0073\u0063\u0072\u0065\u0065\u006E\u0020\u002E\u0071\u002D\u006E\u0061\u0076\u002D\u0069\u0074\u0065\u006D")['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](li=>li['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("\u0061\u0063\u0074\u0069\u0076\u0065"));let _0x46284b;const _0x5c4bf={"wizard":"\u0078\u002D\u0076\u0069\u0065\u0077\u002D\u0077\u0069\u007A\u0061\u0072\u0064",'\u0061\u0063\u0063\u0065\u0073\u0073':"\u0078\u002D\u0076\u0069\u0065\u0077\u002D\u0061\u0063\u0063\u0065\u0073\u0073",'\u0061\u0070\u0070':"\u0078\u002D\u0076\u0069\u0065\u0077\u002D\u0061\u0070\u0070",'\u0061\u0063\u0074\u0069\u0076\u0061\u0074\u0069\u006F\u006E':"\u0078\u002D\u0076\u0069\u0065\u0077\u002D\u0061\u0063\u0074\u0069\u0076\u0061\u0074\u0069\u006F\u006E","payment":'x-view-payment','\u0063\u0061\u0072\u0064\u0073':"\u0078\u002D\u0076\u0069\u0065\u0077\u002D\u0063\u0061\u0072\u0064\u0073","info":"\u0078\u002D\u0076\u0069\u0065\u0077\u002D\u0069\u006E\u0066\u006F"};_0x46284b='\u006C\u0064\u0067\u0066\u0066\u006B';let _0x421f;const _0x3f3a=_0x5c4bf[tab]||_0x5c4bf["\u0077\u0069\u007A\u0061\u0072\u0064"];_0x421f=(763985^763984)+(930491^930492);const _0x7d5b=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072'](`#tech-fullscreen .q-nav-item[data-tech-tab="${tab}"]`);if(_0x7d5b)_0x7d5b['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0063\u0074\u0069\u0076\u0065");document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u0023\u0074\u0065\u0063\u0068\u002D\u0066\u0075\u006C\u006C\u0073\u0063\u0072\u0065\u0065\u006E\u0020\u002E\u0071\u002D\u0076\u0069\u0065\u0077\u002D\u0073\u0065\u0063\u0074\u0069\u006F\u006E")['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](v=>v['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0072\u0065\u006D\u006F\u0076\u0065']("evitca".split("").reverse().join("")));var _0xeb8cag=(281713^281718)+(756469^756471);const _0x72fc=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064'](_0x3f3a);_0xeb8cag=438212^438221;if(_0x72fc)_0x72fc['\u0063\u006C\u0061\u0073\u0073\u004C\u0069\u0073\u0074']['\u0061\u0064\u0064']("\u0061\u0063\u0074\u0069\u0076\u0065");if(["ssecca".split("").reverse().join(""),"ppa".split("").reverse().join(""),"\u0061\u0063\u0074\u0069\u0076\u0061\u0074\u0069\u006F\u006E","tnemyap".split("").reverse().join(""),"\u0069\u006E\u0066\u006F"]['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](tab)){const _0x829a2g=await loadTechDocsIfNeeded(false);const _0x70_0x372=_0x829a2g['\u0066\u0069\u006C\u0074\u0065\u0072'](x=>x['\u0063\u0061\u0074\u0065\u0067\u006F\u0072\u0079\u004B\u0065\u0079']===tab);__renderTechList(tab,_0x70_0x372);}if(tab==="draziw".split("").reverse().join("")){try{renderTechWizardInto("\u0078\u002D\u0077\u0069\u007A\u0061\u0072\u0064");}catch(e){console['\u0065\u0072\u0072\u006F\u0072'](e);}}if(tab==="sdrac".split("").reverse().join("")){try{filterTechCards();}catch(e){console['\u0065\u0072\u0072\u006F\u0072'](e);}}}catch(e){console['\u0065\u0072\u0072\u006F\u0072'](e);}};try{window['\u006F\u0070\u0065\u006E\u004D\u0065\u006E\u0075\u0050\u0065\u0072\u006D\u0069\u0073\u0073\u0069\u006F\u006E\u0073']=openMenuPermissions;}catch(e){}function openImageUploader(){Swal['\u0066\u0069\u0072\u0065']({"title":"\u0047\u00F6\u0072\u0073\u0065\u006C\u0020\u0059\u00FC\u006B\u006C\u0065\u0020\u0028\u0044\u0072\u0069\u0076\u0065\u0029",'\u0068\u0074\u006D\u006C':`
+      <input id="td-title" class="swal2-input" placeholder="Başlık" value="${escapeHtml(it.baslik || '')}">
+      <textarea id="td-content" class="swal2-textarea" placeholder="İçerik">${escapeHtml(it.icerik || '')}</textarea>
+      <input id="td-step" class="swal2-input" placeholder="Adım" value="${escapeHtml(it.adim || '')}">
+      <input id="td-note" class="swal2-input" placeholder="Not" value="${escapeHtml(it.not || '')}">
+      <input id="td-link" class="swal2-input" placeholder="Link" value="${escapeHtml(it.link || '')}">
+      <input id="td-image" class="swal2-input" placeholder="Görsel Linki" value="${escapeHtml(it.image || '')}">
+    `,
+        showCancelButton: true,
+        confirmButtonText: 'Kaydet',
+        cancelButtonText: 'Vazgeç',
+        preConfirm: () => {
+            const cat = (document.getElementById('td-cat')?.value || it.kategori || '').trim();
+            if (!cat) return Swal.showValidationMessage('Kategori zorunlu');
+            const title = (document.getElementById('td-title').value || '').trim();
+            if (!title) return Swal.showValidationMessage('Başlık zorunlu');
+            return {
+                kategori: cat,
+                baslik: title,
+                icerik: (document.getElementById('td-content').value || '').trim(),
+                adim: (document.getElementById('td-step').value || '').trim(),
+                not: (document.getElementById('td-note').value || '').trim(),
+                link: (document.getElementById('td-link').value || '').trim(),
+                image: (document.getElementById('td-image').value || '').trim(),
+                durum: 'Aktif'
+            };
+        }
+    });
+    if (!v) return;
+
+    Swal.fire({ title: 'Kaydediliyor...', didOpen: () => Swal.showLoading(), showConfirmButton: false });
+    try {
+        const r = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action: 'upsertTechDoc', username: currentUser, token: getToken(), keyKategori: it.kategori, keyBaslik: it.baslik, ...v })
+        });
+        const d = await r.json();
+        if (d.result === 'success') {
+            Swal.fire({ icon: 'success', title: 'Kaydedildi', timer: 1200, showConfirmButton: false });
+            await loadTechDocsIfNeeded(true);
+            filterTechDocList(tabKey);
+        } else {
+            Swal.fire('Hata', d.message || 'Kaydedilemedi', 'error');
+        }
+    } catch (e) {
+        Swal.fire('Hata', 'Sunucu hatası.', 'error');
+    }
+}
+
+function deleteTechDoc(tabKey, baslik) {
+    if (!isAdminMode) return;
+    Swal.fire({
+        title: 'Silinsin mi?',
+        text: 'Konu pasife alınacak.',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Sil',
+        cancelButtonText: 'Vazgeç'
+    }).then(async res => {
+        if (!res.isConfirmed) return;
+        try {
+            const all = await loadTechDocsIfNeeded(false);
+            const it = all.find(x => x.categoryKey === tabKey && (x.baslik || '') === baslik);
+            const keyKategori = it ? it.kategori : tabKey;
+            const r = await fetch(SCRIPT_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                body: JSON.stringify({ action: 'deleteTechDoc', username: currentUser, token: getToken(), keyKategori: keyKategori, keyBaslik: baslik })
+            });
+            const d = await r.json();
+            if (d.result === 'success') {
+                await loadTechDocsIfNeeded(true);
+                filterTechDocList(tabKey);
+                Swal.fire({ icon: 'success', title: 'Silindi', timer: 1000, showConfirmButton: false });
+            } else {
+                Swal.fire('Hata', d.message || 'Silinemedi', 'error');
+            }
+        } catch (e) {
+            Swal.fire('Hata', 'Sunucu hatası.', 'error');
+        }
+    });
+}
+
+// override / extend existing switchTechTab
+window.switchTechTab = async function (tab) {
+    try {
+        // existing visual tab switch
+        document.querySelectorAll('#tech-fullscreen .q-nav-item').forEach(li => li.classList.remove('active'));
+        const tabMap = { wizard: 'x-view-wizard', access: 'x-view-access', app: 'x-view-app', activation: 'x-view-activation', payment: 'x-view-payment', cards: 'x-view-cards', info: 'x-view-info' };
+        const viewId = tabMap[tab] || tabMap['wizard'];
+        // activate clicked item
+        const byData = document.querySelector(`#tech-fullscreen .q-nav-item[data-tech-tab="${tab}"]`);
+        if (byData) byData.classList.add('active');
+        document.querySelectorAll('#tech-fullscreen .q-view-section').forEach(v => v.classList.remove('active'));
+        const viewEl = document.getElementById(viewId);
+        if (viewEl) viewEl.classList.add('active');
+
+        if (['access', 'app', 'activation', 'payment', 'info'].includes(tab)) {
+            const all = await loadTechDocsIfNeeded(false);
+            const filtered = all.filter(x => x.categoryKey === tab);
+            __renderTechList(tab, filtered);
+        }
+
+        if (tab === 'wizard') {
+            // Teknik sihirbazı fullscreen içine göm
+            try { renderTechWizardInto('x-wizard'); } catch (e) { console.error(e); }
+        }
+
+        if (tab === 'cards') {
+            try { filterTechCards(); } catch (e) { console.error(e); }
+        }
+    } catch (e) {
+        console.error(e);
+    }
+};
+
+// expose for onclick
+try { window.openMenuPermissions = openMenuPermissions; } catch (e) { }
+
+
+
+// --- GÖRSEL YÜKLEME ARACI (Admin/LocAdmin) ---
+function openImageUploader() {
+    Swal.fire({
+        title: 'Görsel Yükle (Drive)',
+        html: `
         <div style="font-size:0.9rem;color:#555;margin-bottom:15px">
            Seçtiğiniz görsel, Drive'daki doküman klasörüne yüklenecek ve size bir link verilecektir.
            Bu linki "Image" sütununa yapıştırarak kartlarda kullanabilirsiniz.
         </div>
         <input type="file" id="swal-img-input" accept="image/*" class="swal2-file" style="display:block;margin:0 auto;">
-        `,'\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],"confirmButtonText":"\u0059\u00FC\u006B\u006C\u0065",'\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0130\u0070\u0074\u0061\u006C",'\u0070\u0072\u0065\u0043\u006F\u006E\u0066\u0069\u0072\u006D':()=>{var _0xbb463d=(837154^837153)+(910930^910929);const _0x39828c=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0073\u0077\u0061\u006C\u002D\u0069\u006D\u0067\u002D\u0069\u006E\u0070\u0075\u0074");_0xbb463d=(919423^919417)+(343190^343189);if(!_0x39828c||!_0x39828c['\u0066\u0069\u006C\u0065\u0073']||_0x39828c['\u0066\u0069\u006C\u0065\u0073']['\u006C\u0065\u006E\u0067\u0074\u0068']===(552903^552903)){Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065'](".ni\xE7es lesr\xF6g rib neft\xFCL".split("").reverse().join(""));return;}var _0xdf954b=(344896^344900)+(290409^290408);const _0x0b_0xa7d=_0x39828c['\u0066\u0069\u006C\u0065\u0073'][598998^598998];_0xdf954b="pgikee".split("").reverse().join("");return new Promise((resolve,reject)=>{let _0x3ae7b;const _0x5e6b7f=new FileReader();_0x3ae7b=(350491^350493)+(536440^536443);_0x5e6b7f['\u006F\u006E\u006C\u006F\u0061\u0064']=()=>{const _0x93493b=_0x5e6b7f['\u0072\u0065\u0073\u0075\u006C\u0074']['\u0073\u0070\u006C\u0069\u0074']("\u002C")[581757^581756];resolve({'\u0062\u0061\u0073\u0065\u0036\u0034':_0x93493b,'\u006D\u0069\u006D\u0065\u0054\u0079\u0070\u0065':_0x0b_0xa7d['\u0074\u0079\u0070\u0065'],"fileName":_0x0b_0xa7d['\u006E\u0061\u006D\u0065']});};_0x5e6b7f['\u006F\u006E\u0065\u0072\u0072\u006F\u0072']=error=>reject(error);_0x5e6b7f['\u0072\u0065\u0061\u0064\u0041\u0073\u0044\u0061\u0074\u0061\u0055\u0052\u004C'](_0x0b_0xa7d);});}})['\u0074\u0068\u0065\u006E'](result=>{if(result['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064']){var _0x4be7e=(477829^477828)+(906745^906748);const _0xbb2=result['\u0076\u0061\u006C\u0075\u0065'];_0x4be7e=(615892^615895)+(479772^479773);Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u0059\u00FC\u006B\u006C\u0065\u006E\u0069\u0079\u006F\u0072\u002E\u002E\u002E","didOpen":()=>{Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']();}});apiCall("egamIdaolpu".split("").reverse().join(""),_0xbb2)['\u0074\u0068\u0065\u006E'](res=>{if(res['\u0072\u0065\u0073\u0075\u006C\u0074']==="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){Swal['\u0066\u0069\u0072\u0065']({'\u0069\u0063\u006F\u006E':'success',"title":"\u0059\u00FC\u006B\u006C\u0065\u006E\u0064\u0069\u0021","html":`
+        `,
+        showCancelButton: true,
+        confirmButtonText: 'Yükle',
+        cancelButtonText: 'İptal',
+        preConfirm: () => {
+            const fileInput = document.getElementById('swal-img-input');
+            if (!fileInput || !fileInput.files || fileInput.files.length === 0) {
+                Swal.showValidationMessage('Lütfen bir görsel seçin.');
+                return;
+            }
+            const file = fileInput.files[0];
+            // Base64 okuma
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    const b64 = reader.result.split(',')[1]; // data:image/png;base64, kısmını at
+                    resolve({
+                        base64: b64,
+                        mimeType: file.type,
+                        fileName: file.name
+                    });
+                };
+                reader.onerror = error => reject(error);
+                reader.readAsDataURL(file);
+            });
+        }
+    }).then(result => {
+        if (result.isConfirmed) {
+            const fileData = result.value;
+            Swal.fire({ title: 'Yükleniyor...', didOpen: () => { Swal.showLoading() } });
+
+            apiCall("uploadImage", fileData).then(res => {
+                if (res.result === "success") {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Yüklendi!',
+                        html: `
                            <div>Görsel Linki:</div>
-                           <input type="text" value="${res['\u0075\u0072\u006C']}" id="uploaded-img-url" class="swal2-input" readonly>
+                           <input type="text" value="${res.url}" id="uploaded-img-url" class="swal2-input" readonly>
                            <button class="btn btn-copy" style="margin-top:10px" onclick="copyText(document.getElementById('uploaded-img-url').value)">Link'i Kopyala</button>
-                         `,"confirmButtonText":"\u0054\u0061\u006D\u0061\u006D"});}else{Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",res['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u0059\u00FC\u006B\u006C\u0065\u006E\u0065\u006D\u0065\u0064\u0069\u002E","\u0065\u0072\u0072\u006F\u0072");}})['\u0063\u0061\u0074\u0063\u0068'](e=>{Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061"," :\u0131satah ucunuS".split("").reverse().join("")+e,"rorre".split("").reverse().join(""));});}});}async function openActiveUsersPanel(){try{Swal['\u0066\u0069\u0072\u0065']({"title":"\u0059\u00FC\u006B\u006C\u0065\u006E\u0069\u0079\u006F\u0072\u002E\u002E\u002E",'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>{Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']();}});let _0x6743ef;const _0x0gg9d=await apiCall("\u0067\u0065\u0074\u0041\u0063\u0074\u0069\u0076\u0065\u0055\u0073\u0065\u0072\u0073",{});_0x6743ef=(760626^760631)+(572923^572926);if(!_0x0gg9d||_0x0gg9d['\u0072\u0065\u0073\u0075\u006C\u0074']!=="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),"idemenelk\xFCy ral\u0131c\u0131nalluk fitkA".split("").reverse().join(""),"\u0065\u0072\u0072\u006F\u0072");return;}const _0x97b=_0x0gg9d['\u0075\u0073\u0065\u0072\u0073']||[];if(_0x97b['\u006C\u0065\u006E\u0067\u0074\u0068']===(478579^478579)){Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"👥 Aktif Kullanıcılar","html":"\u003C\u0070\u0020\u0073\u0074\u0079\u006C\u0065\u003D\u0022\u0063\u006F\u006C\u006F\u0072\u003A\u0023\u0039\u0039\u0039\u003B\u0070\u0061\u0064\u0064\u0069\u006E\u0067\u003A\u0032\u0030\u0070\u0078\u0022\u003E\u015E\u0075\u0020\u0061\u006E\u0020\u0061\u006B\u0074\u0069\u0066\u0020\u006B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131\u0020\u0079\u006F\u006B\u002E\u003C\u002F\u0070\u003E",'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':'Tamam'});return;}const _0xb4aba=_0x97b['\u006D\u0061\u0070']((u,idx)=>{const _0x062e=u['\u006C\u006F\u0067\u0069\u006E\u0054\u0069\u006D\u0065']||"\u002D";const _0xf491b=u['\u006C\u0061\u0073\u0074\u0041\u0063\u0074\u0069\u0076\u0069\u0074\u0079']||"\u002D";let _0xc788e;const _0x71_0x79a=u['\u0069\u0070']||"\u002D";_0xc788e=510628^510627;return`
+                         `,
+                        confirmButtonText: 'Tamam'
+                    });
+                } else {
+                    Swal.fire('Hata', res.message || 'Yüklenemedi.', 'error');
+                }
+            }).catch(e => {
+                Swal.fire('Hata', 'Sunucu hatası: ' + e, 'error');
+            });
+        }
+    });
+}
+
+// ============================================================
+// --- AKTİF KULLANICI YÖNETİMİ (v14.1) ---
+// ============================================================
+
+async function openActiveUsersPanel() {
+    try {
+        Swal.fire({ title: 'Yükleniyor...', didOpen: () => { Swal.showLoading() } });
+
+        const res = await apiCall("getActiveUsers", {});
+
+        if (!res || res.result !== "success") {
+            Swal.fire("Hata", "Aktif kullanıcılar yüklenemedi", "error");
+            return;
+        }
+
+        const users = res.users || [];
+
+        if (users.length === 0) {
+            Swal.fire({
+                title: "👥 Aktif Kullanıcılar",
+                html: '<p style="color:#999;padding:20px">Şu an aktif kullanıcı yok.</p>',
+                confirmButtonText: 'Tamam'
+            });
+            return;
+        }
+
+        const rowsHtml = users.map((u, idx) => {
+            const loginTime = u.loginTime || '-';
+            const lastActivity = u.lastActivity || '-';
+            const ip = u.ip || '-';
+
+            return `
                 <tr style="border-bottom:1px solid #eee">
-                    <td style="padding:12px;text-align:center">${idx+(480677^480676)}</td>
-                    <td style="padding:12px;font-weight:600">${escapeHtml(u['\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065'])}</td>
+                    <td style="padding:12px;text-align:center">${idx + 1}</td>
+                    <td style="padding:12px;font-weight:600">${escapeHtml(u.username)}</td>
                     <td style="padding:12px;text-align:center">
-                        <span style="display:inline-block;padding:4px 8px;border-radius:4px;font-size:0.85rem;background:${u['\u0072\u006F\u006C\u0065']==="\u0061\u0064\u006D\u0069\u006E"?"\u0023\u0034\u0063\u0061\u0066\u0035\u0030":u['\u0072\u006F\u006C\u0065']==="nimdacol".split("").reverse().join("")?"\u0023\u0032\u0031\u0039\u0036\u0066\u0033":u['\u0072\u006F\u006C\u0065']==="sresuq".split("").reverse().join("")?"\u0023\u0066\u0066\u0039\u0038\u0030\u0030":"e9e9e9#".split("").reverse().join("")};color:#fff">${escapeHtml(u['\u0072\u006F\u006C\u0065'])}</span>
+                        <span style="display:inline-block;padding:4px 8px;border-radius:4px;font-size:0.85rem;background:${u.role === 'admin' ? '#4caf50' :
+                    u.role === 'locadmin' ? '#2196f3' :
+                        u.role === 'qusers' ? '#ff9800' : '#9e9e9e'
+                };color:#fff">${escapeHtml(u.role)}</span>
                     </td>
-                    <td style="padding:12px;font-size:0.9rem">${escapeHtml(u['\u0067\u0072\u006F\u0075\u0070']||"\u002D")}</td>
-                    <td style="padding:12px;font-size:0.85rem;color:#666">${escapeHtml(_0x062e)}</td>
-                    <td style="padding:12px;font-size:0.85rem;color:#666">${escapeHtml(_0x71_0x79a)}</td>
+                    <td style="padding:12px;font-size:0.9rem">${escapeHtml(u.group || '-')}</td>
+                    <td style="padding:12px;font-size:0.85rem;color:#666">${escapeHtml(loginTime)}</td>
+                    <td style="padding:12px;font-size:0.85rem;color:#666">${escapeHtml(ip)}</td>
                     <td style="padding:12px;text-align:center">
                         <button 
-                            onclick="kickUser('${escapeForJsString(u['\u0075\u0073\u0065\u0072\u006E\u0061\u006D\u0065'])}', '${escapeForJsString(u['\u0074\u006F\u006B\u0065\u006E'])}')" 
+                            onclick="kickUser('${escapeForJsString(u.username)}', '${escapeForJsString(u.token)}')" 
                             style="padding:6px 12px;background:#d32f2f;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:0.85rem"
                             title="Kullanıcıyı sistemden at">
                             <i class="fas fa-sign-out-alt"></i> Çıkart
                         </button>
                     </td>
                 </tr>
-            `;})['\u006A\u006F\u0069\u006E']('');var _0x6440a=(848348^848351)+(143133^143133);const _0x59e=`
+            `;
+        }).join('');
+
+        const tableHtml = `
             <div style="max-height:500px;overflow:auto;border:1px solid rgba(0,0,0,.08);border-radius:12px">
                 <table style="width:100%;border-collapse:collapse">
                     <thead style="position:sticky;top:0;background:#f7f7f7;z-index:1">
@@ -650,19 +6263,142 @@ function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(
                         </tr>
                     </thead>
                     <tbody>
-                        ${_0xb4aba}
+                        ${rowsHtml}
                     </tbody>
                 </table>
             </div>
             <div style="margin-top:15px;padding:10px;background:#e3f2fd;border-radius:8px;font-size:0.9rem;color:#1976d2">
-                <i class="fas fa-info-circle"></i> Toplam <strong>${_0x97b['\u006C\u0065\u006E\u0067\u0074\u0068']}</strong> aktif kullanıcı
+                <i class="fas fa-info-circle"></i> Toplam <strong>${users.length}</strong> aktif kullanıcı
             </div>
-        `;_0x6440a='\u0062\u0068\u0069\u0063\u006E\u0070';Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\uD83D\uDC65\u0020\u0041\u006B\u0074\u0069\u0066\u0020\u004B\u0075\u006C\u006C\u0061\u006E\u0131\u0063\u0131\u006C\u0061\u0072",'\u0068\u0074\u006D\u006C':_0x59e,'\u0077\u0069\u0064\u0074\u0068':1000,'\u0073\u0068\u006F\u0077\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E':!![],"confirmButtonText":"\u004B\u0061\u0070\u0061\u0074"});}catch(e){Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061","\u0042\u0069\u0072\u0020\u0068\u0061\u0074\u0061\u0020\u006F\u006C\u0075\u015F\u0074\u0075\u003A\u0020"+e['\u006D\u0065\u0073\u0073\u0061\u0067\u0065'],"rorre".split("").reverse().join(""));}}async function kickUser(username,token){var _0xb58a=(834281^834285)+(600719^600715);const _0x3533e=await Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\u0045\u006D\u0069\u006E\u0020\u006D\u0069\u0073\u0069\u006E\u0069\u007A\u003F","html":`<strong>${username}</strong> kullanıcısını sistemden çıkartmak istediğinizden emin misiniz?`,"icon":"\u0077\u0061\u0072\u006E\u0069\u006E\u0067","showCancelButton":!![],"confirmButtonText":"\u0045\u0076\u0065\u0074\u002C\u0020\u00C7\u0131\u006B\u0061\u0072\u0074",'\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0056\u0061\u007A\u0067\u0065\u00E7",'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0043\u006F\u006C\u006F\u0072':"\u0023\u0064\u0033\u0032\u0066\u0032\u0066"});_0xb58a=536916^536912;if(!_0x3533e['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064'])return;try{Swal['\u0066\u0069\u0072\u0065']({"title":'İşleniyor...','\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>{Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']();}});const _0x52f7dd=await apiCall("\u006B\u0069\u0063\u006B\u0055\u0073\u0065\u0072",{"targetUsername":username,"targetToken":token});if(_0x52f7dd&&_0x52f7dd['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")){Swal['\u0066\u0069\u0072\u0065']({"icon":"\u0073\u0075\u0063\u0063\u0065\u0073\u0073",'\u0074\u0069\u0074\u006C\u0065':"\u0042\u0061\u015F\u0061\u0072\u0131\u006C\u0131","text":`${username} sistemden çıkartıldı.`,"timer":2000})['\u0074\u0068\u0065\u006E'](()=>{openActiveUsersPanel();});}else{Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061",_0x52f7dd['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']||"\u0131damal\u0131trak\u0131\xE7 \u0131c\u0131nalluK".split("").reverse().join(""),"rorre".split("").reverse().join(""));}}catch(e){Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061","\u0042\u0069\u0072\u0020\u0068\u0061\u0074\u0061\u0020\u006F\u006C\u0075\u015F\u0074\u0075\u003A\u0020"+e['\u006D\u0065\u0073\u0073\u0061\u0067\u0065'],"\u0065\u0072\u0072\u006F\u0072");}}let allRolePermissions=[];async function openMenuPermissions(){try{Swal['\u0066\u0069\u0072\u0065']({"title":"\u0059\u0065\u0074\u006B\u0069\u006C\u0065\u0072\u0020\u0059\u00FC\u006B\u006C\u0065\u006E\u0069\u0079\u006F\u0072\u002E\u002E\u002E",'\u0064\u0069\u0064\u004F\u0070\u0065\u006E':()=>{Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']();}});var _0x1f18ad=(781903^781899)+(525011^525013);const _0x5d298f=await apiCall("\u0067\u0065\u0074\u0052\u006F\u006C\u0065\u0050\u0065\u0072\u006D\u0069\u0073\u0073\u0069\u006F\u006E\u0073",{});_0x1f18ad=(782202^782205)+(919486^919478);if(!_0x5d298f||_0x5d298f['\u0072\u0065\u0073\u0075\u006C\u0074']!=="\u0073\u0075\u0063\u0063\u0065\u0073\u0073"){Swal['\u0066\u0069\u0072\u0065']("ataH".split("").reverse().join(""),"\u0059\u0065\u0074\u006B\u0069\u0020\u006C\u0069\u0073\u0074\u0065\u0073\u0069\u0020\u0061\u006C\u0131\u006E\u0061\u006D\u0061\u0064\u0131\u002E","\u0065\u0072\u0072\u006F\u0072");return;}allRolePermissions=_0x5d298f['\u0070\u0065\u0072\u006D\u0069\u0073\u0073\u0069\u006F\u006E\u0073']||[];var _0x42e21d=(396463^396458)+(976465^976473);const _0x72_0x765=_0x5d298f['\u0067\u0072\u006F\u0075\u0070\u0073']||["\u0061\u0064\u006D\u0069\u006E","\u0071\u0075\u0073\u0065\u0072\u0073","sresu".split("").reverse().join("")];_0x42e21d=(927314^927322)+(328775^328771);var _0x4c43a=(763227^763218)+(127818^127818);let _0xdbb=286809^286809;_0x4c43a=469499^469503;var _0xc78ag=(619636^619635)+(303958^303955);const _0x4353f=roleIndex=>{const _0xf7766g=_0x72_0x765[roleIndex];const _0x6e2a=allRolePermissions['\u0066\u0069\u006C\u0074\u0065\u0072'](p=>p['\u0072\u006F\u006C\u0065']===_0xf7766g);var _0xgc_0x5e1=(610560^610568)+(366535^366529);const _0xg7acca={"home":"Ana Sayfa","search":"\u0041\u0072\u0061\u006D\u0061\u0020\u00C7\u0075\u0062\u0075\u011F\u0075","news":"Duyurular",'\u0074\u0065\u0063\u0068':"\u0054\u0065\u006B\u006E\u0069\u006B\u0020\u0053\u0061\u0079\u0066\u0061\u0073\u0131",'\u0070\u0065\u0072\u0073\u0075\u0061\u0073\u0069\u006F\u006E':"\u0130\u006B\u006E\u0061\u0020\u0053\u0061\u0079\u0066\u0061\u0073\u0131",'\u0063\u0061\u006D\u0070\u0061\u0069\u0067\u006E':"\u004B\u0061\u006D\u0070\u0061\u006E\u0079\u0061\u0020\u0053\u0061\u0079\u0066\u0061\u0073\u0131",'\u0069\u006E\u0066\u006F':"\u0042\u0069\u006C\u0067\u0069\u0020\u0053\u0061\u0079\u0066\u0061\u0073\u0131","broadcast":"\u0059\u0061\u0079\u0131\u006E\u0020\u0041\u006B\u0131\u015F\u0131",'\u0067\u0075\u0069\u0064\u0065':"Spor Rehberi","return":"\u0130\u0061\u0064\u0065\u0020\u0041\u0073\u0069\u0073\u0074\u0061\u006E\u0131",'\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073':"\u0054\u0065\u006C\u0065\u0053\u0061\u0074\u0131\u015F",'\u0067\u0061\u006D\u0065':"Oyun Merkezi",'\u0071\u0075\u0061\u006C\u0069\u0074\u0079':"Kalite Paneli",'\u0073\u0068\u0069\u0066\u0074':"\u0056\u0061\u0072\u0064\u0069\u0079\u0061\u006D"};_0xgc_0x5e1=(173073^173075)+(236624^236624);let _0xbfcd;const _0xe5acf=[];_0xbfcd=(169645^169646)+(793611^793603);const _0x7b875a=new Set();document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u005B\u0064\u0061\u0074\u0061\u002D\u006D\u0065\u006E\u0075\u002D\u006B\u0065\u0079\u005D")['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](el=>{var _0x21b91f=(675835^675835)+(901067^901066);const _0xe80dg=el['\u0067\u0065\u0074\u0041\u0074\u0074\u0072\u0069\u0062\u0075\u0074\u0065']("yek-unem-atad".split("").reverse().join(""));_0x21b91f=(556177^556179)+(927692^927691);if(!_0x7b875a['\u0068\u0061\u0073'](_0xe80dg)){_0xe5acf['\u0070\u0075\u0073\u0068']({'\u006B\u0065\u0079':_0xe80dg,'\u006C\u0061\u0062\u0065\u006C':_0xg7acca[_0xe80dg]||el['\u0074\u0065\u0078\u0074\u0043\u006F\u006E\u0074\u0065\u006E\u0074']['\u0074\u0072\u0069\u006D']()['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("+s\\".split("").reverse().join(""),'\u0067'),"\u0020")||_0xe80dg,'\u0070\u0065\u0072\u006D\u0073':["\u0056\u0069\u0065\u0077"]});_0x7b875a['\u0061\u0064\u0064'](_0xe80dg);}});_0xe5acf['\u0073\u006F\u0072\u0074']((a,b)=>a['\u006C\u0061\u0062\u0065\u006C']['\u006C\u006F\u0063\u0061\u006C\u0065\u0043\u006F\u006D\u0070\u0061\u0072\u0065'](b['\u006C\u0061\u0062\u0065\u006C'],"\u0074\u0072"));const _0x76gcc=[{"cat":"Genel Yetkiler",'\u0069\u0074\u0065\u006D\u0073':[{'\u006B\u0065\u0079':"\u0045\u0064\u0069\u0074\u004D\u006F\u0064\u0065",'\u006C\u0061\u0062\u0065\u006C':"\u0044\u00FC\u007A\u0065\u006E\u006C\u0065\u006D\u0065\u0020\u004D\u006F\u0064\u0075\u006E\u0075\u0020\u0041\u00E7\u006D\u0061","perms":["etucexE".split("").reverse().join("")]},{'\u006B\u0065\u0079':"\u0041\u0064\u0064\u0043\u006F\u006E\u0074\u0065\u006E\u0074","label":"\u0059\u0065\u006E\u0069\u0020\u0130\u00E7\u0065\u0072\u0069\u006B\u0020\u0045\u006B\u006C\u0065\u006D\u0065",'\u0070\u0065\u0072\u006D\u0073':["etucexE".split("").reverse().join("")]},{'\u006B\u0065\u0079':"\u0049\u006D\u0061\u0067\u0065\u0055\u0070\u006C\u006F\u0061\u0064","label":"\u0047\u00F6\u0072\u0073\u0065\u006C\u0020\u0059\u00FC\u006B\u006C\u0065\u006D\u0065","perms":["etucexE".split("").reverse().join("")]},{"key":"\u0052\u0065\u0070\u006F\u0072\u0074\u0073","label":"\u0052\u0061\u0070\u006F\u0072\u0020\u00C7\u0065\u006B\u006D\u0065\u0020\u0028\u0044\u0131\u015F\u0061\u0020\u0041\u006B\u0074\u0061\u0072\u0029","perms":["\u0045\u0078\u0065\u0063\u0075\u0074\u0065"]},{'\u006B\u0065\u0079':"RbacAdmin",'\u006C\u0061\u0062\u0065\u006C':"\u0059\u0065\u0074\u006B\u0069\u0020\u0059\u00F6\u006E\u0065\u0074\u0069\u006D\u0069",'\u0070\u0065\u0072\u006D\u0073':["etucexE".split("").reverse().join("")]},{'\u006B\u0065\u0079':"ActiveUsers",'\u006C\u0061\u0062\u0065\u006C':"Aktif Kullanıcılar",'\u0070\u0065\u0072\u006D\u0073':["\u0045\u0078\u0065\u0063\u0075\u0074\u0065"]}]},{'\u0063\u0061\u0074':"Sayfa Erişimi",'\u0069\u0074\u0065\u006D\u0073':_0xe5acf},{'\u0063\u0061\u0074':"\u004B\u0061\u006C\u0069\u0074\u0065\u0020\u0059\u00F6\u006E\u0065\u0074\u0069\u006D\u0069",'\u0069\u0074\u0065\u006D\u0073':[{"key":"\u0045\u0076\u0061\u006C\u0075\u0061\u0074\u0069\u006F\u006E","label":"Değerlendirme Yapma","perms":["\u0045\u0078\u0065\u0063\u0075\u0074\u0065"]},{"key":"\u0046\u0065\u0065\u0064\u0062\u0061\u0063\u006B","label":"Geri Bildirim Ekleme","perms":["\u0045\u0078\u0065\u0063\u0075\u0074\u0065"]},{'\u006B\u0065\u0079':"Training","label":"\u0045\u011F\u0069\u0074\u0069\u006D\u0020\u0041\u0074\u0061\u006D\u0061","perms":["etucexE".split("").reverse().join("")]}]}];let _0x9b1ec=`
+        `;
+
+        Swal.fire({
+            title: "👥 Aktif Kullanıcılar",
+            html: tableHtml,
+            width: 1000,
+            showConfirmButton: true,
+            confirmButtonText: "Kapat"
+        });
+
+    } catch (e) {
+        Swal.fire("Hata", "Bir hata oluştu: " + e.message, "error");
+    }
+}
+
+async function kickUser(username, token) {
+    const result = await Swal.fire({
+        title: 'Emin misiniz?',
+        html: `<strong>${username}</strong> kullanıcısını sistemden çıkartmak istediğinizden emin misiniz?`,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Evet, Çıkart',
+        cancelButtonText: 'Vazgeç',
+        confirmButtonColor: '#d32f2f'
+    });
+
+    if (!result.isConfirmed) return;
+
+    try {
+        Swal.fire({ title: 'İşleniyor...', didOpen: () => { Swal.showLoading() } });
+
+        const res = await apiCall("kickUser", { targetUsername: username, targetToken: token });
+
+        if (res && res.result === "success") {
+            Swal.fire({
+                icon: 'success',
+                title: 'Başarılı',
+                text: `${username} sistemden çıkartıldı.`,
+                timer: 2000
+            }).then(() => {
+                // Paneli yenile
+                openActiveUsersPanel();
+            });
+        } else {
+            Swal.fire("Hata", res.message || "Kullanıcı çıkartılamadı", "error");
+        }
+    } catch (e) {
+        Swal.fire("Hata", "Bir hata oluştu: " + e.message, "error");
+    }
+}
+
+// ============================================================
+// --- GELİŞMİŞ YETKİ YÖNETİMİ (RBAC) (v14.2) ---
+// ============================================================
+
+let allRolePermissions = []; // Backend'den gelen tüm yetki listesi
+
+async function openMenuPermissions() {
+    try {
+        Swal.fire({ title: 'Yetkiler Yükleniyor...', didOpen: () => { Swal.showLoading() } });
+
+        const res = await apiCall("getRolePermissions", {});
+        if (!res || res.result !== "success") {
+            Swal.fire("Hata", "Yetki listesi alınamadı.", "error");
+            return;
+        }
+
+        allRolePermissions = res.permissions || [];
+
+        // ✅ Dinamik Roller: Backend'den (Users sayfasından) gelen grupları kullan
+        const roles = res.groups || ["admin", "qusers", "users"];
+        let activeTabIndex = 0;
+
+        const renderRbacContent = (roleIndex) => {
+            const role = roles[roleIndex];
+            const rolePerms = allRolePermissions.filter(p => p.role === role);
+
+            // ✅ Dinamik Sayfa Listesi (Arayüzdeki tüm data-menu-key öğelerini otomatik bulur)
+            const pageLabels = {
+                home: "Ana Sayfa", search: "Arama Çubuğu", news: "Duyurular", tech: "Teknik Sayfası",
+                persuasion: "İkna Sayfası", campaign: "Kampanya Sayfası", info: "Bilgi Sayfası",
+                broadcast: "Yayın Akışı", guide: "Spor Rehberi", return: "İade Asistanı",
+                telesales: "TeleSatış", game: "Oyun Merkezi", quality: "Kalite Paneli", shift: "Vardiyam"
+            };
+            const discoveredPages = [];
+            const processedKeys = new Set();
+            document.querySelectorAll('[data-menu-key]').forEach(el => {
+                const key = el.getAttribute('data-menu-key');
+                if (!processedKeys.has(key)) {
+                    discoveredPages.push({
+                        key: key,
+                        label: pageLabels[key] || (el.textContent.trim().replace(/\s+/g, ' ') || key),
+                        perms: ["View"]
+                    });
+                    processedKeys.add(key);
+                }
+            });
+            // Alfabetik sırala
+            discoveredPages.sort((a, b) => a.label.localeCompare(b.label, 'tr'));
+
+            const resources = [
+                {
+                    cat: "Genel Yetkiler", items: [
+                        { key: "EditMode", label: "Düzenleme Modunu Açma", perms: ["Execute"] },
+                        { key: "AddContent", label: "Yeni İçerik Ekleme", perms: ["Execute"] },
+                        { key: "ImageUpload", label: "Görsel Yükleme", perms: ["Execute"] },
+                        { key: "Reports", label: "Rapor Çekme (Dışa Aktar)", perms: ["Execute"] },
+                        { key: "RbacAdmin", label: "Yetki Yönetimi", perms: ["Execute"] },
+                        { key: "ActiveUsers", label: "Aktif Kullanıcılar", perms: ["Execute"] }
+                    ]
+                },
+                {
+                    cat: "Sayfa Erişimi", items: discoveredPages
+                },
+                {
+                    cat: "Kalite Yönetimi", items: [
+                        { key: "Evaluation", label: "Değerlendirme Yapma", perms: ["Execute"] },
+                        { key: "Feedback", label: "Geri Bildirim Ekleme", perms: ["Execute"] },
+                        { key: "Training", label: "Eğitim Atama", perms: ["Execute"] }
+                    ]
+                }
+            ];
+
+            let html = `
                 <div class="rbac-container">
                     <div class="rbac-header">
                         <div style="font-weight:700;color:var(--primary)">
                             <i class="fas fa-user-shield"></i> 
-                            <span style="text-transform:capitalize">${_0xf7766g}</span> Rolü Yetki Tanımları
+                            <span style="text-transform:capitalize">${role}</span> Rolü Yetki Tanımları
                         </div>
                         <div class="rbac-info-box">
                             <i class="fas fa-info-circle"></i> LocAdmin her zaman tam yetkilidir.
@@ -670,11 +6406,11 @@ function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(
                     </div>
 
                     <div class="rbac-role-selector">
-                        ${_0x72_0x765['\u006D\u0061\u0070']((r,i)=>`
-                            <button class="rbac-role-btn ${i===roleIndex?"evitca".split("").reverse().join(""):''}" onclick="window.switchRbacRole(${i})">
-                                ${r['\u0074\u006F\u0055\u0070\u0070\u0065\u0072\u0043\u0061\u0073\u0065']()}
+                        ${roles.map((r, i) => `
+                            <button class="rbac-role-btn ${i === roleIndex ? 'active' : ''}" onclick="window.switchRbacRole(${i})">
+                                ${r.toUpperCase()}
                             </button>
-                        `)['\u006A\u006F\u0069\u006E']('')}
+                        `).join('')}
                     </div>
 
                     <div class="rbac-table-wrapper">
@@ -686,23 +6422,232 @@ function formatWeekLabel(raw){try{if(!raw)return'';let _0xc2170b;const s=String(
                                 </tr>
                             </thead>
                             <tbody>
-                                ${_0x76gcc['\u006D\u0061\u0070'](cat=>`
-                                    <tr class="rbac-category-row"><td colspan="2">${cat['\u0063\u0061\u0074']}</td></tr>
-                                    ${cat['\u0069\u0074\u0065\u006D\u0073']['\u006D\u0061\u0070'](item=>{const _0x5ec=_0x6e2a['\u0073\u006F\u006D\u0065'](p=>p['\u0072\u0065\u0073\u006F\u0075\u0072\u0063\u0065']===item['\u006B\u0065\u0079']&&p['\u0076\u0061\u006C\u0075\u0065']===!![]);var _0x569a=(641606^641606)+(791537^791543);const _0x25b=_0xf7766g['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u0027','\u0067'),"\u005C\u0027");_0x569a="ongdjj".split("").reverse().join("");return`
+                                ${resources.map(cat => `
+                                    <tr class="rbac-category-row"><td colspan="2">${cat.cat}</td></tr>
+                                    ${cat.items.map(item => {
+                const isEnabled = rolePerms.some(p => p.resource === item.key && p.value === true);
+                // HTML içinde çift tırnak çakışmasını önlemek için rol ismini güvenli hale getir
+                const safeRole = role.replace(/'/g, "\\'");
+                return `
                                             <tr>
-                                                <td class="rbac-resource-name">${item['\u006C\u0061\u0062\u0065\u006C']}</td>
+                                                <td class="rbac-resource-name">${item.label}</td>
                                                 <td style="text-align:center">
                                                     <label class="rbac-switch">
-                                                        <input type="checkbox" id="perm_${roleIndex}_${item['\u006B\u0065\u0079']}" ${_0x5ec?"dekcehc".split("").reverse().join(""):''} 
-                                                            onchange="window.toggleRbacPerm('${_0x25b}', '${item['\u006B\u0065\u0079']}', this.checked)">
+                                                        <input type="checkbox" id="perm_${roleIndex}_${item.key}" ${isEnabled ? 'checked' : ''} 
+                                                            onchange="window.toggleRbacPerm('${safeRole}', '${item.key}', this.checked)">
                                                         <span class="rbac-slider"></span>
                                                     </label>
                                                 </td>
                                             </tr>
-                                        `;})['\u006A\u006F\u0069\u006E']('')}
-                                `)['\u006A\u006F\u0069\u006E']('')}
+                                        `;
+            }).join('')}
+                                `).join('')}
                             </tbody>
                         </table>
                     </div>
                 </div>
-            `;return _0x9b1ec;};_0xc78ag=(965340^965340)+(898757^898752);window['\u0073\u0077\u0069\u0074\u0063\u0068\u0052\u0062\u0061\u0063\u0052\u006F\u006C\u0065']=idx=>{_0xdbb=idx;Swal['\u0075\u0070\u0064\u0061\u0074\u0065']({"html":_0x4353f(idx)});};window['\u0074\u006F\u0067\u0067\u006C\u0065\u0052\u0062\u0061\u0063\u0050\u0065\u0072\u006D']=(role,resource,val)=>{var _0xc89c8e=(411839^411838)+(492296^492289);const _0xfag=allRolePermissions['\u0066\u0069\u006E\u0064\u0049\u006E\u0064\u0065\u0078'](p=>p['\u0072\u006F\u006C\u0065']===role&&p['\u0072\u0065\u0073\u006F\u0075\u0072\u0063\u0065']===resource);_0xc89c8e=(916005^916013)+(506234^506237);if(_0xfag>-(673788^673789)){allRolePermissions[_0xfag]['\u0076\u0061\u006C\u0075\u0065']=val;}else{allRolePermissions['\u0070\u0075\u0073\u0068']({'\u0072\u006F\u006C\u0065':role,'\u0072\u0065\u0073\u006F\u0075\u0072\u0063\u0065':resource,'\u0070\u0065\u0072\u006D\u0069\u0073\u0073\u0069\u006F\u006E':"All",'\u0076\u0061\u006C\u0075\u0065':val});}};Swal['\u0066\u0069\u0072\u0065']({'\u0074\u0069\u0074\u006C\u0065':"\uD83D\uDEE1\uFE0F\u0020\u0047\u0065\u006C\u0069\u015F\u006D\u0069\u015F\u0020\u0059\u0065\u0074\u006B\u0069\u0020\u0059\u00F6\u006E\u0065\u0074\u0069\u006D\u0069","html":_0x4353f(595849^595849),'\u0077\u0069\u0064\u0074\u0068':800,'\u0073\u0068\u006F\u0077\u0043\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E':!![],'\u0063\u0061\u006E\u0063\u0065\u006C\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"\u0056\u0061\u007A\u0067\u0065\u00E7",'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0054\u0065\u0078\u0074':"Değişiklikleri Kaydet",'\u0063\u006F\u006E\u0066\u0069\u0072\u006D\u0042\u0075\u0074\u0074\u006F\u006E\u0043\u006F\u006C\u006F\u0072':"\u0076\u0061\u0072\u0028\u002D\u002D\u0073\u0075\u0063\u0063\u0065\u0073\u0073\u0029","preConfirm":async()=>{const _0x73_0xg47=[];_0x72_0x765['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](r=>{const _0xcf_0x65f=allRolePermissions['\u0066\u0069\u006C\u0074\u0065\u0072'](p=>p['\u0072\u006F\u006C\u0065']===r)['\u006D\u0061\u0070'](p=>({"resource":p['\u0072\u0065\u0073\u006F\u0075\u0072\u0063\u0065'],'\u0070\u0065\u0072\u006D\u0069\u0073\u0073\u0069\u006F\u006E':p['\u0070\u0065\u0072\u006D\u0069\u0073\u0073\u0069\u006F\u006E']||"\u0041\u006C\u006C",'\u0076\u0061\u006C\u0075\u0065':p['\u0076\u0061\u006C\u0075\u0065']}));_0x73_0xg47['\u0070\u0075\u0073\u0068']({"role":r,'\u0070\u0065\u0072\u006D\u0073':_0xcf_0x65f});});try{Swal['\u0073\u0068\u006F\u0077\u004C\u006F\u0061\u0064\u0069\u006E\u0067']();for(const _0xd98da of _0x73_0xg47){await apiCall("snoissimrePeloRtes".split("").reverse().join(""),_0xd98da);}return!![];}catch(e){Swal['\u0073\u0068\u006F\u0077\u0056\u0061\u006C\u0069\u0064\u0061\u0074\u0069\u006F\u006E\u004D\u0065\u0073\u0073\u0061\u0067\u0065'](`Kayıt hatası: ${e['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']}`);}}})['\u0074\u0068\u0065\u006E'](result=>{if(result['\u0069\u0073\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0065\u0064']){Swal['\u0066\u0069\u0072\u0065']("\u0131l\u0131ra\u015FaB".split("").reverse().join(""),".rilibekereg irelemeliney \u0131yafyas ni\xE7i isemnelikte n\u0131ral\u0131c\u0131nalluK .idnellecn\xFCg reliktey m\xFCT".split("").reverse().join(""),"\u0073\u0075\u0063\u0063\u0065\u0073\u0073");}});}catch(e){Swal['\u0066\u0069\u0072\u0065']("\u0048\u0061\u0074\u0061","\u0042\u0069\u0072\u0020\u0068\u0061\u0074\u0061\u0020\u006F\u006C\u0075\u015F\u0074\u0075\u003A\u0020"+e['\u006D\u0065\u0073\u0073\u0061\u0067\u0065'],"\u0065\u0072\u0072\u006F\u0072");}}function hasPerm(resource,permission="\u0041\u006C\u006C"){const _0x2dg33a=(getMyRole()||"")['\u0074\u0072\u0069\u006D']()['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();var _0x0b0f=(179864^179870)+(157751^157751);const _0x9469c=(localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0073\u0053\u0070\u006F\u0072\u0074\u0047\u0072\u006F\u0075\u0070")||"")['\u0074\u0072\u0069\u006D']()['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();_0x0b0f=287920^287926;function _0xfb78c(str){return String(str||"")['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u0069\u0307','\u0067'),"\u0069")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u0131','\u0067'),"\u0069")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u015F','\u0067'),"\u0073")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u011F','\u0067'),"\u0067")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u00FC','\u0067'),"\u0075")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u00F6','\u0067'),"\u006F")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u00E7','\u0067'),"\u0063")['\u0074\u0072\u0069\u006D']();}const _0xc10=_0xfb78c(_0x2dg33a);const _0x1fa2ag=_0xfb78c(_0x9469c);if(_0xc10==="\u006C\u006F\u0063\u0061\u0064\u006D\u0069\u006E"||_0x1fa2ag==="\u006C\u006F\u0063\u0061\u0064\u006D\u0069\u006E")return!![];if(_0x1fa2ag&&_0x1fa2ag!==""&&_0x1fa2ag!=="\u0061\u006C\u006C"){var _0x23e78a=(617773^617773)+(251118^251110);const _0x59ea6d=allRolePermissions['\u0066\u0069\u006E\u0064'](p=>_0xfb78c(p['\u0072\u006F\u006C\u0065'])===_0x1fa2ag&&(p['\u0072\u0065\u0073\u006F\u0075\u0072\u0063\u0065']===resource||p['\u0072\u0065\u0073\u006F\u0075\u0072\u0063\u0065']==="llA".split("").reverse().join(""))&&(p['\u0070\u0065\u0072\u006D\u0069\u0073\u0073\u0069\u006F\u006E']===permission||p['\u0070\u0065\u0072\u006D\u0069\u0073\u0073\u0069\u006F\u006E']==="\u0041\u006C\u006C"));_0x23e78a=(958372^958372)+(480127^480124);if(_0x59ea6d)return _0x59ea6d['\u0076\u0061\u006C\u0075\u0065'];}var _0xdb_0x421=(766569^766575)+(912643^912645);const _0x6fege=allRolePermissions['\u0066\u0069\u006E\u0064'](p=>_0xfb78c(p['\u0072\u006F\u006C\u0065'])===_0xc10&&(p['\u0072\u0065\u0073\u006F\u0075\u0072\u0063\u0065']===resource||p['\u0072\u0065\u0073\u006F\u0075\u0072\u0063\u0065']==="llA".split("").reverse().join(""))&&(p['\u0070\u0065\u0072\u006D\u0069\u0073\u0073\u0069\u006F\u006E']===permission||p['\u0070\u0065\u0072\u006D\u0069\u0073\u0073\u0069\u006F\u006E']==="llA".split("").reverse().join("")));_0xdb_0x421=(873931^873935)+(738178^738178);return _0x6fege?_0x6fege['\u0076\u0061\u006C\u0075\u0065']:false;}async function loadPermissionsOnStartup(){if(!currentUser)return;const _0xb3b8g=await apiCall("snoissimrePeloRteg".split("").reverse().join(""),{});if(_0xb3b8g&&_0xb3b8g['\u0072\u0065\u0073\u0075\u006C\u0074']==="sseccus".split("").reverse().join("")){allRolePermissions=_0xb3b8g['\u0070\u0065\u0072\u006D\u0069\u0073\u0073\u0069\u006F\u006E\u0073']||[];applyPermissionsToUI();if(!hasPerm("\u0068\u006F\u006D\u0065","\u0056\u0069\u0065\u0077")){const _0xc9c7ee=[{'\u006B\u0065\u0079':"\u0071\u0075\u0061\u006C\u0069\u0074\u0079",'\u0061\u0063\u0074\u0069\u006F\u006E':openQualityArea},{'\u006B\u0065\u0079':"\u0074\u0065\u0063\u0068",'\u0061\u0063\u0074\u0069\u006F\u006E':()=>openTechArea("draziw".split("").reverse().join(""))},{'\u006B\u0065\u0079':"\u0073\u0068\u0069\u0066\u0074",'\u0061\u0063\u0074\u0069\u006F\u006E':()=>filterCategory(null,"\u0073\u0068\u0069\u0066\u0074")},{"key":"news","action":openNews},{"key":"broadcast",'\u0061\u0063\u0074\u0069\u006F\u006E':openBroadcastFlow},{"key":"\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073",'\u0061\u0063\u0074\u0069\u006F\u006E':()=>filterCategory(null,"\u015F\u0131taseleT".split("").reverse().join(""))},{"key":"\u0070\u0065\u0072\u0073\u0075\u0061\u0073\u0069\u006F\u006E","action":()=>filterCategory(null,"ank\u0130".split("").reverse().join(""))},{'\u006B\u0065\u0079':"\u0063\u0061\u006D\u0070\u0061\u0069\u0067\u006E","action":()=>filterCategory(null,"\u004B\u0061\u006D\u0070\u0061\u006E\u0079\u0061")},{'\u006B\u0065\u0079':"\u0069\u006E\u0066\u006F",'\u0061\u0063\u0074\u0069\u006F\u006E':()=>filterCategory(null,"\u0042\u0069\u006C\u0067\u0069")}];for(const _0x2b3 of _0xc9c7ee){if(hasPerm(_0x2b3['\u006B\u0065\u0079'],"\u0056\u0069\u0065\u0077")){_0x2b3['\u0061\u0063\u0074\u0069\u006F\u006E']();console['\u006C\u006F\u0067'](`[Auth] Ana sayfa yetkisi yok, ${_0x2b3['\u006B\u0065\u0079']} sayfasına yönlendirildi.`);break;}}}}}function applyPermissionsToUI(_0x48128b){const _0x3429f=getMyRole();if(_0x3429f==="\u006C\u006F\u0063\u0061\u0064\u006D\u0069\u006E")return;const _0x244d=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("tidEkciuQnwodpord".split("").reverse().join(""));if(_0x244d&&!hasPerm("\u0045\u0064\u0069\u0074\u004D\u006F\u0064\u0065"))_0x244d['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";const _0x6c6f3a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0064\u0072\u006F\u0070\u0064\u006F\u0077\u006E\u0041\u0064\u0064\u0043\u0061\u0072\u0064");if(_0x6c6f3a&&!hasPerm("tnetnoCddA".split("").reverse().join("")))_0x6c6f3a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";const _0x9e86e=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0064\u0072\u006F\u0070\u0064\u006F\u0077\u006E\u0049\u006D\u0061\u0067\u0065");if(_0x9e86e&&!hasPerm("daolpUegamI".split("").reverse().join("")))_0x9e86e['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="enon".split("").reverse().join("");const _0x8d012b=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u002E\u0061\u0064\u006D\u0069\u006E\u002D\u0062\u0074\u006E");_0x8d012b['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](btn=>{if(!hasPerm("\u0052\u0065\u0070\u006F\u0072\u0074\u0073"))btn['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";});const _0xf5_0x117=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("\u0064\u0072\u006F\u0070\u0064\u006F\u0077\u006E\u0050\u0065\u0072\u006D\u0073");_0x48128b='\u0067\u0069\u0065\u006D\u006E\u0064';if(_0xf5_0x117&&!hasPerm("\u0052\u0062\u0061\u0063\u0041\u0064\u006D\u0069\u006E"))_0xf5_0x117['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";var _0xb645d=(772527^772518)+(517786^517788);const _0xca21a=document['\u0067\u0065\u0074\u0045\u006C\u0065\u006D\u0065\u006E\u0074\u0042\u0079\u0049\u0064']("sresUevitcAnwodpord".split("").reverse().join(""));_0xb645d=(806614^806608)+(328826^328819);if(_0xca21a&&!hasPerm("sresUevitcA".split("").reverse().join("")))_0xca21a['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";var _0xe0c5d=(751593^751598)+(300852^300848);const _0xda67f={"\u0068\u006F\u006D\u0065":"\u0068\u006F\u006D\u0065","\u0073\u0065\u0061\u0072\u0063\u0068":"\u0073\u0065\u0061\u0072\u0063\u0068","\u0074\u0065\u0063\u0068":"tech","\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073":"\u0074\u0065\u006C\u0065\u0073\u0061\u006C\u0065\u0073","\u0070\u0065\u0072\u0073\u0075\u0061\u0073\u0069\u006F\u006E":"persuasion","\u0063\u0061\u006D\u0070\u0061\u0069\u0067\u006E":"\u0063\u0061\u006D\u0070\u0061\u0069\u0067\u006E","\u0069\u006E\u0066\u006F":"\u0069\u006E\u0066\u006F","\u006E\u0065\u0077\u0073":"\u006E\u0065\u0077\u0073","\u0071\u0075\u0061\u006C\u0069\u0074\u0079":"\u0071\u0075\u0061\u006C\u0069\u0074\u0079","\u0073\u0068\u0069\u0066\u0074":"\u0073\u0068\u0069\u0066\u0074","\u0062\u0072\u006F\u0061\u0064\u0063\u0061\u0073\u0074":"broadcast","\u0067\u0075\u0069\u0064\u0065":"guide","return":"\u0072\u0065\u0074\u0075\u0072\u006E","game":"\u0067\u0061\u006D\u0065"};_0xe0c5d='\u0062\u0071\u006E\u006C\u006E\u006F';Object['\u006B\u0065\u0079\u0073'](_0xda67f)['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](key=>{const _0xa56d9d=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C'](`[data-menu-key="${key}"]`);_0xa56d9d['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](el=>{if(!hasPerm(_0xda67f[key],"\u0056\u0069\u0065\u0077")){el['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";}else{el['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']='';}});var _0x83cgab=(215837^215828)+(489499^489496);const _0xcc7g3a=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C'](`[data-shortcut-key="${key}"]`);_0x83cgab=(148710^148710)+(440422^440416);_0xcc7g3a['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](sc=>{if(!hasPerm(_0xda67f[key],"\u0056\u0069\u0065\u0077")){sc['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']="\u006E\u006F\u006E\u0065";}else{sc['\u0073\u0074\u0079\u006C\u0065']['\u0064\u0069\u0073\u0070\u006C\u0061\u0079']='';}});});try{if(currentCategory==="\u0068\u006F\u006D\u0065")renderHomePanels();}catch(e){}}
+            `;
+            return html;
+        };
+
+        // Modal içinden çağrılacak global fonksiyonlar
+        window.switchRbacRole = (idx) => {
+            activeTabIndex = idx;
+            Swal.update({ html: renderRbacContent(idx) });
+        };
+
+        window.toggleRbacPerm = (role, resource, val) => {
+            const idx = allRolePermissions.findIndex(p => p.role === role && p.resource === resource);
+            if (idx > -1) {
+                allRolePermissions[idx].value = val;
+            } else {
+                allRolePermissions.push({ role, resource, permission: "All", value: val });
+            }
+        };
+
+        Swal.fire({
+            title: "🛡️ Gelişmiş Yetki Yönetimi",
+            html: renderRbacContent(0),
+            width: 800,
+            showCancelButton: true,
+            cancelButtonText: "Vazgeç",
+            confirmButtonText: "Değişiklikleri Kaydet",
+            confirmButtonColor: "var(--success)",
+            preConfirm: async () => {
+                const results = [];
+                roles.forEach(r => {
+                    const rPerms = allRolePermissions.filter(p => p.role === r).map(p => ({
+                        resource: p.resource,
+                        permission: p.permission || "All",
+                        value: p.value
+                    }));
+                    results.push({ role: r, perms: rPerms });
+                });
+
+                try {
+                    Swal.showLoading();
+                    for (const resObj of results) {
+                        await apiCall("setRolePermissions", resObj);
+                    }
+                    return true;
+                } catch (e) {
+                    Swal.showValidationMessage(`Kayıt hatası: ${e.message}`);
+                }
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire("Başarılı", "Tüm yetkiler güncellendi. Kullanıcıların etkilenmesi için sayfayı yenilemeleri gerekebilir.", "success");
+            }
+        });
+
+    } catch (e) {
+        Swal.fire("Hata", "Bir hata oluştu: " + e.message, "error");
+    }
+}
+
+function hasPerm(resource, permission = "All") {
+    const rawRole = (getMyRole() || "").trim().toLowerCase();
+    const rawGroup = (localStorage.getItem("sSportGroup") || "").trim().toLowerCase();
+
+    // Güçlü Normalizasyon (Türkçe karakter ve i̇ karmaşasını bitirir)
+    function clean(str) {
+        return String(str || "").toLowerCase()
+            .replace(/i̇/g, 'i').replace(/ı/g, 'i').replace(/ş/g, 's')
+            .replace(/ğ/g, 'g').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ç/g, 'c').trim();
+    }
+
+    const cRole = clean(rawRole);
+    const cGroup = clean(rawGroup);
+
+    // 1. KULLANICI TALEBİ: LocAdmin (Rol veya Grup) sınırsız yetkilidir.
+    if (cRole === "locadmin" || cGroup === "locadmin") return true;
+
+    // 2. ÖNCELİK: GRUP (TAKIM) YETKİSİ
+    // Eğer bir grubu varsa (ob, chat, telesatış vb.), yetkiyi oradan al.
+    if (cGroup && cGroup !== "" && cGroup !== "all") {
+        const groupPerm = allRolePermissions.find(p =>
+            clean(p.role) === cGroup &&
+            (p.resource === resource || p.resource === "All") &&
+            (p.permission === permission || p.permission === "All")
+        );
+        // Eğer grupta bir kayıt varsa (True veya False), direkt onu kullan.
+        if (groupPerm) return groupPerm.value;
+    }
+
+    // 3. FALLBACK: ROL YETKİSİ
+    // (Sadece grupta hiç tanım yoksa veya kullanıcı grupta değilse buraya düşer)
+    const rolePerm = allRolePermissions.find(p =>
+        clean(p.role) === cRole &&
+        (p.resource === resource || p.resource === "All") &&
+        (p.permission === permission || p.permission === "All")
+    );
+
+    return rolePerm ? rolePerm.value : false;
+}
+
+// Login sonrası yetkileri arka planda yükle
+async function loadPermissionsOnStartup() {
+    if (!currentUser) return;
+    const res = await apiCall("getRolePermissions", {});
+    if (res && res.result === "success") {
+        allRolePermissions = res.permissions || [];
+        applyPermissionsToUI();
+
+        // ✅ Akıllı Yönlendirme: Eğer Ana Sayfa (Home) yetkisi kapalıysa, yetkisi olan ilk sayfaya yönlendir.
+        if (!hasPerm("home", "View")) {
+            // Kontrol edilecek öncelikli sayfalar
+            const landingPages = [
+                { key: "quality", action: openQualityArea },
+                { key: "tech", action: () => openTechArea('wizard') },
+                { key: "shift", action: () => filterCategory(null, "shift") },
+                { key: "news", action: openNews },
+                { key: "broadcast", action: openBroadcastFlow },
+                { key: "telesales", action: () => filterCategory(null, "Telesatış") },
+                { key: "persuasion", action: () => filterCategory(null, "İkna") },
+                { key: "campaign", action: () => filterCategory(null, "Kampanya") },
+                { key: "info", action: () => filterCategory(null, "Bilgi") }
+            ];
+
+            for (const page of landingPages) {
+                if (hasPerm(page.key, "View")) {
+                    page.action();
+                    console.log(`[Auth] Ana sayfa yetkisi yok, ${page.key} sayfasına yönlendirildi.`);
+                    break;
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Kaydedilen yetkilere göre arayüzdeki butonları gizle/göster
+ */
+function applyPermissionsToUI() {
+    const role = getMyRole();
+    // Sadece LocAdmin için yetki kısıtlaması yok (tam yetki)
+    // Admin kullanıcılar RBAC panelinden verilen yetkilere tabidir
+    if (role === "locadmin") return;
+
+    const editBtn = document.getElementById('dropdownQuickEdit');
+    if (editBtn && !hasPerm("EditMode")) editBtn.style.display = 'none';
+
+    const addCardBtn = document.getElementById('dropdownAddCard');
+    if (addCardBtn && !hasPerm("AddContent")) addCardBtn.style.display = 'none';
+
+    const imageBtn = document.getElementById('dropdownImage');
+    if (imageBtn && !hasPerm("ImageUpload")) imageBtn.style.display = 'none';
+
+    const reportBtns = document.querySelectorAll('.admin-btn');
+    reportBtns.forEach(btn => {
+        if (!hasPerm("Reports")) btn.style.display = 'none';
+    });
+
+    const permsBtn = document.getElementById('dropdownPerms');
+    if (permsBtn && !hasPerm("RbacAdmin")) permsBtn.style.display = 'none';
+
+    const activeUsersBtn = document.getElementById('dropdownActiveUsers');
+    if (activeUsersBtn && !hasPerm("ActiveUsers")) activeUsersBtn.style.display = 'none';
+
+    const menuMap = {
+        "home": "home",
+        "search": "search",
+        "tech": "tech",
+        "telesales": "telesales",
+        "persuasion": "persuasion",
+        "campaign": "campaign",
+        "info": "info",
+        "news": "news",
+        "quality": "quality",
+        "shift": "shift",
+        "broadcast": "broadcast",
+        "guide": "guide",
+        "return": "return",
+        "game": "game"
+    };
+
+    Object.keys(menuMap).forEach(key => {
+        const elements = document.querySelectorAll(`[data-menu-key="${key}"]`);
+        elements.forEach(el => {
+            if (!hasPerm(menuMap[key], "View")) {
+                el.style.display = 'none';
+            } else {
+                el.style.display = '';
+            }
+        });
+
+        // Hızlı kısayollar (ana sayfa chips) - data-shortcut-key ile de eşleşebilirler
+        const shortcuts = document.querySelectorAll(`[data-shortcut-key="${key}"]`);
+        shortcuts.forEach(sc => {
+            if (!hasPerm(menuMap[key], "View")) {
+                sc.style.display = 'none';
+            } else {
+                sc.style.display = '';
+            }
+        });
+    });
+
+    // Ana sayfa düzenleme butonlarını da yetkiye göre tazele
+    try {
+        if (currentCategory === 'home') renderHomePanels();
+    } catch (e) { }
+}
