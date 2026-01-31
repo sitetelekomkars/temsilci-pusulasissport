@@ -510,13 +510,14 @@
                   <option value="all">Tüm Temsilciler</option>
                 </select>
               </div>
-              <div class="q-filter-item">
-                <i class="fas fa-calendar-days"></i>
-                <div class="q-period-selector">
-                  <span>Dönem:</span>
-                  <select id="q-eval-month" onchange="fetchEvaluationsForAgent()"></select>
-                </div>
-              </div>
+            </div>
+          </div>
+          <!-- Month filter moved outside for global access -->
+          <div class="q-filter-item" style="margin-left: 10px;">
+            <i class="fas fa-calendar-days"></i>
+            <div class="q-period-selector">
+              <span>Dönem:</span>
+              <select id="q-eval-month" onchange="fetchEvaluationsForAgent()"></select>
             </div>
           </div>
         </div>
