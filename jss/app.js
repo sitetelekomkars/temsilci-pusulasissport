@@ -1569,7 +1569,8 @@ async function sendHeartbeat() {
             return;
         }
 
-        // 2. Token Kontrolü (Single Session Enforcement)
+        // 2. Token Kontrolü (Single Session Enforcement) - DEVRE DIŞI BIRAKILDI (İSTEK ÜZERİNE)
+        /*
         const localToken = localStorage.getItem("sSportToken");
         const { data: tokenData } = await sb.from('Tokens')
             .select('Token')
@@ -1583,6 +1584,7 @@ async function sendHeartbeat() {
                 allowOutsideClick: false, confirmButtonText: 'Tamam'
             }).then(() => { logout(); });
         }
+        */
 
     } catch (e) { console.warn("Heartbeat failed", e); }
 }
