@@ -393,38 +393,32 @@ async function apiCall(action, params = {}) {
                 return { result: "success" };
             }
             case "saveUser": {
-                const { id, username, fullName, role, group, password } = params;
-                const payload = {
-                    Username: username,
-                    FullName: fullName,
-                    Name: fullName,
-                    "Tam İsim": fullName,
-                    "İsim": fullName,
-                    Role: role,
-                    Group: group
-                };
-                if (password) {
-                    const hashed = CryptoJS.SHA256(password).toString();
-                    payload.Password = hashed;
-                    payload.ForceChange = '1';
+                // Admin: Kullanıcı Düzenleme (Sadece Profil)
+                // Yeni kullanıcı oluşturma artık Supabase Auth üzerinden yapılmalı.
+                const { id, username, fullName, role, group } = params;
+
+                if (!id) {
+                    return { result: "error", message: "Yeni kullanıcılar Supabase Dashboard üzerinden eklenmelidir." };
                 }
 
-                let res;
-                if (id) {
-                    res = await sb.from('Users').update(payload).eq('id', id);
-                    if (res.error) throw res.error;
-                    saveLog("Kullanıcı Güncelleme", `${username} (ID: ${id})`);
-                } else {
-                    res = await sb.from('Users').insert([payload]);
-                    if (res.error) throw res.error;
-                    saveLog("Yeni Kullanıcı Ekleme", `${username}`);
-                }
+                const payload = {
+                    username: username,
+                    full_name: fullName,
+                    role: role,
+                    group: group
+                };
+
+                const { error } = await sb.from('profiles').update(payload).eq('id', id);
+                if (error) throw error;
+
+                saveLog("Kullanıcı Profil Güncelleme", `${username} (ID: ${id})`);
                 return { result: "success" };
             }
             case "deleteUser": {
-                const { error } = await sb.from('Users').delete().eq('id', params.id);
+                // Profili sil (Auth kullanıcısı Dashboard'dan silinmeli/engellenmeli)
+                const { error } = await sb.from('profiles').delete().eq('id', params.id);
                 if (error) throw error;
-                saveLog("Kullanıcı Silme", `ID: ${params.id}`);
+                saveLog("Kullanıcı Profil Silme", `ID: ${params.id}`);
                 return { result: "success" };
             }
             case "exportEvaluations": {
@@ -663,9 +657,16 @@ async function apiCall(action, params = {}) {
                 return { result: "success" };
             }
             case "getUserList": {
-                const { data, error } = await sb.from('Users').select('*');
+                const { data, error } = await sb.from('profiles').select('*');
                 if (error) return { result: "success", users: [] };
-                const users = (data || []).map(normalizeKeys).filter(u => u.name || u.username);
+                // Normalize keys for UI
+                const users = (data || []).map(u => ({
+                    id: u.id,
+                    username: u.username || u.email,
+                    name: u.full_name || u.username,
+                    role: u.role,
+                    group: u.group
+                }));
                 return { result: "success", users: users };
             }
             case "getCriteria": {
@@ -832,13 +833,12 @@ async function apiCall(action, params = {}) {
                 return { result: error ? "error" : "success" };
             }
             case "getActiveUsers": {
-                // Feature: Real-time Users (Heartbeat tabanlı)
-                // Son 24 saat içinde sinyal vermiş kullanıcıları getir (Offline görünümü için)
+                // Real-time Users (Heartbeat tabanlı - profiles tablosundan)
                 const heartbeatThreshold = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
 
                 const { data: activeUsers, error: uErr } = await sb
-                    .from('Users')
-                    .select('Username, Role, Group, last_seen')
+                    .from('profiles')
+                    .select('username, role, group, last_seen, id')
                     .gt('last_seen', heartbeatThreshold)
                     .order('last_seen', { ascending: false });
 
@@ -848,9 +848,9 @@ async function apiCall(action, params = {}) {
                 }
 
                 const users = (activeUsers || []).map(u => ({
-                    username: u.Username,
-                    role: u.Role,
-                    group: u.Group,
+                    username: u.username,
+                    role: u.role,
+                    group: u.group,
                     last_seen: u.last_seen
                 }));
                 return { result: "success", users: users };
@@ -975,6 +975,7 @@ let __dataLoadedResolve;
 window.__dataLoadedPromise = new Promise(r => { __dataLoadedResolve = r; });
 let techWizardData = {}; // Teknik Sihirbaz Verisi
 let currentUser = "";
+let currentUserId = ""; // Supabase Auth ID
 let globalUserIP = "";
 let isAdminMode = false;
 let isLocAdmin = false;
@@ -1290,32 +1291,46 @@ async function checkSession() {
     const { data: { session }, error } = await sb.auth.getSession();
 
     if (!session || error) {
-        // Oturum yoksa veya hata varsa temizle
         console.log("[Pusula] Oturum bulunamadı, giriş ekranına yönlendiriliyor.");
-        // Temizlik
-        localStorage.removeItem("sSportUser");
-        localStorage.removeItem("sSportToken");
-        localStorage.removeItem("sSportRole");
-        localStorage.removeItem("sSportGroup");
-
-        document.getElementById("login-screen").style.display = "flex";
-        document.getElementById("main-app").style.display = "none";
+        logout();
         return;
     }
 
     // Oturum geçerli
     const user = session.user;
+    currentUserId = user.id;
 
-    // Kullanıcı adını belirle (Metadata yoksa mailin @ öncesini al)
-    // Bu, legacy sistemin 'kullanıcı adı' bekleyen yapısı için kritiktir.
-    let extractedName = user.user_metadata.username;
-    if (!extractedName && user.email) {
-        extractedName = user.email.split('@')[0];
+    // 1. Profil bilgisini 'profiles' tablosundan çek (En güncel yetki/grup için)
+    let profileRole = 'user';
+    let profileGroup = 'Genel';
+    let profileName = user.email ? user.email.split('@')[0] : 'Kullanıcı';
+
+    try {
+        const { data: profile, error: pErr } = await sb.from('profiles').select('*').eq('id', user.id).single();
+        if (profile) {
+            profileRole = profile.role || 'user';
+            // Hem 'group' hem 'group_name' kolonunu kontrol et (Veritabanı uyumluluğu için)
+            profileGroup = profile.group || profile.group_name || 'Genel';
+            profileName = profile.username || profileName;
+
+            // Eğer profil varsa ve force_logout true ise
+            if (profile.force_logout) {
+                await sb.from('profiles').update({ force_logout: false }).eq('id', user.id);
+                logout();
+                Swal.fire('Oturum Kapandı', 'Yönetici tarafından çıkışınız sağlandı.', 'warning');
+                return;
+            }
+        }
+    } catch (e) {
+        console.warn("Profil çekilemedi, metadata kullanılıyor.", e);
+        // Fallback: Metadata
+        profileRole = user.user_metadata.role || 'user';
+        profileName = user.user_metadata.username || profileName;
     }
-    currentUser = extractedName || user.email;
 
-    // Rol kontrolü (Metadata öncelikli)
-    activeRole = user.user_metadata.role || 'user';
+    currentUser = profileName;
+    activeRole = profileRole;
+    localStorage.setItem("sSportGroup", profileGroup); // Grup yetkisi için
 
     // UI Güncelle
     document.getElementById("login-screen").style.display = "none";
@@ -1325,7 +1340,6 @@ async function checkSession() {
     checkAdmin(activeRole);
     startSessionTimer();
 
-    // LocalStorage güncelle (Legacy destek için, ama güvenlik buradan gelmiyor artık)
     localStorage.setItem("sSportUser", currentUser);
     localStorage.setItem("sSportRole", activeRole);
 
@@ -1429,70 +1443,30 @@ async function logout() {
 }
 
 async function forgotPasswordPopup() {
-    const { value: username } = await Swal.fire({
-        title: 'Şifremi Unuttum',
-        input: 'text',
-        inputLabel: 'Kullanıcı Adınız',
-        inputPlaceholder: 'Örn: ahmet.yilmaz',
+    const { value: email } = await Swal.fire({
+        title: 'Şifre Sıfırlama',
+        input: 'email',
+        inputLabel: 'E-posta Adresiniz',
+        inputPlaceholder: 'ornek@ssportplus.com',
         showCancelButton: true,
-        confirmButtonText: 'Şifre Gönder',
-        cancelButtonText: 'İptal',
-        inputValidator: (value) => {
-            if (!value) return 'Lütfen kullanıcı adınızı giriniz!';
-        }
+        confirmButtonText: 'Sıfırlama Linki Gönder',
+        cancelButtonText: 'İptal'
     });
 
-    if (username) {
-        Swal.fire({ title: 'İşleniyor...', didOpen: () => { Swal.showLoading() } });
+    if (email) {
+        Swal.fire({ title: 'Gönderiliyor...', didOpen: () => { Swal.showLoading() } });
 
         try {
-            // 1. Kullanıcıyı ve Email adresini bul
-            const { data: user, error: fetchErr } = await sb.from('Users')
-                .select('*')
-                .ilike('Username', username.trim())
-                .maybeSingle();
+            const { error } = await sb.auth.resetPasswordForEmail(email, {
+                redirectTo: window.location.origin, // Şifre sıfırlama sonrası dönülecek URL
+            });
 
-            if (fetchErr || !user) {
-                Swal.fire('Hata', 'Kullanıcı bulunamadı.', 'error');
-                return;
-            }
+            if (error) throw error;
 
-            const email = user.Email || user.email;
-            if (!email || !email.includes('@')) {
-                Swal.fire('Bilgi', 'Hesabınıza tanımlı e-posta bulunamadı. Lütfen yöneticinizle irtibata geçin.', 'warning');
-                return;
-            }
-
-            // 2. Geçici Şifre Oluştur
-            const tempPass = Math.floor(100000 + Math.random() * 900000).toString();
-            const hashedPass = CryptoJS.SHA256(tempPass).toString();
-
-            // 3. Veritabanını Güncelle (Dinamik Kolon Tespiti)
-            const updatePayload = {};
-            if ("Password" in user) updatePayload.Password = hashedPass;
-            else if ("password" in user) updatePayload.password = hashedPass;
-            else updatePayload.Password = hashedPass;
-
-            if ("ForceChange" in user) updatePayload.ForceChange = '1';
-            else if ("forcechange" in user) updatePayload.forcechange = '1';
-            else updatePayload.ForceChange = '1';
-
-            const { error: updErr } = await sb.from('Users')
-                .update(updatePayload)
-                .ilike('Username', username.trim());
-
-            if (updErr) throw updErr;
-
-            // 4. Mail Gönder
-            const subject = "Pusula - Şifre Sıfırlama";
-            const body = `Merhaba ${username},\n\nSistem giriş şifreniz sıfırlandı.\n\nGeçici Şifreniz: ${tempPass}\n\nLütfen giriş yaptıktan sonra şifrenizi değiştirmeyi unutmayın.`;
-            await sendMailNotification(email, subject, body);
-            saveLog("Şifremi Unuttum", `${username} için geçici şifre gönderildi.`);
-
-            Swal.fire('Başarılı', 'Geçici şifreniz e-posta adresinize gönderildi. Lütfen gelen kutunuzu kontrol edin.', 'success');
+            Swal.fire('Başarılı', 'Şifre sıfırlama bağlantısı e-posta adresinize gönderildi.', 'success');
         } catch (e) {
-            console.error("[Pusula] Forgot Pass Error:", e);
-            Swal.fire('Hata', 'İşlem sırasında bir sorun oluştu: ' + (e.message || e), 'error');
+            console.error("Forgot Pass Error:", e);
+            Swal.fire('Hata', e.message || 'İşlem başarısız.', 'error');
         }
     }
 }
@@ -1536,13 +1510,13 @@ function checkAdmin(role) {
 }
 
 function logout() {
-    currentUser = ""; isAdminMode = false; isEditingActive = false;
+    currentUser = ""; currentUserId = ""; isAdminMode = false; isEditingActive = false;
     try { document.getElementById("user-display").innerText = "Misafir"; } catch (e) { }
     setHomeWelcomeUser("Misafir");
     document.body.classList.remove('editing');
-    localStorage.removeItem("sSportUser"); localStorage.removeItem("sSportToken"); localStorage.removeItem("sSportRole"); localStorage.removeItem("sSportGroup"); localStorage.removeItem("sSportSessionDay"); localStorage.removeItem("sSportLoginAt");
-    localStorage.removeItem("sSportForceChange"); // Bayrağı temizle
+    localStorage.clear(); // Tüm verileri temizle
     if (sessionTimeout) clearTimeout(sessionTimeout);
+
     document.getElementById("main-app").style.display = "none";
     document.getElementById("login-screen").style.display = "flex";
     document.getElementById("passInput").value = "";
@@ -1561,15 +1535,16 @@ let heartbeatInterval; // Yeni Heartbeat Timer
 async function sendHeartbeat() {
     if (!currentUser) return;
     try {
-        // 1. Heartbeat gönderirken aynı zamanda force_logout kontrolü yap
-        const { data, error } = await sb.from('Users')
+        if (!currentUserId) return;
+        // Heartbeat (profiles tablosunu güncelle)
+        const { data, error } = await sb.from('profiles')
             .update({ last_seen: new Date().toISOString() })
-            .eq('Username', currentUser)
+            .eq('id', currentUserId)
             .select('force_logout')
             .single();
 
         if (data && data.force_logout === true) {
-            await sb.from('Users').update({ force_logout: false }).eq('Username', currentUser);
+            await sb.from('profiles').update({ force_logout: false }).eq('id', currentUserId);
             Swal.fire({
                 icon: 'error', title: 'Oturum Sonlandırıldı',
                 text: 'Yönetici tarafından sistemden çıkarıldınız.',
@@ -1577,26 +1552,10 @@ async function sendHeartbeat() {
             }).then(() => { logout(); });
             return;
         }
-
-        // 2. Token Kontrolü (Single Session Enforcement) - DEVRE DIŞI BIRAKILDI (İSTEK ÜZERİNE)
-        /*
-        const localToken = localStorage.getItem("sSportToken");
-        const { data: tokenData } = await sb.from('Tokens')
-            .select('Token')
-            .eq('Username', currentUser)
-            .maybeSingle();
-
-        if (!tokenData || tokenData.Token !== localToken) {
-            Swal.fire({
-                icon: 'warning', title: 'Oturum Kesildi',
-                text: 'Oturumunuz başka bir cihazda açılmış veya sonlandırılmış olabilir.',
-                allowOutsideClick: false, confirmButtonText: 'Tamam'
-            }).then(() => { logout(); });
-        }
-        */
-
+        // Multi-device kontrolü kaldırıldı (istek üzerine).
     } catch (e) { console.warn("Heartbeat failed", e); }
 }
+
 
 function startSessionTimer() {
     if (sessionInterval) clearInterval(sessionInterval);
@@ -1616,68 +1575,32 @@ function startSessionTimer() {
     }, 28800000);
 }
 function openUserMenu() { toggleUserDropdown(); }
+
 async function changePasswordPopup(isMandatory = false) {
-    const { value: formValues } = await Swal.fire({
-        title: isMandatory ? 'Yeni Şifre Belirleyin' : 'Şifre Değiştir',
-        html: `${isMandatory ? '<p style="font-size:0.9rem; color:#d32f2f;">İlk giriş şifrenizi değiştirmeden devam edemezsiniz.</p>' : ''}<input id="swal-old-pass" type="password" class="swal2-input" placeholder="Eski Şifre (Mevcut)"><input id="swal-new-pass" type="password" class="swal2-input" placeholder="Yeni Şifre">`,
-        focusConfirm: false, showCancelButton: !isMandatory, allowOutsideClick: !isMandatory, allowEscapeKey: !isMandatory,
-        confirmButtonText: 'Değiştir', cancelButtonText: 'İptal',
-        preConfirm: () => {
-            const o = document.getElementById('swal-old-pass').value;
-            const n = document.getElementById('swal-new-pass').value;
-            if (!o || !n) { Swal.showValidationMessage('Alanlar boş bırakılamaz'); }
-            return [o, n]
+    const { value: newPass } = await Swal.fire({
+        title: 'Şifre Değiştir',
+        input: 'password',
+        inputLabel: 'Yeni Şifreniz',
+        inputPlaceholder: 'En az 6 karakter',
+        showCancelButton: true,
+        confirmButtonText: 'Güncelle',
+        cancelButtonText: 'İptal',
+        inputValidator: (value) => {
+            if (!value || value.length < 6) return 'Şifre en az 6 karakter olmalıdır!';
         }
     });
-    if (formValues) {
-        Swal.fire({ title: 'İşleniyor...', didOpen: () => { Swal.showLoading() } });
+
+    if (newPass) {
+        Swal.fire({ title: 'Güncelleniyor...', didOpen: () => { Swal.showLoading() } });
         try {
-            const oldHashed = CryptoJS.SHA256(formValues[0]).toString();
-            const newHashed = CryptoJS.SHA256(formValues[1]).toString();
+            const { error } = await sb.auth.updateUser({ password: newPass });
+            if (error) throw error;
 
-            // 1. Önce eski şifreyi doğrula (Supabase'den tekrar çekerek)
-            const { data: userRecord, error: checkError } = await sb
-                .from('Users')
-                .select('*')
-                .ilike('Username', currentUser)
-                .single();
-
-            if (checkError) throw checkError;
-            if (!userRecord) throw new Error("Kullanıcı bulunamadı.");
-
-            const currentPassDB = userRecord.Password || userRecord.password;
-            if (currentPassDB !== oldHashed) {
-                throw new Error("Mevcut şifreniz hatalı!");
-            }
-
-            // 2. Yeni şifreyi güncelle (Hangi kolon varsa onu güncelle)
-            const updatePayload = {};
-            if ("Password" in userRecord) updatePayload.Password = newHashed;
-            else if ("password" in userRecord) updatePayload.password = newHashed;
-            else updatePayload.Password = newHashed; // Fallback to PascalCase
-
-            if ("ForceChange" in userRecord) updatePayload.ForceChange = '0';
-            else if ("forcechange" in userRecord) updatePayload.forcechange = '0';
-            else updatePayload.ForceChange = '0';
-
-            const { error: updateError } = await sb
-                .from('Users')
-                .update(updatePayload)
-                .ilike('Username', currentUser);
-
-            if (updateError) throw updateError;
-
-            saveLog("Şifre Değiştirme", `${currentUser} şifresini güncelledi.`);
-
-            localStorage.removeItem("sSportForceChange"); // Başarılı olunca bayrağı kaldır
-            Swal.fire('Başarılı!', 'Şifreniz güncellendi. Yeniden giriş yapınız.', 'success').then(() => { logout(); });
-        } catch (err) {
-            console.error("Password change error:", err);
-            Swal.fire('Hata', err.message || 'Şifre değiştirme başarısız.', 'error').then(() => {
-                if (isMandatory) changePasswordPopup(true);
-            });
+            Swal.fire('Başarılı', 'Şifreniz güncellendi.', 'success');
+        } catch (e) {
+            Swal.fire('Hata', 'Şifre güncellenemedi: ' + e.message, 'error');
         }
-    } else if (isMandatory) { changePasswordPopup(true); }
+    }
 }
 // --- DATA FETCHING (Supabase Optimized) ---
 async function loadContentData() {
@@ -8048,7 +7971,7 @@ async function openActiveUsersPanel() {
                     <td style="padding:12px;text-align:center">
                        ${(u.username !== currentUser) ?
                     `<button 
-                            onclick="kickUser('${escapeForJsString(u.username)}')" 
+                            onclick="kickUser('${escapeForJsString(u.username)}', '${u.id || ''}')" 
                             style="padding:6px 12px;background:#d32f2f;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:0.8rem; opacity:${isOnline ? 1 : 0.5}"
                             title="Kullanıcıyı sistemden at">
                             <i class="fas fa-power-off"></i> At
@@ -8097,8 +8020,14 @@ async function openActiveUsersPanel() {
     }
 }
 
-async function kickUser(username, token) {
-    // Token parametresi artık kullanılmayacak (Legacy uyumu için parametrede duruyor)
+async function kickUser(username, userId) {
+    if (!userId && username) {
+        // Fallback or lookup needed if we only have username, but active users list has id now
+        // But for safety, let's look up profile by username if id missing
+        const { data } = await sb.from('profiles').select('id').eq('username', username).single();
+        if (data) userId = data.id;
+    }
+
     const { isConfirmed } = await Swal.fire({
         title: 'Kullanıcıyı At?',
         text: `${username} kullanıcısı sistemden atılacak.`,
@@ -8109,17 +8038,14 @@ async function kickUser(username, token) {
         confirmButtonText: 'Evet, At'
     });
 
-    if (isConfirmed) {
+    if (isConfirmed && userId) {
         try {
-            // force_logout flag'ini true yap (ve Token'ı temizle)
-            const { error } = await sb.from('Users').update({ force_logout: true }).eq('Username', username);
-            await sb.from('Tokens').delete().eq('Username', username); // Token siliyoruz ki anında düşsün
+            const { error } = await sb.from('profiles').update({ force_logout: true }).eq('id', userId);
 
             if (error) throw error;
 
             saveLog("Kullanıcıyı Sistemden Atma", username);
             Swal.fire('Başarılı', 'Kullanıcıya çıkış komutu gönderildi (max 30sn).', 'success');
-            // Listeyi yenile
             openActiveUsersPanel();
         } catch (e) {
             console.error(e);
@@ -8169,7 +8095,8 @@ async function openUserManagementPanel() {
 
         const tableHtml = `
             <div style="margin-bottom:15px;text-align:right">
-                <button class="x-btn-admin" onclick="editUserPopup()" style="background:var(--success);"><i class="fas fa-plus"></i> Yeni Kullanıcı Ekle</button>
+                <!-- Yeni Kullanıcı butonu kaldırıldı, Supabase Auth zorunlu -->
+                <button class="x-btn-admin" onclick="Swal.fire('Bilgi', 'Yeni kullanıcıları Supabase Dashboard üzerinden ekleyiniz.', 'info')" style="background:#ddd; color:#555"><i class="fas fa-info-circle"></i> Kullanıcı Ekleme Hakkında</button>
             </div>
             <div style="max-height:450px;overflow:auto;border:1px solid #eee;border-radius:10px">
                 <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
@@ -8197,27 +8124,33 @@ async function openUserManagementPanel() {
 
         // Global fonksiyon tanımları (Swal modal içinde onclick için)
         window.editUserPopup = async function (id) {
-            let u = id ? users.find(x => String(x.id) === String(id)) : { username: '', role: 'agent', group: 'Genel' };
+            let u = id ? users.find(x => String(x.id) === String(id)) : null;
+            if (!u) return; // Sadece düzenleme
+
             const { value: formValues } = await Swal.fire({
-                title: id ? 'Kullanıcı Düzenle' : 'Yeni Kullanıcı',
+                title: 'Kullanıcı Düzenle',
                 html: `
-                    <input id="u-name" class="swal2-input" placeholder="Kullanıcı Adı" value="${u.username || u.name || ''}">
-                    <input id="u-pass" type="password" class="swal2-input" placeholder="${id ? 'Şifreyi Değiştirmek İçin Yazın (Boş bırakırsanız değişmez)' : 'Şifre'}">
+                    <input id="u-name" class="swal2-input" placeholder="Kullanıcı Adı" value="${u.username || u.name || ''}" readonly style="background:#eee">
+                    <p style="font-size:0.8rem;text-align:left;color:#666;margin:5px 23px;">Rol ve Grup yetkilerini güncelleyebilirsiniz.</p>
                     <select id="u-role" class="swal2-input">
+                        <option value="user" ${u.role === 'user' ? 'selected' : ''}>Kullanıcı</option>
                         <option value="agent" ${u.role === 'agent' ? 'selected' : ''}>Temsilci (Agent)</option>
                         <option value="qusers" ${u.role === 'qusers' ? 'selected' : ''}>Kalite (QA)</option>
                         <option value="admin" ${u.role === 'admin' ? 'selected' : ''}>Yönetici (Admin)</option>
                         <option value="locadmin" ${u.role === 'locadmin' ? 'selected' : ''}>Tam Yetkili (LocAdmin)</option>
                     </select>
-                    <input id="u-group" class="swal2-input" placeholder="Grup (Gerekiyorsa)" value="${u.group || ''}">
+                    <input id="u-group" class="swal2-input" placeholder="Grup (Örn: Telesatış)" value="${u.group || ''}">
                 `,
                 showCancelButton: true,
                 confirmButtonText: 'Kaydet',
                 preConfirm: () => {
-                    const name = document.getElementById('u-name').value.trim();
-                    const pass = document.getElementById('u-pass').value.trim();
-                    if (!name || (!id && !pass)) { Swal.showValidationMessage('Kullanıcı adı ve şifre zorunludur'); return false; }
-                    return { id, username: name, password: pass, role: document.getElementById('u-role').value, group: document.getElementById('u-group').value };
+                    return {
+                        id,
+                        username: u.username,
+                        fullName: u.name,
+                        role: document.getElementById('u-role').value,
+                        group: document.getElementById('u-group').value
+                    };
                 }
             });
 
