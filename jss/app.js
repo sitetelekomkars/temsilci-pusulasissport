@@ -5797,6 +5797,7 @@ async function editEvaluation(targetCallId) {
         html: contentHtml, width: '600px', showCancelButton: true, confirmButtonText: ' 💾  Değişiklikleri Kaydet', allowOutsideClick: false, allowEscapeKey: false,
         didOpen: () => { window.v2_recalc(); },
         preConfirm: () => {
+            const callId = document.getElementById('eval-callid').value;
             const rawDate = document.getElementById('eval-calldate').value;
             let callDate = rawDate;
 
