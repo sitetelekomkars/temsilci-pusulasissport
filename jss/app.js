@@ -665,7 +665,7 @@ async function apiCall(action, params = {}) {
                     username: u.username || u.email,
                     name: u.full_name || u.username,
                     role: u.role,
-                    group: u.group
+                    group: u.group || u.group_name
                 }));
                 return { result: "success", users: users };
             }
