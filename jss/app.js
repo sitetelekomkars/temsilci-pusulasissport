@@ -3549,6 +3549,9 @@ function populateMonthFilterFull() {
 // YENİ: Dashboard Filtrelerini Doldurma
 // ✅ Tüm admin filtrelerini (Dashboard + Geçmiş) dolduran merkezi fonksiyon
 function populateAllAdminFilters() {
+    // HERKES İÇİN (Admin olmasa bile) tarih filtrelerini doldur
+    populateMonthFilterFull();
+
     if (!isAdminMode) return;
 
     // 1. Dashboard Filtreleri
@@ -3606,9 +3609,9 @@ function updateDashAgentList() {
     const selectedGroup = groupSelect.value;
     agentSelect.innerHTML = '<option value="all">Tüm Temsilciler</option>';
 
-    let filteredUsers = adminUserList;
+    let filteredUsers = adminUserList.filter(u => String(u.role).toLowerCase() === 'user');
     if (selectedGroup !== 'all') {
-        filteredUsers = adminUserList.filter(u => u.group === selectedGroup);
+        filteredUsers = filteredUsers.filter(u => u.group === selectedGroup);
     }
     filteredUsers.forEach(u => {
         const opt = document.createElement('option');
@@ -3770,6 +3773,9 @@ function updateFeedbackAgentList(shouldRefresh = true) {
     // seçilen gruba göre kullanıcıları filtrele
     const filteredUsers = adminUserList.filter(u => {
         if (!u || !u.username) return false;
+        // Strict Filter: Only 'user' role
+        if (String(u.role).toLowerCase() !== 'user') return false;
+
         if (selectedGroup === 'all') return true;
         return u.group === selectedGroup;
     });
