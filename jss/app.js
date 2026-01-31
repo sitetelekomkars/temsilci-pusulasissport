@@ -149,7 +149,7 @@ function normalizeKeys(obj) {
         if (k === 'Score' || k === 'Puan' || k === 'Points') { n.score = obj[k]; n.points = obj[k]; }
         if (k === 'Orta Puan' || k === 'MediumScore') n.mediumScore = obj[k];
         if (k === 'Kötü Puan' || k === 'BadScore') n.badScore = obj[k];
-        if (k === 'Okundu') n.isSeen = (obj[k] === 1 || obj[k] === true);
+        if (k === 'Okundu') n.isSeen = (String(obj[k]) === '1' || String(obj[k]).toLowerCase() === 'true');
         if (k === 'Durum' || k === 'Status') n.status = obj[k];
         if (k === 'FeedbackType') n.feedbackType = obj[k];
 
