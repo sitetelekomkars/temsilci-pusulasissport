@@ -5719,9 +5719,17 @@ async function editEvaluation(targetCallId) {
 
     let safeDateVal = "";
     if (evalData.callDate) {
-        let parts = evalData.callDate.split('.');
-        if (parts.length === 3) safeDateVal = `${parts[2]}-${parts[1]}-${parts[0]}`;
-        else safeDateVal = evalData.callDate;
+        // DB'den TIMESTAMP (ISO) gelirse: 2026-01-21T00:00... -> 2026-01-21 al
+        if (String(evalData.callDate).includes('T')) {
+            safeDateVal = evalData.callDate.split('T')[0];
+        }
+        // DB'den Text (DD.MM.YYYY) gelirse -> YYYY-MM-DD çevir
+        else if (String(evalData.callDate).includes('.')) {
+            let parts = evalData.callDate.split('.');
+            if (parts.length === 3) safeDateVal = `${parts[2]}-${parts[1]}-${parts[0]}`;
+        } else {
+            safeDateVal = evalData.callDate;
+        }
     }
 
     let criteriaFieldsHtml = '';
@@ -5788,12 +5796,18 @@ async function editEvaluation(targetCallId) {
         html: contentHtml, width: '600px', showCancelButton: true, confirmButtonText: ' 💾  Değişiklikleri Kaydet', allowOutsideClick: false, allowEscapeKey: false,
         didOpen: () => { window.v2_recalc(); },
         preConfirm: () => {
-            const callId = document.getElementById('eval-callid').value;
             const rawDate = document.getElementById('eval-calldate').value;
             let callDate = rawDate;
-            // DÜZELTME: Backend YYYY-MM-DD bekliyor (tekrar DD.MM.YYYY yapma!)
-            // Eğer html input[type=date] ise zaten YYYY-MM-DD gelir.
-            // Sadece emin olmak için kontrol edebiliriz ama dönüştürme yapmayalım.
+
+            // Güvenlik: YYYY-MM-DD gelirse, sonuna saat ekleyip tam Timestamp yapalım
+            if (callDate && callDate.match(/^\d{4}-\d{2}-\d{2}$/)) {
+                callDate = `${callDate}T00:00:00`;
+            }
+            // Yedek: Eğer DD.MM.YYYY formatındaysa (bazı tarayıcılar vs.) çevir
+            else if (callDate && callDate.match(/^\d{2}\.\d{2}\.\d{4}$/)) {
+                const p = callDate.split('.');
+                callDate = `${p[2]}-${p[0]}-${p[1]}T00:00:00`; // YYYY-MM-DD
+            }
             const feedback = document.getElementById('eval-feedback').value;
             if (isCriteriaBased) {
                 let total = 0; let detailsArr = [];
