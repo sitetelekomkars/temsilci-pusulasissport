@@ -838,20 +838,21 @@ async function apiCall(action, params = {}) {
 
                 const { data: activeUsers, error: uErr } = await sb
                     .from('profiles')
-                    .select('username, role, group, last_seen, id')
+                    .select('*') // Tüm kolonları çek (group vs group_name hatasını önlemek için)
                     .gt('last_seen', heartbeatThreshold)
                     .order('last_seen', { ascending: false });
 
                 if (uErr) {
                     console.error("Active Users Error:", uErr);
-                    return { result: "error", message: uErr.message };
+                    return { result: "error", message: "Veri çekilemedi: " + uErr.message };
                 }
 
                 const users = (activeUsers || []).map(u => ({
                     username: u.username,
                     role: u.role,
-                    group: u.group,
-                    last_seen: u.last_seen
+                    group: u.group || u.group_name, // Fallback
+                    last_seen: u.last_seen,
+                    id: u.id
                 }));
                 return { result: "success", users: users };
             }
