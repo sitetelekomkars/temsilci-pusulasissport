@@ -603,15 +603,14 @@ body {
 
 /* KAYAN YAZI ANİMASYONU */
 .ticker-content {
-  font-size: 0.7rem;
-  /* Metin boyutunu küçülttük */
+  font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.9);
   white-space: nowrap;
   position: absolute;
   left: 100%;
   animation: ticker-scroll 60s linear infinite;
-  font-weight: 400;
-  font-family: "Segoe UI", sans-serif;
+  font-weight: 500;
+  font-family: "Outfit", sans-serif;
 }
 
 /* Duyuru barında akan tarih rengi: kurumsal gri */
@@ -633,16 +632,146 @@ body {
 }
 
 /* --- CARDS & GRID --- */
-.container {
-  padding: 15px 25px 25px;
-  max-width: 1600px;
-  margin: 0 auto;
+/* --- MODERN HOME PAGE DASHBOARD --- */
+.hero-section {
+  background: linear-gradient(135deg, #0e1b42 0%, #1e3a8a 100%);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.grid {
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05) 0%,
+    transparent 70%
+  );
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-greeting {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-top: 10px;
+  max-width: 500px;
+}
+
+.hero-quick-access {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-btn {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-btn i {
+  font-size: 1.2rem;
+  color: #fbbf24;
+}
+
+.home-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.home-card {
+  background: white;
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f2f5;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.home-card-header {
+  padding: 20px 25px;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.home-card-header i {
+  font-size: 1.25rem;
+  color: #1e3a8a;
+}
+
+.home-card-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.home-card-body {
+  padding: 25px;
+  flex-grow: 1;
+}
+
+.container {
+  padding: 30px 40px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .card {
@@ -4404,11 +4533,21 @@ body.editing .edit-icon {
 }
 
 .home-mini-item {
-  padding: 10px 12px;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  margin-bottom: 12px;
   background: #fff;
+  transition: all 0.2s;
+}
+
+.home-mini-item:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+
+.home-mini-item:last-child {
+  margin-bottom: 0;
 }
 
 .home-mini-date {
