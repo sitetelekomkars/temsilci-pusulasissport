@@ -635,8 +635,8 @@ body {
 /* --- MODERN HOME PAGE DASHBOARD --- */
 .grid {
   display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)) !important;
-  gap: 20px !important;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+  gap: 15px !important;
   width: 100% !important;
   align-items: stretch !important;
 }
@@ -812,72 +812,84 @@ body {
 }
 
 .card {
-  background: var(--card-bg);
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  border: 1px solid #eaedf2;
-  border-left: 4px solid var(--info);
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1f5f9;
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--info);
+  opacity: 0.8;
 }
 
 .card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  border-color: #dfe3e8;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-color: #e2e8f0;
 }
 
-.card.Teknik {
-  border-left-color: var(--primary);
+.card.Teknik::after {
+  background: var(--primary);
 }
 
-.card.İkna {
-  border-left-color: var(--accent);
+.card.İkna::after {
+  background: var(--accent);
 }
 
-.card.Kampanya {
-  border-left-color: var(--success);
+.card.Kampanya::after {
+  background: var(--success);
 }
 
-.card.Bilgi {
-  border-left-color: var(--info);
+.card.Bilgi::after {
+  background: var(--info);
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 12px;
-  padding-right: 25px;
+  margin-bottom: 15px;
+  padding-right: 30px;
 }
 
 .card-title {
-  font-weight: 600;
-  font-size: 1.05rem;
+  font-weight: 700;
+  font-size: 1.1rem;
   margin: 0;
-  color: #2c3e50;
-  line-height: 1.3;
+  color: #1e293b;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
 }
 
 .badge {
-  font-size: 0.65rem;
-  padding: 3px 6px;
-  border-radius: 3px;
-  background: #f7f9fc;
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #f8fafc;
   text-transform: uppercase;
-  font-weight: 600;
-  color: #7f8c8d;
-  border: 1px solid #edf2f7;
+  font-weight: 700;
+  color: #64748b;
+  border: 1px solid #f1f5f9;
 }
 
 .card-content {
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 15px;
-  line-height: 1.5;
+  font-size: 0.92rem;
+  color: #475569;
+  margin-bottom: 18px;
+  line-height: 1.6;
   flex-grow: 1;
   cursor: pointer;
 }
@@ -891,110 +903,112 @@ body {
 }
 
 .script-box {
-  background: #fffdf5;
+  background: #fdfaf3;
   border: 1px solid #f9f1d8;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 12px 15px;
+  border-radius: 10px;
   font-style: italic;
-  color: #666;
+  color: #78350f;
   margin-top: auto;
   position: relative;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
 }
 
 .card-actions {
-  margin-top: 12px;
+  margin-top: 18px;
   display: flex;
   justify-content: flex-end;
-  gap: 8px;
+  gap: 10px;
 }
 
 .btn {
-  padding: 5px 10px;
-  border-radius: 4px;
+  padding: 8px 14px;
+  border-radius: 10px;
   cursor: pointer;
   border: none;
-  font-weight: 600;
-  font-size: 0.8rem;
+  font-weight: 700;
+  font-size: 0.82rem;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
+  transition: all 0.2s;
 }
 
 .btn-copy {
-  background: #0e1b42;
-  color: white;
-  transition: background 0.2s;
+  background: #f1f5f9;
+  color: #1e293b;
 }
 
 .btn-copy:hover {
-  background: #2c3e50;
+  background: #e2e8f0;
+  transform: scale(1.02);
 }
 
 .btn-link {
-  background: transparent;
-  border: 1px solid #ddd;
-  color: var(--info);
+  background: #eff6ff;
+  color: #2563eb;
   text-decoration: none;
 }
 
 .btn-link:hover {
-  background: #f0f8ff;
-  border-color: var(--info);
+  background: #dbeafe;
+  transform: scale(1.02);
 }
 
 .new-badge {
   position: absolute;
   top: 12px;
-  left: -4px;
-  background: #2e7d32;
+  left: 5px;
+  background: #10b981;
   color: white;
-  font-size: 0.6rem;
-  padding: 2px 5px;
-  border-radius: 0 3px 3px 0;
-  font-weight: bold;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 0.65rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: 800;
   z-index: 15;
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
 }
 
 .icon-wrapper {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   display: flex;
-  gap: 5px;
+  gap: 8px;
   z-index: 20;
 }
 
 .edit-icon {
-  color: var(--secondary);
+  color: #f59e0b;
   cursor: pointer;
   display: none;
-  font-size: 0.9rem;
-  padding: 5px;
+  font-size: 0.95rem;
+  padding: 6px;
   background: white;
-  border-radius: 50%;
-  border: 1px solid #eee;
+  border-radius: 80px;
+  border: 1px solid #fde68a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 body.editing .edit-icon {
-  display: block !important;
+  display: flex !important;
 }
 
 .fav-icon {
-  color: #dce0e6;
+  color: #cbd5e1;
   cursor: pointer;
-  font-size: 1.1rem;
-  padding: 5px;
-  transition: 0.2s;
+  font-size: 1.2rem;
+  transition: all 0.2s;
 }
 
 .fav-icon:hover {
-  color: #b0b8c1;
+  color: #94a3b8;
+  transform: scale(1.1);
 }
 
 .fav-icon.active {
-  color: var(--secondary);
+  color: #f59e0b;
 }
 
 /* MODAL/MODÜL STİLLERİ */
