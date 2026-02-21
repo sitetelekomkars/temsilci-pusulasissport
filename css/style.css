@@ -635,8 +635,8 @@ body {
 /* --- MODERN HOME PAGE DASHBOARD --- */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
   width: 100%;
   align-items: stretch;
 }
