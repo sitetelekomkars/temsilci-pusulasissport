@@ -4880,6 +4880,48 @@ body.editing .edit-icon {
 /* RESMİ ENGELLEYEN MOZAİK KODU BURADAN SİLİNMİŞTİR */
 
 /* --- v2 Quality Dashboard (Sales + Chat unified) --- */
+/* (Styles are handled in app.js for Guide now to keep style.css clean) */
+
+/* SEARCH & TOPBAR */
+.q-top-search {
+  position: relative;
+  width: 350px;
+}
+
+.q-top-search i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+.q-top-search input {
+  width: 100%;
+  padding: 10px 15px 10px 45px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.q-top-search input:focus {
+  border-color: #0e1b42;
+  box-shadow: 0 0 0 3px rgba(14, 27, 66, 0.1);
+}
+
+@media (max-width: 768px) {
+  .sg-grid-area {
+    grid-template-columns: 1fr;
+  }
+
+  .q-top-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
 /* --- Dashboard Stat Boxes Enhancements --- */
 .q-stats-row {
   display: grid;
