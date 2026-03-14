@@ -1,0 +1,620 @@
+﻿/* Professional Gaming Arena Style (v2.5.0) */
+.q-competition-container {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #020617; /* Re-enforce dark background */
+    overflow: hidden;
+    position: relative;
+    font-family: 'Outfit', sans-serif;
+}
+
+.q-comp-layout {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.q-comp-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.q-comp-board-wrapper {
+    flex: 1;
+    position: relative;
+    overflow: auto;
+    background: #020617; /* Deep Navy Base */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* New Premium Arena Background Layer */
+.q-comp-board-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("../assets/arena_bg.png") center/cover no-repeat;
+    opacity: 0.6;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.q-comp-board-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent, rgba(2, 6, 23, 0.8));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.q-comp-header {
+    background: rgba(2, 6, 23, 0.85);
+    backdrop-filter: blur(25px);
+    padding: 15px 40px;
+    border-bottom: 2px solid rgba(0, 242, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.q-comp-title h2 {
+    color: #fff;
+    text-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.q-comp-title p {
+    color: #94a3b8;
+    margin: 2px 0 0;
+    font-size: 0.85rem;
+}
+
+/* Rounded Profile Button */
+.q-profile-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #00f2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.q-profile-btn:hover {
+    background: rgba(0,242,255,0.1);
+    border-color: #00f2ff;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0,242,255,0.3);
+}
+
+/* Avatar Picker UI */
+.avatar-picker-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 10px;
+}
+
+.avatar-option {
+    background: rgba(255,255,255,0.02);
+    border: 2px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.avatar-option:hover {
+    background: rgba(255,255,255,0.05);
+    border-color: rgba(255,255,255,0.3);
+    transform: translateY(-3px);
+}
+
+.avatar-option.selected {
+    border-color: #00f2ff;
+    background: rgba(0,242,255,0.1);
+}
+
+.avatar-icon-circle {
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* COMPACT TUNING */
+.q-comp-header.compact {
+    padding: 10px 40px;
+}
+.q-comp-header.compact h2 {
+    font-size: 1.3rem;
+}
+
+.q-comp-stats-top.compact {
+    padding: 10px 40px;
+    gap: 15px;
+}
+.q-comp-stats-top.compact .q-comp-stat-card {
+    padding: 8px 15px;
+}
+
+/* TOP STATS BAR (Premium Arena) */
+.q-comp-stats-top {
+    display: flex;
+    gap: 20px;
+    padding: 15px 40px;
+    background: rgba(2, 6, 23, 0.4);
+    z-index: 10;
+}
+
+.q-comp-stat-card {
+    flex: 1;
+    background: rgba(14, 27, 66, 0.7);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    padding: 12px 20px;
+    border: 1px solid rgba(0, 242, 255, 0.1);
+}
+
+.q-comp-stat-card h3 {
+    color: #94a3b8;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.q-leaderboard-row, .q-history-row {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.q-leader-item {
+    background: rgba(30, 41, 59, 0.4);
+    border-radius: 10px;
+    padding: 6px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================================
+   LEGENDARY ADVENTURE MAP - v5.0 (FANTASY & CREATIVE)
+   ============================================================ */
+.q-comp-wrapper {
+    background: #1a150f; /* Dark wood/dirt tone */
+    border-radius: 24px;
+    padding: 15px; /* Reduced for efficiency */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.8);
+    border: 4px solid #3d2b1f; /* Wooden frame effect */
+}
+
+.q-comp-title-group h2 {
+    margin: 0;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    background-clip: text; /* Fix for lint */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* ADVENTURE MAP BOARD */
+#q-comp-board {
+    position: relative;
+    width: 1010px;
+    height: 600px;
+    background: url("../assets/adventure_bg.png") center/cover no-repeat;
+    border-radius: 16px;
+    border: 8px solid #2e1a0d; /* Thick Dark Wood Frame */
+    overflow: auto;
+    padding: 40px;
+    box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+}
+
+.q-comp-board-wrapper {
+    flex: 1;
+    position: relative;
+    overflow: auto;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 0; 
+    border-radius: 12px;
+}
+
+/* Remove the pseudo-element background to avoid layering issues */
+.q-comp-board-wrapper::after {
+    display: none;
+}
+
+/* MYSTIC GEMSTONE TILES */
+.q-step-box {
+    width: 72px;
+    height: 72px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    box-shadow: 
+        0 4px 6px rgba(0,0,0,0.4), 
+        inset 0 2px 4px rgba(255,255,255,0.3),
+        inset 0 -4px 8px rgba(0,0,0,0.4);
+    pointer-events: auto;
+    border: 1px solid rgba(255,255,255,0.1);
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+/* Gemstone Colors */
+.gem-ruby { background: linear-gradient(135deg, #e11d48, #9f1239); }
+.gem-sapphire { background: linear-gradient(135deg, #2563eb, #1e3a8a); }
+.gem-emerald { background: linear-gradient(135deg, #059669, #064e3b); }
+.gem-gold { background: linear-gradient(135deg, #ca8a04, #713f12); }
+.gem-amethyst { background: linear-gradient(135deg, #9333ea, #581c87); }
+
+.q-step-box:hover {
+    transform: translateY(-8px) scale(1.1) rotate(5deg);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5), 0 0 20px rgba(255,255,255,0.4);
+}
+
+/* SPECIAL NODES */
+.q-step-box.start {
+    background: #fff;
+    color: #000;
+    border: 4px solid #f59e0b;
+    box-shadow: 0 0 30px #f59e0b;
+}
+
+.q-step-box.finish {
+    background: linear-gradient(135deg, #ca8a04, #facc15);
+    border: 3px solid #fff;
+    box-shadow: 0 0 40px #fbbf24;
+    animation: victoryPulse 2s infinite;
+}
+
+.q-step-box.quiz {
+    /* Path quiz styles no longer needed as we moved it to the floating box */
+    display: none !important;
+}
+
+@keyframes boxFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes victoryPulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(245, 158, 11, 0.6); }
+    50% { transform: scale(1.1); box-shadow: 0 0 45px rgba(245, 158, 11, 0.9); }
+}
+
+/* MAGICAL LEYLINES */
+.q-comp-path-line {
+    position: absolute;
+    z-index: 5;
+    pointer-events: none;
+    background: transparent;
+    border: 3px dashed rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+/* PREMIUM AVATARS (FLOATING) */
+.q-user-avatar-tag {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    z-index: 50;
+    border: 3px solid #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+    animation: floatingAvatar 3s ease-in-out infinite;
+}
+
+@keyframes floatingAvatar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+.current-user-marker {
+    border-color: #ffde59 !important;
+    box-shadow: 0 0 20px rgba(255, 222, 89, 0.4);
+}
+
+/* 🔥 ON FIRE (STREAK AURA) 🔥 */
+.on-fire {
+    border-color: #ff8c00 !important;
+    animation: firePulse 1s infinite alternate !important;
+}
+
+.on-fire::after {
+    content: "🔥";
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 1.5rem;
+    filter: drop-shadow(0 0 5px #ff4500);
+    z-index: 60;
+}
+
+@keyframes firePulse {
+    0% { box-shadow: 0 0 15px #ff4500, inset 0 0 8px #ff8c00; transform: translateY(-12px) scale(1); }
+    100% { box-shadow: 0 0 35px #ff0000, inset 0 0 15px #ffeb3b; transform: translateY(-12px) scale(1.1); }
+}
+
+/* 💥 FLOATING DAMAGE NUMBERS 💥 */
+.q-damage-text {
+    position: absolute;
+    font-weight: 900;
+    font-size: 2rem;
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0 5px 15px rgba(0,0,0,0.8);
+    z-index: 1000;
+    pointer-events: none;
+    animation: floatUpFade 2.5s ease-out forwards;
+}
+
+.q-damage-up { color: #10b981; } /* Zümrüt Yeşili */
+.q-damage-down { color: #ef4444; } /* Yakut Kırmızısı */
+
+@keyframes floatUpFade {
+    0% { transform: translateY(0) scale(0.5); opacity: 0; }
+    15% { transform: translateY(-30px) scale(1.3); opacity: 1; }
+    100% { transform: translateY(-100px) scale(1); opacity: 0; }
+}
+
+.status-pending { color: #f59e0b; font-weight: 700; }
+.status-approved { color: #10b981; font-weight: 700; }
+
+/* Hide AI Bot in Competition */
+body:has(#t-view-competition.active) #ai-widget-container { display: none !important; }
+
+/* LEGENDARY ADVENTURE - ORIGINAL UI RESTORED */
+body:has(#t-view-competition.active) .q-topbar {
+    display: none !important;
+}
+
+.q-competition-container {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* VERTICAL SQUARE ACTION PANEL (Tactical Hub) */
+.q-comp-square-actions {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 1000;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(34, 211, 238, 0.3);
+    padding: 12px;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: min-content; /* Narrow the box to the content */
+}
+
+.x-btn-block {
+    width: 100%;
+    justify-content: center;
+}
+
+.x-btn-icon-only {
+    width: 36px;
+    height: 36px;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#admin-comp-btns {
+    /* JS controls display property (flex/none) */
+    align-items: center;
+    gap: 8px;
+}
+
+.q-mini-btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.q-mini-btn-group button {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.q-mini-btn-group button:hover {
+    background: rgba(34, 211, 238, 0.2);
+    border-color: #22d3ee;
+    transform: scale(1.1);
+}
+
+.x-btn-glow {
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+    animation: btnGlowPulse 2s infinite;
+}
+
+/* FLOATING SURPRISE BOX (Legendary Reward) */
+.q-surprise-box {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 63px;
+    height: 60px;
+    background: linear-gradient(135deg, #4338ca, #1e1b4b);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+/* AGGRESSIVE FIX: QUIZ OPTIONS VISIBILITY */
+.q-swal-radio-group, .swal2-input.q-swal-radio-group {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 20px !important;
+    background: rgba(0,0,0,0.2) !important;
+    border-radius: 12px !important;
+    margin: 10px auto !important;
+    width: 90% !important;
+}
+
+.swal2-radio {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    background: transparent !important;
+}
+
+.swal2-radio label {
+    color: #ffffff !important; /* FORCED WHITE */
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+    cursor: pointer !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.swal2-radio input {
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+    flex-shrink: 0 !important;
+}
+
+.q-surprise-box i {
+    font-size: 1.8rem;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.q-surprise-box:hover {
+    transform: scale(1.1) translateY(-5px);
+    border-color: #22d3ee;
+    box-shadow: 0 15px 40px rgba(34, 211, 238, 0.3);
+}
+
+.q-surprise-box.active {
+    background: linear-gradient(135deg, #7c3aed, #4c1d95);
+    border: 3px solid #fcd34d !important;
+    animation: boxAwake 1.5s infinite alternate;
+}
+
+.q-surprise-box.active i {
+    color: #fcd34d;
+    text-shadow: 0 0 10px rgba(252, 211, 77, 0.8);
+}
+
+@keyframes boxAwake {
+    from { 
+        box-shadow: 0 0 10px rgba(124, 58, 137, 0.4);
+    }
+    to { 
+        box-shadow: 0 0 30px #fcd34d, 0 0 15px #7c3aed;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes btnGlowPulse {
+    0%, 100% { box-shadow: 0 0 15px rgba(34, 211, 238, 0.4); }
+    50% { box-shadow: 0 0 30px rgba(34, 211, 238, 0.7); }
+}
+
+.x-btn-sm {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+}
+
+.x-btn-admin {
+    background: #1e293b;
+    color: #00f2ff;
+    border: 1px solid rgba(0,242,255,0.2);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.x-btn-admin:hover { background: #0f172a; transform: scale(1.05); }
+
+/* FLOATING BOTTOM ACTION BAR */
+.q-comp-bottom-bar {
+    background: rgba(2, 6, 23, 0.9);
+    backdrop-filter: blur(25px);
+    padding: 15px 40px;
+    border-top: 2px solid rgba(0, 242, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.q-comp-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.x-btn-lg {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
