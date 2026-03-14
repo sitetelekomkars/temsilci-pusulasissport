@@ -6090,8 +6090,9 @@ input:checked + .rbac-slider:before {
   position: absolute;
   z-index: 5;
   pointer-events: none;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  background: transparent;
+  border: 3px dashed rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   border-radius: 3px;
 }
 
@@ -6185,7 +6186,7 @@ body:has(#t-view-competition.active) .q-topbar {
 }
 
 #admin-comp-btns {
-  display: flex !important; /* Ensure flex for row alignment */
+  /* JS controls display property (flex/none) */
   align-items: center;
   gap: 8px;
 }
