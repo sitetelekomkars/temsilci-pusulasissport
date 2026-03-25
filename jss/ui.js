@@ -1,4 +1,4 @@
-﻿// --- RENDER & FILTERING ---
+// --- RENDER & FILTERING ---
 const DISPLAY_LIMIT = 50;
 let currentDisplayCount = DISPLAY_LIMIT;
 
@@ -824,11 +824,15 @@ async function openDataImporter(targetTable) {
 
 async function fetchBroadcastFlow() {
     try {
-        const { data, error } = await sb.from('YayinAkisi').select('*');
-        if (error) throw error;
-        return (data || []).map(normalizeKeys);
+        const res = await apiCall('getBroadcastFlow');
+        if (res.result === 'success') {
+            // we return the items directly, but we can store the source if needed
+            // since normalizeKeys was already called in app.js, we just return
+            return res.items || [];
+        }
+        return [];
     } catch (err) {
-        console.error("[Pusula] YayinAkisi Fetch Error:", err);
+        console.error("[Pusula] fetchBroadcastFlow Error:", err);
         return [];
     }
 }
@@ -845,7 +849,9 @@ async function openBroadcastFlow() {
     });
 
     try {
-        const itemsRaw = await fetchBroadcastFlow();
+        const itemsRawResult = await apiCall('getBroadcastFlow');
+        const itemsRaw = itemsRawResult.items || [];
+        const sourceName = itemsRawResult.source || 'db';
         const isAdmin = (isAdminMode || isLocAdmin);
 
         if ((!itemsRaw || !itemsRaw.length) && !isAdmin) {
@@ -875,6 +881,7 @@ async function openBroadcastFlow() {
         const sortedDates = Object.keys(byDate).sort();
 
         const formatDateLabel = (iso) => {
+            if (iso === "2099-12-31") return { main: "BİLGİ", sub: "Notlar" };
             const dt = new Date(iso);
             if (iso === todayISO) return { main: "BUGÜN", sub: dt.toLocaleDateString('tr-TR', { day: 'numeric', month: 'short' }) };
             const tomorrow = new Date(); tomorrow.setDate(tomorrow.getDate() + 1);
@@ -949,6 +956,10 @@ async function openBroadcastFlow() {
             .bf-nav-btn:hover { color: #0e1b42; }
             
             .bf-no-data { text-align: center; padding: 50px; color: #999; }
+            
+            .bf-event-row.cancelled { opacity: 0.5; filter: grayscale(1); background: #f9fafb; }
+            .bf-event-row.cancelled .bf-title { text-decoration: line-through; color: #999; }
+            .bf-event-row.cancelled .bf-col-time { color: #ccc; }
         </style>
         `;
 
@@ -981,7 +992,7 @@ async function openBroadcastFlow() {
 
                     const time = it.time || '--:--';
                     const title = it.event || it.title || it.match || '-';
-                    const details = it.details || it.description || '';
+                    const details = it.details || '';
                     const announcer = it.announcer || it.spiker || it.spikers || '';
                     const channel = String(it.channel || it.platform || '').trim();
                     const icon = getSportIcon(title);
@@ -996,13 +1007,13 @@ async function openBroadcastFlow() {
                     }
 
                     panesHtml += `
-                        <div class="bf-event-row ${isLive ? 'live' : ''} ${isPast ? 'past' : ''}">
+                        <div class="bf-event-row ${isLive ? 'live' : ''} ${isPast ? 'past' : ''} ${it.isCancelled ? 'cancelled' : ''}">
                             ${isLive ? '<div class="live-tag">CANLI</div>' : ''}
                             <div class="bf-col-status"><i class="fas ${icon} bf-sport-icon"></i></div>
                             <div class="bf-col-time">${time}</div>
                             <div class="bf-col-main">
                                 <div class="bf-title">${escapeHtml(title)}</div>
-                                ${details ? `<div class="bf-sub">${escapeHtml(details)}</div>` : ''}
+                                ${(details && details.trim() !== title.trim()) ? `<div class="bf-sub">${escapeHtml(details)}</div>` : ''}
                             </div>
                             <div class="bf-col-spiker">
                                 ${announcer ? `<div class="bf-spiker-badge"><i class="fas fa-microphone-alt"></i> ${escapeHtml(announcer)}</div>` : ''}
@@ -1021,9 +1032,16 @@ async function openBroadcastFlow() {
                 <div class="bf-header">
                     <div class="bf-header-title">
                         <i class="fas fa-broadcast-tower"></i> Yayın Akışı
-                        ${((isAdminMode || isLocAdmin) && isEditingActive) ? `<button class="x-btn x-btn-admin" style="margin-left:15px; font-size:0.7rem; padding:4px 10px;" onclick="openDataImporter('YayinAkisi')"><i class="fas fa-upload"></i> Akışı Yükle</button>` : ''}
+                        ${((isAdminMode || isLocAdmin) && isEditingActive) ? `
+                            <button class="x-btn x-btn-admin" style="margin-left:15px; font-size:0.7rem; padding:4px 10px; background:#2e7d32;" onclick="setBroadcastSheetUrl()">
+                                <i class="fas fa-link"></i> E-Tablo Bağla
+                            </button>
+                            <button class="x-btn x-btn-admin" style="margin-left:5px; font-size:0.7rem; padding:4px 10px;" onclick="openDataImporter('YayinAkisi')">
+                                <i class="fas fa-upload"></i> Manuel Yükle
+                            </button>
+                        ` : ''}
                     </div>
-                    <div style="font-size:0.85rem; opacity:0.7; font-weight:500;">S Sport Plus Portalı</div>
+                    <div style="font-size:0.85rem; opacity:0.7; font-weight:500;">S Sport Plus Portalı ${sourceName === 'sheet' ? '• Canlı (E-Tablo)' : ''}</div>
                 </div>
                 <div class="bf-tabs-nav">
                     <button class="bf-nav-btn" onclick="document.querySelector('.bf-tabs-scroll').scrollLeft -= 200"><i class="fas fa-chevron-left"></i></button>
@@ -1069,6 +1087,49 @@ async function openBroadcastFlow() {
     } catch (err) {
         console.error("Broadcast Flow Error:", err);
         Swal.fire("Sistem Hatası", "Yayın akışı şu an yüklenemiyor.", "error");
+    }
+}
+
+async function setBroadcastSheetUrl() {
+    const currentUrl = localStorage.getItem("pusula_broadcast_url") || "";
+    const { value: url, isDenied } = await Swal.fire({
+        title: 'E-Tablo Bağlantısı',
+        input: 'url',
+        inputLabel: 'Google Sheets Paylaşım Linki (CSV)',
+        inputValue: currentUrl,
+        inputPlaceholder: 'https://docs.google.com/spreadsheets/d/...',
+        showCancelButton: true,
+        showDenyButton: !!currentUrl,
+        confirmButtonText: 'Kaydet',
+        denyButtonText: 'Linki Kaldır (Sisteme Dön)',
+        cancelButtonText: 'Vazgeç',
+        footer: '<div style="font-size:0.8rem; color:#666;">Not: Google Sheets dosyanızı "Web\'de Yayınla" yaparak veya paylaşım linkini buraya yapıştırarak kullanabilirsiniz.</div>',
+        inputValidator: (value) => {
+            if (!value && !isDenied) return 'Lütfen bir link giriniz!';
+            if (value && !value.includes("docs.google.com")) return 'Geçerli bir Google Sheets linki giriniz!';
+        }
+    });
+
+    if (isDenied) {
+        localStorage.removeItem("pusula_broadcast_url");
+        Swal.fire('Bağlantı Kaldırıldı', 'Sistem tekrar manuel (Supabase) verilere geri döndü.', 'info');
+        openBroadcastFlow();
+        return;
+    }
+
+    if (url) {
+        localStorage.setItem("pusula_broadcast_url", url);
+        Swal.fire({
+            icon: 'success',
+            title: 'Bağlantı Kaydedildi',
+            text: 'Yayın akışı artık bu tablo üzerinden anlık olarak güncellenecektir.',
+            timer: 2000
+        });
+        openBroadcastFlow();
+    } else if (url === "") {
+        localStorage.removeItem("pusula_broadcast_url");
+        Swal.fire('Bağlantı Kaldırıldı', 'Sistem tekrar veritabanındaki verileri kullanacaktır.', 'info');
+        openBroadcastFlow();
     }
 }
 
