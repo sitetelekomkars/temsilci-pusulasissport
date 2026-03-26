@@ -1574,10 +1574,10 @@ async function addNewContent(type) {
                     
                     <label style="font-weight:bold; display:block; margin-bottom:5px;">Kategori</label>
                     <select id="swal-cat" class="swal2-input" style="width:100%; margin:0 0 15px 0;">
-                        <option value="teknik">Teknik</option>
-                        <option value="ikna">İkna</option>
-                        <option value="kampanya">Kampanya</option>
-                        <option value="bilgi">Bilgi</option>
+                        <option value="Teknik">Teknik</option>
+                        <option value="İkna">İkna</option>
+                        <option value="Kampanya">Kampanya</option>
+                        <option value="Bilgi">Bilgi</option>
                         <option value="news">Duyuru</option>
                         <option value="video">🎥 Video Popup</option>
                     </select>
@@ -1735,7 +1735,10 @@ async function addNewContent(type) {
                     if (!payload.Link) { Swal.showValidationMessage('Video URL zorunludur!'); return false; }
                 } else {
                     payload.Type = 'card';
-                    payload.Category = document.getElementById('swal-cat').value;
+                    // Kategoriyi her zaman büyük harfle başlat (V15.5 - Case Sensitivity Fix)
+                    const rawCat = document.getElementById('swal-cat').value;
+                    payload.Category = rawCat.charAt(0).toUpperCase() + rawCat.slice(1);
+                    
                     payload.Script = document.getElementById('swal-script').value;
                     payload.Code = document.getElementById('swal-code').value;
                     payload.Image = document.getElementById('swal-img').value;
