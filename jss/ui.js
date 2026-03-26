@@ -1091,7 +1091,8 @@ async function openBroadcastFlow() {
 }
 
 async function setBroadcastSheetUrl() {
-    const currentUrl = localStorage.getItem("pusula_broadcast_url") || "";
+    // Merkezi Veritabanından (HomeBlocks) oku
+    const currentUrl = (homeBlocks['broadcast_url']?.content || localStorage.getItem("pusula_broadcast_url") || "").trim();
     const { value: url, isDenied } = await Swal.fire({
         title: 'E-Tablo Bağlantısı',
         input: 'url',
@@ -1103,7 +1104,7 @@ async function setBroadcastSheetUrl() {
         confirmButtonText: 'Kaydet',
         denyButtonText: 'Linki Kaldır (Sisteme Dön)',
         cancelButtonText: 'Vazgeç',
-        footer: '<div style="font-size:0.8rem; color:#666;">Not: Google Sheets dosyanızı "Web\'de Yayınla" yaparak veya paylaşım linkini buraya yapıştırarak kullanabilirsiniz.</div>',
+        footer: '<div style="font-size:0.8rem; color:#666;">Not: Bu ayar tüm Pusula kullanıcıları için geçerli olacaktır.</div>',
         inputValidator: (value) => {
             if (!value && !isDenied) return 'Lütfen bir link giriniz!';
             if (value && !value.includes("docs.google.com")) return 'Geçerli bir Google Sheets linki giriniz!';
@@ -1111,18 +1112,26 @@ async function setBroadcastSheetUrl() {
     });
 
     if (isDenied) {
-        localStorage.removeItem("pusula_broadcast_url");
+        Swal.fire({ title: 'Kaldırılıyor...', didOpen: () => Swal.showLoading() });
+        await apiCall('updateHomeBlock', { key: 'broadcast_url', content: null, title: 'Broadcast Link', visibleGroups: '' });
+        
+        if (homeBlocks['broadcast_url']) delete homeBlocks['broadcast_url'];
+        localStorage.removeItem("pusula_broadcast_url"); 
+
         Swal.fire('Bağlantı Kaldırıldı', 'Sistem tekrar manuel (Supabase) verilere geri döndü.', 'info');
         openBroadcastFlow();
         return;
     }
 
     if (url) {
-        localStorage.setItem("pusula_broadcast_url", url);
+        Swal.fire({ title: 'Kaydediliyor...', didOpen: () => Swal.showLoading() });
+        await apiCall('updateHomeBlock', { key: 'broadcast_url', content: url.trim(), title: 'Broadcast Link', visibleGroups: '' });
+        homeBlocks['broadcast_url'] = { content: url.trim() };
+        localStorage.setItem("pusula_broadcast_url", url.trim());
         Swal.fire({
             icon: 'success',
             title: 'Bağlantı Kaydedildi',
-            text: 'Yayın akışı artık bu tablo üzerinden anlık olarak güncellenecektir.',
+            text: 'Yayın akışı artık tüm kullanıcılar için bu tablo üzerinden güncellenecektir.',
             timer: 2000
         });
         openBroadcastFlow();
