@@ -894,7 +894,8 @@ async function openBroadcastFlow() {
             const t = String(title).toLowerCase();
             if (t.includes('nba') || t.includes('euroleague') || t.includes('basketbol') || t.includes('efes') || t.includes('fenerbahçe beko')) return 'fa-basketball-ball';
             if (t.includes('atp') || t.includes('wta') || t.includes('tenis')) return 'fa-table-tennis';
-            if (t.includes('f1') || t.includes('formula') || t.includes('moto')) return 'fa-flag-checkered';
+            if (t.includes('f1') || t.includes('formula')) return 'fa-flag-checkered';
+            if (t.includes('moto') || t.includes('sbk') || t.includes('ssp') || t.includes('superbike') || t.includes('supersport')) return 'fa-motorcycle';
             if (t.includes('ufc') || t.includes('boks') || t.includes('boxing')) return 'fa-hand-fist';
             if (t.includes('nfl')) return 'fa-football-ball';
             return 'fa-futbol'; // Default
@@ -902,7 +903,7 @@ async function openBroadcastFlow() {
 
         const css = `
         <style>
-            .bf-wrapper { font-family: 'Outfit', sans-serif; height: 85vh; display: flex; flex-direction: column; overflow: hidden; background: #fdfdfd; }
+            .bf-wrapper { font-family: 'Outfit', sans-serif; height: 90vh; display: flex; flex-direction: column; overflow: hidden; background: #fdfdfd; }
             .bf-header { background: #0e1b42; color: white; padding: 25px 30px; display: flex; justify-content: space-between; align-items: center; position: relative; }
             .bf-header::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, #cf0a2c, transparent); }
             .bf-header-title { font-size: 1.5rem; font-weight: 800; display: flex; align-items: center; gap: 10px; }
@@ -931,8 +932,24 @@ async function openBroadcastFlow() {
             .bf-event-row.past { opacity: 0.5; }
 
             .bf-col-status { width: 50px; display: flex; justify-content: center; }
-            .bf-sport-icon { font-size: 1.2rem; color: #d1d5db; }
-            .live .bf-sport-icon { color: #cf0a2c; animation: pulse-icon 2s infinite; }
+            .bf-sport-icon { font-size: 1.3rem; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); animation: bf-icon-float 3s ease-in-out infinite; }
+            .bf-event-row:hover .bf-sport-icon { transform: scale(1.3) rotate(15deg); filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
+            
+            /* Sport Specific Colors - Vivid Version */
+            .fa-basketball-ball { color: #f59e0b; filter: drop-shadow(0 0 2px rgba(245, 158, 11, 0.2)); } /* Basketbol */
+            .fa-table-tennis { color: #4ade80; filter: drop-shadow(0 0 2px rgba(74, 222, 128, 0.2)); }    /* Tenis */
+            .fa-flag-checkered { color: #475569; }                                                         /* F1 */
+            .fa-motorcycle { color: #e11d48; filter: drop-shadow(0 0 2px rgba(225, 29, 72, 0.2)); }       /* Motor - Canlı Kırmızı */
+            .fa-hand-fist { color: #9333ea; filter: drop-shadow(0 0 2px rgba(147, 51, 234, 0.2)); }       /* Dövüş - Mor */
+            .fa-football-ball { color: #92400e; }                                                         /* NFL */
+            .fa-futbol { color: #0284c7; filter: drop-shadow(0 0 2px rgba(2, 132, 199, 0.2)); }           /* Futbol - Canlı Mavi */
+            
+            .live .bf-sport-icon { animation: pulse-icon 1s infinite alternate; }
+            
+            @keyframes bf-icon-float {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-3px); }
+            }
             
             .bf-col-time { width: 85px; font-weight: 800; color: #0e1b42; font-size: 1.1rem; }
             .past .bf-col-time { color: #999; text-decoration: line-through; }
@@ -941,8 +958,9 @@ async function openBroadcastFlow() {
             .bf-title { font-weight: 700; color: #1f2937; font-size: 1.05rem; line-height: 1.3; }
             .bf-sub { font-size: 0.85rem; color: #6b7280; margin-top: 4px; font-weight: 500; }
             
-            .bf-col-spiker { width: 220px; display: flex; align-items: center; gap: 10px; }
-            .bf-spiker-badge { background: #f3f4f6; color: #4b5563; font-size: 0.75rem; font-weight: 700; padding: 6px 12px; border-radius: 6px; display: flex; align-items: center; gap: 6px; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border: 1px solid #e5e7eb; }
+            .bf-col-spiker { width: 270px; display: flex; align-items: center; justify-content: flex-end; padding-right: 15px; }
+            .bf-spiker-badge { background: #f8fafc; color: #475569; font-size: 0.72rem; font-weight: 700; padding: 6px 12px; border-radius: 8px; display: flex; align-items: center; gap: 8px; max-width: 100%; border: 1px solid #e2e8f0; line-height: 1.2; text-align: right; }
+            .bf-spiker-badge i { font-size: 0.8rem; color: #94a3b8; }
             
             .bf-col-channel { width: 140px; display: flex; justify-content: flex-end; }
             .bf-ch-logo { max-height: 24px; filter: contrast(1.1); }
@@ -958,9 +976,18 @@ async function openBroadcastFlow() {
             
             .bf-no-data { text-align: center; padding: 50px; color: #999; }
             
-            .bf-event-row.cancelled { opacity: 0.5; filter: grayscale(1); background: #f9fafb; }
-            .bf-event-row.cancelled .bf-title { text-decoration: line-through; color: #999; }
             .bf-event-row.cancelled .bf-col-time { color: #ccc; }
+
+            .bf-search-container { background: #fff; padding: 15px 30px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 15px; }
+            .bf-search-box { position: relative; flex: 1; }
+            .bf-search-box i { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #999; font-size: 0.9rem; }
+            .bf-search-input { width: 100%; padding: 10px 15px 10px 40px; border: 1px solid #e5e7eb; border-radius: 10px; font-size: 0.9rem; background: #f9fafb; transition: all 0.2s; outline: none; }
+            .bf-search-input:focus { border-color: #0e1b42; background: #fff; box-shadow: 0 0 0 4px rgba(14, 27, 66, 0.05); }
+            .bf-search-stats { font-size: 0.75rem; color: #6b7280; font-weight: 600; white-space: nowrap; }
+            
+            .bf-search-results-pane { display: none; padding-bottom: 30px; }
+            .bf-search-results-pane.active { display: block; }
+            .bf-search-day-header { padding: 15px 30px; background: #f8fafc; font-size: 0.75rem; font-weight: 800; color: #64748b; border-bottom: 1px solid #e2e8f0; text-transform: uppercase; letter-spacing: 0.5px; }
         </style>
         `;
 
@@ -1044,7 +1071,16 @@ async function openBroadcastFlow() {
                     </div>
                     <div style="font-size:0.85rem; opacity:0.7; font-weight:500;">S Sport Plus Portalı ${sourceName === 'sheet' ? '• Canlı (E-Tablo)' : ''}</div>
                 </div>
-                <div class="bf-tabs-nav">
+
+                <div class="bf-search-container">
+                    <div class="bf-search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" class="bf-search-input" placeholder="Maç, kanal, spiker veya branş ara..." oninput="switchBFSearch(this.value)">
+                    </div>
+                    <div class="bf-search-stats" id="bf-search-stats" style="display:none;"></div>
+                </div>
+
+                <div class="bf-tabs-nav" id="bf-tabs-nav">
                     <button class="bf-nav-btn" onclick="document.querySelector('.bf-tabs-scroll').scrollLeft -= 200"><i class="fas fa-chevron-left"></i></button>
                     <div class="bf-tabs-scroll">
                         ${tabsHtml}
@@ -1052,12 +1088,23 @@ async function openBroadcastFlow() {
                     <button class="bf-nav-btn" onclick="document.querySelector('.bf-tabs-scroll').scrollLeft += 200"><i class="fas fa-chevron-right"></i></button>
                 </div>
                 <div class="bf-content-area">
-                    ${panesHtml || '<div class="bf-no-data"><i class="fas fa-info-circle fa-2x" style="display:block;margin-bottom:10px;opacity:0.3;"></i><p>Henüz yayın akışı verisi yüklenmemiş.</p></div>'}
+                    <div id="bf-search-pane" class="bf-search-results-pane"></div>
+                    <div id="bf-normal-panes">
+                        ${panesHtml || '<div class="bf-no-data"><i class="fas fa-info-circle fa-2x" style="display:block;margin-bottom:10px;opacity:0.3;"></i><p>Henüz yayın akışı verisi yüklenmemiş.</p></div>'}
+                    </div>
                 </div>
             </div>
         `;
 
         window.switchBFDay = (date, el) => {
+            // Arama yapılıyorsa tab değiştirmeye izin verme veya aramayı temizle?
+            // En iyisi aramayı temizlemek
+            const searchInput = document.querySelector('.bf-search-input');
+            if (searchInput && searchInput.value) {
+                searchInput.value = '';
+                switchBFSearch('');
+            }
+
             document.querySelectorAll('.bf-tab').forEach(t => t.classList.remove('active'));
             el.classList.add('active');
             document.querySelectorAll('.bf-day-pane').forEach(p => p.classList.remove('active'));
@@ -1070,9 +1117,98 @@ async function openBroadcastFlow() {
             el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
         };
 
+        window.switchBFSearch = (query) => {
+            const tabsNav = document.getElementById('bf-tabs-nav');
+            const normalPanes = document.getElementById('bf-normal-panes');
+            const searchPane = document.getElementById('bf-search-pane');
+            const stats = document.getElementById('bf-search-stats');
+            
+            if (!query || query.trim().length < 2) {
+                tabsNav.style.display = 'flex';
+                normalPanes.style.display = 'block';
+                searchPane.style.display = 'none';
+                searchPane.innerHTML = '';
+                stats.style.display = 'none';
+                return;
+            }
+
+            tabsNav.style.display = 'none';
+            normalPanes.style.display = 'none';
+            searchPane.style.display = 'block';
+            searchPane.innerHTML = '';
+            stats.style.display = 'block';
+
+            const q = query.toLowerCase().trim();
+            let resultsHtml = "";
+            let totalFound = 0;
+
+            sortedDates.forEach(date => {
+                const dayItems = byDate[date];
+                const matches = dayItems.filter(it => {
+                    const title = String(it.event || it.title || it.match || '').toLowerCase();
+                    const details = String(it.details || '').toLowerCase();
+                    const announcer = String(it.announcer || it.spiker || it.spikers || '').toLowerCase();
+                    const channel = String(it.channel || it.platform || '').toLowerCase();
+                    return title.includes(q) || details.includes(q) || announcer.includes(q) || channel.includes(q);
+                });
+
+                if (matches.length > 0) {
+                    const label = formatDateLabel(date);
+                    resultsHtml += `<div class="bf-search-day-header">${label.main} ${label.sub}</div>`;
+                    
+                    matches.forEach(it => {
+                        totalFound++;
+                        const se = Number(it.startEpoch || 0);
+                        const ee = Number(it.endEpoch || (se + (2 * 60 * 60 * 1000)));
+                        const isPast = currentTime > ee;
+                        const isLive = currentTime >= se && currentTime <= ee;
+                        const time = it.time || '--:--';
+                        const title = it.event || it.title || it.match || '-';
+                        const details = it.details || '';
+                        const announcer = it.announcer || it.spiker || it.spikers || '';
+                        const channel = String(it.channel || it.platform || '').trim();
+                        const icon = getSportIcon(title);
+
+                        let chMarkup = "";
+                        if (channel) {
+                            const lowCh = channel.toLowerCase();
+                            if (lowCh.includes('plus')) chMarkup = `<img src="https://upload.wikimedia.org/wikipedia/tr/6/6f/S_Sport_Plus_logo.png" class="bf-ch-logo">`;
+                            else if (lowCh.includes('s sport 2')) chMarkup = `<img src="https://upload.wikimedia.org/wikipedia/tr/4/4e/S_Sport_2_logo.png" class="bf-ch-logo">`;
+                            else if (lowCh.includes('s sport')) chMarkup = `<img src="https://upload.wikimedia.org/wikipedia/tr/d/d4/S_Sport_logo.png" class="bf-ch-logo">`;
+                            else chMarkup = `<span class="bf-ch-tag">${channel}</span>`;
+                        }
+
+                        resultsHtml += `
+                            <div class="bf-event-row ${isLive ? 'live' : ''} ${isPast ? 'past' : ''} ${it.isCancelled ? 'cancelled' : ''}">
+                                ${isLive ? '<div class="live-tag">CANLI</div>' : ''}
+                                <div class="bf-col-status"><i class="fas ${icon} bf-sport-icon"></i></div>
+                                <div class="bf-col-time">${time}</div>
+                                <div class="bf-col-main">
+                                    <div class="bf-title">${escapeHtml(title)}</div>
+                                    ${(details && details.trim() !== title.trim()) ? `<div class="bf-sub">${escapeHtml(details)}</div>` : ''}
+                                </div>
+                                <div class="bf-col-spiker">
+                                    ${announcer ? `<div class="bf-spiker-badge"><i class="fas fa-microphone-alt"></i> ${escapeHtml(announcer)}</div>` : ''}
+                                </div>
+                                <div class="bf-col-channel">${chMarkup}</div>
+                            </div>
+                        `;
+                    });
+                }
+            });
+
+            if (totalFound === 0) {
+                searchPane.innerHTML = `<div class="bf-no-data"><i class="fas fa-search-minus fa-2x"></i><p>"${escapeHtml(query)}" için sonuç bulunamadı.</p></div>`;
+                stats.innerText = `0 sonuç bulundu`;
+            } else {
+                searchPane.innerHTML = resultsHtml;
+                stats.innerText = `${totalFound} sonuç bulundu`;
+            }
+        };
+
         Swal.fire({
             html: finalHtml,
-            width: 1100,
+            width: 1300,
             padding: '0',
             showConfirmButton: false,
             showCloseButton: true,
