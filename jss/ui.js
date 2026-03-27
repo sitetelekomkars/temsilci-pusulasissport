@@ -978,16 +978,37 @@ async function openBroadcastFlow() {
             
             .bf-event-row.cancelled .bf-col-time { color: #ccc; }
 
-            .bf-search-container { background: #fff; padding: 15px 30px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 15px; }
-            .bf-search-box { position: relative; flex: 1; }
+            .bf-search-container { background: #fff; padding: 15px 30px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
+            .bf-search-box { position: relative; max-content: 400px; width: 350px; margin-right: 35px; }
             .bf-search-box i { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #999; font-size: 0.9rem; }
-            .bf-search-input { width: 100%; padding: 10px 15px 10px 40px; border: 1px solid #e5e7eb; border-radius: 10px; font-size: 0.9rem; background: #f9fafb; transition: all 0.2s; outline: none; }
+            .bf-search-input { width: 100%; padding: 8px 15px 8px 35px; border: 1px solid #e5e7eb; border-radius: 10px; font-size: 0.85rem; background: #f9fafb; transition: all 0.2s; outline: none; }
             .bf-search-input:focus { border-color: #0e1b42; background: #fff; box-shadow: 0 0 0 4px rgba(14, 27, 66, 0.05); }
-            .bf-search-stats { font-size: 0.75rem; color: #6b7280; font-weight: 600; white-space: nowrap; }
+            
+            .bf-category-filters { display: flex; gap: 8px; flex-wrap: wrap; }
+            .bf-cat-btn { padding: 8px 14px; border-radius: 10px; border: 1px solid #e5e7eb; background: #fff; color: #4b5563; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+            .bf-cat-btn:hover { background: #f9fafb; border-color: #cbd5e1; transform: translateY(-1px); }
+            .bf-cat-btn.active { background: #0e1b42; color: white; border-color: #0e1b42; box-shadow: 0 4px 12px rgba(14, 27, 66, 0.2); }
+            
+            .bf-search-stats { font-size: 0.75rem; color: #6b7280; font-weight: 600; white-space: nowrap; margin-left: auto; }
             
             .bf-search-results-pane { display: none; padding-bottom: 30px; }
             .bf-search-results-pane.active { display: block; }
-            .bf-search-day-header { padding: 15px 30px; background: #f8fafc; font-size: 0.75rem; font-weight: 800; color: #64748b; border-bottom: 1px solid #e2e8f0; text-transform: uppercase; letter-spacing: 0.5px; }
+            .bf-search-day-header { padding: 12px 30px; background: #f1f5f9; font-size: 0.72rem; font-weight: 800; color: #475569; border-bottom: 1px solid #e2e8f0; text-transform: uppercase; letter-spacing: 1px; }
+
+            .bf-clock { background: rgba(255,255,255,0.1); padding: 6px 15px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(5px); font-variant-numeric: tabular-nums; font-weight: 700; font-size: 0.95rem; color: #fff; display: flex; align-items: center; gap: 8px; box-shadow: inset 0 0 10px rgba(0,0,0,0.1); }
+            .bf-clock i { color: #facc15; font-size: 0.8rem; }
+            
+            /* Glassmorphism & Neon Row */
+            .bf-event-row { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.5); }
+            .bf-event-row:nth-child(even) { background: rgba(248, 250, 252, 0.5); }
+            .live.bf-event-row { 
+                background: rgba(207, 10, 44, 0.04) !important; 
+                box-shadow: inset 0 0 20px rgba(207, 10, 44, 0.05);
+            }
+            .live.bf-event-row::before {
+                content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+                background: #cf0a2c; box-shadow: 0 0 15px #cf0a2c; z-index: 10;
+            }
         </style>
         `;
 
@@ -1069,13 +1090,26 @@ async function openBroadcastFlow() {
                             </button>
                         ` : ''}
                     </div>
-                    <div style="font-size:0.85rem; opacity:0.7; font-weight:500;">S Sport Plus Portalı ${sourceName === 'sheet' ? '• Canlı (E-Tablo)' : ''}</div>
+                    <div style="display:flex; align-items:center; gap:20px;">
+                        <div class="bf-clock" id="bf-current-clock">
+                            <i class="fas fa-clock"></i> <span id="clock-text">--:--:--</span>
+                        </div>
+                        <div style="font-size:0.85rem; opacity:0.7; font-weight:500;">Canlı (E-Tablo)</div>
+                    </div>
                 </div>
 
                 <div class="bf-search-container">
                     <div class="bf-search-box">
                         <i class="fas fa-search"></i>
-                        <input type="text" class="bf-search-input" placeholder="Maç, kanal, spiker veya branş ara..." oninput="switchBFSearch(this.value)">
+                        <input type="text" class="bf-search-input" id="bf-search-input" placeholder="Maç, kanal, spiker veya branş ara..." oninput="switchBFSearch(this.value)">
+                    </div>
+                    <div class="bf-category-filters">
+                        <button class="bf-cat-btn active" onclick="setBFCategory(null, this)">Hepsi</button>
+                        <button class="bf-cat-btn" onclick="setBFCategory('futbol', this)">⚽ Futbol</button>
+                        <button class="bf-cat-btn" onclick="setBFCategory('basketbol', this)">🏀 Basketbol</button>
+                        <button class="bf-cat-btn" onclick="setBFCategory('motor', this)">🏎️ Motor</button>
+                        <button class="bf-cat-btn" onclick="setBFCategory('tenis', this)">🎾 Tenis</button>
+                        <button class="bf-cat-btn" onclick="setBFCategory('dövüş', this)">🥊 Dövüş</button>
                     </div>
                     <div class="bf-search-stats" id="bf-search-stats" style="display:none;"></div>
                 </div>
@@ -1096,25 +1130,38 @@ async function openBroadcastFlow() {
             </div>
         `;
 
+        let currentBFCat = null;
+        window.setBFCategory = (cat, el) => {
+            document.querySelectorAll('.bf-cat-btn').forEach(b => b.classList.remove('active'));
+            if (el) el.classList.add('active');
+            currentBFCat = cat;
+            switchBFSearch(document.getElementById('bf-search-input').value);
+        };
+
+        let clockInterval;
+        const updateBFClock = () => {
+            const clockEl = document.getElementById('clock-text');
+            if (clockEl) {
+                const now = new Date();
+                clockEl.innerText = now.toLocaleTimeString('tr-TR');
+            }
+        };
+
         window.switchBFDay = (date, el) => {
-            // Arama yapılıyorsa tab değiştirmeye izin verme veya aramayı temizle?
-            // En iyisi aramayı temizlemek
-            const searchInput = document.querySelector('.bf-search-input');
+            const searchInput = document.getElementById('bf-search-input');
             if (searchInput && searchInput.value) {
                 searchInput.value = '';
                 switchBFSearch('');
             }
 
             document.querySelectorAll('.bf-tab').forEach(t => t.classList.remove('active'));
-            el.classList.add('active');
+            if (el) el.classList.add('active');
             document.querySelectorAll('.bf-day-pane').forEach(p => p.classList.remove('active'));
-            document.getElementById(`bf-pane-${date}`).classList.add('active');
+            const pane = document.getElementById(`bf-pane-${date}`);
+            if (pane) pane.classList.add('active');
 
-            // Auto scroll pane to top
             document.querySelector('.bf-content-area').scrollTop = 0;
-
-            // Center active tab
-            el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            if (el) el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
         };
 
         window.switchBFSearch = (query) => {
@@ -1123,7 +1170,7 @@ async function openBroadcastFlow() {
             const searchPane = document.getElementById('bf-search-pane');
             const stats = document.getElementById('bf-search-stats');
             
-            if (!query || query.trim().length < 2) {
+            if ((!query || query.trim().length < 2) && !currentBFCat) {
                 tabsNav.style.display = 'flex';
                 normalPanes.style.display = 'block';
                 searchPane.style.display = 'none';
@@ -1145,11 +1192,29 @@ async function openBroadcastFlow() {
             sortedDates.forEach(date => {
                 const dayItems = byDate[date];
                 const matches = dayItems.filter(it => {
-                    const title = String(it.event || it.title || it.match || '').toLowerCase();
-                    const details = String(it.details || '').toLowerCase();
-                    const announcer = String(it.announcer || it.spiker || it.spikers || '').toLowerCase();
-                    const channel = String(it.channel || it.platform || '').toLowerCase();
-                    return title.includes(q) || details.includes(q) || announcer.includes(q) || channel.includes(q);
+                    const titleStr = String(it.event || it.title || it.match || '').toLowerCase();
+                    const detailsStr = String(it.details || '').toLowerCase();
+                    const announcerStr = String(it.announcer || it.spiker || it.spikers || '').toLowerCase();
+                    const channelStr = String(it.channel || it.platform || '').toLowerCase();
+                    
+                    // Önce Kategori Filtresi (Eğer seçiliyse)
+                    if (currentBFCat) {
+                        const icon = getSportIcon(titleStr);
+                        let matchesCat = false;
+                        if (currentBFCat === 'futbol') matchesCat = (icon === 'fa-futbol');
+                        else if (currentBFCat === 'basketbol') matchesCat = (icon === 'fa-basketball-ball');
+                        else if (currentBFCat === 'motor') matchesCat = (icon === 'fa-motorcycle' || icon === 'fa-flag-checkered');
+                        else if (currentBFCat === 'tenis') matchesCat = (icon === 'fa-table-tennis');
+                        else if (currentBFCat === 'dövüş') matchesCat = (icon === 'fa-hand-fist');
+                        
+                        if (!matchesCat) return false;
+                    }
+
+                    // Sonra Metin Araması
+                    if (q) {
+                        return titleStr.includes(q) || detailsStr.includes(q) || announcerStr.includes(q) || channelStr.includes(q);
+                    }
+                    return true;
                 });
 
                 if (matches.length > 0) {
@@ -1212,7 +1277,14 @@ async function openBroadcastFlow() {
             padding: '0',
             showConfirmButton: false,
             showCloseButton: true,
-            background: '#fff'
+            background: '#fff',
+            didOpen: () => {
+                updateBFClock();
+                clockInterval = setInterval(updateBFClock, 1000);
+            },
+            willClose: () => {
+                clearInterval(clockInterval);
+            }
         });
 
         // Small delay to ensure render then scroll to today
