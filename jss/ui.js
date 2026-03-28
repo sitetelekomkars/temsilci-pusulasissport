@@ -892,12 +892,12 @@ async function openBroadcastFlow() {
 
         const getSportIcon = (title) => {
             const t = String(title).toLowerCase();
-            if (t.includes('nba') || t.includes('euroleague') || t.includes('basketbol') || t.includes('efes') || t.includes('fenerbahçe beko')) return 'fa-basketball-ball';
+            if (t.includes('nba') || t.includes('euroleague') || t.includes('basketbol') || t.includes('basketball') || t.includes('efes') || t.includes('fenerbahçe beko')) return 'fa-basketball-ball';
             if (t.includes('atp') || t.includes('wta') || t.includes('tenis')) return 'fa-table-tennis';
             if (t.includes('f1') || t.includes('formula')) return 'fa-flag-checkered';
             if (t.includes('moto') || t.includes('sbk') || t.includes('ssp') || t.includes('superbike') || t.includes('supersport')) return 'fa-motorcycle';
-            if (t.includes('ufc') || t.includes('boks') || t.includes('boxing')) return 'fa-hand-fist';
-            if (t.includes('nfl')) return 'fa-football-ball';
+            if (t.includes('ufc') || t.includes('boks') || t.includes('boxing') || t.includes('fight') || t.includes('dövüş') || t.includes('mma') || t.includes('one championship')) return 'fa-hand-fist';
+            if (t.includes('nfl') || t.includes('amerikan futbol')) return 'fa-football-ball';
             return 'fa-futbol'; // Default
         };
 
@@ -1300,23 +1300,52 @@ async function openBroadcastFlow() {
 }
 
 async function setBroadcastSheetUrl() {
-    // Merkezi Veritabanından (HomeBlocks) oku
-    const currentUrl = (homeBlocks['broadcast_url']?.content || localStorage.getItem("pusula_broadcast_url") || "").trim();
-    const { value: url, isDenied } = await Swal.fire({
-        title: 'E-Tablo Bağlantısı',
-        input: 'url',
-        inputLabel: 'Google Sheets Paylaşım Linki (CSV)',
-        inputValue: currentUrl,
-        inputPlaceholder: 'https://docs.google.com/spreadsheets/d/...',
+    const currentUrlStr = (homeBlocks['broadcast_url']?.content || localStorage.getItem("pusula_broadcast_url") || "").trim();
+    const urls = currentUrlStr.split('|');
+    const u1 = urls[0] || '';
+    const u2 = urls[1] || '';
+    const u3 = urls[2] || '';
+    const u4 = urls[3] || '';
+
+    const { value: urlObj, isDenied } = await Swal.fire({
+        title: 'Çoklu E-Tablo Bağlantıları',
+        html: `
+            <div style="font-size:0.9rem; text-align:left; margin-bottom:15px; color:#555">
+                Sistem aynı anda 4 farklı tabloyu okuyup birleştirebilir.<br>
+                <b>Link 1</b> zorunludur, diğerleri opsiyoneldir.
+            </div>
+            <input id="swal-url1" class="swal2-input" style="margin-bottom:10px" placeholder="Link 1 (Zorunlu, Örn: https://docs...)" value="${u1}">
+            <input id="swal-url2" class="swal2-input" style="margin-bottom:10px" placeholder="Link 2 (Opsiyonel Ek Tablo)" value="${u2}">
+            <input id="swal-url3" class="swal2-input" style="margin-bottom:10px" placeholder="Link 3 (Opsiyonel Ek Tablo)" value="${u3}">
+            <input id="swal-url4" class="swal2-input" style="margin-bottom:10px" placeholder="Link 4 (Opsiyonel Ek Tablo)" value="${u4}">
+        `,
+        focusConfirm: false,
         showCancelButton: true,
-        showDenyButton: !!currentUrl,
-        confirmButtonText: 'Kaydet',
-        denyButtonText: 'Linki Kaldır (Sisteme Dön)',
+        showDenyButton: !!currentUrlStr,
+        confirmButtonText: 'Çoklu Bağlantıyı Kaydet',
+        denyButtonText: 'Tümünü Kaldır',
         cancelButtonText: 'Vazgeç',
-        footer: '<div style="font-size:0.8rem; color:#666;">Not: Bu ayar tüm Pusula kullanıcıları için geçerli olacaktır.</div>',
-        inputValidator: (value) => {
-            if (!value && !isDenied) return 'Lütfen bir link giriniz!';
-            if (value && !value.includes("docs.google.com")) return 'Geçerli bir Google Sheets linki giriniz!';
+        footer: '<div style="font-size:0.8rem; color:#666;">Tüm Pusula kullanıcıları için geçerli olacaktır. Boş bırakılan satırlar işlenmez.</div>',
+        preConfirm: () => {
+            const val1 = document.getElementById('swal-url1').value.trim();
+            const val2 = document.getElementById('swal-url2').value.trim();
+            const val3 = document.getElementById('swal-url3').value.trim();
+            const val4 = document.getElementById('swal-url4').value.trim();
+            
+            if (!val1) {
+                Swal.showValidationMessage('Link 1 (Ana Tablo) zorunludur!');
+                return false;
+            }
+            if (!val1.includes('docs.google.com')) {
+                Swal.showValidationMessage('Link 1 geçerli bir Google Sheets bağlantısı olmalıdır!');
+                return false;
+            }
+            // Sadece dolu olan adresleri pipe | ile birleştir
+            const arr = [val1];
+            if (val2 && val2.includes('docs.google.com')) arr.push(val2);
+            if (val3 && val3.includes('docs.google.com')) arr.push(val3);
+            if (val4 && val4.includes('docs.google.com')) arr.push(val4);
+            return arr.join('|');
         }
     });
 
@@ -1332,21 +1361,17 @@ async function setBroadcastSheetUrl() {
         return;
     }
 
-    if (url) {
-        Swal.fire({ title: 'Kaydediliyor...', didOpen: () => Swal.showLoading() });
-        await apiCall('updateHomeBlock', { key: 'broadcast_url', content: url.trim(), title: 'Broadcast Link', visibleGroups: '' });
-        homeBlocks['broadcast_url'] = { content: url.trim() };
-        localStorage.setItem("pusula_broadcast_url", url.trim());
+    if (urlObj) {
+        Swal.fire({ title: 'E-Tablolar Okunuyor ve Birleştiriliyor...', didOpen: () => Swal.showLoading() });
+        await apiCall('updateHomeBlock', { key: 'broadcast_url', content: urlObj, title: 'Broadcast Link', visibleGroups: '' });
+        homeBlocks['broadcast_url'] = { content: urlObj };
+        localStorage.setItem("pusula_broadcast_url", urlObj);
         Swal.fire({
             icon: 'success',
-            title: 'Bağlantı Kaydedildi',
-            text: 'Yayın akışı artık tüm kullanıcılar için bu tablo üzerinden güncellenecektir.',
+            title: 'Tablolar Başarıyla Entegre Edildi',
+            text: 'Yayın akışı her tablodan ortak olarak çekilecektir.',
             timer: 2000
         });
-        openBroadcastFlow();
-    } else if (url === "") {
-        localStorage.removeItem("pusula_broadcast_url");
-        Swal.fire('Bağlantı Kaldırıldı', 'Sistem tekrar veritabanındaki verileri kullanacaktır.', 'info');
         openBroadcastFlow();
     }
 }
