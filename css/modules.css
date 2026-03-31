@@ -218,7 +218,11 @@
 .q-title {
   font-weight: 900;
   color: #0e1b42;
-  font-size: 1.15rem;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .q-subtitle {
@@ -394,48 +398,68 @@
   display: block;
 }
 
-.q-side-top {
-  padding: 16px 16px 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+.q-user-profile {
+  padding: 20px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
-/* Sidebar üst alanı */
-.telesales-side-top,
-.tech-side-top {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 12px;
-}
-
-.q-avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.q-avatar-circle {
+  width: 40px;
+  height: 40px;
   background: #cf0a2c;
   color: #0e1b42;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 900;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
-.q-user {
-  min-width: 0;
-  flex: 1;
+.q-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-.q-name {
-  font-weight: 900;
-  color: #ffffff !important;
+.q-user-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff !important;
 }
 
-.q-role {
-  opacity: 0.75;
-  font-size: 0.85rem;
+.q-user-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff !important;
+}
+
+.q-user-role {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+
+/* Sidebar module headers */
+.q-sidebar-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #cf0a2c;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.q-sidebar-header i {
+  width: 24px;
+  text-align: center;
 }
 
 .q-close {
@@ -478,29 +502,122 @@
   color: #fff !important;
 }
 
-.q-side-bottom {
-  padding: 14px 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+.q-sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.q-logout {
+.q-exit-btn {
   width: 100%;
-  border: 0;
-  border-radius: 12px;
-  padding: 12px 14px;
-  background: var(--corp-gray);
-  color: var(--primary);
-  font-weight: 900;
+  padding: 10px;
+  background: #6c757d;
+  border: none;
+  color: white;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  transition: 0.15s;
+  gap: 8px;
+  transition: 0.2s;
 }
 
-.q-logout:hover {
-  filter: brightness(0.96);
+.q-exit-btn:hover {
+  background: #5a6268;
+}
+
+/* --- VARDIYA TABLO RENKLENDIRME --- */
+.shift-v-cell {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-block;
+  min-width: 90px;
+  text-align: center;
+}
+
+.shift-v-off {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.shift-v-leave {
+  background: #e0f2fe;
+  color: #075985;
+  border: 1px solid #bae6fd;
+}
+
+.shift-v-morning {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.shift-v-afternoon {
+  background: #fef9c3;
+  color: #854d0e;
+  border: 1px solid #fef08a;
+}
+
+.shift-v-evening {
+  background: #f3e8ff;
+  color: #6b21a8;
+  border: 1px solid #e9d5ff;
+}
+
+.shift-v-night {
+  background: #e0e7ff;
+  color: #3730a3;
+  border: 1px solid #c7d2fe;
+}
+
+.shift-v-other {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.shift-v-cell {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.78rem;
+  display: inline-block;
+  min-width: 80px;
+  text-align: center;
+  transition: transform 0.15s;
+}
+
+.shift-v-cell:hover {
+  transform: scale(1.05);
+}
+
+.shift-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #d1d5db;
+}
+
+.shift-table th {
+  background: #f8fafc;
+  border: 1px solid #d1d5db;
+  padding: 10px 5px;
+}
+
+.shift-table td {
+  padding: 8px 4px;
+  border: 1px solid #e5e7eb;
+}
+
+.shift-table tr:hover td {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.shift-day-slot {
+  margin-top: 5px;
 }
 
 /* --- HOME: Bugün Neler Var & Duyurular düzenleme butonlarını kapat --- */
@@ -577,10 +694,15 @@
 
 .x-card {
   background: #fff;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.x-card:hover {
+  transform: translateY(-4px);
 }
 
 .x-card-head {
