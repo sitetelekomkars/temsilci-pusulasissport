@@ -8,14 +8,14 @@
     content="S Sport Plus - Pusula: Temsilci Bilgi ve Operasyon Portalı. Duyurular, teknik dokümanlar ve eğitim içerikleri.">
   <meta name="theme-color" content="#0e1b42">
   <title>S Sport Plus - Pusula</title>
-  <link rel="stylesheet" href="css/style.css?v=1.5">
-  <link rel="stylesheet" href="css/auth.css?v=1.5">
-  <link rel="stylesheet" href="css/layout.css?v=1.5">
-  <link rel="stylesheet" href="css/quality.css?v=1.5">
-  <link rel="stylesheet" href="css/wizard.css?v=1.5">
-  <link rel="stylesheet" href="css/modules.css?v=1.5">
-  <link rel="stylesheet" href="css/admin.css?v=1.5">
-  <link rel="stylesheet" href="css/arena.css?v=1.5">
+  <link rel="stylesheet" href="css/style.css?v=2.0">
+  <link rel="stylesheet" href="css/auth.css?v=2.0">
+  <link rel="stylesheet" href="css/layout.css?v=2.0">
+  <link rel="stylesheet" href="css/quality.css?v=2.0">
+  <link rel="stylesheet" href="css/wizard.css?v=2.0">
+  <link rel="stylesheet" href="css/modules.css?v=2.0">
+  <link rel="stylesheet" href="css/admin.css?v=2.0">
+  <link rel="stylesheet" href="css/arena.css?v=2.0">
   <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -532,16 +532,16 @@
     </div>
   </div>
   <div class="crafted-by-badge">Crafted by Doğuş Yalçınkaya</div>
-  <script src="jss/app.js?v=1.5"></script>
-  <script src="jss/auth.js?v=1.5"></script>
-  <script src="jss/data.js?v=1.5"></script>
-  <script src="jss/ui.js?v=1.5"></script>
-  <script src="jss/games.js?v=1.5"></script>
-  <script src="jss/quality.js?v=1.5"></script>
-  <script src="jss/telesatis.js?v=1.5"></script>
-  <script src="jss/shift.js?v=1.5"></script>
-  <script src="jss/admin.js?v=1.5"></script>
-  <script src="jss/arena.js?v=1.5"></script>
+  <script src="jss/app.js?v=2.0"></script>
+  <script src="jss/auth.js?v=2.0"></script>
+  <script src="jss/data.js?v=2.0"></script>
+  <script src="jss/ui.js?v=2.0"></script>
+  <script src="jss/games.js?v=2.0"></script>
+  <script src="jss/quality.js?v=2.0"></script>
+  <script src="jss/telesatis.js?v=2.0"></script>
+  <script src="jss/shift.js?v=2.0"></script>
+  <script src="jss/admin.js?v=2.0"></script>
+  <script src="jss/arena.js?v=2.0"></script>
   <script>function toggleUserDropdown() {
       const dropdown = document.getElementById('userDropdown');
       const arrow = document.getElementById('user-menu-arrow');
@@ -750,9 +750,10 @@
       <div class="q-nav-menu">
         <div class="q-nav-item active" data-shift-tab="plan" onclick='switchShiftTab("plan")'><i
             class="fas fa-calendar-day" aria-hidden="true"></i>Haftalık Plan</div>
-        <!-- Vardiya Talebi Şimdilik Gizlendi -->
-        <div class="q-nav-item" data-shift-tab="request" style="display:none" onclick='switchShiftTab("request")'><i
-            class="fas fa-paper-plane" aria-hidden="true"></i>Vardiya Talebi</div>
+        <div class="q-nav-item" data-shift-tab="request" onclick='switchShiftTab("request")'><i
+            class="fas fa-paper-plane" aria-hidden="true"></i>Değişim & Talep</div>
+        <div id="shift-admin-nav" class="q-nav-item" data-shift-tab="admin" style="display:none" onclick='switchShiftTab("admin")'><i
+            class="fas fa-check-double" aria-hidden="true"></i>Onay Paneli</div>
       </div>
       <div class="q-side-bottom"><button class="q-logout" onclick="closeFullShift()"><i class="fas fa-arrow-left"
             aria-hidden="true"></i>Geri</button></div>
@@ -774,28 +775,94 @@
         <section id="shift-view-request" class="q-view-section">
           <div class="shift-request-grid">
             <div class="shift-request-form">
-              <h3>Vardiya Talebi Oluştur</h3>
-              <div class="q-form-group"><label>Tarih</label><input type="date" id="shift-request-date" class="q-input">
+              <h3>Vardiya / Değişim Talebi</h3>
+              <div class="q-form-group">
+                <label>İşlem Türü</label>
+                <select id="shift-req-type" class="q-input" onchange="toggleShiftReqFields()">
+                  <option value="Talep">Gelecek Hafta İçin Talep</option>
+                  <option value="Değişim">Personel ile Vardiya Değişimi</option>
+                </select>
               </div>
-              <div class="q-form-group"><label>İstenen Vardiya / Durum</label>
+              <div class="q-form-group">
+                <label>Vardiya Günü</label>
+                <select id="shift-request-date" class="q-input" onchange="handleShiftAutoFill()">
+                  <option value="">Seçiniz...</option>
+                  <option value="Haftanın Tamamı">Haftanın Tamamı</option>
+                  <option value="Pazartesi">Pazartesi</option>
+                  <option value="Salı">Salı</option>
+                  <option value="Çarşamba">Çarşamba</option>
+                  <option value="Perşembe">Perşembe</option>
+                  <option value="Cuma">Cuma</option>
+                  <option value="Cumartesi">Cumartesi</option>
+                  <option value="Pazar">Pazar</option>
+                </select>
+              </div>
+              
+              <div id="shift-req-colleague-area" style="display:none">
+                <div class="q-form-group">
+                  <label>Değişim Yapılacak Kişi</label>
+                  <select id="shift-request-opponent" class="q-input" onchange="handleShiftAutoFill()">
+                    <option value="">Seçiniz...</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="q-form-group"><label id="shift-req-label">İstenen Vardiya / Durum</label>
                 <select id="shift-request-shift" class="q-input">
                   <option value="08:00 - 17:30">08:00 - 17:30</option>
                   <option value="09:00 - 18:30">09:00 - 18:30</option>
                   <option value="10:00 - 19:30">10:00 - 19:30</option>
                   <option value="15:30 - 01:00">15:30 - 01:00</option>
+                  <option value="16:00 - 01:00">16:00 - 01:00</option>
                   <option value="OFF">OFF (İzin)</option>
                   <option value="Diğer">Diğer (Notta belirtiniz)</option>
                 </select>
               </div>
+              
               <div class="q-form-group"><label>Not (Opsiyonel)</label><textarea id="shift-request-note" class="q-input"
                   placeholder="Talebinizle ilgili kısa bir not ekleyebilirsiniz..."></textarea></div>
               <button class="btn btn-copy" onclick="submitShiftRequest()"
                 style="width:100%;justify-content:center;margin-top:10px;">Talebimi Gönder</button>
             </div>
             <div class="shift-request-history">
+              <div id="shift-opponent-confirm-area" style="display:none; margin-bottom:20px;">
+                 <h3 style="color:#e11d48"><i class="fas fa-exclamation-circle"></i> Onayını Bekleyen Değişimler</h3>
+                 <div id="shift-opponent-list" class="shift-pending-list"></div>
+              </div>
               <h3>Taleplerim</h3>
               <div id="shift-requests-list"></div>
             </div>
+          </div>
+        </section>
+        <section id="shift-view-admin" class="q-view-section">
+          <div class="q-view-header">
+            <h2>Yönetici Onay Paneli</h2>
+          </div>
+          <div id="shift-admin-approval-list" class="shift-admin-grid">
+             <p style="color:#666">Yükleniyor...</p>
+          </div>
+          
+          <div class="q-view-header" style="margin-top:40px; border-top:1px solid #e2e8f0; padding-top:20px;">
+            <h2>Geçmiş İşlemler (Son 50)</h2>
+          </div>
+          <div class="shift-admin-history">
+             <table class="shift-table">
+                <thead>
+                  <tr>
+                    <th>Temsilci</th>
+                    <th>Tür</th>
+                    <th>Tarih</th>
+                    <th>Vardiya</th>
+                    <th>Arkadaş</th>
+                    <th>Durum</th>
+                    <th>İşlem Yapan</th>
+                    <th>Notlar</th>
+                  </tr>
+                </thead>
+                <tbody id="shift-admin-history-list">
+                   <tr><td colspan="8" style="text-align:center; color:#999">Yükleniyor...</td></tr>
+                </tbody>
+             </table>
           </div>
         </section>
       </div>
