@@ -8,14 +8,14 @@
     content="S Sport Plus - Pusula: Temsilci Bilgi ve Operasyon Portalı. Duyurular, teknik dokümanlar ve eğitim içerikleri.">
   <meta name="theme-color" content="#0e1b42">
   <title>S Sport Plus - Pusula</title>
-  <link rel="stylesheet" href="css/style.css?v=2.0">
-  <link rel="stylesheet" href="css/auth.css?v=2.0">
-  <link rel="stylesheet" href="css/layout.css?v=2.0">
-  <link rel="stylesheet" href="css/quality.css?v=2.0">
-  <link rel="stylesheet" href="css/wizard.css?v=2.0">
-  <link rel="stylesheet" href="css/modules.css?v=2.0">
-  <link rel="stylesheet" href="css/admin.css?v=2.0">
-  <link rel="stylesheet" href="css/arena.css?v=2.0">
+  <link rel="stylesheet" href="css/style.css?v=2.1">
+  <link rel="stylesheet" href="css/auth.css?v=2.1">
+  <link rel="stylesheet" href="css/layout.css?v=2.1">
+  <link rel="stylesheet" href="css/quality.css?v=2.1">
+  <link rel="stylesheet" href="css/wizard.css?v=2.1">
+  <link rel="stylesheet" href="css/modules.css?v=2.1">
+  <link rel="stylesheet" href="css/admin.css?v=2.1">
+  <link rel="stylesheet" href="css/arena.css?v=2.1">
   <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -532,16 +532,16 @@
     </div>
   </div>
   <div class="crafted-by-badge">Crafted by Doğuş Yalçınkaya</div>
-  <script src="jss/app.js?v=2.0"></script>
-  <script src="jss/auth.js?v=2.0"></script>
-  <script src="jss/data.js?v=2.0"></script>
-  <script src="jss/ui.js?v=2.0"></script>
-  <script src="jss/games.js?v=2.0"></script>
-  <script src="jss/quality.js?v=2.0"></script>
-  <script src="jss/telesatis.js?v=2.0"></script>
-  <script src="jss/shift.js?v=2.0"></script>
-  <script src="jss/admin.js?v=2.0"></script>
-  <script src="jss/arena.js?v=2.0"></script>
+  <script src="jss/app.js?v=2.1"></script>
+  <script src="jss/auth.js?v=2.1"></script>
+  <script src="jss/data.js?v=2.1"></script>
+  <script src="jss/ui.js?v=2.1"></script>
+  <script src="jss/games.js?v=2.1"></script>
+  <script src="jss/quality.js?v=2.1"></script>
+  <script src="jss/telesatis.js?v=2.1"></script>
+  <script src="jss/shift.js?v=2.1"></script>
+  <script src="jss/admin.js?v=2.1"></script>
+  <script src="jss/arena.js?v=2.1"></script>
   <script>function toggleUserDropdown() {
       const dropdown = document.getElementById('userDropdown');
       const arrow = document.getElementById('user-menu-arrow');
@@ -631,17 +631,12 @@
   </div>
   <div id="telesales-fullscreen" class="q-fullscreen" style="display:none">
     <div class="q-sidebar">
-      <div class="q-side-top telesales-side-top">
-        <div class="q-side-header">
-          <div class="q-module-title"><i class="fas fa-headset" aria-hidden="true"></i>TeleSatış</div><button
-            class="q-close" onclick="closeFullTelesales()"><i class="fas fa-times" aria-hidden="true"></i></button>
-        </div>
-        <div class="q-user-row">
-          <div class="q-avatar" id="t-side-avatar">U</div>
-          <div class="q-user">
-            <div class="q-name" id="t-side-name">Kullanıcı</div>
-            <div class="q-role" id="t-side-role">Temsilci</div>
-          </div>
+      <div class="q-sidebar-header"><i class="fas fa-headset fa-lg" aria-hidden="true"></i><span>TeleSatış</span></div>
+      <div class="q-user-profile">
+        <div class="q-avatar-circle" id="t-side-avatar">U</div>
+        <div class="q-user-info">
+          <div class="q-user-name" id="t-side-name">Kullanıcı</div>
+          <div class="q-user-role" id="t-side-role">Temsilci</div>
         </div>
       </div>
       <div class="q-nav-menu">
@@ -654,8 +649,11 @@
         <div class="q-nav-item" onclick='switchTelesalesTab("competition")'><i class="fas fa-trophy"
             aria-hidden="true"></i>Yarışma</div>
       </div>
-      <div class="q-side-bottom"><button class="q-logout" onclick="closeFullTelesales()"><i class="fas fa-arrow-left"
-            aria-hidden="true"></i>Geri</button></div>
+      <div class="q-sidebar-footer">
+        <button onclick="closeFullTelesales()" class="q-exit-btn">
+          <i class="fas fa-sign-out-alt" aria-hidden="true"></i>Geri
+        </button>
+      </div>
     </div>
     <div class="q-main">
       <div class="q-topbar">
@@ -735,16 +733,12 @@
   </div>
   <div id="shift-fullscreen" class="q-fullscreen" style="display:none">
     <div class="q-sidebar">
-      <div class="q-side-top shift-side-top">
-        <div class="q-side-header">
-          <div class="q-module-title"><i class="fas fa-calendar-check" aria-hidden="true"></i>Vardiyam</div>
-        </div>
-        <div class="q-user-row">
-          <div class="q-avatar" id="shift-side-avatar">U</div>
-          <div class="q-user">
-            <div class="q-name" id="shift-side-name">Kullanıcı</div>
-            <div class="q-role" id="shift-side-role">Temsilci</div>
-          </div>
+      <div class="q-sidebar-header"><i class="fas fa-calendar-check fa-lg" aria-hidden="true"></i><span>Vardiyam</span></div>
+      <div class="q-user-profile">
+        <div class="q-avatar-circle" id="shift-side-avatar">U</div>
+        <div class="q-user-info">
+          <div class="q-user-name" id="shift-side-name">Kullanıcı</div>
+          <div class="q-user-role" id="shift-side-role">Temsilci</div>
         </div>
       </div>
       <div class="q-nav-menu">
@@ -755,8 +749,11 @@
         <div id="shift-admin-nav" class="q-nav-item" data-shift-tab="admin" style="display:none" onclick='switchShiftTab("admin")'><i
             class="fas fa-check-double" aria-hidden="true"></i>Onay Paneli</div>
       </div>
-      <div class="q-side-bottom"><button class="q-logout" onclick="closeFullShift()"><i class="fas fa-arrow-left"
-            aria-hidden="true"></i>Geri</button></div>
+      <div class="q-sidebar-footer">
+        <button onclick="closeFullShift()" class="q-exit-btn">
+          <i class="fas fa-sign-out-alt" aria-hidden="true"></i>Geri
+        </button>
+      </div>
     </div>
     <div class="q-main">
       <div class="q-topbar">
@@ -871,17 +868,12 @@
 
   <div id="tech-fullscreen" class="q-fullscreen" style="display:none">
     <div class="q-sidebar">
-      <div class="q-side-top tech-side-top">
-        <div class="q-side-header">
-          <div class="q-module-title"><i class="fas fa-wrench" aria-hidden="true"></i>Teknik</div><button
-            class="q-close" onclick="closeFullTech()"><i class="fas fa-times" aria-hidden="true"></i></button>
-        </div>
-        <div class="q-user-row">
-          <div class="q-avatar" id="x-side-avatar">U</div>
-          <div class="q-user">
-            <div class="q-name" id="x-side-name">Kullanıcı</div>
-            <div class="q-role" id="x-side-role">Temsilci</div>
-          </div>
+      <div class="q-sidebar-header"><i class="fas fa-wrench fa-lg" aria-hidden="true"></i><span>Teknik</span></div>
+      <div class="q-user-profile">
+        <div class="q-avatar-circle" id="x-side-avatar">U</div>
+        <div class="q-user-info">
+          <div class="q-user-name" id="x-side-name">Kullanıcı</div>
+          <div class="q-user-role" id="x-side-role">Temsilci</div>
         </div>
       </div>
       <div class="q-nav-menu">
@@ -900,8 +892,11 @@
         <div class="q-nav-item" data-tech-tab="info" onclick='switchTechTab("info")'><i class="fas fa-circle-question"
             aria-hidden="true"></i>Sık Sorulan Sorular</div>
       </div>
-      <div class="q-side-bottom"><button class="q-logout" onclick="closeFullTech()"><i class="fas fa-arrow-left"
-            aria-hidden="true"></i>Geri</button></div>
+      <div class="q-sidebar-footer">
+        <button onclick="closeFullTech()" class="q-exit-btn">
+          <i class="fas fa-sign-out-alt" aria-hidden="true"></i>Geri
+        </button>
+      </div>
     </div>
     <div class="q-main">
       <div class="q-topbar">
