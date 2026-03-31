@@ -1,4 +1,4 @@
-﻿/* --- FULLSCREEN MODULE BASE --- */
+/* --- FULLSCREEN MODULE BASE --- */
 .q-fullscreen {
   position: fixed;
   inset: 0;
@@ -700,3 +700,89 @@
 
 /* RESMİ ENGELLEYEN MOZAİK KODU BURADAN SİLİNMİŞTİR */
 
+
+/* --- VARDİYA TALEBİ & DEĞİŞİM SİSTEMİ --- */
+.shift-request-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.shift-pending-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pending-border {
+  border: 2px solid #e11d48 !important;
+  background: #fff1f2 !important;
+}
+
+.waiting-opponent-border {
+  border: 2px solid #f59e0b !important;
+}
+
+/* Admin Onay Paneli Grid */
+.shift-admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.shift-admin-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sac-head {
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sac-user {
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.sac-type {
+  font-size: 0.7rem;
+  font-weight: 900;
+  padding: 3px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.type-swap { background: #dbeafe; color: #1e40af; }
+.type-req { background: #fef3c7; color: #92400e; }
+
+.sac-body {
+  padding: 16px;
+  flex: 1;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.sac-actions {
+  padding: 12px 16px;
+  background: #f8fafc;
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .shift-request-grid {
+    grid-template-columns: 1fr;
+  }
+}
