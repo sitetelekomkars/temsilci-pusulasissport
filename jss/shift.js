@@ -1,4 +1,6 @@
-﻿// --------------    VARDİYA FULLSCREEN ---------------------
+let lastShiftData = null;
+
+// --------------    VARDİYA FULLSCREEN ---------------------
 async function openShiftArea(tab) {
     const wrap = document.getElementById('shift-fullscreen');
     if (!wrap) return;
@@ -12,10 +14,12 @@ async function openShiftArea(tab) {
     if (av) av.innerText = (currentUser || 'U').trim().slice(0, 1).toUpperCase();
     if (nm) nm.innerText = currentUser || 'Kullanıcı';
     if (rl) rl.innerText = (isAdminMode || isLocAdmin) ? 'Yönetici' : 'Temsilci';
-    // Yetki kontrolü (Admin butonlarını göster/gizle)
     const adminFilters = document.getElementById('shift-admin-filters');
+    const adminNav = document.getElementById('shift-admin-nav');
 
     if (isAdminMode || isLocAdmin) {
+        if (adminNav) adminNav.style.display = 'flex';
+        // Admin filtreleri (Vardiya Yükle vb)
         if (adminFilters) {
             adminFilters.style.display = isEditingActive ? 'flex' : 'none';
             if (isEditingActive && !document.getElementById('btn-shift-upload')) {
@@ -40,8 +44,8 @@ async function openShiftArea(tab) {
         }
     } else {
         if (adminFilters) adminFilters.style.display = 'none';
+        if (adminNav) adminNav.style.display = 'none';
     }
-
 
     await loadShiftData();
     switchShiftTab(tab || 'plan');
@@ -60,9 +64,42 @@ function switchShiftTab(tab) {
     if (nav) nav.classList.add('active');
 
     document.querySelectorAll('#shift-fullscreen .q-view-section').forEach(s => s.classList.remove('active'));
-    // index.html IDs are updated to shift-view-plan and shift-view-request
     const view = document.getElementById(`shift-view-${tab}`);
     if (view) view.classList.add('active');
+
+    if (tab === 'request') {
+        toggleShiftReqFields();
+    }
+
+    // Admin sekmesi tıklanınca admin verilerini yükle
+    if (tab === 'admin') {
+        loadShiftAdminData();
+    }
+}
+
+function toggleShiftReqFields() {
+    const type = document.getElementById('shift-req-type').value;
+    const colleagueArea = document.getElementById('shift-req-colleague-area');
+    const label = document.getElementById('shift-req-label');
+    const shiftSelect = document.getElementById('shift-request-shift');
+    
+    if (type === 'Değişim') {
+        colleagueArea.style.display = 'block';
+        if (label) label.innerText = 'Kendi Vardiyam Yerine Geçecek Vardiya';
+        if (shiftSelect) {
+            shiftSelect.disabled = true;
+            shiftSelect.style.background = '#f4f6f8';
+            shiftSelect.style.cursor = 'not-allowed';
+        }
+    } else {
+        colleagueArea.style.display = 'none';
+        if (label) label.innerText = 'İstenen Vardiya / Durum';
+        if (shiftSelect) {
+            shiftSelect.disabled = false;
+            shiftSelect.style.background = '#ffffff';
+            shiftSelect.style.cursor = 'default';
+        }
+    }
 }
 
 async function addShiftPerson() {
@@ -164,7 +201,19 @@ async function deleteShiftPerson(id, name) {
 async function loadShiftData() {
     try {
         const data = await apiCall("getShiftData");
-        renderShiftData(data.shifts || {});
+        lastShiftData = data.shifts || {};
+        renderShiftData(lastShiftData);
+        
+        // Temsilci listesini doldur (Değişim için)
+        const opponentSelect = document.getElementById('shift-request-opponent');
+        if (opponentSelect && data.shifts && data.shifts.rows) {
+            //currentUser karşılaştırmasını normalize edelim
+            const curLower = String(currentUser || '').trim().toLowerCase();
+            const others = data.shifts.rows.filter(r => String(r.name).trim().toLowerCase() !== curLower);
+            
+            opponentSelect.innerHTML = '<option value="">Seçiniz...</option>' + 
+                others.map(r => `<option value="${escapeHtml(r.name)}">${escapeHtml(r.name)}</option>`).join('');
+        }
     } catch (e) {
         console.error(e);
         Swal.fire('Hata', e.message || 'Vardiya verileri alınırken bir hata oluştu.', 'error');
@@ -228,67 +277,287 @@ function renderShiftData(shifts) {
         }
     }
 
+    // Onay bekleyen değişimler (Opponent alanı ben olanlar ve durumu 'Rakip_Onayı_Bekleniyor' olanlar)
+    const opponentConfirmArea = document.getElementById('shift-opponent-confirm-area');
+    const opponentListEl = document.getElementById('shift-opponent-list');
+    if (opponentConfirmArea && opponentListEl) {
+        const pendingForMe = (shifts.allRequests || []).filter(r => 
+            r.opponent === currentUser && r.status === 'Rakip_Onayı_Bekleniyor'
+        );
+        
+        if (pendingForMe.length > 0) {
+            opponentConfirmArea.style.display = 'block';
+            opponentListEl.innerHTML = pendingForMe.map(r => `
+                <div class="shift-request-item pending-border">
+                    <div class="shift-request-top">
+                        <span class="shift-request-date"><b>${escapeHtml(r.username)}</b> sizden değişim istiyor</span>
+                        <span class="shift-request-status" style="background:#fef3c7; color:#92400e">Onay Bekliyor</span>
+                    </div>
+                    <div class="shift-request-body">
+                        <div><strong>Tarih:</strong> ${escapeHtml(r.date)}</div>
+                        <div><strong>Vardiya:</strong> ${escapeHtml(r.shift)}</div>
+                        ${r.note ? `<div><strong>Not:</strong> ${escapeHtml(r.note)}</div>` : ''}
+                    </div>
+                    <div style="margin-top:10px; display:flex; gap:10px;">
+                        <button class="x-btn x-btn-primary" style="flex:1" onclick="respondToShiftSwap('${r.id}', 'confirmed')">Onayla</button>
+                        <button class="x-btn" style="flex:1; background:#ef4444; color:white" onclick="respondToShiftSwap('${r.id}', 'rejected')">Reddet</button>
+                    </div>
+                </div>
+            `).join('');
+        } else {
+            opponentConfirmArea.style.display = 'none';
+        }
+    }
+
     const listEl = document.getElementById('shift-requests-list');
     if (listEl) {
-        const reqs = shifts.myRequests || [];
+        const reqs = (shifts.allRequests || []).filter(r => r.username === currentUser);
         if (!reqs.length) {
             listEl.innerHTML = '<p style="color:#666;">Henüz oluşturulmuş vardiya talebin yok.</p>';
         } else {
-            listEl.innerHTML = reqs.map(r => `
-                <div class="shift-request-item">
-                    <div class="shift-request-top">
-                        <span class="shift-request-date">${escapeHtml(r.date || '')}</span>
-                        <span class="shift-request-status">${escapeHtml(r.status || 'Açık')}</span>
+            listEl.innerHTML = reqs.map(r => {
+                let statusColor = '#64748b';
+                let statusText = r.status || 'Beklemede';
+                if (statusText === 'Onaylandı') statusColor = '#10b981';
+                if (statusText === 'Reddedildi') statusColor = '#ef4444';
+                if (statusText === 'Rakip_Onayı_Bekleniyor') {
+                    statusText = 'Arkadaş Onayı Bekleniyor';
+                    statusColor = '#f59e0b';
+                }
+
+                return `
+                    <div class="shift-request-item">
+                        <div class="shift-request-top">
+                            <span class="shift-request-date">${escapeHtml(r.date || '')}</span>
+                            <span class="shift-request-status" style="background:${statusColor}22; color:${statusColor}">${escapeHtml(statusText)}</span>
+                        </div>
+                        <div class="shift-request-body">
+                            <div><strong>Tür:</strong> ${escapeHtml(r.type || 'Talep')}</div>
+                            <div><strong>Talep:</strong> ${escapeHtml(r.shift || '')}</div>
+                            ${r.opponent ? `<div><strong>Arkadaş:</strong> ${escapeHtml(r.opponent || '')}</div>` : ''}
+                            ${r.note ? `<div><strong>Not:</strong> ${escapeHtml(r.note || '')}</div>` : ''}
+                            ${r.admin_note ? `<div style="color:#b91c1c"><strong>Admin Notu:</strong> ${escapeHtml(r.admin_note)}</div>` : ''}
+                        </div>
+                        <div class="shift-request-footer">${new Date(r.timestamp).toLocaleString('tr-TR')}</div>
                     </div>
-                    <div class="shift-request-body">
-                        <div><strong>Tür:</strong> ${escapeHtml(r.type || '')}</div>
-                        <div><strong>Mevcut:</strong> ${escapeHtml(r.current || '')}</div>
-                        <div><strong>Talep Edilen:</strong> ${escapeHtml(r.requested || '')}</div>
-                        ${r.friend ? `<div><strong>Arkadaş:</strong> ${escapeHtml(r.friend || '')}</div>` : ''}
-                        ${r.friendShift ? `<div><strong>Arkadaş Vardiyası:</strong> ${escapeHtml(r.friendShift || '')}</div>` : ''}
-                        ${r.note ? `<div><strong>Not:</strong> ${escapeHtml(r.note || '')}</div>` : ''}
-                    </div>
-                    <div class="shift-request-footer">${escapeHtml(r.timestamp || '')}</div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
         }
     }
 }
 
-async function submitShiftRequest(evt) {
-    if (evt) evt.preventDefault();
-
-    const date = document.getElementById('shift-req-date').value;
+async function submitShiftRequest() {
     const type = document.getElementById('shift-req-type').value;
-    const current = document.getElementById('shift-req-current').value;
-    const requested = document.getElementById('shift-req-requested').value;
-    const friend = document.getElementById('shift-req-friend').value;
-    const friendShift = document.getElementById('shift-req-friend-shift').value;
-    const note = document.getElementById('shift-req-note').value;
+    const date = document.getElementById('shift-request-date').value;
+    const shift = document.getElementById('shift-request-shift').value;
+    const opponent = document.getElementById('shift-request-opponent').value;
+    const note = document.getElementById('shift-request-note').value;
 
-    if (!date || !requested) {
-        Swal.fire('Uyarı', 'Tarih ve talep edilen vardiya alanları zorunludur.', 'warning');
+    if (!date || !shift) {
+        Swal.fire('Uyarı', 'Tarih ve vardiya alanları zorunludur.', 'warning');
+        return;
+    }
+    
+    if (type === 'Değişim' && !opponent) {
+        Swal.fire('Uyarı', 'Lütfen değişim yapacağınız kişiyi seçiniz.', 'warning');
         return;
     }
 
+    Swal.fire({ title: 'Gönderiliyor...', didOpen: () => Swal.showLoading() });
+
     try {
-        const data = await apiCall("submitShiftRequest", {
-            date: date,
+        const res = await apiCall("submitShiftRequestExtended", {
             type: type,
-            current: current,
-            requested: requested,
-            friend: friend,
-            friendShift: friendShift,
+            date: date,
+            shift: shift,
+            opponent: opponent,
             note: note,
-            week: document.getElementById('shift-week-label') ? document.getElementById('shift-week-label').textContent : ''
+            status: type === 'Değişim' ? 'Rakip_Onayı_Bekleniyor' : 'Beklemede'
         });
-        Swal.fire({ icon: 'success', title: 'Kaydedildi', text: 'Vardiya talebin kaydedildi.', timer: 1500, showConfirmButton: false });
-        const form = document.getElementById('shift-request-form');
-        if (form) form.reset();
-        await loadShiftData();
+        
+        if (res.result === 'success') {
+            Swal.fire({ icon: 'success', title: 'Başarılı', text: 'Talebiniz iletildi.', timer: 1500, showConfirmButton: false });
+            // Formu temizle
+            document.getElementById('shift-request-date').value = '';
+            document.getElementById('shift-request-note').value = '';
+            await loadShiftData();
+        } else {
+            Swal.fire('Hata', res.message || 'Bir hata oluştu.', 'error');
+        }
     } catch (e) {
         console.error(e);
-        Swal.fire('Hata', e.message || 'Talep kaydedilemedi.', 'error');
+        Swal.fire('Hata', 'İşlem başarısız.', 'error');
+    }
+}
+
+function handleShiftAutoFill() {
+    const type = document.getElementById('shift-req-type').value;
+    if (type !== 'Değişim') return;
+
+    const dayNameSelected = document.getElementById('shift-request-date').value; // Artık gün seçiliyor (örn: Pazartesi)
+    const opponentName = document.getElementById('shift-request-opponent').value;
+
+    if (!dayNameSelected || !opponentName || !lastShiftData || !lastShiftData.rows) return;
+
+    // Gün başlıklarındaki index'i bulalım
+    const dayHeaders = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
+    const trDayIndex = dayHeaders.indexOf(dayNameSelected);
+
+    if (trDayIndex === -1) return;
+
+    // Seçilen kişiyi bul
+    const person = lastShiftData.rows.find(r => r.name === opponentName);
+    if (person && person.cells) {
+        const foundShift = person.cells[trDayIndex];
+        if (foundShift) {
+            const shiftSelect = document.getElementById('shift-request-shift');
+            
+            // Eğer vardiye listede yoksa ekle (Diğer vardiyalar için)
+            let exists = false;
+            for(let i=0; i<shiftSelect.options.length; i++) {
+                if(shiftSelect.options[i].value === foundShift) {
+                    exists = true;
+                    break;
+                }
+            }
+
+            if (!exists) {
+                const newOpt = document.createElement('option');
+                newOpt.value = foundShift;
+                newOpt.text = foundShift;
+                shiftSelect.add(newOpt);
+            }
+
+            shiftSelect.value = foundShift;
+        }
+    }
+}
+
+async function respondToShiftSwap(id, status) {
+    const actionText = status === 'confirmed' ? 'onaylıyor' : 'reddediyor';
+    const confirm = await Swal.fire({
+        title: 'Emin misiniz?',
+        text: `Bu değişim talebini ${actionText} musunuz?`,
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Evet',
+        cancelButtonText: 'İptal'
+    });
+
+    if (!confirm.isConfirmed) return;
+
+    Swal.fire({ title: 'İşleniyor...', didOpen: () => Swal.showLoading() });
+    try {
+        const nextStatus = status === 'confirmed' ? 'Beklemede' : 'Reddedildi';
+        const res = await apiCall("updateShiftRequestStatus", { 
+            id: id, 
+            status: nextStatus,
+            responder: currentUser 
+        });
+        
+        if (res.result === 'success') {
+            Swal.fire({ icon: 'success', title: 'Başarılı', timer: 1200, showConfirmButton: false });
+            await loadShiftData();
+        } else {
+            Swal.fire('Hata', res.message, 'error');
+        }
+    } catch (e) {
+        Swal.fire('Hata', 'İşlem başarısız.', 'error');
+    }
+}
+
+async function loadShiftAdminData() {
+    const listEl = document.getElementById('shift-admin-approval-list');
+    const historyEl = document.getElementById('shift-admin-history-list');
+    if (!listEl || !historyEl) return;
+
+    try {
+        const res = await apiCall("getAllShiftRequests");
+        const allData = res.data || [];
+        
+        // 1. BEKLEYEN TALEPLER (Kartlar)
+        const pending = allData.filter(r => r.status === 'Beklemede' || r.status === 'Rakip_Onayı_Bekleniyor');
+        if (!pending.length) {
+            listEl.innerHTML = '<p style="color:#666; padding:20px;">Onay bekleyen yeni talep bulunmuyor.</p>';
+        } else {
+            listEl.innerHTML = pending.map(r => {
+                const isWaitingOpponent = r.status === 'Rakip_Onayı_Bekleniyor';
+                return `
+                    <div class="shift-admin-card ${isWaitingOpponent ? 'waiting-opponent-border' : ''}">
+                        <div class="sac-head">
+                            <span class="sac-user">${escapeHtml(r.username)}</span>
+                            <div style="display:flex; gap:5px; align-items:center;">
+                                ${isWaitingOpponent ? '<span style="font-size:0.65rem; color:#f59e0b; font-weight:700;"><i class="fas fa-clock"></i> Arkadaş Onayı Bekliyor</span>' : ''}
+                                <span class="sac-type ${r.type === 'Değişim' ? 'type-swap' : 'type-req'}">${escapeHtml(r.type)}</span>
+                            </div>
+                        </div>
+                        <div class="sac-body">
+                            <div><b>Tarih:</b> ${escapeHtml(r.date)}</div>
+                            <div><b>Talep:</b> ${escapeHtml(r.shift)}</div>
+                            ${r.opponent ? `<div><b>Rakip:</b> ${escapeHtml(r.opponent)}</div>` : ''}
+                            ${r.note ? `<div><b>Not:</b> <span style="font-style:italic">"${escapeHtml(r.note)}"</span></div>` : ''}
+                        </div>
+                        <div class="sac-actions">
+                            <button class="x-btn x-btn-primary" onclick="adminProcessShift('${r.id}', 'Onaylandı')">Onayla</button>
+                            <button class="x-btn" style="background:#ef4444; color:white" onclick="adminProcessShift('${r.id}', 'Reddedildi')">Reddet</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // 2. GEÇMİŞ İŞLEMLER (Tablo - Son 50)
+        const history = allData.filter(r => r.status === 'Onaylandı' || r.status === 'Reddedildi').slice(0, 50);
+        if (!history.length) {
+            historyEl.innerHTML = '<tr><td colspan="8" style="text-align:center; color:#999; padding:20px;">Henüz işlem geçmişi bulunmuyor.</td></tr>';
+        } else {
+            historyEl.innerHTML = history.map(r => {
+                const statusColor = r.status === 'Onaylandı' ? '#22c55e' : '#ef4444';
+                return `
+                    <tr>
+                        <td style="font-weight:600">${escapeHtml(r.username)}</td>
+                        <td><span class="sac-type ${r.type === 'Değişim' ? 'type-swap' : 'type-req'}" style="font-size:0.6rem;">${escapeHtml(r.type)}</span></td>
+                        <td>${formatShiftDate(r.date)}</td>
+                        <td>${escapeHtml(r.shift)}</td>
+                        <td>${r.opponent ? escapeHtml(r.opponent) : '-'}</td>
+                        <td style="color:${statusColor}; font-weight:700;">${escapeHtml(r.status)}</td>
+                        <td style="font-size:0.8rem; color:#666">${escapeHtml(r.approved_by || '-')}</td>
+                        <td style="font-size:0.8rem; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="${escapeHtml(r.admin_note || '')}">
+                            ${r.admin_note ? `<span style="color:#0e1b42">[A]: ${escapeHtml(r.admin_note)}</span>` : ''}
+                            ${r.note ? `<br/><span style="color:#666; font-style:italic">[T]: ${escapeHtml(r.note)}</span>` : ''}
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+    } catch (e) {
+        console.error(e);
+        listEl.innerHTML = '<p style="color:#ef4444">Veriler çekilemedi.</p>';
+    }
+}
+
+async function adminProcessShift(id, status) {
+    const { value: note } = await Swal.fire({
+        title: 'Admin Notu (Opsiyonel)',
+        input: 'text',
+        placeholder: 'Red gerekçesi veya onay notu...',
+        showCancelButton: true,
+        confirmButtonText: 'Kaydet'
+    });
+
+    if (note === undefined) return; // İptal
+
+    Swal.fire({ title: 'İşleniyor...', didOpen: () => Swal.showLoading() });
+    try {
+        const res = await apiCall("adminFinalizeShift", { id, status, adminNote: note });
+        if (res.result === 'success') {
+            Swal.fire({ icon: 'success', title: 'İşlem Başarılı', timer: 1200, showConfirmButton: false });
+            loadShiftAdminData();
+        } else {
+            Swal.fire('Hata', res.message, 'error');
+        }
+    } catch (e) {
+        Swal.fire('Hata', 'Sistem hatası.', 'error');
     }
 }
 
@@ -712,6 +981,21 @@ function embeddedTwReset(targetId) {
    - Eski kart görünümü (liste)
    - Düzenleme, E-Tablo (Data) üzerinden (updateContent/addCard)
 --------------------------*/
+
+function formatShiftDate(dateStr) {
+    if (!dateStr) return '';
+    const days = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar'];
+    if (days.includes(dateStr)) return dateStr;
+    
+    try {
+        const d = new Date(dateStr);
+        if (isNaN(d)) return dateStr;
+        return d.toLocaleDateString('tr-TR', { day: '2-digit', month: '2-digit' }) + ' ' +
+            d.toLocaleDateString('tr-TR', { weekday: 'short' });
+    } catch (e) {
+        return dateStr;
+    }
+}
 
 function __getTechCardsForUi() {
     return (database || [])
