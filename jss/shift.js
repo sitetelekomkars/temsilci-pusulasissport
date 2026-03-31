@@ -1,5 +1,40 @@
 let lastShiftData = null;
 
+async function editShiftWeekLabel(currentLabel) {
+    const { value: newLabel } = await Swal.fire({
+        title: 'Hafta Etiketini Düzenle',
+        input: 'text',
+        inputLabel: 'Örn: 8 - 14 Nisan Haftası',
+        inputValue: currentLabel,
+        showCancelButton: true,
+        confirmButtonText: 'Kaydet',
+        cancelButtonText: 'İptal',
+        inputValidator: (value) => {
+            if (!value) return 'Bir etiket girmelisiniz!';
+        }
+    });
+
+    if (newLabel) {
+        Swal.fire({ title: 'Kaydediliyor...', didOpen: () => Swal.showLoading() });
+        try {
+            const res = await apiCall("updateHomeBlock", {
+                key: 'ShiftWeekLabel',
+                title: 'Vardiya Haftalık Etiket',
+                content: newLabel,
+                visibleGroups: 'All'
+            });
+            if (res.result === "success") {
+                Swal.fire('Başarılı', 'Hafta etiketi güncellendi.', 'success');
+                loadShiftData(); // Tekrar yükle ve render et
+            } else {
+                throw new Error(res.message);
+            }
+        } catch (e) {
+            Swal.fire('Hata', e.message || 'Kaydedilemedi.', 'error');
+        }
+    }
+}
+
 // --------------    VARDİYA FULLSCREEN ---------------------
 async function openShiftArea(tab) {
     const wrap = document.getElementById('shift-fullscreen');
@@ -198,6 +233,23 @@ async function deleteShiftPerson(id, name) {
     }
 }
 
+function getShiftClass(v) {
+  if (!v) return 'shift-v-cell shift-v-other';
+  const val = v.toUpperCase().trim();
+  if (val === 'OFF') return 'shift-v-cell shift-v-off';
+  if (val.includes('İZİN')) return 'shift-v-cell shift-v-leave';
+  
+  const hour = parseInt(val.split(':')[0]);
+  if (!isNaN(hour)) {
+    if (hour >= 0 && hour <= 7) return 'shift-v-cell shift-v-night';
+    if (hour >= 8 && hour <= 11) return 'shift-v-cell shift-v-morning';
+    if (hour >= 12 && hour <= 14) return 'shift-v-cell shift-v-afternoon';
+    if (hour >= 15 && hour <= 18) return 'shift-v-cell shift-v-evening';
+    if (hour >= 19) return 'shift-v-cell shift-v-night';
+  }
+  return 'shift-v-cell shift-v-other';
+}
+
 async function loadShiftData() {
     try {
         const data = await apiCall("getShiftData");
@@ -223,7 +275,20 @@ async function loadShiftData() {
 function renderShiftData(shifts) {
     const weekLabelEl = document.getElementById('shift-week-label');
     if (weekLabelEl) {
-        weekLabelEl.textContent = formatWeekLabel(shifts.weekLabel || '');
+        const rawLabel = shifts.weekLabel || 'Haftalık Vardiya Planı';
+        weekLabelEl.innerText = formatWeekLabel(rawLabel);
+        
+        // Düzenleme modu aktifse kalem ikonu ekle
+        if (typeof isEditingActive !== 'undefined' && isEditingActive && (isAdminMode || isLocAdmin)) {
+            const editBtn = document.createElement('button');
+            editBtn.className = 'x-btn x-btn-admin';
+            editBtn.style.marginLeft = '10px';
+            editBtn.style.padding = '4px 8px';
+            editBtn.style.fontSize = '0.8rem';
+            editBtn.innerHTML = '<i class="fas fa-pen"></i>';
+            editBtn.onclick = () => editShiftWeekLabel(rawLabel);
+            weekLabelEl.appendChild(editBtn);
+        }
     }
 
     const myPlanEl = document.getElementById('shift-plan-my');
@@ -233,7 +298,7 @@ function renderShiftData(shifts) {
         if (myRow && headers.length) {
             const cellsHtml = headers.map((h, idx) => {
                 const v = (myRow.cells || [])[idx] || '';
-                return `<div class="shift-day"><div class="shift-day-date">${formatShiftDate(h)}</div><div class="shift-day-slot">${escapeHtml(v)}</div></div>`;
+                return `<div class="shift-day"><div class="shift-day-date">${formatShiftDate(h)}</div><div class="shift-day-slot"><span class="${getShiftClass(v)}">${escapeHtml(v)}</span></div></div>`;
             }).join('');
             myPlanEl.innerHTML = `
                 <div class="shift-card-header">Benim Vardiyam</div>
@@ -260,7 +325,7 @@ function renderShiftData(shifts) {
                 html += `<td style="font-weight:600;">${escapeHtml(r.name)}</td>`;
                 headers.forEach((h, idx) => {
                     const v = (r.cells || [])[idx] || '';
-                    html += `<td>${escapeHtml(v)}</td>`;
+                    html += `<td><span class="${getShiftClass(v)}">${escapeHtml(v)}</span></td>`;
                 });
                 if (isAdminMode && isEditingActive) {
                     html += `<td>
