@@ -391,9 +391,9 @@ async function openMenuPermissions() {
         }
 
         allRolePermissions = res.permissions || [];
-        // 🕵️ LocAdmin filtreli roller (Sadece grup isimleri)
+        // 🕵️ LocAdmin filtreli roller (Sadece grup isimleri, bireysel yetkileri -U:- gizle)
         const roles = (res.groups || ["admin", "qusers", "users"]).filter(r =>
-            r.toLowerCase() !== 'locadmin' && !r.startsWith('u:')
+            r.toLowerCase() !== 'locadmin' && !r.toLowerCase().startsWith('u:')
         );
 
         let rbacMode = 'roles'; // 'roles' veya 'users'
