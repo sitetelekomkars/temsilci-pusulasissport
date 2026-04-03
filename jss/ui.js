@@ -730,7 +730,7 @@ async function openDataImporter(targetTable) {
     if (!isAdminMode && !isLocAdmin) return;
     let title = targetTable === 'Vardiya' ? 'Vardiya Yükle' : 'Yayın Akışı Yükle';
     let helpText = targetTable === 'Vardiya'
-        ? 'Sırasıyla şu sütunları kopyalayın: Temsilci, Pazartesi, Salı, Çarşamba, Perşembe, Cuma, Cumartesi, Pazar'
+        ? 'Sırasıyla şu sütunları kopyalayın: Temsilci, Grup, Pazartesi, Salı, Çarşamba, Perşembe, Cuma, Cumartesi, Pazar'
         : 'Excelden (Event/Match, Time, DateISO, Channel, Announcer, Details) sütunlarını kopyalayıp yapıştırın.';
     const { value: pasteData } = await Swal.fire({
         title: title,
@@ -749,8 +749,12 @@ async function openDataImporter(targetTable) {
             const firstCol = String(cols[0] || '').toUpperCase().trim();
             return firstCol !== 'TEMSİLCİ' && firstCol !== 'TEMSILCI' && firstCol !== 'ID' && firstCol !== '';
         }).map((cols, i) => {
-            const obj = { Temsilci: (cols[0] || '').trim(), 'İd': Date.now() + i };
-            dayHeaders.forEach((h, j) => { obj[h] = (cols[j + 1] || '').trim(); });
+            const obj = { 
+                Temsilci: (cols[0] || '').trim(), 
+                Grup: (cols[1] || '').trim(), // Yeni: Grup sütunu
+                'İd': Date.now() + i 
+            };
+            dayHeaders.forEach((h, j) => { obj[h] = (cols[j + 2] || '').trim(); }); // Indeks kaydırıldı (+2)
             return obj;
         });
     } else {
