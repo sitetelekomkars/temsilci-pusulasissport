@@ -8,14 +8,14 @@
     content="S Sport Plus - Pusula: Temsilci Bilgi ve Operasyon Portalı. Duyurular, teknik dokümanlar ve eğitim içerikleri.">
   <meta name="theme-color" content="#0e1b42">
   <title>S Sport Plus - Pusula</title>
-  <link rel="stylesheet" href="css/style.css?v=2.1">
-  <link rel="stylesheet" href="css/auth.css?v=2.1">
-  <link rel="stylesheet" href="css/layout.css?v=2.1">
-  <link rel="stylesheet" href="css/quality.css?v=2.1">
-  <link rel="stylesheet" href="css/wizard.css?v=2.1">
-  <link rel="stylesheet" href="css/modules.css?v=2.1">
-  <link rel="stylesheet" href="css/admin.css?v=2.1">
-  <link rel="stylesheet" href="css/arena.css?v=2.1">
+  <link rel="stylesheet" href="css/style.css?v=2.8">
+  <link rel="stylesheet" href="css/auth.css?v=2.8">
+  <link rel="stylesheet" href="css/layout.css?v=2.8">
+  <link rel="stylesheet" href="css/quality.css?v=2.8">
+  <link rel="stylesheet" href="css/wizard.css?v=2.8">
+  <link rel="stylesheet" href="css/modules.css?v=2.8">
+  <link rel="stylesheet" href="css/admin.css?v=2.8">
+  <link rel="stylesheet" href="css/arena.css?v=2.8">
   <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -532,16 +532,16 @@
     </div>
   </div>
   <div class="crafted-by-badge">Crafted by Doğuş Yalçınkaya</div>
-  <script src="jss/app.js?v=2.1"></script>
-  <script src="jss/auth.js?v=2.1"></script>
-  <script src="jss/data.js?v=2.1"></script>
-  <script src="jss/ui.js?v=2.1"></script>
-  <script src="jss/games.js?v=2.1"></script>
-  <script src="jss/quality.js?v=2.1"></script>
-  <script src="jss/telesatis.js?v=2.1"></script>
-  <script src="jss/shift.js?v=2.1"></script>
-  <script src="jss/admin.js?v=2.1"></script>
-  <script src="jss/arena.js?v=2.1"></script>
+  <script src="jss/auth.js?v=2.6"></script>
+  <script src="jss/app.js?v=2.6"></script>
+  <script src="jss/data.js?v=2.6"></script>
+  <script src="jss/ui.js?v=2.6"></script>
+  <script src="jss/quality.js?v=2.6"></script>
+  <script src="jss/telesatis.js?v=2.6"></script>
+  <script src="jss/shift.js?v=2.6"></script>
+  <script src="jss/admin.js?v=2.6"></script>
+  <script src="jss/arena.js?v=2.6"></script>
+  <script src="jss/games.js?v=2.6"></script>
   <script>function toggleUserDropdown() {
       const dropdown = document.getElementById('userDropdown');
       const arrow = document.getElementById('user-menu-arrow');
@@ -764,7 +764,10 @@
           <div id="shift-admin-filters"
             style="display:none;margin-bottom:20px;padding:15px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;align-items:center;flex-wrap:wrap;gap:10px;">
             <i class="fas fa-user-shield" style="color:#64748b;margin-right:10px;"></i>
-            <span style="font-size:0.85rem;font-weight:600;color:#475569;">Yönetici Paneli:</span>
+            <span style="font-size:0.85rem;font-weight:600;color:#475569;">Grup Filtrele:</span>
+            <select id="shift-admin-group-filter" class="minimal-select" onchange="filterShiftTableByAdmin()" style="width:180px;">
+              <option value="all">Tüm Gruplar</option>
+            </select>
           </div>
           <div id="shift-plan-my" class="shift-my-card"></div>
           <div id="shift-plan-table" class="shift-table-card"></div>
