@@ -2448,8 +2448,8 @@ function renderHomePanels() {
                     dt.setHours(hh, mm, 0, 0);
 
                     const startTime = dt.getTime();
-                    // Başlamasına 15 dk kala başlasın, 3 saat sonrasına kadar 'Bugün' listesinde kalsın
-                    return now >= (startTime - 15 * 60000) ? (now < startTime + 180 * 60000) : true;
+                    // Başlamasına 10 dk kala listeye girsin, 2 saat sonrasına kadar 'Bugün' listesinde kalsın
+                    return now >= (startTime - 10 * 60000) ? (now < startTime + 120 * 60000) : true;
                 }).sort((a, b) => {
                     const tA = String(a.time || '00:00');
                     const tB = String(b.time || '00:00');
@@ -2480,8 +2480,8 @@ function renderHomePanels() {
                             const hh = parseInt(m[1], 10), mm = parseInt(m[2], 10);
                             const dt = new Date(); dt.setHours(hh, mm, 0, 0);
                             const st = dt.getTime();
-                            // Başlamasına 5 dk kaladan başlayıp 2.5 saat sürene kadar "CANLI" de
-                            isLive = (now >= st - 5*60000 && now < st + 150*60000);
+                            // Başlamasına 5 dk kaladan başlayıp 100 dk (maç süresi) sürene kadar "CANLI" de
+                            isLive = (now >= st - 5*60000 && now < st + 100*60000);
                         }
 
                         return `
