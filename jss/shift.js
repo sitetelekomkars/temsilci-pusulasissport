@@ -54,27 +54,37 @@ async function openShiftArea(tab) {
 
     if (isAdminMode || isLocAdmin) {
         if (adminNav) adminNav.style.display = 'flex';
-        // Admin filtreleri (Vardiya Yükle vb)
+        // Admin filtreleri (Vardiya Yükle vb) her zaman görünür olsun ki Grup Filtresi kullanılabilsin
         if (adminFilters) {
-            adminFilters.style.display = isEditingActive ? 'flex' : 'none';
-            if (isEditingActive && !document.getElementById('btn-shift-upload')) {
-                const btn = document.createElement('button');
-                btn.id = 'btn-shift-upload';
-                btn.className = 'x-btn x-btn-admin';
-                btn.style.marginLeft = '10px';
-                btn.innerHTML = '<i class="fas fa-upload"></i> Vardiya Yükle';
-                btn.onclick = () => openDataImporter('Vardiya');
-                adminFilters.appendChild(btn);
-            }
-            if (isEditingActive && !document.getElementById('btn-shift-add')) {
-                const btnAdd = document.createElement('button');
-                btnAdd.id = 'btn-shift-add';
-                btnAdd.className = 'x-btn x-btn-admin';
-                btnAdd.style.marginLeft = '10px';
-                btnAdd.style.background = '#2e7d32';
-                btnAdd.innerHTML = '<i class="fas fa-plus"></i> Yeni Personel';
-                btnAdd.onclick = () => addShiftPerson();
-                adminFilters.appendChild(btnAdd);
+            adminFilters.style.display = 'flex';
+            
+            // Düzenleme butonları sadece Düzenleme Modu açıkken eklensin
+            if (isEditingActive) {
+                if (!document.getElementById('btn-shift-upload')) {
+                    const btn = document.createElement('button');
+                    btn.id = 'btn-shift-upload';
+                    btn.className = 'x-btn x-btn-admin';
+                    btn.style.marginLeft = '10px';
+                    btn.innerHTML = '<i class="fas fa-upload"></i> Vardiya Yükle';
+                    btn.onclick = () => openDataImporter('Vardiya');
+                    adminFilters.appendChild(btn);
+                }
+                if (!document.getElementById('btn-shift-add')) {
+                    const btnAdd = document.createElement('button');
+                    btnAdd.id = 'btn-shift-add';
+                    btnAdd.className = 'x-btn x-btn-admin';
+                    btnAdd.style.marginLeft = '10px';
+                    btnAdd.style.background = '#2e7d32';
+                    btnAdd.innerHTML = '<i class="fas fa-plus"></i> Yeni Personel';
+                    btnAdd.onclick = () => addShiftPerson();
+                    adminFilters.appendChild(btnAdd);
+                }
+            } else {
+                // Düzenleme kapalıysa butonları temizle (isteğe bağlı, ama görünmemesi gerekiyorsa)
+                const b1 = document.getElementById('btn-shift-upload');
+                const b2 = document.getElementById('btn-shift-add');
+                if (b1) b1.remove();
+                if (b2) b2.remove();
             }
         }
     } else {
@@ -250,6 +260,12 @@ function getShiftClass(v) {
   return 'shift-v-cell shift-v-other';
 }
 
+function filterShiftTableByAdmin() {
+    if (lastShiftData) {
+        renderShiftData(lastShiftData);
+    }
+}
+
 async function loadShiftData() {
     try {
         const data = await apiCall("getShiftData");
@@ -259,9 +275,22 @@ async function loadShiftData() {
         // Temsilci listesini doldur (Değişim için)
         const opponentSelect = document.getElementById('shift-request-opponent');
         if (opponentSelect && data.shifts && data.shifts.rows) {
-            //currentUser karşılaştırmasını normalize edelim
             const curLower = String(currentUser || '').trim().toLowerCase();
-            const others = data.shifts.rows.filter(r => String(r.name).trim().toLowerCase() !== curLower);
+            const myGroup = (localStorage.getItem("sSportGroup") || '').trim().toLowerCase();
+            const isAdmin = isAdminMode || isLocAdmin;
+
+            // Filtreleme: Admin değilse sadece AYNI GRUPTAKİLERİ göster
+            const others = data.shifts.rows.filter(r => {
+                const rowName = String(r.name || '').trim().toLowerCase();
+                const rowGroup = (r.group || '').trim().toLowerCase();
+                
+                if (rowName === curLower) return false; // Kendisini gizle
+                if (isAdmin) return true; // Admin herkesi görür
+                
+                // Aynı gruptaysa veya (geçmiş kayıtlar için) grup bilgisi yoksa göster
+                if (rowGroup && myGroup) return rowGroup === myGroup;
+                return true; 
+            });
             
             opponentSelect.innerHTML = '<option value="">Seçiniz...</option>' + 
                 others.map(r => `<option value="${escapeHtml(r.name)}">${escapeHtml(r.name)}</option>`).join('');
@@ -312,15 +341,53 @@ function renderShiftData(shifts) {
     const tableWrap = document.getElementById('shift-plan-table');
     if (tableWrap) {
         const headers = shifts.headers || [];
-        const rows = shifts.rows || [];
-        if (!headers.length || !rows.length) {
-            tableWrap.innerHTML = '<p style="color:#666;">Vardiya tablosu henüz hazırlanmadı.</p>';
+        const allRows = shifts.rows || [];
+        
+        // 🔒 Grup Bazlı Filtreleme (v2.5)
+        const myGroup = (localStorage.getItem("sSportGroup") || '').trim().toLowerCase();
+        const isAdmin = isAdminMode || isLocAdmin;
+        
+        // Admin Filtre Dropdown'ını Doldur (Sadece bir kez)
+        if (isAdmin) {
+            const filterEl = document.getElementById('shift-admin-group-filter');
+            if (filterEl && filterEl.options.length <= 1) {
+                const groups = [...new Set(allRows.map(r => r.group).filter(Boolean))].sort();
+                groups.forEach(g => {
+                    const opt = document.createElement('option');
+                    opt.value = g;
+                    opt.textContent = g;
+                    filterEl.appendChild(opt);
+                });
+            }
+        }
+
+        const filteredRows = allRows.filter(r => {
+            if (isAdmin) {
+                const adminFilter = document.getElementById('shift-admin-group-filter')?.value || 'all';
+                if (adminFilter === 'all') return true;
+                return (r.group || '').trim().toLowerCase() === adminFilter.toLowerCase();
+            }
+
+            const rowGroup = (r.group || '').trim().toLowerCase();
+            const rowName = String(r.name || '').trim().toLowerCase();
+            const currentUserName = String(currentUser || '').trim().toLowerCase();
+
+            // Eğer grup bilgisi varsa ve kullanıcının grubu ile eşleşiyorsa göster
+            if (rowGroup && myGroup && rowGroup === myGroup) return true;
+            // Kendi satırını her zaman görebilsin
+            if (rowName === currentUserName) return true;
+            
+            return false;
+        });
+
+        if (!headers.length || !filteredRows.length) {
+            tableWrap.innerHTML = '<p style="color:#666;">Vardiya tablosunda görüntülenecek veri bulunamadı.</p>';
         } else {
             let html = '<table class="shift-table"><thead><tr><th>Temsilci</th>';
             headers.forEach(h => { html += `<th>${formatShiftDate(h)}</th>`; });
             if (isAdminMode && isEditingActive) html += '<th>İşlem</th>';
             html += '</tr></thead><tbody>';
-            rows.forEach(r => {
+            filteredRows.forEach(r => {
                 html += '<tr>';
                 html += `<td style="font-weight:600;">${escapeHtml(r.name)}</td>`;
                 headers.forEach((h, idx) => {
@@ -587,9 +654,10 @@ async function loadShiftAdminData() {
                         <td>${r.opponent ? escapeHtml(r.opponent) : '-'}</td>
                         <td style="color:${statusColor}; font-weight:700;">${escapeHtml(r.status)}</td>
                         <td style="font-size:0.8rem; color:#666">${escapeHtml(r.approved_by || '-')}</td>
-                        <td style="font-size:0.8rem; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="${escapeHtml(r.admin_note || '')}">
-                            ${r.admin_note ? `<span style="color:#0e1b42">[A]: ${escapeHtml(r.admin_note)}</span>` : ''}
-                            ${r.note ? `<br/><span style="color:#666; font-style:italic">[T]: ${escapeHtml(r.note)}</span>` : ''}
+                        <td style="font-size:0.8rem; max-width:250px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; cursor: help;" 
+                            title="Yönetici Notu: ${escapeHtml(r.admin_note || '-')}\n------------------\nTemsilci Notu: ${escapeHtml(r.note || '-')}">
+                            ${r.admin_note ? `<div style="color:#0e1b42; font-weight:600; overflow:hidden; text-overflow:ellipsis;">[A]: ${escapeHtml(r.admin_note)}</div>` : ''}
+                            ${r.note ? `<div style="color:#666; font-style:italic; overflow:hidden; text-overflow:ellipsis;">[T]: ${escapeHtml(r.note)}</div>` : ''}
                         </td>
                     </tr>
                 `;
