@@ -2437,17 +2437,23 @@ function renderHomePanels() {
                     const iso = toISO(it.dateISO || it.date);
                     if (iso !== todayISO) return false;
 
-                    // Saati geçen karşılaşmalar görünmesin
+                    // Mantık Güncellemesi: Sadece gelecekti olanları değil, devam edenleri de göster (Son 3 saat)
                     const now = Date.now();
-                    const se = Number(it.startEpoch || 0);
-                    if (se) return se > now;
-                    const t = String(it.time || '').trim();
-                    const m = t.match(/^(\d{2}):(\d{2})(?::(\d{2}))?$/);
+                    const startTimeStr = String(it.time || '').trim();
+                    const m = startTimeStr.match(/^(\d{2}):(\d{2})(?::(\d{2}))?$/);
                     if (!m) return true; // saat formatı yoksa göster
-                    const hh = parseInt(m[1], 10), mm = parseInt(m[2], 10), ss = parseInt(m[3] || '0', 10);
+                    
+                    const hh = parseInt(m[1], 10), mm = parseInt(m[2], 10);
                     const dt = new Date();
-                    dt.setHours(hh, mm, ss, 0);
-                    return dt.getTime() > now;
+                    dt.setHours(hh, mm, 0, 0);
+
+                    const startTime = dt.getTime();
+                    // Başlamasına 15 dk kala başlasın, 3 saat sonrasına kadar 'Bugün' listesinde kalsın
+                    return now >= (startTime - 15 * 60000) ? (now < startTime + 180 * 60000) : true;
+                }).sort((a, b) => {
+                    const tA = String(a.time || '00:00');
+                    const tB = String(b.time || '00:00');
+                    return tA.localeCompare(tB);
                 });
 
                 if (!todays.length) {
@@ -2459,23 +2465,35 @@ function renderHomePanels() {
                         </div>
                     `;
                 } else {
-                    const shown = todays.slice(0, 4);
+                    const now = Date.now();
+                    const shown = todays.slice(0, 5); // 5 tane gösterelim
                     todayEl.innerHTML = shown.map(it => {
-                        const time = escapeHtml(it.time || '');
+                        const timeStr = String(it.time || '').trim();
                         const title = escapeHtml(it.match || it.title || it.event || '');
                         const ch = escapeHtml(it.channel || it.platform || '');
                         const league = escapeHtml(it.league || it.category || '');
-                        const spk = escapeHtml(it.spiker || it.spikers || it.commentator || it.commentators || '');
-                        const det = String(it.details || '').trim();
+                        
+                        // Canlılık Kontrolü
+                        const m = timeStr.match(/^(\d{2}):(\d{2})/);
+                        let isLive = false;
+                        if (m) {
+                            const hh = parseInt(m[1], 10), mm = parseInt(m[2], 10);
+                            const dt = new Date(); dt.setHours(hh, mm, 0, 0);
+                            const st = dt.getTime();
+                            // Başlamasına 5 dk kaladan başlayıp 2.5 saat sürene kadar "CANLI" de
+                            isLive = (now >= st - 5*60000 && now < st + 150*60000);
+                        }
+
                         return `
-                          <div class="home-mini-item">
-                            <div class="home-mini-date">${time}${league ? ` • ${league}` : ''}${ch ? ` • ${ch}` : ''}</div>
-                            <div class="home-mini-title">${title || 'Maç'}</div>
-                            ${det ? `<div class="home-mini-desc" style="margin-top:2px;color:#666;">ℹ️ ${escapeHtml(det)}</div>` : ''}
-                            ${spk ? `<div class="home-mini-desc" style="margin-top:4px;color:#555">🎙 ${spk}</div>` : ''}
+                          <div class="home-mini-item ${isLive ? 'is-live-match' : ''}" style="${isLive ? 'border-left: 3px solid #ef4444; background: #fff1f2;' : ''}">
+                            <div class="home-mini-date" style="display:flex; align-items:center; gap:6px;">
+                                ${isLive ? '<span class="live-pulse" style="width:8px; height:8px; background:#ef4444; border-radius:50%; display:inline-block; animation: pulse 1.5s infinite;"></span><span style="color:#ef4444; font-weight:800; font-size:0.7rem;">CANLI</span> • ' : ''}
+                                ${timeStr}${league ? ` • ${league}` : ''}${ch ? ` • ${ch}` : ''}
+                            </div>
+                            <div class="home-mini-title" style="${isLive ? 'color:#9f1239; font-weight:800;' : ''}">${title || 'Maç'}</div>
                           </div>
                         `;
-                    }).join('') + (todays.length > shown.length ? `<div style="color:#666;font-size:.9rem;margin-top:6px">+${todays.length - shown.length} maç daha…</div>` : '');
+                    }).join('') + (todays.length > shown.length ? `<div style="color:#666;font-size:.8rem;margin-top:8px;text-align:center;font-weight:600;">+${todays.length - shown.length} yayın daha bulunuyor…</div>` : '');
                 }
 
 
