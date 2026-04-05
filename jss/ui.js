@@ -842,15 +842,21 @@ async function fetchBroadcastFlow() {
 }
 
 async function openBroadcastFlow() {
-    Swal.fire({
-        title: "Yayın Akışı",
-        html: '<div style="padding: 40px; text-align: center; background:#fff;"><i class="fas fa-circle-notch fa-spin fa-3x" style="color:#0e1b42"></i><p style="margin-top:15px; font-weight:600; color:#555;">Veriler hazırlanıyor...</p></div>',
-        showConfirmButton: false,
-        width: 1100,
-        padding: '0',
-        background: '#fff',
-        showCloseButton: true
-    });
+    // 🧠 v8.7.2 Işık Hızı: Eğer önbellek taze ise yükleme ekranını atla
+    const nowTS = Date.now();
+    const hasCache = window._bfCache && (nowTS - window._bfCache.ts < 120000);
+
+    if (!hasCache) {
+        Swal.fire({
+            title: "Yayın Akışı",
+            html: '<div style="padding: 40px; text-align: center; background:#fff;"><i class="fas fa-circle-notch fa-spin fa-3x" style="color:#0e1b42"></i><p style="margin-top:15px; font-weight:600; color:#555;">Veriler hazırlanıyor...</p></div>',
+            showConfirmButton: false,
+            width: 1100,
+            padding: '0',
+            background: '#fff',
+            showCloseButton: true
+        });
+    }
 
     try {
         const itemsRawResult = await apiCall('getBroadcastFlow');
@@ -1016,12 +1022,17 @@ async function openBroadcastFlow() {
         </style>
         `;
 
+        const validDates = sortedDates.filter(d => {
+            const l = formatDateLabel(d);
+            return l.main !== "INVALID DATE" && !l.main.includes("NAN") && d !== 'Unknown';
+        });
+
         let tabsHtml = "";
         let panesHtml = "";
 
-        sortedDates.forEach((date, idx) => {
+        validDates.forEach((date, idx) => {
             const label = formatDateLabel(date);
-            const isActive = (date === todayISO) || (idx === 0 && !sortedDates.includes(todayISO));
+            const isActive = (date === todayISO) || (idx === 0 && !validDates.includes(todayISO));
 
             tabsHtml += `
                 <div class="bf-tab ${isActive ? 'active' : ''}" id="tab-${date}" onclick="switchBFDay('${date}', this)">
@@ -1069,7 +1080,10 @@ async function openBroadcastFlow() {
                                 ${details ? `<div class="bf-sub bf-details-text">${escapeHtml(details)}</div>` : ''}
                             </div>
                             <div class="bf-col-spiker">
-                                ${announcer ? `<div class="bf-spiker-badge"><i class="fas fa-microphone-alt"></i> ${escapeHtml(announcer)}</div>` : ''}
+                                ${(announcer || it.broadcastEnd) ? `<div class="bf-spiker-badge">
+                                    ${it.broadcastEnd ? `<span style="color:#cf0a2c; margin-right:8px; font-weight:800; border-right:1px solid #ddd; padding-right:8px;">🔚 ${escapeHtml(it.broadcastEnd)}</span>` : ''}
+                                    ${announcer ? `<i class="fas fa-microphone-alt" style="margin-right:5px;"></i> ${escapeHtml(announcer)}` : ''}
+                                </div>` : ''}
                             </div>
                             <div class="bf-col-channel">${chMarkup}</div>
                         </div>
@@ -1193,7 +1207,7 @@ async function openBroadcastFlow() {
             let resultsHtml = "";
             let totalFound = 0;
 
-            sortedDates.forEach(date => {
+            validDates.forEach(date => {
                 const dayItems = byDate[date];
                 const matches = dayItems.filter(it => {
                     const titleStr = String(it.event || it.title || it.match || '').toLowerCase();
@@ -1256,9 +1270,12 @@ async function openBroadcastFlow() {
                                     <div class="bf-title">${escapeHtml(title)}</div>
                                     ${(details && details.trim() !== title.trim()) ? `<div class="bf-sub">${escapeHtml(details)}</div>` : ''}
                                 </div>
-                                <div class="bf-col-spiker">
-                                    ${announcer ? `<div class="bf-spiker-badge"><i class="fas fa-microphone-alt"></i> ${escapeHtml(announcer)}</div>` : ''}
-                                </div>
+                                 <div class="bf-col-spiker">
+                                     ${(announcer || it.broadcastEnd) ? `<div class="bf-spiker-badge">
+                                         ${it.broadcastEnd ? `<span style="color:#cf0a2c; margin-right:8px; font-weight:800; border-right:1px solid #ddd; padding-right:8px;">🔚 ${escapeHtml(it.broadcastEnd)}</span>` : ''}
+                                         ${announcer ? `<i class="fas fa-microphone-alt" style="margin-right:5px;"></i> ${escapeHtml(announcer)}` : ''}
+                                     </div>` : ''}
+                                 </div>
                                 <div class="bf-col-channel">${chMarkup}</div>
                             </div>
                         `;
