@@ -977,6 +977,8 @@ async function openBroadcastFlow() {
             .bf-ch-tag { background: #0e1b42; color: white; font-size: 0.7rem; font-weight: 800; padding: 4px 10px; border-radius: 4px; }
             
             .live-tag { background: #cf0a2c; color: white; font-size: 0.65rem; font-weight: 900; padding: 2px 6px; border-radius: 3px; position: absolute; top: 10px; right: 30px; letter-spacing: 0.5px; animation: flash 1.5s infinite; }
+            .bf-platform-tag { background: #0e1b42; color: #fff; padding: 2.5px 10px; border-radius: 5px; font-weight: 800; font-size: 0.58rem; margin-right: 8px; position: absolute; top: 10px; right: 85px; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 10px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; min-width: 60px; text-transform: uppercase; }
+            .live-tag-standalone { position: static !important; }
             
             @keyframes pulse-icon { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
             @keyframes flash { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
@@ -1072,6 +1074,7 @@ async function openBroadcastFlow() {
 
                     panesHtml += `
                         <div class="bf-event-row ${isLive ? 'live' : ''} ${isPast ? 'past' : ''} ${it.isCancelled ? 'cancelled' : ''}">
+                            ${it.platformTag ? `<div class="bf-platform-tag">${escapeHtml(it.platformTag)}</div>` : ''}
                             ${isLive ? '<div class="live-tag">CANLI</div>' : ''}
                             <div class="bf-col-status"><i class="fas ${icon} bf-sport-icon"></i></div>
                             <div class="bf-col-time">${time}</div>
@@ -1263,6 +1266,7 @@ async function openBroadcastFlow() {
 
                         resultsHtml += `
                             <div class="bf-event-row ${isLive ? 'live' : ''} ${isPast ? 'past' : ''} ${it.isCancelled ? 'cancelled' : ''}">
+                                ${it.platformTag ? `<div class="bf-platform-tag">${escapeHtml(it.platformTag)}</div>` : ''}
                                 ${isLive ? '<div class="live-tag">CANLI</div>' : ''}
                                 <div class="bf-col-status"><i class="fas ${icon} bf-sport-icon"></i></div>
                                 <div class="bf-col-time">${time}</div>
