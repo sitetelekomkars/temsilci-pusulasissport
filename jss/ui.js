@@ -1102,6 +1102,9 @@ async function openBroadcastFlow() {
                 <div class="bf-header">
                     <div class="bf-header-title">
                         <i class="fas fa-broadcast-tower"></i> Yayın Akışı
+                        <button class="x-btn x-btn-admin" style="margin-left:15px; font-size:0.7rem; padding:4px 10px; background:#1e40af;" onclick="window._bfCache=null; openBroadcastFlow();">
+                            <i class="fas fa-sync-alt"></i> Yenile
+                        </button>
                         ${((isAdminMode || isLocAdmin) && isEditingActive) ? `
                             <button class="x-btn x-btn-admin" style="margin-left:5px; font-size:0.7rem; padding:4px 10px; background:#2e7d32;" onclick="setBroadcastSheetUrl()">
                                 <i class="fas fa-link"></i> E-Tablo Bağla
