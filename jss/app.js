@@ -50,7 +50,7 @@ function formatShiftDate(d) {
     return d;
 }
 
-const BAKIM_MODU = true;
+const BAKIM_MODU = false;
 
 function showGlobalError(message) {
     // Kullanıcılara kırmızı bant gösterme (istek: ekran temiz kalsın)
