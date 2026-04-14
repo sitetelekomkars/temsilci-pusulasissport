@@ -39,30 +39,46 @@ let userTeams = []; // { user_a, user_b, team_name }
 
 // 🎵 WEB AUDIO API SYNTHESIZER (NO DOWNLOADS REQUIRED) 🎵
 function playArenaSound(type) {
+    if (localStorage.getItem('arena2_muted') === 'true') return;
     try {
         const actx = new (window.AudioContext || window.webkitAudioContext)();
-        const osc = actx.createOscillator();
-        const gain = actx.createGain();
-        osc.connect(gain);
-        gain.connect(actx.destination);
-        if (type === 'up') {
-            // Şıng! (Coin/Level Up sound)
-            osc.type = 'sine';
-            osc.frequency.setValueAtTime(987.77, actx.currentTime); // B5
-            osc.frequency.setValueAtTime(1318.51, actx.currentTime + 0.1); // E6
-            gain.gain.setValueAtTime(0.1, actx.currentTime);
-            gain.gain.exponentialRampToValueAtTime(0.00001, actx.currentTime + 0.4);
-            osc.start(); osc.stop(actx.currentTime + 0.5);
-        } else if (type === 'down') {
-            // Zonk! (Fail/Penalty sound)
-            osc.type = 'sawtooth';
-            osc.frequency.setValueAtTime(150, actx.currentTime);
-            osc.frequency.linearRampToValueAtTime(100, actx.currentTime + 0.3);
-            gain.gain.setValueAtTime(0.1, actx.currentTime);
-            gain.gain.linearRampToValueAtTime(0.00001, actx.currentTime + 0.3);
-            osc.start(); osc.stop(actx.currentTime + 0.4);
+        if (actx.state === 'suspended') actx.resume();
+        const masterGain = actx.createGain();
+        masterGain.gain.setValueAtTime(0.15, actx.currentTime);
+        masterGain.connect(actx.destination);
+        const playTone = (freq, type, start, duration, gainVal = 0.5, ramp = true) => {
+            const osc = actx.createOscillator();
+            const g = actx.createGain();
+            osc.type = type;
+            osc.frequency.setValueAtTime(freq, actx.currentTime + start);
+            g.gain.setValueAtTime(gainVal, actx.currentTime + start);
+            if (ramp) g.gain.exponentialRampToValueAtTime(0.00001, actx.currentTime + start + duration);
+            else g.gain.setValueAtTime(0.00001, actx.currentTime + start + duration);
+            osc.connect(g); g.connect(masterGain);
+            osc.start(actx.currentTime + start); osc.stop(actx.currentTime + start + duration);
+        };
+        if (type === 'move') playTone(150, 'square', 0, 0.05, 0.3);
+        else if (type === 'submit') {
+            const osc = actx.createOscillator(); const g = actx.createGain();
+            osc.type = 'sawtooth'; osc.frequency.setValueAtTime(200, actx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(800, actx.currentTime + 0.3);
+            g.gain.setValueAtTime(0.2, actx.currentTime); g.gain.linearRampToValueAtTime(0.00001, actx.currentTime + 0.3);
+            osc.connect(g); g.connect(masterGain); osc.start(); osc.stop(actx.currentTime + 0.3);
         }
-    } catch(e) { console.error("Audio block:", e); }
+        else if (type === 'approved' || type === 'up') {
+            playTone(523.25, 'sine', 0, 0.1, 0.4); playTone(659.25, 'sine', 0.08, 0.1, 0.4); playTone(783.99, 'sine', 0.16, 0.3, 0.4);
+        }
+        else if (type === 'penalty' || type === 'down') {
+            playTone(180, 'sawtooth', 0, 0.4, 0.5); playTone(120, 'sawtooth', 0.1, 0.3, 0.5);
+        }
+        else if (type === 'bonus') {
+            for(let i=0; i<5; i++) playTone(1000 + i*200, 'triangle', i*0.05, 0.1, 0.3);
+        }
+        else if (type === 'victory') {
+            const notes = [{f:523,d:0.15},{f:523,d:0.15},{f:523,d:0.15},{f:523,d:0.3},{f:415,d:0.3},{f:466,d:0.3},{f:523,d:0.15},{f:466,d:0.15},{f:523,d:0.6}];
+            let t = 0; notes.forEach(n => { playTone(n.f,'square',t,n.d,0.3); t+=n.d; });
+        }
+    } catch(e) { console.error("Audio Error:", e); }
 }
 
 // 📡 SUPABASE REALTIME (CANLI YAYIN) 📡
@@ -534,7 +550,9 @@ function renderCompetitionBoard() {
     // Belleği yenile & Ses tetiklemesi
     window._prevArenaScores = { ...userScores };
     if (soundToPlay) {
-        setTimeout(() => playArenaSound(soundToPlay), 150); // Ekrana çizilirken sesi yedir
+        let finalSound = soundToPlay;
+        if (soundToPlay === 'up') finalSound = 'move';
+        setTimeout(() => playArenaSound(finalSound), 150); 
     }
 
     // Liderlik ve Geçmiş
@@ -1699,6 +1717,7 @@ window.openAdminConfigPanel = openAdminConfigPanel;
 
         if (!result.isConfirmed) return;
 
+        playArenaSound('submit');
         const note = `${A2_TAG}[TYPE:submission][TEAMKEY:${st.teamKey}][BOX:${st.currentBox}][TASK:${st.currentTask.id}][CAPTAIN:${st.captain}]`;
 
         const { error } = await sb.from('competition_moves').insert({
@@ -1963,6 +1982,7 @@ window.openAdminConfigPanel = openAdminConfigPanel;
                 approved_at: new Date().toISOString()
             }).eq('id', id);
             if (upd.error) return Swal.fire('Hata', upd.error.message, 'error');
+            playArenaSound('penalty');
             await window.a2SmartRefresh();
             return Swal.fire('Ceza Uygulandı', 'Arena 2.0 modunda ceza, bu denemeyi başarısız sayar. Takım aynı kutuyu tekrar denemelidir.', 'info');
         }
@@ -1994,6 +2014,9 @@ window.openAdminConfigPanel = openAdminConfigPanel;
         }
 
         await window.a2SmartRefresh();
+        
+        if (status === 'approved') playArenaSound('approved');
+        else if (status === 'rejected' || status === 'penalty') playArenaSound('penalty');
 
         return Swal.fire(
             status === 'approved' ? 'Onaylandı' : (status === 'rejected' ? 'Reddedildi' : 'İşlem Tamam'),
@@ -5996,16 +6019,25 @@ if (window.a2EffectiveFlow) {
 }
 
 window.a2SmartRefresh = async function() {
+    const prevSnap = (competitionMoves || []).map(m => `${m.id}:${m.status}`).join('|');
     await syncCompetitionData();
+    const currSnap = (competitionMoves || []).map(m => `${m.id}:${m.status}`).join('|');
     
-    // Zafer Kontrolü (Box 50'ye ulaşıldıysa otomatik kutlama)
+    // Ses Kontrolü (Onay veya Red durumunda tetikle)
+    if (prevSnap !== currSnap && prevSnap !== '') {
+        const hasNewApproval = (competitionMoves || []).some(m => m.status === 'approved' && !prevSnap.includes(`${m.id}:approved`));
+        const hasNewRejection = (competitionMoves || []).some(m => m.status === 'rejected' && !prevSnap.includes(`${m.id}:rejected`));
+        if (hasNewApproval) playArenaSound('approved');
+        else if (hasNewRejection) playArenaSound('penalty');
+    }
+
+    // Zafer Kontrolü
     const st = window.a2CurrentState(currentUser);
     if (st && st.isFinished) {
         if (typeof window.a2TriggerVictoryAnimation === 'function') {
             window.a2TriggerVictoryAnimation();
         }
     } else {
-        // Oyun bitmediyse, bayrağı sıfırla ki bir sonraki sefer patlayabilsin
         window.__a2VictoryTriggered = false;
     }
 
@@ -6291,7 +6323,7 @@ window.a2TriggerVictoryAnimation = function() {
     window.__a2VictoryTriggered = true;
 
     // Victory Sound
-    if (typeof window.a2PlaySound === 'function') window.a2PlaySound('victory');
+    playArenaSound('victory');
 
     Swal.fire({
         title: '🏰 TEBRİKLER! 🏰',
