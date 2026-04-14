@@ -1972,10 +1972,9 @@ window.openAdminConfigPanel = openAdminConfigPanel;
             reasonText = prompt.value || '';
         }
 
-        const isArena2Submission = a2HasArenaTag(moveData, 'submission');
+        const isArena2Move = a2HasArenaTag(moveData); // Herhangi bir [ARENA2] etiketi varsa
 
-
-        if (status === 'penalty' && isArena2Submission) {
+        if (status === 'penalty' && isArena2Move) {
             const upd = await sb.from('competition_moves').update({
                 status: 'rejected',
                 admin_note: `${moveData.admin_note || ''} [PENALTY_NOTE:${reasonText || 'Ceza uygulandı'}]`,
@@ -1987,9 +1986,20 @@ window.openAdminConfigPanel = openAdminConfigPanel;
             return Swal.fire('Ceza Uygulandı', 'Arena 2.0 modunda ceza, bu denemeyi başarısız sayar. Takım aynı kutuyu tekrar denemelidir.', 'info');
         }
 
-        if (isArena2Submission) {
+        if (isArena2Move) {
+            let approvedSteps = 1;
+            if (status === 'approved') {
+                const task = (competitionConfig || []).find(t => Number(t.id) === Number(moveData.task_id));
+                const taskDefSteps = Number(task?.steps || 0);
+                const tagSteps = Number(window.a2TagVal(task?.task_name, 'BONUS_STEPS') || window.a2TagVal(task?.task_name, 'STEPS') || 0);
+                
+                // Öncelik: Tag içindeki bonus > DB'deki tanımlı steps > Varsayılan 1
+                approvedSteps = tagSteps > 0 ? tagSteps : (taskDefSteps > 0 ? taskDefSteps : 1);
+            }
+
             const payload = {
                 status: status,
+                steps: status === 'approved' ? approvedSteps : 0,
                 approved_at: new Date().toISOString(),
                 admin_note: `${moveData.admin_note || ''}${reasonText ? ` [ADMIN_NOTE:${reasonText}]` : ''}`
             };
