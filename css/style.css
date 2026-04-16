@@ -1,0 +1,65 @@
+:root {
+  --primary: #0e1b42;
+  --secondary: #cf0a2c;
+  --bg: #f4f6f8;
+  --card-bg: #ffffff;
+  --accent: #d32f2f;
+  --success: #2e7d32;
+  --info: #0288d1;
+  --warning: #ed6c02;
+  --sales: #10b981;
+  --quiz: #8e24aa;
+  --text-dark: #2c3e50;
+  --text-light: #95a5a6;
+  /* Kurumsal gri (ekrandaki renk kartından) */
+  --corp-gray: #a3a8ac;
+}
+
+/* --- APP PRELOADER --- */
+#app-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1d1d1d;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-out;
+}
+
+.preloader-content {
+  text-align: center;
+}
+
+.preloader-icon {
+  font-size: 3rem;
+  color: #00e5ff;
+}
+
+.preloader-text {
+  margin-top: 15px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", "Roboto", Helvetica, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-dark);
+  user-select: none;
+  overflow-x: hidden;
+}
+
+
+/* IP Sorgu Kartı */
+
+.ip-input-group { display: flex; gap: 10px; margin-bottom: 15px; }
+.ip-input-group input { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #ddd; font-size: 0.9rem; outline: none; transition: 0.2s; }
+.ip-input-group input:focus { border-color: var(--primary); box-shadow: 0 0 0 2px rgba(14,27,66,0.1); }
+.ip-result { display: none; padding: 12px; background: #fff; border-radius: 8px; border: 1px solid #efefef; font-size: 0.85rem; color: #334155; line-height: 1.6; }
