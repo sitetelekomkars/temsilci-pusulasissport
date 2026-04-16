@@ -43,7 +43,7 @@ window.PusulaDB = {
         async fetchInitial() {
             // Veri Diyeti: Sadece gerekli kolonlar (Projection)
             const moveCols = 'id,user_name,task_id,steps,status,approved_at,admin_note,created_at';
-            const teamCols = 'id,user_a,user_b,status';
+            const teamCols = '*';
             const configCols = '*';
 
             const [config, moves, teams, settings] = await Promise.all([
