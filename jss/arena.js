@@ -320,7 +320,7 @@ async function syncCompetitionData() {
         // Veri Diyeti: Sadece gerekli kolonları çek (Egress tasarrufu)
         const configCols = '*';
         const moveCols = 'id,user_name,task_id,steps,status,approved_at,admin_note,created_at';
-        const teamCols = 'id,user_a,user_b,status';
+        const teamCols = '*';
 
         const { data: configs, error: e1 } = await sb.from('competition_config').select(configCols);
         if (!e1 && configs) competitionConfig = configs;
